@@ -1,61 +1,187 @@
-# Capability Commons — Agentic Data Lite Scaffold
+# Capability Commons
 
-This is a Postgres-first FastAPI scaffold generated from the Capability Commons Agentic Data Lite specification.
+A Postgres-first knowledge platform for practical, public capability literacy. Built on the Agentic Data Lite architecture — a trimmed version of the enterprise AgenticData stack focused on versioned knowledge objects, typed edges, evidence provenance, and retrieval planning.
 
-It includes:
+The unit of value is the **reproducible capability**: every node in the system explains something people need to understand, trains something people need to do, or produces something people can keep, use, and teach forward.
 
-- async FastAPI application with v1 routes from the spec
-- SQLAlchemy 2 async ORM models for the canonical schema
-- Pydantic v2 request/response models and structured-data validators
-- service-layer boundaries for registry, evidence, review, search, graph, retrieval, and publication
-- Alembic bootstrapping plus the initial SQL schema from the design pack
-- a relational graph adapter and a Postgres search adapter for v1
-- retrieval-run persistence and a starter evidence-pack planner
+## What this is
+
+Capability Commons is a knowledge graph and curriculum engine covering practical domains — water, food, shelter, repair, power, and community resilience. It is designed for public use, with plain-language explanations, context-aware variants (renter/homeowner, urban/rural, budget tiers), and a teach-forward model where every learner becomes a transmitter.
+
+### Architecture
+
+- **Postgres 16 + pgvector** as the single source of truth
+- **FastAPI** async API with v1 routes
+- **SQLAlchemy 2** async ORM with 19 tables
+- **Alembic** migrations
+- **Docker Compose** for local development
+- Adapter interfaces for optional Neo4j and OpenSearch when needed later
+
+### Knowledge object types
+
+Seed data uses three types, mapped to the internal type system:
+
+| Seed type | Internal type | Purpose |
+|-----------|--------------|---------|
+| `skill` | `skill_guide` | Observable action a learner can perform |
+| `concept` | `concept_note` | Principle, model, or mental framework |
+| `project` | `project_blueprint` | Applied task that creates a useful artifact |
+
+### Edge types
+
+| Seed edge | Internal edge | Meaning |
+|-----------|--------------|---------|
+| `REQUIRES` | `prerequisite_for` | Source depends on target |
+| `NEXT` | `next_step_for` | Suggested navigation/progression |
+
+The schema supports 25 edge types total — see `src/capability_commons/domain/enums.py`.
+
+## Current state
+
+### Seeded knowledge graph
+
+The 25-node starter graph is loaded and verified:
+
+| Metric | Count |
+|--------|-------|
+| Context objects | 25 |
+| Versions | 25 |
+| Facets | 167 (domain, audience, settlement_type, budget_profile) |
+| Prerequisite edges | 50 |
+| Navigation edges | 27 |
+
+Domains covered: foundation (5 nodes), water (4), food (5), shelter (3), repair (2), power (4), community (2).
+
+### Working services
+
+- FastAPI application with health check, CORS, and v1 routes
+- Object/version CRUD with lifecycle management (draft/reviewed/verified/deprecated)
+- Relational graph traversal (neighbors, prerequisites, membership)
+- Postgres full-text search
+- Retrieval planner with intent-specific edge sets
+- Idempotent seed CLI
+
+### Extension points (not yet active)
+
+- Vector embeddings (pgvector columns exist, default to `NULL`)
+- Evidence-pack assembly and contradiction workflows
+- Outbox consumers, static export, object storage uploads
+- Neo4j and OpenSearch adapters (interfaces defined)
+- Entity merge and advanced contradiction auto-detection
 
 ## Quick start
 
 ```bash
+# 1. Start Postgres
+docker compose up -d
+
+# 2. Set up Python environment
 python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
+
+# 3. Configure
 cp .env.example .env
+# Default DATABASE_URL uses port 5433 (remapped from 5432)
+
+# 4. Run migrations
 alembic upgrade head
-uvicorn capability_commons.main:app --reload
+
+# 5. Seed the knowledge graph
+python -m capability_commons.cli.seed --data-dir expanded_seed/
+
+# 6. Start the API
+uvicorn capability_commons.main:app --reload --port 8100
+```
+
+### Verify the seed
+
+```bash
+# Check object counts
+docker compose exec db psql -U postgres -d capability_commons \
+  -c "SELECT type, count(*) FROM context_objects GROUP BY type;"
+
+# Check edge counts
+docker compose exec db psql -U postgres -d capability_commons \
+  -c "SELECT edge_type, count(*) FROM edges GROUP BY edge_type;"
+
+# Re-run is idempotent
+python -m capability_commons.cli.seed --data-dir expanded_seed/
+# → "Seed complete: 0 objects created, 25 skipped, 0 prerequisite edges, 0 navigation edges"
 ```
 
 ## Project layout
 
 ```text
 src/capability_commons/
-  api/           # FastAPI routes and dependencies
-  db/            # Async engine, session, ORM models
+  api/           # FastAPI routes, dependencies, error handlers
+  audit/         # Audit trail
+  cli/           # CLI commands (seed loader)
+  db/            # Async engine, session, ORM models (19 tables)
   domain/        # Enums and shared domain constants
-  schemas/       # Pydantic request/response models
-  services/      # Registry, entities, evidence, review
-  search/        # Chunking and Postgres search adapter
   graph/         # Relational graph adapter
-  retrieval/     # Planner and evidence-pack assembly
+  jobs/          # Background job stubs
   publication/   # Public rendering helpers
+  retrieval/     # Planner and evidence-pack assembly
+  schemas/       # Pydantic request/response models
+  search/        # Chunking and Postgres search adapter
+  services/      # Registry, entities, evidence, review
+  storage/       # Object storage adapter interface
+
+expanded_seed/             # 25-node seed data package
+  canonical/nodes/*.yaml   # Authoritative source (one per node)
+  imports/*.csv            # Normalized relational tables
+  imports/nodes.jsonl      # Full-record JSON Lines
+  schema/                  # JSON schemas and data dictionary
+
+docs/
+  context/                 # Design rationale and vision documents
+  plans/                   # Implementation plans
+  spec/                    # Agentic Data Lite specification
+
+alembic/                   # Database migrations
+docker-compose.yml         # Postgres 16 + pgvector
 ```
 
-## What is implemented
+## Seed data
 
-- Canonical object/version creation and publication lifecycle
-- Facet, entity, edge, citation, review, contradiction, and retrieval-run records
-- Type-specific `structured_data` validation for the v1 object types listed in the spec
-- Relational graph traversal for neighbors, ordered membership, and reverse prerequisite lookup
-- Lexical Postgres full-text search for version retrieval
-- A starter retrieval planner with intent-specific edge sets and sufficiency scoring
+The `expanded_seed/` directory contains the canonical 25-node starter graph in multiple formats:
 
-## What is intentionally still a scaffold
+- **Canonical source**: `canonical/nodes/*.yaml` — one file per node with full structured payloads
+- **Relational import**: `imports/nodes.csv`, `imports/edges.csv`, and child tables
+- **Document import**: `imports/nodes.jsonl` — full records, one per line
+- **Spreadsheet**: `workbook/capability_commons_import_sheets_v1.xlsx`
 
-- Vector embeddings are optional and default to `NULL`
-- Outbox consumers, static export generation, and object storage upload flows are left as extension points
-- Entity merge and advanced contradiction auto-detection are stubs
-- Neo4j and OpenSearch adapters are represented by interfaces only
+If formats disagree, YAML and JSONL are authoritative. See `expanded_seed/schema/ontology_v1.md` for the full field model.
 
-## Notes for developers
+## Configuration
 
-- The initial migration executes the provided canonical SQL schema directly.
-- The ORM models match the schema closely, but the raw SQL migration remains the migration source of truth for v1.
-- Search and graph stay behind adapter interfaces so OpenSearch or Neo4j can be added later without changing the API surface.
+Key environment variables (see `.env.example`):
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `DATABASE_URL` | `postgresql+asyncpg://postgres:postgres@localhost:5433/capability_commons` | Async database connection |
+| `EMBEDDING_DIM` | `1536` | pgvector embedding dimension |
+| `DEFAULT_TOP_K` | `20` | Search result limit |
+| `DEFAULT_MAX_GRAPH_DEPTH` | `3` | Graph traversal depth |
+| `DEFAULT_SUFFICIENCY_THRESHOLD` | `0.75` | Retrieval planner threshold |
+
+## Development
+
+```bash
+# Run tests
+pytest -v
+
+# Run specific test file
+pytest tests/test_seed.py -v
+```
+
+## Design principles
+
+- **Postgres-first**: single source of truth, optional graph/search projections later
+- **Versioned knowledge objects**: every edit creates a new version, old versions preserved
+- **Typed edges with provenance**: edges carry confidence, method, and status
+- **Context-aware facets**: domain, audience, settlement type, budget profile, climate zone
+- **Idempotent operations**: seed and import commands are safe to re-run
+- **Barrier-lowering by design**: plain language, low-cost paths, renter/homeowner variants
+- **Teach-forward model**: every capability should be explainable to another person
