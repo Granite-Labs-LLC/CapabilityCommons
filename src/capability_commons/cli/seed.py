@@ -212,6 +212,18 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
 
         await session.flush()
 
+        # Helper to check edge existence
+        async def _edge_exists(src_id: uuid.UUID, edge_type: EdgeType, dst_id: uuid.UUID) -> bool:
+            result = await session.execute(
+                select(Edge).where(
+                    Edge.workspace_id == workspace.id,
+                    Edge.src_id == src_id,
+                    Edge.edge_type == edge_type,
+                    Edge.dst_id == dst_id,
+                )
+            )
+            return result.scalar_one_or_none() is not None
+
         # 3. Insert REQUIRES edges from YAML requires field
         req_edges = 0
         for node in nodes:
@@ -225,13 +237,17 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     if req_id not in slug_to_version_id:
                         print(f"  WARN: missing prerequisite target {req_id}")
                         continue
+                    src_vid = slug_to_version_id[src_slug]
+                    dst_vid = slug_to_version_id[req_id]
+                    if await _edge_exists(src_vid, EdgeType.PREREQUISITE_FOR, dst_vid):
+                        continue
                     edge = Edge(
                         workspace_id=workspace.id,
                         src_node_kind=NodeKind.OBJECT_VERSION,
-                        src_id=slug_to_version_id[src_slug],
+                        src_id=src_vid,
                         edge_type=EdgeType.PREREQUISITE_FOR,
                         dst_node_kind=NodeKind.OBJECT_VERSION,
-                        dst_id=slug_to_version_id[req_id],
+                        dst_id=dst_vid,
                         ordinal=i,
                         confidence=Decimal("1.0"),
                         provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
@@ -249,13 +265,17 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             if src_slug not in slug_to_version_id or dst_slug not in slug_to_version_id:
                 print(f"  WARN: missing NEXT edge node {src_slug} -> {dst_slug}")
                 continue
+            src_vid = slug_to_version_id[src_slug]
+            dst_vid = slug_to_version_id[dst_slug]
+            if await _edge_exists(src_vid, EdgeType.NEXT_STEP_FOR, dst_vid):
+                continue
             edge = Edge(
                 workspace_id=workspace.id,
                 src_node_kind=NodeKind.OBJECT_VERSION,
-                src_id=slug_to_version_id[src_slug],
+                src_id=src_vid,
                 edge_type=EdgeType.NEXT_STEP_FOR,
                 dst_node_kind=NodeKind.OBJECT_VERSION,
-                dst_id=slug_to_version_id[dst_slug],
+                dst_id=dst_vid,
                 confidence=Decimal("1.0"),
                 provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
                 status=RelationStatus.CURRENT,
