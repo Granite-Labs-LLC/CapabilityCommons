@@ -4,11 +4,17 @@ A Postgres-first knowledge platform for practical, public capability literacy. B
 
 The unit of value is the **reproducible capability**: every node in the system explains something people need to understand, trains something people need to do, or produces something people can keep, use, and teach forward.
 
-## What this is
+## Vision
 
-Capability Commons is a knowledge graph and curriculum engine covering practical domains — water, food, shelter, repair, power, and community resilience. It is designed for public use, with plain-language explanations, context-aware variants (renter/homeowner, urban/rural, budget tiers), and a teach-forward model where every learner becomes a transmitter.
+The goal is to take knowledge that is usually trapped inside trades, institutions, guilds, paywalls, jargon, or credential barriers and turn it into understandable concepts, reproducible skills, local practical action, and teach-forward transmission.
 
-### Architecture
+> AI should be used to convert hidden competence into shared public capacity.
+
+Six rules govern the commons: **open by default**, **practical before ornamental**, **layered for beginners**, **locally adaptable**, **project-based**, and **teach-forward**. The system is built around three interlocking graphs — a concept graph (what things mean), a skill graph (what people can do), and a deployment graph (how it applies in your actual life).
+
+See [`docs/VISION.md`](docs/VISION.md) for the full doctrine, knowledge object model, publishing rules, assessment model, governance principles, and success metrics.
+
+## Architecture
 
 - **Postgres 16 + pgvector** as the single source of truth
 - **FastAPI** async API with v1 routes
@@ -135,7 +141,8 @@ expanded_seed/             # 25-node seed data package
   schema/                  # JSON schemas and data dictionary
 
 docs/
-  context/                 # Design rationale and vision documents
+  VISION.md                # Project purpose, doctrine, and design model
+  context/                 # Original design rationale documents
   plans/                   # Implementation plans
   spec/                    # Agentic Data Lite specification
 
