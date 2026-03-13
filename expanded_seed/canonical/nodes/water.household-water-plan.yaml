@@ -1,0 +1,57 @@
+id: water.household-water-plan
+type: project
+title: Build a 72-Hour and 2-Week Household Water Plan
+summary: Produce a practical household water plan covering quantity, storage, treatment, testing, and contingency options.
+plain_language: A water plan turns scattered gear and half-remembered ideas into a usable operating system.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 3.0
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- water-plan
+- household
+- contingency
+- preparedness
+- operations
+requires:
+- mode: all_of
+  ids:
+  - foundation.household-resilience-inventory
+  - water.safe-storage
+  - water.treatment-selection
+  - water.basic-testing
+  n: null
+outputs:
+- household water plan
+- water source and storage map
+- retest schedule
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Build a household-ready plan that covers how much water is needed, where it comes from, how it is treated, how it is tested, and what to do when one path fails.
+  deliverables:
+  - household water plan
+  - source and storage map
+  - treatment decision matrix
+  - retest schedule
+  acceptance_criteria:
+  - The plan covers drinking, hygiene, food prep, pets, and essential cleaning where relevant.
+  - At least one backup source or fallback path is named.
+  - The plan can be followed by another household member without additional explanation.
+  time_box_hours: 3.0
+  budget_band: low
+  team_size: 1

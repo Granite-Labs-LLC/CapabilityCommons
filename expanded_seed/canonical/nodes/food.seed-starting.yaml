@@ -1,0 +1,71 @@
+id: food.seed-starting
+type: skill
+title: Start Seeds Reliably
+summary: Start plants from seed with correct timing, medium, light, moisture, and labeling.
+plain_language: Strong seedlings come from consistent conditions, not from luck.
+primary_domain: food
+domains:
+- food
+stage: productive
+difficulty: 2
+estimated_hours: 2.0
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- gardening
+- seed-starting
+- horticulture
+- planning
+- seasonality
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  n: null
+outputs:
+- seed-start log
+- germination setup
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Start seeds in a controlled way, document the variables, and produce healthy seedlings or a clear diagnosis of what failed.
+  inputs:
+  - crop choice
+  - planting date
+  - light plan
+  - watering plan
+  tools:
+  - seed trays or containers
+  - labels
+  - light source or window
+  - timer (optional)
+  materials:
+  - seed mix
+  - seeds
+  - water
+  - log sheet
+  steps_summary:
+  - Choose crops and dates based on local season and transplant window.
+  - Prepare containers, medium, labels, and a light plan.
+  - Sow at the correct depth and moisture level.
+  - Track emergence, watering, and light exposure in a log.
+  - Harden off or re-seed based on results.
+  success_criteria:
+  - Containers are labeled and dated.
+  - The log shows sowing date, crop, and emergence observations.
+  - The learner can explain at least one likely cause if germination or growth is weak.
+  failure_modes:
+  - Starting too early or too late for local conditions.
+  - Under-lighting seedlings and producing weak growth.
+  - Overwatering and damping off.
+  safety_boundary: Follow seed packet and local climate guidance; avoid introducing contaminated soil or plants into indoor living spaces.

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capability-commons/edge.schema.json",
+  "title": "Capability Commons Edge",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "source_id",
+    "edge_type",
+    "target_id",
+    "condition_group_id",
+    "sequence",
+    "note"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "edge_type": {
+      "enum": [
+        "REQUIRES",
+        "NEXT",
+        "ENABLES",
+        "MITIGATES",
+        "ASSESSED_BY",
+        "DOCUMENTED_BY",
+        "TAUGHT_IN",
+        "VARIANT_OF"
+      ]
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "condition_group_id": {
+      "type": "string"
+    },
+    "sequence": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

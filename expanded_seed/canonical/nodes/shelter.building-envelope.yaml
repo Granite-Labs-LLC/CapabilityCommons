@@ -1,0 +1,60 @@
+id: shelter.building-envelope
+type: concept
+title: Understand the Building Envelope
+summary: Understand how heat, air, moisture, insulation, and leakage pathways affect comfort, cost, and damage.
+plain_language: The envelope is the boundary between indoors and outdoors; when it leaks air or traps moisture badly, the whole house pays for it.
+primary_domain: shelter
+domains:
+- shelter
+stage: household
+difficulty: 2
+estimated_hours: 2.0
+cost_band: free
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- cold_climate
+- hot_climate
+tags:
+- shelter
+- building-science
+- heat
+- air-sealing
+- moisture
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  n: null
+outputs:
+- building-envelope diagram
+- heat-loss note
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  definition: A simple model of how heat, air, and moisture move through walls, roofs, floors, windows, and gaps.
+  key_questions:
+  - Where does heat escape or enter most easily?
+  - How do air leaks differ from insulation gaps?
+  - When does moisture turn from nuisance into building damage?
+  misconceptions:
+  - Insulation alone solves all comfort problems.
+  - Condensation is purely cosmetic.
+  - More sealing is always better even if ventilation is ignored.
+  formulas_or_rules:
+  - Air sealing and insulation solve different but related problems.
+  - Warm air carries moisture; moisture management is part of durability.
+  - Control layers work best when they are continuous.
+  units:
+  - degree F
+  - degree C
+  - R-value
+  - humidity
+  - square foot

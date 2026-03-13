@@ -1,0 +1,70 @@
+id: repair.hand-tool-literacy
+type: skill
+title: Use Essential Hand Tools Confidently
+summary: Use measuring, tightening, cutting, fastening, and basic repair tools safely and effectively.
+plain_language: Tool literacy lowers the barrier to fixing simple problems before they become expensive ones.
+primary_domain: repair
+domains:
+- repair
+stage: household
+difficulty: 1
+estimated_hours: 2.5
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+tags:
+- tools
+- repair
+- measurement
+- fasteners
+- maintenance
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  n: null
+outputs:
+- tool competency checklist
+- starter tool list
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Demonstrate correct selection and basic use of essential hand tools for common household tasks.
+  inputs:
+  - task list
+  - tool list
+  - fastener types
+  - material types
+  tools:
+  - measuring tape
+  - screwdrivers
+  - adjustable wrench
+  - pliers
+  - utility knife
+  - hammer
+  materials:
+  - sample fasteners or scrap material
+  - checklist
+  steps_summary:
+  - Match each tool to the task and material.
+  - Demonstrate measuring, fastening, loosening, cutting, and gripping with control.
+  - Identify common fastener types and the right driver or wrench fit.
+  - Store tools and blades safely after use.
+  - Record gaps in the starter tool list.
+  success_criteria:
+  - The learner uses tools without damaging the fastener or material.
+  - The learner can name when not to force a tool fit.
+  - The checklist shows which core tools are present or still needed.
+  failure_modes:
+  - Using the wrong size driver or wrench.
+  - Applying force before understanding the fastener direction or material.
+  - Neglecting blade safety and hand placement.
+  safety_boundary: Do not improvise on energized, pressurized, or structurally critical systems when the task exceeds basic hand-tool work.

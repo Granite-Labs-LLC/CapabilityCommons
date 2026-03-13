@@ -1,0 +1,61 @@
+id: foundation.measurement-and-units
+type: concept
+title: Measurement and Units for Practical Work
+summary: Understand quantities, conversions, estimation, and tolerances so plans and calculations use comparable units.
+plain_language: If you cannot measure it in the same units, you cannot compare it or size it correctly.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 1
+estimated_hours: 1.5
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- measurement
+- units
+- numeracy
+- calculation
+- estimation
+requires: []
+outputs:
+- units cheat sheet
+- conversion table
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  definition: A shared language of quantity that allows materials, loads, water, time, and space to be compared without confusion.
+  key_questions:
+  - What quantity am I measuring?
+  - What unit is appropriate for this decision?
+  - How do I convert between common household and technical units?
+  misconceptions:
+  - Precision and accuracy are the same thing.
+  - Bigger numbers always mean more capacity regardless of unit.
+  - Approximation is useless unless it is exact.
+  formulas_or_rules:
+  - Choose one working unit before calculating.
+  - Write units next to every number.
+  - Estimate first, then calculate, then sense-check.
+  units:
+  - gallon
+  - liter
+  - watt
+  - watt-hour
+  - volt
+  - amp
+  - square foot
+  - degree F
+  - degree C
+  - psi

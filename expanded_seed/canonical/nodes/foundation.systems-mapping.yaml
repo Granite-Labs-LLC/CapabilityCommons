@@ -1,0 +1,64 @@
+id: foundation.systems-mapping
+type: skill
+title: Map Household and Community Systems
+summary: Map inputs, outputs, dependencies, and failure points in a system so you can see what matters first.
+plain_language: Draw the system before you try to fix the system.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 2.0
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- systems-thinking
+- mapping
+- dependencies
+- troubleshooting
+- planning
+requires: []
+outputs:
+- household systems map
+- dependency list
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Create a clear map of a household or local system that shows how resources flow, where bottlenecks exist, and what fails first.
+  inputs:
+  - target system
+  - basic measurements
+  - known dependencies
+  - failure scenarios
+  tools:
+  - paper or whiteboard
+  - markers
+  - camera or scanner (optional)
+  materials:
+  - system mapping template
+  steps_summary:
+  - Choose a system boundary such as water, food, shelter, or power.
+  - List inputs, outputs, storage points, dependencies, and single points of failure.
+  - Mark critical nodes, backup paths, and failure consequences.
+  - Rank which dependencies are easy, medium, or hard to replace.
+  - Convert the map into a one-page operating view.
+  success_criteria:
+  - The map shows inputs, outputs, and at least one likely failure path.
+  - Critical dependencies are visible and ranked.
+  - Another person can read the map and understand the system.
+  failure_modes:
+  - Drawing a process list instead of a system map.
+  - Ignoring hidden dependencies such as fuel, internet, or weather.
+  - Making the diagram so detailed that it cannot guide action.
+  safety_boundary: This activity is observational and planning-oriented; do not test failure scenarios on live systems unless it is safe and reversible.

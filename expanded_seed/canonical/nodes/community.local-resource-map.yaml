@@ -1,0 +1,52 @@
+id: community.local-resource-map
+type: project
+title: Map Local Skills, Tools, Sources, and Shared Assets
+summary: Map local tools, skills, food sources, water sources, spaces, and contacts that matter in normal times and disruptions.
+plain_language: Community resilience improves when people know what already exists nearby and who can do what.
+primary_domain: community
+domains:
+- community
+stage: community
+difficulty: 2
+estimated_hours: 3.0
+cost_band: free
+risk_band: low
+contexts:
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- community
+- mapping
+- mutual-aid
+- assets
+- coordination
+requires:
+- mode: all_of
+  ids:
+  - foundation.systems-mapping
+  - foundation.household-resilience-inventory
+  n: null
+outputs:
+- local resource map
+- contact and capability list
+- sharing protocol notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Create a local map of people, places, and assets that could support mutual aid, repair, food access, water access, and emergency coordination.
+  deliverables:
+  - local resource map
+  - contact and capability list
+  - sharing protocol notes
+  acceptance_criteria:
+  - The map includes both physical resources and human skills.
+  - The output distinguishes public, private, and permission-based resources.
+  - Contact or access notes are clear enough to be useful but respectful of privacy.
+  time_box_hours: 3.0
+  budget_band: free
+  team_size: 1

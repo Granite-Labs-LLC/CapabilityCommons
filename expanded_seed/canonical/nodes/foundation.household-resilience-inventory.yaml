@@ -1,0 +1,56 @@
+id: foundation.household-resilience-inventory
+type: project
+title: Build a Household Resilience Inventory
+summary: Create a baseline inventory of needs, dependencies, tools, contacts, and vulnerabilities for a household.
+plain_language: Write down what the household depends on before an outage or disruption writes it down for you.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 3.0
+cost_band: low
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- inventory
+- baseline
+- resilience
+- household
+- planning
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  - foundation.systems-mapping
+  - foundation.ai-grounded-research
+  n: null
+outputs:
+- household inventory sheet
+- priority gap list
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Produce a single reference packet that shows what the household needs to stay functional for 72 hours and two weeks.
+  deliverables:
+  - household inventory sheet
+  - critical-needs list
+  - contacts list
+  - priority gap list
+  acceptance_criteria:
+  - The inventory covers water, food, shelter, sanitation, communications, medicines, transport, and power.
+  - Every item has a quantity, location, and owner or steward where relevant.
+  - The packet highlights the top five vulnerabilities and the easiest next improvements.
+  time_box_hours: 3.0
+  budget_band: low
+  team_size: 1

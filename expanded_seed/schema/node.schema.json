@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "node.schema.json",
+  "title": "Capability Commons Node",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "summary",
+    "plain_language",
+    "primary_domain",
+    "domains",
+    "stage",
+    "difficulty",
+    "estimated_hours",
+    "cost_band",
+    "risk_band",
+    "contexts",
+    "tags",
+    "requires",
+    "outputs",
+    "lifecycle_state",
+    "evidence_level",
+    "source_refs",
+    "version",
+    "updated_at",
+    "payload"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "concept",
+        "skill",
+        "project",
+        "domain",
+        "module",
+        "assessment",
+        "resource",
+        "risk"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "plain_language": {
+      "type": "string"
+    },
+    "primary_domain": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "stage": {
+      "enum": [
+        "foundation",
+        "household",
+        "productive",
+        "community",
+        "advanced"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "estimated_hours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cost_band": {
+      "enum": [
+        "free",
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "risk_band": {
+      "enum": [
+        "low",
+        "moderate",
+        "high"
+      ]
+    },
+    "contexts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "$ref": "requires.schema.json"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lifecycle_state": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "verified",
+        "deprecated"
+      ]
+    },
+    "evidence_level": {
+      "enum": [
+        "compiled",
+        "reviewed",
+        "field_tested",
+        "replicated"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "concept"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "definition",
+              "key_questions",
+              "misconceptions",
+              "formulas_or_rules",
+              "units"
+            ],
+            "properties": {
+              "definition": {
+                "type": "string"
+              },
+              "key_questions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "misconceptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "formulas_or_rules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "units": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "skill"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "performance_statement",
+              "inputs",
+              "tools",
+              "materials",
+              "steps_summary",
+              "success_criteria",
+              "failure_modes",
+              "safety_boundary"
+            ],
+            "properties": {
+              "performance_statement": {
+                "type": "string"
+              },
+              "inputs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tools": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "materials": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "steps_summary": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "success_criteria": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "failure_modes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "safety_boundary": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "project"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "goal",
+              "deliverables",
+              "acceptance_criteria",
+              "time_box_hours",
+              "budget_band",
+              "team_size"
+            ],
+            "properties": {
+              "goal": {
+                "type": "string"
+              },
+              "deliverables": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "acceptance_criteria": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "time_box_hours": {
+                "type": "number",
+                "minimum": 0
+              },
+              "budget_band": {
+                "enum": [
+                  "free",
+                  "low",
+                  "medium",
+                  "high"
+                ]
+              },
+              "team_size": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

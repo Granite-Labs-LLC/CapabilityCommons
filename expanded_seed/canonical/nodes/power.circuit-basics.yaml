@@ -1,0 +1,60 @@
+id: power.circuit-basics
+type: concept
+title: Understand Basic Circuits and Household Loads
+summary: Understand volts, amps, watts, watt-hours, breakers, and common household loads so power choices are realistic.
+plain_language: Power problems become much easier once you know the difference between how fast energy is used and how much energy you have stored.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 2.0
+cost_band: free
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- electricity
+- circuits
+- loads
+- energy
+- backup-power
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  n: null
+outputs:
+- power formula card
+- device label notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  definition: A beginner model of household electrical loads, circuit limits, and the relationship between power and stored energy.
+  key_questions:
+  - What is the difference between watts and watt-hours?
+  - Why do some devices have startup surges?
+  - How do breakers and circuit limits constrain what can run together?
+  misconceptions:
+  - High voltage automatically means high energy use.
+  - Battery capacity alone tells you whether a device will run.
+  - Nameplate numbers always equal real-world operating behavior.
+  formulas_or_rules:
+  - Power is rate; energy is quantity over time.
+  - Add running loads before comparing them to available capacity.
+  - Startup surge and inverter losses reduce effective margin.
+  units:
+  - volt
+  - amp
+  - watt
+  - watt-hour
+  - kilowatt-hour
+  - breaker size

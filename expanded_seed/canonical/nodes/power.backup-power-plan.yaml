@@ -1,0 +1,56 @@
+id: power.backup-power-plan
+type: project
+title: Draft a Tiered Backup Power Plan
+summary: Produce low-, mid-, and high-budget backup options tied to critical loads, runtime goals, and local constraints.
+plain_language: A good backup plan gives you options instead of one expensive fantasy setup.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 3
+estimated_hours: 3.5
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- backup-power
+- planning
+- budgeting
+- outages
+- energy-resilience
+requires:
+- mode: all_of
+  ids:
+  - foundation.ai-grounded-research
+  - power.load-audit
+  - power.runtime-calculation
+  n: null
+outputs:
+- backup power plan
+- budget-tier comparison
+- decision log
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Create a practical backup power plan with tiered options, tradeoffs, and clear matching to critical loads and outage duration goals.
+  deliverables:
+  - backup power plan
+  - budget-tier comparison
+  - decision log
+  - maintenance checklist
+  acceptance_criteria:
+  - Each tier names what it can and cannot support.
+  - The plan documents assumptions, local constraints, and maintenance burdens.
+  - The decision log explains why one tier is preferred for the current situation.
+  time_box_hours: 3.5
+  budget_band: low
+  team_size: 1

@@ -1,0 +1,58 @@
+id: food.safe-preservation-basics
+type: concept
+title: Understand Safe Food Preservation Boundaries
+summary: Understand the safe boundaries of freezing, drying, fermenting, and canning-related decisions before preserving food.
+plain_language: Preservation methods create very different risks; do not treat them as interchangeable.
+primary_domain: food
+domains:
+- food
+stage: household
+difficulty: 2
+estimated_hours: 1.5
+cost_band: free
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+tags:
+- food-safety
+- preservation
+- freezing
+- drying
+- fermentation
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  - foundation.ai-grounded-research
+  - food.pantry-design
+  n: null
+outputs:
+- preservation safety card
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  definition: A conceptual boundary map showing which preservation methods fit which foods, what their limits are, and when guidance must come from authoritative process sources.
+  key_questions:
+  - Which preservation methods are low-risk vs higher-risk?
+  - What environmental factors make preserved food safer or less safe?
+  - When is authoritative process guidance essential?
+  misconceptions:
+  - Any preserved food that looks fine is safe.
+  - A successful batch proves the method was sound.
+  - Drying, fermenting, freezing, and canning have the same risk profile.
+  formulas_or_rules:
+  - Match method to food type and moisture/acid profile.
+  - Use authoritative process guidance for higher-risk methods.
+  - When a method depends on exact procedure, improvisation shrinks safety margin.
+  units:
+  - time
+  - temperature
+  - pH
+  - water activity

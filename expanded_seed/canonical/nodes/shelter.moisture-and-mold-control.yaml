@@ -1,0 +1,69 @@
+id: shelter.moisture-and-mold-control
+type: skill
+title: Control Moisture and Interrupt Mold Conditions
+summary: Identify moisture sources and interrupt the conditions that allow mold and building damage to persist.
+plain_language: Mold control starts with moisture control; cleaning alone is not a strategy if the source remains.
+primary_domain: shelter
+domains:
+- shelter
+stage: household
+difficulty: 2
+estimated_hours: 2.0
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- cold_climate
+- hot_climate
+tags:
+- moisture
+- mold
+- ventilation
+- inspection
+- durability
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  - shelter.building-envelope
+  n: null
+outputs:
+- moisture checklist
+- source map
+- response plan
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Identify likely moisture sources, document conditions that keep surfaces damp, and create a response plan that removes the source or shortens exposure.
+  inputs:
+  - visible conditions
+  - humidity or dampness observations
+  - space usage patterns
+  tools:
+  - flashlight
+  - checklist
+  - camera or notebook
+  materials:
+  - moisture checklist
+  steps_summary:
+  - Inspect areas near plumbing, exterior walls, windows, bathrooms, kitchens, and basements or crawlspaces.
+  - 'Classify the moisture source: leak, condensation, infiltration, or occupant load.'
+  - 'Record what keeps the area damp: poor airflow, low heat, trapped vapor, or repeated wetting.'
+  - Choose corrective actions that target the source first.
+  - Set a follow-up check date.
+  success_criteria:
+  - The response plan targets the source, not only the surface.
+  - Areas needing escalation are clearly identified.
+  - The learner can explain the difference between leak-driven and condensation-driven problems.
+  failure_modes:
+  - Treating visible mold as only a cleaning problem.
+  - Ignoring intermittent leaks or seasonal condensation patterns.
+  - Failing to recheck after the first intervention.
+  safety_boundary: Escalate persistent, extensive, or health-sensitive cases to qualified local guidance; do not disturb hazardous materials or hidden cavities without appropriate precautions.

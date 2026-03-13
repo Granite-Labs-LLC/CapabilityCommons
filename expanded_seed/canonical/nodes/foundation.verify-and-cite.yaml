@@ -1,0 +1,64 @@
+id: foundation.verify-and-cite
+type: skill
+title: Verify and Cite Practical Claims
+summary: Evaluate practical claims by checking source quality, recency, evidence, and applicability before acting.
+plain_language: Before you trust a claim, check who said it, when they said it, what evidence they show, and whether it fits your situation.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 1
+estimated_hours: 1.5
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- verification
+- research
+- evidence
+- decision-making
+- media-literacy
+requires: []
+outputs:
+- claim-check worksheet
+- source comparison note
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Assess a practical claim, cite the supporting evidence, and explain whether the claim is usable in a real decision.
+  inputs:
+  - claim or recommendation
+  - source list
+  - publication dates
+  - local constraints
+  tools:
+  - web browser
+  - notebook or worksheet
+  - AI assistant (optional)
+  materials:
+  - claim-check worksheet
+  steps_summary:
+  - State the claim in one sentence.
+  - Identify the original source, date, and evidence offered.
+  - Compare at least two independent sources or one primary source and one reviewer.
+  - Mark what is known, unknown, and locally variable.
+  - Record a decision with a citation trail.
+  success_criteria:
+  - The worksheet names the claim, source, date, and evidence quality.
+  - The learner can distinguish primary from secondary support.
+  - The final note states whether to act, wait, test, or reject.
+  failure_modes:
+  - Treating popularity as proof.
+  - Ignoring dates and using outdated guidance.
+  - Failing to separate general advice from local conditions.
+  safety_boundary: This skill does not authorize high-risk action; when consequences are significant, escalate to qualified local guidance and primary sources.

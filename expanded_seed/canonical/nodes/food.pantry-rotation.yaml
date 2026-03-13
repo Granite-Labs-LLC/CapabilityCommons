@@ -1,0 +1,68 @@
+id: food.pantry-rotation
+type: skill
+title: Rotate and Replenish Pantry Stock
+summary: Rotate and replenish stored food systematically so stock remains familiar, usable, and current.
+plain_language: Stored food is only useful if it stays edible, visible, and part of normal household practice.
+primary_domain: food
+domains:
+- food
+stage: household
+difficulty: 1
+estimated_hours: 1.5
+cost_band: free
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- pantry
+- rotation
+- inventory
+- household
+- maintenance
+requires:
+- mode: all_of
+  ids:
+  - food.pantry-design
+  n: null
+outputs:
+- rotation sheet
+- reorder cadence
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Use labels, placement rules, and a simple review schedule to keep pantry stock fresh and aligned to actual use.
+  inputs:
+  - pantry layout
+  - current stock
+  - date labels
+  - review interval
+  tools:
+  - marker
+  - labels
+  - shelf or bin system
+  - inventory sheet
+  materials:
+  - rotation sheet
+  steps_summary:
+  - Group items by use, shelf life, and replacement frequency.
+  - Place older stock in front and newer stock in back.
+  - Record quantities and trigger points for replenishment.
+  - Review the pantry on a repeating schedule.
+  - Retire, donate, or repurpose items before they become waste.
+  success_criteria:
+  - The household can find and use stock without guesswork.
+  - Review dates and reorder triggers are visible.
+  - Expired or stale items are not accumulating unnoticed.
+  failure_modes:
+  - Buying without a rotation habit.
+  - Storing items that no one regularly cooks or eats.
+  - Failing to set reorder triggers.
+  safety_boundary: Follow local food-safety guidance and product labeling; when in doubt about safety, discard rather than gamble.

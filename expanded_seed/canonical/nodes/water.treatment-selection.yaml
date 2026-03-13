@@ -1,0 +1,59 @@
+id: water.treatment-selection
+type: concept
+title: Select an Appropriate Water Treatment Method
+summary: Understand treatment methods and match them to the likely contaminants, water source, and available equipment.
+plain_language: Different water problems need different fixes; no single treatment method solves everything.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 1.5
+cost_band: free
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- water
+- treatment
+- filtration
+- disinfection
+- contaminants
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  - foundation.ai-grounded-research
+  n: null
+outputs:
+- treatment decision matrix
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  definition: A decision framework for matching likely water hazards to suitable treatment methods and limits.
+  key_questions:
+  - 'What problem am I treating: particles, microbes, chemicals, or salinity?'
+  - What does this treatment remove well, poorly, or not at all?
+  - What are the capacity, maintenance, and failure signs of the method?
+  misconceptions:
+  - All filters remove all contaminants.
+  - Clear water is necessarily safe water.
+  - Boiling solves chemical contamination.
+  formulas_or_rules:
+  - Match method to contaminant class.
+  - Multiple barriers are often stronger than one.
+  - Capacity, contact time, and maintenance matter as much as device choice.
+  units:
+  - microns
+  - liters
+  - gallons
+  - minutes
+  - ppm

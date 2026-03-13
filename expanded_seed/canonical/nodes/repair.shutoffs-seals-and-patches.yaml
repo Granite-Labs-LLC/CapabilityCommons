@@ -1,0 +1,71 @@
+id: repair.shutoffs-seals-and-patches
+type: skill
+title: Locate Shutoffs, Seal Gaps, and Make Minor Temporary Repairs
+summary: Locate shutoffs, stop minor leaks, seal gaps, and make temporary repairs that buy time and reduce damage.
+plain_language: Fast, basic intervention often matters more than elegant intervention in the first minutes of a household problem.
+primary_domain: repair
+domains:
+- repair
+stage: household
+difficulty: 2
+estimated_hours: 2.5
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+tags:
+- repair
+- shutoffs
+- sealing
+- patching
+- damage-control
+requires:
+- mode: all_of
+  ids:
+  - shelter.moisture-and-mold-control
+  - repair.hand-tool-literacy
+  n: null
+outputs:
+- shutoff map
+- patch kit list
+- temporary repair notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Find the key shutoffs, assemble a small response kit, and apply simple reversible fixes for gaps, drips, and minor surface damage.
+  inputs:
+  - household layout
+  - known utility fixtures
+  - minor repair materials
+  tools:
+  - flashlight
+  - hand tools
+  - marker
+  - camera
+  materials:
+  - sealants or weatherstripping
+  - absorbent materials
+  - temporary patch supplies
+  - checklist
+  steps_summary:
+  - Locate water and utility shutoffs and label or map them.
+  - Assemble a small kit for leaks, drafts, and minor patching.
+  - Apply simple sealing or temporary patching to a low-risk target.
+  - Document what worked, what did not, and what still needs escalation.
+  - Store the map and kit where others can find them.
+  success_criteria:
+  - Shutoff locations are recorded and usable under stress.
+  - The patch or seal improves the problem without creating a larger one.
+  - The learner can tell temporary repair from durable repair.
+  failure_modes:
+  - Not knowing the right shutoff until an emergency starts.
+  - Using the wrong sealant or patch for the material or moisture condition.
+  - Treating a temporary fix as a permanent solution.
+  safety_boundary: Temporary repairs buy time; stop and escalate when structural, electrical, gas, or concealed damage is possible.

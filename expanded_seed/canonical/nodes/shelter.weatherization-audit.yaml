@@ -1,0 +1,57 @@
+id: shelter.weatherization-audit
+type: project
+title: Run a Basic Weatherization Audit
+summary: Inspect drafts, heat loss, leakage, and weatherization priorities to rank practical improvements.
+plain_language: A weatherization audit tells you where comfort and energy losses are actually happening instead of where you guess they are.
+primary_domain: shelter
+domains:
+- shelter
+stage: household
+difficulty: 2
+estimated_hours: 3.0
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- cold_climate
+- hot_climate
+tags:
+- weatherization
+- audit
+- heat-loss
+- air-sealing
+- home-performance
+requires:
+- mode: all_of
+  ids:
+  - foundation.systems-mapping
+  - foundation.household-resilience-inventory
+  - shelter.building-envelope
+  n: null
+outputs:
+- weatherization audit
+- priority fix list
+- room-by-room notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Inspect the building or dwelling for obvious air leakage, weak spots, and easy improvements, then rank them by impact and effort.
+  deliverables:
+  - weatherization audit
+  - priority fix list
+  - room-by-room notes
+  - photo log
+  acceptance_criteria:
+  - The audit identifies where drafts, weak insulation, or leakage are likely.
+  - The output ranks fixes by impact, cost, and reversibility.
+  - The list clearly distinguishes owner-level from renter-friendly actions.
+  time_box_hours: 3.0
+  budget_band: low
+  team_size: 1

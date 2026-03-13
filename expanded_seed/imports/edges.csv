@@ -1,0 +1,78 @@
+edge_id,source_id,edge_type,target_id,condition_group_id,sequence,note
+edge-001,foundation.ai-grounded-research,REQUIRES,foundation.verify-and-cite,reqg-001,1,all_of requirement for foundation.ai-grounded-research
+edge-002,foundation.household-resilience-inventory,REQUIRES,foundation.measurement-and-units,reqg-002,1,all_of requirement for foundation.household-resilience-inventory
+edge-003,foundation.household-resilience-inventory,REQUIRES,foundation.systems-mapping,reqg-002,2,all_of requirement for foundation.household-resilience-inventory
+edge-004,foundation.household-resilience-inventory,REQUIRES,foundation.ai-grounded-research,reqg-002,3,all_of requirement for foundation.household-resilience-inventory
+edge-005,water.safe-storage,REQUIRES,foundation.measurement-and-units,reqg-003,1,all_of requirement for water.safe-storage
+edge-006,water.treatment-selection,REQUIRES,foundation.verify-and-cite,reqg-004,1,all_of requirement for water.treatment-selection
+edge-007,water.treatment-selection,REQUIRES,foundation.ai-grounded-research,reqg-004,2,all_of requirement for water.treatment-selection
+edge-008,water.basic-testing,REQUIRES,foundation.verify-and-cite,reqg-005,1,all_of requirement for water.basic-testing
+edge-009,water.basic-testing,REQUIRES,water.treatment-selection,reqg-005,2,all_of requirement for water.basic-testing
+edge-010,water.household-water-plan,REQUIRES,foundation.household-resilience-inventory,reqg-006,1,all_of requirement for water.household-water-plan
+edge-011,water.household-water-plan,REQUIRES,water.safe-storage,reqg-006,2,all_of requirement for water.household-water-plan
+edge-012,water.household-water-plan,REQUIRES,water.treatment-selection,reqg-006,3,all_of requirement for water.household-water-plan
+edge-013,water.household-water-plan,REQUIRES,water.basic-testing,reqg-006,4,all_of requirement for water.household-water-plan
+edge-014,food.pantry-design,REQUIRES,foundation.measurement-and-units,reqg-007,1,all_of requirement for food.pantry-design
+edge-015,food.pantry-design,REQUIRES,foundation.household-resilience-inventory,reqg-007,2,all_of requirement for food.pantry-design
+edge-016,food.pantry-rotation,REQUIRES,food.pantry-design,reqg-008,1,all_of requirement for food.pantry-rotation
+edge-017,food.safe-preservation-basics,REQUIRES,foundation.verify-and-cite,reqg-009,1,all_of requirement for food.safe-preservation-basics
+edge-018,food.safe-preservation-basics,REQUIRES,foundation.ai-grounded-research,reqg-009,2,all_of requirement for food.safe-preservation-basics
+edge-019,food.safe-preservation-basics,REQUIRES,food.pantry-design,reqg-009,3,all_of requirement for food.safe-preservation-basics
+edge-020,food.seed-starting,REQUIRES,foundation.measurement-and-units,reqg-010,1,all_of requirement for food.seed-starting
+edge-021,food.beginner-garden-system,REQUIRES,foundation.systems-mapping,reqg-011,1,all_of requirement for food.beginner-garden-system
+edge-022,food.beginner-garden-system,REQUIRES,food.seed-starting,reqg-011,2,all_of requirement for food.beginner-garden-system
+edge-023,shelter.building-envelope,REQUIRES,foundation.measurement-and-units,reqg-012,1,all_of requirement for shelter.building-envelope
+edge-024,shelter.weatherization-audit,REQUIRES,foundation.systems-mapping,reqg-013,1,all_of requirement for shelter.weatherization-audit
+edge-025,shelter.weatherization-audit,REQUIRES,foundation.household-resilience-inventory,reqg-013,2,all_of requirement for shelter.weatherization-audit
+edge-026,shelter.weatherization-audit,REQUIRES,shelter.building-envelope,reqg-013,3,all_of requirement for shelter.weatherization-audit
+edge-027,shelter.moisture-and-mold-control,REQUIRES,foundation.verify-and-cite,reqg-014,1,all_of requirement for shelter.moisture-and-mold-control
+edge-028,shelter.moisture-and-mold-control,REQUIRES,shelter.building-envelope,reqg-014,2,all_of requirement for shelter.moisture-and-mold-control
+edge-029,repair.hand-tool-literacy,REQUIRES,foundation.measurement-and-units,reqg-015,1,all_of requirement for repair.hand-tool-literacy
+edge-030,repair.shutoffs-seals-and-patches,REQUIRES,shelter.moisture-and-mold-control,reqg-016,1,all_of requirement for repair.shutoffs-seals-and-patches
+edge-031,repair.shutoffs-seals-and-patches,REQUIRES,repair.hand-tool-literacy,reqg-016,2,all_of requirement for repair.shutoffs-seals-and-patches
+edge-032,power.circuit-basics,REQUIRES,foundation.measurement-and-units,reqg-017,1,all_of requirement for power.circuit-basics
+edge-033,power.load-audit,REQUIRES,foundation.systems-mapping,reqg-018,1,all_of requirement for power.load-audit
+edge-034,power.load-audit,REQUIRES,foundation.household-resilience-inventory,reqg-018,2,all_of requirement for power.load-audit
+edge-035,power.load-audit,REQUIRES,power.circuit-basics,reqg-018,3,all_of requirement for power.load-audit
+edge-036,power.runtime-calculation,REQUIRES,foundation.measurement-and-units,reqg-019,1,all_of requirement for power.runtime-calculation
+edge-037,power.runtime-calculation,REQUIRES,power.circuit-basics,reqg-019,2,all_of requirement for power.runtime-calculation
+edge-038,power.runtime-calculation,REQUIRES,power.load-audit,reqg-019,3,all_of requirement for power.runtime-calculation
+edge-039,power.backup-power-plan,REQUIRES,foundation.ai-grounded-research,reqg-020,1,all_of requirement for power.backup-power-plan
+edge-040,power.backup-power-plan,REQUIRES,power.load-audit,reqg-020,2,all_of requirement for power.backup-power-plan
+edge-041,power.backup-power-plan,REQUIRES,power.runtime-calculation,reqg-020,3,all_of requirement for power.backup-power-plan
+edge-042,community.local-resource-map,REQUIRES,foundation.systems-mapping,reqg-021,1,all_of requirement for community.local-resource-map
+edge-043,community.local-resource-map,REQUIRES,foundation.household-resilience-inventory,reqg-021,2,all_of requirement for community.local-resource-map
+edge-044,community.teach-forward-session,REQUIRES,foundation.verify-and-cite,reqg-022,1,all_of requirement for community.teach-forward-session
+edge-045,community.teach-forward-session,REQUIRES,water.household-water-plan,reqg-023,1,n_of requirement for community.teach-forward-session
+edge-046,community.teach-forward-session,REQUIRES,food.pantry-design,reqg-023,2,n_of requirement for community.teach-forward-session
+edge-047,community.teach-forward-session,REQUIRES,food.beginner-garden-system,reqg-023,3,n_of requirement for community.teach-forward-session
+edge-048,community.teach-forward-session,REQUIRES,shelter.weatherization-audit,reqg-023,4,n_of requirement for community.teach-forward-session
+edge-049,community.teach-forward-session,REQUIRES,power.backup-power-plan,reqg-023,5,n_of requirement for community.teach-forward-session
+edge-050,community.teach-forward-session,REQUIRES,community.local-resource-map,reqg-023,6,n_of requirement for community.teach-forward-session
+edge-051,foundation.verify-and-cite,NEXT,foundation.ai-grounded-research,,,Grounded AI use follows source and evidence checking.
+edge-052,foundation.measurement-and-units,NEXT,foundation.systems-mapping,,,Measurement improves the quality of system maps.
+edge-053,foundation.systems-mapping,NEXT,foundation.household-resilience-inventory,,,System maps feed the inventory packet.
+edge-054,foundation.ai-grounded-research,NEXT,foundation.household-resilience-inventory,,,Research localizes the inventory and gap list.
+edge-055,foundation.household-resilience-inventory,NEXT,water.household-water-plan,,,Water planning starts from household needs and constraints.
+edge-056,foundation.household-resilience-inventory,NEXT,food.pantry-design,,,Pantry design starts from household baseline needs.
+edge-057,foundation.household-resilience-inventory,NEXT,shelter.weatherization-audit,,,Audit priorities depend on the baseline household picture.
+edge-058,foundation.household-resilience-inventory,NEXT,power.load-audit,,,Critical loads depend on household needs and tools.
+edge-059,foundation.household-resilience-inventory,NEXT,community.local-resource-map,,,Local mapping is stronger when household gaps are known.
+edge-060,water.safe-storage,NEXT,water.treatment-selection,,,Storage and treatment should be planned together.
+edge-061,water.treatment-selection,NEXT,water.basic-testing,,,Testing validates treatment assumptions.
+edge-062,water.basic-testing,NEXT,water.household-water-plan,,,"Water planning uses the storage, treatment, and test workflow."
+edge-063,food.pantry-design,NEXT,food.pantry-rotation,,,Rotation follows pantry structure.
+edge-064,food.pantry-design,NEXT,food.safe-preservation-basics,,,Preservation choices should fit the pantry system.
+edge-065,food.seed-starting,NEXT,food.beginner-garden-system,,,Seed work flows into full garden planning.
+edge-066,shelter.building-envelope,NEXT,shelter.weatherization-audit,,,Envelope concepts guide the audit.
+edge-067,shelter.building-envelope,NEXT,shelter.moisture-and-mold-control,,,Moisture problems are easier to classify with envelope knowledge.
+edge-068,repair.hand-tool-literacy,NEXT,repair.shutoffs-seals-and-patches,,,Tool literacy enables basic interventions.
+edge-069,power.circuit-basics,NEXT,power.load-audit,,,Load audits depend on basic circuit literacy.
+edge-070,power.load-audit,NEXT,power.runtime-calculation,,,Runtime calculations use the audited loads.
+edge-071,power.runtime-calculation,NEXT,power.backup-power-plan,,,Backup plans depend on realistic runtime assumptions.
+edge-072,water.household-water-plan,NEXT,community.teach-forward-session,,,Water planning is a strong teach-forward topic.
+edge-073,food.pantry-design,NEXT,community.teach-forward-session,,,Pantry design is a strong teach-forward topic.
+edge-074,food.beginner-garden-system,NEXT,community.teach-forward-session,,,Garden planning is a strong teach-forward topic.
+edge-075,shelter.weatherization-audit,NEXT,community.teach-forward-session,,,Weatherization audit findings can be taught forward.
+edge-076,power.backup-power-plan,NEXT,community.teach-forward-session,,,Backup planning can be taught forward.
+edge-077,community.local-resource-map,NEXT,community.teach-forward-session,,,Local maps become more useful when explained to others.

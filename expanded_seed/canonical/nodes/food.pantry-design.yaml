@@ -1,0 +1,55 @@
+id: food.pantry-design
+type: project
+title: Design a Functional Household Pantry
+summary: Design a pantry around calories, diet, shelf life, cooking needs, budget, and storage conditions.
+plain_language: A pantry works when it matches what people actually eat, how they cook, and how long they may need it.
+primary_domain: food
+domains:
+- food
+stage: household
+difficulty: 2
+estimated_hours: 3.0
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- pantry
+- storage
+- nutrition
+- budgeting
+- household
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  - foundation.household-resilience-inventory
+  n: null
+outputs:
+- pantry map
+- shopping gap list
+- category labels
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Create a pantry layout and stocking plan that matches the household's real diet, budget, storage space, and disruption window.
+  deliverables:
+  - pantry map
+  - category labels
+  - shopping gap list
+  - minimum-duration stock target
+  acceptance_criteria:
+  - The design covers staple foods, proteins, fats, seasonings, and special dietary needs where applicable.
+  - Storage conditions and package sizes fit the dwelling and cooking setup.
+  - The output distinguishes minimum stock from aspirational stock.
+  time_box_hours: 3.0
+  budget_band: low
+  team_size: 1

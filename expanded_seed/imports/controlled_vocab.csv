@@ -1,0 +1,41 @@
+vocab_type,key,label,description
+domain,foundation,Foundation,Cross-cutting literacies that support every other capability.
+domain,water,Water,"Storage, treatment, testing, and planning for safe water access."
+domain,food,Food,"Pantry design, preservation boundaries, seed starting, and garden planning."
+domain,shelter,Shelter,"Building envelope, weatherization, and moisture management."
+domain,repair,Repair,"Basic tools, shutoffs, sealing, patching, and first-response maintenance."
+domain,power,Power,"Electrical literacy, load auditing, runtime estimation, and backup planning."
+domain,community,Community,"Local resource mapping, teach-forward transfer, and coordination."
+type,concept,Concept,"Explains a principle, model, or mental framework."
+type,skill,Skill,Observable action a learner can perform.
+type,project,Project,Applied task that creates a useful artifact or plan.
+stage,foundation,Foundation,Cross-cutting basics and entry-level literacies.
+stage,household,Household,Capabilities that directly stabilize a household.
+stage,productive,Productive,Capabilities that create ongoing output or self-provisioning.
+stage,community,Community,Capabilities that coordinate and share at the local level.
+stage,advanced,Advanced,Higher-complexity design or system stewardship work.
+cost_band,free,Free,Requires little or no direct spending.
+cost_band,low,Low,Can usually be started with modest household-level spending.
+cost_band,medium,Medium,Typically requires moderate spending or specialized supplies.
+cost_band,high,High,Likely requires significant spending or capital equipment.
+risk_band,low,Low,Low immediate hazard when done within normal bounds.
+risk_band,moderate,Moderate,"Requires more careful interpretation, handling, or escalation boundaries."
+risk_band,high,High,Higher-stakes or specialized work with narrower safety margins.
+lifecycle_state,draft,Draft,"Initial working version, not yet reviewed."
+lifecycle_state,reviewed,Reviewed,Reviewed for coherence or subject-matter quality.
+lifecycle_state,verified,Verified,Verified through review and/or field testing.
+lifecycle_state,deprecated,Deprecated,Retained for record only; superseded or no longer recommended.
+evidence_level,compiled,Compiled,Structured from existing knowledge but not yet formally reviewed.
+evidence_level,reviewed,Reviewed,Reviewed by a subject-matter steward.
+evidence_level,field_tested,Field Tested,Used in practice and documented.
+evidence_level,replicated,Replicated,Repeated successfully across multiple contexts.
+context,general,General,Applies broadly without a narrow context assumption.
+context,renter,Renter,Adapted for renters or limited-permission occupants.
+context,homeowner,Homeowner,Adapted for owner-controlled dwellings.
+context,urban,Urban,Adapted for dense or city contexts.
+context,rural,Rural,Adapted for rural contexts.
+context,low_budget,Low Budget,Prioritizes low-cost or resource-constrained options.
+context,off_grid,Off Grid,Relevant where utilities are limited or absent.
+context,apartment,Apartment,Adapted for apartments or small indoor spaces.
+context,cold_climate,Cold Climate,Relevant to colder climates or heating-dominant seasons.
+context,hot_climate,Hot Climate,Relevant to hotter climates or cooling-dominant seasons.

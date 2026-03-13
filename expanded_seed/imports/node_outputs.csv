@@ -1,0 +1,58 @@
+node_id,output_name,output_order
+foundation.verify-and-cite,claim-check worksheet,1
+foundation.verify-and-cite,source comparison note,2
+foundation.measurement-and-units,units cheat sheet,1
+foundation.measurement-and-units,conversion table,2
+foundation.systems-mapping,household systems map,1
+foundation.systems-mapping,dependency list,2
+foundation.ai-grounded-research,prompt pack,1
+foundation.ai-grounded-research,source comparison brief,2
+foundation.household-resilience-inventory,household inventory sheet,1
+foundation.household-resilience-inventory,priority gap list,2
+water.safe-storage,storage table,1
+water.safe-storage,container label set,2
+water.treatment-selection,treatment decision matrix,1
+water.basic-testing,water test log,1
+water.household-water-plan,household water plan,1
+water.household-water-plan,water source and storage map,2
+water.household-water-plan,retest schedule,3
+food.pantry-design,pantry map,1
+food.pantry-design,shopping gap list,2
+food.pantry-design,category labels,3
+food.pantry-rotation,rotation sheet,1
+food.pantry-rotation,reorder cadence,2
+food.safe-preservation-basics,preservation safety card,1
+food.seed-starting,seed-start log,1
+food.seed-starting,germination setup,2
+food.beginner-garden-system,garden layout,1
+food.beginner-garden-system,crop plan,2
+food.beginner-garden-system,care calendar,3
+shelter.building-envelope,building-envelope diagram,1
+shelter.building-envelope,heat-loss note,2
+shelter.weatherization-audit,weatherization audit,1
+shelter.weatherization-audit,priority fix list,2
+shelter.weatherization-audit,room-by-room notes,3
+shelter.moisture-and-mold-control,moisture checklist,1
+shelter.moisture-and-mold-control,source map,2
+shelter.moisture-and-mold-control,response plan,3
+repair.hand-tool-literacy,tool competency checklist,1
+repair.hand-tool-literacy,starter tool list,2
+repair.shutoffs-seals-and-patches,shutoff map,1
+repair.shutoffs-seals-and-patches,patch kit list,2
+repair.shutoffs-seals-and-patches,temporary repair notes,3
+power.circuit-basics,power formula card,1
+power.circuit-basics,device label notes,2
+power.load-audit,load sheet,1
+power.load-audit,critical load tiers,2
+power.load-audit,device inventory,3
+power.runtime-calculation,runtime table,1
+power.runtime-calculation,assumption notes,2
+power.backup-power-plan,backup power plan,1
+power.backup-power-plan,budget-tier comparison,2
+power.backup-power-plan,decision log,3
+community.local-resource-map,local resource map,1
+community.local-resource-map,contact and capability list,2
+community.local-resource-map,sharing protocol notes,3
+community.teach-forward-session,lesson plan,1
+community.teach-forward-session,one-page handout,2
+community.teach-forward-session,micro-session notes,3

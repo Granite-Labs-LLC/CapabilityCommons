@@ -1,0 +1,55 @@
+id: food.beginner-garden-system
+type: project
+title: Plan a Beginner Garden System
+summary: Plan a small bed or container garden for reliable output, maintenance, and learning rather than maximal complexity.
+plain_language: A small garden that fits your time and space teaches more than a sprawling one you cannot maintain.
+primary_domain: food
+domains:
+- food
+stage: productive
+difficulty: 2
+estimated_hours: 4.0
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- gardening
+- layout
+- crop-planning
+- containers
+- beds
+requires:
+- mode: all_of
+  ids:
+  - foundation.systems-mapping
+  - food.seed-starting
+  n: null
+outputs:
+- garden layout
+- crop plan
+- care calendar
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Design a manageable growing system that matches the site, season, water access, labor, and learning goals.
+  deliverables:
+  - garden layout
+  - crop plan
+  - care calendar
+  - material list
+  acceptance_criteria:
+  - The plan fits the actual sunlight, water access, and available time.
+  - The crop mix includes at least one reliable and one learning-oriented crop.
+  - The layout and calendar are usable without further interpretation.
+  time_box_hours: 4.0
+  budget_band: low
+  team_size: 1

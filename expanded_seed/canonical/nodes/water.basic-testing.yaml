@@ -1,0 +1,68 @@
+id: water.basic-testing
+type: skill
+title: Run Basic Household Water Checks and Tests
+summary: Inspect and test source or treated water at a household level and record the results in a simple log.
+plain_language: A small amount of testing catches many obvious failures before they become a household problem.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 2.0
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- water
+- testing
+- logging
+- quality-control
+- observation
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  - water.treatment-selection
+  n: null
+outputs:
+- water test log
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Perform a basic set of observable and kit-based checks, document what they mean, and decide whether to store, retreat, or reject the water.
+  inputs:
+  - water sample
+  - test method or kit
+  - decision thresholds
+  - log sheet
+  tools:
+  - test kit or strips
+  - clean sample container
+  - timer
+  - pen
+  materials:
+  - log sheet
+  steps_summary:
+  - Inspect the sample for clarity, odor, container condition, and labeling.
+  - Run the selected household-level test according to its instructions.
+  - Record date, source, test type, result, and interpretation.
+  - Compare against the chosen threshold or action rule.
+  - Decide whether to store, retreat, re-test, or reject.
+  success_criteria:
+  - The log captures the source, date, method, and decision.
+  - The learner can explain the limit of the chosen test.
+  - The final action is consistent with the result and context.
+  failure_modes:
+  - Using expired or misread test materials.
+  - Drawing conclusions beyond what the kit can show.
+  - Failing to document the sample source and date.
+  safety_boundary: Household tests are screening tools; if the consequences of error are high, use certified testing and local public-health guidance.

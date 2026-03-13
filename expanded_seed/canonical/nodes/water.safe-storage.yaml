@@ -1,0 +1,69 @@
+id: water.safe-storage
+type: skill
+title: Store Potable Water Safely
+summary: Store potable water in usable quantities, containers, and intervals so it stays available and identifiable.
+plain_language: Clean water only helps if you can store enough of it, find it fast, and trust the container.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 1
+estimated_hours: 1.5
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- water
+- storage
+- sanitation
+- preparedness
+- containers
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  n: null
+outputs:
+- storage table
+- container label set
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Calculate water quantities for a time window, choose appropriate containers, and label and rotate stored water correctly.
+  inputs:
+  - household size
+  - storage duration
+  - container options
+  - space constraints
+  tools:
+  - marker
+  - measuring container
+  - storage worksheet
+  materials:
+  - food-safe containers
+  - labels
+  - cleaning supplies
+  steps_summary:
+  - Estimate minimum and preferred daily water quantities per person and use case.
+  - Match the total volume to actual containers and storage locations.
+  - Label date, source, intended use, and rotation interval.
+  - Separate drinking water from utility water if using both.
+  - Record the plan in a storage table.
+  success_criteria:
+  - The plan covers at least one minimum-duration target.
+  - Containers are identified, dated, and assigned to uses.
+  - Storage locations are realistic for the dwelling.
+  failure_modes:
+  - Using unknown or contaminated containers.
+  - Storing too little water for heat, pets, or sanitation needs.
+  - Failing to label and rotate containers.
+  safety_boundary: Use only appropriate containers and local health guidance; storage does not replace proper treatment when source quality is uncertain.

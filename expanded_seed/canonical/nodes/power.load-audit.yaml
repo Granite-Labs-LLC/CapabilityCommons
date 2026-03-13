@@ -1,0 +1,56 @@
+id: power.load-audit
+type: project
+title: Run a Critical Loads Audit
+summary: Inventory critical devices and outage priorities so backup plans are sized for reality rather than guesswork.
+plain_language: You do not need to power everything; you need to know what truly matters and what it costs to keep it running.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 3.0
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- power
+- load-audit
+- outages
+- priority-setting
+- inventory
+requires:
+- mode: all_of
+  ids:
+  - foundation.systems-mapping
+  - foundation.household-resilience-inventory
+  - power.circuit-basics
+  n: null
+outputs:
+- load sheet
+- critical load tiers
+- device inventory
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Create a ranked list of critical loads, their power draw, duty cycle, and outage priority over different durations.
+  deliverables:
+  - load sheet
+  - critical load tiers
+  - device inventory
+  - usage assumptions
+  acceptance_criteria:
+  - The audit separates essential, important, and optional loads.
+  - Each listed load includes at least a reasonable wattage estimate and use pattern.
+  - The output is specific enough to size backup options.
+  time_box_hours: 3.0
+  budget_band: low
+  team_size: 1

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "requires.schema.json",
+  "title": "Capability Commons Requirement Group",
+  "type": "object",
+  "required": [
+    "mode",
+    "ids",
+    "n"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "all_of",
+        "any_of",
+        "n_of"
+      ]
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "n": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "n_of"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "n": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "all_of",
+              "any_of"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "n": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,69 @@
+id: power.runtime-calculation
+type: skill
+title: Estimate Runtime from Stored or Generated Power
+summary: Calculate runtime from batteries, generators, or power stations using load, efficiency, and duty-cycle assumptions.
+plain_language: Runtime is where wishful thinking meets arithmetic.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 1.5
+cost_band: free
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- runtime
+- calculation
+- batteries
+- generators
+- loads
+requires:
+- mode: all_of
+  ids:
+  - foundation.measurement-and-units
+  - power.circuit-basics
+  - power.load-audit
+  n: null
+outputs:
+- runtime table
+- assumption notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Estimate how long a power source can support one or more loads and document the assumptions that change the answer most.
+  inputs:
+  - usable energy estimate
+  - load sheet
+  - efficiency assumptions
+  - duty cycle
+  tools:
+  - calculator
+  - worksheet or spreadsheet
+  materials:
+  - load sheet
+  - runtime template
+  steps_summary:
+  - Identify usable energy and convert it into a common unit.
+  - Select one or more loads and estimate whether they run continuously or intermittently.
+  - Account for conversion losses or practical margins.
+  - Calculate runtime for essential scenarios.
+  - Record the assumptions that most affect the result.
+  success_criteria:
+  - The result uses consistent units throughout.
+  - The learner can explain how duty cycle and losses change the answer.
+  - The runtime table is readable by another household member.
+  failure_modes:
+  - Mixing watts and watt-hours.
+  - Ignoring surge, duty cycle, or efficiency losses.
+  - Assuming rated capacity is fully usable in all conditions.
+  safety_boundary: This is a planning calculation, not a substitute for manufacturer limits, electrical code, or safe generator and battery practices.

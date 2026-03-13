@@ -1,0 +1,62 @@
+id: community.teach-forward-session
+type: project
+title: Deliver a Teach-Forward Session
+summary: Teach one completed capability to others in a 10–20 minute session using a durable artifact and clear language.
+plain_language: Knowledge spreads when someone can pass it on simply, not when they merely possess it privately.
+primary_domain: community
+domains:
+- community
+stage: community
+difficulty: 2
+estimated_hours: 2.5
+cost_band: free
+risk_band: low
+contexts:
+- general
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- teaching
+- knowledge-transfer
+- community
+- facilitation
+- documentation
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  n: null
+- mode: n_of
+  ids:
+  - water.household-water-plan
+  - food.pantry-design
+  - food.beginner-garden-system
+  - shelter.weatherization-audit
+  - power.backup-power-plan
+  - community.local-resource-map
+  n: 2
+outputs:
+- lesson plan
+- one-page handout
+- micro-session notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  goal: Prepare and deliver a short lesson that transfers one usable capability and leaves behind a handout, checklist, or map that others can reuse.
+  deliverables:
+  - lesson plan
+  - one-page handout
+  - micro-session notes
+  - participant feedback notes
+  acceptance_criteria:
+  - The lesson has a clear promise, steps, and artifact.
+  - A general audience can follow the language without insider jargon.
+  - At least one participant could use the handout without the instructor present.
+  time_box_hours: 2.5
+  budget_band: free
+  team_size: 1

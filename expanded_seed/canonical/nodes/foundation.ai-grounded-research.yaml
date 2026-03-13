@@ -1,0 +1,68 @@
+id: foundation.ai-grounded-research
+type: skill
+title: Use AI for Grounded Research and Synthesis
+summary: Use AI to summarize, compare, localize, and draft while keeping claims tied to checkable sources and local constraints.
+plain_language: Use AI like a fast research assistant and translator, not like a prophet.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 2.0
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- ai-literacy
+- research
+- summarization
+- comparison
+- localization
+requires:
+- mode: all_of
+  ids:
+  - foundation.verify-and-cite
+  n: null
+outputs:
+- prompt pack
+- source comparison brief
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-13'
+payload:
+  performance_statement: Use AI to speed up explanation and comparison while preserving a verifiable chain back to sources, dates, and local constraints.
+  inputs:
+  - question or task
+  - source material
+  - local context such as budget or climate
+  tools:
+  - AI assistant
+  - browser
+  - note template
+  materials:
+  - prompt pack
+  - claim-check worksheet
+  steps_summary:
+  - Frame the task in plain language and define the decision to be made.
+  - Ask AI to summarize and compare sources with explicit citations or references.
+  - Cross-check the high-risk or time-sensitive claims against primary or recent sources.
+  - Ask AI to localize the plan by budget, region, housing type, or available tools.
+  - Save the final decision note with sources and caveats.
+  success_criteria:
+  - The output names which claims were source-checked.
+  - The learner can explain where AI helped and where human verification took over.
+  - The final note is adapted to a real local scenario.
+  failure_modes:
+  - Accepting confident wording as evidence.
+  - Prompting for conclusions without defining constraints.
+  - Forgetting to verify recency, law, code, or safety boundaries.
+  safety_boundary: AI outputs are draft material; do not use them as sole authority for code, medicine, legal matters, or high-risk technical action.
