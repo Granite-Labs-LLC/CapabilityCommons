@@ -2,11 +2,11 @@ from __future__ import annotations
 
 import uuid
 
-from sqlalchemy import or_, select
+from sqlalchemy import and_, delete, or_, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from capability_commons.db.models import Entity, EntityAlias
-from capability_commons.domain.enums import EntityStatus, EntityType
+from capability_commons.db.models import ContextObjectEntity, Edge, Entity, EntityAlias
+from capability_commons.domain.enums import EntityStatus, EntityType, NodeKind
 from capability_commons.services.exceptions import ConflictError, NotFoundError
 from capability_commons.services.helpers import add_outbox_event, get_entity, get_workspace
 
@@ -94,13 +94,56 @@ class EntityService:
             raise ConflictError("Source and target entity must differ")
         source = await get_entity(self.session, source_entity_id)
         target = await get_entity(self.session, target_entity_id)
-        # Explicit TODO: remap all downstream relations in a dedicated migration-safe transaction.
+
+        # 1. Remap EntityAlias rows from source to target
+        await self.session.execute(
+            update(EntityAlias)
+            .where(EntityAlias.entity_id == source.id)
+            .values(entity_id=target.id)
+        )
+
+        # 2. Delete duplicate ContextObjectEntity rows (where both source and target
+        #    link to the same version), then remap remaining rows.
+        duplicate_versions = (
+            select(ContextObjectEntity.context_object_version_id)
+            .where(ContextObjectEntity.entity_id == target.id)
+        ).scalar_subquery()
+
+        await self.session.execute(
+            delete(ContextObjectEntity).where(
+                and_(
+                    ContextObjectEntity.entity_id == source.id,
+                    ContextObjectEntity.context_object_version_id.in_(duplicate_versions),
+                )
+            )
+        )
+        await self.session.execute(
+            update(ContextObjectEntity)
+            .where(ContextObjectEntity.entity_id == source.id)
+            .values(entity_id=target.id)
+        )
+
+        # 3. Remap Edge rows where source entity appears as src or dst
+        await self.session.execute(
+            update(Edge)
+            .where(and_(Edge.src_id == source.id, Edge.src_node_kind == NodeKind.ENTITY))
+            .values(src_id=target.id)
+        )
+        await self.session.execute(
+            update(Edge)
+            .where(and_(Edge.dst_id == source.id, Edge.dst_node_kind == NodeKind.ENTITY))
+            .values(dst_id=target.id)
+        )
+
+        # 4. Mark source as MERGED
         source.status = EntityStatus.MERGED
+
+        # 5. Emit entity.merged outbox event
         await add_outbox_event(
             self.session,
             aggregate_type="entity",
             aggregate_id=target.id,
-            event_type="entity.merge_requested",
+            event_type="entity.merged",
             payload={"source_entity_id": str(source.id), "target_entity_id": str(target.id)},
         )
         await self.session.commit()
