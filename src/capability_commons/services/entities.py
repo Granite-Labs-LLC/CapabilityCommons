@@ -95,7 +95,25 @@ class EntityService:
         source = await get_entity(self.session, source_entity_id)
         target = await get_entity(self.session, target_entity_id)
 
+        if source.status == EntityStatus.MERGED:
+            raise ConflictError(f"Source entity {source_entity_id} is already merged")
+        if target.status == EntityStatus.MERGED:
+            raise ConflictError(f"Target entity {target_entity_id} has already been merged away")
+
         # 1. Remap EntityAlias rows from source to target
+        # Delete source aliases that already exist on target
+        duplicate_aliases = (
+            select(EntityAlias.alias)
+            .where(EntityAlias.entity_id == target.id)
+        ).scalar_subquery()
+        await self.session.execute(
+            delete(EntityAlias).where(
+                and_(
+                    EntityAlias.entity_id == source.id,
+                    EntityAlias.alias.in_(duplicate_aliases),
+                )
+            )
+        )
         await self.session.execute(
             update(EntityAlias)
             .where(EntityAlias.entity_id == source.id)
@@ -133,6 +151,16 @@ class EntityService:
             update(Edge)
             .where(and_(Edge.dst_id == source.id, Edge.dst_node_kind == NodeKind.ENTITY))
             .values(dst_id=target.id)
+        )
+
+        # Delete self-loop edges created by the merge
+        await self.session.execute(
+            delete(Edge).where(
+                Edge.src_id == target.id,
+                Edge.dst_id == target.id,
+                Edge.src_node_kind == NodeKind.ENTITY,
+                Edge.dst_node_kind == NodeKind.ENTITY,
+            )
         )
 
         # 4. Mark source as MERGED

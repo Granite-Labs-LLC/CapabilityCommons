@@ -52,8 +52,8 @@ async def test_merge_entities_remaps_relations(source_id: uuid.UUID, target_id: 
         svc = EntityService(session)
         result = await svc.merge_entities(source_id, target_id)
 
-    # 5 execute calls: alias update, COE delete duplicates, COE remap, edge src, edge dst
-    assert session.execute.await_count == 5
+    # 7 execute calls: delete dup aliases, alias remap, COE delete duplicates, COE remap, edge src, edge dst, delete self-loops
+    assert session.execute.await_count == 7
 
     # Source marked as MERGED
     assert source.status == EntityStatus.MERGED
@@ -65,6 +65,24 @@ async def test_merge_entities_remaps_relations(source_id: uuid.UUID, target_id: 
 
     # Returns target
     assert result is target
+
+
+@pytest.mark.asyncio
+async def test_merge_already_merged_source_raises(source_id: uuid.UUID, target_id: uuid.UUID) -> None:
+    source = _make_entity(source_id, status=EntityStatus.MERGED)
+    target = _make_entity(target_id, status=EntityStatus.ACTIVE)
+
+    session = AsyncMock()
+
+    from capability_commons.services.exceptions import ConflictError
+
+    with patch(
+        "capability_commons.services.entities.get_entity",
+        side_effect=lambda _s, eid: source if eid == source_id else target,
+    ):
+        svc = EntityService(session)
+        with pytest.raises(ConflictError, match="already merged"):
+            await svc.merge_entities(source_id, target_id)
 
 
 @pytest.mark.asyncio
