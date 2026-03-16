@@ -26,6 +26,18 @@ class Settings(BaseSettings):
     public_preview: bool = False
     cors_origins: list[str] = Field(default_factory=lambda: ["*"])
 
+    # Auth
+    auth_enabled: bool = True
+    rate_limit_per_minute: int = 100
+
+    # Embeddings
+    openai_api_key: str = ""
+    embedding_model: str = "text-embedding-3-small"
+    embedding_batch_size: int = 50
+
+    # Worker
+    outbox_poll_interval_seconds: float = 2.0
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
