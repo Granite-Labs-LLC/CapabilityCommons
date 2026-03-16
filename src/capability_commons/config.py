@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     # Auth
     auth_enabled: bool = True
     rate_limit_per_minute: int = 100
+    rate_limit_public_per_minute: int = 300
 
     # Embeddings
     openai_api_key: str = ""

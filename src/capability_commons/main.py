@@ -4,8 +4,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from capability_commons.api.errors import register_error_handlers
+from capability_commons.api.rate_limit import RateLimitMiddleware
 from capability_commons.api.router import api_router
 from capability_commons.config import get_settings
+from capability_commons.db.session import SessionLocal
 
 settings = get_settings()
 app = FastAPI(title=settings.app_name)
@@ -17,4 +19,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 register_error_handlers(app)
+app.add_middleware(RateLimitMiddleware, session_factory=SessionLocal)
 app.include_router(api_router)
