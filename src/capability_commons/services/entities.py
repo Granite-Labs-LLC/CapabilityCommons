@@ -95,6 +95,9 @@ class EntityService:
         source = await get_entity(self.session, source_entity_id)
         target = await get_entity(self.session, target_entity_id)
 
+        if source.workspace_id != target.workspace_id:
+            raise ConflictError("Cannot merge entities from different workspaces")
+
         if source.status == EntityStatus.MERGED:
             raise ConflictError(f"Source entity {source_entity_id} is already merged")
         if target.status == EntityStatus.MERGED:
@@ -141,7 +144,40 @@ class EntityService:
             .values(entity_id=target.id)
         )
 
-        # 3. Remap Edge rows where source entity appears as src or dst
+        # 3. Deduplicate + remap Edge rows where source entity appears as src or dst.
+        # Delete source-as-src edges that would duplicate a target-as-src edge.
+        target_src_edges = (
+            select(Edge.dst_id, Edge.dst_node_kind, Edge.edge_type)
+            .where(and_(Edge.src_id == target.id, Edge.src_node_kind == NodeKind.ENTITY))
+        ).subquery()
+        await self.session.execute(
+            delete(Edge).where(
+                and_(
+                    Edge.src_id == source.id,
+                    Edge.src_node_kind == NodeKind.ENTITY,
+                    Edge.dst_id.in_(select(target_src_edges.c.dst_id)),
+                    Edge.dst_node_kind.in_(select(target_src_edges.c.dst_node_kind)),
+                    Edge.edge_type.in_(select(target_src_edges.c.edge_type)),
+                )
+            )
+        )
+        # Delete source-as-dst edges that would duplicate a target-as-dst edge.
+        target_dst_edges = (
+            select(Edge.src_id, Edge.src_node_kind, Edge.edge_type)
+            .where(and_(Edge.dst_id == target.id, Edge.dst_node_kind == NodeKind.ENTITY))
+        ).subquery()
+        await self.session.execute(
+            delete(Edge).where(
+                and_(
+                    Edge.dst_id == source.id,
+                    Edge.dst_node_kind == NodeKind.ENTITY,
+                    Edge.src_id.in_(select(target_dst_edges.c.src_id)),
+                    Edge.src_node_kind.in_(select(target_dst_edges.c.src_node_kind)),
+                    Edge.edge_type.in_(select(target_dst_edges.c.edge_type)),
+                )
+            )
+        )
+        # Remap remaining edges
         await self.session.execute(
             update(Edge)
             .where(and_(Edge.src_id == source.id, Edge.src_node_kind == NodeKind.ENTITY))
@@ -174,6 +210,7 @@ class EntityService:
             event_type="entity.merged",
             payload={"source_entity_id": str(source.id), "target_entity_id": str(target.id)},
         )
+        await self.session.flush()
         await self.session.commit()
         await self.session.refresh(target)
         return target
