@@ -9,6 +9,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.config import get_settings
 from capability_commons.db.models import Workspace
+from capability_commons.api.auth import resolve_api_key
 from capability_commons.db.session import get_session
 
 
@@ -38,7 +39,11 @@ async def get_current_workspace(
         ws_id = request.headers.get("x-workspace-id")
         if ws_id is None:
             raise HTTPException(status_code=401, detail="Missing X-Workspace-Id header (auth disabled)")
-        ws = await session.get(Workspace, uuid.UUID(ws_id))
+        try:
+            ws_uuid = uuid.UUID(ws_id)
+        except ValueError:
+            raise HTTPException(status_code=422, detail="Invalid workspace ID format")
+        ws = await session.get(Workspace, ws_uuid)
         if ws is None:
             raise HTTPException(status_code=404, detail="Workspace not found")
         return ws
@@ -47,8 +52,6 @@ async def get_current_workspace(
         raise HTTPException(status_code=401, detail="Missing or invalid Authorization header")
 
     raw_key = authorization[7:]  # Strip "Bearer "
-    from capability_commons.api.auth import resolve_api_key
-
     result = await resolve_api_key(session, raw_key)
     if result is None:
         raise HTTPException(status_code=401, detail="Invalid or revoked API key")
