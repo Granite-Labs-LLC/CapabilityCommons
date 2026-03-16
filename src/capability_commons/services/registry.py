@@ -375,6 +375,39 @@ class RegistryService:
         await self.session.refresh(version)
         return version
 
+    async def list_objects(
+        self,
+        workspace_id: uuid.UUID,
+        *,
+        cursor_id: uuid.UUID | None = None,
+        limit: int = 20,
+    ) -> tuple[list[ContextObject], int]:
+        count_stmt = select(func.count(ContextObject.id)).where(
+            ContextObject.workspace_id == workspace_id
+        )
+        total = (await self.session.execute(count_stmt)).scalar() or 0
+
+        stmt = (
+            select(ContextObject)
+            .where(ContextObject.workspace_id == workspace_id)
+            .order_by(ContextObject.created_at.desc(), ContextObject.id.desc())
+            .limit(limit + 1)
+        )
+        if cursor_id is not None:
+            cursor_obj = await self.session.get(ContextObject, cursor_id)
+            if cursor_obj is not None:
+                stmt = stmt.where(
+                    (ContextObject.created_at < cursor_obj.created_at)
+                    | (
+                        (ContextObject.created_at == cursor_obj.created_at)
+                        & (ContextObject.id < cursor_id)
+                    )
+                )
+
+        result = await self.session.execute(stmt)
+        objects = list(result.scalars().all())
+        return objects, total
+
     async def _assert_version_belongs(self, object_id: uuid.UUID, version_id: uuid.UUID) -> ContextObjectVersion:
         version = await get_version(self.session, version_id)
         if version.context_object_id != object_id:

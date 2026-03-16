@@ -19,6 +19,7 @@ from capability_commons.schemas.objects import (
     VersionListResponse,
     VersionResponse,
 )
+from capability_commons.schemas.pagination import PaginatedResponse, PaginationParams
 from capability_commons.services.registry import RegistryService
 
 router = APIRouter()
@@ -38,6 +39,28 @@ def _version_detail(version) -> VersionDetailResponse:
             for link in version.entities
         ],
         review_count=len(version.review_records),
+    )
+
+
+@router.get("/objects", response_model=PaginatedResponse[ObjectResponse])
+async def list_objects(
+    workspace_id: uuid.UUID,
+    session: DBSession,
+    cursor: str | None = None,
+    limit: int = 20,
+) -> PaginatedResponse[ObjectResponse]:
+    params = PaginationParams(cursor=cursor, limit=min(limit, 100))
+    service = RegistryService(session)
+    objects, total = await service.list_objects(
+        workspace_id, cursor_id=params.decode_cursor(), limit=params.limit,
+    )
+    items = objects[:params.limit]
+    has_more = len(objects) > params.limit
+    next_cursor = PaginatedResponse.encode_cursor(items[-1].id) if has_more and items else None
+    return PaginatedResponse(
+        items=[ObjectResponse.model_validate(obj, from_attributes=True) for obj in items],
+        next_cursor=next_cursor,
+        total_count=total,
     )
 
 
