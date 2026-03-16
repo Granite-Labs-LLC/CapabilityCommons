@@ -113,3 +113,67 @@ class PostgresSearchAdapter(SearchAdapter):
         for row in result.scalars().all():
             grouped[row.context_object_version_id][row.facet_type.value].append(row.facet_value)
         return {version_id: dict(facets) for version_id, facets in grouped.items()}
+
+    async def search_hybrid(
+        self,
+        *,
+        workspace_id,
+        query,
+        query_embedding: list[float] | None,
+        filters,
+        top_k,
+        object_types=None,
+        only_published=True,
+        fts_weight: float = 0.7,
+        vector_weight: float = 0.3,
+    ) -> list[SearchHit]:
+        """FTS + vector cosine similarity hybrid search."""
+        if query_embedding is None:
+            return await self.search(
+                workspace_id=workspace_id,
+                query=query,
+                filters=filters,
+                top_k=top_k,
+                object_types=object_types,
+                only_published=only_published,
+            )
+
+        # Get FTS hits (expanded pool)
+        fts_hits = await self.search(
+            workspace_id=workspace_id,
+            query=query,
+            filters=filters,
+            top_k=top_k * 3,
+            object_types=object_types,
+            only_published=only_published,
+        )
+
+        if not fts_hits:
+            return []
+
+        # Get vector scores for the FTS hit versions
+        version_ids = [h.version_id for h in fts_hits]
+        result = await self.session.execute(
+            select(
+                ContentSegment.context_object_version_id,
+                func.max(
+                    1 - ContentSegment.embedding.cosine_distance(query_embedding)
+                ).label("vector_score"),
+            )
+            .where(
+                ContentSegment.context_object_version_id.in_(version_ids),
+                ContentSegment.embedding.is_not(None),
+            )
+            .group_by(ContentSegment.context_object_version_id)
+        )
+        vector_scores = {row[0]: float(row[1]) for row in result.all()}
+
+        # Blend scores
+        max_fts = max(h.score for h in fts_hits) or 1.0
+        for hit in fts_hits:
+            norm_fts = hit.score / max_fts
+            vec_score = vector_scores.get(hit.version_id, 0.0)
+            hit.score = (fts_weight * norm_fts) + (vector_weight * vec_score)
+
+        fts_hits.sort(key=lambda h: h.score, reverse=True)
+        return fts_hits[:top_k]
