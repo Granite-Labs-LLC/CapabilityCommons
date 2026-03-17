@@ -49,6 +49,13 @@ class EmbeddingService:
         else:
             self.provider = provider
 
+    async def embed_query(self, text: str) -> list[float] | None:
+        """Embed a single query string. Returns None if no provider configured."""
+        if self.provider is None:
+            return None
+        results = await self.provider.embed([text])
+        return results[0]
+
     async def embed_version(self, version_id: uuid.UUID, batch_size: int = 50) -> int:
         if self.provider is None:
             return 0
