@@ -37,8 +37,16 @@ async def test_object_lifecycle(db_session, workspace):
         markdown_body="# Test\nBody content.",
         structured_data={
             "performance_statement": "Do the test thing",
+            "learning_objectives": ["Learn testing"],
+            "steps_summary": ["Step 1: Test"],
             "success_criteria": ["Passes"],
             "failure_modes": ["Fails"],
+            "safety_boundary": "None",
+            "teach_forward": {
+                "three_minute_script": "Explain testing.",
+                "ten_minute_outline": ["Intro", "Demo"],
+                "handout_points": ["Key point"],
+            },
         },
     )
     version = await service.create_version(obj.id, ver_req)
@@ -93,8 +101,16 @@ async def test_facet_attachment(db_session, workspace):
         title="Faceted v1", plain_language="Test.", markdown_body="Body.",
         structured_data={
             "performance_statement": "Do it",
+            "learning_objectives": ["Learn it"],
+            "steps_summary": ["Step 1"],
             "success_criteria": ["Done"],
             "failure_modes": ["Not done"],
+            "safety_boundary": "None",
+            "teach_forward": {
+                "three_minute_script": "Explain.",
+                "ten_minute_outline": ["Intro"],
+                "handout_points": ["Point"],
+            },
         },
     ))
 
