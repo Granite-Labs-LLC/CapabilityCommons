@@ -25,6 +25,21 @@ class PublicationService:
         self.evidence = EvidenceService(session)
         self.graph = RelationalGraphAdapter(session)
 
+    async def list_published_objects(self) -> list[PublicObjectResponse]:
+        result = await self.session.execute(
+            select(ContextObject)
+            .where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
+            .order_by(ContextObject.canonical_title.asc())
+        )
+        objects = result.scalars().all()
+        items = []
+        for obj in objects:
+            try:
+                items.append(await self.render_public_object(obj.slug))
+            except Exception:
+                continue
+        return items
+
     async def render_public_object(self, slug: str) -> PublicObjectResponse:
         obj = await self._get_published_object(slug)
         version = obj.current_version

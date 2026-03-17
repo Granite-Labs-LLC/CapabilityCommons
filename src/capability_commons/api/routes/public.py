@@ -9,6 +9,12 @@ from capability_commons.schemas.public import PublicBundleResponse, PublicObject
 router = APIRouter()
 
 
+@router.get("/public/objects", response_model=list[PublicObjectResponse])
+async def list_public_objects(session: DBSession) -> list[PublicObjectResponse]:
+    service = PublicationService(session)
+    return await service.list_published_objects()
+
+
 @router.get("/public/objects/{slug}", response_model=PublicObjectResponse)
 async def public_object(slug: str, session: DBSession) -> PublicObjectResponse:
     service = PublicationService(session)
