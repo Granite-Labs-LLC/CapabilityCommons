@@ -24,3 +24,22 @@ def test_fake_provider_returns_correct_count():
     result = asyncio.run(provider.embed(["hello", "world"]))
     assert len(result) == 2
     assert len(result[0]) == 10
+
+
+@pytest.mark.asyncio
+async def test_embed_query_with_provider():
+    session = AsyncMock()
+    provider = FakeProvider()
+    service = EmbeddingService(session, provider=provider)
+    result = await service.embed_query("test query")
+    assert result is not None
+    assert len(result) == 10
+
+
+@pytest.mark.asyncio
+async def test_embed_query_no_provider():
+    session = AsyncMock()
+    service = EmbeddingService(session, provider=None)
+    service.provider = None
+    result = await service.embed_query("test query")
+    assert result is None
