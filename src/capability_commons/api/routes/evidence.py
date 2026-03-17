@@ -4,7 +4,7 @@ import uuid
 
 from fastapi import APIRouter
 
-from capability_commons.api.deps import ActorID, DBSession
+from capability_commons.api.deps import ActorID, CurrentWorkspace, DBSession
 from capability_commons.schemas.evidence import (
     CitationResponse,
     CreateEvidenceSourceRequest,
@@ -19,9 +19,11 @@ router = APIRouter()
 
 
 @router.post("/evidence/sources", response_model=EvidenceSourceResponse)
-async def create_source(request: CreateEvidenceSourceRequest, session: DBSession, actor_id: ActorID) -> EvidenceSourceResponse:
+async def create_source(request: CreateEvidenceSourceRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> EvidenceSourceResponse:
+    data = request.model_dump()
+    data["workspace_id"] = workspace.id
     service = EvidenceService(session)
-    source = await service.create_source(created_by=actor_id, **request.model_dump())
+    source = await service.create_source(created_by=actor_id, **data)
     return EvidenceSourceResponse.model_validate(source, from_attributes=True)
 
 

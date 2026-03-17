@@ -1,22 +1,13 @@
 from __future__ import annotations
 
-import asyncio
 import uuid
 
-import pytest
 import pytest_asyncio
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
 from capability_commons.config import get_settings
 from capability_commons.db.models import Workspace
 from capability_commons.domain.enums import WorkspaceVisibility
-
-
-@pytest.fixture(scope="session")
-def event_loop():
-    loop = asyncio.new_event_loop()
-    yield loop
-    loop.close()
 
 
 @pytest_asyncio.fixture

@@ -4,7 +4,7 @@ import uuid
 
 from fastapi import APIRouter, Depends
 
-from capability_commons.api.deps import ActorID, DBSession
+from capability_commons.api.deps import ActorID, CurrentWorkspace, DBSession
 from capability_commons.schemas.objects import (
     AttachEntitiesRequest,
     AttachFacetsRequest,
@@ -44,7 +44,7 @@ def _version_detail(version) -> VersionDetailResponse:
 
 @router.get("/objects", response_model=PaginatedResponse[ObjectResponse])
 async def list_objects(
-    workspace_id: uuid.UUID,
+    workspace: CurrentWorkspace,
     session: DBSession,
     cursor: str | None = None,
     limit: int = 20,
@@ -52,7 +52,7 @@ async def list_objects(
     params = PaginationParams(cursor=cursor, limit=min(limit, 100))
     service = RegistryService(session)
     objects, total = await service.list_objects(
-        workspace_id, cursor_id=params.decode_cursor(), limit=params.limit,
+        workspace.id, cursor_id=params.decode_cursor(), limit=params.limit,
     )
     items = objects[:params.limit]
     has_more = len(objects) > params.limit
@@ -65,7 +65,8 @@ async def list_objects(
 
 
 @router.post("/objects", response_model=ObjectResponse)
-async def create_object(request: CreateObjectRequest, session: DBSession, actor_id: ActorID) -> ObjectResponse:
+async def create_object(request: CreateObjectRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> ObjectResponse:
+    request.workspace_id = workspace.id
     service = RegistryService(session)
     obj = await service.create_object(request, actor_id=actor_id)
     return ObjectResponse.model_validate(obj, from_attributes=True)

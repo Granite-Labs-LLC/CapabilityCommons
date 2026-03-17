@@ -4,7 +4,7 @@ import uuid
 
 from fastapi import APIRouter
 
-from capability_commons.api.deps import DBSession
+from capability_commons.api.deps import CurrentWorkspace, DBSession
 from capability_commons.schemas.reviews import (
     ContradictionResponse,
     CreateReviewRequest,
@@ -20,16 +20,20 @@ router = APIRouter()
 
 
 @router.post("/reviews", response_model=ReviewResponse)
-async def submit_review(request: CreateReviewRequest, session: DBSession) -> ReviewResponse:
+async def submit_review(request: CreateReviewRequest, session: DBSession, workspace: CurrentWorkspace) -> ReviewResponse:
+    data = request.model_dump()
+    data["workspace_id"] = workspace.id
     service = ReviewService(session)
-    review = await service.submit_review(**request.model_dump())
+    review = await service.submit_review(**data)
     return ReviewResponse.model_validate(review, from_attributes=True)
 
 
 @router.post("/contradictions", response_model=ContradictionResponse)
-async def open_contradiction(request: OpenContradictionRequest, session: DBSession) -> ContradictionResponse:
+async def open_contradiction(request: OpenContradictionRequest, session: DBSession, workspace: CurrentWorkspace) -> ContradictionResponse:
+    data = request.model_dump()
+    data["workspace_id"] = workspace.id
     service = ReviewService(session)
-    contradiction = await service.open_contradiction(**request.model_dump())
+    contradiction = await service.open_contradiction(**data)
     return ContradictionResponse.model_validate(contradiction, from_attributes=True)
 
 

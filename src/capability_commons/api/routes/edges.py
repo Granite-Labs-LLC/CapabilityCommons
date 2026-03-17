@@ -5,7 +5,7 @@ import uuid
 from fastapi import APIRouter, Query
 from sqlalchemy import select
 
-from capability_commons.api.deps import ActorID, DBSession
+from capability_commons.api.deps import ActorID, CurrentWorkspace, DBSession
 from capability_commons.db.models import Edge
 from capability_commons.domain.enums import EdgeType
 from capability_commons.schemas.edges import CreateEdgeRequest, EdgeResponse
@@ -15,9 +15,11 @@ router = APIRouter()
 
 
 @router.post("/edges", response_model=EdgeResponse)
-async def create_edge(request: CreateEdgeRequest, session: DBSession, actor_id: ActorID) -> EdgeResponse:
+async def create_edge(request: CreateEdgeRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> EdgeResponse:
+    data = request.model_dump()
+    data["workspace_id"] = workspace.id
     service = RegistryService(session)
-    edge = await service.create_edge(**request.model_dump(), created_by=actor_id)
+    edge = await service.create_edge(**data, created_by=actor_id)
     return EdgeResponse.model_validate(edge, from_attributes=True)
 
 

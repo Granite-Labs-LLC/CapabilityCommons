@@ -4,7 +4,7 @@ import uuid
 
 from fastapi import APIRouter
 
-from capability_commons.api.deps import DBSession
+from capability_commons.api.deps import CurrentWorkspace, DBSession
 from capability_commons.domain.enums import EntityType
 from capability_commons.schemas.objects import AddAliasRequest, CreateEntityRequest
 from capability_commons.services.entities import EntityService
@@ -13,10 +13,10 @@ router = APIRouter()
 
 
 @router.post("/entities")
-async def create_entity(request: CreateEntityRequest, session: DBSession) -> dict:
+async def create_entity(request: CreateEntityRequest, session: DBSession, workspace: CurrentWorkspace) -> dict:
     service = EntityService(session)
     entity = await service.create_entity(
-        workspace_id=request.workspace_id,
+        workspace_id=workspace.id,
         entity_type=EntityType(request.entity_type),
         canonical_name=request.canonical_name,
         metadata=request.metadata,
