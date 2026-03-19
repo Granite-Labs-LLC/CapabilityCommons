@@ -1,0 +1,99 @@
+edge_id,source_id,edge_type,target_id,condition_group_id,sequence,note
+edge.module.02-measure-map-and-inventory.module.02-measure-map-and-inventory.req01.01,module.02-measure-map-and-inventory,REQUIRES,module.01-truth-tools-and-ai,module.02-measure-map-and-inventory.req01,1,Derived from module prerequisite group
+edge.module.03-water-storage-and-treatment.module.03-water-storage-and-treatment.req01.01,module.03-water-storage-and-treatment,REQUIRES,module.01-truth-tools-and-ai,module.03-water-storage-and-treatment.req01,1,Derived from module prerequisite group
+edge.module.03-water-storage-and-treatment.module.03-water-storage-and-treatment.req01.02,module.03-water-storage-and-treatment,REQUIRES,module.02-measure-map-and-inventory,module.03-water-storage-and-treatment.req01,2,Derived from module prerequisite group
+edge.module.04-water-testing-and-planning.module.04-water-testing-and-planning.req01.01,module.04-water-testing-and-planning,REQUIRES,module.01-truth-tools-and-ai,module.04-water-testing-and-planning.req01,1,Derived from module prerequisite group
+edge.module.04-water-testing-and-planning.module.04-water-testing-and-planning.req01.02,module.04-water-testing-and-planning,REQUIRES,module.02-measure-map-and-inventory,module.04-water-testing-and-planning.req01,2,Derived from module prerequisite group
+edge.module.04-water-testing-and-planning.module.04-water-testing-and-planning.req01.03,module.04-water-testing-and-planning,REQUIRES,module.03-water-storage-and-treatment,module.04-water-testing-and-planning.req01,3,Derived from module prerequisite group
+edge.module.05-pantry-rotation-and-preservation.module.05-pantry-rotation-and-preservation.req01.01,module.05-pantry-rotation-and-preservation,REQUIRES,module.01-truth-tools-and-ai,module.05-pantry-rotation-and-preservation.req01,1,Derived from module prerequisite group
+edge.module.05-pantry-rotation-and-preservation.module.05-pantry-rotation-and-preservation.req01.02,module.05-pantry-rotation-and-preservation,REQUIRES,module.02-measure-map-and-inventory,module.05-pantry-rotation-and-preservation.req01,2,Derived from module prerequisite group
+edge.module.06-seed-starting-and-garden-planning.module.06-seed-starting-and-garden-planning.req01.01,module.06-seed-starting-and-garden-planning,REQUIRES,module.02-measure-map-and-inventory,module.06-seed-starting-and-garden-planning.req01,1,Derived from module prerequisite group
+edge.module.07-envelope-and-weatherization.module.07-envelope-and-weatherization.req01.01,module.07-envelope-and-weatherization,REQUIRES,module.02-measure-map-and-inventory,module.07-envelope-and-weatherization.req01,1,Derived from module prerequisite group
+edge.module.08-moisture-tools-shutoffs-and-patching.module.08-moisture-tools-shutoffs-and-patching.req01.01,module.08-moisture-tools-shutoffs-and-patching,REQUIRES,module.01-truth-tools-and-ai,module.08-moisture-tools-shutoffs-and-patching.req01,1,Derived from module prerequisite group
+edge.module.08-moisture-tools-shutoffs-and-patching.module.08-moisture-tools-shutoffs-and-patching.req01.02,module.08-moisture-tools-shutoffs-and-patching,REQUIRES,module.02-measure-map-and-inventory,module.08-moisture-tools-shutoffs-and-patching.req01,2,Derived from module prerequisite group
+edge.module.08-moisture-tools-shutoffs-and-patching.module.08-moisture-tools-shutoffs-and-patching.req01.03,module.08-moisture-tools-shutoffs-and-patching,REQUIRES,module.07-envelope-and-weatherization,module.08-moisture-tools-shutoffs-and-patching.req01,3,Derived from module prerequisite group
+edge.module.09-circuit-basics-and-label-reading.module.09-circuit-basics-and-label-reading.req01.01,module.09-circuit-basics-and-label-reading,REQUIRES,module.02-measure-map-and-inventory,module.09-circuit-basics-and-label-reading.req01,1,Derived from module prerequisite group
+edge.module.10-load-audit-and-runtime.module.10-load-audit-and-runtime.req01.01,module.10-load-audit-and-runtime,REQUIRES,module.02-measure-map-and-inventory,module.10-load-audit-and-runtime.req01,1,Derived from module prerequisite group
+edge.module.10-load-audit-and-runtime.module.10-load-audit-and-runtime.req01.02,module.10-load-audit-and-runtime,REQUIRES,module.09-circuit-basics-and-label-reading,module.10-load-audit-and-runtime.req01,2,Derived from module prerequisite group
+edge.module.11-backup-power-and-local-resource-map.module.11-backup-power-and-local-resource-map.req01.01,module.11-backup-power-and-local-resource-map,REQUIRES,module.01-truth-tools-and-ai,module.11-backup-power-and-local-resource-map.req01,1,Derived from module prerequisite group
+edge.module.11-backup-power-and-local-resource-map.module.11-backup-power-and-local-resource-map.req01.02,module.11-backup-power-and-local-resource-map,REQUIRES,module.02-measure-map-and-inventory,module.11-backup-power-and-local-resource-map.req01,2,Derived from module prerequisite group
+edge.module.11-backup-power-and-local-resource-map.module.11-backup-power-and-local-resource-map.req01.03,module.11-backup-power-and-local-resource-map,REQUIRES,module.10-load-audit-and-runtime,module.11-backup-power-and-local-resource-map.req01,3,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req01.01,module.12-capstone-teach-forward,REQUIRES,module.01-truth-tools-and-ai,module.12-capstone-teach-forward.req01,1,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req02.01,module.12-capstone-teach-forward,REQUIRES,module.04-water-testing-and-planning,module.12-capstone-teach-forward.req02,1,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req02.02,module.12-capstone-teach-forward,REQUIRES,module.05-pantry-rotation-and-preservation,module.12-capstone-teach-forward.req02,2,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req02.03,module.12-capstone-teach-forward,REQUIRES,module.06-seed-starting-and-garden-planning,module.12-capstone-teach-forward.req02,3,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req02.04,module.12-capstone-teach-forward,REQUIRES,module.07-envelope-and-weatherization,module.12-capstone-teach-forward.req02,4,Derived from module prerequisite group
+edge.module.12-capstone-teach-forward.module.12-capstone-teach-forward.req02.05,module.12-capstone-teach-forward,REQUIRES,module.11-backup-power-and-local-resource-map,module.12-capstone-teach-forward.req02,5,Derived from module prerequisite group
+edge.module.01-truth-tools-and-ai.covers.01,module.01-truth-tools-and-ai,COVERS,foundation.verify-and-cite,,1,Module-to-capability alignment
+edge.assessment.module.01.evaluates.01,assessment.module.01,EVALUATES,foundation.verify-and-cite,,1,Assessment evaluates coverage introduced in module
+edge.module.01-truth-tools-and-ai.covers.02,module.01-truth-tools-and-ai,COVERS,foundation.ai-grounded-research,,2,Module-to-capability alignment
+edge.assessment.module.01.evaluates.02,assessment.module.01,EVALUATES,foundation.ai-grounded-research,,2,Assessment evaluates coverage introduced in module
+edge.module.01-truth-tools-and-ai.assessed-by,module.01-truth-tools-and-ai,ASSESSED_BY,assessment.module.01,,1,Module links to its paired assessment
+edge.module.02-measure-map-and-inventory.covers.01,module.02-measure-map-and-inventory,COVERS,foundation.measurement-and-units,,1,Module-to-capability alignment
+edge.assessment.module.02.evaluates.01,assessment.module.02,EVALUATES,foundation.measurement-and-units,,1,Assessment evaluates coverage introduced in module
+edge.module.02-measure-map-and-inventory.covers.02,module.02-measure-map-and-inventory,COVERS,foundation.systems-mapping,,2,Module-to-capability alignment
+edge.assessment.module.02.evaluates.02,assessment.module.02,EVALUATES,foundation.systems-mapping,,2,Assessment evaluates coverage introduced in module
+edge.module.02-measure-map-and-inventory.covers.03,module.02-measure-map-and-inventory,COVERS,foundation.household-resilience-inventory,,3,Module-to-capability alignment
+edge.assessment.module.02.evaluates.03,assessment.module.02,EVALUATES,foundation.household-resilience-inventory,,3,Assessment evaluates coverage introduced in module
+edge.module.02-measure-map-and-inventory.assessed-by,module.02-measure-map-and-inventory,ASSESSED_BY,assessment.module.02,,1,Module links to its paired assessment
+edge.module.03-water-storage-and-treatment.covers.01,module.03-water-storage-and-treatment,COVERS,water.safe-storage,,1,Module-to-capability alignment
+edge.assessment.module.03.evaluates.01,assessment.module.03,EVALUATES,water.safe-storage,,1,Assessment evaluates coverage introduced in module
+edge.module.03-water-storage-and-treatment.covers.02,module.03-water-storage-and-treatment,COVERS,water.treatment-selection,,2,Module-to-capability alignment
+edge.assessment.module.03.evaluates.02,assessment.module.03,EVALUATES,water.treatment-selection,,2,Assessment evaluates coverage introduced in module
+edge.module.03-water-storage-and-treatment.assessed-by,module.03-water-storage-and-treatment,ASSESSED_BY,assessment.module.03,,1,Module links to its paired assessment
+edge.module.04-water-testing-and-planning.covers.01,module.04-water-testing-and-planning,COVERS,water.basic-testing,,1,Module-to-capability alignment
+edge.assessment.module.04.evaluates.01,assessment.module.04,EVALUATES,water.basic-testing,,1,Assessment evaluates coverage introduced in module
+edge.module.04-water-testing-and-planning.covers.02,module.04-water-testing-and-planning,COVERS,water.household-water-plan,,2,Module-to-capability alignment
+edge.assessment.module.04.evaluates.02,assessment.module.04,EVALUATES,water.household-water-plan,,2,Assessment evaluates coverage introduced in module
+edge.module.04-water-testing-and-planning.assessed-by,module.04-water-testing-and-planning,ASSESSED_BY,assessment.module.04,,1,Module links to its paired assessment
+edge.module.05-pantry-rotation-and-preservation.covers.01,module.05-pantry-rotation-and-preservation,COVERS,food.pantry-design,,1,Module-to-capability alignment
+edge.assessment.module.05.evaluates.01,assessment.module.05,EVALUATES,food.pantry-design,,1,Assessment evaluates coverage introduced in module
+edge.module.05-pantry-rotation-and-preservation.covers.02,module.05-pantry-rotation-and-preservation,COVERS,food.pantry-rotation,,2,Module-to-capability alignment
+edge.assessment.module.05.evaluates.02,assessment.module.05,EVALUATES,food.pantry-rotation,,2,Assessment evaluates coverage introduced in module
+edge.module.05-pantry-rotation-and-preservation.covers.03,module.05-pantry-rotation-and-preservation,COVERS,food.safe-preservation-basics,,3,Module-to-capability alignment
+edge.assessment.module.05.evaluates.03,assessment.module.05,EVALUATES,food.safe-preservation-basics,,3,Assessment evaluates coverage introduced in module
+edge.module.05-pantry-rotation-and-preservation.assessed-by,module.05-pantry-rotation-and-preservation,ASSESSED_BY,assessment.module.05,,1,Module links to its paired assessment
+edge.module.06-seed-starting-and-garden-planning.covers.01,module.06-seed-starting-and-garden-planning,COVERS,food.seed-starting,,1,Module-to-capability alignment
+edge.assessment.module.06.evaluates.01,assessment.module.06,EVALUATES,food.seed-starting,,1,Assessment evaluates coverage introduced in module
+edge.module.06-seed-starting-and-garden-planning.covers.02,module.06-seed-starting-and-garden-planning,COVERS,food.beginner-garden-system,,2,Module-to-capability alignment
+edge.assessment.module.06.evaluates.02,assessment.module.06,EVALUATES,food.beginner-garden-system,,2,Assessment evaluates coverage introduced in module
+edge.module.06-seed-starting-and-garden-planning.assessed-by,module.06-seed-starting-and-garden-planning,ASSESSED_BY,assessment.module.06,,1,Module links to its paired assessment
+edge.module.07-envelope-and-weatherization.covers.01,module.07-envelope-and-weatherization,COVERS,shelter.building-envelope,,1,Module-to-capability alignment
+edge.assessment.module.07.evaluates.01,assessment.module.07,EVALUATES,shelter.building-envelope,,1,Assessment evaluates coverage introduced in module
+edge.module.07-envelope-and-weatherization.covers.02,module.07-envelope-and-weatherization,COVERS,shelter.weatherization-audit,,2,Module-to-capability alignment
+edge.assessment.module.07.evaluates.02,assessment.module.07,EVALUATES,shelter.weatherization-audit,,2,Assessment evaluates coverage introduced in module
+edge.module.07-envelope-and-weatherization.assessed-by,module.07-envelope-and-weatherization,ASSESSED_BY,assessment.module.07,,1,Module links to its paired assessment
+edge.module.08-moisture-tools-shutoffs-and-patching.covers.01,module.08-moisture-tools-shutoffs-and-patching,COVERS,shelter.moisture-and-mold-control,,1,Module-to-capability alignment
+edge.assessment.module.08.evaluates.01,assessment.module.08,EVALUATES,shelter.moisture-and-mold-control,,1,Assessment evaluates coverage introduced in module
+edge.module.08-moisture-tools-shutoffs-and-patching.covers.02,module.08-moisture-tools-shutoffs-and-patching,COVERS,repair.hand-tool-literacy,,2,Module-to-capability alignment
+edge.assessment.module.08.evaluates.02,assessment.module.08,EVALUATES,repair.hand-tool-literacy,,2,Assessment evaluates coverage introduced in module
+edge.module.08-moisture-tools-shutoffs-and-patching.covers.03,module.08-moisture-tools-shutoffs-and-patching,COVERS,repair.shutoffs-seals-and-patches,,3,Module-to-capability alignment
+edge.assessment.module.08.evaluates.03,assessment.module.08,EVALUATES,repair.shutoffs-seals-and-patches,,3,Assessment evaluates coverage introduced in module
+edge.module.08-moisture-tools-shutoffs-and-patching.assessed-by,module.08-moisture-tools-shutoffs-and-patching,ASSESSED_BY,assessment.module.08,,1,Module links to its paired assessment
+edge.module.09-circuit-basics-and-label-reading.covers.01,module.09-circuit-basics-and-label-reading,COVERS,power.circuit-basics,,1,Module-to-capability alignment
+edge.assessment.module.09.evaluates.01,assessment.module.09,EVALUATES,power.circuit-basics,,1,Assessment evaluates coverage introduced in module
+edge.module.09-circuit-basics-and-label-reading.assessed-by,module.09-circuit-basics-and-label-reading,ASSESSED_BY,assessment.module.09,,1,Module links to its paired assessment
+edge.module.10-load-audit-and-runtime.covers.01,module.10-load-audit-and-runtime,COVERS,power.load-audit,,1,Module-to-capability alignment
+edge.assessment.module.10.evaluates.01,assessment.module.10,EVALUATES,power.load-audit,,1,Assessment evaluates coverage introduced in module
+edge.module.10-load-audit-and-runtime.covers.02,module.10-load-audit-and-runtime,COVERS,power.runtime-calculation,,2,Module-to-capability alignment
+edge.assessment.module.10.evaluates.02,assessment.module.10,EVALUATES,power.runtime-calculation,,2,Assessment evaluates coverage introduced in module
+edge.module.10-load-audit-and-runtime.assessed-by,module.10-load-audit-and-runtime,ASSESSED_BY,assessment.module.10,,1,Module links to its paired assessment
+edge.module.11-backup-power-and-local-resource-map.covers.01,module.11-backup-power-and-local-resource-map,COVERS,power.backup-power-plan,,1,Module-to-capability alignment
+edge.assessment.module.11.evaluates.01,assessment.module.11,EVALUATES,power.backup-power-plan,,1,Assessment evaluates coverage introduced in module
+edge.module.11-backup-power-and-local-resource-map.covers.02,module.11-backup-power-and-local-resource-map,COVERS,community.local-resource-map,,2,Module-to-capability alignment
+edge.assessment.module.11.evaluates.02,assessment.module.11,EVALUATES,community.local-resource-map,,2,Assessment evaluates coverage introduced in module
+edge.module.11-backup-power-and-local-resource-map.assessed-by,module.11-backup-power-and-local-resource-map,ASSESSED_BY,assessment.module.11,,1,Module links to its paired assessment
+edge.module.12-capstone-teach-forward.covers.01,module.12-capstone-teach-forward,COVERS,community.teach-forward-session,,1,Module-to-capability alignment
+edge.assessment.module.12.evaluates.01,assessment.module.12,EVALUATES,community.teach-forward-session,,1,Assessment evaluates coverage introduced in module
+edge.module.12-capstone-teach-forward.assessed-by,module.12-capstone-teach-forward,ASSESSED_BY,assessment.module.12,,1,Module links to its paired assessment
+edge.module.01-truth-tools-and-ai.precedes,module.01-truth-tools-and-ai,PRECEDES,module.02-measure-map-and-inventory,,1,Week 1 precedes week 2
+edge.module.02-measure-map-and-inventory.precedes,module.02-measure-map-and-inventory,PRECEDES,module.03-water-storage-and-treatment,,1,Week 2 precedes week 3
+edge.module.03-water-storage-and-treatment.precedes,module.03-water-storage-and-treatment,PRECEDES,module.04-water-testing-and-planning,,1,Week 3 precedes week 4
+edge.module.04-water-testing-and-planning.precedes,module.04-water-testing-and-planning,PRECEDES,module.05-pantry-rotation-and-preservation,,1,Week 4 precedes week 5
+edge.module.05-pantry-rotation-and-preservation.precedes,module.05-pantry-rotation-and-preservation,PRECEDES,module.06-seed-starting-and-garden-planning,,1,Week 5 precedes week 6
+edge.module.06-seed-starting-and-garden-planning.precedes,module.06-seed-starting-and-garden-planning,PRECEDES,module.07-envelope-and-weatherization,,1,Week 6 precedes week 7
+edge.module.07-envelope-and-weatherization.precedes,module.07-envelope-and-weatherization,PRECEDES,module.08-moisture-tools-shutoffs-and-patching,,1,Week 7 precedes week 8
+edge.module.08-moisture-tools-shutoffs-and-patching.precedes,module.08-moisture-tools-shutoffs-and-patching,PRECEDES,module.09-circuit-basics-and-label-reading,,1,Week 8 precedes week 9
+edge.module.09-circuit-basics-and-label-reading.precedes,module.09-circuit-basics-and-label-reading,PRECEDES,module.10-load-audit-and-runtime,,1,Week 9 precedes week 10
+edge.module.10-load-audit-and-runtime.precedes,module.10-load-audit-and-runtime,PRECEDES,module.11-backup-power-and-local-resource-map,,1,Week 10 precedes week 11
+edge.module.11-backup-power-and-local-resource-map.precedes,module.11-backup-power-and-local-resource-map,PRECEDES,module.12-capstone-teach-forward,,1,Week 11 precedes week 12

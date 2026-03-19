@@ -1,0 +1,50 @@
+vocab_type,key,label,description
+type,module,Module,Curriculum package node type: module.
+type,assessment,Assessment,Curriculum package node type: assessment.
+stage,foundation,Foundation,Progression stage: foundation.
+stage,household,Household,Progression stage: household.
+stage,productive,Productive,Progression stage: productive.
+stage,community,Community,Progression stage: community.
+stage,advanced,Advanced,Progression stage: advanced.
+cost_band,free,Free,Relative cost band: free.
+cost_band,low,Low,Relative cost band: low.
+cost_band,medium,Medium,Relative cost band: medium.
+cost_band,high,High,Relative cost band: high.
+risk_band,low,Low,Relative risk band: low.
+risk_band,moderate,Moderate,Relative risk band: moderate.
+risk_band,high,High,Relative risk band: high.
+lifecycle_state,draft,Draft,Lifecycle state: draft.
+lifecycle_state,reviewed,Reviewed,Lifecycle state: reviewed.
+lifecycle_state,verified,Verified,Lifecycle state: verified.
+lifecycle_state,deprecated,Deprecated,Lifecycle state: deprecated.
+evidence_level,compiled,Compiled,Evidence level: compiled.
+evidence_level,reviewed,Reviewed,Evidence level: reviewed.
+evidence_level,field_tested,Field Tested,Evidence level: field_tested.
+evidence_level,replicated,Replicated,Evidence level: replicated.
+requirement_mode,all_of,All Of,Requirement grouping mode: all_of.
+requirement_mode,any_of,Any Of,Requirement grouping mode: any_of.
+requirement_mode,n_of,N Of,Requirement grouping mode: n_of.
+edge_type,REQUIRES,Requires,Direct prerequisite relationship.
+edge_type,COVERS,Covers,Module covers a capability node.
+edge_type,ASSESSED_BY,Assessed_By,Module is linked to its paired assessment.
+edge_type,EVALUATES,Evaluates,Assessment evaluates a capability node.
+edge_type,PRECEDES,Precedes,Scheduled module ordering edge.
+assessment_type,portfolio_review,Portfolio Review,Assessment pattern: portfolio_review.
+assessment_type,checklist,Checklist,Assessment pattern: checklist.
+assessment_type,demo,Demo,Assessment pattern: demo.
+coverage_mode,introduce,Introduce,Coverage mode: introduce.
+coverage_mode,reinforce,Reinforce,Coverage mode: reinforce.
+coverage_mode,apply,Apply,Coverage mode: apply.
+coverage_mode,capstone,Capstone,Coverage mode: capstone.
+coverage_weight,primary,Primary,Relative weight of node coverage in a module: primary.
+coverage_weight,secondary,Secondary,Relative weight of node coverage in a module: secondary.
+context,apartment,Apartment,Context label: apartment.
+context,cold_climate,Cold Climate,Context label: cold_climate.
+context,general,General,Context label: general.
+context,homeowner,Homeowner,Context label: homeowner.
+context,hot_climate,Hot Climate,Context label: hot_climate.
+context,low_budget,Low Budget,Context label: low_budget.
+context,off_grid,Off Grid,Context label: off_grid.
+context,renter,Renter,Context label: renter.
+context,rural,Rural,Context label: rural.
+context,urban,Urban,Context label: urban.

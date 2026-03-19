@@ -1,0 +1,94 @@
+node_id,output_name,output_order
+module.01-truth-tools-and-ai,claim-check worksheet,1
+module.01-truth-tools-and-ai,source comparison note,2
+module.01-truth-tools-and-ai,prompt pack,3
+module.01-truth-tools-and-ai,source comparison brief,4
+module.02-measure-map-and-inventory,units cheat sheet,1
+module.02-measure-map-and-inventory,conversion table,2
+module.02-measure-map-and-inventory,household systems map,3
+module.02-measure-map-and-inventory,dependency list,4
+module.02-measure-map-and-inventory,household inventory sheet,5
+module.02-measure-map-and-inventory,priority gap list,6
+module.03-water-storage-and-treatment,storage table,1
+module.03-water-storage-and-treatment,container label set,2
+module.03-water-storage-and-treatment,treatment decision matrix,3
+module.04-water-testing-and-planning,water test log,1
+module.04-water-testing-and-planning,household water plan,2
+module.04-water-testing-and-planning,water source and storage map,3
+module.04-water-testing-and-planning,retest schedule,4
+module.05-pantry-rotation-and-preservation,pantry map,1
+module.05-pantry-rotation-and-preservation,shopping gap list,2
+module.05-pantry-rotation-and-preservation,category labels,3
+module.05-pantry-rotation-and-preservation,rotation sheet,4
+module.05-pantry-rotation-and-preservation,reorder cadence,5
+module.05-pantry-rotation-and-preservation,preservation safety card,6
+module.06-seed-starting-and-garden-planning,seed-start log,1
+module.06-seed-starting-and-garden-planning,germination setup,2
+module.06-seed-starting-and-garden-planning,garden layout,3
+module.06-seed-starting-and-garden-planning,crop plan,4
+module.06-seed-starting-and-garden-planning,care calendar,5
+module.07-envelope-and-weatherization,building-envelope diagram,1
+module.07-envelope-and-weatherization,heat-loss note,2
+module.07-envelope-and-weatherization,weatherization audit,3
+module.07-envelope-and-weatherization,priority fix list,4
+module.07-envelope-and-weatherization,room-by-room notes,5
+module.08-moisture-tools-shutoffs-and-patching,moisture checklist,1
+module.08-moisture-tools-shutoffs-and-patching,source map,2
+module.08-moisture-tools-shutoffs-and-patching,response plan,3
+module.08-moisture-tools-shutoffs-and-patching,tool competency checklist,4
+module.08-moisture-tools-shutoffs-and-patching,starter tool list,5
+module.08-moisture-tools-shutoffs-and-patching,shutoff map,6
+module.08-moisture-tools-shutoffs-and-patching,patch kit list,7
+module.08-moisture-tools-shutoffs-and-patching,temporary repair notes,8
+module.09-circuit-basics-and-label-reading,power formula card,1
+module.09-circuit-basics-and-label-reading,device label notes,2
+module.10-load-audit-and-runtime,load sheet,1
+module.10-load-audit-and-runtime,critical load tiers,2
+module.10-load-audit-and-runtime,device inventory,3
+module.10-load-audit-and-runtime,runtime table,4
+module.10-load-audit-and-runtime,assumption notes,5
+module.11-backup-power-and-local-resource-map,backup power plan,1
+module.11-backup-power-and-local-resource-map,budget-tier comparison,2
+module.11-backup-power-and-local-resource-map,decision log,3
+module.11-backup-power-and-local-resource-map,local resource map,4
+module.11-backup-power-and-local-resource-map,contact and capability list,5
+module.11-backup-power-and-local-resource-map,sharing protocol notes,6
+module.12-capstone-teach-forward,lesson plan,1
+module.12-capstone-teach-forward,one-page handout,2
+module.12-capstone-teach-forward,micro-session notes,3
+assessment.module.01,assessment scorecard,1
+assessment.module.01,evidence packet,2
+assessment.module.01,revision note,3
+assessment.module.02,assessment scorecard,1
+assessment.module.02,evidence packet,2
+assessment.module.02,revision note,3
+assessment.module.03,assessment scorecard,1
+assessment.module.03,evidence packet,2
+assessment.module.03,revision note,3
+assessment.module.04,assessment scorecard,1
+assessment.module.04,evidence packet,2
+assessment.module.04,revision note,3
+assessment.module.05,assessment scorecard,1
+assessment.module.05,evidence packet,2
+assessment.module.05,revision note,3
+assessment.module.06,assessment scorecard,1
+assessment.module.06,evidence packet,2
+assessment.module.06,revision note,3
+assessment.module.07,assessment scorecard,1
+assessment.module.07,evidence packet,2
+assessment.module.07,revision note,3
+assessment.module.08,assessment scorecard,1
+assessment.module.08,evidence packet,2
+assessment.module.08,revision note,3
+assessment.module.09,assessment scorecard,1
+assessment.module.09,evidence packet,2
+assessment.module.09,revision note,3
+assessment.module.10,assessment scorecard,1
+assessment.module.10,evidence packet,2
+assessment.module.10,revision note,3
+assessment.module.11,assessment scorecard,1
+assessment.module.11,evidence packet,2
+assessment.module.11,revision note,3
+assessment.module.12,assessment scorecard,1
+assessment.module.12,evidence packet,2
+assessment.module.12,revision note,3

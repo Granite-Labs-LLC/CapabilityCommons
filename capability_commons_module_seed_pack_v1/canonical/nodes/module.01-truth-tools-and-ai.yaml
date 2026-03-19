@@ -1,0 +1,71 @@
+id: module.01-truth-tools-and-ai
+type: module
+title: Truth, Tools, and AI as Amplifier
+summary: Learn how to verify practical claims, use AI to compare sources, and record
+  decisions with citations before acting.
+plain_language: This module teaches you how to check whether information is real,
+  current, and useful before you act on it.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 4.0
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-01
+- verification
+- ai-literacy
+- research
+requires: []
+outputs:
+- claim-check worksheet
+- source comparison note
+- prompt pack
+- source comparison brief
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 1
+  node_refs:
+  - foundation.verify-and-cite
+  - foundation.ai-grounded-research
+  learning_objectives:
+  - Evaluate a practical claim using source quality, date, evidence, and local applicability.
+  - Use AI to summarize, compare, and critique sources without outsourcing judgment.
+  - Produce a claim-check worksheet and a short cited recommendation note.
+  seminar_outline:
+  - Why bad decisions often start with unexamined claims
+  - 'Source types: primary, secondary, synthetic, anecdotal'
+  - AI as translator, comparator, and critique partner
+  - Decision logging with citations and local constraints
+  lab: Compare one practical claim across at least three sources and document the
+    result with a citation trail and clear action recommendation.
+  field_task: Run the claim-check workflow on one household resilience question you
+    currently care about and save the result for later modules.
+  teach_forward_task: 'Teach another person the four-part claim check: who said it,
+    when, with what evidence, and under what local conditions it applies.'
+  deliverable_refs:
+  - claim-check worksheet
+  - source comparison note
+  - prompt pack
+  - source comparison brief
+  assessment_ref: assessment.module.01
+  delivery_profile:
+    seminar_minutes: 75
+    lab_minutes: 90
+    field_task_minutes: 60
+    teach_forward_minutes: 15

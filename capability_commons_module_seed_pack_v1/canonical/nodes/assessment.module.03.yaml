@@ -1,0 +1,52 @@
+id: assessment.module.03
+type: assessment
+title: 'Week 3 Assessment — Water I: Storage and Treatment'
+summary: 'Assessment bundle for Water I: Storage and Treatment using artifacts, explanation,
+  and where appropriate a short demonstration.'
+plain_language: 'This assessment checks whether the learner can use and explain the
+  work from Water I: Storage and Treatment.'
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 0.5
+cost_band: free
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- assessment
+- week-03
+- checklist
+- water
+- storage
+- treatment
+requires: []
+outputs:
+- assessment scorecard
+- evidence packet
+- revision note
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  assessment_type: checklist
+  rubric:
+  - Each required item on the checklist is present and correctly labeled.
+  - Core calculations or comparisons are internally consistent and match the worksheet.
+  - A second person could follow the output without asking what the labels mean.
+  - The learner identifies one item still needing verification or improvement.
+  passing_threshold: All critical checklist items passed and no critical field left
+    blank.
+  evidence_required:
+  - storage table
+  - container label set
+  - treatment decision matrix

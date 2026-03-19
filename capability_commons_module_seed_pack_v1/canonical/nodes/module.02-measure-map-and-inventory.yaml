@@ -1,0 +1,80 @@
+id: module.02-measure-map-and-inventory
+type: module
+title: Measure, Map, and Inventory
+summary: Convert vague household conditions into measured quantities, system maps,
+  and a resilience inventory you can build on.
+plain_language: This module helps you see what your household depends on before something
+  fails.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 4.25
+cost_band: low
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-02
+- measurement
+- systems-mapping
+- inventory
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  n: null
+outputs:
+- units cheat sheet
+- conversion table
+- household systems map
+- dependency list
+- household inventory sheet
+- priority gap list
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 2
+  node_refs:
+  - foundation.measurement-and-units
+  - foundation.systems-mapping
+  - foundation.household-resilience-inventory
+  learning_objectives:
+  - Choose and convert the units needed for common household calculations.
+  - Map inputs, outputs, dependencies, and failure points in a household system.
+  - Create a baseline resilience inventory covering needs, tools, contacts, and gaps.
+  seminar_outline:
+  - Units as the language of planning
+  - System boundaries, dependencies, and failure points
+  - From inventory to priority setting
+  - How this baseline supports every later module
+  lab: Build a simple conversion sheet, sketch one household system, and turn the
+    results into an initial resilience inventory.
+  field_task: Complete a household resilience inventory covering water, food, power,
+    heat, tools, contacts, and the most obvious vulnerabilities.
+  teach_forward_task: Explain one system map to another household member and identify
+    the first two weak links you both agree on.
+  deliverable_refs:
+  - units cheat sheet
+  - conversion table
+  - household systems map
+  - dependency list
+  - household inventory sheet
+  - priority gap list
+  assessment_ref: assessment.module.02
+  delivery_profile:
+    seminar_minutes: 75
+    lab_minutes: 90
+    field_task_minutes: 75
+    teach_forward_minutes: 15

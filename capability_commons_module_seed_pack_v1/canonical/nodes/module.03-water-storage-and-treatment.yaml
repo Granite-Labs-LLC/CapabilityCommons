@@ -1,0 +1,74 @@
+id: module.03-water-storage-and-treatment
+type: module
+title: 'Water I: Storage and Treatment'
+summary: Plan potable water quantities, storage intervals, and treatment choices using
+  a household-specific decision process.
+plain_language: This module helps you decide how much water to store and how to make
+  questionable water safer to use.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 3.83
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-03
+- water
+- storage
+- treatment
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  - module.02-measure-map-and-inventory
+  n: null
+outputs:
+- storage table
+- container label set
+- treatment decision matrix
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 3
+  node_refs:
+  - water.safe-storage
+  - water.treatment-selection
+  learning_objectives:
+  - Calculate daily and short-horizon household water needs in comparable units.
+  - Compare treatment methods by source conditions, speed, cost, and limitations.
+  - Build a practical storage table and treatment decision matrix for your context.
+  seminar_outline:
+  - How much water households actually need
+  - Storage intervals, containers, labeling, and rotation
+  - Treatment methods and where each does or does not fit
+  - Decision-making under cost and source constraints
+  lab: Estimate daily water demand, compare treatment options, and draft a storage
+    table plus treatment decision matrix.
+  field_task: Label current storage, identify the next storage increase that is feasible
+    this month, and document the treatment path you would use for at least two source
+    scenarios.
+  teach_forward_task: Show another person how to read your treatment decision matrix
+    and explain why one method is not universal.
+  deliverable_refs:
+  - storage table
+  - container label set
+  - treatment decision matrix
+  assessment_ref: assessment.module.03
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 80
+    field_task_minutes: 70
+    teach_forward_minutes: 10

@@ -1,0 +1,57 @@
+id: assessment.module.02
+type: assessment
+title: Week 2 Assessment — Measure, Map, and Inventory
+summary: Assessment bundle for Measure, Map, and Inventory using artifacts, explanation,
+  and where appropriate a short demonstration.
+plain_language: This assessment checks whether the learner can use and explain the
+  work from Measure, Map, and Inventory.
+primary_domain: foundation
+domains:
+- foundation
+stage: foundation
+difficulty: 2
+estimated_hours: 0.5
+cost_band: free
+risk_band: low
+contexts:
+- general
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- assessment
+- week-02
+- portfolio-review
+- measurement
+- systems-mapping
+- inventory
+requires: []
+outputs:
+- assessment scorecard
+- evidence packet
+- revision note
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  assessment_type: portfolio_review
+  rubric:
+  - Required artifacts are complete, legible, and usable by another person.
+  - The learner can explain the key decisions, assumptions, and tradeoffs in plain
+    language.
+  - The artifacts match the module goals and the covered node outputs.
+  - The learner notes at least one improvement or next step based on review.
+  passing_threshold: All required evidence submitted; at least 3 of 4 rubric criteria
+    marked Functional or better.
+  evidence_required:
+  - units cheat sheet
+  - conversion table
+  - household systems map
+  - dependency list
+  - household inventory sheet
+  - priority gap list

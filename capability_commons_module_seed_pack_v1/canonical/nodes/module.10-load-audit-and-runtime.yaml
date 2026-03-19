@@ -1,0 +1,77 @@
+id: module.10-load-audit-and-runtime
+type: module
+title: 'Power II: Critical Loads and Runtime'
+summary: Turn electrical literacy into an outage load audit and realistic runtime
+  estimates based on actual priorities and assumptions.
+plain_language: This module helps you decide what must stay on during an outage and
+  how long different power sources could support it.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 4.17
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-10
+- power
+- load-audit
+- runtime
+requires:
+- mode: all_of
+  ids:
+  - module.02-measure-map-and-inventory
+  - module.09-circuit-basics-and-label-reading
+  n: null
+outputs:
+- load sheet
+- critical load tiers
+- device inventory
+- runtime table
+- assumption notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 10
+  node_refs:
+  - power.load-audit
+  - power.runtime-calculation
+  learning_objectives:
+  - Separate essential, important, and optional loads for different outage durations.
+  - Estimate runtime using consistent units, duty cycle, and efficiency assumptions.
+  - Document the assumptions that most change your answer.
+  seminar_outline:
+  - Critical load thinking instead of whole-house fantasy
+  - Duty cycle, startup surge, and efficiency loss
+  - Runtime calculations with consistent units
+  - Recording assumptions and planning margins
+  lab: Create a critical load sheet and calculate runtime for at least two outage
+    scenarios using one assumed power source.
+  field_task: Audit your actual priority devices, assign outage tiers, and complete
+    a runtime table that another person could read.
+  teach_forward_task: Show another person how one incorrect assumption can make a
+    backup plan fail and point to where you documented yours.
+  deliverable_refs:
+  - load sheet
+  - critical load tiers
+  - device inventory
+  - runtime table
+  - assumption notes
+  assessment_ref: assessment.module.10
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 90
+    field_task_minutes: 75
+    teach_forward_minutes: 15

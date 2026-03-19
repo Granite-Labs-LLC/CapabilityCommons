@@ -1,0 +1,58 @@
+module_id,deliverable_order,deliverable_key,deliverable_label,source_node_id,required_for_pass
+module.01-truth-tools-and-ai,1,claim-check-worksheet,claim-check worksheet,foundation.verify-and-cite,true
+module.01-truth-tools-and-ai,2,source-comparison-note,source comparison note,foundation.verify-and-cite,true
+module.01-truth-tools-and-ai,3,prompt-pack,prompt pack,foundation.ai-grounded-research,true
+module.01-truth-tools-and-ai,4,source-comparison-brief,source comparison brief,foundation.ai-grounded-research,true
+module.02-measure-map-and-inventory,1,units-cheat-sheet,units cheat sheet,foundation.measurement-and-units,true
+module.02-measure-map-and-inventory,2,conversion-table,conversion table,foundation.measurement-and-units,true
+module.02-measure-map-and-inventory,3,household-systems-map,household systems map,foundation.systems-mapping,true
+module.02-measure-map-and-inventory,4,dependency-list,dependency list,foundation.systems-mapping,true
+module.02-measure-map-and-inventory,5,household-inventory-sheet,household inventory sheet,foundation.household-resilience-inventory,true
+module.02-measure-map-and-inventory,6,priority-gap-list,priority gap list,foundation.household-resilience-inventory,true
+module.03-water-storage-and-treatment,1,storage-table,storage table,water.safe-storage,true
+module.03-water-storage-and-treatment,2,container-label-set,container label set,water.safe-storage,true
+module.03-water-storage-and-treatment,3,treatment-decision-matrix,treatment decision matrix,water.treatment-selection,true
+module.04-water-testing-and-planning,1,water-test-log,water test log,water.basic-testing,true
+module.04-water-testing-and-planning,2,household-water-plan,household water plan,water.household-water-plan,true
+module.04-water-testing-and-planning,3,water-source-and-storage-map,water source and storage map,water.household-water-plan,true
+module.04-water-testing-and-planning,4,retest-schedule,retest schedule,water.household-water-plan,true
+module.05-pantry-rotation-and-preservation,1,pantry-map,pantry map,food.pantry-design,true
+module.05-pantry-rotation-and-preservation,2,shopping-gap-list,shopping gap list,food.pantry-design,true
+module.05-pantry-rotation-and-preservation,3,category-labels,category labels,food.pantry-design,true
+module.05-pantry-rotation-and-preservation,4,rotation-sheet,rotation sheet,food.pantry-rotation,true
+module.05-pantry-rotation-and-preservation,5,reorder-cadence,reorder cadence,food.pantry-rotation,true
+module.05-pantry-rotation-and-preservation,6,preservation-safety-card,preservation safety card,food.safe-preservation-basics,true
+module.06-seed-starting-and-garden-planning,1,seed-start-log,seed-start log,food.seed-starting,true
+module.06-seed-starting-and-garden-planning,2,germination-setup,germination setup,food.seed-starting,true
+module.06-seed-starting-and-garden-planning,3,garden-layout,garden layout,food.beginner-garden-system,true
+module.06-seed-starting-and-garden-planning,4,crop-plan,crop plan,food.beginner-garden-system,true
+module.06-seed-starting-and-garden-planning,5,care-calendar,care calendar,food.beginner-garden-system,true
+module.07-envelope-and-weatherization,1,building-envelope-diagram,building-envelope diagram,shelter.building-envelope,true
+module.07-envelope-and-weatherization,2,heat-loss-note,heat-loss note,shelter.building-envelope,true
+module.07-envelope-and-weatherization,3,weatherization-audit,weatherization audit,shelter.weatherization-audit,true
+module.07-envelope-and-weatherization,4,priority-fix-list,priority fix list,shelter.weatherization-audit,true
+module.07-envelope-and-weatherization,5,room-by-room-notes,room-by-room notes,shelter.weatherization-audit,true
+module.08-moisture-tools-shutoffs-and-patching,1,moisture-checklist,moisture checklist,shelter.moisture-and-mold-control,true
+module.08-moisture-tools-shutoffs-and-patching,2,source-map,source map,shelter.moisture-and-mold-control,true
+module.08-moisture-tools-shutoffs-and-patching,3,response-plan,response plan,shelter.moisture-and-mold-control,true
+module.08-moisture-tools-shutoffs-and-patching,4,tool-competency-checklist,tool competency checklist,repair.hand-tool-literacy,true
+module.08-moisture-tools-shutoffs-and-patching,5,starter-tool-list,starter tool list,repair.hand-tool-literacy,true
+module.08-moisture-tools-shutoffs-and-patching,6,shutoff-map,shutoff map,repair.shutoffs-seals-and-patches,true
+module.08-moisture-tools-shutoffs-and-patching,7,patch-kit-list,patch kit list,repair.shutoffs-seals-and-patches,true
+module.08-moisture-tools-shutoffs-and-patching,8,temporary-repair-notes,temporary repair notes,repair.shutoffs-seals-and-patches,true
+module.09-circuit-basics-and-label-reading,1,power-formula-card,power formula card,power.circuit-basics,true
+module.09-circuit-basics-and-label-reading,2,device-label-notes,device label notes,power.circuit-basics,true
+module.10-load-audit-and-runtime,1,load-sheet,load sheet,power.load-audit,true
+module.10-load-audit-and-runtime,2,critical-load-tiers,critical load tiers,power.load-audit,true
+module.10-load-audit-and-runtime,3,device-inventory,device inventory,power.load-audit,true
+module.10-load-audit-and-runtime,4,runtime-table,runtime table,power.runtime-calculation,true
+module.10-load-audit-and-runtime,5,assumption-notes,assumption notes,power.runtime-calculation,true
+module.11-backup-power-and-local-resource-map,1,backup-power-plan,backup power plan,power.backup-power-plan,true
+module.11-backup-power-and-local-resource-map,2,budget-tier-comparison,budget-tier comparison,power.backup-power-plan,true
+module.11-backup-power-and-local-resource-map,3,decision-log,decision log,power.backup-power-plan,true
+module.11-backup-power-and-local-resource-map,4,local-resource-map,local resource map,community.local-resource-map,true
+module.11-backup-power-and-local-resource-map,5,contact-and-capability-list,contact and capability list,community.local-resource-map,true
+module.11-backup-power-and-local-resource-map,6,sharing-protocol-notes,sharing protocol notes,community.local-resource-map,true
+module.12-capstone-teach-forward,1,lesson-plan,lesson plan,community.teach-forward-session,true
+module.12-capstone-teach-forward,2,one-page-handout,one-page handout,community.teach-forward-session,true
+module.12-capstone-teach-forward,3,micro-session-notes,micro-session notes,community.teach-forward-session,true

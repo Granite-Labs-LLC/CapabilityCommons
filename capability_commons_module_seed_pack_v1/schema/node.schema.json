@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "node.schema.json",
+  "title": "Capability Commons Curriculum Node",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "summary",
+    "plain_language",
+    "primary_domain",
+    "domains",
+    "stage",
+    "difficulty",
+    "estimated_hours",
+    "cost_band",
+    "risk_band",
+    "contexts",
+    "tags",
+    "requires",
+    "outputs",
+    "lifecycle_state",
+    "evidence_level",
+    "source_refs",
+    "version",
+    "updated_at",
+    "payload"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "module",
+        "assessment"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "plain_language": {
+      "type": "string"
+    },
+    "primary_domain": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "stage": {
+      "enum": [
+        "foundation",
+        "household",
+        "productive",
+        "community",
+        "advanced"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "estimated_hours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cost_band": {
+      "enum": [
+        "free",
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "risk_band": {
+      "enum": [
+        "low",
+        "moderate",
+        "high"
+      ]
+    },
+    "contexts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "$ref": "requires.schema.json"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "lifecycle_state": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "verified",
+        "deprecated"
+      ]
+    },
+    "evidence_level": {
+      "enum": [
+        "compiled",
+        "reviewed",
+        "field_tested",
+        "replicated"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "module"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "week",
+              "node_refs",
+              "learning_objectives",
+              "seminar_outline",
+              "lab",
+              "field_task",
+              "teach_forward_task",
+              "deliverable_refs",
+              "assessment_ref",
+              "delivery_profile"
+            ],
+            "properties": {
+              "week": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "node_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "learning_objectives": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "seminar_outline": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "lab": {
+                "type": "string"
+              },
+              "field_task": {
+                "type": "string"
+              },
+              "teach_forward_task": {
+                "type": "string"
+              },
+              "deliverable_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "assessment_ref": {
+                "type": "string"
+              },
+              "delivery_profile": {
+                "type": "object",
+                "required": [
+                  "seminar_minutes",
+                  "lab_minutes",
+                  "field_task_minutes",
+                  "teach_forward_minutes"
+                ],
+                "properties": {
+                  "seminar_minutes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "lab_minutes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "field_task_minutes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "teach_forward_minutes": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "assessment"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "assessment_type",
+              "rubric",
+              "passing_threshold",
+              "evidence_required"
+            ],
+            "properties": {
+              "assessment_type": {
+                "enum": [
+                  "portfolio_review",
+                  "checklist",
+                  "demo"
+                ]
+              },
+              "rubric": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "passing_threshold": {
+                "type": "string"
+              },
+              "evidence_required": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

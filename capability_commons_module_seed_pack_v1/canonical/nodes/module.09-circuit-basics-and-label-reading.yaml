@@ -1,0 +1,70 @@
+id: module.09-circuit-basics-and-label-reading
+type: module
+title: 'Power I: Circuit Basics and Device Label Reading'
+summary: Build electrical literacy around volts, amps, watts, watt-hours, circuit
+  limits, and what device labels actually tell you.
+plain_language: This module gives you enough electrical literacy to read labels, compare
+  loads, and avoid obvious planning mistakes.
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 3.67
+cost_band: free
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-09
+- power
+- electrical-literacy
+- circuits
+requires:
+- mode: all_of
+  ids:
+  - module.02-measure-map-and-inventory
+  n: null
+outputs:
+- power formula card
+- device label notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 9
+  node_refs:
+  - power.circuit-basics
+  learning_objectives:
+  - Differentiate volts, amps, watts, and watt-hours in plain language.
+  - Read device labels and identify what information matters for planning.
+  - Explain why breaker limits, startup surges, and real-world usage complicate simple
+    guesses.
+  seminar_outline:
+  - Power versus energy and why the distinction matters
+  - What device labels show and what they omit
+  - Circuit limits, startup surge, and duty cycle
+  - Common beginner mistakes in electrical planning
+  lab: Read labels from several devices, convert the numbers into comparable terms,
+    and build a power formula card for later modules.
+  field_task: Record labels for your most important devices and note any missing information
+    or assumptions you still need to verify.
+  teach_forward_task: Explain watts versus watt-hours to another person using one
+    of your household devices as the example.
+  deliverable_refs:
+  - power formula card
+  - device label notes
+  assessment_ref: assessment.module.09
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 75
+    field_task_minutes: 60
+    teach_forward_minutes: 15

@@ -1,0 +1,58 @@
+assessment_id,evidence_order,evidence_key,evidence_label,required_for_pass
+assessment.module.01,1,claim-check-worksheet,claim-check worksheet,true
+assessment.module.01,2,source-comparison-note,source comparison note,true
+assessment.module.01,3,prompt-pack,prompt pack,true
+assessment.module.01,4,source-comparison-brief,source comparison brief,true
+assessment.module.02,1,units-cheat-sheet,units cheat sheet,true
+assessment.module.02,2,conversion-table,conversion table,true
+assessment.module.02,3,household-systems-map,household systems map,true
+assessment.module.02,4,dependency-list,dependency list,true
+assessment.module.02,5,household-inventory-sheet,household inventory sheet,true
+assessment.module.02,6,priority-gap-list,priority gap list,true
+assessment.module.03,1,storage-table,storage table,true
+assessment.module.03,2,container-label-set,container label set,true
+assessment.module.03,3,treatment-decision-matrix,treatment decision matrix,true
+assessment.module.04,1,water-test-log,water test log,true
+assessment.module.04,2,household-water-plan,household water plan,true
+assessment.module.04,3,water-source-and-storage-map,water source and storage map,true
+assessment.module.04,4,retest-schedule,retest schedule,true
+assessment.module.05,1,pantry-map,pantry map,true
+assessment.module.05,2,shopping-gap-list,shopping gap list,true
+assessment.module.05,3,category-labels,category labels,true
+assessment.module.05,4,rotation-sheet,rotation sheet,true
+assessment.module.05,5,reorder-cadence,reorder cadence,true
+assessment.module.05,6,preservation-safety-card,preservation safety card,true
+assessment.module.06,1,seed-start-log,seed-start log,true
+assessment.module.06,2,germination-setup,germination setup,true
+assessment.module.06,3,garden-layout,garden layout,true
+assessment.module.06,4,crop-plan,crop plan,true
+assessment.module.06,5,care-calendar,care calendar,true
+assessment.module.07,1,building-envelope-diagram,building-envelope diagram,true
+assessment.module.07,2,heat-loss-note,heat-loss note,true
+assessment.module.07,3,weatherization-audit,weatherization audit,true
+assessment.module.07,4,priority-fix-list,priority fix list,true
+assessment.module.07,5,room-by-room-notes,room-by-room notes,true
+assessment.module.08,1,moisture-checklist,moisture checklist,true
+assessment.module.08,2,source-map,source map,true
+assessment.module.08,3,response-plan,response plan,true
+assessment.module.08,4,tool-competency-checklist,tool competency checklist,true
+assessment.module.08,5,starter-tool-list,starter tool list,true
+assessment.module.08,6,shutoff-map,shutoff map,true
+assessment.module.08,7,patch-kit-list,patch kit list,true
+assessment.module.08,8,temporary-repair-notes,temporary repair notes,true
+assessment.module.09,1,power-formula-card,power formula card,true
+assessment.module.09,2,device-label-notes,device label notes,true
+assessment.module.10,1,load-sheet,load sheet,true
+assessment.module.10,2,critical-load-tiers,critical load tiers,true
+assessment.module.10,3,device-inventory,device inventory,true
+assessment.module.10,4,runtime-table,runtime table,true
+assessment.module.10,5,assumption-notes,assumption notes,true
+assessment.module.11,1,backup-power-plan,backup power plan,true
+assessment.module.11,2,budget-tier-comparison,budget-tier comparison,true
+assessment.module.11,3,decision-log,decision log,true
+assessment.module.11,4,local-resource-map,local resource map,true
+assessment.module.11,5,contact-and-capability-list,contact and capability list,true
+assessment.module.11,6,sharing-protocol-notes,sharing protocol notes,true
+assessment.module.12,1,lesson-plan,lesson plan,true
+assessment.module.12,2,one-page-handout,one-page handout,true
+assessment.module.12,3,micro-session-notes,micro-session notes,true

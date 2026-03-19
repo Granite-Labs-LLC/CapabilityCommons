@@ -1,0 +1,76 @@
+id: module.06-seed-starting-and-garden-planning
+type: module
+title: 'Food II: Seed Starting and Garden Planning'
+summary: Turn gardening from aspiration into a small, reliable production system using
+  timing, setup, and a simple crop plan.
+plain_language: This module helps you start growing food in a way that is small enough
+  to sustain and structured enough to learn from.
+primary_domain: food
+domains:
+- food
+stage: productive
+difficulty: 2
+estimated_hours: 4.42
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- curriculum
+- week-06
+- food
+- gardening
+- seed-starting
+requires:
+- mode: all_of
+  ids:
+  - module.02-measure-map-and-inventory
+  n: null
+outputs:
+- seed-start log
+- germination setup
+- garden layout
+- crop plan
+- care calendar
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 6
+  node_refs:
+  - food.seed-starting
+  - food.beginner-garden-system
+  learning_objectives:
+  - Start seeds with workable timing, medium, light, and moisture conditions.
+  - Plan a small bed or container garden around space, season, and care capacity.
+  - Translate garden goals into a layout, crop plan, and simple care calendar.
+  seminar_outline:
+  - What makes early garden attempts fail
+  - Seed starting setup, moisture, light, and timing
+  - Beds versus containers, crop choice, and season planning
+  - Designing for reliability instead of maximal ambition
+  lab: Build or simulate a germination setup and sketch a garden layout with crop
+    timing and care needs.
+  field_task: Start at least one crop or complete a full container or bed plan with
+    dates, spacing, and care calendar entries.
+  teach_forward_task: Explain your crop plan to another person and have them identify
+    whether the plan matches your actual time and space.
+  deliverable_refs:
+  - seed-start log
+  - germination setup
+  - garden layout
+  - crop plan
+  - care calendar
+  assessment_ref: assessment.module.06
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 90
+    field_task_minutes: 90
+    teach_forward_minutes: 15

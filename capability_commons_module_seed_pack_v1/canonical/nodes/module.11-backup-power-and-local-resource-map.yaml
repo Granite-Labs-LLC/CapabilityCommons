@@ -1,0 +1,83 @@
+id: module.11-backup-power-and-local-resource-map
+type: module
+title: 'Power III and Community Layer: Backup Planning and Local Resource Mapping'
+summary: Produce tiered backup power options and connect them to a local map of skills,
+  tools, places, and shared assets.
+plain_language: This module helps you compare backup options realistically and then
+  locate the people and resources nearby that increase resilience.
+primary_domain: power
+domains:
+- power
+- community
+stage: community
+difficulty: 3
+estimated_hours: 4.5
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-11
+- power
+- community
+- backup-planning
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  - module.02-measure-map-and-inventory
+  - module.10-load-audit-and-runtime
+  n: null
+outputs:
+- backup power plan
+- budget-tier comparison
+- decision log
+- local resource map
+- contact and capability list
+- sharing protocol notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 11
+  node_refs:
+  - power.backup-power-plan
+  - community.local-resource-map
+  learning_objectives:
+  - Draft low-, mid-, and high-budget backup options matched to critical loads and
+    runtime goals.
+  - Compare backup options by capability, burden, and local constraints.
+  - Map local skills, tools, spaces, and sources that matter during normal times and
+    disruptions.
+  seminar_outline:
+  - Tiered backup planning instead of one-shot ideal purchases
+  - 'Tradeoffs: cost, maintenance, storage, fuel, noise, and constraints'
+  - What belongs on a local resource map
+  - Privacy, permission, and useful coordination notes
+  lab: Build a budget-tier comparison for backup options and sketch a first-pass local
+    resource map with contacts and capabilities.
+  field_task: Complete one backup power plan and one local resource map using actual
+    local constraints, contacts, and likely outage priorities.
+  teach_forward_task: Explain to another person why your preferred backup tier fits
+    your situation and point out two nearby resources that reduce isolation.
+  deliverable_refs:
+  - backup power plan
+  - budget-tier comparison
+  - decision log
+  - local resource map
+  - contact and capability list
+  - sharing protocol notes
+  assessment_ref: assessment.module.11
+  delivery_profile:
+    seminar_minutes: 75
+    lab_minutes: 90
+    field_task_minutes: 90
+    teach_forward_minutes: 15

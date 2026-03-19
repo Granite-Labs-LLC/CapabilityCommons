@@ -1,0 +1,53 @@
+id: assessment.module.09
+type: assessment
+title: 'Week 9 Assessment — Power I: Circuit Basics and Device Label Reading'
+summary: 'Assessment bundle for Power I: Circuit Basics and Device Label Reading using
+  artifacts, explanation, and where appropriate a short demonstration.'
+plain_language: 'This assessment checks whether the learner can use and explain the
+  work from Power I: Circuit Basics and Device Label Reading.'
+primary_domain: power
+domains:
+- power
+stage: household
+difficulty: 2
+estimated_hours: 0.75
+cost_band: free
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- assessment
+- week-09
+- demo
+- power
+- electrical-literacy
+- circuits
+requires: []
+outputs:
+- assessment scorecard
+- evidence packet
+- revision note
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  assessment_type: demo
+  rubric:
+  - Required artifacts are complete and ready for use during the demonstration.
+  - The learner can demonstrate the task or walkthrough without skipping critical
+    steps.
+  - The learner can explain the assumptions, limits, or safety boundaries in plain
+    language.
+  - Another person could repeat the procedure or use the handout after the demonstration.
+  passing_threshold: All required evidence submitted and all critical demonstration
+    criteria passed.
+  evidence_required:
+  - power formula card
+  - device label notes

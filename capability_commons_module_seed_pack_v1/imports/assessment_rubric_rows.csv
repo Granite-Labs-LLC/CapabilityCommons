@@ -1,0 +1,49 @@
+assessment_id,criterion_order,criterion_type,criterion_text,critical
+assessment.module.01,1,artifact,"Required artifacts are complete, legible, and usable by another person.",true
+assessment.module.01,2,reasoning,"The learner can explain the key decisions, assumptions, and tradeoffs in plain language.",true
+assessment.module.01,3,alignment,The artifacts match the module goals and the covered node outputs.,true
+assessment.module.01,4,revision,The learner notes at least one improvement or next step based on review.,false
+assessment.module.02,1,artifact,"Required artifacts are complete, legible, and usable by another person.",true
+assessment.module.02,2,reasoning,"The learner can explain the key decisions, assumptions, and tradeoffs in plain language.",true
+assessment.module.02,3,alignment,The artifacts match the module goals and the covered node outputs.,true
+assessment.module.02,4,revision,The learner notes at least one improvement or next step based on review.,false
+assessment.module.03,1,artifact,Each required item on the checklist is present and correctly labeled.,true
+assessment.module.03,2,technical,Core calculations or comparisons are internally consistent and match the worksheet.,true
+assessment.module.03,3,clarity,A second person could follow the output without asking what the labels mean.,true
+assessment.module.03,4,revision,The learner identifies one item still needing verification or improvement.,false
+assessment.module.04,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.04,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.04,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.04,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.05,1,artifact,"Required artifacts are complete, legible, and usable by another person.",true
+assessment.module.05,2,reasoning,"The learner can explain the key decisions, assumptions, and tradeoffs in plain language.",true
+assessment.module.05,3,alignment,The artifacts match the module goals and the covered node outputs.,true
+assessment.module.05,4,revision,The learner notes at least one improvement or next step based on review.,false
+assessment.module.06,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.06,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.06,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.06,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.07,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.07,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.07,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.07,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.08,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.08,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.08,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.08,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.09,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.09,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.09,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.09,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.10,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.10,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.10,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.10,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false
+assessment.module.11,1,artifact,"Required artifacts are complete, legible, and usable by another person.",true
+assessment.module.11,2,reasoning,"The learner can explain the key decisions, assumptions, and tradeoffs in plain language.",true
+assessment.module.11,3,alignment,The artifacts match the module goals and the covered node outputs.,true
+assessment.module.11,4,revision,The learner notes at least one improvement or next step based on review.,false
+assessment.module.12,1,artifact,Required artifacts are complete and ready for use during the demonstration.,true
+assessment.module.12,2,performance,The learner can demonstrate the task or walkthrough without skipping critical steps.,true
+assessment.module.12,3,explanation,"The learner can explain the assumptions, limits, or safety boundaries in plain language.",true
+assessment.module.12,4,teach_forward,Another person could repeat the procedure or use the handout after the demonstration.,false

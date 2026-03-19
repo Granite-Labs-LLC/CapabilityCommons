@@ -1,0 +1,76 @@
+id: module.04-water-testing-and-planning
+type: module
+title: 'Water II: Testing and Household Planning'
+summary: Use simple household testing and planning steps to turn water storage and
+  treatment choices into a 72-hour and 2-week plan.
+plain_language: This module turns water ideas into a real plan you can check, update,
+  and explain.
+primary_domain: water
+domains:
+- water
+stage: household
+difficulty: 2
+estimated_hours: 4.17
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-04
+- water
+- testing
+- planning
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  - module.02-measure-map-and-inventory
+  - module.03-water-storage-and-treatment
+  n: null
+outputs:
+- water test log
+- household water plan
+- water source and storage map
+- retest schedule
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 4
+  node_refs:
+  - water.basic-testing
+  - water.household-water-plan
+  learning_objectives:
+  - Run basic water testing or inspection steps and record the results clearly.
+  - Convert storage, source, and treatment choices into a household water plan.
+  - Explain when a plan should be retested, expanded, or revised.
+  seminar_outline:
+  - What basic household water tests can and cannot tell you
+  - Logging results, assumptions, and retest intervals
+  - Building 72-hour and 2-week water plans
+  - Source diversity, redundancy, and revision triggers
+  lab: Complete a sample test log and use it to draft a household water plan with
+    source, storage, and retest assumptions.
+  field_task: Create a 72-hour and 2-week household water plan using your actual storage,
+    likely sources, and one retest schedule.
+  teach_forward_task: Walk another person through your water plan and have them identify
+    one assumption they would verify before relying on it.
+  deliverable_refs:
+  - water test log
+  - household water plan
+  - water source and storage map
+  - retest schedule
+  assessment_ref: assessment.module.04
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 90
+    field_task_minutes: 75
+    teach_forward_minutes: 15

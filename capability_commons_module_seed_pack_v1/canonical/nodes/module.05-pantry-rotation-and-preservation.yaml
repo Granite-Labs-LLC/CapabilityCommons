@@ -1,0 +1,80 @@
+id: module.05-pantry-rotation-and-preservation
+type: module
+title: 'Food I: Pantry Design, Rotation, and Preservation Boundaries'
+summary: Design a pantry around calories, shelf life, budget, and storage conditions,
+  then add a clear rotation and preservation safety boundary.
+plain_language: This module helps you build food resilience without turning your pantry
+  into clutter or guessing about preservation safety.
+primary_domain: food
+domains:
+- food
+stage: household
+difficulty: 2
+estimated_hours: 4.25
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- apartment
+tags:
+- curriculum
+- week-05
+- food
+- pantry
+- preservation
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  - module.02-measure-map-and-inventory
+  n: null
+outputs:
+- pantry map
+- shopping gap list
+- category labels
+- rotation sheet
+- reorder cadence
+- preservation safety card
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 5
+  node_refs:
+  - food.pantry-design
+  - food.pantry-rotation
+  - food.safe-preservation-basics
+  learning_objectives:
+  - Design a pantry layout around household needs, constraints, and likely gaps.
+  - Set up a rotation and reorder cadence that prevents hidden waste.
+  - Explain the safety boundaries of common preservation methods in plain language.
+  seminar_outline:
+  - Pantry design as a planning problem, not a shopping spree
+  - Shelf life, labeling, and reorder cadence
+  - Safe boundaries for freezing, drying, fermenting, and canning decisions
+  - Low-cost pantry improvements that matter first
+  lab: Sort foods by category and shelf life, draft a pantry map, and build a simple
+    rotation sheet plus preservation safety card.
+  field_task: Map your pantry, label one rotation cycle, and document one low-cost
+    improvement you can make immediately.
+  teach_forward_task: Show another person how your pantry rotation works and explain
+    one preservation method you would not improvise.
+  deliverable_refs:
+  - pantry map
+  - shopping gap list
+  - category labels
+  - rotation sheet
+  - reorder cadence
+  - preservation safety card
+  assessment_ref: assessment.module.05
+  delivery_profile:
+    seminar_minutes: 75
+    lab_minutes: 90
+    field_task_minutes: 75
+    teach_forward_minutes: 15

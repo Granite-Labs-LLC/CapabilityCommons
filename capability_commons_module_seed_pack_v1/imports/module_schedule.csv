@@ -1,0 +1,13 @@
+module_id,week,seminar_minutes,lab_minutes,field_task_minutes,teach_forward_minutes,total_minutes
+module.01-truth-tools-and-ai,1,75,90,60,15,240
+module.02-measure-map-and-inventory,2,75,90,75,15,255
+module.03-water-storage-and-treatment,3,70,80,70,10,230
+module.04-water-testing-and-planning,4,70,90,75,15,250
+module.05-pantry-rotation-and-preservation,5,75,90,75,15,255
+module.06-seed-starting-and-garden-planning,6,70,90,90,15,265
+module.07-envelope-and-weatherization,7,75,90,75,10,250
+module.08-moisture-tools-shutoffs-and-patching,8,70,90,90,15,265
+module.09-circuit-basics-and-label-reading,9,70,75,60,15,220
+module.10-load-audit-and-runtime,10,70,90,75,15,250
+module.11-backup-power-and-local-resource-map,11,75,90,90,15,270
+module.12-capstone-teach-forward,12,60,90,90,30,270

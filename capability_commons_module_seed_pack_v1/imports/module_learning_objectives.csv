@@ -1,0 +1,37 @@
+module_id,objective_order,objective_text
+module.01-truth-tools-and-ai,1,"Evaluate a practical claim using source quality, date, evidence, and local applicability."
+module.01-truth-tools-and-ai,2,"Use AI to summarize, compare, and critique sources without outsourcing judgment."
+module.01-truth-tools-and-ai,3,Produce a claim-check worksheet and a short cited recommendation note.
+module.02-measure-map-and-inventory,1,Choose and convert the units needed for common household calculations.
+module.02-measure-map-and-inventory,2,"Map inputs, outputs, dependencies, and failure points in a household system."
+module.02-measure-map-and-inventory,3,"Create a baseline resilience inventory covering needs, tools, contacts, and gaps."
+module.03-water-storage-and-treatment,1,Calculate daily and short-horizon household water needs in comparable units.
+module.03-water-storage-and-treatment,2,"Compare treatment methods by source conditions, speed, cost, and limitations."
+module.03-water-storage-and-treatment,3,Build a practical storage table and treatment decision matrix for your context.
+module.04-water-testing-and-planning,1,Run basic water testing or inspection steps and record the results clearly.
+module.04-water-testing-and-planning,2,"Convert storage, source, and treatment choices into a household water plan."
+module.04-water-testing-and-planning,3,"Explain when a plan should be retested, expanded, or revised."
+module.05-pantry-rotation-and-preservation,1,"Design a pantry layout around household needs, constraints, and likely gaps."
+module.05-pantry-rotation-and-preservation,2,Set up a rotation and reorder cadence that prevents hidden waste.
+module.05-pantry-rotation-and-preservation,3,Explain the safety boundaries of common preservation methods in plain language.
+module.06-seed-starting-and-garden-planning,1,"Start seeds with workable timing, medium, light, and moisture conditions."
+module.06-seed-starting-and-garden-planning,2,"Plan a small bed or container garden around space, season, and care capacity."
+module.06-seed-starting-and-garden-planning,3,"Translate garden goals into a layout, crop plan, and simple care calendar."
+module.07-envelope-and-weatherization,1,"Explain the basic relationship between heat flow, air leakage, and the building envelope."
+module.07-envelope-and-weatherization,2,Inspect a space for likely weatherization priorities using a repeatable audit method.
+module.07-envelope-and-weatherization,3,"Rank fixes by impact, effort, and constraints."
+module.08-moisture-tools-shutoffs-and-patching,1,Identify common moisture sources and conditions that make mold more likely.
+module.08-moisture-tools-shutoffs-and-patching,2,Use basic hand tools and household shutoffs with confidence and documentation.
+module.08-moisture-tools-shutoffs-and-patching,3,"Make simple seals, patches, and temporary repairs while recording what still needs a durable fix."
+module.09-circuit-basics-and-label-reading,1,"Differentiate volts, amps, watts, and watt-hours in plain language."
+module.09-circuit-basics-and-label-reading,2,Read device labels and identify what information matters for planning.
+module.09-circuit-basics-and-label-reading,3,"Explain why breaker limits, startup surges, and real-world usage complicate simple guesses."
+module.10-load-audit-and-runtime,1,"Separate essential, important, and optional loads for different outage durations."
+module.10-load-audit-and-runtime,2,"Estimate runtime using consistent units, duty cycle, and efficiency assumptions."
+module.10-load-audit-and-runtime,3,Document the assumptions that most change your answer.
+module.11-backup-power-and-local-resource-map,1,"Draft low-, mid-, and high-budget backup options matched to critical loads and runtime goals."
+module.11-backup-power-and-local-resource-map,2,"Compare backup options by capability, burden, and local constraints."
+module.11-backup-power-and-local-resource-map,3,"Map local skills, tools, spaces, and sources that matter during normal times and disruptions."
+module.12-capstone-teach-forward,1,"Turn one completed capability into a short lesson with a clear promise, steps, and artifact."
+module.12-capstone-teach-forward,2,Translate technical language into terms a general audience can follow.
+module.12-capstone-teach-forward,3,"Leave behind a handout, checklist, or map that remains useful without the instructor present."

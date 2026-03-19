@@ -1,0 +1,80 @@
+id: module.12-capstone-teach-forward
+type: module
+title: 'Capstone: Teach Forward and Archive the Capability'
+summary: Package one completed capability into a short, usable lesson with a durable
+  handout so the knowledge can move beyond the individual learner.
+plain_language: This module turns private learning into public usefulness by asking
+  you to teach one thing clearly and leave behind something others can reuse.
+primary_domain: community
+domains:
+- community
+stage: community
+difficulty: 2
+estimated_hours: 4.5
+cost_band: free
+risk_band: low
+contexts:
+- general
+- urban
+- rural
+- low_budget
+- off_grid
+tags:
+- curriculum
+- week-12
+- community
+- teaching
+- capstone
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  n: null
+- mode: n_of
+  ids:
+  - module.04-water-testing-and-planning
+  - module.05-pantry-rotation-and-preservation
+  - module.06-seed-starting-and-garden-planning
+  - module.07-envelope-and-weatherization
+  - module.11-backup-power-and-local-resource-map
+  n: 2
+outputs:
+- lesson plan
+- one-page handout
+- micro-session notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 12
+  node_refs:
+  - community.teach-forward-session
+  learning_objectives:
+  - Turn one completed capability into a short lesson with a clear promise, steps,
+    and artifact.
+  - Translate technical language into terms a general audience can follow.
+  - Leave behind a handout, checklist, or map that remains useful without the instructor
+    present.
+  seminar_outline:
+  - Why knowledge transfer is part of capability, not an optional extra
+  - Compressing a lesson into 3-minute and 10-minute forms
+  - Designing a handout that survives without the teacher
+  - Capturing revision notes for the next cohort
+  lab: Draft a 10–20 minute lesson plan, build a one-page handout, and rehearse the
+    session with timing and feedback.
+  field_task: Deliver a short teach-forward session or record a rehearsal, then revise
+    the lesson based on the clarity gaps you notice.
+  teach_forward_task: This module is itself the teach-forward action; gather one piece
+    of feedback and use it to improve the handout or lesson sequence.
+  deliverable_refs:
+  - lesson plan
+  - one-page handout
+  - micro-session notes
+  assessment_ref: assessment.module.12
+  delivery_profile:
+    seminar_minutes: 60
+    lab_minutes: 90
+    field_task_minutes: 90
+    teach_forward_minutes: 30

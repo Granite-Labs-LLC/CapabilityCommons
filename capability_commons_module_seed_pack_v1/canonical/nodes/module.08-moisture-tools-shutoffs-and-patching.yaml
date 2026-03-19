@@ -1,0 +1,88 @@
+id: module.08-moisture-tools-shutoffs-and-patching
+type: module
+title: 'Repair I: Moisture, Tools, Shutoffs, and Patching'
+summary: Combine moisture control, hand-tool literacy, and simple shutoff and sealing
+  actions so small problems stop becoming bigger ones.
+plain_language: This module helps you act early on leaks, dampness, and small failures
+  instead of waiting until they become expensive.
+primary_domain: shelter
+domains:
+- shelter
+- repair
+stage: household
+difficulty: 2
+estimated_hours: 4.42
+cost_band: low
+risk_band: moderate
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- cold_climate
+- hot_climate
+tags:
+- curriculum
+- week-08
+- repair
+- moisture
+- patching
+requires:
+- mode: all_of
+  ids:
+  - module.01-truth-tools-and-ai
+  - module.02-measure-map-and-inventory
+  - module.07-envelope-and-weatherization
+  n: null
+outputs:
+- moisture checklist
+- source map
+- response plan
+- tool competency checklist
+- starter tool list
+- shutoff map
+- patch kit list
+- temporary repair notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 8
+  node_refs:
+  - shelter.moisture-and-mold-control
+  - repair.hand-tool-literacy
+  - repair.shutoffs-seals-and-patches
+  learning_objectives:
+  - Identify common moisture sources and conditions that make mold more likely.
+  - Use basic hand tools and household shutoffs with confidence and documentation.
+  - Make simple seals, patches, and temporary repairs while recording what still needs
+    a durable fix.
+  seminar_outline:
+  - Moisture sources, hidden persistence, and mold conditions
+  - Tool literacy as controlled, observable practice
+  - Shutoffs, leak response, and temporary fixes
+  - Documentation habits that make repair safer and repeatable
+  lab: Practice tool handling, locate shutoffs, and prepare a patch kit and response
+    checklist for one likely household issue.
+  field_task: Create a shutoff map, document one moisture source or risk area, and
+    complete one seal or temporary patch that is appropriate for your space.
+  teach_forward_task: Show another person where the key shutoffs are and what your
+    first three actions would be in a small leak event.
+  deliverable_refs:
+  - moisture checklist
+  - source map
+  - response plan
+  - tool competency checklist
+  - starter tool list
+  - shutoff map
+  - patch kit list
+  - temporary repair notes
+  assessment_ref: assessment.module.08
+  delivery_profile:
+    seminar_minutes: 70
+    lab_minutes: 90
+    field_task_minutes: 90
+    teach_forward_minutes: 15

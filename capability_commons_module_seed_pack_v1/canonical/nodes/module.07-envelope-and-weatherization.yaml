@@ -1,0 +1,79 @@
+id: module.07-envelope-and-weatherization
+type: module
+title: 'Shelter I: Building Envelope and Weatherization'
+summary: Learn where homes lose heat and comfort, then audit drafts, leakage, and
+  weatherization priorities room by room.
+plain_language: This module helps you understand how air, heat, and moisture move
+  through a building so you can improve comfort and efficiency.
+primary_domain: shelter
+domains:
+- shelter
+stage: household
+difficulty: 2
+estimated_hours: 4.17
+cost_band: low
+risk_band: low
+contexts:
+- renter
+- homeowner
+- urban
+- rural
+- low_budget
+- cold_climate
+- hot_climate
+tags:
+- curriculum
+- week-07
+- shelter
+- weatherization
+- building-envelope
+requires:
+- mode: all_of
+  ids:
+  - module.02-measure-map-and-inventory
+  n: null
+outputs:
+- building-envelope diagram
+- heat-loss note
+- weatherization audit
+- priority fix list
+- room-by-room notes
+lifecycle_state: draft
+evidence_level: compiled
+source_refs: []
+version: 1.0.0
+updated_at: '2026-03-16'
+payload:
+  week: 7
+  node_refs:
+  - shelter.building-envelope
+  - shelter.weatherization-audit
+  learning_objectives:
+  - Explain the basic relationship between heat flow, air leakage, and the building
+    envelope.
+  - Inspect a space for likely weatherization priorities using a repeatable audit
+    method.
+  - Rank fixes by impact, effort, and constraints.
+  seminar_outline:
+  - Heat, air, moisture, and why comfort is not one variable
+  - Where buildings commonly leak or lose performance
+  - Audit methods and prioritizing fixes
+  - Temporary versus durable weatherization choices
+  lab: Use a room-by-room worksheet to identify likely leakage points and draft a
+    weatherization priority list.
+  field_task: Complete a weatherization audit for one dwelling or one zone of a dwelling
+    and record the first fixes worth testing.
+  teach_forward_task: Walk another person through one room and explain what you would
+    improve first and why.
+  deliverable_refs:
+  - building-envelope diagram
+  - heat-loss note
+  - weatherization audit
+  - priority fix list
+  - room-by-room notes
+  assessment_ref: assessment.module.07
+  delivery_profile:
+    seminar_minutes: 75
+    lab_minutes: 90
+    field_task_minutes: 75
+    teach_forward_minutes: 10

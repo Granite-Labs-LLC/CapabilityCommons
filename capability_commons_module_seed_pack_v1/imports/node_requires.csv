@@ -1,0 +1,26 @@
+source_id,group_id,mode,group_n,required_node_id,requirement_order,note
+module.02-measure-map-and-inventory,module.02-measure-map-and-inventory.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.03-water-storage-and-treatment,module.03-water-storage-and-treatment.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.03-water-storage-and-treatment,module.03-water-storage-and-treatment.req01,all_of,,module.02-measure-map-and-inventory,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.04-water-testing-and-planning,module.04-water-testing-and-planning.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.04-water-testing-and-planning,module.04-water-testing-and-planning.req01,all_of,,module.02-measure-map-and-inventory,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.04-water-testing-and-planning,module.04-water-testing-and-planning.req01,all_of,,module.03-water-storage-and-treatment,3,Module prerequisite derived from covered node dependencies and delivery design.
+module.05-pantry-rotation-and-preservation,module.05-pantry-rotation-and-preservation.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.05-pantry-rotation-and-preservation,module.05-pantry-rotation-and-preservation.req01,all_of,,module.02-measure-map-and-inventory,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.06-seed-starting-and-garden-planning,module.06-seed-starting-and-garden-planning.req01,all_of,,module.02-measure-map-and-inventory,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.07-envelope-and-weatherization,module.07-envelope-and-weatherization.req01,all_of,,module.02-measure-map-and-inventory,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.08-moisture-tools-shutoffs-and-patching,module.08-moisture-tools-shutoffs-and-patching.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.08-moisture-tools-shutoffs-and-patching,module.08-moisture-tools-shutoffs-and-patching.req01,all_of,,module.02-measure-map-and-inventory,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.08-moisture-tools-shutoffs-and-patching,module.08-moisture-tools-shutoffs-and-patching.req01,all_of,,module.07-envelope-and-weatherization,3,Module prerequisite derived from covered node dependencies and delivery design.
+module.09-circuit-basics-and-label-reading,module.09-circuit-basics-and-label-reading.req01,all_of,,module.02-measure-map-and-inventory,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.10-load-audit-and-runtime,module.10-load-audit-and-runtime.req01,all_of,,module.02-measure-map-and-inventory,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.10-load-audit-and-runtime,module.10-load-audit-and-runtime.req01,all_of,,module.09-circuit-basics-and-label-reading,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.11-backup-power-and-local-resource-map,module.11-backup-power-and-local-resource-map.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.11-backup-power-and-local-resource-map,module.11-backup-power-and-local-resource-map.req01,all_of,,module.02-measure-map-and-inventory,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.11-backup-power-and-local-resource-map,module.11-backup-power-and-local-resource-map.req01,all_of,,module.10-load-audit-and-runtime,3,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req01,all_of,,module.01-truth-tools-and-ai,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req02,n_of,2,module.04-water-testing-and-planning,1,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req02,n_of,2,module.05-pantry-rotation-and-preservation,2,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req02,n_of,2,module.06-seed-starting-and-garden-planning,3,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req02,n_of,2,module.07-envelope-and-weatherization,4,Module prerequisite derived from covered node dependencies and delivery design.
+module.12-capstone-teach-forward,module.12-capstone-teach-forward.req02,n_of,2,module.11-backup-power-and-local-resource-map,5,Module prerequisite derived from covered node dependencies and delivery design.
