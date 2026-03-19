@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import uuid
 from collections import defaultdict
 
 from sqlalchemy import func, select
@@ -10,10 +11,12 @@ from capability_commons.db.models import (
     ContextObjectEntity,
     ContextObjectFacet,
     ContradictionCase,
+    Edge as EdgeModel,
     ReviewRecord,
 )
-from capability_commons.domain.enums import COType, LifecycleState
+from capability_commons.domain.enums import COType, LifecycleState, NodeKind
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
+from capability_commons.schemas.graph import GraphEdge, GraphNode, GraphResponse
 from capability_commons.schemas.public import PublicBundleResponse, PublicObjectResponse
 from capability_commons.services.evidence import EvidenceService
 from capability_commons.services.exceptions import NotFoundError
@@ -39,6 +42,59 @@ class PublicationService:
             except Exception:
                 continue
         return items
+
+    async def build_graph_data(self) -> GraphResponse:
+        result = await self.session.execute(
+            select(ContextObject)
+            .where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
+        )
+        objects = list(result.scalars().all())
+
+        nodes = []
+        version_id_to_slug: dict[uuid.UUID, str] = {}
+        for obj in objects:
+            version = obj.current_version
+            if version is None:
+                continue
+            version_id_to_slug[version.id] = obj.slug
+            facets = await self._group_facets(version.id)
+            domain = (facets.get("domain") or ["foundation"])[0]
+            nodes.append(GraphNode(
+                id=obj.slug,
+                slug=obj.slug,
+                title=version.title,
+                type=obj.type.value,
+                domain=domain,
+                stage=version.stage.value if version.stage else "foundation",
+                difficulty=version.difficulty or 1,
+                risk_band=version.risk_band.value if version.risk_band else "low",
+                beginner_safe=version.beginner_safe,
+                plain_language=version.plain_language or "",
+            ))
+
+        if not version_id_to_slug:
+            return GraphResponse(nodes=nodes, edges=[])
+
+        edge_result = await self.session.execute(
+            select(EdgeModel).where(
+                EdgeModel.src_node_kind == NodeKind.OBJECT_VERSION,
+                EdgeModel.dst_node_kind == NodeKind.OBJECT_VERSION,
+                EdgeModel.src_id.in_(list(version_id_to_slug.keys())),
+                EdgeModel.dst_id.in_(list(version_id_to_slug.keys())),
+            )
+        )
+        edges = []
+        for edge in edge_result.scalars().all():
+            src_slug = version_id_to_slug.get(edge.src_id)
+            dst_slug = version_id_to_slug.get(edge.dst_id)
+            if src_slug and dst_slug:
+                edges.append(GraphEdge(
+                    source=src_slug,
+                    target=dst_slug,
+                    type=edge.edge_type.value,
+                ))
+
+        return GraphResponse(nodes=nodes, edges=edges)
 
     async def render_public_object(self, slug: str) -> PublicObjectResponse:
         obj = await self._get_published_object(slug)

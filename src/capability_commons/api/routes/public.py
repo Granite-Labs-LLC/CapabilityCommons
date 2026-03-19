@@ -4,6 +4,7 @@ from fastapi import APIRouter
 
 from capability_commons.api.deps import DBSession
 from capability_commons.publication.service import PublicationService
+from capability_commons.schemas.graph import GraphResponse
 from capability_commons.schemas.public import PublicBundleResponse, PublicObjectResponse
 
 router = APIRouter()
@@ -13,6 +14,12 @@ router = APIRouter()
 async def list_public_objects(session: DBSession) -> list[PublicObjectResponse]:
     service = PublicationService(session)
     return await service.list_published_objects()
+
+
+@router.get("/public/graph", response_model=GraphResponse)
+async def public_graph(session: DBSession) -> GraphResponse:
+    service = PublicationService(session)
+    return await service.build_graph_data()
 
 
 @router.get("/public/objects/{slug}", response_model=PublicObjectResponse)
