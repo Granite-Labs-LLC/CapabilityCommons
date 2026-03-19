@@ -1,9 +1,8 @@
-"""CLI seed command: load the 25-node starter graph into Postgres."""
+"""CLI seed command: load capability and curriculum nodes into Postgres."""
 from __future__ import annotations
 
 import asyncio
 import csv
-import sys
 import uuid
 from decimal import Decimal
 from pathlib import Path
@@ -39,6 +38,8 @@ SEED_TYPE_TO_CO_TYPE = {
     "skill": COType.SKILL_GUIDE,
     "concept": COType.CONCEPT_NOTE,
     "project": COType.PROJECT_BLUEPRINT,
+    "module": COType.MODULE,
+    "assessment": COType.ASSESSMENT,
 }
 
 CONTEXT_TO_FACET: dict[str, tuple[FacetType, str]] = {
@@ -54,6 +55,10 @@ CONTEXT_TO_FACET: dict[str, tuple[FacetType, str]] = {
 SEED_EDGE_TO_EDGE_TYPE = {
     "REQUIRES": EdgeType.PREREQUISITE_FOR,
     "NEXT": EdgeType.NEXT_STEP_FOR,
+    "COVERS": EdgeType.CONTAINS,
+    "ASSESSED_BY": EdgeType.ASSESSED_BY,
+    "EVALUATES": EdgeType.VALIDATED_BY,
+    "PRECEDES": EdgeType.NEXT_STEP_FOR,
 }
 
 STAGE_MAP = {
@@ -88,14 +93,16 @@ def load_yaml_nodes(data_dir: Path) -> list[dict]:
     return nodes
 
 
-def load_next_edges(data_dir: Path) -> list[dict]:
+def load_edges(data_dir: Path) -> list[dict]:
+    """Load all edges from edges.csv."""
     edges_file = data_dir / "imports" / "edges.csv"
+    if not edges_file.exists():
+        return []
     edges = []
     with open(edges_file, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            if row["edge_type"] == "NEXT":
-                edges.append(row)
+            edges.append(row)
     return edges
 
 
@@ -127,7 +134,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
     session_factory = async_sessionmaker(bind=engine, expire_on_commit=False)
 
     nodes = load_yaml_nodes(data_dir)
-    next_edges = load_next_edges(data_dir)
+    csv_edges = load_edges(data_dir)
 
     async with session_factory() as session:
         # 1. Ensure workspace exists
@@ -258,38 +265,59 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     session.add(edge)
                     req_edges += 1
 
-        # 4. Insert NEXT edges from edges.csv
-        nav_edges = 0
-        for row in next_edges:
+        # 4. Insert edges from edges.csv
+        csv_edge_count = 0
+        csv_edge_skipped = 0
+        for row in csv_edges:
             src_slug = row["source_id"]
             dst_slug = row["target_id"]
-            if src_slug not in slug_to_version_id or dst_slug not in slug_to_version_id:
-                print(f"  WARN: missing NEXT edge node {src_slug} -> {dst_slug}")
+            seed_type = row["edge_type"]
+
+            edge_type = SEED_EDGE_TO_EDGE_TYPE.get(seed_type)
+            if edge_type is None:
+                print(f"  WARN: unknown edge type {seed_type}, skipping")
                 continue
+
+            if src_slug not in slug_to_version_id or dst_slug not in slug_to_version_id:
+                print(f"  WARN: missing edge node {src_slug} -> {dst_slug} ({seed_type})")
+                continue
+
             src_vid = slug_to_version_id[src_slug]
             dst_vid = slug_to_version_id[dst_slug]
-            if await _edge_exists(src_vid, EdgeType.NEXT_STEP_FOR, dst_vid):
+
+            if await _edge_exists(src_vid, edge_type, dst_vid):
+                csv_edge_skipped += 1
                 continue
+
+            ordinal = None
+            if seq := row.get("sequence"):
+                try:
+                    ordinal = int(seq)
+                except (ValueError, TypeError):
+                    pass
+
             edge = Edge(
                 workspace_id=workspace.id,
                 src_node_kind=NodeKind.OBJECT_VERSION,
                 src_id=src_vid,
-                edge_type=EdgeType.NEXT_STEP_FOR,
+                edge_type=edge_type,
                 dst_node_kind=NodeKind.OBJECT_VERSION,
                 dst_id=dst_vid,
+                ordinal=ordinal,
                 confidence=Decimal("1.0"),
                 provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
                 status=RelationStatus.CURRENT,
-                metadata_json={"note": row.get("note", "")},
+                metadata_json={"note": row.get("note", ""), "seed_edge_type": seed_type},
             )
             session.add(edge)
-            nav_edges += 1
+            csv_edge_count += 1
 
         await session.commit()
 
     await engine.dispose()
     print(f"Seed complete: {created} objects created, {skipped} skipped, "
-          f"{req_edges} prerequisite edges, {nav_edges} navigation edges")
+          f"{req_edges} prerequisite edges (from YAML), "
+          f"{csv_edge_count} CSV edges created, {csv_edge_skipped} CSV edges skipped (duplicates)")
 
 
 async def _ensure_workspace(session: AsyncSession) -> Workspace:
@@ -313,7 +341,7 @@ def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(description="Seed the Capability Commons knowledge graph")
-    parser.add_argument("--data-dir", type=Path, required=True, help="Path to expanded_seed directory")
+    parser.add_argument("--data-dir", type=Path, required=True, help="Path to seed data directory")
     parser.add_argument("--db-url", type=str, default=None, help="Database URL (default: from .env)")
     args = parser.parse_args()
 

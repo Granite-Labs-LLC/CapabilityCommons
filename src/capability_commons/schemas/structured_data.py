@@ -37,14 +37,25 @@ class ProjectBlueprintStructuredData(BaseModel):
     variants: list[str] = Field(default_factory=list)
 
 
+class DeliveryProfile(BaseModel):
+    seminar_minutes: int = Field(ge=0)
+    lab_minutes: int = Field(ge=0)
+    field_task_minutes: int = Field(ge=0)
+    teach_forward_minutes: int = Field(ge=0)
+
+
 class ModuleStructuredData(BaseModel):
     week: int = Field(ge=1)
+    node_refs: list[str] = Field(default_factory=list)
     learning_objectives: list[str] = Field(min_length=1)
     seminar_outline: list[str] = Field(min_length=1)
     lab: str
     field_task: str
     teach_forward_task: str
-    completion_requirements: list[str] = Field(min_length=1)
+    deliverable_refs: list[str] = Field(default_factory=list)
+    assessment_ref: str | None = None
+    delivery_profile: DeliveryProfile | None = None
+    completion_requirements: list[str] = Field(default_factory=list)
 
 
 class AssessmentStructuredData(BaseModel):
