@@ -212,7 +212,7 @@ class RetrievalService:
             score = float(hit.score)
             review_count = review_counts.get(hit.version_id, 0)
             citation_count = len(citations.get(hit.version_id, []))
-            facet_bonus = 0.05 * len(hit.matched_facets)
+            facet_bonus = 0.05 * len(hit.facets)
             if hit.lifecycle_state == LifecycleState.PUBLISHED:
                 score += 0.15
             if task_spec.required_evidence.prefer_verified and review_count > 0:

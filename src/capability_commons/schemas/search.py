@@ -28,7 +28,7 @@ class SearchHit(BaseModel):
     score: float | Decimal
     lifecycle_state: LifecycleState
     validity_status: str
-    matched_facets: dict[str, list[str]] = Field(default_factory=dict)
+    facets: dict[str, list[str]] = Field(default_factory=dict)
 
 
 class SearchResponse(BaseModel):

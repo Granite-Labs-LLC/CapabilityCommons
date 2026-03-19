@@ -90,7 +90,7 @@ class PostgresSearchAdapter(SearchAdapter):
                     score=float(score or 0.0),
                     lifecycle_state=obj.lifecycle_state,
                     validity_status=version.validity_status.value,
-                    matched_facets=facets_by_version.get(version.id, {}),
+                    facets=facets_by_version.get(version.id, {}),
                 )
             )
         return hits

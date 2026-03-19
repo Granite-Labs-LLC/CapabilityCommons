@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     default_max_iterations: int = 4
     default_sufficiency_threshold: float = 0.75
     public_preview: bool = False
-    cors_origins: list[str] = Field(default_factory=lambda: ["*"])
+    cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:4321"])
 
     # Auth
     auth_enabled: bool = True
