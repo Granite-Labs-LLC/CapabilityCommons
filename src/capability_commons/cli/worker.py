@@ -5,7 +5,7 @@ import asyncio
 import logging
 from datetime import datetime, timezone
 
-from sqlalchemy import select
+from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 
 from capability_commons.db.models import OutboxEvent
@@ -28,10 +28,30 @@ class OutboxWorker:
 
     async def run(self) -> None:
         logger.info("Outbox worker started (poll_interval=%.1fs)", self.poll_interval)
+        iteration = 0
         while self._running:
             processed = await self._poll_batch()
+            iteration += 1
+            if iteration % 100 == 0:
+                async with self.session_factory() as session:
+                    deleted = await self.cleanup_rate_limits(session)
+                    if deleted > 0:
+                        logger.info("Cleaned up %d expired rate limit records", deleted)
             if processed == 0:
                 await asyncio.sleep(self.poll_interval)
+
+    async def cleanup_rate_limits(self, session) -> int:
+        """Delete rate limit records older than 1 hour."""
+        from datetime import timedelta
+
+        from capability_commons.db.models import RateLimitLog
+
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=1)
+        result = await session.execute(
+            delete(RateLimitLog).where(RateLimitLog.window_start < cutoff)
+        )
+        await session.commit()
+        return result.rowcount or 0
 
     async def stop(self) -> None:
         self._running = False
