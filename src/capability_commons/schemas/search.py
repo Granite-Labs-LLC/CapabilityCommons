@@ -9,7 +9,7 @@ from capability_commons.domain.enums import COType, LifecycleState
 
 
 class SearchRequest(BaseModel):
-    workspace_id: uuid.UUID
+    workspace_id: uuid.UUID | None = None
     query: str
     facet_filters: dict[str, list[str]] = Field(default_factory=dict)
     object_types: list[COType] = Field(default_factory=list)

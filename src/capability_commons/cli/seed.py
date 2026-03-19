@@ -167,7 +167,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 slug=slug,
                 type=co_type,
                 canonical_title=node["title"],
-                lifecycle_state=LifecycleState.DRAFT,
+                lifecycle_state=LifecycleState.PUBLISHED,
                 visibility=VisibilityType.PUBLIC,
             )
             session.add(obj)
@@ -195,8 +195,9 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             session.add(version)
             await session.flush()
 
-            # Set current_version_id
+            # Set current_version_id and mark as published
             obj.current_version_id = version.id
+            obj.published_at = obj.created_at
 
             # Add facets
             for facet_type, facet_value in map_facets(node):

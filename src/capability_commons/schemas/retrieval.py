@@ -27,7 +27,7 @@ class RequiredEvidence(BaseModel):
 
 
 class RetrievalRequest(BaseModel):
-    workspace_id: uuid.UUID
+    workspace_id: uuid.UUID | None = None
     requester_id: uuid.UUID | None = None
     query: str
     intent: RetrievalIntent
