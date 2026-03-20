@@ -200,13 +200,19 @@ These are cosmetic enhancements — the site works with live data as-is.
 
 ## Production Deployment
 
-For production, you'll want to:
+For detailed production deployment instructions, see:
 
-1. **Backend**: Push the Docker image to a registry and deploy to your hosting platform. Set `AUTH_ENABLED=true` and configure API keys via the CLI (`python -m capability_commons.cli.keys create --name prod-site`).
+- **[PRODUCTION_DEPLOY.md](PRODUCTION_DEPLOY.md)** — Full guide for deploying the backend on a dedicated Linux server with Docker Compose, Caddy reverse proxy (auto-SSL), firewall, backups, and monitoring.
 
-2. **Frontend**: Build the static site with `npm run build` and deploy the `dist/` directory to any static host (Cloudflare Pages, Vercel, Netlify). Set `PUBLIC_API_URL` to your production API URL at build time.
+- **[CapabilityCommonsSite Replit Guide](../../CapabilityCommonsSite/docs/REPLIT_DEPLOY.md)** — Full guide for deploying the frontend on Replit, including CORS configuration, environment variables, and rebuild workflow.
 
-3. **Worker**: Run the outbox worker alongside the API for search indexing and embedding generation:
+In brief:
+
+1. **Backend (Linux server)**: `docker compose up -d`, run migrations, seed both data passes, set up Caddy for SSL. See `docs/PRODUCTION_DEPLOY.md`.
+
+2. **Frontend (Replit)**: Set `PUBLIC_API_URL` to your server's URL, `npm run build`, serve `dist/`. See the Replit guide above.
+
+3. **Worker** (optional): Run the outbox worker alongside the API for search indexing and embedding generation:
    ```bash
    python -m capability_commons.cli.worker
    ```

@@ -32,6 +32,8 @@ Seed data uses three types, mapped to the internal type system:
 | `skill` | `skill_guide` | Observable action a learner can perform |
 | `concept` | `concept_note` | Principle, model, or mental framework |
 | `project` | `project_blueprint` | Applied task that creates a useful artifact |
+| `module` | `module` | Weekly curriculum unit covering multiple capabilities |
+| `assessment` | `assessment` | Evaluation rubric for a module |
 
 ### Edge types
 
@@ -39,6 +41,10 @@ Seed data uses three types, mapped to the internal type system:
 |-----------|--------------|---------|
 | `REQUIRES` | `prerequisite_for` | Source depends on target |
 | `NEXT` | `next_step_for` | Suggested navigation/progression |
+| `COVERS` | `contains` | Module covers a capability node |
+| `ASSESSED_BY` | `assessed_by` | Module assessed by an assessment |
+| `EVALUATES` | `validated_by` | Assessment evaluates a capability |
+| `PRECEDES` | `next_step_for` | Module sequencing (maps to next_step_for) |
 
 The schema supports 25 edge types total — see `src/capability_commons/domain/enums.py`.
 
@@ -46,17 +52,18 @@ The schema supports 25 edge types total — see `src/capability_commons/domain/e
 
 ### Seeded knowledge graph
 
-The 25-node starter graph is loaded and verified:
+The full graph is loaded in two passes — 25 capability nodes and 24 curriculum nodes:
 
 | Metric | Count |
 |--------|-------|
-| Context objects | 25 |
-| Versions | 25 |
-| Facets | 167 (domain, audience, settlement_type, budget_profile) |
-| Prerequisite edges | 50 |
-| Navigation edges | 27 |
+| Context objects | 49 (25 capability + 12 modules + 12 assessments) |
+| Versions | 49 |
+| Facets | 167+ (domain, audience, settlement_type, budget_profile) |
+| Edge types | 5 (prerequisite_for, next_step_for, contains, assessed_by, validated_by) |
+| Total edges | 175 (77 from capability seed + 98 from curriculum seed) |
 
 Domains covered: foundation (5 nodes), water (4), food (5), shelter (3), repair (2), power (4), community (2).
+Curriculum: 12 weekly modules + 12 matching assessments spanning all domains.
 
 ### Working services
 
@@ -93,8 +100,9 @@ cp .env.example .env
 # 4. Run migrations
 alembic upgrade head
 
-# 5. Seed the knowledge graph
+# 5. Seed the knowledge graph (two passes)
 python -m capability_commons.cli.seed --data-dir expanded_seed/
+python -m capability_commons.cli.seed --data-dir capability_commons_module_seed_pack_v1/
 
 # 6. Start the API
 uvicorn capability_commons.main:app --reload --port 8100
@@ -113,7 +121,9 @@ docker compose exec db psql -U postgres -d capability_commons \
 
 # Re-run is idempotent
 python -m capability_commons.cli.seed --data-dir expanded_seed/
-# → "Seed complete: 0 objects created, 25 skipped, 0 prerequisite edges, 0 navigation edges"
+# → "Seed complete: 0 objects created, 25 skipped, ..."
+python -m capability_commons.cli.seed --data-dir capability_commons_module_seed_pack_v1/
+# → "Seed complete: 0 objects created, 24 skipped, ..."
 ```
 
 ## Project layout
@@ -134,11 +144,16 @@ src/capability_commons/
   services/      # Registry, entities, evidence, review
   storage/       # Object storage adapter interface
 
-expanded_seed/             # 25-node seed data package
-  canonical/nodes/*.yaml   # Authoritative source (one per node)
-  imports/*.csv            # Normalized relational tables
-  imports/nodes.jsonl      # Full-record JSON Lines
-  schema/                  # JSON schemas and data dictionary
+expanded_seed/                           # 25-node capability seed data
+  canonical/nodes/*.yaml                 # Authoritative source (one per node)
+  imports/*.csv                          # Normalized relational tables
+  imports/nodes.jsonl                    # Full-record JSON Lines
+  schema/                                # JSON schemas and data dictionary
+
+capability_commons_module_seed_pack_v1/  # 24-node curriculum seed data
+  canonical/nodes/*.yaml                 # 12 modules + 12 assessments
+  imports/edges.csv                      # 98 edges (COVERS, ASSESSED_BY, etc.)
+  schema/                                # Ontology and data dictionary
 
 docs/
   VISION.md                # Project purpose, doctrine, and design model
