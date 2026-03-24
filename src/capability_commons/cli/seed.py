@@ -16,12 +16,15 @@ from capability_commons.db.models import (
     ContextObjectFacet,
     ContextObjectVersion,
     Edge,
+    EvidenceSource,
+    EvidenceSpan,
     Workspace,
 )
 from capability_commons.domain.enums import (
     COType,
     CostBand,
     EdgeType,
+    EvidenceSourceKind,
     FacetType,
     LifecycleState,
     NodeKind,
@@ -84,6 +87,36 @@ RISK_MAP = {
 }
 
 
+def resolve_co_type(node: dict) -> COType:
+    """Resolve object type from co_type or type field."""
+    if co_type_str := node.get("co_type"):
+        return COType(co_type_str.lower())
+    return SEED_TYPE_TO_CO_TYPE[node["type"]]
+
+
+def resolve_requires(node: dict) -> list[tuple[str, str, dict]]:
+    """Extract (source_slug, target_slug, metadata) triples from requires field.
+
+    Handles both flat list format:
+        requires: ["a.b", "c.d"]
+
+    And grouped format:
+        requires:
+          - mode: all_of
+            ids: ["a.b", "c.d"]
+    """
+    src_slug = node["id"]
+    triples: list[tuple[str, str, dict]] = []
+    for item in node.get("requires", []):
+        if isinstance(item, str):
+            triples.append((src_slug, item, {}))
+        elif isinstance(item, dict):
+            mode = item.get("mode", "all_of")
+            for req_id in item.get("ids", []):
+                triples.append((src_slug, req_id, {"group_mode": mode}))
+    return triples
+
+
 def load_yaml_nodes(data_dir: Path) -> list[dict]:
     nodes_dir = data_dir / "canonical" / "nodes"
     nodes = []
@@ -122,10 +155,14 @@ def build_structured_data(node: dict) -> dict:
     sd: dict = {}
     if payload := node.get("payload"):
         sd.update(payload)
+    if structured := node.get("structured_data"):
+        sd.update(structured)
     if tags := node.get("tags"):
         sd["tags"] = tags
     if outputs := node.get("outputs"):
         sd["outputs"] = outputs
+    if bundle_overrides := node.get("bundle_overrides"):
+        sd["_bundle"] = bundle_overrides
     return sd
 
 
@@ -168,13 +205,15 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 slug_to_version_id[slug] = obj.current_version_id
                 continue
 
-            co_type = SEED_TYPE_TO_CO_TYPE[node["type"]]
+            co_type = resolve_co_type(node)
+            lifecycle_str = node.get("lifecycle_state", "PUBLISHED")
+            lifecycle = LifecycleState(lifecycle_str) if lifecycle_str else LifecycleState.PUBLISHED
             obj = ContextObject(
                 workspace_id=workspace.id,
                 slug=slug,
                 type=co_type,
-                canonical_title=node["title"],
-                lifecycle_state=LifecycleState.PUBLISHED,
+                canonical_title=node.get("canonical_title") or node["title"],
+                lifecycle_state=lifecycle,
                 visibility=VisibilityType.PUBLIC,
             )
             session.add(obj)
@@ -186,11 +225,13 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
 
             version = ContextObjectVersion(
                 context_object_id=obj.id,
-                version_no=1,
-                title=node["title"],
-                summary_short=node.get("summary"),
+                version_no=node.get("version_no", 1),
+                title=node.get("canonical_title") or node["title"],
+                summary_short=node.get("summary_short") or node.get("summary"),
+                summary_medium=node.get("summary_medium"),
+                summary_long=node.get("summary_long"),
                 plain_language=node.get("plain_language", ""),
-                markdown_body=node.get("summary", ""),
+                markdown_body=node.get("markdown_body") or node.get("summary", ""),
                 structured_data=build_structured_data(node),
                 validity_status=ValidityStatus.CURRENT,
                 stage=STAGE_MAP.get(node.get("stage", ""), None),
@@ -238,32 +279,117 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             src_slug = node["id"]
             if src_slug not in slug_to_version_id:
                 continue
-            for req_group in node.get("requires", []):
-                if not isinstance(req_group, dict):
+            for _, req_id, meta in resolve_requires(node):
+                if req_id not in slug_to_version_id:
+                    print(f"  WARN: missing prerequisite target {req_id}")
                     continue
-                for i, req_id in enumerate(req_group.get("ids", [])):
-                    if req_id not in slug_to_version_id:
-                        print(f"  WARN: missing prerequisite target {req_id}")
-                        continue
-                    src_vid = slug_to_version_id[src_slug]
-                    dst_vid = slug_to_version_id[req_id]
-                    if await _edge_exists(src_vid, EdgeType.PREREQUISITE_FOR, dst_vid):
-                        continue
-                    edge = Edge(
-                        workspace_id=workspace.id,
-                        src_node_kind=NodeKind.OBJECT_VERSION,
-                        src_id=src_vid,
-                        edge_type=EdgeType.PREREQUISITE_FOR,
-                        dst_node_kind=NodeKind.OBJECT_VERSION,
-                        dst_id=dst_vid,
-                        ordinal=i,
-                        confidence=Decimal("1.0"),
-                        provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
-                        status=RelationStatus.CURRENT,
-                        metadata_json={"group_mode": req_group.get("mode", "all_of")},
+                src_vid = slug_to_version_id[src_slug]
+                dst_vid = slug_to_version_id[req_id]
+                if await _edge_exists(src_vid, EdgeType.PREREQUISITE_FOR, dst_vid):
+                    continue
+                edge = Edge(
+                    workspace_id=workspace.id,
+                    src_node_kind=NodeKind.OBJECT_VERSION,
+                    src_id=src_vid,
+                    edge_type=EdgeType.PREREQUISITE_FOR,
+                    dst_node_kind=NodeKind.OBJECT_VERSION,
+                    dst_id=dst_vid,
+                    ordinal=req_edges,
+                    confidence=Decimal("1.0"),
+                    provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
+                    status=RelationStatus.CURRENT,
+                    metadata_json=meta,
+                )
+                session.add(edge)
+                req_edges += 1
+
+        # 3b. Insert suggested_edges from ingestion YAML
+        sug_edges = 0
+        for node in nodes:
+            src_slug = node["id"]
+            if src_slug not in slug_to_version_id:
+                continue
+            for edge_spec in node.get("suggested_edges", []):
+                target_id = edge_spec.get("target_id")
+                edge_type_str = edge_spec.get("edge_type", "builds_on")
+                if target_id not in slug_to_version_id:
+                    print(f"  WARN: missing suggested_edge target {target_id}")
+                    continue
+                src_vid = slug_to_version_id[src_slug]
+                dst_vid = slug_to_version_id[target_id]
+                try:
+                    et = EdgeType(edge_type_str.upper())
+                except ValueError:
+                    print(f"  WARN: unknown edge type {edge_type_str}")
+                    continue
+                if await _edge_exists(src_vid, et, dst_vid):
+                    continue
+                edge = Edge(
+                    workspace_id=workspace.id,
+                    src_node_kind=NodeKind.OBJECT_VERSION,
+                    src_id=src_vid,
+                    edge_type=et,
+                    dst_node_kind=NodeKind.OBJECT_VERSION,
+                    dst_id=dst_vid,
+                    ordinal=sug_edges,
+                    confidence=Decimal(str(edge_spec.get("confidence", 0.8))),
+                    provenance_method=ProvenanceMethod.LLM_GENERATED,
+                    status=RelationStatus.CURRENT,
+                    metadata_json={},
+                )
+                session.add(edge)
+                sug_edges += 1
+        if sug_edges:
+            print(f"  Created {sug_edges} suggested edges")
+
+        # 3c. Insert citations as EvidenceSource + EvidenceSpan
+        cit_count = 0
+        for node in nodes:
+            src_slug = node["id"]
+            if src_slug not in slug_to_version_id:
+                continue
+            version_id = slug_to_version_id[src_slug]
+            for citation in node.get("citations", []):
+                for span in citation.get("support", []):
+                    source_ext_id = span.get("source_id", "")
+                    # Find-or-create EvidenceSource by external_id
+                    es_result = await session.execute(
+                        select(EvidenceSource).where(
+                            EvidenceSource.external_id == source_ext_id
+                        )
                     )
-                    session.add(edge)
-                    req_edges += 1
+                    ev_source = es_result.scalar_one_or_none()
+                    if ev_source is None:
+                        ev_source = EvidenceSource(
+                            workspace_id=workspace.id,
+                            external_id=source_ext_id,
+                            source_kind=EvidenceSourceKind.BOOK,
+                            title=source_ext_id,
+                            uri=source_ext_id,
+                            metadata_json={},
+                        )
+                        session.add(ev_source)
+                        await session.flush()
+
+                    ev_span = EvidenceSpan(
+                        source_id=ev_source.id,
+                        context_object_version_id=version_id,
+                        start_char=span.get("start_char", 0),
+                        end_char=span.get("end_char", 0),
+                        excerpt=span.get("excerpt", ""),
+                        metadata_json={
+                            "segment_id": span.get("segment_id", ""),
+                            "claim_id": citation.get("claim_id", ""),
+                            "claim_text": citation.get("claim_text", ""),
+                            "support_strength": span.get("support_strength", ""),
+                            "page_start": span.get("page_start"),
+                            "page_end": span.get("page_end"),
+                        },
+                    )
+                    session.add(ev_span)
+                    cit_count += 1
+        if cit_count:
+            print(f"  Created {cit_count} evidence spans")
 
         # 4. Insert edges from edges.csv
         csv_edge_count = 0
@@ -296,6 +422,12 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 except (ValueError, TypeError):
                     pass
 
+            conf_str = row.get("confidence", "")
+            try:
+                confidence = Decimal(conf_str) if conf_str else Decimal("1.0")
+            except Exception:
+                confidence = Decimal("1.0")
+
             edge = Edge(
                 workspace_id=workspace.id,
                 src_node_kind=NodeKind.OBJECT_VERSION,
@@ -304,7 +436,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 dst_node_kind=NodeKind.OBJECT_VERSION,
                 dst_id=dst_vid,
                 ordinal=ordinal,
-                confidence=Decimal("1.0"),
+                confidence=confidence,
                 provenance_method=ProvenanceMethod.HUMAN_AUTHORED,
                 status=RelationStatus.CURRENT,
                 metadata_json={"note": row.get("note", ""), "seed_edge_type": seed_type},
