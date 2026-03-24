@@ -127,9 +127,9 @@ async def run_extract(
         df = pl.DataFrame(all_rows)
         # Serialize list columns as pipe-delimited strings for CSV
         for col in df.columns:
-            if df[col].dtype == pl.List:
+            if df[col].dtype.base_type() == pl.List:
                 df = df.with_columns(
-                    pl.col(col).list.join("|").alias(col)
+                    pl.col(col).cast(pl.List(pl.Utf8)).list.join("|").alias(col)
                 )
         df.write_csv(project.matrix_file)
 
