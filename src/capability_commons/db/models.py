@@ -286,6 +286,7 @@ class EvidenceSource(Base):
     trust_tier: Mapped[TrustTier] = mapped_column(_enum(TrustTier, "trust_tier"), nullable=False, default=TrustTier.SECONDARY)
     license: Mapped[str | None] = mapped_column(Text, nullable=True)
     language_code: Mapped[str] = mapped_column(Text, nullable=False, default="en")
+    external_id: Mapped[str | None] = mapped_column(String(255), nullable=True, unique=True, index=True)
     metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
