@@ -1,0 +1,180 @@
+"""Validate and status commands for ingestion projects."""
+from __future__ import annotations
+
+from pathlib import Path
+
+import orjson
+import yaml
+from rich.console import Console
+from rich.table import Table
+
+from capability_commons.cli.ingest.models import ValidationReport
+from capability_commons.cli.ingest.project import IngestProject
+
+# Valid enum values from domain/enums.py
+VALID_CO_TYPES = {
+    "concept_note", "skill_guide", "project_blueprint", "module", "assessment",
+    "reference_sheet", "learning_path", "teach_forward_packet", "local_adaptation",
+    "field_report", "worksheet", "glossary", "safety_notice", "correction",
+}
+VALID_STAGES = {"foundation", "household", "productive", "community", "advanced"}
+VALID_COST_BANDS = {"free", "low", "medium", "high"}
+VALID_RISK_BANDS = {"low", "moderate", "high", "expert_only"}
+VALID_LIFECYCLE = {"DRAFT", "IN_REVIEW", "REVIEWED", "VERIFIED", "PUBLISHED", "DEPRECATED", "ARCHIVED"}
+
+
+def run_validate(project: IngestProject) -> ValidationReport:
+    """Validate all drafts and edges in a project."""
+    errors: list[str] = []
+    warnings: list[str] = []
+
+    # Load drafts
+    drafts_dir = project.drafts_dir
+    draft_files = sorted(drafts_dir.glob("*.yaml"))
+    draft_slugs: set[str] = set()
+    objects_with_citations = 0
+    total_citations = 0
+
+    for draft_file in draft_files:
+        with open(draft_file) as f:
+            obj = yaml.safe_load(f)
+        slug = obj.get("slug") or obj.get("id", draft_file.stem)
+        draft_slugs.add(slug)
+
+        # Required fields
+        if not obj.get("canonical_title") and not obj.get("title"):
+            errors.append(f"{slug}: missing title/canonical_title")
+        if not obj.get("plain_language"):
+            warnings.append(f"{slug}: missing plain_language")
+
+        # Valid enum values
+        co_type = obj.get("co_type", obj.get("candidate_type", ""))
+        if co_type and co_type.lower().replace(" ", "_") not in VALID_CO_TYPES:
+            errors.append(f"{slug}: invalid type '{co_type}'")
+
+        stage = obj.get("stage", "")
+        if stage and stage not in VALID_STAGES:
+            errors.append(f"{slug}: invalid stage '{stage}'")
+
+        cost = obj.get("cost_band", "")
+        if cost and cost not in VALID_COST_BANDS:
+            errors.append(f"{slug}: invalid cost_band '{cost}'")
+
+        risk = obj.get("risk_band", "")
+        if risk and risk not in VALID_RISK_BANDS:
+            errors.append(f"{slug}: invalid risk_band '{risk}'")
+
+        lifecycle = obj.get("lifecycle_state", "")
+        if lifecycle and lifecycle not in VALID_LIFECYCLE:
+            errors.append(f"{slug}: invalid lifecycle_state '{lifecycle}'")
+
+        # Citation coverage
+        citations = obj.get("citations", [])
+        if citations:
+            objects_with_citations += 1
+            total_citations += len(citations)
+        else:
+            warnings.append(f"{slug}: no citations")
+
+        # Safety checks
+        failure_modes = obj.get("structured_data", {}).get("failure_modes") or obj.get("payload", {}).get("failure_modes")
+        if failure_modes and not risk:
+            warnings.append(f"{slug}: has failure_modes but no risk_band")
+        if risk in ("high", "expert_only"):
+            safety = obj.get("structured_data", {}).get("safety_boundary") or obj.get("payload", {}).get("safety_boundary")
+            if not safety:
+                warnings.append(f"{slug}: risk_band={risk} but no safety_boundary")
+
+    # Validate edges
+    edges_count = 0
+    if project.edges_file.exists():
+        import polars as pl
+        edges_df = pl.read_csv(project.edges_file)
+        edges_count = len(edges_df)
+        for row in edges_df.iter_rows(named=True):
+            if row["source_id"] not in draft_slugs:
+                errors.append(f"Edge source '{row['source_id']}' not in drafts")
+            if row["target_id"] not in draft_slugs:
+                errors.append(f"Edge target '{row['target_id']}' not in drafts")
+
+    objects_count = len(draft_files)
+    coverage = objects_with_citations / objects_count if objects_count > 0 else 0.0
+
+    return ValidationReport(
+        objects_count=objects_count,
+        edges_count=edges_count,
+        citations_count=total_citations,
+        errors=errors,
+        warnings=warnings,
+        citation_coverage=coverage,
+    )
+
+
+def print_validation_report(report: ValidationReport, console: Console | None = None) -> None:
+    """Print a formatted validation report."""
+    console = console or Console()
+
+    console.print(f"\n[bold]Validation Report[/bold]")
+    console.print(f"  Objects: {report.objects_count}")
+    console.print(f"  Edges: {report.edges_count}")
+    console.print(f"  Citations: {report.citations_count}")
+    console.print(f"  Citation coverage: {report.citation_coverage:.0%}")
+
+    if report.errors:
+        console.print(f"\n[red bold]Errors ({len(report.errors)}):[/red bold]")
+        for e in report.errors:
+            console.print(f"  [red]✗[/red] {e}")
+
+    if report.warnings:
+        console.print(f"\n[yellow bold]Warnings ({len(report.warnings)}):[/yellow bold]")
+        for w in report.warnings:
+            console.print(f"  [yellow]![/yellow] {w}")
+
+    if not report.errors:
+        console.print("\n[green bold]✓ No errors found[/green bold]")
+
+
+def run_status(project: IngestProject) -> None:
+    """Print a status table for all passes."""
+    console = Console()
+    table = Table(title=f"Project: {project.manifest.name}")
+    table.add_column("Pass", style="bold")
+    table.add_column("Status")
+    table.add_column("Files")
+
+    pass_info = [
+        ("parse", project.segments_file, "segments"),
+        ("extract", project.matrix_file, "matrix rows"),
+        ("draft", project.drafts_dir, "objects"),
+        ("cite", project.evidence_map_file, "citations"),
+        ("canonicalize", project.drafts_dir / "canonicalization_log.json", "decisions"),
+        ("edges", project.edges_file, "edges"),
+        ("bundles", project.drafts_dir, "bundles"),
+        ("load", project.output_dir / "canonical" / "nodes", "loaded"),
+    ]
+
+    for pass_name, path, label in pass_info:
+        status_obj = getattr(project.manifest.passes, pass_name)
+        if status_obj.completed:
+            status = f"[green]✓ {status_obj.completed:%Y-%m-%d %H:%M}[/green]"
+        else:
+            status = "[dim]pending[/dim]"
+
+        # Count files
+        count = ""
+        if path.is_file() and path.exists():
+            if path.suffix == ".jsonl":
+                count = str(len(path.read_text().strip().splitlines()))
+            elif path.suffix == ".csv":
+                count = str(max(0, len(path.read_text().strip().splitlines()) - 1))
+            elif path.suffix == ".json":
+                count = "1"
+            count = f"{count} {label}"
+        elif path.is_dir() and path.exists():
+            yaml_count = len(list(path.glob("*.yaml")))
+            if yaml_count:
+                count = f"{yaml_count} {label}"
+
+        table.add_row(pass_name, status, count)
+
+    console.print(table)
