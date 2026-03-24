@@ -1,0 +1,59 @@
+id: domain.topic.slug
+seed_type: concept|skill|project|module|assessment|reference|learning_path|teach_forward|adaptation|field_report
+co_type: CONCEPT_NOTE|SKILL_GUIDE|PROJECT_BLUEPRINT|MODULE|ASSESSMENT|REFERENCE_SHEET|LEARNING_PATH|TEACH_FORWARD_PACKET|LOCAL_ADAPTATION|FIELD_REPORT
+slug: domain.topic.slug
+canonical_title: ""
+version_no: 1
+lifecycle_state: DRAFT
+visibility: public
+language_code: en
+primary_domain: ""
+secondary_domains: []
+stage: foundation|household|productive|community|advanced
+contexts: []
+difficulty: 1
+cost_band: free|low|medium|high
+risk_band: low|moderate|high|expert_only
+summary_short: ""
+summary_medium: ""
+summary_long: ""
+plain_language: ""
+markdown_body: |
+  ## What this is
+
+  ## Why it matters
+
+  ## What you need
+
+  ## How to do it
+
+  ## Common failure modes
+
+  ## Safety / boundary notes
+
+  ## Local adaptation notes
+structured_data: {}
+requires: []
+suggested_edges: []
+citations:
+  - claim_id: clm_001
+    supports: ""
+    source_id: ""
+    page_start: 0
+    page_end: 0
+    segment_id: ""
+    excerpt: ""
+    start_char: 0
+    end_char: 0
+    support_strength: strong|medium|weak
+bundle_overrides:
+  hook: ""
+  primer: ""
+  guide: ""
+  reference: []
+  worksheet: []
+  teach_forward_kit:
+    three_minute_version: ""
+    ten_minute_outline: []
+    discussion_prompts: []
+review_notes: []

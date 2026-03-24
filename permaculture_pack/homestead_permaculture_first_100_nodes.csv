@@ -1,0 +1,101 @@
+id,type,domain,title,priority,source_anchor,notes
+permaculture.definition-permanent-agriculture-culture,concept_note,foundations,Permaculture as permanent agriculture and permanent culture,P1,"Permaculture Reference Book, Module 1",Core definition for corpus root node.
+permaculture.ethics-care-earth-people-future,concept_note,foundations,"Permaculture ethics: care for earth, people, future",P1,"Facilitator's Handbook, Module 1",Canonical ethics node.
+permaculture.design-principles-overview,concept_note,foundations,Permaculture design principles overview,P1,"Facilitator's Handbook, Module 1",Top-level principle cluster.
+permaculture.patterns-in-nature,concept_note,foundations,Patterns in nature as a design guide,P1,"Reference Book, Module 2",Used by design and layout nodes.
+permaculture.methods-of-design,skill_guide,foundations,"Use maps, observation, zones, sectors, and element analysis",P1,"Reference Book, Module 2",Core site design skill.
+permaculture.zones-and-sectors,concept_note,foundations,Zones and sectors for site planning,P1,Mollison spatial concept + Reference Book Module 2,Required for most layout projects.
+permaculture.observation-walk,skill_guide,foundations,Run a site observation and data collection walk,P1,"Facilitator's Handbook, Module 2",Field-first learning skill.
+permaculture.element-analysis,skill_guide,foundations,Perform element analysis for site components,P1,"Reference Book, Module 2",Entity mapping skill.
+permaculture.microclimate-reading,skill_guide,foundations,"Read microclimates, slope, wind, and water flow",P1,Permaculture One site design chapters,Deployment-context skill.
+permaculture.multiple-functions-redundancy,concept_note,foundations,Multiple functions per element and redundancy per function,P1,Mollison editor preface / design principles,Core graph edge heuristic.
+permaculture.relative-location,concept_note,foundations,Relative location and functional placement,P1,Design principles,Strong edge design concept.
+water.collect-rainwater,skill_guide,water,Collect rainwater from roofs and simple catchments,P1,Reference Book Module 3,Entry water skill.
+water.safe-storage,skill_guide,water,Store drinking water safely,P1,Reference Book Module 3,Essential resilience node.
+water.clean-drinking-water,skill_guide,water,Clean and filter drinking water,P1,Reference Book Module 3,Household water treatment.
+water.reduce-mosquito-breeding,skill_guide,water,Reduce stagnant water and mosquito breeding,P1,Reference Book Module 3,Public health link.
+water.greywater-basic-treatment,project_blueprint,water,Build a simple biological filter for wastewater,P1,Facilitator's Handbook Module 3,Household waste-water starter.
+water.swales-introduction,concept_note,water,Swales as water storage and erosion control,P1,Reference Book Module 8,Core landscape water node.
+water.mark-contours-a-frame,skill_guide,water,Use an A-frame to mark contour lines,P1,Facilitator's Handbook Module 2,Pre-req for swales.
+water.construct-swales,project_blueprint,water,Design and construct productive swales,P1,Reference Book Module 8,Major land-shaping project.
+water.pond-basics,project_blueprint,water,"Design a pond for storage, habitat, and integrated production",P2,Water in Permaculture / Ref Book Module 11,Supports aquaculture and irrigation.
+soil.healthy-living-soil,concept_note,soil,What healthy living soil is,P1,Reference Book Module 4,Root soil concept.
+soil.soil-testing-simple,skill_guide,soil,Run simple soil tests in the field,P1,Facilitator's Handbook Module 4,Diagnostics.
+soil.soil-ph-and-balance,concept_note,soil,Identify and balance soil pH,P2,Reference Book Module 4,Amendment planning.
+soil.nutrient-cycles,concept_note,soil,Nutrient cycles in living soil,P1,Reference Book Module 4,Needed for compost/fertility.
+soil.compost-quick-heap,skill_guide,soil,Make a quick compost heap,P1,Reference Book Module 4,Immediate field action.
+soil.compost-slow-heap,skill_guide,soil,Make a slow compost heap,P2,Reference Book Module 4,Lower-labor variant.
+soil.compost-pits-trenches,skill_guide,soil,"Use compost pits, baskets, and trenches",P2,Reference Book Module 4,Localized composting.
+soil.liquid-fertilizer,skill_guide,soil,Make and use liquid fertilizer,P1,Reference Book Module 4,Common workshop technique.
+soil.mulch-basics,skill_guide,soil,Use mulch to protect and improve soil,P1,Reference Book Module 4,Critical universal skill.
+soil.legumes-for-fertility,skill_guide,soil,Use annual and perennial legumes for fertility,P1,Reference Book Module 4,Nitrogen and cover.
+soil.earthworm-farm,project_blueprint,soil,Build and maintain an earthworm farm,P1,Reference Book Module 4,Fast biological improvement.
+seeds.pollination-basics,concept_note,gardens,Pollination and cross-pollination basics,P2,Reference Book Module 5,Needed for seed saving.
+seeds.seed-saving,skill_guide,gardens,Save and store seed well,P1,Reference Book Module 5,Foundational independence skill.
+seeds.seed-viability-testing,skill_guide,gardens,Test and document seed viability,P2,Facilitator's Handbook Module 5,Supports community seed bank.
+seeds.community-seed-group,project_blueprint,gardens,Start a community seed saving group,P2,Reference Book Module 5,Local institution-building.
+nursery.site-selection,skill_guide,gardens,Choose and prepare a nursery site,P1,Reference Book Module 5,Plant propagation infrastructure.
+nursery.design-and-construction,project_blueprint,gardens,Design and construct an integrated nursery,P1,Reference Book Module 5,Supports reforestation/gardens.
+nursery.potting-mix,skill_guide,gardens,Make good potting soil and containers,P1,Facilitator's Handbook Module 5,Low-cost propagation.
+nursery.plant-propagation,skill_guide,gardens,Use plant propagation techniques,P1,Facilitator's Handbook Module 5,Tree and garden multiplier.
+gardens.good-nutrition-from-garden,concept_note,gardens,"Design gardens around nutrition, not only yield",P1,Reference Book Module 6,Food quality anchor.
+gardens.design-home-garden,project_blueprint,gardens,Design a home or community garden,P1,Reference Book Module 6,Main beginner garden project.
+gardens.raised-beds,skill_guide,gardens,Build raised beds and small garden structures,P2,Facilitator's Handbook Module 6,Urban/suburban variant.
+gardens.succession-planting,skill_guide,gardens,Use succession planting over time,P1,Reference Book Module 6,Continuous harvest skill.
+gardens.food-preservation,skill_guide,gardens,Store and preserve produce,P1,Reference Book Module 6,Household resilience tie-in.
+gardens.chicken-tractor-in-garden,project_blueprint,gardens,Use a chicken tractor in the garden,P2,Facilitator's Handbook Module 6,Integration node.
+farming.assess-land-environment-people,skill_guide,farming,"Assess land, environment, and people together",P1,Reference Book Module 7,Farm planning entry.
+farming.windbreaks,project_blueprint,farming,Plan productive windbreaks,P1,Reference Book Module 7,Tree-crop boundary system.
+farming.stop-burning,concept_note,farming,Stop burning and retain biomass,P1,Reference Book Module 7,Strong anti-desertification principle.
+farming.reduce-soil-compaction,skill_guide,farming,Reduce soil compaction in field systems,P2,Reference Book Module 7,Animal and tool management.
+farming.intercropping,skill_guide,farming,Use intercropping for resilience and productivity,P1,Facilitator's Handbook Module 7,Diversity in field crops.
+farming.integrate-systems,skill_guide,farming,"Integrate grains, vegetables, trees, and animals on farms",P1,Facilitator's Handbook Module 7,Bridge node.
+farming.crop-rotation-plan,project_blueprint,farming,Create a crop rotation plan,P2,Facilitator's Handbook Module 7,Temporal diversity.
+farming.sri-basics,skill_guide,farming,Use System of Rice Intensification (SRI) basics,P2,Reference Book Module 7,Rice-specific context.
+farming.post-harvest-protection,skill_guide,farming,Protect and use post-harvest produce,P2,Reference Book Module 7,Storage and loss reduction.
+forest.reforestation-importance,concept_note,forests,Why reforestation and tree crops matter,P1,Reference Book Module 8,Core forest node.
+forest.sustainable-forest-systems,concept_note,forests,"Store water, protect soil, stop erosion, manage resources",P1,Reference Book Module 8,Forest functions bundle.
+forest.start-reforestation,project_blueprint,forests,Start reforestation on degraded land,P1,Reference Book Module 8,Main restoration project.
+forest.assisted-natural-regeneration,skill_guide,forests,Assist natural regeneration instead of replacing it wholesale,P1,Reference Book Module 8 + Mollison forests pamphlet,Low-cost restoration.
+forest.seed-balls,skill_guide,forests,Make and deploy seed balls,P2,Reference Book Module 8 + Fukuoka Preface,Dryland/restoration tool.
+forest.pioneer-species-and-nuclei,skill_guide,forests,Use pioneer species and nuclei to expand forest cover,P2,Forests in Permaculture,Restoration pattern.
+treecrop.flat-land-tree-crops,project_blueprint,forests,Design flat-land tree crop systems,P2,Reference Book Module 8,Fruit/nut system.
+treecrop.plant-fruit-trees,skill_guide,forests,Plant fruit trees well,P1,Reference Book Module 8,Common orchard action.
+treecrop.natural-tree-form,concept_note,forests,Natural forms of fruit trees and formative pruning,P2,Fukuoka fruit tree chapter,Orchard management.
+bamboo.propagation-and-management,skill_guide,forests,Propagate and manage bamboo,P2,Reference Book Module 8,Material and water-adjacent system.
+ipm.healthy-soil-reduces-pests,concept_note,ecology,Healthy soil reduces pest pressure,P1,Facilitator's Handbook Module 9,IPM anchor.
+ipm.encourage-natural-predators,skill_guide,ecology,Encourage natural pest predators,P1,Facilitator's Handbook Module 9,Habitat + biodiversity.
+ipm.non-hybrid-open-pollinated-seed,skill_guide,ecology,Prefer non-hybrid open-pollinated seed for resilience,P2,Facilitator's Handbook Module 9,Seed sovereignty link.
+ipm.companion-planting,skill_guide,ecology,Use companion planting and local guilds,P1,Facilitator's Handbook Module 9,Garden/farm integration.
+ipm.pest-traps-and-baits,skill_guide,ecology,Use pest traps and baits appropriately,P2,Facilitator's Handbook Module 9,Low-tox control.
+ipm.natural-pesticides-fungicides,skill_guide,ecology,Make and test natural pesticide and fungicide sprays,P2,Facilitator's Handbook Module 9,Applied field skill.
+ipm.observation-before-control,concept_note,ecology,Observe before controlling; avoid creating the pest problem,P1,Fukuoka + Mollison,Epistemic restraint.
+ecology.edge-effect-and-guilds,concept_note,ecology,Use edge effect and guild thinking,P1,Facilitator's Handbook principles / Mollison patterns,Graph reasoning concept.
+animals.systems-overview,concept_note,animals,Animals and animal systems in permaculture,P1,Facilitator's Handbook Module 10,Entry node.
+animals.construct-watering-system,project_blueprint,animals,Construct an animal watering system,P1,Facilitator's Handbook Module 10,Cross-cutting water need.
+animals.rotation-systems,project_blueprint,animals,Design integrated animal rotation systems,P1,Facilitator's Handbook Module 10,Soil/forage integration.
+animals.chickens-needs-products,skill_guide,animals,"Manage chickens for eggs, manure, and integration",P1,Reference Book Module 10,Starter livestock.
+animals.ducks-needs-products,skill_guide,animals,Manage ducks and integrate them with gardens/wet systems,P1,Reference Book Module 10,Wetland/garden ally.
+animals.pigs-needs-products,skill_guide,animals,Manage pigs and pig products,P2,Reference Book Module 10,Heavier livestock.
+animals.goats-needs-products,skill_guide,animals,Manage goats and goat products,P1,Reference Book Module 10,Common homestead livestock.
+animals.cows-buffalo-needs-products,skill_guide,animals,Manage cows or buffalo and integrate draft/grazing functions,P2,Reference Book Module 10,Larger animal systems.
+animals.bees,skill_guide,animals,Keep bees for pollination and products,P2,Reference Book Module 10,Pollination + wax/honey.
+aquaculture.importance,concept_note,aquaculture,Why aquaculture matters in integrated systems,P2,Reference Book Module 11,Context and motivation.
+aquaculture.site-selection,skill_guide,aquaculture,"Choose pond location, size, depth, shape, and sunlight",P1,Reference Book Module 11,Foundation for pond build.
+aquaculture.build-fishpond,project_blueprint,aquaculture,Construct and prepare a fishpond,P1,Reference Book Module 11,Main aquaculture project.
+aquaculture.stock-and-feed-fish,skill_guide,aquaculture,Stock and feed fish appropriately,P2,Facilitator's Handbook Module 11,Operations.
+aquaculture.integrate-with-chickens-pigs-rice-swales,concept_note,aquaculture,"Integrate fish with chickens, pigs, rice, and swales",P1,Reference Book Module 11,System integration.
+aquaculture.water-plants-and-edge-plants,skill_guide,aquaculture,"Use water plants, edge plants, and shade in pond systems",P2,Reference Book Module 11,Habitat/food balance.
+aquaculture.dry-and-store-fish,skill_guide,aquaculture,Dry and store fish safely,P2,Reference Book Module 11,Preservation link.
+house.healthy-house-principles,concept_note,household,How to create a healthy house,P1,Reference Book Module 3,Household baseline.
+house.building-materials-sustainable,reference_sheet,household,Sustainable and non-sustainable building materials,P1,Facilitator's Handbook Module 3,Material choice.
+house.ventilation-insulation-light,skill_guide,household,"Improve ventilation, insulation, and natural lighting",P1,Reference Book Module 3,Comfort and health.
+house.kitchen-and-washing-design,skill_guide,household,Design healthy kitchens and washing areas,P2,Reference Book Module 3,Domestic workflow.
+sanitation.compost-toilet-systems,project_blueprint,household,Choose and build compost toilet systems,P1,Reference Book Module 3,Critical sanitation node.
+waste.household-waste-recycling,skill_guide,household,"Sort, recycle, and repurpose household waste",P2,Facilitator's Handbook Module 3,Waste minimization.
+house.permaculture-house-design,project_blueprint,household,Design a permaculture house and its immediate surroundings,P2,Facilitator's Handbook Module 3,Integrated household design.
+tech.clay-stoves-and-ovens,project_blueprint,appropriate_technology,Build clay stoves and ovens,P1,Reference Book Module 12,Cooking efficiency.
+tech.solar-cooker-and-drier,project_blueprint,appropriate_technology,Build a solar cooker or solar drier,P2,Reference Book Module 12,Food preservation.
+tech.natural-coolers-clay-pot,skill_guide,appropriate_technology,Use clay pots and cool safes for passive cooling,P2,Reference Book Module 12,No-electric storage.
+energy.micro-hydro-biogas-solar-wind,concept_note,appropriate_technology,"Compare hydro, biogas, solar, and wind options",P2,Reference Book Module 12,Energy overview.
+water.ram-foot-treadle-solar-pumps,skill_guide,appropriate_technology,"Choose ram pumps, treadle pumps, and simple water lift systems",P1,Reference Book Module 12,Practical off-grid water movement.
