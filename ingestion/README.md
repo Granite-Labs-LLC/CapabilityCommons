@@ -1,346 +1,221 @@
-You are not misunderstanding it. You are pointing at the exact missing layer.
+# Ingestion Pipeline — Operator Guide
 
-What I gave you was mostly the **schema / ingestion blueprint**, not the **populated knowledge corpus**.
+Convert source documents (PDFs, manuals) into fully populated Capability Commons knowledge objects with citations, edges, and learning bundles.
 
-So the issue is **not** that Capability Commons is architecturally mismatched. The issue is that the pipeline is only half-built unless it includes this step:
+## Prerequisites
 
-> **source material → rewritten canonical content objects → public bundles → chatbot retrieval**
+```bash
+# From the project root
+pip install -e '.[ingest]'
 
-Right now, the PDFs are only being treated as **reference material**. Your intent is for them to become **actual usable content inside the Commons**.
+# Required: an OpenAI-compatible API key
+export OPENAI_API_KEY="sk-..."
+```
 
-That is the correct interpretation.
+The `[ingest]` extra installs: marker-pdf, polars, rich, aiofiles, tiktoken, rapidfuzz.
 
-## The clean distinction
+## Quick Start
 
-There are really four layers:
+```bash
+# 1. Initialize a project
+python -m capability_commons.cli.ingest init my-project \
+  --source path/to/document.pdf \
+  --source-id src.myproject.refbook.2024 \
+  --source-title "My Reference Book" \
+  --source-kind BOOK
 
-### 1. Source layer
+# 2. Run the pipeline pass by pass
+python -m capability_commons.cli.ingest parse my-project
+python -m capability_commons.cli.ingest extract my-project
+python -m capability_commons.cli.ingest draft my-project
+python -m capability_commons.cli.ingest cite my-project
+python -m capability_commons.cli.ingest canonicalize my-project
+python -m capability_commons.cli.ingest edges my-project
+python -m capability_commons.cli.ingest bundles my-project
 
-The uploaded PDFs.
+# 3. Validate before loading
+python -m capability_commons.cli.ingest validate my-project
 
-These are:
+# 4. Load to database
+python -m capability_commons.cli.ingest load my-project --publish
+```
 
-* authoritative references
-* evidence sources
-* raw knowledge reservoirs
+## Project Directory Structure
 
-But by themselves they are not yet a good learner-facing corpus.
+After initialization, your project lives at `ingestion/projects/<name>/`:
 
-### 2. Canonical content layer
+```
+my-project/
+├── manifest.yaml          # Project config, source list, pass status
+├── sources/               # Source PDFs (copied on init)
+│   └── document.pdf
+├── segments/              # Pass 0 output
+│   ├── segments.jsonl     # Page-preserving text segments
+│   └── source_manifest.yaml
+├── matrix/                # Pass 1 output
+│   └── extraction_matrix.csv
+├── drafts/                # Passes 2-6 output
+│   ├── water.safe-storage.yaml
+│   ├── water.treatment.yaml
+│   ├── _merged/           # Deprecated drafts (from canonicalize)
+│   ├── _split/            # Split originals (from canonicalize)
+│   ├── canonicalization_log.json
+│   └── evidence_map.json
+├── edges/                 # Pass 5 output
+│   └── edges.csv
+└── output/                # Pass 7 output (seed-compatible)
+    ├── canonical/nodes/
+    └── imports/edges.csv
+```
 
-This is what Capability Commons is supposed to store as first-class objects:
+## Pipeline Passes
 
-* concept notes
-* skill guides
-* project blueprints
-* reference sheets
-* learning paths
-* modules
-* teach-forward packets
+### Pass 0: Parse (`parse`)
 
-These objects should contain:
+Converts source PDFs to markdown using marker-pdf, then splits into heading-delimited segments.
 
-* actual explanatory text
-* simplified practical instructions
-* structured fields
-* prerequisites
-* context adaptations
-* failure modes
-* citations back to the PDFs
+**Output:** `segments/segments.jsonl` — one JSON object per segment with `source_id`, `segment_id`, `page_start`, `page_end`, `heading_path`, and `text`.
 
-This is the missing “content” layer you are asking about.
+**What to review:** Check segment count and heading paths. If the PDF has unusual formatting, segments may need manual adjustment.
 
-### 3. Public learning layer
+### Pass 1: Extract (`extract`)
 
-This is what the user sees in the app/chat:
+Sends segments to the LLM in section groups. Each section produces extraction matrix rows identifying candidate knowledge objects.
 
-* a direct answer
-* an object page
-* a printable guide
-* a bundle
-* a learning path
-* a teach-forward card
+**Output:** `matrix/extraction_matrix.csv` — one row per candidate with slug, type, domain, stage, summary, and confidence.
 
-### 4. Evidence / provenance layer
+**Options:**
+- `--sections "Water"` — filter to sections matching a string (case-insensitive)
 
-This keeps the system honest:
+**What to review:** Check candidate slugs, types, and confidence scores. Remove or adjust low-confidence rows before drafting.
 
-* PDF citations
-* evidence spans
-* contradictions
-* review state
-* supersession
+### Pass 2: Draft (`draft`)
 
-So no, this is not an architectural mismatch.
+For each matrix row, sends the candidate info + source segments to the LLM to produce a full canonical YAML object.
 
-It is more like:
+**Output:** `drafts/<slug>.yaml` — one file per object with title, body, structured data, prerequisites, and suggested edges.
 
-> the architecture is correct, but the corpus has not yet been **materialized** from the source documents.
+**Options:**
+- `--skip-existing` — skip slugs that already have draft files
+- `--slugs "water.*"` — filter to slugs matching a glob pattern
 
-## What Capability Commons is supposed to do
+**What to review:** Read the markdown_body for accuracy. Check structured_data fields. Verify prerequisites make sense.
 
-The project should **not** merely say:
+### Pass 3: Cite (`cite`)
 
-* here are some PDFs
-* here are references
-* here is a graph of topics
+Links claims in each draft's markdown_body back to supporting source spans.
 
-It should instead do this:
+**Output:** Citations are written into each draft YAML's `citations` field. An `evidence_map.json` is also written.
 
-* ingest the PDFs as sources
-* extract the useful ideas
-* rewrite them into practical, beginner-usable capability objects
-* preserve citations back to the source text
-* expose those rewritten objects to search, chat, and learning paths
+**Options:**
+- `--slugs "water.*"` — filter to specific slugs
 
-That is the actual point.
+**What to review:** Check citation coverage (validate command reports this). Verify support_strength ratings.
 
-So the chatbot should ideally answer from:
+### Pass 4: Canonicalize (`canonicalize`)
 
-* a **rewritten knowledge base**
-* with citations to the original PDFs
+Uses rapidfuzz similarity matching to find potential duplicates, then asks the LLM to decide: keep, merge, or split.
 
-not from raw PDFs alone, and not from metadata alone.
+**Output:** Merged/split drafts moved to `_merged/` and `_split/` subdirectories. A `canonicalization_log.json` records all decisions.
 
-## Where the content should live
+**What to review:** Check the log for merge decisions. Verify no important content was lost.
 
-In the current architecture, the real content belongs in `context_object_versions`.
+### Pass 5: Edges (`edges`)
 
-That is where each canonical object should contain fields like:
+Sends object summaries to the LLM to infer typed relationships (prerequisite_for, builds_on, contains, etc.). Merges with any `suggested_edges` already in drafts.
 
-* `title`
-* `plain_language`
-* `markdown_body`
-* `summary_short`
-* `summary_medium`
-* `structured_data`
-* difficulty
-* cost band
-* risk band
-* locale scope
-* etc.
+**Output:** `edges/edges.csv` — columns: source_id, target_id, edge_type, sequence, condition, confidence.
 
-So for example, instead of just a node called:
+**What to review:** Check that prerequisite chains make sense. Look for missing obvious edges.
 
-`soil.build-soil-with-mulch`
+### Pass 6: Bundles (`bundles`)
 
-you need an actual object version whose `markdown_body` might contain:
+Generates six-part learning bundles for skill_guide, project_blueprint, and module objects: hook, primer, guide, reference, worksheet, teach-forward kit.
 
-* what mulch is
-* why it matters
-* materials that work
-* how to apply it
-* common mistakes
-* when not to use it
-* cold-climate notes
-* citations to Mollison / Fukuoka / reference book pages
+**Output:** `bundle_overrides` field added to each eligible draft YAML.
 
-That is what should be in the database.
+**Options:**
+- `--skip-existing` — skip objects that already have bundles
+- `--slugs "water.*"` — filter to specific slugs
 
-## So what was missing from the previous deliverable?
+**What to review:** Read the hook and primer for clarity. Check worksheet exercises for practicality.
 
-The previous blueprint mostly answered:
+### Pass 7: Load (`load`)
 
-* what objects should exist
-* how they should relate
-* what taxonomy to use
-* what first 100 nodes should be created
+Validates all drafts and edges, writes seed-compatible output, then loads to the database via `seed_graph()`.
 
-But it did **not** yet answer:
+**Options:**
+- `--publish` — set lifecycle_state to PUBLISHED on all objects
+- `--dry-run` — validate and write output only, skip database load
+- `--db-url` — override database URL (default: from .env)
 
-* what the actual text of each object should be
+### Validate (`validate`)
 
-That is the gap you noticed.
+Checks all drafts for: required fields, valid enum values (co_type, stage, cost_band, risk_band, lifecycle_state), edge integrity (source/target exist), and citation coverage.
 
-And you are right to notice it.
+### Status (`status`)
 
-## The right mental model
+Shows a table of all passes with completion timestamps and file counts.
 
-Think of Capability Commons as a **compiler**.
+## LLM Configuration
 
-### Input
+The manifest's `llm` section sets defaults:
 
-* PDFs
-* field notes
-* manuals
-* workshop material
-* local adaptations
+```yaml
+llm:
+  base_url: https://api.openai.com/v1
+  model: gpt-4o
+  temperature: 0.2
+```
 
-### Compiler pass
+Override per-command with CLI flags:
 
-* extract concepts
-* extract skills
-* extract projects
-* extract evidence spans
-* rewrite into plain language
-* structure into YAML/JSON objects
-* attach citations
-* publish bundles
+```bash
+python -m capability_commons.cli.ingest extract my-project \
+  --model gpt-4o-mini \
+  --temperature 0.1
+```
 
-### Output
+All LLM passes show estimated input token counts and require confirmation before proceeding. Use `--yes` / `-y` to skip prompts for scripted runs.
 
-* searchable canonical objects
-* graph-connected curriculum
-* chatbot-accessible capability content
+## Scoping a Pilot Run
 
-If the compiler pass does not happen, then you only have:
+For a first run, limit scope to reduce cost and review burden:
 
-* references
-* metadata
-* source documents
+```bash
+# Extract only one section
+python -m capability_commons.cli.ingest extract my-project --sections "Chapter 1"
 
-That is not enough.
+# Draft only specific slugs
+python -m capability_commons.cli.ingest draft my-project --slugs "water.*"
 
-## Two valid modes, but only one matches your goal
+# Dry-run the load to see output without touching the database
+python -m capability_commons.cli.ingest load my-project --dry-run
+```
 
-### Mode A: “chat over PDFs”
+## Cost Estimation
 
-This means:
+Each LLM pass prints estimated input tokens before prompting for confirmation. Rough cost guidance (GPT-4o pricing):
 
-* keep PDFs as chunks
-* query them directly
-* answer with citations
+| Pass | Typical tokens per object | Notes |
+|------|--------------------------|-------|
+| Extract | 2,000-5,000 input | Per section group |
+| Draft | 3,000-8,000 input | Per object |
+| Cite | 5,000-15,000 input | Per object (includes segment context) |
+| Canonicalize | 2,000-5,000 input | Per duplicate group (often few) |
+| Edges | 5,000-20,000 input | Single call with all summaries |
+| Bundles | 3,000-8,000 input | Per bundleable object |
 
-This is useful, but it is basically enhanced RAG.
+## Troubleshooting
 
-### Mode B: “Capability Commons”
+**`marker-pdf` import error:** Install with `pip install -e '.[ingest]'`. Marker requires additional system dependencies on some platforms.
 
-This means:
+**LLM validation failures:** The client retries up to 3 times with error feedback. If a pass consistently fails, try a more capable model (`--model gpt-4o`) or lower temperature.
 
-* transform PDFs into first-class knowledge objects
-* add structured pedagogy
-* expose rewritten practical guidance
-* preserve provenance underneath
+**Empty extraction matrix:** Check that segments were generated correctly (`status` command). The PDF may need a different parsing approach.
 
-This is what you want.
+**Edge validation errors:** Usually means a slug in edges.csv doesn't match any draft file. Check for typos or objects removed during canonicalization.
 
-And yes, that is the stronger, more ambitious mode.
+## Methodology Reference
 
-## So is the architecture wrong?
-
-No. The architecture is actually well suited to this.
-
-Because it already supports:
-
-* canonical objects
-* versions
-* evidence sources
-* evidence spans
-* edges
-* public bundles
-* retrieval
-* review
-* contradiction handling
-
-What is missing is a **content population pass**.
-
-## What should happen next
-
-The next step is not another taxonomy doc.
-
-The next step is to actually **generate the first content objects** from the PDFs.
-
-That means creating, for a first batch, real objects like:
-
-* `foundations.permaculture-definition`
-* `foundations.design-principles-overview`
-* `soil.mulch-basics`
-* `soil.compost-basics`
-* `water.water-storage-basics`
-* `water.water-treatment-options`
-* `gardens.seed-starting-basics`
-* `gardens.no-dig-bed-establishment`
-* `farming.natural-farming-four-noes`
-* `forests.tree-systems-overview`
-* `animals.chicken-system-basics`
-* `household.root-cellar-principles`
-* `appropriate_technology.off-grid-load-audit-basics`
-
-And each one should have actual content.
-
-## What “actual content” means here
-
-For each object, we should generate:
-
-* `summary_short`
-* `summary_medium`
-* `plain_language`
-* `markdown_body`
-* `structured_data`
-* citations / evidence spans
-* prerequisites
-* next steps
-* adaptations
-
-Example shape:
-
-### Object
-
-`soil.mulch-basics`
-
-### Content inside object
-
-* what mulch is
-* why it protects soil
-* how it suppresses weeds
-* how it reduces evaporation
-* materials you can use
-* mulch thickness guidelines
-* when mulch can create pest or rot problems
-* seasonal notes
-* cold-climate notes
-* links to compost, no-dig beds, seed starting
-
-### Evidence
-
-* cited spans from Mollison / Reference Book / Fukuoka
-
-That is the missing layer.
-
-## The better question now
-
-The real question is no longer:
-
-> “Is Capability Commons the wrong architecture?”
-
-The better question is:
-
-> “What is the best workflow for converting these PDFs into high-quality canonical objects?”
-
-And the answer is:
-
-### Best workflow
-
-1. ingest PDFs as evidence sources
-2. break them into topical sections
-3. map sections to candidate nodes
-4. draft canonical object text
-5. attach citations/evidence spans
-6. review/edit for clarity and practicality
-7. publish to the public bundle layer
-8. expose to chat retrieval
-
-## My recommendation
-
-We should now move from **blueprint mode** to **corpus-building mode**.
-
-Concretely, that means I should produce one of these next:
-
-### Option 1: first real seed pack
-
-A set of actual YAML/JSON content objects with body text and citations
-
-### Option 2: first real content batch in markdown
-
-For example, 20 fully written canonical objects derived from the PDFs
-
-### Option 3: extraction matrix
-
-A mapping from PDF chapters/sections to target Capability Commons objects, then write them in batches
-
-The highest-value move is probably:
-
-> **Create the first 20 fully written canonical content objects from the PDFs, with citations and structured fields, ready to ingest into the database.**
-
-That would turn the architecture into an actual content system rather than a schema waiting for content.
-
+For the full methodology behind the multi-pass pipeline, see `corpus_conversion_guide.md` in this directory.
