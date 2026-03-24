@@ -137,6 +137,13 @@ The metric is not attention. It is **replicated competence**:
 
 The v1 starter graph contains 25 nodes across 7 domains, with 50 prerequisite edges and 27 navigation edges. See the [README](../README.md) for technical details, quick start, and project layout.
 
+## Further reading
+
+- [VISION.md](../VISION.md) — comprehensive vision document (project root)
+- [PHILOSOPHY.md](../PHILOSOPHY.md) — core intent, goals, and aspirations
+- [CONTRIBUTING.md](../CONTRIBUTING.md) — how to contribute knowledge and code
+- [ingestion/README.md](../ingestion/README.md) — ingestion pipeline operator guide
+
 The full original design documents are preserved in `docs/context/`:
 
 - `INIT.md` — original vision and doctrine (15 sections)
