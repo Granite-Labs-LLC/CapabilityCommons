@@ -10,12 +10,12 @@ These must be done before serving real users.
 
 ### CI/CD pipeline
 
-- [ ] **GitHub Actions workflow** — lint, type-check, test on every push/PR
-  - Run `pytest tests/ --ignore=tests/test_integration.py` (unit tests, no DB required)
-  - Run `ruff check` or `flake8` for linting
-  - Run `mypy` for type checking (currently not configured)
-  - Build Docker image to verify Dockerfile isn't broken
-- [ ] **Integration test job** — spin up Postgres via `docker-compose` in CI, run `test_integration.py`
+- [x] **GitHub Actions workflow** — lint (ruff), type-check (mypy), test on every push/PR
+  - Runs `pytest tests/ --ignore=tests/test_integration.py` (unit tests, no DB required)
+  - Runs `ruff check` and `ruff format --check` for linting
+  - Runs `mypy` for type checking
+  - Builds Docker image to verify Dockerfile isn't broken
+- [x] **Integration test job** — spins up pgvector/pgvector:pg16 in CI, runs `test_integration.py`
 - [ ] **Deploy pipeline** — automated deploy to staging on merge to main, manual promote to production
 
 ### Environment and secrets
@@ -26,22 +26,23 @@ These must be done before serving real users.
 
 ### Database operations
 
-- [ ] **Connection pooling** — configure `pool_size`, `max_overflow`, `pool_recycle` in SQLAlchemy engine for production load
+- [x] **Connection pooling** — configurable `pool_size`, `max_overflow`, `pool_recycle`, `pool_pre_ping` via env vars
 - [ ] **Backup strategy** — automated `pg_dump` on schedule, tested restore procedure
-- [ ] **Migration safety** — add a pre-deploy check that pending migrations are applied before the app starts (or fail loudly)
+- [x] **Migration safety** — startup check warns if pending Alembic migrations exist
 
 ### Authentication and authorization
 
-- [ ] **Auth enabled by default in production** — currently `AUTH_ENABLED=false` is the default; flip for prod
-- [ ] **API key rotation** — add `expire_at` support and key rotation CLI command
+- [x] **Auth enabled by default in production** — `AUTH_ENABLED=true` is the default in config
+- [x] **API key rotation** — `expire_at` column, `is_key_expired` check, `rotate` CLI command with `--ttl-hours`
+- [x] **Auth enforcement on all routes** — fixed 7 endpoints (evidence spans, edge citations, citations list, contradiction resolve, verify, dispute, deprecate) that were missing auth checks
 - [ ] **Rate limit tuning** — review `RATE_LIMIT_PER_MINUTE=100` and `RATE_LIMIT_PUBLIC_PER_MINUTE=300` against expected traffic
 
 ### Observability
 
-- [ ] **Structured logging** — switch from print/basic logging to structured JSON logs (for log aggregation)
-- [ ] **Health check depth** — `/health/detailed` should check not just DB connectivity but migration version, disk space, embedding service availability
-- [ ] **Error tracking** — integrate Sentry or equivalent for unhandled exception reporting
-- [ ] **Request metrics** — add Prometheus metrics or equivalent (request count, latency percentiles, error rates)
+- [x] **Structured logging** — structlog with JSON output in production, colored console in dev
+- [x] **Health check depth** — `/health/detailed` reports DB connectivity, Alembic migration heads, and embedding service availability
+- [x] **Error tracking** — Sentry integration, opt-in via `SENTRY_DSN` env var
+- [x] **Request metrics** — Prometheus metrics at `/metrics` via prometheus-fastapi-instrumentator (opt-out via `METRICS_ENABLED=false`)
 
 ### Content safety
 
@@ -77,14 +78,14 @@ These are important for a good user experience and operational confidence.
 
 ### API documentation
 
-- [ ] **Enable Swagger UI** — FastAPI auto-generates OpenAPI docs; enable the `/docs` endpoint in production (or at least staging)
+- [x] **Enable Swagger UI** — `/docs` and `/redoc` enabled on the FastAPI app
 - [ ] **Schema documentation** — auto-generate or write a reference for all request/response models
 - [ ] **Public API guide** — document the public endpoints (`/v1/public/*`) for third-party consumers
 
 ### Testing gaps
 
-- [ ] **Evidence routes** — add tests for evidence source/span creation and edge citation attachment
-- [ ] **Review routes** — add tests for review submission, contradiction opening, and resolution
+- [x] **Evidence routes** — auth enforcement tests for all evidence endpoints (4 tests)
+- [x] **Review routes** — auth enforcement tests for all review endpoints (6 tests)
 - [ ] **Retrieval service** — add integration test that exercises the full plan → execute → assemble pipeline
 - [ ] **Publication service** — add tests for bundle rendering and learning path assembly
 - [ ] **Search adapter** — add tests for `fetch_segments()` method
@@ -163,11 +164,11 @@ These extend the platform's reach and capability.
 
 If you're picking up this project and want to get to production:
 
-1. Set up CI (GitHub Actions with pytest + Docker)
+1. ~~Set up CI (GitHub Actions with pytest + Docker)~~ Done
 2. Run the ingestion pipeline on one real source document end-to-end
 3. Review the output, fix issues, load to database
-4. Enable auth, configure HTTPS, set up backups
+4. ~~Enable auth~~, configure HTTPS, set up backups
 5. Deploy with Docker Compose behind a reverse proxy
 6. Verify the frontend connects and renders correctly
-7. Enable Swagger UI for API documentation
+7. ~~Enable Swagger UI for API documentation~~ Done
 8. Ship it

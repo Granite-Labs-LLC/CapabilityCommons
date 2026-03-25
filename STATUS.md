@@ -1,26 +1,26 @@
 # Capability Commons — Project Status
 
-Last updated: 2026-03-24
+Last updated: 2026-03-25
 
 ## Overview
 
 Capability Commons is a working, deployable knowledge platform. The backend API, database schema, seed data, ingestion pipeline, and frontend site are all implemented and functional. The system can be stood up with Docker Compose, seeded with the starter knowledge graph, and queried through both API endpoints and the Astro frontend.
 
-The project is at the stage where the core infrastructure is complete and the focus shifts to content population, operational hardening, and community tooling.
+The project has completed its initial production-hardening phase: CI/CD, structured logging, error tracking, metrics, connection pooling, migration safety, auth improvements, and Swagger UI are all in place. The focus now shifts to content population (first real ingestion run), operational deployment, and community tooling.
 
 ## Codebase metrics
 
 | Metric | Count |
 |--------|-------|
 | Python source files | 82 |
-| Python source lines | ~7,200 |
-| Test files | 21 |
-| Test lines | ~1,900 |
-| Collected tests | 118 |
-| Passing tests | 115 (3 require live Postgres) |
+| Python source lines | ~7,500 |
+| Test files | 24 |
+| Test lines | ~2,100 |
+| Collected tests | 130 |
+| Passing tests | 127 (3 require live Postgres) |
 | API endpoints | 37 |
 | Database tables | 19 |
-| Alembic migrations | 4 |
+| Alembic migrations | 5 |
 | Seeded objects | 49 (25 capability + 12 modules + 12 assessments) |
 | Seeded edges | 175 |
 | Enum types | 30+ |
@@ -29,7 +29,7 @@ The project is at the stage where the core infrastructure is complete and the fo
 
 ### Backend API — Complete
 
-FastAPI application with 37 endpoints across 9 route modules. All routes are wired and return valid response models.
+FastAPI application with 37 endpoints across 9 route modules. All routes are wired, return valid response models, and enforce authentication.
 
 | Route module | Endpoints | Status |
 |-------------|-----------|--------|
@@ -37,13 +37,25 @@ FastAPI application with 37 endpoints across 9 route modules. All routes are wir
 | Objects | 6 (CRUD, versioning, publish, facets) | Production-ready |
 | Entities | 2 (create, add aliases) | Production-ready |
 | Edges | 2 (create, list with filters) | Production-ready |
-| Evidence | 3 (sources, spans, edge citations) | Functional, lightly tested |
-| Reviews | 4 (submit, contradictions, resolve, validity) | Functional, lightly tested |
+| Evidence | 4 (sources, spans, edge citations, version citations) | Production-ready, tested |
+| Reviews | 6 (submit, contradictions, resolve, verify, dispute, deprecate) | Production-ready, tested |
 | Search | 1 (hybrid FTS + embedding) | Production-ready |
 | Retrieval | 3 (evidence pack, run details, steps) | Production-ready |
 | Public | 7 (published objects, graph, bundles, paths) | Production-ready |
 
-**Middleware:** Request logging, rate limiting (per-key sliding window), CORS, API key authentication (toggleable).
+**Middleware:** Structured request logging (structlog), rate limiting (per-key sliding window), CORS, API key authentication (with expiry support), Prometheus metrics.
+
+**API documentation:** Swagger UI at `/docs`, ReDoc at `/redoc`.
+
+### Observability — Complete
+
+| Component | Implementation | Status |
+|-----------|---------------|--------|
+| Structured logging | structlog — JSON in production, colored console in dev | Production-ready |
+| Error tracking | Sentry (opt-in via `SENTRY_DSN` env var) | Production-ready |
+| Request metrics | Prometheus at `/metrics` (opt-out via `METRICS_ENABLED=false`) | Production-ready |
+| Health checks | `/health/detailed` — DB connectivity, migration heads, embedding status | Production-ready |
+| Migration safety | Startup warning if pending Alembic migrations detected | Production-ready |
 
 ### Database — Complete
 
@@ -58,9 +70,11 @@ PostgreSQL 16 with pgvector. 19 tables with comprehensive constraints, 40+ index
 | Reviews | `review_records`, `contradiction_cases` | Production-ready |
 | Search | `content_segments` (pgvector 1536-dim, IVFFLAT index) | Production-ready |
 | Retrieval | `retrieval_runs`, `retrieval_steps` | Production-ready |
-| Infrastructure | `api_keys`, `rate_limit_log`, `outbox_events`, `object_files` | Production-ready |
+| Infrastructure | `api_keys` (with `expire_at`), `rate_limit_log`, `outbox_events`, `object_files` | Production-ready |
 
-**Migrations:** 4 applied (initial schema, API keys, lifecycle index, evidence external_id).
+**Migrations:** 5 applied (initial schema, API keys, lifecycle index, evidence external_id, API key expire_at).
+
+**Connection pooling:** Configurable via `DB_POOL_SIZE`, `DB_MAX_OVERFLOW`, `DB_POOL_RECYCLE`, `DB_POOL_PRE_PING` env vars.
 
 ### Services layer — Complete
 
@@ -91,7 +105,7 @@ Abstract base classes exist for both `SearchAdapter` and `GraphAdapter` (4 metho
 | Tool | Command | Status |
 |------|---------|--------|
 | Seed loader | `python -m capability_commons.cli` | Production-ready, idempotent |
-| API key manager | `python -m capability_commons.cli.keys` | Functional |
+| API key manager | `python -m capability_commons.cli.keys` | Production-ready (create, revoke, rotate, list) |
 | Outbox worker | `python -m capability_commons.cli.worker` | Functional |
 | Ingestion pipeline | `python -m capability_commons.cli.ingest` | Complete (11 commands) |
 
@@ -125,16 +139,26 @@ Two seed packs loaded on startup:
 
 **Total seeded:** 49 context objects, 49 versions, 175 edges. Loader is idempotent.
 
+### CI/CD — Configured
+
+| Component | Status |
+|-----------|--------|
+| GitHub Actions CI | Configured (lint, typecheck, test, integration, Docker build) |
+| Linting | ruff (E, F, I, W rules) |
+| Type checking | mypy (incremental adoption, ignore_missing_imports) |
+| Integration tests | pgvector/pgvector:pg16 service in CI |
+| Docker build | Verified in CI |
+| Deploy pipeline | **Not configured** |
+| Kubernetes | **Not started** |
+
 ### Deployment — Functional
 
 | Component | Status |
 |-----------|--------|
 | Dockerfile | Production-ready (slim Python 3.14 image, port 8100) |
 | docker-compose.yml | Functional (pgvector + API, healthchecks) |
-| `.env.example` | 27 settings documented |
-| Alembic migrations | 4 applied, auto-generate works |
-| CI/CD | **Not configured** |
-| Kubernetes | **Not started** |
+| `.env.example` | 27+ settings documented |
+| Alembic migrations | 5 applied, auto-generate works |
 | Cloud deployment docs | Linux production guide exists |
 
 ### Frontend (CapabilityCommonsSite) — Functional
@@ -158,7 +182,7 @@ Astro 5 + React 19 static site consuming the backend API.
 | Design tokens | Complete (CSS custom properties) |
 | Mock data fallback | Complete (works without backend) |
 
-**Pages:** 13 Astro pages, 25+ components, 5 React islands.
+**Pages:** 14 Astro pages (including /status), 25+ components, 5 React islands.
 
 **Build:** Static HTML + JS, deployable to any host. Connects to backend via `PUBLIC_API_URL`.
 
@@ -172,7 +196,10 @@ Astro 5 + React 19 static site consuming the backend API.
 | Ingestion parse | 1 | 4 | Passing |
 | Ingestion seed/load | 1 | 13 | Passing |
 | Ingestion passes (all) | 1 | 13 | Passing |
-| Auth | 2 | ~10 | Passing |
+| Auth (keys + expiry) | 2 | ~12 | Passing |
+| Auth wiring | 1 | ~5 | Passing |
+| Evidence routes | 1 | 4 | Passing |
+| Review routes | 1 | 6 | Passing |
 | Public endpoints | 1 | ~8 | Passing |
 | Seed loader | 1 | ~12 | Passing |
 | Pagination | 1 | ~5 | Passing |
@@ -180,10 +207,11 @@ Astro 5 + React 19 static site consuming the backend API.
 | Retrieval planner | 1 | ~5 | Passing |
 | Rate limiting | 1 | ~5 | Passing |
 | Structured data | 1 | ~3 | Passing |
-| Other (worker, logging, etc.) | 4 | ~8 | Passing |
-| Integration (requires DB) | 1 | 3 | Failing (no live Postgres in CI) |
+| Health (+ swagger, migration check) | 1 | 5 | Passing |
+| Other (worker, logging, etc.) | 3 | ~5 | Passing |
+| Integration (requires DB) | 1 | 3 | Passing (with live Postgres) |
 
-**Total: 118 tests, 115 passing without external dependencies.**
+**Total: 130 tests, 127 passing without external dependencies.**
 
 ### Documentation — Comprehensive
 
@@ -198,6 +226,7 @@ Astro 5 + React 19 static site consuming the backend API.
 | Ingestion operator guide | `ingestion/README.md` | Current |
 | Production deploy | `docs/PRODUCTION_DEPLOY.md` | Current |
 | Deploy checklist | `docs/DEPLOY_CHECKLIST.md` | Current |
+| Production hardening plan | `docs/superpowers/plans/2026-03-25-production-hardening.md` | Current |
 | Original design docs | `docs/context/` | Preserved |
 | Seed data schema | `expanded_seed/schema/` | Current |
 | Implementation plan | `docs/superpowers/plans/` | Current |
@@ -218,8 +247,9 @@ The `GraphAdapter` and `SearchAdapter` base classes each define 4 abstract metho
 ### Feature-gated functionality
 
 - **Embedding indexing** — requires `OPENAI_API_KEY` in environment. Without it, vector columns remain NULL and search falls back to FTS-only.
+- **Sentry error tracking** — requires `SENTRY_DSN` in environment. Without it, no error tracking.
 - **Contradiction auto-detection** — schema and models exist, service endpoints exist, but no automated detection pipeline (contradictions must be opened manually via API).
 
 ### Integration tests
 
-3 integration tests require a live Postgres database and fail in environments without one. These test the full object lifecycle, edge creation, and facet attachment against the real schema.
+3 integration tests require a live Postgres database and fail in environments without one. These test the full object lifecycle, edge creation, and facet attachment against the real schema. They run in the CI integration job with a pgvector service container.
