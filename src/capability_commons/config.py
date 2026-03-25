@@ -18,6 +18,13 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/v1"
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/capability_commons"
     database_echo: bool = False
+
+    # Connection pool
+    db_pool_size: int = 10
+    db_max_overflow: int = 20
+    db_pool_recycle: int = 3600
+    db_pool_pre_ping: bool = True
+
     embedding_dim: int = 1536
     default_top_k: int = 20
     default_max_graph_depth: int = 3
@@ -35,6 +42,10 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     embedding_model: str = "text-embedding-3-small"
     embedding_batch_size: int = 50
+
+    # Observability
+    sentry_dsn: str = ""
+    metrics_enabled: bool = True
 
     # Worker
     outbox_poll_interval_seconds: float = 2.0
