@@ -228,6 +228,7 @@ Astro 5 + React 19 static site consuming the backend API.
 | Ingestion operator guide | `ingestion/README.md` | Current |
 | Production deploy | `docs/PRODUCTION_DEPLOY.md` | Current |
 | Deploy checklist | `docs/DEPLOY_CHECKLIST.md` | Current |
+| Remaining Tier 1 guide | `docs/REMAINING_TIER1_GUIDE.md` | Current |
 | Production hardening plan | `docs/superpowers/plans/2026-03-25-production-hardening.md` | Current |
 | Original design docs | `docs/context/` | Preserved |
 | Seed data schema | `expanded_seed/schema/` | Current |
