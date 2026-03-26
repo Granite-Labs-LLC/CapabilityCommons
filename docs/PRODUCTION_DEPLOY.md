@@ -10,6 +10,41 @@ This guide deploys the CapabilityCommons backend (FastAPI + Postgres 16 + pgvect
 - A domain name pointed to the server (recommended for SSL)
 - Firewall access to ports 22, 80, 443
 
+## Quick Deploy
+
+The repo now includes everything needed for a self-contained deployment:
+
+```bash
+# 1. Clone and configure
+git clone https://github.com/Granite-Labs-LLC/CapabilityCommons.git
+cd CapabilityCommons
+cp .env.production .env
+# Edit .env: set POSTGRES_PASSWORD, DOMAIN, CORS_ORIGINS, OPENAI_API_KEY, SENTRY_DSN
+
+# 2. Start all services (API + Postgres + Caddy + backup)
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+
+# 3. Run migrations and seed
+docker compose exec api alembic upgrade head
+docker compose exec api python -m capability_commons.cli.seed --data-dir /app/expanded_seed
+docker compose exec api python -m capability_commons.cli.seed --data-dir /app/capability_commons_module_seed_pack_v1
+
+# 4. Create an API key for the frontend
+docker compose exec api python -m capability_commons.cli.keys create \
+  --workspace capability-commons --name prod-site
+
+# 5. Verify
+curl https://your-domain.com/health
+```
+
+Caddy automatically provisions TLS certificates. Backups run daily and retain 14 days.
+
+For CD: pushes to `main` auto-deploy to staging via GitHub Actions. Production promotes via manual workflow dispatch. See `.github/workflows/deploy.yml`.
+
+---
+
+## Detailed Guide
+
 ## 1. Server Setup
 
 ```bash
@@ -29,32 +64,11 @@ cd CapabilityCommons
 ## 2. Configure Environment
 
 ```bash
-cp .env.example .env
+cp .env.production .env
+# Edit .env: set POSTGRES_PASSWORD, DOMAIN, CORS_ORIGINS, and any API keys
 ```
 
-Edit `.env` with production values:
-
-```bash
-APP_ENV=production
-APP_NAME=Capability Commons API
-API_V1_PREFIX=/v1
-
-# Use a strong password — this overrides the docker-compose default
-DATABASE_URL=postgresql+asyncpg://postgres:YOUR_STRONG_PASSWORD@db:5432/capability_commons
-DATABASE_ECHO=false
-
-# Auth — enable in production
-AUTH_ENABLED=true
-RATE_LIMIT_PER_MINUTE=60
-RATE_LIMIT_PUBLIC_PER_MINUTE=300
-
-# CORS — set to your frontend URL(s)
-CORS_ORIGINS=["https://your-site.replit.app"]
-
-# Embeddings — optional, leave empty for FTS-only search
-OPENAI_API_KEY=
-EMBEDDING_MODEL=text-embedding-3-small
-```
+The `.env.production` template has all settings documented with production-appropriate defaults. At minimum, change all `CHANGE_ME` values.
 
 Generate an API key for the frontend (if auth is enabled):
 
@@ -65,31 +79,13 @@ docker compose exec api python -m capability_commons.cli.keys create --name prod
 
 ## 3. Docker Compose Production Override
 
-Create `docker-compose.prod.yml` alongside the existing `docker-compose.yml`:
+The repo includes `docker-compose.prod.yml` which adds:
+- **Caddy** reverse proxy with auto-TLS (ports 80/443)
+- **Backup** container running pg_dump daily with 14-day retention
+- Memory limits and restart policies
+- API port restricted to `127.0.0.1` (not publicly exposed)
 
-```yaml
-# docker-compose.prod.yml — production overrides
-services:
-  db:
-    environment:
-      POSTGRES_PASSWORD: YOUR_STRONG_PASSWORD
-    restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 1G
-
-  api:
-    environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:YOUR_STRONG_PASSWORD@db:5432/capability_commons
-      AUTH_ENABLED: "true"
-      CORS_ORIGINS: '["https://your-site.replit.app"]'
-    restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 512M
-```
+No manual editing needed — it reads from `.env` for `POSTGRES_PASSWORD` and `DOMAIN`.
 
 ## 4. Start Services
 
@@ -125,63 +121,17 @@ Seed complete: 25 objects created, 0 skipped, 50 prerequisite edges (from YAML),
 Seed complete: 24 objects created, 0 skipped, 0 prerequisite edges (from YAML), 98 CSV edges created, 0 CSV edges skipped (duplicates)
 ```
 
-## 6. Reverse Proxy with Caddy (Auto-SSL)
+## 6. Reverse Proxy (Caddy — included in Docker Compose)
 
-Caddy automatically provisions and renews HTTPS certificates.
+Caddy runs as a Docker service in `docker-compose.prod.yml` and automatically provisions TLS certificates via Let's Encrypt. No separate installation needed.
 
-```bash
-# Install Caddy
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update
-sudo apt install caddy
-```
-
-Create `/etc/caddy/Caddyfile`:
-
-```
-api.capabilitycommons.org {
-    reverse_proxy localhost:8100
-}
-```
-
-Replace `api.capabilitycommons.org` with your domain. Start Caddy:
+Set the `DOMAIN` variable in your `.env` to your public domain:
 
 ```bash
-sudo systemctl enable caddy
-sudo systemctl start caddy
+DOMAIN=api.capabilitycommons.org
 ```
 
-Caddy will automatically obtain an SSL certificate from Let's Encrypt.
-
-### Alternative: nginx + certbot
-
-```bash
-sudo apt install nginx certbot python3-certbot-nginx
-
-# Create /etc/nginx/sites-available/capabilitycommons:
-```
-
-```nginx
-server {
-    server_name api.capabilitycommons.org;
-
-    location / {
-        proxy_pass http://127.0.0.1:8100;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-```bash
-sudo ln -s /etc/nginx/sites-available/capabilitycommons /etc/nginx/sites-enabled/
-sudo nginx -t && sudo systemctl reload nginx
-sudo certbot --nginx -d api.capabilitycommons.org
-```
+The Caddyfile is at `deploy/Caddyfile`. When `DOMAIN` is set, Caddy serves HTTPS automatically.
 
 ## 7. Firewall
 
@@ -211,43 +161,26 @@ curl https://api.capabilitycommons.org/v1/public/graph | python3 -c \
 
 ## 9. Backups
 
-### Automated daily backup script
+### Automated (via Docker)
 
-Create `/home/deploy/backup-db.sh`:
+The `backup` service in `docker-compose.prod.yml` runs `pg_dump` every 24 hours and retains 14 days of backups in a Docker volume.
 
 ```bash
-#!/bin/bash
-BACKUP_DIR=/home/deploy/backups
-mkdir -p "$BACKUP_DIR"
-TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-
-docker compose -f /home/deploy/CapabilityCommons/docker-compose.yml \
-  exec -T db pg_dump -U postgres capability_commons \
-  | gzip > "$BACKUP_DIR/cc_$TIMESTAMP.sql.gz"
-
-# Keep only the last 14 days
-find "$BACKUP_DIR" -name "cc_*.sql.gz" -mtime +14 -delete
-
-echo "Backup complete: cc_$TIMESTAMP.sql.gz"
+# Check backup logs
+docker compose logs backup --tail=5
 ```
 
-```bash
-chmod +x /home/deploy/backup-db.sh
-```
+### Manual backup and restore
 
-### Cron job (daily at 2 AM)
+Scripts are included in `deploy/`:
 
 ```bash
-crontab -e
-# Add:
-0 2 * * * /home/deploy/backup-db.sh >> /home/deploy/backups/backup.log 2>&1
-```
+# Backup
+./deploy/backup.sh              # Saves to ./backups/
+./deploy/backup.sh /path/to/dir  # Custom directory
 
-### Restore from backup
-
-```bash
-gunzip -c backups/cc_20260319_020000.sql.gz | \
-  docker compose exec -T db psql -U postgres capability_commons
+# Restore
+./deploy/restore.sh backups/cc_20260325_020000.sql.gz
 ```
 
 ## 10. Monitoring

@@ -19,16 +19,14 @@ For detailed instructions on each phase, see:
 
 - [ ] **1.2** Configure environment
   ```bash
-  cp .env.example .env
-  # Edit .env: set DATABASE_URL password, AUTH_ENABLED=true, CORS_ORIGINS
+  cp .env.production .env
+  # Edit .env: set POSTGRES_PASSWORD, DOMAIN, CORS_ORIGINS, and API keys
   ```
 
-- [ ] **1.3** Create `docker-compose.prod.yml` with production overrides (strong DB password, restart policy, memory limits). See [PRODUCTION_DEPLOY.md § 3](PRODUCTION_DEPLOY.md#3-docker-compose-production-override).
-
-- [ ] **1.4** Start services
+- [ ] **1.3** Start all services (API + Postgres + Caddy TLS + backup — all in Docker Compose)
   ```bash
   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
-  docker compose ps  # Both db and api should show "healthy"
+  docker compose ps  # db, api, caddy, backup should all be running
   ```
 
 - [ ] **1.5** Run migrations
@@ -50,13 +48,10 @@ For detailed instructions on each phase, see:
   # Expected: 24 objects created, 98 edges
   ```
 
-- [ ] **1.8** Set up reverse proxy (Caddy recommended for auto-SSL)
+- [ ] **1.8** Verify Caddy is serving TLS (included in Docker Compose — no separate install needed)
   ```bash
-  # /etc/caddy/Caddyfile
-  api.capabilitycommons.org {
-      reverse_proxy localhost:8100
-  }
-  sudo systemctl enable caddy && sudo systemctl start caddy
+  curl -sf https://your-domain.com/health
+  # → {"status":"ok"}
   ```
 
 - [ ] **1.9** Configure firewall
@@ -80,10 +75,13 @@ For detailed instructions on each phase, see:
   # → 49 nodes, 175 edges
   ```
 
-- [ ] **1.11** Set up daily backups (optional but recommended)
+- [ ] **1.11** Verify backups are running (automated via Docker Compose)
   ```bash
-  # See PRODUCTION_DEPLOY.md § 9 for backup script and cron job
+  docker compose logs backup --tail=5
+  # Should show daily backup entries
   ```
+  For manual backup: `./deploy/backup.sh`
+  For restore: `./deploy/restore.sh backups/cc_YYYYMMDD_HHMMSS.sql.gz`
 
 ---
 
