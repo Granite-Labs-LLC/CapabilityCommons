@@ -1,0 +1,61 @@
+# Production overrides — use with:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+services:
+  db:
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+
+  api:
+    restart: always
+    ports: !override
+      - "127.0.0.1:8100:8100"
+    env_file: .env
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  caddy:
+    image: caddy:2-alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    depends_on:
+      api:
+        condition: service_healthy
+
+  backup:
+    image: pgvector/pgvector:pg16
+    entrypoint: /bin/sh
+    command: >
+      -c 'while true; do
+        TIMESTAMP=$$(date +%Y%m%d_%H%M%S);
+        pg_dump -h db -U postgres capability_commons | gzip > /backups/cc_$$TIMESTAMP.sql.gz;
+        find /backups -name "cc_*.sql.gz" -mtime +14 -delete;
+        echo "[$$TIMESTAMP] Backup complete";
+        sleep 86400;
+      done'
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - backups:/backups
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  caddy_data:
+  caddy_config:
+  backups:
