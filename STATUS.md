@@ -144,22 +144,24 @@ Two seed packs loaded on startup:
 | Component | Status |
 |-----------|--------|
 | GitHub Actions CI | Configured (lint, typecheck, test, integration, Docker build) |
+| GitHub Actions CD | Configured (SSH deploy to staging on merge, manual promote to production) |
 | Linting | ruff (E, F, I, W rules) |
 | Type checking | mypy (incremental adoption, ignore_missing_imports) |
 | Integration tests | pgvector/pgvector:pg16 service in CI |
 | Docker build | Verified in CI |
-| Deploy pipeline | **Not configured** |
-| Kubernetes | **Not started** |
 
 ### Deployment — Functional
 
 | Component | Status |
 |-----------|--------|
 | Dockerfile | Production-ready (slim Python 3.14 image, port 8100) |
-| docker-compose.yml | Functional (pgvector + API, healthchecks) |
-| `.env.example` | 27+ settings documented |
+| docker-compose.yml | Development (pgvector + API, healthchecks) |
+| docker-compose.prod.yml | Production (+ Caddy TLS + backup container) |
+| `.env.staging` / `.env.production` | Templates provided |
 | Alembic migrations | 5 applied, auto-generate works |
-| Cloud deployment docs | Linux production guide exists |
+| Caddy reverse proxy | In Docker Compose (auto-TLS via Let's Encrypt) |
+| Backup/restore | Automated daily + manual scripts in `deploy/` |
+| Cloud deployment docs | Linux production guide with Quick Deploy |
 
 ### Frontend (CapabilityCommonsSite) — Functional
 

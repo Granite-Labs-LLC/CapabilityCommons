@@ -16,18 +16,18 @@ These must be done before serving real users.
   - Runs `mypy` for type checking
   - Builds Docker image to verify Dockerfile isn't broken
 - [x] **Integration test job** — spins up pgvector/pgvector:pg16 in CI, runs `test_integration.py`
-- [ ] **Deploy pipeline** — automated deploy to staging on merge to main, manual promote to production
+- [x] **Deploy pipeline** — GitHub Actions CD: auto-deploy staging on merge to main, manual promote to production (`.github/workflows/deploy.yml`)
 
 ### Environment and secrets
 
 - [ ] **Secret management** — move `OPENAI_API_KEY`, `DATABASE_URL`, and API key seeds out of `.env` into a secrets manager (Vault, AWS SSM, or platform-native)
-- [ ] **Separate staging and production configs** — distinct database URLs, CORS origins, rate limits
-- [ ] **HTTPS enforcement** — ensure API is served behind TLS (reverse proxy config for nginx/Caddy)
+- [x] **Separate staging and production configs** — `.env.staging` and `.env.production` templates with environment-appropriate defaults
+- [x] **HTTPS enforcement** — Caddy reverse proxy in `docker-compose.prod.yml` with auto-TLS via Let's Encrypt
 
 ### Database operations
 
 - [x] **Connection pooling** — configurable `pool_size`, `max_overflow`, `pool_recycle`, `pool_pre_ping` via env vars
-- [ ] **Backup strategy** — automated `pg_dump` on schedule, tested restore procedure
+- [x] **Backup strategy** — automated daily pg_dump in Docker (14-day retention) + manual `deploy/backup.sh` and `deploy/restore.sh`
 - [x] **Migration safety** — startup check warns if pending Alembic migrations exist
 
 ### Authentication and authorization
@@ -35,7 +35,7 @@ These must be done before serving real users.
 - [x] **Auth enabled by default in production** — `AUTH_ENABLED=true` is the default in config
 - [x] **API key rotation** — `expire_at` column, `is_key_expired` check, `rotate` CLI command with `--ttl-hours`
 - [x] **Auth enforcement on all routes** — fixed 7 endpoints (evidence spans, edge citations, citations list, contradiction resolve, verify, dispute, deprecate) that were missing auth checks
-- [ ] **Rate limit tuning** — review `RATE_LIMIT_PER_MINUTE=100` and `RATE_LIMIT_PUBLIC_PER_MINUTE=300` against expected traffic
+- [x] **Rate limit tuning** — public lowered from 300→60/min; authenticated stays at 100/min; overridable via env vars
 
 ### Observability
 
@@ -165,10 +165,10 @@ These extend the platform's reach and capability.
 If you're picking up this project and want to get to production:
 
 1. ~~Set up CI (GitHub Actions with pytest + Docker)~~ Done
-2. Run the ingestion pipeline on one real source document end-to-end
-3. Review the output, fix issues, load to database
-4. ~~Enable auth~~, configure HTTPS, set up backups
-5. Deploy with Docker Compose behind a reverse proxy
-6. Verify the frontend connects and renders correctly
-7. ~~Enable Swagger UI for API documentation~~ Done
+2. ~~Enable auth, configure HTTPS, set up backups~~ Done
+3. ~~Set up CD pipeline (staging auto-deploy, manual production)~~ Done
+4. Run the ingestion pipeline on one real source document end-to-end
+5. Review the output, fix issues, load to database
+6. Deploy with `docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
+7. Verify the frontend connects and renders correctly
 8. Ship it
