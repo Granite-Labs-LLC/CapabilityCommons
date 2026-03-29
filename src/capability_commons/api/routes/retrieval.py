@@ -28,12 +28,20 @@ async def retrieve_evidence_pack(
 
 
 @router.get("/retrieval_runs/{run_id}", response_model=RetrievalRunResponse)
-async def get_run(run_id: uuid.UUID, session: DBSession) -> RetrievalRunResponse:
+async def get_run(
+    run_id: uuid.UUID,
+    session: DBSession,
+    workspace: CurrentWorkspace,
+) -> RetrievalRunResponse:
     service = RetrievalService(session)
-    return await service.get_run(run_id)
+    return await service.get_run(run_id, workspace_id=workspace.id)
 
 
 @router.get("/retrieval_runs/{run_id}/steps", response_model=list[RetrievalStepResponse])
-async def get_run_steps(run_id: uuid.UUID, session: DBSession) -> list[RetrievalStepResponse]:
+async def get_run_steps(
+    run_id: uuid.UUID,
+    session: DBSession,
+    workspace: CurrentWorkspace,
+) -> list[RetrievalStepResponse]:
     service = RetrievalService(session)
-    return await service.get_steps(run_id)
+    return await service.get_steps(run_id, workspace_id=workspace.id)

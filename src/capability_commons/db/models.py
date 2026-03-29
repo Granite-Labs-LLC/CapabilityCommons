@@ -310,6 +310,7 @@ class EvidenceSpan(Base):
     end_char: Mapped[int] = mapped_column(Integer, nullable=False)
     excerpt: Mapped[str] = mapped_column(Text, nullable=False)
     checksum: Mapped[str | None] = mapped_column(Text, nullable=True)
+    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     source: Mapped[EvidenceSource] = relationship(back_populates="spans", lazy="joined")

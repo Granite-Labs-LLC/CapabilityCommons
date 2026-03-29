@@ -12,6 +12,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
 from capability_commons.db.models import (
+    OutboxEvent,
     ContextObject,
     ContextObjectFacet,
     ContextObjectVersion,
@@ -85,6 +86,21 @@ RISK_MAP = {
     "high": RiskBand.HIGH,
     "expert_only": RiskBand.EXPERT_ONLY,
 }
+
+
+def normalize_edge_type(raw: str) -> EdgeType | None:
+    """Normalize an edge type string to an EdgeType enum value.
+
+    Accepts:
+    - Legacy uppercase CSV names: 'REQUIRES', 'NEXT', 'COVERS', etc.
+    - Canonical lowercase enum values: 'prerequisite_for', 'builds_on', etc.
+    """
+    if raw in SEED_EDGE_TO_EDGE_TYPE:
+        return SEED_EDGE_TO_EDGE_TYPE[raw]
+    try:
+        return EdgeType(raw.lower())
+    except ValueError:
+        return None
 
 
 def resolve_co_type(node: dict) -> COType:
@@ -206,7 +222,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 continue
 
             co_type = resolve_co_type(node)
-            lifecycle_str = node.get("lifecycle_state", "PUBLISHED")
+            lifecycle_str = node.get("lifecycle_state", "published").lower()
             lifecycle = LifecycleState(lifecycle_str) if lifecycle_str else LifecycleState.PUBLISHED
             obj = ContextObject(
                 workspace_id=workspace.id,
@@ -246,6 +262,14 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             # Set current_version_id and mark as published
             obj.current_version_id = version.id
             obj.published_at = obj.created_at
+
+            # Emit publish event so the worker indexes/embeds this version
+            session.add(OutboxEvent(
+                aggregate_type="context_object",
+                aggregate_id=obj.id,
+                event_type="version.published",
+                payload={"object_id": str(obj.id), "version_id": str(version.id)},
+            ))
 
             # Add facets
             for facet_type, facet_value in map_facets(node):
@@ -317,9 +341,8 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     continue
                 src_vid = slug_to_version_id[src_slug]
                 dst_vid = slug_to_version_id[target_id]
-                try:
-                    et = EdgeType(edge_type_str.upper())
-                except ValueError:
+                et = normalize_edge_type(edge_type_str)
+                if et is None:
                     print(f"  WARN: unknown edge type {edge_type_str}")
                     continue
                 if await _edge_exists(src_vid, et, dst_vid):
@@ -399,7 +422,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             dst_slug = row["target_id"]
             seed_type = row["edge_type"]
 
-            edge_type = SEED_EDGE_TO_EDGE_TYPE.get(seed_type)
+            edge_type = normalize_edge_type(seed_type)
             if edge_type is None:
                 print(f"  WARN: unknown edge type {seed_type}, skipping")
                 continue

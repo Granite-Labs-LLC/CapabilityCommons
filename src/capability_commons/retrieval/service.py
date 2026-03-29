@@ -181,13 +181,19 @@ class RetrievalService:
             return "\n".join(lines)
         raise ValueError(f"Unsupported format: {format}")
 
-    async def get_run(self, run_id: uuid.UUID) -> RetrievalRunResponse:
+    async def get_run(self, run_id: uuid.UUID, workspace_id: uuid.UUID | None = None) -> RetrievalRunResponse:
         run = await self.session.get(RetrievalRun, run_id)
         if run is None:
             raise ValueError(f"Retrieval run {run_id} not found")
+        if workspace_id is not None and run.workspace_id != workspace_id:
+            raise ValueError(f"Retrieval run {run_id} not found")
         return RetrievalRunResponse.model_validate(run, from_attributes=True)
 
-    async def get_steps(self, run_id: uuid.UUID) -> list[RetrievalStepResponse]:
+    async def get_steps(self, run_id: uuid.UUID, workspace_id: uuid.UUID | None = None) -> list[RetrievalStepResponse]:
+        if workspace_id is not None:
+            run = await self.session.get(RetrievalRun, run_id)
+            if run is None or run.workspace_id != workspace_id:
+                raise ValueError(f"Retrieval run {run_id} not found")
         result = await self.session.execute(
             select(RetrievalStep).where(RetrievalStep.retrieval_run_id == run_id).order_by(RetrievalStep.iteration_no.asc(), RetrievalStep.created_at.asc())
         )

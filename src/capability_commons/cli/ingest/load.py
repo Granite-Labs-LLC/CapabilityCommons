@@ -11,6 +11,16 @@ from capability_commons.cli.ingest.project import IngestProject
 from capability_commons.cli.ingest.validate import print_validation_report, run_validate
 
 
+def _patch_lifecycle(drafts_dir: Path) -> None:
+    """Set lifecycle_state to canonical lowercase 'published' on all drafts."""
+    for draft_file in sorted(drafts_dir.glob("*.yaml")):
+        with open(draft_file) as f:
+            obj = yaml.safe_load(f)
+        obj["lifecycle_state"] = "published"
+        with open(draft_file, "w") as f:
+            yaml.dump(obj, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+
+
 def write_seed_output(project: IngestProject) -> int:
     """Write drafts + edges into seed-compatible output/ directory."""
     output_nodes = project.output_dir / "canonical" / "nodes"
@@ -51,13 +61,8 @@ async def run_load(
 
     # Step 2: If publishing, patch lifecycle_state in drafts
     if publish:
-        console.print("\n[bold]Setting lifecycle_state=PUBLISHED...[/bold]")
-        for draft_file in sorted(project.drafts_dir.glob("*.yaml")):
-            with open(draft_file) as f:
-                obj = yaml.safe_load(f)
-            obj["lifecycle_state"] = "PUBLISHED"
-            with open(draft_file, "w") as f:
-                yaml.dump(obj, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        console.print("\n[bold]Setting lifecycle_state=published...[/bold]")
+        _patch_lifecycle(project.drafts_dir)
 
     # Step 3: Write seed-compatible output
     console.print("\n[bold]Writing seed-compatible output...[/bold]")

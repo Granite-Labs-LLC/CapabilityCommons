@@ -78,13 +78,31 @@ async def run_cite(
             obj = yaml.safe_load(f)
         slug = obj.get("slug") or obj.get("id", draft_file.stem)
 
-        # Collect relevant segments (from the object's source references)
-        source_id = obj.get("source_id") or (
-            project.manifest.sources[0].id if project.manifest.sources else ""
-        )
-        relevant_segs = [
-            s for s in segments_by_id.values() if s.source_id == source_id
-        ]
+        # Scope to the object's source segments when available
+        source_seg_ids = set(obj.get("source_segment_ids", []))
+        if source_seg_ids:
+            relevant_segs = [s for s in segments_by_id.values() if s.segment_id in source_seg_ids]
+            # Add bounded neighbor context (segments adjacent in the same source)
+            source_id = obj.get("source_id") or (
+                project.manifest.sources[0].id if project.manifest.sources else ""
+            )
+            all_source_segs = sorted(
+                [s for s in segments_by_id.values() if s.source_id == source_id],
+                key=lambda s: s.start_char,
+            )
+            for seg in list(relevant_segs):
+                idx = next((i for i, s in enumerate(all_source_segs) if s.segment_id == seg.segment_id), None)
+                if idx is not None:
+                    for offset in [-1, 1]:
+                        ni = idx + offset
+                        if 0 <= ni < len(all_source_segs) and all_source_segs[ni].segment_id not in source_seg_ids:
+                            relevant_segs.append(all_source_segs[ni])
+        else:
+            # Fallback: all segments from the object's source
+            source_id = obj.get("source_id") or (
+                project.manifest.sources[0].id if project.manifest.sources else ""
+            )
+            relevant_segs = [s for s in segments_by_id.values() if s.source_id == source_id]
         # Limit to reasonable context
         segments_text = "\n\n".join(
             f"[{s.segment_id} | pages {s.page_start}-{s.page_end}]\n{s.text}"

@@ -41,7 +41,7 @@ Treat water before storage.
         md = "# A\nText A\n# B\nText B\n# C\nText C\n"
         segments = markdown_to_segments(md, source_id="src.test", base_page=1)
         ids = [s.segment_id for s in segments]
-        assert ids == ["seg_000001", "seg_000002", "seg_000003"]
+        assert ids == ["src.test::seg_000001", "src.test::seg_000002", "src.test::seg_000003"]
 
     def test_preserves_page_boundaries(self):
         md = "# Heading\nSome text on page 5."

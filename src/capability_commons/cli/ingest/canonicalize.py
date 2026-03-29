@@ -21,11 +21,11 @@ SYSTEM_PROMPT = (
 
 USER_TEMPLATE = """These drafts appear similar. For each group, decide:
 - "keep": both are distinct, no changes needed
-- "merge": combine into one canonical object (provide the merged object)
-- "split": one object should be split into multiple (provide the split objects)
+- "merge": combine into one canonical object. Include the full merged object as "merged_object".
+- "split": one object should be split into multiple. Include the split objects as "split_objects".
 
 Return a JSON object with key "decisions" containing an array of decisions.
-Each decision: {{action, rationale, canonical_slug, deprecated_draft_ids}}
+Each decision: {{action, rationale, canonical_slug, deprecated_draft_ids, merged_object (if merge), split_objects (if split)}}
 
 Draft set:
 {drafts}"""
@@ -137,8 +137,13 @@ async def run_canonicalize(
                         src = project.drafts_dir / f"{dep_id}.yaml"
                         if src.exists():
                             shutil.move(str(src), str(merged_dir / src.name))
+                    # Write the merged replacement object
+                    if decision.merged_object:
+                        merged_path = project.drafts_dir / f"{decision.canonical_slug}.yaml"
+                        with open(merged_path, "w") as f:
+                            yaml.dump(decision.merged_object, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
                     console.print(
-                        f"    [green]merge[/green] → {decision.canonical_slug} "
+                        f"    [green]merge[/green] -> {decision.canonical_slug} "
                         f"(deprecated: {decision.deprecated_draft_ids})"
                     )
                 elif decision.action == "split":
@@ -146,8 +151,16 @@ async def run_canonicalize(
                         src = project.drafts_dir / f"{dep_id}.yaml"
                         if src.exists():
                             shutil.move(str(src), str(split_dir / src.name))
+                    # Write split child objects
+                    for child in decision.split_objects:
+                        child_slug = child.get("slug") or child.get("id", "")
+                        if child_slug:
+                            child_path = project.drafts_dir / f"{child_slug}.yaml"
+                            with open(child_path, "w") as f:
+                                yaml.dump(child, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
                     console.print(
-                        f"    [blue]split[/blue] {decision.canonical_slug} "
+                        f"    [blue]split[/blue] {decision.canonical_slug} -> "
+                        f"{[c.get('slug', '') for c in decision.split_objects]} "
                         f"(original: {decision.deprecated_draft_ids})"
                     )
                 else:

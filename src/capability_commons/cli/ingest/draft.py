@@ -98,6 +98,7 @@ async def run_draft(
         slug: str
         canonical_title: str
         markdown_body: str
+        source_segment_ids: list[str] = []
 
     drafted = 0
     for row in rows_to_process:
@@ -120,6 +121,10 @@ async def run_draft(
                 user=user_msg,
                 response_model=DraftObject,
             )
+            # Attach source segment lineage
+            result.source_segment_ids = [
+                sid for sid in seg_ids if sid in segments_by_id
+            ]
             # Write as YAML
             draft_path = project.drafts_dir / f"{slug}.yaml"
             with open(draft_path, "w") as f:

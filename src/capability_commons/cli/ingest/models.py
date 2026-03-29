@@ -85,6 +85,8 @@ class CanonicalizationDecision(BaseModel):
     rationale: str
     canonical_slug: str
     deprecated_draft_ids: list[str] = []
+    merged_object: dict | None = None
+    split_objects: list[dict] = []
 
 
 # --- Pass 5: Edges ---

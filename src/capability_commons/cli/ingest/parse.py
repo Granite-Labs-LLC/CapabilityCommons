@@ -35,9 +35,30 @@ def markdown_to_segments(
     source_id: str,
     base_page: int = 1,
 ) -> list[SourceSegment]:
-    """Split markdown into segments at heading boundaries."""
+    """Split markdown into segments at heading boundaries with page tracking.
+
+    Page markers are HTML comments like ``<!-- PAGE N -->`` inserted by the
+    PDF converter or manually.  If no markers are present, all segments
+    default to *base_page*.
+    """
     heading_re = re.compile(r"^(#{1,6})\s+(.+)$", re.MULTILINE)
+    page_re = re.compile(r"<!--\s*PAGE\s+(\d+)\s*-->", re.IGNORECASE)
     segments: list[SourceSegment] = []
+
+    # Build page map: list of (char_offset, page_number)
+    page_breaks: list[tuple[int, int]] = []
+    for m in page_re.finditer(markdown):
+        page_breaks.append((m.start(), int(m.group(1))))
+
+    def _page_at(char_pos: int) -> int:
+        """Return the page number at a given character position."""
+        page = base_page
+        for offset, pg in page_breaks:
+            if offset <= char_pos:
+                page = pg
+            else:
+                break
+        return page
 
     # Find all heading positions
     splits: list[tuple[int, list[str]]] = []
@@ -46,19 +67,17 @@ def markdown_to_segments(
     for match in heading_re.finditer(markdown):
         level = len(match.group(1))
         title = match.group(2).strip()
-        # Maintain heading stack by level
         heading_stack = heading_stack[: level - 1]
         heading_stack.append(title)
         splits.append((match.start(), list(heading_stack)))
 
     if not splits:
-        # No headings — treat the whole thing as one segment
         if markdown.strip():
             segments.append(SourceSegment(
                 source_id=source_id,
-                segment_id="seg_000001",
-                page_start=base_page,
-                page_end=base_page,
+                segment_id=f"{source_id}::seg_000001",
+                page_start=_page_at(0),
+                page_end=_page_at(len(markdown) - 1),
                 heading_path=[],
                 text=markdown.strip(),
                 start_char=0,
@@ -66,7 +85,6 @@ def markdown_to_segments(
             ))
         return segments
 
-    # Build segments between headings
     for i, (start, heading_path) in enumerate(splits):
         end = splits[i + 1][0] if i + 1 < len(splits) else len(markdown)
         text = markdown[start:end].strip()
@@ -76,9 +94,9 @@ def markdown_to_segments(
         seg_num = i + 1
         segments.append(SourceSegment(
             source_id=source_id,
-            segment_id=f"seg_{seg_num:06d}",
-            page_start=base_page,
-            page_end=base_page,
+            segment_id=f"{source_id}::seg_{seg_num:06d}",
+            page_start=_page_at(start),
+            page_end=_page_at(end - 1),
             heading_path=heading_path,
             text=text,
             start_char=start,

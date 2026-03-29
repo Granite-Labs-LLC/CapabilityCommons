@@ -20,7 +20,7 @@ VALID_CO_TYPES = {
 VALID_STAGES = {"foundation", "household", "productive", "community", "advanced"}
 VALID_COST_BANDS = {"free", "low", "medium", "high"}
 VALID_RISK_BANDS = {"low", "moderate", "high", "expert_only"}
-VALID_LIFECYCLE = {"DRAFT", "IN_REVIEW", "REVIEWED", "VERIFIED", "PUBLISHED", "DEPRECATED", "ARCHIVED"}
+VALID_LIFECYCLE = {"draft", "in_review", "reviewed", "verified", "published", "deprecated", "archived"}
 
 
 def run_validate(project: IngestProject) -> ValidationReport:
