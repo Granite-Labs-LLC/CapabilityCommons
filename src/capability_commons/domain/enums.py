@@ -128,6 +128,14 @@ class NodeKind(StrEnum):
 
 
 class EdgeType(StrEnum):
+    """Typed directed edges between versioned objects.
+
+    Canonical direction:  src --edge_type--> dst
+      PREREQUISITE_FOR:   src is a prerequisite for dst  (A -> B means "do A before B")
+      NEXT_STEP_FOR:      src leads to dst as a next step (A -> B means "after A, do B")
+      CONTAINS:           src contains dst as a member
+      BUILDS_ON:          src builds on dst (but doesn't strictly require it)
+    """
     CONTAINS = "contains"
     PREREQUISITE_FOR = "prerequisite_for"
     BUILDS_ON = "builds_on"

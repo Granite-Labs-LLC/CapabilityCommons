@@ -7,6 +7,7 @@ from sqlalchemy import delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.db.models import ContentSegment
+from capability_commons.search.segment_serializer import build_indexable_text
 from capability_commons.services.helpers import add_outbox_event, get_version
 
 
@@ -43,7 +44,13 @@ class VersionIndexer:
         await self.session.execute(
             delete(ContentSegment).where(ContentSegment.context_object_version_id == version_id)
         )
-        chunks = chunk_text(version.markdown_body or version.plain_language)
+        indexable = build_indexable_text(
+            markdown_body=version.markdown_body,
+            plain_language=version.plain_language,
+            structured_data=version.structured_data,
+            title=version.title,
+        )
+        chunks = chunk_text(indexable)
         rows: list[ContentSegment] = []
         for ordinal, chunk in enumerate(chunks):
             row = ContentSegment(

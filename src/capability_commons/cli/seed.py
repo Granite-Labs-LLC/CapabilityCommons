@@ -297,27 +297,29 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             )
             return result.scalar_one_or_none() is not None
 
-        # 3. Insert REQUIRES edges from YAML requires field
+        # 3. Insert PREREQUISITE_FOR edges from YAML requires field
+        # Direction: src=prerequisite, dst=dependant
+        # "A requires B" means B is_prerequisite_for A => Edge(src=B, dst=A)
         req_edges = 0
         for node in nodes:
-            src_slug = node["id"]
-            if src_slug not in slug_to_version_id:
+            dependant_slug = node["id"]
+            if dependant_slug not in slug_to_version_id:
                 continue
-            for _, req_id, meta in resolve_requires(node):
-                if req_id not in slug_to_version_id:
-                    print(f"  WARN: missing prerequisite target {req_id}")
+            for _, prereq_id, meta in resolve_requires(node):
+                if prereq_id not in slug_to_version_id:
+                    print(f"  WARN: missing prerequisite target {prereq_id}")
                     continue
-                src_vid = slug_to_version_id[src_slug]
-                dst_vid = slug_to_version_id[req_id]
-                if await _edge_exists(src_vid, EdgeType.PREREQUISITE_FOR, dst_vid):
+                prereq_vid = slug_to_version_id[prereq_id]
+                dependant_vid = slug_to_version_id[dependant_slug]
+                if await _edge_exists(prereq_vid, EdgeType.PREREQUISITE_FOR, dependant_vid):
                     continue
                 edge = Edge(
                     workspace_id=workspace.id,
                     src_node_kind=NodeKind.OBJECT_VERSION,
-                    src_id=src_vid,
+                    src_id=prereq_vid,
                     edge_type=EdgeType.PREREQUISITE_FOR,
                     dst_node_kind=NodeKind.OBJECT_VERSION,
-                    dst_id=dst_vid,
+                    dst_id=dependant_vid,
                     ordinal=req_edges,
                     confidence=Decimal("1.0"),
                     provenance_method=ProvenanceMethod.HUMAN_AUTHORED,

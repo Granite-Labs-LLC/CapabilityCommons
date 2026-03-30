@@ -8,30 +8,50 @@ import yaml
 from rich.console import Console
 from rich.table import Table
 
+from capability_commons.cli.ingest.canonical_schema import VALID_CO_TYPES
 from capability_commons.cli.ingest.models import ValidationReport
 from capability_commons.cli.ingest.project import IngestProject
+from capability_commons.domain.enums import EdgeType
 
 # Valid enum values from domain/enums.py
-VALID_CO_TYPES = {
-    "concept_note", "skill_guide", "project_blueprint", "module", "assessment",
-    "reference_sheet", "learning_path", "teach_forward_packet", "local_adaptation",
-    "field_report", "worksheet", "glossary", "safety_notice", "correction",
-}
 VALID_STAGES = {"foundation", "household", "productive", "community", "advanced"}
 VALID_COST_BANDS = {"free", "low", "medium", "high"}
 VALID_RISK_BANDS = {"low", "moderate", "high", "expert_only"}
 VALID_LIFECYCLE = {"draft", "in_review", "reviewed", "verified", "published", "deprecated", "archived"}
+VALID_EDGE_TYPES = {e.value for e in EdgeType}
+
+# Minimum citation coverage threshold (fraction of objects that must have citations)
+MIN_CITATION_COVERAGE = 0.5
+
+# Type-specific required structured_data fields
+STRUCTURED_DATA_REQUIRED: dict[str, list[str]] = {
+    "skill_guide": ["tools", "materials"],
+    "project_blueprint": ["phases"],
+    "assessment": ["assessment_type"],
+}
 
 
 def run_validate(project: IngestProject) -> ValidationReport:
-    """Validate all drafts and edges in a project."""
+    """Validate all drafts and edges in a project.
+
+    This is the release gate for ingest output. Errors block loading;
+    warnings are advisory.
+    """
     errors: list[str] = []
     warnings: list[str] = []
+
+    # Load segments for cross-referencing
+    segment_ids: set[str] = set()
+    if project.segments_file.exists():
+        for line in project.segments_file.read_text().strip().splitlines():
+            seg = orjson.loads(line)
+            segment_ids.add(seg.get("segment_id", ""))
 
     # Load drafts
     drafts_dir = project.drafts_dir
     draft_files = sorted(drafts_dir.glob("*.yaml"))
     draft_slugs: set[str] = set()
+    slug_files: dict[str, list[str]] = {}
     objects_with_citations = 0
     total_citations = 0
 
@@ -39,19 +59,29 @@ def run_validate(project: IngestProject) -> ValidationReport:
         with open(draft_file) as f:
             obj = yaml.safe_load(f)
         slug = obj.get("slug") or obj.get("id", draft_file.stem)
+
+        # Duplicate slug detection
+        slug_files.setdefault(slug, []).append(draft_file.name)
         draft_slugs.add(slug)
 
         # Required fields
         if not obj.get("canonical_title") and not obj.get("title"):
             errors.append(f"{slug}: missing title/canonical_title")
+        if not obj.get("markdown_body"):
+            errors.append(f"{slug}: missing markdown_body")
+
+        # co_type is required
+        co_type = obj.get("co_type", obj.get("candidate_type", ""))
+        if not co_type:
+            errors.append(f"{slug}: missing co_type")
+        elif co_type.lower().replace(" ", "_") not in VALID_CO_TYPES:
+            errors.append(f"{slug}: invalid co_type '{co_type}'")
+
+        # plain_language is required for publication
         if not obj.get("plain_language"):
-            warnings.append(f"{slug}: missing plain_language")
+            errors.append(f"{slug}: missing plain_language (required)")
 
         # Valid enum values
-        co_type = obj.get("co_type", obj.get("candidate_type", ""))
-        if co_type and co_type.lower().replace(" ", "_") not in VALID_CO_TYPES:
-            errors.append(f"{slug}: invalid type '{co_type}'")
-
         stage = obj.get("stage", "")
         if stage and stage not in VALID_STAGES:
             errors.append(f"{slug}: invalid stage '{stage}'")
@@ -68,22 +98,49 @@ def run_validate(project: IngestProject) -> ValidationReport:
         if lifecycle and lifecycle not in VALID_LIFECYCLE:
             errors.append(f"{slug}: invalid lifecycle_state '{lifecycle}'")
 
+        # Type-specific structured_data validation
+        co_type_norm = co_type.lower().replace(" ", "_") if co_type else ""
+        sd = obj.get("structured_data") or {}
+        required_fields = STRUCTURED_DATA_REQUIRED.get(co_type_norm, [])
+        for field in required_fields:
+            if field not in sd:
+                warnings.append(f"{slug}: structured_data missing '{field}' (expected for {co_type_norm})")
+
         # Citation coverage
         citations = obj.get("citations", [])
         if citations:
             objects_with_citations += 1
             total_citations += len(citations)
+            # Validate citation structure
+            for i, cit in enumerate(citations):
+                if not cit.get("source_id"):
+                    warnings.append(f"{slug}: citation[{i}] missing source_id")
+                for span in cit.get("spans", []):
+                    if not span.get("excerpt"):
+                        warnings.append(f"{slug}: citation[{i}] has span without excerpt")
         else:
             warnings.append(f"{slug}: no citations")
 
+        # Source segment reference validation
+        source_seg_ids = obj.get("source_segment_ids", [])
+        if source_seg_ids and segment_ids:
+            for sid in source_seg_ids:
+                if sid not in segment_ids:
+                    warnings.append(f"{slug}: references unknown segment '{sid}'")
+
         # Safety checks
-        failure_modes = obj.get("structured_data", {}).get("failure_modes") or obj.get("payload", {}).get("failure_modes")
+        failure_modes = sd.get("failure_modes") or obj.get("payload", {}).get("failure_modes")
         if failure_modes and not risk:
             warnings.append(f"{slug}: has failure_modes but no risk_band")
         if risk in ("high", "expert_only"):
-            safety = obj.get("structured_data", {}).get("safety_boundary") or obj.get("payload", {}).get("safety_boundary")
+            safety = sd.get("safety_boundary") or obj.get("payload", {}).get("safety_boundary")
             if not safety:
-                warnings.append(f"{slug}: risk_band={risk} but no safety_boundary")
+                errors.append(f"{slug}: risk_band={risk} requires safety_boundary")
+
+    # Duplicate slugs are errors
+    for slug, files in slug_files.items():
+        if len(files) > 1:
+            errors.append(f"Duplicate slug '{slug}' in: {', '.join(files)}")
 
     # Validate edges
     edges_count = 0
@@ -96,9 +153,18 @@ def run_validate(project: IngestProject) -> ValidationReport:
                 errors.append(f"Edge source '{row['source_id']}' not in drafts")
             if row["target_id"] not in draft_slugs:
                 errors.append(f"Edge target '{row['target_id']}' not in drafts")
+            edge_type = row.get("edge_type", "")
+            if edge_type and edge_type.lower() not in VALID_EDGE_TYPES:
+                errors.append(f"Edge '{row['source_id']}->{row['target_id']}': invalid edge_type '{edge_type}'")
 
     objects_count = len(draft_files)
     coverage = objects_with_citations / objects_count if objects_count > 0 else 0.0
+
+    # Citation coverage threshold
+    if objects_count > 0 and coverage < MIN_CITATION_COVERAGE:
+        warnings.append(
+            f"Citation coverage {coverage:.0%} is below minimum threshold {MIN_CITATION_COVERAGE:.0%}"
+        )
 
     return ValidationReport(
         objects_count=objects_count,

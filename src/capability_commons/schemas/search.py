@@ -8,13 +8,50 @@ from pydantic import BaseModel, Field
 from capability_commons.domain.enums import COType, LifecycleState
 
 
+class PublicSearchFilters(BaseModel):
+    """UX-friendly search filters for the public interface."""
+    stage: str | None = Field(None, description="foundation, household, productive, community, advanced")
+    difficulty_max: int | None = Field(None, ge=1, le=5, description="Max difficulty (1=easiest, 5=hardest)")
+    cost_band: str | None = Field(None, description="free, low, medium, high")
+    risk_band: str | None = Field(None, description="low, moderate, high, expert_only")
+    beginner_safe: bool | None = Field(None, description="Filter to beginner-safe content only")
+    housing_type: str | None = Field(None, description="apartment, house, mobile_home, etc.")
+    climate_zone: str | None = Field(None, description="tropical, arid, temperate, cold")
+    settlement_type: str | None = Field(None, description="urban, suburban, rural, remote")
+
+    def to_facet_filters(self) -> dict[str, list[str]]:
+        """Convert UX filters to internal facet_filters dict."""
+        filters: dict[str, list[str]] = {}
+        if self.housing_type:
+            filters["housing_type"] = [self.housing_type]
+        if self.climate_zone:
+            filters["climate_zone"] = [self.climate_zone]
+        if self.settlement_type:
+            filters["settlement_type"] = [self.settlement_type]
+        if self.stage:
+            filters["stage"] = [self.stage]
+        if self.cost_band:
+            filters["budget_profile"] = [self.cost_band]
+        return filters
+
+
 class SearchRequest(BaseModel):
     workspace_id: uuid.UUID | None = None
     query: str
     facet_filters: dict[str, list[str]] = Field(default_factory=dict)
+    filters: PublicSearchFilters | None = Field(None, description="UX-friendly filters (merged with facet_filters)")
     object_types: list[COType] = Field(default_factory=list)
     only_published: bool = True
     top_k: int = Field(default=20, ge=1, le=200)
+
+    def resolved_facet_filters(self) -> dict[str, list[str]]:
+        """Merge UX filters with raw facet_filters."""
+        result = dict(self.facet_filters)
+        if self.filters:
+            for key, values in self.filters.to_facet_filters().items():
+                existing = result.get(key, [])
+                result[key] = list(set(existing + values))
+        return result
 
 
 class SearchHit(BaseModel):

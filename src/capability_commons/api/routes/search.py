@@ -25,7 +25,7 @@ async def search(request: SearchRequest, session: DBSession, workspace: CurrentW
         workspace_id=workspace.id,
         query=request.query,
         query_embedding=query_embedding,
-        filters=request.facet_filters,
+        filters=request.resolved_facet_filters(),
         top_k=request.top_k,
         object_types=request.object_types,
         only_published=request.only_published,

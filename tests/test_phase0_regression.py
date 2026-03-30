@@ -352,6 +352,180 @@ class TestRET001HybridRetrieval:
 # === RET-002: Feed graph-expanded candidates into rerank ===
 
 
+# === GRAPH-001: Edge direction semantics ===
+
+
+class TestGRAPH001EdgeDirection:
+    def test_prerequisite_direction_documented(self):
+        """GRAPH-001: PREREQUISITE_FOR must have canonical direction docstring."""
+        from capability_commons.domain.enums import EdgeType
+        assert "src is a prerequisite for dst" in EdgeType.__doc__
+
+    def test_seed_requires_creates_correct_direction(self):
+        """GRAPH-001: 'A requires B' must produce Edge(src=B, dst=A)."""
+        import inspect
+        from capability_commons.cli import seed
+        source = inspect.getsource(seed.seed_graph)
+        # The edge creation must use prereq as src and dependant as dst
+        assert "src_id=prereq_vid" in source
+        assert "dst_id=dependant_vid" in source
+
+
+# === QA-001: Hardened ingestion validation ===
+
+
+class TestQA001HardenedValidation:
+    def test_validate_catches_missing_co_type(self, tmp_path):
+        """QA-001: validate must error on missing co_type."""
+        from capability_commons.cli.ingest.project import IngestProject
+        proj = IngestProject.init(
+            projects_root=tmp_path / "projects",
+            name="test-qa",
+            sources=[{"id": "src.test", "file": "sources/test.md", "title": "Test", "source_kind": "BOOK"}],
+        )
+        draft_path = proj.drafts_dir / "test-obj.yaml"
+        draft_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(draft_path, "w") as f:
+            yaml.dump({
+                "id": "test-obj", "slug": "test-obj",
+                "canonical_title": "Test", "markdown_body": "body",
+            }, f)
+
+        from capability_commons.cli.ingest.validate import run_validate
+        report = run_validate(proj)
+        error_strs = " ".join(report.errors)
+        assert "missing co_type" in error_strs
+        assert "missing plain_language" in error_strs
+
+    def test_validate_catches_duplicate_slugs(self, tmp_path):
+        """QA-001: validate must error on duplicate slugs."""
+        from capability_commons.cli.ingest.project import IngestProject
+        proj = IngestProject.init(
+            projects_root=tmp_path / "projects",
+            name="test-dupes",
+            sources=[{"id": "src.test", "file": "sources/test.md", "title": "Test", "source_kind": "BOOK"}],
+        )
+        proj.drafts_dir.mkdir(parents=True, exist_ok=True)
+        for fname in ["a.yaml", "b.yaml"]:
+            with open(proj.drafts_dir / fname, "w") as f:
+                yaml.dump({
+                    "id": "same-slug", "slug": "same-slug",
+                    "co_type": "skill_guide", "canonical_title": "Test",
+                    "plain_language": "desc", "markdown_body": "body",
+                }, f)
+
+        from capability_commons.cli.ingest.validate import run_validate
+        report = run_validate(proj)
+        assert any("Duplicate slug" in e for e in report.errors)
+
+    def test_validate_catches_invalid_edge_types(self, tmp_path):
+        """QA-001: validate must error on invalid edge types in edges.csv."""
+        from capability_commons.cli.ingest.validate import VALID_EDGE_TYPES
+        assert "prerequisite_for" in VALID_EDGE_TYPES
+        assert "NONEXISTENT" not in VALID_EDGE_TYPES
+
+    def test_validate_enforces_safety_boundary_on_high_risk(self, tmp_path):
+        """QA-001: high risk objects without safety_boundary are errors."""
+        from capability_commons.cli.ingest.project import IngestProject
+        proj = IngestProject.init(
+            projects_root=tmp_path / "projects",
+            name="test-safety",
+            sources=[{"id": "src.test", "file": "sources/test.md", "title": "Test", "source_kind": "BOOK"}],
+        )
+        proj.drafts_dir.mkdir(parents=True, exist_ok=True)
+        with open(proj.drafts_dir / "risky.yaml", "w") as f:
+            yaml.dump({
+                "id": "risky", "slug": "risky",
+                "co_type": "skill_guide", "canonical_title": "Risky Thing",
+                "plain_language": "desc", "markdown_body": "body",
+                "risk_band": "high",
+            }, f)
+
+        from capability_commons.cli.ingest.validate import run_validate
+        report = run_validate(proj)
+        assert any("safety_boundary" in e for e in report.errors)
+
+
+# === SEARCH-002: Index implementation fields ===
+
+
+class TestSEARCH002IndexImplementationFields:
+    def test_serialize_structured_data(self):
+        """SEARCH-002: structured_data fields must be serialized for retrieval."""
+        from capability_commons.search.segment_serializer import serialize_structured_data
+        sd = {
+            "tools": ["drill", "level"],
+            "materials": ["wood screws", "drywall anchors"],
+            "success_criteria": "Shelf holds 50 lbs",
+            "safety_boundary": "Do not drill into load-bearing walls without professional assessment",
+        }
+        text = serialize_structured_data(sd)
+        assert "drill" in text
+        assert "wood screws" in text
+        assert "50 lbs" in text
+        assert "load-bearing" in text
+
+    def test_serialize_empty_structured_data(self):
+        from capability_commons.search.segment_serializer import serialize_structured_data
+        assert serialize_structured_data(None) == ""
+        assert serialize_structured_data({}) == ""
+
+    def test_build_indexable_text_includes_all_fields(self):
+        from capability_commons.search.segment_serializer import build_indexable_text
+        text = build_indexable_text(
+            markdown_body="# Install a shelf\nDrill and mount.",
+            plain_language="How to install a wall shelf.",
+            structured_data={"tools": ["drill"], "materials": ["screws"]},
+            title="Wall Shelf Installation",
+        )
+        assert "Wall Shelf Installation" in text
+        assert "How to install" in text
+        assert "Drill and mount" in text
+        assert "drill" in text.lower()
+
+# === SEARCH-003: UX-oriented public search filters ===
+
+
+class TestSEARCH003UXFilters:
+    def test_public_search_filters_to_facets(self):
+        """SEARCH-003: PublicSearchFilters must convert to facet_filters."""
+        from capability_commons.schemas.search import PublicSearchFilters
+        f = PublicSearchFilters(
+            housing_type="apartment",
+            climate_zone="temperate",
+            cost_band="low",
+        )
+        facets = f.to_facet_filters()
+        assert facets["housing_type"] == ["apartment"]
+        assert facets["climate_zone"] == ["temperate"]
+        assert facets["budget_profile"] == ["low"]
+
+    def test_search_request_merges_filters(self):
+        """SEARCH-003: SearchRequest.resolved_facet_filters merges both filter types."""
+        from capability_commons.schemas.search import SearchRequest, PublicSearchFilters
+        req = SearchRequest(
+            query="water storage",
+            facet_filters={"domain": ["water"]},
+            filters=PublicSearchFilters(housing_type="apartment"),
+        )
+        merged = req.resolved_facet_filters()
+        assert merged["domain"] == ["water"]
+        assert merged["housing_type"] == ["apartment"]
+
+    def test_search_request_without_filters_uses_facet_filters(self):
+        from capability_commons.schemas.search import SearchRequest
+        req = SearchRequest(query="test", facet_filters={"domain": ["energy"]})
+        assert req.resolved_facet_filters() == {"domain": ["energy"]}
+
+
+    def test_indexer_uses_build_indexable_text(self):
+        """SEARCH-002: VersionIndexer must use build_indexable_text."""
+        import inspect
+        from capability_commons.search.indexer import VersionIndexer
+        source = inspect.getsource(VersionIndexer.reindex_version)
+        assert "build_indexable_text" in source
+
+
 class TestRET002GraphIntoRerank:
     def test_resolve_graph_candidates_exists(self):
         """RET-002: RetrievalService must have _resolve_graph_candidates method."""

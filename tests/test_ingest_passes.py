@@ -449,7 +449,8 @@ class TestValidateCommand:
             "cost_band": "low",
             "risk_band": "low",
             "plain_language": "This is about water storage.",
-            "citations": [{"claim_id": "clm_001", "claim_text": "test"}],
+            "markdown_body": "# Water Storage\n\nStore water safely in food-grade containers.",
+            "citations": [{"claim_id": "clm_001", "claim_text": "test", "source_id": "src.test"}],
         }
         with open(project_with_segments.drafts_dir / "water.good.yaml", "w") as f:
             yaml.dump(draft, f)
