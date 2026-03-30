@@ -114,6 +114,93 @@ class PostgresSearchAdapter(SearchAdapter):
             grouped[row.context_object_version_id][row.facet_type.value].append(row.facet_value)
         return {version_id: dict(facets) for version_id, facets in grouped.items()}
 
+    async def _vector_search(
+        self,
+        *,
+        workspace_id,
+        query_embedding: list[float],
+        filters,
+        top_k,
+        object_types=None,
+        only_published=True,
+    ) -> list[SearchHit]:
+        """Pure vector search via pgvector cosine similarity."""
+        vector_score = (
+            1 - ContentSegment.embedding.cosine_distance(query_embedding)
+        ).label("vector_score")
+
+        stmt = (
+            select(
+                ContentSegment.context_object_version_id,
+                func.max(vector_score).label("score"),
+            )
+            .join(ContextObjectVersion, ContentSegment.context_object_version_id == ContextObjectVersion.id)
+            .join(ContextObject, ContextObjectVersion.context_object_id == ContextObject.id)
+            .where(
+                ContextObject.workspace_id == workspace_id,
+                ContentSegment.embedding.is_not(None),
+            )
+        )
+        if only_published:
+            stmt = stmt.where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
+            stmt = stmt.where(ContextObject.current_version_id == ContextObjectVersion.id)
+        if object_types:
+            stmt = stmt.where(ContextObject.type.in_(object_types))
+
+        for key, values in filters.items():
+            if not values:
+                continue
+            try:
+                facet_type = FacetType(key)
+            except ValueError:
+                continue
+            facet_exists = exists(
+                select(ContextObjectFacet.context_object_version_id).where(
+                    ContextObjectFacet.context_object_version_id == ContextObjectVersion.id,
+                    ContextObjectFacet.facet_type == facet_type,
+                    ContextObjectFacet.facet_value.in_(values),
+                )
+            )
+            stmt = stmt.where(facet_exists)
+
+        stmt = stmt.group_by(ContentSegment.context_object_version_id).order_by(
+            func.max(vector_score).desc()
+        ).limit(top_k)
+
+        result = await self.session.execute(stmt)
+        version_score_map = {row[0]: float(row[1]) for row in result.all()}
+
+        if not version_score_map:
+            return []
+
+        # Load version/object details for hits
+        ver_result = await self.session.execute(
+            select(ContextObjectVersion, ContextObject)
+            .join(ContextObject, ContextObjectVersion.context_object_id == ContextObject.id)
+            .where(ContextObjectVersion.id.in_(version_score_map.keys()))
+        )
+        facets_by_version = await self._load_facets(list(version_score_map.keys()))
+
+        hits: list[SearchHit] = []
+        for version, obj in ver_result.all():
+            hits.append(
+                SearchHit(
+                    object_id=obj.id,
+                    version_id=version.id,
+                    slug=obj.slug,
+                    type=obj.type,
+                    title=version.title,
+                    summary_short=version.summary_short,
+                    plain_language=version.plain_language,
+                    score=version_score_map[version.id],
+                    lifecycle_state=obj.lifecycle_state,
+                    validity_status=version.validity_status.value,
+                    facets=facets_by_version.get(version.id, {}),
+                )
+            )
+        hits.sort(key=lambda h: h.score, reverse=True)
+        return hits
+
     async def search_hybrid(
         self,
         *,
@@ -126,8 +213,9 @@ class PostgresSearchAdapter(SearchAdapter):
         only_published=True,
         fts_weight: float = 0.7,
         vector_weight: float = 0.3,
+        rrf_k: int = 60,
     ) -> list[SearchHit]:
-        """FTS + vector cosine similarity hybrid search."""
+        """True hybrid search: union FTS + vector candidates via reciprocal rank fusion."""
         if query_embedding is None:
             return await self.search(
                 workspace_id=workspace_id,
@@ -138,7 +226,7 @@ class PostgresSearchAdapter(SearchAdapter):
                 only_published=only_published,
             )
 
-        # Get FTS hits (expanded pool)
+        # Get candidates from both retrieval paths independently
         fts_hits = await self.search(
             workspace_id=workspace_id,
             query=query,
@@ -147,33 +235,46 @@ class PostgresSearchAdapter(SearchAdapter):
             object_types=object_types,
             only_published=only_published,
         )
+        vector_hits = await self._vector_search(
+            workspace_id=workspace_id,
+            query_embedding=query_embedding,
+            filters=filters,
+            top_k=top_k * 3,
+            object_types=object_types,
+            only_published=only_published,
+        )
 
-        if not fts_hits:
+        if not fts_hits and not vector_hits:
             return []
 
-        # Get vector scores for the FTS hit versions
-        version_ids = [h.version_id for h in fts_hits]
-        result = await self.session.execute(
-            select(
-                ContentSegment.context_object_version_id,
-                func.max(
-                    1 - ContentSegment.embedding.cosine_distance(query_embedding)
-                ).label("vector_score"),
-            )
-            .where(
-                ContentSegment.context_object_version_id.in_(version_ids),
-                ContentSegment.embedding.is_not(None),
-            )
-            .group_by(ContentSegment.context_object_version_id)
-        )
-        vector_scores = {row[0]: float(row[1]) for row in result.all()}
+        # Build reciprocal rank fusion scores
+        # RRF(d) = sum( 1 / (k + rank_i(d)) ) for each ranker i
+        fts_rank = {h.version_id: rank for rank, h in enumerate(fts_hits, 1)}
+        vec_rank = {h.version_id: rank for rank, h in enumerate(vector_hits, 1)}
+        all_version_ids = set(fts_rank.keys()) | set(vec_rank.keys())
 
-        # Blend scores
-        max_fts = max(h.score for h in fts_hits) or 1.0
-        for hit in fts_hits:
-            norm_fts = hit.score / max_fts
-            vec_score = vector_scores.get(hit.version_id, 0.0)
-            hit.score = (fts_weight * norm_fts) + (vector_weight * vec_score)
+        # Collect hit objects by version_id for metadata
+        hit_map: dict[uuid.UUID, SearchHit] = {}
+        for h in fts_hits:
+            hit_map[h.version_id] = h
+        for h in vector_hits:
+            if h.version_id not in hit_map:
+                hit_map[h.version_id] = h
 
-        fts_hits.sort(key=lambda h: h.score, reverse=True)
-        return fts_hits[:top_k]
+        rrf_scores: list[tuple[uuid.UUID, float]] = []
+        for vid in all_version_ids:
+            score = 0.0
+            if vid in fts_rank:
+                score += fts_weight * (1.0 / (rrf_k + fts_rank[vid]))
+            if vid in vec_rank:
+                score += vector_weight * (1.0 / (rrf_k + vec_rank[vid]))
+            rrf_scores.append((vid, score))
+
+        rrf_scores.sort(key=lambda x: x[1], reverse=True)
+
+        result: list[SearchHit] = []
+        for vid, score in rrf_scores[:top_k]:
+            hit = hit_map[vid]
+            hit.score = round(score, 6)
+            result.append(hit)
+        return result

@@ -9,6 +9,7 @@ VALID_CO_TYPES = {
     "concept_note", "skill_guide", "project_blueprint", "module", "assessment",
     "reference_sheet", "learning_path", "teach_forward_packet", "local_adaptation",
     "field_report", "worksheet", "glossary", "safety_notice", "correction",
+    "expert_review", "translation", "community_map", "resource_directory",
 }
 
 

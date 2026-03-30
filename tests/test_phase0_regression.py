@@ -302,3 +302,86 @@ class TestAPISEC001RetrievalRunAccess:
         from capability_commons.retrieval.service import RetrievalService
         sig = inspect.signature(RetrievalService.get_steps)
         assert "workspace_id" in sig.parameters
+
+
+# =======================================================================
+# Phase 1: Retrieval Quality
+# =======================================================================
+
+
+# === SEARCH-001: Real hybrid candidate union ===
+
+
+class TestSEARCH001HybridUnion:
+    def test_search_hybrid_has_rrf_parameter(self):
+        """SEARCH-001: search_hybrid must support reciprocal rank fusion."""
+        import inspect
+        from capability_commons.search.adapters.postgres_search import PostgresSearchAdapter
+        sig = inspect.signature(PostgresSearchAdapter.search_hybrid)
+        assert "rrf_k" in sig.parameters
+
+    def test_vector_search_method_exists(self):
+        """SEARCH-001: PostgresSearchAdapter must have _vector_search method."""
+        from capability_commons.search.adapters.postgres_search import PostgresSearchAdapter
+        assert hasattr(PostgresSearchAdapter, "_vector_search")
+        import inspect
+        sig = inspect.signature(PostgresSearchAdapter._vector_search)
+        assert "query_embedding" in sig.parameters
+
+
+# === RET-001: Use hybrid search from RetrievalService ===
+
+
+class TestRET001HybridRetrieval:
+    def test_retrieval_service_has_embeddings(self):
+        """RET-001: RetrievalService must have EmbeddingService for query embeddings."""
+        import inspect
+        from capability_commons.retrieval.service import RetrievalService
+        source = inspect.getsource(RetrievalService.__init__)
+        assert "EmbeddingService" in source
+
+    def test_execute_plan_uses_hybrid_search(self):
+        """RET-001: execute_plan must call search_hybrid, not plain search."""
+        import inspect
+        from capability_commons.retrieval.service import RetrievalService
+        source = inspect.getsource(RetrievalService.execute_plan)
+        assert "search_hybrid" in source
+        assert "embed_query" in source
+
+
+# === RET-002: Feed graph-expanded candidates into rerank ===
+
+
+class TestRET002GraphIntoRerank:
+    def test_resolve_graph_candidates_exists(self):
+        """RET-002: RetrievalService must have _resolve_graph_candidates method."""
+        from capability_commons.retrieval.service import RetrievalService
+        assert hasattr(RetrievalService, "_resolve_graph_candidates")
+
+    def test_rerank_accepts_graph_version_ids(self):
+        """RET-002: _rerank_hits must accept graph_version_ids parameter."""
+        import inspect
+        from capability_commons.retrieval.service import RetrievalService
+        sig = inspect.signature(RetrievalService._rerank_hits)
+        assert "graph_version_ids" in sig.parameters
+
+    def test_execute_plan_passes_graph_candidates_to_rerank(self):
+        """RET-002: execute_plan must merge graph candidates into rerank input."""
+        import inspect
+        from capability_commons.retrieval.service import RetrievalService
+        source = inspect.getsource(RetrievalService.execute_plan)
+        assert "_resolve_graph_candidates" in source
+        assert "graph_version_ids" in source
+
+
+# === RET-003: Score breakdowns in rerank output ===
+
+
+class TestRET003ScoreBreakdowns:
+    def test_reranked_items_have_score_components(self):
+        """RET-003: reranked items must include individual score components."""
+        import inspect
+        from capability_commons.retrieval.service import RetrievalService
+        source = inspect.getsource(RetrievalService._rerank_hits)
+        for field in ["search_score", "graph_bonus", "published_bonus", "verified_bonus", "citation_bonus", "facet_bonus"]:
+            assert field in source, f"Missing score breakdown field: {field}"

@@ -356,7 +356,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     dst_id=dst_vid,
                     ordinal=sug_edges,
                     confidence=Decimal(str(edge_spec.get("confidence", 0.8))),
-                    provenance_method=ProvenanceMethod.LLM_GENERATED,
+                    provenance_method=ProvenanceMethod.LLM_EXTRACTED,
                     status=RelationStatus.CURRENT,
                     metadata_json={},
                 )

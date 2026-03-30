@@ -32,6 +32,7 @@ from capability_commons.schemas.retrieval import (
     RetrievalStepResponse,
 )
 from capability_commons.search.adapters.postgres_search import PostgresSearchAdapter
+from capability_commons.services.embedding import EmbeddingService
 from capability_commons.services.evidence import EvidenceService
 from capability_commons.services.helpers import get_version
 
@@ -44,6 +45,7 @@ class RetrievalService:
         self.search = PostgresSearchAdapter(session)
         self.graph = RelationalGraphAdapter(session)
         self.evidence = EvidenceService(session)
+        self.embeddings = EmbeddingService(session)
 
     def compile_plan(self, task_spec: RetrievalRequest) -> RetrievalPlan:
         return self.planner.compile_plan(task_spec)
@@ -78,9 +80,11 @@ class RetrievalService:
         )
 
         started_at = time.perf_counter()
-        hits = await self.search.search(
+        query_embedding = await self.embeddings.embed_query(task_spec.query)
+        hits = await self.search.search_hybrid(
             workspace_id=task_spec.workspace_id,
             query=task_spec.query,
+            query_embedding=query_embedding,
             filters=task_spec.facet_filters,
             top_k=plan.search_top_k,
             only_published=True,
@@ -90,12 +94,13 @@ class RetrievalService:
             iteration,
             RetrievalStepType.SEARCH,
             query_text=task_spec.query,
-            inputs={"filters": task_spec.facet_filters, "top_k": plan.search_top_k},
+            inputs={"filters": task_spec.facet_filters, "top_k": plan.search_top_k, "hybrid": query_embedding is not None},
             outputs={"hit_count": len(hits), "version_ids": [str(hit.version_id) for hit in hits]},
             started_at=started_at,
         )
 
         graph_edges = []
+        graph_hits = []
         if plan.graph_depth > 0:
             graph_seed_nodes = [*seed_nodes, *[{"node_kind": "object_version", "id": hit.version_id} for hit in hits[:5]]]
             started_at = time.perf_counter()
@@ -105,22 +110,38 @@ class RetrievalService:
                 depth=plan.graph_depth,
                 filters={"workspace_id": task_spec.workspace_id},
             )
+            # Resolve graph-expanded version IDs not already in search hits
+            search_version_ids = {h.version_id for h in hits}
+            graph_version_ids = set()
+            for edge in graph_edges:
+                if edge.dst_node_kind == "object_version" and edge.dst_id not in search_version_ids:
+                    graph_version_ids.add(edge.dst_id)
+            if graph_version_ids:
+                graph_hits = await self._resolve_graph_candidates(
+                    list(graph_version_ids), task_spec.workspace_id
+                )
             await self._log_step(
                 run.id,
                 iteration,
                 RetrievalStepType.GRAPH_EXPAND,
                 inputs={"seed_count": len(graph_seed_nodes), "edge_types": plan.edge_types, "depth": plan.graph_depth},
-                outputs={"edge_count": len(graph_edges), "edge_ids": [str(edge.id) for edge in graph_edges]},
+                outputs={
+                    "edge_count": len(graph_edges),
+                    "graph_candidate_count": len(graph_hits),
+                    "edge_ids": [str(edge.id) for edge in graph_edges],
+                },
                 started_at=started_at,
             )
 
+        # Merge search hits + graph candidates for reranking
+        all_candidates = list(hits) + graph_hits
         started_at = time.perf_counter()
-        reranked = await self._rerank_hits(hits, task_spec)
+        reranked = await self._rerank_hits(all_candidates, task_spec, graph_version_ids=graph_version_ids if graph_edges else set())
         await self._log_step(
             run.id,
             iteration,
             RetrievalStepType.RERANK,
-            inputs={"hit_count": len(hits)},
+            inputs={"hit_count": len(hits), "graph_candidate_count": len(graph_hits)},
             outputs={"top_version_ids": [str(hit["version_id"]) for hit in reranked[:10]]},
             started_at=started_at,
         )
@@ -207,25 +228,59 @@ class RetrievalService:
         )
         return [version_id for version_id in result.scalars().all() if version_id is not None]
 
-    async def _rerank_hits(self, hits, task_spec: RetrievalRequest) -> list[dict[str, Any]]:
+    async def _resolve_graph_candidates(self, version_ids: list[uuid.UUID], workspace_id: uuid.UUID):
+        """Load SearchHit-like objects for graph-expanded version IDs."""
+        from capability_commons.schemas.search import SearchHit
+
+        result = await self.session.execute(
+            select(ContextObjectVersion, ContextObject)
+            .join(ContextObject, ContextObjectVersion.context_object_id == ContextObject.id)
+            .where(
+                ContextObjectVersion.id.in_(version_ids),
+                ContextObject.workspace_id == workspace_id,
+            )
+        )
+        hits = []
+        for version, obj in result.all():
+            hits.append(SearchHit(
+                object_id=obj.id,
+                version_id=version.id,
+                slug=obj.slug,
+                type=obj.type,
+                title=version.title,
+                summary_short=version.summary_short,
+                plain_language=version.plain_language,
+                score=0.0,  # No search score; graph bonus applied in rerank
+                lifecycle_state=obj.lifecycle_state,
+                validity_status=version.validity_status.value,
+                facets={},
+            ))
+        return hits
+
+    async def _rerank_hits(
+        self,
+        hits,
+        task_spec: RetrievalRequest,
+        graph_version_ids: set[uuid.UUID] | None = None,
+    ) -> list[dict[str, Any]]:
         if not hits:
             return []
+        graph_version_ids = graph_version_ids or set()
         review_counts = await self._review_counts([hit.version_id for hit in hits])
         citations = await self._citations_for_versions([hit.version_id for hit in hits])
 
         reranked: list[dict[str, Any]] = []
         for hit in hits:
-            score = float(hit.score)
+            search_score = float(hit.score)
             review_count = review_counts.get(hit.version_id, 0)
             citation_count = len(citations.get(hit.version_id, []))
             facet_bonus = 0.05 * len(hit.facets)
-            if hit.lifecycle_state == LifecycleState.PUBLISHED:
-                score += 0.15
-            if task_spec.required_evidence.prefer_verified and review_count > 0:
-                score += 0.15
-            if task_spec.required_evidence.must_cite_sources and citation_count > 0:
-                score += min(0.10, 0.02 * citation_count)
-            score += facet_bonus
+            published_bonus = 0.15 if hit.lifecycle_state == LifecycleState.PUBLISHED else 0.0
+            verified_bonus = 0.15 if (task_spec.required_evidence.prefer_verified and review_count > 0) else 0.0
+            citation_bonus = min(0.10, 0.02 * citation_count) if (task_spec.required_evidence.must_cite_sources and citation_count > 0) else 0.0
+            graph_bonus = 0.10 if hit.version_id in graph_version_ids else 0.0
+
+            score = search_score + published_bonus + verified_bonus + citation_bonus + facet_bonus + graph_bonus
             reranked.append(
                 {
                     "object_id": hit.object_id,
@@ -235,6 +290,12 @@ class RetrievalService:
                     "type": hit.type.value,
                     "summary_short": hit.summary_short,
                     "score": round(score, 4),
+                    "search_score": round(search_score, 4),
+                    "graph_bonus": round(graph_bonus, 4),
+                    "published_bonus": round(published_bonus, 4),
+                    "verified_bonus": round(verified_bonus, 4),
+                    "citation_bonus": round(citation_bonus, 4),
+                    "facet_bonus": round(facet_bonus, 4),
                     "review_count": review_count,
                     "citations": citations.get(hit.version_id, []),
                 }
