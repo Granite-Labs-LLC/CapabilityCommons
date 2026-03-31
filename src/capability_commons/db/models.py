@@ -39,6 +39,8 @@ from capability_commons.domain.enums import (
     EntityType,
     EvidenceSourceKind,
     FacetType,
+    IngestJobStatus,
+    IngestPassStatus,
     LifecycleState,
     NodeKind,
     ProvenanceMethod,
@@ -519,3 +521,48 @@ class ConversationTurn(Base):
     answer_summary: Mapped[str | None] = mapped_column(Text, nullable=True)
     context_json: Mapped[dict[str, Any] | None] = mapped_column(JSONB, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
+
+
+class IngestJob(Base):
+    """Tracks an ingestion pipeline run from init through load."""
+    __tablename__ = "ingest_jobs"
+    __table_args__ = (
+        Index("idx_ingest_jobs_workspace_status", "workspace_id", "status"),
+        Index("idx_ingest_jobs_created", "created_at"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    project_name: Mapped[str] = mapped_column(Text, nullable=False)
+    status: Mapped[IngestJobStatus] = mapped_column(_enum(IngestJobStatus, "ingest_job_status"), nullable=False, default=IngestJobStatus.PENDING)
+    source_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    config_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    error_log: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
+    created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+    passes: Mapped[list[IngestJobPass]] = relationship(back_populates="job", cascade="all, delete-orphan", order_by="IngestJobPass.ordinal")
+
+
+class IngestJobPass(Base):
+    """Tracks an individual pass within an ingest job."""
+    __tablename__ = "ingest_job_passes"
+    __table_args__ = (
+        UniqueConstraint("ingest_job_id", "pass_name", name="uq_ingest_job_pass"),
+        Index("idx_ingest_job_passes_job", "ingest_job_id", "ordinal"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    ingest_job_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("ingest_jobs.id", ondelete="CASCADE"), nullable=False)
+    pass_name: Mapped[str] = mapped_column(Text, nullable=False)
+    ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
+    status: Mapped[IngestPassStatus] = mapped_column(_enum(IngestPassStatus, "ingest_pass_status"), nullable=False, default=IngestPassStatus.PENDING)
+    output_path: Mapped[str | None] = mapped_column(Text, nullable=True)
+    artifact_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    error_message: Mapped[str | None] = mapped_column(Text, nullable=True)
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+    job: Mapped[IngestJob] = relationship(back_populates="passes")

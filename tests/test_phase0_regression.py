@@ -1378,3 +1378,32 @@ class TestING007IngestJobs:
         assert IngestPassStatus.COMPLETED.value == "completed"
         assert IngestPassStatus.FAILED.value == "failed"
         assert IngestPassStatus.SKIPPED.value == "skipped"
+
+    def test_ingest_job_model_exists(self):
+        """ING-007: IngestJob model must be importable with expected columns."""
+        from capability_commons.db.models import IngestJob
+        table = IngestJob.__table__
+        col_names = {c.name for c in table.columns}
+        assert "id" in col_names
+        assert "workspace_id" in col_names
+        assert "project_name" in col_names
+        assert "status" in col_names
+        assert "source_count" in col_names
+        assert "error_log" in col_names
+        assert "created_at" in col_names
+        assert "started_at" in col_names
+        assert "completed_at" in col_names
+
+    def test_ingest_job_pass_model_exists(self):
+        """ING-007: IngestJobPass model must be importable with expected columns."""
+        from capability_commons.db.models import IngestJobPass
+        table = IngestJobPass.__table__
+        col_names = {c.name for c in table.columns}
+        assert "id" in col_names
+        assert "ingest_job_id" in col_names
+        assert "pass_name" in col_names
+        assert "status" in col_names
+        assert "output_path" in col_names
+        assert "error_message" in col_names
+        assert "started_at" in col_names
+        assert "completed_at" in col_names
