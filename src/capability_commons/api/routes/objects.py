@@ -20,6 +20,7 @@ from capability_commons.schemas.objects import (
     VersionResponse,
 )
 from capability_commons.schemas.pagination import PaginatedResponse, PaginationParams
+from capability_commons.services.publish_gate import PublishGate
 from capability_commons.services.registry import RegistryService
 
 router = APIRouter()
@@ -97,6 +98,21 @@ async def publish_version(object_id: uuid.UUID, version_id: uuid.UUID, session: 
         current_version_id=obj.current_version_id,
         published_at=obj.published_at,
     )
+
+
+@router.get("/objects/{object_id}/versions/{version_id}/publish-check")
+async def publish_check(object_id: uuid.UUID, version_id: uuid.UUID, session: DBSession):
+    """Dry-run publish gate check without actually publishing."""
+    service = RegistryService(session)
+    obj = await service.get_object(object_id)
+    version = await service.get_version(version_id)
+    gate = PublishGate(session)
+    result = await gate.check(version, obj.type)
+    return {
+        "passed": result.passed,
+        "blockers": result.blockers,
+        "warnings": result.warnings,
+    }
 
 
 @router.post("/objects/{object_id}/versions/{version_id}/facets", response_model=VersionDetailResponse)

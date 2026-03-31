@@ -1179,3 +1179,180 @@ class TestPUB002PublicObjectEnrichment:
         source = inspect.getsource(svc_mod)
         assert "project_implementation_profile" in source
         assert "impl_profile" in source
+
+
+# === SAFE-001: Publish gates and safety review workflow ===
+
+
+class TestSAFE001PublishGates:
+    def test_publish_gate_importable(self):
+        """SAFE-001: PublishGate must be importable."""
+        from capability_commons.services.publish_gate import PublishGate, GateResult
+        assert PublishGate is not None
+        assert GateResult is not None
+
+    def test_gate_result_structure(self):
+        """SAFE-001: GateResult must have passed, blockers, warnings."""
+        from capability_commons.services.publish_gate import GateResult
+        r = GateResult(passed=True, blockers=[], warnings=["test warning"])
+        assert r.passed is True
+        assert r.warnings == ["test warning"]
+
+    def test_high_risk_bands_defined(self):
+        """SAFE-001: HIGH_RISK_BANDS must include HIGH and EXPERT_ONLY."""
+        from capability_commons.services.publish_gate import HIGH_RISK_BANDS
+        from capability_commons.domain.enums import RiskBand
+        assert RiskBand.HIGH in HIGH_RISK_BANDS
+        assert RiskBand.EXPERT_ONLY in HIGH_RISK_BANDS
+        assert RiskBand.LOW not in HIGH_RISK_BANDS
+
+    def test_safety_boundary_required_types(self):
+        """SAFE-001: SAFETY_BOUNDARY_REQUIRED_TYPES must include actionable types."""
+        from capability_commons.services.publish_gate import SAFETY_BOUNDARY_REQUIRED_TYPES
+        from capability_commons.domain.enums import COType
+        assert COType.SKILL_GUIDE in SAFETY_BOUNDARY_REQUIRED_TYPES
+        assert COType.PROJECT_BLUEPRINT in SAFETY_BOUNDARY_REQUIRED_TYPES
+
+    def test_registry_publish_uses_gate(self):
+        """SAFE-001: RegistryService.publish_version must call PublishGate."""
+        import inspect
+        from capability_commons.services.registry import RegistryService
+        source = inspect.getsource(RegistryService.publish_version)
+        assert "PublishGate" in source
+        assert "gate.check" in source
+        assert "bypass_gate" in source
+
+    def test_registry_publish_has_bypass(self):
+        """SAFE-001: publish_version must accept bypass_gate parameter."""
+        import inspect
+        from capability_commons.services.registry import RegistryService
+        sig = inspect.signature(RegistryService.publish_version)
+        assert "bypass_gate" in sig.parameters
+
+    def test_publish_check_endpoint_exists(self):
+        """SAFE-001: /publish-check dry-run endpoint must be registered."""
+        from capability_commons.api.router import api_router
+        paths = [r.path for r in api_router.routes]
+        assert "/v1/objects/{object_id}/versions/{version_id}/publish-check" in paths
+
+    def test_gate_checks_all_rules(self):
+        """SAFE-001: PublishGate.check must inspect risk_band, safety_boundary, and contradictions."""
+        import inspect
+        from capability_commons.services.publish_gate import PublishGate
+        source = inspect.getsource(PublishGate.check)
+        assert "risk_band" in source
+        assert "safety_boundary" in source
+        assert "contradiction" in source.lower()
+
+
+# === OBS-001: Observability metrics ===
+
+
+class TestOBS001Metrics:
+    def test_metrics_service_importable(self):
+        """OBS-001: MetricsService must be importable."""
+        from capability_commons.services.metrics import MetricsService
+        assert MetricsService is not None
+
+    def test_metrics_service_has_required_methods(self):
+        """OBS-001: MetricsService must have ingest_quality, answer_quality, summary."""
+        from capability_commons.services.metrics import MetricsService
+        for method in ["ingest_quality", "answer_quality", "summary"]:
+            assert hasattr(MetricsService, method), f"Missing method: {method}"
+
+    def test_metrics_endpoints_registered(self):
+        """OBS-001: /v1/metrics/* endpoints must be registered."""
+        from capability_commons.api.router import api_router
+        paths = [r.path for r in api_router.routes]
+        assert "/v1/metrics/ingest" in paths
+        assert "/v1/metrics/answer" in paths
+        assert "/v1/metrics/summary" in paths
+
+    def test_metrics_require_auth(self):
+        """OBS-001: Metrics endpoints must require authentication (CurrentWorkspace)."""
+        import inspect
+        from capability_commons.api.routes import metrics as metrics_mod
+        source = inspect.getsource(metrics_mod)
+        assert "CurrentWorkspace" in source
+
+    def test_ingest_quality_tracks_key_metrics(self):
+        """OBS-001: ingest_quality must track lifecycle, evidence, segments, reviews."""
+        import inspect
+        from capability_commons.services.metrics import MetricsService
+        source = inspect.getsource(MetricsService.ingest_quality)
+        for key in ["lifecycle_state", "evidence", "segment", "review", "contradiction"]:
+            assert key.lower() in source.lower(), f"Missing metric area: {key}"
+
+    def test_answer_quality_tracks_key_metrics(self):
+        """OBS-001: answer_quality must track runs, sufficiency, conversations."""
+        import inspect
+        from capability_commons.services.metrics import MetricsService
+        source = inspect.getsource(MetricsService.answer_quality)
+        for key in ["sufficiency", "conversation", "completed"]:
+            assert key in source.lower(), f"Missing metric area: {key}"
+
+
+# === PERF-001: Response caching ===
+
+
+class TestPERF001ResponseCache:
+    def test_response_cache_importable(self):
+        """PERF-001: ResponseCache must be importable."""
+        from capability_commons.api.response_cache import ResponseCache
+        assert ResponseCache is not None
+
+    def test_cache_set_and_get(self):
+        """PERF-001: Cache must store and retrieve values."""
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache(ttl_seconds=60)
+        cache.set("search", {"query": "water"}, {"results": [1, 2, 3]})
+        result = cache.get("search", {"query": "water"})
+        assert result == {"results": [1, 2, 3]}
+
+    def test_cache_miss(self):
+        """PERF-001: Cache must return None for missing keys."""
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache()
+        assert cache.get("search", {"query": "nonexistent"}) is None
+
+    def test_cache_ttl_expiry(self):
+        """PERF-001: Cache must expire entries after TTL."""
+        import time
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache(ttl_seconds=0)  # Immediate expiry
+        cache.set("search", {"query": "water"}, "value")
+        time.sleep(0.01)
+        assert cache.get("search", {"query": "water"}) is None
+
+    def test_cache_invalidation(self):
+        """PERF-001: Cache must support prefix and full invalidation."""
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache()
+        cache.set("search", {"q": "a"}, "v1")
+        cache.set("ask", {"q": "b"}, "v2")
+        count = cache.invalidate("search")
+        assert count == 1
+        assert cache.get("search", {"q": "a"}) is None
+        assert cache.get("ask", {"q": "b"}) == "v2"
+
+    def test_cache_max_entries(self):
+        """PERF-001: Cache must evict when max_entries is reached."""
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache(max_entries=3)
+        for i in range(5):
+            cache.set("test", {"i": i}, f"val{i}")
+        assert cache.size <= 3
+
+    def test_get_response_cache_singleton(self):
+        """PERF-001: get_response_cache must return a singleton."""
+        from capability_commons.api.response_cache import get_response_cache
+        c1 = get_response_cache()
+        c2 = get_response_cache()
+        assert c1 is c2
+
+    def test_cache_deterministic_keys(self):
+        """PERF-001: Same params must produce same cache key regardless of dict order."""
+        from capability_commons.api.response_cache import ResponseCache
+        cache = ResponseCache()
+        cache.set("test", {"a": 1, "b": 2}, "value")
+        assert cache.get("test", {"b": 2, "a": 1}) == "value"

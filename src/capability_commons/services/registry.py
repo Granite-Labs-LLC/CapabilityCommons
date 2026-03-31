@@ -15,6 +15,7 @@ from capability_commons.db.models import (
     ContextObjectVersion,
     Edge,
 )
+from capability_commons.services.publish_gate import PublishGate
 from capability_commons.domain.enums import (
     COType,
     EdgeType,
@@ -278,10 +279,20 @@ class RegistryService:
         await self.session.refresh(edge)
         return edge
 
-    async def publish_version(self, object_id: uuid.UUID, version_id: uuid.UUID) -> ContextObject:
+    async def publish_version(self, object_id: uuid.UUID, version_id: uuid.UUID, bypass_gate: bool = False) -> ContextObject:
         obj = await get_object(self.session, object_id)
         version = await self._assert_version_belongs(object_id, version_id)
         validate_structured_data_or_raise(obj.type, version.structured_data)
+
+        # Publish gate — block if safety checks fail
+        if not bypass_gate:
+            gate = PublishGate(self.session)
+            result = await gate.check(version, obj.type)
+            if not result.passed:
+                raise ValueError(
+                    f"Publish gate blocked: {'; '.join(result.blockers)}"
+                )
+
         now = datetime.now(timezone.utc)
 
         if obj.current_version_id and obj.current_version_id != version.id:

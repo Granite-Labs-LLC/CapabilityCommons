@@ -544,8 +544,9 @@ Each object type has a validated JSONB schema in `structured_data`. This allows 
 | `GET` | `/v1/public/graph` | Graph nodes + edges for D3 visualization |
 | `GET` | `/v1/public/modules/{slug}` | Module detail |
 | `GET` | `/v1/public/paths/{slug}` | Learning path with ordered steps |
-| `POST` | `/v1/search` | Full-text + optional hybrid search with facet filters |
-| `POST` | `/v1/retrieve/evidence_pack` | Intent-based evidence assembly |
+| `POST` | `/v1/search` | Hybrid (FTS+vector) search with UX filters |
+| `POST` | `/v1/public/ask` | Structured implementation-ready answers |
+| `POST` | `/v1/retrieve/evidence_pack` | Intent-based evidence assembly (diagnostic) |
 | `GET` | `/v1/retrieval_runs/{id}` | Retrieval run metadata |
 | `GET` | `/v1/retrieval_runs/{id}/steps` | Execution trace |
 
@@ -572,6 +573,10 @@ Each object type has a validated JSONB schema in `structured_data`. This allows 
 | `POST` | `/v1/objects/{oid}/versions/{vid}/verify` | Mark verified |
 | `POST` | `/v1/objects/{oid}/versions/{vid}/dispute` | Mark disputed |
 | `POST` | `/v1/objects/{oid}/versions/{vid}/deprecate` | Propose deprecation |
+| `GET` | `/v1/objects/{oid}/versions/{vid}/publish-check` | Dry-run publish gate check |
+| `GET` | `/v1/metrics/ingest` | Ingest quality metrics |
+| `GET` | `/v1/metrics/answer` | Answer quality metrics |
+| `GET` | `/v1/metrics/summary` | Combined metrics dashboard |
 
 ---
 
@@ -579,9 +584,11 @@ Each object type has a validated JSONB schema in `structured_data`. This allows 
 
 ### Search Architecture
 
-**Primary**: PostgreSQL full-text search using `websearch_to_tsquery` with `ts_rank` scoring. Supports AND/OR operators, facet filtering (EXISTS subqueries on `context_object_facets`), and filtering by object type, lifecycle state, and visibility.
+**Hybrid search via Reciprocal Rank Fusion (RRF)**: Independent FTS and vector candidate retrieval, unified via `score += weight * (1.0 / (rrf_k + rank))` with `rrf_k=60`. Supports UX-friendly filters (housing_type, climate_zone, budget, settlement_type, stage) that merge with raw facet_filters.
 
-**Secondary** (optional): Vector embeddings via pgvector (1536-dim, ivfflat index). Enabled when `OPENAI_API_KEY` is configured. The embedding pipeline:
+**FTS**: PostgreSQL `websearch_to_tsquery` with `ts_rank` scoring. Supports AND/OR operators, facet filtering, object type/lifecycle/visibility filters.
+
+**Vector** (optional): pgvector (1536-dim, ivfflat index). Enabled when `OPENAI_API_KEY` is configured. The embedding pipeline:
 
 1. `version.published` → outbox event
 2. Worker chunks text (900 chars max, 150-char overlap, paragraph-boundary splitting)
