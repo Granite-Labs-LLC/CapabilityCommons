@@ -4,7 +4,7 @@ import logging
 
 from fastapi import APIRouter
 
-from capability_commons.api.deps import CurrentWorkspace, DBSession
+from capability_commons.api.deps import DBSession, PublicWorkspace
 from capability_commons.schemas.search import SearchRequest, SearchResponse
 from capability_commons.search.adapters.postgres_search import PostgresSearchAdapter
 from capability_commons.services.embedding import EmbeddingService
@@ -15,7 +15,7 @@ router = APIRouter()
 
 
 @router.post("/search", response_model=SearchResponse)
-async def search(request: SearchRequest, session: DBSession, workspace: CurrentWorkspace) -> SearchResponse:
+async def search(request: SearchRequest, session: DBSession, workspace: PublicWorkspace) -> SearchResponse:
     adapter = PostgresSearchAdapter(session)
     embedding_svc = EmbeddingService(session)
 
