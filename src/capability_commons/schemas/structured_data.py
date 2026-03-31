@@ -8,6 +8,32 @@ from pydantic import BaseModel, Field, ValidationError
 from capability_commons.domain.enums import AssessmentType, COType, SeverityLevel
 
 
+class ToolTier(BaseModel):
+    """A tool or material with tier classification."""
+    name: str
+    tier: str = Field(description="essential, recommended, or nice_to_have")
+    substitutes: list[str] = Field(default_factory=list)
+
+
+class ImplementationProfile(BaseModel):
+    """Cross-cutting implementation-readiness fields.
+
+    Any object type can carry these fields to make it actionable.
+    Stored as structured_data["implementation_profile"].
+    """
+    smallest_viable_version: str | None = Field(None, description="Minimum viable version someone can attempt")
+    preflight_checks: list[str] = Field(default_factory=list, description="Checks before starting")
+    tools_tiered: list[ToolTier] = Field(default_factory=list, description="Tools with tier classification")
+    materials_tiered: list[ToolTier] = Field(default_factory=list, description="Materials with tier classification")
+    estimated_time_hours: float | None = Field(None, ge=0, description="Estimated time in hours")
+    estimated_cost_band: str | None = Field(None, description="free, low, medium, high")
+    success_checks: list[str] = Field(default_factory=list, description="How to verify success")
+    stop_conditions: list[str] = Field(default_factory=list, description="When to stop and reassess")
+    common_mistakes: list[str] = Field(default_factory=list, description="Frequent errors to avoid")
+    variants: list[str] = Field(default_factory=list, description="Alternative approaches")
+    escalation_guidance: str | None = Field(None, description="When to seek professional help")
+
+
 class TeachForwardPayload(BaseModel):
     three_minute_script: str
     ten_minute_outline: list[str]
@@ -133,6 +159,14 @@ def validate_structured_data(object_type: COType, data: dict[str, Any]) -> dict[
         return data
     validated = model_cls.model_validate(data)
     return validated.model_dump(mode="json")
+
+
+def extract_implementation_profile(data: dict[str, Any]) -> ImplementationProfile | None:
+    """Extract and validate the implementation_profile from structured_data, if present."""
+    raw = data.get("implementation_profile")
+    if raw is None:
+        return None
+    return ImplementationProfile.model_validate(raw)
 
 
 def validate_structured_data_or_raise(object_type: COType, data: dict[str, Any]) -> dict[str, Any]:

@@ -17,7 +17,7 @@ from capability_commons.db.models import (
 from capability_commons.domain.enums import COType, LifecycleState, NodeKind
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
 from capability_commons.schemas.graph import GraphEdge, GraphNode, GraphResponse
-from capability_commons.schemas.public import PublicBundleResponse, PublicObjectResponse
+from capability_commons.schemas.public import PublicBundleResponse, PublicObjectResponse, project_implementation_profile
 from capability_commons.services.evidence import EvidenceService
 from capability_commons.services.exceptions import NotFoundError
 
@@ -108,6 +108,7 @@ class PublicationService:
         members = []
         if obj.type in {COType.MODULE, COType.LEARNING_PATH}:
             members = await self.graph.ordered_members(version.id)
+        impl_profile = project_implementation_profile(version.structured_data)
         return PublicObjectResponse(
             slug=obj.slug,
             title=version.title,
@@ -116,6 +117,7 @@ class PublicationService:
             plain_language=version.plain_language,
             markdown_body=version.markdown_body,
             structured_data=version.structured_data,
+            implementation_profile=impl_profile,
             facets=facets,
             entities=entities,
             citations=citations,

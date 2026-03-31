@@ -559,3 +559,623 @@ class TestRET003ScoreBreakdowns:
         source = inspect.getsource(RetrievalService._rerank_hits)
         for field in ["search_score", "graph_bonus", "published_bonus", "verified_bonus", "citation_bonus", "facet_bonus"]:
             assert field in source, f"Missing score breakdown field: {field}"
+
+
+# === Shared helpers for Phase 2 tests ===
+
+
+def _make_evidence_pack(evidence=None, contradictions=None, next_steps=None, sufficiency=0.8):
+    """Helper to build a mock EvidencePackResponse for composer tests."""
+    import uuid
+    from capability_commons.domain.enums import RetrievalIntent
+    from capability_commons.schemas.retrieval import EvidencePackResponse, RetrievalPlan
+    return EvidencePackResponse(
+        run_id=uuid.uuid4(),
+        intent=RetrievalIntent.HOW_TO,
+        query="test",
+        plan=RetrievalPlan(
+            intent=RetrievalIntent.HOW_TO,
+            search_top_k=20,
+            graph_depth=2,
+            iteration_limit=3,
+            edge_types=["PREREQUISITE_FOR"],
+            rerank_weights={"search_score": 1.0},
+        ),
+        sufficiency_score=sufficiency,
+        evidence=evidence or [],
+        contradictions=contradictions or [],
+        next_steps=next_steps or [],
+    )
+
+
+def _make_evidence_node(title="Test", slug="test", type_="skill_guide", score=0.8, summary=None, rationale=None):
+    """Helper to build an EvidenceNode for composer tests."""
+    import uuid
+    from capability_commons.schemas.retrieval import EvidenceNode
+    return EvidenceNode(
+        object_id=uuid.uuid4(),
+        version_id=uuid.uuid4(),
+        slug=slug,
+        title=title,
+        type=type_,
+        score=score,
+        summary_short=summary or f"Summary of {title}",
+        citations=[],
+        rationale=rationale,
+    )
+
+
+# === API-001: Public workspace resolver ===
+
+
+class TestAPI001PublicWorkspaceResolver:
+    def test_public_workspace_slug_constant(self):
+        """API-001: PUBLIC_WORKSPACE_SLUG must be defined."""
+        from capability_commons.api.deps import PUBLIC_WORKSPACE_SLUG
+        assert PUBLIC_WORKSPACE_SLUG == "capability-commons"
+
+    def test_get_public_or_authenticated_workspace_exists(self):
+        """API-001: get_public_or_authenticated_workspace dependency must exist."""
+        from capability_commons.api.deps import get_public_or_authenticated_workspace
+        import inspect
+        assert inspect.iscoroutinefunction(get_public_or_authenticated_workspace)
+
+    def test_public_workspace_alias_exists(self):
+        """API-001: PublicWorkspace type alias must be exported."""
+        from capability_commons.api.deps import PublicWorkspace
+        assert PublicWorkspace is not None
+
+    def test_search_route_uses_public_workspace(self):
+        """API-001: Search route must use PublicWorkspace dependency for anonymous access."""
+        import inspect
+        from capability_commons.api.routes import search as search_mod
+        source = inspect.getsource(search_mod)
+        assert "PublicWorkspace" in source
+
+    def test_resolver_rejects_invalid_bearer_token(self):
+        """API-001: Must reject invalid Bearer tokens rather than falling back to public."""
+        import inspect
+        from capability_commons.api.deps import get_public_or_authenticated_workspace
+        source = inspect.getsource(get_public_or_authenticated_workspace)
+        assert "Invalid or revoked API key" in source
+
+    def test_resolver_falls_back_to_public_workspace(self):
+        """API-001: Anonymous requests must resolve to the public workspace."""
+        import inspect
+        from capability_commons.api.deps import get_public_or_authenticated_workspace
+        source = inspect.getsource(get_public_or_authenticated_workspace)
+        assert "PUBLIC_WORKSPACE_SLUG" in source
+
+
+# === API-002: POST /v1/public/ask endpoint ===
+
+
+class TestAPI002PublicAsk:
+    def test_ask_schemas_exist(self):
+        """API-002: Ask request/response schemas must be importable."""
+        from capability_commons.schemas.ask import AskRequest, AskResponse, AskContext
+        assert AskRequest is not None
+        assert AskResponse is not None
+        assert AskContext is not None
+
+    def test_ask_request_validation(self):
+        """API-002: AskRequest validates query length."""
+        from capability_commons.schemas.ask import AskRequest
+        import pytest as _pytest
+        with _pytest.raises(Exception):
+            AskRequest(query="ab")  # too short
+        req = AskRequest(query="How do I store water?")
+        assert req.max_results == 8
+
+    def test_ask_response_has_required_fields(self):
+        """API-002: AskResponse must include all spec fields."""
+        from capability_commons.schemas.ask import AskResponse
+        fields = AskResponse.model_fields
+        for name in ["answer", "action_now", "implementation_plan", "safety",
+                      "citations", "related_objects", "uncertainties",
+                      "resolved_intent", "conversation_id", "retrieval_run_id"]:
+            assert name in fields, f"Missing field: {name}"
+
+    def test_ask_context_to_facet_filters(self):
+        """API-002: AskContext fields must map to retrieval facet_filters."""
+        from capability_commons.api.routes.ask import _build_facet_filters
+        from capability_commons.schemas.ask import AskRequest, AskContext
+        req = AskRequest(
+            query="water storage",
+            context=AskContext(housing_type="apartment", climate_zone="arid"),
+        )
+        filters = _build_facet_filters(req)
+        assert filters["housing_type"] == ["apartment"]
+        assert filters["climate_zone"] == ["arid"]
+
+    def test_intent_detection_stub(self):
+        """API-002: Stub intent detector must classify basic patterns."""
+        from capability_commons.api.routes.ask import _detect_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert _detect_intent("How do I store water?") == RetrievalIntent.HOW_TO
+        assert _detect_intent("Why does concrete crack?") == RetrievalIntent.WHY
+        assert _detect_intent("Compare solar vs wind power") == RetrievalIntent.COMPARE_OPTIONS
+        assert _detect_intent("Is this safe to eat?") == RetrievalIntent.SAFETY_CHECK
+
+    def test_ask_route_registered(self):
+        """API-002: /v1/public/ask route must be registered in the app router."""
+        from capability_commons.api.router import api_router
+        paths = [r.path for r in api_router.routes]
+        assert "/v1/public/ask" in paths
+
+    def test_ask_route_uses_public_workspace(self):
+        """API-002: public_ask route must use PublicWorkspace dependency."""
+        import inspect
+        from capability_commons.api.routes import ask as ask_mod
+        source = inspect.getsource(ask_mod)
+        assert "PublicWorkspace" in source
+
+    def test_compose_answer_handles_empty_evidence(self):
+        """API-002: compose_answer must handle empty evidence gracefully."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        pack = _make_evidence_pack(sufficiency=0.0)
+        req = AskRequest(query="test query")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert "No relevant information" in resp.answer
+        assert resp.resolved_intent == RetrievalIntent.HOW_TO
+
+
+# === RET-004: Intent auto-detection ===
+
+
+class TestRET004IntentClassifier:
+    def test_how_to_patterns(self):
+        """RET-004: Must classify procedural queries as HOW_TO."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("How do I store water safely?") == RetrievalIntent.HOW_TO
+        assert classify_intent("How to build a rain barrel") == RetrievalIntent.HOW_TO
+        assert classify_intent("Steps to install a solar panel") == RetrievalIntent.HOW_TO
+        assert classify_intent("Guide to composting") == RetrievalIntent.HOW_TO
+
+    def test_why_patterns(self):
+        """RET-004: Must classify explanatory queries as WHY."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("Why does concrete crack in cold weather?") == RetrievalIntent.WHY
+        assert classify_intent("Explain why rainwater needs filtering") == RetrievalIntent.WHY
+        assert classify_intent("What causes mold in basements?") == RetrievalIntent.WHY
+
+    def test_compare_patterns(self):
+        """RET-004: Must classify comparative queries as COMPARE_OPTIONS."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("Solar vs wind power") == RetrievalIntent.COMPARE_OPTIONS
+        assert classify_intent("Compare drip irrigation and flood irrigation") == RetrievalIntent.COMPARE_OPTIONS
+        assert classify_intent("Which is better: clay or metal roofing?") == RetrievalIntent.COMPARE_OPTIONS
+        assert classify_intent("Pros and cons of composting toilets") == RetrievalIntent.COMPARE_OPTIONS
+
+    def test_safety_patterns(self):
+        """RET-004: Must classify safety queries as SAFETY_CHECK."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("Is it safe to drink rainwater?") == RetrievalIntent.SAFETY_CHECK
+        assert classify_intent("Dangers of improperly stored food") == RetrievalIntent.SAFETY_CHECK
+
+    def test_learn_path_patterns(self):
+        """RET-004: Must classify learning queries as LEARN_PATH."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("Where should I start learning about permaculture?") == RetrievalIntent.LEARN_PATH
+        assert classify_intent("What should I learn first before building?") == RetrievalIntent.LEARN_PATH
+        assert classify_intent("Learning path for off-grid living") == RetrievalIntent.LEARN_PATH
+
+    def test_debug_failure_patterns(self):
+        """RET-004: Must classify troubleshooting queries as DEBUG_FAILURE."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("My solar panel is not working") == RetrievalIntent.DEBUG_FAILURE
+        assert classify_intent("How to troubleshoot a broken pump") == RetrievalIntent.DEBUG_FAILURE
+
+    def test_fallback_to_how_to(self):
+        """RET-004: Unrecognized queries must default to HOW_TO."""
+        from capability_commons.retrieval.intent_classifier import classify_intent
+        from capability_commons.domain.enums import RetrievalIntent
+        assert classify_intent("water storage containers") == RetrievalIntent.HOW_TO
+
+    def test_ask_route_uses_classifier(self):
+        """RET-004: Ask route must use the intent_classifier module."""
+        import inspect
+        from capability_commons.api.routes import ask as ask_mod
+        source = inspect.getsource(ask_mod)
+        assert "classify_intent" in source
+
+
+# === RET-005: Structured answer composer ===
+
+
+class TestRET005AnswerComposer:
+    def test_compose_answer_importable(self):
+        """RET-005: compose_answer must be importable from answer_composer."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        assert callable(compose_answer)
+
+    def test_compose_answer_returns_ask_response(self):
+        """RET-005: compose_answer must return an AskResponse."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest, AskResponse
+
+        node = _make_evidence_node(title="Water Storage", summary="Store water in food-grade containers")
+        pack = _make_evidence_pack(evidence=[node])
+        req = AskRequest(query="How to store water?")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert isinstance(resp, AskResponse)
+        assert "Water Storage" in resp.answer
+        assert resp.resolved_intent == RetrievalIntent.HOW_TO
+
+    def test_compose_extracts_action_now(self):
+        """RET-005: action_now must be the top evidence node's summary."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node(title="First Step", summary="Do this first")
+        pack = _make_evidence_pack(evidence=[node])
+        req = AskRequest(query="test query")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert resp.action_now == "Do this first"
+
+    def test_compose_builds_implementation_steps(self):
+        """RET-005: Implementation steps must be built from actionable evidence nodes."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        nodes = [
+            _make_evidence_node(title="Step A", slug="step-a", type_="skill_guide", score=0.9, summary="Do A"),
+            _make_evidence_node(title="Step B", slug="step-b", type_="project_blueprint", score=0.7, summary="Do B"),
+            _make_evidence_node(title="Note C", slug="note-c", type_="safety_notice", score=0.6, summary="Be careful"),
+        ]
+        pack = _make_evidence_pack(evidence=nodes)
+        req = AskRequest(query="How to build?")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        # Only skill_guide and project_blueprint are actionable
+        assert len(resp.implementation_plan) == 2
+        assert resp.implementation_plan[0].step == 1
+        assert resp.implementation_plan[0].source_slug == "step-a"
+        assert resp.implementation_plan[1].source_slug == "step-b"
+
+    def test_compose_extracts_safety_from_safety_nodes(self):
+        """RET-005: Safety warnings must be extracted from safety-type nodes."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node(title="Electrical Safety", type_="safety_notice", summary="Never touch live wires")
+        pack = _make_evidence_pack(evidence=[node])
+        req = AskRequest(query="How to wire a panel?")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert len(resp.safety.warnings) >= 1
+        assert "Electrical Safety" in resp.safety.warnings[0]
+
+    def test_compose_extracts_safety_from_keywords(self):
+        """RET-005: Safety warnings extracted from summaries with safety keywords."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node(title="Water Tips", type_="skill_guide", summary="Warning: avoid contaminated sources")
+        pack = _make_evidence_pack(evidence=[node])
+        req = AskRequest(query="water purification")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert any("warning" in w.lower() or "contaminated" in w.lower() for w in resp.safety.warnings)
+
+    def test_compose_detects_contradictions_as_uncertainties(self):
+        """RET-005: Contradictions in evidence must surface as uncertainties."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node()
+        pack = _make_evidence_pack(
+            evidence=[node],
+            contradictions=[{"description": "Source A says X, Source B says Y"}],
+        )
+        req = AskRequest(query="test query")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert any("conflicting" in u.lower() for u in resp.uncertainties)
+
+    def test_compose_detects_low_sufficiency(self):
+        """RET-005: Low sufficiency scores must surface as uncertainties."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node()
+        pack = _make_evidence_pack(evidence=[node], sufficiency=0.3)
+        req = AskRequest(query="test query")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert any("may not fully" in u for u in resp.uncertainties)
+
+    def test_compose_builds_related_from_next_steps(self):
+        """RET-005: Related objects must be built from evidence next_steps."""
+        from capability_commons.retrieval.answer_composer import compose_answer
+        from capability_commons.domain.enums import RetrievalIntent
+        from capability_commons.schemas.ask import AskRequest
+
+        node = _make_evidence_node()
+        pack = _make_evidence_pack(
+            evidence=[node],
+            next_steps=[{"slug": "rainwater-filter", "title": "Rainwater Filtration", "role": "prerequisite"}],
+        )
+        req = AskRequest(query="test query")
+        resp = compose_answer(pack, RetrievalIntent.HOW_TO, req)
+        assert len(resp.related_objects) == 1
+        assert resp.related_objects[0].slug == "rainwater-filter"
+        assert resp.related_objects[0].role == "prerequisite"
+
+    def test_ask_route_uses_composer(self):
+        """RET-005: Ask route must use compose_answer from answer_composer."""
+        import inspect
+        from capability_commons.api.routes import ask as ask_mod
+        source = inspect.getsource(ask_mod)
+        assert "compose_answer" in source
+        assert "answer_composer" in source
+
+
+# === RET-006: Conversation memory ===
+
+
+class TestRET006ConversationMemory:
+    def test_conversation_turn_model_exists(self):
+        """RET-006: ConversationTurn DB model must exist."""
+        from capability_commons.db.models import ConversationTurn
+        assert ConversationTurn.__tablename__ == "conversation_turns"
+
+    def test_conversation_turn_has_required_columns(self):
+        """RET-006: ConversationTurn must have all required columns."""
+        from capability_commons.db.models import ConversationTurn
+        columns = {c.name for c in ConversationTurn.__table__.columns}
+        for col in ["id", "conversation_id", "workspace_id", "turn_number",
+                     "query", "resolved_intent", "retrieval_run_id",
+                     "answer_summary", "context_json", "created_at"]:
+            assert col in columns, f"Missing column: {col}"
+
+    def test_conversation_memory_service_exists(self):
+        """RET-006: ConversationMemory service must be importable."""
+        from capability_commons.retrieval.conversation_memory import ConversationMemory
+        assert ConversationMemory is not None
+
+    def test_conversation_memory_has_required_methods(self):
+        """RET-006: ConversationMemory must have get_prior_turns, save_turn, build_context_prefix."""
+        from capability_commons.retrieval.conversation_memory import ConversationMemory
+        for method in ["get_prior_turns", "save_turn", "build_context_prefix",
+                        "get_or_create_conversation_id"]:
+            assert hasattr(ConversationMemory, method), f"Missing method: {method}"
+
+    def test_build_context_prefix_empty(self):
+        """RET-006: build_context_prefix must return empty string for no turns."""
+        from unittest.mock import MagicMock
+        from capability_commons.retrieval.conversation_memory import ConversationMemory
+        mem = ConversationMemory(session=MagicMock())
+        assert mem.build_context_prefix([]) == ""
+
+    def test_build_context_prefix_with_turns(self):
+        """RET-006: build_context_prefix must format prior turns as context."""
+        from unittest.mock import MagicMock
+        from capability_commons.retrieval.conversation_memory import ConversationMemory
+        mem = ConversationMemory(session=MagicMock())
+
+        turn1 = MagicMock()
+        turn1.query = "How to store water?"
+        turn1.answer_summary = "Use food-grade containers"
+        turn2 = MagicMock()
+        turn2.query = "What about for long term?"
+        turn2.answer_summary = None
+
+        prefix = mem.build_context_prefix([turn1, turn2])
+        assert "How to store water?" in prefix
+        assert "food-grade containers" in prefix
+        assert "What about for long term?" in prefix
+        assert "Prior conversation context:" in prefix
+
+    def test_ask_route_uses_conversation_memory(self):
+        """RET-006: Ask route must use ConversationMemory for multi-turn."""
+        import inspect
+        from capability_commons.api.routes import ask as ask_mod
+        source = inspect.getsource(ask_mod)
+        assert "ConversationMemory" in source
+        assert "conversation_memory" in source
+        assert "get_or_create_conversation_id" in source
+        assert "save_turn" in source
+
+    def test_ask_route_augments_query_with_context(self):
+        """RET-006: Ask route must augment query with prior conversation context."""
+        import inspect
+        from capability_commons.api.routes import ask as ask_mod
+        source = inspect.getsource(ask_mod)
+        assert "build_context_prefix" in source
+        assert "prior_turns" in source
+
+    def test_migration_exists(self):
+        """RET-006: Alembic migration for conversation_turns must exist."""
+        import os
+        migration_dir = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "alembic", "versions",
+        )
+        files = os.listdir(migration_dir)
+        assert any("conversation_turns" in f for f in files)
+
+    def test_max_context_turns_constant(self):
+        """RET-006: MAX_CONTEXT_TURNS must be defined and reasonable."""
+        from capability_commons.retrieval.conversation_memory import MAX_CONTEXT_TURNS
+        assert 1 <= MAX_CONTEXT_TURNS <= 20
+
+
+# === CONTENT-001: Implementation profile fields ===
+
+
+class TestCONTENT001ImplementationProfile:
+    def test_implementation_profile_model_exists(self):
+        """CONTENT-001: ImplementationProfile model must be importable."""
+        from capability_commons.schemas.structured_data import ImplementationProfile
+        assert ImplementationProfile is not None
+
+    def test_implementation_profile_fields(self):
+        """CONTENT-001: ImplementationProfile must have all spec fields."""
+        from capability_commons.schemas.structured_data import ImplementationProfile
+        fields = ImplementationProfile.model_fields
+        for name in ["smallest_viable_version", "preflight_checks", "tools_tiered",
+                      "materials_tiered", "estimated_time_hours", "estimated_cost_band",
+                      "success_checks", "stop_conditions", "common_mistakes",
+                      "variants", "escalation_guidance"]:
+            assert name in fields, f"Missing field: {name}"
+
+    def test_implementation_profile_validates(self):
+        """CONTENT-001: ImplementationProfile must validate valid data."""
+        from capability_commons.schemas.structured_data import ImplementationProfile
+        profile = ImplementationProfile(
+            smallest_viable_version="Collect rainwater in a clean bucket",
+            preflight_checks=["Check local regulations"],
+            tools_tiered=[{"name": "Bucket", "tier": "essential", "substitutes": ["Basin"]}],
+            estimated_time_hours=2.0,
+            estimated_cost_band="low",
+            success_checks=["Water is clear after filtering"],
+            stop_conditions=["Water smells or is discolored"],
+            common_mistakes=["Using non-food-grade containers"],
+            escalation_guidance="Consult water quality expert if source is unknown",
+        )
+        assert profile.smallest_viable_version is not None
+        assert len(profile.tools_tiered) == 1
+        assert profile.tools_tiered[0].tier == "essential"
+
+    def test_implementation_profile_all_optional(self):
+        """CONTENT-001: All ImplementationProfile fields must be optional (backward compat)."""
+        from capability_commons.schemas.structured_data import ImplementationProfile
+        profile = ImplementationProfile()
+        assert profile.smallest_viable_version is None
+        assert profile.tools_tiered == []
+
+    def test_extract_implementation_profile(self):
+        """CONTENT-001: extract_implementation_profile must parse from structured_data."""
+        from capability_commons.schemas.structured_data import extract_implementation_profile
+        data = {
+            "tools": ["hammer"],
+            "implementation_profile": {
+                "smallest_viable_version": "Use a hand drill",
+                "estimated_time_hours": 4.0,
+            },
+        }
+        profile = extract_implementation_profile(data)
+        assert profile is not None
+        assert profile.smallest_viable_version == "Use a hand drill"
+        assert profile.estimated_time_hours == 4.0
+
+    def test_extract_implementation_profile_missing(self):
+        """CONTENT-001: extract_implementation_profile returns None when absent."""
+        from capability_commons.schemas.structured_data import extract_implementation_profile
+        assert extract_implementation_profile({"tools": ["hammer"]}) is None
+
+    def test_tool_tier_model(self):
+        """CONTENT-001: ToolTier must validate name, tier, substitutes."""
+        from capability_commons.schemas.structured_data import ToolTier
+        t = ToolTier(name="Saw", tier="essential", substitutes=["Hand saw", "Jigsaw"])
+        assert t.name == "Saw"
+        assert t.tier == "essential"
+        assert len(t.substitutes) == 2
+
+    def test_serializer_indexes_implementation_profile(self):
+        """CONTENT-001: segment_serializer must index nested implementation_profile fields."""
+        from capability_commons.search.segment_serializer import serialize_structured_data
+        data = {
+            "implementation_profile": {
+                "smallest_viable_version": "Basic version",
+                "preflight_checks": ["Check local codes"],
+                "tools_tiered": [{"name": "Drill", "tier": "essential", "substitutes": ["Screwdriver"]}],
+                "materials_tiered": [{"name": "Plywood", "tier": "recommended"}],
+                "estimated_time_hours": 3.5,
+                "estimated_cost_band": "medium",
+                "stop_conditions": ["If structure creaks"],
+            },
+        }
+        text = serialize_structured_data(data)
+        assert "Basic version" in text
+        assert "Check local codes" in text
+        assert "Drill (essential)" in text
+        assert "Screwdriver" in text
+        assert "Plywood (recommended)" in text
+        assert "3.5 hours" in text
+        assert "medium" in text
+        assert "structure creaks" in text
+
+
+# === PUB-002: Enrich public object responses ===
+
+
+class TestPUB002PublicObjectEnrichment:
+    def test_public_implementation_profile_model(self):
+        """PUB-002: PublicImplementationProfile must be importable with all fields."""
+        from capability_commons.schemas.public import PublicImplementationProfile
+        fields = PublicImplementationProfile.model_fields
+        for name in ["smallest_viable_version", "preflight_checks", "tools",
+                      "materials", "estimated_time_hours", "estimated_cost_band",
+                      "success_checks", "stop_conditions", "common_mistakes",
+                      "variants", "escalation_guidance"]:
+            assert name in fields, f"Missing field: {name}"
+
+    def test_project_implementation_profile_with_nested(self):
+        """PUB-002: project_implementation_profile must extract from nested profile."""
+        from capability_commons.schemas.public import project_implementation_profile
+        data = {
+            "implementation_profile": {
+                "smallest_viable_version": "Bucket collection",
+                "tools_tiered": [{"name": "Bucket", "tier": "essential"}],
+                "estimated_time_hours": 1.0,
+                "estimated_cost_band": "free",
+                "success_checks": ["Water is clean"],
+            },
+        }
+        profile = project_implementation_profile(data)
+        assert profile is not None
+        assert profile.smallest_viable_version == "Bucket collection"
+        assert len(profile.tools) == 1
+        assert profile.tools[0]["name"] == "Bucket"
+        assert profile.estimated_cost_band == "free"
+
+    def test_project_implementation_profile_from_top_level(self):
+        """PUB-002: project_implementation_profile must fall back to top-level fields."""
+        from capability_commons.schemas.public import project_implementation_profile
+        data = {
+            "tools": ["Hammer", "Nails"],
+            "materials": ["Wood planks"],
+            "stop_conditions": ["If wood splits"],
+            "success_criteria": ["Frame is square"],
+            "variants": ["Use screws instead of nails"],
+        }
+        profile = project_implementation_profile(data)
+        assert profile is not None
+        assert len(profile.tools) == 2
+        assert profile.tools[0]["name"] == "Hammer"
+        assert profile.tools[0]["tier"] == "unspecified"
+        assert len(profile.materials) == 1
+        assert profile.stop_conditions == ["If wood splits"]
+        assert profile.success_checks == ["Frame is square"]
+
+    def test_project_implementation_profile_returns_none_when_empty(self):
+        """PUB-002: project_implementation_profile must return None when no actionable fields."""
+        from capability_commons.schemas.public import project_implementation_profile
+        assert project_implementation_profile({}) is None
+        assert project_implementation_profile({"some_other_field": "value"}) is None
+
+    def test_public_object_response_has_implementation_profile_field(self):
+        """PUB-002: PublicObjectResponse must have optional implementation_profile field."""
+        from capability_commons.schemas.public import PublicObjectResponse
+        assert "implementation_profile" in PublicObjectResponse.model_fields
+
+    def test_publication_service_uses_projection(self):
+        """PUB-002: Publication service must call project_implementation_profile."""
+        import inspect
+        from capability_commons.publication import service as svc_mod
+        source = inspect.getsource(svc_mod)
+        assert "project_implementation_profile" in source
+        assert "impl_profile" in source

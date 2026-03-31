@@ -499,3 +499,23 @@ class RateLimitLog(Base):
     key_hash: Mapped[str] = mapped_column(Text, nullable=False)
     window_start: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     request_count: Mapped[int] = mapped_column(Integer, nullable=False, server_default=text("1"))
+
+
+class ConversationTurn(Base):
+    """Stores individual turns of a multi-turn ask conversation."""
+    __tablename__ = "conversation_turns"
+    __table_args__ = (
+        Index("idx_conversation_turns_conversation", "conversation_id", "turn_number"),
+        Index("idx_conversation_turns_workspace", "workspace_id"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    conversation_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    turn_number: Mapped[int] = mapped_column(Integer, nullable=False)
+    query: Mapped[str] = mapped_column(Text, nullable=False)
+    resolved_intent: Mapped[str] = mapped_column(Text, nullable=False)
+    retrieval_run_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
+    answer_summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    context_json: Mapped[dict[str, Any] | None] = mapped_column(JSONB, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
