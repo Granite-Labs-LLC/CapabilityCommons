@@ -272,3 +272,18 @@ class AssessmentType(StrEnum):
     CHECKLIST = "checklist"
     DEMO = "demo"
     PORTFOLIO_REVIEW = "portfolio_review"
+
+
+class IngestJobStatus(StrEnum):
+    PENDING = "pending"
+    RUNNING = "running"
+    COMPLETED = "completed"
+    FAILED = "failed"
+
+
+class IngestPassStatus(StrEnum):
+    PENDING = "pending"
+    RUNNING = "running"
+    COMPLETED = "completed"
+    FAILED = "failed"
+    SKIPPED = "skipped"

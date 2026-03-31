@@ -1356,3 +1356,25 @@ class TestPERF001ResponseCache:
         cache = ResponseCache()
         cache.set("test", {"a": 1, "b": 2}, "value")
         assert cache.get("test", {"b": 2, "a": 1}) == "value"
+
+
+# === ING-007: DB-backed ingest jobs and review queues ===
+
+
+class TestING007IngestJobs:
+    def test_ingest_job_status_enum_exists(self):
+        """ING-007: IngestJobStatus enum must exist with expected values."""
+        from capability_commons.domain.enums import IngestJobStatus
+        assert IngestJobStatus.PENDING.value == "pending"
+        assert IngestJobStatus.RUNNING.value == "running"
+        assert IngestJobStatus.COMPLETED.value == "completed"
+        assert IngestJobStatus.FAILED.value == "failed"
+
+    def test_ingest_pass_status_enum_exists(self):
+        """ING-007: IngestPassStatus enum must exist with expected values."""
+        from capability_commons.domain.enums import IngestPassStatus
+        assert IngestPassStatus.PENDING.value == "pending"
+        assert IngestPassStatus.RUNNING.value == "running"
+        assert IngestPassStatus.COMPLETED.value == "completed"
+        assert IngestPassStatus.FAILED.value == "failed"
+        assert IngestPassStatus.SKIPPED.value == "skipped"
