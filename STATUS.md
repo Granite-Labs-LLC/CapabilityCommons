@@ -171,7 +171,7 @@ Two seed packs loaded on startup:
 | Backup/restore | Automated daily + manual scripts in `deploy/` |
 | Cloud deployment docs | Linux production guide with Quick Deploy |
 
-### Frontend (CapabilityCommonsSite) — Functional
+### Frontend (CapabilityCommonsSite) — Integrated
 
 Astro 5 + React 19 static site consuming the backend API.
 
@@ -192,7 +192,9 @@ Astro 5 + React 19 static site consuming the backend API.
 | Design tokens | Complete (CSS custom properties) |
 | Mock data fallback | Complete (works without backend) |
 
-**Pages:** 14 Astro pages (including /status), 25+ components, 5 React islands.
+**Pages:** 18 Astro pages, 25+ components, 5 React islands.
+
+**Integration:** Added as git submodule at `apps/site`. API gap documentation at `docs/API_GAPS.md` tracks what the site needs to support Phase 2-4 backend features (guided ask, UX search filters, action cards, feedback).
 
 **Build:** Static HTML + JS, deployable to any host. Connects to backend via `PUBLIC_API_URL`.
 
