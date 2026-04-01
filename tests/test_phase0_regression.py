@@ -1407,3 +1407,29 @@ class TestING007IngestJobs:
         assert "error_message" in col_names
         assert "started_at" in col_names
         assert "completed_at" in col_names
+
+    def test_ingest_service_importable(self):
+        """ING-007: IngestService must be importable."""
+        from capability_commons.services.ingest import IngestService
+        assert IngestService is not None
+
+    def test_ingest_service_has_required_methods(self):
+        """ING-007: IngestService must have create, get, list, update methods."""
+        import inspect
+        from capability_commons.services.ingest import IngestService
+        methods = {name for name, _ in inspect.getmembers(IngestService, predicate=inspect.isfunction)}
+        assert "create_job" in methods
+        assert "get_job" in methods
+        assert "list_jobs" in methods
+        assert "start_pass" in methods
+        assert "complete_pass" in methods
+        assert "fail_pass" in methods
+        assert "fail_job" in methods
+
+    def test_ingest_pass_names_constant(self):
+        """ING-007: INGEST_PASS_NAMES must list the 8 pipeline passes in order."""
+        from capability_commons.services.ingest import INGEST_PASS_NAMES
+        assert INGEST_PASS_NAMES == [
+            "parse", "extract", "draft", "cite",
+            "canonicalize", "edges", "bundles", "load",
+        ]
