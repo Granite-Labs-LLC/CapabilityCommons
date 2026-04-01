@@ -39,6 +39,7 @@ from capability_commons.domain.enums import (
     EntityType,
     EvidenceSourceKind,
     FacetType,
+    FeedbackAction,
     IngestJobStatus,
     IngestPassStatus,
     LifecycleState,
@@ -566,3 +567,21 @@ class IngestJobPass(Base):
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
     job: Mapped[IngestJob] = relationship(back_populates="passes")
+
+
+class Feedback(Base):
+    """User feedback on answers, objects, or general reports."""
+    __tablename__ = "feedback"
+    __table_args__ = (
+        Index("idx_feedback_created", "created_at"),
+        Index("idx_feedback_object_slug", "object_slug"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    action: Mapped[FeedbackAction] = mapped_column(_enum(FeedbackAction, "feedback_action"), nullable=False)
+    answer_id: Mapped[str | None] = mapped_column(Text, nullable=True)
+    run_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
+    object_slug: Mapped[str | None] = mapped_column(Text, nullable=True)
+    comment: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
+    ip_hash: Mapped[str | None] = mapped_column(String(64), nullable=True)

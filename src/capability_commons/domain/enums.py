@@ -274,6 +274,13 @@ class AssessmentType(StrEnum):
     PORTFOLIO_REVIEW = "portfolio_review"
 
 
+class FeedbackAction(StrEnum):
+    THUMBS_UP = "thumbs_up"
+    THUMBS_DOWN = "thumbs_down"
+    USED_THIS = "used_this"
+    REPORT_ISSUE = "report_issue"
+
+
 class IngestJobStatus(StrEnum):
     PENDING = "pending"
     RUNNING = "running"

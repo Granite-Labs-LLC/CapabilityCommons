@@ -1485,3 +1485,65 @@ class TestING007IngestJobs:
         source = inspect.getsource(reviews)
         assert "LifecycleState" in source
         assert "IN_REVIEW" in source
+
+
+# === FE-006: Feedback endpoint ===
+
+
+class TestFE006Feedback:
+    def test_feedback_action_enum(self):
+        """FE-006: FeedbackAction enum must have the four action types."""
+        from capability_commons.domain.enums import FeedbackAction
+        assert FeedbackAction.THUMBS_UP == "thumbs_up"
+        assert FeedbackAction.THUMBS_DOWN == "thumbs_down"
+        assert FeedbackAction.USED_THIS == "used_this"
+        assert FeedbackAction.REPORT_ISSUE == "report_issue"
+
+    def test_feedback_model_exists(self):
+        """FE-006: Feedback model must be importable with expected columns."""
+        from capability_commons.db.models import Feedback
+        assert Feedback.__tablename__ == "feedback"
+        col_names = [c.name for c in Feedback.__table__.columns]
+        assert "id" in col_names
+        assert "action" in col_names
+        assert "answer_id" in col_names
+        assert "run_id" in col_names
+        assert "object_slug" in col_names
+        assert "comment" in col_names
+        assert "created_at" in col_names
+        assert "ip_hash" in col_names
+
+    def test_feedback_schema_request(self):
+        """FE-006: FeedbackRequest must validate action field."""
+        from capability_commons.schemas.feedback import FeedbackRequest
+        req = FeedbackRequest(action="thumbs_up", object_slug="water-storage")
+        assert req.action == "thumbs_up"
+        assert req.object_slug == "water-storage"
+        assert req.comment is None
+
+    def test_feedback_schema_response(self):
+        """FE-006: FeedbackResponse must have id, action, created_at."""
+        import uuid
+        from datetime import datetime, timezone
+        from capability_commons.schemas.feedback import FeedbackResponse
+        resp = FeedbackResponse(id=uuid.uuid4(), action="thumbs_up", created_at=datetime.now(timezone.utc))
+        assert resp.action == "thumbs_up"
+
+    def test_feedback_route_exists(self):
+        """FE-006: Feedback router must have POST /feedback."""
+        from capability_commons.api.routes.feedback import router
+        routes = [(r.path, list(r.methods)) for r in router.routes if hasattr(r, "methods")]
+        assert any(path == "/feedback" and "POST" in methods for path, methods in routes)
+
+    def test_feedback_route_wired(self):
+        """FE-006: Feedback route must be included in the main API router."""
+        from capability_commons.api.router import api_router
+        paths = [r.path for r in api_router.routes if hasattr(r, "path")]
+        assert "/v1/feedback" in paths
+
+    def test_feedback_migration_exists(self):
+        """FE-006: Alembic migration for feedback table must exist."""
+        import pathlib
+        migrations_dir = pathlib.Path("alembic/versions")
+        migration_files = [f.name for f in migrations_dir.iterdir() if "feedback" in f.name]
+        assert len(migration_files) >= 1
