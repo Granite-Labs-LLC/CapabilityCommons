@@ -921,6 +921,52 @@ All planned phases are complete:
 
 ---
 
+## 15. Operational Scale (Phase 4)
+
+### Publish Gates
+
+Before a version can be published, `PublishGate` runs rule-based safety checks:
+
+1. **Risk band gate** — versions with `risk_band` HIGH or EXPERT_ONLY require at least one APPROVED `ReviewRecord` before publishing
+2. **Safety boundary gate** — actionable types (skill_guide, project_blueprint, local_adaptation) must include `safety_boundary` or `escalation_guidance` in structured_data
+3. **Contradiction gate** — versions with unresolved OPEN or TRIAGED contradictions are blocked
+
+`RegistryService.publish_version()` calls the gate automatically. Pass `bypass_gate=True` only for operator overrides.
+
+### Metrics Dashboard
+
+`MetricsService` provides aggregate observability via three authenticated endpoints:
+
+- `GET /v1/metrics/ingest` — objects by lifecycle state, versions by validity, evidence span count, embedding coverage, reviews by outcome, open contradictions
+- `GET /v1/metrics/answer` — retrieval run totals, completion rate, average sufficiency score, conversation turn counts
+- `GET /v1/metrics/summary` — combined ingest + answer metrics
+
+### Response Cache
+
+`ResponseCache` is a TTL-based in-memory cache for public search and ask responses. Cache keys are deterministic (SHA-256 of normalized query + context). Entries expire after 300 seconds by default, with a max of 1000 entries and LRU eviction. Cache invalidation is available by prefix (e.g., invalidate all "search" entries on publish).
+
+### DB-Backed Ingest Job Tracking
+
+The 8-pass ingestion pipeline is now tracked in the database via two tables:
+
+- `ingest_jobs` — workspace_id, project_name, status (pending/running/completed/failed), source_count, config_json, error_log, timestamps
+- `ingest_job_passes` — per-pass tracking with ordinal, status, output_path, artifact_count, error_message, timestamps
+
+`IngestService` manages the lifecycle: `create_job` initializes all 8 passes as pending, `start_pass`/`complete_pass`/`fail_pass` track progress, and the job auto-completes when all passes finish.
+
+API endpoints:
+- `POST /v1/ingest/jobs` — create a tracked ingest job
+- `GET /v1/ingest/jobs` — list jobs (filterable by status)
+- `GET /v1/ingest/jobs/{id}` — get job detail with per-pass status
+
+The CLI filesystem workflow continues to operate independently; DB tracking is additive.
+
+### Review Queue
+
+`GET /v1/reviews/queue` returns objects in `IN_REVIEW` lifecycle state for the current workspace, ordered by last update. This powers the operator review dashboard for managing content before publication.
+
+---
+
 ## References
 
 | Document | Location | Purpose |
