@@ -1,12 +1,12 @@
 # Capability Commons — Project Status
 
-Last updated: 2026-03-31
+Last updated: 2026-04-01
 
 ## Overview
 
 Capability Commons is a working, deployable knowledge platform. The backend API, database schema, seed data, ingestion pipeline, and frontend site are all implemented and functional. The system can be stood up with Docker Compose, seeded with the starter knowledge graph, and queried through both API endpoints and the Astro frontend.
 
-The project has completed its production-hardening phase and a 5-phase engineering backlog covering correctness, retrieval quality, the public answer layer, and operational scale. The system now includes publish gates, metrics dashboards, response caching, DB-backed ingest job tracking, and a review queue. The focus shifts to content population, frontend integration, and community tooling.
+The project has completed its entire 5-phase engineering backlog (38 tickets) covering correctness, retrieval quality, the public answer layer, public interface, and operational scale. All phases are done. The system includes publish gates, metrics, response caching, ingest job tracking, a review queue, guided ask with structured answers, server-side search with UX filters, implementation profiles, and user feedback. The focus shifts to content population, community testing, and production deployment.
 
 ## Codebase metrics
 
@@ -16,11 +16,11 @@ The project has completed its production-hardening phase and a 5-phase engineeri
 | Python source lines | ~9,500 |
 | Test files | 24 |
 | Test lines | ~3,000 |
-| Collected tests | 145+ |
-| Passing tests | 142+ (3 require live Postgres) |
-| API endpoints | 48 |
-| Database tables | 23 |
-| Alembic migrations | 8 |
+| Collected tests | 275+ |
+| Passing tests | 274+ (1 requires live Postgres) |
+| API endpoints | 49 |
+| Database tables | 24 |
+| Alembic migrations | 9 |
 | Seeded objects | 49 (25 capability + 12 modules + 12 assessments) |
 | Seeded edges | 175 |
 | Enum types | 30+ |
@@ -45,6 +45,7 @@ FastAPI application with 48 endpoints across 13 route modules. All routes are wi
 | Ask | 1 (POST /v1/public/ask with intent detection) | Production-ready |
 | Metrics | 3 (ingest quality, answer quality, summary) | Production-ready |
 | Ingest | 3 (create, list, get ingest jobs) | Production-ready |
+| Feedback | 1 (POST /v1/feedback) | Production-ready |
 
 **Middleware:** Structured request logging (structlog), rate limiting (per-key sliding window), CORS, API key authentication (with expiry support), Prometheus metrics.
 
