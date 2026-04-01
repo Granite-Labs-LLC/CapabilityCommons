@@ -1433,3 +1433,22 @@ class TestING007IngestJobs:
             "parse", "extract", "draft", "cite",
             "canonicalize", "edges", "bundles", "load",
         ]
+
+    def test_ingest_schemas_importable(self):
+        """ING-007: Ingest API schemas must be importable."""
+        from capability_commons.schemas.ingest import (
+            CreateIngestJobRequest,
+            IngestJobResponse,
+            IngestJobPassResponse,
+        )
+        assert CreateIngestJobRequest is not None
+        assert IngestJobResponse is not None
+        assert IngestJobPassResponse is not None
+
+    def test_ingest_job_response_has_passes(self):
+        """ING-007: IngestJobResponse must include passes list."""
+        from capability_commons.schemas.ingest import IngestJobResponse
+        fields = IngestJobResponse.model_fields
+        assert "passes" in fields
+        assert "project_name" in fields
+        assert "status" in fields
