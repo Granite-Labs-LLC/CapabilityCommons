@@ -3,8 +3,11 @@ from __future__ import annotations
 import uuid
 
 from fastapi import APIRouter
+from sqlalchemy import select
 
 from capability_commons.api.deps import CurrentWorkspace, DBSession
+from capability_commons.db.models import ContextObject
+from capability_commons.domain.enums import LifecycleState
 from capability_commons.schemas.reviews import (
     ContradictionResponse,
     CreateReviewRequest,
@@ -69,3 +72,36 @@ async def deprecate_version(object_id: uuid.UUID, version_id: uuid.UUID, session
     registry = RegistryService(session)
     version = await registry.get_version(version_id)
     return VersionValidityActionResponse(object_id=object_id, version_id=version_id, validity_status=version.validity_status)
+
+
+@router.get("/reviews/queue")
+async def review_queue(
+    session: DBSession,
+    workspace: CurrentWorkspace,
+    limit: int = 50,
+    offset: int = 0,
+) -> list[dict]:
+    """List objects in IN_REVIEW state awaiting review."""
+    stmt = (
+        select(ContextObject)
+        .where(
+            ContextObject.workspace_id == workspace.id,
+            ContextObject.lifecycle_state == LifecycleState.IN_REVIEW,
+        )
+        .order_by(ContextObject.updated_at.desc())
+        .limit(limit)
+        .offset(offset)
+    )
+    result = await session.execute(stmt)
+    objects = result.scalars().all()
+    return [
+        {
+            "id": str(obj.id),
+            "slug": obj.slug,
+            "type": obj.type.value,
+            "canonical_title": obj.canonical_title,
+            "lifecycle_state": obj.lifecycle_state.value,
+            "updated_at": obj.updated_at.isoformat(),
+        }
+        for obj in objects
+    ]

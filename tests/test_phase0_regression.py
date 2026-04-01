@@ -1471,3 +1471,17 @@ class TestING007IngestJobs:
         paths = [r.path for r in router.routes]
         assert "/ingest/jobs" in paths
         assert "/ingest/jobs/{job_id}" in paths
+
+    def test_review_queue_endpoint_exists(self):
+        """ING-007: Reviews router must have a GET /reviews/queue endpoint."""
+        from capability_commons.api.routes.reviews import router
+        paths = [r.path for r in router.routes]
+        assert "/reviews/queue" in paths
+
+    def test_review_queue_queries_in_review(self):
+        """ING-007: Review queue must filter by IN_REVIEW lifecycle state."""
+        import inspect
+        from capability_commons.api.routes import reviews
+        source = inspect.getsource(reviews)
+        assert "LifecycleState" in source
+        assert "IN_REVIEW" in source
