@@ -1452,3 +1452,22 @@ class TestING007IngestJobs:
         assert "passes" in fields
         assert "project_name" in fields
         assert "status" in fields
+
+    def test_ingest_routes_importable(self):
+        """ING-007: Ingest routes module must be importable with router."""
+        from capability_commons.api.routes.ingest import router
+        assert router is not None
+
+    def test_ingest_routes_registered(self):
+        """ING-007: Ingest routes must be registered in the main router."""
+        import inspect
+        from capability_commons.api import router as router_mod
+        source = inspect.getsource(router_mod)
+        assert "ingest" in source
+
+    def test_ingest_routes_have_endpoints(self):
+        """ING-007: Ingest router must have create, list, get endpoints."""
+        from capability_commons.api.routes.ingest import router
+        paths = [r.path for r in router.routes]
+        assert "/ingest/jobs" in paths
+        assert "/ingest/jobs/{job_id}" in paths
