@@ -1,26 +1,26 @@
 # Capability Commons — Project Status
 
-Last updated: 2026-03-25
+Last updated: 2026-03-31
 
 ## Overview
 
 Capability Commons is a working, deployable knowledge platform. The backend API, database schema, seed data, ingestion pipeline, and frontend site are all implemented and functional. The system can be stood up with Docker Compose, seeded with the starter knowledge graph, and queried through both API endpoints and the Astro frontend.
 
-The project has completed its initial production-hardening phase: CI/CD, structured logging, error tracking, metrics, connection pooling, migration safety, auth improvements, and Swagger UI are all in place. The focus now shifts to content population (first real ingestion run), operational deployment, and community tooling.
+The project has completed its production-hardening phase and a 5-phase engineering backlog covering correctness, retrieval quality, the public answer layer, and operational scale. The system now includes publish gates, metrics dashboards, response caching, DB-backed ingest job tracking, and a review queue. The focus shifts to content population, frontend integration, and community tooling.
 
 ## Codebase metrics
 
 | Metric | Count |
 |--------|-------|
-| Python source files | 82 |
-| Python source lines | ~7,500 |
+| Python source files | 95+ |
+| Python source lines | ~9,500 |
 | Test files | 24 |
-| Test lines | ~2,100 |
-| Collected tests | 130 |
-| Passing tests | 127 (3 require live Postgres) |
-| API endpoints | 37 |
-| Database tables | 19 |
-| Alembic migrations | 5 |
+| Test lines | ~3,000 |
+| Collected tests | 145+ |
+| Passing tests | 142+ (3 require live Postgres) |
+| API endpoints | 48 |
+| Database tables | 23 |
+| Alembic migrations | 8 |
 | Seeded objects | 49 (25 capability + 12 modules + 12 assessments) |
 | Seeded edges | 175 |
 | Enum types | 30+ |
@@ -29,7 +29,7 @@ The project has completed its initial production-hardening phase: CI/CD, structu
 
 ### Backend API — Complete
 
-FastAPI application with 37 endpoints across 9 route modules. All routes are wired, return valid response models, and enforce authentication.
+FastAPI application with 48 endpoints across 13 route modules. All routes are wired, return valid response models, and enforce authentication.
 
 | Route module | Endpoints | Status |
 |-------------|-----------|--------|
@@ -38,10 +38,13 @@ FastAPI application with 37 endpoints across 9 route modules. All routes are wir
 | Entities | 2 (create, add aliases) | Production-ready |
 | Edges | 2 (create, list with filters) | Production-ready |
 | Evidence | 4 (sources, spans, edge citations, version citations) | Production-ready, tested |
-| Reviews | 6 (submit, contradictions, resolve, verify, dispute, deprecate) | Production-ready, tested |
+| Reviews | 7 (submit, contradictions, resolve, verify, dispute, deprecate, queue) | Production-ready, tested |
 | Search | 1 (hybrid FTS + embedding) | Production-ready |
 | Retrieval | 3 (evidence pack, run details, steps) | Production-ready |
 | Public | 7 (published objects, graph, bundles, paths) | Production-ready |
+| Ask | 1 (POST /v1/public/ask with intent detection) | Production-ready |
+| Metrics | 3 (ingest quality, answer quality, summary) | Production-ready |
+| Ingest | 3 (create, list, get ingest jobs) | Production-ready |
 
 **Middleware:** Structured request logging (structlog), rate limiting (per-key sliding window), CORS, API key authentication (with expiry support), Prometheus metrics.
 
@@ -59,7 +62,7 @@ FastAPI application with 37 endpoints across 9 route modules. All routes are wir
 
 ### Database — Complete
 
-PostgreSQL 16 with pgvector. 19 tables with comprehensive constraints, 40+ indexes, and full relationship mapping.
+PostgreSQL 16 with pgvector. 23 tables with comprehensive constraints, 40+ indexes, and full relationship mapping.
 
 | Table group | Tables | Status |
 |------------|--------|--------|
@@ -70,9 +73,11 @@ PostgreSQL 16 with pgvector. 19 tables with comprehensive constraints, 40+ index
 | Reviews | `review_records`, `contradiction_cases` | Production-ready |
 | Search | `content_segments` (pgvector 1536-dim, IVFFLAT index) | Production-ready |
 | Retrieval | `retrieval_runs`, `retrieval_steps` | Production-ready |
+| Conversations | `conversation_turns` | Production-ready |
+| Ingest tracking | `ingest_jobs`, `ingest_job_passes` | Production-ready |
 | Infrastructure | `api_keys` (with `expire_at`), `rate_limit_log`, `outbox_events`, `object_files` | Production-ready |
 
-**Migrations:** 5 applied (initial schema, API keys, lifecycle index, evidence external_id, API key expire_at).
+**Migrations:** 8 applied (initial schema, API keys, lifecycle index, evidence external_id, API key expire_at, evidence span metadata, conversation turns, ingest jobs).
 
 **Connection pooling:** Configurable via `DB_POOL_SIZE`, `DB_MAX_OVERFLOW`, `DB_POOL_RECYCLE`, `DB_POOL_PRE_PING` env vars.
 
@@ -88,6 +93,9 @@ PostgreSQL 16 with pgvector. 19 tables with comprehensive constraints, 40+ index
 | `RetrievalService` | Plan compilation, execution, evidence pack assembly | Fully implemented |
 | `PublicationService` | Rendering public objects, bundles, graphs, paths | Fully implemented |
 | `RetrievalPlanner` | Intent-to-edge-type mapping (9 intents, 25 edge types) | Fully implemented |
+| `IngestService` | DB-backed ingest job lifecycle (create, start/complete/fail passes) | Fully implemented |
+| `MetricsService` | Aggregate ingest quality and answer quality metrics | Fully implemented |
+| `PublishGate` | Rule-based safety checks before publish (risk, safety boundary, contradictions) | Fully implemented |
 
 ### Search and graph adapters — Partial
 
@@ -158,7 +166,7 @@ Two seed packs loaded on startup:
 | docker-compose.yml | Development (pgvector + API, healthchecks) |
 | docker-compose.prod.yml | Production (+ Caddy TLS + backup container) |
 | `.env.staging` / `.env.production` | Templates provided |
-| Alembic migrations | 5 applied, auto-generate works |
+| Alembic migrations | 8 applied, auto-generate works |
 | Caddy reverse proxy | In Docker Compose (auto-TLS via Let's Encrypt) |
 | Backup/restore | Automated daily + manual scripts in `deploy/` |
 | Cloud deployment docs | Linux production guide with Quick Deploy |
@@ -241,7 +249,7 @@ Astro 5 + React 19 static site consuming the backend API.
 
 - `src/capability_commons/audit/__init__.py` — audit trail service (no code)
 - `src/capability_commons/storage/__init__.py` — file/media storage adapter (no code)
-- `src/capability_commons/jobs/__init__.py` — background job scheduling (no code; outbox worker exists separately)
+- `src/capability_commons/jobs/__init__.py` — general background job scheduling (no code; outbox worker and IngestService handle current needs)
 
 ### Abstract adapter methods
 
