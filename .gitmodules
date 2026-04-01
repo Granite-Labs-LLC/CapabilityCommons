@@ -1,0 +1,3 @@
+[submodule "apps/site"]
+	path = apps/site
+	url = git@github.com:Granite-Labs-LLC/CapabilityCommonsSite.git
