@@ -216,6 +216,42 @@ Each LLM pass prints estimated input tokens before prompting for confirmation. R
 
 **Edge validation errors:** Usually means a slug in edges.csv doesn't match any draft file. Check for typos or objects removed during canonicalization.
 
+## Ingest Job Tracking (API)
+
+The ingestion pipeline can optionally be tracked via the database through the Ingest Job API. This is additive — the CLI filesystem workflow continues to work independently.
+
+### Endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/v1/ingest/jobs` | Create a new tracked ingest job |
+| `GET` | `/v1/ingest/jobs` | List jobs (filterable by `?status=pending\|running\|completed\|failed`) |
+| `GET` | `/v1/ingest/jobs/{id}` | Get job detail with per-pass status |
+
+### Creating a job
+
+```bash
+curl -X POST http://localhost:8100/v1/ingest/jobs \
+  -H "Authorization: Bearer <key>" \
+  -H "Content-Type: application/json" \
+  -d '{"project_name": "my-source", "source_count": 2}'
+```
+
+Returns the job with all 8 passes initialized as `pending`.
+
+### Job lifecycle
+
+- **pending** — job created, no passes started
+- **running** — at least one pass has started
+- **completed** — all passes completed or skipped
+- **failed** — a pass failed, halting the job
+
+Each pass (parse, extract, draft, cite, canonicalize, edges, bundles, load) is tracked individually with its own status, output path, artifact count, and error message.
+
+### Relationship to CLI workflow
+
+The CLI pipeline (`python -m capability_commons.cli.ingest`) manages local filesystem state via `manifest.yaml`. The DB-backed tracking is a parallel observation layer for operators monitoring ingest runs through the API. Both can be used together or independently.
+
 ## Methodology Reference
 
 For the full methodology behind the multi-pass pipeline, see `corpus_conversion_guide.md` in this directory.
