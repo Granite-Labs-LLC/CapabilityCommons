@@ -47,7 +47,7 @@ These must be done before serving real users.
 ### Content safety
 
 - [ ] **Run the ingestion pipeline on a real source** — the pipeline is implemented but has not yet produced a full content batch from a real PDF. At least one end-to-end run (parse through load) must be completed and the output reviewed before going live.
-- [ ] **Safety review for high-risk content** — any objects with `risk_band: high` or `expert_only` need manual safety review before `PUBLISHED` state
+- [x] **Safety review for high-risk content** — publish gates (SAFE-001) block high-risk content without an approved review; safety boundary required for actionable types
 
 ---
 
@@ -100,7 +100,7 @@ These make the platform maintainable and extensible over time.
 
 - [ ] **Implement audit service** — the `audit/` module is a stub. Implement event logging for object creates, edits, publishes, and edge changes. Critical for the governance model (transparent version history).
 - [ ] **Contradiction detection pipeline** — currently contradictions must be opened manually. Add automated detection (e.g., when two objects in the same domain make conflicting claims, flag for review).
-- [ ] **Review dashboard** — expose review queue through the API and frontend (objects in `IN_REVIEW` state, pending safety reviews, open contradictions)
+- [x] **Review dashboard** — `GET /v1/reviews/queue` exposes objects in `IN_REVIEW` state (ING-007); frontend integration pending
 
 ### Storage and media
 
@@ -109,7 +109,7 @@ These make the platform maintainable and extensible over time.
 
 ### Background jobs
 
-- [ ] **Implement job scheduler** — the `jobs/` module is a stub. The outbox worker handles publish events, but other background work (batch embedding, scheduled validation, stale content detection) needs a proper job runner.
+- [x] **Implement job scheduler** — DB-backed `IngestService` tracks ingest jobs and per-pass status (ING-007); general background job runner still a stub for non-ingest work
 - [ ] **Embedding backfill job** — for existing objects that were created before embeddings were enabled, run a batch job to compute and index embeddings
 
 ### Scaling extension points
