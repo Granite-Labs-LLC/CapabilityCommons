@@ -353,6 +353,28 @@ This decouples write-path latency from expensive operations like embedding gener
 
 ## 6. Frontend: CapabilityCommonsSite
 
+The frontend is integrated as a git submodule at `apps/site`, pointing to `git@github.com:Granite-Labs-LLC/CapabilityCommonsSite.git`.
+
+**Setup after cloning:**
+```bash
+git submodule update --init
+cd apps/site && npm install
+```
+
+**Development:**
+```bash
+cd apps/site && npm run dev    # Astro dev server on :4321
+```
+
+**Build:**
+```bash
+cd apps/site && npm run build  # Static output to apps/site/dist/
+```
+
+The site is an Astro 6 static site with React 19 islands for interactivity (graph explorer, search, AI tutor). It consumes the FastAPI backend via a typed API client with mock data fallback for offline development.
+
+**API gap tracking:** See `docs/API_GAPS.md` for what the site's API client needs to support Phase 2-4 backend features.
+
 ### Project Layout
 
 ```
