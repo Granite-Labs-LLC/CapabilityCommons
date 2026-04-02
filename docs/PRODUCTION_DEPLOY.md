@@ -16,7 +16,7 @@ The repo now includes everything needed for a self-contained deployment:
 
 ```bash
 # 1. Clone and configure
-git clone https://github.com/Granite-Labs-LLC/CapabilityCommons.git
+git clone --recurse-submodules https://github.com/Granite-Labs-LLC/CapabilityCommons.git
 cd CapabilityCommons
 cp .env.production .env
 # Edit .env: set POSTGRES_PASSWORD, DOMAIN, CORS_ORIGINS, OPENAI_API_KEY, SENTRY_DSN
@@ -53,8 +53,8 @@ sudo adduser deploy
 sudo usermod -aG docker deploy
 su - deploy
 
-# Clone the repo
-git clone https://github.com/Granite-Labs-LLC/CapabilityCommons.git
+# Clone the repo (with frontend submodule)
+git clone --recurse-submodules https://github.com/Granite-Labs-LLC/CapabilityCommons.git
 cd CapabilityCommons
 
 # Install Docker if not present
@@ -233,23 +233,30 @@ docker compose exec api alembic upgrade head
 
 ## 12. Connecting the Frontend
 
-The CapabilityCommonsSite (Astro static site) connects to this API at build time and at runtime.
+The CapabilityCommonsSite (Astro static site) is included as a git submodule at `apps/site/`. It connects to this API at build time and at runtime.
 
 **Build time:** Astro fetches all objects and graph data to generate static pages.
 
-**Runtime:** React islands (search, graph explorer, AI tutor) make client-side API calls.
+**Runtime:** React islands (search, graph explorer, guided ask, feedback) make client-side API calls.
 
 This means the API must be accessible:
-1. From the Replit build environment (build time)
+1. From the build environment (build time)
 2. From users' browsers (runtime)
 
-On the frontend, set the environment variable:
+**Building the frontend:**
+
+```bash
+cd apps/site
+npm install
+PUBLIC_API_URL=https://api.capabilitycommons.org npm run build
+# Static output in apps/site/dist/ — deploy to any static host
+```
+
+On the frontend host, set the environment variable:
 
 ```bash
 PUBLIC_API_URL=https://api.capabilitycommons.org
 ```
-
-See the [CapabilityCommonsSite Replit deployment guide](../../CapabilityCommonsSite/docs/REPLIT_DEPLOY.md) for full frontend deployment instructions.
 
 ### CORS checklist
 

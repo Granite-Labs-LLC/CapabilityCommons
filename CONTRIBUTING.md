@@ -205,12 +205,30 @@ Review the [six doctrine rules](PHILOSOPHY.md) before submitting. Key questions:
 ### Development setup
 
 ```bash
-git clone <repo-url>
+git clone --recurse-submodules <repo-url>
 cd CapabilityCommons
 python -m venv .venv
 source .venv/bin/activate
 pip install -e '.[dev,ingest]'
 ```
+
+### Frontend development
+
+The frontend site lives in a git submodule at `apps/site/`. If you need to work on the frontend:
+
+```bash
+# Initialize the submodule (if not done during clone)
+git submodule update --init
+
+# Install and run the dev server
+cd apps/site
+npm install
+npm run dev    # Astro dev server on :4321
+```
+
+The frontend is an Astro 6 + React 19 static site. It connects to the backend API via `PUBLIC_API_URL` (defaults to `http://localhost:8100`). The API client includes mock data fallback so frontend development works without a running backend.
+
+Frontend PRs should be submitted to the [CapabilityCommonsSite](https://github.com/Granite-Labs-LLC/CapabilityCommonsSite) repository directly. Submodule pointer updates are handled by maintainers.
 
 ### Running tests
 

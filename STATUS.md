@@ -174,7 +174,7 @@ Two seed packs loaded on startup:
 
 ### Frontend (CapabilityCommonsSite) — Integrated
 
-Astro 5 + React 19 static site consuming the backend API.
+Astro 6 + React 19 static site consuming the backend API.
 
 | Feature | Status |
 |---------|--------|
@@ -182,12 +182,15 @@ Astro 5 + React 19 static site consuming the backend API.
 | Object explorer | Complete (search, filter by domain/stage/difficulty) |
 | Object detail pages | Complete (structured payload, prerequisites, citations) |
 | Graph visualization | Complete (D3-based interactive explorer) |
-| Search | Complete (connected to backend hybrid search) |
+| Search | Complete (server-side POST /v1/search with UX filters) |
 | Learning paths | Complete |
 | Syllabus / modules | Complete |
-| AI tutor (AskTutor) | Complete (connected to retrieval API) |
+| AI tutor (AskTutor) | Complete (POST /v1/public/ask with structured responses) |
+| Implementation profiles | Complete (smallest viable version, tools/materials, variants) |
 | Bundle viewer | Complete (six-part display) |
 | Ring explorer | Complete (concentric ring entry model) |
+| User feedback | Complete (thumbs up/down, used this, report issue) |
+| Print styles | Complete (all sections including ask, safety, profiles) |
 | Offline mode | Page exists |
 | Glossary | Page exists |
 | Design tokens | Complete (CSS custom properties) |
@@ -195,7 +198,7 @@ Astro 5 + React 19 static site consuming the backend API.
 
 **Pages:** 18 Astro pages, 25+ components, 5 React islands.
 
-**Integration:** Added as git submodule at `apps/site`. API gap documentation at `docs/API_GAPS.md` tracks what the site needs to support Phase 2-4 backend features (guided ask, UX search filters, action cards, feedback).
+**Integration:** Added as git submodule at `apps/site`. All Phase 2-4 frontend tickets (FE-001 through FE-006) are complete — guided ask, server-side search with filters, implementation profiles, print styles, and user feedback are all wired to the backend.
 
 **Build:** Static HTML + JS, deployable to any host. Connects to backend via `PUBLIC_API_URL`.
 
@@ -239,7 +242,7 @@ Astro 5 + React 19 static site consuming the backend API.
 | Ingestion operator guide | `ingestion/README.md` | Current |
 | Production deploy | `docs/PRODUCTION_DEPLOY.md` | Current |
 | Deploy checklist | `docs/DEPLOY_CHECKLIST.md` | Current |
-| Remaining Tier 1 guide | `docs/REMAINING_TIER1_GUIDE.md` | Current |
+| Operational tasks guide | `docs/OPERATIONAL_TASKS.md` | Current |
 | Production hardening plan | `docs/superpowers/plans/2026-03-25-production-hardening.md` | Current |
 | Original design docs | `docs/context/` | Preserved |
 | Seed data schema | `expanded_seed/schema/` | Current |

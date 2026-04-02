@@ -1,5 +1,7 @@
 # Capability Commons — Production Readiness TODO
 
+> **All 38 engineering backlog tickets are complete** (Phases 0-4). The items below are operational tasks for production deployment — not feature work.
+
 Organized by priority tier. Items within each tier are roughly ordered by impact.
 
 ---
@@ -70,11 +72,15 @@ These are important for a good user experience and operational confidence.
 
 ### Frontend integration
 
-- [ ] **End-to-end smoke test** — verify the site can fetch and render all object types from the live backend (concept_note, skill_guide, project_blueprint, module, assessment)
+- [x] **Frontend submodule** — integrated at `apps/site` as git submodule (FE-001)
+- [x] **Guided ask** — AskTutor rewritten for POST /v1/public/ask with structured responses (FE-002)
+- [x] **Server-side search** — SearchPanel rewritten for POST /v1/search with UX filters (FE-003)
+- [x] **Implementation profiles** — StructuredPayload renders implementation details (FE-004)
+- [x] **Print styles** — print.css extended for all new sections (FE-005)
+- [x] **User feedback** — backend POST /v1/feedback + frontend AnswerFeedback component (FE-006)
+- [ ] **End-to-end smoke test** — verify the site can fetch and render all object types from the live backend
 - [ ] **Bundle rendering** — verify six-part bundles display correctly for objects that have them
-- [ ] **Graph explorer data** — verify the D3 graph visualization renders correctly with the full 49-object + 175-edge graph
-- [ ] **Search integration** — verify SearchPanel connects to backend and returns useful results
-- [ ] **AI tutor** — verify AskTutor connects to the retrieval API and returns grounded answers with citations
+- [ ] **Graph explorer data** — verify the D3 graph visualization renders correctly with the full graph
 
 ### API documentation
 

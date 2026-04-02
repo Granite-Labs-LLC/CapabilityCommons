@@ -18,8 +18,8 @@ See [`docs/VISION.md`](docs/VISION.md) for the full doctrine, knowledge object m
 
 - **Postgres 16 + pgvector** as the single source of truth
 - **FastAPI** async API with v1 routes
-- **SQLAlchemy 2** async ORM with 19 tables
-- **Alembic** migrations
+- **SQLAlchemy 2** async ORM with 24 tables
+- **Alembic** migrations (9 applied)
 - **Docker Compose** for local development
 - Adapter interfaces for optional Neo4j and OpenSearch when needed later
 
@@ -76,36 +76,44 @@ Curriculum: 12 weekly modules + 12 matching assessments spanning all domains.
 
 ### Extension points (not yet active)
 
-- Vector embeddings (pgvector columns exist, default to `NULL`)
-- Evidence-pack assembly and contradiction workflows
-- Outbox consumers, static export, object storage uploads
-- Neo4j and OpenSearch adapters (interfaces defined)
-- Entity merge and advanced contradiction auto-detection
+- Neo4j and OpenSearch adapters (interfaces defined, Postgres implementations cover all methods)
+- Object storage adapter for file/media uploads (interface defined)
+- Automated contradiction detection pipeline (manual via API currently)
+- Entity merge workflows
 
 ## Quick start
 
 ```bash
-# 1. Start Postgres
+# 1. Clone with submodules (frontend site)
+git clone --recurse-submodules <repo-url>
+cd CapabilityCommons
+# Or if already cloned:
+git submodule update --init
+
+# 2. Start Postgres
 docker compose up -d
 
-# 2. Set up Python environment
+# 3. Set up Python environment
 python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 
-# 3. Configure
+# 4. Configure
 cp .env.example .env
 # Default DATABASE_URL uses port 5433 (remapped from 5432)
 
-# 4. Run migrations
+# 5. Run migrations
 alembic upgrade head
 
-# 5. Seed the knowledge graph (two passes)
+# 6. Seed the knowledge graph (two passes)
 python -m capability_commons.cli.seed --data-dir expanded_seed/
 python -m capability_commons.cli.seed --data-dir capability_commons_module_seed_pack_v1/
 
-# 6. Start the API
+# 7. Start the API
 uvicorn capability_commons.main:app --reload --port 8100
+
+# 8. (Optional) Start the frontend
+cd apps/site && npm install && npm run dev
 ```
 
 ### Verify the seed
@@ -133,7 +141,7 @@ src/capability_commons/
   api/           # FastAPI routes, dependencies, error handlers
   audit/         # Audit trail
   cli/           # CLI commands (seed loader)
-  db/            # Async engine, session, ORM models (19 tables)
+  db/            # Async engine, session, ORM models (24 tables)
   domain/        # Enums and shared domain constants
   graph/         # Relational graph adapter
   jobs/          # Background job stubs
@@ -161,7 +169,10 @@ docs/
   plans/                   # Implementation plans
   spec/                    # Agentic Data Lite specification
 
-alembic/                   # Database migrations
+apps/
+  site/                    # Frontend (Astro 6 + React 19, git submodule)
+
+alembic/                   # Database migrations (9 versions)
 docker-compose.yml         # Postgres 16 + pgvector
 ```
 

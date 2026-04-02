@@ -1,6 +1,6 @@
 # Capability Commons — Architecture & Vision
 
-> **Last updated:** 2026-03-22
+> **Last updated:** 2026-04-02
 >
 > AI should be used to convert hidden competence into shared public capacity.
 
@@ -170,7 +170,7 @@ The system also defines 13 additional types for future expansion: worksheet, ref
 ```
 ┌────────────────────────────────────────────────┐
 │              CapabilityCommonsSite             │
-│           (Astro 5 · Static Output)            │
+│           (Astro 6 · Static Output)            │
 │                                                │
 │   Build time:                                  │
 │     Fetches /v1/public/objects → static HTML   │
@@ -180,7 +180,7 @@ The system also defines 13 additional types for future expansion: worksheet, ref
 │   Runtime (React islands):                     │
 │     Graph explorer ──── D3 force-directed      │
 │     Search panel ────── POST /v1/search        │
-│     AI tutor ────────── POST /v1/retrieve/*    │
+│     AI tutor ────────── POST /v1/public/ask    │
 │     Ring explorer ───── client-side filtering  │
 │     Bundle viewer ───── tabbed content viewer  │
 └────────────────┬───────────────────────────────┘
@@ -207,7 +207,7 @@ The system also defines 13 additional types for future expansion: worksheet, ref
 ┌────────────────────────────────────────────────┐
 │          PostgreSQL 16 + pgvector              │
 │                                                │
-│   19 tables · 30+ enum types                   │
+│   24 tables · 30+ enum types                   │
 │   Full-text search (TSVECTOR)                  │
 │   Vector embeddings (1536-dim, ivfflat)        │
 │   JSONB structured data (schema-per-type)      │
@@ -241,7 +241,7 @@ Postgres is the canonical source of truth. Graph traversal happens via relationa
 | **Validation** | Pydantic 2.12+ | Request/response schemas |
 | **Embeddings** | OpenAI text-embedding-3-small | Optional vector search (1536 dims) |
 | **Containerization** | Docker + Docker Compose | Portable deployment |
-| **Frontend framework** | Astro 5 (static output) | Pages, routing, SSR data fetching |
+| **Frontend framework** | Astro 6 (static output) | Pages, routing, SSR data fetching |
 | **Interactive islands** | React 19 | Graph, search, AI tutor, rings, bundles |
 | **Graph visualization** | D3.js 7 | Force-directed knowledge graph |
 | **Styling** | CSS custom properties | Design tokens, responsive, print |
@@ -270,9 +270,13 @@ CapabilityCommons/
 │   │   ├── reviews.py             # Quality workflow, contradictions
 │   │   ├── search.py              # Full-text + hybrid search
 │   │   ├── retrieval.py           # Intent-based evidence packing
-│   │   └── public.py              # Unauthenticated public reads
+│   │   ├── public.py              # Unauthenticated public reads
+│   │   ├── response_cache.py      # In-memory response caching
+│   │   └── routes/
+│   │       ├── metrics.py         # Ingest & answer quality metrics
+│   │       └── feedback.py        # User feedback collection
 │   ├── db/
-│   │   ├── models.py              # 19 SQLAlchemy ORM models
+│   │   ├── models.py              # 24 SQLAlchemy ORM models
 │   │   └── session.py             # Async session factory
 │   ├── domain/
 │   │   └── enums.py               # 30+ domain enums
@@ -283,6 +287,9 @@ CapabilityCommons/
 │   │   ├── review.py              # Review & contradiction workflow
 │   │   ├── embedding.py           # Pluggable embedding provider
 │   │   ├── publication.py         # Public rendering & graph building
+│   │   ├── metrics.py             # Ingest & answer quality aggregation
+│   │   ├── publish_gate.py        # Rule-based safety checks before publish
+│   │   ├── ingest.py              # DB-backed ingest job lifecycle
 │   │   ├── helpers.py             # Shared utilities
 │   │   └── exceptions.py          # AppError, NotFoundError, etc.
 │   ├── search/
@@ -302,11 +309,12 @@ CapabilityCommons/
 │   └── cli/
 │       ├── seed.py                # Two-pass idempotent graph loader
 │       ├── worker.py              # Outbox event consumer
-│       └── keys.py                # API key management
-├── alembic/                       # 3 migration versions
+│       ├── keys.py                # API key management
+│       └── ingest.py              # 11-command ingestion pipeline
+├── alembic/                       # 9 migration versions
 ├── expanded_seed/                 # 25 capability nodes + 77 edges
 ├── capability_commons_module_seed_pack_v1/  # 24 curriculum nodes + 98 edges
-├── tests/                         # 17 test modules
+├── tests/                         # 24 test modules
 ├── docker-compose.yml             # Postgres 16 + FastAPI
 ├── Dockerfile                     # Python 3.14-slim
 └── pyproject.toml                 # Dependencies & metadata
@@ -373,7 +381,7 @@ cd apps/site && npm run build  # Static output to apps/site/dist/
 
 The site is an Astro 6 static site with React 19 islands for interactivity (graph explorer, search, AI tutor). It consumes the FastAPI backend via a typed API client with mock data fallback for offline development.
 
-**API gap tracking:** See `docs/API_GAPS.md` for what the site's API client needs to support Phase 2-4 backend features.
+**Phase 3 features:** Guided ask (structured answers via POST /v1/public/ask), server-side search with UX filters, implementation profile rendering, print styles for all sections, and user feedback (POST /v1/feedback).
 
 ### Project Layout
 

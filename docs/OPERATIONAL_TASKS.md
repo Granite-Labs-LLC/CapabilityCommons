@@ -1,6 +1,8 @@
-# Remaining Tier 1 Items — Operator Walkthrough
+# Operational Tasks — Operator Walkthrough
 
-Everything automated is already in place (CI/CD, HTTPS, backups, rate limits, auth, observability). These three items require human judgment and can't be fully automated. This guide walks through each one end to end.
+All engineering backlog tickets (38 across 5 phases) are complete. CI/CD, HTTPS, backups, rate limits, auth, observability, frontend integration, publish gates, metrics, and feedback are all implemented.
+
+The three tasks below require human judgment and can't be fully automated. They are the remaining steps before serving real users.
 
 ---
 
