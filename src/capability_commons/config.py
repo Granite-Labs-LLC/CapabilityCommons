@@ -50,6 +50,11 @@ class Settings(BaseSettings):
     # Worker
     outbox_poll_interval_seconds: float = 2.0
 
+    # Storage
+    storage_backend: str = "local"
+    storage_root: str = "./data/files"
+    storage_max_file_size: int = 52428800  # 50MB
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:

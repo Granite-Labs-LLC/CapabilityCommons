@@ -15,8 +15,10 @@ from capability_commons.db.models import (
     ContextObjectVersion,
     Edge,
 )
+from capability_commons.audit.service import AuditService
 from capability_commons.services.publish_gate import PublishGate
 from capability_commons.domain.enums import (
+    AuditEventType,
     COType,
     EdgeType,
     LifecycleState,
@@ -70,6 +72,14 @@ class RegistryService:
                 "type": obj.type.value,
                 "slug": obj.slug,
             },
+        )
+        audit = AuditService(self.session)
+        await audit.record_event(
+            event_type=AuditEventType.OBJECT_CREATED,
+            workspace_id=obj.workspace_id,
+            actor_key_id=actor_id,
+            target_object_id=obj.id,
+            detail={"slug": obj.slug, "type": obj.type.value},
         )
         await self.session.commit()
         await self.session.refresh(obj)
@@ -134,6 +144,15 @@ class RegistryService:
                 "version_id": str(version.id),
                 "version_no": version.version_no,
             },
+        )
+        audit = AuditService(self.session)
+        await audit.record_event(
+            event_type=AuditEventType.VERSION_CREATED,
+            workspace_id=obj.workspace_id,
+            actor_key_id=actor_id,
+            target_object_id=obj.id,
+            target_version_id=version.id,
+            detail={"version_no": version.version_no},
         )
         await self.session.commit()
         await self.session.refresh(version)
@@ -275,6 +294,14 @@ class RegistryService:
             event_type="edge.created",
             payload={"edge_id": str(edge.id), "edge_type": edge.edge_type.value},
         )
+        audit = AuditService(self.session)
+        await audit.record_event(
+            event_type=AuditEventType.EDGE_CREATED,
+            workspace_id=workspace_id,
+            actor_key_id=created_by,
+            target_edge_id=edge.id,
+            detail={"edge_type": edge.edge_type.value, "src_id": str(src_id), "dst_id": str(dst_id)},
+        )
         await self.session.commit()
         await self.session.refresh(edge)
         return edge
@@ -311,6 +338,13 @@ class RegistryService:
             aggregate_id=obj.id,
             event_type="version.published",
             payload={"object_id": str(obj.id), "version_id": str(version.id)},
+        )
+        audit = AuditService(self.session)
+        await audit.record_event(
+            event_type=AuditEventType.VERSION_PUBLISHED,
+            workspace_id=obj.workspace_id,
+            target_object_id=obj.id,
+            target_version_id=version.id,
         )
         await self.session.commit()
         await self.session.refresh(obj)
