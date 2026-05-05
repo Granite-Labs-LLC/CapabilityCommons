@@ -22,6 +22,10 @@ class AskRequest(BaseModel):
     context: AskContext | None = None
     conversation_id: uuid.UUID | None = None
     max_results: int = Field(default=8, ge=1, le=50)
+    # UI parity (PLAN P1-9): "ordinary person" controls. None = no constraint.
+    difficulty_max: int | None = Field(None, ge=1, le=5)
+    beginner_safe: bool | None = None
+    stage: str | None = Field(None, description="foundation, household, productive, community, advanced")
 
 
 class ImplementationStep(BaseModel):

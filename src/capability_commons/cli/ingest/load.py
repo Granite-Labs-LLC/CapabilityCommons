@@ -50,19 +50,20 @@ async def run_load(
     """Execute Pass 7: validate, write output, optionally load to DB."""
     console = Console()
 
-    # Step 1: Validate
+    # Step 1: If publishing, patch lifecycle_state in drafts FIRST so the
+    # strict validator can see the published flag and run the publish gate.
+    if publish:
+        console.print("\n[bold]Setting lifecycle_state=published...[/bold]")
+        _patch_lifecycle(project.drafts_dir)
+
+    # Step 2: Validate (strict when publishing — PLAN P1-8 publish gate)
     console.print("[bold]Validating...[/bold]")
-    report = run_validate(project)
+    report = run_validate(project, strict=publish)
     print_validation_report(report, console)
 
     if report.errors:
         console.print("\n[red bold]Cannot load: fix errors first.[/red bold]")
         return
-
-    # Step 2: If publishing, patch lifecycle_state in drafts
-    if publish:
-        console.print("\n[bold]Setting lifecycle_state=published...[/bold]")
-        _patch_lifecycle(project.drafts_dir)
 
     # Step 3: Write seed-compatible output
     console.print("\n[bold]Writing seed-compatible output...[/bold]")

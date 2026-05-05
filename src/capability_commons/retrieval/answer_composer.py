@@ -35,8 +35,12 @@ _SAFETY_KEYWORDS = {"warning", "danger", "caution", "risk", "hazard", "toxic", "
 
 
 def _extract_safety_warnings(evidence: EvidencePackResponse) -> list[str]:
-    """Extract safety warnings from evidence nodes and contradictions."""
+    """Extract safety warnings from envelope common_mistakes, evidence
+    nodes (safety_notice/correction), and contradictions."""
     warnings: list[str] = []
+    envelope = _top_envelope(evidence)
+    if envelope:
+        warnings.extend(envelope.get("common_mistakes") or [])
     for node in evidence.evidence:
         if node.type in ("safety_notice", "correction"):
             warnings.append(f"{node.title}: {node.summary_short or ''}")
@@ -52,7 +56,11 @@ def _extract_safety_warnings(evidence: EvidencePackResponse) -> list[str]:
 
 
 def _extract_stop_conditions(evidence: EvidencePackResponse) -> list[str]:
-    """Extract stop conditions from evidence nodes."""
+    """Pull stop_conditions from the implementation envelope when present;
+    otherwise fall back to scanning evidence rationales for 'stop' cues."""
+    envelope = _top_envelope(evidence)
+    if envelope and envelope.get("stop_conditions"):
+        return list(envelope["stop_conditions"])
     stops: list[str] = []
     for node in evidence.evidence:
         if node.rationale and "stop" in node.rationale.lower():
@@ -60,16 +68,71 @@ def _extract_stop_conditions(evidence: EvidencePackResponse) -> list[str]:
     return stops
 
 
+def _extract_when_to_get_help(evidence: EvidencePackResponse) -> list[str]:
+    """Surface the envelope's escalation conditions to the user."""
+    envelope = _top_envelope(evidence)
+    return list(envelope.get("when_to_escalate") or []) if envelope else []
+
+
+def _envelope_for(node) -> dict | None:
+    """Return the implementation envelope dict on an evidence node, if any."""
+    sd = getattr(node, "structured_data", None) or {}
+    impl = sd.get("implementation") if isinstance(sd, dict) else None
+    return impl if isinstance(impl, dict) else None
+
+
+def _top_envelope(evidence: EvidencePackResponse) -> dict | None:
+    """Pick the implementation envelope from the highest-scoring actionable
+    evidence node (skill_guide / project_blueprint)."""
+    for node in evidence.evidence:
+        if node.type in ("skill_guide", "project_blueprint"):
+            env = _envelope_for(node)
+            if env:
+                return env
+    return None
+
+
 def _build_implementation_steps(evidence: EvidencePackResponse) -> list[ImplementationStep]:
-    """Build ordered implementation steps from evidence nodes.
+    """Build ordered implementation steps.
 
-    Uses evidence ordering (by score) as the step sequence.
-    Filters to actionable content types.
+    Preferred path (PLAN P1-8): use the structured implementation envelope
+    on the top actionable evidence node — smallest_viable_version + variants
+    + escalations turn into typed steps with materials, time, and source.
+
+    Fallback: derive coarse steps from the evidence ordering by title.
     """
-    actionable_types = {"skill_guide", "project_blueprint", "concept_note", "worksheet"}
-    steps: list[ImplementationStep] = []
-    step_num = 0
+    envelope = _top_envelope(evidence)
+    if envelope:
+        steps: list[ImplementationStep] = []
+        # Step 1 is always the smallest viable thing the user can do now.
+        svv = envelope.get("smallest_viable_version")
+        top_slug = next(
+            (n.slug for n in evidence.evidence
+             if n.type in ("skill_guide", "project_blueprint")
+             and _envelope_for(n) is envelope),
+            None,
+        )
+        if svv:
+            steps.append(ImplementationStep(
+                step=1,
+                action=svv,
+                tools=list(envelope.get("tools") or []),
+                materials=list(envelope.get("materials") or []),
+                time_estimate=envelope.get("expected_time"),
+                source_slug=top_slug,
+            ))
+        # Then one step per success_check (these are the user's milestones).
+        for i, check in enumerate(envelope.get("success_checks") or [], start=2):
+            steps.append(ImplementationStep(
+                step=i, action=f"Confirm: {check}", source_slug=top_slug,
+            ))
+        if steps:
+            return steps
 
+    # Fallback: title/summary scaffold.
+    actionable_types = {"skill_guide", "project_blueprint", "concept_note", "worksheet"}
+    steps = []
+    step_num = 0
     for node in evidence.evidence:
         if node.type not in actionable_types:
             continue
@@ -79,7 +142,6 @@ def _build_implementation_steps(evidence: EvidencePackResponse) -> list[Implemen
             action=node.summary_short or node.title,
             source_slug=node.slug,
         ))
-
     return steps
 
 
@@ -138,10 +200,12 @@ def _synthesize_answer(evidence: EvidencePackResponse, intent: RetrievalIntent) 
 
 
 def _extract_action_now(evidence: EvidencePackResponse, intent: RetrievalIntent) -> str | None:
-    """Extract the most immediately actionable item."""
+    """Prefer the envelope's smallest_viable_version; fall back to top summary."""
+    envelope = _top_envelope(evidence)
+    if envelope and envelope.get("smallest_viable_version"):
+        return envelope["smallest_viable_version"]
     if not evidence.evidence:
         return None
-
     top = evidence.evidence[0]
     return top.summary_short or top.title
 
@@ -192,8 +256,8 @@ def compose_answer(
     # Safety extraction — emphasized for certain intents
     warnings = _extract_safety_warnings(evidence)
     stops = _extract_stop_conditions(evidence)
-    when_to_get_help: list[str] = []
-    if intent in SAFETY_EMPHASIS_INTENTS and not warnings:
+    when_to_get_help = _extract_when_to_get_help(evidence)
+    if intent in SAFETY_EMPHASIS_INTENTS and not warnings and not when_to_get_help:
         when_to_get_help.append(
             "If you're unsure about any step, consult a qualified professional before proceeding."
         )

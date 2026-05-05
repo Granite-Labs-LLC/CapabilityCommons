@@ -7,10 +7,65 @@ from sqlalchemy import Select, exists, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.db.models import ContentSegment, ContextObject, ContextObjectFacet, ContextObjectVersion
-from capability_commons.domain.enums import FacetType, LifecycleState
-from capability_commons.schemas.search import SearchHit
+from capability_commons.domain.enums import CostBand, FacetType, LifecycleState, RiskBand, StageType
+from capability_commons.schemas.search import PublicSearchFilters, SearchHit
 from capability_commons.search.adapters.base import SearchAdapter
 from capability_commons.search.indexer import VersionIndexer
+
+# Risk bands ordered low → high. "beginner_safe" caps risk at MODERATE.
+_RISK_RANK = {
+    RiskBand.LOW: 0,
+    RiskBand.MODERATE: 1,
+    RiskBand.HIGH: 2,
+    RiskBand.EXPERT_ONLY: 3,
+}
+_BEGINNER_SAFE_RISK_CEILING = RiskBand.MODERATE
+_COST_RANK = {CostBand.FREE: 0, CostBand.LOW: 1, CostBand.MEDIUM: 2, CostBand.HIGH: 3}
+
+
+def _attribute_predicates(attrs: PublicSearchFilters | None):
+    """Translate UX filters (difficulty/stage/risk_band/beginner_safe/cost_band)
+    into SQL predicates on ContextObjectVersion. Returns a list of expressions
+    that can be ANDed onto the search query."""
+    if attrs is None:
+        return []
+    preds = []
+    if attrs.difficulty_max is not None:
+        preds.append(ContextObjectVersion.difficulty <= attrs.difficulty_max)
+    if attrs.stage:
+        try:
+            preds.append(ContextObjectVersion.stage == StageType(attrs.stage))
+        except ValueError:
+            pass
+    if attrs.risk_band:
+        try:
+            target = RiskBand(attrs.risk_band)
+            allowed = [
+                rb for rb, rank in _RISK_RANK.items() if rank <= _RISK_RANK[target]
+            ]
+            preds.append(ContextObjectVersion.risk_band.in_(allowed))
+        except ValueError:
+            pass
+    if attrs.beginner_safe:
+        allowed = [
+            rb for rb, rank in _RISK_RANK.items()
+            if rank <= _RISK_RANK[_BEGINNER_SAFE_RISK_CEILING]
+        ]
+        preds.append(ContextObjectVersion.risk_band.in_(allowed))
+        # Also cap difficulty for "beginner-safe" to ≤3 unless caller already
+        # asked for tighter.
+        if attrs.difficulty_max is None:
+            preds.append(ContextObjectVersion.difficulty <= 3)
+    if attrs.cost_band:
+        try:
+            target = CostBand(attrs.cost_band)
+            allowed = [
+                cb for cb, rank in _COST_RANK.items() if rank <= _COST_RANK[target]
+            ]
+            preds.append(ContextObjectVersion.cost_band.in_(allowed))
+        except ValueError:
+            pass
+    return preds
 
 
 class PostgresSearchAdapter(SearchAdapter):
@@ -31,6 +86,11 @@ class PostgresSearchAdapter(SearchAdapter):
         await self.session.commit()
         return count
 
+    # FTS configuration: english_unaccent runs tokens through `unaccent` before
+    # the English stemmer, so "cafe" matches "café" (and vice versa). Defined
+    # by alembic 20260504_0001. Falls back at index time too — see migration.
+    FTS_CONFIG = "english_unaccent"
+
     async def search(
         self,
         *,
@@ -40,8 +100,9 @@ class PostgresSearchAdapter(SearchAdapter):
         top_k,
         object_types=None,
         only_published=True,
+        attributes: PublicSearchFilters | None = None,
     ) -> list[SearchHit]:
-        ts_query = func.websearch_to_tsquery("english", query)
+        ts_query = func.websearch_to_tsquery(self.FTS_CONFIG, query)
         rank = func.ts_rank(ContextObjectVersion.search_tsv, ts_query).label("score")
         stmt: Select = (
             select(ContextObjectVersion, ContextObject, rank)
@@ -70,6 +131,9 @@ class PostgresSearchAdapter(SearchAdapter):
                 )
             )
             stmt = stmt.where(facet_exists)
+
+        for predicate in _attribute_predicates(attributes):
+            stmt = stmt.where(predicate)
 
         result = await self.session.execute(stmt.order_by(rank.desc(), ContextObjectVersion.created_at.desc()).limit(top_k))
         rows = result.all()
@@ -123,6 +187,7 @@ class PostgresSearchAdapter(SearchAdapter):
         top_k,
         object_types=None,
         only_published=True,
+        attributes: PublicSearchFilters | None = None,
     ) -> list[SearchHit]:
         """Pure vector search via pgvector cosine similarity."""
         vector_score = (
@@ -162,6 +227,9 @@ class PostgresSearchAdapter(SearchAdapter):
                 )
             )
             stmt = stmt.where(facet_exists)
+
+        for predicate in _attribute_predicates(attributes):
+            stmt = stmt.where(predicate)
 
         stmt = stmt.group_by(ContentSegment.context_object_version_id).order_by(
             func.max(vector_score).desc()
@@ -211,6 +279,7 @@ class PostgresSearchAdapter(SearchAdapter):
         top_k,
         object_types=None,
         only_published=True,
+        attributes: PublicSearchFilters | None = None,
         fts_weight: float = 0.7,
         vector_weight: float = 0.3,
         rrf_k: int = 60,
@@ -224,6 +293,7 @@ class PostgresSearchAdapter(SearchAdapter):
                 top_k=top_k,
                 object_types=object_types,
                 only_published=only_published,
+                attributes=attributes,
             )
 
         # Get candidates from both retrieval paths independently
@@ -234,6 +304,7 @@ class PostgresSearchAdapter(SearchAdapter):
             top_k=top_k * 3,
             object_types=object_types,
             only_published=only_published,
+            attributes=attributes,
         )
         vector_hits = await self._vector_search(
             workspace_id=workspace_id,
@@ -242,6 +313,7 @@ class PostgresSearchAdapter(SearchAdapter):
             top_k=top_k * 3,
             object_types=object_types,
             only_published=only_published,
+            attributes=attributes,
         )
 
         if not fts_hits and not vector_hits:

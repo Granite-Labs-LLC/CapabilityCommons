@@ -165,7 +165,7 @@ class ContextObjectVersion(Base):
         Computed(
             """
             to_tsvector(
-              'english',
+              'english_unaccent',
               coalesce(title, '') || ' ' ||
               coalesce(summary_short, '') || ' ' ||
               coalesce(summary_medium, '') || ' ' ||

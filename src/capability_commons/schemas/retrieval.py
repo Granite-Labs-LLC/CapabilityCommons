@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field
 
 from capability_commons.domain.enums import RetrievalIntent, RetrievalRunStatus, RetrievalStepType
 from capability_commons.schemas.common import CitationSnippet
+from capability_commons.schemas.search import PublicSearchFilters
 
 
 class RetrievalBudgets(BaseModel):
@@ -34,6 +35,9 @@ class RetrievalRequest(BaseModel):
     # from the query text via `infer_intent`.
     intent: RetrievalIntent | None = None
     facet_filters: dict[str, list[str]] = Field(default_factory=dict)
+    # UI-parity attribute filters: difficulty_max, stage, beginner_safe,
+    # risk_band, cost_band. Applied as SQL predicates by the search adapter.
+    attribute_filters: PublicSearchFilters | None = None
     seed_object_ids: list[uuid.UUID] = Field(default_factory=list)
     seed_entity_ids: list[uuid.UUID] = Field(default_factory=list)
     budgets: RetrievalBudgets = Field(default_factory=RetrievalBudgets)
@@ -60,6 +64,11 @@ class EvidenceNode(BaseModel):
     summary_short: str | None = None
     citations: list[CitationSnippet] = Field(default_factory=list)
     rationale: str | None = None
+    # Carries structured_data.implementation when the source object is a
+    # skill_guide / project_blueprint, so the answer composer can populate
+    # action_now / implementation_plan / safety from typed fields rather
+    # than scraping markdown (PLAN retrieval P1-8).
+    structured_data: dict[str, Any] | None = None
 
 
 class RetrievalStepResponse(BaseModel):

@@ -1,6 +1,23 @@
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 CREATE EXTENSION IF NOT EXISTS vector;
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
+CREATE EXTENSION IF NOT EXISTS unaccent;
+
+-- Accent-insensitive English text-search configuration. `unaccent` strips
+-- diacritics before the English stemmer runs, so "cafe" matches "café".
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_ts_config WHERE cfgname = 'english_unaccent'
+    ) THEN
+        CREATE TEXT SEARCH CONFIGURATION english_unaccent (COPY = english);
+        ALTER TEXT SEARCH CONFIGURATION english_unaccent
+            ALTER MAPPING FOR
+                hword, hword_part, word, asciiword, asciihword, hword_asciipart
+            WITH unaccent, english_stem;
+    END IF;
+END
+$$;
 
 CREATE TYPE workspace_visibility AS ENUM ('public', 'private');
 
@@ -258,7 +275,7 @@ CREATE TABLE context_object_versions (
   UNIQUE (context_object_id, version_no),
   search_tsv TSVECTOR GENERATED ALWAYS AS (
     to_tsvector(
-      'english',
+      'english_unaccent',
       coalesce(title, '') || ' ' ||
       coalesce(summary_short, '') || ' ' ||
       coalesce(summary_medium, '') || ' ' ||

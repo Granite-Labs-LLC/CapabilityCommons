@@ -123,6 +123,10 @@ class ValidationReport(BaseModel):
     errors: list[str]
     warnings: list[str]
     citation_coverage: float
+    # PLAN P1-8: separate gate for publish-readiness. When `strict=True`,
+    # additional checks run (≥2 citations per actionable object, presence of
+    # the implementation envelope, etc.) and any violation lands in `errors`.
+    publish_blockers: list[str] = []
 
 
 # --- Project Manifest ---
