@@ -19,7 +19,6 @@ def upgrade() -> None:
         "thumbs_up", "thumbs_down", "used_this", "report_issue",
         name="feedback_action",
     )
-    feedback_action.create(op.get_bind(), checkfirst=True)
 
     op.create_table(
         "feedback",

@@ -29,9 +29,6 @@ AUDIT_EVENT_VALUES = (
 
 
 def upgrade() -> None:
-    audit_event_type = sa.Enum(*AUDIT_EVENT_VALUES, name="audit_event_type")
-    audit_event_type.create(op.get_bind(), checkfirst=True)
-
     op.create_table(
         "audit_events",
         sa.Column("id", UUID(as_uuid=True), primary_key=True, server_default=sa.text("gen_random_uuid()")),
@@ -43,7 +40,7 @@ def upgrade() -> None:
         ),
         sa.Column(
             "event_type",
-            sa.Enum(*AUDIT_EVENT_VALUES, name="audit_event_type", create_type=False),
+            sa.Enum(*AUDIT_EVENT_VALUES, name="audit_event_type"),
             nullable=False,
         ),
         sa.Column(
