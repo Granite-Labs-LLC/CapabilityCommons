@@ -115,16 +115,53 @@ class IngestProject:
     # --- Pass tracking ---
 
     def mark_pass_complete(self, pass_name: str) -> None:
-        """Record that a pass has completed and save to manifest."""
+        """Record that a pass has completed and save to manifest.
+
+        When the project's manifest has a `job_id` set, also mirror the
+        completion into the IngestJob/IngestJobPass tables (PLAN P1-7)
+        via JobTracker. The DB write is best-effort: filesystem manifest
+        remains the canonical record; the DB is an observability mirror.
+        """
         passes = self.manifest.passes
         if not hasattr(passes, pass_name):
             raise ValueError(f"Unknown pass: {pass_name}")
         getattr(passes, pass_name).completed = datetime.now(timezone.utc)
         self._write_manifest(self.root, self.manifest)
+        self._mirror_pass_to_db(pass_name)
+
+    def _mirror_pass_to_db(self, pass_name: str) -> None:
+        """Best-effort sync of a completed pass to the DB tracker."""
+        if not self.manifest.job_id:
+            return
+        try:
+            import asyncio
+
+            from capability_commons.cli.ingest.job_tracker import tracker_for
+            from capability_commons.config import get_settings
+
+            db_url = get_settings().database_url
+            tracker = tracker_for(self, db_url=db_url)
+            if not tracker.enabled:
+                return
+            try:
+                # If we're already inside a running loop (e.g., async pass
+                # invoking sync mark_pass_complete), schedule and forget.
+                loop = asyncio.get_running_loop()
+                loop.create_task(tracker.complete(pass_name))
+            except RuntimeError:
+                asyncio.run(tracker.complete(pass_name))
+        except Exception:  # noqa: BLE001 — never fail the pipeline on a tracker hiccup
+            pass
 
     def save_manifest(self) -> None:
         """Write current manifest state to disk."""
         self._write_manifest(self.root, self.manifest)
+
+    def bind_job(self, job_id: str) -> None:
+        """Attach a DB-backed IngestJob UUID to this project so subsequent
+        passes mirror progress to the IngestJob/IngestJobPass tables."""
+        self.manifest.job_id = job_id
+        self.save_manifest()
 
     @staticmethod
     def _write_manifest(project_dir: Path, manifest: ProjectManifest) -> None:

@@ -170,3 +170,8 @@ class ProjectManifest(BaseModel):
     sources: list[ManifestSource]
     llm: LLMConfig = LLMConfig()
     passes: PassesStatus = PassesStatus()
+    # PLAN P1-7: when set, every mark_pass_complete also mirrors progress
+    # into the IngestJob/IngestJobPass tables so contributors and reviewers
+    # can see live state via /v1/ingest/jobs/{id}. Filesystem stays the
+    # canonical workflow medium for the operator; the DB is the export.
+    job_id: str | None = None
