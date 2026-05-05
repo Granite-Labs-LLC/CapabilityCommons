@@ -211,6 +211,7 @@ def compose_answer(
         related_objects=related,
         uncertainties=uncertainties,
         resolved_intent=intent,
+        context_used=request.context,
         conversation_id=request.conversation_id,
         retrieval_run_id=evidence.run_id,
     )

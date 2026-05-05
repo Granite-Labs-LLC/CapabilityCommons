@@ -62,5 +62,9 @@ class AskResponse(BaseModel):
     related_objects: list[RelatedObject] = Field(default_factory=list)
     uncertainties: list[str] = Field(default_factory=list)
     resolved_intent: RetrievalIntent
+    # Echo of the AskContext fields the system actually used to filter/rank
+    # this answer. Lets the UI confirm "tuned for: renter, low budget, ..."
+    # and matches PLAN.md's `context_used` field.
+    context_used: AskContext | None = None
     conversation_id: uuid.UUID | None = None
     retrieval_run_id: uuid.UUID | None = None

@@ -30,7 +30,9 @@ class RetrievalRequest(BaseModel):
     workspace_id: uuid.UUID | None = None
     requester_id: uuid.UUID | None = None
     query: str
-    intent: RetrievalIntent
+    # Optional: when omitted (or sent as null), the service infers intent
+    # from the query text via `infer_intent`.
+    intent: RetrievalIntent | None = None
     facet_filters: dict[str, list[str]] = Field(default_factory=dict)
     seed_object_ids: list[uuid.UUID] = Field(default_factory=list)
     seed_entity_ids: list[uuid.UUID] = Field(default_factory=list)

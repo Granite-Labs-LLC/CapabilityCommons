@@ -21,6 +21,7 @@ from capability_commons.db.models import (
 )
 from capability_commons.domain.enums import LifecycleState, RetrievalRunStatus, RetrievalStepType, ReviewOutcome
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
+from capability_commons.retrieval.intent import infer_intent
 from capability_commons.retrieval.planner import RetrievalPlanner
 from capability_commons.schemas.common import CitationSnippet
 from capability_commons.schemas.retrieval import (
@@ -48,9 +49,18 @@ class RetrievalService:
         self.embeddings = EmbeddingService(session)
 
     def compile_plan(self, task_spec: RetrievalRequest) -> RetrievalPlan:
-        return self.planner.compile_plan(task_spec)
+        return self.planner.compile_plan(self._with_resolved_intent(task_spec))
+
+    @staticmethod
+    def _with_resolved_intent(task_spec: RetrievalRequest) -> RetrievalRequest:
+        """Return a copy of `task_spec` with `intent` filled via heuristic
+        inference if the caller left it unset (per PLAN.md retrieval P0-5)."""
+        if task_spec.intent is not None:
+            return task_spec
+        return task_spec.model_copy(update={"intent": infer_intent(task_spec.query)})
 
     async def execute_plan(self, task_spec: RetrievalRequest) -> EvidencePackResponse:
+        task_spec = self._with_resolved_intent(task_spec)
         plan = self.compile_plan(task_spec)
         run = RetrievalRun(
             workspace_id=task_spec.workspace_id,
