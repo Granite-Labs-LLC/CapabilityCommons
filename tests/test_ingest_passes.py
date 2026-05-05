@@ -212,6 +212,7 @@ class TestCitePass:
             "slug": "water.safe-storage",
             "canonical_title": "Emergency Water Storage",
             "markdown_body": "Store water in food-grade containers.",
+            "source_segment_ids": ["seg_000001"],
         }
         draft_file = project_with_segments.drafts_dir / "water.safe-storage.yaml"
         with open(draft_file, "w") as f:
@@ -249,6 +250,69 @@ class TestCitePass:
         # Check evidence map
         assert project_with_segments.evidence_map_file.exists()
 
+    async def test_skips_drafts_without_source_segment_ids(self, project_with_segments):
+        from capability_commons.cli.ingest.cite import run_cite
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        draft_obj = {
+            "slug": "water.unanchored",
+            "canonical_title": "Unanchored",
+            "markdown_body": "Some claim.",
+            # No source_segment_ids — must NOT be cited.
+        }
+        draft_file = project_with_segments.drafts_dir / "water.unanchored.yaml"
+        with open(draft_file, "w") as f:
+            yaml.dump(draft_obj, f)
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock()) as gen:
+            await run_cite(project_with_segments, client, yes=True)
+
+        gen.assert_not_called()
+        # Draft is unchanged (no citations key written).
+        unchanged = yaml.safe_load(draft_file.read_text())
+        assert "citations" not in unchanged
+
+    async def test_drops_citations_outside_allowed_segments(self, project_with_segments):
+        from capability_commons.cli.ingest.cite import CitationResponse, run_cite
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        draft_obj = {
+            "slug": "water.safe-storage",
+            "canonical_title": "Emergency Water Storage",
+            "markdown_body": "Store water in food-grade containers.",
+            "source_segment_ids": ["seg_000001"],
+        }
+        draft_file = project_with_segments.drafts_dir / "water.safe-storage.yaml"
+        with open(draft_file, "w") as f:
+            yaml.dump(draft_obj, f)
+
+        # The LLM "hallucinates" a span pointing to seg_999999.
+        mock_result = CitationResponse(citations=[
+            ClaimCitation(
+                object_id="water.safe-storage",
+                claim_id="clm_001",
+                claim_text="Hallucinated claim",
+                support=[
+                    CitationSpan(
+                        source_id="src.test",
+                        page_start=99, page_end=99,
+                        segment_id="seg_999999",
+                        excerpt="not real",
+                        start_char=0, end_char=8,
+                        support_strength="strong",
+                    )
+                ],
+            ),
+        ])
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_cite(project_with_segments, client, yes=True)
+
+        updated = yaml.safe_load(draft_file.read_text())
+        assert updated["citations"] == []
+
 
 class TestCanonicalizePass:
     async def test_no_duplicates_skips_llm(self, project_with_segments):
@@ -276,16 +340,18 @@ class TestCanonicalizePass:
         from capability_commons.cli.ingest.canonicalize import CanonicalizeResponse, run_canonicalize
         from capability_commons.cli.ingest.llm_client import LLMClient
 
-        # Create two similar drafts (same domain, similar titles)
-        for slug, title in [
-            ("water.safe-storage", "Emergency Water Storage"),
-            ("water.water-storage", "Water Storage for Emergencies"),
+        # Create two similar drafts (same domain, similar titles).
+        for slug, title, segs in [
+            ("water.safe-storage", "Emergency Water Storage", ["seg_000001"]),
+            ("water.water-storage", "Water Storage for Emergencies", ["seg_000002"]),
         ]:
             draft = {
                 "slug": slug,
                 "canonical_title": title,
                 "primary_domain": "water",
                 "summary_short": "How to store water safely",
+                "source_segment_ids": segs,
+                "citations": [{"claim_id": f"clm_{slug[-1]}", "support": []}],
             }
             with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
                 yaml.dump(draft, f)
@@ -295,7 +361,13 @@ class TestCanonicalizePass:
                 action="merge",
                 rationale="These cover the same topic",
                 canonical_slug="water.safe-storage",
-                deprecated_draft_ids=["water.water-storage"],
+                deprecated_draft_ids=["water.safe-storage", "water.water-storage"],
+                merged_object={
+                    "slug": "water.safe-storage",
+                    "canonical_title": "Safe Water Storage (Merged)",
+                    "primary_domain": "water",
+                    "summary_short": "Merged guide.",
+                },
             ),
         ])
 
@@ -303,10 +375,104 @@ class TestCanonicalizePass:
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
             await run_canonicalize(project_with_segments, client, yes=True)
 
-        # Deprecated draft should be moved to _merged
+        # Deprecated (non-canonical) draft moved to _merged.
         merged_dir = project_with_segments.drafts_dir / "_merged"
         assert (merged_dir / "water.water-storage.yaml").exists()
         assert not (project_with_segments.drafts_dir / "water.water-storage.yaml").exists()
+
+        # Canonical replacement is materialized at the canonical slug, with
+        # lineage inherited from both originals.
+        canonical_path = project_with_segments.drafts_dir / "water.safe-storage.yaml"
+        assert canonical_path.exists()
+        merged = yaml.safe_load(canonical_path.read_text())
+        assert merged["canonical_title"] == "Safe Water Storage (Merged)"
+        assert sorted(merged["source_segment_ids"]) == ["seg_000001", "seg_000002"]
+        assert len(merged["citations"]) == 2
+
+    async def test_merge_without_merged_object_is_skipped(self, project_with_segments):
+        """A merge decision without a materialized merged_object must NOT
+        archive the originals — that would silently delete content."""
+        from capability_commons.cli.ingest.canonicalize import CanonicalizeResponse, run_canonicalize
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        for slug in ("water.a", "water.b"):
+            draft = {
+                "slug": slug,
+                "canonical_title": slug.upper(),
+                "primary_domain": "water",
+                "summary_short": "x",
+            }
+            with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
+                yaml.dump(draft, f)
+
+        mock_result = CanonicalizeResponse(decisions=[
+            CanonicalizationDecision(
+                action="merge",
+                rationale="duplicates",
+                canonical_slug="water.a",
+                deprecated_draft_ids=["water.b"],
+                merged_object=None,
+            ),
+        ])
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_canonicalize(project_with_segments, client, yes=True)
+
+        # Both drafts remain in place; nothing was archived.
+        assert (project_with_segments.drafts_dir / "water.a.yaml").exists()
+        assert (project_with_segments.drafts_dir / "water.b.yaml").exists()
+        merged_dir = project_with_segments.drafts_dir / "_merged"
+        assert not (merged_dir / "water.b.yaml").exists()
+
+    async def test_split_materializes_children(self, project_with_segments):
+        from capability_commons.cli.ingest.canonicalize import CanonicalizeResponse, run_canonicalize
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        # Two drafts: only one will be split. The other has to be similar
+        # enough that find_similar_groups groups them so the LLM is asked.
+        for slug, title in [
+            ("water.everything", "Water: Storage and Treatment"),
+            ("water.everything-too", "Water: Storage and Treatment Notes"),
+        ]:
+            draft = {
+                "slug": slug,
+                "canonical_title": title,
+                "primary_domain": "water",
+                "summary_short": "Combined storage + treatment",
+                "source_segment_ids": ["seg_000001", "seg_000002"],
+            }
+            with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
+                yaml.dump(draft, f)
+
+        mock_result = CanonicalizeResponse(decisions=[
+            CanonicalizationDecision(
+                action="split",
+                rationale="storage and treatment are distinct",
+                canonical_slug="water.everything",
+                deprecated_draft_ids=["water.everything"],
+                split_objects=[
+                    {"slug": "water.storage", "canonical_title": "Storage"},
+                    {"slug": "water.treatment", "canonical_title": "Treatment"},
+                ],
+            ),
+        ])
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_canonicalize(project_with_segments, client, yes=True)
+
+        for child_slug in ("water.storage", "water.treatment"):
+            child_path = project_with_segments.drafts_dir / f"{child_slug}.yaml"
+            assert child_path.exists()
+            child = yaml.safe_load(child_path.read_text())
+            # Lineage flows from parent.
+            assert child["source_segment_ids"] == ["seg_000001", "seg_000002"]
+
+        # Original parent is archived to _split.
+        split_dir = project_with_segments.drafts_dir / "_split"
+        assert (split_dir / "water.everything.yaml").exists()
+        assert not (project_with_segments.drafts_dir / "water.everything.yaml").exists()
 
 
 class TestEdgesPass:

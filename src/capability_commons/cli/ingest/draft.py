@@ -7,11 +7,87 @@ from pathlib import Path
 import orjson
 import polars as pl
 import yaml
+from pydantic import BaseModel, Field, field_validator
 from rich.console import Console
 
 from capability_commons.cli.ingest.llm_client import LLMClient
 from capability_commons.cli.ingest.models import SourceSegment
 from capability_commons.cli.ingest.project import IngestProject
+from capability_commons.domain.enums import (
+    COType,
+    CostBand,
+    LifecycleState,
+    RiskBand,
+    StageType,
+    VisibilityType,
+)
+
+
+REQUIRED_BODY_SECTIONS = (
+    "What this is",
+    "Why it matters",
+    "What you need",
+    "How to do it",
+    "Common failure modes",
+)
+
+
+class SuggestedEdge(BaseModel, extra="allow"):
+    target_id: str
+    edge_type: str
+
+
+class DraftObject(BaseModel, extra="allow"):
+    """Strict canonical-object schema used to validate every LLM draft.
+
+    Required fields here mirror the schema documented in USER_TEMPLATE so that
+    incomplete drafts fail validation rather than silently passing.
+    """
+    # Identity
+    id: str
+    slug: str
+    seed_type: str
+    co_type: COType
+    canonical_title: str
+    version_no: int = 1
+    lifecycle_state: LifecycleState = LifecycleState.DRAFT
+    visibility: VisibilityType = VisibilityType.PUBLIC
+    language_code: str = "en"
+
+    # Classification
+    primary_domain: str
+    secondary_domains: list[str] = []
+    stage: StageType
+    contexts: list[str] = []
+    difficulty: int = Field(..., ge=1, le=5)
+    cost_band: CostBand
+    risk_band: RiskBand
+
+    # Summaries / body
+    summary_short: str = Field(..., min_length=1)
+    summary_medium: str = Field(..., min_length=1)
+    plain_language: str = Field(..., min_length=1)
+    markdown_body: str = Field(..., min_length=1)
+
+    # Type-specific structured data + linkage
+    structured_data: dict
+    requires: list[str] = []
+    suggested_edges: list[SuggestedEdge] = []
+    citations: list = []
+
+    # Lineage (filled by pipeline, not the LLM)
+    source_segment_ids: list[str] = []
+
+    @field_validator("markdown_body")
+    @classmethod
+    def _body_has_required_sections(cls, v: str) -> str:
+        lower = v.lower()
+        missing = [s for s in REQUIRED_BODY_SECTIONS if s.lower() not in lower]
+        if missing:
+            raise ValueError(
+                "markdown_body missing required sections: " + ", ".join(missing)
+            )
+        return v
 
 SYSTEM_PROMPT = (
     "You are a Capability Commons object drafter. Convert source material into "
@@ -89,16 +165,6 @@ async def run_draft(
         if confirm.lower() != "y":
             console.print("[yellow]Aborted.[/yellow]")
             return
-
-    # Draft objects
-    from pydantic import BaseModel
-
-    class DraftObject(BaseModel, extra="allow"):
-        id: str
-        slug: str
-        canonical_title: str
-        markdown_body: str
-        source_segment_ids: list[str] = []
 
     drafted = 0
     for row in rows_to_process:

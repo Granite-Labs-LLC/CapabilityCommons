@@ -75,6 +75,110 @@ def find_similar_groups(
     return groups
 
 
+def _merge_lineage(originals: list[dict]) -> tuple[list[str], list[dict]]:
+    """Combine source_segment_ids and citations from a set of source drafts."""
+    seg_ids: list[str] = []
+    seen_segs: set[str] = set()
+    for orig in originals:
+        for sid in orig.get("source_segment_ids") or []:
+            if sid not in seen_segs:
+                seen_segs.add(sid)
+                seg_ids.append(sid)
+    citations: list[dict] = []
+    for orig in originals:
+        citations.extend(orig.get("citations") or [])
+    return seg_ids, citations
+
+
+def _apply_merge(decision, drafts, project, merged_dir, console) -> None:
+    if not decision.merged_object:
+        console.print(
+            f"    [red]merge skipped[/red] {decision.canonical_slug}: "
+            "no merged_object returned"
+        )
+        return
+    if not decision.deprecated_draft_ids:
+        console.print(
+            f"    [red]merge skipped[/red] {decision.canonical_slug}: "
+            "no deprecated_draft_ids"
+        )
+        return
+
+    merged = dict(decision.merged_object)
+    merged.setdefault("slug", decision.canonical_slug)
+    merged.setdefault("id", decision.canonical_slug)
+
+    originals = [drafts[d] for d in decision.deprecated_draft_ids if d in drafts]
+    seg_ids, citations = _merge_lineage(originals)
+    merged.setdefault("source_segment_ids", seg_ids)
+    if not merged.get("citations"):
+        merged["citations"] = citations
+
+    # Write the canonical replacement BEFORE moving deprecated drafts so a
+    # canonical_slug that matches a deprecated id is not first archived and
+    # then re-created out of order.
+    merged_path = project.drafts_dir / f"{decision.canonical_slug}.yaml"
+    with open(merged_path, "w") as f:
+        yaml.dump(merged, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+
+    for dep_id in decision.deprecated_draft_ids:
+        if dep_id == decision.canonical_slug:
+            continue  # canonical was just (re)written; do not archive it
+        src = project.drafts_dir / f"{dep_id}.yaml"
+        if src.exists():
+            shutil.move(str(src), str(merged_dir / src.name))
+
+    console.print(
+        f"    [green]merge[/green] -> {decision.canonical_slug} "
+        f"(deprecated: {decision.deprecated_draft_ids})"
+    )
+
+
+def _apply_split(decision, drafts, project, split_dir, console) -> None:
+    if not decision.split_objects:
+        console.print(
+            f"    [red]split skipped[/red] {decision.canonical_slug}: "
+            "no split_objects returned"
+        )
+        return
+    if not decision.deprecated_draft_ids:
+        console.print(
+            f"    [red]split skipped[/red] {decision.canonical_slug}: "
+            "no deprecated_draft_ids"
+        )
+        return
+
+    parents = [drafts[d] for d in decision.deprecated_draft_ids if d in drafts]
+    parent_seg_ids, parent_citations = _merge_lineage(parents)
+
+    written: list[str] = []
+    for child in decision.split_objects:
+        child = dict(child)
+        child_slug = child.get("slug") or child.get("id")
+        if not child_slug:
+            continue
+        # Inherit lineage from the parent(s) when the child does not declare it.
+        child.setdefault("source_segment_ids", parent_seg_ids)
+        if not child.get("citations"):
+            child["citations"] = parent_citations
+        child_path = project.drafts_dir / f"{child_slug}.yaml"
+        with open(child_path, "w") as f:
+            yaml.dump(child, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        written.append(child_slug)
+
+    for dep_id in decision.deprecated_draft_ids:
+        if dep_id in written:
+            continue
+        src = project.drafts_dir / f"{dep_id}.yaml"
+        if src.exists():
+            shutil.move(str(src), str(split_dir / src.name))
+
+    console.print(
+        f"    [blue]split[/blue] {decision.canonical_slug} -> {written} "
+        f"(original: {decision.deprecated_draft_ids})"
+    )
+
+
 async def run_canonicalize(
     project: IngestProject,
     client: LLMClient,
@@ -133,36 +237,9 @@ async def run_canonicalize(
             for decision in result.decisions:
                 all_decisions.append(decision.model_dump())
                 if decision.action == "merge":
-                    for dep_id in decision.deprecated_draft_ids:
-                        src = project.drafts_dir / f"{dep_id}.yaml"
-                        if src.exists():
-                            shutil.move(str(src), str(merged_dir / src.name))
-                    # Write the merged replacement object
-                    if decision.merged_object:
-                        merged_path = project.drafts_dir / f"{decision.canonical_slug}.yaml"
-                        with open(merged_path, "w") as f:
-                            yaml.dump(decision.merged_object, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
-                    console.print(
-                        f"    [green]merge[/green] -> {decision.canonical_slug} "
-                        f"(deprecated: {decision.deprecated_draft_ids})"
-                    )
+                    _apply_merge(decision, drafts, project, merged_dir, console)
                 elif decision.action == "split":
-                    for dep_id in decision.deprecated_draft_ids:
-                        src = project.drafts_dir / f"{dep_id}.yaml"
-                        if src.exists():
-                            shutil.move(str(src), str(split_dir / src.name))
-                    # Write split child objects
-                    for child in decision.split_objects:
-                        child_slug = child.get("slug") or child.get("id", "")
-                        if child_slug:
-                            child_path = project.drafts_dir / f"{child_slug}.yaml"
-                            with open(child_path, "w") as f:
-                                yaml.dump(child, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
-                    console.print(
-                        f"    [blue]split[/blue] {decision.canonical_slug} -> "
-                        f"{[c.get('slug', '') for c in decision.split_objects]} "
-                        f"(original: {decision.deprecated_draft_ids})"
-                    )
+                    _apply_split(decision, drafts, project, split_dir, console)
                 else:
                     console.print(f"    [dim]keep[/dim] {decision.canonical_slug}")
         except Exception as e:
