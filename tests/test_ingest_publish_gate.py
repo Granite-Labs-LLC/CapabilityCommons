@@ -115,3 +115,49 @@ def test_non_strict_does_not_emit_publish_blockers(tmp_path):
     _write(project, citations=[])  # would block under strict
     report = run_validate(project)  # default strict=False
     assert report.publish_blockers == []
+
+
+def test_validator_accepts_source_id_inside_support_spans(tmp_path):
+    """Post-cite-pass citations have shape:
+        {claim_id, claim_text, support: [{source_id, segment_id, ...}]}
+    so a top-level `source_id` is absent. The validator must NOT warn on
+    that shape — only when neither location has it."""
+    project = _project(tmp_path)
+    _write(project, citations=[
+        {
+            "claim_id": "clm_001",
+            "claim_text": "x",
+            "support": [{
+                "source_id": "src.test",
+                "segment_id": "src.test::seg_000001",
+                "excerpt": "evidence",
+                "page_start": 1, "page_end": 1,
+                "start_char": 0, "end_char": 8,
+                "support_strength": "strong",
+            }],
+        },
+        {
+            "claim_id": "clm_002",
+            "claim_text": "y",
+            "support": [{
+                "source_id": "src.test",
+                "segment_id": "src.test::seg_000002",
+                "excerpt": "more evidence",
+                "page_start": 2, "page_end": 2,
+                "start_char": 0, "end_char": 13,
+                "support_strength": "strong",
+            }],
+        },
+    ])
+    report = run_validate(project)
+    assert not any("missing source_id" in w for w in report.warnings)
+
+
+def test_validator_warns_when_neither_top_level_nor_support_has_source_id(tmp_path):
+    project = _project(tmp_path)
+    _write(project, citations=[
+        {"claim_id": "clm_001", "claim_text": "x",
+         "support": [{"segment_id": "x", "excerpt": "y"}]},
+    ])
+    report = run_validate(project)
+    assert any("missing source_id" in w for w in report.warnings)

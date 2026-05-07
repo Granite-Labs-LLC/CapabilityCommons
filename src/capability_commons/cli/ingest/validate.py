@@ -174,11 +174,16 @@ def run_validate(project: IngestProject, *, strict: bool = False) -> ValidationR
         if citations:
             objects_with_citations += 1
             total_citations += len(citations)
-            # Validate citation structure
+            # Validate citation structure. The canonical post-cite-pass shape
+            # nests source_id inside each support[] span (ClaimCitation), but
+            # legacy seed CSV cites carry source_id at the top level. Accept
+            # either form; warn only when neither is present.
             for i, cit in enumerate(citations):
-                if not cit.get("source_id"):
+                support = cit.get("support") or cit.get("spans") or []
+                top_source = cit.get("source_id")
+                if not top_source and not any(s.get("source_id") for s in support):
                     warnings.append(f"{slug}: citation[{i}] missing source_id")
-                for span in cit.get("spans", []):
+                for span in support:
                     if not span.get("excerpt"):
                         warnings.append(f"{slug}: citation[{i}] has span without excerpt")
         else:
