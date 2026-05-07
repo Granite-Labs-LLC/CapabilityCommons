@@ -70,8 +70,9 @@ class LLMClient:
                 model=self.model,
                 messages=messages,
                 temperature=self.temperature,
+                response_format={"type": "json_object"},
             )
-            raw = response.choices[0].message.content
+            raw = response.choices[0].message.content or ""
             last_response = raw
 
             try:

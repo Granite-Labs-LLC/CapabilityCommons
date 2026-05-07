@@ -212,11 +212,14 @@ async def run_draft(
         if skip_existing and (project.drafts_dir / f"{slug}.yaml").exists():
             continue
         rows_to_process.append(row)
-        # Gather segment text for estimation
-        seg_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
-        for sid in seg_ids:
-            if sid in segments_by_id:
-                total_text += segments_by_id[sid].text
+        # Gather segment text for estimation (resolution is duplicated below
+        # because _resolve_seg_ids isn't defined yet at this point).
+        raw_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
+        src = row.get("source_id") or ""
+        for sid in raw_ids:
+            key = sid if sid in segments_by_id else f"{src}::{sid}"
+            if key in segments_by_id:
+                total_text += segments_by_id[key].text
 
     est_tokens = client.estimate_tokens(total_text + SYSTEM_PROMPT + USER_TEMPLATE)
     console.print(f"  {len(rows_to_process)} objects to draft (~{est_tokens:,} input tokens)")
@@ -231,10 +234,25 @@ async def run_draft(
             console.print("[yellow]Aborted.[/yellow]")
             return
 
+    def _resolve_seg_ids(row: dict) -> list[str]:
+        """Matrix CSV stores bare segment ids (`seg_000018`) but the segments
+        store keys them as `<source_id>::seg_000018`. Resolve both forms."""
+        raw = (row.get("segment_ids") or "").split("|") if row.get("segment_ids") else []
+        source_id = row.get("source_id") or ""
+        resolved: list[str] = []
+        for sid in raw:
+            if not sid:
+                continue
+            if sid in segments_by_id:
+                resolved.append(sid)
+            elif f"{source_id}::{sid}" in segments_by_id:
+                resolved.append(f"{source_id}::{sid}")
+        return resolved
+
     drafted = 0
     for row in rows_to_process:
         slug = row["candidate_slug"]
-        seg_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
+        seg_ids = _resolve_seg_ids(row)
         segment_texts = "\n\n".join(
             f"[{sid} | pages {segments_by_id[sid].page_start}-{segments_by_id[sid].page_end}]\n{segments_by_id[sid].text}"
             for sid in seg_ids
@@ -259,8 +277,8 @@ async def run_draft(
             # Write as YAML
             draft_path = project.drafts_dir / f"{slug}.yaml"
             with open(draft_path, "w") as f:
-                yaml.dump(
-                    result.model_dump(),
+                yaml.safe_dump(
+                    result.model_dump(mode="json"),
                     f,
                     default_flow_style=False,
                     sort_keys=False,

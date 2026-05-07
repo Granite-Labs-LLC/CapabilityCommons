@@ -72,7 +72,10 @@ async def run_cite(
             return
 
     all_citations: list[dict] = []
-    NEIGHBOR_WINDOW = 1  # how many adjacent segments to include as bounded context
+    # Adjacent segments included as bounded context for citations. Wider than
+    # 1 because the extraction matrix often assigns a single segment per row
+    # while the supporting passage spans the section around it.
+    NEIGHBOR_WINDOW = 3
 
     for draft_file in draft_files:
         with open(draft_file) as f:
@@ -132,14 +135,29 @@ async def run_cite(
             )
 
             # Drop citations whose support points outside the allowed
-            # segment set; the LLM occasionally invents segment IDs.
+            # segment set; the LLM occasionally invents segment IDs or
+            # returns the short form without the "<source_id>::" prefix.
+            allowed_short = {
+                sid.split("::", 1)[1]: sid for sid in allowed_seg_ids if "::" in sid
+            }
+
+            def _normalize_segment_id(sid: str) -> str | None:
+                if sid in allowed_seg_ids:
+                    return sid
+                return allowed_short.get(sid)
+
             kept: list[ClaimCitation] = []
             dropped = 0
             for claim in result.citations:
-                clean_support = [
-                    span for span in claim.support
-                    if span.segment_id in allowed_seg_ids
-                ]
+                clean_support = []
+                for span in claim.support:
+                    norm = _normalize_segment_id(span.segment_id)
+                    if norm is None:
+                        continue
+                    clean_support.append(
+                        span if norm == span.segment_id
+                        else span.model_copy(update={"segment_id": norm})
+                    )
                 if not clean_support:
                     dropped += 1
                     continue
