@@ -102,31 +102,109 @@ def test_safety_block_uses_envelope_stops_and_escalation():
     assert "Reusing milk jugs." in resp.safety.warnings
 
 
-def test_no_envelope_falls_back_to_title_steps():
-    """concept_note has no envelope; composer should still produce a sensible
-    step list from titles/summaries."""
+def _make_pack(intent: RetrievalIntent, node_type: str = "concept_note", **extra):
     node = EvidenceNode(
         object_id=uuid.uuid4(),
         version_id=uuid.uuid4(),
         slug="concept.x",
         title="Concept",
-        type="concept_note",
+        type=node_type,
         score=0.5,
         summary_short="A concept",
+        **extra,
     )
     plan = RetrievalPlan(
-        intent=RetrievalIntent.WHY,
+        intent=intent,
         search_top_k=10, graph_depth=1, iteration_limit=1,
         edge_types=[], rerank_weights={},
     )
-    pack = EvidencePackResponse(
+    return EvidencePackResponse(
         run_id=uuid.uuid4(),
-        intent=RetrievalIntent.WHY,
-        query="why?",
+        intent=intent,
+        query="q",
         plan=plan,
         sufficiency_score=0.6,
         evidence=[node],
     )
-    resp = compose_answer(pack, RetrievalIntent.WHY, _request())
+
+
+def test_no_envelope_falls_back_to_title_steps_for_how_to():
+    """For how_to intent (not in the suppression list), composer still
+    produces a sensible plan from titles/summaries."""
+    pack = _make_pack(RetrievalIntent.HOW_TO)
+    resp = compose_answer(pack, RetrievalIntent.HOW_TO, _request())
     assert resp.action_now == "A concept"
     assert resp.implementation_plan[0].action == "A concept"
+
+
+def test_safety_check_suppresses_plan_and_action_now():
+    """ANSWER-1: safety_check intent shouldn't hand the user a how-to."""
+    pack = _make_pack(RetrievalIntent.SAFETY_CHECK)
+    resp = compose_answer(pack, RetrievalIntent.SAFETY_CHECK, _request())
+    assert resp.action_now is None
+    assert resp.implementation_plan == []
+
+
+def test_why_suppresses_plan_and_action_now():
+    """ANSWER-1: 'why' isn't a request for an action; no plan, no SVV."""
+    pack = _make_pack(RetrievalIntent.WHY)
+    resp = compose_answer(pack, RetrievalIntent.WHY, _request())
+    assert resp.action_now is None
+    assert resp.implementation_plan == []
+
+
+def test_compare_options_renders_variants_in_answer():
+    """ANSWER-1: compare_options pulls SVV + first variant into the answer
+    body as a comparison rail."""
+    pack = _pack_with_envelope("skill_guide")
+    pack.intent = RetrievalIntent.COMPARE_OPTIONS
+    resp = compose_answer(pack, RetrievalIntent.COMPARE_OPTIONS, _request())
+    # No implementation plan for comparison intent.
+    assert resp.implementation_plan == []
+    # Variant phrasing appears in the body.
+    assert "**Safe Water Storage**" in resp.answer
+    assert resp.action_now is None
+
+
+def test_what_changed_suppresses_plan():
+    """ANSWER-1: what_changed asks for delta context, not a how-to."""
+    pack = _make_pack(RetrievalIntent.WHAT_CHANGED)
+    resp = compose_answer(pack, RetrievalIntent.WHAT_CHANGED, _request())
+    assert resp.implementation_plan == []
+    assert resp.action_now is None
+
+
+def test_learn_path_keeps_plan_but_suppresses_action_now():
+    """ANSWER-1: learn_path IS the sequence — keep the plan, drop the SVV
+    so the first step isn't pre-emptively highlighted as 'do this first'."""
+    pack = _make_pack(RetrievalIntent.LEARN_PATH)
+    resp = compose_answer(pack, RetrievalIntent.LEARN_PATH, _request())
+    assert len(resp.implementation_plan) >= 1
+    assert resp.action_now is None
+
+
+def test_contradictions_surface_on_response():
+    """ANSWER-1: contradictions from the evidence pack flow to the
+    AskResponse.contradictions list (previously dropped)."""
+    pack = _make_pack(RetrievalIntent.HOW_TO)
+    pack.contradictions = [{
+        "dimension": "safety", "severity": "high", "status": "open",
+    }]
+    resp = compose_answer(pack, RetrievalIntent.HOW_TO, _request())
+    assert len(resp.contradictions) == 1
+    assert "Conflicting evidence" in resp.contradictions[0]
+    assert "safety" in resp.contradictions[0]
+
+
+def test_next_steps_promote_to_related_objects():
+    """ANSWER-1: graph-expansion next_steps the planner produced now
+    appear in related_objects (previously dropped on the floor)."""
+    pack = _make_pack(RetrievalIntent.HOW_TO)
+    pack.next_steps = [{
+        "slug": "water.advanced-treatment",
+        "title": "Advanced water treatment",
+        "role": "next-step",
+    }]
+    resp = compose_answer(pack, RetrievalIntent.HOW_TO, _request())
+    slugs = [r.slug for r in resp.related_objects]
+    assert "water.advanced-treatment" in slugs
