@@ -103,9 +103,18 @@ async def _run_one(client: httpx.AsyncClient, entry: GoldEntry) -> QueryResult:
         error = f"ask: {type(e).__name__}: {e}"
 
     try:
+        search_payload: dict[str, Any] = {
+            "query": entry.query,
+            "top_k": entry.top_n,
+            "only_published": True,
+        }
+        if entry.language and entry.language != "en":
+            # MULTI-1: scope the search to the gold entry's language so the
+            # harness can score non-English corpora once they land.
+            search_payload["filters"] = {"language_code": entry.language}
         search_resp = await client.post(
             "/v1/search",
-            json={"query": entry.query, "top_k": entry.top_n, "only_published": True},
+            json=search_payload,
         )
         search_resp.raise_for_status()
         data = search_resp.json()
@@ -135,6 +144,14 @@ def _render_report(results: list[QueryResult], api_base: str) -> str:
     cited = sum(1 for r in results if r.ask_citation_count >= 2)
     with_action_now = sum(1 for r in results if r.ask_has_action_now)
 
+    # MULTI-1: per-language pivot.
+    by_lang: dict[str, tuple[int, int]] = {}
+    for r in results:
+        lang = r.entry.language or "en"
+        passed_n, total_n = by_lang.get(lang, (0, 0))
+        by_lang[lang] = (passed_n + (1 if r.passed else 0), total_n + 1)
+    lang_lines = [f"{lang}: {p}/{t}" for lang, (p, t) in sorted(by_lang.items())]
+
     lines = [
         "# Capability Commons retrieval eval",
         "",
@@ -142,6 +159,7 @@ def _render_report(results: list[QueryResult], api_base: str) -> str:
         f"- API: `{api_base}`",
         f"- Queries: {total}",
         f"- **Passed: {passed} / {total}** ({passed / total * 100:.0f}%)",
+        f"- By language: {', '.join(lang_lines)}",
         f"- Intent correct: {intent_correct} / {len(intent_checked)}",
         f"- ≥2 citations: {cited} / {total}",
         f"- Has action_now: {with_action_now} / {total}",

@@ -93,3 +93,16 @@
   expects_any:
     - portfolio.gold-goats-guns-overview
     - publishing.issue-index
+
+# --- Multilingual placeholder (MULTI-1) -------------------------------------
+# Backend is English-only today; this entry intentionally targets a language
+# (`es`) we don't yet serve so the harness can prove the path works the moment
+# Spanish content lands. Until then it will fail with "no matching results"
+# and that's the correct signal for "we need to translate the corpus".
+
+- query: "¿Cómo almaceno agua potable durante un apagón?"
+  language: es
+  intent: how_to
+  expects_any:
+    - water.almacenamiento-seguro
+    - water.safe-storage
