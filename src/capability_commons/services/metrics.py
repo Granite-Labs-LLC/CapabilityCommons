@@ -16,9 +16,11 @@ from capability_commons.db.models import (
     ContradictionCase,
     ConversationTurn,
     EvidenceSpan,
+    Feedback,
     RetrievalRun,
     ReviewRecord,
 )
+from capability_commons.domain.enums import FeedbackAction
 from capability_commons.domain.enums import (
     ContradictionStatus,
     LifecycleState,
@@ -126,13 +128,71 @@ class MetricsService:
             select(func.count(func.distinct(ConversationTurn.conversation_id)))
         ) or 0
 
+        # METRICS-2: latency (time-to-first-answer) on completed runs.
+        latency_ms_avg = await self.session.scalar(
+            select(
+                func.avg(
+                    func.extract("epoch", RetrievalRun.completed_at - RetrievalRun.created_at) * 1000
+                )
+            ).where(
+                RetrievalRun.status == RetrievalRunStatus.COMPLETED,
+                RetrievalRun.completed_at.isnot(None),
+            )
+        )
+
+        # METRICS-2: result_summary JSON inspection for action_now /
+        # citations grounded count. We use Postgres JSON operators so this
+        # stays a single round trip.
+        with_action_now = await self.session.scalar(
+            select(func.count()).where(
+                RetrievalRun.status == RetrievalRunStatus.COMPLETED,
+                RetrievalRun.result_summary["action_now"].astext != "null",
+                RetrievalRun.result_summary["action_now"].astext != "",
+            )
+        ) or 0
+        with_2plus_citations = await self.session.scalar(
+            select(func.count()).where(
+                RetrievalRun.status == RetrievalRunStatus.COMPLETED,
+                func.jsonb_array_length(RetrievalRun.result_summary["citations"]) >= 2,
+            )
+        ) or 0
+
+        # METRICS-2: followup rate — count conversations that have >1 turn.
+        followup_conversations = await self.session.scalar(
+            select(func.count()).select_from(
+                select(ConversationTurn.conversation_id)
+                .group_by(ConversationTurn.conversation_id)
+                .having(func.count(ConversationTurn.id) > 1)
+                .subquery()
+            )
+        ) or 0
+        followup_rate = (
+            round(followup_conversations / unique_conversations, 3)
+            if unique_conversations else 0.0
+        )
+
+        # METRICS-2: feedback summary by action.
+        feedback_counts: dict[str, int] = {}
+        rows = await self.session.execute(
+            select(Feedback.action, func.count()).group_by(Feedback.action)
+        )
+        for action, count in rows:
+            key = action.value if hasattr(action, "value") else str(action)
+            feedback_counts[key] = count
+
         return {
             "retrieval_runs_total": total_runs,
             "retrieval_runs_completed": completed_runs,
             "completion_rate": round(completed_runs / max(total_runs, 1), 3),
             "avg_sufficiency_score": round(float(avg_sufficiency or 0), 3),
+            "avg_latency_ms": round(float(latency_ms_avg or 0), 1),
             "conversation_turns_total": conversation_turns,
             "unique_conversations": unique_conversations,
+            "followup_conversations": followup_conversations,
+            "followup_rate": followup_rate,
+            "pct_answers_with_action_now": round(with_action_now / max(completed_runs, 1), 3),
+            "pct_answers_with_2plus_citations": round(with_2plus_citations / max(completed_runs, 1), 3),
+            "feedback_by_action": feedback_counts,
         }
 
     async def summary(self) -> dict[str, Any]:
