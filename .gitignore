@@ -16,3 +16,7 @@ venv/
 .ruff_cache/
 htmlcov/
 .coverage
+data/files/
+
+# Local Claude harness state
+.claude/scheduled_tasks.lock

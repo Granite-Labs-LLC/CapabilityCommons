@@ -1,0 +1,349 @@
+id: geopolitics.oil-flow-control-analysis
+slug: geopolitics.oil-flow-control-analysis
+canonical_title: Oil Flow Control as a Geopolitical Lens on Iran
+markdown_body: '## What this is
+
+  This concept is a geopolitical interpretation of the Iran conflict. It suggests
+  that one important driver may be control over oil supply flows and access to cheap
+  energy. In this view, energy is not just a commodity; it is a source of strategic
+  power.
+
+
+  ## Why it matters
+
+  If oil flows and energy chokepoints shape policy, then conflicts can be understood
+  as struggles over leverage, not only territory or ideology. That matters because
+  energy access affects trade, industry, inflation, and military capacity. It also
+  helps explain why governments may care about regions far beyond their borders.
+
+
+  ## What you need
+
+  - Basic knowledge of oil markets
+
+  - A map of major regional routes and chokepoints
+
+  - A way to compare competing geopolitical explanations
+
+  - Awareness that this is an interpretation, not a proven single cause
+
+
+  ## How to do it
+
+  1. Identify the strategic claim being made: that oil supply control is central to
+  the conflict.
+
+  2. Trace the incentives of the main actors.
+
+  3. Look for places where supply can be constrained, redirected, or made more expensive.
+
+  4. Compare this explanation with other possible drivers, such as security concerns,
+  domestic politics, or ideology.
+
+  5. Check whether the evidence supports the claim or only suggests it.
+
+
+  ## Common failure modes
+
+  - Treating a speculative argument as established fact
+
+  - Overstating certainty from limited evidence
+
+  - Reducing a complex conflict to a single cause
+
+  - Reading every event as propaganda without testing the claim
+
+
+  ## Safety/boundary notes
+
+  This is a speculative geopolitical interpretation presented by the source. It should
+  be used as an analytical lens, not as a definitive explanation. Avoid presenting
+  it as proof unless you have supporting evidence from independent sources.
+
+
+  ## Local adaptation notes
+
+  The source connects this idea to references involving Venezuela, China, bunker oil,
+  and US policy. Those references are part of the author’s framing and may not apply
+  in every setting. When adapting this concept locally, replace those examples with
+  the specific energy routes, actors, and policy pressures relevant to your case.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- energy security
+- international relations
+stage: foundation
+contexts:
+- Iran
+- US foreign policy
+- oil supply
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A geopolitical interpretation that treats the Iran conflict as partly
+  about controlling oil supply flows and limiting a rival’s access to cheap energy.
+summary_medium: This concept frames the Iran conflict as more than a regional dispute.
+  It argues that a major strategic goal may be to influence oil supply routes, constrain
+  a rival’s energy access, and shape global leverage through energy chokepoints. The
+  source presents this as an interpretation, not a settled fact, and it should be
+  read alongside other explanations such as security, ideology, and domestic politics.
+plain_language: This is a way of thinking about the Iran conflict. The idea is that
+  oil and energy flows may be a major reason for pressure, conflict, and policy choices.
+  In this view, controlling or disrupting supply routes can give one side leverage
+  over another. The source treats this as an argument, not proof, so it should be
+  checked against other evidence and explanations.
+structured_data:
+  definition: A geopolitical lens that interprets the Iran conflict as partly driven
+    by efforts to control oil supply flows and limit a rival’s access to cheap energy.
+  key_questions:
+  - Who benefits if oil flows are constrained or redirected?
+  - Which supply routes or chokepoints matter most?
+  - What evidence links policy choices to energy leverage?
+  - Are there alternative explanations that fit the same events?
+  - How strong is the evidence versus the interpretation?
+  misconceptions:
+  - This explanation proves the conflict is only about oil.
+  - Any mention of energy automatically means the interpretation is correct.
+  - A geopolitical lens replaces the need to consider security, ideology, or domestic
+    politics.
+  - Speculative analysis is the same as verified fact.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_001
+  claim_text: This concept is a geopolitical interpretation of the Iran conflict.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: That statement sits at the heart of my analysis at this point in the
+      game. It is inferential and differential, and it may, at times, look like I
+      have lost my mind
+    start_char: 0
+    end_char: 160
+    support_strength: medium
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_002
+  claim_text: It suggests that one important driver may be control over oil supply
+    flows and access to cheap energy.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000014
+    excerpt: It seemed obvious from the start that the point of the whole exercise
+      was to control the marginal barrel of oil. Not necessarily the price, but the
+      supply.
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000015
+    excerpt: Whatever you think of the timing, the recklessness, the betrayal of campaign
+      promises, this is about starving China's access to free-flowing oil.
+    start_char: 0
+    end_char: 132
+    support_strength: strong
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_003
+  claim_text: In this view, energy is not just a commodity; it is a source of strategic
+    power.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000006
+    excerpt: Powell's "higher for longer" rate policy was power politics at its highest
+      level. It used the pricing of global dollar flows to enforce US sovereignty
+      over its economic destiny.
+    start_char: 0
+    end_char: 155
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The Brent/WTI spread told you that Trump would let the rest of the world
+      feel the pain of his actions and force them to deal with his new reality. And
+      that reality is that the US is now not only the guarantor of the price of oil
+      in the physical sense but also that it will rewrite the ledgers of who profits
+      from its flow.
+    start_char: 0
+    end_char: 314
+    support_strength: strong
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_004
+  claim_text: If oil flows and energy chokepoints shape policy, then conflicts can
+    be understood as struggles over leverage, not only territory or ideology.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe. Trump is in the process of expanding US oil output. Russia
+      is expanding its arctic sea routes. The Hormuz represents a significant chokepoint
+      that Trump wants to highlight to wrest pricing control over oil away from a
+      third party.
+    start_char: 0
+    end_char: 287
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The Brent/WTI spread told you that Trump would let the rest of the world
+      feel the pain of his actions and force them to deal with his new reality.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_005
+  claim_text: That matters because energy access affects trade, industry, inflation,
+    and military capacity.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That economic fallout is already being felt as money is going to ground
+      across the world.
+    start_char: 0
+    end_char: 86
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: A lot of business models break at $100 per barrel oil. The dollar markets
+      are tight.
+    start_char: 0
+    end_char: 82
+    support_strength: medium
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_006
+  claim_text: It also helps explain why governments may care about regions far beyond
+    their borders.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe.
+    start_char: 0
+    end_char: 86
+    support_strength: strong
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_007
+  claim_text: The source connects this idea to references involving Venezuela, China,
+    bunker oil, and US policy.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: 'The classic neocons like Bill Kristol and John Bolton who have always
+      hated Trump are angry because they know Trump isn''t interested in their version
+      of regime change: Iran becomes a failed state and a constant source of chaos
+      for a generation.'
+    start_char: 0
+    end_char: 196
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000014
+    excerpt: When looking back at the Venezuela operation, Tom and I quickly surmised
+      it was as much about China's access to cheap bunker oil, as it was about Maduro.
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_008
+  claim_text: Those references are part of the author’s framing and may not apply
+    in every setting.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Regardless of the questionable timing of the current conflict, the idea
+      we should continue to tolerate this absurdity, and validate the Iranian delusion
+      they have a right to subject us to it, is peak liberal nonsense.
+    start_char: 0
+    end_char: 193
+    support_strength: weak
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_009
+  claim_text: When adapting this concept locally, replace those examples with the
+    specific energy routes, actors, and policy pressures relevant to your case.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: These are material benefits for the US as these events ultimately serve
+      the following outcomes in the short and long term.
+    start_char: 0
+    end_char: 118
+    support_strength: weak
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_010
+  claim_text: This is a speculative geopolitical interpretation presented by the source.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: That statement sits at the heart of my analysis at this point in the
+      game. It is inferential and differential, and it may, at times, look like I
+      have lost my mind
+    start_char: 0
+    end_char: 160
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Regardless of the questionable timing of the current conflict
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_011
+  claim_text: It should be used as an analytical lens, not as a definitive explanation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: That statement sits at the heart of my analysis at this point in the
+      game. It is inferential and differential
+    start_char: 0
+    end_char: 109
+    support_strength: strong
+- object_id: geopolitics.oil-flow-control-analysis
+  claim_id: clm_012
+  claim_text: Avoid presenting it as proof unless you have supporting evidence from
+    independent sources.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The hallmark of a good intelligence operation is sowing enough confusion
+      that one or two facts leave most observers scratching their heads.
+    start_char: 0
+    end_char: 137
+    support_strength: weak

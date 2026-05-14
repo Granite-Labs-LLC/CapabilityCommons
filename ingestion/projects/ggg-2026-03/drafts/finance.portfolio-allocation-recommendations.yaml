@@ -1,0 +1,313 @@
+id: finance.portfolio-allocation-recommendations
+slug: finance.portfolio-allocation-recommendations
+canonical_title: Portfolio Table and Allocation Recommendations
+markdown_body: '## What this is
+
+  A portfolio table is a structured way to list investments and compare them using
+  a few standard measures, such as position value, yield, and total return. In this
+  source, the section title suggests allocation recommendations, but the available
+  excerpt only shows holdings tables rather than a clear explanation of how allocations
+  were chosen.
+
+
+  ## Why it matters
+
+  Portfolio tables help you see how money is distributed across holdings and how each
+  holding is performing. They can support portfolio review by making it easier to
+  compare positions, notice concentration, and track changes over time.
+
+
+  ## What you need
+
+  - A list of holdings
+
+  - Basic performance measures such as position value, yield, and total return
+
+  - A way to compare positions side by side
+
+  - Enough context to know whether the table is descriptive, advisory, or both
+
+
+  ## How to do it
+
+  1. List each holding in the portfolio.
+
+  2. Record the position value for each holding.
+
+  3. Add performance measures such as yield and total return when available.
+
+  4. Compare holdings to see which positions are larger, smaller, higher-yielding,
+  or stronger on return.
+
+  5. Use the table to review the portfolio, but do not assume it contains a full allocation
+  method unless that method is explicitly stated.
+
+
+  ## Common failure modes
+
+  - Treating a holdings table as if it were a complete allocation policy
+
+  - Overreading the title and assuming the excerpt contains recommendation logic that
+  is not actually shown
+
+  - Comparing performance numbers without checking what time period or calculation
+  method was used
+
+  - Using the table alone to make investment decisions without broader research
+
+
+  ## Safety/boundary notes
+
+  This is informational content, not investment advice. The excerpt available here
+  does not provide enough detail to reconstruct a full allocation framework. Any use
+  of the table should stay within the limits of the source and avoid unsupported assumptions.
+
+
+  ## Local adaptation notes
+
+  If you adapt this for a local portfolio review process, define your own rules for:
+
+  - what counts as a target allocation
+
+  - which performance metrics matter most
+
+  - how often the table is updated
+
+  - whether yield, total return, or position size should drive decisions
+
+
+  Keep those rules separate from the source unless they are explicitly documented
+  there.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- investment_research
+stage: foundation
+contexts:
+- newsletter
+- portfolio review
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A newsletter section that appears to present portfolio holdings and
+  allocation guidance, but the available excerpt only shows holdings tables and performance
+  metrics.
+summary_medium: This object represents a portfolio review reference sheet tied to
+  a newsletter section titled "Portfolio Table and Allocation Recommendations." The
+  excerpt provided does not include explicit allocation rules, so the canonical content
+  should be treated as a table-based review aid rather than a confirmed recommendation
+  framework. It is useful for comparing holdings, position values, yields, and total
+  return, while avoiding assumptions about the author’s intended allocation method.
+plain_language: This is a portfolio review reference. It helps you look at holdings,
+  position values, yield, and total return in one place. The excerpt available here
+  does not show a full recommendation method, so you should use it as a comparison
+  and tracking aid, not as a complete investing rule set.
+structured_data:
+  definition: A portfolio review table that lists holdings and compares them using
+    measures such as position value, yield, and total return. The available excerpt
+    does not confirm a full allocation recommendation method.
+  key_questions:
+  - What holdings are included in the portfolio table?
+  - How large is each position?
+  - What yield and total return are shown for each holding?
+  - Does the source explain how allocations were chosen, or only show the resulting
+    table?
+  - What time period and calculation method were used for the performance figures?
+  misconceptions:
+  - A holdings table automatically equals a complete allocation strategy.
+  - The title alone is enough to infer the author's recommendation logic.
+  - Yield and total return always mean the same thing across sources.
+  - A table of positions can be used as investment advice without additional context.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_001
+  claim_text: A portfolio table is a structured way to list investments and compare
+    them using standard measures such as position value, yield, and total return.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |
+
+      |-------------------------------------------|--------|------------|-------------|--------------|---------------|---------------|----------------------|'
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_002
+  claim_text: The available excerpt shows holdings tables rather than a clear explanation
+    of how allocations were chosen.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000030
+    excerpt: '## PORTFOLIO TABLE AND ALLOCATION RECOMMENDATIONS'
+    start_char: 0
+    end_char: 49
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_003
+  claim_text: Portfolio tables help you see how money is distributed across holdings
+    and how each holding is performing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |
+
+      |-------------------------------------------|--------|------------|-------------|--------------|---------------|---------------|----------------------|'
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_004
+  claim_text: Portfolio tables can support portfolio review by making it easier to
+    compare positions, notice concentration, and track changes over time.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |
+
+      |-------------------------------------------|--------|------------|-------------|--------------|---------------|---------------|----------------------|'
+    start_char: 0
+    end_char: 214
+    support_strength: medium
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_005
+  claim_text: The table includes a list of holdings.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| GAMCO Global Gold                         | GGN    | Various    |
+      $4.69      | $5.11       | 7.05%         | 143.71%       | $12,185.34          |
+
+      | Permian Basin Royalty Trust               | PBT    | Various    | $6.35      |
+      $21.79      | 1.51%         | 144.78%       | $9,179.25           |
+
+      | Gladstone Land                            | LAND   | 10/14/20   | $14.20     |
+      $10.14      | 5.51%         | -11.98%       | $2,200.60           |'
+    start_char: 214
+    end_char: 548
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_006
+  claim_text: The table records position value for each holding.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| GAMCO Global Gold                         | GGN    | Various    |
+      $4.69      | $5.11       | 7.05%         | 143.71%       | $12,185.34          |
+
+      | Permian Basin Royalty Trust               | PBT    | Various    | $6.35      |
+      $21.79      | 1.51%         | 144.78%       | $9,179.25           |'
+    start_char: 214
+    end_char: 430
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_007
+  claim_text: The table records current yield and total return for each holding.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_008
+  claim_text: The source says the content is informational and not investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+      It is strongly recommended consulting your financial adviser or other financial
+      professional before making any investment decisions. The information in this
+      publication is not to be construed, under any circumstances, as an offer to
+      sell or a solicitation to buy, sell, or trade in any commodities, securities,
+      or other financial instruments presented.
+    start_char: 0
+    end_char: 394
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_009
+  claim_text: The excerpt does not provide enough detail to reconstruct a full allocation
+    framework.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000030
+    excerpt: '## PORTFOLIO TABLE AND ALLOCATION RECOMMENDATIONS'
+    start_char: 0
+    end_char: 49
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: finance.portfolio-allocation-recommendations
+  claim_id: clm_010
+  claim_text: If you adapt this for a local portfolio review process, you should define
+    your own rules for what counts as a target allocation, which performance metrics
+    matter most, how often the table is updated, and whether yield, total return,
+    or position size should drive decisions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000030
+    excerpt: '## PORTFOLIO TABLE AND ALLOCATION RECOMMENDATIONS'
+    start_char: 0
+    end_char: 49
+    support_strength: weak

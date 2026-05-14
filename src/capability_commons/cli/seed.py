@@ -121,7 +121,7 @@ def resolve_requires(node: dict) -> list[tuple[str, str, dict]]:
           - mode: all_of
             ids: ["a.b", "c.d"]
     """
-    src_slug = node["id"]
+    src_slug = node.get("slug") or node["id"]
     triples: list[tuple[str, str, dict]] = []
     for item in node.get("requires", []):
         if isinstance(item, str):
@@ -200,7 +200,10 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         skipped = 0
 
         for node in nodes:
-            slug = node["id"]
+            # Prefer the canonical slug; fall back to id for legacy seed data.
+            # LLM-drafted objects sometimes carry a section/segment id in `id`
+            # while `slug` holds the canonical name (PLAN P0-5 alignment).
+            slug = node.get("slug") or node["id"]
             # Check if already exists
             existing = await session.execute(
                 select(ContextObject).where(
@@ -302,7 +305,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # "A requires B" means B is_prerequisite_for A => Edge(src=B, dst=A)
         req_edges = 0
         for node in nodes:
-            dependant_slug = node["id"]
+            dependant_slug = node.get("slug") or node["id"]
             if dependant_slug not in slug_to_version_id:
                 continue
             for _, prereq_id, meta in resolve_requires(node):
@@ -332,7 +335,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # 3b. Insert suggested_edges from ingestion YAML
         sug_edges = 0
         for node in nodes:
-            src_slug = node["id"]
+            src_slug = node.get("slug") or node["id"]
             if src_slug not in slug_to_version_id:
                 continue
             for edge_spec in node.get("suggested_edges", []):
@@ -370,7 +373,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # 3c. Insert citations as EvidenceSource + EvidenceSpan
         cit_count = 0
         for node in nodes:
-            src_slug = node["id"]
+            src_slug = node.get("slug") or node["id"]
             if src_slug not in slug_to_version_id:
                 continue
             version_id = slug_to_version_id[src_slug]

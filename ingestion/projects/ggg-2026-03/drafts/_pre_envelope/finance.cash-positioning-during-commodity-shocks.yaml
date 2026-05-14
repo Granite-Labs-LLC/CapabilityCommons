@@ -1,0 +1,682 @@
+id: finance.cash-positioning-during-commodity-shocks
+slug: finance.cash-positioning-during-commodity-shocks
+canonical_title: Cash Positioning During Commodity Shocks
+markdown_body: '## What this is
+
+  A defensive portfolio-management approach for periods of extreme uncertainty. The
+  core idea is to treat cash as flexibility: it gives you room to wait, avoid forced
+  decisions, and redeploy only after conditions become more favorable.
+
+
+  ## Why it matters
+
+  In a commodity shock or war-driven inflation environment, prices can move quickly
+  and for reasons that are hard to predict. Strong-looking rallies can reverse if
+  credit conditions tighten or if the market is still working through a larger stress
+  event. Holding some cash can reduce the chance of being trapped in positions that
+  look safe only in the short term.
+
+
+  ## What you need
+
+  - A way to review your current holdings
+
+  - Price charts for the assets you follow
+
+  - A basic view of commodity prices and broader market stress
+
+  - Credit indicators such as yield spreads, if you use them
+
+  - A plan for how much cash you want to keep available
+
+
+  ## How to do it
+
+  1. Review whether the market is being driven by a temporary relief move or by a
+  real change in trend.
+
+  2. If a position has appreciated strongly, consider taking some profits rather than
+  assuming the move will continue.
+
+  3. Keep a larger cash buffer when uncertainty is unusually high.
+
+  4. Watch for signs that stress is easing, such as improving credit conditions or
+  a more stable commodity trend.
+
+  5. Re-enter gradually instead of all at once, and only when your own criteria for
+  a better setup are met.
+
+
+  ## Common failure modes
+
+  - Buying back too early because a short-term bounce feels like a recovery
+
+  - Holding concentrated winners through a credit seizure or broader market break
+
+  - Treating a temporary pause in volatility as proof that the trend has changed
+
+  - Using a defensive stance without a clear plan for when to redeploy capital
+
+
+  ## Safety/boundary notes
+
+  This is speculative market guidance, not personalized financial advice. It is based
+  on a source commentary and should not be treated as a universal rule. Market conditions,
+  liquidity, taxes, and your own risk tolerance can change what is appropriate.
+
+
+  ## Local adaptation notes
+
+  The right amount of cash depends on local inflation, interest rates, and capital
+  controls. Entry thresholds will vary by market structure and liquidity. Commodity
+  exposure also differs by economy, so the same shock may affect portfolios in different
+  ways.'
+source_segment_ids: []
+seed_type: skill_guide
+co_type: skill_guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio-management
+- risk-management
+stage: productive
+contexts:
+- volatile markets
+- commodity shock
+- war-driven inflation
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: A tactical guide for deciding when to hold cash, trim winners, and
+  wait for a better entry during extreme market stress.
+summary_medium: 'This guide describes a defensive portfolio stance during severe uncertainty:
+  keep more cash, reduce exposure in strong positions, and avoid redeploying capital
+  too early. The source frames cash as flexibility when markets are being driven by
+  commodity shocks, credit stress, and fast-changing inflation expectations.'
+plain_language: When markets are unstable and prices are being pushed around by shocks
+  like war, inflation, or commodity spikes, it can make sense to be more defensive.
+  The basic idea is to keep cash available, take some profits from positions that
+  have run up, and wait for conditions to improve before buying again. This is not
+  a rule for every market or every investor; it is a cautionary approach for periods
+  when the risk of a sharp reversal or credit stress is high.
+structured_data:
+  tools:
+  - price charts
+  - transportation average
+  - commodity prices
+  - yield spreads
+  materials:
+  - current portfolio holdings
+  - cash allocation plan
+  - market stress indicators
+  success_criteria:
+  - You can explain why you are holding cash instead of fully redeploying it.
+  - You have a clear reason for trimming winners rather than assuming they will keep
+    rising.
+  - You have defined conditions for re-entry instead of reacting emotionally to short-term
+    rallies.
+  failure_modes:
+  - buying too early
+  - holding concentrated winners through a credit seizure
+  - confusing temporary relief with trend reversal
+  safety_boundary:
+  - This is speculative market advice from the source, not personalized financial
+    advice.
+  - Do not treat cash holding as universally correct; it depends on market conditions
+    and investor needs.
+  - Use local legal, tax, and liquidity constraints when deciding whether to hold
+    or move capital.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_001
+  claim_text: A defensive portfolio-management approach for periods of extreme uncertainty.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: For now, stay in cash as much as possible.
+    start_char: 0
+    end_char: 43
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_002
+  claim_text: 'The core idea is to treat cash as flexibility: it gives you room to
+    wait, avoid forced decisions, and redeploy only after conditions become more favorable.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: For now, stay in cash as much as possible.
+    start_char: 0
+    end_char: 43
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_003
+  claim_text: In a commodity shock or war-driven inflation environment, prices can
+    move quickly and for reasons that are hard to predict.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 3
+    page_end: 4
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 107
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 3
+    page_end: 4
+    segment_id: seg_000009
+    excerpt: War does that to markets. They are the very definition of uncertainty.
+    start_char: 0
+    end_char: 69
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_004
+  claim_text: Strong-looking rallies can reverse if credit conditions tighten or if
+    the market is still working through a larger stress event.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: If Trump ties up Iran quickly, the fear currently in the investment community
+      will subside and commodities should rally as the world gets back to work and
+      critical shortages across all commodity classes will take time to alleviate.
+    start_char: 0
+    end_char: 223
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: If you have profits you can take off the table, do so.
+    start_char: 0
+    end_char: 54
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_005
+  claim_text: Holding some cash can reduce the chance of being trapped in positions
+    that look safe only in the short term.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: For now, stay in cash as much as possible.
+    start_char: 0
+    end_char: 43
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: If you have profits you can take off the table, do so.
+    start_char: 0
+    end_char: 54
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_006
+  claim_text: Review whether the market is being driven by a temporary relief move
+    or by a real change in trend.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: This non-confirmation tells us that Trump's calculus the US can handle
+      what he's done has merit. For now, chaos reigns.
+    start_char: 0
+    end_char: 118
+    support_strength: weak
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_007
+  claim_text: If a position has appreciated strongly, consider taking some profits
+    rather than assuming the move will continue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000023
+    excerpt: We'll be cutting this position once the hysteria is over, collecting
+      the higher yield and then cutting the position again. Don't chase this higher.
+      If you want to raise cash, this is an excellent candidate.
+    start_char: 0
+    end_char: 193
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000025
+    excerpt: And if you've been hanging in since our initial investment this is another
+      good place to lighten up and raise cash in case this war drags on and credit
+      markets seize up. Then good stocks will get hammered. So, again, never be afraid
+      to sell or lighten up on winners.
+    start_char: 0
+    end_char: 258
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_008
+  claim_text: Keep a larger cash buffer when uncertainty is unusually high.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: For now, stay in cash as much as possible.
+    start_char: 0
+    end_char: 43
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_009
+  claim_text: Watch for signs that stress is easing, such as improving credit conditions
+    or a more stable commodity trend.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 3
+    page_end: 4
+    segment_id: seg_000009
+    excerpt: Across the world bond yields are up ... and equity markets have reversed
+      recent breakouts to new highs.
+    start_char: 0
+    end_char: 106
+    support_strength: weak
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_010
+  claim_text: Re-enter gradually instead of all at once, and only when your own criteria
+    for a better setup are met.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000022
+    excerpt: This will be the perfect opportunity to add to your position once the
+      selling in gold is over. But do not dive back in too early.
+    start_char: 0
+    end_char: 126
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_011
+  claim_text: Buying back too early because a short-term bounce feels like a recovery
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000022
+    excerpt: But do not dive back in too early.
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_012
+  claim_text: Holding concentrated winners through a credit seizure or broader market
+    break is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000025
+    excerpt: raise cash in case this war drags on and credit markets seize up. Then
+      good stocks will get hammered.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_013
+  claim_text: Treating a temporary pause in volatility as proof that the trend has
+    changed is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_014
+  claim_text: Using a defensive stance without a clear plan for when to redeploy capital
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_015
+  claim_text: This is speculative market guidance, not personalized financial advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: It is not to be construed, under any circumstances, as an offer to sell
+      or a solicitation to buy, sell, or trade in any commodities, securities, or
+      other financial instruments presented.
+    start_char: 0
+    end_char: 186
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_016
+  claim_text: It is based on a source commentary and should not be treated as a universal
+    rule.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 61
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 118
+    support_strength: weak
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_017
+  claim_text: Market conditions, liquidity, taxes, and your own risk tolerance can
+    change what is appropriate.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested. You should consider such risks prior to
+      making any investment decisions.
+    start_char: 0
+    end_char: 174
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: Investment decisions by such persons may be inconsistent with or even
+      contradictory to the discussion or recommendations ... per their personal circumstances.
+    start_char: 0
+    end_char: 154
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_018
+  claim_text: The right amount of cash depends on local inflation, interest rates,
+    and capital controls.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 10
+    page_end: 10
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of Gold, Goats 'n Guns.
+    start_char: 0
+    end_char: 93
+    support_strength: weak
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_019
+  claim_text: Entry thresholds will vary by market structure and liquidity.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 121
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 8
+    page_end: 9
+    segment_id: seg_000020
+    excerpt: A lot of business models break at $100 per barrel oil. The dollar markets
+      are tight.
+    start_char: 0
+    end_char: 84
+    support_strength: medium
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_020
+  claim_text: Commodity exposure also differs by economy, so the same shock may affect
+    portfolios in different ways.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 3
+    page_end: 4
+    segment_id: seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe.
+    start_char: 0
+    end_char: 86
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 3
+    page_end: 4
+    segment_id: seg_000009
+    excerpt: These are material benefits for the US as these events ultimately serve
+      the following outcomes in the short and long term.
+    start_char: 0
+    end_char: 119
+    support_strength: weak
+bundle_overrides:
+  hook: When markets are being jolted by war, inflation, or commodity spikes, cash
+    can be a tool for staying flexible instead of getting trapped. This guide shows
+    how to use a defensive stance to wait for clearer conditions, trim risk, and re-enter
+    with a plan.
+  primer: 'Cash positioning during a commodity shock is a defensive portfolio approach
+    for periods when prices, credit, and sentiment can change very quickly. In plain
+    terms, it means keeping more money in cash than usual so you are not forced to
+    make rushed decisions while the market is unstable.
+
+
+    The basic idea is simple: when uncertainty is unusually high, cash gives you options.
+    It can help you avoid selling under pressure, reduce the chance of being stuck
+    in positions that only look safe for a short time, and give you room to wait for
+    better conditions. In a shock-driven market, rallies can be misleading. A price
+    bounce may look like recovery, but the larger stress event may still be working
+    through the system.
+
+
+    This approach is especially relevant when commodity prices are moving sharply,
+    credit conditions are tightening, or war-related events are creating uncertainty.
+    In those settings, it can be hard to know whether a move is a temporary relief
+    rally or the start of a real trend change. That is why the source guidance emphasizes
+    patience, profit-taking, and waiting for clearer signals before redeploying capital.
+
+
+    This is not a universal rule and it is not personalized financial advice. The
+    right amount of cash depends on your situation, your risk tolerance, local inflation,
+    interest rates, taxes, liquidity, and any legal or capital-control constraints.
+    Different economies can also react differently to the same commodity shock, so
+    a one-size-fits-all answer does not work.
+
+
+    A practical way to think about this skill is: hold enough cash to stay calm, trim
+    positions that have run up, and define in advance what would make you comfortable
+    buying again. The goal is not to predict the exact bottom. The goal is to avoid
+    being caught on the wrong side of a fast-moving market while keeping yourself
+    ready for the next opportunity.'
+  guide: "1. Start by checking the market context.\n   Look for signs of stress: sharp\
+    \ commodity moves, widening credit spreads, rising yields, or broad market reversals.\
+    \ Ask whether the market is reacting to a temporary headline or to a deeper stress\
+    \ event that may last longer.\n\n2. Review your current holdings.\n   Identify\
+    \ which positions have already appreciated strongly and which ones are most exposed\
+    \ to a sudden reversal. In a shock environment, winners can become crowded and\
+    \ vulnerable if credit tightens or sentiment turns.\n\n3. Decide how much cash\
+    \ buffer you want.\n   There is no universal number. Choose a level that fits\
+    \ your needs, your risk tolerance, and your local market conditions. The point\
+    \ is to have enough cash available so you are not forced to sell at a bad time\
+    \ or buy back too early.\n\n4. Trim where the risk-reward has changed.\n   If\
+    \ a position has run up a lot, consider taking some profits off the table. The\
+    \ source guidance is clear that you should not assume a strong move will continue\
+    \ forever. Raising cash from winners can reduce the damage if the market breaks\
+    \ again.\n\n5. Avoid confusing a bounce with a recovery.\n   A short-term rally\
+    \ can happen even while the larger stress is still unresolved. Before adding risk\
+    \ back, look for signs that the pressure is easing in a meaningful way, not just\
+    \ for one or two good trading days.\n\n6. Watch for confirmation signals.\n  \
+    \ Useful signals may include improving credit conditions, more stable commodity\
+    \ prices, or a clear correction from extreme levels. The exact threshold will\
+    \ vary by market structure and liquidity, so use your own criteria rather than\
+    \ copying someone else’s.\n\n7. Re-enter gradually.\n   Do not put all your cash\
+    \ back to work at once. Add in stages only when your criteria are met. This reduces\
+    \ the chance of buying too early and gives you room to adjust if conditions worsen\
+    \ again.\n\n8. Keep a written plan.\n   Write down why you are holding cash, what\
+    \ would make you trim more, and what would make you redeploy capital. A written\
+    \ plan helps you avoid emotional decisions during fast-moving markets.\n\n9. Re-check\
+    \ the plan as conditions change.\n   Commodity shocks can affect different economies\
+    \ in different ways. Local inflation, interest rates, taxes, and capital controls\
+    \ can all change what is appropriate. Review your plan regularly and update it\
+    \ if the environment changes.\n\n10. Treat this as a defensive tactic, not a permanent\
+    \ rule.\n   Cash is useful when uncertainty is high, but staying defensive forever\
+    \ can also mean missing opportunities. The skill is to use cash intentionally:\
+    \ hold it when risk is elevated, then redeploy it carefully when the market gives\
+    \ you a better setup.\n\nA simple rule of thumb for beginners: if you cannot clearly\
+    \ explain why you are buying now, or why you are holding cash now, pause and define\
+    \ the reason before acting."
+  reference:
+  - Cash is a flexibility tool in unstable markets.
+  - Hold a larger cash buffer when uncertainty is unusually high.
+  - Trim strong winners instead of assuming they will keep rising.
+  - Do not confuse a short-term bounce with a real trend change.
+  - 'Watch for easing stress: better credit conditions or more stable commodity prices.'
+  - Re-enter gradually, not all at once.
+  - Have a clear redeployment plan before you reduce risk.
+  - The right cash level depends on local inflation, interest rates, taxes, liquidity,
+    and capital controls.
+  - This is speculative market guidance, not personalized financial advice.
+  worksheet:
+  - List your current holdings and mark which ones are most sensitive to a market
+    break or credit stress.
+  - Choose one position that has appreciated strongly and write down whether you would
+    trim it, hold it, or add to it—and why.
+  - Define your personal cash buffer target for a high-uncertainty period.
+  - Write three signals that would tell you stress is easing enough to consider redeploying
+    capital.
+  - Write three signals that would make you stay defensive longer.
+  - Create a gradual re-entry plan with at least two or three stages instead of one
+    all-at-once purchase.
+  - Identify one recent market move that might be a temporary relief rally rather
+    than a true recovery.
+  - Write a one-sentence rule for yourself to avoid buying back too early.
+  - Review how local taxes, liquidity, or capital controls could affect your ability
+    to move into or out of cash.
+  teach_forward_kit:
+    three_minute_version: 'In a commodity shock or war-driven inflation environment,
+      markets can move fast and unpredictably. The core lesson is to use cash as flexibility:
+      it helps you avoid forced decisions, trim positions that have already run up,
+      and wait for clearer signs that stress is easing before buying again. The main
+      mistake to avoid is treating a short-term bounce as proof that the danger is
+      over. Instead, keep a larger cash buffer when uncertainty is high, define your
+      re-entry criteria in advance, and add risk back gradually rather than all at
+      once.'
+    ten_minute_outline:
+    - '1. Define the problem: commodity shocks create fast, hard-to-predict market
+      moves.'
+    - '2. Explain the role of cash: it buys time, flexibility, and emotional distance.'
+    - '3. Show the main defensive actions: review holdings, trim winners, raise cash.'
+    - '4. Explain why rallies can mislead: stress can continue even after a bounce.'
+    - '5. Identify confirmation signals: improving credit conditions, stable commodity
+      trends.'
+    - '6. Stress gradual re-entry: use stages, not all-at-once buying.'
+    - '7. Review common failure modes: buying too early, holding winners too long,
+      no redeploy plan.'
+    - '8. Close with the boundary note: this is not personalized advice and depends
+      on local conditions.'
+    discussion_prompts:
+    - When does cash become a strategic choice rather than just an idle asset?
+    - What signs would convince you that a market bounce is only temporary?
+    - Why can strong winners become risky to hold during a broader stress event?
+    - What would a gradual re-entry plan look like in your own portfolio?
+    - How do local inflation, interest rates, taxes, or capital controls change the
+      answer?

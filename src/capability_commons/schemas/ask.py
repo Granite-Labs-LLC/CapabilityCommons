@@ -22,6 +22,10 @@ class AskRequest(BaseModel):
     context: AskContext | None = None
     conversation_id: uuid.UUID | None = None
     max_results: int = Field(default=8, ge=1, le=50)
+    # UI parity (PLAN P1-9): "ordinary person" controls. None = no constraint.
+    difficulty_max: int | None = Field(None, ge=1, le=5)
+    beginner_safe: bool | None = None
+    stage: str | None = Field(None, description="foundation, household, productive, community, advanced")
 
 
 class ImplementationStep(BaseModel):
@@ -62,5 +66,9 @@ class AskResponse(BaseModel):
     related_objects: list[RelatedObject] = Field(default_factory=list)
     uncertainties: list[str] = Field(default_factory=list)
     resolved_intent: RetrievalIntent
+    # Echo of the AskContext fields the system actually used to filter/rank
+    # this answer. Lets the UI confirm "tuned for: renter, low budget, ..."
+    # and matches PLAN.md's `context_used` field.
+    context_used: AskContext | None = None
     conversation_id: uuid.UUID | None = None
     retrieval_run_id: uuid.UUID | None = None

@@ -21,6 +21,7 @@ from capability_commons.db.models import (
 )
 from capability_commons.domain.enums import LifecycleState, RetrievalRunStatus, RetrievalStepType, ReviewOutcome
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
+from capability_commons.retrieval.intent import infer_intent
 from capability_commons.retrieval.planner import RetrievalPlanner
 from capability_commons.schemas.common import CitationSnippet
 from capability_commons.schemas.retrieval import (
@@ -48,9 +49,18 @@ class RetrievalService:
         self.embeddings = EmbeddingService(session)
 
     def compile_plan(self, task_spec: RetrievalRequest) -> RetrievalPlan:
-        return self.planner.compile_plan(task_spec)
+        return self.planner.compile_plan(self._with_resolved_intent(task_spec))
+
+    @staticmethod
+    def _with_resolved_intent(task_spec: RetrievalRequest) -> RetrievalRequest:
+        """Return a copy of `task_spec` with `intent` filled via heuristic
+        inference if the caller left it unset (per PLAN.md retrieval P0-5)."""
+        if task_spec.intent is not None:
+            return task_spec
+        return task_spec.model_copy(update={"intent": infer_intent(task_spec.query)})
 
     async def execute_plan(self, task_spec: RetrievalRequest) -> EvidencePackResponse:
+        task_spec = self._with_resolved_intent(task_spec)
         plan = self.compile_plan(task_spec)
         run = RetrievalRun(
             workspace_id=task_spec.workspace_id,
@@ -88,6 +98,7 @@ class RetrievalService:
             filters=task_spec.facet_filters,
             top_k=plan.search_top_k,
             only_published=True,
+            attributes=task_spec.attribute_filters,
         )
         await self._log_step(
             run.id,
@@ -322,8 +333,12 @@ class RetrievalService:
         reranked: list[dict[str, Any]],
         sufficiency_score: float,
     ) -> EvidencePackResponse:
+        top_items = reranked[:8]
+        structured_by_version = await self._load_structured_data(
+            [item["version_id"] for item in top_items]
+        )
         evidence_nodes: list[EvidenceNode] = []
-        for item in reranked[:8]:
+        for item in top_items:
             rationale = self._build_rationale(task_spec, item)
             citations = [CitationSnippet.model_validate(citation) for citation in item["citations"]]
             evidence_nodes.append(
@@ -337,6 +352,7 @@ class RetrievalService:
                     summary_short=item["summary_short"],
                     citations=citations,
                     rationale=rationale,
+                    structured_data=structured_by_version.get(item["version_id"]),
                 )
             )
         contradictions = await self._contradiction_summary([node.version_id for node in evidence_nodes])
@@ -368,6 +384,17 @@ class RetrievalService:
                 lines.append(f"  - {citation.source_title}: {citation.excerpt}")
             lines.append("")
         return "\n".join(lines)
+
+    async def _load_structured_data(
+        self, version_ids: list[uuid.UUID]
+    ) -> dict[uuid.UUID, dict[str, Any]]:
+        if not version_ids:
+            return {}
+        result = await self.session.execute(
+            select(ContextObjectVersion.id, ContextObjectVersion.structured_data)
+            .where(ContextObjectVersion.id.in_(version_ids))
+        )
+        return {vid: data for vid, data in result.all() if data}
 
     async def _review_counts(self, version_ids: list[uuid.UUID]) -> dict[uuid.UUID, int]:
         if not version_ids:

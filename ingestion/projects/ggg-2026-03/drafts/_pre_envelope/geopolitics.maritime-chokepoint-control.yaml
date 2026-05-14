@@ -1,0 +1,610 @@
+id: geopolitics.maritime-chokepoint-control
+slug: geopolitics.maritime-chokepoint-control
+canonical_title: Maritime Chokepoint Control in a Post-Conflict Scenario
+markdown_body: '## What this is
+
+  This is a strategic scenario about maritime chokepoint control in a conflict or
+  post-conflict setting. It looks at how control of oil flow, ports, islands, and
+  sea lanes can be used to shape political outcomes and energy access.
+
+
+  ## Why it matters
+
+  Maritime chokepoints can affect global energy markets, regional security, and diplomatic
+  leverage. If oil exports are interrupted or controlled, the effects can spread far
+  beyond the immediate conflict zone. That makes these locations strategically important
+  and politically sensitive.
+
+
+  ## What you need
+
+  - A basic understanding of maritime geography
+
+  - Awareness of energy infrastructure and export routes
+
+  - Knowledge of how military presence can affect access and movement
+
+  - Context about the local political environment and outside actors
+
+
+  ## How to do it
+
+  This object is not an operational guide. At a high level, the scenario involves:
+
+  - Identifying the chokepoints and export routes that matter most
+
+  - Assessing how control of those routes could affect oil flow
+
+  - Considering how military occupation or presence might change access
+
+  - Evaluating the political risks of trying to hold or influence those areas
+
+
+  The source material frames this as a strategic question: if a force can secure key
+  maritime points, it may gain leverage over post-conflict energy access and regional
+  outcomes. The emphasis is on analysis of consequences, not execution.
+
+
+  ## Common failure modes
+
+  - Underestimating resistance or the difficulty of holding territory
+
+  - Assuming control of a chokepoint automatically creates stable leverage
+
+  - Ignoring the wider economic and diplomatic fallout
+
+  - Allowing mission creep, where a limited objective expands into a larger and riskier
+  one
+
+  - Misjudging the reliability of supply control or the durability of occupation
+
+
+  ## Safety/boundary notes
+
+  This content contains military speculation and references to violence. It is not
+  an operational plan and should not be used as guidance for harm. Any real-world
+  discussion of chokepoint control must stay within lawful, ethical, and nonviolent
+  analysis.
+
+
+  ## Local adaptation notes
+
+  The source is tied to a specific geopolitical setting, including Iran, Kharg Island,
+  Qeshm Island, and U.S. domestic politics. Those details matter for the original
+  scenario, but the broader lesson is general: control of maritime chokepoints can
+  create strategic leverage, while also creating major political and humanitarian
+  risks.'
+source_segment_ids: []
+seed_type: extracted_candidate
+co_type: project_blueprint
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- military strategy
+- energy security
+stage: advanced
+contexts:
+- Iran
+- Kharg Island
+- Straits of Hormuz
+- US Marines
+difficulty: 4
+cost_band: high
+risk_band: high
+summary_short: A strategic scenario about using control of oil flow and maritime chokepoints
+  to influence post-conflict outcomes.
+summary_medium: This object describes a geopolitical and military-strategic scenario
+  in which control over maritime chokepoints and oil export routes is treated as leverage
+  after hostilities. It focuses on how access to energy infrastructure, sea lanes,
+  and key islands can shape regional power, but it is not an operational plan.
+plain_language: This is a scenario about what can happen when a country or force tries
+  to control a narrow sea route or oil-export route after a conflict. The idea is
+  that whoever controls the chokepoint may influence energy supplies, political bargaining,
+  and regional stability. Because it involves military speculation and violence, it
+  should be treated as analysis, not as instructions.
+structured_data:
+  goal: Analyze how control of a maritime chokepoint or oil-export route could affect
+    post-conflict energy access and regional leverage.
+  deliverables:
+  - A strategic assessment of key chokepoints and export routes
+  - A risk review of political, military, and economic consequences
+  - A scenario analysis of how control might change post-conflict outcomes
+  acceptance_criteria:
+  - Identifies the relevant chokepoints and energy infrastructure
+  - Explains how oil flow interruption could affect regional outcomes
+  - Distinguishes strategic analysis from operational guidance
+  - Notes major risks such as mission creep and supply disruption
+  safety_boundary: Educational/informational only — not personalized financial, legal,
+    or operational advice. Verify with qualified professionals before acting.
+requires: []
+suggested_edges:
+- target_id: geopolitics.energy-security
+  edge_type: related_to
+- target_id: military.strategy.chokepoints
+  edge_type: related_to
+citations:
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_001
+  claim_text: This is a strategic scenario about maritime chokepoint control in a
+    conflict or post-conflict setting.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: Whatever you think of the timing, the recklessness, the betrayal of campaign
+      promises, this is about starving China's access to free-flowing oil.
+    start_char: 0
+    end_char: 86
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_002
+  claim_text: It looks at how control of oil flow, ports, islands, and sea lanes can
+    be used to shape political outcomes and energy access.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: This could be by occupying Kharg Island, or perhaps by securing the choke
+      point at the Straits on Qeshm Island, but either way there will likely be an
+      incursion by the US Marines before this is over.
+    start_char: 0
+    end_char: 186
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: At some point, Trump was going to have to make a move on the oil markets.
+      It started in Caracas in January.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_003
+  claim_text: Maritime chokepoints can affect global energy markets, regional security,
+    and diplomatic leverage.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: As long as the Straits of Hormuz are "closed" the price of oil will be
+      elevated.
+    start_char: 0
+    end_char: 79
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: Europe refuses to assist Trump escort ships through the chokepoint.
+    start_char: 0
+    end_char: 66
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: Hormuz is a classic physical chokepoint that has been used as a Sword
+      of Damocles over the entire global economy by Iran for decades.
+    start_char: 0
+    end_char: 131
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_004
+  claim_text: If oil exports are interrupted or controlled, the effects can spread
+    far beyond the immediate conflict zone.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The short-term pain of disruption is now the transition energy needed
+      to reorganize not only oil flow, by bringing duplicitous gulf states into line,
+      but also end the long-term threat of further regional chaos.
+    start_char: 0
+    end_char: 205
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_005
+  claim_text: A basic understanding of maritime geography is relevant.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: Iran is a signatory to the Convention on the Law of the Sea (UNCLOS),
+      even if it has not fully ratified it.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: the actual shipping lanes are almost entirely on the Omani side.
+    start_char: 0
+    end_char: 63
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_006
+  claim_text: Awareness of energy infrastructure and export routes is relevant.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: It started in Caracas in January. He detoured into Mexico to put the
+      cartels in the primary silverproducing region on notice, and now he's blown
+      up the biggest chokepoint in the world, the Strait of Hormuz.
+    start_char: 0
+    end_char: 199
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe.
+    start_char: 0
+    end_char: 86
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_007
+  claim_text: Knowledge of how military presence can affect access and movement is
+    relevant.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: there will likely be an incursion by the US Marines before this is over.
+    start_char: 0
+    end_char: 72
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: tankers are stalled waiting for orders. Ship captains and executives
+      are doing the cost/benefit analysis during maximum fog of war with billions
+      at stake and crazy people at the trigger.
+    start_char: 0
+    end_char: 184
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_008
+  claim_text: The source material frames this as a strategic question about whether
+    a force can secure key maritime points to gain leverage over post-conflict energy
+    access and regional outcomes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: For this to not be a massive mistake, the US needs to control the flow
+      of Iranian oil when the shooting stops.
+    start_char: 0
+    end_char: 109
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The short-term pain of disruption is now the transition energy needed
+      to reorganize not only oil flow, by bringing duplicitous gulf states into line,
+      but also end the long-term threat of further regional chaos.
+    start_char: 0
+    end_char: 205
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_009
+  claim_text: The emphasis is on analysis of consequences, not execution.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: Trump has bet his presidency on this and success is not assured.
+    start_char: 0
+    end_char: 64
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 145
+    support_strength: weak
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_010
+  claim_text: The scenario warns against underestimating resistance or the difficulty
+    of holding territory.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: Trump has bet his presidency on this and success is not assured.
+    start_char: 0
+    end_char: 64
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_011
+  claim_text: It warns against assuming control of a chokepoint automatically creates
+    stable leverage.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 119
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_012
+  claim_text: It warns against ignoring the wider economic and diplomatic fallout.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe.
+    start_char: 0
+    end_char: 86
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_013
+  claim_text: It warns about mission creep, where a limited objective expands into
+    a larger and riskier one.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: Trump has bet his presidency on this and success is not assured.
+    start_char: 0
+    end_char: 64
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_014
+  claim_text: It warns against misjudging the reliability of supply control or the
+    durability of occupation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The short-term pain of disruption is now the transition energy needed
+      to reorganize not only oil flow, by bringing duplicitous gulf states into line,
+      but also end the long-term threat of further regional chaos.
+    start_char: 0
+    end_char: 205
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_015
+  claim_text: The content contains military speculation and references to violence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: there will likely be an incursion by the US Marines before this is over.
+    start_char: 0
+    end_char: 72
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: Shooting missiles at commercial vessels in another country's territorial
+      water is nothing but an act of war.
+    start_char: 0
+    end_char: 106
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_016
+  claim_text: It is not an operational plan and should not be used as guidance for
+    harm.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 145
+    support_strength: weak
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_017
+  claim_text: The source is tied to a specific geopolitical setting including Iran,
+    Kharg Island, Qeshm Island, and U.S. domestic politics.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000015
+    excerpt: This could be by occupying Kharg Island, or perhaps by securing the choke
+      point at the Straits on Qeshm Island
+    start_char: 0
+    end_char: 111
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000008
+    excerpt: Most of the people in the so-called "True MAGA" camp around Steve Bannon
+      have thoroughly discredited themselves
+    start_char: 0
+    end_char: 112
+    support_strength: medium
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_018
+  claim_text: Control of maritime chokepoints can create strategic leverage while
+    also creating major political and humanitarian risks.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The short-term pain of disruption is now the transition energy needed
+      to reorganize not only oil flow, by bringing duplicitous gulf states into line,
+      but also end the long-term threat of further regional chaos.
+    start_char: 0
+    end_char: 205
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+bundle_overrides:
+  hook: Maritime chokepoints can shape oil prices, regional security, and diplomatic
+    leverage in a matter of days. Understanding this scenario helps you see why control
+    of a narrow sea lane or export route can matter far beyond the immediate conflict
+    zone.
+  primer: 'This knowledge object is about a strategic scenario: what happens when
+    a country or force tries to control a narrow maritime route, port, island, or
+    shipping lane after a conflict or during a tense standoff. The basic idea is simple:
+    if a lot of oil or other critical goods must pass through one place, then control
+    of that place can influence who gets access, how fast shipments move, and how
+    much pressure other countries feel.
+
+
+    The source material uses examples tied to Iran, Kharg Island, the Straits of Hormuz,
+    and outside military actors. Those details matter to the original setting, but
+    the broader lesson is general. Maritime chokepoints are important because they
+    connect geography to power. If shipping is delayed, blocked, or made uncertain,
+    the effects can spread into energy markets, trade, diplomacy, and regional stability.
+
+
+    This is not a how-to guide for military action. It is an analysis exercise. The
+    goal is to think through consequences: What happens to oil flow? Which countries
+    are affected? How might military presence change access? What political costs
+    come with trying to hold a chokepoint? The source warns that control is not the
+    same as stability. Even if a force gains temporary leverage, it may face resistance,
+    mission creep, economic backlash, and long-term diplomatic fallout.
+
+
+    A beginner-friendly way to approach this topic is to focus on three questions:
+    What is the chokepoint? Who depends on it? What happens if access is disrupted?
+    Once you can answer those, you can start to understand why maritime geography
+    matters in geopolitics and energy security.'
+  guide: "1. Start by identifying the chokepoint.\n   Look for the narrow sea lane,\
+    \ strait, port, island, or coastal route that matters most. In this scenario,\
+    \ the key idea is that a small geographic point can have outsized importance because\
+    \ many shipments must pass through it.\n\n2. Map the flow of goods.\n   Ask what\
+    \ is moving through the chokepoint. The source focuses on oil exports, but the\
+    \ same logic can apply to other critical trade flows. Note where the shipments\
+    \ come from and where they are going.\n\n3. Identify the stakeholders.\n   List\
+    \ the local actors, neighboring states, major importers, shipping companies, and\
+    \ outside powers that depend on the route. The source material suggests that disruptions\
+    \ can affect countries far beyond the immediate conflict area.\n\n4. Analyze the\
+    \ leverage.\n   Consider how control of the route might change bargaining power.\
+    \ Would it raise prices, slow shipments, or create uncertainty? Would it give\
+    \ one side temporary influence over negotiations or post-conflict arrangements?\n\
+    \n5. Check the risks.\n   Do not assume that control automatically creates lasting\
+    \ advantage. The source warns about resistance, the difficulty of holding territory,\
+    \ mission creep, and wider economic and diplomatic fallout. A chokepoint can be\
+    \ hard to secure and even harder to keep stable.\n\n6. Separate analysis from\
+    \ action.\n   This object is for strategic thinking, not operational planning.\
+    \ Keep the discussion at the level of consequences, incentives, and risks. Avoid\
+    \ turning the scenario into instructions for violence or disruption.\n\n7. Evaluate\
+    \ second-order effects.\n   Ask what happens after the first disruption. Oil prices\
+    \ may rise, shipping may reroute, allies may refuse support, and political pressure\
+    \ may increase. The source emphasizes that short-term control can create long-term\
+    \ chaos.\n\n8. Write a balanced assessment.\n   Summarize both the potential strategic\
+    \ benefit and the likely costs. A strong answer should explain why chokepoints\
+    \ matter, who is affected, and why the outcome is uncertain.\n\nA simple template\
+    \ you can use is: “If control of [chokepoint] changes, then [energy flow / access\
+    \ / bargaining power] may change, which could affect [regional security / markets\
+    \ / diplomacy], but the main risks are [resistance / escalation / economic fallout].”"
+  reference:
+  - 'Maritime chokepoint: a narrow route where shipping can be slowed, blocked, or
+    monitored'
+  - 'Energy export route: the path oil or gas takes from producer to market'
+  - 'Oil flow disruption: interruption, delay, or uncertainty in shipment movement'
+  - 'Strategic leverage: influence gained by controlling a critical route or asset'
+  - 'Mission creep: when a limited objective expands into a larger, riskier one'
+  - 'Second-order effects: indirect consequences that spread beyond the original event'
+  - 'Regional security: how nearby states and actors are affected by instability'
+  - 'Diplomatic fallout: political consequences for allies, rivals, and neutral states'
+  - 'Key caution: control of a chokepoint does not guarantee stable long-term control'
+  - 'Safety boundary: treat this as analysis, not as operational guidance'
+  worksheet:
+  - Identify one maritime chokepoint and describe why it matters in one paragraph.
+  - List three groups that would be affected if shipping through the chokepoint were
+    delayed.
+  - Draw a simple cause-and-effect chain showing how a disruption could affect oil
+    prices, trade, and diplomacy.
+  - Write two possible benefits and two possible risks of trying to control the chokepoint.
+  - Find one example of a second-order effect that is not immediate but could appear
+    later.
+  - Rewrite the scenario in neutral, non-operational language focused only on consequences.
+  - Create a short risk memo that explains why control of a chokepoint may be unstable
+    or temporary.
+  - Compare the immediate impact of disruption with the longer-term political and
+    economic impact.
+  teach_forward_kit:
+    three_minute_version: 'This scenario is about what happens when a force tries
+      to control a narrow sea route or oil-export route after conflict. The key idea
+      is that chokepoints matter because they can affect energy supplies, shipping,
+      and bargaining power. But the source also warns that control is not simple:
+      resistance, economic fallout, and diplomatic backlash can follow. The main lesson
+      is to analyze consequences, not to treat control as a guaranteed solution.'
+    ten_minute_outline:
+    - Define a maritime chokepoint in plain language.
+    - Explain why narrow sea routes matter for oil and trade.
+    - Use the Hormuz-style example to show how disruption can affect prices and access.
+    - Describe how military presence can change movement and bargaining power.
+    - Highlight the difference between temporary leverage and stable control.
+    - 'Review the main risks: resistance, mission creep, and wider fallout.'
+    - 'Close with the safety boundary: analysis only, not operational guidance.'
+    discussion_prompts:
+    - Why can a small geographic point have such large economic effects?
+    - What is the difference between short-term leverage and long-term control?
+    - Who is affected when oil flow is disrupted beyond the immediate conflict zone?
+    - Why might a plan that looks strategically useful still fail in practice?
+    - How do we keep this kind of scenario in the realm of analysis rather than action?

@@ -36,7 +36,7 @@ jobs:
         with:
           python-version: "3.14"
       - run: pip install -e ".[dev]"
-      - run: pytest tests/ --ignore=tests/test_integration.py -v
+      - run: pytest tests/ --ignore=tests/test_integration.py --ignore=tests/test_integration_audit.py --ignore=tests/test_integration_storage.py --ignore=tests/test_integration_embedding.py --ignore=tests/test_integration_publication.py --ignore=tests/test_integration_search.py --ignore=tests/test_integration_retrieval.py -v
 
   integration:
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
           python-version: "3.14"
       - run: pip install -e ".[dev]"
       - run: alembic upgrade head
-      - run: pytest tests/test_integration.py -v
+      - run: pytest tests/test_integration.py tests/test_integration_audit.py tests/test_integration_storage.py tests/test_integration_embedding.py tests/test_integration_publication.py tests/test_integration_search.py tests/test_integration_retrieval.py -v
 
   docker:
     runs-on: ubuntu-latest

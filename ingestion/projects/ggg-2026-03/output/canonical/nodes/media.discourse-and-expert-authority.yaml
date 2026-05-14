@@ -1,0 +1,619 @@
+id: media.discourse-and-expert-authority
+slug: media.discourse-and-expert-authority
+canonical_title: Discourse and Expert Authority
+markdown_body: '## What this is
+
+  This concept is about how people use expert authority, evidence, and shared facts
+  in public debate. It focuses on the difference between careful analysis and alarmist
+  framing. The core idea is that a real problem can be discussed honestly without
+  turning it into a story of total collapse or public hysteria.
+
+
+  ## Why it matters
+
+  Public debate works better when people can agree on basic facts and evaluate claims
+  against evidence. When that shared ground weakens, it becomes easier for rhetoric,
+  projection, or exaggerated certainty to replace careful reasoning. That can make
+  solvable problems seem impossible, and it can also make it harder to compare expert
+  views fairly.
+
+
+  ## What you need
+
+  - A claim, argument, or public statement to examine
+
+  - Access to evidence, data, or credible expert sources
+
+  - A way to compare different viewpoints without assuming one is automatically correct
+
+  - Willingness to separate the size of a problem from the tone used to describe it
+
+
+  ## How to do it
+
+  1. Identify the main claim being made.
+
+  2. Ask what evidence supports it.
+
+  3. Check whether the claim is based on shared facts or on strong rhetoric.
+
+  4. Compare conclusions across more than one credible source or expert view.
+
+  5. Look for signs that the problem is being framed as more total or final than the
+  evidence supports.
+
+  6. Separate what is known from what is being assumed.
+
+  7. Decide whether the issue is being described as a solvable problem or as an apocalyptic
+  narrative.
+
+
+  ## Common failure modes
+
+  - Treating rhetorical force as proof
+
+  - Inflating a real issue into a larger, more absolute crisis than the evidence supports
+
+  - Assuming expert disagreement means all views are equally strong
+
+  - Using projection or assumptions instead of evidence
+
+  - Falling into post-facts reasoning, where the conclusion is fixed before the facts
+  are checked
+
+
+  ## Safety/boundary notes
+
+  Do not treat rhetorical claims as verified facts. This concept is for evaluating
+  public claims and expert disagreement, not for dismissing evidence or replacing
+  analysis with personal opinion. Be careful not to confuse uncertainty with absence
+  of knowledge.
+
+
+  ## Local adaptation notes
+
+  The source material places this idea in a U.S. context and mentions climate, ecology,
+  and public discourse. In other settings, the same method still applies: identify
+  the claim, check the evidence, compare expert conclusions, and watch for alarmist
+  framing that makes a manageable issue seem beyond solution.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media literacy
+secondary_domains:
+- political analysis
+- science communication
+stage: foundation
+contexts:
+- public discourse
+- expert claims
+- policy debate
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A concept about how expert authority, shared facts, and public debate
+  interact, and how alarmist framing can distort solvable problems.
+summary_medium: 'This concept explains why public discussion depends on shared standards
+  for evidence and why expert authority matters when people are judging complex claims.
+  It also highlights a common failure mode: turning real but manageable problems into
+  exaggerated, apocalyptic narratives that make clear thinking harder.'
+plain_language: When people argue about complicated issues, it helps to ask what the
+  evidence actually shows and whether different experts agree on the basics. This
+  concept is about keeping public debate grounded in facts instead of letting dramatic
+  language or assumptions turn every problem into a crisis beyond repair.
+structured_data:
+  definition: A concept about how shared facts and expert authority support public
+    debate, and how alarmist framing can distort the understanding of real but solvable
+    problems.
+  key_questions:
+  - What is the actual claim being made?
+  - What evidence supports it?
+  - Are the facts shared, or is the argument mainly rhetorical?
+  - Do credible experts agree on the basics?
+  - Is the issue being framed more dramatically than the evidence supports?
+  - What is known, and what is only assumed?
+  misconceptions:
+  - If a claim sounds confident, it must be well supported.
+  - Any disagreement among experts means no reliable conclusion is possible.
+  - A serious problem must be described in apocalyptic terms to be taken seriously.
+  - Rhetorical intensity is the same as evidence.
+  - If a problem is complex, it cannot be analyzed carefully.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_001
+  claim_text: This concept is about how people use expert authority, evidence, and
+    shared facts in public debate.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The idea of the expert was based on academic authority, which still had
+      its drawbacks. At the time, we trusted academics to present facts honestly,
+      and debate the conclusions they drew from those facts with other experts.
+    start_char: 0
+    end_char: 181
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: First, we used to live in a world of intentional actors. They had a worldview
+      and tried to spread it. They made causal arguments. When we disagreed, we challenged
+      the facts they used their to support their logical arguments.
+    start_char: 0
+    end_char: 225
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_002
+  claim_text: It focuses on the difference between careful analysis and alarmist framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts. Rachel Carson's
+      Silent Spring, Ehrlich's The Population Bomb both guided the reader towards
+      what could only be described as eventual cataclysm.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+      Whether or not we fully accepted the argument, or the validity of the facts,
+      it was at least a rational process.
+    start_char: 0
+    end_char: 188
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_003
+  claim_text: The core idea is that a real problem can be discussed honestly without
+    turning it into a story of total collapse or public hysteria.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we've long lost the ability to frame a problem within a solvable context
+      without devolving into hysteria.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+      Whether or not we fully accepted the argument, or the validity of the facts,
+      it was at least a rational process.
+    start_char: 0
+    end_char: 188
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_004
+  claim_text: Public debate works better when people can agree on basic facts and
+    evaluate claims against evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality. If facts are either
+      unknown, or people can't agree on what they are, what hope is there of valid
+      argument or discourse? None, because all you have is noise.
+    start_char: 0
+    end_char: 217
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we trusted academics to present facts honestly, and debate the conclusions
+      they drew from those facts with other experts.
+    start_char: 0
+    end_char: 121
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_005
+  claim_text: When that shared ground weakens, it becomes easier for rhetoric, projection,
+    or exaggerated certainty to replace careful reasoning.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 0
+    end_char: 171
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: From there, we arrived in the post-facts hellscape we know today. It's
+      not that facts don't exist, it's that people can't agree on what they are, or
+      grasp the implications of what happens when we don't.
+    start_char: 0
+    end_char: 197
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_006
+  claim_text: That can make solvable problems seem impossible, and it can also make
+    it harder to compare expert views fairly.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we've long lost the ability to frame a problem within a solvable context
+      without devolving into hysteria.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: It was possible to be politically conservative, believe in ecology and
+      still disagree with the "environmental" arguments leftist activists presented.
+    start_char: 0
+    end_char: 147
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_007
+  claim_text: The concept asks users to identify the main claim being made.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: First, we used to live in a world of intentional actors. They had a worldview
+      and tried to spread it. They made causal arguments.
+    start_char: 0
+    end_char: 131
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_008
+  claim_text: The concept asks users to ask what evidence supports a claim.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: When we disagreed, we challenged the facts they used their to support
+      their logical arguments.
+    start_char: 0
+    end_char: 93
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_009
+  claim_text: The concept asks users to check whether a claim is based on shared facts
+    or on strong rhetoric.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts.
+    start_char: 0
+    end_char: 58
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Instead we live in a screaming panopticon where all that matters is what
+      color jersey you have on.
+    start_char: 0
+    end_char: 97
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_010
+  claim_text: The concept asks users to compare conclusions across more than one credible
+    source or expert view.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we trusted academics to present facts honestly, and debate the conclusions
+      they drew from those facts with other experts.
+    start_char: 0
+    end_char: 121
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: There was still debate about how to achieve the generally agreed-upon
+      goal to protect the natural environment.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_011
+  claim_text: The concept asks users to look for signs that a problem is being framed
+    as more total or final than the evidence supports.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts. Rachel Carson's
+      Silent Spring, Ehrlich's The Population Bomb both guided the reader towards
+      what could only be described as eventual cataclysm.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000008
+    excerpt: The most hyperbolic of these projections have Trump and his vice-president
+      J.D. Vance impeached and convicted on day one
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_012
+  claim_text: The concept asks users to separate what is known from what is only assumed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000007
+    excerpt: My opinion on this is irrelevant. Power politics doesn't care about your
+      feelings.
+    start_char: 0
+    end_char: 81
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality.
+    start_char: 0
+    end_char: 51
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_013
+  claim_text: The concept asks users to decide whether an issue is being described
+    as a solvable problem or as an apocalyptic narrative.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we've long lost the ability to frame a problem within a solvable context
+      without devolving into hysteria.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts. Rachel Carson's
+      Silent Spring, Ehrlich's The Population Bomb both guided the reader towards
+      what could only be described as eventual cataclysm.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_014
+  claim_text: A common failure mode is treating rhetorical force as proof.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_015
+  claim_text: A common failure mode is inflating a real issue into a larger, more
+    absolute crisis than the evidence supports.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts. Rachel Carson's
+      Silent Spring, Ehrlich's The Population Bomb both guided the reader towards
+      what could only be described as eventual cataclysm.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: we've long lost the ability to frame a problem within a solvable context
+      without devolving into hysteria.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_016
+  claim_text: A common failure mode is assuming expert disagreement means all views
+    are equally strong.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: It was an important conversation for me as it helped clarify in real
+      time what I was feeling but struggling to put into words.
+    start_char: 0
+    end_char: 124
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: At the time, we trusted academics to present facts honestly, and debate
+      the conclusions they drew from those facts with other experts.
+    start_char: 0
+    end_char: 134
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_017
+  claim_text: A common failure mode is using projection or assumptions instead of
+    evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 0
+    end_char: 171
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_018
+  claim_text: A common failure mode is falling into post-facts reasoning, where the
+    conclusion is fixed before the facts are checked.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: From there, we arrived in the post-facts hellscape we know today. It's
+      not that facts don't exist, it's that people can't agree on what they are, or
+      grasp the implications of what happens when we don't.
+    start_char: 0
+    end_char: 197
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_019
+  claim_text: Do not treat rhetorical claims as verified facts.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_020
+  claim_text: This concept is for evaluating public claims and expert disagreement,
+    not for dismissing evidence or replacing analysis with personal opinion.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+      Whether or not we fully accepted the argument, or the validity of the facts,
+      it was at least a rational process.
+    start_char: 0
+    end_char: 188
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality. If facts are either
+      unknown, or people can't agree on what they are, what hope is there of valid
+      argument or discourse? None, because all you have is noise.
+    start_char: 0
+    end_char: 217
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_021
+  claim_text: Be careful not to confuse uncertainty with absence of knowledge.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: how little is ultimately knowable as fact.
+    start_char: 0
+    end_char: 41
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality.
+    start_char: 0
+    end_char: 51
+    support_strength: medium
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_022
+  claim_text: The source material places this idea in a U.S. context and mentions
+    climate, ecology, and public discourse.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: It was possible to be politically conservative, believe in ecology and
+      still disagree with the "environmental" arguments leftist activists presented.
+    start_char: 0
+    end_char: 147
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: Whether it's global warming, climate change, acid rain, deforestation,
+      or the spotted owl, we've long lost the ability to frame a problem within a
+      solvable context without devolving into hysteria.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+- object_id: media.discourse-and-expert-authority
+  claim_id: clm_023
+  claim_text: 'In other settings, the same method still applies: identify the claim,
+    check the evidence, compare expert conclusions, and watch for alarmist framing
+    that makes a manageable issue seem beyond solution.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: At the time, we trusted academics to present facts honestly, and debate
+      the conclusions they drew from those facts with other experts.
+    start_char: 0
+    end_char: 134
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: There was still debate about how to achieve the generally agreed-upon
+      goal to protect the natural environment.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: we've long lost the ability to frame a problem within a solvable context
+      without devolving into hysteria.
+    start_char: 0
+    end_char: 108
+    support_strength: strong

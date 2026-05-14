@@ -1,0 +1,455 @@
+id: finance.goats-portfolio-holdings
+slug: finance.goats-portfolio-holdings
+canonical_title: GOATS Portfolio Holdings Table
+markdown_body: '## What this is
+
+  A holdings table for the GOATS portfolio. It lists several securities and shows
+  basic tracking information for each one, such as entry date, entry price, yield,
+  return, and position value.
+
+
+  ## Why it matters
+
+  A holdings table helps you see how each position is doing over time. It makes it
+  easier to compare holdings, track gains and losses, and understand whether performance
+  is coming from income, price appreciation, or both.
+
+
+  ## What you need
+
+  - A holdings table or portfolio list
+
+  - Entry dates and entry prices for each position
+
+  - Current price or current value information
+
+  - Yield and return figures, if available
+
+  - A way to compare positions side by side
+
+
+  ## How to do it
+
+  1. List each holding in the portfolio.
+
+  2. Record the entry date and entry price for each position.
+
+  3. Add current performance fields such as yield, return, and position value.
+
+  4. Compare holdings to see which positions have gained, lost, or produced income.
+
+  5. Review the table regularly so the information stays useful.
+
+
+  ## Common failure modes
+
+  - Treating the table as a full investment strategy when it is only a snapshot of
+  holdings
+
+  - Using outdated prices or returns
+
+  - Comparing positions without noticing that they may have different entry dates
+  or sizes
+
+  - Assuming the table alone explains why a holding was chosen
+
+
+  ## Safety/boundary notes
+
+  - This is informational only and is not investment advice.
+
+  - Portfolio data can change quickly, so a table may become outdated.
+
+  - A holdings table should not be used as the only basis for a buy or sell decision.
+
+
+  ## Local adaptation notes
+
+  The source suggests that entry dates and position values vary across holdings, which
+  means the table reflects individualized allocation timing and sizing. In a local
+  setting, you may need to adjust the columns to match your own portfolio tracking
+  method, data source, or reporting format.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: DRAFT
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- equities
+- commodities
+stage: reference
+contexts:
+- portfolio review
+- newsletter
+difficulty: 2
+cost_band: low
+risk_band: medium
+summary_short: A holdings table showing the GOATS portfolio’s securities, entry dates,
+  prices, yields, returns, and position values.
+summary_medium: This reference sheet presents a portfolio holdings table for the GOATS
+  portfolio. It lists multiple securities and shows key tracking fields such as entry
+  date, entry price, yield, return, and current position value. It is useful for reviewing
+  performance and comparing income and price movement across holdings.
+plain_language: This is a portfolio table that helps you see what is in the GOATS
+  portfolio and how each holding has performed. It is mainly for review and tracking,
+  not for giving investment advice. You can use it to compare holdings, check gains
+  or losses, and see how income and price changes contribute to overall results.
+structured_data:
+  definition: A portfolio holdings table that records securities in the GOATS portfolio
+    and tracks basic performance fields for review.
+  key_questions:
+  - What securities are currently in the portfolio?
+  - When was each position entered?
+  - What was the entry price for each holding?
+  - What yield, return, and position value does each holding show?
+  - Which holdings are contributing most to income or appreciation?
+  misconceptions:
+  - A holdings table is the same as an investment strategy.
+  - A single table can replace deeper analysis of risk, timing, and market conditions.
+  - Current values in a newsletter table will remain accurate for long periods.
+  - All holdings should be compared without considering different entry dates or position
+    sizes.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_001
+  claim_text: A holdings table for the GOATS portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '### *GOATS Portfolio*'
+    start_char: 0
+    end_char: 21
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_002
+  claim_text: It lists several securities and shows basic tracking information for
+    each one, such as entry date, entry price, yield, return, and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_003
+  claim_text: A holdings table helps you see how each position is doing over time.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_004
+  claim_text: It makes it easier to compare holdings, track gains and losses, and
+    understand whether performance is coming from income, price appreciation, or both.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_005
+  claim_text: You need a holdings table or portfolio list.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 34
+    support_strength: weak
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_006
+  claim_text: You need entry dates and entry prices for each position.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_007
+  claim_text: You need current price or current value information.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_008
+  claim_text: You need yield and return figures, if available.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_009
+  claim_text: You need a way to compare positions side by side.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_010
+  claim_text: The table should list each holding in the portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_011
+  claim_text: The table should record the entry date and entry price for each position.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_012
+  claim_text: The table should add current performance fields such as yield, return,
+    and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_013
+  claim_text: The table should be reviewed regularly so the information stays useful.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: For the past year or so I've been banging on about the US regaining control
+      over the pricing mechanisms of specific strategic commodities – gold, silver,
+      industrial metals.
+    start_char: 0
+    end_char: 126
+    support_strength: weak
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_014
+  claim_text: A holdings table is only a snapshot of holdings, not a full investment
+    strategy.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 126
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_015
+  claim_text: Using outdated prices or returns is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 118
+    support_strength: weak
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_016
+  claim_text: Comparing positions without noticing that they may have different entry
+    dates or sizes is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_017
+  claim_text: A holdings table alone does not explain why a holding was chosen.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 126
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_018
+  claim_text: This is informational only and is not investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 61
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_019
+  claim_text: Portfolio data can change quickly, so a table may become outdated.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Any publicly-obtained information contained herein is assumed to be reliable,
+      but is in no way guaranteed.
+    start_char: 0
+    end_char: 104
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_020
+  claim_text: A holdings table should not be used as the only basis for a buy or sell
+    decision.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.** Past results are no indication of future performance.
+      All investments are subject to risk, including the possibility of the complete
+      loss of any money invested.
+    start_char: 0
+    end_char: 224
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_021
+  claim_text: The source suggests that entry dates and position values vary across
+    holdings.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_022
+  claim_text: The table reflects individualized allocation timing and sizing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '*<sup>(1)</sup> Position Values are based on Initial Positions for GOLD
+      and GOATS of $2,500 and for GUNS of $1,000.'
+    start_char: 0
+    end_char: 114
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_023
+  claim_text: In a local setting, you may need to adjust the columns to match your
+    own portfolio tracking method, data source, or reporting format.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 95
+    support_strength: weak

@@ -7,11 +7,146 @@ from pathlib import Path
 import orjson
 import polars as pl
 import yaml
+from pydantic import BaseModel, Field, field_validator, model_validator
 from rich.console import Console
 
 from capability_commons.cli.ingest.llm_client import LLMClient
 from capability_commons.cli.ingest.models import SourceSegment
 from capability_commons.cli.ingest.project import IngestProject
+from capability_commons.domain.enums import (
+    COType,
+    CostBand,
+    LifecycleState,
+    RiskBand,
+    StageType,
+    VisibilityType,
+)
+
+
+REQUIRED_BODY_SECTIONS = (
+    "What this is",
+    "Why it matters",
+    "What you need",
+    "How to do it",
+    "Common failure modes",
+)
+
+# Object types that publish actionable how-to content. PLAN P1-9 requires
+# every such object to ship with a structured "can I do this now?" envelope
+# so the public answer composer can produce action_now / implementation_plan
+# / safety blocks without scraping markdown.
+ACTIONABLE_TYPES = {COType.SKILL_GUIDE, COType.PROJECT_BLUEPRINT}
+
+
+class ImplementationVariant(BaseModel, extra="allow"):
+    """One contextual variant of a how-to (renter, low-budget, off-grid, …)."""
+    label: str = Field(..., min_length=1)
+    when: str = Field(..., min_length=1)  # plain-language scope
+    notes: str | None = None
+
+
+class ImplementationEnvelope(BaseModel, extra="allow"):
+    """The "can I do this now?" envelope per PLAN.md retrieval P1-8 / ingest P1-9.
+
+    Every actionable object (skill_guide, project_blueprint) must populate this
+    so retrieval can surface a real action plan rather than a document blurb.
+    """
+    smallest_viable_version: str = Field(..., min_length=1,
+        description="The smallest thing the user can do RIGHT NOW that still helps.")
+    tools: list[str] = Field(default_factory=list)
+    materials: list[str] = Field(default_factory=list)
+    expected_time: str | None = Field(None, description="e.g. '30 minutes', '2 hours'")
+    expected_cost: str | None = Field(None, description="e.g. 'free', '$5–$20'")
+    success_checks: list[str] = Field(default_factory=list,
+        description="Concrete checks that confirm it worked.")
+    stop_conditions: list[str] = Field(default_factory=list,
+        description="Hard stops: when to abort and not continue.")
+    common_mistakes: list[str] = Field(default_factory=list)
+    variants: list[ImplementationVariant] = Field(default_factory=list,
+        description="Renter, low-budget, urban, off-grid adaptations.")
+    when_to_escalate: list[str] = Field(default_factory=list,
+        description="Conditions under which the user should call a pro.")
+
+
+class SuggestedEdge(BaseModel, extra="allow"):
+    target_id: str
+    edge_type: str
+
+
+class DraftObject(BaseModel, extra="allow"):
+    """Strict canonical-object schema used to validate every LLM draft.
+
+    Required fields here mirror the schema documented in USER_TEMPLATE so that
+    incomplete drafts fail validation rather than silently passing.
+    """
+    # Identity
+    id: str
+    slug: str
+    seed_type: str
+    co_type: COType
+    canonical_title: str
+    version_no: int = 1
+    lifecycle_state: LifecycleState = LifecycleState.DRAFT
+    visibility: VisibilityType = VisibilityType.PUBLIC
+    language_code: str = "en"
+
+    # Classification
+    primary_domain: str
+    secondary_domains: list[str] = []
+    stage: StageType
+    contexts: list[str] = []
+    difficulty: int = Field(..., ge=1, le=5)
+    cost_band: CostBand
+    risk_band: RiskBand
+
+    # Summaries / body
+    summary_short: str = Field(..., min_length=1)
+    summary_medium: str = Field(..., min_length=1)
+    plain_language: str = Field(..., min_length=1)
+    markdown_body: str = Field(..., min_length=1)
+
+    # Type-specific structured data + linkage
+    structured_data: dict
+    requires: list[str] = []
+    suggested_edges: list[SuggestedEdge] = []
+    citations: list = []
+
+    # Lineage (filled by pipeline, not the LLM)
+    source_segment_ids: list[str] = []
+
+    @field_validator("markdown_body")
+    @classmethod
+    def _body_has_required_sections(cls, v: str) -> str:
+        lower = v.lower()
+        missing = [s for s in REQUIRED_BODY_SECTIONS if s.lower() not in lower]
+        if missing:
+            raise ValueError(
+                "markdown_body missing required sections: " + ", ".join(missing)
+            )
+        return v
+
+    @model_validator(mode="after")
+    def _validate_implementation_envelope(self):
+        """Actionable types must carry a structured implementation envelope
+        under structured_data["implementation"] so the public answer composer
+        can produce action_now / implementation_plan blocks (PLAN P1-9)."""
+        if self.co_type not in ACTIONABLE_TYPES:
+            return self
+        envelope = (self.structured_data or {}).get("implementation")
+        if envelope is None:
+            raise ValueError(
+                f"{self.co_type.value} requires structured_data.implementation "
+                "(smallest_viable_version, tools, materials, success_checks, "
+                "stop_conditions, …)"
+            )
+        # Validate the envelope shape; keep the parsed instance back on the
+        # draft so downstream consumers see a normalized dict.
+        validated = ImplementationEnvelope.model_validate(envelope)
+        self.structured_data = {
+            **self.structured_data,
+            "implementation": validated.model_dump(),
+        }
+        return self
 
 SYSTEM_PROMPT = (
     "You are a Capability Commons object drafter. Convert source material into "
@@ -26,7 +161,13 @@ USER_TEMPLATE = """Target object YAML schema fields:
 - contexts, difficulty (1-5), cost_band, risk_band
 - summary_short, summary_medium, plain_language
 - markdown_body (with sections: What this is, Why it matters, What you need, How to do it, Common failure modes, Safety/boundary notes, Local adaptation notes)
-- structured_data (type-specific: tools, materials, success_criteria, failure_modes, safety_boundary for skills; goal, deliverables, acceptance_criteria for projects; definition, key_questions, misconceptions for concepts)
+- structured_data (type-specific: tools, materials, success_criteria, failure_modes, safety_boundary for skills; goal, deliverables, acceptance_criteria for projects; definition, key_questions, misconceptions for concepts).
+  For skill_guide and project_blueprint objects, also include
+  structured_data.implementation with: smallest_viable_version (one sentence),
+  tools (list), materials (list), expected_time, expected_cost,
+  success_checks (list), stop_conditions (list), common_mistakes (list),
+  variants (list of {{label, when, notes}} for renter / low-budget / urban /
+  off-grid), when_to_escalate (list of conditions for calling a pro).
 - requires (flat list of prerequisite slugs)
 - suggested_edges (list of {{target_id, edge_type}})
 - citations (empty list — will be populated in citation pass)
@@ -71,11 +212,14 @@ async def run_draft(
         if skip_existing and (project.drafts_dir / f"{slug}.yaml").exists():
             continue
         rows_to_process.append(row)
-        # Gather segment text for estimation
-        seg_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
-        for sid in seg_ids:
-            if sid in segments_by_id:
-                total_text += segments_by_id[sid].text
+        # Gather segment text for estimation (resolution is duplicated below
+        # because _resolve_seg_ids isn't defined yet at this point).
+        raw_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
+        src = row.get("source_id") or ""
+        for sid in raw_ids:
+            key = sid if sid in segments_by_id else f"{src}::{sid}"
+            if key in segments_by_id:
+                total_text += segments_by_id[key].text
 
     est_tokens = client.estimate_tokens(total_text + SYSTEM_PROMPT + USER_TEMPLATE)
     console.print(f"  {len(rows_to_process)} objects to draft (~{est_tokens:,} input tokens)")
@@ -90,20 +234,25 @@ async def run_draft(
             console.print("[yellow]Aborted.[/yellow]")
             return
 
-    # Draft objects
-    from pydantic import BaseModel
-
-    class DraftObject(BaseModel, extra="allow"):
-        id: str
-        slug: str
-        canonical_title: str
-        markdown_body: str
-        source_segment_ids: list[str] = []
+    def _resolve_seg_ids(row: dict) -> list[str]:
+        """Matrix CSV stores bare segment ids (`seg_000018`) but the segments
+        store keys them as `<source_id>::seg_000018`. Resolve both forms."""
+        raw = (row.get("segment_ids") or "").split("|") if row.get("segment_ids") else []
+        source_id = row.get("source_id") or ""
+        resolved: list[str] = []
+        for sid in raw:
+            if not sid:
+                continue
+            if sid in segments_by_id:
+                resolved.append(sid)
+            elif f"{source_id}::{sid}" in segments_by_id:
+                resolved.append(f"{source_id}::{sid}")
+        return resolved
 
     drafted = 0
     for row in rows_to_process:
         slug = row["candidate_slug"]
-        seg_ids = row.get("segment_ids", "").split("|") if row.get("segment_ids") else []
+        seg_ids = _resolve_seg_ids(row)
         segment_texts = "\n\n".join(
             f"[{sid} | pages {segments_by_id[sid].page_start}-{segments_by_id[sid].page_end}]\n{segments_by_id[sid].text}"
             for sid in seg_ids
@@ -128,8 +277,8 @@ async def run_draft(
             # Write as YAML
             draft_path = project.drafts_dir / f"{slug}.yaml"
             with open(draft_path, "w") as f:
-                yaml.dump(
-                    result.model_dump(),
+                yaml.safe_dump(
+                    result.model_dump(mode="json"),
                     f,
                     default_flow_style=False,
                     sort_keys=False,

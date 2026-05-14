@@ -1,0 +1,72 @@
+[
+  {
+    "action": "merge",
+    "rationale": "All three drafts describe the same underlying reference-sheet pattern: a portfolio holdings table that lists positions and tracks entry date, entry price, recent/current price, yield, return, and position value. The differences are portfolio-specific variants (GOATS, GOLD, GUNS) rather than distinct concepts, so they should be consolidated while preserving each source's portfolio context in the merged object.",
+    "canonical_slug": "finance.portfolio-holdings-table",
+    "deprecated_draft_ids": [
+      "finance.goats-portfolio-holdings",
+      "finance.gold-portfolio-holdings",
+      "finance.guns-portfolio-holdings"
+    ],
+    "merged_object": {
+      "canonical_title": "Portfolio Holdings Table",
+      "slug": "finance.portfolio-holdings-table",
+      "co_type": "reference_sheet",
+      "primary_domain": "finance",
+      "secondary_domains": [
+        "portfolio_management",
+        "equities",
+        "commodities",
+        "digital_assets",
+        "currency"
+      ],
+      "contexts": [
+        "portfolio review",
+        "newsletter"
+      ],
+      "risk_band": "medium",
+      "cost_band": "low",
+      "difficulty": 2,
+      "language_code": "en",
+      "lifecycle_state": "DRAFT",
+      "stage": "reference",
+      "seed_type": "reference_sheet",
+      "visibility": "public",
+      "requires": [],
+      "summary_short": "A holdings table that tracks portfolio positions, entry dates, prices, yields, returns, and position values.",
+      "summary_medium": "This reference sheet describes a portfolio holdings table used to review positions and track basic performance measures such as entry date, entry price, recent or current price, yield, total return, and position value. The source examples include GOATS, GOLD, and GUNS portfolio variants, showing that the same table structure can be applied to different portfolio compositions, including commodities, equities, currency, and digital assets.",
+      "plain_language": "This is a portfolio table that helps you see what is held and how each position has performed. It is mainly for review and tracking, not for giving investment advice. You can use it to compare holdings, check gains or losses, and see how income and price changes contribute to overall results.",
+      "markdown_body": "## What this is\n\nA holdings table for a portfolio. It lists holdings and shows basic tracking information for each one, such as entry date, entry price, recent or current price, current yield, total return, and position value.\n\n## Why it matters\n\nA holdings table helps you see how each position is doing over time. It makes it easier to compare holdings, track gains and losses, and understand whether performance is coming from income, price appreciation, or both.\n\n## What you need\n\n- A holdings table or portfolio list\n- Entry dates and entry prices for each position\n- Current price or current value information\n- Yield and return figures, if available\n- A way to compare positions side by side\n\n## How to do it\n\n1. List each holding in the portfolio.\n2. Record the entry date and entry price for each position.\n3. Add current performance fields such as yield, return, and position value.\n4. Compare holdings to see which positions have gained, lost, or produced income.\n5. Review the table regularly so the information stays useful.\n\n## Common failure modes\n\n- Treating the table as a full investment strategy when it is only a snapshot of holdings\n- Using outdated prices or returns\n- Comparing positions without noticing that they may have different entry dates or sizes\n- Assuming the table alone explains why a holding was chosen\n\n## Safety/boundary notes\n\n- This is informational only and is not investment advice.\n- Portfolio data can change quickly, so a table may become outdated.\n- A holdings table should not be used as the only basis for a buy or sell decision.\n\n## Local adaptation notes\n\nThe source examples show that entry dates and position values can vary across holdings, which means the table reflects individualized allocation timing and sizing. In a local setting, you may need to adjust the columns to match your own portfolio tracking method, data source, or reporting format.",
+      "structured_data": {
+        "definition": "A portfolio holdings table that records securities or other assets in a portfolio and tracks basic performance fields for review.",
+        "key_questions": [
+          "What assets are currently in the portfolio?",
+          "When was each position entered?",
+          "What was the entry price or cost basis?",
+          "What is the current value of each position?",
+          "What yield, return, and position value does each holding show?",
+          "How do returns compare across different asset classes or holdings?"
+        ],
+        "misconceptions": [
+          "A holdings table is the same as an investment strategy.",
+          "A holdings table explains the full reasoning behind the selection of holdings.",
+          "A strong-looking return in a table guarantees future performance.",
+          "All holdings should be compared without considering different entry dates, sizes, or asset types.",
+          "A snapshot value is the same as a guaranteed future result."
+        ]
+      },
+      "suggested_edges": [
+        {
+          "edge_type": "related_to",
+          "target_id": "finance.portfolio-review"
+        },
+        {
+          "edge_type": "related_to",
+          "target_id": "finance.asset-allocation"
+        }
+      ],
+      "source_segment_ids": []
+    },
+    "split_objects": []
+  }
+]

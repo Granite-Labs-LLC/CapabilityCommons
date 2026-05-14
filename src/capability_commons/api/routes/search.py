@@ -29,5 +29,6 @@ async def search(request: SearchRequest, session: DBSession, workspace: PublicWo
         top_k=request.top_k,
         object_types=request.object_types,
         only_published=request.only_published,
+        attributes=request.filters,
     )
     return SearchResponse(query=request.query, top_k=request.top_k, hits=hits)

@@ -123,6 +123,10 @@ class ValidationReport(BaseModel):
     errors: list[str]
     warnings: list[str]
     citation_coverage: float
+    # PLAN P1-8: separate gate for publish-readiness. When `strict=True`,
+    # additional checks run (≥2 citations per actionable object, presence of
+    # the implementation envelope, etc.) and any violation lands in `errors`.
+    publish_blockers: list[str] = []
 
 
 # --- Project Manifest ---
@@ -166,3 +170,8 @@ class ProjectManifest(BaseModel):
     sources: list[ManifestSource]
     llm: LLMConfig = LLMConfig()
     passes: PassesStatus = PassesStatus()
+    # PLAN P1-7: when set, every mark_pass_complete also mirrors progress
+    # into the IngestJob/IngestJobPass tables so contributors and reviewers
+    # can see live state via /v1/ingest/jobs/{id}. Filesystem stays the
+    # canonical workflow medium for the operator; the DB is the export.
+    job_id: str | None = None

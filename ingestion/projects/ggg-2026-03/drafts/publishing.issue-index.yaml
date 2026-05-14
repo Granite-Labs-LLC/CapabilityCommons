@@ -1,0 +1,671 @@
+id: publishing.issue-index
+slug: publishing.issue-index
+canonical_title: Issue Index
+markdown_body: '# What this is
+
+
+  An issue index is a list that helps readers move through a newsletter or similar
+  publication. It usually names sections, articles, or topics and shows the page where
+  each one appears.
+
+
+  # Why it matters
+
+
+  An index makes a publication easier to use. Readers can quickly find what they want
+  without reading the whole issue from start to finish. It is especially helpful when
+  an issue has several sections or repeated topics.
+
+
+  # What you need
+
+
+  - The issue or newsletter itself
+
+  - A list of the sections, article titles, or topics included
+
+  - Page numbers or another location system
+
+  - A consistent way to name items so readers can scan them easily
+
+
+  # How to do it
+
+
+  1. List the main sections or articles in the issue.
+
+  2. Add the page number or location for each item.
+
+  3. Keep the wording short and consistent.
+
+  4. Check that each title matches the content and that each page reference is correct.
+
+  5. Place the index where readers can find it easily, such as near the front of the
+  issue.
+
+
+  # Common failure modes
+
+
+  - Missing items that should be included
+
+  - Wrong page references
+
+  - Inconsistent naming for similar sections
+
+  - Too much detail, which makes the index harder to scan
+
+  - Using the index as a substitute for actual article content
+
+
+  # Safety/boundary notes
+
+
+  This object is about navigation and organization, not content creation. It does
+  not teach editorial judgment, fact-checking, or publishing strategy. It should not
+  be treated as a complete table of contents standard unless your local publication
+  uses it that way.
+
+
+  # Local adaptation notes
+
+
+  Different publications may organize an index in different ways. Some may use page
+  numbers, while others use section labels, issue numbers, or digital links. You can
+  adapt the format to fit your newsletter, archive, or reading platform as long as
+  the result still helps readers find items quickly.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: publishing
+secondary_domains:
+- information-organization
+stage: foundation
+contexts:
+- newsletter navigation
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: A simple index that helps readers find newsletter articles by page
+  or section.
+summary_medium: An issue index is a navigation aid for a newsletter or similar publication.
+  It lists sections, article titles, or topics and points readers to the page where
+  each item appears. It is useful for helping people scan an issue quickly, but it
+  is not itself instructional content.
+plain_language: An issue index is a guide to what is inside a newsletter or issue.
+  It helps readers find articles or sections by showing where they appear. It is mainly
+  for navigation, not for teaching a skill or explaining a topic in depth.
+structured_data:
+  definition: A navigation list for a newsletter or issue that maps article or section
+    titles to their page locations.
+  key_questions:
+  - What sections or articles are included in this issue?
+  - Where does each item appear?
+  - Are the titles and page references accurate and consistent?
+  - Will readers be able to scan the list quickly?
+  misconceptions:
+  - An index is the same as the full content of the issue.
+  - An index must always use page numbers.
+  - An index is only useful in print publications.
+requires: []
+suggested_edges: []
+citations:
+- object_id: publishing.issue-index
+  claim_id: clm_001
+  claim_text: An issue index is a list that helps readers move through a newsletter
+    or similar publication.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_002
+  claim_text: It usually names sections, articles, or topics and shows the page where
+    each one appears.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_003
+  claim_text: An index makes a publication easier to use.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_004
+  claim_text: Readers can quickly find what they want without reading the whole issue
+    from start to finish.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_005
+  claim_text: It is especially helpful when an issue has several sections or repeated
+    topics.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_006
+  claim_text: The issue or newsletter itself is needed to create an issue index.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_007
+  claim_text: A list of the sections, article titles, or topics included is needed
+    to create an issue index.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_008
+  claim_text: Page numbers or another location system are needed to create an issue
+    index.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_009
+  claim_text: A consistent way to name items so readers can scan them easily is needed
+    to create an issue index.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_010
+  claim_text: To make an issue index, list the main sections or articles in the issue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_011
+  claim_text: To make an issue index, add the page number or location for each item.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: publishing.issue-index
+  claim_id: clm_012
+  claim_text: To make an issue index, keep the wording short and consistent.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_013
+  claim_text: To make an issue index, check that each title matches the content and
+    that each page reference is correct.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_014
+  claim_text: To make an issue index, place the index where readers can find it easily,
+    such as near the front of the issue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_015
+  claim_text: Common failure modes include missing items that should be included.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_016
+  claim_text: Common failure modes include wrong page references.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_017
+  claim_text: Common failure modes include inconsistent naming for similar sections.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_018
+  claim_text: Common failure modes include too much detail, which makes the index
+    harder to scan.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_019
+  claim_text: Common failure modes include using the index as a substitute for actual
+    article content.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: publishing.issue-index
+  claim_id: clm_020
+  claim_text: This object is about navigation and organization, not content creation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_021
+  claim_text: It does not teach editorial judgment, fact-checking, or publishing strategy.
+  support: []
+- object_id: publishing.issue-index
+  claim_id: clm_022
+  claim_text: It should not be treated as a complete table of contents standard unless
+    your local publication uses it that way.
+  support: []
+- object_id: publishing.issue-index
+  claim_id: clm_023
+  claim_text: Different publications may organize an index in different ways.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000004
+    excerpt: '### *Index*
+
+
+      | The Pros and Cons of Warmaking                  | p. 2  |
+
+      |-------------------------------------------------|-------|
+
+      | Dragging the Cursor to Doomsday                 | p. 7  |
+
+      | Portfolio Review — The End of the Chaos Premium | p. 9  |
+
+      | Editorial: Breaking the Monolith                | p. 12 |
+
+      | Portfolio Table and Allocation Recommendations  | p. 13 |'
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: publishing.issue-index
+  claim_id: clm_024
+  claim_text: Some publications may use page numbers, while others may use section
+    labels, issue numbers, or digital links.
+  support: []
+- object_id: publishing.issue-index
+  claim_id: clm_025
+  claim_text: The format can be adapted to fit a newsletter, archive, or reading platform
+    as long as it still helps readers find items quickly.
+  support: []

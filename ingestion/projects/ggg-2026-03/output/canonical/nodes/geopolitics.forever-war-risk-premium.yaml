@@ -1,0 +1,331 @@
+id: geopolitics.forever-war-risk-premium
+slug: geopolitics.forever-war-risk-premium
+canonical_title: Forever War Risk Premium
+markdown_body: '## What this is
+
+  The "forever war risk premium" is a way to describe the extra costs that can build
+  up when conflict becomes recurring, prolonged, or hard to end. It treats war, proxy
+  conflict, and repeated instability as more than isolated events. Instead, they can
+  create a standing layer of uncertainty that affects markets, public services, and
+  everyday life.
+
+
+  ## Why it matters
+
+  When people expect conflict to continue, they often plan for the worst. That can
+  mean higher prices, more security spending, disrupted trade, weaker investment,
+  and stress on communities that are not directly on the front line. In this view,
+  peace-making and de-escalation are not only moral or diplomatic goals; they can
+  also reduce the ongoing costs of uncertainty.
+
+
+  ## What you need
+
+  - A way to identify recurring conflict drivers
+
+  - Basic awareness of how conflict can affect prices, trade, migration, and security
+
+  - A habit of checking whether a claim is about a specific local effect or a broader
+  systemic pattern
+
+
+  ## How to do it
+
+  1. Identify the conflict pattern being discussed: a single event, a repeated proxy
+  conflict, or a long-running war.
+
+  2. Ask what costs are being carried beyond the battlefield.
+
+  3. Look for spillovers such as inflation, disrupted supply chains, security spending,
+  migration pressure, or social instability.
+
+  4. Compare the likely costs of continued conflict with the likely benefits of de-escalation
+  or peace-making.
+
+  5. Separate direct evidence from broad claims about "global" incentives or system-wide
+  effects.
+
+
+  ## Common failure modes
+
+  - Normalizing permanent conflict as if it has no extra cost
+
+  - Treating every problem as if it comes from one cause only
+
+  - Overstating the reach of a conflict without evidence
+
+  - Confusing a local spillover with a universal rule
+
+
+  ## Safety/boundary notes
+
+  This is a framing concept, not a proof that every conflict creates the same effects.
+  Use it to organize analysis, not to replace evidence. Be careful not to turn it
+  into a blanket explanation for all inflation, insecurity, or political instability.
+
+
+  ## Local adaptation notes
+
+  Local conditions matter. In some places, the visible costs may be higher food or
+  fuel prices; in others, the main effects may be migration pressure, crime concerns,
+  disrupted services, or security risks. Adapt the analysis to the specific community,
+  region, or market you are studying.
+
+  '
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- economics
+- security studies
+stage: foundation
+contexts:
+- commentary
+- risk framing
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A concept that recurring conflict can create a lasting cost premium
+  in daily life and markets.
+summary_medium: This concept explains how repeated or open-ended conflict can raise
+  costs beyond the battlefield. It frames war and proxy conflict as sources of ongoing
+  risk that can show up in prices, insecurity, disrupted trade, migration pressure,
+  and other spillovers. It also suggests that de-escalation and peace-making can reduce
+  those costs.
+plain_language: When conflict keeps happening, people and markets often start paying
+  extra for uncertainty. That extra cost can show up as higher prices, weaker security,
+  disrupted supply chains, or pressure on communities far from the fighting. The idea
+  here is that peace efforts and de-escalation can lower those costs by reducing the
+  chance that conflict keeps spreading or repeating.
+structured_data:
+  definition: A concept describing the ongoing extra costs that can arise when conflict
+    is recurring, prolonged, or treated as permanent. It links war and proxy conflict
+    to a persistent risk premium in markets and daily life.
+  key_questions:
+  - What recurring conflict driver is creating uncertainty?
+  - Which costs are showing up outside the battlefield?
+  - Are the effects local, regional, or systemic?
+  - Would de-escalation likely reduce the risk premium?
+  - What evidence supports the claim, and what is only speculation?
+  misconceptions:
+  - All instability comes from one cause.
+  - A risk premium means the same thing in every place.
+  - Peace efforts always remove costs immediately.
+  - Conflict only affects soldiers and governments.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_001
+  claim_text: The "forever war risk premium" describes extra costs that build up when
+    conflict becomes recurring, prolonged, or hard to end.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000010
+    excerpt: These perma-conflicts are the true "Forever Wars" that Trump ran to not
+      start and, explicitly end as many as he could. Getting countries to make peace...
+      lowers that risk premium we all pay at the gas pump...
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: Hormuz is a classic physical chokepoint... That threat... has been part
+      of a global chaos premium the entire globe has had to factor into its risk pricing
+      for doing business.
+    start_char: 0
+    end_char: 208
+    support_strength: strong
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_002
+  claim_text: Recurring conflict can create a standing layer of uncertainty that affects
+    markets and daily life.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy... War does that to markets. They are the very
+      definition of uncertainty.
+    start_char: 0
+    end_char: 171
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: That chaos premium is a good source of revenue for anyone willing to
+      underwrite insurance for this risk.
+    start_char: 0
+    end_char: 104
+    support_strength: medium
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_003
+  claim_text: When people expect conflict to continue, they may plan for the worst.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: Ship captains and executives are doing the cost/benefit analysis during
+      maximum fog of war with billions at stake and crazy people at the trigger.
+    start_char: 0
+    end_char: 139
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: There are still a ton of things up in the air... A lot of business models
+      break at $100 per barrel oil. The dollar markets are tight.
+    start_char: 0
+    end_char: 132
+    support_strength: medium
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_004
+  claim_text: The concept links conflict to higher prices, security spending, disrupted
+    trade, weaker investment, and stress on communities beyond the front line.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: As long as the Straits of Hormuz are "closed" the price of oil will be
+      elevated... That said, to date, the war premium is real. And it will have real
+      consequences on the US and global economy.
+    start_char: 0
+    end_char: 183
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000010
+    excerpt: Getting countries to make peace... lowers that risk premium we all pay
+      at the gas pump, every April 15th in the US, or by burying a loved one after
+      a terrorist attack or drug overdose.
+    start_char: 0
+    end_char: 186
+    support_strength: strong
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_005
+  claim_text: Peace-making and de-escalation can reduce the ongoing costs of uncertainty.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000010
+    excerpt: Getting countries to make peace... lowers that risk premium we all pay
+      at the gas pump...
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: The short-term pain of disruption is now the transition energy needed
+      to reorganize... end the long-term threat of further regional chaos.
+    start_char: 0
+    end_char: 136
+    support_strength: medium
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_006
+  claim_text: The concept is a framing tool, not proof that every conflict creates
+    the same effects.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: Iran is a classic physical chokepoint... part of a global chaos premium...
+    start_char: 0
+    end_char: 95
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: War does that to markets. They are the very definition of uncertainty.
+    start_char: 0
+    end_char: 69
+    support_strength: weak
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_007
+  claim_text: Local conditions matter, and the visible effects may differ by place,
+    such as food or fuel prices, migration pressure, crime concerns, disrupted services,
+    or security risks.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000010
+    excerpt: Getting countries to make peace... lowers that risk premium we all pay
+      at the gas pump... or by burying a loved one after a terrorist attack or drug
+      overdose.
+    start_char: 0
+    end_char: 186
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: As long as the Straits of Hormuz are "closed" the price of oil will be
+      elevated...
+    start_char: 0
+    end_char: 78
+    support_strength: medium
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_008
+  claim_text: The concept should be used to organize analysis rather than replace
+    evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: That chaos premium is a good source of revenue for anyone willing to
+      underwrite insurance for this risk.
+    start_char: 0
+    end_char: 104
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: People still can't see it. Consider the reflexive apoplexy we see now...
+    start_char: 0
+    end_char: 75
+    support_strength: weak
+- object_id: geopolitics.forever-war-risk-premium
+  claim_id: clm_009
+  claim_text: The concept warns against turning it into a blanket explanation for
+    all inflation, insecurity, or political instability.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 108
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: A lot of business models break at $100 per barrel oil. The dollar markets
+      are tight.
+    start_char: 0
+    end_char: 84
+    support_strength: weak

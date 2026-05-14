@@ -1,0 +1,667 @@
+id: src.ggg.newsletter.2026-03#seg_000008
+slug: politics.electoral-tail-risk-analysis
+canonical_title: Electoral Tail Risk Analysis
+markdown_body: '## What this is
+
+  Electoral tail risk analysis is a way to think about elections as a changing risk
+  environment rather than a fixed snapshot. It asks what could still move the result
+  between now and Election Day, especially in midterm contests where the political
+  environment can shift over a long period.
+
+
+  The idea is to pay attention to low-probability but high-impact developments: foreign-policy
+  shocks, elite opposition, coalition splitting, demoralization campaigns, and media
+  narratives that may slowly reshape voter attitudes.
+
+
+  ## Why it matters
+
+  Election forecasts can be misleading if they treat current sentiment as permanent.
+  A race that looks settled today can still change if a major event changes the agenda,
+  if a governing coalition loses cohesion, or if a sustained message campaign affects
+  turnout and confidence.
+
+
+  This matters most when strategy depends on time. The farther away the election is,
+  the more room there is for conditions to change. Good analysis separates the immediate
+  reaction to an event from its longer-term effect.
+
+
+  ## What you need
+
+  - A clear timeline to Election Day
+
+  - A way to track coalition cohesion over time
+
+  - A list of possible shocks or narrative shifts
+
+  - Basic scenario thinking: best case, expected case, and adverse case
+
+  - Local indicators that show whether voter fatigue, elite conflict, or issue salience
+  is changing
+
+
+  ## How to do it
+
+  1. Start with the current political baseline.
+
+  2. Identify the main forces that could change the race: policy shocks, opposition
+  coordination, coalition fractures, and media framing.
+
+  3. Ask which of those forces are temporary and which could persist.
+
+  4. Stress-test the election under different scenarios over time, not just at one
+  moment.
+
+  5. Watch for signs that a coalition is holding together or splitting apart.
+
+  6. Revisit the analysis regularly, because the risk picture can change as the campaign
+  unfolds.
+
+
+  ## Common failure modes
+
+  - Assuming current sentiment will stay the same until the election
+
+  - Treating a short-term reaction as a lasting shift
+
+  - Underestimating the effect of narrative warfare or repeated messaging
+
+  - Ignoring signs of coalition fatigue or elite defection
+
+  - Focusing only on polls and missing slower structural changes
+
+
+  ## Safety/boundary notes
+
+  This is an analytical framework, not a prediction guarantee. It should be used to
+  improve judgment, not to claim certainty about election outcomes.
+
+
+  Be careful not to overstate the effect of any single event. Political environments
+  are noisy, and many apparent shocks fade quickly.
+
+
+  ## Local adaptation notes
+
+  Apply this framework to the election calendar, coalition structure, and issue environment
+  in your own setting. Useful local signals may include:
+
+  - Local election cycles and filing deadlines
+
+  - Signs of coalition fracture or elite disagreement
+
+  - Issue-based voter fatigue
+
+  - Changes in media attention or message discipline
+
+
+  The specific risks will vary by country, state, district, and campaign context.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: politics
+secondary_domains:
+- elections
+- risk analysis
+stage: foundation
+contexts:
+- commentary
+- midterm strategy
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A way to think about how shocks, elite conflict, and media narratives
+  can change election outcomes over time.
+summary_medium: 'This concept frames election strategy as a risk problem: foreign-policy
+  shocks, opposition behavior, coalition cohesion, and media narratives can all affect
+  midterm results, but their effects unfold over time and may change before voters
+  cast ballots.'
+plain_language: Electoral tail risk analysis means looking beyond today’s polls or
+  headlines and asking what unusual events or slow-moving changes could still shift
+  an election. It focuses on whether a shock, a split in a coalition, or a sustained
+  narrative campaign could change the outcome later, even if the current situation
+  looks stable.
+structured_data:
+  definition: A political risk framework for evaluating how shocks, elite conflict,
+    coalition cohesion, and media narratives may affect election outcomes over time.
+  key_questions:
+  - What events could still change the race before Election Day?
+  - Which risks are temporary, and which could persist?
+  - Is the governing or opposition coalition holding together?
+  - Are media narratives or repeated messages changing voter attitudes?
+  - How does the risk picture change as time passes?
+  misconceptions:
+  - Current polling or sentiment will necessarily persist unchanged.
+  - A short-term reaction is the same as a long-term trend.
+  - Narrative campaigns cannot affect election outcomes.
+  - Only major scandals matter; slower coalition changes do not.
+requires: []
+suggested_edges: []
+citations:
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_001
+  claim_text: Electoral tail risk analysis is a way to think about elections as a
+    changing risk environment rather than a fixed snapshot.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_002
+  claim_text: It asks what could still move the result between now and Election Day,
+    especially in midterm contests where the political environment can shift over
+    a long period.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: For months we've had to navigate every decision Trump makes based on
+      a single framework, can he carry the midterm elections this November?
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_003
+  claim_text: The idea is to pay attention to low-probability but high-impact developments
+    such as foreign-policy shocks, elite opposition, coalition splitting, demoralization
+    campaigns, and media narratives that may slowly reshape voter attitudes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, let's look at some real tail risks going into this summer.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Iran and Davos are calculating that Trump has a very low pain threshold
+      because of the midterms. Their demoralization campaign launched from every front
+      in this 5th generation war feeds this.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_004
+  claim_text: Election forecasts can be misleading if they treat current sentiment
+    as permanent.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: If nothing changes between now and then, yes. No question. The problem
+      with that is there are nearly eight months between now and election day. And
+      there is a lot of change we should expect between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_005
+  claim_text: A race that looks settled today can still change if a major event changes
+    the agenda, if a governing coalition loses cohesion, or if a sustained message
+    campaign affects turnout and confidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_006
+  claim_text: This matters most when strategy depends on time.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_007
+  claim_text: The farther away the election is, the more room there is for conditions
+    to change.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_008
+  claim_text: Good analysis separates the immediate reaction to an event from its
+    longer-term effect.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_009
+  claim_text: A clear timeline to Election Day is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_010
+  claim_text: A way to track coalition cohesion over time is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The project to begin splitting the MAGA coalition started within minutes
+      of Thomas Crooks missing Trump at Butler, PA.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Their demoralization campaign launched from every front in this 5th generation
+      war feeds this.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_011
+  claim_text: A list of possible shocks or narrative shifts is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, let's look at some real tail risks going into this summer.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_012
+  claim_text: Basic scenario thinking should include best case, expected case, and
+    adverse case.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000026
+    excerpt: If Trump's Iran gambit goes on too long, however, there is the risk of
+      a deflationary wave across all sectors as credit markets seize up. This means
+      I wouldn't chase price into this current rally but let this ride. If Trump ties
+      up Iran quickly, the fear currently in the investment community will subside
+      and commodities should rally as the world gets back to work and critical shortages
+      across all commodity classes will take time to alleviate.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_013
+  claim_text: Local indicators may show whether voter fatigue, elite conflict, or
+    issue salience is changing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Most of the people in the so-called "True MAGA" camp around Steve Bannon
+      have thoroughly discredited themselves after
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_014
+  claim_text: The main forces that could change the race include policy shocks, opposition
+    coordination, coalition fractures, and media framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Given that Davos and his other myriad enemies would like nothing more
+      than for the global architecture and flow of money and power to return to the
+      pre-Trump status quo, they will do everything possible to queer the midterms,
+      impeach him, end MAGA, and run the table on the US.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, let's look at some real tail risks going into this summer.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_015
+  claim_text: Some risks are temporary and some could persist.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_016
+  claim_text: The governing or opposition coalition may or may not be holding together.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The project to begin splitting the MAGA coalition started within minutes
+      of Thomas Crooks missing Trump at Butler, PA.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_017
+  claim_text: Media narratives or repeated messages can change voter attitudes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Their demoralization campaign launched from every front in this 5th generation
+      war feeds this.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_018
+  claim_text: The risk picture changes as time passes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_019
+  claim_text: Assuming current sentiment will stay the same until the election is
+    a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: If nothing changes between now and then, yes. No question. The problem
+      with that is there are nearly eight months between now and election day. And
+      there is a lot of change we should expect between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_020
+  claim_text: A short-term reaction should not be treated as a lasting shift.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_021
+  claim_text: Narrative warfare or repeated messaging can have an effect.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Their demoralization campaign launched from every front in this 5th generation
+      war feeds this.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_022
+  claim_text: Coalition fatigue or elite defection should not be ignored.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Most of the people in the so-called "True MAGA" camp around Steve Bannon
+      have thoroughly discredited themselves after
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The aftershocks of their crash-outs and obvious psychological operations
+      may convince a few people to stay home this fall, but these will only linger
+      if nothing changes between now and then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_023
+  claim_text: Focusing only on polls can miss slower structural changes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The problem with that is there are nearly eight months between now and
+      election day. And there is a lot of change we should expect between now and
+      then.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_024
+  claim_text: This is an analytical framework, not a prediction guarantee.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: No guarantee of any kind is implied or possible where projections of
+      future conditions are attempted.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_025
+  claim_text: It should be used to improve judgment, not to claim certainty about
+    election outcomes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: No guarantee of any kind is implied or possible where projections of
+      future conditions are attempted.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_026
+  claim_text: Useful local signals may include local election cycles and filing deadlines,
+    signs of coalition fracture or elite disagreement, issue-based voter fatigue,
+    and changes in media attention or message discipline.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Local election cycles and filing deadlines
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Signs of coalition fracture or elite disagreement
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Issue-based voter fatigue
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Changes in media attention or message discipline
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: politics.electoral-tail-risk-analysis
+  claim_id: clm_027
+  claim_text: The specific risks will vary by country, state, district, and campaign
+    context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Apply this framework to the election calendar, coalition structure, and
+      issue environment in your own setting.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: The specific risks will vary by country, state, district, and campaign
+      context.
+    start_char: 0
+    end_char: 0
+    support_strength: strong

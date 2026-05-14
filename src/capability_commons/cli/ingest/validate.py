@@ -30,15 +30,78 @@ STRUCTURED_DATA_REQUIRED: dict[str, list[str]] = {
     "assessment": ["assessment_type"],
 }
 
+# PLAN P1-8 publish-gate constants.
+ACTIONABLE_TYPES = {"skill_guide", "project_blueprint"}
+MIN_CITATIONS_PER_PUBLISHED_OBJECT = 2
+ENVELOPE_REQUIRED_FIELDS = (
+    "smallest_viable_version",
+    "stop_conditions",
+    "success_checks",
+)
 
-def run_validate(project: IngestProject) -> ValidationReport:
+
+def _check_publish_gate(obj: dict, slug: str, lifecycle: str) -> list[str]:
+    """Run the strict publish-readiness checks for a single draft and return
+    a list of blocker descriptions. Empty list = ready to publish."""
+    if lifecycle != "published":
+        return []
+    blockers: list[str] = []
+    co_type = (obj.get("co_type") or obj.get("candidate_type") or "").lower().replace(" ", "_")
+
+    # 1. Citation precision: every published object needs ≥2 citations.
+    n_citations = len(obj.get("citations") or [])
+    if n_citations < MIN_CITATIONS_PER_PUBLISHED_OBJECT:
+        blockers.append(
+            f"{slug}: published objects need at least "
+            f"{MIN_CITATIONS_PER_PUBLISHED_OBJECT} citations (has {n_citations})"
+        )
+
+    # 2. Implementation envelope required for actionable types.
+    if co_type in ACTIONABLE_TYPES:
+        envelope = (obj.get("structured_data") or {}).get("implementation")
+        if not envelope:
+            blockers.append(
+                f"{slug}: {co_type} requires structured_data.implementation envelope"
+            )
+        else:
+            missing = [
+                f for f in ENVELOPE_REQUIRED_FIELDS if not envelope.get(f)
+            ]
+            if missing:
+                blockers.append(
+                    f"{slug}: implementation envelope missing: {', '.join(missing)}"
+                )
+
+    # 3. Safety review for high-risk content.
+    risk = obj.get("risk_band", "")
+    if risk in ("high", "expert_only"):
+        sd = obj.get("structured_data") or {}
+        safety = sd.get("safety_boundary") or sd.get("safety_review")
+        if not safety:
+            blockers.append(
+                f"{slug}: risk_band={risk} requires structured_data.safety_boundary "
+                "(or safety_review note) before publish"
+            )
+
+    return blockers
+
+
+def run_validate(project: IngestProject, *, strict: bool = False) -> ValidationReport:
     """Validate all drafts and edges in a project.
 
     This is the release gate for ingest output. Errors block loading;
     warnings are advisory.
+
+    When `strict=True`, additional publish-gate checks run (PLAN P1-8):
+    every object with lifecycle_state=='published' must have ≥2 citations,
+    actionable types (skill_guide/project_blueprint) must carry an
+    implementation envelope, and high-risk content must have a safety
+    review note. Violations populate `publish_blockers` and are also
+    surfaced through `errors`.
     """
     errors: list[str] = []
     warnings: list[str] = []
+    publish_blockers: list[str] = []
 
     # Load segments for cross-referencing
     segment_ids: set[str] = set()
@@ -111,11 +174,16 @@ def run_validate(project: IngestProject) -> ValidationReport:
         if citations:
             objects_with_citations += 1
             total_citations += len(citations)
-            # Validate citation structure
+            # Validate citation structure. The canonical post-cite-pass shape
+            # nests source_id inside each support[] span (ClaimCitation), but
+            # legacy seed CSV cites carry source_id at the top level. Accept
+            # either form; warn only when neither is present.
             for i, cit in enumerate(citations):
-                if not cit.get("source_id"):
+                support = cit.get("support") or cit.get("spans") or []
+                top_source = cit.get("source_id")
+                if not top_source and not any(s.get("source_id") for s in support):
                     warnings.append(f"{slug}: citation[{i}] missing source_id")
-                for span in cit.get("spans", []):
+                for span in support:
                     if not span.get("excerpt"):
                         warnings.append(f"{slug}: citation[{i}] has span without excerpt")
         else:
@@ -136,6 +204,10 @@ def run_validate(project: IngestProject) -> ValidationReport:
             safety = sd.get("safety_boundary") or obj.get("payload", {}).get("safety_boundary")
             if not safety:
                 errors.append(f"{slug}: risk_band={risk} requires safety_boundary")
+
+        # Strict publish-gate checks (PLAN P1-8)
+        if strict:
+            publish_blockers.extend(_check_publish_gate(obj, slug, lifecycle))
 
     # Duplicate slugs are errors
     for slug, files in slug_files.items():
@@ -166,6 +238,11 @@ def run_validate(project: IngestProject) -> ValidationReport:
             f"Citation coverage {coverage:.0%} is below minimum threshold {MIN_CITATION_COVERAGE:.0%}"
         )
 
+    # Surface publish-gate blockers as errors so the load step refuses to ship
+    # broken content. Keep them in `publish_blockers` too for granular UI.
+    if strict and publish_blockers:
+        errors.extend(publish_blockers)
+
     return ValidationReport(
         objects_count=objects_count,
         edges_count=edges_count,
@@ -173,6 +250,7 @@ def run_validate(project: IngestProject) -> ValidationReport:
         errors=errors,
         warnings=warnings,
         citation_coverage=coverage,
+        publish_blockers=publish_blockers,
     )
 
 
@@ -185,6 +263,13 @@ def print_validation_report(report: ValidationReport, console: Console | None = 
     console.print(f"  Edges: {report.edges_count}")
     console.print(f"  Citations: {report.citations_count}")
     console.print(f"  Citation coverage: {report.citation_coverage:.0%}")
+
+    if report.publish_blockers:
+        console.print(
+            f"\n[red bold]Publish blockers ({len(report.publish_blockers)}):[/red bold]"
+        )
+        for b in report.publish_blockers:
+            console.print(f"  [red]✗[/red] {b}")
 
     if report.errors:
         console.print(f"\n[red bold]Errors ({len(report.errors)}):[/red bold]")

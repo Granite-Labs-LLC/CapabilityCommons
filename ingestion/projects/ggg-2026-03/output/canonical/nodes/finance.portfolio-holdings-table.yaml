@@ -1,0 +1,132 @@
+canonical_title: Portfolio Holdings Table
+slug: finance.portfolio-holdings-table
+co_type: reference_sheet
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- equities
+- commodities
+- digital_assets
+- currency
+contexts:
+- portfolio review
+- newsletter
+risk_band: moderate
+cost_band: low
+difficulty: 2
+language_code: en
+lifecycle_state: draft
+stage: foundation
+seed_type: reference_sheet
+visibility: public
+requires: []
+summary_short: A holdings table that tracks portfolio positions, entry dates, prices,
+  yields, returns, and position values.
+summary_medium: This reference sheet describes a portfolio holdings table used to
+  review positions and track basic performance measures such as entry date, entry
+  price, recent or current price, yield, total return, and position value. The source
+  examples include GOATS, GOLD, and GUNS portfolio variants, showing that the same
+  table structure can be applied to different portfolio compositions, including commodities,
+  equities, currency, and digital assets.
+plain_language: This is a portfolio table that helps you see what is held and how
+  each position has performed. It is mainly for review and tracking, not for giving
+  investment advice. You can use it to compare holdings, check gains or losses, and
+  see how income and price changes contribute to overall results.
+markdown_body: '## What this is
+
+
+  A holdings table for a portfolio. It lists holdings and shows basic tracking information
+  for each one, such as entry date, entry price, recent or current price, current
+  yield, total return, and position value.
+
+
+  ## Why it matters
+
+
+  A holdings table helps you see how each position is doing over time. It makes it
+  easier to compare holdings, track gains and losses, and understand whether performance
+  is coming from income, price appreciation, or both.
+
+
+  ## What you need
+
+
+  - A holdings table or portfolio list
+
+  - Entry dates and entry prices for each position
+
+  - Current price or current value information
+
+  - Yield and return figures, if available
+
+  - A way to compare positions side by side
+
+
+  ## How to do it
+
+
+  1. List each holding in the portfolio.
+
+  2. Record the entry date and entry price for each position.
+
+  3. Add current performance fields such as yield, return, and position value.
+
+  4. Compare holdings to see which positions have gained, lost, or produced income.
+
+  5. Review the table regularly so the information stays useful.
+
+
+  ## Common failure modes
+
+
+  - Treating the table as a full investment strategy when it is only a snapshot of
+  holdings
+
+  - Using outdated prices or returns
+
+  - Comparing positions without noticing that they may have different entry dates
+  or sizes
+
+  - Assuming the table alone explains why a holding was chosen
+
+
+  ## Safety/boundary notes
+
+
+  - This is informational only and is not investment advice.
+
+  - Portfolio data can change quickly, so a table may become outdated.
+
+  - A holdings table should not be used as the only basis for a buy or sell decision.
+
+
+  ## Local adaptation notes
+
+
+  The source examples show that entry dates and position values can vary across holdings,
+  which means the table reflects individualized allocation timing and sizing. In a
+  local setting, you may need to adjust the columns to match your own portfolio tracking
+  method, data source, or reporting format.'
+structured_data:
+  definition: A portfolio holdings table that records securities or other assets in
+    a portfolio and tracks basic performance fields for review.
+  key_questions:
+  - What assets are currently in the portfolio?
+  - When was each position entered?
+  - What was the entry price or cost basis?
+  - What is the current value of each position?
+  - What yield, return, and position value does each holding show?
+  - How do returns compare across different asset classes or holdings?
+  misconceptions:
+  - A holdings table is the same as an investment strategy.
+  - A holdings table explains the full reasoning behind the selection of holdings.
+  - A strong-looking return in a table guarantees future performance.
+  - All holdings should be compared without considering different entry dates, sizes,
+    or asset types.
+  - A snapshot value is the same as a guaranteed future result.
+suggested_edges:
+- edge_type: related_to
+  target_id: finance.portfolio-review
+- edge_type: related_to
+  target_id: finance.asset-allocation
+source_segment_ids: []

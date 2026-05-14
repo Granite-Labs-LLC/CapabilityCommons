@@ -5,7 +5,7 @@ import uuid
 from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse, PlainTextResponse
 
-from capability_commons.api.deps import CurrentWorkspace, DBSession
+from capability_commons.api.deps import CurrentWorkspace, DBSession, PublicWorkspace
 from capability_commons.retrieval.service import RetrievalService
 from capability_commons.schemas.retrieval import EvidencePackResponse, RetrievalRequest, RetrievalRunResponse, RetrievalStepResponse
 
@@ -16,7 +16,7 @@ router = APIRouter()
 async def retrieve_evidence_pack(
     request: RetrievalRequest,
     session: DBSession,
-    workspace: CurrentWorkspace,
+    workspace: PublicWorkspace,
     format: str = Query(default="json", pattern="^(json|markdown)$"),
 ):
     request.workspace_id = workspace.id

@@ -30,6 +30,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from capability_commons.db.base import Base
 from capability_commons.domain.enums import (
+    AuditEventType,
     COType,
     ContradictionDimension,
     ContradictionStatus,
@@ -164,7 +165,7 @@ class ContextObjectVersion(Base):
         Computed(
             """
             to_tsvector(
-              'english',
+              'english_unaccent',
               coalesce(title, '') || ' ' ||
               coalesce(summary_short, '') || ' ' ||
               coalesce(summary_medium, '') || ' ' ||
@@ -585,3 +586,23 @@ class Feedback(Base):
     comment: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
     ip_hash: Mapped[str | None] = mapped_column(String(64), nullable=True)
+
+
+class AuditEvent(Base):
+    """Append-only event log for governance transparency."""
+
+    __tablename__ = "audit_events"
+    __table_args__ = (
+        Index("idx_audit_workspace_created", "workspace_id", "created_at"),
+        Index("idx_audit_object_created", "target_object_id", "created_at"),
+    )
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    event_type: Mapped[AuditEventType] = mapped_column(_enum(AuditEventType, "audit_event_type"), nullable=False)
+    actor_key_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("api_keys.id", ondelete="SET NULL"), nullable=True)
+    target_object_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_objects.id", ondelete="SET NULL"), nullable=True)
+    target_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True)
+    target_edge_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("edges.id", ondelete="SET NULL"), nullable=True)
+    detail: Mapped[dict[str, Any] | None] = mapped_column(JSONB, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))

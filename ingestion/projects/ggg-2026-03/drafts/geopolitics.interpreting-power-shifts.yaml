@@ -1,0 +1,177 @@
+id: geopolitics.interpreting-power-shifts
+slug: geopolitics.interpreting-power-shifts
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Interpreting Power Shifts in Geopolitics
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- political analysis
+- economics
+stage: advanced
+contexts:
+- commentary
+- market interpretation
+- statecraft
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Guide to interpreting major policy moves as power politics.
+summary_medium: A practical guide for reading major policy moves as power politics,
+  using examples like the Fed, Brexit, and Trump-era actions to illustrate how actors
+  use leverage and timing to shape outcomes.
+plain_language: This guide helps you understand how global policy decisions are made
+  through power politics, using real-world examples to show how leaders use their
+  influence to achieve goals.
+markdown_body: '### What this is
+
+  This is a skill guide for interpreting major geopolitical and economic policy moves
+  through the lens of power politics. It focuses on understanding how actions, timing,
+  and institutional control are used by actors to shape global outcomes.
+
+
+  ### Why it matters
+
+  Understanding power politics is crucial for interpreting global events and policy
+  decisions. It reveals the underlying motives and strategies that shape international
+  relations and economic policies, which can affect markets and political landscapes.
+
+
+  ### What you need
+
+  To effectively interpret power shifts, you need to observe policy changes, analyze
+  market signals, and compare historical events. Familiarity with key concepts like
+  institutional leverage and monetary policy is beneficial.
+
+
+  ### How to do it
+
+  Begin by analyzing the motives behind policy actions and their outcomes. Compare
+  stated goals with structural effects and track how shifts alter bargaining power.
+  Use historical comparisons to identify patterns and predict future moves.
+
+
+  ### Common failure modes
+
+  Avoid overrelying on ideological biases or assuming that consensus language reflects
+  the true nature of negotiations. Recognize that power politics often operates behind
+  a facade of inclusiveness and compromise.
+
+
+  ### Safety/boundary notes
+
+  Be cautious of drawing conclusions without sufficient evidence or understanding
+  of the broader geopolitical context.
+
+
+  ### Local adaptation notes
+
+  Consider how central bank policies might affect local markets, especially in regions
+  exposed to dollar pricing or rate shocks.'
+structured_data:
+  tools:
+  - policy observation
+  - market signals
+  - historical comparison
+  materials: []
+  success_criteria:
+  - Accurately infer motives from policy actions
+  - Identify shifts in bargaining power
+  failure_modes:
+  - Overreliance on ideological priors
+  - Assuming consensus language reflects actual negotiation
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: Analyze a recent policy shift and identify the power
+      dynamics involved.
+    tools:
+    - policy observation
+    - market signals
+    materials: []
+    expected_time: Varies depending on the complexity of the policy shift
+    expected_cost: Minimal, primarily time investment
+    success_checks:
+    - Correctly identify the motives behind a policy move
+    - Understand the impact on global power dynamics
+    stop_conditions:
+    - Inability to gather sufficient data
+    - Misinterpretation of key signals
+    common_mistakes:
+    - Ignoring historical context
+    - Overemphasizing stated goals
+    variants:
+    - label: Urban
+      when: Analyzing policy impacts on urban economies
+      notes: Consider the specific economic and political factors affecting urban
+        areas.
+    when_to_escalate:
+    - If unable to discern motives behind a policy move
+    - If local impacts are unclear
+requires: []
+suggested_edges: []
+citations:
+- object_id: geopolitics.interpreting-power-shifts
+  claim_id: clm_001
+  claim_text: Understanding power politics is crucial for interpreting global events
+    and policy decisions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000006
+    excerpt: Consensus politics is as much as lie as anything we've ever been presented
+      with. It was always power politics, but it was given the veneer of inclusiveness,
+      debate, and compromise to sell it to the normies.
+    start_char: 693
+    end_char: 854
+    support_strength: strong
+- object_id: geopolitics.interpreting-power-shifts
+  claim_id: clm_002
+  claim_text: To effectively interpret power shifts, you need to observe policy changes,
+    analyze market signals, and compare historical events.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000006
+    excerpt: This is why I was able to then begin the long pivot away from a purely
+      Austrian economics interpretation of the global capital markets and begin seeing
+      the limitations of individualist politics in the context of the world we actually
+      lived in.
+    start_char: 1413
+    end_char: 1633
+    support_strength: medium
+- object_id: geopolitics.interpreting-power-shifts
+  claim_id: clm_003
+  claim_text: Avoid overrelying on ideological biases or assuming that consensus language
+    reflects the true nature of negotiations.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000006
+    excerpt: Consensus politics is a lawyer's game, built on words, definitions of
+      what "is" is, and referrals to committees. In other words, it's all just gaslighting.
+    start_char: 1043
+    end_char: 1150
+    support_strength: strong
+- object_id: geopolitics.interpreting-power-shifts
+  claim_id: clm_004
+  claim_text: Be cautious of drawing conclusions without sufficient evidence or understanding
+    of the broader geopolitical context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: And it's that illumination I want to focus on this month. The goal this
+      month isn't advocacy or opposition to Trump's actions. I've made my peace with
+      this and support where he has gone.
+    start_char: 583
+    end_char: 743
+    support_strength: medium
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000006

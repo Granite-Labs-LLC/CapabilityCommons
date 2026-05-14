@@ -72,38 +72,51 @@ async def run_cite(
             return
 
     all_citations: list[dict] = []
+    # Adjacent segments included as bounded context for citations. Wider than
+    # 1 because the extraction matrix often assigns a single segment per row
+    # while the supporting passage spans the section around it.
+    NEIGHBOR_WINDOW = 3
 
     for draft_file in draft_files:
         with open(draft_file) as f:
             obj = yaml.safe_load(f)
         slug = obj.get("slug") or obj.get("id", draft_file.stem)
 
-        # Scope to the object's source segments when available
-        source_seg_ids = set(obj.get("source_segment_ids", []))
-        if source_seg_ids:
-            relevant_segs = [s for s in segments_by_id.values() if s.segment_id in source_seg_ids]
-            # Add bounded neighbor context (segments adjacent in the same source)
-            source_id = obj.get("source_id") or (
-                project.manifest.sources[0].id if project.manifest.sources else ""
+        # Scope strictly to the object's extracted source segments. Without
+        # them we cannot honestly cite — skip rather than fabricate support
+        # from arbitrary segments of the source.
+        source_seg_ids = {
+            sid for sid in obj.get("source_segment_ids", []) if sid in segments_by_id
+        }
+        if not source_seg_ids:
+            console.print(
+                f"    [yellow]⚠[/yellow] {slug}: no source_segment_ids — skipping"
             )
-            all_source_segs = sorted(
-                [s for s in segments_by_id.values() if s.source_id == source_id],
+            continue
+
+        primary_segs = [segments_by_id[sid] for sid in source_seg_ids]
+
+        # Bounded neighbor context, restricted to the source(s) the primary
+        # segments came from. We do NOT fall back to project.sources[0].
+        primary_source_ids = {s.source_id for s in primary_segs}
+        relevant: dict[str, SourceSegment] = {s.segment_id: s for s in primary_segs}
+        for src_id in primary_source_ids:
+            ordered = sorted(
+                (s for s in segments_by_id.values() if s.source_id == src_id),
                 key=lambda s: s.start_char,
             )
-            for seg in list(relevant_segs):
-                idx = next((i for i, s in enumerate(all_source_segs) if s.segment_id == seg.segment_id), None)
-                if idx is not None:
-                    for offset in [-1, 1]:
-                        ni = idx + offset
-                        if 0 <= ni < len(all_source_segs) and all_source_segs[ni].segment_id not in source_seg_ids:
-                            relevant_segs.append(all_source_segs[ni])
-        else:
-            # Fallback: all segments from the object's source
-            source_id = obj.get("source_id") or (
-                project.manifest.sources[0].id if project.manifest.sources else ""
-            )
-            relevant_segs = [s for s in segments_by_id.values() if s.source_id == source_id]
-        # Limit to reasonable context
+            id_to_idx = {s.segment_id: i for i, s in enumerate(ordered)}
+            for seg in primary_segs:
+                if seg.source_id != src_id:
+                    continue
+                idx = id_to_idx[seg.segment_id]
+                for offset in range(-NEIGHBOR_WINDOW, NEIGHBOR_WINDOW + 1):
+                    ni = idx + offset
+                    if 0 <= ni < len(ordered):
+                        relevant.setdefault(ordered[ni].segment_id, ordered[ni])
+
+        relevant_segs = list(relevant.values())
+        allowed_seg_ids = set(relevant)
         segments_text = "\n\n".join(
             f"[{s.segment_id} | pages {s.page_start}-{s.page_end}]\n{s.text}"
             for s in relevant_segs[:50]
@@ -120,13 +133,45 @@ async def run_cite(
                 user=user_msg,
                 response_model=CitationResponse,
             )
-            # Patch citations into draft YAML
-            obj["citations"] = [c.model_dump() for c in result.citations]
+
+            # Drop citations whose support points outside the allowed
+            # segment set; the LLM occasionally invents segment IDs or
+            # returns the short form without the "<source_id>::" prefix.
+            allowed_short = {
+                sid.split("::", 1)[1]: sid for sid in allowed_seg_ids if "::" in sid
+            }
+
+            def _normalize_segment_id(sid: str) -> str | None:
+                if sid in allowed_seg_ids:
+                    return sid
+                return allowed_short.get(sid)
+
+            kept: list[ClaimCitation] = []
+            dropped = 0
+            for claim in result.citations:
+                clean_support = []
+                for span in claim.support:
+                    norm = _normalize_segment_id(span.segment_id)
+                    if norm is None:
+                        continue
+                    clean_support.append(
+                        span if norm == span.segment_id
+                        else span.model_copy(update={"segment_id": norm})
+                    )
+                if not clean_support:
+                    dropped += 1
+                    continue
+                kept.append(claim.model_copy(update={"support": clean_support}))
+
+            obj["citations"] = [c.model_dump() for c in kept]
             with open(draft_file, "w") as f:
                 yaml.dump(obj, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
-            all_citations.extend(c.model_dump() for c in result.citations)
-            console.print(f"    [green]✓[/green] {slug}: {len(result.citations)} citations")
+            all_citations.extend(c.model_dump() for c in kept)
+            suffix = f" ({dropped} unsupported dropped)" if dropped else ""
+            console.print(
+                f"    [green]✓[/green] {slug}: {len(kept)} citations{suffix}"
+            )
         except Exception as e:
             console.print(f"    [red]✗[/red] {slug}: {e}")
 

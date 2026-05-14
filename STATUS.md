@@ -1,6 +1,6 @@
 # Capability Commons — Project Status
 
-Last updated: 2026-04-01
+Last updated: 2026-04-21
 
 ## Overview
 
@@ -18,9 +18,9 @@ The project has completed its entire 5-phase engineering backlog (38 tickets) co
 | Test lines | ~3,000 |
 | Collected tests | 275+ |
 | Passing tests | 274+ (1 requires live Postgres) |
-| API endpoints | 49 |
-| Database tables | 24 |
-| Alembic migrations | 9 |
+| API endpoints | 55 |
+| Database tables | 25 |
+| Alembic migrations | 11 |
 | Seeded objects | 49 (25 capability + 12 modules + 12 assessments) |
 | Seeded edges | 175 |
 | Enum types | 30+ |
@@ -46,6 +46,8 @@ FastAPI application with 48 endpoints across 13 route modules. All routes are wi
 | Metrics | 3 (ingest quality, answer quality, summary) | Production-ready |
 | Ingest | 3 (create, list, get ingest jobs) | Production-ready |
 | Feedback | 1 (POST /v1/feedback) | Production-ready |
+| Audit | 2 (object history, workspace timeline) | Production-ready |
+| Files | 4 (upload, list, download, delete) | Production-ready |
 
 **Middleware:** Structured request logging (structlog), rate limiting (per-key sliding window), CORS, API key authentication (with expiry support), Prometheus metrics.
 
@@ -77,6 +79,7 @@ PostgreSQL 16 with pgvector. 23 tables with comprehensive constraints, 40+ index
 | Conversations | `conversation_turns` | Production-ready |
 | Ingest tracking | `ingest_jobs`, `ingest_job_passes` | Production-ready |
 | Infrastructure | `api_keys` (with `expire_at`), `rate_limit_log`, `outbox_events`, `object_files` | Production-ready |
+| Governance | `audit_events` (append-only event log) | Production-ready |
 
 **Migrations:** 8 applied (initial schema, API keys, lifecycle index, evidence external_id, API key expire_at, evidence span metadata, conversation turns, ingest jobs).
 
@@ -97,6 +100,8 @@ PostgreSQL 16 with pgvector. 23 tables with comprehensive constraints, 40+ index
 | `IngestService` | DB-backed ingest job lifecycle (create, start/complete/fail passes) | Fully implemented |
 | `MetricsService` | Aggregate ingest quality and answer quality metrics | Fully implemented |
 | `PublishGate` | Rule-based safety checks before publish (risk, safety boundary, contradictions) | Fully implemented |
+| `AuditService` | Append-only event log for governance transparency (object/version/edge/review events) | Fully implemented |
+| `LocalStorageAdapter` | Local filesystem file storage with two-level hash-prefix directories (S3 adapter stub for future) | Fully implemented |
 
 ### Search and graph adapters — Partial
 
@@ -253,8 +258,6 @@ Astro 6 + React 19 static site consuming the backend API.
 
 ### Empty modules (planned extension points)
 
-- `src/capability_commons/audit/__init__.py` — audit trail service (no code)
-- `src/capability_commons/storage/__init__.py` — file/media storage adapter (no code)
 - `src/capability_commons/jobs/__init__.py` — general background job scheduling (no code; outbox worker and IngestService handle current needs)
 
 ### Abstract adapter methods

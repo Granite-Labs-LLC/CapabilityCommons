@@ -1,0 +1,365 @@
+id: media.cursor-doomsday
+slug: media.cursor-doomsday
+canonical_title: Cursor-to-Doomsday Framing
+markdown_body: '## What this is
+
+
+  This object represents a concept-level media framing suggested only by a title:
+  turning a small cursor action into a larger, dramatic, or apocalyptic message. Because
+  the source contains no body text, this is not a documented technique or procedure.
+
+
+  ## Why it matters
+
+
+  In media and communication, titles and framing can change how an audience interprets
+  a simple action. A dramatic frame can create urgency, humor, satire, or criticism.
+  Here, the source title suggests that a minor interface action is being linked to
+  a much larger consequence for rhetorical effect.
+
+
+  ## What you need
+
+
+  - A clear message or scene to frame
+
+  - An audience that can recognize the contrast between a small action and a large
+  claim
+
+  - Basic awareness of tone, since this kind of framing can read as satire, exaggeration,
+  or alarmism
+
+
+  ## How to do it
+
+
+  There is no reliable procedure in the source material. At a general level, a media
+  creator might:
+
+
+  1. Present a small, ordinary action.
+
+  2. Pair it with a much larger or more dramatic label.
+
+  3. Use the contrast to create irony, tension, or emphasis.
+
+
+  Because the source does not provide actual content, these are only general framing
+  ideas, not a documented method.
+
+
+  ## Common failure modes
+
+
+  - The contrast feels confusing instead of intentional
+
+  - The audience reads the framing as misleading rather than rhetorical
+
+  - The dramatic label overwhelms the actual point
+
+  - The piece lacks enough context to make the joke, critique, or warning understandable
+
+
+  ## Safety/boundary notes
+
+
+  - Avoid presenting exaggeration as fact if the goal is informational communication
+
+  - Be careful with alarmist language, especially in contexts where people may assume
+  a real threat
+
+  - If used satirically, make the tone clear enough that the audience can tell it
+  is not a literal claim
+
+
+  ## Local adaptation notes
+
+
+  This object is based on a title only, so any real use would need local context,
+  audience expectations, and editorial intent. In one setting it might be satire;
+  in another, criticism of sensational headlines; in another, a visual metaphor. The
+  source does not support any specific adaptation beyond that general idea.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: A placeholder concept for a dramatic media framing suggested by the
+  heading alone.
+summary_medium: The source provides only a heading and no substantive body text, so
+  this object captures the idea of using a dramatic or apocalyptic frame around cursor
+  movement as a media or rhetorical device. It is not a reproducible method or workflow.
+plain_language: This is a concept placeholder, not a how-to. The source only gives
+  a title, so the safest interpretation is that it points to a dramatic way of presenting
+  a small interface action, like moving a cursor, as if it signals something much
+  bigger or more alarming. There are no steps, tools, or measurable outcomes in the
+  source.
+structured_data:
+  definition: A concept-level media framing in which a small cursor-related action
+    is presented with an exaggerated or apocalyptic tone for rhetorical effect.
+  key_questions:
+  - Is the dramatic framing meant as satire, criticism, or emphasis?
+  - Will the audience understand the contrast between the small action and the large
+    claim?
+  - Could the wording be mistaken for a literal warning or factual report?
+  misconceptions:
+  - This is a documented procedure with steps and tools.
+  - The source provides enough detail to reproduce a specific workflow.
+  - A dramatic title alone is sufficient to explain the intended meaning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.cursor-doomsday
+  claim_id: clm_001
+  claim_text: 'This object represents a concept-level media framing suggested only
+    by a title: turning a small cursor action into a larger, dramatic, or apocalyptic
+    message.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: media.cursor-doomsday
+  claim_id: clm_002
+  claim_text: Because the source contains no body text, this is not a documented technique
+    or procedure.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_003
+  claim_text: In media and communication, titles and framing can change how an audience
+    interprets a simple action.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 0
+    end_char: 214
+    support_strength: medium
+- object_id: media.cursor-doomsday
+  claim_id: clm_004
+  claim_text: A dramatic frame can create urgency, humor, satire, or criticism.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments, when a man as big as Trump acts to challenge the
+      status quo at its highest level, nuance gets jettisoned and it's all fear, all
+      the time.
+    start_char: 0
+    end_char: 140
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_005
+  claim_text: The source title suggests that a minor interface action is being linked
+    to a much larger consequence for rhetorical effect.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: media.cursor-doomsday
+  claim_id: clm_006
+  claim_text: There is no reliable procedure in the source material.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_007
+  claim_text: At a general level, a media creator might present a small, ordinary
+    action and pair it with a much larger or more dramatic label to create irony,
+    tension, or emphasis.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 0
+    end_char: 214
+    support_strength: medium
+- object_id: media.cursor-doomsday
+  claim_id: clm_008
+  claim_text: The source does not provide actual content, so these are only general
+    framing ideas, not a documented method.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_009
+  claim_text: The contrast may feel confusing instead of intentional.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 0
+    end_char: 146
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_010
+  claim_text: The audience may read the framing as misleading rather than rhetorical.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of social media those voices are everywhere. Our tweets, Instagrams,
+      and TikToks were supposed to give us voices. What they've done is reverted us
+      into response monkeys, bereft of thought.
+    start_char: 0
+    end_char: 197
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_011
+  claim_text: The dramatic label may overwhelm the actual point.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Fear is reductionist. Reductionism leads to possession, not reason.
+    start_char: 0
+    end_char: 67
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_012
+  claim_text: The piece may lack enough context to make the joke, critique, or warning
+    understandable.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_013
+  claim_text: Avoid presenting exaggeration as fact if the goal is informational communication.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 62
+    support_strength: medium
+- object_id: media.cursor-doomsday
+  claim_id: clm_014
+  claim_text: Be careful with alarmist language, especially in contexts where people
+    may assume a real threat.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments, when a man as big as Trump acts to challenge the
+      status quo at its highest level, nuance gets jettisoned and it's all fear, all
+      the time.
+    start_char: 0
+    end_char: 140
+    support_strength: medium
+- object_id: media.cursor-doomsday
+  claim_id: clm_015
+  claim_text: If used satirically, make the tone clear enough that the audience can
+    tell it is not a literal claim.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 0
+    end_char: 214
+    support_strength: medium
+- object_id: media.cursor-doomsday
+  claim_id: clm_016
+  claim_text: This object is based on a title only, so any real use would need local
+    context, audience expectations, and editorial intent.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: media.cursor-doomsday
+  claim_id: clm_017
+  claim_text: In one setting it might be satire; in another, criticism of sensational
+    headlines; in another, a visual metaphor.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 0
+    end_char: 214
+    support_strength: weak
+- object_id: media.cursor-doomsday
+  claim_id: clm_018
+  claim_text: The source does not support any specific adaptation beyond that general
+    idea.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000011
+    excerpt: '## DRAGGING THE CURSOR TO DOOMSDAY'
+    start_char: 0
+    end_char: 34
+    support_strength: weak

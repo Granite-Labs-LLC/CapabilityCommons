@@ -294,3 +294,14 @@ class IngestPassStatus(StrEnum):
     COMPLETED = "completed"
     FAILED = "failed"
     SKIPPED = "skipped"
+
+
+class AuditEventType(StrEnum):
+    OBJECT_CREATED = "object_created"
+    VERSION_CREATED = "version_created"
+    VERSION_PUBLISHED = "version_published"
+    VERSION_DEPRECATED = "version_deprecated"
+    EDGE_CREATED = "edge_created"
+    EDGE_REMOVED = "edge_removed"
+    REVIEW_SUBMITTED = "review_submitted"
+    OBJECT_EDITED = "object_edited"

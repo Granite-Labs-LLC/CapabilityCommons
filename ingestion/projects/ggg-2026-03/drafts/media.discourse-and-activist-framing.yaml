@@ -1,0 +1,626 @@
+id: media.discourse-and-activist-framing
+slug: media.discourse-and-activist-framing
+canonical_title: Discourse and Activist Framing
+markdown_body: '## What this is
+
+  Discourse and activist framing is the way people use language, examples, and emphasis
+  to shape how others understand a public issue. In environmental politics, the same
+  topic can be presented as a scientific problem, a moral emergency, a policy debate,
+  or a movement for social change.
+
+
+  This concept focuses on three linked ideas:
+
+  - activist messaging: how groups try to build support and action
+
+  - media amplification: how coverage can spread some messages much farther than others
+
+  - technocratic framing: how expert or model-based language can make a position sound
+  neutral, even when it still involves choices and values
+
+
+  ## Why it matters
+
+  Framing affects what people think the problem is, who they think is responsible,
+  and what solutions seem possible. A message that is too abstract may fail to move
+  people. A message that is too alarmist may scare people without helping them act.
+  A message that sounds purely technical may hide the real disagreement about goals.
+
+
+  Understanding framing helps you:
+
+  - notice when a message is trying to persuade rather than simply explain
+
+  - compare different claims about the same issue
+
+  - separate evidence from interpretation
+
+  - see how media attention can strengthen or distort a movement
+
+
+  ## What you need
+
+  - A public issue or debate to examine
+
+  - A few examples of headlines, speeches, posts, or policy statements
+
+  - Basic ability to identify claims, evidence, and assumptions
+
+  - Willingness to compare different framings of the same topic
+
+
+  ## How to do it
+
+  1. Identify the issue being discussed.
+
+  2. Ask what the speaker says the main problem is.
+
+  3. Look for the proposed solution or goal.
+
+  4. Notice whether the message uses moral language, technical language, emotional
+  language, or conflict language.
+
+  5. Check what is emphasized and what is left out.
+
+  6. Compare at least two framings of the same issue.
+
+  7. Ask whether the argument is about facts, methods, values, or priorities.
+
+  8. Decide whether the framing helps people understand the issue or mainly pushes
+  them toward a position.
+
+
+  ## Common failure modes
+
+  - Treating a persuasive frame as if it were neutral fact
+
+  - Using scientific language to shut down debate instead of clarify it
+
+  - Building a movement around a message that is too vague to guide action
+
+  - Letting media attention distort the original goal
+
+  - Arguing about methods when the real disagreement is about shared goals
+
+  - Assuming that more attention automatically means better understanding
+
+
+  ## Safety/boundary notes
+
+  Political claims in the source should be treated as opinion or interpretation unless
+  independently verified. This concept is about analyzing framing, not deciding which
+  political side is correct.
+
+
+  ## Local adaptation notes
+
+  The source appears to use U.S. environmental politics and conservative/liberal framing
+  as examples. In other settings, the same analysis can be applied to local parties,
+  movements, media systems, and policy debates. Keep the method the same, but replace
+  the political labels and examples with ones that fit the local context.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media literacy
+secondary_domains:
+- activism
+- political communication
+stage: foundation
+contexts:
+- activism
+- environmental politics
+- mass media
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: How activist messaging, media amplification, and technocratic framing
+  shape public understanding of environmental issues and political goals.
+summary_medium: This concept explains how the same issue can be framed in different
+  ways by activists, journalists, and political actors. It highlights how messaging
+  choices, media attention, and expert-style language can help or hinder public understanding,
+  especially in environmental politics.
+plain_language: People do not just react to facts; they react to how those facts are
+  presented. Activists may try to build support by naming a problem and proposing
+  a shared goal. Media coverage can amplify some messages and ignore others. Technical
+  or expert language can make an issue seem more objective, but it can also hide values
+  and assumptions. This concept helps learners notice framing choices, compare arguments,
+  and ask whether a message is trying to inform, persuade, or mobilize.
+structured_data:
+  definition: A concept about how activist, media, and expert-style language shape
+    public understanding of environmental and political issues.
+  key_questions:
+  - What problem is being named?
+  - What solution or goal is being proposed?
+  - What language is used to persuade, explain, or mobilize?
+  - What assumptions are being treated as obvious?
+  - What is emphasized, and what is left out?
+  - Is the disagreement about facts, methods, or values?
+  misconceptions:
+  - A technical-sounding argument is automatically neutral.
+  - More media attention always improves public understanding.
+  - If two sides disagree, they must disagree about facts rather than goals.
+  - A strong movement message must be simple to the point of being vague.
+  - Scientific language alone can resolve political disagreement.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_001
+  claim_text: Discourse and activist framing is the way people use language, examples,
+    and emphasis to shape how others understand a public issue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 1050
+    end_char: 1188
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_002
+  claim_text: In environmental politics, the same topic can be presented as a scientific
+    problem, a moral emergency, a policy debate, or a movement for social change.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+      Whether or not we fully accepted the argument, or the validity of the facts,
+      it was at least a rational process.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: It was possible to be politically conservative, believe in ecology and
+      still disagree with the "environmental" arguments leftist activists presented.
+    start_char: 300
+    end_char: 399
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_003
+  claim_text: Activist messaging is how groups try to build support and action.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+    start_char: 0
+    end_char: 76
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_004
+  claim_text: Media amplification can spread some messages much farther than others.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The carnival barker ethos took over the rational world and now few things
+      are left to hearken back to the very different public discourse we used to have.
+    start_char: 0
+    end_char: 150
+    support_strength: weak
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: they can't do anything but believe in amplification.
+    start_char: 430
+    end_char: 482
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_005
+  claim_text: Technocratic framing can make a position sound neutral, even when it
+    still involves choices and values.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: They recognized that terrorizing with science, which the average person
+      knew they lacked aptitude in, was an ideal way to usher in a socialist bureaucracy
+      worldwide.
+    start_char: 520
+    end_char: 676
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Science is the fig leaf for those who crave only power.
+    start_char: 676
+    end_char: 730
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_006
+  claim_text: Framing affects what people think the problem is, who they think is
+    responsible, and what solutions seem possible.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1050
+    end_char: 1168
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_007
+  claim_text: A message that is too abstract may fail to move people.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+      Whether or not we fully accepted the argument, or the validity of the facts,
+      it was at least a rational process.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_008
+  claim_text: A message that is too alarmist may scare people without helping them
+    act.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000012
+    excerpt: The 1960s had a Chicken Little coterie of similar experts. Rachel Carson's
+      Silent Spring, Ehrlich's The Population Bomb both guided the reader towards
+      what could only be described as eventual cataclysm.
+    start_char: 250
+    end_char: 444
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_009
+  claim_text: A message that sounds purely technical may hide the real disagreement
+    about goals.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Science is the fig leaf for those who crave only power.
+    start_char: 676
+    end_char: 730
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_010
+  claim_text: Understanding framing helps you notice when a message is trying to persuade
+    rather than simply explain.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1050
+    end_char: 1168
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_011
+  claim_text: Understanding framing helps you compare different claims about the same
+    issue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: This is how a situation, a history as deep and complex as Iran's conflict
+      with Israel and the US, becomes nothing more than a mirror of our biases, fears,
+      old wounds, and egos.
+    start_char: 1400
+    end_char: 1570
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_012
+  claim_text: Understanding framing helps you separate evidence from interpretation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: When we disagreed, we challenged the facts they used their to support
+      their logical arguments.
+    start_char: 180
+    end_char: 274
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_013
+  claim_text: Understanding framing helps you see how media attention can strengthen
+    or distort a movement.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Walter Cronkite and other CIA-managed zeitgeist sculptors were already
+      on the case. Paul Ehrlich even wound up on The Tonight Show.
+    start_char: 120
+    end_char: 248
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_014
+  claim_text: A public issue or debate is needed to examine framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1050
+    end_char: 1160
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_015
+  claim_text: Examples of headlines, speeches, posts, or policy statements can be
+    used to examine framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: In the age of social media those voices are everywhere. Our tweets, Instagrams,
+      and TikToks were supposed to give us voices.
+    start_char: 700
+    end_char: 822
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_016
+  claim_text: Basic ability to identify claims, evidence, and assumptions is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: When we disagreed, we challenged the facts they used their to support
+      their logical arguments.
+    start_char: 180
+    end_char: 274
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_017
+  claim_text: One should be willing to compare different framings of the same topic.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When asked about Iran's options at this point, I respond with a simple
+      question, "Which Iran?" Similarly, we should be asking when Israel does something,
+      "Which Israel?" Countries aren't monoliths.
+    start_char: 1450
+    end_char: 1640
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_018
+  claim_text: The main problem can be identified by asking what the speaker says it
+    is.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1050
+    end_char: 1168
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_019
+  claim_text: The proposed solution or goal can be identified by asking what is being
+    aimed for.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+    start_char: 0
+    end_char: 76
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_020
+  claim_text: One should notice whether the message uses moral, technical, emotional,
+    or conflict language.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 820
+    end_char: 980
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_021
+  claim_text: One should check what is emphasized and what is left out.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1050
+    end_char: 1168
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_022
+  claim_text: One should compare at least two framings of the same issue.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When asked about Iran's options at this point, I respond with a simple
+      question, "Which Iran?" Similarly, we should be asking when Israel does something,
+      "Which Israel?"
+    start_char: 1450
+    end_char: 1620
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_023
+  claim_text: One should ask whether the argument is about facts, methods, values,
+    or priorities.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality.
+    start_char: 300
+    end_char: 352
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: It was an important conversation for me as it helped clarify in real
+      time what I was feeling but struggling to put into words.
+    start_char: 120
+    end_char: 245
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_024
+  claim_text: One should decide whether the framing helps people understand the issue
+    or mainly pushes them toward a position.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+    start_char: 0
+    end_char: 76
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_025
+  claim_text: Treating a persuasive frame as if it were neutral fact is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Science is the fig leaf for those who crave only power.
+    start_char: 676
+    end_char: 730
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_026
+  claim_text: Using scientific language to shut down debate instead of clarify it
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: They recognized that terrorizing with science, which the average person
+      knew they lacked aptitude in, was an ideal way to usher in a socialist bureaucracy
+      worldwide.
+    start_char: 520
+    end_char: 676
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_027
+  claim_text: Building a movement around a message that is too vague to guide action
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The goal of activists then was to build awareness and promote their solution.
+    start_char: 0
+    end_char: 76
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_028
+  claim_text: Letting media attention distort the original goal is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Walter Cronkite and other CIA-managed zeitgeist sculptors were already
+      on the case.
+    start_char: 120
+    end_char: 203
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_029
+  claim_text: Arguing about methods when the real disagreement is about shared goals
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: Consensus politics is a lawyer's game, built on words, definitions of
+      what "is" is, and referrals to committees.
+    start_char: 700
+    end_char: 812
+    support_strength: medium
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_030
+  claim_text: Assuming that more attention automatically means better understanding
+    is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: In the age of social media those voices are everywhere. Our tweets, Instagrams,
+      and TikToks were supposed to give us voices. What they've done is reverted us
+      into response monkeys, bereft of thought.
+    start_char: 700
+    end_char: 900
+    support_strength: strong
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_031
+  claim_text: Political claims in the source should be treated as opinion or interpretation
+    unless independently verified.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: The fact that the world has put up with Iran's incessant threats against
+      international commerce for as long as it has boggles the mind.
+    start_char: 650
+    end_char: 770
+    support_strength: weak
+- object_id: media.discourse-and-activist-framing
+  claim_id: clm_032
+  claim_text: This concept is about analyzing framing, not deciding which political
+    side is correct.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1050
+    end_char: 1160
+    support_strength: medium

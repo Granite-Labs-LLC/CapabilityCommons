@@ -1,0 +1,643 @@
+id: media.framing-and-reductionism
+slug: media.framing-and-reductionism
+canonical_title: Framing and Reductionism
+markdown_body: "## What this is\nFraming and reductionism is the idea that media,\
+  \ images, and narratives do more than show facts. They shape how people understand\
+  \ those facts. A frame can highlight one part of a situation, hide another part,\
+  \ and suggest what kind of reaction is expected.\n\nReductionism happens when a\
+  \ complex reality is turned into a simple story. That can make events easier to\
+  \ follow, but it can also erase important differences, context, and uncertainty.\n\
+  \n## Why it matters\nPeople often react to the frame before they examine the evidence.\
+  \ In social media, political messaging, and AI-generated imagery, a strong visual\
+  \ or headline can create a quick sense of certainty. That can lead to fear, overreaction,\
+  \ or unfair judgments.\n\nLearning to notice framing helps you:\n- separate what\
+  \ is shown from what is implied\n- avoid treating a complicated situation as a single,\
+  \ simple cause\n- resist narratives that turn diverse people or events into one\
+  \ monolithic label\n- ask what response a message is trying to produce\n\n## What\
+  \ you need\n- A news story, image, post, or video to examine\n- Basic attention\
+  \ to wording, visuals, and context\n- Willingness to ask questions before deciding\
+  \ what something means\n- Optional: film scenes, commentary threads, or local news\
+  \ examples\n\n## How to do it\n1. Identify the frame.\n   - What is the image, headline,\
+  \ or story asking you to notice first?\n   - What emotion does it seem designed\
+  \ to create?\n\n2. Separate observation from interpretation.\n   - What is directly\
+  \ visible or stated?\n   - What is being inferred, suggested, or assumed?\n\n3.\
+  \ Look for what is missing.\n   - What context, voices, or details are absent?\n\
+  \   - Are there other explanations that fit the same evidence?\n\n4. Check for reductionism.\n\
+  \   - Is a group, event, or conflict being treated as if it has one simple cause\
+  \ or one single identity?\n   - Does the story flatten differences into a slogan\
+  \ or stereotype?\n\n5. Ask who benefits.\n   - Who is drawing attention to what?\n\
+  \   - What response is the framing trying to produce: fear, outrage, certainty,\
+  \ loyalty, or action?\n\n6. Rebuild a fuller picture.\n   - Add context from reliable\
+  \ sources.\n   - Compare multiple perspectives.\n   - Keep uncertainty visible when\
+  \ the evidence is incomplete.\n\n## Common failure modes\n- Doomscrolling until\
+  \ every new item feels like proof of the same story\n- Treating a dramatic image\
+  \ as inherently truthful\n- Accepting a headline or clip without checking context\n\
+  - Flattening diverse groups into a single identity\n- Reacting quickly without reflection\n\
+  - Confusing a persuasive frame with a complete explanation\n\n## Safety/boundary\
+  \ notes\n- Avoid overconfident claims about contested political actors or events.\n\
+  - Do not collapse diverse communities, movements, or countries into one identity.\n\
+  - Be careful when using conflict examples: the goal is analysis, not escalation.\n\
+  - If using AI-generated imagery, remember that realism does not guarantee accuracy.\n\
+  \n## Local adaptation notes\nThis concept can be adapted to local media ecosystems,\
+  \ regional conflicts, and community fact-checking practices. Use examples that are\
+  \ familiar to learners, but keep the same core habit: notice the frame, test the\
+  \ claim, and resist oversimplification."
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media literacy
+secondary_domains:
+- critical thinking
+- political analysis
+stage: foundation
+contexts:
+- social media
+- AI-generated imagery
+- political discourse
+- film analysis
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A concept about how images and narratives can shape interpretation,
+  and how complex realities are often reduced into simple, fear-driven stories.
+summary_medium: This concept explains that media does not just reflect reality; it
+  frames it. An image, headline, or narrative can guide attention toward a particular
+  interpretation and encourage a specific response. The source uses film and crisis
+  discourse to show why learners should question who is shaping the frame, what is
+  being left out, and whether a complex situation is being flattened into a monolithic
+  story.
+plain_language: Not every image is a mirror of reality. Sometimes it is a lens that
+  directs attention and shapes what people think they are seeing. This concept helps
+  learners notice when a story, picture, or political message is simplifying a complex
+  situation, especially when it pushes fear, certainty, or group labels. The goal
+  is to pause, ask who benefits from the framing, and separate observation from interpretation.
+structured_data:
+  definition: A media-literacy concept about how images and narratives shape interpretation,
+    and how complex realities can be reduced into overly simple, often fear-driven
+    stories.
+  key_questions:
+  - What is this frame asking me to notice first?
+  - What is directly shown, and what is being inferred?
+  - What context is missing?
+  - Is a complex situation being reduced to a single cause or label?
+  - Who benefits from the response this framing encourages?
+  misconceptions:
+  - An image is always a neutral mirror of reality.
+  - A simple explanation is always the most accurate one.
+  - If something looks convincing, it must be complete.
+  - A group or conflict can be understood through one label alone.
+  - Questioning a frame means ignoring the facts.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.framing-and-reductionism
+  claim_id: clm_001
+  claim_text: Media, images, and narratives do more than show facts; they shape how
+    people understand those facts.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 1040
+    end_char: 1168
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: How the director frames the shot, where they put the objects relative
+      to the camera is supposed to tell you what the artist thinks of the moment captured.
+    start_char: 760
+    end_char: 913
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_002
+  claim_text: A frame can highlight one part of a situation, hide another part, and
+    suggest what kind of reaction is expected.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1088
+    end_char: 1168
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: 'The monolith from 2001: A Space Odyssey is his most iconic image...
+      The geometrically and mathematically perfect monolith... is the exact opposite
+      of a mirror.'
+    start_char: 171
+    end_char: 598
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_003
+  claim_text: Reductionism happens when a complex reality is turned into a simple
+    story.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 1240
+    end_char: 1360
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: This is how a situation, a history as deep and complex as Iran's conflict
+      with Israel and the US, becomes nothing more than a mirror of our biases, fears,
+      old wounds, and egos.
+    start_char: 1468
+    end_char: 1640
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_004
+  claim_text: Reductionism can erase important differences, context, and uncertainty.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 1240
+    end_char: 1360
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths. They aren't abysses of our fears.
+    start_char: 1972
+    end_char: 2031
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_005
+  claim_text: People often react to the frame before they examine the evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of social media those voices are everywhere. Our tweets, Instagrams,
+      and TikToks were supposed to give us voices. What they've done is reverted us
+      into response monkeys, bereft of thought.
+    start_char: 1169
+    end_char: 1298
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments... nuance gets jettisoned and it's all fear, all
+      the time.
+    start_char: 1361
+    end_char: 1458
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_006
+  claim_text: In social media, political messaging, and AI-generated imagery, a strong
+    visual or headline can create a quick sense of certainty.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of social media those voices are everywhere.
+    start_char: 1169
+    end_char: 1224
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of AI, images themselves have no veracity anymore.
+    start_char: 1225
+    end_char: 1286
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_007
+  claim_text: A strong frame can lead to fear, overreaction, or unfair judgments.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments... it's all fear, all the time.
+    start_char: 1361
+    end_char: 1458
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: This is how a situation... becomes nothing more than a mirror of our
+      biases, fears, old wounds, and egos.
+    start_char: 1468
+    end_char: 1640
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_008
+  claim_text: Learning to notice framing helps you separate what is shown from what
+    is implied.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: How the director frames the shot... is supposed to tell you what the
+      artist thinks of the moment captured.
+    start_char: 760
+    end_char: 913
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_009
+  claim_text: Learning to notice framing helps you avoid treating a complicated situation
+    as a single, simple cause.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: This is how a situation, a history as deep and complex as Iran's conflict
+      with Israel and the US, becomes nothing more than a mirror of our biases, fears,
+      old wounds, and egos.
+    start_char: 1468
+    end_char: 1640
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths.
+    start_char: 1972
+    end_char: 1998
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_010
+  claim_text: Learning to notice framing helps you resist narratives that turn diverse
+    people or events into one monolithic label.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas...
+    start_char: 1650
+    end_char: 1750
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths. They aren't abysses of our fears.
+    start_char: 1972
+    end_char: 2031
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_011
+  claim_text: Learning to notice framing helps you ask what response a message is
+    trying to produce.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: What response are they trying to achieve?
+    start_char: 1148
+    end_char: 1189
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: What response are they trying to achieve?
+    start_char: 1148
+    end_char: 1189
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_012
+  claim_text: A news story, image, post, or video can be examined for framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of social media those voices are everywhere. Our tweets, Instagrams,
+      and TikToks were supposed to give us voices.
+    start_char: 1169
+    end_char: 1270
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_013
+  claim_text: Basic attention to wording, visuals, and context is needed to analyze
+    framing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: How the director frames the shot, where they put the objects relative
+      to the camera is supposed to tell you what the artist thinks of the moment captured.
+    start_char: 760
+    end_char: 913
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of AI, images themselves have no veracity anymore.
+    start_char: 1225
+    end_char: 1286
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_014
+  claim_text: A learner should be willing to ask questions before deciding what something
+    means.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 1040
+    end_char: 1168
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_015
+  claim_text: A frame can be identified by asking what is noticed first and what emotion
+    it is designed to create.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Who is drawing our attention to what and where? Why would they do that?
+      What response are they trying to achieve?
+    start_char: 1088
+    end_char: 1168
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments... it's all fear, all the time.
+    start_char: 1361
+    end_char: 1458
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_016
+  claim_text: Observation should be separated from interpretation by distinguishing
+    what is directly visible or stated from what is inferred, suggested, or assumed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: This is how a situation... becomes nothing more than a mirror of our
+      biases, fears, old wounds, and egos.
+    start_char: 1468
+    end_char: 1640
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_017
+  claim_text: One should look for what context, voices, or details are absent.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas...
+    start_char: 1650
+    end_char: 1750
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths.
+    start_char: 1972
+    end_char: 1998
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_018
+  claim_text: There may be other explanations that fit the same evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Which Iran? Similarly, we should be asking when Israel does something,
+      "Which Israel?"
+    start_char: 1960
+    end_char: 2058
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_019
+  claim_text: A group, event, or conflict may be treated as if it has one simple cause
+    or one single identity.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas, the warmongering neocons want us to believe they are
+      just crazy Shia lunatics.
+    start_char: 1650
+    end_char: 1828
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_020
+  claim_text: A story can flatten differences into a slogan or stereotype.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas, the warmongering neocons want us to believe they are
+      just crazy Shia lunatics.
+    start_char: 1650
+    end_char: 1828
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_021
+  claim_text: A fuller picture should be rebuilt by adding context from reliable sources
+    and comparing multiple perspectives.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths. They aren't abysses of our fears.
+    start_char: 1972
+    end_char: 2031
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_022
+  claim_text: Uncertainty should be kept visible when the evidence is incomplete.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of quiet reflection discussing the ambiguity of our limited knowledge,
+      we have doomscrolling.
+    start_char: 1290
+    end_char: 1360
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Now let's talk about the fact that the shipping traffic isn't even in
+      Iranian water.
+    start_char: 2360
+    end_char: 2442
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_023
+  claim_text: Doomscrolling can make every new item feel like proof of the same story.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 1240
+    end_char: 1360
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_024
+  claim_text: A dramatic image should not be treated as inherently truthful.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of AI, images themselves have no veracity anymore.
+    start_char: 1225
+    end_char: 1286
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_025
+  claim_text: A headline or clip should not be accepted without checking context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: In the age of social media those voices are everywhere.
+    start_char: 1169
+    end_char: 1224
+    support_strength: medium
+- object_id: media.framing-and-reductionism
+  claim_id: clm_026
+  claim_text: Diverse groups should not be flattened into a single identity.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas...
+    start_char: 1650
+    end_char: 1750
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Countries aren't monoliths.
+    start_char: 1972
+    end_char: 1998
+    support_strength: strong
+- object_id: media.framing-and-reductionism
+  claim_id: clm_027
+  claim_text: Questioning a frame does not mean ignoring the facts.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: It's high time we recognize the mechanics of this operation, because
+      if we don't overcome that programming we'll never break through the reductionism.
+    start_char: 2059
+    end_char: 2188
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1040
+    end_char: 1140
+    support_strength: medium

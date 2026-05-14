@@ -104,14 +104,14 @@ These make the platform maintainable and extensible over time.
 
 ### Audit and governance
 
-- [ ] **Implement audit service** — the `audit/` module is a stub. Implement event logging for object creates, edits, publishes, and edge changes. Critical for the governance model (transparent version history).
+- [x] **Implement audit service** — append-only `AuditEvent` log with event logging for object creates, version creates/publishes, edge creates, and review submissions. API routes at `/v1/audit/objects/{id}` and `/v1/audit/timeline`.
 - [ ] **Contradiction detection pipeline** — currently contradictions must be opened manually. Add automated detection (e.g., when two objects in the same domain make conflicting claims, flag for review).
 - [x] **Review dashboard** — `GET /v1/reviews/queue` exposes objects in `IN_REVIEW` state (ING-007); frontend integration pending
 
 ### Storage and media
 
-- [ ] **Implement storage adapter** — the `storage/` module is a stub. Define the interface for file/media uploads (diagrams, photos, worksheets). Implement for local filesystem first, then S3-compatible.
-- [ ] **Object file management** — the `object_files` table exists but no API routes serve file uploads/downloads
+- [x] **Implement storage adapter** — `StorageAdapter` ABC with `LocalStorageAdapter` (two-level hash-prefix dirs) and `S3StorageAdapter` stub. Config via `STORAGE_BACKEND`, `STORAGE_ROOT`, `STORAGE_MAX_FILE_SIZE`.
+- [x] **Object file management** — CRUD routes at `/v1/objects/{id}/versions/{vid}/files` for upload (multipart), list, download, delete. SHA-256 checksums, media type allowlist, size limits.
 
 ### Background jobs
 

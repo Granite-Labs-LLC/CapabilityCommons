@@ -12,6 +12,7 @@ from capability_commons.retrieval.intent_classifier import classify_intent
 from capability_commons.retrieval.service import RetrievalService
 from capability_commons.schemas.ask import AskRequest, AskResponse
 from capability_commons.schemas.retrieval import RetrievalRequest
+from capability_commons.schemas.search import PublicSearchFilters
 
 logger = logging.getLogger(__name__)
 
@@ -62,11 +63,20 @@ async def public_ask(
             query = f"{context_prefix}Current question: {request.query}"
 
     # Build retrieval request
+    attribute_filters = None
+    if request.difficulty_max is not None or request.beginner_safe or request.stage:
+        attribute_filters = PublicSearchFilters(
+            difficulty_max=request.difficulty_max,
+            beginner_safe=request.beginner_safe,
+            stage=request.stage,
+        )
+
     retrieval_request = RetrievalRequest(
         workspace_id=workspace.id,
         query=query,
         intent=resolved_intent,
         facet_filters=_build_facet_filters(request),
+        attribute_filters=attribute_filters,
     )
     retrieval_request.budgets.max_search_results = request.max_results * 4
     retrieval_request.budgets.max_segments = request.max_results * 3

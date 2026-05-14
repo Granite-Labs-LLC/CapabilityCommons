@@ -5,8 +5,9 @@ from datetime import datetime, timezone
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from capability_commons.audit.service import AuditService
 from capability_commons.db.models import ContradictionCase, ReviewRecord
-from capability_commons.domain.enums import LifecycleState, ReviewOutcome, ValidityStatus
+from capability_commons.domain.enums import AuditEventType, LifecycleState, ReviewOutcome, ValidityStatus
 from capability_commons.services.exceptions import ConflictError
 from capability_commons.services.helpers import add_outbox_event, get_object, get_version
 from capability_commons.services.registry import RegistryService
@@ -55,6 +56,14 @@ class ReviewService:
             aggregate_id=review.id,
             event_type="review.submitted",
             payload={"version_id": str(context_object_version_id), "outcome": outcome.value},
+        )
+        audit = AuditService(self.session)
+        await audit.record_event(
+            event_type=AuditEventType.REVIEW_SUBMITTED,
+            workspace_id=workspace_id,
+            actor_key_id=reviewer_id,
+            target_version_id=context_object_version_id,
+            detail={"review_type": str(review_type), "outcome": str(outcome)},
         )
         await self.session.commit()
         await self.session.refresh(review)

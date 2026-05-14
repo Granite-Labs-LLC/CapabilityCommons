@@ -1,0 +1,317 @@
+id: law.maritime-rights-and-innocent-passage
+slug: law.maritime-rights-and-innocent-passage
+canonical_title: Maritime Rights and Innocent Passage
+markdown_body: "## What this is\nThis is a reference sheet about maritime passage\
+  \ rights, especially the idea of **innocent passage** under the law of the sea.\
+  \ It helps explain the difference between a state's control over nearby waters and\
+  \ the rights of ships to move through those waters.\n\n## Why it matters\nDisputes\
+  \ at sea can involve trade, security, sovereignty, and international law at the\
+  \ same time. If a ship is moving through a coastal state's waters, the legal question\
+  \ is not only where the ship is, but also what kind of waters those are and whether\
+  \ the passage is allowed. Getting this wrong can lead to serious political claims,\
+  \ including claims that interference with shipping is unlawful or escalatory.\n\n\
+  ## What you need\n- The relevant legal text, especially UNCLOS or another applicable\
+  \ maritime framework\n- A map of maritime boundaries and territorial waters\n- Information\
+  \ about the shipping route or lane in question\n- A way to distinguish territorial\
+  \ waters from other maritime zones\n\n## How to do it\n1. Identify the water area\
+  \ involved.\n   - Check whether the route is in territorial waters, a transit area,\
+  \ or another maritime zone.\n2. Check the legal rule that applies.\n   - Under the\
+  \ innocent passage idea, some travel through territorial waters is allowed if it\
+  \ meets the legal conditions.\n3. Separate sovereignty from route access.\n   -\
+  \ A state may have rights over nearby waters, but that does not automatically mean\
+  \ all passage is forbidden.\n4. Compare the ship's route with the legal boundary.\n\
+  \   - Use maritime maps and route data to see whether the vessel is actually inside\
+  \ a claimed area.\n5. Verify any claim about unlawful interference.\n   - A claim\
+  \ that stopping or threatening commercial shipping is an act of war is a serious\
+  \ legal and political argument and should be checked against the facts and the governing\
+  \ law.\n\n## Common failure modes\n- Confusing territorial waters with open shipping\
+  \ lanes\n- Treating every coastal-water passage as a violation\n- Assuming a legal\
+  \ claim is correct without checking the boundary and the governing law\n- Overstating\
+  \ what counts as an act of war\n- Mixing up political rhetoric with legal status\n\
+  \n## Safety/boundary notes\n- Legal claims in the source should be independently\
+  \ verified.\n- This is not legal advice.\n- Maritime law can depend on the exact\
+  \ location, the state involved, and the treaty or rule being applied.\n\n## Local\
+  \ adaptation notes\nThe source uses examples involving Iran, Oman, regional shipping\
+  \ routes, and a Hudson River analogy. Those examples help illustrate the idea, but\
+  \ the core rule is general: always check the maritime zone, the route, and the applicable\
+  \ legal framework before drawing conclusions."
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: law
+secondary_domains:
+- maritime law
+- international relations
+stage: foundation
+contexts:
+- UNCLOS
+- territorial waters
+- shipping lanes
+- Iran
+- Oman
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A plain-language reference on innocent passage, territorial waters,
+  and how maritime boundaries affect shipping rights.
+summary_medium: This reference explains the basic legal idea of innocent passage in
+  maritime law, how territorial waters differ from open shipping routes, and why disputes
+  over interference with commercial shipping can become politically and legally serious.
+plain_language: Countries have rights over waters near their coasts, but international
+  law also protects some kinds of ship travel through those waters. The key idea is
+  that not every ship moving near a coast is violating sovereignty. To understand
+  a dispute, you have to check the legal status of the water, the route being used,
+  and whether the passage is considered innocent under the relevant rules.
+structured_data:
+  definition: A reference on the legal idea that ships may sometimes pass through
+    a coastal state's territorial waters without violating that state's sovereignty,
+    if the passage meets the conditions for innocent passage.
+  key_questions:
+  - What maritime zone is the ship in?
+  - Does the route fall within territorial waters or another legal zone?
+  - Does the passage qualify as innocent under the applicable law?
+  - Is the claim about interference with shipping supported by the facts and the legal
+    framework?
+  - Are the examples being used as legal evidence or only as illustrations?
+  misconceptions:
+  - All movement near a coast is illegal.
+  - Territorial waters and shipping lanes are the same thing.
+  - Any interference with shipping is automatically an act of war.
+  - A regional example proves the rule in every case.
+  - Political claims and legal conclusions are interchangeable.
+requires: []
+suggested_edges: []
+citations:
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_001
+  claim_text: This is a reference sheet about maritime passage rights, especially
+    the idea of innocent passage under the law of the sea.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Under agreed maritime law, nations are obliged to offer the right of
+      innocent passage through waterways lest they reduce themselves to the status
+      of pirates.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_002
+  claim_text: It helps explain the difference between a state's control over nearby
+    waters and the rights of ships to move through those waters.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: the midpoint between their coast and Oman's as the legal delineation
+      between their territorial waters. Leave aside that the actual shipping lanes
+      are almost entirely on the Omani side.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: the idea that Iran can charge a toll to pass through Oman's water is
+      ridiculous
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_003
+  claim_text: If a ship is moving through a coastal state's waters, the legal question
+    is not only where the ship is, but also what kind of waters those are and whether
+    the passage is allowed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Leave aside that the actual shipping lanes are almost entirely on the
+      Omani side. Under agreed maritime law, nations are obliged to offer the right
+      of innocent passage through waterways
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_004
+  claim_text: Getting this wrong can lead to serious political claims, including claims
+    that interference with shipping is unlawful or escalatory.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Shooting missiles at commercial vessels in another country's territorial
+      water is nothing but an act of war.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: they fully declined to support him policing the Straits of Hormuz which
+      they rely on, calling into question NATO's future openly.
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_005
+  claim_text: The relevant legal text is especially UNCLOS or another applicable maritime
+    framework.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Iran is a signatory to the United Nations Convention on the Law of the
+      Sea (UNCLOS), even if it has not fully ratified it.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_006
+  claim_text: A map of maritime boundaries and territorial waters is needed.
+  support: []
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_007
+  claim_text: Information about the shipping route or lane in question is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Leave aside that the actual shipping lanes are almost entirely on the
+      Omani side.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_008
+  claim_text: A way to distinguish territorial waters from other maritime zones is
+    needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: the midpoint between their coast and Oman's as the legal delineation
+      between their territorial waters.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_009
+  claim_text: Under the innocent passage idea, some travel through territorial waters
+    is allowed if it meets the legal conditions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Under agreed maritime law, nations are obliged to offer the right of
+      innocent passage through waterways
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_010
+  claim_text: A state may have rights over nearby waters, but that does not automatically
+    mean all passage is forbidden.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Under agreed maritime law, nations are obliged to offer the right of
+      innocent passage through waterways
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_011
+  claim_text: Use maritime maps and route data to see whether the vessel is actually
+    inside a claimed area.
+  support: []
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_012
+  claim_text: A claim that stopping or threatening commercial shipping is an act of
+    war is a serious legal and political argument and should be checked against the
+    facts and the governing law.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Shooting missiles at commercial vessels in another country's territorial
+      water is nothing but an act of war.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of Gold, Goats 'n Guns.
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_013
+  claim_text: The source uses examples involving Iran, Oman, regional shipping routes,
+    and a Hudson River analogy.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: The Iranian parliament went so far as to pass a resolution to this effect.
+      They might as well empower themselves to charge a toll to cross the Hudson River.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: the midpoint between their coast and Oman's as the legal delineation
+      between their territorial waters. Leave aside that the actual shipping lanes
+      are almost entirely on the Omani side.
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: law.maritime-rights-and-innocent-passage
+  claim_id: clm_014
+  claim_text: 'Those examples help illustrate the idea, but the core rule is general:
+    always check the maritime zone, the route, and the applicable legal framework
+    before drawing conclusions.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: Leave aside that the actual shipping lanes are almost entirely on the
+      Omani side. Under agreed maritime law, nations are obliged to offer the right
+      of innocent passage through waterways
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of Gold, Goats 'n Guns.
+    start_char: 0
+    end_char: 0
+    support_strength: weak

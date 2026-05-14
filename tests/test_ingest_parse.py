@@ -48,6 +48,51 @@ Treat water before storage.
         segments = markdown_to_segments(md, source_id="src.test", base_page=5)
         assert segments[0].page_start == 5
 
+    def test_html_page_markers_drive_per_segment_pages(self):
+        md = (
+            "<!-- PAGE 1 -->\n"
+            "# Intro\nIntro content on page one.\n"
+            "<!-- PAGE 2 -->\n"
+            "# Body\nBody content on page two.\n"
+            "<!-- PAGE 3 -->\n"
+            "# Tail\nTail content on page three.\n"
+        )
+        segs = markdown_to_segments(md, source_id="src.test")
+        assert [s.heading_path[0] for s in segs] == ["Intro", "Body", "Tail"]
+        assert (segs[0].page_start, segs[0].page_end) == (1, 1)
+        assert (segs[1].page_start, segs[1].page_end) == (2, 2)
+        assert (segs[2].page_start, segs[2].page_end) == (3, 3)
+        # Markers themselves must not appear in the emitted segment text.
+        for s in segs:
+            assert "<!-- PAGE" not in s.text
+
+    def test_segment_spanning_two_pages_reports_range(self):
+        md = (
+            "<!-- PAGE 7 -->\n"
+            "# Heading\nFirst paragraph on page seven.\n\n"
+            "<!-- PAGE 8 -->\n"
+            "Second paragraph continues on page eight.\n"
+        )
+        segs = markdown_to_segments(md, source_id="src.test")
+        assert len(segs) == 1
+        assert segs[0].page_start == 7
+        assert segs[0].page_end == 8
+
+    def test_marker_paginate_separators_are_normalized(self):
+        # Format produced by marker-pdf with paginate_output=True.
+        sep = "-" * 48
+        md = (
+            f"\n\n{{0}}{sep}\n\n"
+            "# Intro\nIntro on first page.\n"
+            f"\n\n{{1}}{sep}\n\n"
+            "# Body\nBody on second page.\n"
+        )
+        segs = markdown_to_segments(md, source_id="src.test")
+        assert [(s.page_start, s.page_end) for s in segs] == [(1, 1), (2, 2)]
+        for s in segs:
+            assert "{0}" not in s.text and "{1}" not in s.text
+            assert sep not in s.text
+
 
 class TestRunParse:
     def test_writes_segments_jsonl(self, tmp_path):

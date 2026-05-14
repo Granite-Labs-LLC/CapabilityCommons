@@ -1,0 +1,125 @@
+id: finance.guns-portfolio-holdings
+slug: finance.guns-portfolio-holdings
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: GUNS Portfolio Holdings
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- digital_assets
+- currency
+stage: advanced
+contexts:
+- portfolio review
+- newsletter
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A table listing the holdings in the GUNS portfolio, detailing entry
+  dates, prices, yields, returns, and position values.
+summary_medium: The GUNS portfolio holdings table provides a snapshot of various assets
+  including currency, bitcoin, and ETFs, showing key financial metrics such as entry
+  and recent prices, yields, total returns, and position values to aid in performance
+  review.
+plain_language: This document contains a table of assets in the GUNS portfolio, including
+  details like when each asset was bought, its price changes, and how much it's worth
+  now.
+markdown_body: '### What this is
+
+  This is a reference sheet detailing the holdings of the GUNS portfolio. It includes
+  various asset classes such as currency, bitcoin, and ETFs. Each asset is listed
+  with its entry date, entry price, recent price, current yield, total return, and
+  position value.
+
+
+  ### Why it matters
+
+  Understanding the composition and performance of a portfolio is crucial for investors
+  to make informed decisions. This table helps in assessing the performance of different
+  asset classes and tracking the returns over time.
+
+
+  ### What you need
+
+  To use this table effectively, you should have a basic understanding of financial
+  metrics like yield, return, and position value. Access to current market pricing
+  can also enhance the analysis.
+
+
+  ### How to do it
+
+  Review each asset''s performance by comparing the entry price with the recent price
+  to calculate the return. Monitor the yield for income-generating assets and evaluate
+  the position value to understand the portfolio''s current worth.
+
+
+  ### Common failure modes
+
+  One common issue is not providing an explanation for the grouping of these assets,
+  which can lead to confusion about the portfolio''s strategy. Additionally, relying
+  solely on snapshot-based performance metrics without considering market trends can
+  be misleading.
+
+
+  ### Safety/boundary notes
+
+  This table is for informational purposes only and should not be considered investment
+  advice. Always consult a financial advisor before making investment decisions.
+
+
+  ### Local adaptation notes
+
+  The portfolio''s inclusion of mixed asset classes suggests that it can be adapted
+  to fit different investor risk tolerances and strategies.'
+structured_data:
+  tools:
+  - holdings table
+  - market pricing
+  materials: []
+  success_criteria:
+  - Accurate tracking of asset performance
+  - Clear understanding of portfolio composition
+  failure_modes:
+  - No explanation of asset grouping
+  - Performance metrics are snapshot-based
+  safety_boundary: Informational only, not investment advice
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.guns-portfolio-holdings
+  claim_id: clm_001
+  claim_text: This is a reference sheet detailing the holdings of the GUNS portfolio.
+    It includes various asset classes such as currency, bitcoin, and ETFs.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000033
+    excerpt: '| ProShares UltraShort Euro | EUO | 5/8/18 | $22.40 | $30.15 | 0.00%
+      | 34.60% | $1,345.98 | Bitcoin | BTC | 1/14/20 | $8,659.50 | $67,322.70 | 0.00%
+      | 677.44% | $15,548.87 | WisdomTree Japan Hedged Equity ETF | DXJ | 11/17/23
+      | $91.54 | $154.58 | 2.49% | 80.80% | $1,807.96 | Ripple | XRP | 2/25/25 | $2.20
+      | $1.33 | 0.00% | -39.60% | $604.01 |'
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: finance.guns-portfolio-holdings
+  claim_id: clm_002
+  claim_text: This table is for informational purposes only and should not be considered
+    investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000033

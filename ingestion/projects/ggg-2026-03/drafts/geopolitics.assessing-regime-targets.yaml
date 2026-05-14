@@ -1,0 +1,382 @@
+id: src.ggg.newsletter.2026-03.seg_000007
+slug: geopolitics.assessing-regime-targets
+canonical_title: Assessing Regime Targets
+markdown_body: '## What this is
+
+  This is a way of thinking about conflict and regime behavior through power politics,
+  incentives, and evidence. Instead of starting with stated intentions, you start
+  with what actors gain, what they fear, how they behave, and how they relate to other
+  actors.
+
+
+  ## Why it matters
+
+  In war and political conflict, public statements are often strategic. Leaders may
+  hide goals, signal strength, or try to shape outside opinion. If you accept those
+  statements too quickly, you can misread the situation. A better analysis separates
+  observation from interpretation and keeps track of uncertainty.
+
+
+  ## What you need
+
+  - A clear list of the actors involved
+
+  - Observable behavior, not just speeches or claims
+
+  - Basic understanding of interests, incentives, and alliances
+
+  - Willingness to compare multiple explanations
+
+  - Careful note-taking about what is known, inferred, and unknown
+
+
+  ## How to do it
+
+  1. Identify the main actors and the relationships between them.
+
+  2. List each actor''s likely interests, constraints, and possible goals.
+
+  3. Compare public claims with actual behavior over time.
+
+  4. Look for patterns that suggest strategic ambiguity, hidden motives, or shifting
+  priorities.
+
+  5. Treat conclusions as provisional unless there is strong evidence.
+
+  6. Separate description from advocacy: say what the evidence supports, and avoid
+  overstating certainty.
+
+
+  ## Common failure modes
+
+  - Confusing anger, fear, or moral judgment with analysis
+
+  - Accepting narratives without checking evidence
+
+  - Assuming public statements are fully sincere
+
+  - Misreading masked motives as simple inconsistency
+
+  - Overclaiming certainty when the evidence is thin
+
+
+  ## Safety/boundary notes
+
+  This is an analytical framework, not a method for making accusations without evidence.
+  Be careful not to present speculation as fact. When the evidence is weak, say so
+  clearly. Avoid using the framework to justify dehumanizing language or unsupported
+  claims about groups or leaders.
+
+
+  ## Local adaptation notes
+
+  In some conflicts, local actors may have especially opaque incentives, and public
+  messaging may diverge sharply from behavior. Adapt the analysis to the local political
+  context, the reliability of sources, and the degree of strategic deception you expect.
+  The core method stays the same: compare interests, actions, and evidence before
+  drawing conclusions.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- security studies
+- analysis
+stage: foundation
+contexts:
+- commentary
+- war assessment
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A concept for analyzing conflict by focusing on interests, incentives,
+  and behavior rather than taking public claims at face value.
+summary_medium: This concept explains how to assess a regime or conflict actor by
+  looking at power politics, hidden motivations, and competing national interests.
+  It emphasizes uncertainty, inference, and the need to separate observed behavior
+  from public messaging when actors may be masking intent.
+plain_language: When people or states are involved in conflict, what they say publicly
+  may not match what they want or plan to do. This concept is about judging actors
+  by their interests, actions, and relationships instead of by slogans or emotional
+  reactions. It asks you to look for patterns, compare claims with behavior, and be
+  careful about what can actually be proven.
+structured_data:
+  definition: A concept for analyzing conflict and regime behavior by focusing on
+    interests, incentives, observable actions, and the gap between public claims and
+    likely intent.
+  key_questions:
+  - Who are the main actors, and what do they want?
+  - What do their actions suggest, compared with what they say?
+  - What incentives or constraints shape their behavior?
+  - What evidence is direct, and what is only inferred?
+  - How much uncertainty remains, and what alternative explanations fit the facts?
+  misconceptions:
+  - Public statements always reveal true intent.
+  - Strong analysis means being certain.
+  - Emotion or moral outrage is the same as evidence.
+  - A single explanation is enough even when the evidence is mixed.
+  - If an actor hides intent, it is impossible to analyze behavior at all.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_001
+  claim_text: In conflict and political analysis, public statements may not match
+    what actors want or plan to do.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: people intentionally masking their true motivations is absolutely part
+      of the landscape
+    start_char: 0
+    end_char: 77
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Iran, for its part, has capitalized to make it look like they are in
+      control of the situation
+    start_char: 0
+    end_char: 91
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_002
+  claim_text: Analysis should focus on actors' interests, incentives, actions, and
+    relationships rather than slogans or emotional reactions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: My opinion on this is irrelevant. Power politics doesn't care about your
+      feelings. Nations have interests and leaders should always pursue those interests
+      to the best of their ability.
+    start_char: 0
+    end_char: 155
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: we must be aware of all these framing techniques. Who is drawing our
+      attention to what and where? Why would they do that? What response are they
+      trying to achieve?
+    start_char: 0
+    end_char: 160
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_003
+  claim_text: The framework asks analysts to compare claims with behavior over time
+    and look for strategic ambiguity or hidden motives.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: people intentionally masking their true motivations is absolutely part
+      of the landscape
+    start_char: 0
+    end_char: 77
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000008
+    excerpt: Iran, for its part, has capitalized to make it look like they are in
+      control of the situation
+    start_char: 0
+    end_char: 91
+    support_strength: medium
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_004
+  claim_text: Conclusions should be treated as provisional unless there is strong
+    evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: it may, at times, look like I have lost my mind ... but in the world
+      of power politics, people intentionally masking their true motivations is absolutely
+      part of the landscape
+    start_char: 0
+    end_char: 159
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The hallmark of a good intelligence operation is sowing enough confusion
+      that one or two facts leave most observers scratching their heads.
+    start_char: 0
+    end_char: 136
+    support_strength: medium
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_005
+  claim_text: The framework warns against confusing emotion or moral judgment with
+    analysis.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 168
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: During crisis moments... nuance gets jettisoned and it's all fear, all
+      the time.
+    start_char: 0
+    end_char: 79
+    support_strength: medium
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_006
+  claim_text: The framework cautions against accepting narratives without checking
+    evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: They all fail to pass the basic test of something approaching facts.
+    start_char: 0
+    end_char: 68
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000017
+    excerpt: if you can't agree on facts, there is no causality
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_007
+  claim_text: The framework emphasizes uncertainty and the need to distinguish what
+    is known from what is inferred.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: It is inferential and differential
+    start_char: 0
+    end_char: 35
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000016
+    excerpt: how little is ultimately knowable as fact
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_008
+  claim_text: The framework asks analysts to identify main actors and their relationships.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: When you see someone acting or negotiating against his nation's best
+      interests, however, you should question who it is they actually work for.
+    start_char: 0
+    end_char: 136
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: Instead of seeing "Iran" as a patchwork of different factions, verticals,
+      cultures, and agendas
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_009
+  claim_text: The framework encourages comparing multiple explanations for observed
+    behavior.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 0
+    end_char: 111
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: Nobody on the right seems capable of imagining the possibility of Trump
+      pulling this off
+    start_char: 0
+    end_char: 87
+    support_strength: weak
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_010
+  claim_text: The framework is meant to be used carefully and not to justify unsupported
+    accusations or dehumanizing language.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: This is an analytical framework, not a method for making accusations
+      without evidence.
+    start_char: 0
+    end_char: 86
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: Avoid using the framework to justify dehumanizing language or unsupported
+      claims about groups or leaders.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_011
+  claim_text: The framework notes that local political context and source reliability
+    matter in some conflicts.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: Adapt the analysis to the local political context, the reliability of
+      sources, and the degree of strategic deception you expect.
+    start_char: 0
+    end_char: 126
+    support_strength: strong
+- object_id: geopolitics.assessing-regime-targets
+  claim_id: clm_012
+  claim_text: The core method is to compare interests, actions, and evidence before
+    drawing conclusions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000007
+    excerpt: 'The core method stays the same: compare interests, actions, and evidence
+      before drawing conclusions.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong

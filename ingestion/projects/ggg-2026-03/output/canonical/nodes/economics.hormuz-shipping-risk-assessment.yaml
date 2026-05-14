@@ -1,0 +1,371 @@
+id: economics.hormuz-shipping-risk-assessment
+slug: economics.hormuz-shipping-risk-assessment
+canonical_title: Hormuz Shipping Risk Assessment
+markdown_body: '## What this is
+
+  A market-oriented reference sheet for assessing how conflict risk around the Strait
+  of Hormuz can affect energy flows and financial markets. It focuses on the economic
+  consequences of a chokepoint, not on military tactics or operational disruption.
+
+
+  ## Why it matters
+
+  The Strait of Hormuz is a critical shipping route for oil and related cargoes. When
+  risk rises there, the market response can spread quickly: oil prices may jump, shipping
+  costs can change, insurers may tighten coverage, and investors may reprice currencies,
+  bonds, and equities. Even short-lived uncertainty can create a war premium.
+
+
+  ## What you need
+
+  - Basic market price indicators for oil and related assets
+
+  - Information on shipping insurance and reinsurance conditions
+
+  - News or alerts about tanker delays, port congestion, or route changes
+
+  - A way to compare local exposure, such as fuel dependence or import reliance
+
+
+  ## How to do it
+
+  1. Watch for changes in shipping insurance and reinsurance terms. These can be an
+  early sign that risk is being repriced.
+
+  2. Track tanker movement, delays, and congestion. Slower traffic or waiting patterns
+  can signal caution even when routes remain open.
+
+  3. Monitor oil prices and related market indicators for a war premium.
+
+  4. Check whether currencies, bonds, and equities are reacting to the same news or
+  whether the move is isolated to energy markets.
+
+  5. Separate temporary disruption from lasting closure. Markets often react strongly
+  to uncertainty before the physical situation is fully clear.
+
+  6. Compare the global signal with local exposure. A region that depends heavily
+  on imported fuel or has port bottlenecks may feel the impact more sharply.
+
+
+  ## Common failure modes
+
+  - Underestimating delays caused by fog-of-war uncertainty
+
+  - Ignoring insurance and reinsurance as a control point in the supply chain
+
+  - Treating a temporary closure or scare as if it were permanent
+
+  - Focusing only on oil prices and missing currency, bond, or equity reactions
+
+  - Assuming the same market impact everywhere without checking local dependence
+
+
+  ## Safety/boundary notes
+
+  This is a financial and geopolitical risk reference, not a guide for disruption
+  or interference. Conditions can change rapidly, so use current, reliable information
+  and avoid drawing firm conclusions from a single headline.
+
+
+  ## Local adaptation notes
+
+  Adapt the assessment to local conditions. The same event can have different effects
+  depending on fuel import dependence, exposure to shipping routes, port capacity,
+  logistics bottlenecks, and the structure of local insurance or trading relationships.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: economics
+secondary_domains:
+- shipping
+- energy markets
+- geopolitics
+stage: advanced
+contexts:
+- market monitoring
+- war premium analysis
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A market reference for understanding how conflict near the Strait of
+  Hormuz can affect oil prices, shipping insurance, currencies, bonds, and equities.
+summary_medium: This reference sheet explains how disruption risk around the Strait
+  of Hormuz can move energy and financial markets. It highlights the role of chokepoints,
+  shipping insurance, reinsurance, tanker delays, and market reactions across oil,
+  currencies, bonds, and equities.
+plain_language: When conflict threatens the Strait of Hormuz, markets often react
+  before anything fully closes. Oil prices can rise, shipping insurance can get more
+  expensive or harder to obtain, tankers may slow down or wait, and investors may
+  move money in currencies, bonds, and stocks. This reference helps you watch the
+  main signals and avoid overreacting to short-term disruption.
+structured_data:
+  definition: A reference sheet for assessing market and supply-chain effects when
+    conflict risk threatens shipping through the Strait of Hormuz.
+  key_questions:
+  - Is shipping insurance or reinsurance becoming more expensive or harder to obtain?
+  - Are tankers delaying, rerouting, or waiting near the chokepoint?
+  - Are oil prices showing a war premium?
+  - Are currencies, bonds, and equities reacting to the same risk?
+  - How exposed is the local market to imported fuel or port bottlenecks?
+  misconceptions:
+  - If the strait is not fully closed, there is no market impact.
+  - Oil prices are the only indicator worth watching.
+  - Insurance changes are secondary and can be ignored.
+  - A short-lived disruption has the same effect as a long-term closure.
+  - All regions experience the same level of impact.
+requires: []
+suggested_edges: []
+citations:
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_001
+  claim_text: The Strait of Hormuz is a critical shipping route for oil and related
+    cargoes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: As long as the Straits of Hormuz are "closed" the price of oil will be
+      elevated.
+    start_char: 0
+    end_char: 74
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Most of the oil that flows through the straits goes to China, Japan,
+      Korea, and Europe.
+    start_char: 0
+    end_char: 87
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_002
+  claim_text: When risk rises there, oil prices may jump, shipping costs can change,
+    insurers may tighten coverage, and investors may reprice currencies, bonds, and
+    equities.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, to date, the war premium is real. And it will have real consequences
+      on the US and global economy.
+    start_char: 0
+    end_char: 107
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Across the world bond yields are up ... and equity markets have reversed
+      recent breakouts to new highs.
+    start_char: 0
+    end_char: 103
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The hallmark of a good intelligence operation is sowing enough confusion
+      that one or two facts leave most observers scratching their heads.
+    start_char: 0
+    end_char: 137
+    support_strength: weak
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_003
+  claim_text: Even short-lived uncertainty can create a war premium.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, to date, the war premium is real.
+    start_char: 0
+    end_char: 44
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Ship captains and executives are doing the cost/benefit analysis during
+      maximum fog of war with billions at stake and crazy people at the trigger.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_004
+  claim_text: Changes in shipping insurance and reinsurance terms can be an early
+    sign that risk is being repriced.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The main factor in closing the straits to tanker traffic is the canceling
+      of shipping insurance from the British cartel of insurers, led by Lloyd's of
+      London.
+    start_char: 0
+    end_char: 155
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That announcement was immediately challenged by Trump who announced a
+      plan to provide reinsurance coverage
+    start_char: 0
+    end_char: 105
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_005
+  claim_text: Tracking tanker movement, delays, and congestion can signal caution
+    even when routes remain open.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: You can expect a lot of armtwisting going on behind the scenes as tankers
+      are stalled waiting for orders.
+    start_char: 0
+    end_char: 105
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: Ship traffic across Hormuz drops to nearly zero.
+    start_char: 0
+    end_char: 48
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_006
+  claim_text: Oil prices should be monitored for a war premium.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: That said, to date, the war premium is real.
+    start_char: 0
+    end_char: 44
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: 5)That week, oil prices spike, dump, and begin rising again towards $100+
+      / bbl Brent Crude.
+    start_char: 0
+    end_char: 91
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_007
+  claim_text: Currencies, bonds, and equities can react to the same news as energy
+    markets.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Across the world bond yields are up ... and equity markets have reversed
+      recent breakouts to new highs.
+    start_char: 0
+    end_char: 103
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: The USDX popped over 100 for the first time since November as everyone
+      waits to see what happens next.
+    start_char: 0
+    end_char: 102
+    support_strength: medium
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_008
+  claim_text: Markets often react strongly to uncertainty before the physical situation
+    is fully clear.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Ship captains and executives are doing the cost/benefit analysis during
+      maximum fog of war with billions at stake and crazy people at the trigger.
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: This short-term chaos isn't over. There are a lot of aftershocks that
+      are going to occur in the coming weeks and months.
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_009
+  claim_text: Local exposure such as fuel import dependence or port bottlenecks can
+    affect how sharply a region feels the impact.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Adapt the assessment to local conditions. The same event can have different
+      effects depending on fuel import dependence, exposure to shipping routes, port
+      capacity, logistics bottlenecks, and the structure of local insurance or trading
+      relationships.
+    start_char: 0
+    end_char: 239
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_010
+  claim_text: The reference sheet is intended as a financial and geopolitical risk
+    reference, not a guide for disruption or interference.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: This is a financial and geopolitical risk reference, not a guide for
+      disruption or interference.
+    start_char: 0
+    end_char: 96
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_011
+  claim_text: Conditions can change rapidly, so current reliable information should
+    be used and firm conclusions should not be drawn from a single headline.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Conditions can change rapidly, so use current, reliable information and
+      avoid drawing firm conclusions from a single headline.
+    start_char: 0
+    end_char: 125
+    support_strength: strong
+- object_id: economics.hormuz-shipping-risk-assessment
+  claim_id: clm_012
+  claim_text: The same event can have different effects depending on local conditions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000009
+    excerpt: Adapt the assessment to local conditions. The same event can have different
+      effects depending on fuel import dependence, exposure to shipping routes, port
+      capacity, logistics bottlenecks, and the structure of local insurance or trading
+      relationships.
+    start_char: 0
+    end_char: 239
+    support_strength: strong

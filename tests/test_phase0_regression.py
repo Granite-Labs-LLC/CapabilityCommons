@@ -1114,36 +1114,75 @@ class TestCONTENT001ImplementationProfile:
 
 class TestPUB002PublicObjectEnrichment:
     def test_public_implementation_profile_model(self):
-        """PUB-002: PublicImplementationProfile must be importable with all fields."""
+        """BE-ENV-1: PublicImplementationProfile matches the ingest envelope shape."""
         from capability_commons.schemas.public import PublicImplementationProfile
         fields = PublicImplementationProfile.model_fields
-        for name in ["smallest_viable_version", "preflight_checks", "tools",
-                      "materials", "estimated_time_hours", "estimated_cost_band",
+        for name in ["smallest_viable_version", "tools", "materials",
+                      "expected_time", "expected_cost",
                       "success_checks", "stop_conditions", "common_mistakes",
-                      "variants", "escalation_guidance"]:
+                      "variants", "when_to_escalate"]:
             assert name in fields, f"Missing field: {name}"
 
-    def test_project_implementation_profile_with_nested(self):
-        """PUB-002: project_implementation_profile must extract from nested profile."""
+    def test_project_from_ingest_envelope(self):
+        """BE-ENV-1: project_implementation_profile reads structured_data['implementation']."""
+        from capability_commons.schemas.public import project_implementation_profile
+        data = {
+            "implementation": {
+                "smallest_viable_version": "Pour 1 gallon into a clean jug.",
+                "tools": ["measuring cup"],
+                "materials": ["food-grade jug"],
+                "expected_time": "10 minutes",
+                "expected_cost": "free",
+                "success_checks": ["Jug is sealed."],
+                "stop_conditions": ["Container smells off."],
+                "common_mistakes": ["Reusing milk jugs."],
+                "variants": [{"label": "renter", "when": "no spigot", "notes": "use tap"}],
+                "when_to_escalate": ["No clean water within 24h."],
+            },
+        }
+        profile = project_implementation_profile(data)
+        assert profile is not None
+        assert profile.smallest_viable_version.startswith("Pour")
+        assert profile.tools == ["measuring cup"]
+        assert profile.materials == ["food-grade jug"]
+        assert profile.expected_time == "10 minutes"
+        assert profile.success_checks == ["Jug is sealed."]
+        assert profile.stop_conditions == ["Container smells off."]
+        assert len(profile.variants) == 1
+        assert profile.variants[0].label == "renter"
+        assert profile.when_to_escalate == ["No clean water within 24h."]
+
+    def test_project_from_legacy_implementation_profile(self):
+        """BE-ENV-1: legacy implementation_profile shape is coerced into the new envelope."""
         from capability_commons.schemas.public import project_implementation_profile
         data = {
             "implementation_profile": {
                 "smallest_viable_version": "Bucket collection",
                 "tools_tiered": [{"name": "Bucket", "tier": "essential"}],
+                "materials_tiered": [{"name": "Tarp", "tier": "recommended"}],
                 "estimated_time_hours": 1.0,
                 "estimated_cost_band": "free",
                 "success_checks": ["Water is clean"],
+                "escalation_guidance": "Consult water expert",
+                "variants": ["renter", "low_budget"],
             },
         }
         profile = project_implementation_profile(data)
         assert profile is not None
         assert profile.smallest_viable_version == "Bucket collection"
-        assert len(profile.tools) == 1
-        assert profile.tools[0]["name"] == "Bucket"
-        assert profile.estimated_cost_band == "free"
+        # tools_tiered → flat string list
+        assert profile.tools == ["Bucket"]
+        assert profile.materials == ["Tarp"]
+        # estimated_time_hours → human time string
+        assert profile.expected_time == "1.0 hour"
+        assert profile.expected_cost == "free"
+        # escalation_guidance string → when_to_escalate list
+        assert profile.when_to_escalate == ["Consult water expert"]
+        # variants as bare strings → ImplementationVariant rows
+        assert {v.label for v in profile.variants} == {"renter", "low_budget"}
 
-    def test_project_implementation_profile_from_top_level(self):
-        """PUB-002: project_implementation_profile must fall back to top-level fields."""
+    def test_project_from_top_level_fields(self):
+        """BE-ENV-1: bare top-level fields are picked up as final fallback."""
         from capability_commons.schemas.public import project_implementation_profile
         data = {
             "tools": ["Hammer", "Nails"],
@@ -1154,10 +1193,8 @@ class TestPUB002PublicObjectEnrichment:
         }
         profile = project_implementation_profile(data)
         assert profile is not None
-        assert len(profile.tools) == 2
-        assert profile.tools[0]["name"] == "Hammer"
-        assert profile.tools[0]["tier"] == "unspecified"
-        assert len(profile.materials) == 1
+        assert profile.tools == ["Hammer", "Nails"]
+        assert profile.materials == ["Wood planks"]
         assert profile.stop_conditions == ["If wood splits"]
         assert profile.success_checks == ["Frame is square"]
 
