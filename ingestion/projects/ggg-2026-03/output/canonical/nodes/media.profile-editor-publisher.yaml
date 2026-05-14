@@ -1,0 +1,355 @@
+id: media.profile-editor-publisher
+slug: media.profile-editor-publisher
+canonical_title: Editor and Publisher Profile
+markdown_body: '# What this is
+
+
+  This is a reference profile for a person described as an editor, publisher, and
+  writer. It captures background information about editorial work, publishing activity,
+  and media-related writing.
+
+
+  # Why it matters
+
+
+  Profiles like this help readers understand who is behind a publication, what kinds
+  of work they do, and how their experience connects to the content they produce or
+  distribute. In media and publishing, role clarity can help audiences judge perspective,
+  expertise, and editorial context.
+
+
+  # What you need
+
+
+  - A clear understanding that this is a profile, not a procedure
+
+  - Basic familiarity with editorial and publishing roles
+
+  - Context about the publication, outlet, or platform where the person appears
+
+
+  # How to do it
+
+
+  This object does not describe a reproducible process. If you are using it as a reference,
+  read it as background information:
+
+
+  1. Identify the person and their stated roles.
+
+  2. Note the kinds of media work they are associated with, such as editing, publishing,
+  or writing.
+
+  3. Use the profile to understand the person’s position in the media ecosystem.
+
+  4. If needed, compare the profile with other sources to confirm scope and context.
+
+
+  # Common failure modes
+
+
+  - Treating a biography as if it were a step-by-step method
+
+  - Assuming the profile includes complete career history when only a short description
+  is available
+
+  - Overgeneralizing one person’s background into a universal publishing model
+
+
+  # Safety/boundary notes
+
+
+  - This is descriptive information, not professional advice.
+
+  - Do not infer unsupported claims about credentials, affiliations, or responsibilities
+  beyond what is stated.
+
+  - Keep the profile tied to the named individual and the source context.
+
+
+  # Local adaptation notes
+
+
+  - The source is context-specific to the named person and their media presence.
+
+  - There is no explicit local adaptation guidance in the source.
+
+  - If reused in another setting, update the profile only with verified information
+  from that setting.
+
+  '
+source_segment_ids: []
+seed_type: field_report
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media
+secondary_domains:
+- publishing
+- personal_profile
+stage: foundation
+contexts:
+- editorial bio
+- publisher bio
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: A short profile of a person’s editorial, publishing, and writing roles.
+summary_medium: This object is a reference profile, not a step-by-step skill. It describes
+  editorial and publishing responsibilities, writing background, and media syndication
+  context for a named individual. It is useful for understanding roles and experience,
+  but it does not provide a reproducible procedure.
+plain_language: This is a profile object about someone who works in editorial and
+  publishing roles and writes for media outlets. It helps you understand the person’s
+  background and responsibilities, but it is not a how-to guide.
+structured_data:
+  definition: A reference profile describing a named person's editorial, publishing,
+    and writing roles in a media context.
+  key_questions:
+  - Who is the person being described?
+  - What editorial or publishing roles are mentioned?
+  - What writing or media outlets are associated with the person?
+  - What context does the profile provide for understanding their work?
+  misconceptions:
+  - This is a procedural guide.
+  - The profile proves a complete career history.
+  - The described roles can be assumed for other people without verification.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.profile-editor-publisher
+  claim_id: clm_001
+  claim_text: This is a reference profile, not a procedure.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: '### *Editor • Publisher*
+
+
+      Tom Luongo is a former research chemist and part-time goat farmer. He''s always
+      been a writer. He is also Editor of *Ultimate Wealth Report* and contributor
+      to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 0
+    end_char: 392
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_002
+  claim_text: The profile describes a person as an editor, publisher, and writer.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'Tom Luongo is a former research chemist and part-time goat farmer. He''s
+      always been a writer. He is also Editor of *Ultimate Wealth Report* and contributor
+      to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast'
+    start_char: 52
+    end_char: 286
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_003
+  claim_text: The profile captures background information about editorial work, publishing
+    activity, and media-related writing.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'He''s always been a writer. He is also Editor of *Ultimate Wealth Report*
+      and contributor to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 99
+    end_char: 392
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_004
+  claim_text: Profiles like this help readers understand who is behind a publication
+    and what kinds of work they do.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'He''s always been a writer. He is also Editor of *Ultimate Wealth Report*
+      and contributor to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast'
+    start_char: 99
+    end_char: 286
+    support_strength: medium
+- object_id: media.profile-editor-publisher
+  claim_id: clm_005
+  claim_text: In media and publishing, role clarity can help audiences judge perspective,
+    expertise, and editorial context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'He''s always been a writer. He is also Editor of *Ultimate Wealth Report*
+      and contributor to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast'
+    start_char: 99
+    end_char: 286
+    support_strength: weak
+- object_id: media.profile-editor-publisher
+  claim_id: clm_006
+  claim_text: The profile is context-specific to the named individual and their media
+    presence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'Tom Luongo is a former research chemist and part-time goat farmer. He''s
+      always been a writer. He is also Editor of *Ultimate Wealth Report* and contributor
+      to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 0
+    end_char: 392
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_007
+  claim_text: The source describes the person as a former research chemist and part-time
+    goat farmer.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: Tom Luongo is a former research chemist and part-time goat farmer.
+    start_char: 0
+    end_char: 66
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_008
+  claim_text: The person is also described as always having been a writer.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: He's always been a writer.
+    start_char: 67
+    end_char: 93
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_009
+  claim_text: The person is an editor of Ultimate Wealth Report and a contributor
+    to Financial Intelligence Report for Newsmax Media.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: He is also Editor of *Ultimate Wealth Report* and contributor to *Financial
+      Intelligence Report* for Newsmax Media.
+    start_char: 94
+    end_char: 208
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_010
+  claim_text: The person is the publisher of the Gold, Goats 'n Guns blog and podcast.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: The publisher of the *Gold, Goats 'n Guns* blog and podcast
+    start_char: 210
+    end_char: 270
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_011
+  claim_text: The person's work is published in Bitcoin Magazine and syndicated regularly
+    at ZeroHedge, Lewrockwell.com, and Investing.com.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: his work is also published in *Bitcoin Magazine* and syndicated regularly
+      at sites such as ZeroHedge, Lewrockwell.com and Investing.com.
+    start_char: 271
+    end_char: 407
+    support_strength: strong
+- object_id: media.profile-editor-publisher
+  claim_id: clm_012
+  claim_text: The profile is useful for understanding the person's position in the
+    media ecosystem.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'He is also Editor of *Ultimate Wealth Report* and contributor to *Financial
+      Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 94
+    end_char: 407
+    support_strength: medium
+- object_id: media.profile-editor-publisher
+  claim_id: clm_013
+  claim_text: The object should not be treated as a step-by-step method.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'Tom Luongo is a former research chemist and part-time goat farmer. He''s
+      always been a writer. He is also Editor of *Ultimate Wealth Report* and contributor
+      to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 0
+    end_char: 407
+    support_strength: weak
+- object_id: media.profile-editor-publisher
+  claim_id: clm_014
+  claim_text: The profile should be tied to the named individual and the source context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000001
+    excerpt: 'Tom Luongo is a former research chemist and part-time goat farmer. He''s
+      always been a writer. He is also Editor of *Ultimate Wealth Report* and contributor
+      to *Financial Intelligence Report* for Newsmax Media.
+
+
+      The publisher of the *Gold, Goats ''n Guns* blog and podcast, his work is also
+      published in *Bitcoin Magazine* and syndicated regularly at sites such as ZeroHedge,
+      Lewrockwell.com and Investing.com.'
+    start_char: 0
+    end_char: 407
+    support_strength: strong

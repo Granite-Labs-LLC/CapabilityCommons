@@ -1,0 +1,165 @@
+id: finance.cash-positioning-during-commodity-shocks
+slug: finance.cash-positioning-during-commodity-shocks
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Cash Positioning During Commodity Shocks
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio-management
+- risk-management
+stage: productive
+contexts:
+- volatile markets
+- commodity shock
+- war-driven inflation
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Guidance on holding cash during extreme market uncertainty.
+summary_medium: A tactical guide for investors to hold cash, take profits, and wait
+  for market corrections during periods of extreme uncertainty, such as commodity
+  shocks.
+plain_language: This guide helps you manage your investments during times of market
+  chaos by holding cash, taking profits, and waiting for better opportunities.
+markdown_body: '### What this is
+
+  This is a guide on how to manage your cash position during periods of extreme market
+  uncertainty, particularly during commodity shocks.
+
+
+  ### Why it matters
+
+  In times of market chaos, such as during geopolitical conflicts or significant commodity
+  price fluctuations, holding cash can provide optionality and reduce risk.
+
+
+  ### What you need
+
+  Access to financial tools such as price charts, knowledge of commodity prices, and
+  an understanding of yield spreads.
+
+
+  ### How to do it
+
+  1. Stay in cash to maintain flexibility. 2. Take profits from winning investments.
+  3. Lighten positions in concentrated winners. 4. Wait for significant corrections
+  in oil prices before re-entering the market.
+
+
+  ### Common failure modes
+
+  1. Buying too early in a volatile market. 2. Holding onto concentrated winners during
+  credit stress. 3. Misinterpreting temporary market relief as a trend reversal.
+
+
+  ### Safety/boundary notes
+
+  This guide provides speculative market advice and should not be considered personalized
+  financial advice.
+
+
+  ### Local adaptation notes
+
+  Cash preferences may vary based on local inflation rates and capital controls. Entry
+  thresholds can differ according to market structure and economic exposure to commodities.'
+structured_data:
+  tools:
+  - price charts
+  - transportation average
+  - commodity prices
+  - yield spreads
+  materials: []
+  success_criteria:
+  - Maintaining liquidity during market volatility
+  - Successfully taking profits before market downturns
+  - Re-entering the market after significant corrections
+  failure_modes:
+  - buying too early
+  - holding concentrated winners through a credit seizure
+  - confusing temporary relief with trend reversal
+  safety_boundary: This is speculative market advice from the source, not personalized
+    financial advice.
+  implementation:
+    smallest_viable_version: Hold cash and wait for significant market corrections
+      before redeploying capital.
+    tools:
+    - price charts
+    - transportation average
+    - commodity prices
+    - yield spreads
+    materials: []
+    expected_time: Varies based on market conditions
+    expected_cost: Low
+    success_checks:
+    - Liquidity is maintained during market volatility
+    - Profits are taken before market downturns
+    - Re-entry into the market occurs after significant corrections
+    stop_conditions:
+    - Market conditions stabilize
+    - Clear signals for re-entry appear
+    common_mistakes:
+    - Entering the market too early
+    - Holding onto winners during credit stress
+    - Misinterpreting temporary relief as a trend reversal
+    variants:
+    - label: Urban
+      when: In urban markets with high volatility
+      notes: Consider local economic factors and market structure.
+    - label: Off-grid
+      when: In less connected markets
+      notes: Adapt strategies based on local market access and information availability.
+    when_to_escalate:
+    - If market conditions worsen significantly
+    - If personal financial situation changes unexpectedly
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_001
+  claim_text: In times of market chaos, such as during geopolitical conflicts or significant
+    commodity price fluctuations, holding cash can provide optionality and reduce
+    risk.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: For now, stay in cash as much as possible. I get the feeling Trump is
+      willing to inflict more pain on his adversaries in NATO to get his desired geopolitical
+      outcome, a new regime in Iran the world can work with and an end to the Russia/Ukraine
+      conflict.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_002
+  claim_text: Wait for significant corrections in oil prices before re-entering the
+    market.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: The signal to go back in will be when oil prices correct significantly
+      from where they are, money will begin flowing again.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: finance.cash-positioning-during-commodity-shocks
+  claim_id: clm_003
+  claim_text: Buying too early in a volatile market.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000022
+    excerpt: But do not dive back in too early. Cutting the buy limit to $4.75
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000020

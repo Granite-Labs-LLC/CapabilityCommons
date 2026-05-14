@@ -1,0 +1,573 @@
+[
+  {
+    "object_id": "analysis.model-checking-for-political-claims",
+    "claim_id": "clm_001",
+    "claim_text": "This skill guide teaches you how to critically evaluate political claims by examining the models and assumptions that underpin them.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000018",
+        "excerpt": "They are all talking their book, backfitting the world they perceive, which is composed mostly of nonsense propaganda and literal fakery, onto their pre-existing worldview.",
+        "start_char": 202,
+        "end_char": 328,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "analysis.model-checking-for-political-claims",
+    "claim_id": "clm_002",
+    "claim_text": "In the realm of political discourse, untested models and reasoning based on amplification can lead to misinformation and overconfidence.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000018",
+        "excerpt": "And that's because they haven't checked their models, they can't do anything but believe in amplification.",
+        "start_char": 486,
+        "end_char": 563,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "analysis.model-checking-for-political-claims",
+    "claim_id": "clm_003",
+    "claim_text": "Avoid backfitting, which is adjusting models to fit preconceived notions.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000018",
+        "excerpt": "They are all talking their book, backfitting the world they perceive, which is composed mostly of nonsense propaganda and literal fakery, onto their pre-existing worldview.",
+        "start_char": 202,
+        "end_char": 328,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "analysis.model-checking-for-political-claims",
+    "claim_id": "clm_004",
+    "claim_text": "Common mistakes include accepting unchecked assumptions, falling for propaganda, and overconfidence in a single narrative.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000018",
+        "excerpt": "They are all talking their book, backfitting the world they perceive, which is composed mostly of nonsense propaganda and literal fakery, onto their pre-existing worldview.",
+        "start_char": 202,
+        "end_char": 328,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "analysis.model-checking-for-political-claims",
+    "claim_id": "clm_005",
+    "claim_text": "Be cautious of narratives that seem too neatly aligned with a particular ideology.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000018",
+        "excerpt": "Nobody on the right seems capable of imagining the possibility of Trump pulling this off, even though it has been absolutely reckless.",
+        "start_char": 412,
+        "end_char": 485,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.cash-positioning-during-commodity-shocks",
+    "claim_id": "clm_001",
+    "claim_text": "In times of market chaos, such as during geopolitical conflicts or significant commodity price fluctuations, holding cash can provide optionality and reduce risk.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "For now, stay in cash as much as possible. I get the feeling Trump is willing to inflict more pain on his adversaries in NATO to get his desired geopolitical outcome, a new regime in Iran the world can work with and an end to the Russia/Ukraine conflict.",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.cash-positioning-during-commodity-shocks",
+    "claim_id": "clm_002",
+    "claim_text": "Wait for significant corrections in oil prices before re-entering the market.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "The signal to go back in will be when oil prices correct significantly from where they are, money will begin flowing again.",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.cash-positioning-during-commodity-shocks",
+    "claim_id": "clm_003",
+    "claim_text": "Buying too early in a volatile market.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000022",
+        "excerpt": "But do not dive back in too early. Cutting the buy limit to $4.75",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_001",
+    "claim_text": "The GOATS Portfolio Holdings Reference Sheet is a detailed table that lists the current holdings within the GOATS portfolio.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000032",
+        "excerpt": "| Holding                             | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_002",
+    "claim_text": "It includes information on each security's entry date, entry price, recent price, current yield, total return, and position value.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000032",
+        "excerpt": "| Holding                             | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_003",
+    "claim_text": "Understanding the composition and performance of a portfolio is crucial for making informed investment decisions.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "This publication is intended solely for informational purposes. It is a source of data and other information to assist your investment decisions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_004",
+    "claim_text": "This sheet helps track the performance and value of each holding in the portfolio.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000032",
+        "excerpt": "| Holding                             | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_005",
+    "claim_text": "The data may become outdated quickly, and there is no explicit strategy narrative provided in the table.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000032",
+        "excerpt": "| Holding                             | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.goats-portfolio-holdings",
+    "claim_id": "clm_006",
+    "claim_text": "This information is for informational purposes only and should not be considered investment advice.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "This publication is intended solely for informational purposes. It is a source of data and other information to assist your investment decisions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.gold-portfolio-holdings",
+    "claim_id": "clm_001",
+    "claim_text": "This is a reference sheet for the GOLD portfolio, listing various assets and their financial metrics.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000031",
+        "excerpt": "### *GOLD Portfolio*\n\n| Holding                                   | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.gold-portfolio-holdings",
+    "claim_id": "clm_002",
+    "claim_text": "It includes information such as the symbol, entry date, entry price, recent price, current yield, total return, and position value for each holding.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000031",
+        "excerpt": "| Holding                                   | Symbol | Entry Date | Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.gold-portfolio-holdings",
+    "claim_id": "clm_003",
+    "claim_text": "Understanding the performance of each asset in a portfolio is crucial for making informed investment decisions.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "This publication is intended solely for informational purposes. It is a source of data and other information to assist your investment decisions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.gold-portfolio-holdings",
+    "claim_id": "clm_004",
+    "claim_text": "The table alone does not explain the selection criteria for each holding, and the performance figures may be time-sensitive, requiring regular updates.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "Past results are no indication of future performance. All investments are subject to risk, including the possibility of the complete loss of any money invested.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.gold-portfolio-holdings",
+    "claim_id": "clm_005",
+    "claim_text": "This reference sheet is informational only and should not be considered a solicitation or investment advice.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "This publication is intended solely for informational purposes. It is a source of data and other information to assist your investment decisions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.guns-portfolio-holdings",
+    "claim_id": "clm_001",
+    "claim_text": "This is a reference sheet detailing the holdings of the GUNS portfolio. It includes various asset classes such as currency, bitcoin, and ETFs.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000033",
+        "excerpt": "| ProShares UltraShort Euro | EUO | 5/8/18 | $22.40 | $30.15 | 0.00% | 34.60% | $1,345.98 | Bitcoin | BTC | 1/14/20 | $8,659.50 | $67,322.70 | 0.00% | 677.44% | $15,548.87 | WisdomTree Japan Hedged Equity ETF | DXJ | 11/17/23 | $91.54 | $154.58 | 2.49% | 80.80% | $1,807.96 | Ripple | XRP | 2/25/25 | $2.20 | $1.33 | 0.00% | -39.60% | $604.01 |",
+        "start_char": 0,
+        "end_char": 500,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.guns-portfolio-holdings",
+    "claim_id": "clm_002",
+    "claim_text": "This table is for informational purposes only and should not be considered investment advice.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000034",
+        "excerpt": "This publication is intended solely for informational purposes. It is a source of data and other information to assist your investment decisions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.hormuz-shipping-risk-insurance-response",
+    "claim_id": "clm_001",
+    "claim_text": "The Strait of Hormuz is a critical chokepoint for global oil shipping.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "Hormuz is a classic physical chokepoint that has been used as a Sword of Damocles over the entire global economy by Iran for decades.",
+        "start_char": 408,
+        "end_char": 492,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.hormuz-shipping-risk-insurance-response",
+    "claim_id": "clm_002",
+    "claim_text": "Disruptions here can lead to significant economic impacts worldwide.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "That threat, in my opinion, has been part of a global chaos premium the entire globe has had to factor into its risk pricing for doing business.",
+        "start_char": 493,
+        "end_char": 588,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.hormuz-shipping-risk-insurance-response",
+    "claim_id": "clm_003",
+    "claim_text": "Access to the Lloyd's of London insurance market, Chubb Ltd. policies, AIS tracking systems, and participation in a maritime reinsurance pool.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "March 2nd the British shipping insurance alliance led by Lloyd's of London cancels shipping insurance on many voyages in process, raising the premiums 400-500% on others.",
+        "start_char": 726,
+        "end_char": 855,
+        "support_strength": "medium"
+      },
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "March 6th-7th Further details about Trump insurance plans emerge. Policies will be written by Chubb Ltd. (NYSE:CB) starting on 3/11/26 with a formal $20 billion maritime reinsurance pool announced.",
+        "start_char": 1000,
+        "end_char": 1143,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "finance.hormuz-shipping-risk-insurance-response",
+    "claim_id": "clm_004",
+    "claim_text": "Utilize AIS tracking to monitor vessel movements.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000020",
+        "excerpt": "Ships begin queueing up to pay Iran's toll to transit the strait, confirmed by AIS tracking, by stopping at checkpoints at Qeshm island in the strait itself.",
+        "start_char": 1717,
+        "end_char": 1810,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.interpreting-power-shifts",
+    "claim_id": "clm_001",
+    "claim_text": "Understanding power politics is crucial for interpreting global events and policy decisions.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000006",
+        "excerpt": "Consensus politics is as much as lie as anything we've ever been presented with. It was always power politics, but it was given the veneer of inclusiveness, debate, and compromise to sell it to the normies.",
+        "start_char": 693,
+        "end_char": 854,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.interpreting-power-shifts",
+    "claim_id": "clm_002",
+    "claim_text": "To effectively interpret power shifts, you need to observe policy changes, analyze market signals, and compare historical events.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000006",
+        "excerpt": "This is why I was able to then begin the long pivot away from a purely Austrian economics interpretation of the global capital markets and begin seeing the limitations of individualist politics in the context of the world we actually lived in.",
+        "start_char": 1413,
+        "end_char": 1633,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.interpreting-power-shifts",
+    "claim_id": "clm_003",
+    "claim_text": "Avoid overrelying on ideological biases or assuming that consensus language reflects the true nature of negotiations.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000006",
+        "excerpt": "Consensus politics is a lawyer's game, built on words, definitions of what \"is\" is, and referrals to committees. In other words, it's all just gaslighting.",
+        "start_char": 1043,
+        "end_char": 1150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.interpreting-power-shifts",
+    "claim_id": "clm_004",
+    "claim_text": "Be cautious of drawing conclusions without sufficient evidence or understanding of the broader geopolitical context.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000007",
+        "excerpt": "And it's that illumination I want to focus on this month. The goal this month isn't advocacy or opposition to Trump's actions. I've made my peace with this and support where he has gone.",
+        "start_char": 583,
+        "end_char": 743,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.maritime-chokepoint-control",
+    "claim_id": "clm_001",
+    "claim_text": "This project blueprint describes a strategic plan for controlling maritime chokepoints in Iran, specifically focusing on the flow of oil through the Straits of Hormuz and the occupation of strategic locations like Kharg Island.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000015",
+        "excerpt": "For this to not be a massive mistake, the US needs to control the flow of Iranian oil when the shooting stops. This could be by occupying Kharg Island, or perhaps by securing the choke point at the Straits on Qeshm Island, but either way there will likely be an incursion by the US Marines before this is over.",
+        "start_char": 122,
+        "end_char": 354,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.maritime-chokepoint-control",
+    "claim_id": "clm_002",
+    "claim_text": "Controlling these chokepoints is crucial for influencing energy access in the region and can significantly impact post-conflict geopolitical dynamics, particularly in relation to China's oil supply.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000015",
+        "excerpt": "this is about starving China's access to free-flowing oil.",
+        "start_char": 75,
+        "end_char": 122,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.maritime-chokepoint-control",
+    "claim_id": "clm_003",
+    "claim_text": "The plan involves securing key locations such as Kharg Island and the Straits of Hormuz, likely requiring an incursion by US Marines.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000015",
+        "excerpt": "This could be by occupying Kharg Island, or perhaps by securing the choke point at the Straits on Qeshm Island, but either way there will likely be an incursion by the US Marines before this is over.",
+        "start_char": 122,
+        "end_char": 354,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "geopolitics.maritime-chokepoint-control",
+    "claim_id": "clm_004",
+    "claim_text": "Potential issues include recklessness in execution, mission creep, and failure to maintain control over the oil supply.",
+    "support": [
+      {
+        "source_id": "src.ggg.newsletter.2026-03",
+        "page_start": 1,
+        "page_end": 1,
+        "segment_id": "src.ggg.newsletter.2026-03::seg_000015",
+        "excerpt": "Trump has bet his presidency on this and success is not assured. I do, however, think it is more likely than not. Mostly because Trump has no delusions of nation building. If you want to bet against his willingness to break stuff and leave, be my guest.",
+        "start_char": 354,
+        "end_char": 526,
+        "support_strength": "medium"
+      }
+    ]
+  }
+]

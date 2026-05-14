@@ -1,0 +1,192 @@
+id: analysis.model-checking-for-political-claims
+slug: analysis.model-checking-for-political-claims
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Model Checking for Political Claims
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: critical thinking
+secondary_domains:
+- media literacy
+- decision analysis
+stage: advanced
+contexts:
+- political commentary
+- forecasting
+- model evaluation
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn to critically evaluate political claims by checking assumptions
+  and models.
+summary_medium: This guide provides techniques for critically evaluating political
+  narratives by checking models and assumptions, avoiding backfitting, and considering
+  alternative outcomes.
+plain_language: This guide helps you understand how to critically evaluate political
+  claims by checking the assumptions and models behind them, avoiding the trap of
+  fitting information to preconceived notions, and considering different possible
+  outcomes.
+markdown_body: '# What this is
+
+  This skill guide teaches you how to critically evaluate political claims by examining
+  the models and assumptions that underpin them. It emphasizes the importance of not
+  accepting narratives at face value and encourages a more analytical approach.
+
+
+  # Why it matters
+
+  In the realm of political discourse, untested models and reasoning based on amplification
+  can lead to misinformation and overconfidence. By learning to check assumptions,
+  you can better navigate political narratives and make informed decisions.
+
+
+  # What you need
+
+  To effectively check political models, you need access to the models themselves,
+  evidence that supports or refutes them, and tools for scenario analysis.
+
+
+  # How to do it
+
+  Start by identifying the assumptions underlying a political claim. Test these assumptions
+  against available evidence. Avoid backfitting, which is adjusting models to fit
+  preconceived notions. Consider alternative outcomes and scenarios that differ from
+  the presented narrative.
+
+
+  # Common failure modes
+
+  Common mistakes include accepting unchecked assumptions, falling for propaganda,
+  and overconfidence in a single narrative.
+
+
+  # Safety/boundary notes
+
+  Do not infer factual correctness from rhetorical confidence. Be cautious of narratives
+  that seem too neatly aligned with a particular ideology.
+
+
+  # Local adaptation notes
+
+  This guide references specific political contexts such as Trump, Iran, and US right-wing
+  media, which may need adaptation to local political climates.'
+structured_data:
+  tools:
+  - models
+  - evidence
+  - scenario analysis
+  materials: []
+  success_criteria:
+  - Identifying unchecked assumptions
+  - Testing assumptions against evidence
+  - Considering alternative outcomes
+  failure_modes:
+  - Unchecked assumptions
+  - Propaganda uptake
+  - Overconfidence
+  safety_boundary: Do not infer factual correctness from rhetorical confidence.
+  implementation:
+    smallest_viable_version: Start by identifying and testing assumptions of a single
+      political claim.
+    tools:
+    - models
+    - evidence
+    - scenario analysis
+    materials: []
+    expected_time: 1-2 hours per claim
+    expected_cost: low
+    success_checks:
+    - Assumptions are identified and tested
+    - Alternative outcomes are considered
+    stop_conditions:
+    - Unable to verify assumptions
+    - Lack of evidence
+    common_mistakes:
+    - Relying on rhetorical confidence
+    - Ignoring alternative scenarios
+    variants:
+    - label: urban
+      when: In a city with diverse media sources
+      notes: Utilize varied media outlets for evidence gathering.
+    when_to_escalate:
+    - Complex claims with significant impact
+    - Inability to verify critical assumptions
+requires: []
+suggested_edges: []
+citations:
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_001
+  claim_text: This skill guide teaches you how to critically evaluate political claims
+    by examining the models and assumptions that underpin them.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 202
+    end_char: 328
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_002
+  claim_text: In the realm of political discourse, untested models and reasoning based
+    on amplification can lead to misinformation and overconfidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: And that's because they haven't checked their models, they can't do anything
+      but believe in amplification.
+    start_char: 486
+    end_char: 563
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_003
+  claim_text: Avoid backfitting, which is adjusting models to fit preconceived notions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 202
+    end_char: 328
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_004
+  claim_text: Common mistakes include accepting unchecked assumptions, falling for
+    propaganda, and overconfidence in a single narrative.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 202
+    end_char: 328
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_005
+  claim_text: Be cautious of narratives that seem too neatly aligned with a particular
+    ideology.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000018
+    excerpt: Nobody on the right seems capable of imagining the possibility of Trump
+      pulling this off, even though it has been absolutely reckless.
+    start_char: 412
+    end_char: 485
+    support_strength: medium
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000018

@@ -1,0 +1,568 @@
+id: finance.investment-disclaimer-and-risk-notice
+slug: finance-investment-disclaimer-and-risk-notice
+canonical_title: Investment Disclaimer and Risk Notice
+markdown_body: '## What this is
+
+  This is a disclaimer and risk notice used in investment-related communication. It
+  tells readers that the material is provided for information only. It is not a promise
+  of profit, not a guarantee of future results, and not a direct instruction to buy
+  or sell any investment.
+
+
+  ## Why it matters
+
+  Investment decisions can lead to gains or losses. A clear disclaimer helps set expectations,
+  reduces the chance that readers mistake general commentary for personal advice,
+  and reminds people to make their own judgment. It also reinforces that past performance
+  does not ensure future performance.
+
+
+  ## What you need
+
+  - The disclaimer text itself
+
+  - A clear understanding that the publication is informational
+
+  - Awareness that investment decisions should be based on personal circumstances
+
+  - A process for due diligence before acting on any investment idea
+
+  - Access to qualified professional advice when needed
+
+
+  ## How to do it
+
+  1. Read the publication as general information, not as a guarantee or recommendation.
+
+  2. Check the facts for yourself before making any investment decision.
+
+  3. Consider whether the idea fits your goals, time horizon, and risk tolerance.
+
+  4. Seek professional advice if you are unsure or if the decision is significant.
+
+  5. Remember that even well-researched investments can lose value.
+
+
+  ## Common failure modes
+
+  - Treating the publication as personalized financial advice
+
+  - Assuming a past return means future returns will be similar
+
+  - Ignoring risk because the material sounds confident
+
+  - Skipping due diligence before investing
+
+  - Overlooking the possibility of partial or complete loss of capital
+
+
+  ## Safety/boundary notes
+
+  This notice does not make an offer to sell or a solicitation to buy any security
+  or investment product. It does not guarantee future performance. Investment outcomes
+  can vary, and losses can occur, including the possibility of losing all invested
+  capital. Readers should make decisions based on their own circumstances and risk
+  tolerance.
+
+
+  ## Local adaptation notes
+
+  The exact wording should match the publication, jurisdiction, and regulatory context.
+  If the audience is in a specific market, the disclaimer may need to reflect local
+  legal requirements, terminology, and disclosure rules. Any mention of suitability,
+  tax treatment, or product-specific risk should be adapted to the actual offering
+  and audience.'
+source_segment_ids: []
+seed_type: safety_notice
+co_type: safety_notice
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- compliance
+- risk_management
+stage: foundation
+contexts:
+- newsletter disclaimer
+- investment communication
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: A plain-language notice that investment information is for general
+  information only and does not guarantee results.
+summary_medium: This object explains that investment publications are informational,
+  not personalized advice or a promise of profit. It reminds readers that investing
+  involves risk, past performance is not a guarantee of future results, and decisions
+  should be made with due diligence and, when appropriate, professional advice.
+plain_language: This is a standard disclaimer for investment-related writing. It tells
+  readers not to treat the publication as a recommendation to buy or sell anything.
+  It also says that investing can lose money, that past results do not predict future
+  results, and that people should check the facts and get advice that fits their own
+  situation.
+structured_data:
+  definition: A standard investment disclaimer that states the content is informational
+    only, not personalized advice, and not a guarantee of results.
+  key_questions:
+  - Is the reader being told this is general information rather than advice?
+  - Does the notice clearly say that investing involves risk?
+  - Does it warn that past performance does not guarantee future results?
+  - Does it encourage due diligence and, when appropriate, professional advice?
+  - Does it avoid implying a promise of profit or a solicitation to buy or sell?
+  misconceptions:
+  - This publication is a guarantee of profit.
+  - Past performance means future performance will be the same.
+  - General investment commentary is the same as personal financial advice.
+  - A disclaimer removes all investment risk.
+  - Professional advice is unnecessary for any investment decision.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_001
+  claim_text: This is a disclaimer and risk notice used in investment-related communication.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: '### *Disclaimer:*
+
+
+      This publication is intended solely for informational purposes.'
+    start_char: 0
+    end_char: 74
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_002
+  claim_text: It tells readers that the material is provided for information only.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 74
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_003
+  claim_text: It is not a promise of profit.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Under no circumstances should the content of this letter be construed
+      as an express or implied promise, guarantee or implication by or from **Gold,
+      Goats 'n Guns**, or any of its employees, affiliates, or other agents that you
+      will profit from it
+    start_char: 0
+    end_char: 251
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_004
+  claim_text: It is not a guarantee of future results.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Past results are no indication of future performance.
+    start_char: 0
+    end_char: 53
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: No guarantee of any kind is implied or possible where projections of
+      future conditions are attempted.
+    start_char: 0
+    end_char: 101
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_005
+  claim_text: It is not a direct instruction to buy or sell any investment.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: The information in this publication is not to be construed, under any
+      circumstances, as an offer to sell or a solicitation to buy, sell, or trade
+      in any commodities, securities, or other financial instruments presented.
+    start_char: 0
+    end_char: 202
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_006
+  claim_text: Investment decisions can lead to gains or losses.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_007
+  claim_text: A clear disclaimer helps set expectations.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 74
+    support_strength: weak
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_008
+  claim_text: A clear disclaimer reduces the chance that readers mistake general commentary
+    for personal advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_009
+  claim_text: A clear disclaimer reminds people to make their own judgment.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_010
+  claim_text: It reinforces that past performance does not ensure future performance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Past results are no indication of future performance.
+    start_char: 0
+    end_char: 53
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_011
+  claim_text: The disclaimer text itself is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: '### *Disclaimer:*'
+    start_char: 0
+    end_char: 17
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_012
+  claim_text: A clear understanding that the publication is informational is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 74
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_013
+  claim_text: Awareness that investment decisions should be based on personal circumstances
+    is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Investment decisions by such persons may be inconsistent with or even
+      contradictory to the discussion or recommendations in **Gold, Goats 'n Guns**
+      per their personal circumstances.
+    start_char: 0
+    end_char: 182
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_014
+  claim_text: A process for due diligence before acting on any investment idea is
+    needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_015
+  claim_text: Access to qualified professional advice when needed is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is strongly recommended consulting your financial adviser or other
+      financial professional before making any investment decisions.
+    start_char: 0
+    end_char: 132
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_016
+  claim_text: The disclaimer text should be read as general information, not as a
+    guarantee or recommendation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 74
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: The information in this publication is not to be construed, under any
+      circumstances, as an offer to sell or a solicitation to buy, sell, or trade
+      in any commodities, securities, or other financial instruments presented.
+    start_char: 0
+    end_char: 202
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_017
+  claim_text: Readers should check the facts for themselves before making any investment
+    decision.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_018
+  claim_text: Readers should consider whether the idea fits their goals, time horizon,
+    and risk tolerance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: You should consider such risks prior to making any investment decisions.
+    start_char: 0
+    end_char: 71
+    support_strength: medium
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_019
+  claim_text: Readers should seek professional advice if they are unsure or if the
+    decision is significant.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is strongly recommended consulting your financial adviser or other
+      financial professional before making any investment decisions.
+    start_char: 0
+    end_char: 132
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_020
+  claim_text: Even well-researched investments can lose value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_021
+  claim_text: Treating the publication as personalized financial advice is a common
+    failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 74
+    support_strength: medium
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_022
+  claim_text: Assuming a past return means future returns will be similar is a common
+    failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Past results are no indication of future performance.
+    start_char: 0
+    end_char: 53
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_023
+  claim_text: Ignoring risk because the material sounds confident is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_024
+  claim_text: Skipping due diligence before investing is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is your responsibility to do your own due diligence on the contents
+      of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_025
+  claim_text: Overlooking the possibility of partial or complete loss of capital is
+    a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_026
+  claim_text: This notice does not make an offer to sell or a solicitation to buy
+    any security or investment product.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: The information in this publication is not to be construed, under any
+      circumstances, as an offer to sell or a solicitation to buy, sell, or trade
+      in any commodities, securities, or other financial instruments presented.
+    start_char: 0
+    end_char: 202
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_027
+  claim_text: It does not guarantee future performance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: No guarantee of any kind is implied or possible where projections of
+      future conditions are attempted.
+    start_char: 0
+    end_char: 101
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_028
+  claim_text: Investment outcomes can vary, and losses can occur, including the possibility
+    of losing all invested capital.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_029
+  claim_text: Readers should make decisions based on their own circumstances and risk
+    tolerance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Investment decisions by such persons may be inconsistent with or even
+      contradictory to the discussion or recommendations in **Gold, Goats 'n Guns**
+      per their personal circumstances.
+    start_char: 0
+    end_char: 182
+    support_strength: strong
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_030
+  claim_text: The exact wording should match the publication, jurisdiction, and regulatory
+    context.
+  support:
+  - source_id: NO_SUPPORT
+    page_start: 0
+    page_end: 0
+    segment_id: NO_SUPPORT
+    excerpt: ''
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_031
+  claim_text: If the audience is in a specific market, the disclaimer may need to
+    reflect local legal requirements, terminology, and disclosure rules.
+  support:
+  - source_id: NO_SUPPORT
+    page_start: 0
+    page_end: 0
+    segment_id: NO_SUPPORT
+    excerpt: ''
+    start_char: 0
+    end_char: 0
+    support_strength: weak
+- object_id: finance-investment-disclaimer-and-risk-notice
+  claim_id: clm_032
+  claim_text: Any mention of suitability, tax treatment, or product-specific risk
+    should be adapted to the actual offering and audience.
+  support:
+  - source_id: NO_SUPPORT
+    page_start: 0
+    page_end: 0
+    segment_id: NO_SUPPORT
+    excerpt: ''
+    start_char: 0
+    end_char: 0
+    support_strength: weak

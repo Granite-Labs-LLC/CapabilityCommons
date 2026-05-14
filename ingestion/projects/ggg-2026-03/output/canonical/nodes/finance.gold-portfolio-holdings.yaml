@@ -1,0 +1,162 @@
+id: finance.gold-portfolio-holdings
+slug: finance.gold-portfolio-holdings
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: GOLD Portfolio Holdings
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- commodities
+- portfolio_management
+stage: foundation
+contexts:
+- gold-focused portfolio
+- newsletter
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A table detailing the holdings of a GOLD portfolio.
+summary_medium: A comprehensive table listing the holdings of a GOLD portfolio, including
+  symbols, entry dates, prices, yields, returns, and position values.
+plain_language: This reference sheet provides a detailed table of the GOLD portfolio
+  holdings, showing key financial metrics for each asset.
+markdown_body: '### What this is
+
+  This is a reference sheet for the GOLD portfolio, listing various assets and their
+  financial metrics. It includes information such as the symbol, entry date, entry
+  price, recent price, current yield, total return, and position value for each holding.
+
+
+  ### Why it matters
+
+  Understanding the performance of each asset in a portfolio is crucial for making
+  informed investment decisions. This table provides a snapshot of the GOLD portfolio''s
+  current status, helping investors assess the performance and composition of their
+  investments.
+
+
+  ### What you need
+
+  To use this reference sheet effectively, you need access to the portfolio table
+  and market price data to compare and analyze the performance of each holding.
+
+
+  ### How to do it
+
+  Review the table to inspect the performance of each holding. Compare the current
+  yield and total return across different assets to evaluate their performance. Monitor
+  the portfolio composition to ensure it aligns with your investment strategy.
+
+
+  ### Common failure modes
+
+  The table alone does not explain the selection criteria for each holding, and the
+  performance figures may be time-sensitive, requiring regular updates.
+
+
+  ### Safety/boundary notes
+
+  This reference sheet is informational only and should not be considered a solicitation
+  or investment advice.
+
+
+  ### Local adaptation notes
+
+  Portfolio composition may vary based on individual investor circumstances and preferences.'
+structured_data:
+  tools:
+  - portfolio table
+  - market price data
+  materials: []
+  success_criteria:
+  - Accurate understanding of portfolio performance
+  - Informed decision-making
+  failure_modes:
+  - Misinterpretation of data
+  - Outdated performance figures
+  safety_boundary:
+  - Informational only
+  - Not a solicitation
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_001
+  claim_text: This is a reference sheet for the GOLD portfolio, listing various assets
+    and their financial metrics.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_002
+  claim_text: It includes information such as the symbol, entry date, entry price,
+    recent price, current yield, total return, and position value for each holding.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_003
+  claim_text: Understanding the performance of each asset in a portfolio is crucial
+    for making informed investment decisions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_004
+  claim_text: The table alone does not explain the selection criteria for each holding,
+    and the performance figures may be time-sensitive, requiring regular updates.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: Past results are no indication of future performance. All investments
+      are subject to risk, including the possibility of the complete loss of any money
+      invested.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_005
+  claim_text: This reference sheet is informational only and should not be considered
+    a solicitation or investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000031

@@ -1,0 +1,174 @@
+id: geopolitics.maritime-chokepoint-control
+slug: geopolitics.maritime-chokepoint-control
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Maritime Chokepoint Control in Post-Conflict Iran
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geopolitics
+secondary_domains:
+- military strategy
+- energy security
+stage: advanced
+contexts:
+- Iran
+- Kharg Island
+- Straits of Hormuz
+- US Marines
+difficulty: 4
+cost_band: high
+risk_band: high
+summary_short: Strategic control of Iranian oil flow and maritime chokepoints to influence
+  post-conflict outcomes.
+summary_medium: This project blueprint outlines a strategy for controlling Iranian
+  oil flow and key maritime chokepoints, aiming to shape energy access and regional
+  stability after conflict. It involves securing strategic locations like Kharg Island
+  and the Straits of Hormuz.
+plain_language: This project involves a plan to control key maritime chokepoints in
+  Iran to manage oil flow and influence regional outcomes after a conflict. It requires
+  military action and careful political evaluation.
+markdown_body: '# What this is
+
+  This project blueprint describes a strategic plan for controlling maritime chokepoints
+  in Iran, specifically focusing on the flow of oil through the Straits of Hormuz
+  and the occupation of strategic locations like Kharg Island.
+
+
+  # Why it matters
+
+  Controlling these chokepoints is crucial for influencing energy access in the region
+  and can significantly impact post-conflict geopolitical dynamics, particularly in
+  relation to China''s oil supply.
+
+
+  # What you need
+
+  Military forces, knowledge of maritime geography, and understanding of energy infrastructure
+  are essential for executing this strategy.
+
+
+  # How to do it
+
+  The plan involves securing key locations such as Kharg Island and the Straits of
+  Hormuz, likely requiring an incursion by US Marines. The objective is to control
+  oil flow post-conflict without engaging in nation-building.
+
+
+  # Common failure modes
+
+  Potential issues include recklessness in execution, mission creep, and failure to
+  maintain control over the oil supply.
+
+
+  # Safety/boundary notes
+
+  This blueprint contains military speculation and is not an operational plan. It
+  should not be used as guidance for violence.
+
+
+  # Local adaptation notes
+
+  The strategy is specific to the geopolitical context of Iran, including local islands
+  and US domestic politics.'
+structured_data:
+  goal: To control strategic maritime chokepoints in Iran for post-conflict leverage
+    over energy access.
+  deliverables: Secured control of Kharg Island and the Straits of Hormuz.
+  acceptance_criteria: Successful control of oil flow through key chokepoints without
+    engaging in extended nation-building efforts.
+  implementation:
+    smallest_viable_version: Secure Kharg Island to control oil flow post-conflict.
+    tools:
+    - military forces
+    materials:
+    - maritime geography maps
+    - energy infrastructure data
+    expected_time: Several months post-conflict
+    expected_cost: High, due to military involvement
+    success_checks:
+    - Effective control of oil flow
+    - Minimal mission creep
+    stop_conditions:
+    - Unmanageable political risk
+    - Failure to maintain control
+    common_mistakes:
+    - Recklessness
+    - Mission creep
+    variants:
+    - label: Urban
+      when: Operating near populated coastal areas
+      notes: Consider civilian impact and urban infrastructure.
+    when_to_escalate:
+    - Loss of control over key locations
+    - Significant political backlash
+  safety_boundary: Geopolitical risk content; not financial or legal advice. Do not
+    act on speculative scenarios without consulting a qualified professional.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_001
+  claim_text: This project blueprint describes a strategic plan for controlling maritime
+    chokepoints in Iran, specifically focusing on the flow of oil through the Straits
+    of Hormuz and the occupation of strategic locations like Kharg Island.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000015
+    excerpt: For this to not be a massive mistake, the US needs to control the flow
+      of Iranian oil when the shooting stops. This could be by occupying Kharg Island,
+      or perhaps by securing the choke point at the Straits on Qeshm Island, but either
+      way there will likely be an incursion by the US Marines before this is over.
+    start_char: 122
+    end_char: 354
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_002
+  claim_text: Controlling these chokepoints is crucial for influencing energy access
+    in the region and can significantly impact post-conflict geopolitical dynamics,
+    particularly in relation to China's oil supply.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000015
+    excerpt: this is about starving China's access to free-flowing oil.
+    start_char: 75
+    end_char: 122
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_003
+  claim_text: The plan involves securing key locations such as Kharg Island and the
+    Straits of Hormuz, likely requiring an incursion by US Marines.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000015
+    excerpt: This could be by occupying Kharg Island, or perhaps by securing the choke
+      point at the Straits on Qeshm Island, but either way there will likely be an
+      incursion by the US Marines before this is over.
+    start_char: 122
+    end_char: 354
+    support_strength: strong
+- object_id: geopolitics.maritime-chokepoint-control
+  claim_id: clm_004
+  claim_text: Potential issues include recklessness in execution, mission creep, and
+    failure to maintain control over the oil supply.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000015
+    excerpt: Trump has bet his presidency on this and success is not assured. I do,
+      however, think it is more likely than not. Mostly because Trump has no delusions
+      of nation building. If you want to bet against his willingness to break stuff
+      and leave, be my guest.
+    start_char: 354
+    end_char: 526
+    support_strength: medium
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000015

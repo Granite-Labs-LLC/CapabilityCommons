@@ -1,0 +1,175 @@
+id: finance.goats-portfolio-holdings
+slug: finance.goats-portfolio-holdings
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: GOATS Portfolio Holdings Reference Sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- equities
+- commodities
+stage: advanced
+contexts:
+- portfolio review
+- newsletter
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: A table detailing the holdings of the GOATS portfolio.
+summary_medium: The GOATS portfolio holdings table lists various securities with details
+  such as entry dates, prices, yields, returns, and position values.
+plain_language: This reference sheet provides a detailed list of the securities held
+  in the GOATS portfolio, including key financial metrics for each holding.
+markdown_body: '### What this is
+
+  The GOATS Portfolio Holdings Reference Sheet is a detailed table that lists the
+  current holdings within the GOATS portfolio. It includes information on each security''s
+  entry date, entry price, recent price, current yield, total return, and position
+  value.
+
+
+  ### Why it matters
+
+  Understanding the composition and performance of a portfolio is crucial for making
+  informed investment decisions. This sheet helps track the performance and value
+  of each holding in the portfolio.
+
+
+  ### What you need
+
+  To make use of this reference sheet, you need access to the holdings table and a
+  basic understanding of financial metrics such as yield, return, and position value.
+
+
+  ### How to do it
+
+  Review the table to assess each holding''s performance. Compare entry prices with
+  recent prices to evaluate gains or losses. Use the yield and return percentages
+  to gauge income and appreciation.
+
+
+  ### Common failure modes
+
+  The data may become outdated quickly, and there is no explicit strategy narrative
+  provided in the table.
+
+
+  ### Safety/boundary notes
+
+  This information is for informational purposes only and should not be considered
+  investment advice.
+
+
+  ### Local adaptation notes
+
+  The varied entry dates and position values suggest that allocation timing may be
+  individualized based on specific investor needs.'
+structured_data:
+  tools:
+  - holdings table
+  - price history
+  materials: []
+  success_criteria:
+  - Accurate tracking of portfolio performance
+  - Ability to compare income and appreciation
+  failure_modes:
+  - Data may become outdated quickly
+  - No explicit strategy narrative
+  safety_boundary: Informational only, not investment advice
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_001
+  claim_text: The GOATS Portfolio Holdings Reference Sheet is a detailed table that
+    lists the current holdings within the GOATS portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_002
+  claim_text: It includes information on each security's entry date, entry price,
+    recent price, current yield, total return, and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_003
+  claim_text: Understanding the composition and performance of a portfolio is crucial
+    for making informed investment decisions.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_004
+  claim_text: This sheet helps track the performance and value of each holding in
+    the portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_005
+  claim_text: The data may become outdated quickly, and there is no explicit strategy
+    narrative provided in the table.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000032
+    excerpt: '| Holding                             | Symbol | Entry Date | Entry
+      Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: finance.goats-portfolio-holdings
+  claim_id: clm_006
+  claim_text: This information is for informational purposes only and should not be
+    considered investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.ggg.newsletter.2026-03::seg_000032

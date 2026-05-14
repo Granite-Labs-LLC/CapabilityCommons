@@ -1,0 +1,209 @@
+id: portfolio.gold-goats-guns-overview
+slug: portfolio.gold-goats-guns-overview
+canonical_title: Gold, Goats 'N Guns Portfolio Framing
+markdown_body: '## What this is
+
+  A named portfolio framing concept mentioned in a newsletter heading: "Gold, Goats
+  ''N Guns Portfolio." The provided source does not include the actual explanation,
+  rules, or examples behind the idea.
+
+
+  ## Why it matters
+
+  Portfolio framing can help people think clearly about how to divide money across
+  different goals, risk levels, and market conditions. A named framework may be useful
+  if it gives a simple way to organize assets or compare tradeoffs. In this case,
+  the source does not provide enough detail to say how the framework works.
+
+
+  ## What you need
+
+  - A complete source description of the framework
+
+  - Any rules for how assets are grouped or weighted
+
+  - Any examples showing how the portfolio is built or adjusted
+
+  - Any stated assumptions about risk, time horizon, or market conditions
+
+
+  ## How to do it
+
+  Because the source excerpt contains only a heading, there is no reproducible procedure
+  to follow from the provided material. If you want to use this concept, first locate
+  the full article or original explanation. Then identify:
+
+  1. The purpose of the portfolio framing
+
+  2. The asset groups or categories involved
+
+  3. The decision rules for allocation or rebalancing
+
+  4. Any limits, exceptions, or risk controls
+
+
+  ## Common failure modes
+
+  - Assuming the name alone defines a complete strategy
+
+  - Filling in missing rules from unrelated portfolio systems
+
+  - Treating a headline as if it were a tested method
+
+  - Using the concept without understanding its risk assumptions
+
+
+  ## Safety/boundary notes
+
+  This source does not provide investment instructions. Do not treat this record as
+  financial advice or as a validated allocation method. Any real portfolio decision
+  should be based on complete documentation, your own risk tolerance, and appropriate
+  professional guidance if needed.
+
+
+  ## Local adaptation notes
+
+  If the full framework is later recovered, adapt it to your own context by checking:
+
+  - Your time horizon
+
+  - Your tolerance for loss and volatility
+
+  - Your liquidity needs
+
+  - Tax and account constraints
+
+  - Whether the framework fits your goals and constraints
+
+
+  Until then, this object should be used only as a placeholder for the named concept,
+  not as an actionable investing skill.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: portfolio_management
+secondary_domains:
+- asset_allocation
+- risk_management
+stage: foundation
+contexts:
+- newsletter
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A named portfolio framing idea is referenced, but the source excerpt
+  does not provide enough detail to define a reproducible method.
+summary_medium: 'The source only supplies the heading "THE GOLD, GOATS ''N GUNS PORTFOLIO"
+  and does not include explanatory text, rules, or examples. As a result, this object
+  can only capture the concept at a high level: it appears to be a portfolio framing
+  approach related to asset allocation and risk management, but the underlying method
+  is not recoverable from the provided material.'
+plain_language: This is a placeholder concept record for a portfolio idea mentioned
+  by name in a newsletter. The excerpt does not explain what the idea means, how to
+  use it, or what decisions it supports. Treat it as an unresolved reference rather
+  than a complete investing framework.
+structured_data:
+  definition: A named portfolio framing idea referenced in a newsletter heading, with
+    no substantive explanation available in the provided source.
+  key_questions:
+  - What assets or categories does the framework include?
+  - What problem is the framework meant to solve?
+  - Are there rules for allocation, rebalancing, or risk control?
+  - What assumptions does the framework make about markets or investor goals?
+  misconceptions:
+  - The name alone is enough to reconstruct the strategy.
+  - A heading implies a complete or tested investment method.
+  - Any portfolio framework can be used without understanding its assumptions.
+requires: []
+suggested_edges: []
+citations:
+- object_id: portfolio.gold-goats-guns-overview
+  claim_id: clm_001
+  claim_text: The source only supplies the heading "THE GOLD, GOATS 'N GUNS PORTFOLIO"
+    and does not include explanatory text, rules, or examples.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 38
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000030
+    excerpt: '## PORTFOLIO TABLE AND ALLOCATION RECOMMENDATIONS'
+    start_char: 0
+    end_char: 49
+    support_strength: strong
+- object_id: portfolio.gold-goats-guns-overview
+  claim_id: clm_002
+  claim_text: The object is a placeholder concept record for a portfolio idea mentioned
+    by name in a newsletter.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 38
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000004
+    excerpt: '*Please visit the blog at <http://goldgoatsnguns.com> for additional
+      content*'
+    start_char: 0
+    end_char: 77
+    support_strength: weak
+- object_id: portfolio.gold-goats-guns-overview
+  claim_id: clm_003
+  claim_text: The excerpt does not explain what the idea means, how to use it, or
+    what decisions it supports.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 38
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000030
+    excerpt: '## PORTFOLIO TABLE AND ALLOCATION RECOMMENDATIONS'
+    start_char: 0
+    end_char: 49
+    support_strength: strong
+- object_id: portfolio.gold-goats-guns-overview
+  claim_id: clm_004
+  claim_text: Treat it as an unresolved reference rather than a complete investing
+    framework.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000029
+    excerpt: '## THE GOLD, GOATS ''N GUNS PORTFOLIO'
+    start_char: 0
+    end_char: 38
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 145
+    support_strength: weak

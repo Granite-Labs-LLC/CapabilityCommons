@@ -1,0 +1,315 @@
+id: finance.guns-portfolio-holdings
+slug: finance-guns-portfolio-holdings
+canonical_title: GUNS Portfolio Holdings Table
+markdown_body: '# What this is
+
+
+  A portfolio holdings table is a simple record of what is currently held in a portfolio
+  and how each holding is performing. In this case, the GUNS portfolio includes mixed
+  assets such as currency, bitcoin, and ETFs. The table tracks practical details like
+  entry date, entry price, yield, return, and position value.
+
+
+  # Why it matters
+
+
+  A holdings table helps you see the portfolio in one place. It makes it easier to
+  compare assets, notice which positions are gaining or losing value, and review how
+  the portfolio is distributed across different asset types. For a mixed portfolio,
+  this kind of snapshot is especially useful because different assets may behave very
+  differently.
+
+
+  # What you need
+
+
+  - A list of the portfolio holdings
+
+  - Entry dates for each position
+
+  - Entry prices or cost basis
+
+  - Current market prices or valuation data
+
+  - Yield and return figures, if available
+
+  - Position values for each holding
+
+
+  # How to do it
+
+
+  1. List each asset in the portfolio.
+
+  2. Record when the position was entered.
+
+  3. Record the entry price or cost basis.
+
+  4. Add any yield or return information that applies.
+
+  5. Calculate or record the current value of each position.
+
+  6. Review the table to compare performance across holdings.
+
+  7. Update the table when prices or positions change.
+
+
+  # Common failure modes
+
+
+  - Treating a snapshot as if it explains the full strategy behind the portfolio
+
+  - Comparing assets without accounting for different asset classes
+
+  - Using stale prices or outdated position values
+
+  - Assuming yield and return figures mean the same thing for every asset
+
+  - Forgetting that the table shows performance at a point in time, not a permanent
+  result
+
+
+  # Safety/boundary notes
+
+
+  This is informational content only and is not investment advice. A mixed portfolio
+  can carry different kinds of risk depending on the assets included. Any interpretation
+  should be made in the context of the investor''s own goals, time horizon, and risk
+  tolerance.
+
+
+  # Local adaptation notes
+
+
+  The source suggests a mixed-asset portfolio, which means the exact allocation and
+  interpretation may vary by investor. Local use may adapt the table to different
+  risk tolerances, reporting formats, or asset mixes. The core structure stays the
+  same: list holdings, track key metrics, and review performance over time.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: DRAFT
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- portfolio_management
+- digital_assets
+- currency
+stage: reference
+contexts:
+- portfolio review
+- newsletter
+difficulty: 2
+cost_band: low
+risk_band: medium
+summary_short: A holdings table that tracks the GUNS portfolio across currencies,
+  bitcoin, and ETFs.
+summary_medium: This reference sheet presents a portfolio holdings table for the GUNS
+  portfolio. It lists assets across mixed categories such as currency, bitcoin, and
+  ETFs, along with entry dates, prices, yields, returns, and position values. The
+  table is meant for review and comparison rather than as a step-by-step investing
+  method.
+plain_language: This object is a snapshot of a portfolio holdings table. It shows
+  what assets are in the GUNS portfolio and how each position is being tracked, including
+  entry date, entry price, yield, return, and current position value. Because it mixes
+  asset classes, it is useful for comparing performance across different holdings,
+  but it does not explain the investment thesis or why the assets were grouped together.
+structured_data:
+  definition: A reference table that records the holdings in a portfolio and tracks
+    basic performance and valuation fields for each position.
+  key_questions:
+  - What assets are currently in the portfolio?
+  - When was each position entered?
+  - What was the entry price or cost basis?
+  - What is the current value of each position?
+  - How do returns compare across different asset classes?
+  misconceptions:
+  - A holdings table explains the full investment strategy.
+  - All return and yield figures are directly comparable across every asset type.
+  - A snapshot value is the same as a guaranteed future result.
+requires: []
+suggested_edges:
+- target_id: finance.portfolio-review
+  edge_type: related_to
+- target_id: finance.asset-allocation
+  edge_type: related_to
+citations:
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_001
+  claim_text: The GUNS portfolio includes mixed assets such as currency, bitcoin,
+    and ETFs.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000033
+    excerpt: '### *GUNS Portfolio*
+
+
+      | Holding                               | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |
+
+      |---------------------------------------|--------|------------|-------------|--------------|---------------|---------------|----------------------|
+
+      | ProShares UltraShort Euro             | EUO    | 5/8/18     | $22.40      |
+      $30.15       | 0.00%         | 34.60%        | $1,345.98           |
+
+      | Bitcoin                               | BTC    | 1/14/20    | $8,659.50   |
+      $67,322.70   | 0.00%         | 677.44%       | $15,548.87          |
+
+      | WisdomTree Japan Hedged<br>Equity ETF | DXJ    | 11/17/23   | $91.54      |
+      $154.58      | 2.49%         | 80.80%        | $1,807.96           |
+
+      | Ripple                                | XRP    | 2/25/25    | $2.20       |
+      $1.33        | 0.00%         | -39.60%       | $604.01             |'
+    start_char: 0
+    end_char: 523
+    support_strength: strong
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_002
+  claim_text: The table tracks practical details like entry date, entry price, yield,
+    return, and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 170
+    support_strength: strong
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_003
+  claim_text: A holdings table helps you see the portfolio in one place.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 170
+    support_strength: weak
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_004
+  claim_text: It makes it easier to compare assets, notice which positions are gaining
+    or losing value, and review how the portfolio is distributed across different
+    asset types.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 170
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000020
+    excerpt: For the past year or so I've been banging on about the US regaining control
+      over the pricing mechanisms of specific strategic commodities – gold, silver,
+      industrial metals.
+    start_char: 0
+    end_char: 129
+    support_strength: weak
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_005
+  claim_text: For a mixed portfolio, this kind of snapshot is especially useful because
+    different assets may behave very differently.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GUNS Portfolio*
+
+
+      | Holding                               | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 170
+    support_strength: weak
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_006
+  claim_text: The object is informational content only and is not investment advice.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+      It is strongly recommended consulting your financial adviser or other financial
+      professional before making any investment decisions.
+    start_char: 0
+    end_char: 194
+    support_strength: strong
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_007
+  claim_text: A mixed portfolio can carry different kinds of risk depending on the
+    assets included.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: All investments are subject to risk, including the possibility of the
+      complete loss of any money invested. You should consider such risks prior to
+      making any investment decisions.
+    start_char: 0
+    end_char: 171
+    support_strength: medium
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_008
+  claim_text: The source suggests a mixed-asset portfolio, which means the exact allocation
+    and interpretation may vary by investor.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '### *GUNS Portfolio*
+
+
+      | Holding                               | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 170
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000034
+    excerpt: Any publicly-obtained information contained herein is assumed to be reliable,
+      but is in no way guaranteed. It is your responsibility to do your own due diligence
+      on the contents of **Gold, Goats 'n Guns.**
+    start_char: 0
+    end_char: 176
+    support_strength: medium
+- object_id: finance-guns-portfolio-holdings
+  claim_id: clm_009
+  claim_text: 'The core structure stays the same: list holdings, track key metrics,
+    and review performance over time.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 170
+    support_strength: strong

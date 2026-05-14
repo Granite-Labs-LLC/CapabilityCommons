@@ -1,0 +1,309 @@
+id: politics.hornets-nest-metaphor
+slug: politics.hornets-nest-metaphor
+canonical_title: Hornet's-Nest Metaphor for Political Conflict
+markdown_body: '## What this is
+
+  This is a political metaphor that compares a tense or unstable situation to a hornet''s
+  nest. The idea is that some conflicts stay quiet until they are disturbed. Once
+  provoked, the response can be immediate, sharp, and difficult to contain.
+
+
+  ## Why it matters
+
+  The metaphor helps explain why political actions can have consequences that are
+  larger than expected. It highlights the difference between avoiding a conflict,
+  confronting it directly, and dealing with the aftermath after disruption. In analysis,
+  it can be a useful way to describe escalation, retaliation, and the cost of misjudging
+  a situation.
+
+
+  ## What you need
+
+  - A situation that is already tense or unstable
+
+  - Awareness of how provocation can change the situation
+
+  - Careful judgment about whether to avoid, confront, or prepare for backlash
+
+  - A clear distinction between metaphorical analysis and real-world action
+
+
+  ## How to do it
+
+  1. Identify the tense situation or conflict.
+
+  2. Ask whether it is being left alone, provoked, or directly challenged.
+
+  3. Consider what reaction might follow if the situation is disturbed.
+
+  4. Think through the likely aftermath, including retaliation, escalation, or loss
+  of control.
+
+  5. Use the metaphor to explain the dynamics of the conflict in plain language.
+
+
+  ## Common failure modes
+
+  - Underestimating retaliation
+
+  - Provoking conflict without a plan
+
+  - Misreading the cost of confrontation
+
+  - Treating the metaphor as a prediction instead of a way to frame risk
+
+
+  ## Safety/boundary notes
+
+  This is a metaphorical and analytical concept only. It does not provide operational
+  guidance for violence, intimidation, or conflict escalation. Use it for discussion,
+  interpretation, and cautionary analysis.
+
+
+  ## Local adaptation notes
+
+  The source uses local political references and a particular conflict style, but
+  the metaphor can be adapted to other settings where disruption triggers backlash.
+  When applying it elsewhere, replace local actors and events with the relevant context
+  while keeping the core idea: disturbing a tense situation can produce immediate
+  consequences.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: politics
+secondary_domains:
+- rhetoric
+- analysis
+stage: foundation
+contexts:
+- editorial commentary
+- political analysis
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A metaphor for political conflict in which some situations can be ignored
+  for a time, but once they are disturbed, the response is immediate and hard to contain.
+summary_medium: 'This concept uses a hornet''s nest as a metaphor for political disruption:
+  a tense situation may remain quiet until it is provoked, after which the consequences
+  can be fast, sharp, and difficult to manage. It is useful for understanding why
+  some conflicts escalate quickly after direct confrontation.'
+plain_language: Sometimes a political situation can be left alone for a while, but
+  if someone stirs it up, the reaction can be sudden and intense. The metaphor warns
+  that provoking a tense situation without a plan can create backlash and make the
+  aftermath harder to control.
+structured_data:
+  definition: A metaphor that describes a tense political situation as something that
+    may remain quiet until disturbed, after which the response can be immediate and
+    difficult to control.
+  key_questions:
+  - Is the situation being avoided, confronted, or provoked?
+  - What reaction is likely if the situation is disturbed?
+  - What costs or backlash might follow direct confrontation?
+  - Is the metaphor being used to explain escalation rather than to justify action?
+  misconceptions:
+  - It means every tense situation should be avoided.
+  - It predicts exactly what will happen in a conflict.
+  - It is advice for provoking or managing violence.
+  - It only applies to one local political context.
+requires: []
+suggested_edges: []
+citations:
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_001
+  claim_text: This is a political metaphor that compares a tense or unstable situation
+    to a hornet's nest.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: We lived in fear of uncovering a nest of ground wasps or hornets while
+      trampling around during summers off from school.
+    start_char: 95
+    end_char: 174
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: Donald Trump is a guy that likes knocking over hornet's nests.
+    start_char: 372
+    end_char: 434
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_002
+  claim_text: Some conflicts stay quiet until they are disturbed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: You learned to avoid the obvious ones because there's little worse than
+      getting stung a few dozen times by angry flying insects.
+    start_char: 176
+    end_char: 304
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: There's no negotiating with a nest of hornets. It's either you or them.
+    start_char: 436
+    end_char: 507
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_003
+  claim_text: Once provoked, the response can be immediate, sharp, and difficult to
+    contain.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: When they invade your yard, however, you either cede territory or attack
+      without mercy, scattering the survivors so we could live for a while in peace.
+    start_char: 306
+    end_char: 455
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: But that moment when you decide to take them on is pretty frickin' tense.
+    start_char: 457
+    end_char: 529
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_004
+  claim_text: The metaphor helps explain why political actions can have consequences
+    that are larger than expected.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: Donald Trump is a guy that likes knocking over hornet's nests. He's been
+      kicking over a lot of them this year. This issue explores what happens afterwards.
+    start_char: 372
+    end_char: 527
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_005
+  claim_text: It highlights the difference between avoiding a conflict, confronting
+    it directly, and dealing with the aftermath after disruption.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: You learned to avoid the obvious ones because there's little worse than
+      getting stung a few dozen times by angry flying insects.
+    start_char: 176
+    end_char: 304
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: When they invade your yard, however, you either cede territory or attack
+      without mercy, scattering the survivors so we could live for a while in peace.
+    start_char: 306
+    end_char: 455
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: This issue explores what happens afterwards.
+    start_char: 509
+    end_char: 553
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_006
+  claim_text: In analysis, it can be a useful way to describe escalation, retaliation,
+    and the cost of misjudging a situation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: When they invade your yard, however, you either cede territory or attack
+      without mercy, scattering the survivors so we could live for a while in peace.
+    start_char: 306
+    end_char: 455
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: War does that to markets. They are the very definition of uncertainty.
+    start_char: 1655
+    end_char: 1724
+    support_strength: medium
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_007
+  claim_text: A situation that is already tense or unstable is required for the metaphor.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000007
+    excerpt: Since 2026 began however, President Trump has been nothing short of a
+      power politics juggernaut, for better or worse. And, as always, the confusion
+      and reactions to his moves have been illuminating.
+    start_char: 0
+    end_char: 201
+    support_strength: weak
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_008
+  claim_text: The metaphor warns that provoking a tense situation without a plan can
+    create backlash and make the aftermath harder to control.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: When they invade your yard, however, you either cede territory or attack
+      without mercy, scattering the survivors so we could live for a while in peace.
+    start_char: 306
+    end_char: 455
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: This issue explores what happens afterwards.
+    start_char: 509
+    end_char: 553
+    support_strength: strong
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_009
+  claim_text: The concept is metaphorical and analytical only, not operational guidance
+    for violence, intimidation, or conflict escalation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes.
+    start_char: 0
+    end_char: 61
+    support_strength: weak
+- object_id: politics.hornets-nest-metaphor
+  claim_id: clm_010
+  claim_text: The metaphor can be adapted to other settings where disruption triggers
+    backlash.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000002
+    excerpt: Donald Trump is a guy that likes knocking over hornet's nests. He's been
+      kicking over a lot of them this year. This issue explores what happens afterwards.
+    start_char: 372
+    end_char: 527
+    support_strength: strong

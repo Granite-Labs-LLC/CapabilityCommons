@@ -1,0 +1,519 @@
+id: media.causality-and-shared-reality
+slug: media.causality-and-shared-reality
+canonical_title: Causality and Shared Reality
+markdown_body: '## What this is
+
+  This concept is about how people explain events in politics and public life. It
+  focuses on two recurring habits: assuming intent too quickly, and making weak claims
+  about cause and effect when the facts are disputed.
+
+
+  ## Why it matters
+
+  Public debate works better when people can agree on what is known, what is uncertain,
+  and what is being inferred. If people treat every disagreement as proof of bad intent,
+  or if they accept shaky causal stories, discussion becomes harder to trust and easier
+  to manipulate.
+
+
+  ## What you need
+
+  - Basic facts about the issue being discussed
+
+  - A claim that can be checked against evidence
+
+  - A willingness to separate observation from interpretation
+
+  - A way to ask, "What would count as support for this claim?"
+
+
+  ## How to do it
+
+  1. Identify the claim being made.
+
+  2. Separate the observed facts from the explanation attached to them.
+
+  3. Ask whether the claim is about intent, cause, or both.
+
+  4. Check whether the evidence actually supports that claim.
+
+  5. Look for alternative explanations before settling on one story.
+
+  6. Keep track of what is known, what is uncertain, and what is only a guess.
+
+
+  ## Common failure modes
+
+  - Treating disagreement as proof of bad faith
+
+  - Confusing correlation with causation
+
+  - Filling gaps in evidence with speculation
+
+  - Turning a complex event into a simple story too early
+
+  - Letting political identity replace careful checking
+
+
+  ## Safety/boundary notes
+
+  This is a reasoning tool, not a verdict on any specific political side or event.
+  The source material is rhetorical, so its conclusions should be treated as an argument
+  to examine rather than a final truth. Use care when discussing real people or live
+  disputes.
+
+
+  ## Local adaptation notes
+
+  The source reflects a U.S. political and media context, but the underlying idea
+  is broader. In any setting, adapt the questions to local institutions, norms, and
+  evidence standards. The core habit stays the same: distinguish facts from interpretation
+  and test causal claims before treating them as settled.'
+source_segment_ids: []
+seed_type: concept_note
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: media literacy
+secondary_domains:
+- critical thinking
+- political analysis
+stage: foundation
+contexts:
+- political discourse
+- fact disputes
+- argumentation
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A way to think about political disagreement by separating intent from
+  outcome and checking whether claims about cause are actually supported by evidence.
+summary_medium: 'This concept highlights two common problems in public debate: treating
+  people as if they are acting with clear intent when the evidence is weak, and making
+  causal claims without enough support. It encourages people to test claims, separate
+  facts from interpretation, and keep a shared reality intact even when they disagree.'
+plain_language: 'When people argue about politics, they often jump too quickly to
+  motives or to conclusions about what caused something. This concept says to slow
+  down: ask what is actually known, what is inferred, and whether the evidence really
+  supports the story being told.'
+structured_data:
+  definition: A concept for evaluating political and public arguments by separating
+    intent from outcome and checking whether causal claims are actually supported
+    by evidence.
+  key_questions:
+  - What is directly observed, and what is being inferred?
+  - Is the claim about intent, cause, or both?
+  - What evidence supports the causal story?
+  - Are there alternative explanations?
+  - What is known for sure, and what is still uncertain?
+  misconceptions:
+  - If someone disagrees with me, they must be acting in bad faith.
+  - A plausible story is the same as a proven cause.
+  - One event happening after another proves the first caused the second.
+  - Political conflict means shared facts are impossible.
+requires: []
+suggested_edges: []
+citations:
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_001
+  claim_text: This concept is about how people explain events in politics and public
+    life.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: Going forward, there are two intractable problems in the political space
+      in the US. One boils down to irrationality where intent should be. The other
+      is a poor understanding of causality, which confounds the ability to observe
+      shared reality.
+    start_char: 0
+    end_char: 214
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_002
+  claim_text: 'It focuses on two recurring habits: assuming intent too quickly, and
+    making weak claims about cause and effect when the facts are disputed.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: One boils down to irrationality where intent should be. The other is
+      a poor understanding of causality, which confounds the ability to observe shared
+      reality.
+    start_char: 68
+    end_char: 214
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality. If facts are either
+      unknown, or people can't agree on what they are, what hope is there of valid
+      argument or discourse? None, because all you have is noise.
+    start_char: 360
+    end_char: 565
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_003
+  claim_text: Public debate works better when people can agree on what is known, what
+    is uncertain, and what is being inferred.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality. If facts are either
+      unknown, or people can't agree on what they are, what hope is there of valid
+      argument or discourse? None, because all you have is noise.
+    start_char: 360
+    end_char: 565
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: I can feel the world shifting and my interpretation of how I interpreted
+      that shift was also changing.
+    start_char: 214
+    end_char: 317
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_004
+  claim_text: If people treat every disagreement as proof of bad intent, or if they
+    accept shaky causal stories, discussion becomes harder to trust and easier to
+    manipulate.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: The carnival barker ethos took over the rational world and now few things
+      are left to hearken back to the very different public discourse we used to have.
+    start_char: 0
+    end_char: 145
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: Instead we live in a screaming panopticon where all that matters is what
+      color jersey you have on.
+    start_char: 733
+    end_char: 830
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_005
+  claim_text: Basic facts about the issue being discussed are needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality.
+    start_char: 360
+    end_char: 413
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_006
+  claim_text: A claim should be checkable against evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: When we disagreed, we challenged the facts they used their to support
+      their logical arguments.
+    start_char: 214
+    end_char: 307
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_007
+  claim_text: A willingness to separate observation from interpretation is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques. Who is drawing our attention to what
+      and where? Why would they do that? What response are they trying to achieve?
+    start_char: 1118
+    end_char: 1340
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: It's nearly 100% observation.
+    start_char: 1030
+    end_char: 1059
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_008
+  claim_text: A useful question is, 'What would count as support for this claim?'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 180
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_009
+  claim_text: Identify the claim being made.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: First, we used to live in a world of intentional actors. They had a worldview
+      and tried to spread it. They made causal arguments.
+    start_char: 214
+    end_char: 345
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_010
+  claim_text: Separate the observed facts from the explanation attached to them.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1118
+    end_char: 1231
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_011
+  claim_text: Ask whether the claim is about intent, cause, or both.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: One boils down to irrationality where intent should be. The other is
+      a poor understanding of causality, which confounds the ability to observe shared
+      reality.
+    start_char: 68
+    end_char: 214
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_012
+  claim_text: Check whether the evidence actually supports that claim.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: They all fail to pass the basic test of something approaching facts.
+    start_char: 95
+    end_char: 163
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_013
+  claim_text: Look for alternative explanations before settling on one story.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 650
+    end_char: 744
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_014
+  claim_text: Keep track of what is known, what is uncertain, and what is only a guess.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: Since the beginnings of Gold, Goats 'n Guns I've said that I would interpret
+      events based on "the world I've got, not the world I want."
+    start_char: 1450
+    end_char: 1582
+    support_strength: medium
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: Regardless of the questionable timing of the current conflict, the idea
+      we should continue to tolerate this absurdity, and validate the Iranian delusion
+      they have a right to subject us to it, is peak liberal nonsense.
+    start_char: 1160
+    end_char: 1370
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_015
+  claim_text: Treating disagreement as proof of bad faith is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: That leads to the people who hate the neocons and the Likudniks (with
+      very good reason) to then accept everything Iran says at face value, and cheer
+      on their blackmail and terrorism.
+    start_char: 2140
+    end_char: 2320
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_016
+  claim_text: Confusing correlation with causation is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000013
+    excerpt: There is not necessarily a connection between The Population Bomb and
+      the Club of Rome.
+    start_char: 430
+    end_char: 519
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_017
+  claim_text: Filling gaps in evidence with speculation is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000007
+    excerpt: That statement sits at the heart of my analysis at this point in the
+      game. It is inferential and differential, and it may, at times, look like I
+      have lost my mind
+    start_char: 706
+    end_char: 868
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_018
+  claim_text: Turning a complex event into a simple story too early is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: This is how a situation, a history as deep and complex as Iran's conflict
+      with Israel and the US, becomes nothing more than a mirror of our biases, fears,
+      old wounds, and egos.
+    start_char: 1540
+    end_char: 1718
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_019
+  claim_text: Letting political identity replace careful checking is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: Instead of complexity and nuance, we have narcissism. Instead of quiet
+      reflection discussing the ambiguity of our limited knowledge, we have doomscrolling.
+    start_char: 1231
+    end_char: 1390
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_020
+  claim_text: This is a reasoning tool, not a verdict on any specific political side
+    or event.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000009
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 180
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_021
+  claim_text: The source material is rhetorical, so its conclusions should be treated
+    as an argument to examine rather than a final truth.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000028
+    excerpt: When we step back and examine our reactions to current events, we must
+      be aware of all these framing techniques.
+    start_char: 1118
+    end_char: 1231
+    support_strength: medium
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_022
+  claim_text: Use care when discussing real people or live disputes.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: Regardless of the questionable timing of the current conflict, the idea
+      we should continue to tolerate this absurdity, and validate the Iranian delusion
+      they have a right to subject us to it, is peak liberal nonsense.
+    start_char: 1160
+    end_char: 1370
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_023
+  claim_text: The source reflects a U.S. political and media context, but the underlying
+    idea is broader.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: Going forward, there are two intractable problems in the political space
+      in the US.
+    start_char: 0
+    end_char: 79
+    support_strength: strong
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_024
+  claim_text: In any setting, adapt the questions to local institutions, norms, and
+    evidence standards.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000016
+    excerpt: Iran is a signatory to the United Nations Convention on the Law of the
+      Sea (UNCLOS), even if it has not fully ratified it.
+    start_char: 0
+    end_char: 120
+    support_strength: weak
+- object_id: media.causality-and-shared-reality
+  claim_id: clm_025
+  claim_text: 'The core habit stays the same: distinguish facts from interpretation
+    and test causal claims before treating them as settled.'
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000017
+    excerpt: if you can't agree on facts, there is no causality.
+    start_char: 360
+    end_char: 413
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000006
+    excerpt: I would interpret events based on "the world I've got, not the world
+      I want."
+    start_char: 1500
+    end_char: 1582
+    support_strength: medium

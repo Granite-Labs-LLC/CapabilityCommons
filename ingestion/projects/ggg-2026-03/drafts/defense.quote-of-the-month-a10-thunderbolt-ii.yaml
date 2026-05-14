@@ -1,0 +1,257 @@
+id: defense.quote-of-the-month-a10-thunderbolt-ii
+slug: defense.quote-of-the-month-a10-thunderbolt-ii
+canonical_title: 'Quote of the Month: A-10 Thunderbolt II'
+markdown_body: '## What this is
+
+  A short quoted line or soundbite used in newsletter front matter. In this case,
+  the quote is attributed to the A-10 Thunderbolt II and appears to function as an
+  editorial opener rather than as instructional content.
+
+
+  ## Why it matters
+
+  Editorial quotes can quickly signal the theme, tone, or subject focus of a publication.
+  They can also create a memorable entry point for readers before the main content
+  begins.
+
+
+  ## What you need
+
+  - A quote or short attributed line
+
+  - A clear place to display it, such as a newsletter header or front matter section
+
+  - Basic attribution so readers know what the quote refers to
+
+
+  ## How to do it
+
+  1. Choose a short line that fits the theme you want to introduce.
+
+  2. Attribute it clearly enough that readers understand the source or reference.
+
+  3. Place it where it can act as a framing element, such as the top of a newsletter
+  section.
+
+  4. Keep it brief so it supports the content instead of distracting from it.
+
+
+  ## Common failure modes
+
+  - Treating a quote as if it were an instructional step
+
+  - Using attribution so loosely that readers cannot tell what is being referenced
+
+  - Making the quote too long or too complex for a front-matter role
+
+  - Assuming the quote contains operational guidance when it does not
+
+
+  ## Safety/boundary notes
+
+  This object contains a military aviation reference only. It does not provide operational,
+  tactical, or technical guidance. Do not infer procedures, capabilities, or safety
+  practices from the quote alone.
+
+
+  ## Local adaptation notes
+
+  Different publications may use quotes in different ways: as a theme setter, a section
+  divider, or a stylistic opener. Adapt the placement and tone to match the audience
+  and editorial purpose, but keep attribution clear and avoid presenting the quote
+  as actionable instruction.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: concept_note
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: defense
+secondary_domains:
+- aviation
+- culture
+stage: foundation
+contexts:
+- newsletter front matter
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: A short editorial quote or soundbite used to open a newsletter section
+  and set a theme.
+summary_medium: This object represents a quoted line attributed to the A-10 Thunderbolt
+  II in a newsletter front matter context. It is not a teachable skill or operational
+  procedure; it functions as editorial framing, signaling tone or theme for the issue.
+plain_language: This is a quote used as a heading or opener in a newsletter. It helps
+  set the mood or theme, but it does not teach a method, process, or technical skill.
+structured_data:
+  definition: A brief quoted line used for editorial framing in a newsletter, attributed
+    here to the A-10 Thunderbolt II.
+  key_questions:
+  - What theme or tone should the quote introduce?
+  - Is the attribution clear enough for readers?
+  - Does the quote support the surrounding content without becoming the main message?
+  misconceptions:
+  - A quote in front matter is not the same as a teachable skill.
+  - A military reference does not imply operational guidance.
+  - Editorial framing content should not be treated as a procedure or technical reference.
+requires: []
+suggested_edges: []
+citations:
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_001
+  claim_text: This object contains a short quoted line used in newsletter front matter.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_002
+  claim_text: The quote is attributed to the A-10 Thunderbolt II.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: '*— A-10 Thunderbolt II "Warthog"*'
+    start_char: 69
+    end_char: 92
+    support_strength: strong
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_003
+  claim_text: The quoted line functions as an editorial opener rather than instructional
+    content.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: medium
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_004
+  claim_text: Editorial quotes can signal the theme, tone, or subject focus of a publication.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: weak
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_005
+  claim_text: Editorial quotes can create a memorable entry point for readers before
+    the main content begins.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: weak
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_006
+  claim_text: A quote or short attributed line is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: medium
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_007
+  claim_text: A clear place to display the quote, such as a newsletter header or front
+    matter section, is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_008
+  claim_text: Basic attribution is needed so readers know what the quote refers to.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: '*— A-10 Thunderbolt II "Warthog"*'
+    start_char: 69
+    end_char: 92
+    support_strength: strong
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_009
+  claim_text: The object is a military aviation reference only.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: '*— A-10 Thunderbolt II "Warthog"*'
+    start_char: 69
+    end_char: 92
+    support_strength: strong
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_010
+  claim_text: The quote does not provide operational, tactical, or technical guidance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: medium
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_011
+  claim_text: Different publications may use quotes as a theme setter, a section divider,
+    or a stylistic opener.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: "### Quote of the month:\n\n *\"Brrrrrrrrrrrrrrrrt!\"* \n\n *— A-10 Thunderbolt\
+      \ II \"Warthog\"*"
+    start_char: 0
+    end_char: 92
+    support_strength: weak
+- object_id: defense.quote-of-the-month-a10-thunderbolt-ii
+  claim_id: clm_012
+  claim_text: The quote should be kept brief so it supports the content instead of
+    distracting from it.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: src.ggg.newsletter.2026-03::seg_000003
+    excerpt: '*"Brrrrrrrrrrrrrrrrt!"*'
+    start_char: 24
+    end_char: 47
+    support_strength: medium

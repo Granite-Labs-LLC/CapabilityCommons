@@ -1,0 +1,405 @@
+id: finance.gold-portfolio-holdings
+slug: finance.gold-portfolio-holdings
+canonical_title: GOLD Portfolio Holdings Table
+markdown_body: '## What this is
+
+  A holdings table for a GOLD portfolio. It lists several assets and shows basic performance
+  information such as symbol, entry date, entry price, recent price, current yield,
+  total return, and position value.
+
+
+  ## Why it matters
+
+  A holdings table gives a quick snapshot of portfolio composition and performance.
+  It helps a reader compare positions side by side, see which holdings have gained
+  or lost value, and understand how much each position contributes to the portfolio.
+
+
+  ## What you need
+
+  - A portfolio table or holdings list
+
+  - Market price data for the assets being tracked
+
+  - A way to compare entry price, recent price, yield, return, and position value
+
+
+  ## How to do it
+
+  1. Identify each holding by symbol.
+
+  2. Record the entry date and entry price for each position.
+
+  3. Update the recent price using current market data.
+
+  4. Note the current yield, if the asset provides one.
+
+  5. Calculate or review total return and position value.
+
+  6. Compare the holdings to see which positions are contributing most to the portfolio.
+
+  7. Review the table regularly because market values can change over time.
+
+
+  ## Common failure modes
+
+  - Treating the table as a full investment thesis when it only shows holdings and
+  performance.
+
+  - Assuming the figures are permanent; prices and returns can become outdated quickly.
+
+  - Comparing positions without considering that different assets may have different
+  roles in the portfolio.
+
+  - Using the table alone to judge suitability without considering personal goals
+  or risk tolerance.
+
+
+  ## Safety/boundary notes
+
+  This is informational only and is not a solicitation or recommendation to buy or
+  sell any asset. Performance figures may be time-sensitive. Portfolio composition
+  may vary based on investor circumstances.
+
+
+  ## Local adaptation notes
+
+  A gold-focused portfolio may be built differently depending on the investor, the
+  newsletter model, and the market context. Use the table as a reference point, then
+  adapt any interpretation to your own objectives, constraints, and decision process.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: DRAFT
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- commodities
+- portfolio_management
+stage: reference
+contexts:
+- gold-focused portfolio
+- newsletter
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: A holdings table showing the assets in a GOLD portfolio and their reported
+  performance measures.
+summary_medium: This reference sheet presents a portfolio holdings table for a gold-focused
+  strategy. It lists assets by symbol along with entry date, entry price, recent price,
+  current yield, total return, and position value so a reader can compare how each
+  holding is performing.
+plain_language: This is a table that helps you look at a gold-focused portfolio in
+  one place. It shows what is held, when each position was entered, what it cost,
+  what it is worth now, and how it has performed. It is useful for quick comparison,
+  but it does not explain why the positions were chosen or whether they are suitable
+  for your own situation.
+structured_data:
+  definition: A reference table that lists the holdings in a gold-focused portfolio
+    and summarizes basic performance measures for each position.
+  key_questions:
+  - What assets are currently in the portfolio?
+  - When was each position entered?
+  - How does the recent price compare with the entry price?
+  - What yield, if any, is the holding producing?
+  - How much total return has each position generated?
+  - What is the current value of each position?
+  misconceptions:
+  - A holdings table is not the same as an investment recommendation.
+  - A strong-looking return in a table does not guarantee future performance.
+  - A portfolio table does not explain the full reasoning behind the selection of
+    holdings.
+  - All gold-related portfolios are not identical; composition can differ by investor
+    and strategy.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_001
+  claim_text: A holdings table for a GOLD portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_002
+  claim_text: It lists several assets and shows basic performance information such
+    as symbol, entry date, entry price, recent price, current yield, total return,
+    and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_003
+  claim_text: A holdings table gives a quick snapshot of portfolio composition and
+    performance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '### *GOLD Portfolio*
+
+
+      | Holding                                   | Symbol | Entry Date | Entry Price
+      | Recent Price | Current Yield | Total Return* | Position<br>Value(1) |'
+    start_char: 0
+    end_char: 102
+    support_strength: medium
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_004
+  claim_text: It helps a reader compare positions side by side, see which holdings
+    have gained or lost value, and understand how much each position contributes to
+    the portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |
+
+      |-------------------------------------------|--------|------------|-------------|--------------|---------------|---------------|----------------------|
+
+      | GAMCO Global Gold                         | GGN    | Various    | $4.69      |
+      $5.11       | 7.05%         | 143.71%       | $12,185.34          |'
+    start_char: 0
+    end_char: 236
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_005
+  claim_text: A portfolio table or holdings list is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_006
+  claim_text: Market price data for the assets being tracked is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_007
+  claim_text: A way to compare entry price, recent price, yield, return, and position
+    value is needed.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_008
+  claim_text: Identify each holding by symbol.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_009
+  claim_text: Record the entry date and entry price for each position.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_010
+  claim_text: Update the recent price using current market data.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_011
+  claim_text: Note the current yield, if the asset provides one.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_012
+  claim_text: Calculate or review total return and position value.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_013
+  claim_text: Compare the holdings to see which positions are contributing most to
+    the portfolio.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Holding                                   | Symbol | Entry Date |
+      Entry Price | Recent Price | Current Yield | Total Return* | Position<br>Value(1)
+      |'
+    start_char: 0
+    end_char: 102
+    support_strength: medium
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_014
+  claim_text: Review the table regularly because market values can change over time.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+    start_char: 0
+    end_char: 142
+    support_strength: weak
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_015
+  claim_text: This is informational only and is not a solicitation or recommendation
+    to buy or sell any asset.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: This publication is intended solely for informational purposes. It is
+      a source of data and other information to assist your investment decisions.
+      It is strongly recommended consulting your financial adviser or other financial
+      professional before making any investment decisions. The information in this
+      publication is not to be construed, under any circumstances, as an offer to
+      sell or a solicitation to buy, sell, or trade in any commodities, securities,
+      or other financial instruments presented.
+    start_char: 0
+    end_char: 392
+    support_strength: strong
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_016
+  claim_text: Performance figures may be time-sensitive.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Past results are no indication of future performance. All investments
+      are subject to risk, including the possibility of the complete loss of any money
+      invested.
+    start_char: 0
+    end_char: 156
+    support_strength: weak
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_017
+  claim_text: Portfolio composition may vary based on investor circumstances.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Investment decisions by such persons may be inconsistent with or even
+      contradictory to the discussion or recommendations in **Gold, Goats 'n Guns**
+      per their personal circumstances.
+    start_char: 0
+    end_char: 181
+    support_strength: medium
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_018
+  claim_text: A gold-focused portfolio may be built differently depending on the investor,
+    the newsletter model, and the market context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: For the past year or so I've been banging on about the US regaining control
+      over the pricing mechanisms of specific strategic commodities – gold, silver,
+      industrial metals.
+    start_char: 0
+    end_char: 145
+    support_strength: weak
+- object_id: finance.gold-portfolio-holdings
+  claim_id: clm_019
+  claim_text: Use the table as a reference point, then adapt any interpretation to
+    your own objectives, constraints, and decision process.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: It is strongly recommended consulting your financial adviser or other
+      financial professional before making any investment decisions.
+    start_char: 0
+    end_char: 124
+    support_strength: medium

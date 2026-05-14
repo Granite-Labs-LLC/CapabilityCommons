@@ -1,0 +1,313 @@
+id: finance.pbt-raise-cash-on-oil-runup
+slug: finance.pbt-raise-cash-on-oil-runup
+canonical_title: 'Permian Basin Royalty Trust: Using a Strong Oil Run-Up to Raise
+  Cash'
+markdown_body: '## What this is
+
+  This is a portfolio reference note about Permian Basin Royalty Trust (PBT), an oil-linked
+  royalty trust. The note treats PBT as a holding that can benefit when oil prices
+  are high, but it also suggests that after a strong run-up, the remaining upside
+  may be limited.
+
+
+  ## Why it matters
+
+  Oil-linked income holdings can move sharply when energy prices rise. That can create
+  a point where the position has already done much of the work for the portfolio.
+  At that stage, an investor may decide to trim the holding and raise cash rather
+  than keep adding to a position that may have less room to appreciate.
+
+
+  ## What you need
+
+  - A view of the current oil price environment
+
+  - Basic understanding of how royalty trusts are tied to commodity prices
+
+  - Awareness of the trust’s yield and distribution behavior
+
+  - A portfolio goal that includes deciding when to hold, trim, or raise cash
+
+
+  ## How to do it
+
+  1. Check whether oil prices have already moved strongly and whether the trust has
+  benefited from that move.
+
+  2. Compare the current yield and price level with your portfolio goals.
+
+  3. Ask whether the position still offers enough upside to justify holding it unchanged.
+
+  4. If the position has already appreciated significantly, consider trimming part
+  of it to raise cash.
+
+  5. Avoid treating the recent rally as a reason to assume more gains are likely.
+
+
+  ## Common failure modes
+
+  - Chasing the rally after the main move has already happened
+
+  - Assuming a strong oil market automatically means large additional upside
+
+  - Ignoring that royalty trusts can behave differently from ordinary stocks
+
+  - Forgetting that tax and distribution treatment may differ by jurisdiction
+
+
+  ## Safety/boundary notes
+
+  This is a portfolio opinion, not a universal valuation model. It does not say that
+  PBT is always expensive or always a sell. It only supports a cautious, context-dependent
+  decision when oil has already run up and the investor wants to raise cash.
+
+
+  ## Local adaptation notes
+
+  Oil-linked income products can differ by jurisdiction, especially in tax treatment
+  and distribution rules. Investors should adapt this idea to their local rules, account
+  type, and portfolio objectives. The same price move may justify different actions
+  for different investors.'
+source_segment_ids: []
+seed_type: reference_sheet
+co_type: reference_sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: finance
+secondary_domains:
+- energy
+- royalties
+stage: foundation
+contexts:
+- oil rally
+- royalty trust
+- cash raising
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A portfolio note on PBT as an oil-linked income holding that may be
+  trimmed after a strong price run-up to raise cash.
+summary_medium: This reference sheet explains a portfolio view of Permian Basin Royalty
+  Trust (PBT) during a period of strong oil prices. The core idea is that when oil
+  has already rallied and the trust has benefited, there may be limited additional
+  upside at current levels. In that setting, an investor might consider trimming the
+  position to raise cash rather than chasing the move higher. This is a portfolio
+  judgment, not a universal valuation rule.
+plain_language: Permian Basin Royalty Trust is an income-oriented security tied to
+  oil prices. When oil is strong, the trust may already have captured much of the
+  benefit. If the position has run up, one possible portfolio move is to sell some
+  shares and hold cash instead of expecting a big further gain. The idea depends on
+  the investor’s goals, the current oil market, and the specific tax and distribution
+  rules that apply.
+structured_data:
+  definition: A portfolio note suggesting that Permian Basin Royalty Trust may be
+    used as a source of cash after a strong oil-price-driven run-up, because additional
+    upside may be limited at current levels.
+  key_questions:
+  - Has oil already rallied enough to lift the trust significantly?
+  - Does the current yield still justify holding the position unchanged?
+  - Would trimming the position better fit the portfolio’s cash needs?
+  - Are there local tax or distribution rules that affect the decision?
+  misconceptions:
+  - A strong oil market always means the trust should keep rising a lot more.
+  - A high-yield royalty trust is automatically a buy at any price.
+  - This note is a universal valuation model rather than a portfolio judgment.
+requires: []
+suggested_edges: []
+citations:
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_001
+  claim_text: Permian Basin Royalty Trust (PBT) is an oil-linked royalty trust.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: '#### **Permian Basin Royalty Trust** (NYSE:PBT)
+
+
+      Current Price: $21.79
+
+
+      Buy Under: $16.00
+
+
+      Permian Basin Royalty Trust has been a big winner in Trump''s war thanks to
+      high oil prices but muted gas prices, around $3.00/MMBtu.'
+    start_char: 0
+    end_char: 165
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_002
+  claim_text: PBT has benefited from high oil prices.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: Permian Basin Royalty Trust has been a big winner in Trump's war thanks
+      to high oil prices but muted gas prices, around $3.00/MMBtu.
+    start_char: 0
+    end_char: 129
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_003
+  claim_text: The note suggests PBT may have limited additional upside at current
+    levels after a strong run-up.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: 'It is now paying a paltry trailing-twelve-month yield, which should
+      expand over the next few months with WTI trading in the $90''s.
+
+
+      We''ll be cutting this position once the hysteria is over, collecting the higher
+      yield and then cutting the position again. Don''t chase this higher. If you
+      want to raise cash, this is an excellent candidate. If you didn''t buy enough
+      during the run up there''s little upside reward now.'
+    start_char: 130
+    end_char: 388
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_004
+  claim_text: An investor may decide to trim the position and raise cash rather than
+    keep adding to it after a significant appreciation.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: We'll be cutting this position once the hysteria is over, collecting
+      the higher yield and then cutting the position again. Don't chase this higher.
+      If you want to raise cash, this is an excellent candidate.
+    start_char: 130
+    end_char: 325
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_005
+  claim_text: The position is described as having a low current yield that should
+    expand if WTI remains in the $90s.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: It is now paying a paltry trailing-twelve-month yield, which should expand
+      over the next few months with WTI trading in the $90's.
+    start_char: 130
+    end_char: 257
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_006
+  claim_text: The recommendation is context-dependent rather than a universal valuation
+    rule.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: If you want to raise cash, this is an excellent candidate. If you didn't
+      buy enough during the run up there's little upside reward now. No change.
+    start_char: 260
+    end_char: 388
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_007
+  claim_text: The note is framed as a portfolio recommendation within a broader portfolio
+    review.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000019
+    excerpt: '## PORTFOLIO REVIEW'
+    start_char: 0
+    end_char: 19
+    support_strength: strong
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: '#### **Permian Basin Royalty Trust** (NYSE:PBT)
+
+
+      Current Price: $21.79
+
+
+      Buy Under: $16.00'
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_008
+  claim_text: The note implies that oil-linked income holdings can move sharply when
+    energy prices rise.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000020
+    excerpt: Since the beginning of Trump 2.0 we have watched an historic move in
+      all these assets. And it's been both thrilling and profitable to experience.
+      ... At some point, Trump was going to have to make a move on the oil markets.
+    start_char: 0
+    end_char: 241
+    support_strength: medium
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_009
+  claim_text: The note warns not to chase the rally higher.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000023
+    excerpt: Don't chase this higher.
+    start_char: 260
+    end_char: 284
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_010
+  claim_text: The note says the position was a big winner and had already appreciated
+    significantly.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000031
+    excerpt: '| Permian Basin Royalty Trust               | PBT    | Various    |
+      $6.35      | $21.79      | 1.51%         | 144.78%       | $9,179.25           |'
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_011
+  claim_text: The note mentions tax and distribution treatment may differ by jurisdiction.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: Some recommended trades may involve commodities, securities, or other
+      instruments held by our editors, writers, or employees. Investment decisions
+      by such persons may be inconsistent with or even contradictory to the discussion
+      or recommendations in Gold, Goats 'n Guns per their personal circumstances.
+    start_char: 0
+    end_char: 220
+    support_strength: weak
+- object_id: finance.pbt-raise-cash-on-oil-runup
+  claim_id: clm_012
+  claim_text: The note is not a universal valuation model.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000034
+    excerpt: No guarantee of any kind is implied or possible where projections of
+      future conditions are attempted.
+    start_char: 0
+    end_char: 100
+    support_strength: weak

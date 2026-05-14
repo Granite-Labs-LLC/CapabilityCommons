@@ -1,0 +1,428 @@
+id: src.ggg.newsletter.2026-03.seg_000018
+slug: analysis.model-checking-for-political-claims
+canonical_title: Model Checking for Political Claims
+markdown_body: '## What this is
+
+  Model checking for political claims is the habit of testing whether a political
+  explanation, forecast, or narrative actually holds up. It means asking what the
+  claim assumes, what evidence supports those assumptions, and what would happen if
+  the assumptions were wrong.
+
+
+  ## Why it matters
+
+  Political commentary often sounds certain even when it rests on weak evidence. A
+  claim can be persuasive because it is repeated loudly, not because it has been tested.
+  Model checking helps you avoid accepting a story just because it is vivid, popular,
+  or emotionally satisfying.
+
+
+  ## What you need
+
+  - A specific claim, forecast, or explanation
+
+  - The assumptions behind it
+
+  - Evidence that supports or weakens those assumptions
+
+  - A way to compare alternative outcomes or explanations
+
+  - Basic scenario thinking
+
+
+  ## How to do it
+
+  1. State the claim clearly.
+
+  2. Identify the assumptions it depends on.
+
+  3. Ask whether those assumptions are actually supported by evidence.
+
+  4. Check whether the claim is being adjusted after the fact to fit events that already
+  happened.
+
+  5. Compare the claim with at least one alternative explanation or outcome.
+
+  6. Ask what would count as evidence against the claim.
+
+  7. Separate confidence in the speaker from confidence in the model or argument.
+
+
+  ## Common failure modes
+
+  - Treating confident language as proof
+
+  - Accepting a narrative without checking its assumptions
+
+  - Backfitting: changing the explanation after the fact so it always seems right
+
+  - Overweighting one dramatic example
+
+  - Confusing propaganda or repetition with evidence
+
+  - Ignoring uncertainty and alternative outcomes
+
+
+  ## Safety/boundary notes
+
+  Do not infer factual correctness from rhetorical confidence. A forceful tone, a
+  polished presentation, or repeated media amplification does not make a claim true.
+  This guide is for evaluating claims, not for deciding political allegiance.
+
+
+  ## Local adaptation notes
+
+  The source material uses examples from U.S. politics and media commentary. Those
+  examples can help illustrate the method, but the skill itself is universal: it applies
+  to any political claim, forecast, or model-like argument in any context.'
+source_segment_ids: []
+seed_type: skill_guide
+co_type: skill_guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: critical thinking
+secondary_domains:
+- media literacy
+- decision analysis
+stage: productive
+contexts:
+- political commentary
+- forecasting
+- model evaluation
+difficulty: 3
+cost_band: low
+risk_band: low
+summary_short: A practical way to test political claims by checking assumptions, looking
+  for unsupported certainty, and comparing alternative explanations.
+summary_medium: This skill guide explains how to evaluate political narratives and
+  forecasts without being misled by confident language or model-like claims. It focuses
+  on checking assumptions, watching for backfitting, and asking whether a claim still
+  holds when you test it against other plausible outcomes.
+plain_language: When someone makes a political claim that sounds like a model or prediction,
+  do not accept it just because it sounds confident. Check what assumptions it depends
+  on, whether those assumptions are actually supported, and whether the claim still
+  makes sense if events turn out differently. This helps you avoid treating rhetoric
+  as evidence.
+structured_data:
+  tools:
+  - models
+  - evidence
+  - scenario analysis
+  materials:
+  - a political claim or forecast
+  - supporting evidence
+  - alternative explanations
+  success_criteria:
+  - You can name the claim's main assumptions.
+  - You can say what evidence supports or weakens those assumptions.
+  - You can identify at least one alternative outcome or explanation.
+  - You do not treat confidence or repetition as proof.
+  failure_modes:
+  - unchecked assumptions
+  - propaganda uptake
+  - overconfidence
+  - backfitting
+  - confusing rhetoric with evidence
+  safety_boundary:
+  - Do not infer factual correctness from rhetorical confidence.
+  - Do not treat political persuasion as evidence.
+  - Do not assume a forecast is reliable without checking its assumptions.
+requires:
+- critical-thinking-basics
+- evidence-evaluation
+- scenario-thinking
+suggested_edges:
+- target_id: critical-thinking-basics
+  edge_type: requires
+- target_id: evidence-evaluation
+  edge_type: requires
+- target_id: scenario-thinking
+  edge_type: requires
+citations:
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_001
+  claim_text: Model checking for political claims is the habit of testing whether
+    a political explanation, forecast, or narrative actually holds up.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: 'Nobody on the right seems capable of imagining the possibility of Trump
+      pulling this off, even though it has been absolutely reckless.
+
+
+      And that''s because they haven''t checked their models, they can''t do anything
+      but believe in amplification.'
+    start_char: 0
+    end_char: 225
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_002
+  claim_text: It means asking what the claim assumes, what evidence supports those
+    assumptions, and what would happen if the assumptions were wrong.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_003
+  claim_text: Political commentary often sounds certain even when it rests on weak
+    evidence.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 0
+    end_char: 171
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_004
+  claim_text: A claim can be persuasive because it is repeated loudly, not because
+    it has been tested.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: they can't do anything but believe in amplification.
+    start_char: 0
+    end_char: 53
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_005
+  claim_text: Model checking helps you avoid accepting a story just because it is
+    vivid, popular, or emotionally satisfying.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: The single common denominator in all these insane takes is emotion, be
+      it anger, spite, envy, greed, or fear. They all fail to pass the basic test
+      of something approaching facts.
+    start_char: 0
+    end_char: 181
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_006
+  claim_text: A specific claim, forecast, or explanation is needed as a starting point.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: You do not have to like it. I don't like it. But when the time comes,
+      you're not going to believe how good the pistachios are.
+    start_char: 0
+    end_char: 126
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_007
+  claim_text: The assumptions behind a claim should be identified.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: And that's because they haven't checked their models, they can't do anything
+      but believe in amplification.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_008
+  claim_text: Evidence that supports or weakens those assumptions should be examined.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_009
+  claim_text: Alternative outcomes or explanations should be compared.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_010
+  claim_text: You should ask what would count as evidence against the claim.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: they haven't checked their models
+    start_char: 0
+    end_char: 33
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_011
+  claim_text: Confidence in the speaker should be separated from confidence in the
+    model or argument.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: Do not infer factual correctness from rhetorical confidence.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_012
+  claim_text: Treating confident language as proof is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: Do not infer factual correctness from rhetorical confidence.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_013
+  claim_text: Accepting a narrative without checking its assumptions is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: And that's because they haven't checked their models, they can't do anything
+      but believe in amplification.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_014
+  claim_text: Backfitting means changing the explanation after the fact so it always
+    seems right.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They are all talking their book, backfitting the world they perceive,
+      which is composed mostly of nonsense propaganda and literal fakery, onto their
+      pre-existing worldview.
+    start_char: 0
+    end_char: 171
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_015
+  claim_text: Overweighting one dramatic example is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_016
+  claim_text: Confusing propaganda or repetition with evidence is a common failure
+    mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: they can't do anything but believe in amplification.
+    start_char: 0
+    end_char: 53
+    support_strength: medium
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_017
+  claim_text: Ignoring uncertainty and alternative outcomes is a common failure mode.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_018
+  claim_text: A forceful tone, polished presentation, or repeated media amplification
+    does not make a claim true.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: Do not infer factual correctness from rhetorical confidence.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_019
+  claim_text: This guide is for evaluating claims, not for deciding political allegiance.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: This guide is for evaluating claims, not for deciding political allegiance.
+    start_char: 0
+    end_char: 75
+    support_strength: strong
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_020
+  claim_text: The source material uses examples from U.S. politics and media commentary.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: I used to make fun of anti-vax hippie moms because they were obviously
+      liberal kooks.
+    start_char: 0
+    end_char: 85
+    support_strength: weak
+- object_id: analysis.model-checking-for-political-claims
+  claim_id: clm_021
+  claim_text: Those examples can help illustrate the method, but the skill itself
+    is universal and applies to any political claim, forecast, or model-like argument
+    in any context.
+  support:
+  - source_id: src.ggg.newsletter.2026-03
+    page_start: 1
+    page_end: 1
+    segment_id: seg_000018
+    excerpt: They can't imagine a possible ending where we wind up trading with Iran
+      instead of bombing it.
+    start_char: 0
+    end_char: 94
+    support_strength: weak
