@@ -65,6 +65,10 @@ class AskResponse(BaseModel):
     citations: list[AskCitation] = Field(default_factory=list)
     related_objects: list[RelatedObject] = Field(default_factory=list)
     uncertainties: list[str] = Field(default_factory=list)
+    # Surfaced contradictions between objects in the evidence set (ANSWER-1).
+    # Empty for queries with no conflicting evidence; the UI shows a
+    # "conflicting evidence" banner when populated.
+    contradictions: list[str] = Field(default_factory=list)
     resolved_intent: RetrievalIntent
     # Echo of the AskContext fields the system actually used to filter/rank
     # this answer. Lets the UI confirm "tuned for: renter, low budget, ..."

@@ -78,3 +78,14 @@ def test_cost_band_caps_below_target():
     assert "context_object_versions.cost_band IN" in sql
     assert "free" in sql.lower() and "low" in sql.lower()
     assert "high" not in sql.lower() or sql.lower().count("high") == 0
+
+
+def test_language_code_filter_emits_equality(tmp_path=None):
+    """MULTI-1: language_code filter narrows by exact match."""
+    sql = _compile(_attribute_predicates(PublicSearchFilters(language_code="es")))
+    assert "context_object_versions.language_code = 'es'" in sql
+
+
+def test_language_code_none_emits_no_clause():
+    sql = _compile(_attribute_predicates(PublicSearchFilters(language_code=None)))
+    assert "language_code" not in sql

@@ -1,0 +1,108 @@
+# Gold query set for the Capability Commons retrieval lane (EVAL-1).
+#
+# Each entry is one user-facing query plus the slugs we expect the system
+# to surface at top-N. These are the five PLAN.md "Days 15-45" examples
+# plus an extra cluster covering the GGG-2026-03 corpus we ingested so
+# the harness can run today against real data.
+#
+# Format:
+#   - query:           free-form user query
+#     intent:          (optional) expected resolved_intent from infer_intent
+#     expects_any:     a hit if any of these slugs appears in the top-N
+#                      (use this for queries that have several reasonable
+#                      acceptable answers)
+#     expects_all:     a hit only if ALL these slugs appear in the top-N
+#                      (use for queries with a known correct shortlist)
+#     min_citations:   (optional) expected number of citations on the
+#                      AskResponse; defaults to 2
+#     language:        (optional) ISO language code; defaults to "en"
+#     top_n:           (optional) measurement N; defaults to 5
+#
+# Run with:
+#   python -m capability_commons.cli.eval run \
+#       --gold eval/gold/queries.yaml \
+#       --api  http://127.0.0.1:8100 \
+#       --out  eval/reports/2026-05-14.md
+
+# --- PLAN.md "Days 15-45" canonical queries ---------------------------------
+
+- query: "I need drinking water if the power is out"
+  intent: how_to
+  expects_any:
+    - water.emergency-storage
+    - water.safe-storage
+    - emergency-water-storage
+  min_citations: 2
+
+- query: "Starter solar for lights and phone"
+  intent: how_to
+  expects_any:
+    - power.starter-solar
+    - solar.lights-and-phone
+    - power.backup-runtime
+
+- query: "Renter-safe food resilience"
+  intent: localize
+  expects_any:
+    - food.pantry-rotation
+    - food.preservation
+    - food-storage-rotation
+
+- query: "Why is my rain barrel system not flowing?"
+  intent: debug_failure
+  expects_any:
+    - water.rain-barrel
+    - water.gravity-flow
+    - water.troubleshoot-flow
+
+- query: "What should I learn before off-grid refrigeration?"
+  intent: learn_path
+  expects_any:
+    - power.load-audit
+    - power.runtime
+    - power.literacy
+
+# --- GGG-2026-03 corpus queries (real ingested data) ------------------------
+
+- query: "What is happening with Hormuz shipping?"
+  intent: how_to
+  expects_any:
+    - economics.hormuz-shipping-risk-assessment
+    - finance.hormuz-shipping-risk-insurance-response
+
+- query: "Compare propane vs solar fridge for renters"
+  intent: compare_options
+  expects_any:
+    - power.starter-solar
+    - power.backup-runtime
+
+- query: "Is bleach safe for treating drinking water?"
+  intent: safety_check
+  expects_any:
+    - water.safe-storage
+    - water.chlorine-treatment
+
+- query: "How should I think about chokepoint risk in markets?"
+  intent: how_to
+  expects_any:
+    - geopolitics.maritime-chokepoint-control
+    - finance.geopolitical-chaos-premium-market-signals
+
+- query: "What is the gold-goats-guns portfolio about?"
+  intent: why
+  expects_any:
+    - portfolio.gold-goats-guns-overview
+    - publishing.issue-index
+
+# --- Multilingual placeholder (MULTI-1) -------------------------------------
+# Backend is English-only today; this entry intentionally targets a language
+# (`es`) we don't yet serve so the harness can prove the path works the moment
+# Spanish content lands. Until then it will fail with "no matching results"
+# and that's the correct signal for "we need to translate the corpus".
+
+- query: "¿Cómo almaceno agua potable durante un apagón?"
+  language: es
+  intent: how_to
+  expects_any:
+    - water.almacenamiento-seguro
+    - water.safe-storage

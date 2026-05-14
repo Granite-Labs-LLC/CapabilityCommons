@@ -65,6 +65,8 @@ def _attribute_predicates(attrs: PublicSearchFilters | None):
             preds.append(ContextObjectVersion.cost_band.in_(allowed))
         except ValueError:
             pass
+    if attrs.language_code:
+        preds.append(ContextObjectVersion.language_code == attrs.language_code)
     return preds
 
 

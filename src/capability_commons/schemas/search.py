@@ -18,6 +18,10 @@ class PublicSearchFilters(BaseModel):
     housing_type: str | None = Field(None, description="apartment, house, mobile_home, etc.")
     climate_zone: str | None = Field(None, description="tropical, arid, temperate, cold")
     settlement_type: str | None = Field(None, description="urban, suburban, rural, remote")
+    # MULTI-1: language scaffold. Backend is English-only today but this
+    # column on context_object_versions exists; once non-English content
+    # lands we filter for it without another schema bump.
+    language_code: str | None = Field(None, description="ISO 639-1 (e.g. 'en', 'es'); null = any")
 
     def to_facet_filters(self) -> dict[str, list[str]]:
         """Convert UX filters to internal facet_filters dict."""

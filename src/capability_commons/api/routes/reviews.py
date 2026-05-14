@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Query
 from sqlalchemy import select
 
 from capability_commons.api.deps import CurrentWorkspace, DBSession
-from capability_commons.db.models import ContextObject
-from capability_commons.domain.enums import LifecycleState
+from capability_commons.db.models import ContextObject, ContextObjectVersion
+from capability_commons.domain.enums import LifecycleState, RiskBand
 from capability_commons.schemas.reviews import (
     ContradictionResponse,
     CreateReviewRequest,
@@ -78,30 +78,52 @@ async def deprecate_version(object_id: uuid.UUID, version_id: uuid.UUID, session
 async def review_queue(
     session: DBSession,
     workspace: CurrentWorkspace,
+    lifecycle_state: list[LifecycleState] | None = Query(default=None),
+    risk_band: list[RiskBand] | None = Query(default=None),
     limit: int = 50,
     offset: int = 0,
 ) -> list[dict]:
-    """List objects in IN_REVIEW state awaiting review."""
+    """List objects awaiting review (REV-2 — filters by state + risk).
+
+    Defaults to IN_REVIEW objects of all risks. Pass ?lifecycle_state=
+    multiple times to widen (e.g. include `reviewed`). Pass ?risk_band=
+    to narrow to high-risk content, which is the safety-review queue.
+    The response includes the current_version_id so the UI can hit
+    /publish-check on demand.
+    """
+    states = lifecycle_state or [LifecycleState.IN_REVIEW]
     stmt = (
-        select(ContextObject)
+        select(ContextObject, ContextObjectVersion)
+        .join(
+            ContextObjectVersion,
+            ContextObject.current_version_id == ContextObjectVersion.id,
+            isouter=True,
+        )
         .where(
             ContextObject.workspace_id == workspace.id,
-            ContextObject.lifecycle_state == LifecycleState.IN_REVIEW,
+            ContextObject.lifecycle_state.in_(states),
         )
-        .order_by(ContextObject.updated_at.desc())
+    )
+    if risk_band:
+        stmt = stmt.where(ContextObjectVersion.risk_band.in_(risk_band))
+    stmt = (
+        stmt.order_by(ContextObject.updated_at.desc())
         .limit(limit)
         .offset(offset)
     )
-    result = await session.execute(stmt)
-    objects = result.scalars().all()
+    rows = (await session.execute(stmt)).all()
     return [
         {
             "id": str(obj.id),
+            "object_id": str(obj.id),
             "slug": obj.slug,
             "type": obj.type.value,
             "canonical_title": obj.canonical_title,
             "lifecycle_state": obj.lifecycle_state.value,
             "updated_at": obj.updated_at.isoformat(),
+            "current_version_id": str(obj.current_version_id) if obj.current_version_id else None,
+            "risk_band": version.risk_band.value if version and version.risk_band else None,
+            "difficulty": version.difficulty if version else None,
         }
-        for obj in objects
+        for obj, version in rows
     ]

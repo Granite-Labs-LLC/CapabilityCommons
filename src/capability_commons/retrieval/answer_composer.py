@@ -237,6 +237,78 @@ def _detect_uncertainties(evidence: EvidencePackResponse) -> list[str]:
     return uncertainties
 
 
+_INTENT_SHAPE: dict[RetrievalIntent, dict[str, bool]] = {
+    # Intents where the implementation plan is the wrong frame to lead with.
+    RetrievalIntent.SAFETY_CHECK: {"plan": False, "action_now": False, "comparison": False},
+    RetrievalIntent.DEBUG_FAILURE: {"plan": True, "action_now": True, "comparison": False},
+    RetrievalIntent.COMPARE_OPTIONS: {"plan": False, "action_now": False, "comparison": True},
+    RetrievalIntent.WHY: {"plan": False, "action_now": False, "comparison": False},
+    RetrievalIntent.WHAT_CHANGED: {"plan": False, "action_now": False, "comparison": False},
+    RetrievalIntent.LEARN_PATH: {"plan": True, "action_now": False, "comparison": False},
+    # Defaults for how_to / teach_forward / localize.
+}
+
+
+def _shape_for(intent: RetrievalIntent) -> dict[str, bool]:
+    return _INTENT_SHAPE.get(intent, {"plan": True, "action_now": True, "comparison": False})
+
+
+def _comparison_variants(evidence: EvidencePackResponse) -> list[str]:
+    """For compare_options, pull each top actionable node's SVV + first
+    variant blurb into a flat list the UI renders as a comparison rail."""
+    out: list[str] = []
+    for node in evidence.evidence:
+        if node.type not in ("skill_guide", "project_blueprint", "concept_note"):
+            continue
+        env = _envelope_for(node)
+        if not env:
+            continue
+        svv = env.get("smallest_viable_version") or node.summary_short or node.title
+        out.append(f"**{node.title}**: {svv}")
+        variants = env.get("variants") or []
+        if variants:
+            v = variants[0]
+            label = v.get("label", "") if isinstance(v, dict) else str(v)
+            note = v.get("notes") if isinstance(v, dict) else None
+            out.append(f"  - variant: {label}{f' — {note}' if note else ''}")
+    return out
+
+
+def _contradiction_strings(evidence: EvidencePackResponse) -> list[str]:
+    """Map the typed contradiction records into human-readable strings."""
+    out: list[str] = []
+    for c in evidence.contradictions or []:
+        if not isinstance(c, dict):
+            continue
+        bits = []
+        if c.get("dimension"):
+            bits.append(c["dimension"])
+        if c.get("severity"):
+            bits.append(f"severity={c['severity']}")
+        if c.get("status"):
+            bits.append(c["status"])
+        out.append("Conflicting evidence: " + (", ".join(bits) or "see review queue"))
+    return out
+
+
+def _related_with_next_steps(evidence: EvidencePackResponse) -> list[RelatedObject]:
+    """Combine the lower-scored evidence nodes with the graph-expansion
+    next_steps the planner produced. Previously next_steps were dropped."""
+    related = _build_related_objects(evidence)
+    seen = {r.slug for r in related}
+    for ns in evidence.next_steps or []:
+        slug = ns.get("slug") or ""
+        if not slug or slug in seen:
+            continue
+        related.append(RelatedObject(
+            slug=slug,
+            title=str(ns.get("title") or slug),
+            role=str(ns.get("role") or "next-step"),
+        ))
+        seen.add(slug)
+    return related
+
+
 def compose_answer(
     evidence: EvidencePackResponse,
     intent: RetrievalIntent,
@@ -244,14 +316,28 @@ def compose_answer(
 ) -> AskResponse:
     """Compose a structured AskResponse from retrieval evidence.
 
-    This is the main entry point for answer composition.
+    The shape is tuned per resolved intent (ANSWER-1):
+      - safety_check / compare_options / why / what_changed: no plan,
+        no action_now (the user isn't asking for a how-to).
+      - compare_options: variants get pulled into the answer body.
+      - debug_failure: stop_conditions and common_mistakes get top
+        billing in the safety block via the existing extractors.
+      - learn_path: plan stays (it IS the learning sequence) but
+        action_now is suppressed.
     """
+    shape = _shape_for(intent)
     answer = _synthesize_answer(evidence, intent)
-    action_now = _extract_action_now(evidence, intent)
-    steps = _build_implementation_steps(evidence)
+    if shape["comparison"]:
+        comparison_lines = _comparison_variants(evidence)
+        if comparison_lines:
+            answer = answer + "\n\n" + "\n\n".join(comparison_lines)
+
+    action_now = _extract_action_now(evidence, intent) if shape["action_now"] else None
+    steps = _build_implementation_steps(evidence) if shape["plan"] else []
     citations = _build_citations(evidence)
-    related = _build_related_objects(evidence)
+    related = _related_with_next_steps(evidence)
     uncertainties = _detect_uncertainties(evidence)
+    contradictions = _contradiction_strings(evidence)
 
     # Safety extraction — emphasized for certain intents
     warnings = _extract_safety_warnings(evidence)
@@ -274,6 +360,7 @@ def compose_answer(
         citations=citations,
         related_objects=related,
         uncertainties=uncertainties,
+        contradictions=contradictions,
         resolved_intent=intent,
         context_used=request.context,
         conversation_id=request.conversation_id,

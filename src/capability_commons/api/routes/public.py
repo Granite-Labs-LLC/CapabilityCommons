@@ -15,7 +15,8 @@ from capability_commons.domain.enums import LifecycleState
 from capability_commons.publication.service import PublicationService
 from capability_commons.schemas.graph import GraphResponse
 from capability_commons.schemas.public import PublicBundleResponse, PublicObjectResponse
-from capability_commons.schemas.public_metrics import PublicMetricsResponse
+from capability_commons.schemas.public_metrics import PublicMetricsResponse, PublicQualityMetricsResponse
+from capability_commons.services.metrics import MetricsService
 
 router = APIRouter()
 
@@ -80,4 +81,28 @@ async def public_metrics(session: DBSession) -> PublicMetricsResponse:
         evidence_spans=int(evidence_spans or 0),
         ingest_jobs=int(ingest_jobs or 0),
         last_ingest_at=last_job_at.isoformat() if last_job_at else None,
+    )
+
+
+@router.get("/public/metrics/quality", response_model=PublicQualityMetricsResponse)
+async def public_quality_metrics(session: DBSession) -> PublicQualityMetricsResponse:
+    """Public answer-quality metrics (METRICS-2).
+
+    Anonymous; returns aggregates only — no per-query content, no PII.
+    Useful for the public status page and for our own retrieval regression
+    watching.
+    """
+    service = MetricsService(session)
+    a = await service.answer_quality()
+    return PublicQualityMetricsResponse(
+        retrieval_runs_total=int(a.get("retrieval_runs_total", 0)),
+        retrieval_runs_completed=int(a.get("retrieval_runs_completed", 0)),
+        completion_rate=float(a.get("completion_rate", 0.0)),
+        avg_sufficiency_score=float(a.get("avg_sufficiency_score", 0.0)),
+        avg_latency_ms=float(a.get("avg_latency_ms", 0.0)),
+        unique_conversations=int(a.get("unique_conversations", 0)),
+        followup_rate=float(a.get("followup_rate", 0.0)),
+        pct_answers_with_action_now=float(a.get("pct_answers_with_action_now", 0.0)),
+        pct_answers_with_2plus_citations=float(a.get("pct_answers_with_2plus_citations", 0.0)),
+        feedback_by_action=a.get("feedback_by_action", {}),
     )
