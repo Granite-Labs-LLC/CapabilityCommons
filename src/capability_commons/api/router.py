@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from capability_commons.api.routes import ask, audit, edges, entities, evidence, feedback, files, health, ingest, metrics, objects, public, retrieval, reviews, search
+from capability_commons.api.routes import ask, audit, contribute, edges, entities, evidence, feedback, files, health, ingest, metrics, objects, public, retrieval, reviews, search
 
 api_router = APIRouter()
 api_router.include_router(health.router, tags=["health"])
@@ -18,3 +18,4 @@ api_router.include_router(ingest.router, prefix="/v1", tags=["ingest"])
 api_router.include_router(feedback.router, prefix="/v1", tags=["feedback"])
 api_router.include_router(audit.router, prefix="/v1", tags=["audit"])
 api_router.include_router(files.router, prefix="/v1", tags=["files"])
+api_router.include_router(contribute.router, prefix="/v1", tags=["contribute"])
