@@ -71,17 +71,28 @@ class OutboxWorker:
             if not events:
                 return 0
 
+            succeeded = 0
             for event in events:
                 try:
                     await self._dispatch(session, event)
                 except Exception:
-                    logger.exception("Failed to process event %d (%s)", event.id, event.event_type)
+                    # Leave processed_at unset so this event is retried on a
+                    # later poll instead of silently and permanently losing
+                    # whatever the handler was supposed to do (e.g. an
+                    # invalid/expired OPENAI_API_KEY should be retryable once
+                    # fixed, not a permanent skip).
+                    logger.exception(
+                        "Failed to process event %d (%s) — leaving unprocessed for retry",
+                        event.id, event.event_type,
+                    )
+                    continue
 
                 event.processed_at = datetime.now(timezone.utc)
+                succeeded += 1
 
             await session.commit()
-            logger.info("Processed %d outbox events", len(events))
-            return len(events)
+            logger.info("Processed %d/%d outbox events", succeeded, len(events))
+            return succeeded
 
     async def _dispatch(self, session, event: OutboxEvent) -> None:
         handler_name = HANDLERS.get(event.event_type)

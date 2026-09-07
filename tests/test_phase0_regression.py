@@ -698,9 +698,18 @@ class TestAPI002PublicAsk:
         assert _detect_intent("Is this safe to eat?") == RetrievalIntent.SAFETY_CHECK
 
     def test_ask_route_registered(self):
-        """API-002: /v1/public/ask route must be registered in the app router."""
-        from capability_commons.api.router import api_router
-        paths = [r.path for r in api_router.routes]
+        """API-002: /v1/public/ask route must be registered in the app router.
+
+        Uses the resolved OpenAPI path list rather than iterating
+        `api_router.routes` directly: modern Starlette represents an
+        included sub-router as a single `_IncludedRouter` entry with no
+        `.path` attribute of its own, so a flat `[r.path for r in ...]`
+        either crashes or silently returns nothing depending on how it's
+        guarded. `app.openapi()["paths"]` is the version-stable way to ask
+        "does this endpoint exist" regardless of routing internals.
+        """
+        from capability_commons.main import app
+        paths = app.openapi()["paths"]
         assert "/v1/public/ask" in paths
 
     def test_ask_route_uses_public_workspace(self):
@@ -1268,8 +1277,8 @@ class TestSAFE001PublishGates:
 
     def test_publish_check_endpoint_exists(self):
         """SAFE-001: /publish-check dry-run endpoint must be registered."""
-        from capability_commons.api.router import api_router
-        paths = [r.path for r in api_router.routes]
+        from capability_commons.main import app
+        paths = app.openapi()["paths"]
         assert "/v1/objects/{object_id}/versions/{version_id}/publish-check" in paths
 
     def test_gate_checks_all_rules(self):
@@ -1299,8 +1308,8 @@ class TestOBS001Metrics:
 
     def test_metrics_endpoints_registered(self):
         """OBS-001: /v1/metrics/* endpoints must be registered."""
-        from capability_commons.api.router import api_router
-        paths = [r.path for r in api_router.routes]
+        from capability_commons.main import app
+        paths = app.openapi()["paths"]
         assert "/v1/metrics/ingest" in paths
         assert "/v1/metrics/answer" in paths
         assert "/v1/metrics/summary" in paths
@@ -1574,8 +1583,8 @@ class TestFE006Feedback:
 
     def test_feedback_route_wired(self):
         """FE-006: Feedback route must be included in the main API router."""
-        from capability_commons.api.router import api_router
-        paths = [r.path for r in api_router.routes if hasattr(r, "path")]
+        from capability_commons.main import app
+        paths = app.openapi()["paths"]
         assert "/v1/feedback" in paths
 
     def test_feedback_migration_exists(self):

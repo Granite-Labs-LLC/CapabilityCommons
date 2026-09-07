@@ -21,3 +21,11 @@ data/files/
 # Local Claude harness state
 .claude/scheduled_tasks.lock
 eval/reports/
+
+# Holdout corpus: private/NC-licensed A/B benchmark sources — never publish
+# or accidentally commit the acquired binaries. See holdout_corpus/README.md.
+holdout_corpus/**/*.pdf
+holdout_corpus/**/*.epub
+holdout_corpus/**/output/
+holdout_corpus/**/drafts/
+holdout_corpus/**/segments/

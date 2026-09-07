@@ -420,6 +420,25 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             print(f"  Created {cit_count} evidence spans")
 
         # 4. Insert edges from edges.csv
+        # Resolve any slug referenced by an edge but not defined in this
+        # data_dir's own nodes (e.g. a second seed pack's edges.csv linking
+        # to objects a prior, separate `seed_graph()` run already loaded)
+        # against the database before giving up on it.
+        referenced_slugs = {row["source_id"] for row in csv_edges} | {
+            row["target_id"] for row in csv_edges
+        }
+        unresolved_slugs = referenced_slugs - slug_to_version_id.keys()
+        if unresolved_slugs:
+            existing_objs = (await session.execute(
+                select(ContextObject).where(
+                    ContextObject.workspace_id == workspace.id,
+                    ContextObject.slug.in_(unresolved_slugs),
+                )
+            )).scalars().all()
+            for obj in existing_objs:
+                slug_to_object_id[obj.slug] = obj.id
+                slug_to_version_id[obj.slug] = obj.current_version_id
+
         csv_edge_count = 0
         csv_edge_skipped = 0
         for row in csv_edges:

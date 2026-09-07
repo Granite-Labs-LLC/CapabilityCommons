@@ -62,12 +62,16 @@ def test_reviews_requires_auth(client):
     assert r.status_code == 401
 
 
-def test_retrieval_requires_auth(client):
+def test_retrieval_allows_anonymous_access(client):
+    """/v1/retrieve/evidence_pack is intentionally public (PLAN.md P0-6:
+    anonymous callers resolve to the public workspace via PublicWorkspace,
+    not CurrentWorkspace) — it must NOT require auth. This replaces a stale
+    pre-P0-6 assertion that expected 401 here."""
     r = client.post("/v1/retrieve/evidence_pack", json={
         "query": "test",
         "intent": "how_to",
     })
-    assert r.status_code == 401
+    assert r.status_code != 401
 
 
 def test_ingest_requires_auth(client):

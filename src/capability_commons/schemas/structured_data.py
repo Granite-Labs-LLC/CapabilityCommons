@@ -60,6 +60,7 @@ class ProjectBlueprintStructuredData(BaseModel):
     time_box_hours: float = Field(gt=0)
     team_size: int = Field(ge=1)
     budget_notes: str
+    safety_boundary: str
     variants: list[str] = Field(default_factory=list)
 
 
