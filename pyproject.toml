@@ -39,6 +39,14 @@ dev = [
   "ruff>=0.11,<1.0",
   "mypy>=1.15,<2.0",
   "types-PyYAML>=6.0,<7.0",
+  # rich is also declared under [ingest] below, but cli/ingest/validate.py
+  # imports it directly and several non-ingest-marked tests exercise that
+  # module transitively (e.g. via cli/seed.py). It's pure-Python with no
+  # compiled extension, so duplicating it here (rather than pulling in all
+  # of [ingest], which doesn't install cleanly on Python 3.14 yet -- see
+  # STATUS.md) costs nothing and keeps `pip install -e ".[dev]"` sufficient
+  # for the base test suite.
+  "rich>=13.0,<14.0",
 ]
 ingest = [
   "marker-pdf>=1.0,<2.0",

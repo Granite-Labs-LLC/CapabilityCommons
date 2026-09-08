@@ -44,12 +44,19 @@ jobs:
       # locally) -- see STATUS.md's Tests section. Ignoring the 4 files that
       # import ingest-only deps at module load time, not deselecting
       # individual tests, since the whole environment can't support them.
+      # test_health / test_retrieval_allows_anonymous_access instantiate the
+      # FastAPI app via TestClient, which runs its startup lifespan
+      # (migration/DB connectivity check) -- they need a real Postgres and
+      # belong with the `integration` job below, not here. Deselected rather
+      # than silently passing by accident; see TODO.md for moving them.
       - run: >
           pytest tests/ --ignore=tests/test_integration.py --ignore=tests/test_integration_audit.py --ignore=tests/test_integration_storage.py --ignore=tests/test_integration_embedding.py --ignore=tests/test_integration_publication.py --ignore=tests/test_integration_search.py --ignore=tests/test_integration_retrieval.py
           --ignore=tests/test_ingest_draft_schema.py
           --ignore=tests/test_ingest_llm_client.py
           --ignore=tests/test_ingest_passes.py
           --ignore=tests/test_ingest_publish_gate.py
+          --deselect tests/test_health.py::test_health
+          --deselect tests/test_smoke_api.py::test_retrieval_allows_anonymous_access
           -v
 
   integration:
