@@ -183,3 +183,80 @@ async def test_worker_leaves_failed_event_unprocessed_for_retry(db_session):
 
     await db_session.delete(refreshed)
     await db_session.commit()
+
+
+@pytest.mark.asyncio
+async def test_worker_recovers_session_after_flush_failure_without_crashing(db_session):
+    """A handler failure that poisons the SQLAlchemy session (any real
+    DB-level exception, the same category as a failed flush() — e.g.
+    StaleDataError) must not crash the whole worker process, and a healthy
+    event elsewhere in the same batch must still get processed eventually
+    (this poll or the next), never lost.
+
+    Regression test: found live during the 2026-09-08 FEMA ingestion — a
+    content_segments UPDATE that matched 0 rows raised StaleDataError inside
+    a handler. The outer except caught it and called session.rollback(),
+    which is correct but expires *every* object still tracked in that
+    session's identity map, not just the failed one. The next line then
+    read event.id/event.event_type on one of those now-expired objects (for
+    the log message, or for the next loop iteration's own dispatch) — a
+    plain synchronous attribute read on an expired object under AsyncSession
+    requires a real DB round-trip, which raises MissingGreenlet outside an
+    awaited context. That escaped every except block and killed the whole
+    worker process (uncaught, propagating out of run()'s while loop),
+    leaving a growing backlog with nobody consuming it.
+
+    The fix pairs every event's id/event_type up front, before any dispatch
+    or rollback can expire anything, and never re-reads those attributes
+    off the ORM object again for the rest of the batch.
+    """
+    from sqlalchemy import text
+
+    bad = OutboxEvent(
+        aggregate_type="context_object",
+        aggregate_id=uuid.uuid4(),
+        event_type="version.reindexed",
+        payload={"version_id": str(uuid.uuid4())},
+    )
+    good = OutboxEvent(
+        aggregate_type="context_object",
+        aggregate_id=uuid.uuid4(),
+        event_type="version.reindexed",
+        payload={"version_id": str(uuid.uuid4())},
+    )
+    db_session.add_all([bad, good])
+    await db_session.commit()
+    bad_id, good_id = bad.id, good.id
+
+    worker = OutboxWorker(get_settings().database_url)
+
+    async def _dispatch(session, ev):
+        if ev.id == bad_id:
+            # A real DB-level exception, not a plain RuntimeError — this is
+            # what actually poisons the session's transaction the way a
+            # failed flush() does, forcing an explicit rollback before the
+            # session can be used again for anything.
+            await session.execute(text("SELECT 1/0"))
+
+    worker._dispatch = _dispatch  # type: ignore[method-assign]
+
+    try:
+        await worker._poll_batch()  # must not raise
+    finally:
+        await worker.stop()
+
+    # Not asserting an exact succeeded count: this can share a batch with
+    # unrelated orphaned outbox events left behind by earlier tests in this
+    # file (a separate, already-known test-hygiene gap — db_session's
+    # teardown deletes test workspaces but not their outbox events). What
+    # matters here is only these two specific events' own outcomes.
+    result = await db_session.execute(
+        select(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id]))
+    )
+    by_id = {e.id: e for e in result.scalars().all()}
+    assert by_id[bad_id].processed_at is None, "the permanently-failing event must stay unprocessed for retry"
+    assert by_id[good_id].processed_at is not None
+
+    for ev in by_id.values():
+        await db_session.delete(ev)
+    await db_session.commit()

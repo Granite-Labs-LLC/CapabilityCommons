@@ -58,41 +58,76 @@ class OutboxWorker:
         await self.engine.dispose()
 
     async def _poll_batch(self, batch_size: int = 50) -> int:
+        # Plain scalar ids/types only — no ORM instances survive past this
+        # block, so nothing here can later be expired by another event's
+        # rollback (see the per-event session below for why that matters).
         async with self.session_factory() as session:
             result = await session.execute(
-                select(OutboxEvent)
+                select(OutboxEvent.id, OutboxEvent.event_type)
                 .where(OutboxEvent.processed_at.is_(None))
                 .order_by(OutboxEvent.id.asc())
                 .limit(batch_size)
-                .with_for_update(skip_locked=True)
             )
-            events = list(result.scalars().all())
+            rows = result.all()
 
-            if not events:
-                return 0
+        if not rows:
+            return 0
 
-            succeeded = 0
-            for event in events:
+        succeeded = 0
+        for event_id, event_type in rows:
+            # One session/transaction per event, not one shared across the
+            # whole batch. A handler failure that raises from a
+            # session.flush() (e.g. StaleDataError) leaves that
+            # transaction needing an explicit rollback, and rollback()
+            # expires *every* ORM object still tracked in the session's
+            # identity map — not just the one that failed. Plain attribute
+            # access on an expired object under AsyncSession requires a
+            # real DB round-trip, invalid outside an awaited context
+            # (raises MissingGreenlet). With one shared session, that
+            # blast radius reaches every other event already loaded into
+            # this batch, and — since a permanently-failing event always
+            # sorts first again on the next poll (skip_locked doesn't
+            # exclude one's *own* worker on the next call, and it never
+            # gets marked processed) — every event behind it would starve
+            # forever, not just get delayed one cycle. A dedicated session
+            # per event contains a failure to that event alone: nothing
+            # else in the batch is ever at risk of touching an object
+            # expired by someone else's rollback.
+            #
+            # Regression: found live during the 2026-09-08 FEMA ingestion —
+            # a StaleDataError inside one handler crashed the whole worker
+            # process (uncaught, escaping run()'s while loop), leaving a
+            # growing backlog with nobody consuming it.
+            async with self.session_factory() as session:
+                event = (await session.execute(
+                    select(OutboxEvent)
+                    .where(OutboxEvent.id == event_id, OutboxEvent.processed_at.is_(None))
+                    .with_for_update(skip_locked=True)
+                )).scalar_one_or_none()
+                if event is None:
+                    continue  # already processed or claimed by another worker
+
                 try:
                     await self._dispatch(session, event)
                 except Exception:
                     # Leave processed_at unset so this event is retried on a
                     # later poll instead of silently and permanently losing
                     # whatever the handler was supposed to do (e.g. an
-                    # invalid/expired OPENAI_API_KEY should be retryable once
-                    # fixed, not a permanent skip).
+                    # invalid/expired OPENAI_API_KEY should be retryable
+                    # once fixed, not a permanent skip).
+                    await session.rollback()
                     logger.exception(
                         "Failed to process event %d (%s) — leaving unprocessed for retry",
-                        event.id, event.event_type,
+                        event_id, event_type,
                     )
                     continue
 
                 event.processed_at = datetime.now(timezone.utc)
+                await session.commit()
                 succeeded += 1
 
-            await session.commit()
-            logger.info("Processed %d/%d outbox events", succeeded, len(events))
-            return succeeded
+        logger.info("Processed %d/%d outbox events", succeeded, len(rows))
+        return succeeded
 
     async def _dispatch(self, session, event: OutboxEvent) -> None:
         handler_name = HANDLERS.get(event.event_type)
