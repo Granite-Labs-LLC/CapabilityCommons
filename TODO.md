@@ -38,10 +38,12 @@ These must be done before serving real users.
 
 ### CI/CD pipeline
 
-- [x] **GitHub Actions workflow** — lint (ruff), type-check (mypy), test on every push/PR
-- [x] **Integration test job** — spins up pgvector/pgvector:pg16 in CI, runs `test_integration.py`
-- [x] **Deploy pipeline** — GitHub Actions CD: auto-deploy staging on merge to main, manual promote to production (`.github/workflows/deploy.yml`)
+- [x] **GitHub Actions workflow — actually green as of 2026-09-08.** Was configured but had failed on every push since at least April 2026 (never verified until this session's full-suite validation pass). Fixed all 4 CI jobs for real: 163 ruff errors + never-run `ruff format` (lint), missing `pydantic.mypy` plugin + `types-PyYAML` + 4 real narrow bugs (typecheck), a broken Dockerfile COPY order that failed 100% of the time not just suboptimally (docker), and `[ingest]` extras that don't install on CI's Python 3.14 plus 2 tests needing a real Postgres the `test` job doesn't provision (test). Full account in STATUS.md's CI/CD section.
+- [x] **Integration test job** — spins up pgvector/pgvector:pg16 in CI, runs `test_integration.py` — confirmed actually passing 2026-09-08 (previously untested since CI never got this far).
+- [ ] **Deploy pipeline is configured but fails on every run** — "missing server host" (a deployment secret was never set for this repo). This is infrastructure/ops configuration outside what a code fix can address — whoever owns the deploy target needs to set the actual SSH host secret in the repo's GitHub Actions secrets.
 - [ ] **Wire the eval harness into CI** — `eval/` is cheap enough to run per-PR (per its own README) but isn't gated in `ci.yml` yet.
+- [ ] **Move `test_health.py::test_health` and `test_smoke_api.py::test_retrieval_allows_anonymous_access` into the `integration` job** — both instantiate the FastAPI app via `TestClient`, which runs its startup lifespan (a DB/migration connectivity check) and therefore needs a real Postgres. They're currently deselected from the DB-less `test` job (found and fixed 2026-09-08) but aren't run anywhere in CI — `integration`'s job only whitelists `test_integration_*.py` files explicitly. Needs either moving these two tests into one of those files or adding them to `integration`'s pytest invocation.
+- [ ] **`[ingest]` extras (marker-pdf's Pillow dependency) don't build a wheel on Python 3.14** — confirmed in CI too, not just locally (see the `[ingest]` extras item under Tier 0). `cli/ingest/*`-dependent tests (`test_ingest_draft_schema.py`, `test_ingest_llm_client.py`, `test_ingest_passes.py`, `test_ingest_publish_gate.py`) are currently excluded from CI entirely as a result — they do pass locally under `.venv-ingest` (Python 3.13). Worth either pinning a CI matrix entry to 3.13 for these specific files, or revisiting once polars/marker-pdf ship 3.14 wheels.
 
 ### Environment and secrets
 

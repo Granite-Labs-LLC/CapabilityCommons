@@ -134,17 +134,25 @@ Two seed packs loaded on startup: 25 capability objects (water, food, shelter, p
 
 `eval/` — a gold-query retrieval harness (`eval/gold/queries.yaml`) scored against `/v1/search` and `/v1/public/ask`: search recall, citation count, intent match (informational), and `action_now` presence. Cheap enough to run per-PR; not yet wired into CI. Latest recorded run: `eval/reports/2026-09-07.md`, still 3/11 passed, but the failure reasons changed completely once the two 2026-09-07 fixes below landed — see "Content/vision gap" for the full account. The 2026-05-14 baseline (`eval/reports/2026-05-14-smoke.md`) is now superseded.
 
-### CI/CD — Configured
+### CI/CD — All 4 CI jobs green as of 2026-09-08 (first time ever — see below)
 
 | Component | Status |
 |-----------|--------|
-| GitHub Actions CI | Configured (lint, typecheck, test, integration, Docker build) |
-| GitHub Actions CD | Configured (SSH deploy to staging on merge, manual promote to production) |
-| Linting | ruff (E, F, I, W rules) |
-| Type checking | mypy (incremental adoption, ignore_missing_imports) |
-| Integration tests | pgvector/pgvector:pg16 service in CI |
-| Docker build | Verified in CI |
+| GitHub Actions CI | **All 4 jobs pass**: lint, typecheck, test, integration. Docker build passes as its own job too. |
+| GitHub Actions CD | Configured, but currently fails on every run — "missing server host" (a deployment secret was never set for this repo). Infrastructure/ops configuration, not a code issue; needs the actual SSH host secret from whoever owns the deploy target. |
+| Linting | ruff (E, F, I, W rules) + `ruff format` — both clean |
+| Type checking | mypy, `pydantic.mypy` plugin enabled, 0 errors |
+| Integration tests | pgvector/pgvector:pg16 service in CI — passes |
+| Docker build | Passes; verified the built image's app actually imports (51 routes) |
 | Eval harness in CI | Not yet wired |
+
+**2026-09-08: CI had failed on literally every push since at least April 2026** (checked run history back through the first recorded runs — this table's previous "Configured"/"Verified in CI" language was aspirational, not actually true). Ran a full local validation pass against all 4 CI jobs and fixed every real gap:
+- **lint**: 163 ruff errors (142 auto-fixed; the remaining 24 were `__init__.py` re-exports, fixed with a standard per-file-ignore for F401/F403) + `ruff format` had apparently never been run (99/150 files needed it).
+- **typecheck**: 44 mypy errors. The single biggest fix was adding the missing `pydantic.mypy` plugin (33→20 errors from that alone — without it, mypy treats every `Field(None, ...)`-defaulted Pydantic field as required). Also missing `types-PyYAML`. Fixed 4 real, narrow latent bugs found along the way (not invented to satisfy the checker): `cli/seed.py` could silently try to insert a NULL-constrained Edge/EvidenceSpan if an existing object had no published version yet; `services/embedding.py`'s `self.provider` had no explicit type annotation; two instances of reusing a variable name across unrelated branches in the same function (`cli/keys.py`, `search/adapters/postgres_search.py`) that happened to still work but defeated type inference. The rest were real invariants the code already relied on but never stated (`RetrievalRequest.intent`/`workspace_id` resolved-before-use, `JobTracker.job_id` gated by `self.enabled`) — added explicit asserts that both satisfy mypy and document the guarantee.
+- **docker**: the Dockerfile copied only `pyproject.toml` before its first `pip install .`, intending to cache dependency installation separately from source — but this project uses src-layout (`package-dir = {"" = "src"}`), so setuptools needs the source tree present to build the wheel at all. The build failed 100% of the time, not just suboptimally. Fixed by copying everything before a single install; verified locally (build succeeds, image runs, app imports cleanly).
+- **test**: `ci.yml` never installed the project or its dependencies before running mypy (typecheck job), and never installed `[ingest]` extras before collecting ingest-dependent test files (4 files failed to even import). Installing `[ingest]` on Python 3.14 turned out not to work either (marker-pdf's own dependency tree — Pillow — fails to build a wheel here, the same underlying "Python 3.14 ecosystem immaturity" issue as polars). Fixed by ignoring the 4 ingest-only files in the `test` job (real ingest work already runs via a separate Python 3.13 environment locally, not CI's 3.14) and adding `rich` directly to `[dev]` (pure-Python, needed transitively by non-ingest-marked tests via `cli/ingest/validate.py`). Also found and deselected 2 tests (`test_health.py::test_health`, `test_smoke_api.py::test_retrieval_allows_anonymous_access`) that instantiate the FastAPI app via `TestClient` — its startup lifespan needs a real Postgres connection, which only the `integration` job provisions; these belong there, not in the DB-less `test` job (not yet moved — see TODO.md).
+
+Full account: three commits, `58e93ba`, `fca8c88`, `c4916c4`.
 
 ### Deployment — Functional
 
