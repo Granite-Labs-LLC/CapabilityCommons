@@ -1,0 +1,183 @@
+id: emergency-preparedness.technological-hazards-knowledge-check
+slug: emergency-preparedness.technological-hazards-knowledge-check
+seed_type: assessment
+co_type: assessment
+canonical_title: Technological Hazards Knowledge Check
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Assess your knowledge of technological hazards and preparedness.
+summary_medium: This assessment evaluates your understanding of technological hazards,
+  including hazardous materials, radiation exposure, and nuclear power plant emergencies.
+plain_language: This is a set of questions to test how well you know about dealing
+  with technological hazards like hazardous materials, radiation, and nuclear emergencies.
+markdown_body: '### What this is
+
+  This knowledge check consists of questions designed to assess your understanding
+  and preparedness for technological hazards. It covers topics such as hazardous materials,
+  radiation exposure, and nuclear power plant emergencies.
+
+
+  ### Why it matters
+
+  Understanding technological hazards is crucial for ensuring personal and community
+  safety. Being prepared can significantly reduce risks and improve response during
+  emergencies.
+
+
+  ### What you need
+
+  Familiarity with emergency procedures, contact information for the National Poison
+  Control Center, and knowledge of local hazardous materials information.
+
+
+  ### How to do it
+
+  Answer the questions provided in the assessment. Use the answer key to check your
+  responses and identify areas where you may need further study or preparation.
+
+
+  ### Common failure modes
+
+  Common issues include a lack of knowledge about emergency procedures and an inability
+  to contact emergency services when needed.
+
+
+  ### Safety/boundary notes
+
+  Ensure you have access to accurate and up-to-date emergency contact numbers and
+  community-specific hazardous materials information.
+
+
+  ### Local adaptation notes
+
+  Adapt the knowledge check to include local emergency contact numbers and information
+  about hazardous materials specific to your community.'
+structured_data:
+  tools:
+  - National Poison Control Center contact
+  materials:
+  - Community hazardous materials information
+  success_criteria:
+  - Correctly answer all questions
+  - Understand emergency procedures
+  failure_modes:
+  - Lack of knowledge about emergency procedures
+  - Inability to contact emergency services
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_001
+  claim_text: This knowledge check consists of questions designed to assess your understanding
+    and preparedness for technological hazards. It covers topics such as hazardous
+    materials, radiation exposure, and nuclear power plant emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 144
+    page_end: 144
+    segment_id: src.fema.are-you-ready.2004::seg_000228
+    excerpt: 'Technological Hazards Knowledge Check
+
+
+      Answer the following questions. Check your responses with the answer key below.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_002
+  claim_text: Understanding technological hazards is crucial for ensuring personal
+    and community safety. Being prepared can significantly reduce risks and improve
+    response during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 142
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000225
+    excerpt: Before a Nuclear Power Plant Emergency Obtain public emergency information
+      materials from the power company that operates your local nuclear power plant
+      or your local emergency services office.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_003
+  claim_text: Familiarity with emergency procedures, contact information for the National
+    Poison Control Center, and knowledge of local hazardous materials information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 3. (800)222-1222
+    start_char: 0
+    end_char: 20
+    support_strength: strong
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_004
+  claim_text: Answer the questions provided in the assessment. Use the answer key
+    to check your responses and identify areas where you may need further study or
+    preparation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 144
+    page_end: 144
+    segment_id: src.fema.are-you-ready.2004::seg_000228
+    excerpt: Answer the following questions. Check your responses with the answer
+      key below.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_005
+  claim_text: Common issues include a lack of knowledge about emergency procedures
+    and an inability to contact emergency services when needed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 9. Local Emergency Planning Committee (LEPC). The local emergency management
+      office can provide contact information for the LEPCs.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_006
+  claim_text: Ensure you have access to accurate and up-to-date emergency contact
+    numbers and community-specific hazardous materials information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 9. Local Emergency Planning Committee (LEPC). The local emergency management
+      office can provide contact information for the LEPCs.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency-preparedness.technological-hazards-knowledge-check
+  claim_id: clm_007
+  claim_text: Adapt the knowledge check to include local emergency contact numbers
+    and information about hazardous materials specific to your community.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 9. Local Emergency Planning Committee (LEPC). The local emergency management
+      office can provide contact information for the LEPCs.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000228

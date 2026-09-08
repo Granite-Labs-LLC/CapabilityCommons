@@ -6,6 +6,7 @@ build/
 .eggs/
 *.egg
 .venv/
+.venv-ingest/
 venv/
 .env
 .DS_Store

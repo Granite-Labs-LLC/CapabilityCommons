@@ -1,0 +1,198 @@
+id: emergency-management.reference-sources
+slug: emergency-management.reference-sources
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Management Reference Sources
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A list of reference sources for emergency preparedness.
+summary_medium: This reference sheet provides contact information for obtaining publications
+  from FEMA and other organizations like the American Red Cross, National Weather
+  Service, CDC, and USGS, which offer additional information on emergency preparedness.
+plain_language: This document lists where you can find more information on emergency
+  preparedness from various organizations.
+markdown_body: '### What this is
+
+  This reference sheet lists organizations that provide publications and resources
+  on emergency preparedness topics.
+
+
+  ### Why it matters
+
+  Access to reliable information is crucial for effective emergency preparedness.
+  These organizations offer authoritative resources that can help individuals and
+  communities prepare for emergencies.
+
+
+  ### What you need
+
+  Contact information for FEMA, the American Red Cross, the National Weather Service,
+  the CDC, and the USGS.
+
+
+  ### How to do it
+
+  To obtain publications, contact the organizations directly using the provided phone
+  numbers or websites. For FEMA publications, you can call the FEMA Distribution Center
+  or request them by mail.
+
+
+  ### Common failure modes
+
+  Failing to obtain the most current publications or not verifying the credibility
+  of the sources.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the information obtained is from official and updated sources to avoid
+  misinformation.
+
+
+  ### Local adaptation notes
+
+  Consider local emergency management offices for additional resources and guidance
+  tailored to your specific area.'
+structured_data:
+  tools:
+  - FEMA publications
+  - American Red Cross publications
+  - National Weather Service resources
+  - CDC resources
+  - USGS resources
+  materials: []
+  success_criteria: []
+  failure_modes: []
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.reference-sources
+  claim_id: clm_001
+  claim_text: This reference sheet lists organizations that provide publications and
+    resources on emergency preparedness topics.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 12
+    page_end: 12
+    segment_id: src.fema.are-you-ready.2004::seg_000018
+    excerpt: 'Other Publications Other publications cited throughout this guide can
+      be obtained by contacting the organizations below: American Red Cross National
+      Headquarters... National Weather Service... Centers for Disease Control and
+      Prevention... U.S. Geological Survey...'
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-management.reference-sources
+  claim_id: clm_002
+  claim_text: Access to reliable information is crucial for effective emergency preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: You can broaden your knowledge of disaster preparedness topics presented
+      in this guide by reviewing information provided at various government and non-government
+      Web sites.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-management.reference-sources
+  claim_id: clm_003
+  claim_text: Contact information for FEMA, the American Red Cross, the National Weather
+    Service, the CDC, and the USGS.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 12
+    page_end: 12
+    segment_id: src.fema.are-you-ready.2004::seg_000018
+    excerpt: FEMA Publications... American Red Cross National Headquarters... National
+      Weather Service... Centers for Disease Control and Prevention... U.S. Geological
+      Survey...
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-management.reference-sources
+  claim_id: clm_004
+  claim_text: To obtain publications, contact the organizations directly using the
+    provided phone numbers or websites.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 12
+    page_end: 12
+    segment_id: src.fema.are-you-ready.2004::seg_000018
+    excerpt: To obtain these publications, call the FEMA Distribution Center at 1-800-480-2520
+      or request them by mail from... Other publications cited throughout this guide
+      can be obtained by contacting the organizations below...
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-management.reference-sources
+  claim_id: clm_005
+  claim_text: For FEMA publications, you can call the FEMA Distribution Center or
+    request them by mail.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 12
+    page_end: 12
+    segment_id: src.fema.are-you-ready.2004::seg_000018
+    excerpt: 'To obtain these publications, call the FEMA Distribution Center at 1-800-480-2520
+      or request them by mail from: Federal Emergency Management Agency P.O. Box 2012
+      Jessup, MD 20794-2012'
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-management.reference-sources
+  claim_id: clm_006
+  claim_text: Failing to obtain the most current publications or not verifying the
+    credibility of the sources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: Searches conducted from each home site's page result in the most current
+      and extensive list of available material for the site.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-management.reference-sources
+  claim_id: clm_007
+  claim_text: Ensure that the information obtained is from official and updated sources
+    to avoid misinformation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: Searches conducted from each home site's page result in the most current
+      and extensive list of available material for the site.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-management.reference-sources
+  claim_id: clm_008
+  claim_text: Consider local emergency management offices for additional resources
+    and guidance tailored to your specific area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: You can broaden your knowledge of disaster preparedness topics presented
+      in this guide by reviewing information provided at various government and non-government
+      Web sites.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000018

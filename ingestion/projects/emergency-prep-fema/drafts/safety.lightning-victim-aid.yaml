@@ -1,0 +1,188 @@
+id: safety.lightning-victim-aid
+slug: safety.lightning-victim-aid
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Providing Aid to a Lightning Strike Victim
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidelines for aiding a lightning strike victim, including CPR and
+  injury assessment.
+summary_medium: This guide provides instructions on how to assist a victim of a lightning
+  strike, focusing on CPR, checking for breathing and heartbeat, and assessing for
+  additional injuries.
+plain_language: Learn how to help someone who has been struck by lightning. This includes
+  performing CPR and checking for injuries.
+markdown_body: "### What this is\nThis guide explains how to provide first aid to\
+  \ someone who has been struck by lightning. It covers essential steps like checking\
+  \ for breathing and heartbeat, performing CPR, and assessing for injuries.\n\n###\
+  \ Why it matters\nLightning strikes can cause severe injuries or be fatal. Quick\
+  \ and appropriate first aid can save lives and reduce the severity of injuries.\n\
+  \n### What you need\nNo special tools are required, but knowledge of CPR and basic\
+  \ first aid is essential.\n\n### How to do it\n1. Call 9-1-1 immediately for medical\
+  \ assistance. \n2. Check if the victim is breathing. If not, begin mouth-to-mouth\
+  \ resuscitation. \n3. Check for a heartbeat. If absent, perform CPR. \n4. If the\
+  \ victim has a pulse and is breathing, look for other injuries such as burns, nervous\
+  \ system damage, broken bones, or loss of hearing and eyesight.\n\n### Common failure\
+  \ modes\nDelayed medical response and improper CPR technique can worsen the victim's\
+  \ condition.\n\n### Safety/boundary notes\nEnsure your own safety first by moving\
+  \ to a safe location away from the storm.\n\n### Local adaptation notes\nConsider\
+  \ the availability of emergency services in your area when planning your response."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Victim is breathing and has a heartbeat.
+  - Emergency services are contacted promptly.
+  - Injuries are assessed and managed appropriately.
+  failure_modes:
+  - Delayed medical response
+  - Improper CPR technique
+  safety_boundary: Ensure personal safety from ongoing storm threats before assisting.
+  implementation:
+    smallest_viable_version: Call 9-1-1 and perform CPR if necessary.
+    tools: []
+    materials: []
+    expected_time: Immediate response required
+    expected_cost: None
+    success_checks:
+    - Victim is breathing and has a heartbeat.
+    - Emergency services are contacted promptly.
+    stop_conditions:
+    - Victim is stable and breathing.
+    - Professional medical help arrives.
+    common_mistakes:
+    - Not calling emergency services immediately.
+    - Improper CPR technique.
+    variants: []
+    when_to_escalate:
+    - If the victim is not breathing after CPR attempts.
+    - If there are severe injuries that cannot be managed on-site.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.lightning-victim-aid
+  claim_id: clm_001
+  claim_text: Call 9-1-1 immediately for medical assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: After a Thunderstorm Call 9-1-1 for medical assistance as soon as possible.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: safety.lightning-victim-aid
+  claim_id: clm_002
+  claim_text: Check if the victim is breathing. If not, begin mouth-to-mouth resuscitation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Breathing if breathing has stopped, begin mouth-to-mouth resuscitation.
+    start_char: 61
+    end_char: 125
+    support_strength: strong
+- object_id: safety.lightning-victim-aid
+  claim_id: clm_003
+  claim_text: Check for a heartbeat. If absent, perform CPR.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Heartbeat if the heart has stopped, administer CPR.
+    start_char: 126
+    end_char: 172
+    support_strength: strong
+- object_id: safety.lightning-victim-aid
+  claim_id: clm_004
+  claim_text: If the victim has a pulse and is breathing, look for other injuries
+    such as burns, nervous system damage, broken bones, or loss of hearing and eyesight.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Pulse if the victim has a pulse and is breathing, look for other possible
+      injuries. Check for burns where the lightning entered and left the body. Also
+      be alert for nervous system damage, broken bones, and loss of hearing and eyesight.
+    start_char: 173
+    end_char: 366
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000114
+bundle_overrides:
+  hook: Knowing how to provide first aid to a lightning strike victim can save lives
+    and reduce injury severity.
+  primer: Lightning strikes are rare but can cause severe injuries or even be fatal.
+    When someone is struck by lightning, they may suffer from cardiac arrest, burns,
+    nervous system damage, or other injuries. Quick and appropriate first aid is crucial
+    in these situations. This guide will help you understand the essential steps to
+    take when providing aid to a lightning strike victim. You don't need any special
+    tools, but knowledge of CPR and basic first aid is essential. The primary steps
+    include calling emergency services, checking for breathing and heartbeat, performing
+    CPR if necessary, and assessing the victim for additional injuries. Ensuring your
+    own safety is also important, so always move to a safe location away from the
+    storm before assisting.
+  guide: '1. **Call 9-1-1 immediately**: The first step in aiding a lightning strike
+    victim is to call for professional medical assistance. This ensures that help
+    is on the way while you begin first aid.
+
+
+    2. **Check if the victim is breathing**: Approach the victim carefully and check
+    for breathing. If the victim is not breathing, you need to start mouth-to-mouth
+    resuscitation immediately.
+
+
+    3. **Check for a heartbeat**: If the victim is not breathing, also check for a
+    heartbeat. If there is no heartbeat, begin CPR. CPR involves chest compressions
+    and rescue breaths to help circulate blood and oxygen in the body.
+
+
+    4. **Assess for other injuries**: If the victim has a pulse and is breathing,
+    look for other possible injuries. Lightning can cause burns where it enters and
+    exits the body. Be alert for signs of nervous system damage, broken bones, and
+    loss of hearing or eyesight.
+
+
+    5. **Ensure your safety**: Before assisting, make sure you are in a safe location
+    away from the storm. Your safety is crucial to effectively help the victim.'
+  reference:
+  - Call 9-1-1 immediately for medical assistance.
+  - Check if the victim is breathing. If not, begin mouth-to-mouth resuscitation.
+  - Check for a heartbeat. If absent, perform CPR.
+  - If the victim has a pulse and is breathing, look for other injuries such as burns,
+    nervous system damage, broken bones, or loss of hearing and eyesight.
+  worksheet:
+  - List the steps you would take if you encountered a lightning strike victim.
+  - Practice CPR techniques on a dummy or with a partner under supervision.
+  - Discuss with a group how to ensure personal safety during a thunderstorm.
+  - Identify signs of nervous system damage and how to assess them in a victim.
+  teach_forward_kit:
+    three_minute_version: In the event of a lightning strike, call 9-1-1 immediately,
+      check if the victim is breathing and has a heartbeat, perform CPR if necessary,
+      and assess for other injuries while ensuring your own safety.
+    ten_minute_outline:
+    - Introduction to lightning strike injuries
+    - Importance of calling emergency services
+    - Checking for breathing and performing mouth-to-mouth resuscitation
+    - Checking for a heartbeat and performing CPR
+    - Assessing for additional injuries
+    - Ensuring personal safety during a storm
+    discussion_prompts:
+    - Why is it important to call 9-1-1 immediately when someone is struck by lightning?
+    - What are the key signs that indicate a person needs CPR?
+    - How can you ensure your safety while assisting a lightning strike victim?
+    - What types of injuries should you look for after ensuring the victim is breathing
+      and has a pulse?

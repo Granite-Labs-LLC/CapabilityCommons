@@ -1,0 +1,173 @@
+id: health.heat-exhaustion
+slug: health.heat-exhaustion
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Heat Exhaustion
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: health
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Heat exhaustion is caused by fluid loss in hot, humid conditions, potentially
+  leading to heat stroke.
+summary_medium: Heat exhaustion occurs when people lose fluids through heavy sweating
+  in hot, humid environments, leading to mild shock and potentially progressing to
+  heat stroke if untreated.
+plain_language: Heat exhaustion happens when you lose too much fluid from sweating
+  in hot weather, which can make you feel weak and dizzy. If it gets worse, it can
+  turn into a more serious condition called heat stroke.
+markdown_body: '### What this is
+
+  Heat exhaustion is a condition that occurs when the body loses too much fluid through
+  sweating, especially during heavy exercise or work in hot, humid environments. This
+  fluid loss can lead to a decrease in blood flow to vital organs, resulting in mild
+  shock.
+
+
+  ### Why it matters
+
+  Understanding heat exhaustion is important because if it is not treated, it can
+  progress to heat stroke, a more severe condition that can be life-threatening. Recognizing
+  the signs early can prevent serious health issues.
+
+
+  ### What you need
+
+  Awareness of the symptoms of heat exhaustion and the conditions that can lead to
+  it is crucial. Staying hydrated and taking breaks in cool environments can help
+  prevent it.
+
+
+  ### How to do it
+
+  To prevent heat exhaustion, ensure you drink plenty of fluids, take regular breaks
+  in shaded or cool areas, and wear lightweight, loose-fitting clothing. If symptoms
+  occur, move to a cooler place, rest, and hydrate.
+
+
+  ### Common failure modes
+
+  Ignoring early symptoms of heat exhaustion can lead to progression to heat stroke.
+  Not drinking enough fluids or failing to take breaks in hot conditions are common
+  mistakes.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize hydration and rest in hot environments. Be aware of your body''s
+  signals and act promptly if you feel unwell.
+
+
+  ### Local adaptation notes
+
+  In areas with high humidity, the risk of heat exhaustion increases. Adapt work and
+  exercise routines to include more frequent breaks and hydration.'
+structured_data:
+  definition: Heat exhaustion is a condition caused by excessive fluid loss through
+    sweating in hot, humid conditions, leading to mild shock.
+  key_questions:
+  - What are the symptoms of heat exhaustion?
+  - How can heat exhaustion be prevented?
+  - What should be done if someone shows signs of heat exhaustion?
+  misconceptions:
+  - Heat exhaustion is not serious and does not require immediate attention.
+  - Drinking any liquid is sufficient to prevent heat exhaustion.
+  failure_modes: Progression to heat stroke
+  safety_boundary: Ensure adequate hydration and rest in hot environments.
+requires: []
+suggested_edges: []
+citations:
+- object_id: health.heat-exhaustion
+  claim_id: clm_001
+  claim_text: Heat exhaustion is a condition that occurs when the body loses too much
+    fluid through sweating, especially during heavy exercise or work in hot, humid
+    environments.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: Typically occurs when people exercise heavily or work in a hot, humid
+      place where body fluids are lost through heavy sweating.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: health.heat-exhaustion
+  claim_id: clm_002
+  claim_text: This fluid loss can lead to a decrease in blood flow to vital organs,
+    resulting in mild shock.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: Blood flow to the skin increases, causing blood flow to decrease to the
+      vital organs. This results in a form of mild shock.
+    start_char: 101
+    end_char: 200
+    support_strength: strong
+- object_id: health.heat-exhaustion
+  claim_id: clm_003
+  claim_text: Understanding heat exhaustion is important because if it is not treated,
+    it can progress to heat stroke, a more severe condition that can be life-threatening.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: If not treated, the victim's condition will worsen. Body temperature
+      will keep rising and the victim may suffer heat stroke.
+    start_char: 201
+    end_char: 300
+    support_strength: strong
+- object_id: health.heat-exhaustion
+  claim_id: clm_004
+  claim_text: To prevent heat exhaustion, ensure you drink plenty of fluids, take
+    regular breaks in shaded or cool areas, and wear lightweight, loose-fitting clothing.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Drink plenty of water... Dress in loose-fitting, lightweight, and light-colored
+      clothes that cover as much skin as possible... Avoid strenuous work during the
+      warmest part of the day. Use a buddy system when working in extreme heat, and
+      take frequent breaks.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: health.heat-exhaustion
+  claim_id: clm_005
+  claim_text: Ignoring early symptoms of heat exhaustion can lead to progression to
+    heat stroke.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: If not treated, the victim's condition will worsen. Body temperature
+      will keep rising and the victim may suffer heat stroke.
+    start_char: 201
+    end_char: 300
+    support_strength: strong
+- object_id: health.heat-exhaustion
+  claim_id: clm_006
+  claim_text: In areas with high humidity, the risk of heat exhaustion increases.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: Typically occurs when people exercise heavily or work in a hot, humid
+      place where body fluids are lost through heavy sweating.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000137

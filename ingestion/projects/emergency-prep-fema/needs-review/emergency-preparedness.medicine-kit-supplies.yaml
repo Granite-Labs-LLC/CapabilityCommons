@@ -1,0 +1,96 @@
+id: emergency-preparedness.medicine-kit-supplies
+slug: emergency-preparedness.medicine-kit-supplies
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Medicine Kit Supplies for Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Checklist of medicine supplies for emergency kits.
+summary_medium: A checklist of essential non-prescription and prescription medicine
+  supplies to include in emergency kits for home, vehicle, and work.
+plain_language: This guide provides a list of medicines and health supplies that should
+  be included in emergency kits for different locations such as home, vehicle, and
+  work.
+markdown_body: '### What this is
+
+  This is a checklist of essential non-prescription and prescription medicine supplies
+  that should be included in emergency kits. It ensures you have necessary medications
+  and health supplies during emergencies.
+
+
+  ### Why it matters
+
+  Having a well-stocked medicine kit is crucial in emergencies when access to pharmacies
+  or medical facilities may be limited. It helps manage minor health issues and maintain
+  well-being until professional help is available.
+
+
+  ### What you need
+
+  Include the following items in your emergency kits: aspirin and non-aspirin pain
+  relievers, anti-diarrhea medication, antacid for stomach upset, laxatives, vitamins,
+  necessary prescriptions, and extra eyeglasses or contact lenses.
+
+
+  ### How to do it
+
+  Prepare separate kits for home, vehicle, and work. Regularly check and update the
+  supplies, ensuring medications are within their expiration dates and prescriptions
+  are current.
+
+
+  ### Common failure modes
+
+  Failing to regularly update the kit, forgetting to include personal prescriptions,
+  and not considering individual health needs can reduce the effectiveness of the
+  kit.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all medications are stored properly according to their requirements,
+  and keep them out of reach of children.
+
+
+  ### Local adaptation notes
+
+  Consider local climate and specific health needs when selecting medications. For
+  example, in hot climates, some medications may require special storage conditions.'
+structured_data:
+  definition: A list of essential medicines and health supplies for emergency preparedness.
+  key_questions:
+  - What medications are essential for my personal health needs?
+  - How often should I check and update my emergency medicine kit?
+  misconceptions:
+  - All medications can be stored indefinitely.
+  - One kit is sufficient for all locations.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.medicine-kit-supplies
+  claim_id: clm_001
+  claim_text: 'Include the following items in your emergency kits: aspirin and non-aspirin
+    pain relievers, anti-diarrhea medication, antacid for stomach upset, laxatives,
+    vitamins, necessary prescriptions, and extra eyeglasses or contact lenses.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 197
+    page_end: 197
+    segment_id: src.fema.are-you-ready.2004::seg_000300
+    excerpt: Aspirin and non-aspirin pain reliever, Anti-diarrhea medication, Antacid
+      (for stomach upset), Laxative, Vitamins, Prescriptions, Extra eyeglasses/contact
+      lenses
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000300

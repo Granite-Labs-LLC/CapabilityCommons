@@ -1,0 +1,183 @@
+id: safety.safe-room-construction
+slug: safety.safe-room-construction
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Safe Room Construction for Wind Resistance
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidance on building a wind-safe room to withstand tornadoes and hurricanes.
+summary_medium: Brochure and manual providing details on building a wind-safe room
+  to withstand tornadoes, hurricanes, and other high winds.
+plain_language: Learn how to build a safe room in your house that can protect you
+  from tornadoes, hurricanes, and other high winds using FEMA's detailed guides.
+markdown_body: '### What this is
+
+  This reference sheet provides information on constructing a safe room within your
+  home that can withstand extreme wind events such as tornadoes and hurricanes.
+
+
+  ### Why it matters
+
+  Safe rooms are crucial for protecting lives during severe weather events. They provide
+  a secure space that can resist high winds and flying debris, significantly increasing
+  the safety of occupants.
+
+
+  ### What you need
+
+  To build a safe room, you will need detailed construction plans, appropriate building
+  materials, and possibly professional assistance to ensure the room meets safety
+  standards.
+
+
+  ### How to do it
+
+  Refer to FEMA''s brochure ''Taking Shelter from the Storm: Building a Safe Room
+  Inside Your House'' (L-233) and the manual (FEMA-320) for comprehensive guidance
+  on planning and constructing a safe room. These resources include step-by-step instructions
+  and necessary specifications.
+
+
+  ### Common failure modes
+
+  Improper construction or using inadequate materials can compromise the safety of
+  the room. Ensure adherence to the guidelines provided in the FEMA resources.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the safe room is accessible to all household members and that it is
+  regularly maintained to remain effective.
+
+
+  ### Local adaptation notes
+
+  Consider local building codes and weather patterns when planning your safe room
+  to ensure it meets regional safety requirements.'
+structured_data:
+  definition: A safe room is a reinforced space within a building designed to provide
+    protection from extreme weather events.
+  key_questions:
+  - What materials are needed to construct a safe room?
+  - How can I ensure my safe room meets safety standards?
+  misconceptions:
+  - A regular basement or interior room is sufficient for protection against tornadoes
+    without reinforcement.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.safe-room-construction
+  claim_id: clm_001
+  claim_text: This reference sheet provides information on constructing a safe room
+    within your home that can withstand extreme wind events such as tornadoes and
+    hurricanes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000085
+    excerpt: Brochure providing details about obtaining information about how to build
+      a wind-safe room to withstand tornado, hurricane, and other high winds
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.safe-room-construction
+  claim_id: clm_002
+  claim_text: Safe rooms are crucial for protecting lives during severe weather events.
+    They provide a secure space that can resist high winds and flying debris, significantly
+    increasing the safety of occupants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The purpose of a safe room or a wind shelter is to provide a space where
+      you and your family can seek refuge that provides a high level of protection.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.safe-room-construction
+  claim_id: clm_003
+  claim_text: To build a safe room, you will need detailed construction plans, appropriate
+    building materials, and possibly professional assistance to ensure the room meets
+    safety standards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000085
+    excerpt: Manual with detailed information about how to build a wind-safe room
+      to withstand tornado, hurricane, and other high winds
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: safety.safe-room-construction
+  claim_id: clm_004
+  claim_text: 'Refer to FEMA''s brochure ''Taking Shelter from the Storm: Building
+    a Safe Room Inside Your House'' (L-233) and the manual (FEMA-320) for comprehensive
+    guidance on planning and constructing a safe room.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000085
+    excerpt: Brochure providing details about obtaining information about how to build
+      a wind-safe room to withstand tornado, hurricane, and other high winds
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.safe-room-construction
+  claim_id: clm_005
+  claim_text: Improper construction or using inadequate materials can compromise the
+    safety of the room. Ensure adherence to the guidelines provided in the FEMA resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The safe room must be adequately anchored to resist overturning and uplift.
+      The walls, ceiling, and door of the shelter must withstand wind pressure and
+      resist penetration by windborne objects and falling debris.
+    start_char: 0
+    end_char: 250
+    support_strength: strong
+- object_id: safety.safe-room-construction
+  claim_id: clm_006
+  claim_text: Ensure that the safe room is accessible to all household members and
+    that it is regularly maintained to remain effective.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Safe rooms built below ground level provide the greatest protection,
+      but a safe room built in a first-floor interior room also can provide the necessary
+      protection.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: safety.safe-room-construction
+  claim_id: clm_007
+  claim_text: Consider local building codes and weather patterns when planning your
+    safe room to ensure it meets regional safety requirements.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Extreme windstorms in many parts of the country pose a serious threat
+      to buildings and their occupants.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000085

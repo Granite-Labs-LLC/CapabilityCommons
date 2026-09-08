@@ -1,0 +1,146 @@
+id: emergency.evacuation-awareness
+slug: emergency.evacuation-awareness
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Evacuation Frequency and Causes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Evacuations are frequent due to various emergencies.
+summary_medium: Evacuations occur frequently due to emergencies like industrial accidents,
+  fires, floods, and hurricanes. Understanding these can aid preparedness.
+plain_language: Evacuations happen more often than people think, often due to accidents
+  or natural disasters. Knowing how often and why they occur can help you be better
+  prepared.
+markdown_body: '### What this is
+
+  This concept note explains the frequency and causes of evacuations, emphasizing
+  their commonality and the importance of preparedness.
+
+
+  ### Why it matters
+
+  Understanding how often evacuations occur and the reasons behind them can help individuals
+  and communities prepare effectively, reducing panic and ensuring safety during emergencies.
+
+
+  ### What you need
+
+  Awareness of local evacuation routes and access to evacuation maps if available.
+
+
+  ### How to do it
+
+  Contact local authorities to learn about designated evacuation routes. Record specific
+  directions for your evacuation route and ensure you have access to a map with marked
+  routes.
+
+
+  ### Common failure modes
+
+  Failing to know evacuation routes or not having a plan can lead to confusion and
+  delays during an emergency.
+
+
+  ### Safety/boundary notes
+
+  Ensure that evacuation plans consider the safety of all family members, including
+  pets and individuals with special needs.
+
+
+  ### Local adaptation notes
+
+  Check with local authorities for the availability of evacuation maps and any specific
+  regional evacuation procedures.'
+structured_data:
+  definition: Evacuations are organized departures from an area due to emergencies.
+  key_questions:
+  - How often do evacuations occur in my area?
+  - What are the common causes of evacuations?
+  misconceptions:
+  - Evacuations are rare and unlikely to happen to me.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.evacuation-awareness
+  claim_id: clm_001
+  claim_text: Evacuations happen more often than people think, often due to accidents
+    or natural disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000026
+    excerpt: Evacuations are more common than many people realize. Hundreds of times
+      each year, transportation and industrial accidents release harmful substances,
+      forcing thousands of people to leave their homes. Fires and floods cause evacuations
+      even more frequently.
+    start_char: 0
+    end_char: 219
+    support_strength: strong
+- object_id: emergency.evacuation-awareness
+  claim_id: clm_002
+  claim_text: Knowing how often and why they occur can help you be better prepared.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: The amount of time you have to leave will depend on the hazard. If the
+      event is a weather condition, such as a hurricane that can be monitored, you
+      might have a day or two to get ready. However, many disasters allow no time
+      for people to gather even the most basic necessities, which is why planning
+      ahead is essential.
+    start_char: 0
+    end_char: 297
+    support_strength: medium
+- object_id: emergency.evacuation-awareness
+  claim_id: clm_003
+  claim_text: Contact local authorities to learn about designated evacuation routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000026
+    excerpt: Ask local authorities about emergency evacuation routes.
+    start_char: 221
+    end_char: 270
+    support_strength: strong
+- object_id: emergency.evacuation-awareness
+  claim_id: clm_004
+  claim_text: Record specific directions for your evacuation route and ensure you
+    have access to a map with marked routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000026
+    excerpt: Record your specific evacuation route directions in the space provided.
+      Is there a map available with evacuation routes marked?
+    start_char: 271
+    end_char: 365
+    support_strength: strong
+- object_id: emergency.evacuation-awareness
+  claim_id: clm_005
+  claim_text: Failing to know evacuation routes or not having a plan can lead to confusion
+    and delays during an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: However, many disasters allow no time for people to gather even the most
+      basic necessities, which is why planning ahead is essential.
+    start_char: 230
+    end_char: 297
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000026

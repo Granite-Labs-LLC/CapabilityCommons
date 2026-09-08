@@ -1,0 +1,293 @@
+id: safety.first-aid-cpr-training
+slug: safety.first-aid-cpr-training
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Learn First Aid and CPR
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts:
+- emergency preparedness
+- family safety
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Learn first aid and CPR to enhance family safety.
+summary_medium: Guidance on learning first aid and CPR, including taking classes and
+  obtaining certification from the American Red Cross.
+plain_language: This guide helps you learn first aid and CPR, which are essential
+  skills for emergency situations. You can take classes and get certified by the American
+  Red Cross.
+markdown_body: '# What this is
+
+  This is a guide to learning first aid and CPR, which are critical skills for providing
+  emergency assistance and potentially saving lives.
+
+
+  # Why it matters
+
+  Knowing how to administer first aid and CPR can make a significant difference in
+  emergency situations, providing immediate care until professional help arrives.
+  Certification also offers legal protection under the ''good Samaritan'' law.
+
+
+  # What you need
+
+  To learn these skills, you will need access to a first aid kit and CPR training
+  materials. It is recommended to take a class offered by a recognized organization
+  like the American Red Cross.
+
+
+  # How to do it
+
+  Enroll in a first aid and CPR class through your local American Red Cross chapter.
+  Complete the training and obtain certification, which will equip you with the necessary
+  skills and legal protection to administer aid.
+
+
+  # Common failure modes
+
+  Common mistakes include incorrect administration of first aid or CPR and attempting
+  to provide aid without proper certification.
+
+
+  # Safety/boundary notes
+
+  Ensure you have received proper training before attempting to administer first aid
+  or CPR to avoid causing harm.
+
+
+  # Local adaptation notes
+
+  Check the availability of local Red Cross chapters or other certified organizations
+  that offer first aid and CPR training in your area.'
+structured_data:
+  tools:
+  - first aid kit
+  - CPR training materials
+  materials: []
+  success_criteria:
+  - Successfully complete a certified first aid and CPR course
+  - Obtain official certification
+  failure_modes:
+  - Incorrect administration of first aid
+  - Lack of certification
+  safety_boundary: Ensure proper training before administering aid
+  implementation:
+    smallest_viable_version: Attend a basic first aid and CPR class.
+    tools:
+    - first aid kit
+    - CPR training materials
+    materials: []
+    expected_time: A few hours to a full day, depending on the course.
+    expected_cost: Varies by location and provider.
+    success_checks:
+    - Completion of the course
+    - Certification obtained
+    stop_conditions:
+    - Inability to complete the course
+    - Lack of access to certified training
+    common_mistakes:
+    - Skipping practical exercises
+    - Not renewing certification
+    variants:
+    - label: Urban
+      when: Living in a city with multiple training options.
+      notes: Consider comparing different providers for the best schedule and price.
+    - label: Renter
+      when: Limited space for practice at home.
+      notes: Look for courses that provide all necessary materials on-site.
+    when_to_escalate:
+    - If unsure about the correct procedure during an emergency
+    - If unable to complete the training due to physical limitations
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_001
+  claim_text: This is a guide to learning first aid and CPR, which are critical skills
+    for providing emergency assistance and potentially saving lives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: It is important that family members know how to administer fi rst aid
+      and CPR and how to use a fi re extinguisher.
+    start_char: 0
+    end_char: 88
+    support_strength: strong
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_002
+  claim_text: Knowing how to administer first aid and CPR can make a significant difference
+    in emergency situations, providing immediate care until professional help arrives.
+    Certification also offers legal protection under the 'good Samaritan' law.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Learn First Aid and CPR Take a fi rst aid and CPR class. Local American
+      Red Cross chapters can provide information about this type of training. Offi
+      cial certifi cation by the American Red Cross provides, under the "good Samaritan"
+      law, protection for those giving fi rst aid.
+    start_char: 89
+    end_char: 304
+    support_strength: strong
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_003
+  claim_text: To learn these skills, you will need access to a first aid kit and CPR
+    training materials. It is recommended to take a class offered by a recognized
+    organization like the American Red Cross.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Learn First Aid and CPR Take a fi rst aid and CPR class. Local American
+      Red Cross chapters can provide information about this type of training.
+    start_char: 89
+    end_char: 204
+    support_strength: medium
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_004
+  claim_text: Enroll in a first aid and CPR class through your local American Red
+    Cross chapter. Complete the training and obtain certification, which will equip
+    you with the necessary skills and legal protection to administer aid.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Learn First Aid and CPR Take a fi rst aid and CPR class. Local American
+      Red Cross chapters can provide information about this type of training. Offi
+      cial certifi cation by the American Red Cross provides, under the "good Samaritan"
+      law, protection for those giving fi rst aid.
+    start_char: 89
+    end_char: 304
+    support_strength: strong
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_005
+  claim_text: Common mistakes include incorrect administration of first aid or CPR
+    and attempting to provide aid without proper certification.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Offi cial certifi cation by the American Red Cross provides, under the
+      "good Samaritan" law, protection for those giving fi rst aid.
+    start_char: 205
+    end_char: 304
+    support_strength: medium
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_006
+  claim_text: Ensure you have received proper training before attempting to administer
+    first aid or CPR to avoid causing harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Offi cial certifi cation by the American Red Cross provides, under the
+      "good Samaritan" law, protection for those giving fi rst aid.
+    start_char: 205
+    end_char: 304
+    support_strength: medium
+- object_id: safety.first-aid-cpr-training
+  claim_id: clm_007
+  claim_text: Check the availability of local Red Cross chapters or other certified
+    organizations that offer first aid and CPR training in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: Local American Red Cross chapters can provide information about this
+      type of training.
+    start_char: 150
+    end_char: 204
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000043
+bundle_overrides:
+  hook: Learning first aid and CPR can empower you to save lives in emergencies and
+    provide peace of mind for you and your loved ones.
+  primer: First aid and CPR are essential skills that can make a significant difference
+    in emergency situations. First aid involves providing immediate care to someone
+    who is injured or ill, while CPR (Cardiopulmonary Resuscitation) is a life-saving
+    technique used when someone's breathing or heartbeat has stopped. These skills
+    are crucial because they can help stabilize a person until professional medical
+    help arrives. Taking a certified course, such as those offered by the American
+    Red Cross, ensures you learn the correct techniques and gain legal protection
+    under the 'good Samaritan' law. Certification courses typically cover how to assess
+    a situation, perform CPR, use an automated external defibrillator (AED), and manage
+    common injuries like cuts, burns, and fractures. With proper training, you can
+    confidently assist in emergencies, potentially saving lives and reducing the severity
+    of injuries.
+  guide: '1. **Research Training Options**: Look for first aid and CPR courses offered
+    by reputable organizations like the American Red Cross. Check their websites or
+    contact local chapters for class schedules and availability.
+
+
+    2. **Enroll in a Course**: Sign up for a course that fits your schedule. Consider
+    factors like location, duration, and cost. Some courses may offer online components,
+    but practical, hands-on training is essential.
+
+
+    3. **Gather Necessary Materials**: Ensure you have access to a first aid kit and
+    any required training materials. Some courses provide these, while others may
+    require you to bring your own.
+
+
+    4. **Attend the Training**: Participate actively in the course. Pay attention
+    to instructions, ask questions, and practice the techniques thoroughly. Practical
+    exercises are crucial for mastering the skills.
+
+
+    5. **Complete Certification Requirements**: Successfully complete all course components,
+    including written tests and practical assessments, to earn your certification.
+
+
+    6. **Maintain Your Skills**: Regularly review your training materials and consider
+    taking refresher courses to keep your skills sharp. Certification typically needs
+    renewal every two years.
+
+
+    7. **Stay Informed**: Keep updated on any changes in first aid and CPR guidelines
+    by following reputable sources like the American Red Cross or the American Heart
+    Association.'
+  reference:
+  - First aid kit
+  - CPR training materials
+  - American Red Cross
+  - Good Samaritan law
+  - Certification renewal every two years
+  - Automated External Defibrillator (AED)
+  worksheet:
+  - List three situations where first aid might be needed.
+  - Describe the steps of performing CPR on an adult.
+  - Identify the contents of a basic first aid kit.
+  - Role-play a scenario where you need to use CPR and first aid.
+  - Research and list local organizations offering first aid and CPR certification.
+  teach_forward_kit:
+    three_minute_version: First aid and CPR are vital skills for emergency situations.
+      They help stabilize individuals until professional help arrives. Enroll in a
+      certified course, practice the techniques, and maintain your certification to
+      ensure you're prepared to assist effectively.
+    ten_minute_outline:
+    - Introduction to first aid and CPR
+    - Importance of these skills in emergencies
+    - Overview of certification courses
+    - Step-by-step guide to enrolling and completing a course
+    - Common mistakes and how to avoid them
+    - Maintaining and renewing certification
+    discussion_prompts:
+    - Why is it important to have first aid and CPR skills?
+    - What are some challenges you might face when learning these skills?
+    - How can you ensure you stay updated with the latest first aid and CPR practices?
+    - Discuss the role of the 'good Samaritan' law in providing first aid.

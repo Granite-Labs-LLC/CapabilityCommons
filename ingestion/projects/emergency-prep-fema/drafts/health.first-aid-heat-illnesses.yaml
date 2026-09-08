@@ -1,0 +1,191 @@
+id: health.first-aid-heat-illnesses
+slug: health.first-aid-heat-illnesses
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: First Aid for Heat-Induced Illnesses
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: health
+secondary_domains: []
+stage: community
+contexts:
+- emergency response
+- public health
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guide to symptoms and first aid for heat-induced illnesses.
+summary_medium: This reference sheet provides information on identifying symptoms
+  and administering first aid for heat-induced illnesses such as sunburn, heat cramps,
+  heat exhaustion, and heat stroke.
+plain_language: Learn how to recognize and treat different heat-related illnesses,
+  including sunburn, heat cramps, heat exhaustion, and heat stroke, with this easy-to-follow
+  guide.
+markdown_body: '### What this is
+
+  This reference sheet outlines the symptoms and first aid treatments for various
+  heat-induced illnesses, including sunburn, heat cramps, heat exhaustion, and heat
+  stroke.
+
+
+  ### Why it matters
+
+  Extreme heat can lead to serious health issues. Knowing how to identify and treat
+  these conditions promptly can prevent complications and save lives.
+
+
+  ### What you need
+
+  - Cool water
+
+  - Cool, wet cloths
+
+  - Fans
+
+  - Air conditioners
+
+
+  ### How to do it
+
+  - **Sunburn**: Take a shower to remove oils and apply sterile dressings to blisters.
+
+  - **Heat Cramps**: Move to a cooler location, stretch muscles, and drink cool water.
+
+  - **Heat Exhaustion**: Lie down in a cool place, apply wet cloths, and drink water
+  slowly.
+
+  - **Heat Stroke**: Call emergency services, move to a cooler environment, and use
+  cool baths or fans.
+
+
+  ### Common failure modes
+
+  Delaying treatment or applying incorrect first aid can worsen the condition.
+
+
+  ### Safety/boundary notes
+
+  Use extreme caution, especially with heat stroke, and seek immediate medical attention.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of medical services and local climate conditions when
+  applying these guidelines.'
+structured_data:
+  tools:
+  - fans
+  - air conditioners
+  materials:
+  - cool water
+  - cool, wet cloths
+  success_criteria:
+  - Symptoms are identified correctly
+  - Appropriate first aid is administered
+  - Medical attention is sought when necessary
+  failure_modes:
+  - Delayed treatment
+  - Incorrect first aid application
+  safety_boundary:
+  - Use extreme caution
+  - Seek immediate medical attention for heat stroke
+requires: []
+suggested_edges: []
+citations:
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_001
+  claim_text: This reference sheet outlines the symptoms and first aid treatments
+    for various heat-induced illnesses, including sunburn, heat cramps, heat exhaustion,
+    and heat stroke.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 90
+    page_end: 90
+    segment_id: src.fema.are-you-ready.2004::seg_000141
+    excerpt: Extreme heat brings with it the possibility of heat-induced illnesses.
+      The following table lists these illnesses, their symptoms, and the first aid
+      treatment.
+    start_char: 0
+    end_char: 134
+    support_strength: strong
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_002
+  claim_text: Extreme heat can lead to serious health issues. Knowing how to identify
+    and treat these conditions promptly can prevent complications and save lives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000138
+    excerpt: A life-threatening condition. The victim's temperature control system,
+      which produces sweating to cool the body, stops working. The body temperature
+      can rise so high that brain damage and death may result if the body is not cooled
+      quickly.
+    start_char: 0
+    end_char: 234
+    support_strength: strong
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_003
+  claim_text: 'Sunburn: Take a shower to remove oils and apply sterile dressings to
+    blisters.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 90
+    page_end: 90
+    segment_id: src.fema.are-you-ready.2004::seg_000141
+    excerpt: Take a shower using soap to remove oils that may block pores, preventing
+      the body from cooling naturally. Apply dry, sterile dressings to any blisters,
+      and get medical attention.
+    start_char: 204
+    end_char: 328
+    support_strength: strong
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_004
+  claim_text: 'Heat Cramps: Move to a cooler location, stretch muscles, and drink
+    cool water.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 90
+    page_end: 90
+    segment_id: src.fema.are-you-ready.2004::seg_000141
+    excerpt: Get the victim to a cooler location. Lightly stretch and gently massage
+      affected muscles to relieve spasms. Give sips of up to a half glass of cool
+      water every 15 minutes.
+    start_char: 329
+    end_char: 486
+    support_strength: strong
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_005
+  claim_text: 'Heat Exhaustion: Lie down in a cool place, apply wet cloths, and drink
+    water slowly.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 90
+    page_end: 90
+    segment_id: src.fema.are-you-ready.2004::seg_000141
+    excerpt: Get victim to lie down in a cool place. Loosen or remove clothing. Apply
+      cool, wet cloths. Fan or move victim to air-conditioned place. Give sips of
+      water if victim is conscious. Be sure water is consumed slowly.
+    start_char: 487
+    end_char: 696
+    support_strength: strong
+- object_id: health.first-aid-heat-illnesses
+  claim_id: clm_006
+  claim_text: 'Heat Stroke: Call emergency services, move to a cooler environment,
+    and use cool baths or fans.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 90
+    page_end: 90
+    segment_id: src.fema.are-you-ready.2004::seg_000141
+    excerpt: Call 9-1-1 or emergency medical services, or get the victim to a hospital
+      immediately. Delay can be fatal. Move victim to a cooler environment. Remove
+      clothing. Try a cool bath, sponging, or wet sheet to reduce body temperature.
+      Use fans and air conditioners.
+    start_char: 697
+    end_char: 944
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000141

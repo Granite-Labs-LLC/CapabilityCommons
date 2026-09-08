@@ -1,0 +1,257 @@
+id: emergency.tornado-preparedness
+slug: emergency.tornado-preparedness
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Tornado Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for preparing for a tornado, including recognizing danger
+  signs and seeking appropriate shelter.
+summary_medium: Learn how to prepare for a tornado by recognizing danger signs, listening
+  to weather updates, and knowing where to seek shelter.
+plain_language: This guide helps you prepare for a tornado by teaching you how to
+  recognize danger signs, listen to weather updates, and find safe shelter.
+markdown_body: "# What this is\nThis guide provides steps to prepare for and respond\
+  \ to a tornado, focusing on recognizing danger signs and finding appropriate shelter.\n\
+  \n# Why it matters\nTornadoes can cause significant damage and pose serious risks\
+  \ to safety. Being prepared can help minimize injuries and fatalities.\n\n# What\
+  \ you need\nAccess to NOAA Weather Radio, commercial radio, or television for weather\
+  \ updates. Knowledge of safe shelter locations.\n\n# How to do it\n1. Stay alert\
+  \ to changing weather conditions. \n2. Listen to NOAA Weather Radio or commercial\
+  \ broadcasts for updates. \n3. Recognize danger signs like a dark, greenish sky,\
+  \ large hail, a large, dark, low-lying cloud, or a loud roar. \n4. If a tornado\
+  \ warning is issued, seek shelter immediately. If indoors, go to a safe room, basement,\
+  \ or the lowest level of a building. If outdoors, lie flat in a ditch and cover\
+  \ your head.\n\n# Common failure modes\nInjury from debris, inadequate shelter,\
+  \ attempting to outrun a tornado in a vehicle.\n\n# Safety/boundary notes\nAvoid\
+  \ windows and doors. Do not open windows. Do not seek shelter under bridges or overpasses.\n\
+  \n# Local adaptation notes\nConsider local building structures and available shelters\
+  \ when planning."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Recognize and respond to tornado warnings promptly.
+  - Find and use appropriate shelter during a tornado.
+  failure_modes:
+  - Injury from debris
+  - Inadequate shelter
+  safety_boundary:
+  - Avoid windows and doors
+  - Do not open windows
+  - Do not seek shelter under bridges or overpasses
+  implementation:
+    smallest_viable_version: Recognize danger signs and seek immediate shelter.
+    tools: []
+    materials: []
+    expected_time: Varies based on situation
+    expected_cost: Minimal
+    success_checks:
+    - You are in a safe shelter when a tornado warning is issued.
+    stop_conditions:
+    - Tornado warning is lifted
+    - You are in a safe location
+    common_mistakes:
+    - Ignoring weather updates
+    - Seeking shelter under overpasses
+    variants:
+    - label: Urban
+      when: In a city
+      notes: Identify nearby sturdy buildings for shelter.
+    - label: Rural
+      when: In open areas
+      notes: Find low-lying areas away from trees and debris.
+    when_to_escalate:
+    - If you are unable to find shelter
+    - If you are injured
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_001
+  claim_text: This guide provides steps to prepare for and respond to a tornado, focusing
+    on recognizing danger signs and finding appropriate shelter.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: 'Before a Tornado Be alert to changing weather conditions. - Listen to
+      NOAA Weather Radio or to commercial radio or television newscasts for the latest
+      information. - Look for approaching storms. - Look for the following danger
+      signs: - Dark, often greenish sky - Large hail - A large, dark, low-lying cloud
+      (particularly if rotating) - Loud roar, similar to a freight train. If you see
+      approaching storms or any of the danger signs, be prepared to take shelter immediately.'
+    start_char: 0
+    end_char: 497
+    support_strength: strong
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_002
+  claim_text: Tornadoes can cause significant damage and pose serious risks to safety.
+    Being prepared can help minimize injuries and fatalities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Extreme windstorms in many parts of the country pose a serious threat
+      to buildings and their occupants.
+    start_char: 0
+    end_char: 97
+    support_strength: medium
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_003
+  claim_text: Access to NOAA Weather Radio, commercial radio, or television for weather
+    updates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Listen to NOAA Weather Radio or to commercial radio or television newscasts
+      for the latest information.
+    start_char: 52
+    end_char: 138
+    support_strength: strong
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_004
+  claim_text: Recognize danger signs like a dark, greenish sky, large hail, a large,
+    dark, low-lying cloud, or a loud roar.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: '- Look for the following danger signs: - Dark, often greenish sky -
+      Large hail - A large, dark, low-lying cloud (particularly if rotating) - Loud
+      roar, similar to a freight train.'
+    start_char: 139
+    end_char: 297
+    support_strength: strong
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_005
+  claim_text: If a tornado warning is issued, seek shelter immediately. If indoors,
+    go to a safe room, basement, or the lowest level of a building.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: During a Tornado If you are under a tornado WARNING, seek shelter immediately!
+      Go to a pre-designated shelter area such as a safe room, basement, storm cellar,
+      or the lowest building level.
+    start_char: 298
+    end_char: 432
+    support_strength: strong
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_006
+  claim_text: If outdoors, lie flat in a ditch and cover your head.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Lie flat in a nearby ditch or depression and cover your head with your
+      hands.
+    start_char: 570
+    end_char: 632
+    support_strength: strong
+- object_id: emergency.tornado-preparedness
+  claim_id: clm_007
+  claim_text: Avoid windows and doors. Do not open windows. Do not seek shelter under
+    bridges or overpasses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Do not open windows. Do not get under an overpass or bridge. You are
+      safer in a low, flat location.
+    start_char: 433
+    end_char: 497
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000083
+bundle_overrides:
+  hook: Tornadoes can strike with little warning, but being prepared can save lives
+    and minimize injuries.
+  primer: Tornadoes are powerful and unpredictable natural disasters that can cause
+    significant damage and pose serious risks to safety. They are characterized by
+    a rotating column of air extending from a thunderstorm to the ground. Recognizing
+    the signs of an impending tornado and knowing how to respond can make a critical
+    difference. Key danger signs include a dark, often greenish sky, large hail, a
+    large, dark, low-lying cloud, and a loud roar similar to a freight train. It is
+    crucial to stay informed through NOAA Weather Radio, commercial radio, or television
+    for the latest weather updates. When a tornado warning is issued, immediate action
+    is necessary. Seek shelter in a safe room, basement, or the lowest level of a
+    building. If you are outdoors, lie flat in a ditch and cover your head. Avoid
+    windows, doors, and do not seek shelter under bridges or overpasses. Being prepared
+    and knowing these steps can help protect you and your loved ones during a tornado.
+  guide: '1. **Stay Informed**: Regularly check weather updates from reliable sources
+    such as NOAA Weather Radio, commercial radio, or television. This will keep you
+    informed about any changes in weather conditions and potential tornado warnings.
+
+
+    2. **Recognize Danger Signs**: Be alert to signs of an approaching tornado, such
+    as a dark, greenish sky, large hail, a large, dark, low-lying cloud, or a loud
+    roar similar to a freight train. These signs indicate that a tornado may be imminent.
+
+
+    3. **Seek Shelter Immediately**: If a tornado warning is issued, do not delay.
+    If you are indoors, go to a pre-designated shelter area such as a safe room, basement,
+    or the lowest level of a building. Avoid windows and doors.
+
+
+    4. **Outdoor Safety**: If you are caught outside and cannot reach a building,
+    lie flat in a nearby ditch or depression and cover your head with your hands.
+    This position helps protect you from flying debris.
+
+
+    5. **Avoid Unsafe Areas**: Do not open windows, as this can increase the risk
+    of injury from flying glass. Avoid seeking shelter under bridges or overpasses,
+    as these structures can be dangerous during a tornado.
+
+
+    6. **Plan Ahead**: Familiarize yourself with your local area''s tornado safety
+    plan and identify the safest places to take shelter. Practice tornado drills with
+    your family to ensure everyone knows what to do in an emergency.'
+  reference:
+  - Stay informed with NOAA Weather Radio or commercial broadcasts.
+  - 'Recognize danger signs: dark greenish sky, large hail, low-lying cloud, loud
+    roar.'
+  - Seek immediate shelter in a safe room, basement, or lowest building level.
+  - If outdoors, lie flat in a ditch and cover your head.
+  - Avoid windows, doors, and do not open windows.
+  - Do not seek shelter under bridges or overpasses.
+  worksheet:
+  - List three reliable sources for weather updates.
+  - Identify the danger signs of a tornado.
+  - Describe the steps to take if a tornado warning is issued while you are indoors.
+  - Explain what to do if you are caught outside during a tornado.
+  - Discuss why it is unsafe to seek shelter under bridges or overpasses.
+  teach_forward_kit:
+    three_minute_version: Tornadoes are dangerous and unpredictable. Stay informed
+      through reliable weather updates, recognize danger signs like a dark sky and
+      loud roar, and seek immediate shelter in a safe room or basement when a warning
+      is issued. Avoid windows and do not seek shelter under bridges.
+    ten_minute_outline:
+    - Introduction to tornadoes and their risks.
+    - Importance of staying informed with weather updates.
+    - Recognizing danger signs of a tornado.
+    - Steps to take when a tornado warning is issued.
+    - Safety measures for indoors and outdoors.
+    - Common mistakes and safety tips.
+    discussion_prompts:
+    - Why is it important to have multiple sources for weather updates?
+    - What are the most common danger signs of a tornado?
+    - How can practicing tornado drills improve safety?
+    - Why is it dangerous to seek shelter under bridges during a tornado?

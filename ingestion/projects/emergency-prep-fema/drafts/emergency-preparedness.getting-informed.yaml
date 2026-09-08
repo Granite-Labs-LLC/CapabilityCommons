@@ -1,0 +1,175 @@
+id: emergency-preparedness.getting-informed
+slug: emergency-preparedness.getting-informed
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Getting Informed About Community Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understand local hazards and emergency plans.
+summary_medium: Learn about potential hazards in your community, assess the risks,
+  and understand local emergency plans for warnings and evacuations.
+plain_language: Find out what kinds of emergencies might happen in your area and how
+  to prepare for them by checking with local emergency services.
+markdown_body: '### What this is
+
+  This concept involves understanding the specific hazards that could affect your
+  community, assessing the risks they pose, and familiarizing yourself with local
+  emergency plans.
+
+
+  ### Why it matters
+
+  Being informed about potential hazards and emergency plans helps you prepare effectively,
+  reducing risk and ensuring safety during emergencies.
+
+
+  ### What you need
+
+  Access to information from local emergency management offices or the American Red
+  Cross.
+
+
+  ### How to do it
+
+  Contact your local emergency management office or the American Red Cross to gather
+  information about community hazards and emergency plans. Record this information
+  for future reference.
+
+
+  ### Common failure modes
+
+  Failing to gather complete information or misunderstanding the risks and plans can
+  lead to inadequate preparation.
+
+
+  ### Safety/boundary notes
+
+  Ensure the information is up-to-date and specific to your community.
+
+
+  ### Local adaptation notes
+
+  Consider local hazards and protocols, as these can vary significantly between communities.'
+structured_data:
+  definition: Understanding local hazards and emergency plans.
+  key_questions:
+  - What hazards are most likely to affect my community?
+  - What are the risks associated with these hazards?
+  - What are the local plans for warnings and evacuations?
+  misconceptions:
+  - Assuming all communities face the same hazards.
+  - Believing that emergency plans are unnecessary.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_001
+  claim_text: This concept involves understanding the specific hazards that could
+    affect your community, assessing the risks they pose, and familiarizing yourself
+    with local emergency plans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 130
+    support_strength: strong
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_002
+  claim_text: Being informed about potential hazards and emergency plans helps you
+    prepare effectively, reducing risk and ensuring safety during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 130
+    support_strength: medium
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_003
+  claim_text: Access to information from local emergency management offices or the
+    American Red Cross.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: You can obtain this information from your local emergency management
+      office or your local chapter of the American Red Cross.
+    start_char: 131
+    end_char: 216
+    support_strength: strong
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_004
+  claim_text: Contact your local emergency management office or the American Red Cross
+    to gather information about community hazards and emergency plans. Record this
+    information for future reference.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: You can obtain this information from your local emergency management
+      office or your local chapter of the American Red Cross. Space has been provided
+      here to record your answers.
+    start_char: 131
+    end_char: 246
+    support_strength: strong
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_005
+  claim_text: Failing to gather complete information or misunderstanding the risks
+    and plans can lead to inadequate preparation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    start_char: 91
+    end_char: 144
+    support_strength: medium
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_006
+  claim_text: Ensure the information is up-to-date and specific to your community.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 130
+    support_strength: medium
+- object_id: emergency-preparedness.getting-informed
+  claim_id: clm_007
+  claim_text: Consider local hazards and protocols, as these can vary significantly
+    between communities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 130
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000022

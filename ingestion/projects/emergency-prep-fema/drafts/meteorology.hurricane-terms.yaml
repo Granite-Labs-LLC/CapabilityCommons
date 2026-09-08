@@ -1,0 +1,139 @@
+id: meteorology.hurricane-terms
+slug: meteorology.hurricane-terms
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Hurricane Terms
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: meteorology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Definitions of terms related to hurricane hazards.
+summary_medium: This reference sheet provides definitions for key terms related to
+  hurricane hazards, including tropical depression, tropical storm, and hurricane.
+plain_language: Learn the definitions of terms like tropical depression, tropical
+  storm, and hurricane to better understand hurricane hazards.
+markdown_body: '### What this is
+
+  This reference sheet provides definitions for terms related to hurricane hazards.
+  Understanding these terms can help you identify and prepare for different stages
+  of a hurricane.
+
+
+  ### Why it matters
+
+  Knowing the specific terms used to describe hurricane conditions can help you understand
+  weather reports and warnings, allowing you to take appropriate action to protect
+  yourself and your property.
+
+
+  ### What you need
+
+  No specific tools or materials are needed to use this reference sheet. Familiarity
+  with basic meteorological concepts may be helpful.
+
+
+  ### How to do it
+
+  - **Tropical Depression**: An organized system of clouds and thunderstorms with
+  a defined surface circulation and maximum sustained winds of 38 MPH (33 knots) or
+  less.
+
+  - **Tropical Storm**: An organized system of strong thunderstorms with a defined
+  surface circulation and maximum sustained winds of 39-73 MPH (34-63 knots).
+
+  - **Hurricane**: An intense tropical weather system of strong thunderstorms with
+  a well-defined surface circulation and maximum sustained winds of 74 MPH (64 knots)
+  or higher.
+
+
+  ### Common failure modes
+
+  Misunderstanding the terms can lead to underestimating the severity of a storm and
+  inadequate preparation.
+
+
+  ### Safety/boundary notes
+
+  Always follow local weather advisories and evacuation orders during hurricane threats.
+
+
+  ### Local adaptation notes
+
+  Local weather services may use additional terms or scales to describe storm intensity.
+  Always refer to local guidelines for the most relevant information.'
+structured_data:
+  definition: Definitions of key terms related to hurricane hazards.
+  key_questions:
+  - What is a tropical depression?
+  - How is a tropical storm different from a hurricane?
+  misconceptions:
+  - All tropical storms become hurricanes.
+  - Hurricanes can be predicted with complete accuracy.
+requires: []
+suggested_edges: []
+citations:
+- object_id: meteorology.hurricane-terms
+  claim_id: clm_001
+  claim_text: 'Tropical Depression: An organized system of clouds and thunderstorms
+    with a defined surface circulation and maximum sustained winds of 38 MPH (33 knots)
+    or less.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000093
+    excerpt: 'Tropical Depression
+
+
+      An organized system of clouds and thunderstorms with a defi ned surface circulation
+      and maximum sustained winds of 38 MPH (33 knots) or less.'
+    start_char: 0
+    end_char: 153
+    support_strength: strong
+- object_id: meteorology.hurricane-terms
+  claim_id: clm_002
+  claim_text: 'Tropical Storm: An organized system of strong thunderstorms with a
+    defined surface circulation and maximum sustained winds of 39-73 MPH (34-63 knots).'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000094
+    excerpt: 'Tropical Storm
+
+
+      An organized system of strong thunderstorms with a defi ned surface circulation
+      and maximum sustained winds of 39-73 MPH (34-63 knots).'
+    start_char: 0
+    end_char: 153
+    support_strength: strong
+- object_id: meteorology.hurricane-terms
+  claim_id: clm_003
+  claim_text: 'Hurricane: An intense tropical weather system of strong thunderstorms
+    with a well-defined surface circulation and maximum sustained winds of 74 MPH
+    (64 knots) or higher.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000095
+    excerpt: 'Hurricane
+
+
+      An intense tropical weather system of strong thunderstorms with a welldefi ned
+      surface circulation and maximum sustained winds of 74 MPH (64 knots) or higher.'
+    start_char: 0
+    end_char: 153
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000092
+- src.fema.are-you-ready.2004::seg_000093
+- src.fema.are-you-ready.2004::seg_000094
+- src.fema.are-you-ready.2004::seg_000095

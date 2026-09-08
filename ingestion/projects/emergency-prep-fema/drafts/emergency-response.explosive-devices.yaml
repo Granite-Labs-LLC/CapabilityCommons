@@ -1,0 +1,217 @@
+id: emergency-response.explosive-devices
+slug: emergency-response.explosive-devices
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Explosive Devices in Terrorism
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-response
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Overview of explosive devices used by terrorists.
+summary_medium: Explosive devices are commonly used by terrorists due to their availability
+  and impact. They can be constructed from materials found in everyday stores and
+  are easily transported and detonated.
+plain_language: Explosive devices are tools used by terrorists to cause harm and disruption.
+  They are made from materials that are easy to find and can be set off remotely or
+  by individuals.
+markdown_body: '# What this is
+
+  Explosive devices are weapons used by terrorists to inflict damage and instill fear.
+  They are constructed from readily available materials and can be transported and
+  detonated with ease.
+
+
+  # Why it matters
+
+  Understanding the use of explosive devices is crucial for public safety and emergency
+  response. These devices have been used to target financial, political, social, and
+  religious institutions, causing significant harm and loss of life.
+
+
+  # What you need
+
+  Knowledge of the materials and methods used to construct and deploy explosive devices
+  is essential for identifying potential threats and implementing safety measures.
+
+
+  # How to do it
+
+  Emergency responders should be trained to recognize the signs of explosive devices
+  and understand the protocols for safely managing and defusing such threats.
+
+
+  # Common failure modes
+
+  Failure to identify the materials or methods used in explosive devices can lead
+  to inadequate response and increased risk of harm.
+
+
+  # Safety/boundary notes
+
+  Always prioritize personal safety and follow established protocols when dealing
+  with potential explosive threats. Engage professional bomb disposal units when necessary.
+
+
+  # Local adaptation notes
+
+  Adapt response strategies to local contexts, considering the availability of materials
+  and potential targets in the area.'
+structured_data:
+  definition: Explosive devices are tools used by terrorists to cause destruction
+    and fear, constructed from accessible materials and capable of being transported
+    and detonated easily.
+  key_questions:
+  - What materials are commonly used in explosive devices?
+  - How are explosive devices typically transported and detonated?
+  - What are the common targets of explosive device attacks?
+  misconceptions:
+  - Explosive devices are difficult to construct and require specialized knowledge.
+  - Only large, high-profile targets are at risk of explosive device attacks.
+  safety_boundary: This is background/awareness information about a hazard, adapted
+    from FEMA's public citizen-preparedness guide. It is not a substitute for official
+    warnings, alerts, or instructions from local emergency management, law enforcement,
+    or emergency responders during an actual event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_001
+  claim_text: Explosive devices are weapons used by terrorists to inflict damage and
+    instill fear.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 152
+    page_end: 153
+    segment_id: src.fema.are-you-ready.2004::seg_000233
+    excerpt: Terrorists have frequently used explosive devices as one of their most
+      common weapons.
+    start_char: 0
+    end_char: 81
+    support_strength: strong
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_002
+  claim_text: They are constructed from readily available materials and can be transported
+    and detonated with ease.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 152
+    page_end: 153
+    segment_id: src.fema.are-you-ready.2004::seg_000233
+    excerpt: The materials needed for an explosive device can be found in many places
+      including variety, hardware, and auto supply stores. Explosive devices are highly
+      portable using vehicles and humans as a means of transport. They are easily
+      detonated from remote locations or by suicide bombers.
+    start_char: 82
+    end_char: 328
+    support_strength: strong
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_003
+  claim_text: Understanding the use of explosive devices is crucial for public safety
+    and emergency response.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 152
+    page_end: 153
+    segment_id: src.fema.are-you-ready.2004::seg_000233
+    excerpt: Conventional bombs have been used to damage and destroy fi nancial, political,
+      social, and religious institutions.
+    start_char: 329
+    end_char: 414
+    support_strength: medium
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_004
+  claim_text: These devices have been used to target financial, political, social,
+    and religious institutions, causing significant harm and loss of life.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 152
+    page_end: 153
+    segment_id: src.fema.are-you-ready.2004::seg_000233
+    excerpt: Conventional bombs have been used to damage and destroy fi nancial, political,
+      social, and religious institutions. Attacks have occurred in public places and
+      on city streets with thousands of people around the world injured and killed.
+    start_char: 329
+    end_char: 496
+    support_strength: strong
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_005
+  claim_text: Knowledge of the materials and methods used to construct and deploy
+    explosive devices is essential for identifying potential threats and implementing
+    safety measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 152
+    page_end: 153
+    segment_id: src.fema.are-you-ready.2004::seg_000233
+    excerpt: The materials needed for an explosive device can be found in many places
+      including variety, hardware, and auto supply stores.
+    start_char: 82
+    end_char: 181
+    support_strength: medium
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_006
+  claim_text: Emergency responders should be trained to recognize the signs of explosive
+    devices and understand the protocols for safely managing and defusing such threats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 148
+    page_end: 150
+    segment_id: src.fema.are-you-ready.2004::seg_000232
+    excerpt: Within the immediate area of a terrorist event, you would need to rely
+      on police, fi re, and other offi cials for instructions.
+    start_char: 569
+    end_char: 647
+    support_strength: medium
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_007
+  claim_text: Failure to identify the materials or methods used in explosive devices
+    can lead to inadequate response and increased risk of harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 148
+    page_end: 150
+    segment_id: src.fema.are-you-ready.2004::seg_000232
+    excerpt: Be aware of your surroundings. Move or leave if you feel uncomfortable
+      or if something does not seem right.
+    start_char: 648
+    end_char: 728
+    support_strength: medium
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_008
+  claim_text: Always prioritize personal safety and follow established protocols when
+    dealing with potential explosive threats. Engage professional bomb disposal units
+    when necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 148
+    page_end: 150
+    segment_id: src.fema.are-you-ready.2004::seg_000232
+    excerpt: Within the immediate area of a terrorist event, you would need to rely
+      on police, fi re, and other offi cials for instructions.
+    start_char: 569
+    end_char: 647
+    support_strength: medium
+- object_id: emergency-response.explosive-devices
+  claim_id: clm_009
+  claim_text: Adapt response strategies to local contexts, considering the availability
+    of materials and potential targets in the area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 148
+    page_end: 150
+    segment_id: src.fema.are-you-ready.2004::seg_000232
+    excerpt: High-risk targets for acts of terrorism include military and civilian
+      government facilities, international airports, large cities, and high-profi
+      le landmarks.
+    start_char: 414
+    end_char: 569
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000233

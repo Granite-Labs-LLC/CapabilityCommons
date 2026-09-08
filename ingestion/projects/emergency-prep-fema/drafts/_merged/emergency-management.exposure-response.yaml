@@ -1,0 +1,245 @@
+id: emergency-management.exposure-response
+slug: emergency-management.exposure-response
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Responding to Exposure to a Biological Agent
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Actions to take if exposed to a biological agent.
+summary_medium: Guidance on actions to take if exposed to a biological agent, including
+  decontamination and seeking medical help.
+plain_language: If you are exposed to a biological agent, remove contaminated clothing,
+  wash with soap and water, and seek medical assistance.
+markdown_body: '### What this is
+
+  This guide provides steps to follow if you are exposed to a biological agent, focusing
+  on immediate decontamination and seeking medical help.
+
+
+  ### Why it matters
+
+  Exposure to biological agents can lead to serious health issues. Quick and effective
+  response can reduce the risk of infection and spread.
+
+
+  ### What you need
+
+  Access to soap and water, clean clothes, and a way to contact medical authorities.
+
+
+  ### How to do it
+
+  1. Remove and bag your clothes and personal items. Follow official instructions
+  for disposal of contaminated items.
+
+  2. Wash yourself thoroughly with soap and water.
+
+  3. Put on clean clothes.
+
+  4. Seek medical assistance immediately. You may be advised to stay away from others
+  or even quarantined.
+
+
+  ### Common failure modes
+
+  Improper decontamination or failure to seek medical help can increase health risks.
+
+
+  ### Safety/boundary notes
+
+  Ensure that you follow official instructions and maintain hygiene to prevent further
+  contamination.
+
+
+  ### Local adaptation notes
+
+  Local health authorities may have specific instructions based on the type of biological
+  agent and available resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Effective decontamination and timely medical consultation.
+  failure_modes:
+  - Improper decontamination
+  - Failure to seek medical help
+  safety_boundary:
+  - Follow official instructions
+  - Maintain hygiene
+  implementation:
+    smallest_viable_version: Remove contaminated clothing, wash with soap and water,
+      and seek medical help.
+    tools: []
+    materials: []
+    expected_time: Immediate
+    expected_cost: Low
+    success_checks:
+    - Clothes and personal items are bagged and disposed of properly.
+    - Body is thoroughly washed with soap and water.
+    - Medical assistance is sought promptly.
+    stop_conditions:
+    - Symptoms worsen despite initial decontamination.
+    - Official instructions contradict initial actions.
+    common_mistakes:
+    - Delaying medical consultation
+    - Inadequate washing
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Follow local public health advisories closely.
+    when_to_escalate:
+    - If symptoms develop or worsen
+    - If instructed by authorities
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.exposure-response
+  claim_id: clm_001
+  claim_text: This guide provides steps to follow if you are exposed to a biological
+    agent, focusing on immediate decontamination and seeking medical help.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: 'If you are exposed to a biological agent: Remove and bag your clothes
+      and personal items. Follow official instructions for disposal of contaminated
+      items. Wash yourself with soap and water and put on clean clothes. Seek medical
+      assistance. You may be advised to stay away from others or even quarantined.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_002
+  claim_text: Exposure to biological agents can lead to serious health issues. Quick
+    and effective response can reduce the risk of infection and spread.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: The first evidence of an attack may be when you notice symptoms of the
+      disease caused by exposure to an agent. Be suspicious of any symptoms you notice,
+      but do not assume that any illness is a result of the attack. Use common sense
+      and practice good hygiene.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-management.exposure-response
+  claim_id: clm_003
+  claim_text: Access to soap and water, clean clothes, and a way to contact medical
+    authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Wash with soap and water. Contact authorities. Seek medical attention
+      if you become sick.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_004
+  claim_text: Remove and bag your clothes and personal items. Follow official instructions
+    for disposal of contaminated items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Remove and bag your clothes and personal items. Follow official instructions
+      for disposal of contaminated items.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_005
+  claim_text: Wash yourself thoroughly with soap and water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Wash yourself with soap and water and put on clean clothes.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_006
+  claim_text: Put on clean clothes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Wash yourself with soap and water and put on clean clothes.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_007
+  claim_text: Seek medical assistance immediately. You may be advised to stay away
+    from others or even quarantined.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Seek medical assistance. You may be advised to stay away from others
+      or even quarantined.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-management.exposure-response
+  claim_id: clm_008
+  claim_text: Improper decontamination or failure to seek medical help can increase
+    health risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Use common sense and practice good hygiene. Seek medical attention if
+      you become sick.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-management.exposure-response
+  claim_id: clm_009
+  claim_text: Ensure that you follow official instructions and maintain hygiene to
+    prevent further contamination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Follow official instructions for disposal of contaminated items. Use
+      common sense and practice good hygiene.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-management.exposure-response
+  claim_id: clm_010
+  claim_text: Local health authorities may have specific instructions based on the
+    type of biological agent and available resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Listen to the media for official instructions.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000244

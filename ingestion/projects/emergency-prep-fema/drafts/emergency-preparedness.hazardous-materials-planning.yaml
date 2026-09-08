@@ -1,0 +1,209 @@
+id: emergency-preparedness.hazardous-materials-planning
+slug: emergency-preparedness.hazardous-materials-planning
+seed_type: extracted
+co_type: concept_note
+canonical_title: Planning for Hazardous Materials Incidents
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Understand the role of Local Emergency Planning Committees in hazardous
+  materials preparedness.
+summary_medium: This concept note explains the responsibilities of Local Emergency
+  Planning Committees (LEPCs) in preparing for hazardous materials incidents, emphasizing
+  community awareness and the importance of emergency plans and public notifications.
+plain_language: Learn how Local Emergency Planning Committees help communities prepare
+  for hazardous materials incidents by developing emergency plans and informing the
+  public.
+markdown_body: '### What this is
+
+  This concept note covers the role of Local Emergency Planning Committees (LEPCs)
+  in preparing for hazardous materials incidents. LEPCs are responsible for gathering
+  information about hazardous materials in the community and making it available to
+  the public. They also develop emergency plans to handle chemical emergencies.
+
+
+  ### Why it matters
+
+  Understanding the role of LEPCs is crucial for community safety. Proper planning
+  and public awareness can significantly reduce the risks associated with hazardous
+  materials incidents.
+
+
+  ### What you need
+
+  To engage with LEPCs, you need to contact your local emergency management office
+  for information. Additionally, having a disaster supplies kit with items like plastic
+  sheeting, duct tape, and scissors is recommended.
+
+
+  ### How to do it
+
+  Reach out to your local LEPC to learn about chemical hazards in your area and the
+  emergency plans in place. Ensure you understand the public notification strategies
+  and actions required during an incident.
+
+
+  ### Common failure modes
+
+  Common issues include a lack of public awareness about hazardous materials and inadequate
+  emergency planning.
+
+
+  ### Safety/boundary notes
+
+  Ensure that you are aware of community-specific chemical hazards and have access
+  to local emergency contact information.
+
+
+  ### Local adaptation notes
+
+  Adapt emergency plans to address specific chemical hazards present in your community
+  and ensure local emergency contact information is up-to-date.'
+structured_data:
+  definition: Local Emergency Planning Committees (LEPCs) are responsible for preparing
+    communities for hazardous materials incidents by developing emergency plans and
+    informing the public.
+  key_questions:
+  - What is the role of LEPCs in hazardous materials preparedness?
+  - How can the public access information about chemical hazards?
+  - What should be included in a community emergency plan?
+  misconceptions:
+  - LEPCs are only responsible for responding to incidents, not planning.
+  - Public notification is not a part of emergency planning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_001
+  claim_text: This concept note covers the role of Local Emergency Planning Committees
+    (LEPCs) in preparing for hazardous materials incidents. LEPCs are responsible
+    for gathering information about hazardous materials in the community and making
+    it available to the public. They also develop emergency plans to handle chemical
+    emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Many communities have Local Emergency Planning Committees (LEPCs) whose
+      responsibilities include collecting information about hazardous materials in
+      the community and making this information available to the public upon request.
+      The LEPCs also are tasked with developing an emergency plan to prepare for and
+      respond to chemical emergencies in the community.
+    start_char: 0
+    end_char: 287
+    support_strength: strong
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_002
+  claim_text: Understanding the role of LEPCs is crucial for community safety. Proper
+    planning and public awareness can significantly reduce the risks associated with
+    hazardous materials incidents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to find out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials.
+    start_char: 288
+    end_char: 409
+    support_strength: medium
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_003
+  claim_text: To engage with LEPCs, you need to contact your local emergency management
+    office for information. Additionally, having a disaster supplies kit with items
+    like plastic sheeting, duct tape, and scissors is recommended.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: The local emergency management office can provide contact information
+      on the LEPCs.
+    start_char: 410
+    end_char: 478
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: 'You should add the following supplies to your disaster supplies kit:
+      Plastic sheeting. Duct tape. Scissors.'
+    start_char: 479
+    end_char: 550
+    support_strength: strong
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_004
+  claim_text: Reach out to your local LEPC to learn about chemical hazards in your
+    area and the emergency plans in place. Ensure you understand the public notification
+    strategies and actions required during an incident.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to find out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials.
+    start_char: 288
+    end_char: 409
+    support_strength: strong
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_005
+  claim_text: Common issues include a lack of public awareness about hazardous materials
+    and inadequate emergency planning.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: The LEPCs also are tasked with developing an emergency plan to prepare
+      for and respond to chemical emergencies in the community. Ways the public will
+      be notified and actions the public must take in the event of a release are part
+      of the plan.
+    start_char: 144
+    end_char: 287
+    support_strength: medium
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_006
+  claim_text: Ensure that you are aware of community-specific chemical hazards and
+    have access to local emergency contact information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to find out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials. The local emergency management office can provide contact information
+      on the LEPCs.
+    start_char: 288
+    end_char: 478
+    support_strength: strong
+- object_id: emergency-preparedness.hazardous-materials-planning
+  claim_id: clm_007
+  claim_text: Adapt emergency plans to address specific chemical hazards present in
+    your community and ensure local emergency contact information is up-to-date.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to find out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials. The local emergency management office can provide contact information
+      on the LEPCs.
+    start_char: 288
+    end_char: 478
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000199

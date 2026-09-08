@@ -1,0 +1,266 @@
+id: safety.home-hazard-check
+slug: safety.home-hazard-check
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Home Hazard Check
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Identify and manage hazardous materials in your home.
+summary_medium: A guide to identifying, storing, and disposing of hazardous materials
+  in your home safely.
+plain_language: Learn how to find and handle hazardous materials in your home to keep
+  everyone safe.
+markdown_body: '# What this is
+
+  This guide helps you identify and manage hazardous materials in your home to ensure
+  safety.
+
+
+  # Why it matters
+
+  Many common household items can be hazardous if not handled properly. Ensuring they
+  are stored and disposed of correctly reduces risks to health and safety, especially
+  for children.
+
+
+  # What you need
+
+  A list of common hazardous household items and the manufacturer''s directions for
+  each product.
+
+
+  # How to do it
+
+  Tour your home to locate hazardous materials. Check each item''s label for proper
+  usage, storage, and disposal instructions. Ensure that all chemicals are stored
+  out of children''s reach.
+
+
+  # Common failure modes
+
+  Improper storage or incorrect disposal of hazardous materials can lead to accidents
+  or health issues.
+
+
+  # Safety/boundary notes
+
+  Always keep hazardous materials out of the reach of children.
+
+
+  # Local adaptation notes
+
+  Consider the availability of storage solutions in your area to safely store hazardous
+  materials.'
+structured_data:
+  tools:
+  - list of hazardous items
+  materials:
+  - manufacturer's directions
+  success_criteria:
+  - All hazardous materials are identified and stored safely
+  failure_modes:
+  - improper storage
+  - incorrect disposal
+  safety_boundary: keep out of reach of children
+  implementation:
+    smallest_viable_version: Identify and safely store hazardous materials in one
+      room.
+    tools:
+    - list of hazardous items
+    materials:
+    - manufacturer's directions
+    expected_time: 1-2 hours
+    expected_cost: minimal
+    success_checks:
+    - All identified materials are stored safely
+    stop_conditions:
+    - If unsure about a material, consult a professional
+    common_mistakes:
+    - Ignoring label instructions
+    - Leaving materials accessible to children
+    variants:
+    - label: urban
+      when: In apartments with limited storage space
+      notes: Use vertical storage solutions to maximize space.
+    when_to_escalate:
+    - If a hazardous material is leaking or damaged
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.home-hazard-check
+  claim_id: clm_001
+  claim_text: This guide helps you identify and manage hazardous materials in your
+    home to ensure safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: There are probably many hazardous materials throughout your home. Take
+      a tour of your home to see where these materials are located.
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_002
+  claim_text: Many common household items can be hazardous if not handled properly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: Remember that products such as aerosol cans of hair spray and deodorant,
+      nail polish and nail polish remover, toilet bowl cleaners, and furniture polishes
+      all fall into the category of hazardous materials.
+    start_char: 293
+    end_char: 473
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_003
+  claim_text: Ensuring they are stored and disposed of correctly reduces risks to
+    health and safety, especially for children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: It is critical to store household chemicals in places where children
+      cannot access them.
+    start_char: 221
+    end_char: 293
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_004
+  claim_text: Tour your home to locate hazardous materials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: Take a tour of your home to see where these materials are located.
+    start_char: 48
+    end_char: 92
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_005
+  claim_text: Check each item''s label for proper usage, storage, and disposal instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: Once you have located a product, check the label and take the necessary
+      steps to ensure that you are using, storing, and disposing of the material according
+      to the manufacturer's directions.
+    start_char: 92
+    end_char: 221
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_006
+  claim_text: Ensure that all chemicals are stored out of children''s reach.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: It is critical to store household chemicals in places where children
+      cannot access them.
+    start_char: 221
+    end_char: 293
+    support_strength: strong
+- object_id: safety.home-hazard-check
+  claim_id: clm_007
+  claim_text: Improper storage or incorrect disposal of hazardous materials can lead
+    to accidents or health issues.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 136
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000212
+    excerpt: Never store hazardous products in food containers. Never mix household
+      hazardous chemicals or waste with other products. Incompatibles, such as chlorine
+      bleach and ammonia, may react, ignite, or explode.
+    start_char: 438
+    end_char: 620
+    support_strength: medium
+- object_id: safety.home-hazard-check
+  claim_id: clm_008
+  claim_text: Always keep hazardous materials out of the reach of children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: It is critical to store household chemicals in places where children
+      cannot access them.
+    start_char: 221
+    end_char: 293
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000214
+bundle_overrides:
+  hook: Protect your family by learning how to identify and safely manage hazardous
+    materials in your home.
+  primer: Many common household items can be hazardous if not handled properly. These
+    include everyday products like aerosol cans, nail polish remover, and toilet bowl
+    cleaners. If not stored and disposed of correctly, these items can pose significant
+    risks to health and safety, especially for children. By conducting a thorough
+    check of your home, you can identify these materials and ensure they are managed
+    safely. This process involves checking labels for proper usage, storage, and disposal
+    instructions, and ensuring that all chemicals are stored out of children's reach.
+    Proper management of these materials not only prevents accidents but also contributes
+    to a safer living environment for everyone in the household.
+  guide: "1. **Prepare**: Gather a list of common hazardous household items and the\
+    \ manufacturer's directions for each product. \n\n2. **Tour Your Home**: Walk\
+    \ through each room in your home, including the garage and basement, to locate\
+    \ hazardous materials. Look for items like cleaning supplies, paints, and personal\
+    \ care products. \n\n3. **Check Labels**: For each item you find, read the label\
+    \ carefully. Pay attention to instructions on how to use, store, and dispose of\
+    \ the product safely. \n\n4. **Safe Storage**: Ensure all hazardous materials\
+    \ are stored in a secure location, out of reach of children. Consider using locked\
+    \ cabinets or high shelves. \n\n5. **Proper Disposal**: Follow the manufacturer's\
+    \ instructions for disposing of hazardous materials. Never pour chemicals down\
+    \ the drain or throw them in the trash unless specified as safe. \n\n6. **Review\
+    \ Regularly**: Make it a habit to review your home for hazardous materials regularly,\
+    \ especially after purchasing new products. \n\nBy following these steps, you\
+    \ can significantly reduce the risk of accidents and health issues related to\
+    \ hazardous materials in your home."
+  reference:
+  - 'Common hazardous items: aerosol cans, nail polish remover, toilet bowl cleaners.'
+  - Always check labels for usage, storage, and disposal instructions.
+  - Store hazardous materials out of children's reach.
+  - Never mix incompatible chemicals.
+  - Review and update your home hazard check regularly.
+  worksheet:
+  - List five hazardous items you found in your home.
+  - Describe the storage solution you used for each item.
+  - Explain the disposal method for one hazardous material.
+  - Identify one area in your home that needs improved storage for hazardous materials.
+  - Reflect on any new products you have purchased recently that require safe storage.
+  teach_forward_kit:
+    three_minute_version: Conduct a quick home tour to identify hazardous materials,
+      check labels for safety instructions, and ensure all items are stored out of
+      children's reach.
+    ten_minute_outline:
+    - Introduction to hazardous household materials.
+    - Steps to identify and locate hazardous items.
+    - Importance of checking labels for safety instructions.
+    - Safe storage practices to protect children.
+    - Proper disposal methods for hazardous materials.
+    - Regular review and update of home hazard checks.
+    discussion_prompts:
+    - What are some common household items that might be hazardous?
+    - Why is it important to check the labels of household products?
+    - How can improper storage of hazardous materials affect your family?
+    - What strategies can you use to ensure hazardous materials are out of children's
+      reach?
+    - How often should you conduct a home hazard check?

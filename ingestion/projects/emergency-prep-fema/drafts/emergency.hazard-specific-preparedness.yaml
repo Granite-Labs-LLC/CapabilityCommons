@@ -1,0 +1,226 @@
+id: emergency.hazard-specific-preparedness
+slug: emergency.hazard-specific-preparedness
+seed_type: module
+co_type: skill_guide
+canonical_title: Hazard-Specific Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn actions to take before, during, and after specific hazards.
+summary_medium: Guidance on actions to take before, during, and after specific hazards,
+  such as seeking shelter during a tornado and reducing property loss from a hurricane.
+  Encourages integrating hazard-specific information into family disaster plans.
+plain_language: This guide helps you prepare for different types of emergencies by
+  explaining what to do before, during, and after specific hazards like tornadoes
+  and hurricanes. It also suggests including this information in your family disaster
+  plan.
+markdown_body: '### What this is
+
+  This module provides guidance on preparing for specific hazards by detailing actions
+  to take before, during, and after events such as tornadoes and hurricanes.
+
+
+  ### Why it matters
+
+  Understanding hazard-specific actions can significantly reduce risks to personal
+  safety and property. Integrating this knowledge into a family disaster plan enhances
+  preparedness and response effectiveness.
+
+
+  ### What you need
+
+  Identify local hazards that are likely to occur. Gather information on these hazards
+  and ensure all family members are informed.
+
+
+  ### How to do it
+
+  1. Identify hazards relevant to your area. 2. Study specific actions for each hazard.
+  3. Share this information with your family. 4. Incorporate these actions into your
+  family disaster plan.
+
+
+  ### Common failure modes
+
+  Failing to identify local hazards, not updating the family disaster plan, and not
+  communicating the plan with all family members.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all actions taken are safe and appropriate for the specific hazard and
+  local conditions.
+
+
+  ### Local adaptation notes
+
+  Customize your family disaster plan based on local hazards and resources available
+  in your area.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - All family members understand the specific actions to take for each identified
+    hazard.
+  - The family disaster plan includes hazard-specific actions.
+  failure_modes:
+  - Inadequate shelter during a tornado.
+  - Increased property loss due to lack of preparation for a hurricane.
+  safety_boundary: Ensure that all actions are appropriate for the specific hazard
+    and local conditions.
+  implementation:
+    smallest_viable_version: Create a basic family disaster plan including actions
+      for one local hazard.
+    tools: []
+    materials: []
+    expected_time: 2-3 hours
+    expected_cost: Minimal, primarily time investment
+    success_checks:
+    - Family members can articulate the plan for each hazard.
+    - The plan is easily accessible and understood by all family members.
+    stop_conditions:
+    - If local hazard information is outdated or unavailable.
+    - If family members are unable to understand the plan.
+    common_mistakes:
+    - Not updating the plan regularly.
+    - Failing to practice the plan with family members.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Consider additional evacuation routes and public shelter options.
+    - label: Off-grid
+      when: Living in a remote area.
+      notes: Ensure self-sufficiency with food, water, and power supplies.
+    when_to_escalate:
+    - If a hazard is imminent and the plan is not ready.
+    - If family members are unable to follow the plan during a drill.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hazard-specific-preparedness
+  claim_id: clm_001
+  claim_text: This module provides guidance on preparing for specific hazards by detailing
+    actions to take before, during, and after events such as tornadoes and hurricanes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 44
+    page_end: 45
+    segment_id: src.fema.are-you-ready.2004::seg_000061
+    excerpt: 'There are actions that should be taken before, during, and after an
+      event that are unique to each hazard. For example: - Seeking a safe shelter
+      during a tornado. - Reducing property loss from a hurricane.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.hazard-specific-preparedness
+  claim_id: clm_002
+  claim_text: Understanding hazard-specific actions can significantly reduce risks
+    to personal safety and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 44
+    page_end: 45
+    segment_id: src.fema.are-you-ready.2004::seg_000061
+    excerpt: 'There are actions that should be taken before, during, and after an
+      event that are unique to each hazard. For example: - Seeking a safe shelter
+      during a tornado. - Reducing property loss from a hurricane.'
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency.hazard-specific-preparedness
+  claim_id: clm_003
+  claim_text: Integrating this knowledge into a family disaster plan enhances preparedness
+    and response effectiveness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 44
+    page_end: 45
+    segment_id: src.fema.are-you-ready.2004::seg_000061
+    excerpt: Share the hazard-specific information with family members and include
+      pertinent material from these parts in your family disaster plan.
+    start_char: 200
+    end_char: 300
+    support_strength: strong
+- object_id: emergency.hazard-specific-preparedness
+  claim_id: clm_004
+  claim_text: Identify local hazards that are likely to occur. Gather information
+    on these hazards and ensure all family members are informed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 44
+    page_end: 45
+    segment_id: src.fema.are-you-ready.2004::seg_000061
+    excerpt: Study the material for those hazards that you identified in Section 1.1
+      as the ones that have happened or could happen. Share the hazard-specific information
+      with family members.
+    start_char: 100
+    end_char: 250
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000061
+bundle_overrides:
+  hook: Understanding how to prepare for specific hazards like tornadoes and hurricanes
+    can significantly reduce risks to your safety and property.
+  primer: Hazard-specific preparedness is about knowing the right actions to take
+    before, during, and after different types of emergencies, such as tornadoes and
+    hurricanes. Each hazard presents unique challenges and requires tailored responses
+    to ensure safety and minimize damage. For instance, during a tornado, seeking
+    a safe shelter is crucial, while for hurricanes, securing your property can prevent
+    significant loss. By learning these specific actions, you can protect yourself
+    and your loved ones more effectively. Integrating this knowledge into a family
+    disaster plan ensures everyone knows what to do when a hazard strikes. It's important
+    to identify the hazards most likely to occur in your area, gather relevant information,
+    and communicate this with all family members. This proactive approach not only
+    enhances your preparedness but also boosts your confidence in handling emergencies.
+  guide: "1. **Identify Local Hazards**: Start by researching the types of hazards\
+    \ that are most likely to occur in your area. This could include natural disasters\
+    \ like tornadoes, hurricanes, floods, or earthquakes. \n\n2. **Gather Information**:\
+    \ Once you've identified potential hazards, gather detailed information on what\
+    \ actions to take before, during, and after each event. Reliable sources include\
+    \ government websites, local emergency management offices, and community workshops.\
+    \ \n\n3. **Create a Family Disaster Plan**: Incorporate the hazard-specific actions\
+    \ into a comprehensive family disaster plan. This plan should outline roles and\
+    \ responsibilities for each family member, emergency contacts, and evacuation\
+    \ routes. \n\n4. **Communicate and Practice**: Share the plan with all family\
+    \ members and ensure everyone understands their role. Conduct regular drills to\
+    \ practice the plan, making adjustments as necessary to address any issues that\
+    \ arise. \n\n5. **Update Regularly**: Keep your plan up-to-date by reviewing it\
+    \ annually or whenever there are changes in your family or local environment.\
+    \ Ensure that all information, such as emergency contacts and evacuation routes,\
+    \ is current."
+  reference:
+  - Identify local hazards.
+  - Gather hazard-specific information.
+  - Create and share a family disaster plan.
+  - Conduct regular drills.
+  - Update the plan regularly.
+  worksheet:
+  - List three hazards that are likely to occur in your area.
+  - Describe specific actions to take before, during, and after one of these hazards.
+  - Draft a basic family disaster plan including roles and responsibilities.
+  - Conduct a mock drill with your family and note any improvements needed.
+  - Review and update your family disaster plan with any new information.
+  teach_forward_kit:
+    three_minute_version: Hazard-specific preparedness involves knowing what to do
+      before, during, and after emergencies like tornadoes and hurricanes. By identifying
+      local hazards and integrating this knowledge into a family disaster plan, you
+      can significantly reduce risks to safety and property.
+    ten_minute_outline:
+    - Introduction to hazard-specific preparedness.
+    - Importance of understanding local hazards.
+    - Steps to create a family disaster plan.
+    - Role of communication and practice in preparedness.
+    - Regular updates and reviews of the plan.
+    discussion_prompts:
+    - What are the most common hazards in our area?
+    - How can we ensure all family members understand the disaster plan?
+    - What challenges might we face in executing our plan during an actual emergency?
+    - How often should we update our family disaster plan and why?

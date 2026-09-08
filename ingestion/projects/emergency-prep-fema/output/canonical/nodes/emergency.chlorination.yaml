@@ -1,0 +1,299 @@
+id: emergency.chlorination
+slug: emergency.chlorination
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Emergency Water Chlorination
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Use household bleach to disinfect water in emergencies.
+summary_medium: Guidelines for using household liquid bleach to disinfect water by
+  killing microorganisms.
+plain_language: Learn how to safely use household bleach to make water safe to drink
+  in an emergency by killing harmful microorganisms.
+markdown_body: '### What this is
+
+  This guide explains how to use household liquid bleach to disinfect water, making
+  it safe to drink during emergencies by killing harmful microorganisms.
+
+
+  ### Why it matters
+
+  In emergency situations, access to clean drinking water may be limited. Chlorination
+  is a simple and effective method to ensure water safety, preventing waterborne diseases.
+
+
+  ### What you need
+
+  You will need regular household liquid bleach (5.25 to 6.0 percent sodium hypochlorite),
+  a measuring spoon, and a stirring utensil.
+
+
+  ### How to do it
+
+  1. Use only regular household liquid bleach with 5.25 to 6.0 percent sodium hypochlorite.
+  Avoid scented, color-safe, or bleach with added cleaners.
+
+  2. Add 16 drops (1/8 teaspoon) of bleach per gallon of water.
+
+  3. Stir the water and let it stand for 30 minutes.
+
+  4. The water should have a slight bleach odor. If not, repeat the dosage and let
+  it stand for another 15 minutes. If it still does not smell of chlorine, discard
+  it and find another water source.
+
+
+  ### Common failure modes
+
+  Using scented or color-safe bleach, using bleach with added cleaners, using expired
+  bleach, or incorrect dosage can lead to ineffective disinfection.
+
+
+  ### Safety/boundary notes
+
+  Ensure the bleach used is within the specified concentration range and is not expired.
+  Do not use other chemicals like iodine or non-recommended water treatment products.
+
+
+  ### Local adaptation notes
+
+  Availability of regular household bleach may vary; ensure you have access to the
+  correct type of bleach.'
+structured_data:
+  tools:
+  - measuring spoon
+  - stirring utensil
+  materials:
+  - household liquid bleach
+  success_criteria: Water has a slight bleach odor after treatment.
+  failure_modes:
+  - Using incorrect bleach type
+  - Incorrect dosage
+  - Expired bleach
+  safety_boundary: Use only specified bleach type and concentration.
+  implementation:
+    smallest_viable_version: Add 16 drops of bleach to a gallon of water and let it
+      stand for 30 minutes.
+    tools:
+    - measuring spoon
+    - stirring utensil
+    materials:
+    - household liquid bleach
+    expected_time: 45 minutes
+    expected_cost: low
+    success_checks:
+    - Water has a slight bleach odor after treatment.
+    stop_conditions:
+    - Water does not smell of chlorine after two treatments.
+    common_mistakes:
+    - Using scented bleach
+    - Incorrect dosage
+    variants:
+    - label: urban
+      when: Limited access to bleach
+      notes: Consider stocking up on bleach in advance.
+    when_to_escalate:
+    - If water remains unsafe after treatment attempts.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.chlorination
+  claim_id: clm_001
+  claim_text: This guide explains how to use household liquid bleach to disinfect
+    water, making it safe to drink during emergencies by killing harmful microorganisms.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: You can use household liquid bleach to kill microorganisms.
+    start_char: 0
+    end_char: 51
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_002
+  claim_text: In emergency situations, access to clean drinking water may be limited.
+    Chlorination is a simple and effective method to ensure water safety, preventing
+    waterborne diseases.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Treat all water of uncertain quality before using it for drinking...
+      contaminated water can contain microorganisms (germs) that cause diseases such
+      as dysentery, cholera, typhoid, and hepatitis.
+    start_char: 0
+    end_char: 243
+    support_strength: medium
+- object_id: emergency.chlorination
+  claim_id: clm_003
+  claim_text: You will need regular household liquid bleach (5.25 to 6.0 percent sodium
+    hypochlorite), a measuring spoon, and a stirring utensil.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Use only regular household liquid bleach that contains 5.25 to 6.0 percent
+      sodium hypochlorite.
+    start_char: 52
+    end_char: 131
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_004
+  claim_text: Use only regular household liquid bleach with 5.25 to 6.0 percent sodium
+    hypochlorite. Avoid scented, color-safe, or bleach with added cleaners.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Use only regular household liquid bleach that contains 5.25 to 6.0 percent
+      sodium hypochlorite. Do not use scented bleaches, color safe bleaches, or bleaches
+      with added cleaners.
+    start_char: 52
+    end_char: 189
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_005
+  claim_text: Add 16 drops (1/8 teaspoon) of bleach per gallon of water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Add 16 drops (1/8 teaspoon) of bleach per gallon of water, stir, and
+      let stand for 30 minutes.
+    start_char: 190
+    end_char: 256
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_006
+  claim_text: Stir the water and let it stand for 30 minutes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Add 16 drops (1/8 teaspoon) of bleach per gallon of water, stir, and
+      let stand for 30 minutes.
+    start_char: 190
+    end_char: 256
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_007
+  claim_text: The water should have a slight bleach odor. If not, repeat the dosage
+    and let it stand for another 15 minutes. If it still does not smell of chlorine,
+    discard it and find another water source.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: The water should have a slight bleach odor. If it doesn't, then repeat
+      the dosage and let stand another 15 minutes. If it still does not smell of chlorine,
+      discard it and fi nd another source of water.
+    start_char: 257
+    end_char: 384
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_008
+  claim_text: Using scented or color-safe bleach, using bleach with added cleaners,
+    using expired bleach, or incorrect dosage can lead to ineffective disinfection.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Do not use scented bleaches, color safe bleaches, or bleaches with added
+      cleaners. Because the potency of bleach diminishes with time, use bleach from
+      a newly opened or unopened bottle.
+    start_char: 132
+    end_char: 256
+    support_strength: strong
+- object_id: emergency.chlorination
+  claim_id: clm_009
+  claim_text: Ensure the bleach used is within the specified concentration range and
+    is not expired. Do not use other chemicals like iodine or non-recommended water
+    treatment products.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Use only regular household liquid bleach that contains 5.25 to 6.0 percent
+      sodium hypochlorite. Other chemicals, such as iodine or water treatment products
+      sold in camping or surplus stores that do not contain 5.25 to 6.0 percent sodium
+      hypochlorite as the only active ingredient, are not recommended and should not
+      be used.
+    start_char: 52
+    end_char: 384
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000056
+bundle_overrides:
+  hook: In emergencies, clean drinking water is crucial. Learn how to use household
+    bleach to make water safe and prevent waterborne diseases.
+  primer: In emergency situations, access to clean drinking water can be severely
+    limited. Contaminated water can harbor harmful microorganisms that cause diseases
+    such as dysentery, cholera, and typhoid. Chlorination is a simple, effective method
+    to disinfect water and make it safe for consumption. This process involves using
+    household liquid bleach, which contains sodium hypochlorite, to kill these microorganisms.
+    It's important to use only unscented, regular household bleach with a concentration
+    of 5.25 to 6.0 percent sodium hypochlorite. Avoid using scented, color-safe, or
+    bleach with added cleaners, as these can be ineffective or harmful. By following
+    the correct procedure, you can ensure that your water is safe to drink, even in
+    challenging conditions.
+  guide: "To disinfect water using household bleach, follow these steps: \n\n1. Gather\
+    \ your materials: regular household liquid bleach (5.25 to 6.0 percent sodium\
+    \ hypochlorite), a measuring spoon, and a stirring utensil. \n\n2. Ensure the\
+    \ bleach is unscented and does not have added cleaners. Check that it is not expired,\
+    \ as the potency diminishes over time. \n\n3. Add 16 drops (or 1/8 teaspoon) of\
+    \ bleach per gallon of water. \n\n4. Stir the water thoroughly to ensure the bleach\
+    \ is evenly distributed. \n\n5. Let the water stand for 30 minutes. This allows\
+    \ the bleach to effectively kill harmful microorganisms. \n\n6. After 30 minutes,\
+    \ check the water for a slight bleach odor. This indicates that the water has\
+    \ been properly disinfected. \n\n7. If there is no bleach odor, repeat the dosage\
+    \ and let it stand for another 15 minutes. \n\n8. If the water still does not\
+    \ smell of chlorine after the second treatment, discard it and find another water\
+    \ source. \n\nBy following these steps, you can ensure that your water is safe\
+    \ to drink during emergencies."
+  reference:
+  - Use regular household liquid bleach (5.25 to 6.0% sodium hypochlorite).
+  - Avoid scented, color-safe, or bleach with added cleaners.
+  - Add 16 drops (1/8 teaspoon) of bleach per gallon of water.
+  - Stir and let stand for 30 minutes.
+  - Water should have a slight bleach odor.
+  - Repeat dosage if no odor, then wait 15 more minutes.
+  - Discard water if no odor after two treatments.
+  worksheet:
+  - Identify the correct type of bleach to use for water chlorination.
+  - Calculate the amount of bleach needed for 3 gallons of water.
+  - Practice the steps of adding bleach and stirring water.
+  - Simulate checking for a bleach odor in treated water.
+  - Discuss what to do if the water does not smell of chlorine after treatment.
+  teach_forward_kit:
+    three_minute_version: In emergencies, use regular household bleach to disinfect
+      water. Add 16 drops per gallon, stir, and let it stand for 30 minutes. Ensure
+      a slight bleach odor is present to confirm safety.
+    ten_minute_outline:
+    - Introduction to the importance of clean water in emergencies.
+    - Explanation of chlorination and its effectiveness.
+    - Materials needed for water chlorination.
+    - Step-by-step guide to chlorinating water.
+    - Common mistakes and how to avoid them.
+    - Safety tips and boundary notes.
+    discussion_prompts:
+    - Why is it important to use the correct type of bleach?
+    - What are the risks of using expired bleach?
+    - How can you ensure you have access to the right materials in an emergency?
+    - What should you do if the water does not smell of chlorine after treatment?

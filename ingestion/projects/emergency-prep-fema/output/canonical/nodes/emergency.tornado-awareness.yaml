@@ -1,0 +1,155 @@
+id: emergency.tornado-awareness
+slug: emergency.tornado-awareness
+seed_type: extracted
+co_type: concept_note
+canonical_title: Tornado Awareness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understand the characteristics and risks of tornadoes.
+summary_medium: This section provides an overview of tornadoes, describing their characteristics,
+  behavior, and the risks they pose.
+plain_language: Learn about tornadoes, how they form, their potential dangers, and
+  when they are most likely to occur.
+markdown_body: '# What this is
+
+  Tornadoes are violent storms that can cause significant damage and fatalities. They
+  are characterized by a rotating, funnel-shaped cloud that extends from a thunderstorm
+  to the ground.
+
+
+  # Why it matters
+
+  Understanding tornadoes is crucial for safety and preparedness, as they can strike
+  with little warning and cause widespread destruction.
+
+
+  # What you need
+
+  Awareness of tornado characteristics, typical behaviors, and the conditions under
+  which they form.
+
+
+  # How to do it
+
+  Learn to recognize the signs of an approaching tornado, such as a still atmosphere
+  or a cloud of debris. Be aware of the typical times and seasons when tornadoes are
+  most likely to occur.
+
+
+  # Common failure modes
+
+  Failing to recognize the signs of a tornado or misunderstanding the risks associated
+  with different weather conditions.
+
+
+  # Safety/boundary notes
+
+  Always prioritize safety by seeking shelter in a sturdy building or designated tornado
+  shelter when a tornado warning is issued.
+
+
+  # Local adaptation notes
+
+  Adapt awareness and preparedness strategies based on local tornado frequency and
+  typical weather patterns.'
+structured_data:
+  definition: Tornadoes are rapidly rotating columns of air extending from a thunderstorm
+    to the ground.
+  key_questions:
+  - What are the signs of an approaching tornado?
+  - When are tornadoes most likely to occur?
+  - What are the typical characteristics of tornadoes?
+  misconceptions:
+  - Tornadoes only occur in certain regions.
+  - Tornadoes can always be seen clearly.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.tornado-awareness
+  claim_id: clm_001
+  claim_text: Tornadoes are violent storms that can cause significant damage and fatalities.
+    They are characterized by a rotating, funnel-shaped cloud that extends from a
+    thunderstorm to the ground.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 58
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000079
+    excerpt: Tornadoes are nature's most violent storms. Spawned from powerful thunderstorms,
+      tornadoes can cause fatalities and devastate a neighborhood in seconds. A tornado
+      appears as a rotating, funnel-shaped cloud that extends from a thunderstorm
+      to the ground with whirling winds that can reach 300 miles per hour.
+    start_char: 0
+    end_char: 255
+    support_strength: strong
+- object_id: emergency.tornado-awareness
+  claim_id: clm_002
+  claim_text: Understanding tornadoes is crucial for safety and preparedness, as they
+    can strike with little warning and cause widespread destruction.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 58
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000079
+    excerpt: Occasionally, tornadoes develop so rapidly that little, if any, advance
+      warning is possible.
+    start_char: 373
+    end_char: 437
+    support_strength: medium
+- object_id: emergency.tornado-awareness
+  claim_id: clm_003
+  claim_text: Learn to recognize the signs of an approaching tornado, such as a still
+    atmosphere or a cloud of debris.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 58
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000079
+    excerpt: Before a tornado hits, the wind may die down and the air may become very
+      still. A cloud of debris can mark the location of a tornado even if a funnel
+      is not visible.
+    start_char: 439
+    end_char: 563
+    support_strength: strong
+- object_id: emergency.tornado-awareness
+  claim_id: clm_004
+  claim_text: Be aware of the typical times and seasons when tornadoes are most likely
+    to occur.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 58
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000079
+    excerpt: Tornadoes are most frequently reported east of the Rocky Mountains during
+      spring and summer months. Peak tornado season in the southern states is March
+      through May; in the northern states, it is late spring through early summer.
+      Tornadoes are most likely to occur between 3 p.m. and 9 p.m., but can occur
+      at any time.
+    start_char: 812
+    end_char: 1082
+    support_strength: strong
+- object_id: emergency.tornado-awareness
+  claim_id: clm_005
+  claim_text: Always prioritize safety by seeking shelter in a sturdy building or
+    designated tornado shelter when a tornado warning is issued.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 66
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000079

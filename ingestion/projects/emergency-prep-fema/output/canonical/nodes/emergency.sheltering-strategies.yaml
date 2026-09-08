@@ -1,0 +1,204 @@
+id: emergency.sheltering-strategies
+slug: emergency.sheltering-strategies
+seed_type: extracted
+co_type: concept_note
+canonical_title: Emergency Sheltering Strategies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Strategies for taking shelter during disasters.
+summary_medium: This section discusses strategies for taking shelter during disasters,
+  including choosing safe locations based on specific hazards, and managing supplies
+  and behavior in mass care shelters.
+plain_language: Learn how to choose safe places to shelter during disasters and manage
+  your supplies and behavior in mass care shelters.
+markdown_body: '# What this is
+
+  This concept note provides guidance on how to effectively take shelter during various
+  types of disasters. It covers choosing safe locations, managing supplies, and maintaining
+  cooperation in mass care shelters.
+
+
+  # Why it matters
+
+  Sheltering is crucial for protection during disasters. Choosing the right location
+  and managing resources can significantly impact safety and comfort.
+
+
+  # What you need
+
+  A disaster supplies kit and a radio are essential. You should also have knowledge
+  of safe shelter locations for specific hazards.
+
+
+  # How to do it
+
+  1. Identify the hazard and select a safe location in your home or building. For
+  example, during a tornado, choose a basement or interior room on the lowest level.
+
+  2. Bring your disaster supplies kit to the shelter.
+
+  3. Cooperate with shelter managers and others.
+
+  4. Follow local authorities'' instructions on when it is safe to leave.
+
+  5. Manage food and water supplies during extended sheltering.
+
+
+  # Common failure modes
+
+  Choosing an unsafe shelter location and lack of cooperation in shelters can lead
+  to increased risk and discomfort.
+
+
+  # Safety/boundary notes
+
+  No alcoholic beverages or weapons are allowed in emergency shelters, and smoking
+  is restricted.
+
+
+  # Local adaptation notes
+
+  Adapt shelter location choices based on local hazards and conditions.'
+structured_data:
+  definition: Sheltering involves seeking protection in a safe location during a disaster.
+  key_questions:
+  - What is the safest location for sheltering during specific hazards?
+  - What supplies are necessary for effective sheltering?
+  - How can cooperation be maintained in mass care shelters?
+  misconceptions:
+  - Any room in a house is safe during a tornado.
+  - Mass care shelters provide all necessary supplies.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_001
+  claim_text: Sheltering is crucial for protection during disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: Taking shelter is critical in times of disaster.
+    start_char: 0
+    end_char: 44
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_002
+  claim_text: Choosing the right location and managing resources can significantly
+    impact safety and comfort.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: To effectively shelter, you must first consider the hazard and then choose
+      a place in your home or other building that is safe for that hazard.
+    start_char: 45
+    end_char: 164
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_003
+  claim_text: A disaster supplies kit and a radio are essential.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'The following items are recommended for inclusion in your basic disaster
+      supplies kit: ... Portable, battery-powered radio or television and extra batteries.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_004
+  claim_text: Identify the hazard and select a safe location in your home or building.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: To effectively shelter, you must first consider the hazard and then choose
+      a place in your home or other building that is safe for that hazard.
+    start_char: 45
+    end_char: 164
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_005
+  claim_text: Bring your disaster supplies kit to the shelter.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: Even though mass care shelters often provide water, food, medicine, and
+      basic sanitary facilities, you should plan to take your disaster supplies kit
+      with you so you will have the supplies you require.
+    start_char: 165
+    end_char: 346
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_006
+  claim_text: Cooperate with shelter managers and others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: To avoid conflicts in this stressful situation, it is important to cooperate
+      with shelter managers and others assisting them.
+    start_char: 347
+    end_char: 446
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_007
+  claim_text: Follow local authorities' instructions on when it is safe to leave.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: It is important that you stay in shelter until local authorities say
+      it is safe to leave.
+    start_char: 447
+    end_char: 513
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_008
+  claim_text: Manage food and water supplies during extended sheltering.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: During extended periods of sheltering, you will need to manage water
+      and food supplies to ensure you and your family have the required supplies and
+      quantities.
+    start_char: 514
+    end_char: 628
+    support_strength: strong
+- object_id: emergency.sheltering-strategies
+  claim_id: clm_009
+  claim_text: No alcoholic beverages or weapons are allowed in emergency shelters,
+    and smoking is restricted.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 38
+    page_end: 39
+    segment_id: src.fema.are-you-ready.2004::seg_000052
+    excerpt: Keep in mind that alcoholic beverages and weapons are forbidden in emergency
+      shelters and smoking is restricted.
+    start_char: 347
+    end_char: 446
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000052

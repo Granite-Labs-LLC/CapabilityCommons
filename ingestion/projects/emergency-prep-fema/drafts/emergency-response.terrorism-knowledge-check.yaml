@@ -1,0 +1,182 @@
+id: emergency-response.terrorism-knowledge-check
+slug: emergency-response.terrorism-knowledge-check
+seed_type: assessment
+co_type: assessment
+canonical_title: Terrorism Knowledge Check
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-response
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Evaluate your knowledge on responding to terrorism-related scenarios.
+summary_medium: This assessment helps evaluate your understanding of how to respond
+  to various terrorism-related scenarios, including explosions, suspicious packages,
+  bomb threats, nuclear blasts, and chemical attacks.
+plain_language: Test your knowledge on how to safely respond to different terrorism
+  threats like explosions, suspicious packages, and chemical attacks.
+markdown_body: '# What this is
+
+  This assessment is designed to evaluate your knowledge and preparedness for responding
+  to terrorism-related scenarios. It covers situations such as explosions, suspicious
+  packages, bomb threats, nuclear blasts, and chemical attacks.
+
+
+  # Why it matters
+
+  Understanding how to respond to terrorism threats is crucial for personal safety
+  and the safety of others. Being prepared can significantly reduce the risks associated
+  with these dangerous situations.
+
+
+  # What you need
+
+  To complete this assessment, you should have a basic understanding of emergency
+  response procedures and access to materials such as a disaster supplies kit, duct
+  tape, plastic sheeting, and scissors.
+
+
+  # How to do it
+
+  Answer the questions based on different scenarios: what to do during an explosion,
+  how to handle a suspicious package, responding to a bomb threat, actions during
+  a nuclear blast, and preparing for a chemical attack.
+
+
+  # Common failure modes
+
+  Common mistakes include inadequate sheltering during a nuclear blast, improper handling
+  of suspicious items, and lack of necessary supplies for chemical attacks.
+
+
+  # Safety/boundary notes
+
+  Always prioritize personal safety and follow official guidance during actual emergencies.
+
+
+  # Local adaptation notes
+
+  Consider local building structures and the availability of materials when preparing
+  for these scenarios.'
+structured_data:
+  tools:
+  - disaster supplies kit
+  - duct tape
+  - plastic sheeting
+  - scissors
+  materials: []
+  success_criteria:
+  - Correctly identify safe actions during explosions
+  - Properly handle suspicious packages
+  - Effectively respond to bomb threats
+  - Take appropriate cover during nuclear blasts
+  - Prepare disaster supplies for chemical attacks
+  failure_modes:
+  - Inadequate shelter
+  - Improper handling of suspicious items
+  safety_boundary: []
+  implementation:
+    smallest_viable_version: Answer questions about terrorism response scenarios.
+    tools:
+    - disaster supplies kit
+    - duct tape
+    - plastic sheeting
+    - scissors
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: None
+    success_checks:
+    - All questions answered correctly
+    - Understanding of key safety actions
+    stop_conditions:
+    - Uncertainty about correct responses
+    - Lack of necessary materials
+    common_mistakes:
+    - Misidentifying safe actions
+    - Neglecting to prepare necessary supplies
+    variants:
+    - label: Urban
+      when: Living in a densely populated area
+      notes: Consider high-rise building evacuation procedures.
+    - label: Off-grid
+      when: Living in remote areas
+      notes: Focus on self-sufficiency and communication challenges.
+    when_to_escalate:
+    - If unsure about the safety of a situation
+    - If local authorities provide specific instructions
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-response.terrorism-knowledge-check
+  claim_id: clm_001
+  claim_text: This assessment is designed to evaluate your knowledge and preparedness
+    for responding to terrorism-related scenarios. It covers situations such as explosions,
+    suspicious packages, bomb threats, nuclear blasts, and chemical attacks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 173
+    page_end: 173
+    segment_id: src.fema.are-you-ready.2004::seg_000258
+    excerpt: What would you do, if you were at work and… a. there was an explosion
+      in the building? b. you received a package in the mail that you considered suspicious?
+      c. you received a telephone call that was a bomb threat? If caught outside during
+      a nuclear blast, what should you do? What are the three key factors for protection
+      from nuclear blast and fallout? If you take shelter in your own home, what kind
+      of room would be safest during a chemical or biological attack?
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-response.terrorism-knowledge-check
+  claim_id: clm_002
+  claim_text: Understanding how to respond to terrorism threats is crucial for personal
+    safety and the safety of others. Being prepared can significantly reduce the risks
+    associated with these dangerous situations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-response.terrorism-knowledge-check
+  claim_id: clm_003
+  claim_text: To complete this assessment, you should have a basic understanding of
+    emergency response procedures and access to materials such as a disaster supplies
+    kit, duct tape, plastic sheeting, and scissors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Retrieve your disaster supplies kit and a battery powered radio and take
+      them to your shelter room. Seal windows and external doors that do not fit snugly
+      with duct tape to reduce infiltration of radioactive particles.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency-response.terrorism-knowledge-check
+  claim_id: clm_004
+  claim_text: Common mistakes include inadequate sheltering during a nuclear blast,
+    improper handling of suspicious items, and lack of necessary supplies for chemical
+    attacks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 173
+    page_end: 173
+    segment_id: src.fema.are-you-ready.2004::seg_000258
+    excerpt: What would you do, if you were at work and… a. there was an explosion
+      in the building? b. you received a package in the mail that you considered suspicious?
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000258

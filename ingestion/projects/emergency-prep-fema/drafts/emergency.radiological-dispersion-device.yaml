@@ -1,0 +1,160 @@
+id: emergency.radiological-dispersion-device
+slug: emergency.radiological-dispersion-device
+seed_type: extracted
+co_type: concept_note
+canonical_title: Radiological Dispersion Device (RDD)
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Overview of Radiological Dispersion Devices (RDDs) and their impact.
+summary_medium: Radiological Dispersion Devices (RDDs), also known as 'dirty bombs',
+  combine conventional explosives with radioactive materials to spread fear and economic
+  disruption.
+plain_language: A Radiological Dispersion Device (RDD) is a type of weapon that uses
+  a regular bomb to spread radioactive materials over a large area. It's not as powerful
+  as a nuclear bomb but can cause fear and disrupt economies.
+markdown_body: '### What this is
+
+  A Radiological Dispersion Device (RDD), often called a ''dirty bomb'', is a weapon
+  that combines conventional explosives with radioactive materials. It is designed
+  to spread radioactive material over a large area.
+
+
+  ### Why it matters
+
+  RDDs are significant because they can cause widespread fear and economic disruption.
+  They are easier to make and deploy than nuclear bombs, making them more likely to
+  be used by terrorists.
+
+
+  ### What you need
+
+  Understanding of the components of an RDD and the potential impacts of its use.
+
+
+  ### How to do it
+
+  This section is not applicable as it is not about constructing an RDD but understanding
+  its implications.
+
+
+  ### Common failure modes
+
+  Improper evacuation and inadequate sheltering can increase the harm caused by an
+  RDD.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper evacuation and sheltering plans are in place to minimize harm.
+
+
+  ### Local adaptation notes
+
+  Local meteorological conditions, such as wind and precipitation, can affect the
+  spread of radioactive materials.'
+structured_data:
+  definition: An RDD is a device that uses conventional explosives to disperse radioactive
+    material over a wide area.
+  key_questions:
+  - What is the primary purpose of an RDD?
+  - How does an RDD differ from a nuclear explosive device?
+  - What factors influence the impact of an RDD?
+  misconceptions:
+  - RDDs are as destructive as nuclear bombs.
+  - RDDs are difficult to construct.
+  safety_boundary: This is background/awareness information about a hazard, adapted
+    from FEMA's public citizen-preparedness guide. It is not a substitute for official
+    warnings, alerts, or instructions from local emergency management, law enforcement,
+    or emergency responders during an actual event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.radiological-dispersion-device
+  claim_id: clm_001
+  claim_text: A Radiological Dispersion Device (RDD), often called a 'dirty bomb',
+    is a weapon that combines conventional explosives with radioactive materials.
+    It is designed to spread radioactive material over a large area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 171
+    segment_id: src.fema.are-you-ready.2004::seg_000256
+    excerpt: An RDD combines a conventional explosive device—such as a bomb—with radioactive
+      material. It is designed to scatter dangerous and sub-lethal amounts of radioactive
+      material over a general area.
+    start_char: 116
+    end_char: 256
+    support_strength: strong
+- object_id: emergency.radiological-dispersion-device
+  claim_id: clm_002
+  claim_text: RDDs are significant because they can cause widespread fear and economic
+    disruption. They are easier to make and deploy than nuclear bombs, making them
+    more likely to be used by terrorists.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 171
+    segment_id: src.fema.are-you-ready.2004::seg_000256
+    excerpt: The primary purpose of terrorist use of an RDD is to cause psychological
+      fear and economic disruption. Such RDDs appeal to terrorists because they require
+      limited technical knowledge to build and deploy compared to a nuclear device.
+    start_char: 257
+    end_char: 453
+    support_strength: strong
+- object_id: emergency.radiological-dispersion-device
+  claim_id: clm_003
+  claim_text: Improper evacuation and inadequate sheltering can increase the harm
+    caused by an RDD.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 171
+    segment_id: src.fema.are-you-ready.2004::seg_000256
+    excerpt: Depending on the speed at which the area of the RDD detonation was evacuated
+      or how successful people were at sheltering-in-place, the number of deaths and
+      injuries from an RDD might not be substantially greater than from a conventional
+      bomb explosion.
+    start_char: 454
+    end_char: 648
+    support_strength: medium
+- object_id: emergency.radiological-dispersion-device
+  claim_id: clm_004
+  claim_text: Ensure proper evacuation and sheltering plans are in place to minimize
+    harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: After finding safe shelter, those who may have been exposed to radioactive
+      material should decontaminate themselves.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency.radiological-dispersion-device
+  claim_id: clm_005
+  claim_text: Local meteorological conditions, such as wind and precipitation, can
+    affect the spread of radioactive materials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 171
+    segment_id: src.fema.are-you-ready.2004::seg_000256
+    excerpt: The size of the affected area and the level of destruction caused by
+      an RDD would depend on the sophistication and size of the conventional bomb,
+      the type of radioactive material used, the quality and quantity of the radioactive
+      material, and the local meteorological conditions—primarily wind and precipitation.
+    start_char: 649
+    end_char: 878
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000256

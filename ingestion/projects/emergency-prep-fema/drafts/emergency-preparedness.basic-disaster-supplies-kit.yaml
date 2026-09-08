@@ -1,0 +1,236 @@
+id: emergency-preparedness.basic-disaster-supplies-kit
+slug: emergency-preparedness.basic-disaster-supplies-kit
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Basic Disaster Supplies Kit
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: moderate
+summary_short: A list of essential items for a basic disaster supplies kit.
+summary_medium: A reference sheet detailing the recommended items for a basic disaster
+  supplies kit, including food, water, clothing, and other essentials.
+plain_language: This guide helps you prepare a basic disaster supplies kit with essential
+  items like food, water, and clothing to ensure safety and comfort during emergencies.
+markdown_body: '### What this is
+
+  A basic disaster supplies kit is a collection of essential items you may need in
+  the event of an emergency. It includes food, water, clothing, and other necessities
+  to help you and your family stay safe and comfortable.
+
+
+  ### Why it matters
+
+  Having a well-prepared disaster supplies kit can be crucial during emergencies,
+  ensuring that you have the necessary resources to survive and maintain well-being
+  when access to regular supplies and services is disrupted.
+
+
+  ### What you need
+
+  You will need non-perishable food, water, a battery-powered radio, flashlight, first
+  aid kit, sanitation items, matches, a whistle, extra clothing, kitchen accessories,
+  cash, and any special needs items specific to your family.
+
+
+  ### How to do it
+
+  Assemble a three-day supply of non-perishable food and water (one gallon per person
+  per day). Include a portable radio, flashlight, first aid kit, sanitation items,
+  matches, a whistle, extra clothing, kitchen utensils, and cash. Consider special
+  needs such as medications and items for infants. Adjust clothing and bedding for
+  cold climates.
+
+
+  ### Common failure modes
+
+  Common issues include having an incomplete kit, expired supplies, or inadequate
+  clothing for the climate.
+
+
+  ### Safety/boundary notes
+
+  Ensure all items are safe to use and check expiration dates regularly. Tailor the
+  kit to your family''s specific needs.
+
+
+  ### Local adaptation notes
+
+  Consider climate-specific clothing and bedding. Account for family changes, such
+  as growing children or new medical needs.'
+structured_data:
+  definition: A collection of essential items to support survival and comfort during
+    emergencies.
+  key_questions:
+  - What items are essential for survival during an emergency?
+  - How can I ensure my kit is suitable for my family's needs?
+  misconceptions:
+  - A basic kit is enough for all emergencies without any customization.
+  - Once assembled, the kit does not need regular updates.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_001
+  claim_text: A basic disaster supplies kit is a collection of essential items you
+    may need in the event of an emergency. It includes food, water, clothing, and
+    other necessities to help you and your family stay safe and comfortable.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'The following items are recommended for inclusion in your basic disaster
+      supplies kit: Three-day supply of non-perishable food. Three-day supply of water
+      one gallon of water per person, per day. Portable, battery-powered radio or
+      television and extra batteries. Flashlight and extra batteries. First aid kit
+      and manual. Sanitation and hygiene items (moist towelettes and toilet paper).
+      Matches and waterproof container. Whistle. Extra clothing. Kitchen accessories
+      and cooking utensils, including a can opener. Photocopies of credit and identification
+      cards. Cash and coins. Special needs items, such as prescription medications,
+      eye glasses, contact lens solutions, and hearing aid batteries. Items for infants,
+      such as formula, diapers, bottles, and pacifiers. Other items to meet your unique
+      family needs.'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_002
+  claim_text: Having a well-prepared disaster supplies kit can be crucial during emergencies,
+    ensuring that you have the necessary resources to survive and maintain well-being
+    when access to regular supplies and services is disrupted.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'The following items are recommended for inclusion in your basic disaster
+      supplies kit: ... Other items to meet your unique family needs.'
+    start_char: 0
+    end_char: 1000
+    support_strength: medium
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_003
+  claim_text: You will need non-perishable food, water, a battery-powered radio, flashlight,
+    first aid kit, sanitation items, matches, a whistle, extra clothing, kitchen accessories,
+    cash, and any special needs items specific to your family.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'The following items are recommended for inclusion in your basic disaster
+      supplies kit: Three-day supply of non-perishable food. Three-day supply of water
+      one gallon of water per person, per day. Portable, battery-powered radio or
+      television and extra batteries. Flashlight and extra batteries. First aid kit
+      and manual. Sanitation and hygiene items (moist towelettes and toilet paper).
+      Matches and waterproof container. Whistle. Extra clothing. Kitchen accessories
+      and cooking utensils, including a can opener. Photocopies of credit and identification
+      cards. Cash and coins. Special needs items, such as prescription medications,
+      eye glasses, contact lens solutions, and hearing aid batteries. Items for infants,
+      such as formula, diapers, bottles, and pacifiers. Other items to meet your unique
+      family needs.'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_004
+  claim_text: Assemble a three-day supply of non-perishable food and water (one gallon
+    per person per day). Include a portable radio, flashlight, first aid kit, sanitation
+    items, matches, a whistle, extra clothing, kitchen utensils, and cash. Consider
+    special needs such as medications and items for infants. Adjust clothing and bedding
+    for cold climates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'The following items are recommended for inclusion in your basic disaster
+      supplies kit: Three-day supply of non-perishable food. Three-day supply of water
+      one gallon of water per person, per day. Portable, battery-powered radio or
+      television and extra batteries. Flashlight and extra batteries. First aid kit
+      and manual. Sanitation and hygiene items (moist towelettes and toilet paper).
+      Matches and waterproof container. Whistle. Extra clothing. Kitchen accessories
+      and cooking utensils, including a can opener. Photocopies of credit and identification
+      cards. Cash and coins. Special needs items, such as prescription medications,
+      eye glasses, contact lens solutions, and hearing aid batteries. Items for infants,
+      such as formula, diapers, bottles, and pacifiers. Other items to meet your unique
+      family needs.'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_005
+  claim_text: Common issues include having an incomplete kit, expired supplies, or
+    inadequate clothing for the climate.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 37
+    page_end: 37
+    segment_id: src.fema.are-you-ready.2004::seg_000051
+    excerpt: 'Just as important as putting your supplies together is maintaining them
+      so they are safe to use when needed. Here are some tips to keep your supplies
+      ready and in good condition: Keep canned foods in a dry place where the temperature
+      is cool. Store boxed food in tightly closed plastic or metal containers to protect
+      from pests and to extend its shelf life. Throw out any canned good that becomes
+      swollen, dented, or corroded. Use foods before they go bad, and replace them
+      with fresh supplies. Place new items at the back of the storage area and older
+      ones in the front. Change stored food and water supplies every six months. Be
+      sure to write the date you store it on all containers. Re-think your needs every
+      year and update your kit as your family needs change. Keep items in airtight
+      plastic bags and put your entire disaster supplies kit in one or two easy-to-carry
+      containers, such as an unused trashcan, camping backpack, or duffel bag.'
+    start_char: 0
+    end_char: 1000
+    support_strength: medium
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_006
+  claim_text: Ensure all items are safe to use and check expiration dates regularly.
+    Tailor the kit to your family's specific needs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 37
+    page_end: 37
+    segment_id: src.fema.are-you-ready.2004::seg_000051
+    excerpt: 'Just as important as putting your supplies together is maintaining them
+      so they are safe to use when needed. Here are some tips to keep your supplies
+      ready and in good condition: Keep canned foods in a dry place where the temperature
+      is cool. Store boxed food in tightly closed plastic or metal containers to protect
+      from pests and to extend its shelf life. Throw out any canned good that becomes
+      swollen, dented, or corroded. Use foods before they go bad, and replace them
+      with fresh supplies. Place new items at the back of the storage area and older
+      ones in the front. Change stored food and water supplies every six months. Be
+      sure to write the date you store it on all containers. Re-think your needs every
+      year and update your kit as your family needs change. Keep items in airtight
+      plastic bags and put your entire disaster supplies kit in one or two easy-to-carry
+      containers, such as an unused trashcan, camping backpack, or duffel bag.'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: emergency-preparedness.basic-disaster-supplies-kit
+  claim_id: clm_007
+  claim_text: Consider climate-specific clothing and bedding. Account for family changes,
+    such as growing children or new medical needs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 36
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000050
+    excerpt: 'If you live in a cold climate, you must think about warmth. It is possible
+      that you will not have heat. Think about your clothing and bedding supplies.
+      Be sure to include one complete change of clothing and shoes per person, including:
+      Jacket or coat. Long pants. Long sleeve shirt. Sturdy shoes. Hat, mittens, and
+      scarf. Sleeping bag or warm blanket (per person). Be sure to account for growing
+      children and other family changes.'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000050

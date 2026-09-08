@@ -1,0 +1,213 @@
+id: fire-safety.flammable-items
+slug: fire-safety.flammable-items
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Handling and Storing Flammable Items Safely
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for safe storage and handling of flammable items.
+summary_medium: Learn how to safely store and handle flammable items to prevent fires,
+  including proper container use and disposal of soaked materials.
+plain_language: This guide helps you understand how to safely store and handle flammable
+  items like gasoline and rags soaked in flammable liquids to prevent fires.
+markdown_body: '### What this is
+
+  This guide provides instructions on how to safely store and handle flammable items
+  to prevent fires.
+
+
+  ### Why it matters
+
+  Improper storage and handling of flammable items can lead to accidental fires, posing
+  a risk to life and property.
+
+
+  ### What you need
+
+  - Approved containers for flammable liquids
+
+  - A metal container for discarding soaked rags
+
+
+  ### How to do it
+
+  Store flammable liquids in approved containers and keep them in well-ventilated
+  areas. Never smoke near these liquids. Discard rags soaked in flammable liquids
+  in a metal container outdoors.
+
+
+  ### Common failure modes
+
+  - Improper storage of flammable liquids
+
+  - Ignition due to smoking near flammable items
+
+
+  ### Safety/boundary notes
+
+  Ensure all storage areas are well-ventilated and away from ignition sources.
+
+
+  ### Local adaptation notes
+
+  Consider local regulations and guidelines for storing flammable materials.'
+structured_data:
+  tools:
+  - approved containers
+  - metal container
+  materials: []
+  success_criteria:
+  - Flammable liquids are stored safely
+  - Soaked rags are discarded properly
+  failure_modes:
+  - improper storage
+  - ignition of flammable liquids
+  safety_boundary: Store in well-ventilated areas, away from ignition sources.
+  implementation:
+    smallest_viable_version: Store flammable liquids in approved containers and discard
+      soaked rags properly.
+    tools:
+    - approved containers
+    - metal container
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: low
+    success_checks:
+    - All flammable liquids are stored in approved containers
+    - No soaked rags are left indoors
+    stop_conditions:
+    - If you cannot find approved containers
+    - If storage area is not well-ventilated
+    common_mistakes:
+    - Using non-approved containers
+    - Leaving soaked rags indoors
+    variants:
+    - label: urban
+      when: Living in an apartment
+      notes: Ensure storage is allowed in your building and follow local regulations.
+    when_to_escalate:
+    - If unsure about local regulations
+    - If flammable liquids are spilled indoors
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.flammable-items
+  claim_id: clm_001
+  claim_text: Store flammable liquids in approved containers and keep them in well-ventilated
+    areas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000183
+    excerpt: Store fl ammable liquids in approved containers in well-ventilated storage
+      areas.
+    start_char: 61
+    end_char: 124
+    support_strength: strong
+- object_id: fire-safety.flammable-items
+  claim_id: clm_002
+  claim_text: Never smoke near these liquids.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000183
+    excerpt: Never smoke near fl ammable liquids.
+    start_char: 125
+    end_char: 157
+    support_strength: strong
+- object_id: fire-safety.flammable-items
+  claim_id: clm_003
+  claim_text: Discard rags soaked in flammable liquids in a metal container outdoors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000183
+    excerpt: Discard all rags or materials that have been soaked in fl ammable liquids
+      after you have used them. Safely discard them outdoors in a metal container.
+    start_char: 158
+    end_char: 272
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000183
+bundle_overrides:
+  hook: Properly handling and storing flammable items can prevent dangerous fires
+    and protect your home and loved ones.
+  primer: Flammable items, such as gasoline and certain cleaning agents, pose a significant
+    fire risk if not handled and stored correctly. These substances can ignite easily,
+    leading to potentially devastating fires. To mitigate these risks, it's crucial
+    to store flammable liquids in approved containers and keep them in well-ventilated
+    areas. Smoking near these items should be strictly avoided, as even a small spark
+    can cause ignition. Additionally, rags soaked in flammable liquids should be discarded
+    in a metal container outdoors to prevent spontaneous combustion. By following
+    these guidelines, you can significantly reduce the risk of fire in your home or
+    workplace.
+  guide: '1. **Gather Materials**: Ensure you have approved containers for storing
+    flammable liquids and a metal container for discarding soaked rags.
+
+
+    2. **Store Flammable Liquids Safely**: Place all flammable liquids in approved
+    containers. These containers are specifically designed to prevent leaks and reduce
+    the risk of ignition. Store these containers in a well-ventilated area, away from
+    any potential sources of ignition such as electrical outlets or open flames.
+
+
+    3. **Avoid Smoking Near Flammable Items**: Smoking near flammable liquids is extremely
+    dangerous. Ensure that no one smokes in areas where these items are stored or
+    used.
+
+
+    4. **Dispose of Soaked Rags Properly**: After using rags with flammable liquids,
+    do not leave them indoors. Instead, place them in a metal container and store
+    them outdoors. This prevents the risk of spontaneous combustion, which can occur
+    if the rags are left in a confined space.
+
+
+    5. **Regularly Check Storage Areas**: Periodically inspect the storage areas to
+    ensure they remain well-ventilated and free from ignition sources. Ensure that
+    all containers are in good condition and replace any that are damaged.
+
+
+    6. **Follow Local Regulations**: Be aware of and comply with any local regulations
+    regarding the storage and disposal of flammable materials. These regulations are
+    designed to keep you and your community safe.'
+  reference:
+  - Store flammable liquids in approved containers.
+  - Keep storage areas well-ventilated.
+  - Never smoke near flammable liquids.
+  - Discard soaked rags in a metal container outdoors.
+  - Check local regulations for storing flammable materials.
+  worksheet:
+  - Identify three flammable items in your home and describe how you currently store
+    them.
+  - List the steps you would take to improve the storage of these items based on the
+    guide.
+  - Create a checklist for regular inspection of your flammable items storage area.
+  - Discuss the potential risks of improper storage with a family member or colleague.
+  - Research local regulations on flammable materials and summarize them.
+  teach_forward_kit:
+    three_minute_version: To prevent fires, store flammable liquids in approved containers
+      in well-ventilated areas, never smoke nearby, and discard soaked rags in a metal
+      container outdoors.
+    ten_minute_outline:
+    - Introduction to flammable items and their risks.
+    - Steps for safe storage and handling.
+    - Importance of ventilation and avoiding ignition sources.
+    - Proper disposal of soaked materials.
+    - Review of local regulations.
+    discussion_prompts:
+    - Why is it important to use approved containers for flammable liquids?
+    - What are the risks of smoking near flammable items?
+    - How can improper disposal of soaked rags lead to fires?
+    - What local regulations should you be aware of regarding flammable materials?

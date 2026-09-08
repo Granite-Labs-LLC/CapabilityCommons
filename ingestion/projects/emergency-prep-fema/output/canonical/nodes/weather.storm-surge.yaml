@@ -1,0 +1,107 @@
+id: weather.storm-surge
+slug: weather.storm-surge
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Storm Surges
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: A storm surge is a large dome of water pushed onshore by storm winds.
+summary_medium: Storm surges are domes of water pushed onshore by hurricane and tropical
+  storm winds, potentially reaching 25 feet high and 50-100 miles wide.
+plain_language: A storm surge happens when strong winds from a hurricane or tropical
+  storm push a large amount of water onto the shore, creating a dome of water that
+  can be very high and wide.
+markdown_body: '### What this is
+
+  A storm surge is a large dome of water that is pushed onto land by the strong winds
+  of a hurricane or tropical storm. These surges can be extremely large, reaching
+  heights of up to 25 feet and spanning widths of 50 to 100 miles.
+
+
+  ### Why it matters
+
+  Storm surges are significant because they can cause severe flooding and damage to
+  coastal areas. Understanding storm surges helps in preparing for and mitigating
+  the impacts of hurricanes and tropical storms.
+
+
+  ### What you need
+
+  Awareness of the potential for storm surges during hurricanes and tropical storms,
+  and knowledge of local emergency plans.
+
+
+  ### How to do it
+
+  Monitor weather reports during hurricane season, understand evacuation routes, and
+  follow local emergency management instructions.
+
+
+  ### Common failure modes
+
+  Underestimating the height and reach of a storm surge, not evacuating in time, and
+  failing to secure property.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety by evacuating when advised and staying informed about weather
+  conditions.
+
+
+  ### Local adaptation notes
+
+  Coastal areas should have specific plans and infrastructure to deal with storm surges,
+  including barriers and evacuation routes.'
+structured_data:
+  definition: A storm surge is a dome of water pushed onshore by hurricane and tropical
+    storm winds.
+  key_questions:
+  - What causes a storm surge?
+  - How high and wide can storm surges get?
+  - What are the impacts of storm surges on coastal areas?
+  misconceptions:
+  - Storm surges are just big waves.
+  - Storm surges only affect the immediate coastline.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.storm-surge
+  claim_id: clm_001
+  claim_text: A storm surge is a large dome of water that is pushed onto land by the
+    strong winds of a hurricane or tropical storm. These surges can be extremely large,
+    reaching heights of up to 25 feet and spanning widths of 50 to 100 miles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000096
+    excerpt: A dome of water pushed onshore by hurricane and tropical storm winds.
+      Storm surges can reach 25 feet high and be 50-100 miles wide.
+    start_char: 0
+    end_char: 110
+    support_strength: strong
+- object_id: weather.storm-surge
+  claim_id: clm_002
+  claim_text: Storm surges are significant because they can cause severe flooding
+    and damage to coastal areas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000096
+    excerpt: A dome of water pushed onshore by hurricane and tropical storm winds.
+    start_char: 0
+    end_char: 110
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000096

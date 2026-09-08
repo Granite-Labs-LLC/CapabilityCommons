@@ -1,0 +1,155 @@
+id: environment.car-washing-water-conservation
+slug: environment.car-washing-water-conservation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Water Conservation During Car Washing
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: environment
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Conserve water while washing your car.
+summary_medium: Guidelines for conserving water during car washing, including using
+  a shut-off nozzle and opting for commercial car washes that recycle water.
+plain_language: Learn how to save water when washing your car by using a shut-off
+  nozzle and choosing car washes that recycle water.
+markdown_body: '### What this is
+
+  This guide provides tips on how to conserve water when washing your car, either
+  at home or using commercial services.
+
+
+  ### Why it matters
+
+  Water conservation is crucial for environmental sustainability. By reducing water
+  usage during car washing, you contribute to saving this vital resource.
+
+
+  ### What you need
+
+  A hose with a shut-off nozzle or access to a commercial car wash that recycles water.
+
+
+  ### How to do it
+
+  When washing your car at home, use a shut-off nozzle to control water flow and park
+  on grass to water it simultaneously. Alternatively, choose a commercial car wash
+  that recycles water.
+
+
+  ### Common failure modes
+
+  Using excessive water by not controlling the flow or choosing car washes that do
+  not recycle water.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Consider the availability of water-recycling car washes in your area.'
+structured_data:
+  tools:
+  - shut-off nozzle
+  - commercial car wash
+  materials: []
+  success_criteria:
+  - Reduced water usage during car washing
+  failure_modes:
+  - Excessive water use
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_001
+  claim_text: This guide provides tips on how to conserve water when washing your
+    car, either at home or using commercial services.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a shut-off nozzle that can be adjusted down to a fi ne spray on your
+      hose. Use a commercial car wash that recycles water.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_002
+  claim_text: Water conservation is crucial for environmental sustainability. By reducing
+    water usage during car washing, you contribute to saving this vital resource.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a shut-off nozzle that can be adjusted down to a fi ne spray on your
+      hose. Use a commercial car wash that recycles water.
+    start_char: 0
+    end_char: 122
+    support_strength: medium
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_003
+  claim_text: A hose with a shut-off nozzle or access to a commercial car wash that
+    recycles water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a shut-off nozzle that can be adjusted down to a fi ne spray on your
+      hose. Use a commercial car wash that recycles water.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_004
+  claim_text: When washing your car at home, use a shut-off nozzle to control water
+    flow and park on grass to water it simultaneously.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a shut-off nozzle that can be adjusted down to a fi ne spray on your
+      hose. If you wash your own car, park on the grass so that you will be watering
+      it at the same time.
+    start_char: 0
+    end_char: 145
+    support_strength: strong
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_005
+  claim_text: Alternatively, choose a commercial car wash that recycles water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a commercial car wash that recycles water.
+    start_char: 64
+    end_char: 104
+    support_strength: strong
+- object_id: environment.car-washing-water-conservation
+  claim_id: clm_006
+  claim_text: Using excessive water by not controlling the flow or choosing car washes
+    that do not recycle water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000295
+    excerpt: Use a shut-off nozzle that can be adjusted down to a fi ne spray on your
+      hose. Use a commercial car wash that recycles water.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000295

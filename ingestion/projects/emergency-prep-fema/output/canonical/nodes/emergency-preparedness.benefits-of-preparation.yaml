@@ -1,0 +1,153 @@
+id: emergency-preparedness.benefits-of-preparation
+slug: emergency-preparedness.benefits-of-preparation
+seed_type: extracted
+co_type: concept_note
+canonical_title: Benefits of Being Prepared for Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Preparedness reduces fear, anxiety, and losses during disasters.
+summary_medium: Being prepared for disasters can significantly reduce fear, anxiety,
+  and losses. It involves knowing evacuation routes, shelter locations, and basic
+  medical care, as well as implementing measures like flood proofing and securing
+  items to minimize disaster impact.
+plain_language: Being ready for emergencies helps you feel less scared and anxious.
+  It also means you might lose less when a disaster happens. You should know where
+  to go if you need to leave your home, where to find shelter, and how to handle basic
+  medical needs. You can also take steps to protect your home from floods and secure
+  items to prevent damage during earthquakes.
+markdown_body: '### What this is
+
+  This concept note explains the benefits of being prepared for emergencies and disasters.
+  It highlights how preparedness can reduce fear, anxiety, and potential losses.
+
+
+  ### Why it matters
+
+  Being prepared for emergencies is crucial because it helps individuals and communities
+  respond effectively to disasters, minimizing harm and facilitating quicker recovery.
+
+
+  ### What you need
+
+  To be prepared, you need to know evacuation routes, identify shelter locations,
+  understand basic medical care, and implement measures like flood proofing and securing
+  items against earthquakes.
+
+
+  ### How to do it
+
+  Start by learning the evacuation routes in your area and identifying nearby shelters.
+  Prepare a basic medical kit and ensure you know how to use it. Implement flood proofing
+  measures if you live in a flood-prone area and secure heavy items in your home to
+  prevent them from causing injury during an earthquake.
+
+
+  ### Common failure modes
+
+  Failing to regularly update your emergency plan or neglecting to practice evacuation
+  drills can lead to confusion during an actual disaster.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all family members are aware of the emergency plan and know how to execute
+  it safely.
+
+
+  ### Local adaptation notes
+
+  Adapt your preparedness measures to the specific risks and resources available in
+  your local area.'
+structured_data:
+  definition: Preparedness involves planning and taking actions to reduce the impact
+    of disasters.
+  key_questions:
+  - What are the evacuation routes in my area?
+  - Where are the nearest shelters located?
+  - What basic medical supplies do I need?
+  - How can I protect my home from floods or earthquakes?
+  misconceptions:
+  - Preparedness is only necessary for large-scale disasters.
+  - Once prepared, no further action is needed.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.benefits-of-preparation
+  claim_id: clm_001
+  claim_text: Preparedness can reduce fear, anxiety, and potential losses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 64
+    support_strength: strong
+- object_id: emergency-preparedness.benefits-of-preparation
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies helps individuals and communities respond
+    effectively to disasters, minimizing harm and facilitating quicker recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: The main reason to use this guide is to help protect yourself and your
+      family in the event of an emergency.
+    start_char: 0
+    end_char: 98
+    support_strength: medium
+- object_id: emergency-preparedness.benefits-of-preparation
+  claim_id: clm_003
+  claim_text: To be prepared, you need to know evacuation routes, identify shelter
+    locations, understand basic medical care, and implement measures like flood proofing
+    and securing items against earthquakes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Communities, families, and individuals should know what to do in the
+      event of a fire and where to seek shelter during a tornado. They should be ready
+      to evacuate their homes and take refuge in public shelters and know how to care
+      for their basic medical needs.
+    start_char: 65
+    end_char: 267
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: People also can reduce the impact of disasters (flood proofing, elevating
+      a home or moving a home out of harm's way, and securing items that could shake
+      loose in an earthquake) and sometimes avoid the danger completely.
+    start_char: 268
+    end_char: 451
+    support_strength: strong
+- object_id: emergency-preparedness.benefits-of-preparation
+  claim_id: clm_004
+  claim_text: Failing to regularly update your emergency plan or neglecting to practice
+    evacuation drills can lead to confusion during an actual disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area—hurricanes, earthquakes, extreme cold, flooding, or
+      terrorism.
+    start_char: 200
+    end_char: 328
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000009

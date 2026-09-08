@@ -1,0 +1,158 @@
+id: emergency.tornado-watch
+slug: emergency.tornado-watch
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: 'Tornado Watch: Staying Alert'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Guidance on staying alert during a tornado watch.
+summary_medium: Guidance on remaining alert during a tornado watch, including monitoring
+  weather updates.
+plain_language: Learn how to stay alert and monitor weather updates during a tornado
+  watch.
+markdown_body: '### What this is
+
+  A tornado watch means that tornadoes are possible in your area. It is a time to
+  remain vigilant and prepared for potential severe weather.
+
+
+  ### Why it matters
+
+  Understanding and responding appropriately to a tornado watch can help ensure your
+  safety by giving you time to prepare for a possible tornado.
+
+
+  ### What you need
+
+  Access to NOAA Weather Radio, commercial radio, or television to receive weather
+  updates.
+
+
+  ### How to do it
+
+  Stay alert for signs of approaching storms. Regularly check NOAA Weather Radio,
+  commercial radio, or television for updates on the weather situation.
+
+
+  ### Common failure modes
+
+  Ignoring weather updates or failing to monitor the situation can lead to being unprepared
+  for a tornado.
+
+
+  ### Safety/boundary notes
+
+  Ensure you have a safe place to go if a tornado warning is issued.
+
+
+  ### Local adaptation notes
+
+  Consider local weather patterns and adjust monitoring practices accordingly.'
+structured_data:
+  tools:
+  - NOAA Weather Radio
+  - commercial radio
+  - television
+  materials: []
+  success_criteria:
+  - Remain informed about weather conditions
+  - Be prepared to take action if a tornado warning is issued
+  failure_modes:
+  - Ignoring weather updates
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.tornado-watch
+  claim_id: clm_001
+  claim_text: A tornado watch means that tornadoes are possible in your area. It is
+    a time to remain vigilant and prepared for potential severe weather.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Tornadoes are possible. Remain alert for approaching storms.
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency.tornado-watch
+  claim_id: clm_002
+  claim_text: Understanding and responding appropriately to a tornado watch can help
+    ensure your safety by giving you time to prepare for a possible tornado.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Remain alert for approaching storms. Watch the sky and stay tuned to
+      NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 0
+    end_char: 133
+    support_strength: medium
+- object_id: emergency.tornado-watch
+  claim_id: clm_003
+  claim_text: Access to NOAA Weather Radio, commercial radio, or television to receive
+    weather updates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 75
+    end_char: 133
+    support_strength: strong
+- object_id: emergency.tornado-watch
+  claim_id: clm_004
+  claim_text: Stay alert for signs of approaching storms. Regularly check NOAA Weather
+    Radio, commercial radio, or television for updates on the weather situation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Remain alert for approaching storms. Watch the sky and stay tuned to
+      NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 0
+    end_char: 133
+    support_strength: strong
+- object_id: emergency.tornado-watch
+  claim_id: clm_005
+  claim_text: Ignoring weather updates or failing to monitor the situation can lead
+    to being unprepared for a tornado.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Remain alert for approaching storms. Watch the sky and stay tuned to
+      NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 0
+    end_char: 133
+    support_strength: medium
+- object_id: emergency.tornado-watch
+  claim_id: clm_006
+  claim_text: Ensure you have a safe place to go if a tornado warning is issued.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000081

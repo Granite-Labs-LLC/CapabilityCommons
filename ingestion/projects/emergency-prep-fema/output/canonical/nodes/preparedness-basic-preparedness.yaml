@@ -1,0 +1,409 @@
+canonical_title: Basic Preparedness
+citations:
+- claim_id: clm_001
+  claim_text: This module helps you create a comprehensive emergency plan using worksheets
+    and checklists.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 100
+    excerpt: A series of worksheets to help you obtain information from the community
+      that will form the foundation of your plan.
+    page_end: 11
+    page_start: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: It focuses on identifying community hazards, planning evacuation routes,
+    establishing communication strategies, and preparing a disaster supplies kit.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 300
+    excerpt: You will need to fi nd out about hazards that threaten the community,
+      how the population will be warned, evacuation routes to be used in times of
+      disaster, and the emergency plans of the community.
+    page_end: 11
+    page_start: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    source_id: src.fema.are-you-ready.2004
+    start_char: 100
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: Having a well-prepared emergency plan can significantly reduce the risks
+    and impacts of disasters on you and your family.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 100
+    excerpt: Disasters disrupt hundreds of thousands of lives every year. Each disaster
+      has lasting effects, both to people and property.
+    page_end: 8
+    page_start: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_004
+  claim_text: You will need access to community hazard information, worksheets for
+    planning, and checklists for assembling a disaster supplies kit.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 100
+    excerpt: A series of worksheets to help you obtain information from the community
+      that will form the foundation of your plan.
+    page_end: 11
+    page_start: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Incomplete hazard identification and lack of a communication plan can
+    lead to ineffective emergency preparedness.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 300
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area.
+    page_end: 8
+    page_start: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    source_id: src.fema.are-you-ready.2004
+    start_char: 200
+    support_strength: medium
+- claim_id: clm_006
+  claim_text: Ensure that your plan includes considerations for special needs, such
+    as disabilities, and the care of animals.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 500
+    excerpt: address special needs such as disabilities, take care of animals, and
+      seek shelter.
+    page_end: 11
+    page_start: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    source_id: src.fema.are-you-ready.2004
+    start_char: 400
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: This module introduces basic preparedness strategies that can be applied
+    to any type of disaster.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 90
+    excerpt: In this part of the guide, you will learn preparedness strategies that
+      are common to all disasters.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: It emphasizes the importance of having a comprehensive plan that can
+    be adapted to various hazards.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 144
+    excerpt: You plan only once, and are able to apply your plan to all types of hazards.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 91
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Being prepared for disasters can significantly reduce the impact on
+    you and your family.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 207
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 146
+    support_strength: medium
+- claim_id: clm_010
+  claim_text: A well-thought-out plan ensures that you know what to do and where to
+    go in an emergency, which can save lives.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 234
+    excerpt: Develop an emergency plan.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 208
+    support_strength: medium
+- claim_id: clm_011
+  claim_text: To get started, you need to gather information about potential hazards,
+    develop an emergency plan, and assemble a disaster supplies kit.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 293
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family. Develop an emergency plan. Collect and assemble disaster supplies kit.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 146
+    support_strength: strong
+- claim_id: clm_012
+  claim_text: Get informed about hazards that may affect you.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 207
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 146
+    support_strength: strong
+- claim_id: clm_013
+  claim_text: Develop an emergency plan that includes evacuation routes and communication
+    strategies.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 293
+    excerpt: Develop an emergency plan. Identify the community warning systems and
+      evacuation routes.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 208
+    support_strength: strong
+- claim_id: clm_014
+  claim_text: Assemble a disaster supplies kit with essentials like food, water, and
+    medical supplies.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 293
+    excerpt: Collect and assemble disaster supplies kit.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 235
+    support_strength: strong
+- claim_id: clm_015
+  claim_text: Identify community warning systems and shelters.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 348
+    excerpt: Identify the community warning systems and evacuation routes.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 294
+    support_strength: strong
+- claim_id: clm_016
+  claim_text: Practice your plan regularly to ensure everyone knows what to do.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 377
+    excerpt: Practice and maintain your plan.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 349
+    support_strength: strong
+- claim_id: clm_017
+  claim_text: Common issues include having an incomplete emergency plan, not practicing
+    the plan, and failing to update the plan with current information.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 377
+    excerpt: Practice and maintain your plan.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 349
+    support_strength: medium
+- claim_id: clm_018
+  claim_text: Ensure your plan includes safe evacuation routes and that all family
+    members are aware of them.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 348
+    excerpt: Identify the community warning systems and evacuation routes.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 294
+    support_strength: strong
+- claim_id: clm_019
+  claim_text: Adapt your plan to include community-specific evacuation routes and
+    local warning systems.
+  object_id: preparedness-basic-preparedness
+  support:
+  - end_char: 437
+    excerpt: Include in your plan required information from community and school plans.
+    page_end: 14
+    page_start: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    source_id: src.fema.are-you-ready.2004
+    start_char: 378
+    support_strength: strong
+co_type: module
+contexts: []
+cost_band: low
+difficulty: 3
+id: preparedness.basic-preparedness
+language_code: en
+lifecycle_state: published
+markdown_body: "### What this is\nThis module helps you create a comprehensive emergency\
+  \ plan using worksheets and checklists. It focuses on identifying community hazards,\
+  \ planning evacuation routes, establishing communication strategies, and preparing\
+  \ a disaster supplies kit.\n\n### Why it matters\nHaving a well-prepared emergency\
+  \ plan can significantly reduce the risks and impacts of disasters on you and your\
+  \ family. It ensures you know what to do, where to go, and how to communicate during\
+  \ emergencies.\n\n### What you need\nTo get started, you need to gather information\
+  \ about potential hazards, develop an emergency plan, and assemble a disaster supplies\
+  \ kit.\n\n### How to do it\n1. Get informed about hazards that may affect you. \n\
+  2. Develop an emergency plan that includes evacuation routes and communication strategies.\
+  \ \n3. Assemble a disaster supplies kit with essentials like food, water, and medical\
+  \ supplies. \n4. Identify community warning systems and shelters. \n5. Practice\
+  \ your plan regularly to ensure everyone knows what to do.\n\n### Common failure\
+  \ modes\nCommon issues include having an incomplete emergency plan, not practicing\
+  \ the plan, and failing to update the plan with current information.\n\n### Safety/boundary\
+  \ notes\nEnsure your plan includes safe evacuation routes and that all family members\
+  \ are aware of them.\n\n### Local adaptation notes\nAdapt your plan to include community-specific\
+  \ evacuation routes and local warning systems."
+plain_language: Learn how to prepare for emergencies by identifying local hazards,
+  planning evacuation routes, setting up communication plans, and assembling a disaster
+  supplies kit.
+primary_domain: preparedness
+requires: []
+risk_band: moderate
+secondary_domains: []
+seed_type: module
+slug: preparedness-basic-preparedness
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000013
+- src.fema.are-you-ready.2004::seg_000020
+stage: community
+structured_data:
+  failure_modes:
+  - Incomplete hazard identification
+  - Lack of communication plan
+  implementation:
+    common_mistakes:
+    - Overlooking specific local hazards
+    - Failing to update the plan regularly
+    expected_cost: Minimal, primarily for printing materials
+    expected_time: Varies based on community size and complexity
+    materials: []
+    smallest_viable_version: Create a basic emergency plan using available worksheets
+      and checklists.
+    stop_conditions:
+    - Plan is incomplete
+    - Communication plan is unclear
+    success_checks:
+    - Plan includes all identified hazards
+    - Communication plan is clear and accessible
+    - Evacuation routes are well-defined
+    tools:
+    - worksheets
+    - checklists
+    variants:
+    - label: Urban
+      notes: Focus on high-rise building evacuation and public transport routes.
+      when: In densely populated areas
+    - label: Rural
+      notes: Consider longer evacuation routes and limited communication infrastructure.
+      when: In sparsely populated areas
+    when_to_escalate:
+    - If local hazards are not well understood
+    - If community resources are insufficient
+  materials: []
+  safety_boundary: []
+  success_criteria:
+  - Complete hazard identification
+  - Effective communication plan
+  - Prepared evacuation routes
+  - Comprehensive disaster supplies kit
+  tools:
+  - worksheets
+  - checklists
+suggested_edges: []
+summary_medium: This module provides worksheets and guidance for creating a community-based
+  emergency plan, focusing on hazard identification, evacuation routes, communication
+  strategies, and disaster supplies checklists.
+summary_short: Develop a community-based emergency plan with worksheets and guidance.
+version_no: 1
+visibility: public
+bundle_overrides:
+  hook: Being prepared for emergencies can save lives and reduce the impact of disasters
+    on you and your family.
+  primer: Basic preparedness involves creating a comprehensive emergency plan that
+    can be adapted to various hazards. This includes identifying potential community
+    hazards, planning evacuation routes, establishing communication strategies, and
+    assembling a disaster supplies kit. Understanding the risks specific to your area
+    is crucial, as it allows you to tailor your plan to address those threats effectively.
+    A well-prepared plan ensures that you and your family know what to do, where to
+    go, and how to communicate during emergencies. It is important to regularly practice
+    and update your plan to ensure its effectiveness. This module provides worksheets
+    and checklists to guide you through the process of gathering necessary information
+    and developing a robust emergency plan.
+  guide: "1. **Get Informed**: Start by researching the types of hazards that could\
+    \ affect your community. This includes natural disasters like floods, earthquakes,\
+    \ or hurricanes, as well as man-made hazards such as chemical spills or power\
+    \ outages. \n\n2. **Develop an Emergency Plan**: Create a plan that includes evacuation\
+    \ routes and communication strategies. Identify safe places to go and how to get\
+    \ there. Make sure everyone in your household knows the plan and their role in\
+    \ it. \n\n3. **Assemble a Disaster Supplies Kit**: Gather essential items such\
+    \ as food, water, medical supplies, flashlights, batteries, and important documents.\
+    \ Ensure the kit is easily accessible and regularly check its contents for expiration\
+    \ dates. \n\n4. **Identify Community Warning Systems and Shelters**: Learn about\
+    \ local warning systems and the locations of community shelters. This information\
+    \ should be included in your emergency plan. \n\n5. **Practice Your Plan**: Conduct\
+    \ regular drills with your family to ensure everyone knows what to do in an emergency.\
+    \ Update your plan as needed to incorporate any changes in your community or household.\
+    \ \n\n6. **Consider Special Needs**: Make sure your plan accounts for any special\
+    \ needs, such as disabilities or pets. Ensure that all necessary accommodations\
+    \ are included in your preparations."
+  reference:
+  - Identify potential community hazards.
+  - Plan evacuation routes.
+  - Establish communication strategies.
+  - Assemble a disaster supplies kit.
+  - Identify community warning systems and shelters.
+  - Practice and update your emergency plan regularly.
+  - Consider special needs and accommodations.
+  worksheet:
+  - List potential hazards in your community.
+  - Map out evacuation routes from your home.
+  - Create a communication plan with contact information.
+  - Inventory items for your disaster supplies kit.
+  - Identify local warning systems and shelter locations.
+  - Schedule a family drill to practice your emergency plan.
+  teach_forward_kit:
+    three_minute_version: Prepare for emergencies by identifying local hazards, planning
+      evacuation routes, setting up communication plans, and assembling a disaster
+      supplies kit. Regular practice and updates ensure your plan remains effective.
+    ten_minute_outline:
+    - Introduction to basic preparedness and its importance.
+    - Steps to identify community hazards.
+    - How to develop an emergency plan.
+    - Assembling a disaster supplies kit.
+    - Understanding community warning systems and shelters.
+    - Importance of practicing and updating the plan.
+    - Considerations for special needs and accommodations.
+    discussion_prompts:
+    - What are the most common hazards in your area?
+    - How can you ensure your emergency plan is effective?
+    - What challenges might you face in assembling a disaster supplies kit?
+    - How can you involve your community in preparedness efforts?
+    - What special considerations should be made for vulnerable populations?

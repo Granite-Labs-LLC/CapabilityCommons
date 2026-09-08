@@ -1,0 +1,156 @@
+id: emergency-preparedness.biological-attack-response
+slug: emergency-preparedness.biological-attack-response
+seed_type: extracted
+co_type: concept_note
+canonical_title: Responding to Biological Attacks
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidance on responding to biological attacks by following official
+  instructions and understanding public health procedures.
+summary_medium: Learn how to respond to biological attacks by adhering to official
+  warnings and understanding public health protocols. This includes using HEPA filters
+  to reduce exposure to biological agents.
+plain_language: This concept explains how to respond to a biological attack by following
+  official instructions and using public health procedures. It also covers the use
+  of HEPA filters to help reduce exposure.
+markdown_body: '### What this is
+
+  This concept note provides guidance on how to respond to a biological attack, emphasizing
+  the importance of following official instructions and understanding public health
+  procedures.
+
+
+  ### Why it matters
+
+  In the event of a biological attack, timely and accurate response is crucial to
+  minimize exposure and health risks. Understanding and following public health protocols
+  can help protect you and your community.
+
+
+  ### What you need
+
+  Awareness of official communication channels such as radio, television, and emergency
+  alert systems. Access to HEPA filters can also be beneficial.
+
+
+  ### How to do it
+
+  Pay attention to official warnings and instructions. Use HEPA filters in your home
+  or office to help remove biological agents from the air. Follow public health procedures
+  as you would for any infectious disease.
+
+
+  ### Common failure modes
+
+  Ignoring official instructions, not using available HEPA filters, and misunderstanding
+  public health procedures can increase risk.
+
+
+  ### Safety/boundary notes
+
+  HEPA filters are effective for biological agents but not for chemical agents. Ensure
+  you are using the correct type of filter for the situation.
+
+
+  ### Local adaptation notes
+
+  Adapt the use of HEPA filters based on your specific living or working environment,
+  such as whether you are in a home, apartment, or office building.'
+structured_data:
+  definition: Responding to a biological attack involves following official instructions
+    and public health procedures to minimize exposure and health risks.
+  key_questions:
+  - What are the official instructions during a biological attack?
+  - How can HEPA filters be used effectively in this context?
+  misconceptions:
+  - HEPA filters can remove all types of contaminants, including chemical agents.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.biological-attack-response
+  claim_id: clm_001
+  claim_text: This concept note provides guidance on how to respond to a biological
+    attack, emphasizing the importance of following official instructions and understanding
+    public health procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: After a Biological Attack In some situations, such as the case of the
+      anthrax letters sent in 2001, people may be alerted to potential exposure. If
+      this is the case, pay close attention to all official warnings and instructions
+      on how to proceed. The basic public health procedures and medical protocols
+      for handling exposure to biological agents are the same as for any infectious
+      disease.
+    start_char: 0
+    end_char: 412
+    support_strength: strong
+- object_id: emergency-preparedness.biological-attack-response
+  claim_id: clm_002
+  claim_text: Awareness of official communication channels such as radio, television,
+    and emergency alert systems.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: It is important for you to pay attention to official instructions via
+      radio, television, and emergency alert systems.
+    start_char: 412
+    end_char: 512
+    support_strength: strong
+- object_id: emergency-preparedness.biological-attack-response
+  claim_id: clm_003
+  claim_text: Access to HEPA filters can also be beneficial.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: HEPA filters are useful in biological attacks. If you have a central
+      heating and cooling system in your home with a HEPA filter, leave it on if it
+      is running or turn the fan on if it is not running.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency-preparedness.biological-attack-response
+  claim_id: clm_004
+  claim_text: Use HEPA filters in your home or office to help remove biological agents
+    from the air.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: HEPA filters are useful in biological attacks. If you have a central
+      heating and cooling system in your home with a HEPA filter, leave it on if it
+      is running or turn the fan on if it is not running. Moving the air in the house
+      through the filter will help remove the agents from the air.
+    start_char: 0
+    end_char: 250
+    support_strength: strong
+- object_id: emergency-preparedness.biological-attack-response
+  claim_id: clm_005
+  claim_text: HEPA filters are effective for biological agents but not for chemical
+    agents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: HEPA filters will not filter chemical agents.
+    start_char: 250
+    end_char: 290
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000245

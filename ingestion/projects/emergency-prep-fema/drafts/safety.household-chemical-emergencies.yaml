@@ -1,0 +1,96 @@
+id: safety.household-chemical-emergencies
+slug: safety.household-chemical-emergencies
+seed_type: safety_notice
+co_type: safety_notice
+canonical_title: Household Chemical Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts:
+- household
+- emergency preparedness
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Guidance on handling household chemical emergencies.
+summary_medium: Learn how to identify hazardous materials in your home and respond
+  effectively to chemical emergencies.
+plain_language: This guide helps you understand what to do if there's a chemical emergency
+  at home, like a spill or exposure to hazardous materials.
+markdown_body: "# What this is\nThis guidance provides information on how to handle\
+  \ emergencies involving household chemicals. It covers identifying hazardous materials\
+  \ and taking appropriate actions to ensure safety.\n\n# Why it matters\nMany common\
+  \ household products contain hazardous chemicals that can pose serious health risks\
+  \ if not handled properly. Knowing how to respond to chemical emergencies can prevent\
+  \ injuries and protect your family.\n\n# What you need\nYou will need safety gloves,\
+  \ protective eyewear, and ventilation equipment to safely manage chemical emergencies.\n\
+  \n# How to do it\n1. Identify hazardous materials by reading labels and safety data\
+  \ sheets. \n2. Use protective gear such as gloves and eyewear. \n3. Ensure proper\
+  \ ventilation by opening windows or using fans. \n4. In case of a spill, contain\
+  \ and clean it up according to the product's instructions. \n5. If exposure occurs,\
+  \ follow first aid instructions and seek medical help if necessary.\n\n# Common\
+  \ failure modes\nImproper handling of chemicals and inadequate ventilation are common\
+  \ mistakes that can lead to increased risk during a chemical emergency.\n\n# Safety/boundary\
+  \ notes\nAvoid direct contact with chemicals and always ensure proper ventilation\
+  \ when dealing with hazardous materials.\n\n# Local adaptation notes\nConsider the\
+  \ availability of safety equipment and local chemical usage patterns when preparing\
+  \ for chemical emergencies."
+structured_data:
+  definition: Household chemical emergencies involve situations where hazardous materials
+    pose a risk to health and safety.
+  key_questions:
+  - What are the common hazardous materials found in households?
+  - How can you safely handle a chemical spill?
+  misconceptions:
+  - All household chemicals are safe if used as directed.
+  - Ventilation is not necessary for small spills.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.household-chemical-emergencies
+  claim_id: clm_001
+  claim_text: Many common household products contain hazardous chemicals that can
+    pose serious health risks if not handled properly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 134
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000204
+    excerpt: Nearly every household uses products containing hazardous materials or
+      chemicals.
+    start_char: 0
+    end_char: 73
+    support_strength: strong
+- object_id: safety.household-chemical-emergencies
+  claim_id: clm_002
+  claim_text: Ensure proper ventilation by opening windows or using fans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 133
+    page_end: 133
+    segment_id: src.fema.are-you-ready.2004::seg_000202
+    excerpt: Open windows and vents and turn on fans to provide ventilation.
+    start_char: 85
+    end_char: 136
+    support_strength: strong
+- object_id: safety.household-chemical-emergencies
+  claim_id: clm_003
+  claim_text: If exposure occurs, follow first aid instructions and seek medical help
+    if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 133
+    page_end: 133
+    segment_id: src.fema.are-you-ready.2004::seg_000202
+    excerpt: Act quickly if you have come in to contact with or have been exposed
+      to hazardous chemicals. Seek medical treatment for unusual symptoms as soon
+      as possible.
+    start_char: 137
+    end_char: 270
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000204

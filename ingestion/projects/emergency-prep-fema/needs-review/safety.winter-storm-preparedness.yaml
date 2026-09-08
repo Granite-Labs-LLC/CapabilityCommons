@@ -1,0 +1,85 @@
+id: safety.winter-storm-preparedness
+slug: safety.winter-storm-preparedness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Winter Storm Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidance on preparing for winter storms and detecting frostbite and
+  hypothermia.
+summary_medium: This reference sheet provides essential information on winter storm
+  facts, preparation strategies, and how to detect and respond to frostbite and hypothermia.
+plain_language: Learn how to prepare for winter storms and recognize signs of frostbite
+  and hypothermia.
+markdown_body: '### What this is
+
+  This reference sheet offers guidance on how to prepare for winter storms and recognize
+  the signs of frostbite and hypothermia.
+
+
+  ### Why it matters
+
+  Winter storms can be dangerous and even deadly if you''re not prepared. Knowing
+  how to protect yourself and recognize signs of cold-related illnesses can save lives.
+
+
+  ### What you need
+
+  Access to reliable weather forecasts, warm clothing, emergency supplies, and knowledge
+  of frostbite and hypothermia symptoms.
+
+
+  ### How to do it
+
+  1. Stay informed about weather conditions through reliable sources.
+
+  2. Prepare an emergency kit with essentials like food, water, and blankets.
+
+  3. Learn to recognize frostbite and hypothermia symptoms: Frostbite includes numbness
+  and white or grayish-yellow skin; hypothermia symptoms include shivering, confusion,
+  and slurred speech.
+
+  4. Stay indoors during severe weather and dress warmly if you must go outside.
+
+
+  ### Common failure modes
+
+  Being unprepared for sudden weather changes, failing to detect frostbite or hypothermia
+  symptoms in time.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety by staying indoors during severe weather and seeking medical
+  attention if frostbite or hypothermia is suspected.
+
+
+  ### Local adaptation notes
+
+  Adapt preparation strategies based on local climate and available resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Being adequately prepared for a winter storm.
+  - Recognizing and responding to frostbite and hypothermia symptoms promptly.
+  failure_modes:
+  - Unpreparedness for winter storms.
+  - Failure to detect frostbite.
+  - Failure to detect hypothermia.
+  safety_boundary: Stay indoors during severe weather conditions and seek medical
+    help if needed.
+requires: []
+suggested_edges: []
+citations: []
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000130

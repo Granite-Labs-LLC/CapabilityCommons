@@ -1,0 +1,111 @@
+id: home.laundry-efficiency
+slug: home.laundry-efficiency
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Efficient Use of Automatic Clothes Washers
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: home
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Guidelines for efficient operation of clothes washers.
+summary_medium: Learn how to operate automatic clothes washers efficiently by ensuring
+  full loads or adjusting water levels.
+plain_language: To save water and energy, only run your washing machine when it's
+  full, or adjust the water level to match the size of your load.
+markdown_body: '### What this is
+
+  This is a guide on how to use automatic clothes washers efficiently to conserve
+  water and energy.
+
+
+  ### Why it matters
+
+  Efficient use of washing machines helps conserve water and energy, reducing utility
+  bills and environmental impact.
+
+
+  ### What you need
+
+  An automatic clothes washer.
+
+
+  ### How to do it
+
+  Operate your washing machine only when you have a full load. If you need to wash
+  smaller loads, adjust the water level setting to match the size of the load.
+
+
+  ### Common failure modes
+
+  Running the washer with small loads without adjusting the water level can lead to
+  inefficient water use.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Consider the availability of water-efficient washers in your area to further enhance
+  conservation efforts.'
+structured_data:
+  tools:
+  - automatic clothes washer
+  materials: []
+  success_criteria: Washer is operated with full loads or adjusted water levels for
+    smaller loads.
+  failure_modes: Inefficient water use due to improper load size or water level settings.
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: home.laundry-efficiency
+  claim_id: clm_001
+  claim_text: Operate your washing machine only when you have a full load.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000293
+    excerpt: Operate automatic clothes washers only when they are fully loaded or
+      set the water level for the size of your load.
+    start_char: 3
+    end_char: 78
+    support_strength: strong
+- object_id: home.laundry-efficiency
+  claim_id: clm_002
+  claim_text: If you need to wash smaller loads, adjust the water level setting to
+    match the size of the load.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000293
+    excerpt: Operate automatic clothes washers only when they are fully loaded or
+      set the water level for the size of your load.
+    start_char: 3
+    end_char: 78
+    support_strength: strong
+- object_id: home.laundry-efficiency
+  claim_id: clm_003
+  claim_text: Running the washer with small loads without adjusting the water level
+    can lead to inefficient water use.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000293
+    excerpt: Operate automatic clothes washers only when they are fully loaded or
+      set the water level for the size of your load.
+    start_char: 3
+    end_char: 78
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000293

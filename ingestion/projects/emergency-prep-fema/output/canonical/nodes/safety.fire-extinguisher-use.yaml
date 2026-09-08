@@ -1,0 +1,190 @@
+id: safety.fire-extinguisher-use
+slug: safety.fire-extinguisher-use
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Learn How to Use a Fire Extinguisher
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to use a fire extinguisher and ensure everyone knows its
+  location.
+summary_medium: Guidance on ensuring everyone knows how to use a fire extinguisher
+  and its location, recommending at least an ABC type.
+plain_language: Make sure everyone knows how to use a fire extinguisher and where
+  it is located. It's recommended to have at least an ABC type extinguisher.
+markdown_body: "### What this is\nThis guide helps you learn how to use a fire extinguisher\
+  \ effectively and ensure that everyone in your home or workplace knows its location.\n\
+  \n### Why it matters\nKnowing how to use a fire extinguisher can prevent small fires\
+  \ from becoming large and dangerous. It is crucial for safety in emergencies.\n\n\
+  ### What you need\nAn ABC type fire extinguisher, which is suitable for most types\
+  \ of fires you might encounter in a home or office setting.\n\n### How to do it\n\
+  1. Locate your fire extinguisher and ensure it is easily accessible. \n2. Familiarize\
+  \ yourself with the instructions on the extinguisher. \n3. Practice the PASS technique:\
+  \ Pull the pin, Aim at the base of the fire, Squeeze the handle, and Sweep side\
+  \ to side.\n\n### Common failure modes\nUsing the wrong type of extinguisher for\
+  \ the fire, not knowing how to operate the extinguisher, or not being able to locate\
+  \ it quickly in an emergency.\n\n### Safety/boundary notes\nEnsure the fire is small\
+  \ and manageable before attempting to extinguish it. If in doubt, evacuate and call\
+  \ emergency services.\n\n### Local adaptation notes\nCheck the availability of ABC\
+  \ type extinguishers in your area and ensure they are maintained regularly."
+structured_data:
+  tools:
+  - ABC type fire extinguisher
+  materials: []
+  success_criteria:
+  - Everyone knows the location of the extinguisher
+  - Everyone can demonstrate the PASS technique
+  failure_modes:
+  - Incorrect extinguisher type
+  - Unfamiliarity with use
+  safety_boundary: Use only on small, manageable fires.
+  implementation:
+    smallest_viable_version: Ensure everyone knows how to use and locate the fire
+      extinguisher.
+    tools:
+    - ABC type fire extinguisher
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: low
+    success_checks:
+    - Everyone can locate and use the extinguisher correctly
+    stop_conditions:
+    - If the fire is too large or spreading rapidly
+    common_mistakes:
+    - Not knowing the PASS technique
+    - Using the wrong type of extinguisher
+    variants:
+    - label: Urban
+      when: In a city apartment
+      notes: Ensure the extinguisher is easily accessible and not blocked by furniture.
+    when_to_escalate:
+    - If the fire is not contained after using the extinguisher
+    - If smoke is overwhelming
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.fire-extinguisher-use
+  claim_id: clm_001
+  claim_text: This guide helps you learn how to use a fire extinguisher effectively
+    and ensure that everyone in your home or workplace knows its location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000044
+    excerpt: Learn How to Use a Fire Extinguisher Be sure everyone knows how to use
+      your fi re extinguisher(s) and where it is kept.
+    start_char: 0
+    end_char: 97
+    support_strength: strong
+- object_id: safety.fire-extinguisher-use
+  claim_id: clm_002
+  claim_text: Knowing how to use a fire extinguisher can prevent small fires from
+    becoming large and dangerous.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: It is important that family members know how to administer fi rst aid
+      and CPR and how to use a fi re extinguisher.
+    start_char: 0
+    end_char: 97
+    support_strength: medium
+- object_id: safety.fire-extinguisher-use
+  claim_id: clm_003
+  claim_text: An ABC type fire extinguisher, which is suitable for most types of fires
+    you might encounter in a home or office setting.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000044
+    excerpt: You should have, at a minimum, an ABC type.
+    start_char: 98
+    end_char: 127
+    support_strength: strong
+- object_id: safety.fire-extinguisher-use
+  claim_id: clm_004
+  claim_text: 'Practice the PASS technique: Pull the pin, Aim at the base of the fire,
+    Squeeze the handle, and Sweep side to side.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 31
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000043
+    excerpt: It is important that family members know how to administer fi rst aid
+      and CPR and how to use a fi re extinguisher.
+    start_char: 0
+    end_char: 97
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000044
+bundle_overrides:
+  hook: Knowing how to use a fire extinguisher can stop a small fire from turning
+    into a disaster, ensuring safety for you and those around you.
+  primer: A fire extinguisher is a crucial safety tool that can prevent small fires
+    from escalating into dangerous situations. In homes and workplaces, having an
+    ABC type fire extinguisher is recommended because it is suitable for most types
+    of fires you might encounter. The ABC type can handle fires involving ordinary
+    combustibles, flammable liquids, and electrical equipment. It's important not
+    only to have a fire extinguisher but also to know how to use it effectively. The
+    PASS technique—Pull, Aim, Squeeze, and Sweep—is a simple method to remember when
+    operating a fire extinguisher. Ensuring that everyone in your home or workplace
+    knows the location of the fire extinguisher and how to use it can make a significant
+    difference in an emergency. Regular checks and maintenance of the extinguisher
+    are also essential to ensure it functions properly when needed.
+  guide: "1. **Locate Your Fire Extinguisher**: Ensure that your fire extinguisher\
+    \ is easily accessible and not blocked by furniture or other obstacles. Everyone\
+    \ in the household or workplace should know its location.\n\n2. **Familiarize\
+    \ Yourself with the Instructions**: Take a moment to read the instructions on\
+    \ the fire extinguisher. Each extinguisher may have specific guidelines, so understanding\
+    \ them beforehand is crucial.\n\n3. **Practice the PASS Technique**:\n   - **Pull\
+    \ the Pin**: This will break the tamper seal and allow you to discharge the extinguisher.\n\
+    \   - **Aim at the Base of the Fire**: Point the nozzle or hose at the base of\
+    \ the fire, not the flames. This targets the fuel source.\n   - **Squeeze the\
+    \ Handle**: This releases the extinguishing agent. Maintain a firm grip and control\
+    \ the flow.\n   - **Sweep Side to Side**: Move the nozzle from side to side at\
+    \ the base of the fire until it appears to be out. Keep an eye on the area in\
+    \ case the fire reignites.\n\n4. **Safety Considerations**: Only use the extinguisher\
+    \ if the fire is small and manageable. If the fire is spreading or you feel unsafe,\
+    \ evacuate immediately and call emergency services.\n\n5. **Regular Maintenance**:\
+    \ Check the pressure gauge monthly to ensure the extinguisher is charged and ready\
+    \ for use. Replace or service as needed."
+  reference:
+  - 'PASS Technique: Pull, Aim, Squeeze, Sweep'
+  - 'ABC type fire extinguisher: Suitable for most home and office fires'
+  - Locate and ensure accessibility of the extinguisher
+  - Regular maintenance and checks
+  - Evacuate and call emergency services if the fire is too large
+  worksheet:
+  - Identify the location of fire extinguishers in your home or workplace.
+  - Practice the PASS technique with a training extinguisher.
+  - Check the pressure gauge on your fire extinguisher and note its status.
+  - Discuss with family or coworkers the emergency plan in case of a fire.
+  - Role-play a fire emergency scenario, focusing on safe evacuation and extinguisher
+    use.
+  teach_forward_kit:
+    three_minute_version: 'Learn the PASS technique to use a fire extinguisher: Pull
+      the pin, Aim at the base, Squeeze the handle, and Sweep side to side. Ensure
+      everyone knows the extinguisher''s location and practice regularly.'
+    ten_minute_outline:
+    - Introduction to fire extinguishers and their importance
+    - Explanation of the ABC type extinguisher
+    - Detailed steps of the PASS technique
+    - Safety considerations and when to evacuate
+    - Importance of regular maintenance and checks
+    - Q&A session
+    discussion_prompts:
+    - Why is it important to know the location of the fire extinguisher?
+    - What are the potential risks of using a fire extinguisher incorrectly?
+    - How can regular practice and maintenance of fire extinguishers enhance safety?
+    - Discuss a time when knowing how to use a fire extinguisher could have been beneficial.

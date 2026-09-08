@@ -1,0 +1,169 @@
+id: hurricane-preparedness.community-training
+slug: hurricane-preparedness.community-training
+seed_type: module
+co_type: module
+canonical_title: Community Hurricane Preparedness Training
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: hurricane-preparedness
+secondary_domains: []
+stage: community
+contexts:
+- emergency managers
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Training for emergency managers on hurricane preparedness.
+summary_medium: A comprehensive training course for federal, state, and local emergency
+  managers focusing on community hurricane preparedness.
+plain_language: This training module helps emergency managers prepare their communities
+  for hurricanes using a CD-ROM or web-based course.
+markdown_body: '### What this is
+
+  This is a training course designed for federal, state, and local emergency managers
+  to enhance their skills in preparing communities for hurricanes. The course is available
+  both on CD-ROM and as a web-based module.
+
+
+  ### Why it matters
+
+  Effective hurricane preparedness can significantly reduce the impact of hurricanes
+  on communities. This training equips emergency managers with the necessary knowledge
+  and strategies to protect lives and property.
+
+
+  ### What you need
+
+  Access to a computer with a CD-ROM drive or internet connection to participate in
+  the web-based course.
+
+
+  ### How to do it
+
+  Enroll in the course through the provided web link or obtain the CD-ROM version.
+  Follow the structured modules to learn about hurricane preparedness strategies.
+
+
+  ### Common failure modes
+
+  A common issue is the lack of participation in the training, which can lead to inadequate
+  preparedness.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all safety protocols are followed when implementing preparedness strategies
+  learned in the course.
+
+
+  ### Local adaptation notes
+
+  Consider local weather patterns and community needs when applying the training content.'
+structured_data:
+  tools:
+  - CD-ROM
+  - Internet access
+  materials:
+  - Training course materials
+  success_criteria:
+  - Completion of the course
+  - Improved community preparedness plans
+  failure_modes:
+  - Lack of training participation
+  safety_boundary: Follow all local safety guidelines when implementing preparedness
+    measures.
+requires: []
+suggested_edges: []
+citations:
+- object_id: hurricane-preparedness.community-training
+  claim_id: clm_002
+  claim_text: This is a training course designed for federal, state, and local emergency
+    managers to enhance their skills in preparing communities for hurricanes. The
+    course is available both on CD-ROM and as a web-based module.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 73
+    page_end: 73
+    segment_id: src.fema.are-you-ready.2004::seg_000106
+    excerpt: Community Hurricane Preparedness. IS-324. CD-ROM or Web-based training
+      course for federal, state, and local emergency managers.
+    start_char: 0
+    end_char: 140
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000106
+bundle_overrides:
+  hook: Equip your community with the skills to weather any storm by mastering hurricane
+    preparedness strategies.
+  primer: Hurricanes are powerful natural disasters that can cause significant damage
+    to communities. Preparing for them is crucial to minimize their impact. The Community
+    Hurricane Preparedness Training is a specialized course designed for federal,
+    state, and local emergency managers. It aims to enhance their skills in preparing
+    communities for hurricanes. The course is available on CD-ROM and as a web-based
+    module, making it accessible to a wide audience. Participants will learn about
+    effective strategies to protect lives and property, ensuring that communities
+    are better equipped to handle the challenges posed by hurricanes. By completing
+    this training, emergency managers can develop comprehensive preparedness plans
+    tailored to their local weather patterns and community needs.
+  guide: '1. **Access the Course**: Obtain the CD-ROM or access the web-based module
+    through the provided link. Ensure you have a computer with a CD-ROM drive or internet
+    access.
+
+
+    2. **Enroll in the Training**: Follow the instructions to enroll in the course.
+    This may involve creating an account or registering through a specific platform.
+
+
+    3. **Navigate the Modules**: The course is structured into several modules, each
+    focusing on different aspects of hurricane preparedness. Take your time to go
+    through each module, ensuring you understand the content.
+
+
+    4. **Engage with Interactive Content**: Participate in any interactive elements,
+    such as quizzes or simulations, to reinforce your learning.
+
+
+    5. **Apply Local Context**: As you progress, consider how the strategies can be
+    adapted to your local community''s needs and weather patterns.
+
+
+    6. **Complete the Course**: Ensure you complete all modules and any assessments.
+    This will help you develop a comprehensive understanding of hurricane preparedness.
+
+
+    7. **Implement Learnings**: Use the knowledge gained to enhance your community''s
+    preparedness plans. Share insights with colleagues and community members to foster
+    a culture of readiness.'
+  reference:
+  - Hurricane preparedness strategies
+  - CD-ROM and web-based course access
+  - Local adaptation of training content
+  - Completion of course modules
+  - Improved community preparedness plans
+  worksheet:
+  - List three key strategies for hurricane preparedness you learned from the course.
+  - Describe how you would adapt these strategies to your local community.
+  - Identify potential barriers to implementing these strategies and propose solutions.
+  - Create a checklist of actions to take before, during, and after a hurricane.
+  - Draft a communication plan to inform your community about hurricane preparedness.
+  teach_forward_kit:
+    three_minute_version: The Community Hurricane Preparedness Training equips emergency
+      managers with essential strategies to protect communities from hurricanes. Available
+      on CD-ROM and online, it covers comprehensive preparedness plans tailored to
+      local needs.
+    ten_minute_outline:
+    - Introduction to hurricane preparedness
+    - Overview of the training course
+    - Accessing and enrolling in the course
+    - Key modules and learning outcomes
+    - Adapting strategies to local contexts
+    - Implementing preparedness plans
+    - Encouraging community participation
+    discussion_prompts:
+    - Why is hurricane preparedness crucial for community safety?
+    - How can emergency managers effectively engage their communities in preparedness
+      efforts?
+    - What challenges might arise in adapting preparedness strategies to local contexts?
+    - How can technology be leveraged to enhance hurricane preparedness training?

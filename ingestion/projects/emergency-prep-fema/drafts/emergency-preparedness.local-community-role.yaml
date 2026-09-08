@@ -1,0 +1,155 @@
+id: emergency-preparedness.local-community-role
+slug: emergency-preparedness.local-community-role
+seed_type: extracted
+co_type: concept_note
+canonical_title: The Role of Local Communities in Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Local communities play a crucial role in emergency management by identifying
+  hazards, planning, and coordinating resources.
+summary_medium: Local communities are responsible for identifying hazards, enforcing
+  codes, coordinating emergency plans, and managing resources to ensure effective
+  emergency response and recovery.
+plain_language: Local communities are essential in managing emergencies. They identify
+  risks, plan responses, and coordinate resources to protect citizens during disasters.
+markdown_body: '### What this is
+
+  This concept note explains the responsibilities of local communities in emergency
+  preparedness and management. It highlights the critical role local officials and
+  volunteers play in ensuring community safety during emergencies.
+
+
+  ### Why it matters
+
+  Local communities are often the first responders in emergencies. Their ability to
+  identify hazards, enforce safety codes, and coordinate plans directly impacts the
+  effectiveness of emergency responses and the safety of citizens.
+
+
+  ### What you need
+
+  Understanding of local hazards, emergency planning skills, and knowledge of available
+  community resources.
+
+
+  ### How to do it
+
+  Local officials should identify potential hazards, enforce building and safety codes,
+  coordinate emergency plans, establish warning systems, and stock emergency supplies.
+  They should also assess damage and coordinate recovery efforts.
+
+
+  ### Common failure modes
+
+  Insufficient resources, poor coordination, and lack of hazard identification can
+  lead to ineffective emergency responses.
+
+
+  ### Safety/boundary notes
+
+  Ensure all emergency plans comply with local, state, and federal regulations to
+  maintain safety and effectiveness.
+
+
+  ### Local adaptation notes
+
+  Adapt emergency plans based on local hazard assessments and available community
+  resources.'
+structured_data:
+  definition: Local communities are responsible for managing emergencies by identifying
+    hazards, planning responses, and coordinating resources.
+  key_questions:
+  - What are the primary hazards in the local area?
+  - How can local resources be best utilized during an emergency?
+  - What are the roles of local officials and volunteers in emergency management?
+  misconceptions:
+  - Emergency management is solely the responsibility of the federal government.
+  - Local communities do not need to prepare if state or federal assistance is available.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.local-community-role
+  claim_id: clm_001
+  claim_text: Local communities are often the first responders in emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Most emergencies are handled at the local level, which puts a tremendous
+      responsibility on the community for taking care of its citizens.
+    start_char: 367
+    end_char: 467
+    support_strength: strong
+- object_id: emergency-preparedness.local-community-role
+  claim_id: clm_002
+  claim_text: Their ability to identify hazards, enforce safety codes, and coordinate
+    plans directly impacts the effectiveness of emergency responses and the safety
+    of citizens.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: 'Among the responsibilities faced by local officials are: Identifying
+      hazards and assessing potential risk to the community. Enforcing building codes,
+      zoning ordinances, and land-use management programs. Coordinating emergency
+      plans to ensure a quick and effective response.'
+    start_char: 468
+    end_char: 746
+    support_strength: strong
+- object_id: emergency-preparedness.local-community-role
+  claim_id: clm_003
+  claim_text: Local officials should identify potential hazards, enforce building
+    and safety codes, coordinate emergency plans, establish warning systems, and stock
+    emergency supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: 'Among the responsibilities faced by local officials are: Identifying
+      hazards and assessing potential risk to the community. Enforcing building codes,
+      zoning ordinances, and land-use management programs. Coordinating emergency
+      plans to ensure a quick and effective response. Establishing warning systems.
+      Stocking emergency supplies and equipment.'
+    start_char: 468
+    end_char: 846
+    support_strength: strong
+- object_id: emergency-preparedness.local-community-role
+  claim_id: clm_004
+  claim_text: They should also assess damage and coordinate recovery efforts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Assessing damage and identifying needs. Aiding recovery efforts.
+    start_char: 847
+    end_char: 895
+    support_strength: strong
+- object_id: emergency-preparedness.local-community-role
+  claim_id: clm_005
+  claim_text: Insufficient resources, poor coordination, and lack of hazard identification
+    can lead to ineffective emergency responses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: If support and resources are needed beyond what the local level can provide,
+      the community can request assistance from the state.
+    start_char: 896
+    end_char: 1003
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000012

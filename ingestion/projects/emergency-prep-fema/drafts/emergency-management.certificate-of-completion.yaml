@@ -1,0 +1,319 @@
+id: emergency-management.certificate-of-completion
+slug: emergency-management.certificate-of-completion
+seed_type: assessment
+co_type: skill_guide
+canonical_title: Certificate of Completion for 'Are You Ready?' Guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: low
+summary_short: Earn a certificate by completing the 'Are You Ready?' guide and passing
+  a final exam.
+summary_medium: Learn how to obtain a certificate of completion for the 'Are You Ready?'
+  guide by scoring at least 75% on the final examination. This involves accessing
+  the FEMA training website and completing the exam.
+plain_language: To get a certificate for the 'Are You Ready?' guide, you need to pass
+  a final exam with at least 75%. You can take the exam online through the FEMA training
+  website. If you pass, you'll receive your certificate in about two weeks.
+markdown_body: '### What this is
+
+  This is a guide to obtaining a certificate of completion for the ''Are You Ready?''
+  guide, which involves passing a final examination.
+
+
+  ### Why it matters
+
+  The certificate demonstrates your understanding and preparedness in emergency management,
+  which can be beneficial for personal knowledge or professional development.
+
+
+  ### What you need
+
+  You need internet access to log on to the FEMA training website and complete the
+  final examination.
+
+
+  ### How to do it
+
+  1. Log on to the FEMA training website at training.fema.gov/emiweb/ishome.htm.
+
+  2. Follow the links to the ''Are You Ready? An In-depth Guide to Citizen Preparedness
+  IS-22'' exam.
+
+  3. Complete the exam and ensure you score at least 75%.
+
+  4. If successful, expect to receive your certificate within two weeks.
+
+
+  ### Common failure modes
+
+  Not achieving a 75% score on the exam or encountering technical issues with the
+  website.
+
+
+  ### Safety/boundary notes
+
+  Ensure you have a stable internet connection to avoid disruptions during the exam.
+
+
+  ### Local adaptation notes
+
+  Contact the FEMA Independent Study Program for any region-specific queries or assistance.'
+structured_data:
+  tools:
+  - Internet access
+  - FEMA training website
+  materials: []
+  success_criteria:
+  - Score at least 75% on the final examination
+  failure_modes:
+  - Not achieving 75% score
+  - Technical issues with website
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: Complete the final exam online and score at least 75%.
+    tools:
+    - Internet access
+    - FEMA training website
+    materials: []
+    expected_time: Varies depending on preparation
+    expected_cost: None
+    success_checks:
+    - Receive a certificate within two weeks after passing
+    stop_conditions:
+    - Unable to access the website
+    - Technical issues during the exam
+    common_mistakes:
+    - Not preparing adequately for the exam
+    - Technical issues
+    variants: []
+    when_to_escalate:
+    - Persistent technical issues
+    - Unable to access the exam
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_001
+  claim_text: This is a guide to obtaining a certificate of completion for the 'Are
+    You Ready?' guide, which involves passing a final examination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: As an option, credit can be provided to those who successfully complete
+      the entire guide and score at least 75 percent on a final examination.
+    start_char: 0
+    end_char: 133
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_002
+  claim_text: The certificate demonstrates your understanding and preparedness in
+    emergency management, which can be beneficial for personal knowledge or professional
+    development.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: Those who pass the examination can expect to receive a certificate of
+      completion within two weeks from the date the examination is received at FEMA.
+    start_char: 134
+    end_char: 263
+    support_strength: medium
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_003
+  claim_text: You need internet access to log on to the FEMA training website and
+    complete the final examination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: To take the final examination, log on to training.fema.gov/emiweb/ishome.htm
+      and follow the links for Are You Ready? An In-depth Guide to Citizen Preparedness
+      IS-22.
+    start_char: 134
+    end_char: 263
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_004
+  claim_text: Log on to the FEMA training website at training.fema.gov/emiweb/ishome.htm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: To take the final examination, log on to training.fema.gov/emiweb/ishome.htm
+      and follow the links for Are You Ready? An In-depth Guide to Citizen Preparedness
+      IS-22.
+    start_char: 134
+    end_char: 263
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_005
+  claim_text: Follow the links to the 'Are You Ready? An In-depth Guide to Citizen
+    Preparedness IS-22' exam.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: To take the final examination, log on to training.fema.gov/emiweb/ishome.htm
+      and follow the links for Are You Ready? An In-depth Guide to Citizen Preparedness
+      IS-22.
+    start_char: 134
+    end_char: 263
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_006
+  claim_text: Complete the exam and ensure you score at least 75%.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: As an option, credit can be provided to those who successfully complete
+      the entire guide and score at least 75 percent on a final examination.
+    start_char: 0
+    end_char: 133
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_007
+  claim_text: If successful, expect to receive your certificate within two weeks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: Those who pass the examination can expect to receive a certificate of
+      completion within two weeks from the date the examination is received at FEMA.
+    start_char: 134
+    end_char: 263
+    support_strength: strong
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_008
+  claim_text: Not achieving a 75% score on the exam or encountering technical issues
+    with the website.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: As an option, credit can be provided to those who successfully complete
+      the entire guide and score at least 75 percent on a final examination.
+    start_char: 0
+    end_char: 133
+    support_strength: medium
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_009
+  claim_text: Ensure you have a stable internet connection to avoid disruptions during
+    the exam.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: To take the final examination, log on to training.fema.gov/emiweb/ishome.htm
+      and follow the links for Are You Ready? An In-depth Guide to Citizen Preparedness
+      IS-22.
+    start_char: 134
+    end_char: 263
+    support_strength: medium
+- object_id: emergency-management.certificate-of-completion
+  claim_id: clm_010
+  claim_text: Contact the FEMA Independent Study Program for any region-specific queries
+    or assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000005
+    excerpt: 'Questions about this option should be directed to the FEMA Independent
+      Study Program by calling 1-800-238-2258 and asking for the Independent Study
+      Office or writing to: FEMA Independent Study Program Emergency Management Institute
+      16825 South Seton Avenue Emmitsburg, MD 21727'
+    start_char: 264
+    end_char: 498
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000005
+bundle_overrides:
+  hook: Earn a certificate that showcases your emergency management skills by passing
+    the 'Are You Ready?' final exam.
+  primer: The 'Are You Ready?' guide is a comprehensive resource designed to enhance
+    your understanding of emergency management. By completing this guide and passing
+    a final examination, you can earn a certificate of completion. This certificate
+    serves as a testament to your preparedness and knowledge in handling emergencies,
+    which can be valuable for both personal growth and professional development. To
+    obtain this certificate, you need to score at least 75% on the final exam, which
+    is accessible online through the FEMA training website. Successfully passing the
+    exam not only demonstrates your competence but also provides you with formal recognition
+    from FEMA, which can be beneficial in various professional contexts.
+  guide: 'To obtain your certificate of completion for the ''Are You Ready?'' guide,
+    follow these steps:
+
+
+    1. **Prepare for the Exam**: Thoroughly review the ''Are You Ready?'' guide to
+    ensure you understand the material. This will help you achieve the required score
+    of at least 75% on the final exam.
+
+
+    2. **Access the FEMA Training Website**: Ensure you have a stable internet connection
+    and log on to the FEMA training website at `training.fema.gov/emiweb/ishome.htm`.
+
+
+    3. **Navigate to the Exam**: Once on the website, follow the links to the ''Are
+    You Ready? An In-depth Guide to Citizen Preparedness IS-22'' exam.
+
+
+    4. **Complete the Exam**: Carefully answer all the questions in the exam. Make
+    sure to double-check your answers before submitting.
+
+
+    5. **Submit Your Exam**: After completing the exam, submit it for evaluation.
+    Ensure you have scored at least 75% to qualify for the certificate.
+
+
+    6. **Receive Your Certificate**: If you pass the exam, expect to receive your
+    certificate of completion within two weeks from the date of submission. This certificate
+    will be sent to you by FEMA, acknowledging your successful completion of the guide.'
+  reference:
+  - Log on to training.fema.gov/emiweb/ishome.htm
+  - Follow the links for 'Are You Ready? IS-22' exam
+  - Score at least 75% on the final exam
+  - Receive certificate within two weeks if successful
+  - Contact FEMA Independent Study Program for assistance
+  worksheet:
+  - Review the 'Are You Ready?' guide thoroughly.
+  - List three key concepts you learned from the guide.
+  - Practice answering sample questions related to emergency management.
+  - Simulate taking the exam by timing yourself and answering practice questions.
+  - Ensure your internet connection is stable before starting the exam.
+  teach_forward_kit:
+    three_minute_version: To earn a certificate for the 'Are You Ready?' guide, study
+      the material thoroughly, then take and pass the online exam with at least a
+      75% score. Access the exam via the FEMA training website, and expect your certificate
+      within two weeks if you pass.
+    ten_minute_outline:
+    - Introduction to the 'Are You Ready?' guide and its importance
+    - Steps to access and navigate the FEMA training website
+    - Tips for preparing for the final exam
+    - Details on the exam format and scoring requirements
+    - Process for receiving the certificate after passing
+    - Resources for additional support and contact information
+    discussion_prompts:
+    - Why is it important to have a certificate in emergency management?
+    - What challenges might you face when preparing for the exam?
+    - How can this certification benefit your professional development?
+    - Discuss the importance of having a stable internet connection during online
+      exams.
+    - What strategies can help ensure a successful exam outcome?

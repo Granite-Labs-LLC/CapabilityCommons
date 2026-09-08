@@ -1,0 +1,192 @@
+id: preparedness.recovering-from-disaster
+slug: preparedness.recovering-from-disaster
+seed_type: module
+co_type: skill_guide
+canonical_title: Recovering from Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidance on recovering from disasters.
+summary_medium: This module provides guidance on recovering from disasters, including
+  steps to take immediately after an event and longer-term recovery strategies.
+plain_language: Learn how to effectively recover from disasters with immediate and
+  long-term strategies.
+markdown_body: "# What this is\nThis module offers a comprehensive guide to recovering\
+  \ from disasters, focusing on both immediate actions and long-term recovery strategies.\n\
+  \n# Why it matters\nUnderstanding how to recover from disasters is crucial for minimizing\
+  \ long-term impacts on individuals and communities, ensuring safety, and restoring\
+  \ normalcy.\n\n# What you need\nAwareness of local resources, a recovery plan, and\
+  \ access to support services.\n\n# How to do it\n1. Assess immediate needs and ensure\
+  \ safety. \n2. Contact local authorities for assistance. \n3. Document damages for\
+  \ insurance claims. \n4. Access community resources for recovery support. \n5. Develop\
+  \ a long-term recovery plan.\n\n# Common failure modes\nFailing to document damages,\
+  \ not seeking available resources, and neglecting mental health during recovery.\n\
+  \n# Safety/boundary notes\nEnsure personal safety before beginning recovery efforts.\
+  \ Follow local authority guidance.\n\n# Local adaptation notes\nAdapt recovery strategies\
+  \ based on local resources and community support systems."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Immediate safety is ensured.
+  - Damages are documented for claims.
+  - Access to necessary resources is secured.
+  - A long-term recovery plan is established.
+  failure_modes:
+  - Inadequate documentation of damages.
+  - Delayed access to recovery resources.
+  safety_boundary:
+  - Ensure personal safety before starting recovery.
+  - Follow local authority guidance.
+  implementation:
+    smallest_viable_version: Ensure immediate safety and document damages.
+    tools: []
+    materials: []
+    expected_time: Varies based on disaster scale.
+    expected_cost: Varies based on resources needed.
+    success_checks:
+    - Immediate safety is ensured.
+    - Damages are documented.
+    stop_conditions:
+    - Personal safety is compromised.
+    - Lack of access to necessary resources.
+    common_mistakes:
+    - Neglecting mental health during recovery.
+    - Failing to document damages.
+    variants:
+    - label: Urban
+      when: In densely populated areas.
+      notes: Focus on accessing community resources.
+    - label: Off-grid
+      when: In remote areas.
+      notes: Emphasize self-reliance and local support.
+    when_to_escalate:
+    - Severe damage beyond personal capacity.
+    - Lack of access to essential resources.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.recovering-from-disaster
+  claim_id: clm_001
+  claim_text: This module offers a comprehensive guide to recovering from disasters,
+    focusing on both immediate actions and long-term recovery strategies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Part 5 Recovering from Disaster
+    start_char: 0
+    end_char: 30
+    support_strength: weak
+- object_id: preparedness.recovering-from-disaster
+  claim_id: clm_002
+  claim_text: Understanding how to recover from disasters is crucial for minimizing
+    long-term impacts on individuals and communities, ensuring safety, and restoring
+    normalcy.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: preparedness.recovering-from-disaster
+  claim_id: clm_003
+  claim_text: Awareness of local resources, a recovery plan, and access to support
+    services.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: Citizen Corps provides opportunities for people across the country to
+      participate in a range of measures to make their families, their homes, and
+      their communities safer from the threats of crime, terrorism, public health
+      issues, and disasters of all kinds.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: preparedness.recovering-from-disaster
+  claim_id: clm_004
+  claim_text: Ensure personal safety before beginning recovery efforts. Follow local
+    authority guidance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Local responders may not be able to reach you immediately, or they may
+      need to focus their efforts elsewhere.
+    start_char: 200
+    end_char: 300
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000007
+bundle_overrides:
+  hook: Understanding how to recover from disasters is essential for minimizing long-term
+    impacts and restoring normalcy in communities.
+  primer: Disasters, whether natural or man-made, can have devastating effects on
+    individuals and communities. Recovering from such events involves both immediate
+    actions and long-term strategies to ensure safety and return to normal life. Immediate
+    actions include assessing personal safety, contacting local authorities, and documenting
+    damages for insurance claims. Long-term recovery involves accessing community
+    resources, developing a recovery plan, and addressing mental health needs. Awareness
+    of local resources and support services is crucial in this process. By preparing
+    and understanding recovery strategies, individuals can reduce fear, anxiety, and
+    losses associated with disasters.
+  guide: "1. **Ensure Immediate Safety**: Before beginning any recovery efforts, make\
+    \ sure you and your family are safe. Follow guidance from local authorities and\
+    \ stay informed about any ongoing risks. \n\n2. **Contact Local Authorities**:\
+    \ Reach out to local emergency services for assistance and updates. They can provide\
+    \ crucial information and support during the recovery process. \n\n3. **Document\
+    \ Damages**: Take photos and notes of any damages to your property. This documentation\
+    \ is essential for insurance claims and assessing the extent of recovery needed.\
+    \ \n\n4. **Access Community Resources**: Utilize local resources such as shelters,\
+    \ food banks, and community support services. These resources can provide immediate\
+    \ relief and support. \n\n5. **Develop a Long-term Recovery Plan**: Create a plan\
+    \ that outlines steps for rebuilding and returning to normal life. This plan should\
+    \ include financial considerations, mental health support, and community engagement.\
+    \ \n\n6. **Address Mental Health**: Disasters can have a significant impact on\
+    \ mental health. Seek support from mental health professionals or community groups\
+    \ to help cope with stress and trauma."
+  reference:
+  - Ensure personal safety before starting recovery.
+  - Contact local authorities for assistance.
+  - Document damages for insurance claims.
+  - Access community resources for support.
+  - Develop a long-term recovery plan.
+  - Address mental health needs.
+  worksheet:
+  - List three immediate actions you should take after a disaster.
+  - Identify local resources available in your community for disaster recovery.
+  - Create a checklist for documenting damages to your property.
+  - Outline a basic long-term recovery plan for your household.
+  - Discuss the importance of mental health support during recovery.
+  teach_forward_kit:
+    three_minute_version: Recovering from disasters involves ensuring immediate safety,
+      documenting damages, accessing local resources, and developing a long-term recovery
+      plan. It's crucial to follow local authority guidance and address mental health
+      needs.
+    ten_minute_outline:
+    - Introduction to disaster recovery
+    - Immediate actions post-disaster
+    - Importance of documentation
+    - Utilizing community resources
+    - Developing a long-term recovery plan
+    - Mental health considerations
+    discussion_prompts:
+    - Why is it important to document damages immediately after a disaster?
+    - How can community resources aid in disaster recovery?
+    - What are some challenges you might face in developing a long-term recovery plan?
+    - Discuss the role of mental health support in disaster recovery.

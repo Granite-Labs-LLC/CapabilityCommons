@@ -1,0 +1,303 @@
+id: emergency.extreme-heat-preparedness
+slug: emergency.extreme-heat-preparedness
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Extreme Heat Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: moderate
+summary_short: Prepare for extreme heat by installing air conditioners and using window
+  reflectors.
+summary_medium: Guidelines for preparing for extreme heat include installing air conditioners,
+  using window reflectors, and weather-stripping to maintain a cool environment.
+plain_language: Learn how to prepare your home for extreme heat by installing air
+  conditioners, using window reflectors, and ensuring proper insulation.
+markdown_body: '### What this is
+
+  This guide provides steps to prepare your home and yourself for extreme heat conditions,
+  ensuring safety and comfort.
+
+
+  ### Why it matters
+
+  Extreme heat can pose serious health risks, including heat exhaustion and heat stroke.
+  Preparing your home can help maintain a safe and comfortable environment during
+  heat waves.
+
+
+  ### What you need
+
+  - Air conditioners
+
+  - Aluminum foil
+
+  - Cardboard
+
+  - Weather-stripping materials
+
+  - Drapes, shades, awnings, or louvers
+
+
+  ### How to do it
+
+  1. Install window air conditioners snugly and insulate if necessary.
+
+  2. Check air-conditioning ducts for proper insulation.
+
+  3. Use aluminum foil-covered cardboard as temporary window reflectors between windows
+  and drapes.
+
+  4. Weather-strip doors and sills to keep cool air in.
+
+  5. Cover windows receiving direct sunlight with drapes, shades, or awnings to reduce
+  heat entry.
+
+
+  ### Common failure modes
+
+  Failing to properly insulate air conditioners or ducts can lead to insufficient
+  cooling. Not using window reflectors or weather-stripping can result in heat exposure.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all installations are secure and do not pose a safety hazard. Consult
+  a professional if unsure about installation procedures.
+
+
+  ### Local adaptation notes
+
+  Consider local climate variations and building regulations when implementing these
+  measures.'
+structured_data:
+  tools:
+  - Air conditioners
+  - Aluminum foil
+  - Cardboard
+  - Weather-stripping materials
+  materials:
+  - Drapes
+  - Shades
+  - Awnings
+  - Louvers
+  success_criteria:
+  - Home remains cool during extreme heat
+  - Reduced heat entry through windows
+  failure_modes:
+  - Heat exposure
+  - Insufficient cooling
+  safety_boundary: Ensure installations are secure and comply with local safety standards.
+  implementation:
+    smallest_viable_version: Install window air conditioners and use temporary window
+      reflectors.
+    tools:
+    - Air conditioners
+    - Aluminum foil
+    - Cardboard
+    materials:
+    - Weather-stripping materials
+    - Drapes
+    - Shades
+    expected_time: 1-2 days
+    expected_cost: medium
+    success_checks:
+    - Air conditioners are snugly installed
+    - Window reflectors are in place
+    stop_conditions:
+    - If installations are not secure
+    - If cooling is insufficient
+    common_mistakes:
+    - Improper insulation of air conditioners
+    - Not using reflectors
+    variants:
+    - label: Low-budget
+      when: Limited funds are available
+      notes: Focus on using aluminum foil and cardboard for reflectors.
+    - label: Urban
+      when: In a city environment
+      notes: Consider public cooling centers as an alternative.
+    when_to_escalate:
+    - If home remains uncomfortably hot
+    - If health symptoms of heat exposure occur
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_001
+  claim_text: This guide provides steps to prepare your home and yourself for extreme
+    heat conditions, ensuring safety and comfort.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: 'Before Extreme Heat To prepare for extreme heat, you should: Install
+      window air conditioners snugly; insulate if necessary. Check air-conditioning
+      ducts for proper insulation. Install temporary window reflectors (for use between
+      windows and drapes), such as aluminum foil-covered cardboard, to reflect heat
+      back outside. Weather-strip doors and sills to keep cool air in.'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_002
+  claim_text: Extreme heat can pose serious health risks, including heat exhaustion
+    and heat stroke.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: Heat Exhaustion Typically occurs when people exercise heavily or work
+      in a hot, humid place where body fluids are lost through heavy sweating.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000138
+    excerpt: Heat Stroke A life-threatening condition. The victim's temperature control
+      system, which produces sweating to cool the body, stops working.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_003
+  claim_text: Install window air conditioners snugly and insulate if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Install window air conditioners snugly; insulate if necessary.
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_004
+  claim_text: Check air-conditioning ducts for proper insulation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Check air-conditioning ducts for proper insulation.
+    start_char: 51
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_005
+  claim_text: Use aluminum foil-covered cardboard as temporary window reflectors between
+    windows and drapes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Install temporary window reflectors (for use between windows and drapes),
+      such as aluminum foil-covered cardboard, to reflect heat back outside.
+    start_char: 101
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_006
+  claim_text: Weather-strip doors and sills to keep cool air in.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Weather-strip doors and sills to keep cool air in.
+    start_char: 201
+    end_char: 250
+    support_strength: strong
+- object_id: emergency.extreme-heat-preparedness
+  claim_id: clm_007
+  claim_text: Cover windows receiving direct sunlight with drapes, shades, or awnings
+    to reduce heat entry.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 89
+    segment_id: src.fema.are-you-ready.2004::seg_000140
+    excerpt: Cover windows that receive morning or afternoon sun with drapes, shades,
+      awnings, or louvers.
+    start_char: 251
+    end_char: 350
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000140
+bundle_overrides:
+  hook: Extreme heat can pose serious health risks, but with the right preparations,
+    you can ensure your home remains a safe and comfortable haven.
+  primer: Extreme heat conditions can lead to serious health issues such as heat exhaustion
+    and heat stroke. These conditions occur when the body cannot cool itself effectively,
+    often due to high temperatures and humidity. Preparing your home for extreme heat
+    is crucial to maintaining a safe and comfortable environment. This involves installing
+    air conditioners properly, ensuring they are well-insulated, and using materials
+    like aluminum foil-covered cardboard to reflect heat away from your home. Weather-stripping
+    doors and sills helps keep cool air inside, while covering windows with drapes,
+    shades, or awnings reduces heat entry. These measures not only help in maintaining
+    a cooler indoor temperature but also reduce the risk of heat-related illnesses.
+    By taking these steps, you can protect yourself and your family during heat waves.
+  guide: '1. **Install Air Conditioners**: Ensure that window air conditioners are
+    installed snugly. Use insulation around the unit to prevent cool air from escaping
+    and hot air from entering.
+
+
+    2. **Check Insulation**: Inspect air-conditioning ducts to ensure they are properly
+    insulated. This prevents loss of cool air and improves efficiency.
+
+
+    3. **Use Window Reflectors**: Create temporary window reflectors using aluminum
+    foil-covered cardboard. Place these between windows and drapes to reflect heat
+    back outside.
+
+
+    4. **Weather-strip Doors and Sills**: Apply weather-stripping materials to doors
+    and sills. This helps keep cool air inside and prevents hot air from seeping in.
+
+
+    5. **Cover Windows**: Use drapes, shades, or awnings to cover windows that receive
+    direct sunlight. This reduces the amount of heat entering your home.
+
+
+    6. **Safety Checks**: Ensure all installations are secure and do not pose any
+    safety hazards. If unsure about any installation, consult a professional.'
+  reference:
+  - Install window air conditioners snugly and insulate if necessary.
+  - Check air-conditioning ducts for proper insulation.
+  - Use aluminum foil-covered cardboard as temporary window reflectors.
+  - Weather-strip doors and sills to keep cool air in.
+  - Cover windows receiving direct sunlight with drapes, shades, or awnings.
+  worksheet:
+  - List the materials needed to prepare your home for extreme heat.
+  - Describe the steps to properly install and insulate a window air conditioner.
+  - Explain how to create and use window reflectors to reduce heat entry.
+  - Identify areas in your home that could benefit from weather-stripping.
+  - Plan a layout for covering windows with drapes or shades to minimize heat entry.
+  teach_forward_kit:
+    three_minute_version: Extreme heat can be dangerous, but you can prepare by installing
+      air conditioners properly, using window reflectors, and ensuring good insulation.
+      These steps help keep your home cool and safe.
+    ten_minute_outline:
+    - Introduction to the risks of extreme heat.
+    - Importance of preparing your home.
+    - Step-by-step guide to installing air conditioners and insulation.
+    - Using window reflectors and weather-stripping.
+    - Covering windows to reduce heat entry.
+    - Safety and local adaptation considerations.
+    discussion_prompts:
+    - What are the potential health risks associated with extreme heat?
+    - How can proper insulation improve the efficiency of air conditioners?
+    - What are some low-cost methods to reduce heat entry into a home?
+    - Why is it important to ensure installations are secure and safe?

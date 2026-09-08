@@ -1,0 +1,163 @@
+id: emergency.household-chemical-safety
+slug: emergency.household-chemical-safety
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Household Chemical Emergency Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidelines for responding to household chemical emergencies.
+summary_medium: Guidelines for responding to household chemical emergencies, including
+  evacuation, first aid, and contamination management.
+plain_language: Learn how to safely respond to emergencies involving household chemicals,
+  including when to evacuate and how to provide first aid.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for safely responding to emergencies involving
+  household chemicals.
+
+
+  ### Why it matters
+
+  Household chemical emergencies can pose significant risks, including fire, explosion,
+  and toxic exposure. Proper response can prevent injuries and save lives.
+
+
+  ### What you need
+
+  A cellular phone and emergency contact numbers are essential tools for managing
+  a chemical emergency.
+
+
+  ### How to do it
+
+  If there''s a risk of fire or explosion, evacuate immediately without collecting
+  items. Call the fire department from a safe location. Stay upwind to avoid toxic
+  fumes. If someone is exposed, find the chemical container for information and call
+  emergency services. Follow first aid instructions from emergency operators and do
+  not give anything by mouth unless advised by a professional.
+
+
+  ### Common failure modes
+
+  Delaying evacuation or providing incorrect first aid can worsen the situation.
+
+
+  ### Safety/boundary notes
+
+  Do not re-enter the residence until it is declared safe. Avoid giving anything by
+  mouth unless instructed by a professional.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of local emergency services and common household chemicals
+  in your area.'
+structured_data:
+  tools:
+  - cellular phone
+  - emergency contact numbers
+  materials: []
+  success_criteria:
+  - Immediate evacuation when necessary
+  - Correct first aid provided
+  failure_modes:
+  - Delayed evacuation
+  - Incorrect first aid
+  safety_boundary:
+  - Do not re-enter the residence until it is safe
+  - Do not give anything by mouth unless advised by a professional
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_001
+  claim_text: If there's a risk of fire or explosion, evacuate immediately without
+    collecting items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Get out of the residence immediately. Do not waste time collecting items
+      or calling the fi re department when you are in danger.
+    start_char: 55
+    end_char: 137
+    support_strength: strong
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_002
+  claim_text: Call the fire department from a safe location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Call the fi re department from outside (a cellular phone or a neighbor's
+      phone) once you are safely away from danger.
+    start_char: 138
+    end_char: 208
+    support_strength: strong
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_003
+  claim_text: Stay upwind to avoid toxic fumes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Stay upwind and away from the residence to avoid breathing toxic fumes.
+    start_char: 209
+    end_char: 266
+    support_strength: strong
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_004
+  claim_text: If someone is exposed, find the chemical container for information and
+    call emergency services.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Find any containers of the substance that are readily available in order
+      to provide requested information. Call emergency medical services.
+    start_char: 267
+    end_char: 366
+    support_strength: strong
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_005
+  claim_text: Follow first aid instructions from emergency operators and do not give
+    anything by mouth unless advised by a professional.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Follow the emergency operator or dispatcher's fi rst aid instructions
+      carefully. The fi rst aid advice found on containers may be out of date or inappropriate.
+      Do not give anything by mouth unless advised to do so by a medical professional.
+    start_char: 367
+    end_char: 523
+    support_strength: strong
+- object_id: emergency.household-chemical-safety
+  claim_id: clm_006
+  claim_text: Do not re-enter the residence until it is declared safe.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Get out of the residence immediately. Do not waste time collecting items
+      or calling the fi re department when you are in danger.
+    start_char: 55
+    end_char: 137
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000213

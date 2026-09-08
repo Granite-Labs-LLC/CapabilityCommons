@@ -1,0 +1,121 @@
+id: emergency.disaster-assistance
+slug: emergency.disaster-assistance
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Seeking Disaster Assistance
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Guidance on seeking disaster assistance from organizations and federal
+  programs.
+summary_medium: Learn how to seek disaster assistance from organizations like the
+  American Red Cross and federal programs available after a major disaster declaration.
+plain_language: This guide helps you understand how to get help after a disaster,
+  including from local organizations and federal programs.
+markdown_body: '# What this is
+
+  This reference sheet provides information on how to seek assistance after a disaster,
+  including direct help from organizations and federal aid available after a major
+  disaster declaration.
+
+
+  # Why it matters
+
+  After a disaster, knowing where and how to get assistance is crucial for recovery.
+  This guide helps you navigate the available resources.
+
+
+  # What you need
+
+  Access to local media for updates and information on assistance programs.
+
+
+  # How to do it
+
+  Monitor local media for information on emergency housing, food, first aid, clothing,
+  and financial assistance. Direct assistance may be available from organizations
+  like the American Red Cross and Salvation Army. Federal assistance is available
+  after a major disaster declaration, which includes temporary housing, counseling,
+  and financial aid.
+
+
+  # Common failure modes
+
+  Lack of information on available assistance can hinder recovery efforts.
+
+
+  # Safety/boundary notes
+
+  Ensure that the sources of information are credible and verified.
+
+
+  # Local adaptation notes
+
+  The availability of local volunteer organizations may vary, so check local resources
+  for specific assistance.'
+structured_data:
+  definition: Disaster assistance refers to the help provided to individuals and families
+    affected by a disaster, including direct aid from organizations and federal programs.
+  key_questions:
+  - What types of assistance are available after a disaster?
+  - How can I apply for federal disaster assistance?
+  misconceptions:
+  - Assistance is only available from the government.
+  - All assistance is immediate and comprehensive.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.disaster-assistance
+  claim_id: clm_001
+  claim_text: Monitor local media for information on emergency housing, food, first
+    aid, clothing, and financial assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 185
+    segment_id: src.fema.are-you-ready.2004::seg_000277
+    excerpt: Throughout the recovery period, it is important to monitor local radio
+      or television reports and other media sources for information about where to
+      get emergency housing, food, fi rst aid, clothing, and fi nancial assistance.
+    start_char: 0
+    end_char: 191
+    support_strength: strong
+- object_id: emergency.disaster-assistance
+  claim_id: clm_002
+  claim_text: Direct assistance may be available from organizations like the American
+    Red Cross and Salvation Army.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 185
+    segment_id: src.fema.are-you-ready.2004::seg_000277
+    excerpt: 'Direct assistance to individuals and families may come from any number
+      of organizations, including: - American Red Cross. - Salvation Army.'
+    start_char: 193
+    end_char: 282
+    support_strength: strong
+- object_id: emergency.disaster-assistance
+  claim_id: clm_003
+  claim_text: Federal assistance is available after a major disaster declaration,
+    which includes temporary housing, counseling, and financial aid.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 185
+    segment_id: src.fema.are-you-ready.2004::seg_000277
+    excerpt: The Federal Role In the most severe disasters, the federal government
+      is also called in to help individuals and families with temporary housing, counseling
+      (for post-disaster trauma), low-interest loans and grants, and other assistance.
+    start_char: 284
+    end_char: 486
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000277

@@ -1,0 +1,157 @@
+id: insurance.flood-insurance
+slug: insurance.flood-insurance
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Flood Insurance
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: insurance
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: moderate
+summary_short: Flood insurance helps mitigate risks in flood-prone areas.
+summary_medium: Flood insurance is crucial for those living in flood-prone areas to
+  reduce the risk of flood loss and aid in recovery.
+plain_language: If you live in an area that is prone to flooding, it's a good idea
+  to buy flood insurance. This type of insurance can help cover the costs of damage
+  to your home and belongings if a flood happens.
+markdown_body: '### What this is
+
+  Flood insurance is a type of insurance policy that covers damage to buildings and
+  their contents caused by flooding.
+
+
+  ### Why it matters
+
+  Flooding can cause significant damage to homes and personal property. Having flood
+  insurance can provide financial protection and peace of mind, ensuring quicker recovery
+  after a flood event.
+
+
+  ### What you need
+
+  Consider purchasing a flood insurance policy if you live in a flood-prone area.
+  Evaluate the value of your building and contents to determine the appropriate coverage.
+
+
+  ### How to do it
+
+  Contact an insurance provider or call 1(888)FLOOD29 to learn more about available
+  flood insurance options. Assess your property and personal belongings to decide
+  on the coverage you need.
+
+
+  ### Common failure modes
+
+  Not purchasing insurance in time, underestimating the value of property, or not
+  understanding policy exclusions can lead to inadequate coverage.
+
+
+  ### Safety/boundary notes
+
+  Ensure that important documents related to your insurance policy are stored safely
+  and copies are included in your disaster supplies kit.
+
+
+  ### Local adaptation notes
+
+  Check local regulations and flood risk maps to understand specific risks and insurance
+  requirements in your area.'
+structured_data:
+  definition: Flood insurance is a policy that provides coverage for damage caused
+    by flooding.
+  key_questions:
+  - Do I live in a flood-prone area?
+  - What is the value of my property and contents?
+  - What does my flood insurance policy cover?
+  misconceptions:
+  - Standard home insurance covers flood damage.
+  - Flood insurance is only necessary for homes directly next to water bodies.
+requires: []
+suggested_edges: []
+citations:
+- object_id: insurance.flood-insurance
+  claim_id: clm_001
+  claim_text: Flood insurance is a type of insurance policy that covers damage to
+    buildings and their contents caused by flooding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: If you live in a flood-prone area, consider purchasing flood insurance
+      to reduce your risk of flood loss. Buying flood insurance to cover the value
+      of a building and its contents will not only provide greater peace of mind,
+      but will speed the recovery if a flood occurs.
+    start_char: 0
+    end_char: 246
+    support_strength: strong
+- object_id: insurance.flood-insurance
+  claim_id: clm_002
+  claim_text: Flooding can cause significant damage to homes and personal property.
+    Having flood insurance can provide financial protection and peace of mind, ensuring
+    quicker recovery after a flood event.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Buying flood insurance to cover the value of a building and its contents
+      will not only provide greater peace of mind, but will speed the recovery if
+      a flood occurs.
+    start_char: 104
+    end_char: 246
+    support_strength: strong
+- object_id: insurance.flood-insurance
+  claim_id: clm_003
+  claim_text: Consider purchasing a flood insurance policy if you live in a flood-prone
+    area. Evaluate the value of your building and contents to determine the appropriate
+    coverage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: If you live in a flood-prone area, consider purchasing flood insurance
+      to reduce your risk of flood loss. Buying flood insurance to cover the value
+      of a building and its contents...
+    start_char: 0
+    end_char: 155
+    support_strength: strong
+- object_id: insurance.flood-insurance
+  claim_id: clm_004
+  claim_text: Contact an insurance provider or call 1(888)FLOOD29 to learn more about
+    available flood insurance options. Assess your property and personal belongings
+    to decide on the coverage you need.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: You can call 1(888)FLOOD29 to learn more about flood insurance.
+    start_char: 156
+    end_char: 199
+    support_strength: strong
+- object_id: insurance.flood-insurance
+  claim_id: clm_005
+  claim_text: Ensure that important documents related to your insurance policy are
+    stored safely and copies are included in your disaster supplies kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home. Make copies of important documents for your disaster
+      supplies kit.
+    start_char: 246
+    end_char: 437
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000039

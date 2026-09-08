@@ -1,0 +1,131 @@
+id: mental-health.recognizing-disaster-stress
+slug: mental-health.recognizing-disaster-stress
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Recognizing Disaster-Related Stress
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: mental_health
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Identify signs of stress in adults after a disaster.
+summary_medium: A reference sheet listing signs of disaster-related stress in adults,
+  indicating when crisis counseling or stress management might be needed.
+plain_language: This guide helps you recognize signs of stress in adults after experiencing
+  a disaster and suggests when to seek professional help.
+markdown_body: '# What this is
+
+  This reference sheet helps identify signs of stress in adults following a disaster
+  and provides guidance on when to seek professional help.
+
+
+  # Why it matters
+
+  Disasters can have a profound emotional impact, sometimes more severe than physical
+  or financial losses. Recognizing stress signs is crucial for timely intervention
+  and recovery.
+
+
+  # What you need
+
+  Awareness of stress signs and access to community resources or professional counseling
+  services.
+
+
+  # How to do it
+
+  Look for signs such as difficulty communicating, sleeping, or maintaining balance
+  in life. Notice increased substance use, poor work performance, or physical symptoms
+  like headaches. Seek help if these signs are present.
+
+
+  # Common failure modes
+
+  Misinterpreting stress signs or delaying seeking help.
+
+
+  # Safety/boundary notes
+
+  Ensure to seek professional help if stress signs are severe or persistent.
+
+
+  # Local adaptation notes
+
+  Contact local organizations for available resources and support specific to your
+  area.'
+structured_data:
+  definition: Disaster-related stress refers to the emotional and psychological strain
+    experienced after a disaster.
+  key_questions:
+  - What are common signs of disaster-related stress?
+  - When should professional help be sought?
+  misconceptions:
+  - Assuming stress signs will resolve on their own without intervention.
+requires: []
+suggested_edges: []
+citations:
+- object_id: mental-health.recognizing-disaster-stress
+  claim_id: clm_001
+  claim_text: Disasters can have a profound emotional impact, sometimes more severe
+    than physical or financial losses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: The emotional toll that disaster brings can sometimes be even more devastating
+      than the fi nancial strains of damage and loss of home, business, or personal
+      property.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: mental-health.recognizing-disaster-stress
+  claim_id: clm_002
+  claim_text: Look for signs such as difficulty communicating, sleeping, or maintaining
+    balance in life. Notice increased substance use, poor work performance, or physical
+    symptoms like headaches.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: 'When adults have the following signs, they might need crisis co Related
+      Stress unseling or stress management assistance: - Diffi culty communicating
+      thoughts. - Diffi culty sleeping. - Diffi culty maintaining balance in their
+      lives. - Increased use of drugs/alcohol. - Poor work performance. - Headaches/stomach
+      problems.'
+    start_char: 430
+    end_char: 670
+    support_strength: strong
+- object_id: mental-health.recognizing-disaster-stress
+  claim_id: clm_003
+  claim_text: Seek help if these signs are present.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Seek help from professional counselors who deal with post-disaster stress.
+    start_char: 1000
+    end_char: 1050
+    support_strength: strong
+- object_id: mental-health.recognizing-disaster-stress
+  claim_id: clm_004
+  claim_text: Ensure to seek professional help if stress signs are severe or persistent.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Seek help from professional counselors who deal with post-disaster stress.
+    start_char: 1000
+    end_char: 1050
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000278

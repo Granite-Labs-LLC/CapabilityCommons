@@ -1,0 +1,104 @@
+id: disaster-preparedness.coloring-book
+slug: disaster-preparedness.coloring-book
+seed_type: extracted
+co_type: concept_note
+canonical_title: Disaster Preparedness Coloring Book
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-preparedness
+secondary_domains: []
+stage: foundation
+contexts:
+- children
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A coloring book for children ages 3-10 about disaster preparedness.
+summary_medium: This coloring book is designed to educate children ages 3-10 on disaster
+  preparedness through engaging activities.
+plain_language: The Disaster Preparedness Coloring Book is a fun and educational tool
+  for young children to learn about how to prepare for disasters.
+markdown_body: '### What this is
+
+  The Disaster Preparedness Coloring Book is a resource created by FEMA for children
+  aged 3-10. It uses coloring activities to teach kids about the basics of disaster
+  preparedness.
+
+
+  ### Why it matters
+
+  Educating children about disaster preparedness is crucial as it helps them understand
+  what to do in emergencies. This coloring book makes learning about safety engaging
+  and accessible for young minds.
+
+
+  ### What you need
+
+  You will need the Disaster Preparedness Coloring Book and coloring supplies such
+  as crayons or colored pencils.
+
+
+  ### How to do it
+
+  Provide the coloring book to children and encourage them to complete the activities.
+  Discuss the scenarios and safety tips presented in the book to reinforce learning.
+
+
+  ### Common failure modes
+
+  Children may lose interest if the activities are not engaging enough or if the content
+  is not age-appropriate.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the activities are supervised to provide guidance and answer any questions
+  children might have.
+
+
+  ### Local adaptation notes
+
+  The coloring book is available in Spanish, making it accessible to a wider audience.'
+structured_data:
+  definition: A tool to educate children on disaster preparedness through coloring
+    activities.
+  key_questions:
+  - How can we make learning about disasters engaging for children?
+  - What basic safety tips should children know?
+  misconceptions:
+  - Children might think disasters are not serious if presented only as fun activities.
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-preparedness.coloring-book
+  claim_id: clm_001
+  claim_text: The Disaster Preparedness Coloring Book is a resource created by FEMA
+    for children aged 3-10.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000064
+    excerpt: FEMA Publications *Disaster Preparedness Coloring Book*. FEMA-243. Coloring
+      book for ages 3-10. Also available in Spanish.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: disaster-preparedness.coloring-book
+  claim_id: clm_002
+  claim_text: The coloring book is available in Spanish, making it accessible to a
+    wider audience.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000064
+    excerpt: FEMA Publications *Disaster Preparedness Coloring Book*. FEMA-243. Coloring
+      book for ages 3-10. Also available in Spanish.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000064

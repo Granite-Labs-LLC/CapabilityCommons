@@ -1,0 +1,233 @@
+id: fire-safety.matches-smoking
+slug: fire-safety.matches-smoking
+seed_type: extracted
+co_type: skill_guide
+canonical_title: 'Fire Safety: Matches and Smoking'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Precautions for handling matches and smoking materials to prevent fires.
+summary_medium: Learn how to safely handle matches and smoking materials to prevent
+  fire hazards.
+plain_language: This guide helps you understand how to safely store matches and use
+  smoking materials to prevent fires.
+markdown_body: '### What this is
+
+  This guide provides safety precautions for handling matches and smoking materials
+  to prevent fires.
+
+
+  ### Why it matters
+
+  Improper handling of matches and smoking materials can lead to accidental fires,
+  posing a risk to life and property.
+
+
+  ### What you need
+
+  A locked cabinet for storing matches and lighters, and deep, sturdy ashtrays for
+  smokers.
+
+
+  ### How to do it
+
+  Store matches and lighters in a locked cabinet, out of reach of children. Never
+  smoke in bed or when you are drowsy or medicated. Use deep, sturdy ashtrays and
+  ensure cigarette and cigar butts are doused with water before disposal.
+
+
+  ### Common failure modes
+
+  Leaving smoking materials unattended or storing matches where children can access
+  them.
+
+
+  ### Safety/boundary notes
+
+  Ensure all smoking materials are fully extinguished before disposal to prevent accidental
+  fires.
+
+
+  ### Local adaptation notes
+
+  Consider local regulations and cultural practices regarding smoking and fire safety.'
+structured_data:
+  tools:
+  - locked cabinet
+  - sturdy ashtrays
+  materials: []
+  success_criteria:
+  - Matches and lighters are stored safely
+  - Smoking materials are disposed of properly
+  failure_modes:
+  - Unattended smoking materials
+  - Accessible matches
+  safety_boundary: Ensure smoking materials are fully extinguished before disposal.
+  implementation:
+    smallest_viable_version: Store matches and lighters in a locked cabinet and use
+      sturdy ashtrays.
+    tools:
+    - locked cabinet
+    - sturdy ashtrays
+    materials: []
+    expected_time: 10 minutes
+    expected_cost: low
+    success_checks:
+    - Matches and lighters are inaccessible to children
+    - Smoking materials are properly extinguished
+    stop_conditions:
+    - If matches or lighters are accessible
+    - If smoking materials are not extinguished
+    common_mistakes:
+    - Leaving smoking materials unattended
+    - Not using a sturdy ashtray
+    variants:
+    - label: Urban
+      when: In apartments with limited space
+      notes: Ensure ashtrays are placed on non-flammable surfaces.
+    when_to_escalate:
+    - If a fire occurs
+    - If matches or lighters are repeatedly found accessible
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.matches-smoking
+  claim_id: clm_001
+  claim_text: Store matches and lighters in a locked cabinet, out of reach of children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000185
+    excerpt: Keep matches and lighters up high, away from children, and, if possible,
+      in a locked cabinet.
+    start_char: 0
+    end_char: 84
+    support_strength: strong
+- object_id: fire-safety.matches-smoking
+  claim_id: clm_002
+  claim_text: Never smoke in bed or when you are drowsy or medicated.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000185
+    excerpt: Never smoke in bed or when drowsy or medicated.
+    start_char: 86
+    end_char: 126
+    support_strength: strong
+- object_id: fire-safety.matches-smoking
+  claim_id: clm_003
+  claim_text: Use deep, sturdy ashtrays and ensure cigarette and cigar butts are doused
+    with water before disposal.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000185
+    excerpt: Provide smokers with deep, sturdy ashtrays. Douse cigarette and cigar
+      butts with water before disposal.
+    start_char: 128
+    end_char: 203
+    support_strength: strong
+- object_id: fire-safety.matches-smoking
+  claim_id: clm_004
+  claim_text: Leaving smoking materials unattended or storing matches where children
+    can access them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000185
+    excerpt: Keep matches and lighters up high, away from children, and, if possible,
+      in a locked cabinet.
+    start_char: 0
+    end_char: 84
+    support_strength: medium
+- object_id: fire-safety.matches-smoking
+  claim_id: clm_005
+  claim_text: Ensure all smoking materials are fully extinguished before disposal
+    to prevent accidental fires.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000185
+    excerpt: Douse cigarette and cigar butts with water before disposal.
+    start_char: 171
+    end_char: 203
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000185
+bundle_overrides:
+  hook: Preventing accidental fires starts with safe handling of matches and smoking
+    materials—protect your home and loved ones.
+  primer: Fire safety is crucial in every household, especially when it comes to handling
+    matches and smoking materials. Matches and lighters, if not stored properly, can
+    easily fall into the hands of children, leading to dangerous situations. Similarly,
+    careless smoking habits, such as smoking in bed or when drowsy, can result in
+    accidental fires. To mitigate these risks, it's important to store matches and
+    lighters in a locked cabinet, out of children's reach. Smokers should use deep,
+    sturdy ashtrays and ensure that cigarette and cigar butts are fully extinguished
+    with water before disposal. By following these simple precautions, you can significantly
+    reduce the risk of fire hazards in your home.
+  guide: '1. **Store Matches and Lighters Safely**: Always keep matches and lighters
+    in a locked cabinet, away from the reach of children. This prevents accidental
+    access and potential misuse.
+
+
+    2. **Avoid Smoking in Risky Situations**: Never smoke in bed or when you are feeling
+    drowsy or under the influence of medication. These conditions increase the likelihood
+    of falling asleep with a lit cigarette, which can lead to fires.
+
+
+    3. **Use Proper Ashtrays**: Provide smokers with deep, sturdy ashtrays. These
+    should be placed on non-flammable surfaces to prevent any accidental fires from
+    tipping or falling ash.
+
+
+    4. **Extinguish Smoking Materials Properly**: After smoking, ensure that all cigarette
+    and cigar butts are doused with water before disposal. This ensures they are fully
+    extinguished and reduces the risk of starting a fire in the trash.
+
+
+    5. **Regularly Check for Safety**: Routinely check that matches and lighters remain
+    inaccessible to children and that all smoking materials are properly extinguished.
+    This proactive approach helps maintain a safe environment.'
+  reference:
+  - Store matches and lighters in a locked cabinet.
+  - Never smoke in bed or when drowsy.
+  - Use deep, sturdy ashtrays.
+  - Douse cigarette and cigar butts with water before disposal.
+  - Ensure smoking materials are fully extinguished.
+  worksheet:
+  - Identify a safe location in your home to store matches and lighters.
+  - List three reasons why smoking in bed is dangerous.
+  - Practice extinguishing a cigarette butt with water and observe the process.
+  - Evaluate the ashtrays in your home for sturdiness and depth.
+  - Role-play a scenario where you explain fire safety to a child.
+  teach_forward_kit:
+    three_minute_version: Store matches and lighters securely, avoid smoking in bed,
+      use sturdy ashtrays, and ensure all smoking materials are fully extinguished
+      to prevent fires.
+    ten_minute_outline:
+    - Introduction to fire risks with matches and smoking.
+    - Safe storage of matches and lighters.
+    - Risks of smoking in bed or when drowsy.
+    - Importance of using proper ashtrays.
+    - Steps to ensure smoking materials are extinguished.
+    - Review and questions.
+    discussion_prompts:
+    - Why is it important to store matches and lighters out of children's reach?
+    - What are the dangers of smoking in bed?
+    - How can using a sturdy ashtray prevent fires?
+    - What steps do you take to ensure smoking materials are fully extinguished?
+    - How can we educate others about fire safety with smoking materials?

@@ -1,0 +1,152 @@
+id: emergency.hurricane-warning
+slug: emergency.hurricane-warning
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Hurricane/Tropical Storm Warning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: moderate
+summary_short: Hurricane or tropical storm conditions expected within 24 hours.
+summary_medium: A hurricane or tropical storm warning indicates that such conditions
+  are expected in the specified area, usually within 24 hours.
+plain_language: A hurricane or tropical storm warning means that these weather conditions
+  are likely to occur in the area within 24 hours.
+markdown_body: '### What this is
+
+  A hurricane or tropical storm warning is an alert issued by weather authorities
+  indicating that hurricane or tropical storm conditions are expected in a specific
+  area, typically within 24 hours.
+
+
+  ### Why it matters
+
+  Understanding a hurricane or tropical storm warning is crucial for safety, as it
+  signals the need to complete preparations and take protective actions to safeguard
+  life and property.
+
+
+  ### What you need
+
+  Awareness of the warning and readiness to implement your emergency plan, including
+  securing your home and having supplies ready.
+
+
+  ### How to do it
+
+  Upon receiving a warning, finalize your emergency preparations, secure outdoor items,
+  and follow local evacuation orders if issued. Stay informed through official channels.
+
+
+  ### Common failure modes
+
+  Ignoring the warning, delaying preparations, or failing to follow evacuation orders
+  can lead to increased risk of harm.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety and adhere to official guidance and evacuation
+  orders.
+
+
+  ### Local adaptation notes
+
+  Adapt your response based on local infrastructure, resources, and specific guidance
+  from local authorities.'
+structured_data:
+  definition: A warning indicating expected hurricane or tropical storm conditions
+    within 24 hours.
+  key_questions:
+  - What actions should be taken when a warning is issued?
+  - How can you stay informed during a warning?
+  misconceptions:
+  - A warning means the storm will definitely hit my area.
+  - I have plenty of time to prepare after a warning is issued.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hurricane-warning
+  claim_id: clm_001
+  claim_text: A hurricane or tropical storm warning is an alert issued by weather
+    authorities indicating that hurricane or tropical storm conditions are expected
+    in a specific area, typically within 24 hours.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000099
+    excerpt: Hurricane/tropical storm conditions are expected in the specified area,
+      usually within 24 hours.
+    start_char: 0
+    end_char: 85
+    support_strength: strong
+- object_id: emergency.hurricane-warning
+  claim_id: clm_002
+  claim_text: Understanding a hurricane or tropical storm warning is crucial for safety,
+    as it signals the need to complete preparations and take protective actions to
+    safeguard life and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 70
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'During a Hurricane If a hurricane is likely in your area, you should:
+      Listen to the radio or TV for information. Secure your home, close storm shutters,
+      and secure outdoor objects or bring them indoors.'
+    start_char: 0
+    end_char: 230
+    support_strength: medium
+- object_id: emergency.hurricane-warning
+  claim_id: clm_003
+  claim_text: Upon receiving a warning, finalize your emergency preparations, secure
+    outdoor items, and follow local evacuation orders if issued. Stay informed through
+    official channels.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 70
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'During a Hurricane If a hurricane is likely in your area, you should:
+      Listen to the radio or TV for information. Secure your home, close storm shutters,
+      and secure outdoor objects or bring them indoors.'
+    start_char: 0
+    end_char: 230
+    support_strength: strong
+- object_id: emergency.hurricane-warning
+  claim_id: clm_004
+  claim_text: Ignoring the warning, delaying preparations, or failing to follow evacuation
+    orders can lead to increased risk of harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 70
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'You should evacuate under the following conditions: If you are directed
+      by local authorities to do so. Be sure to follow their instructions.'
+    start_char: 231
+    end_char: 340
+    support_strength: strong
+- object_id: emergency.hurricane-warning
+  claim_id: clm_005
+  claim_text: Always prioritize personal safety and adhere to official guidance and
+    evacuation orders.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 70
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'You should evacuate under the following conditions: If you are directed
+      by local authorities to do so. Be sure to follow their instructions.'
+    start_char: 231
+    end_char: 340
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000099

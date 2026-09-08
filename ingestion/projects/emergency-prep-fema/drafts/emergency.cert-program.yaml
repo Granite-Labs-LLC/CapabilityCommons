@@ -1,0 +1,257 @@
+id: emergency.cert-program
+slug: emergency.cert-program
+seed_type: module
+co_type: skill_guide
+canonical_title: Community Emergency Response Team (CERT) Program
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: CERT trains volunteers to assist in disasters.
+summary_medium: The CERT program trains volunteers to organize and assist in disaster
+  situations, providing immediate aid and gathering intelligence until professional
+  responders arrive.
+plain_language: CERT is a program that prepares volunteers to help their community
+  during disasters by organizing efforts, providing aid, and gathering information
+  until professional help arrives.
+markdown_body: '# What this is
+
+  The Community Emergency Response Team (CERT) program is a volunteer training initiative
+  that equips community members with the skills to assist in disaster situations.
+  It focuses on organizing volunteers, providing immediate assistance, and collecting
+  disaster intelligence.
+
+
+  # Why it matters
+
+  In the aftermath of a disaster, professional responders may be delayed due to the
+  scale of the event, communication breakdowns, or impassable roads. CERT volunteers
+  fill this gap by offering immediate support and organizing efforts until help arrives.
+
+
+  # What you need
+
+  Participants need to complete 20 hours of training covering disaster preparedness,
+  fire safety, medical operations, search and rescue, team organization, and disaster
+  psychology. Local government sponsorship is required to initiate the program.
+
+
+  # How to do it
+
+  Volunteers are trained in a classroom setting to understand local hazards and prepare
+  for them. They learn to organize themselves and others, provide basic aid, and gather
+  information to assist professional responders.
+
+
+  # Common failure modes
+
+  Challenges include lack of communication and impassable roads, which can hinder
+  volunteer efforts.
+
+
+  # Safety/boundary notes
+
+  Volunteers should operate within their training limits and follow safety protocols
+  to avoid putting themselves or others at risk.
+
+
+  # Local adaptation notes
+
+  The program should be adapted to address community-specific hazards and be sponsored
+  by local government or representatives.'
+structured_data:
+  tools:
+  - training materials
+  - disaster preparedness kits
+  materials: []
+  success_criteria:
+  - Volunteers effectively organize and assist during disasters
+  - Accurate disaster intelligence is collected
+  failure_modes:
+  - lack of communication
+  - impassable roads
+  safety_boundary: Volunteers must adhere to their training and not exceed their capabilities.
+  implementation:
+    smallest_viable_version: Complete 20 hours of CERT training to begin assisting
+      in disasters.
+    tools:
+    - training materials
+    - disaster preparedness kits
+    materials: []
+    expected_time: 20 hours
+    expected_cost: low
+    success_checks:
+    - Volunteers are able to organize and assist effectively during a disaster.
+    stop_conditions:
+    - If volunteers are unable to communicate or roads are impassable, reassess the
+      situation.
+    common_mistakes:
+    - Exceeding training limits
+    - Poor communication
+    variants:
+    - label: urban
+      when: In densely populated areas
+      notes: Focus on crowd management and urban-specific hazards.
+    - label: off-grid
+      when: In remote areas
+      notes: Emphasize self-sufficiency and communication alternatives.
+    when_to_escalate:
+    - If the situation exceeds volunteer capabilities
+    - If professional responders are delayed significantly
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.cert-program
+  claim_id: clm_001
+  claim_text: The Community Emergency Response Team (CERT) program is a volunteer
+    training initiative that equips community members with the skills to assist in
+    disaster situations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 3
+    page_end: 3
+    segment_id: src.fema.are-you-ready.2004::seg_000003
+    excerpt: The Community Emergency Response Team (CERT) program supports local response
+      capability by training volunteers to organize themselves and spontaneous volunteers
+      at the disaster site, to provide immediate assistance to victims, and to collect
+      disaster intelligence to support responders' efforts when they arrive.
+    start_char: 0
+    end_char: 285
+    support_strength: strong
+- object_id: emergency.cert-program
+  claim_id: clm_002
+  claim_text: In the aftermath of a disaster, professional responders may be delayed
+    due to the scale of the event, communication breakdowns, or impassable roads.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 3
+    page_end: 3
+    segment_id: src.fema.are-you-ready.2004::seg_000003
+    excerpt: Following a disaster, community members may be on their own for a period
+      of time because of the size of the area affected, lost communications, and impassable
+      roads.
+    start_char: 0
+    end_char: 124
+    support_strength: strong
+- object_id: emergency.cert-program
+  claim_id: clm_003
+  claim_text: Participants need to complete 20 hours of training covering disaster
+    preparedness, fire safety, medical operations, search and rescue, team organization,
+    and disaster psychology.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 3
+    page_end: 3
+    segment_id: src.fema.are-you-ready.2004::seg_000003
+    excerpt: Training consists of 20 hours of instruction on topics that include disaster
+      preparedness, fire safety, disaster medical operations, light search and rescue,
+      team organization, and disaster psychology.
+    start_char: 286
+    end_char: 456
+    support_strength: strong
+- object_id: emergency.cert-program
+  claim_id: clm_004
+  claim_text: Local government sponsorship is required to initiate the program.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 3
+    page_end: 3
+    segment_id: src.fema.are-you-ready.2004::seg_000003
+    excerpt: Local government, or one of its representatives, sponsor CERT training
+      in the community.
+    start_char: 457
+    end_char: 523
+    support_strength: strong
+- object_id: emergency.cert-program
+  claim_id: clm_005
+  claim_text: Volunteers are trained in a classroom setting to understand local hazards
+    and prepare for them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 3
+    page_end: 3
+    segment_id: src.fema.are-you-ready.2004::seg_000003
+    excerpt: In the classroom, participants learn about the hazards they face and
+      ways to prepare for them.
+    start_char: 125
+    end_char: 194
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000003
+bundle_overrides:
+  hook: In times of disaster, when professional help may be delayed, CERT volunteers
+    step up to provide immediate support and organization, ensuring community resilience.
+  primer: The Community Emergency Response Team (CERT) program is a volunteer initiative
+    designed to prepare community members to assist in disaster situations. This program
+    is crucial because, in the aftermath of a disaster, professional responders might
+    be delayed due to the scale of the event, communication breakdowns, or impassable
+    roads. CERT volunteers are trained to fill this gap by organizing themselves and
+    others, providing immediate assistance to victims, and collecting disaster intelligence
+    to support professional responders when they arrive. To become a CERT volunteer,
+    participants must complete 20 hours of training covering essential topics such
+    as disaster preparedness, fire safety, medical operations, search and rescue,
+    team organization, and disaster psychology. The program requires local government
+    sponsorship to be initiated and is conducted in a classroom setting where volunteers
+    learn about local hazards and how to prepare for them. By equipping community
+    members with these skills, the CERT program enhances local response capabilities
+    and ensures that communities are better prepared to handle emergencies.
+  guide: "To become a CERT volunteer, follow these steps: \n\n1. **Check Local Availability**:\
+    \ Contact your local emergency management office to see if a CERT program is available\
+    \ in your area. If not, inquire about the possibility of starting one with local\
+    \ government sponsorship.\n\n2. **Enroll in Training**: Sign up for the CERT training\
+    \ program, which consists of 20 hours of instruction. This training will cover\
+    \ disaster preparedness, fire safety, medical operations, light search and rescue,\
+    \ team organization, and disaster psychology.\n\n3. **Attend Classroom Sessions**:\
+    \ Participate in classroom sessions where you will learn about the specific hazards\
+    \ in your community and how to prepare for them. This will include understanding\
+    \ local risks and developing strategies to mitigate them.\n\n4. **Engage in Practical\
+    \ Exercises**: Take part in hands-on exercises that simulate disaster scenarios.\
+    \ These exercises will help you practice the skills you've learned in a controlled\
+    \ environment.\n\n5. **Complete the Training**: Successfully complete all training\
+    \ modules and exercises. This will prepare you to effectively organize and assist\
+    \ during actual disaster situations.\n\n6. **Stay Involved**: After completing\
+    \ the training, stay engaged with your local CERT group. Participate in regular\
+    \ meetings, drills, and community outreach activities to keep your skills sharp\
+    \ and stay informed about new developments in emergency response.\n\nBy following\
+    \ these steps, you will be prepared to assist your community in times of need,\
+    \ providing vital support until professional responders arrive."
+  reference:
+  - CERT program requires 20 hours of training.
+  - Training covers disaster preparedness, fire safety, medical operations, search
+    and rescue, team organization, and disaster psychology.
+  - Local government sponsorship is needed to start a CERT program.
+  - Volunteers are trained in a classroom setting.
+  - CERT volunteers provide immediate assistance and organize efforts during disasters.
+  worksheet:
+  - Identify three local hazards that CERT training would help address.
+  - List the steps you would take to organize a CERT team in your community.
+  - Describe a scenario where CERT volunteers could assist before professional responders
+    arrive.
+  - Outline a basic emergency plan for your household using CERT principles.
+  - Reflect on how CERT training could improve community resilience in your area.
+  teach_forward_kit:
+    three_minute_version: CERT is a volunteer program that trains community members
+      to assist during disasters. Volunteers complete 20 hours of training on topics
+      like disaster preparedness and medical operations. This training enables them
+      to provide immediate support and organize efforts until professional help arrives,
+      filling crucial gaps when responders are delayed.
+    ten_minute_outline:
+    - Introduction to CERT and its purpose
+    - Importance of community preparedness
+    - Overview of the 20-hour training program
+    - Role of local government in sponsoring CERT
+    - Practical applications of CERT training
+    - Encouraging community involvement and ongoing engagement
+    discussion_prompts:
+    - Why is it important for communities to have trained CERT volunteers?
+    - What challenges might CERT volunteers face during a disaster?
+    - How can local governments support the establishment of CERT programs?
+    - In what ways can CERT training be adapted to address specific community needs?
+    - Discuss the potential impact of CERT volunteers on community resilience.

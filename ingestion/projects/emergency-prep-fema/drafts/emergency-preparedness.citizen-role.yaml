@@ -1,0 +1,213 @@
+id: emergency-preparedness.citizen-role
+slug: emergency-preparedness.citizen-role
+seed_type: extracted
+co_type: concept_note
+canonical_title: The Role of Citizens in Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Understand the role of citizens in emergency preparedness and management.
+summary_medium: This concept outlines the responsibilities of citizens within the
+  national emergency management system, emphasizing individual preparedness before,
+  during, and after emergencies.
+plain_language: Learn how you, as a citizen, can prepare for emergencies by understanding
+  risks, making plans, and helping your community.
+markdown_body: '### What this is
+
+  This concept explains the role of citizens in the national emergency management
+  system, highlighting the importance of individual actions in preparing for, responding
+  to, and recovering from emergencies.
+
+
+  ### Why it matters
+
+  Citizens form the base of the emergency management pyramid, and their preparedness
+  is crucial for minimizing harm and ensuring effective response during emergencies.
+
+
+  ### What you need
+
+  Awareness of local risks, a personal emergency plan, a disaster supplies kit, and
+  knowledge of community resources.
+
+
+  ### How to do it
+
+  Before an emergency, know the risks, develop a plan, purchase necessary insurance,
+  and assemble a disaster kit. During an emergency, follow your plan and official
+  guidance. After an emergency, repair damage and take steps to prevent future losses.
+
+
+  ### Common failure modes
+
+  Failing to prepare adequately, not having a plan, or lacking necessary supplies
+  can lead to increased risk and harm during emergencies.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your actions do not put yourself or others at unnecessary risk. Follow
+  official guidance and safety protocols.
+
+
+  ### Local adaptation notes
+
+  Consider community-specific risks and volunteer opportunities to enhance local preparedness
+  efforts.'
+structured_data:
+  definition: The role of citizens in emergency preparedness involves understanding
+    risks, developing plans, assembling supplies, and participating in community efforts.
+  key_questions:
+  - What are the specific risks in my area?
+  - How can I develop an effective emergency plan?
+  - What should be included in a disaster supplies kit?
+  misconceptions:
+  - Emergency preparedness is solely the responsibility of government agencies.
+  - Having insurance is enough to be prepared for emergencies.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_001
+  claim_text: This concept explains the role of citizens in the national emergency
+    management system, highlighting the importance of individual actions in preparing
+    for, responding to, and recovering from emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Every citizen in this country is part of a national emergency management
+      system that is all about protection–protecting people and property from all
+      types of hazards. Think of the national emergency management system as a pyramid
+      with you, the citizen, forming the base of the structure.
+    start_char: 123
+    end_char: 367
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_002
+  claim_text: Citizens form the base of the emergency management pyramid, and their
+    preparedness is crucial for minimizing harm and ensuring effective response during
+    emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Think of the national emergency management system as a pyramid with you,
+      the citizen, forming the base of the structure. At this level, you have a responsibility
+      to protect yourself and your family by knowing what to do before, during, and
+      after an event.
+    start_char: 257
+    end_char: 435
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_003
+  claim_text: Awareness of local risks, a personal emergency plan, a disaster supplies
+    kit, and knowledge of community resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 10
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    excerpt: A series of worksheets to help you obtain information from the community
+      that will form the foundation of your plan. You will need to find out about
+      hazards that threaten the community, how the population will be warned, evacuation
+      routes to be used in times of disaster, and the emergency plans of the community
+      and others that will impact your plan.
+    start_char: 0
+    end_char: 351
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_004
+  claim_text: Before an emergency, know the risks, develop a plan, purchase necessary
+    insurance, and assemble a disaster kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Before Know the risks and danger signs. Purchase insurance, including
+      flood insurance, which is not part of your homeowner's policy. Develop plans
+      for what to do. Assemble a disaster supplies kit.
+    start_char: 435
+    end_char: 598
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_005
+  claim_text: During an emergency, follow your plan and official guidance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: During Put your plan into action. Help others. Follow the advice and
+      guidance of officials in charge of the event.
+    start_char: 598
+    end_char: 676
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_006
+  claim_text: After an emergency, repair damage and take steps to prevent future losses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: After Repair damaged property. Take steps to prevent or reduce future
+      loss.
+    start_char: 676
+    end_char: 734
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_007
+  claim_text: Failing to prepare adequately, not having a plan, or lacking necessary
+    supplies can lead to increased risk and harm during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: If a disaster occurs in your community, local government and disaster-relief
+      organizations will try to help you, but you need to be ready as well. Local
+      responders may not be able to reach you immediately, or they may need to focus
+      their efforts elsewhere.
+    start_char: 123
+    end_char: 351
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_008
+  claim_text: Ensure that your actions do not put yourself or others at unnecessary
+    risk. Follow official guidance and safety protocols.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Follow the advice and guidance of officials in charge of the event.
+    start_char: 656
+    end_char: 676
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-role
+  claim_id: clm_009
+  claim_text: Consider community-specific risks and volunteer opportunities to enhance
+    local preparedness efforts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Volunteer to help others.
+    start_char: 598
+    end_char: 612
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000012

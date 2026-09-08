@@ -1,0 +1,106 @@
+id: fire-safety.response-actions
+slug: fire-safety-response-actions
+seed_type: assessment
+co_type: assessment
+canonical_title: Fire Safety Response Actions Assessment
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: foundation
+contexts:
+- fire emergency
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: Evaluate your knowledge on fire safety and response actions.
+summary_medium: This assessment tests your understanding of essential fire safety
+  measures and appropriate response actions during a fire emergency.
+plain_language: This is a test to see how well you know what to do in a fire emergency,
+  like checking doors for heat or what to do if your clothes catch fire.
+markdown_body: '### What this is
+
+  This assessment is designed to evaluate your knowledge of fire safety and the appropriate
+  actions to take during a fire emergency.
+
+
+  ### Why it matters
+
+  Understanding fire safety and knowing how to respond in an emergency can save lives
+  and prevent injuries.
+
+
+  ### What you need
+
+  No special tools or materials are required. Just your knowledge and understanding
+  of fire safety practices.
+
+
+  ### How to do it
+
+  Answer each question based on your knowledge of fire safety. Use the answer key
+  to check your responses.
+
+
+  ### Common failure modes
+
+  Common mistakes include opening a hot door without checking for heat and incorrect
+  treatment of burns.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all actions taken during a fire emergency prioritize personal safety
+  and the safety of others.
+
+
+  ### Local adaptation notes
+
+  Consider local fire safety regulations and resources when adapting this assessment
+  for specific communities.'
+structured_data:
+  type-specific:
+    tools: []
+    materials: []
+    success_criteria:
+    - Correctly identify safe actions in response to fire scenarios.
+    - Demonstrate understanding of proper burn treatment.
+    failure_modes:
+    - Opening hot doors
+    - Incorrect burn treatment
+    safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety-response-actions
+  claim_id: clm_001
+  claim_text: Common mistakes include opening a hot door without checking for heat
+    and incorrect treatment of burns.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 121
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000188
+    excerpt: 1. You need to escape a fi re through a closed door. What, if anything,
+      should you do before opening the door? ... 3. What actions should be taken for
+      burn victims?
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: fire-safety-response-actions
+  claim_id: clm_002
+  claim_text: Ensure that all actions taken during a fire emergency prioritize personal
+    safety and the safety of others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Stay out once you are safely out. Do not reenter. Call 9-1-1.
+    start_char: 500
+    end_char: 550
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000188

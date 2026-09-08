@@ -1,0 +1,208 @@
+id: safety.shut-off-electricity
+slug: safety.shut-off-electricity
+seed_type: extracted
+co_type: skill_guide
+canonical_title: How to Safely Shut Off Electricity
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to safely shut off electricity in your home.
+summary_medium: This guide teaches you how to locate your circuit box and safely shut
+  off electricity by instructing responsible household members.
+plain_language: This guide helps you find your home's circuit box and shows you how
+  to safely turn off the electricity by teaching others in your household.
+markdown_body: '# What this is
+
+  This guide explains how to safely shut off electricity in your home by locating
+  the circuit box and instructing household members on the procedure.
+
+
+  # Why it matters
+
+  Knowing how to shut off electricity is crucial during emergencies or when performing
+  electrical repairs, ensuring safety and preventing accidents.
+
+
+  # What you need
+
+  No special tools are required, but familiarity with your home''s circuit box is
+  essential.
+
+
+  # How to do it
+
+  1. Locate your electricity circuit box.
+
+  2. Teach all responsible household members how to shut off the electricity to the
+  entire house.
+
+  3. Always shut off all the individual circuits before shutting off the main circuit
+  breaker.
+
+
+  # Common failure modes
+
+  Failing to shut off individual circuits before the main breaker can cause electrical
+  hazards.
+
+
+  # Safety/boundary notes
+
+  Ensure all individual circuits are shut off before the main breaker to prevent electrical
+  surges or accidents.
+
+
+  # Local adaptation notes
+
+  Consider labeling circuits clearly for easier identification by all household members.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: All household members can locate the circuit box and safely shut
+    off electricity.
+  failure_modes: Not shutting off individual circuits before the main breaker.
+  safety_boundary: Shut off individual circuits before the main breaker.
+  implementation:
+    smallest_viable_version: Teach household members to locate and operate the circuit
+      box.
+    tools: []
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: None
+    success_checks:
+    - Household members can locate the circuit box.
+    - Household members can safely shut off electricity.
+    stop_conditions:
+    - If any household member is unsure about the process, stop and review the steps.
+    common_mistakes:
+    - Not shutting off individual circuits before the main breaker.
+    variants:
+    - label: Urban
+      when: In apartment buildings with shared utilities.
+      notes: Ensure you have access to the circuit box, which may be located in a
+        shared area.
+    when_to_escalate:
+    - If the circuit box is damaged or inaccessible, contact a professional electrician.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.shut-off-electricity
+  claim_id: clm_001
+  claim_text: Locate your electricity circuit box.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: Locate your electricity circuit box.
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: safety.shut-off-electricity
+  claim_id: clm_002
+  claim_text: Teach all responsible household members how to shut off the electricity
+    to the entire house.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: Teach all responsible household members how to shut off the electricity
+      to the entire house.
+    start_char: 36
+    end_char: 113
+    support_strength: strong
+- object_id: safety.shut-off-electricity
+  claim_id: clm_003
+  claim_text: Always shut off all the individual circuits before shutting off the
+    main circuit breaker.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: 'FOR YOUR SAFETY: Always shut off all the individual circuits before
+      shutting off the main circuit breaker.'
+    start_char: 115
+    end_char: 196
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000037
+bundle_overrides:
+  hook: Knowing how to safely shut off your home's electricity can prevent accidents
+    and ensure safety during emergencies or repairs.
+  primer: Electricity is a vital part of our daily lives, but it can also pose significant
+    risks if not handled properly. Knowing how to shut off electricity in your home
+    is crucial, especially during emergencies like electrical fires or when performing
+    repairs. The main tool you'll need is familiarity with your home's circuit box,
+    which is usually located in a utility room, basement, or garage. The circuit box
+    contains all the circuit breakers that control the flow of electricity to different
+    parts of your home. By learning how to operate these breakers, you can safely
+    cut off electricity to specific areas or the entire house. This skill is not only
+    important for your safety but also for the safety of everyone in your household.
+    Teaching all responsible household members how to shut off electricity ensures
+    that anyone can act quickly if the need arises.
+  guide: '1. **Locate Your Circuit Box**: Find the circuit box in your home. It''s
+    often in a utility room, basement, or garage. Familiarize yourself with its location
+    and ensure it''s easily accessible.
+
+
+    2. **Understand the Circuit Breakers**: Inside the circuit box, you''ll find individual
+    circuit breakers and a main circuit breaker. Each individual breaker controls
+    electricity to specific areas or appliances in your home, while the main breaker
+    controls the power to the entire house.
+
+
+    3. **Teach Household Members**: Gather all responsible household members and show
+    them the location of the circuit box. Explain the function of the individual and
+    main circuit breakers.
+
+
+    4. **Practice Shutting Off Electricity**: Demonstrate how to turn off an individual
+    circuit breaker by flipping it to the ''off'' position. Then, show how to turn
+    off the main circuit breaker, but only after all individual breakers are off.
+    This prevents electrical surges and potential hazards.
+
+
+    5. **Label the Breakers**: Clearly label each circuit breaker with the area or
+    appliance it controls. This will make it easier for anyone to quickly shut off
+    the correct breaker in an emergency.
+
+
+    6. **Review Regularly**: Periodically review the procedure with household members
+    to ensure everyone remembers how to safely shut off electricity.'
+  reference:
+  - Locate your electricity circuit box.
+  - Teach all responsible household members how to shut off the electricity.
+  - Always shut off all individual circuits before the main circuit breaker.
+  - Label circuits clearly for easy identification.
+  - Review the procedure regularly with household members.
+  worksheet:
+  - Find and note the location of your circuit box.
+  - List all household members who should know how to shut off electricity.
+  - Label each circuit breaker with its corresponding area or appliance.
+  - Practice shutting off an individual circuit breaker and the main breaker.
+  - Create a schedule for reviewing this procedure with your household.
+  teach_forward_kit:
+    three_minute_version: Locate your circuit box, teach household members how to
+      shut off electricity, and ensure all circuits are labeled and understood.
+    ten_minute_outline:
+    - Introduction to the importance of knowing how to shut off electricity.
+    - Locate and familiarize with the circuit box.
+    - Explain the function of individual and main circuit breakers.
+    - Demonstrate the process of shutting off electricity safely.
+    - Label the circuit breakers for easy identification.
+    - Encourage regular review and practice of the procedure.
+    discussion_prompts:
+    - Why is it important to know how to shut off electricity in your home?
+    - What are the potential risks of not knowing how to operate the circuit box?
+    - How can labeling the circuit breakers help in an emergency?
+    - What challenges might you face in teaching this procedure to household members?

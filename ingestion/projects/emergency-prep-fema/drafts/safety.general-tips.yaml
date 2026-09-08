@@ -1,0 +1,125 @@
+id: safety.general-tips
+slug: safety.general-tips
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: General Safety Tips for Inspecting a Damaged Home
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Safety tips for inspecting a damaged home post-disaster.
+summary_medium: General safety tips for inspecting a damaged home after a disaster,
+  including using battery-powered devices, avoiding animals, and staying off streets.
+plain_language: Learn how to safely inspect your home after a disaster using battery-powered
+  tools, avoiding animals, and staying off streets unless necessary.
+markdown_body: "### What this is\nThis is a guide providing general safety tips for\
+  \ inspecting a damaged home after a disaster.\n\n### Why it matters\nInspecting\
+  \ a damaged home can be dangerous due to potential structural damage, gas leaks,\
+  \ and other hazards. Following safety tips can help prevent injuries and further\
+  \ damage.\n\n### What you need\nYou will need a battery-powered radio, a battery-powered\
+  \ flashlight, and a stick for moving debris.\n\n### How to do it\n1. Keep a battery-powered\
+  \ radio with you to listen for emergency updates. \n2. Use a battery-powered flashlight\
+  \ to inspect your home, turning it on outside to avoid igniting any potential gas\
+  \ leaks. \n3. Be cautious of animals, especially poisonous snakes, and use a stick\
+  \ to move debris. \n4. Use the phone only for life-threatening emergencies. \n5.\
+  \ Stay off the streets unless necessary, and watch for fallen objects and weakened\
+  \ structures.\n\n### Common failure modes\nUsing a flashlight inside without checking\
+  \ for gas leaks can cause ignition. Walking on unstable debris can lead to injury.\n\
+  \n### Safety/boundary notes\nAvoid using the phone unnecessarily and stay off streets\
+  \ unless absolutely necessary.\n\n### Local adaptation notes\nConsider the availability\
+  \ of battery-powered devices and local wildlife when applying these tips."
+structured_data:
+  tools:
+  - battery-powered radio
+  - battery-powered flashlight
+  - stick
+  materials: []
+  success_criteria:
+  - No injuries occur during inspection
+  - No further damage to the property
+  failure_modes:
+  - Igniting gas with flashlight
+  - Injury from debris
+  safety_boundary:
+  - Avoid using phone unnecessarily
+  - Stay off streets unless necessary
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.general-tips
+  claim_id: clm_001
+  claim_text: Keep a battery-powered radio with you to listen for emergency updates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Keep a battery-powered radio with you so you can listen for emergency
+      updates and news reports.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: safety.general-tips
+  claim_id: clm_002
+  claim_text: Use a battery-powered flashlight to inspect your home, turning it on
+    outside to avoid igniting any potential gas leaks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Use a battery-powered fl ash light to inspect a damaged home. **Note:**
+      The fl ashlight should be turned on outside before entering—the battery may
+      produce a spark that could ignite leaking gas, if present.
+    start_char: 90
+    end_char: 240
+    support_strength: strong
+- object_id: safety.general-tips
+  claim_id: clm_003
+  claim_text: Be cautious of animals, especially poisonous snakes, and use a stick
+    to move debris.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Watch out for animals, especially poisonous snakes. Use a stick to poke
+      through debris.
+    start_char: 241
+    end_char: 309
+    support_strength: strong
+- object_id: safety.general-tips
+  claim_id: clm_004
+  claim_text: Use the phone only for life-threatening emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Use the phone only to report life-threatening emergencies.
+    start_char: 310
+    end_char: 359
+    support_strength: strong
+- object_id: safety.general-tips
+  claim_id: clm_005
+  claim_text: Stay off the streets unless necessary, and watch for fallen objects
+    and weakened structures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Stay off the streets. If you must go out, watch for fallen objects; downed
+      electrical wires; and weakened walls, bridges, roads, and sidewalks.
+    start_char: 360
+    end_char: 480
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000274

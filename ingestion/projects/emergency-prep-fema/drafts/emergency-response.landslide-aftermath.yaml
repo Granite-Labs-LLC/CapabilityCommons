@@ -1,0 +1,159 @@
+id: emergency-response.landslide-aftermath
+slug: emergency-response.landslide-aftermath
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Guidelines for After a Landslide or Debris Flow
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-response
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Actions to take after a landslide or debris flow.
+summary_medium: Guidelines for actions to take after a landslide or debris flow, including
+  safety precautions and recovery steps.
+plain_language: Learn what to do after a landslide or debris flow to stay safe and
+  begin recovery.
+markdown_body: '### What this is
+
+  This document provides guidelines for actions to take after experiencing a landslide
+  or debris flow. It includes safety precautions and steps for recovery.
+
+
+  ### Why it matters
+
+  Landslides and debris flows can cause significant damage and pose ongoing risks.
+  Knowing how to respond safely can prevent further harm and aid in recovery.
+
+
+  ### What you need
+
+  Awareness of potential dangers, access to emergency services, and contact with geotechnical
+  experts.
+
+
+  ### How to do it
+
+  - **Stay away from the slide area**: Additional slides may occur, posing further
+  danger.
+
+  - **Check for injured persons**: Without entering the slide area, identify and direct
+  rescuers to any injured or trapped individuals.
+
+  - **Watch for associated dangers**: Be alert for broken utility lines and damaged
+  infrastructure.
+
+  - **Replant damaged ground**: To prevent erosion and potential flash flooding, replant
+  ground cover as soon as possible.
+
+  - **Seek expert advice**: Consult with geotechnical experts to assess hazards and
+  design corrective measures.
+
+
+  ### Common failure modes
+
+  Entering the slide area, ignoring potential dangers like broken utility lines, and
+  failing to address erosion risks.
+
+
+  ### Safety/boundary notes
+
+  Avoid entering the slide area due to the risk of additional slides.
+
+
+  ### Local adaptation notes
+
+  Consult local geotechnical experts to tailor recovery efforts to specific regional
+  conditions.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - No additional injuries occur.
+  - Potential hazards are identified and mitigated.
+  - Ground is stabilized to prevent further erosion.
+  failure_modes:
+  - Additional slides occur.
+  - Broken utility lines cause further damage.
+  - Erosion leads to flash flooding.
+  safety_boundary: Avoid entering the slide area.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-response.landslide-aftermath
+  claim_id: clm_001
+  claim_text: 'Stay away from the slide area: Additional slides may occur, posing
+    further danger.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 110
+    segment_id: src.fema.are-you-ready.2004::seg_000170
+    excerpt: Stay away from the slide area. There may be danger of additional slides.
+    start_char: 0
+    end_char: 64
+    support_strength: strong
+- object_id: emergency-response.landslide-aftermath
+  claim_id: clm_002
+  claim_text: 'Check for injured persons: Without entering the slide area, identify
+    and direct rescuers to any injured or trapped individuals.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 110
+    segment_id: src.fema.are-you-ready.2004::seg_000170
+    excerpt: Check for injured and trapped persons near the slide, without entering
+      the direct slide area. Direct rescuers to their locations.
+    start_char: 65
+    end_char: 168
+    support_strength: strong
+- object_id: emergency-response.landslide-aftermath
+  claim_id: clm_003
+  claim_text: 'Watch for associated dangers: Be alert for broken utility lines and
+    damaged infrastructure.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 110
+    segment_id: src.fema.are-you-ready.2004::seg_000170
+    excerpt: Watch for associated dangers such as broken electrical, water, gas, and
+      sewage lines and damaged roadways and railways.
+    start_char: 169
+    end_char: 272
+    support_strength: strong
+- object_id: emergency-response.landslide-aftermath
+  claim_id: clm_004
+  claim_text: 'Replant damaged ground: To prevent erosion and potential flash flooding,
+    replant ground cover as soon as possible.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 110
+    segment_id: src.fema.are-you-ready.2004::seg_000170
+    excerpt: Replant damaged ground as soon as possible since erosion caused by loss
+      of ground cover can lead to flash flooding and additional landslides in the
+      near future.
+    start_char: 273
+    end_char: 392
+    support_strength: strong
+- object_id: emergency-response.landslide-aftermath
+  claim_id: clm_005
+  claim_text: 'Seek expert advice: Consult with geotechnical experts to assess hazards
+    and design corrective measures.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 110
+    segment_id: src.fema.are-you-ready.2004::seg_000170
+    excerpt: Seek advice from a geotechnical expert for evaluating landslide hazards
+      or designing corrective techniques to reduce landslide risk.
+    start_char: 393
+    end_char: 494
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000170

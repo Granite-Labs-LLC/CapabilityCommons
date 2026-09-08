@@ -1,0 +1,261 @@
+id: recovery.disaster-recovery
+slug: recovery.disaster-recovery
+seed_type: module
+co_type: skill_guide
+canonical_title: Disaster Recovery
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: recovery
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidelines for recovering from a disaster.
+summary_medium: This module provides essential guidelines for health and safety, returning
+  home, seeking disaster assistance, coping with disaster, and helping others after
+  a disaster.
+plain_language: Learn how to safely recover from a disaster, including returning home,
+  getting help, and supporting your community.
+markdown_body: "### What this is\nThis module offers a comprehensive guide to recovering\
+  \ from a disaster. It covers important aspects such as ensuring health and safety,\
+  \ returning to your home, seeking assistance, coping with the aftermath, and helping\
+  \ others.\n\n### Why it matters\nRecovering from a disaster can be overwhelming.\
+  \ Having clear guidelines helps ensure safety, access to necessary resources, and\
+  \ community support, which are crucial for effective recovery.\n\n### What you need\n\
+  Awareness of local resources, understanding of safety protocols, and a plan for\
+  \ accessing disaster assistance.\n\n### How to do it\n1. Follow health and safety\
+  \ guidelines to protect yourself and others. \n2. Assess your home for safety before\
+  \ returning. \n3. Seek disaster assistance from local and federal agencies. \n4.\
+  \ Use coping strategies to manage stress and emotional impact. \n5. Engage in community\
+  \ recovery efforts by helping others.\n\n### Common failure modes\nInadequate recovery\
+  \ planning can lead to prolonged distress and safety risks.\n\n### Safety/boundary\
+  \ notes\nEnsure that all actions taken during recovery prioritize personal and community\
+  \ safety.\n\n### Local adaptation notes\nAdapt guidelines to fit local resources\
+  \ and community needs."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successful recovery involves safe return to homes, access to necessary
+    assistance, and community support.
+  failure_modes: Inadequate recovery planning
+  safety_boundary: Prioritize safety in all recovery actions.
+  implementation:
+    smallest_viable_version: Follow basic safety and recovery guidelines to begin
+      the recovery process.
+    tools: []
+    materials: []
+    expected_time: Varies depending on the disaster scale and personal circumstances.
+    expected_cost: Varies depending on the resources needed and available assistance.
+    success_checks:
+    - Safe return to home
+    - Access to necessary assistance
+    - Community support engagement
+    stop_conditions:
+    - Unsafe conditions at home
+    - Lack of access to essential resources
+    common_mistakes:
+    - Ignoring safety guidelines
+    - Delaying seeking assistance
+    variants:
+    - label: Urban
+      when: In urban areas with dense populations
+      notes: Focus on community resources and local government assistance.
+    - label: Off-grid
+      when: In remote or off-grid locations
+      notes: Emphasize self-reliance and local community support.
+    when_to_escalate:
+    - Severe structural damage to home
+    - Health and safety risks
+requires: []
+suggested_edges: []
+citations:
+- object_id: recovery.disaster-recovery
+  claim_id: clm_001
+  claim_text: This module offers a comprehensive guide to recovering from a disaster.
+    It covers important aspects such as ensuring health and safety, returning to your
+    home, seeking assistance, coping with the aftermath, and helping others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '### **Part 5: Recovering from Disaster**
+
+
+      - Health and safety guidelines
+
+      - Returning home
+
+      - Seeking disaster assistance
+
+      - Coping with disaster
+
+      - Helping others'
+    start_char: 0
+    end_char: 118
+    support_strength: strong
+- object_id: recovery.disaster-recovery
+  claim_id: clm_002
+  claim_text: Recovering from a disaster can be overwhelming. Having clear guidelines
+    helps ensure safety, access to necessary resources, and community support, which
+    are crucial for effective recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '### **Part 5: Recovering from Disaster**
+
+
+      - Health and safety guidelines
+
+      - Returning home
+
+      - Seeking disaster assistance
+
+      - Coping with disaster
+
+      - Helping others'
+    start_char: 0
+    end_char: 118
+    support_strength: medium
+- object_id: recovery.disaster-recovery
+  claim_id: clm_003
+  claim_text: Awareness of local resources, understanding of safety protocols, and
+    a plan for accessing disaster assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: In this part of the guide, you will learn preparedness strategies that
+      are common to all disasters. You plan only once, and are able to apply your
+      plan to all types of hazards.
+    start_char: 0
+    end_char: 156
+    support_strength: medium
+- object_id: recovery.disaster-recovery
+  claim_id: clm_004
+  claim_text: Follow health and safety guidelines to protect yourself and others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '- Health and safety guidelines'
+    start_char: 0
+    end_char: 30
+    support_strength: strong
+- object_id: recovery.disaster-recovery
+  claim_id: clm_005
+  claim_text: Assess your home for safety before returning.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '- Returning home'
+    start_char: 31
+    end_char: 46
+    support_strength: strong
+- object_id: recovery.disaster-recovery
+  claim_id: clm_006
+  claim_text: Seek disaster assistance from local and federal agencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '- Seeking disaster assistance'
+    start_char: 47
+    end_char: 75
+    support_strength: strong
+- object_id: recovery.disaster-recovery
+  claim_id: clm_007
+  claim_text: Use coping strategies to manage stress and emotional impact.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '- Coping with disaster'
+    start_char: 76
+    end_char: 95
+    support_strength: strong
+- object_id: recovery.disaster-recovery
+  claim_id: clm_008
+  claim_text: Engage in community recovery efforts by helping others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000017
+    excerpt: '- Helping others'
+    start_char: 96
+    end_char: 111
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000017
+bundle_overrides:
+  hook: Recovering from a disaster can be overwhelming, but having a clear plan ensures
+    safety and access to necessary resources.
+  primer: Disaster recovery is a crucial process that involves returning to normalcy
+    after experiencing a catastrophic event. It encompasses various aspects such as
+    ensuring health and safety, assessing the safety of your home, seeking assistance,
+    coping with emotional stress, and helping others in your community. The importance
+    of disaster recovery cannot be overstated, as it helps individuals and communities
+    regain stability and rebuild their lives. Key elements of disaster recovery include
+    following health and safety guidelines to protect yourself and others, assessing
+    your home for safety before returning, and seeking disaster assistance from local
+    and federal agencies. Additionally, coping strategies are vital for managing stress
+    and emotional impact, while engaging in community recovery efforts can foster
+    a sense of unity and support. Being aware of local resources, understanding safety
+    protocols, and having a plan for accessing disaster assistance are essential for
+    effective recovery.
+  guide: "1. **Follow Health and Safety Guidelines**: Immediately after a disaster,\
+    \ prioritize your safety and the safety of others. Follow any official instructions\
+    \ and avoid hazardous areas. \n\n2. **Assess Your Home for Safety**: Before returning\
+    \ home, ensure it is safe. Check for structural damage, gas leaks, and other hazards.\
+    \ If in doubt, consult professionals. \n\n3. **Seek Disaster Assistance**: Contact\
+    \ local and federal agencies for assistance. This may include temporary housing,\
+    \ financial aid, and other resources. Keep records of any damage and expenses\
+    \ for claims. \n\n4. **Use Coping Strategies**: Disasters can be emotionally taxing.\
+    \ Engage in activities that help manage stress, such as talking to loved ones,\
+    \ seeking professional help, or participating in community support groups. \n\n\
+    5. **Engage in Community Recovery Efforts**: Helping others can be therapeutic\
+    \ and beneficial for the community. Volunteer in local recovery efforts, support\
+    \ neighbors, and share resources. \n\nRemember, recovery is a gradual process,\
+    \ and it’s important to take it step by step, ensuring safety and well-being at\
+    \ each stage."
+  reference:
+  - Health and safety guidelines
+  - Assess home safety
+  - Seek disaster assistance
+  - Coping strategies
+  - Community recovery efforts
+  worksheet:
+  - List three safety checks to perform before returning home.
+  - Identify two local agencies that provide disaster assistance.
+  - Describe a coping strategy you can use to manage stress after a disaster.
+  - Plan a simple way to help your community recover from a disaster.
+  teach_forward_kit:
+    three_minute_version: Disaster recovery involves ensuring safety, assessing home
+      conditions, seeking assistance, managing stress, and helping the community.
+      Follow guidelines to protect yourself and others, and engage in recovery efforts
+      to rebuild and support your community.
+    ten_minute_outline:
+    - Introduction to Disaster Recovery
+    - Importance of Health and Safety
+    - Assessing Home Safety
+    - Seeking Disaster Assistance
+    - Coping with Emotional Impact
+    - Community Engagement and Support
+    discussion_prompts:
+    - Why is it important to follow health and safety guidelines after a disaster?
+    - What are some challenges you might face when assessing your home for safety?
+    - How can community support aid in disaster recovery?
+    - What coping strategies have you found effective in stressful situations?

@@ -1,0 +1,143 @@
+id: emergency.flash-flood-warning
+slug: emergency.flash-flood-warning
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Flash Flood Warning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: high
+summary_short: Immediate actions during a flash flood warning.
+summary_medium: Guidance on immediate actions to take during a flash flood warning,
+  including seeking higher ground on foot.
+plain_language: If a flash flood warning is issued, move to higher ground on foot
+  immediately.
+markdown_body: '### What this is
+
+  This reference sheet provides immediate actions to take when a flash flood warning
+  is issued.
+
+
+  ### Why it matters
+
+  Flash floods can occur suddenly and with little warning, posing significant risks
+  to life and property. Taking immediate action is crucial for safety.
+
+
+  ### What you need
+
+  Awareness of your surroundings and the ability to move quickly to higher ground.
+
+
+  ### How to do it
+
+  Upon receiving a flash flood warning, leave your current location and move to higher
+  ground on foot as quickly as possible. Avoid walking through floodwaters.
+
+
+  ### Common failure modes
+
+  Failing to move to higher ground immediately can result in being caught in rapidly
+  rising waters.
+
+
+  ### Safety/boundary notes
+
+  Do not attempt to drive through flooded areas. Always prioritize personal safety
+  over belongings.
+
+
+  ### Local adaptation notes
+
+  Consider local geography and available routes to higher ground when planning your
+  response.'
+structured_data:
+  definition: A flash flood warning indicates that a flash flood is occurring or imminent.
+  key_questions:
+  - What is the fastest route to higher ground?
+  - Are there any obstacles that might impede reaching safety?
+  misconceptions:
+  - It's safe to wait out the flood in a vehicle.
+  - Flash floods only occur near large bodies of water.
+  safety_boundary: This is background/awareness information about a hazard, adapted
+    from FEMA's public citizen-preparedness guide. It is not a substitute for official
+    warnings, alerts, or instructions from local emergency management, law enforcement,
+    or emergency responders during an actual event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.flash-flood-warning
+  claim_id: clm_001
+  claim_text: Flash floods can occur suddenly and with little warning, posing significant
+    risks to life and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: Flash floods may occur with little warning.
+    start_char: 0
+    end_char: 43
+    support_strength: strong
+- object_id: emergency.flash-flood-warning
+  claim_id: clm_002
+  claim_text: Upon receiving a flash flood warning, leave your current location and
+    move to higher ground on foot as quickly as possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000073
+    excerpt: A flash flood is occurring; seek higher ground on foot immediately.
+    start_char: 0
+    end_char: 65
+    support_strength: strong
+- object_id: emergency.flash-flood-warning
+  claim_id: clm_003
+  claim_text: Avoid walking through floodwaters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Do not walk through moving water. Six inches of moving water can make
+      you fall.
+    start_char: 0
+    end_char: 70
+    support_strength: strong
+- object_id: emergency.flash-flood-warning
+  claim_id: clm_004
+  claim_text: Failing to move to higher ground immediately can result in being caught
+    in rapidly rising waters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Be aware that flash flooding can occur. If there is any possibility of
+      a flash flood, move immediately to higher ground.
+    start_char: 0
+    end_char: 130
+    support_strength: strong
+- object_id: emergency.flash-flood-warning
+  claim_id: clm_005
+  claim_text: Do not attempt to drive through flooded areas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Do not drive into flooded areas. If floodwaters rise around your car,
+      abandon the car and move to higher ground if you can do so safely.
+    start_char: 0
+    end_char: 140
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000073

@@ -1,0 +1,314 @@
+id: preparedness.terrorism
+slug: preparedness.terrorism
+seed_type: module
+co_type: skill_guide
+canonical_title: Preparedness for Terrorism-Related Incidents
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Learn how to prepare for terrorism-related incidents.
+summary_medium: This module covers preparedness for terrorism-related incidents including
+  explosions, biological threats, chemical threats, nuclear blasts, and radiological
+  dispersion devices.
+plain_language: This guide helps you prepare for different types of terrorism-related
+  incidents, such as explosions, biological and chemical threats, nuclear blasts,
+  and radiological dispersion devices.
+markdown_body: '### What this is
+
+  This module provides guidance on preparing for terrorism-related incidents. It includes
+  information on various threats such as explosions, biological and chemical threats,
+  nuclear blasts, and radiological dispersion devices.
+
+
+  ### Why it matters
+
+  Understanding how to prepare for terrorism-related incidents can significantly reduce
+  the risk of harm and increase your ability to respond effectively in such situations.
+
+
+  ### What you need
+
+  Awareness of potential threats, a disaster supplies kit, and a well-practiced emergency
+  plan.
+
+
+  ### How to do it
+
+  1. Stay informed about potential threats in your area. 2. Assemble a disaster supplies
+  kit with essentials like water, food, and medical supplies. 3. Develop and practice
+  an emergency plan with your family or household. 4. Learn specific actions to take
+  for different types of threats, such as seeking shelter during a nuclear blast or
+  avoiding contaminated areas during a chemical threat.
+
+
+  ### Common failure modes
+
+  Failing to stay informed about current threats, not having a disaster supplies kit
+  ready, and not practicing emergency plans regularly.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety and follow official guidance during any terrorism-related
+  incident.
+
+
+  ### Local adaptation notes
+
+  Adapt your emergency plan and supplies kit based on local threats and available
+  resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successfully implementing an emergency plan during a terrorism-related
+    incident.
+  failure_modes: Lack of preparedness leading to increased risk during an incident.
+  safety_boundary: Follow official guidance and prioritize personal safety.
+  implementation:
+    smallest_viable_version: Have a basic emergency plan and supplies kit ready.
+    tools: []
+    materials:
+    - disaster supplies kit
+    expected_time: Varies depending on the threat and preparedness level.
+    expected_cost: low
+    success_checks:
+    - Emergency plan is practiced regularly.
+    - Supplies kit is complete and accessible.
+    stop_conditions:
+    - Immediate threat is over.
+    - Official all-clear is given.
+    common_mistakes:
+    - Ignoring threat warnings.
+    - Failing to update the emergency plan.
+    variants:
+    - label: Urban
+      when: Living in a city with high population density.
+      notes: Focus on evacuation routes and public shelter locations.
+    when_to_escalate:
+    - If a threat is imminent and you are unprepared.
+    - If official guidance advises evacuation.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.terrorism
+  claim_id: clm_001
+  claim_text: This module provides guidance on preparing for terrorism-related incidents.
+    It includes information on various threats such as explosions, biological and
+    chemical threats, nuclear blasts, and radiological dispersion devices.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Part 4 Terrorism | Section 4.1 General Information about Terrorism |
+      Section 4.2 Explosions | Section 4.3 Biological Threats | Section 4.4 Chemical
+      Threats | Section 4.5 Nuclear Blast | Section 4.6 Radiological Dispersion Device
+      (RDD)
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_002
+  claim_text: Understanding how to prepare for terrorism-related incidents can significantly
+    reduce the risk of harm and increase your ability to respond effectively in such
+    situations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: preparedness.terrorism
+  claim_id: clm_003
+  claim_text: Awareness of potential threats, a disaster supplies kit, and a well-practiced
+    emergency plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed | Section 1.2 Emergency Planning and Checklists
+      | Section 1.3 Assemble a Disaster Supplies Kit
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_004
+  claim_text: Stay informed about potential threats in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed
+    start_char: 0
+    end_char: 30
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_005
+  claim_text: Assemble a disaster supplies kit with essentials like water, food, and
+    medical supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.3 Assemble a Disaster Supplies Kit
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_006
+  claim_text: Develop and practice an emergency plan with your family or household.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.2 Emergency Planning and Checklists
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_007
+  claim_text: Learn specific actions to take for different types of threats, such
+    as seeking shelter during a nuclear blast or avoiding contaminated areas during
+    a chemical threat.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 4.5 Nuclear Blast | Section 4.4 Chemical Threats
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_008
+  claim_text: Failing to stay informed about current threats, not having a disaster
+    supplies kit ready, and not practicing emergency plans regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed | Section 1.3 Assemble a Disaster Supplies
+      Kit | Section 1.6 Practicing and Maintaining Your Plan
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: preparedness.terrorism
+  claim_id: clm_009
+  claim_text: Always prioritize personal safety and follow official guidance during
+    any terrorism-related incident.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Local responders may not be able to reach you immediately, or they may
+      need to focus their efforts elsewhere.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: preparedness.terrorism
+  claim_id: clm_010
+  claim_text: Adapt your emergency plan and supplies kit based on local threats and
+    available resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000007
+bundle_overrides:
+  hook: Being prepared for terrorism-related incidents can save lives and reduce panic
+    during emergencies.
+  primer: Terrorism-related incidents, such as explosions, biological and chemical
+    threats, nuclear blasts, and radiological dispersion devices, pose significant
+    risks to public safety. Understanding how to prepare for these events can greatly
+    reduce the risk of harm and improve your ability to respond effectively. Preparation
+    involves staying informed about potential threats, assembling a disaster supplies
+    kit, and developing a well-practiced emergency plan. Staying informed means being
+    aware of the types of threats that could occur in your area and understanding
+    the recommended actions to take. A disaster supplies kit should include essentials
+    like water, food, and medical supplies, ensuring you have what you need to survive
+    for at least 72 hours. Practicing your emergency plan with family or household
+    members ensures everyone knows what to do in case of an incident. By taking these
+    steps, you can increase your resilience and safety during terrorism-related emergencies.
+  guide: '1. **Stay Informed**: Regularly check local news and official sources for
+    updates on potential threats in your area. Sign up for alerts from local emergency
+    services if available.
+
+
+    2. **Assemble a Disaster Supplies Kit**: Gather essential items such as water,
+    non-perishable food, a first-aid kit, flashlights, batteries, and any necessary
+    medications. Ensure the kit is easily accessible and check it regularly to replace
+    expired items.
+
+
+    3. **Develop an Emergency Plan**: Create a plan that includes evacuation routes,
+    communication methods, and meeting points for your family or household. Ensure
+    everyone understands their role and responsibilities.
+
+
+    4. **Practice Your Plan**: Conduct regular drills to practice your emergency plan.
+    This helps identify any gaps or areas for improvement and ensures everyone knows
+    what to do in an emergency.
+
+
+    5. **Learn Specific Actions for Different Threats**: Educate yourself on the specific
+    actions to take for various threats. For example, seek shelter during a nuclear
+    blast or avoid contaminated areas during a chemical threat.
+
+
+    6. **Adapt Your Plan**: Tailor your emergency plan and supplies kit based on local
+    threats and available resources. Consider factors such as your location, family
+    needs, and any specific vulnerabilities.'
+  reference:
+  - Stay informed about potential threats.
+  - Assemble a disaster supplies kit.
+  - Develop and practice an emergency plan.
+  - Learn specific actions for different threats.
+  - Adapt your plan based on local threats.
+  worksheet:
+  - List the types of terrorism-related threats that could occur in your area.
+  - Create a checklist of items for your disaster supplies kit.
+  - Draft an emergency plan for your household, including evacuation routes and communication
+    methods.
+  - Conduct a practice drill of your emergency plan and note any areas for improvement.
+  - Research specific actions to take for different types of threats and write them
+    down.
+  teach_forward_kit:
+    three_minute_version: Being prepared for terrorism-related incidents involves
+      staying informed, having a disaster supplies kit, and practicing an emergency
+      plan. These steps can reduce harm and improve response effectiveness.
+    ten_minute_outline:
+    - Introduction to terrorism-related threats.
+    - Importance of preparedness.
+    - Steps to stay informed about threats.
+    - How to assemble a disaster supplies kit.
+    - Developing and practicing an emergency plan.
+    - Adapting plans based on local threats.
+    discussion_prompts:
+    - Why is it important to stay informed about potential threats?
+    - What items are essential in a disaster supplies kit?
+    - How can practicing an emergency plan benefit your household?
+    - What challenges might you face when adapting your plan to local threats?

@@ -1,0 +1,236 @@
+id: safety.hazardous-materials-avoidance
+slug: safety.hazardous-materials-avoidance
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Hazardous Materials Avoidance
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to avoid hazardous materials by maintaining a safe distance
+  and avoiding contact.
+summary_medium: This guide provides instructions on how to avoid hazardous materials,
+  emphasizing the importance of staying upstream, uphill, and upwind, and maintaining
+  a safe distance from spills.
+plain_language: Avoid hazardous materials by keeping a safe distance and not touching
+  spills. Stay upstream, uphill, and upwind from any danger area.
+markdown_body: '### What this is
+
+  This skill guide provides instructions on how to avoid hazardous materials effectively,
+  ensuring personal safety by maintaining a safe distance and avoiding contact with
+  spills.
+
+
+  ### Why it matters
+
+  Hazardous materials can pose significant health risks if not handled properly. Avoiding
+  contact and maintaining a safe distance can prevent exposure to harmful substances.
+
+
+  ### What you need
+
+  Awareness of your surroundings and knowledge of safe distances. No specific tools
+  are required, but having access to local emergency contact information can be beneficial.
+
+
+  ### How to do it
+
+  1. Do not walk into or touch any spilled liquids, airborne mists, or condensed solid
+  chemical deposits.
+
+  2. Stay upstream, uphill, and upwind from the hazard. Aim to be at least one-half
+  mile away from the danger area, which is typically 8-10 city blocks.
+
+  3. Follow any local emergency instructions promptly.
+
+
+  ### Common failure modes
+
+  Walking into contaminated areas or failing to maintain a safe distance from hazardous
+  materials.
+
+
+  ### Safety/boundary notes
+
+  Do not touch spills and always maintain a safe distance. Avoid smoking near hazardous
+  materials.
+
+
+  ### Local adaptation notes
+
+  Check with local emergency services for specific hazardous material handling and
+  disposal programs.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Successfully maintain a safe distance from hazardous materials.
+  - Avoid contact with any spills or hazardous substances.
+  failure_modes:
+  - Walking into contaminated areas.
+  - Touching hazardous materials.
+  safety_boundary:
+  - Do not touch spills.
+  - Maintain a safe distance.
+  implementation:
+    smallest_viable_version: Avoid contact and maintain a safe distance from hazardous
+      materials.
+    tools: []
+    materials: []
+    expected_time: Immediate response
+    expected_cost: None
+    success_checks:
+    - Are you at least one-half mile away from the hazard?
+    - Have you avoided touching any hazardous materials?
+    stop_conditions:
+    - If you are within the danger area, move to a safe distance immediately.
+    common_mistakes:
+    - Underestimating the safe distance required.
+    - Failing to identify hazardous materials.
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Be aware of local emergency routes and shelters.
+    when_to_escalate:
+    - If you cannot maintain a safe distance.
+    - If you have come into contact with hazardous materials.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.hazardous-materials-avoidance
+  claim_id: clm_001
+  claim_text: Do not walk into or touch any spilled liquids, airborne mists, or condensed
+    solid chemical deposits.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 2. a. Do not walk into or touch any spilled liquids, airborne mists,
+      or condensed solid chemical deposits.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: safety.hazardous-materials-avoidance
+  claim_id: clm_002
+  claim_text: Stay upstream, uphill, and upwind from the hazard. Aim to be at least
+    one-half mile away from the danger area, which is typically 8-10 city blocks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: b. Stay upstream, uphill, and upwind! In general, try to go at least
+      one-half mile (usually 8-10 city blocks) from the danger area.
+    start_char: 96
+    end_char: 194
+    support_strength: strong
+- object_id: safety.hazardous-materials-avoidance
+  claim_id: clm_003
+  claim_text: Follow any local emergency instructions promptly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 6. Radiation could leak outside the plant and off the plant site. The
+      sirens will sound. Tune to local radio or tele- vision station for reports.
+      Be prepared to follow instructions promptly.
+    start_char: 276
+    end_char: 400
+    support_strength: medium
+- object_id: safety.hazardous-materials-avoidance
+  claim_id: clm_004
+  claim_text: Do not touch spills and always maintain a safe distance. Avoid smoking
+    near hazardous materials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: g. Never smoke while using household chemicals.
+    start_char: 196
+    end_char: 243
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000229
+bundle_overrides:
+  hook: Understanding how to avoid hazardous materials can protect you from serious
+    health risks and ensure your safety in potentially dangerous situations.
+  primer: Hazardous materials are substances that can pose a threat to health, safety,
+    or the environment. These materials can be found in various forms, such as liquids,
+    gases, or solids, and may be present in industrial settings, transportation routes,
+    or even household products. It is crucial to recognize the potential dangers associated
+    with these materials and to know how to avoid them effectively. The key to staying
+    safe is maintaining a safe distance from any spills or emissions and following
+    local emergency instructions. By staying upstream, uphill, and upwind from the
+    hazard, you can minimize your exposure to harmful substances. Additionally, it
+    is important to avoid touching any spilled liquids, airborne mists, or condensed
+    solid deposits, as direct contact can lead to contamination or injury. Being aware
+    of your surroundings and having access to local emergency contact information
+    can further enhance your safety in the presence of hazardous materials.
+  guide: '1. **Do Not Touch or Walk Into Spills**: Avoid any contact with spilled
+    liquids, airborne mists, or condensed solid chemical deposits. These substances
+    can be harmful upon contact, so it''s important to steer clear of them.
+
+
+    2. **Maintain a Safe Distance**: Always stay upstream, uphill, and upwind from
+    the hazard. This positioning helps to keep you out of the path of potentially
+    dangerous substances. Aim to be at least one-half mile away from the danger area,
+    which is typically equivalent to 8-10 city blocks.
+
+
+    3. **Follow Local Emergency Instructions**: In the event of a hazardous materials
+    incident, local authorities will provide instructions on how to stay safe. These
+    may include evacuation orders or shelter-in-place directives. It is crucial to
+    follow these instructions promptly to ensure your safety.
+
+
+    4. **Avoid Smoking Near Hazardous Materials**: Smoking can ignite flammable substances,
+    increasing the risk of fire or explosion. Always avoid smoking in areas where
+    hazardous materials are present.
+
+
+    5. **Stay Informed**: Keep a radio or other communication device handy to receive
+    updates from local emergency services. This will help you stay informed about
+    the situation and any changes in safety recommendations.'
+  reference:
+  - Do not touch or walk into spills.
+  - Stay upstream, uphill, and upwind.
+  - Maintain a distance of at least one-half mile from the hazard.
+  - Follow local emergency instructions promptly.
+  - Avoid smoking near hazardous materials.
+  worksheet:
+  - Identify three common hazardous materials in your area and describe how to avoid
+    them.
+  - Map out a safe route that keeps you upstream, uphill, and upwind from a potential
+    hazard near your home.
+  - List the steps you would take if you encountered a hazardous material spill in
+    your neighborhood.
+  - Practice tuning into local emergency broadcasts and identify the station you would
+    use in an emergency.
+  - Role-play a scenario where you must evacuate due to a hazardous materials incident,
+    detailing your actions and decisions.
+  teach_forward_kit:
+    three_minute_version: Avoid hazardous materials by not touching spills, staying
+      upstream, uphill, and upwind, and following local emergency instructions.
+    ten_minute_outline:
+    - Introduction to hazardous materials and their risks.
+    - Key strategies for avoiding hazardous materials.
+    - Importance of maintaining a safe distance.
+    - Role of local emergency instructions.
+    - Practical tips for staying informed and safe.
+    discussion_prompts:
+    - Why is it important to stay upstream, uphill, and upwind from hazardous materials?
+    - What are some challenges you might face in avoiding hazardous materials?
+    - How can local emergency instructions help in a hazardous materials incident?
+    - Discuss the importance of not smoking near hazardous materials.
+    - What steps can you take to prepare for a hazardous materials emergency in your
+      area?

@@ -1,0 +1,116 @@
+id: emergency.short-term-warnings
+slug: emergency.short-term-warnings
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Understanding Short Term Watches and Warnings
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Learn about short term watches and warnings for hurricane threats.
+summary_medium: This reference sheet provides information on short term watches and
+  warnings related to specific hurricane threats, including flash floods and tornadoes.
+plain_language: This guide helps you understand the short term watches and warnings
+  issued for hurricane threats like flash floods and tornadoes, so you can stay safe.
+markdown_body: '### What this is
+
+  Short term watches and warnings are alerts issued to inform the public about specific
+  and immediate hurricane-related threats, such as flash floods and tornadoes.
+
+
+  ### Why it matters
+
+  Understanding these warnings is crucial for taking timely action to protect yourself
+  and your property from sudden and severe weather events.
+
+
+  ### What you need
+
+  Stay informed through reliable sources like weather apps, radio, or TV broadcasts
+  to receive these warnings promptly.
+
+
+  ### How to do it
+
+  Monitor local weather updates regularly, especially during hurricane season, and
+  be prepared to act quickly if a warning is issued.
+
+
+  ### Common failure modes
+
+  Ignoring warnings or delaying action can lead to increased risk of harm or property
+  damage.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety by following evacuation orders and seeking shelter when
+  advised.
+
+
+  ### Local adaptation notes
+
+  Adapt your response based on local infrastructure and resources available for emergency
+  situations.'
+structured_data:
+  definition: Short term watches and warnings are alerts for immediate hurricane threats.
+  key_questions:
+  - What types of threats do these warnings cover?
+  - How should I respond to a short term warning?
+  misconceptions:
+  - These warnings can be ignored if the weather seems calm.
+  - All warnings require the same response.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.short-term-warnings
+  claim_id: clm_001
+  claim_text: Short term watches and warnings are alerts issued to inform the public
+    about specific and immediate hurricane-related threats, such as flash floods and
+    tornadoes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000100
+    excerpt: These warnings provide detailed information about specific hurricane
+      threats, such as flash floods and tornadoes.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.short-term-warnings
+  claim_id: clm_003
+  claim_text: Stay informed through reliable sources like weather apps, radio, or
+    TV broadcasts to receive these warnings promptly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: Listen to the radio or TV for information.
+    start_char: 0
+    end_char: 50
+    support_strength: medium
+- object_id: emergency.short-term-warnings
+  claim_id: clm_006
+  claim_text: Always prioritize safety by following evacuation orders and seeking
+    shelter when advised.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'You should evacuate under the following conditions: If you are directed
+      by local authorities to do so. Be sure to follow their instructions.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000100

@@ -1,0 +1,202 @@
+id: fire-safety.escape-routes
+slug: fire-safety.escape-routes
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Planning and Practicing Fire Escape Routes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Plan and practice fire escape routes.
+summary_medium: Learn how to plan and practice fire escape routes to ensure safety
+  during a fire emergency.
+plain_language: This guide helps you plan and practice escape routes in case of a
+  fire, ensuring all exits are accessible and everyone knows how to get out safely.
+markdown_body: "### What this is\nThis guide provides instructions on how to plan\
+  \ and practice fire escape routes in your home to ensure safety during a fire emergency.\n\
+  \n### Why it matters\nHaving a well-practiced escape plan can save lives by ensuring\
+  \ everyone knows how to exit the building quickly and safely during a fire.\n\n\
+  ### What you need\nYou will need to review your home's layout, ensure windows and\
+  \ doors are functional, and consider escape ladders for multi-level homes.\n\n###\
+  \ How to do it\n1. Review escape routes with your family. \n2. Practice escaping\
+  \ from each room. \n3. Ensure windows open easily and are not obstructed. \n4. Consider\
+  \ escape ladders for upper levels. \n5. Teach family members to stay low to the\
+  \ floor during a fire.\n\n### Common failure modes\nBlocked exits, non-functional\
+  \ escape ladders, windows that cannot be opened.\n\n### Safety/boundary notes\n\
+  Ensure all escape routes are clear and accessible at all times.\n\n### Local adaptation\
+  \ notes\nAdapt the plan based on your home's specific layout and any local building\
+  \ codes or safety regulations."
+structured_data:
+  tools:
+  - escape ladders
+  materials: []
+  success_criteria:
+  - All family members can exit safely from each room.
+  - Windows and doors are functional and accessible.
+  failure_modes:
+  - Blocked exits
+  - Non-functional escape ladders
+  safety_boundary: Ensure all escape routes are clear and accessible at all times.
+  implementation:
+    smallest_viable_version: Ensure all family members know at least one escape route
+      from each room.
+    tools:
+    - escape ladders
+    materials: []
+    expected_time: 1 hour to plan and practice
+    expected_cost: low
+    success_checks:
+    - Family members can demonstrate the escape plan.
+    - All exits are accessible.
+    stop_conditions:
+    - If any exit is blocked or non-functional.
+    common_mistakes:
+    - Not practicing regularly.
+    - Ignoring blocked exits.
+    variants:
+    - label: Urban
+      when: Living in a high-rise building
+      notes: Consider additional escape routes and check building fire safety features.
+    when_to_escalate:
+    - If exits are permanently blocked or require professional modification.
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.escape-routes
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to plan and practice fire escape
+    routes in your home to ensure safety during a fire emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000182
+    excerpt: Review escape routes with your family. Practice escaping from each room.
+    start_char: 0
+    end_char: 63
+    support_strength: strong
+- object_id: fire-safety.escape-routes
+  claim_id: clm_002
+  claim_text: Having a well-practiced escape plan can save lives by ensuring everyone
+    knows how to exit the building quickly and safely during a fire.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 116
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000179
+    excerpt: Fire spreads quickly; there is no time to gather valuables or make a
+      phone call.
+    start_char: 194
+    end_char: 267
+    support_strength: medium
+- object_id: fire-safety.escape-routes
+  claim_id: clm_003
+  claim_text: You will need to review your home's layout, ensure windows and doors
+    are functional, and consider escape ladders for multi-level homes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000182
+    excerpt: Make sure windows are not nailed or painted shut. Consider escape ladders
+      if your residence has more than one level.
+    start_char: 64
+    end_char: 177
+    support_strength: strong
+- object_id: fire-safety.escape-routes
+  claim_id: clm_004
+  claim_text: Teach family members to stay low to the floor during a fire.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000182
+    excerpt: Teach family members to stay low to the fl oor (where the air is safer
+      in a fi re) when escaping from a fi re.
+    start_char: 178
+    end_char: 258
+    support_strength: strong
+- object_id: fire-safety.escape-routes
+  claim_id: clm_005
+  claim_text: Blocked exits, non-functional escape ladders, windows that cannot be
+    opened.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000182
+    excerpt: Make sure windows are not nailed or painted shut. Consider escape ladders
+      if your residence has more than one level.
+    start_char: 64
+    end_char: 177
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000182
+bundle_overrides:
+  hook: A well-practiced fire escape plan can save lives by ensuring everyone knows
+    how to exit quickly and safely during a fire.
+  primer: Planning and practicing fire escape routes in your home is crucial for ensuring
+    safety during a fire emergency. Fires can spread rapidly, leaving little time
+    to react. Having a clear, practiced plan helps ensure that everyone in the household
+    knows how to exit the building quickly and safely. This involves reviewing your
+    home's layout, ensuring that all windows and doors are functional, and considering
+    the use of escape ladders for multi-level homes. It's also important to teach
+    family members to stay low to the floor during a fire, where the air is safer.
+    Regular practice of these escape routes can make a significant difference in an
+    emergency, reducing panic and confusion.
+  guide: '1. Gather your family and review the layout of your home. Identify at least
+    two escape routes from each room, if possible.
+
+    2. Ensure all windows and doors can be opened easily and are not blocked or painted
+    shut. Check that escape ladders are available and functional for upper levels.
+
+    3. Practice escaping from each room with your family. Make sure everyone knows
+    how to use the escape ladders and open windows and doors.
+
+    4. Teach family members to stay low to the floor during a fire, as smoke rises
+    and the air is safer closer to the ground.
+
+    5. Designate a safe meeting place outside the home where everyone will gather
+    after escaping.
+
+    6. Regularly review and practice the escape plan, especially with children or
+    new household members, to ensure everyone remembers what to do.'
+  reference:
+  - Review escape routes with your family.
+  - Practice escaping from each room.
+  - Ensure windows and doors are functional.
+  - Consider escape ladders for multi-level homes.
+  - Teach family members to stay low to the floor during a fire.
+  - Designate a safe meeting place outside.
+  worksheet:
+  - Draw a floor plan of your home and mark all possible escape routes.
+  - List the steps to check if windows and doors are functional.
+  - Role-play a fire drill with your family and time how long it takes to reach the
+    meeting place.
+  - Identify any blocked exits or non-functional escape ladders and plan how to address
+    these issues.
+  - Discuss and write down the importance of staying low to the floor during a fire.
+  teach_forward_kit:
+    three_minute_version: Planning and practicing fire escape routes is essential
+      for safety during a fire. Ensure all exits are accessible, practice regularly,
+      and teach everyone to stay low to the floor.
+    ten_minute_outline:
+    - Introduction to the importance of fire escape planning.
+    - Reviewing home layout and identifying escape routes.
+    - Ensuring functionality of windows, doors, and escape ladders.
+    - Practicing escape routes with family members.
+    - Teaching the importance of staying low during a fire.
+    - Designating a safe meeting place outside the home.
+    discussion_prompts:
+    - Why is it important to have more than one escape route from each room?
+    - What challenges might you face during a fire escape, and how can you prepare
+      for them?
+    - How can regular practice of escape routes benefit your family?
+    - What are some common mistakes people make when planning fire escape routes?

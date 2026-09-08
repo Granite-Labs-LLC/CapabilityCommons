@@ -1,0 +1,283 @@
+id: preparedness.inventory-home-possessions
+slug: preparedness.inventory-home-possessions
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Inventory Home Possessions
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Create an inventory of personal property for insurance purposes.
+summary_medium: Learn how to document your personal property with photos or videos
+  to ensure proper insurance coverage.
+plain_language: This guide helps you create a detailed inventory of your home possessions,
+  which is useful for insurance claims.
+markdown_body: '### What this is
+
+  This skill guide teaches you how to create an inventory of your home possessions.
+  This inventory is crucial for insurance purposes, helping you document the value
+  and condition of your belongings.
+
+
+  ### Why it matters
+
+  Having a detailed inventory of your possessions can significantly ease the process
+  of filing insurance claims in the event of damage or loss. It ensures you have proof
+  of ownership and the condition of your items.
+
+
+  ### What you need
+
+  To complete this task, you will need a camera or smartphone to take photos or videos,
+  and optionally, the Household and Personal Property Inventory Book to organize your
+  records.
+
+
+  ### How to do it
+
+  Start by taking photos or videos of the interior and exterior of your home, focusing
+  on personal belongings. Use the Household and Personal Property Inventory Book to
+  log details about each item, such as purchase date and value.
+
+
+  ### Common failure modes
+
+  Failing to update the inventory regularly or not storing the inventory in a safe
+  place can lead to incomplete records.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your inventory records are stored securely, possibly in a safety deposit
+  box, to prevent loss or unauthorized access.
+
+
+  ### Local adaptation notes
+
+  Consider local risks, such as floods, when deciding which items to prioritize in
+  your inventory.'
+structured_data:
+  tools:
+  - camera
+  - smartphone
+  materials:
+  - Household and Personal Property Inventory Book
+  success_criteria:
+  - Complete inventory with photos/videos and detailed records
+  failure_modes:
+  - Incomplete inventory
+  - Outdated records
+  safety_boundary:
+  - Store inventory securely
+  implementation:
+    smallest_viable_version: Create a basic inventory using a smartphone camera.
+    tools:
+    - camera
+    - smartphone
+    materials:
+    - Household and Personal Property Inventory Book
+    expected_time: 2-3 hours
+    expected_cost: low
+    success_checks:
+    - Inventory includes photos/videos and item details
+    stop_conditions:
+    - All major items documented
+    - Inventory securely stored
+    common_mistakes:
+    - Forgetting to update inventory
+    - Not backing up records
+    variants:
+    - label: Urban
+      when: Living in a city apartment
+      notes: Focus on high-value items due to space constraints.
+    when_to_escalate:
+    - If unsure about item valuation
+    - If inventory is lost
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_001
+  claim_text: This skill guide teaches you how to create an inventory of your home
+    possessions. This inventory is crucial for insurance purposes, helping you document
+    the value and condition of your belongings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Inventory Home Possessions Make a record of your personal property, for
+      insurance purposes. Take photos or a video of the interior and exterior of your
+      home. Include personal belongings in your inventory.
+    start_char: 0
+    end_char: 166
+    support_strength: strong
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_002
+  claim_text: Having a detailed inventory of your possessions can significantly ease
+    the process of filing insurance claims in the event of damage or loss. It ensures
+    you have proof of ownership and the condition of your items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Inventory Home Possessions Make a record of your personal property, for
+      insurance purposes.
+    start_char: 0
+    end_char: 78
+    support_strength: medium
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_003
+  claim_text: To complete this task, you will need a camera or smartphone to take
+    photos or videos, and optionally, the Household and Personal Property Inventory
+    Book to organize your records.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Take photos or a video of the interior and exterior of your home. Include
+      personal belongings in your inventory. You may also want to download the free
+      *Household and Personal Property Inventory Book* from the University of Illinois
+      at www.ag.uiuc.edu/~vista/abstracts/ ahouseinv.html to help you record your
+      possessions.
+    start_char: 79
+    end_char: 303
+    support_strength: strong
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_004
+  claim_text: Start by taking photos or videos of the interior and exterior of your
+    home, focusing on personal belongings. Use the Household and Personal Property
+    Inventory Book to log details about each item, such as purchase date and value.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Take photos or a video of the interior and exterior of your home. Include
+      personal belongings in your inventory. You may also want to download the free
+      *Household and Personal Property Inventory Book* from the University of Illinois
+      at www.ag.uiuc.edu/~vista/abstracts/ ahouseinv.html to help you record your
+      possessions.
+    start_char: 79
+    end_char: 303
+    support_strength: strong
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_005
+  claim_text: Failing to update the inventory regularly or not storing the inventory
+    in a safe place can lead to incomplete records.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home.
+    start_char: 305
+    end_char: 425
+    support_strength: medium
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_006
+  claim_text: Ensure that your inventory records are stored securely, possibly in
+    a safety deposit box, to prevent loss or unauthorized access.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home.
+    start_char: 305
+    end_char: 425
+    support_strength: strong
+- object_id: preparedness.inventory-home-possessions
+  claim_id: clm_007
+  claim_text: Consider local risks, such as floods, when deciding which items to prioritize
+    in your inventory.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: If you live in a fl ood-prone area, consider purchasing fl ood insurance
+      to reduce your risk of fl ood loss.
+    start_char: 0
+    end_char: 166
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000039
+bundle_overrides:
+  hook: Creating an inventory of your home possessions is essential for ensuring you
+    have proof of ownership and condition, making insurance claims easier in case
+    of damage or loss.
+  primer: An inventory of your home possessions is a detailed record of all the items
+    you own, including their value and condition. This record is crucial for insurance
+    purposes, as it provides proof of ownership and helps you file claims efficiently
+    if your belongings are damaged or lost. To create an inventory, you will need
+    a camera or smartphone to take photos or videos of your items. Optionally, you
+    can use the Household and Personal Property Inventory Book to organize your records.
+    Start by photographing or filming the interior and exterior of your home, focusing
+    on personal belongings. Log details about each item, such as purchase date and
+    value, in your inventory book. Regularly updating your inventory and storing it
+    securely, such as in a safety deposit box, is important to ensure your records
+    remain complete and accessible. Consider local risks, like floods, when deciding
+    which items to prioritize in your inventory.
+  guide: '1. Gather your tools: a camera or smartphone and, optionally, the Household
+    and Personal Property Inventory Book.
+
+    2. Begin by taking photos or videos of the exterior of your home. Capture all
+    angles to ensure comprehensive coverage.
+
+    3. Move inside and photograph or film each room. Focus on capturing high-value
+    items and unique belongings.
+
+    4. For each item, note down details such as the purchase date, value, and any
+    identifying features. Use the inventory book to organize this information.
+
+    5. Consider local risks, like floods, and prioritize documenting items that may
+    be more vulnerable.
+
+    6. Regularly update your inventory to reflect new purchases or changes in item
+    condition.
+
+    7. Store your inventory securely, such as in a safety deposit box or a secure
+    digital location, to prevent loss or unauthorized access.
+
+    8. Review your inventory periodically to ensure it remains accurate and complete.'
+  reference:
+  - Camera or smartphone
+  - Household and Personal Property Inventory Book
+  - Photos/videos of home interior and exterior
+  - 'Details of each item: purchase date, value, identifying features'
+  - Secure storage for inventory records
+  worksheet:
+  - List five high-value items in your home and take photos of them.
+  - Record the purchase date and estimated value of each item.
+  - Create a digital folder to store your inventory photos and details.
+  - Identify a secure location to store your inventory records.
+  - Update your inventory with any new items purchased in the last six months.
+  teach_forward_kit:
+    three_minute_version: Creating a home inventory involves photographing your belongings,
+      noting their details, and storing this information securely. This helps with
+      insurance claims if items are damaged or lost.
+    ten_minute_outline:
+    - Introduction to the importance of a home inventory
+    - 'Tools needed: camera, inventory book'
+    - 'Steps to create an inventory: photographing, recording details'
+    - Importance of regular updates and secure storage
+    - Consideration of local risks in inventory prioritization
+    discussion_prompts:
+    - Why is it important to have a home inventory?
+    - What challenges might you face when creating an inventory?
+    - How can you ensure your inventory remains up-to-date?
+    - What are some secure ways to store your inventory records?

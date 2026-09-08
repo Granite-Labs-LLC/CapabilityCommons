@@ -1,0 +1,238 @@
+id: fire-safety.smoke-alarms
+slug: fire-safety.smoke-alarms
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Installing and Maintaining Smoke Alarms
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Install and maintain smoke alarms to enhance fire safety.
+summary_medium: Learn how to properly install and maintain smoke alarms to significantly
+  reduce the risk of fire-related fatalities.
+plain_language: Smoke alarms are essential for fire safety. Installing them correctly
+  and maintaining them regularly can save lives.
+markdown_body: '### What this is
+
+  This guide provides instructions on how to install and maintain smoke alarms in
+  your home to enhance fire safety.
+
+
+  ### Why it matters
+
+  Properly working smoke alarms can decrease your chances of dying in a fire by half.
+  They provide early warning, allowing you to escape safely.
+
+
+  ### What you need
+
+  You will need smoke alarms and batteries.
+
+
+  ### How to do it
+
+  Install smoke alarms on every level of your home, especially outside bedrooms. Place
+  them on the ceiling or high on the wall, 4 to 12 inches from the ceiling. Test and
+  clean your smoke alarms monthly and replace the batteries at least once a year.
+  Replace the entire smoke alarm unit every 10 years.
+
+
+  ### Common failure modes
+
+  Smoke alarms may become non-functional if not tested regularly or if batteries are
+  not replaced. Alarms can also expire after 10 years.
+
+
+  ### Safety/boundary notes
+
+  Ensure smoke alarms are placed correctly to avoid false alarms, especially near
+  kitchens.
+
+
+  ### Local adaptation notes
+
+  Consider local building codes and regulations when installing smoke alarms.'
+structured_data:
+  tools:
+  - smoke alarms
+  materials:
+  - batteries
+  success_criteria: Smoke alarms are installed correctly and function as intended
+    during tests.
+  failure_modes:
+  - non-functional alarms
+  - expired alarms
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: Install at least one smoke alarm on each level of your
+      home.
+    tools:
+    - smoke alarms
+    materials:
+    - batteries
+    expected_time: 1-2 hours
+    expected_cost: low
+    success_checks:
+    - All alarms sound when tested.
+    - Alarms are placed correctly.
+    stop_conditions:
+    - If any alarm does not sound during testing, replace it immediately.
+    common_mistakes:
+    - Placing alarms too close to the kitchen.
+    - Forgetting to replace batteries.
+    variants:
+    - label: Renter
+      when: If you are renting, check with your landlord about existing smoke alarms.
+      notes: Ensure you have permission to install additional alarms if needed.
+    - label: Low-budget
+      when: If budget is a concern, prioritize installing alarms in sleeping areas.
+      notes: Look for discounts or community programs offering free smoke alarms.
+    when_to_escalate:
+    - If you are unable to install alarms yourself, contact a professional.
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.smoke-alarms
+  claim_id: clm_001
+  claim_text: Properly working smoke alarms can decrease your chances of dying in
+    a fire by half.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000181
+    excerpt: Properly working smoke alarms decrease your chances of dying in a fi
+      re by half.
+    start_char: 38
+    end_char: 106
+    support_strength: strong
+- object_id: fire-safety.smoke-alarms
+  claim_id: clm_002
+  claim_text: Install smoke alarms on every level of your home, especially outside
+    bedrooms. Place them on the ceiling or high on the wall, 4 to 12 inches from the
+    ceiling.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000181
+    excerpt: Place smoke alarms on every level of your residence. Place them outside
+      bedrooms on the ceiling or high on the wall (4 to 12 inches from ceiling)
+    start_char: 107
+    end_char: 234
+    support_strength: strong
+- object_id: fire-safety.smoke-alarms
+  claim_id: clm_003
+  claim_text: Test and clean your smoke alarms monthly and replace the batteries at
+    least once a year. Replace the entire smoke alarm unit every 10 years.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000181
+    excerpt: Test and clean smoke alarms once a month and replace batteries at least
+      once a year. Replace smoke alarms once every 10 years.
+    start_char: 235
+    end_char: 331
+    support_strength: strong
+- object_id: fire-safety.smoke-alarms
+  claim_id: clm_004
+  claim_text: Smoke alarms may become non-functional if not tested regularly or if
+    batteries are not replaced. Alarms can also expire after 10 years.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000181
+    excerpt: Test and clean smoke alarms once a month and replace batteries at least
+      once a year. Replace smoke alarms once every 10 years.
+    start_char: 235
+    end_char: 331
+    support_strength: medium
+- object_id: fire-safety.smoke-alarms
+  claim_id: clm_005
+  claim_text: Ensure smoke alarms are placed correctly to avoid false alarms, especially
+    near kitchens.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 117
+    page_end: 117
+    segment_id: src.fema.are-you-ready.2004::seg_000181
+    excerpt: Place them outside bedrooms on the ceiling or high on the wall (4 to
+      12 inches from ceiling), at the top of open stairways, or at the bottom of enclosed
+      stairs and near (but not in) the kitchen.
+    start_char: 107
+    end_char: 234
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000181
+bundle_overrides:
+  hook: Properly working smoke alarms can cut your risk of dying in a fire by half,
+    making them a crucial part of home safety.
+  primer: Smoke alarms are vital devices that alert you to the presence of smoke,
+    often indicating a fire. They are designed to provide an early warning, allowing
+    you and your family to escape safely. Installing smoke alarms on every level of
+    your home, particularly outside sleeping areas, is essential. They should be placed
+    on the ceiling or high on the wall, 4 to 12 inches from the ceiling, to function
+    optimally. Regular maintenance is key to ensuring they work correctly; this includes
+    testing and cleaning them monthly, replacing batteries annually, and replacing
+    the entire unit every 10 years. Proper placement is also crucial to avoid false
+    alarms, especially near kitchens. By following these guidelines, you can significantly
+    enhance your home's fire safety.
+  guide: "1. **Gather Materials**: You will need smoke alarms and batteries. \n2.\
+    \ **Choose Locations**: Install smoke alarms on every level of your home, especially\
+    \ outside bedrooms. Place them on the ceiling or high on the wall, 4 to 12 inches\
+    \ from the ceiling. Avoid placing them too close to the kitchen to prevent false\
+    \ alarms. \n3. **Install Smoke Alarms**: Follow the manufacturer's instructions\
+    \ for installation. Use a drill to secure the mounting bracket to the wall or\
+    \ ceiling, then attach the smoke alarm. \n4. **Test Alarms Monthly**: Press the\
+    \ test button on each smoke alarm to ensure it sounds. If it doesn't, replace\
+    \ the batteries or the unit if necessary. \n5. **Clean Alarms Monthly**: Use a\
+    \ vacuum cleaner to remove dust from the vents. This helps maintain sensitivity\
+    \ and functionality. \n6. **Replace Batteries Annually**: Even if the alarm doesn't\
+    \ chirp, replace the batteries at least once a year to ensure reliability. \n\
+    7. **Replace Units Every 10 Years**: Smoke alarms lose their effectiveness over\
+    \ time. Mark the installation date on the unit and replace it after 10 years."
+  reference:
+  - Install smoke alarms on every level of your home.
+  - Place alarms outside bedrooms, on the ceiling or high on the wall.
+  - Test and clean alarms monthly.
+  - Replace batteries annually.
+  - Replace smoke alarm units every 10 years.
+  - Avoid placing alarms too close to the kitchen.
+  worksheet:
+  - Identify and list all the locations in your home where smoke alarms are needed.
+  - Test each smoke alarm in your home and record the results.
+  - Create a maintenance schedule for testing, cleaning, and replacing batteries in
+    your smoke alarms.
+  - Research local building codes regarding smoke alarm installation and note any
+    specific requirements.
+  - Simulate a fire drill with your family to ensure everyone knows the sound of the
+    alarm and the escape plan.
+  teach_forward_kit:
+    three_minute_version: Smoke alarms are crucial for fire safety, reducing the risk
+      of fatalities by half. Install them on every level of your home, especially
+      outside bedrooms, and maintain them by testing monthly, cleaning, and replacing
+      batteries annually. Replace the entire unit every 10 years.
+    ten_minute_outline:
+    - Introduction to the importance of smoke alarms.
+    - Where to install smoke alarms in the home.
+    - How to install smoke alarms correctly.
+    - 'Monthly maintenance: testing and cleaning.'
+    - 'Annual maintenance: replacing batteries.'
+    - 'Long-term maintenance: replacing units every 10 years.'
+    - Avoiding common mistakes, like incorrect placement.
+    discussion_prompts:
+    - Why is it important to have smoke alarms on every level of your home?
+    - What are the potential consequences of not maintaining smoke alarms regularly?
+    - How can you ensure that your smoke alarms are placed correctly to avoid false
+      alarms?
+    - Discuss the importance of having a fire escape plan in conjunction with smoke
+      alarms.

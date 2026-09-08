@@ -1,0 +1,146 @@
+id: safety.driving-in-flood-conditions
+slug: safety.driving-in-flood-conditions
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Driving Safety in Flood Conditions
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: high
+summary_short: Key safety tips for driving in flood conditions.
+summary_medium: Important safety points for driving in flood conditions, including
+  the impact of water depth on vehicle control and buoyancy.
+plain_language: Learn how to stay safe when driving in areas affected by flooding.
+  Understand how water depth can affect your vehicle and what precautions to take.
+markdown_body: '### What this is
+
+  This reference sheet provides essential safety information for driving in flood
+  conditions, highlighting how different water depths affect vehicle control and buoyancy.
+
+
+  ### Why it matters
+
+  Driving in flood conditions can be extremely dangerous. Understanding the risks
+  and how to mitigate them can prevent accidents and save lives.
+
+
+  ### What you need
+
+  Awareness of your vehicle''s limitations in water and knowledge of local flood conditions.
+
+
+  ### How to do it
+
+  Avoid driving through floodwaters. If unavoidable, be aware that six inches of water
+  can cause loss of control, a foot of water can float many vehicles, and two feet
+  of rushing water can carry away most vehicles, including SUVs and pick-ups.
+
+
+  ### Common failure modes
+
+  Driving into floodwaters can lead to vehicle stalling, loss of control, or the vehicle
+  being carried away by the water.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety over vehicle safety. If in doubt, do not attempt
+  to drive through floodwaters.
+
+
+  ### Local adaptation notes
+
+  Consider local flood patterns and road conditions when planning travel during flood
+  warnings.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Avoid driving through floodwaters.
+  - Understand vehicle limitations in water.
+  failure_modes:
+  - Vehicle stalling
+  - Loss of control
+  - Vehicle being carried away
+  safety_boundary:
+  - Do not drive through water deeper than six inches.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.driving-in-flood-conditions
+  claim_id: clm_001
+  claim_text: Avoid driving through floodwaters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Avoid floodwaters; water may be contaminated by oil, gasoline, or raw
+      sewage. Water may also be electrically charged from underground or downed power
+      lines.
+    start_char: 0
+    end_char: 130
+    support_strength: strong
+- object_id: safety.driving-in-flood-conditions
+  claim_id: clm_002
+  claim_text: Six inches of water can cause loss of control.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Six inches of water will reach the bottom of most passenger cars causing
+      loss of control and possible stalling.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: safety.driving-in-flood-conditions
+  claim_id: clm_003
+  claim_text: A foot of water can float many vehicles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: A foot of water will float many vehicles.
+    start_char: 90
+    end_char: 123
+    support_strength: strong
+- object_id: safety.driving-in-flood-conditions
+  claim_id: clm_004
+  claim_text: Two feet of rushing water can carry away most vehicles, including SUVs
+    and pick-ups.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Two feet of rushing water can carry away most vehicles including sport
+      utility vehicles (SUV's) and pick-ups.
+    start_char: 124
+    end_char: 203
+    support_strength: strong
+- object_id: safety.driving-in-flood-conditions
+  claim_id: clm_005
+  claim_text: Driving into floodwaters can lead to vehicle stalling, loss of control,
+    or the vehicle being carried away by the water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Six inches of water will reach the bottom of most passenger cars causing
+      loss of control and possible stalling. Two feet of rushing water can carry away
+      most vehicles including sport utility vehicles (SUV's) and pick-ups.
+    start_char: 0
+    end_char: 203
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000075

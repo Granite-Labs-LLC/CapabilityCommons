@@ -1,0 +1,239 @@
+id: emergency.water-management
+slug: emergency.water-management
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Emergency Water Management
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for managing water during emergencies.
+summary_medium: Guidelines for managing water during emergencies, including consumption
+  needs, avoiding contamination, and accessing stored water.
+plain_language: Learn how to manage water effectively during emergencies by understanding
+  consumption needs, avoiding contamination, and accessing stored water.
+markdown_body: "# What this is\nThis guide provides essential steps for managing water\
+  \ during emergencies, ensuring safe consumption and access to water sources.\n\n\
+  # Why it matters\nIn emergencies, water may become scarce or contaminated. Proper\
+  \ management ensures that you have enough safe water to meet your needs.\n\n# What\
+  \ you need\nKnowledge of your water needs, ability to treat water, and access to\
+  \ home water sources like pipes and hot-water tanks.\n\n# How to do it\n1. Allow\
+  \ people to drink according to their needs, typically more than one-half gallon\
+  \ per day. \n2. Never ration water unless instructed by authorities. \n3. Drink\
+  \ uncontaminated water first, and treat suspicious water if necessary. \n4. Avoid\
+  \ carbonated and caffeinated drinks as they dehydrate the body. \n5. Turn off main\
+  \ water valves to protect home water sources from contamination.\n\n# Common failure\
+  \ modes\nDehydration due to insufficient water intake or consumption of contaminated\
+  \ water.\n\n# Safety/boundary notes\nDo not drink less than one quart of water daily.\
+  \ Ensure water is treated if it appears suspicious.\n\n# Local adaptation notes\n\
+  Consider local availability of water treatment methods and reports of water contamination."
+structured_data:
+  tools:
+  - water valves
+  materials:
+  - hot-water tank
+  success_criteria:
+  - Sufficient water intake
+  - Avoidance of contaminated water
+  failure_modes:
+  - Dehydration
+  - Contaminated water consumption
+  safety_boundary:
+  - Minimum daily water intake
+  - Water treatment necessity
+  implementation:
+    smallest_viable_version: Ensure everyone drinks at least one quart of water daily
+      and treat any suspicious water.
+    tools:
+    - water valves
+    materials:
+    - hot-water tank
+    expected_time: Varies based on situation
+    expected_cost: low
+    success_checks:
+    - Everyone has sufficient water intake
+    - No one consumes contaminated water
+    stop_conditions:
+    - Water supply is restored
+    - Professional help is available
+    common_mistakes:
+    - Rationing water unnecessarily
+    - Drinking untreated suspicious water
+    variants:
+    - label: urban
+      when: In a city with limited access to natural water sources
+      notes: Focus on stored water and local advisories.
+    - label: off-grid
+      when: In remote areas
+      notes: Emphasize water treatment and conservation.
+    when_to_escalate:
+    - If water contamination is confirmed
+    - If water supply is critically low
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.water-management
+  claim_id: clm_001
+  claim_text: Allow people to drink according to their needs, typically more than
+    one-half gallon per day.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: Essentials **1. Allow people to drink according to their needs**. Many
+      people need even more than the average of one-half gallon, per day.
+    start_char: 12
+    end_char: 121
+    support_strength: strong
+- object_id: emergency.water-management
+  claim_id: clm_002
+  claim_text: Never ration water unless instructed by authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: '- **2. Never ration water unless ordered to do so by authorities**.'
+    start_char: 125
+    end_char: 178
+    support_strength: strong
+- object_id: emergency.water-management
+  claim_id: clm_003
+  claim_text: Drink uncontaminated water first, and treat suspicious water if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: '- **3. Drink water that you know is not contaminated fi rst**. If necessary,
+      suspicious water, such as cloudy water from regular faucets or water from streams
+      or ponds, can be used after it has been treated.'
+    start_char: 182
+    end_char: 372
+    support_strength: strong
+- object_id: emergency.water-management
+  claim_id: clm_004
+  claim_text: Avoid carbonated and caffeinated drinks as they dehydrate the body.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: '- **4. Do not drink carbonated beverages instead of drinking water.**
+      Carbonated beverages do not meet drinking-water requirements. Caffeinated drinks
+      and alcohol dehydrate the body, which increases the need for drinking water.'
+    start_char: 376
+    end_char: 555
+    support_strength: strong
+- object_id: emergency.water-management
+  claim_id: clm_005
+  claim_text: Turn off main water valves to protect home water sources from contamination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: '- **5. Turn off the main water valves.** You will need to protect the
+      water sources already in your home from contamination if you hear reports of
+      broken water or sewage lines, or if local offi cials advise you of a problem.'
+    start_char: 559
+    end_char: 743
+    support_strength: strong
+- object_id: emergency.water-management
+  claim_id: clm_006
+  claim_text: Do not drink less than one quart of water daily.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 39
+    page_end: 40
+    segment_id: src.fema.are-you-ready.2004::seg_000053
+    excerpt: Under no circumstances should a person drink less than one quart (four
+      cups) of water each day.
+    start_char: 178
+    end_char: 251
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000053
+bundle_overrides:
+  hook: In emergencies, water is life. Learn how to ensure you and your loved ones
+    have safe and sufficient water when it matters most.
+  primer: Water is a critical resource, especially during emergencies when access
+    can be limited or compromised. Understanding how to manage water effectively can
+    mean the difference between safety and risk. During emergencies, it's essential
+    to prioritize drinking water needs, typically more than one-half gallon per day
+    per person. Authorities may advise against rationing water unless absolutely necessary,
+    as dehydration can quickly become a serious issue. Drinking uncontaminated water
+    should be your first choice, but if only suspicious water is available, it must
+    be treated before consumption. Avoid carbonated and caffeinated drinks as they
+    can dehydrate you further. Additionally, if there's a risk of contamination from
+    broken water or sewage lines, turning off your main water valves can protect your
+    home water sources. Remember, never drink less than one quart of water daily to
+    maintain health and hydration.
+  guide: '1. **Assess Water Needs**: Ensure everyone in your household drinks according
+    to their needs, typically more than one-half gallon per day. Do not ration water
+    unless instructed by authorities.
+
+
+    2. **Prioritize Safe Water**: Always choose uncontaminated water first. If you
+    have to use suspicious water, such as cloudy water from faucets or natural sources
+    like streams, treat it before drinking. Boiling, filtering, or using purification
+    tablets are common methods.
+
+
+    3. **Avoid Dehydrating Beverages**: Do not substitute water with carbonated or
+    caffeinated drinks, as they can increase dehydration. Stick to plain water to
+    meet your hydration needs.
+
+
+    4. **Protect Home Water Sources**: In case of reports of broken water or sewage
+    lines, turn off your main water valves to prevent contamination of your home water
+    supply.
+
+
+    5. **Maintain Minimum Intake**: Ensure that no one drinks less than one quart
+    of water daily. This is the minimum required to maintain basic bodily functions
+    and health.
+
+
+    6. **Stay Informed**: Keep updated with local advisories and instructions from
+    authorities regarding water safety and availability. This information can guide
+    your actions and help you make informed decisions.'
+  reference:
+  - Drink more than one-half gallon of water per day.
+  - Do not ration water unless instructed by authorities.
+  - Drink uncontaminated water first; treat suspicious water.
+  - Avoid carbonated and caffeinated drinks.
+  - Turn off main water valves to prevent contamination.
+  - Do not drink less than one quart of water daily.
+  worksheet:
+  - List your daily water needs and compare them to the recommended intake.
+  - Identify potential sources of uncontaminated water in your home.
+  - Research and list methods to treat suspicious water.
+  - Create a plan to turn off your main water valves in case of contamination.
+  - Track your daily water intake for a week to ensure it meets the minimum requirements.
+  teach_forward_kit:
+    three_minute_version: In emergencies, prioritize drinking more than one-half gallon
+      of water per day, avoid rationing unless advised, and treat any suspicious water.
+      Avoid dehydrating drinks and protect your home water supply by turning off main
+      valves if contamination is a risk.
+    ten_minute_outline:
+    - Introduction to the importance of water management in emergencies.
+    - Discuss daily water needs and the dangers of dehydration.
+    - Explain the importance of drinking uncontaminated water and methods to treat
+      suspicious water.
+    - Highlight the risks of carbonated and caffeinated drinks.
+    - Guide on protecting home water sources from contamination.
+    - Summarize key actions and safety tips.
+    discussion_prompts:
+    - Why is it important not to ration water unless instructed by authorities?
+    - What are some effective methods for treating suspicious water?
+    - How can you ensure your home water supply remains uncontaminated during an emergency?
+    - Discuss the impact of carbonated and caffeinated drinks on hydration.

@@ -1,0 +1,172 @@
+id: preparedness.basic-preparedness
+slug: preparedness-basic-preparedness
+seed_type: module
+co_type: skill_guide
+canonical_title: Basic Preparedness
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Develop a community-based emergency plan with worksheets and guidance.
+summary_medium: This module provides worksheets and guidance for creating a community-based
+  emergency plan, focusing on hazard identification, evacuation routes, communication
+  strategies, and disaster supplies checklists.
+plain_language: Learn how to prepare for emergencies by identifying local hazards,
+  planning evacuation routes, setting up communication plans, and assembling a disaster
+  supplies kit.
+markdown_body: "### What this is\nThis module helps you create a comprehensive emergency\
+  \ plan using worksheets and checklists. It focuses on identifying community hazards,\
+  \ planning evacuation routes, establishing communication strategies, and preparing\
+  \ a disaster supplies kit.\n\n### Why it matters\nHaving a well-prepared emergency\
+  \ plan can significantly reduce the risks and impacts of disasters on you and your\
+  \ family. It ensures you know what to do, where to go, and how to communicate during\
+  \ emergencies.\n\n### What you need\nYou will need access to community hazard information,\
+  \ worksheets for planning, and checklists for assembling a disaster supplies kit.\n\
+  \n### How to do it\n1. Obtain information about local hazards and community emergency\
+  \ plans. \n2. Develop a family communication plan. \n3. Plan evacuation routes.\
+  \ \n4. Assemble a disaster supplies kit using provided checklists.\n\n### Common\
+  \ failure modes\nIncomplete hazard identification and lack of a communication plan\
+  \ can lead to ineffective emergency preparedness.\n\n### Safety/boundary notes\n\
+  Ensure that your plan includes considerations for special needs, such as disabilities,\
+  \ and the care of animals.\n\n### Local adaptation notes\nAdapt your plan to include\
+  \ community-specific hazards and local evacuation routes."
+structured_data:
+  tools:
+  - worksheets
+  - checklists
+  materials: []
+  success_criteria:
+  - Complete hazard identification
+  - Effective communication plan
+  - Prepared evacuation routes
+  - Comprehensive disaster supplies kit
+  failure_modes:
+  - Incomplete hazard identification
+  - Lack of communication plan
+  safety_boundary: []
+  implementation:
+    smallest_viable_version: Create a basic emergency plan using available worksheets
+      and checklists.
+    tools:
+    - worksheets
+    - checklists
+    materials: []
+    expected_time: Varies based on community size and complexity
+    expected_cost: Minimal, primarily for printing materials
+    success_checks:
+    - Plan includes all identified hazards
+    - Communication plan is clear and accessible
+    - Evacuation routes are well-defined
+    stop_conditions:
+    - Plan is incomplete
+    - Communication plan is unclear
+    common_mistakes:
+    - Overlooking specific local hazards
+    - Failing to update the plan regularly
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Focus on high-rise building evacuation and public transport routes.
+    - label: Rural
+      when: In sparsely populated areas
+      notes: Consider longer evacuation routes and limited communication infrastructure.
+    when_to_escalate:
+    - If local hazards are not well understood
+    - If community resources are insufficient
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_001
+  claim_text: This module helps you create a comprehensive emergency plan using worksheets
+    and checklists.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 10
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    excerpt: A series of worksheets to help you obtain information from the community
+      that will form the foundation of your plan.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_002
+  claim_text: It focuses on identifying community hazards, planning evacuation routes,
+    establishing communication strategies, and preparing a disaster supplies kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 10
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    excerpt: You will need to fi nd out about hazards that threaten the community,
+      how the population will be warned, evacuation routes to be used in times of
+      disaster, and the emergency plans of the community.
+    start_char: 100
+    end_char: 300
+    support_strength: strong
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_003
+  claim_text: Having a well-prepared emergency plan can significantly reduce the risks
+    and impacts of disasters on you and your family.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Disasters disrupt hundreds of thousands of lives every year. Each disaster
+      has lasting effects, both to people and property.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_004
+  claim_text: You will need access to community hazard information, worksheets for
+    planning, and checklists for assembling a disaster supplies kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 10
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    excerpt: A series of worksheets to help you obtain information from the community
+      that will form the foundation of your plan.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_005
+  claim_text: Incomplete hazard identification and lack of a communication plan can
+    lead to ineffective emergency preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area.
+    start_char: 200
+    end_char: 300
+    support_strength: medium
+- object_id: preparedness-basic-preparedness
+  claim_id: clm_006
+  claim_text: Ensure that your plan includes considerations for special needs, such
+    as disabilities, and the care of animals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 10
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000013
+    excerpt: address special needs such as disabilities, take care of animals, and
+      seek shelter.
+    start_char: 400
+    end_char: 500
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000013

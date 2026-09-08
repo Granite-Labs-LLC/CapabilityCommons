@@ -1,0 +1,273 @@
+id: disaster.recovery-process
+slug: disaster.recovery-process
+seed_type: module
+co_type: skill_guide
+canonical_title: Disaster Recovery Process
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster_management
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Steps for recovering from a disaster, including damage assessment and
+  insurance contact.
+summary_medium: Guidelines for recovering from a disaster, focusing on assessing damage,
+  contacting insurance, and seeking assistance.
+plain_language: Learn how to recover from a disaster by assessing damage, contacting
+  your insurance, and seeking help.
+markdown_body: "# What this is\nThis guide provides a structured approach to recovering\
+  \ from a disaster, focusing on key steps such as assessing damage, contacting insurance\
+  \ companies, and seeking assistance from local programs.\n\n# Why it matters\nRecovering\
+  \ from a disaster can be overwhelming. Following a structured process helps ensure\
+  \ that all necessary steps are taken to secure financial support and begin rebuilding.\n\
+  \n# What you need\nYou will need insurance documents, damage assessment forms, and\
+  \ information on local assistance programs.\n\n# How to do it\n1. Assess the damage\
+  \ to your property and document it thoroughly. \n2. Contact your insurance company\
+  \ as soon as possible to report the damage and begin the claims process. \n3. Seek\
+  \ assistance from local programs or government agencies that offer support for disaster\
+  \ recovery.\n\n# Common failure modes\nFailing to complete a thorough damage assessment\
+  \ or delaying contact with your insurance company can hinder the recovery process.\n\
+  \n# Safety/boundary notes\nEnsure personal safety when assessing damage, especially\
+  \ if structural integrity is compromised.\n\n# Local adaptation notes\nConsider\
+  \ the availability of local assistance programs and regional insurance policies\
+  \ when planning your recovery process."
+structured_data:
+  tools:
+  - insurance documents
+  - damage assessment forms
+  materials: []
+  success_criteria:
+  - Complete damage assessment
+  - Timely insurance contact
+  - Access to assistance programs
+  failure_modes:
+  - Incomplete damage assessment
+  - Delayed insurance contact
+  safety_boundary: Ensure personal safety during damage assessment.
+  implementation:
+    smallest_viable_version: Begin by assessing damage and contacting your insurance.
+    tools:
+    - insurance documents
+    - damage assessment forms
+    materials: []
+    expected_time: Varies depending on the extent of the damage
+    expected_cost: Varies depending on the extent of the damage
+    success_checks:
+    - Damage is fully documented
+    - Insurance claim is filed promptly
+    stop_conditions:
+    - All damage is assessed
+    - Insurance contact is made
+    common_mistakes:
+    - Not documenting all damage
+    - Delaying insurance contact
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Consider additional local government resources.
+    - label: Off-grid
+      when: In remote areas
+      notes: Access to assistance may be limited.
+    when_to_escalate:
+    - If structural damage is severe
+    - If insurance claim is denied
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster.recovery-process
+  claim_id: clm_001
+  claim_text: This guide provides a structured approach to recovering from a disaster,
+    focusing on key steps such as assessing damage, contacting insurance companies,
+    and seeking assistance from local programs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Recovering from a disaster is usually a gradual process. Safety is a
+      primary issue, as are mental and physical well-being. If assistance is available,
+      knowing how to access it makes the process faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: medium
+- object_id: disaster.recovery-process
+  claim_id: clm_002
+  claim_text: Recovering from a disaster can be overwhelming. Following a structured
+    process helps ensure that all necessary steps are taken to secure financial support
+    and begin rebuilding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Recovering from a disaster is usually a gradual process. Safety is a
+      primary issue, as are mental and physical well-being. If assistance is available,
+      knowing how to access it makes the process faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: medium
+- object_id: disaster.recovery-process
+  claim_id: clm_003
+  claim_text: You will need insurance documents, damage assessment forms, and information
+    on local assistance programs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: If assistance is available, knowing how to access it makes the process
+      faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: weak
+- object_id: disaster.recovery-process
+  claim_id: clm_004
+  claim_text: Assess the damage to your property and document it thoroughly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Walk carefully around the outside and check for loose power lines, gas
+      leaks, and structural damage.
+    start_char: 0
+    end_char: 230
+    support_strength: medium
+- object_id: disaster.recovery-process
+  claim_id: clm_005
+  claim_text: Contact your insurance company as soon as possible to report the damage
+    and begin the claims process.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: If assistance is available, knowing how to access it makes the process
+      faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: weak
+- object_id: disaster.recovery-process
+  claim_id: clm_006
+  claim_text: Seek assistance from local programs or government agencies that offer
+    support for disaster recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: If assistance is available, knowing how to access it makes the process
+      faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: medium
+- object_id: disaster.recovery-process
+  claim_id: clm_007
+  claim_text: Failing to complete a thorough damage assessment or delaying contact
+    with your insurance company can hinder the recovery process.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: If assistance is available, knowing how to access it makes the process
+      faster and less stressful.
+    start_char: 0
+    end_char: 230
+    support_strength: weak
+- object_id: disaster.recovery-process
+  claim_id: clm_008
+  claim_text: Ensure personal safety when assessing damage, especially if structural
+    integrity is compromised.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    excerpt: Walk carefully around the outside and check for loose power lines, gas
+      leaks, and structural damage. If you have any doubts about safety, have your
+      residence inspected by a qualified building inspector or structural engineer
+      before entering.
+    start_char: 0
+    end_char: 230
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000271
+bundle_overrides:
+  hook: Recovering from a disaster can be overwhelming, but a structured approach
+    ensures you don't miss critical steps for financial support and rebuilding.
+  primer: Disasters can strike unexpectedly, leaving individuals and communities in
+    distress. Recovering from such events is a gradual process that requires careful
+    planning and execution. The primary focus is on ensuring safety, both physically
+    and mentally, while also addressing the financial and structural impacts. A structured
+    disaster recovery process involves assessing the damage to your property, contacting
+    your insurance company promptly, and seeking assistance from local programs or
+    government agencies. Having the right documents, such as insurance papers and
+    damage assessment forms, is crucial. This process not only helps in securing financial
+    support but also aids in rebuilding lives and communities. By following a systematic
+    approach, you can make the recovery process less stressful and more efficient.
+  guide: '1. **Ensure Safety**: Before anything else, make sure that it is safe to
+    assess the damage. Check for hazards like loose power lines, gas leaks, or structural
+    damage. If in doubt, have a professional inspect the area.
+
+
+    2. **Assess the Damage**: Carefully document all damage to your property. Take
+    photos and notes, as these will be essential for insurance claims and assistance
+    applications.
+
+
+    3. **Contact Your Insurance Company**: As soon as it is safe, contact your insurance
+    provider to report the damage. Provide them with the documentation you have gathered
+    to start the claims process.
+
+
+    4. **Seek Local Assistance**: Look for local programs or government agencies that
+    offer disaster recovery support. These can provide additional resources and financial
+    aid.
+
+
+    5. **Document Everything**: Keep a detailed record of all communications and transactions
+    related to the recovery process. This includes insurance claims, assistance applications,
+    and any repairs or rebuilding efforts.
+
+
+    6. **Plan for Rebuilding**: Once immediate needs are addressed, start planning
+    for long-term rebuilding. This may involve hiring contractors, applying for additional
+    financial aid, or making decisions about future safety measures.'
+  reference:
+  - Ensure personal safety first.
+  - Document all damage thoroughly.
+  - Contact insurance promptly.
+  - Seek local assistance programs.
+  - Keep detailed records.
+  - Plan for long-term rebuilding.
+  worksheet:
+  - List potential hazards to check for before assessing damage.
+  - Create a checklist for documenting property damage.
+  - Draft a script for contacting your insurance company.
+  - Research local assistance programs available in your area.
+  - Outline a plan for keeping records during the recovery process.
+  - Develop a long-term rebuilding plan considering future safety measures.
+  teach_forward_kit:
+    three_minute_version: Disaster recovery involves ensuring safety, assessing damage,
+      contacting insurance, and seeking local assistance. Document everything and
+      plan for rebuilding.
+    ten_minute_outline:
+    - Introduction to disaster recovery
+    - Importance of safety and initial assessment
+    - Steps to document damage
+    - How to contact insurance and start claims
+    - Exploring local assistance options
+    - Importance of record-keeping
+    - Planning for long-term rebuilding
+    discussion_prompts:
+    - What are the first steps you would take after a disaster?
+    - How can documenting damage help in the recovery process?
+    - What challenges might arise when contacting insurance companies?
+    - Why is it important to seek local assistance programs?
+    - How can planning for future safety measures benefit long-term recovery?

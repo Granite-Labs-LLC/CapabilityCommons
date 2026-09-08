@@ -1,0 +1,146 @@
+id: safety.lightning-awareness
+slug: safety.lightning-awareness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Lightning Awareness for Boaters
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Essential lightning safety information for boaters.
+summary_medium: A two-page factsheet providing essential information about lightning
+  safety for boaters, including understanding risks and implementing safety measures.
+plain_language: This guide helps boaters understand the risks of lightning and how
+  to stay safe on the water.
+markdown_body: '# What this is
+
+  This is a reference sheet providing essential information about lightning safety
+  specifically for boaters.
+
+
+  # Why it matters
+
+  Lightning poses significant risks to those on the water. Understanding these risks
+  and implementing safety measures can prevent accidents and save lives.
+
+
+  # What you need
+
+  Awareness of weather conditions, a plan for seeking shelter, and knowledge of safety
+  measures to implement on boats.
+
+
+  # How to do it
+
+  Monitor weather forecasts and be aware of developing storms. If lightning is detected,
+  seek shelter immediately. Avoid open water and metal objects. Ensure all safety
+  equipment is in good condition.
+
+
+  # Common failure modes
+
+  Ignoring lightning warnings, failing to seek shelter promptly, and inadequate safety
+  measures on boats.
+
+
+  # Safety/boundary notes
+
+  Always prioritize personal safety over property. Do not attempt to ride out a storm
+  on open water.
+
+
+  # Local adaptation notes
+
+  Adapt safety measures based on local weather patterns and available shelter options.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Boaters successfully avoid lightning-related incidents by following
+    safety guidelines.
+  failure_modes: Ignoring warnings, inadequate preparation, and lack of shelter.
+  safety_boundary: Avoid being on open water during a storm and seek shelter immediately.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.lightning-awareness
+  claim_id: clm_001
+  claim_text: Lightning poses significant risks to those on the water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'Avoid the following: ... a boat on the water'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: safety.lightning-awareness
+  claim_id: clm_002
+  claim_text: Monitor weather forecasts and be aware of developing storms.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Use your battery-operated NOAA Weather Radio for updates from local officials.
+    start_char: 0
+    end_char: 1000
+    support_strength: medium
+- object_id: safety.lightning-awareness
+  claim_id: clm_003
+  claim_text: If lightning is detected, seek shelter immediately.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Get to land and find shelter immediately.
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: safety.lightning-awareness
+  claim_id: clm_004
+  claim_text: Avoid open water and metal objects.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'Avoid the following: ... a boat on the water ... Anything metal'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+- object_id: safety.lightning-awareness
+  claim_id: clm_006
+  claim_text: Ignoring lightning warnings, failing to seek shelter promptly, and inadequate
+    safety measures on boats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'Avoid the following: ... a boat on the water'
+    start_char: 0
+    end_char: 1000
+    support_strength: medium
+- object_id: safety.lightning-awareness
+  claim_id: clm_008
+  claim_text: Do not attempt to ride out a storm on open water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'Avoid the following: ... a boat on the water'
+    start_char: 0
+    end_char: 1000
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000116

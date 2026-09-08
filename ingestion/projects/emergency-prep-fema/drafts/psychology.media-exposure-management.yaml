@@ -1,0 +1,269 @@
+id: psychology.media-exposure-management
+slug: psychology.media-exposure-management
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Managing Media Exposure for Families Post-Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: psychology
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Manage media exposure post-disaster to reduce anxiety.
+summary_medium: Guidance on managing media exposure for families after a disaster
+  to prevent anxiety, especially in children.
+plain_language: Learn how to limit your family's exposure to media after a disaster
+  to help prevent anxiety and confusion, particularly in children.
+markdown_body: '### What this is
+
+  This skill guide provides strategies for managing media exposure for families following
+  a disaster. It focuses on reducing anxiety and confusion, especially in children,
+  by controlling the amount and type of media consumed.
+
+
+  ### Why it matters
+
+  Exposure to media coverage of disasters can cause fear and anxiety, particularly
+  in children who may not understand that repeated images are not new events. Managing
+  this exposure helps maintain emotional stability and prevent unnecessary stress.
+
+
+  ### What you need
+
+  Awareness of the media content being consumed by your family and the ability to
+  supervise and limit this exposure.
+
+
+  ### How to do it
+
+  1. Monitor the media your family is exposed to, especially news related to disasters.
+
+  2. Limit the time spent on consuming such media.
+
+  3. Be present with children when they are exposed to media, providing explanations
+  and encouraging communication.
+
+  4. Consider limiting your own exposure to anxiety-provoking media to set an example.
+
+
+  ### Common failure modes
+
+  Allowing overexposure to media, which can increase anxiety and confusion.
+
+
+  ### Safety/boundary notes
+
+  Ensure that explanations provided to children are age-appropriate and do not increase
+  their anxiety.
+
+
+  ### Local adaptation notes
+
+  Adapt the level of media exposure based on the specific needs and sensitivities
+  of your family.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Family members, especially children, show reduced anxiety and
+    better understanding of the disaster situation.
+  failure_modes: Overexposure to media leading to increased anxiety.
+  safety_boundary: Ensure explanations are age-appropriate and do not increase anxiety.
+  implementation:
+    smallest_viable_version: Limit media exposure to reduce anxiety in children post-disaster.
+    tools: []
+    materials: []
+    expected_time: Ongoing
+    expected_cost: Free
+    success_checks:
+    - Children express less anxiety about the disaster.
+    - Family members engage in open discussions about media content.
+    stop_conditions:
+    - Increased anxiety or confusion in children.
+    - Difficulty managing media exposure without professional help.
+    common_mistakes:
+    - Allowing children to watch disaster coverage unsupervised.
+    - Not discussing the media content with children.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area with high media coverage.
+      notes: Consider additional activities to distract from media.
+    - label: Low-budget
+      when: Limited access to alternative entertainment.
+      notes: Use free resources like library books or community events.
+    when_to_escalate:
+    - If a child shows signs of severe anxiety or distress.
+    - If managing media exposure becomes overwhelming for the family.
+requires: []
+suggested_edges: []
+citations:
+- object_id: psychology.media-exposure-management
+  claim_id: clm_001
+  claim_text: Exposure to media coverage of disasters can cause fear and anxiety,
+    particularly in children who may not understand that repeated images are not new
+    events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: News coverage related to a disaster may elicit fear and confusion and
+      arouse anxiety in children. This is particularly true for large-scale disasters
+      or a terrorist event where significant property damage and loss of life has
+      occurred. Particularly for younger children, repeated images of an event may
+      cause them to believe the event is recurring over and over.
+    start_char: 0
+    end_char: 324
+    support_strength: strong
+- object_id: psychology.media-exposure-management
+  claim_id: clm_002
+  claim_text: Managing this exposure helps maintain emotional stability and prevent
+    unnecessary stress.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: If parents allow children to watch television or use the Internet where
+      images or news about the disaster are shown, parents should be with them to
+      encourage communication and provide explanations. This may also include parent's
+      monitoring and appropriately limiting their own exposure to anxiety-provoking
+      information.
+    start_char: 325
+    end_char: 573
+    support_strength: medium
+- object_id: psychology.media-exposure-management
+  claim_id: clm_003
+  claim_text: Monitor the media your family is exposed to, especially news related
+    to disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: If parents allow children to watch television or use the Internet where
+      images or news about the disaster are shown, parents should be with them to
+      encourage communication and provide explanations.
+    start_char: 325
+    end_char: 482
+    support_strength: strong
+- object_id: psychology.media-exposure-management
+  claim_id: clm_004
+  claim_text: Limit the time spent on consuming such media.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: This may also include parent's monitoring and appropriately limiting
+      their own exposure to anxiety-provoking information.
+    start_char: 482
+    end_char: 573
+    support_strength: medium
+- object_id: psychology.media-exposure-management
+  claim_id: clm_005
+  claim_text: Be present with children when they are exposed to media, providing explanations
+    and encouraging communication.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: If parents allow children to watch television or use the Internet where
+      images or news about the disaster are shown, parents should be with them to
+      encourage communication and provide explanations.
+    start_char: 325
+    end_char: 482
+    support_strength: strong
+- object_id: psychology.media-exposure-management
+  claim_id: clm_006
+  claim_text: Consider limiting your own exposure to anxiety-provoking media to set
+    an example.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 190
+    segment_id: src.fema.are-you-ready.2004::seg_000286
+    excerpt: This may also include parent's monitoring and appropriately limiting
+      their own exposure to anxiety-provoking information.
+    start_char: 482
+    end_char: 573
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000286
+bundle_overrides:
+  hook: In the aftermath of a disaster, managing media exposure can be crucial for
+    maintaining your family's emotional well-being, especially for children who may
+    not understand the repeated images they see.
+  primer: After a disaster, media coverage can be overwhelming and often distressing,
+    especially for children. The constant replay of images and news can create a false
+    sense of ongoing danger, leading to increased fear and anxiety. Children, in particular,
+    may struggle to differentiate between live events and repeated broadcasts, which
+    can exacerbate their stress. It's important for families to manage this exposure
+    to help maintain emotional stability. By monitoring and limiting the media content
+    that family members, especially children, are exposed to, parents can help mitigate
+    unnecessary stress and confusion. This involves being present to provide context
+    and explanations, encouraging open communication, and setting an example by managing
+    their own media consumption. These strategies can help create a more supportive
+    environment for recovery and understanding.
+  guide: '1. **Monitor Media Exposure**: Keep track of the types of media your family
+    is consuming, especially news related to disasters. Be aware of the content and
+    its potential impact on family members.
+
+
+    2. **Limit Media Time**: Set specific times for consuming media and stick to them.
+    This helps prevent overexposure, which can lead to increased anxiety and confusion.
+
+
+    3. **Be Present**: When children are exposed to media, be there with them. Provide
+    explanations and encourage them to ask questions. This helps them process the
+    information better and reduces fear.
+
+
+    4. **Set an Example**: Limit your own exposure to anxiety-provoking media. Children
+    often mimic adult behavior, so by managing your own media consumption, you set
+    a positive example.
+
+
+    5. **Encourage Alternative Activities**: Engage in activities that do not involve
+    media, such as reading, playing games, or outdoor activities. This helps distract
+    from the constant media cycle and provides a break from stress.
+
+
+    6. **Discuss Media Content**: Have open discussions about what is seen in the
+    media. This can help children understand the context and reduce misunderstandings
+    or fears.'
+  reference:
+  - Monitor media exposure, especially disaster-related news.
+  - Limit time spent on consuming media.
+  - Be present with children during media exposure.
+  - Provide explanations and encourage communication.
+  - Limit your own exposure to anxiety-provoking media.
+  - Engage in alternative activities.
+  worksheet:
+  - List the types of media your family consumes regularly.
+  - Create a schedule to limit media exposure time each day.
+  - Plan a family discussion about a recent news event and practice providing explanations.
+  - Identify alternative activities to replace media time.
+  - Reflect on your own media consumption habits and set personal limits.
+  teach_forward_kit:
+    three_minute_version: Managing media exposure after a disaster is key to reducing
+      anxiety, especially in children. Monitor what your family watches, limit screen
+      time, be present to explain content, and set a good example by managing your
+      own media habits.
+    ten_minute_outline:
+    - Introduction to media exposure post-disaster
+    - Impact on children and family emotional health
+    - Steps to monitor and limit media exposure
+    - Importance of parental presence and communication
+    - Setting personal media consumption limits
+    - Encouraging alternative activities
+    discussion_prompts:
+    - How does media exposure affect your family's emotional well-being?
+    - What strategies have you found effective in managing media exposure?
+    - How can you encourage open communication about media content with children?
+    - What alternative activities can your family engage in to reduce media time?

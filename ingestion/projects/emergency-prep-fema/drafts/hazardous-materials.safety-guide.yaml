@@ -1,0 +1,227 @@
+id: hazardous-materials.safety-guide
+slug: hazardous-materials.safety-guide
+seed_type: module
+co_type: skill_guide
+canonical_title: Hazardous Materials Safety Guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: hazardous-materials
+secondary_domains: []
+stage: household
+contexts:
+- parents
+- teachers
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A guide to reducing home injuries and deaths from hazardous materials.
+summary_medium: This guide provides information on how to reduce the risk of injuries
+  and deaths in the home due to hazardous materials, aimed at parents and teachers.
+plain_language: Learn how to keep your home safe from hazardous materials with this
+  guide designed for parents and teachers.
+markdown_body: '### What this is
+
+  This is a safety guide focused on reducing the number of injuries and deaths in
+  the home caused by hazardous materials. It is a web-based program designed for parents
+  and teachers.
+
+
+  ### Why it matters
+
+  Hazardous materials in the home can pose significant risks, including exposure to
+  toxic substances. Understanding how to manage these materials can prevent accidents
+  and save lives.
+
+
+  ### What you need
+
+  Access to the web-based program and a willingness to learn about hazardous materials
+  and home safety.
+
+
+  ### How to do it
+
+  Participate in the web-based safety program provided by FEMA. Follow the guidelines
+  and recommendations to identify and manage hazardous materials in your home.
+
+
+  ### Common failure modes
+
+  Failure to recognize hazardous materials, improper storage, and lack of awareness
+  about the risks associated with these materials.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all hazardous materials are stored safely and out of reach of children.
+  Follow all safety guidelines provided in the program.
+
+
+  ### Local adaptation notes
+
+  Consider local regulations and resources when implementing safety measures in your
+  home.'
+structured_data:
+  tools:
+  - web-based program
+  materials: []
+  success_criteria:
+  - Reduced incidents of hazardous material exposure in the home
+  failure_modes:
+  - Exposure to hazards due to improper handling or storage
+  safety_boundary: Ensure all hazardous materials are stored safely and out of reach
+    of children.
+  implementation:
+    smallest_viable_version: Complete the web-based program to understand basic safety
+      measures.
+    tools:
+    - Computer or device with internet access
+    materials: []
+    expected_time: 2 hours
+    expected_cost: None
+    success_checks:
+    - Completion of the program
+    - Implementation of recommended safety measures
+    stop_conditions:
+    - If unable to access the internet
+    - If local regulations differ significantly
+    common_mistakes:
+    - Ignoring safety guidelines
+    - Improper storage of materials
+    variants:
+    - label: Urban
+      when: Living in a densely populated area
+      notes: Consider additional local resources and regulations.
+    when_to_escalate:
+    - If unsure about the safety of specific materials
+    - If exposure occurs
+requires: []
+suggested_edges: []
+citations:
+- object_id: hazardous-materials.safety-guide
+  claim_id: clm_001
+  claim_text: This is a safety guide focused on reducing the number of injuries and
+    deaths in the home caused by hazardous materials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 139
+    page_end: 139
+    segment_id: src.fema.are-you-ready.2004::seg_000215
+    excerpt: Web-based safety program focused on reducing the number of deaths and
+      injuries in the home.
+    start_char: 140
+    end_char: 205
+    support_strength: strong
+- object_id: hazardous-materials.safety-guide
+  claim_id: clm_002
+  claim_text: Hazardous materials in the home can pose significant risks, including
+    exposure to toxic substances.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 136
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000212
+    excerpt: 'Learn to recognize the symptoms of toxic poisoning, which are as follows:
+      Difficulty breathing. Irritation of the eyes, skin, throat, or respiratory tract.'
+    start_char: 1096
+    end_char: 1210
+    support_strength: strong
+- object_id: hazardous-materials.safety-guide
+  claim_id: clm_003
+  claim_text: Participate in the web-based safety program provided by FEMA.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 139
+    page_end: 139
+    segment_id: src.fema.are-you-ready.2004::seg_000215
+    excerpt: 'FEMA Publications *Household Hazardous Materials: A Guide for Citizens*.
+      IS 55. An independent study resource for parents and teachers.'
+    start_char: 0
+    end_char: 139
+    support_strength: strong
+- object_id: hazardous-materials.safety-guide
+  claim_id: clm_004
+  claim_text: Ensure that all hazardous materials are stored safely and out of reach
+    of children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: It is critical to store household chemicals in places where children
+      cannot access them.
+    start_char: 319
+    end_char: 387
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000215
+bundle_overrides:
+  hook: Protect your family by learning how to safely manage hazardous materials in
+    your home.
+  primer: Hazardous materials are common in many households, from cleaning products
+    to paints and pesticides. While these items are useful, they can pose significant
+    risks if not handled properly. Exposure to toxic substances can lead to health
+    issues such as difficulty breathing and skin irritation. This guide is designed
+    to help parents and teachers understand how to identify and manage these materials
+    safely. By following the guidelines provided, you can reduce the risk of accidents
+    and ensure a safer home environment. The guide is part of a web-based program
+    offered by FEMA, which provides comprehensive information on household hazardous
+    materials and safety practices.
+  guide: "1. **Identify Hazardous Materials**: Start by taking inventory of all potentially\
+    \ hazardous materials in your home. This includes cleaning supplies, paints, pesticides,\
+    \ and any other chemicals. \n\n2. **Read Labels Carefully**: Check the labels\
+    \ on each product for safety instructions and warnings. Look for symbols indicating\
+    \ toxicity or flammability. \n\n3. **Proper Storage**: Store hazardous materials\
+    \ in a secure location, out of reach of children and pets. Use locked cabinets\
+    \ if necessary. Ensure that containers are sealed tightly to prevent leaks or\
+    \ spills. \n\n4. **Use Materials Safely**: Follow the instructions on the label\
+    \ when using any hazardous material. Wear protective gear such as gloves or masks\
+    \ if recommended. Ensure good ventilation in the area where you are using the\
+    \ product. \n\n5. **Dispose of Materials Properly**: Do not pour hazardous materials\
+    \ down the drain or throw them in the trash. Check local regulations for proper\
+    \ disposal methods, such as community hazardous waste collection events. \n\n\
+    6. **Participate in FEMA's Program**: Engage with the web-based safety program\
+    \ provided by FEMA to deepen your understanding of hazardous materials and safety\
+    \ practices. \n\n7. **Regularly Review Safety Practices**: Periodically review\
+    \ your safety practices and update your knowledge to ensure ongoing safety in\
+    \ your home."
+  reference:
+  - Identify and inventory hazardous materials in your home.
+  - Read and follow label instructions carefully.
+  - Store materials securely and out of reach of children.
+  - Use protective gear as needed.
+  - Dispose of materials according to local regulations.
+  - Participate in FEMA's web-based safety program.
+  worksheet:
+  - List five hazardous materials found in your home and describe their potential
+    risks.
+  - Create a storage plan for hazardous materials to ensure they are out of reach
+    of children.
+  - Research local disposal methods for hazardous waste and outline the steps for
+    proper disposal.
+  - Identify three safety practices you can implement immediately to reduce risk in
+    your home.
+  teach_forward_kit:
+    three_minute_version: Hazardous materials in the home can pose serious risks if
+      not managed properly. By identifying these materials, storing them safely, and
+      following usage instructions, you can protect your family from potential harm.
+      Engage with FEMA's web-based program to enhance your understanding and ensure
+      a safer home environment.
+    ten_minute_outline:
+    - Introduction to hazardous materials in the home.
+    - Importance of reading labels and understanding risks.
+    - Steps for safe storage and handling of materials.
+    - Proper disposal methods for hazardous waste.
+    - Overview of FEMA's web-based safety program.
+    - Discussion on implementing safety practices at home.
+    discussion_prompts:
+    - What are some common hazardous materials found in homes, and what risks do they
+      pose?
+    - How can we ensure that hazardous materials are stored safely, especially in
+      homes with children?
+    - What challenges might you face in disposing of hazardous materials, and how
+      can you overcome them?
+    - How can participating in a program like FEMA's enhance your understanding of
+      home safety?

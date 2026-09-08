@@ -1,0 +1,165 @@
+id: safety.trapped-in-debris
+slug: safety.trapped-in-debris
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Guidelines for Safety When Trapped in Debris
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Guidelines for signaling rescuers and protecting oneself when trapped
+  in debris.
+summary_medium: Learn how to signal rescuers and protect yourself from dust inhalation
+  if trapped in debris.
+plain_language: If you find yourself trapped under debris, use a flashlight to signal
+  rescuers, cover your nose and mouth to prevent dust inhalation, and use a whistle
+  or tap on surfaces to make noise. Shout only as a last resort.
+markdown_body: '### What this is
+
+  This reference sheet provides essential guidelines for individuals who find themselves
+  trapped in debris, focusing on signaling rescuers and protecting oneself from dust
+  inhalation.
+
+
+  ### Why it matters
+
+  Being trapped in debris can be life-threatening due to the risk of dust inhalation
+  and the difficulty rescuers may have in locating you. Following these guidelines
+  can increase your chances of being found and reduce health risks.
+
+
+  ### What you need
+
+  A flashlight, dense-weave cotton material, and a whistle are recommended tools to
+  have on hand.
+
+
+  ### How to do it
+
+  1. Use a flashlight to signal your location to rescuers if possible.
+
+  2. Minimize movement to avoid kicking up dust.
+
+  3. Cover your nose and mouth with dense-weave cotton material to filter dust.
+
+  4. Tap on a pipe or wall to make noise.
+
+  5. Use a whistle to signal rescuers if available.
+
+  6. Shout only as a last resort to avoid inhaling dust.
+
+
+  ### Common failure modes
+
+  Failing to signal effectively, inhaling dust due to shouting, and not being heard
+  by rescuers.
+
+
+  ### Safety/boundary notes
+
+  Avoid shouting unless absolutely necessary to prevent dust inhalation.
+
+
+  ### Local adaptation notes
+
+  Adapt the guidelines based on available materials and tools in your environment.'
+structured_data:
+  tools:
+  - flashlight
+  - whistle
+  materials:
+  - dense-weave cotton material
+  success_criteria:
+  - Rescuers are able to locate you
+  - Minimal dust inhalation
+  failure_modes:
+  - Inhaling dust
+  - Not being heard by rescuers
+  safety_boundary: Avoid shouting to prevent dust inhalation.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.trapped-in-debris
+  claim_id: clm_001
+  claim_text: Use a flashlight to signal your location to rescuers if possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: If possible, use a flashlight to signal your location to rescuers.
+    start_char: 0
+    end_char: 63
+    support_strength: strong
+- object_id: safety.trapped-in-debris
+  claim_id: clm_002
+  claim_text: Minimize movement to avoid kicking up dust.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: Avoid unnecessary movement so you don't kick up dust.
+    start_char: 64
+    end_char: 112
+    support_strength: strong
+- object_id: safety.trapped-in-debris
+  claim_id: clm_003
+  claim_text: Cover your nose and mouth with dense-weave cotton material to filter
+    dust.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: Cover your nose and mouth with anything you have on hand. (Dense-weave
+      cotton material can act as a good filter. Try to breathe through the material.)
+    start_char: 113
+    end_char: 223
+    support_strength: strong
+- object_id: safety.trapped-in-debris
+  claim_id: clm_004
+  claim_text: Tap on a pipe or wall to make noise.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: Tap on a pipe or wall so rescuers can hear where you are.
+    start_char: 224
+    end_char: 276
+    support_strength: strong
+- object_id: safety.trapped-in-debris
+  claim_id: clm_005
+  claim_text: Use a whistle to signal rescuers if available.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: If possible, use a whistle to signal rescuers.
+    start_char: 277
+    end_char: 319
+    support_strength: strong
+- object_id: safety.trapped-in-debris
+  claim_id: clm_006
+  claim_text: Shout only as a last resort to avoid inhaling dust.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000238
+    excerpt: Shout only as a last resort. Shouting can cause a person to inhale dangerous
+      amounts of dust.
+    start_char: 320
+    end_char: 399
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000238

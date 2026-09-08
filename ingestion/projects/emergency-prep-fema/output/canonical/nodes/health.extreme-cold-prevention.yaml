@@ -1,0 +1,184 @@
+id: health.extreme-cold-prevention
+slug: health.extreme-cold-prevention
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Extreme Cold Prevention Guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: health
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guide on planning for and staying safe in extreme cold.
+summary_medium: A guide providing information on planning for cold weather, ensuring
+  safety indoors and outdoors, and understanding cold weather health conditions.
+plain_language: Learn how to prepare for extreme cold weather, keep safe indoors and
+  outdoors, and understand health risks associated with cold conditions.
+markdown_body: '### What this is
+
+  This guide provides essential information on how to prepare for extreme cold weather.
+  It covers safety measures to take both indoors and outdoors and explains health
+  conditions that can arise due to cold weather.
+
+
+  ### Why it matters
+
+  Extreme cold can pose serious health risks, including hypothermia and frostbite.
+  Proper preparation and safety measures can prevent these conditions and ensure personal
+  safety.
+
+
+  ### What you need
+
+  Awareness of weather forecasts, appropriate clothing, and a plan for maintaining
+  warmth indoors.
+
+
+  ### How to do it
+
+  1. Plan ahead by checking weather forecasts and preparing your home and vehicle
+  for cold conditions. 2. Dress in layers and cover exposed skin when outdoors. 3.
+  Ensure your home is properly insulated and heated. 4. Be aware of the signs of hypothermia
+  and frostbite.
+
+
+  ### Common failure modes
+
+  Lack of preparation for cold weather, inadequate clothing, and unsafe indoor heating
+  practices.
+
+
+  ### Safety/boundary notes
+
+  Avoid using outdoor heating devices indoors. Ensure proper ventilation when using
+  heaters.
+
+
+  ### Local adaptation notes
+
+  Consider local climate variations and available resources when planning for cold
+  weather.'
+structured_data:
+  definition: Guidelines for staying safe and healthy during extreme cold weather.
+  key_questions:
+  - How can I prepare my home for extreme cold?
+  - What are the signs of hypothermia and frostbite?
+  - What clothing is appropriate for cold weather?
+  misconceptions:
+  - Cold weather is only dangerous for the elderly.
+  - Indoor heating is always safe.
+requires: []
+suggested_edges: []
+citations:
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_001
+  claim_text: This guide provides essential information on how to prepare for extreme
+    cold weather.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 85
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000131
+    excerpt: 'Extreme Cold: A Prevention Guide to Promote Your Personal Health and
+      Safety. An extensive document providing information about planning ahead for
+      cold weather, safety both indoors and outdoors in cold weather, and cold weather
+      health conditions.'
+    start_char: 0
+    end_char: 186
+    support_strength: strong
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_002
+  claim_text: Extreme cold can pose serious health risks, including hypothermia and
+    frostbite.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Watch for signs of frostbite. These include loss of feeling and white
+      or pale appearance in extremities such as fi ngers, toes, ear lobes, and the
+      tip of the nose. If symptoms are detected, get medical help immediately. Watch
+      for signs of hypothermia. These include uncontrollable shivering, memory loss,
+      disorientation, incoherence, slurred speech, drowsiness, and apparent exhaustion.
+    start_char: 388
+    end_char: 715
+    support_strength: strong
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_003
+  claim_text: Plan ahead by checking weather forecasts and preparing your home and
+    vehicle for cold conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Listen to your radio, television, or NOAA Weather Radio for weather reports
+      and emergency information.
+    start_char: 191
+    end_char: 266
+    support_strength: medium
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_004
+  claim_text: Dress in layers and cover exposed skin when outdoors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Wear several layers of loose fi tting, lightweight, warm clothing rather
+      than one layer of heavy clothing. The outer garments should be tightly woven
+      and water repellent.
+    start_char: 0
+    end_char: 155
+    support_strength: strong
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_005
+  claim_text: Ensure your home is properly insulated and heated.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Conserve fuel, if necessary, by keeping your residence cooler than normal.
+      Temporarily close off heat to some rooms.
+    start_char: 716
+    end_char: 818
+    support_strength: medium
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_006
+  claim_text: Be aware of the signs of hypothermia and frostbite.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Watch for signs of frostbite. These include loss of feeling and white
+      or pale appearance in extremities such as fi ngers, toes, ear lobes, and the
+      tip of the nose. If symptoms are detected, get medical help immediately. Watch
+      for signs of hypothermia. These include uncontrollable shivering, memory loss,
+      disorientation, incoherence, slurred speech, drowsiness, and apparent exhaustion.
+    start_char: 388
+    end_char: 715
+    support_strength: strong
+- object_id: health.extreme-cold-prevention
+  claim_id: clm_007
+  claim_text: Avoid using outdoor heating devices indoors. Ensure proper ventilation
+    when using heaters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Maintain ventilation when using kerosene heaters to avoid build-up of
+      toxic fumes. Refuel kerosene heaters outside and keep them at least three feet
+      from fl ammable objects.
+    start_char: 819
+    end_char: 964
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000131

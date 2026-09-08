@@ -1,0 +1,162 @@
+id: environmental.heat-index
+slug: environmental.heat-index
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding the Heat Index
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: environmental
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: The heat index measures perceived heat by combining air temperature
+  and humidity.
+summary_medium: The heat index is a measure in degrees Fahrenheit that indicates how
+  hot it feels when relative humidity is added to the air temperature. Full sunshine
+  exposure can increase the heat index by 15 degrees.
+plain_language: The heat index helps us understand how hot it feels outside by considering
+  both the air temperature and the humidity. When it's sunny, it can feel even hotter.
+markdown_body: '### What this is
+
+  The heat index is a number that represents how hot it feels when you combine the
+  air temperature with the relative humidity. It is expressed in degrees Fahrenheit.
+
+
+  ### Why it matters
+
+  Understanding the heat index is important for assessing the risk of heat-related
+  illnesses. It helps people make informed decisions about outdoor activities and
+  necessary precautions during hot weather.
+
+
+  ### What you need
+
+  To calculate the heat index, you need the current air temperature and the relative
+  humidity percentage.
+
+
+  ### How to do it
+
+  Use a heat index chart or an online calculator where you input the air temperature
+  and relative humidity to find out how hot it feels. Be aware that full sunshine
+  can increase the heat index by up to 15 degrees Fahrenheit.
+
+
+  ### Common failure modes
+
+  Ignoring the heat index can lead to underestimating the risk of heat-related illnesses.
+  Not accounting for full sunshine exposure can result in a miscalculation of perceived
+  heat.
+
+
+  ### Safety/boundary notes
+
+  Always consider the heat index when planning outdoor activities in hot weather to
+  prevent heat exhaustion or heat stroke.
+
+
+  ### Local adaptation notes
+
+  In areas with high humidity, the heat index can be significantly higher, requiring
+  more caution during hot weather.'
+structured_data:
+  definition: The heat index is a measure that combines air temperature and relative
+    humidity to determine how hot it feels.
+  key_questions:
+  - What is the current air temperature?
+  - What is the relative humidity?
+  - How does full sunshine affect the heat index?
+  misconceptions:
+  - The heat index is the same as the air temperature.
+  - Humidity does not significantly affect how hot it feels.
+requires: []
+suggested_edges: []
+citations:
+- object_id: environmental.heat-index
+  claim_id: clm_001
+  claim_text: The heat index is a number that represents how hot it feels when you
+    combine the air temperature with the relative humidity. It is expressed in degrees
+    Fahrenheit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000135
+    excerpt: A number in degrees Fahrenheit (F) that tells how hot it feels when relative
+      humidity is added to the air temperature.
+    start_char: 0
+    end_char: 99
+    support_strength: strong
+- object_id: environmental.heat-index
+  claim_id: clm_002
+  claim_text: Understanding the heat index is important for assessing the risk of
+    heat-related illnesses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Heat kills by pushing the human body beyond its limits. In extreme heat
+      and high humidity, evaporation is slowed and the body must work extra hard to
+      maintain a normal temperature.
+    start_char: 0
+    end_char: 187
+    support_strength: medium
+- object_id: environmental.heat-index
+  claim_id: clm_003
+  claim_text: Use a heat index chart or an online calculator where you input the air
+    temperature and relative humidity to find out how hot it feels. Be aware that
+    full sunshine can increase the heat index by up to 15 degrees Fahrenheit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000135
+    excerpt: Exposure to full sunshine can increase the heat index by 15 degrees.
+    start_char: 100
+    end_char: 145
+    support_strength: strong
+- object_id: environmental.heat-index
+  claim_id: clm_004
+  claim_text: Ignoring the heat index can lead to underestimating the risk of heat-related
+    illnesses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Most heat disorders occur because the victim has been overexposed to
+      heat or has over-exercised for his or her age and physical condition.
+    start_char: 188
+    end_char: 299
+    support_strength: medium
+- object_id: environmental.heat-index
+  claim_id: clm_005
+  claim_text: Always consider the heat index when planning outdoor activities in hot
+    weather to prevent heat exhaustion or heat stroke.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000137
+    excerpt: Typically occurs when people exercise heavily or work in a hot, humid
+      place where body fluids are lost through heavy sweating.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000138
+    excerpt: A life-threatening condition. The victim's temperature control system,
+      which produces sweating to cool the body, stops working.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000135

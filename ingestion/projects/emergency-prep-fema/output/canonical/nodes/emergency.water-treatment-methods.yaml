@@ -1,0 +1,170 @@
+id: emergency.water-treatment-methods
+slug: emergency.water-treatment-methods
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Water Treatment Methods
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Effectiveness of various water treatment methods in emergencies.
+summary_medium: This reference sheet details the effectiveness of boiling, chlorination,
+  and distillation in treating water during emergencies, focusing on their ability
+  to kill microbes and remove contaminants.
+plain_language: Learn how boiling, chlorination, and distillation can make water safe
+  to drink by killing germs and removing harmful substances.
+markdown_body: '### What this is
+
+  This reference sheet provides information on the effectiveness of different water
+  treatment methods in emergency situations. It focuses on three primary methods:
+  boiling, chlorination, and distillation.
+
+
+  ### Why it matters
+
+  In emergencies, access to clean drinking water is crucial for survival. Understanding
+  how to effectively treat water can prevent waterborne illnesses and ensure safe
+  hydration.
+
+
+  ### What you need
+
+  To treat water using these methods, you will need a heat source for boiling, chlorine
+  tablets for chlorination, and a distillation apparatus for distillation.
+
+
+  ### How to do it
+
+  1. **Boiling**: Bring water to a rolling boil for at least one minute to kill most
+  microbes.
+
+  2. **Chlorination**: Add chlorine tablets according to the instructions to disinfect
+  water.
+
+  3. **Distillation**: Use a distillation apparatus to heat water until it vaporizes,
+  then condense the vapor back into liquid to remove contaminants.
+
+
+  ### Common failure modes
+
+  1. Incomplete boiling may not kill all microbes.
+
+  2. Incorrect chlorine dosage can lead to ineffective disinfection.
+
+  3. Improper distillation setup may not remove all contaminants.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper handling of heat sources and chemicals to avoid accidents. Follow
+  guidelines for each method to ensure effectiveness.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of heat sources, access to chlorine, and distillation
+  equipment when choosing a method.'
+structured_data:
+  definition: Water treatment methods used in emergencies to make water safe for drinking.
+  key_questions:
+  - Which method is most effective in killing microbes?
+  - How do these methods remove contaminants?
+  - What equipment is needed for each method?
+  misconceptions:
+  - Boiling water removes all contaminants.
+  - Chlorination is effective against all types of contaminants.
+  - Distillation is too complex for emergency use.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_001
+  claim_text: Bring water to a rolling boil for at least one minute to kill most microbes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water. In a large pot or kettle,
+      bring water to a rolling boil for 1 full minute, keeping in mind that some water
+      will evaporate.
+    start_char: 0
+    end_char: 130
+    support_strength: strong
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_002
+  claim_text: Add chlorine tablets according to the instructions to disinfect water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: You can use household liquid bleach to kill microorganisms. Use only
+      regular household liquid bleach that contains 5.25 to 6.0 percent sodium hypochlorite.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_003
+  claim_text: Use a distillation apparatus to heat water until it vaporizes, then
+    condense the vapor back into liquid to remove contaminants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: Distillation involves boiling water and then collecting only the vapor
+      that condenses. The condensed vapor will not include salt or most other impurities.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_004
+  claim_text: Incomplete boiling may not kill all microbes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water. In a large pot or kettle,
+      bring water to a rolling boil for 1 full minute, keeping in mind that some water
+      will evaporate.
+    start_char: 0
+    end_char: 130
+    support_strength: medium
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_005
+  claim_text: Incorrect chlorine dosage can lead to ineffective disinfection.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: Add 16 drops (1/8 teaspoon) of bleach per gallon of water, stir, and
+      let stand for 30 minutes. The water should have a slight bleach odor. If it
+      doesn't, then repeat the dosage and let stand another 15 minutes.
+    start_char: 200
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.water-treatment-methods
+  claim_id: clm_006
+  claim_text: Improper distillation setup may not remove all contaminants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: Distillation involves boiling water and then collecting only the vapor
+      that condenses. The condensed vapor will not include salt or most other impurities.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000058

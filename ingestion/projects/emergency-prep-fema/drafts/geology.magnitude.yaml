@@ -1,0 +1,150 @@
+id: geology.magnitude
+slug: geology.magnitude
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Earthquake Magnitude
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Magnitude measures the energy released during an earthquake.
+summary_medium: Magnitude is the amount of energy released during an earthquake, calculated
+  from seismic wave amplitudes. Each whole number increase on the scale represents
+  about 30 times more energy.
+plain_language: Magnitude tells us how much energy an earthquake releases. It's calculated
+  from the size of the seismic waves. A jump from one whole number to the next on
+  the scale means the earthquake is about 30 times more powerful.
+markdown_body: '### What this is
+
+  Magnitude is a measure of the energy released during an earthquake. It is calculated
+  based on the amplitude of seismic waves recorded by seismographs.
+
+
+  ### Why it matters
+
+  Understanding magnitude helps us assess the potential impact of an earthquake. Higher
+  magnitude earthquakes release more energy and can cause more damage.
+
+
+  ### What you need
+
+  To understand magnitude, one needs to be familiar with seismic waves and how they
+  are measured.
+
+
+  ### How to do it
+
+  Magnitude is determined by analyzing the amplitude of seismic waves. Each whole
+  number increase on the magnitude scale indicates approximately 30 times more energy
+  release.
+
+
+  ### Common failure modes
+
+  Misinterpreting the scale as linear rather than logarithmic can lead to underestimating
+  the energy difference between magnitudes.
+
+
+  ### Safety/boundary notes
+
+  Magnitude alone does not determine the damage potential; factors like depth and
+  location also play significant roles.
+
+
+  ### Local adaptation notes
+
+  Local geological conditions can affect how seismic waves are felt and should be
+  considered when assessing earthquake impact.'
+structured_data:
+  definition: Magnitude is the amount of energy released during an earthquake, computed
+    from the amplitude of seismic waves.
+  key_questions:
+  - What does a magnitude increase signify in terms of energy release?
+  - How is magnitude calculated from seismic waves?
+  misconceptions:
+  - Magnitude is a linear scale.
+  - Magnitude alone determines the damage caused by an earthquake.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geology.magnitude
+  claim_id: clm_001
+  claim_text: Magnitude is a measure of the energy released during an earthquake.
+    It is calculated based on the amplitude of seismic waves recorded by seismographs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000153
+    excerpt: The amount of energy released during an earthquake, which is computed
+      from the amplitude of the seismic waves.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: geology.magnitude
+  claim_id: clm_002
+  claim_text: Understanding magnitude helps us assess the potential impact of an earthquake.
+    Higher magnitude earthquakes release more energy and can cause more damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000153
+    excerpt: A magnitude of 7.0 on the Richter Scale indicates an extremely strong
+      earthquake.
+    start_char: 90
+    end_char: 147
+    support_strength: medium
+- object_id: geology.magnitude
+  claim_id: clm_003
+  claim_text: Magnitude is determined by analyzing the amplitude of seismic waves.
+    Each whole number increase on the magnitude scale indicates approximately 30 times
+    more energy release.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000153
+    excerpt: Each whole number on the scale represents an increase of about 30 times
+      more energy released than the previous whole number represents.
+    start_char: 148
+    end_char: 259
+    support_strength: strong
+- object_id: geology.magnitude
+  claim_id: clm_004
+  claim_text: Misinterpreting the scale as linear rather than logarithmic can lead
+    to underestimating the energy difference between magnitudes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000153
+    excerpt: Each whole number on the scale represents an increase of about 30 times
+      more energy released than the previous whole number represents.
+    start_char: 148
+    end_char: 259
+    support_strength: medium
+- object_id: geology.magnitude
+  claim_id: clm_005
+  claim_text: Magnitude alone does not determine the damage potential; factors like
+    depth and location also play significant roles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000152
+    excerpt: Although fault slippage directly under a structure can cause considerable
+      damage, the vibrations of seismic waves cause most of the destruction during
+      earthquakes.
+    start_char: 0
+    end_char: 169
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000153

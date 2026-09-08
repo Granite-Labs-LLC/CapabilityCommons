@@ -1,0 +1,164 @@
+id: emergency.earthquake-response
+slug: emergency.earthquake-response
+seed_type: assessment
+co_type: assessment
+canonical_title: Earthquake Response Knowledge Check
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts:
+- earthquake
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Test your knowledge on appropriate actions during an earthquake based
+  on your location.
+summary_medium: This assessment helps you evaluate your understanding of the best
+  actions to take during an earthquake, depending on your location at the time of
+  the event.
+plain_language: This is a quiz to check if you know what to do during an earthquake,
+  depending on where you are.
+markdown_body: '# What this is
+
+  This is a knowledge check designed to test your understanding of the appropriate
+  actions to take during an earthquake based on your location.
+
+
+  # Why it matters
+
+  Knowing the correct actions to take during an earthquake can significantly reduce
+  the risk of injury and increase your safety.
+
+
+  # What you need
+
+  You need to understand the basic principles of earthquake safety and how to apply
+  them in different scenarios.
+
+
+  # How to do it
+
+  For each question, choose the best action to take during an earthquake based on
+  the location described. Compare your answers with the provided answer key to assess
+  your knowledge.
+
+
+  # Common failure modes
+
+  A common mistake is choosing unsafe locations, such as standing by windows or running
+  outside during an earthquake.
+
+
+  # Safety/boundary notes
+
+  Always prioritize your safety by staying away from windows, exterior walls, and
+  heavy objects that might fall.
+
+
+  # Local adaptation notes
+
+  Consider local building codes and structures, as they may influence the safest actions
+  during an earthquake.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Correctly identify the safest action for each location scenario.
+  failure_modes:
+  - Choosing unsafe locations during an earthquake.
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.earthquake-response
+  claim_id: clm_001
+  claim_text: This is a knowledge check designed to test your understanding of the
+    appropriate actions to take during an earthquake based on your location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 99
+    page_end: 99
+    segment_id: src.fema.are-you-ready.2004::seg_000155
+    excerpt: Check your knowledge about what to do during an earthquake. For each
+      question, choose answer *A* or *B* and circle the correct response. When you
+      have fi nished, check your responses using the answer key below.
+    start_char: 0
+    end_char: 178
+    support_strength: strong
+- object_id: emergency.earthquake-response
+  claim_id: clm_002
+  claim_text: Knowing the correct actions to take during an earthquake can significantly
+    reduce the risk of injury and increase your safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: During an Earthquake Minimize your movements during an earthquake to
+      a few steps to a nearby safe place. Stay indoors until the shaking has stopped
+      and you are sure exiting is safe.
+    start_char: 0
+    end_char: 160
+    support_strength: strong
+- object_id: emergency.earthquake-response
+  claim_id: clm_003
+  claim_text: You need to understand the basic principles of earthquake safety and
+    how to apply them in different scenarios.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 99
+    page_end: 99
+    segment_id: src.fema.are-you-ready.2004::seg_000155
+    excerpt: What action should you take during an earthquake? The answer varies by
+      where you are when an earthquake strikes. For each situation, pick the best
+      course of action from the choices given.
+    start_char: 179
+    end_char: 322
+    support_strength: strong
+- object_id: emergency.earthquake-response
+  claim_id: clm_004
+  claim_text: A common mistake is choosing unsafe locations, such as standing by windows
+    or running outside during an earthquake.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Stay away from glass, windows, outside doors and walls, and anything
+      that could fall, such as lighting fi xtures or furniture.
+    start_char: 281
+    end_char: 365
+    support_strength: strong
+- object_id: emergency.earthquake-response
+  claim_id: clm_005
+  claim_text: Always prioritize your safety by staying away from windows, exterior
+    walls, and heavy objects that might fall.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Stay away from glass, windows, outside doors and walls, and anything
+      that could fall, such as lighting fi xtures or furniture.
+    start_char: 281
+    end_char: 365
+    support_strength: strong
+- object_id: emergency.earthquake-response
+  claim_id: clm_006
+  claim_text: Consider local building codes and structures, as they may influence
+    the safest actions during an earthquake.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Be sure the residence is fi rmly anchored to its foundation.
+    start_char: 199
+    end_char: 239
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000155

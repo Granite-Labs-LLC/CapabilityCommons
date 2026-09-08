@@ -1,0 +1,199 @@
+id: natural-hazards.volcanoes
+slug: natural-hazards.volcanoes
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Volcanoes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: natural-hazards
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: An overview of volcanoes and their associated hazards.
+summary_medium: Volcanoes are vents through which molten rock escapes to the earth's
+  surface, causing eruptions that can be quiet or explosive. Hazards include lava
+  flows, ash, and other natural events.
+plain_language: Volcanoes are openings in the Earth's surface where molten rock, gases,
+  and ash can escape. Eruptions can vary in intensity and cause various hazards like
+  lava flows and ash clouds.
+markdown_body: '# What this is
+
+  A volcano is a vent in the Earth''s surface that allows molten rock, gases, and
+  ash to escape. Eruptions occur when pressure from gases within the molten rock becomes
+  too great.
+
+
+  # Why it matters
+
+  Volcanic eruptions can pose significant hazards, including lava flows, ash clouds,
+  and other natural events like earthquakes and landslides. Understanding these hazards
+  is crucial for safety and preparedness.
+
+
+  # What you need
+
+  Awareness of active volcanoes in your area and understanding of potential hazards
+  like lava flows and ash.
+
+
+  # How to do it
+
+  Monitor volcanic activity reports and have an evacuation plan if you live near an
+  active volcano. Protect machinery and structures from ash damage.
+
+
+  # Common failure modes
+
+  Lava flows can destroy structures, while ash can damage machinery and cause roof
+  collapses when mixed with water.
+
+
+  # Safety/boundary notes
+
+  Avoid areas near active volcanoes during eruptions and protect respiratory health
+  from ash inhalation.
+
+
+  # Local adaptation notes
+
+  Active volcanoes in the U.S. are primarily located in Hawaii, Alaska, and the Pacific
+  Northwest.'
+structured_data:
+  definition: A volcano is a geological formation where molten rock, gases, and ash
+    escape from beneath the Earth's crust.
+  key_questions:
+  - What causes a volcanic eruption?
+  - What are the main hazards associated with volcanoes?
+  - Where are active volcanoes located in the U.S.?
+  misconceptions:
+  - All volcanic eruptions are explosive.
+  - Volcanic ash is harmless.
+requires: []
+suggested_edges: []
+citations:
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_001
+  claim_text: A volcano is a vent in the Earth's surface that allows molten rock,
+    gases, and ash to escape. Eruptions occur when pressure from gases within the
+    molten rock becomes too great.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 102
+    page_end: 103
+    segment_id: src.fema.are-you-ready.2004::seg_000157
+    excerpt: A volcano is a vent through which molten rock escapes to the earth's
+      surface. When pressure from gases within the molten rock becomes too great,
+      an eruption occurs.
+    start_char: 0
+    end_char: 158
+    support_strength: strong
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_002
+  claim_text: Volcanic eruptions can pose significant hazards, including lava flows,
+    ash clouds, and other natural events like earthquakes and landslides.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 102
+    page_end: 103
+    segment_id: src.fema.are-you-ready.2004::seg_000157
+    excerpt: Volcanic eruptions can be accompanied by other natural hazards, including
+      earthquakes, mudflows and flash floods, rock falls and landslides, acid rain,
+      fire, and (under special conditions) tsunamis.
+    start_char: 631
+    end_char: 831
+    support_strength: strong
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_003
+  claim_text: Awareness of active volcanoes in your area and understanding of potential
+    hazards like lava flows and ash.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 102
+    page_end: 103
+    segment_id: src.fema.are-you-ready.2004::seg_000157
+    excerpt: Active volcanoes in the U.S. are found mainly in Hawaii, Alaska, and
+      the Pacific Northwest.
+    start_char: 832
+    end_char: 896
+    support_strength: medium
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_004
+  claim_text: Monitor volcanic activity reports and have an evacuation plan if you
+    live near an active volcano. Protect machinery and structures from ash damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 104
+    segment_id: src.fema.are-you-ready.2004::seg_000158
+    excerpt: Evacuate immediately from the volcano area to avoid flying debris, hot
+      gases, lateral blast, and lava flow.
+    start_char: 112
+    end_char: 196
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Avoid running car or truck engines. Driving can stir up volcanic ash
+      that can clog engines, damage moving parts, and stall vehicles.
+    start_char: 616
+    end_char: 732
+    support_strength: medium
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_005
+  claim_text: Lava flows can destroy structures, while ash can damage machinery and
+    cause roof collapses when mixed with water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 102
+    page_end: 103
+    segment_id: src.fema.are-you-ready.2004::seg_000157
+    excerpt: Lava flows destroy everything in their path, but most move slowly enough
+      that people can move out of the way. Volcanic ash also can damage machinery,
+      including engines and electrical equipment. Ash accumulations mixed with water
+      become heavy and can collapse roofs.
+    start_char: 282
+    end_char: 630
+    support_strength: strong
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_006
+  claim_text: Avoid areas near active volcanoes during eruptions and protect respiratory
+    health from ash inhalation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 104
+    segment_id: src.fema.are-you-ready.2004::seg_000158
+    excerpt: Stay away from active volcano sites.
+    start_char: 0
+    end_char: 37
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Use a dust mask or hold a damp cloth over your face to help with breathing.
+    start_char: 202
+    end_char: 274
+    support_strength: strong
+- object_id: natural-hazards.volcanoes
+  claim_id: clm_007
+  claim_text: Active volcanoes in the U.S. are primarily located in Hawaii, Alaska,
+    and the Pacific Northwest.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 102
+    page_end: 103
+    segment_id: src.fema.are-you-ready.2004::seg_000157
+    excerpt: Active volcanoes in the U.S. are found mainly in Hawaii, Alaska, and
+      the Pacific Northwest.
+    start_char: 832
+    end_char: 896
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000157

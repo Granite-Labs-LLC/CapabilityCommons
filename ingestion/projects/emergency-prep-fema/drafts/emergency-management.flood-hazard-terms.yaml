@@ -1,0 +1,169 @@
+id: emergency-management.flood-hazard-terms
+slug: emergency-management.flood-hazard-terms
+seed_type: glossary
+co_type: glossary
+canonical_title: Flood Hazard Terms
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Glossary of terms for identifying flood hazards.
+summary_medium: A glossary of terms designed to help individuals identify and understand
+  flood hazards.
+plain_language: This glossary explains terms related to flood hazards, helping you
+  understand warnings and prepare for potential flooding.
+markdown_body: '### What this is
+
+  This is a glossary of terms related to flood hazards. Understanding these terms
+  can help you recognize and respond to flood warnings effectively.
+
+
+  ### Why it matters
+
+  Knowing these terms is crucial for interpreting flood warnings and taking appropriate
+  actions to ensure safety during flood events.
+
+
+  ### What you need
+
+  Familiarity with these terms is essential for anyone living in areas prone to flooding
+  or involved in emergency management.
+
+
+  ### How to do it
+
+  Review and memorize the terms related to flood hazards. Pay attention to official
+  warnings and advisories that use these terms.
+
+
+  ### Common failure modes
+
+  Misunderstanding or ignoring flood-related terms can lead to inadequate preparation
+  and increased risk during flood events.
+
+
+  ### Safety/boundary notes
+
+  Ensure you understand the severity and implications of each term to make informed
+  decisions during a flood.
+
+
+  ### Local adaptation notes
+
+  Terms may vary slightly based on local emergency management protocols. Check with
+  local authorities for any region-specific terminology.'
+structured_data:
+  definition: A set of terms used to describe and identify flood hazards.
+  key_questions:
+  - What does each flood-related term mean?
+  - How can these terms help in preparing for a flood?
+  misconceptions:
+  - All flood warnings mean the same thing.
+  - Flood terms are not important for personal safety.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_001
+  claim_text: This is a glossary of terms related to flood hazards. Understanding
+    these terms can help you recognize and respond to flood warnings effectively.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000069
+    excerpt: 'Familiarize yourself with these terms to help identify a fl ood hazard:'
+    start_char: 0
+    end_char: 63
+    support_strength: strong
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_002
+  claim_text: Knowing these terms is crucial for interpreting flood warnings and taking
+    appropriate actions to ensure safety during flood events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Flooding is possible. Tune in to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000072
+    excerpt: Flooding is occurring or will occur soon; if advised to evacuate, do
+      so immediately.
+    start_char: 0
+    end_char: 81
+    support_strength: medium
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_003
+  claim_text: Familiarity with these terms is essential for anyone living in areas
+    prone to flooding or involved in emergency management.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Be aware of fl ood hazards no matter where you live, but especially if
+      you live in a low-lying area, near water or downstream from a dam.
+    start_char: 0
+    end_char: 134
+    support_strength: strong
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_004
+  claim_text: Misunderstanding or ignoring flood-related terms can lead to inadequate
+    preparation and increased risk during flood events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Floods are one of the most common hazards in the United States. Flood
+      effects can be local, impacting a neighborhood or community, or very large,
+      affecting entire river basins and multiple states.
+    start_char: 0
+    end_char: 207
+    support_strength: medium
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_005
+  claim_text: Ensure you understand the severity and implications of each term to
+    make informed decisions during a flood.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000072
+    excerpt: Flooding is occurring or will occur soon; if advised to evacuate, do
+      so immediately.
+    start_char: 0
+    end_char: 81
+    support_strength: medium
+- object_id: emergency-management.flood-hazard-terms
+  claim_id: clm_006
+  claim_text: Terms may vary slightly based on local emergency management protocols.
+    Check with local authorities for any region-specific terminology.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: Natural hazards such as fl ood, fi re, earthquake, tornado, and windstorms
+      affect thousands of people every year. We need to know what our risks are from
+      natrual hazards and take sensible precautions to protect ourselves, our families,
+      and our communities.
+    start_char: 0
+    end_char: 263
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000069

@@ -1,0 +1,228 @@
+id: emergency-response.explosion-safety
+slug: emergency-response.explosion-safety
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Explosion Safety Guidelines
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-response
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for actions to take during an explosion.
+summary_medium: Guidelines for actions to take during an explosion, including seeking
+  shelter under sturdy furniture, quickly exiting the building, and avoiding elevators.
+plain_language: Learn what to do during an explosion to stay safe, such as getting
+  under a sturdy table, leaving the building quickly, and avoiding elevators.
+markdown_body: '# What this is
+
+  This guide provides essential actions to take during an explosion to ensure personal
+  safety.
+
+
+  # Why it matters
+
+  Explosions can cause structural damage and falling debris, posing significant risks.
+  Knowing how to respond can prevent injuries and save lives.
+
+
+  # What you need
+
+  Awareness of your surroundings and a plan for quick evacuation.
+
+
+  # How to do it
+
+  1. If things are falling around you, get under a sturdy table or desk.
+
+  2. Once it is safe, leave the building quickly, watching for weakened floors and
+  stairways.
+
+  3. Be cautious of falling debris as you exit.
+
+  4. Do not use elevators.
+
+  5. Do not stop to retrieve personal possessions or make phone calls.
+
+
+  # Common failure modes
+
+  Stopping to retrieve personal possessions or using elevators during evacuation can
+  lead to injury or death.
+
+
+  # Safety/boundary notes
+
+  Watch for weakened floors and stairways, and be cautious of falling debris.
+
+
+  # Local adaptation notes
+
+  Consider local building structures and materials when planning evacuation routes.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Successfully evacuate the building without injury.
+  - Avoid using elevators during evacuation.
+  failure_modes:
+  - Stopping to retrieve personal possessions.
+  - Using elevators during evacuation.
+  safety_boundary:
+  - Watch for weakened floors and stairways.
+  - Be cautious of falling debris.
+  implementation:
+    smallest_viable_version: Quickly evacuate the building while avoiding elevators.
+    tools: []
+    materials: []
+    expected_time: Immediate response
+    expected_cost: None
+    success_checks:
+    - Evacuate safely without injury.
+    - Avoid using elevators.
+    stop_conditions:
+    - If the building is structurally compromised, seek alternative exits.
+    common_mistakes:
+    - Stopping to retrieve personal items.
+    - Using elevators.
+    variants:
+    - label: Urban
+      when: In high-rise buildings
+      notes: Be aware of multiple exit routes.
+    when_to_escalate:
+    - If you encounter blocked exits or structural damage, call emergency services.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-response.explosion-safety
+  claim_id: clm_001
+  claim_text: If things are falling around you, get under a sturdy table or desk.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: Get under a sturdy table or desk if things are falling around you.
+    start_char: 44
+    end_char: 94
+    support_strength: strong
+- object_id: emergency-response.explosion-safety
+  claim_id: clm_002
+  claim_text: Once it is safe, leave the building quickly, watching for weakened floors
+    and stairways.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: When they stop falling, leave quickly, watching for obviously weakened
+      fl oors and stairways.
+    start_char: 95
+    end_char: 173
+    support_strength: strong
+- object_id: emergency-response.explosion-safety
+  claim_id: clm_003
+  claim_text: Be cautious of falling debris as you exit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: As you exit from the building, be especially watchful of falling debris.
+    start_char: 174
+    end_char: 230
+    support_strength: strong
+- object_id: emergency-response.explosion-safety
+  claim_id: clm_004
+  claim_text: Do not use elevators.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: Do not use elevators.
+    start_char: 277
+    end_char: 297
+    support_strength: strong
+- object_id: emergency-response.explosion-safety
+  claim_id: clm_005
+  claim_text: Do not stop to retrieve personal possessions or make phone calls.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: Do not stop to retrieve personal possessions or make phone calls.
+    start_char: 231
+    end_char: 276
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000236
+bundle_overrides:
+  hook: Knowing how to respond during an explosion can prevent injuries and save lives.
+  primer: Explosions can happen unexpectedly and cause significant structural damage,
+    leading to falling debris and other hazards. Being prepared and knowing the right
+    actions to take can make a critical difference in ensuring your safety. The key
+    is to remain calm, act quickly, and follow established safety guidelines. This
+    includes seeking immediate shelter under sturdy furniture if debris is falling,
+    and evacuating the building as soon as it is safe to do so. It's important to
+    avoid using elevators and not to stop for personal belongings or phone calls during
+    an evacuation. By understanding these basic steps, you can protect yourself and
+    others in the event of an explosion.
+  guide: '1. If you notice things falling around you during an explosion, immediately
+    get under a sturdy table or desk to protect yourself from debris.
+
+
+    2. Once it is safe and the falling debris has stopped, leave the building quickly.
+    Be vigilant for weakened floors and stairways that could pose additional risks.
+
+
+    3. As you exit, remain cautious of any falling debris that could still be a threat.
+
+
+    4. Do not use elevators under any circumstances, as they may become inoperable
+    or unsafe during an explosion.
+
+
+    5. Avoid stopping to retrieve personal possessions or making phone calls. Your
+    priority should be to exit the building safely and quickly.
+
+
+    By following these steps, you can increase your chances of evacuating safely and
+    without injury.'
+  reference:
+  - Get under a sturdy table or desk if things are falling.
+  - Leave the building quickly once it is safe.
+  - Watch for weakened floors and stairways.
+  - Be cautious of falling debris as you exit.
+  - Do not use elevators.
+  - Do not stop to retrieve personal possessions or make phone calls.
+  worksheet:
+  - Identify sturdy furniture in your home or workplace that can be used for protection
+    during an explosion.
+  - Plan and practice a quick evacuation route from your building, considering alternative
+    exits.
+  - Discuss with family or colleagues the importance of not using elevators during
+    emergencies.
+  - Create a checklist of essential items to have ready for quick evacuation, but
+    remember not to stop for them during an actual emergency.
+  teach_forward_kit:
+    three_minute_version: In an explosion, protect yourself by getting under sturdy
+      furniture if debris is falling. Once safe, evacuate quickly, avoiding elevators
+      and not stopping for personal items.
+    ten_minute_outline:
+    - Introduction to explosion safety
+    - 'Immediate actions: Seek shelter under sturdy furniture'
+    - 'Evacuation: Leave quickly, watch for structural damage'
+    - 'Safety precautions: Avoid elevators, don''t stop for belongings'
+    - Discussion of common mistakes and how to avoid them
+    discussion_prompts:
+    - Why is it important to avoid using elevators during an explosion?
+    - What are some potential risks of stopping to retrieve personal items during
+      an evacuation?
+    - How can you prepare your home or workplace for a quick and safe evacuation?

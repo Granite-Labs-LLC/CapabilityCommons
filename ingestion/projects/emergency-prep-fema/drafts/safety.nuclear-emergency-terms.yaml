@@ -1,0 +1,184 @@
+id: safety.nuclear-emergency-terms
+slug: safety.nuclear-emergency-terms
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Understanding Nuclear Emergency Terms
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Definitions of terms used in nuclear power plant emergencies.
+summary_medium: Learn the terms used to describe the severity of nuclear power plant
+  emergencies to understand potential risks and necessary actions.
+plain_language: This guide explains the terms used during nuclear power plant emergencies,
+  helping you understand the situation and what actions you might need to take.
+markdown_body: '### What this is
+
+  This reference sheet provides definitions for terms used to describe the severity
+  of emergencies at nuclear power plants.
+
+
+  ### Why it matters
+
+  Understanding these terms is crucial for recognizing the severity of a nuclear power
+  plant emergency and knowing when to take action.
+
+
+  ### What you need
+
+  Familiarity with these terms and access to a radio or television for updates during
+  an emergency.
+
+
+  ### How to do it
+
+  Learn the definitions of each term and know how to respond appropriately by listening
+  to official instructions via radio or television.
+
+
+  ### Common failure modes
+
+  Ignoring alerts or not understanding the severity of the situation due to unfamiliarity
+  with the terms.
+
+
+  ### Safety/boundary notes
+
+  Always follow official instructions during a nuclear emergency to ensure your safety.
+
+
+  ### Local adaptation notes
+
+  Check with local authorities for any additional terms or procedures specific to
+  your area.'
+structured_data:
+  definition:
+    Notification of Unusual Event: A minor issue at the plant with no expected radiation
+      leak. No action is needed.
+    Alert: A minor issue with potential for small radiation leaks inside the plant.
+      No action is required.
+    Site Area Emergency: Sirens may sound. Listen to radio or TV for safety information.
+    General Emergency: Radiation may leak off-site. Sirens will sound. Follow radio
+      or TV instructions promptly.
+  key_questions:
+  - What actions should be taken during each type of emergency?
+  - How will I be notified of a nuclear emergency?
+  misconceptions:
+  - All nuclear emergencies require immediate evacuation.
+  - Hearing sirens always means radiation is leaking.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_001
+  claim_text: This reference sheet provides definitions for terms used to describe
+    the severity of emergencies at nuclear power plants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 142
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000220
+    excerpt: 'Familiarize yourself with these terms to help identify a nuclear power
+      plant emergency:'
+    start_char: 0
+    end_char: 78
+    support_strength: strong
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_002
+  claim_text: Understanding these terms is crucial for recognizing the severity of
+    a nuclear power plant emergency and knowing when to take action.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 141
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000219
+    excerpt: If an accident at a nuclear power plant were to release radiation in
+      your area, local authorities would activate warning sirens or another approved
+      alert method. They also would instruct you through the Emergency Alert System
+      (EAS) on local television and radio stations on how to protect yourself.
+    start_char: 0
+    end_char: 302
+    support_strength: medium
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_003
+  claim_text: Familiarity with these terms and access to a radio or television for
+    updates during an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 142
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000224
+    excerpt: Tune to your local radio or television station for reports. Be prepared
+      to follow instructions promptly.
+    start_char: 126
+    end_char: 203
+    support_strength: strong
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_004
+  claim_text: Learn the definitions of each term and know how to respond appropriately
+    by listening to official instructions via radio or television.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 142
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000224
+    excerpt: Tune to your local radio or television station for reports. Be prepared
+      to follow instructions promptly.
+    start_char: 126
+    end_char: 203
+    support_strength: strong
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_005
+  claim_text: Ignoring alerts or not understanding the severity of the situation due
+    to unfamiliarity with the terms.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 142
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000220
+    excerpt: 'Familiarize yourself with these terms to help identify a nuclear power
+      plant emergency:'
+    start_char: 0
+    end_char: 78
+    support_strength: medium
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_006
+  claim_text: Always follow official instructions during a nuclear emergency to ensure
+    your safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 141
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000219
+    excerpt: They also would instruct you through the Emergency Alert System (EAS)
+      on local television and radio stations on how to protect yourself.
+    start_char: 182
+    end_char: 302
+    support_strength: strong
+- object_id: safety.nuclear-emergency-terms
+  claim_id: clm_007
+  claim_text: Check with local authorities for any additional terms or procedures
+    specific to your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 141
+    page_end: 142
+    segment_id: src.fema.are-you-ready.2004::seg_000219
+    excerpt: local authorities would activate warning sirens or another approved alert
+      method.
+    start_char: 0
+    end_char: 82
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000220
+- src.fema.are-you-ready.2004::seg_000221
+- src.fema.are-you-ready.2004::seg_000222
+- src.fema.are-you-ready.2004::seg_000223
+- src.fema.are-you-ready.2004::seg_000224

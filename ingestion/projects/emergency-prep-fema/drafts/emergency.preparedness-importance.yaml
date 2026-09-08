@@ -1,0 +1,145 @@
+id: emergency.preparedness-importance
+slug: emergency.preparedness-importance
+seed_type: extracted
+co_type: concept_note
+canonical_title: The Importance of Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Understanding why preparing for emergencies is crucial.
+summary_medium: Explains the significance of emergency preparedness, emphasizing the
+  potential impacts of disasters and the advantages of being prepared.
+plain_language: Learn why it's important to prepare for emergencies, including how
+  it can help reduce the impact of disasters.
+markdown_body: '# What this is
+
+  This concept note explains why preparing for emergencies is essential. It covers
+  the potential impacts of disasters and the benefits of being prepared.
+
+
+  # Why it matters
+
+  Emergencies and disasters can occur unexpectedly, causing significant harm to individuals
+  and communities. Being prepared can mitigate these impacts, ensuring safety and
+  quicker recovery.
+
+
+  # What you need
+
+  A basic understanding of potential local hazards and a plan to address them.
+
+
+  # How to do it
+
+  Start by identifying the types of emergencies that could affect your area. Develop
+  a plan that includes communication strategies, evacuation routes, and emergency
+  supplies.
+
+
+  # Common failure modes
+
+  Failing to update emergency plans regularly or not practicing the plan can lead
+  to ineffective responses during actual emergencies.
+
+
+  # Safety/boundary notes
+
+  Ensure that all family members or household members are aware of the emergency plan
+  and know their roles.
+
+
+  # Local adaptation notes
+
+  Consider local hazards and resources when developing your emergency preparedness
+  plan.'
+structured_data:
+  definition: Emergency preparedness involves planning and taking actions to ensure
+    safety and resilience in the face of potential disasters.
+  key_questions:
+  - What types of emergencies are most likely to occur in my area?
+  - What steps can I take to prepare for these emergencies?
+  misconceptions:
+  - Emergency preparedness is only necessary for areas prone to natural disasters.
+  - Once a plan is made, it does not need to be updated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparedness-importance
+  claim_id: clm_001
+  claim_text: Emergencies and disasters can occur unexpectedly, causing significant
+    harm to individuals and communities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Disasters disrupt hundreds of thousands of lives every year. Each disaster
+      has lasting effects, both to people and property.
+    start_char: 0
+    end_char: 97
+    support_strength: strong
+- object_id: emergency.preparedness-importance
+  claim_id: clm_002
+  claim_text: Being prepared can mitigate these impacts, ensuring safety and quicker
+    recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 75
+    support_strength: strong
+- object_id: emergency.preparedness-importance
+  claim_id: clm_003
+  claim_text: Start by identifying the types of emergencies that could affect your
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area—hurricanes, earthquakes, extreme cold, flooding, or
+      terrorism.
+    start_char: 244
+    end_char: 380
+    support_strength: strong
+- object_id: emergency.preparedness-importance
+  claim_id: clm_004
+  claim_text: Develop a plan that includes communication strategies, evacuation routes,
+    and emergency supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: It contains step-by-step advice on how to prepare for, respond to, and
+      recover from disasters.
+    start_char: 171
+    end_char: 239
+    support_strength: medium
+- object_id: emergency.preparedness-importance
+  claim_id: clm_005
+  claim_text: Failing to update emergency plans regularly or not practicing the plan
+    can lead to ineffective responses during actual emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 75
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000008

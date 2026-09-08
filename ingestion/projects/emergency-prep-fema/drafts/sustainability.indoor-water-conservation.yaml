@@ -1,0 +1,200 @@
+id: sustainability.indoor-water-conservation
+slug: sustainability.indoor-water-conservation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Indoor Water Conservation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: sustainability
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Tips for conserving water indoors to enhance efficiency.
+summary_medium: Indoor water conservation tips to reduce water usage and improve efficiency.
+plain_language: Learn how to save water inside your home by fixing leaks, using efficient
+  appliances, and reusing water.
+markdown_body: '### What this is
+
+  This reference sheet provides practical tips for conserving water indoors, helping
+  you reduce water usage and improve efficiency in your home.
+
+
+  ### Why it matters
+
+  Water conservation is crucial for sustainability, reducing utility bills, and preserving
+  natural resources. Efficient water use also helps prevent plumbing issues and extends
+  the lifespan of appliances.
+
+
+  ### What you need
+
+  To implement these tips, you may need tools and materials such as aerators, flow
+  restrictors, an instant hot water heater, insulation, and possibly a water-softening
+  system.
+
+
+  ### How to do it
+
+  1. Reuse water whenever possible, such as using leftover water for plants.
+
+  2. Repair any dripping faucets by replacing washers, as even a small leak can waste
+  thousands of gallons annually.
+
+  3. Check all plumbing for leaks and have them repaired by a professional if necessary.
+
+  4. Install aerators with flow restrictors on all household faucets to reduce water
+  flow.
+
+  5. Consider installing an instant hot water heater at your sink to save energy.
+
+  6. Insulate water pipes to minimize heat loss and prevent freezing.
+
+  7. Use a water-softening system only if necessary to protect pipes from mineral
+  damage, and turn it off when not needed, such as during vacations.
+
+  8. Choose appliances that are designed to be energy and water efficient.
+
+
+  ### Common failure modes
+
+  Ignoring leaks and using inefficient appliances can lead to increased water usage
+  and higher bills.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Consider the availability of plumbers in your area and the hardness of your local
+  water supply when implementing these tips.'
+structured_data:
+  tools:
+  - aerators
+  - flow restrictors
+  - instant hot water heater
+  - insulation
+  - water-softening system
+  materials: []
+  success_criteria:
+  - Reduced water usage
+  - Lower water bills
+  - Improved appliance efficiency
+  failure_modes:
+  - Ignoring leaks
+  - Using inefficient appliances
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_001
+  claim_text: Reuse water whenever possible, such as using leftover water for plants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Never pour water down the drain when there may be another use for it.
+      Use it to water your indoor plants or garden.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_002
+  claim_text: Repair any dripping faucets by replacing washers, as even a small leak
+    can waste thousands of gallons annually.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Repair dripping faucets by replacing washers. One drop per second wastes
+      2,700 gallons of water per year!
+    start_char: 96
+    end_char: 176
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_003
+  claim_text: Check all plumbing for leaks and have them repaired by a professional
+    if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Check all plumbing for leaks. Have leaks repaired by a plumber.
+    start_char: 177
+    end_char: 223
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_004
+  claim_text: Install aerators with flow restrictors on all household faucets to reduce
+    water flow.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Retrofi t all household faucets by installing aerators with fl ow restrictors.
+    start_char: 224
+    end_char: 284
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_005
+  claim_text: Consider installing an instant hot water heater at your sink to save
+    energy.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Install an instant hot water heater on your sink.
+    start_char: 285
+    end_char: 326
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_006
+  claim_text: Insulate water pipes to minimize heat loss and prevent freezing.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Insulate your water pipes to reduce heat loss and prevent them from breaking.
+    start_char: 327
+    end_char: 389
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_007
+  claim_text: Use a water-softening system only if necessary to protect pipes from
+    mineral damage, and turn it off when not needed, such as during vacations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Install a water-softening system only when the minerals in the water
+      would damage your pipes. Turn the softener off while on vacation.
+    start_char: 390
+    end_char: 500
+    support_strength: strong
+- object_id: sustainability.indoor-water-conservation
+  claim_id: clm_008
+  claim_text: Choose appliances that are designed to be energy and water efficient.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000290
+    excerpt: Choose appliances that are more energy and water effi cient.
+    start_char: 501
+    end_char: 553
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000290

@@ -1,0 +1,157 @@
+id: emergency-preparedness.chemical-emergencies
+slug: emergency-preparedness.chemical-emergencies
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Handling Household Chemical Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Guidance on managing household chemical emergencies.
+summary_medium: A reference sheet providing guidance on identifying hazards and executing
+  emergency procedures for household chemical emergencies.
+plain_language: This sheet helps you understand the dangers of household chemicals
+  and what to do if there's an emergency involving them.
+markdown_body: "### What this is\nThis reference sheet provides information on how\
+  \ to handle emergencies involving household chemicals. It outlines potential hazards\
+  \ and the steps to take in an emergency situation.\n\n### Why it matters\nHousehold\
+  \ chemicals can pose significant risks if not handled properly. Understanding these\
+  \ risks and knowing how to respond in an emergency can prevent harm and ensure safety.\n\
+  \n### What you need\nAwareness of the types of chemicals in your home, knowledge\
+  \ of emergency procedures, and access to emergency contact information.\n\n### How\
+  \ to do it\n1. Identify the chemicals in your home and understand their potential\
+  \ hazards. \n2. Learn the emergency procedures for chemical spills, leaks, or exposure.\
+  \ \n3. Keep emergency contact numbers readily available. \n4. In case of an emergency,\
+  \ follow the recommended procedures promptly.\n\n### Common failure modes\nMisidentification\
+  \ of chemicals and inadequate emergency response can lead to increased risk and\
+  \ harm.\n\n### Safety/boundary notes\nAlways use protective gear when handling chemicals\
+  \ and ensure proper ventilation in areas where chemicals are used or stored.\n\n\
+  ### Local adaptation notes\nAdapt procedures based on the specific chemicals present\
+  \ in your home and local emergency services available."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: []
+  failure_modes:
+  - misidentification of chemicals
+  - inadequate emergency response
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_001
+  claim_text: This reference sheet provides information on how to handle emergencies
+    involving household chemicals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 139
+    page_end: 139
+    segment_id: src.fema.are-you-ready.2004::seg_000216
+    excerpt: Chemical Emergencies. Extensive document describing the hazards of household
+      chemicals and what to do in an emergency.
+    start_char: 0
+    end_char: 120
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_002
+  claim_text: Household chemicals can pose significant risks if not handled properly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: There are probably many hazardous materials throughout your home.
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_003
+  claim_text: Identify the chemicals in your home and understand their potential hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: Take a tour of your home to see where these materials are located. Use
+      the list of common hazardous household items presented earlier to guide you
+      in your hunt.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_004
+  claim_text: Learn the emergency procedures for chemical spills, leaks, or exposure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: 'If someone has been exposed to a household chemical: Find any containers
+      of the substance that are readily available in order to provide requested information.
+      Call emergency medical services.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_005
+  claim_text: Keep emergency contact numbers readily available.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Call the fire department from outside (a cellular phone or a neighbor's
+      phone) once you are safely away from danger.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_006
+  claim_text: In case of an emergency, follow the recommended procedures promptly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: Follow the emergency operator or dispatcher's first aid instructions
+      carefully.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_007
+  claim_text: Misidentification of chemicals and inadequate emergency response can
+    lead to increased risk and harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 137
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000213
+    excerpt: The first aid advice found on containers may be out of date or inappropriate.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: emergency-preparedness.chemical-emergencies
+  claim_id: clm_008
+  claim_text: Always use protective gear when handling chemicals and ensure proper
+    ventilation in areas where chemicals are used or stored.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 138
+    page_end: 138
+    segment_id: src.fema.are-you-ready.2004::seg_000214
+    excerpt: It is critical to store household chemicals in places where children
+      cannot access them.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000216

@@ -1,0 +1,173 @@
+id: security.homeland-security-advisory-system
+slug: security.homeland-security-advisory-system
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Homeland Security Advisory System
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: security
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: A framework for disseminating information about terrorist threats.
+summary_medium: The Homeland Security Advisory System provides a framework for disseminating
+  information about the risk of terrorist acts, using a set of graduated threat conditions
+  with corresponding protective measures.
+plain_language: The Homeland Security Advisory System is a way to inform people about
+  the risk of terrorist attacks. It uses different levels of threat conditions, each
+  with specific actions to help protect against these threats.
+markdown_body: '### What this is
+
+  The Homeland Security Advisory System is a national framework designed to communicate
+  the risk of terrorist acts to federal, state, and local authorities, the private
+  sector, and the public. It uses a set of graduated threat conditions to indicate
+  the level of risk.
+
+
+  ### Why it matters
+
+  This system helps ensure that everyone, from government agencies to private businesses
+  and the general public, is aware of potential threats and can take appropriate actions
+  to protect themselves and reduce vulnerabilities.
+
+
+  ### What you need
+
+  Awareness of the current threat condition and understanding of the corresponding
+  protective measures.
+
+
+  ### How to do it
+
+  Monitor announcements from official sources to stay informed about the current threat
+  condition. Implement the recommended protective measures for your area or sector
+  as advised by authorities.
+
+
+  ### Common failure modes
+
+  Inaccurate threat assessment can lead to either overreaction or under-preparation.
+  Ineffective protective measures may not adequately reduce risk.
+
+
+  ### Safety/boundary notes
+
+  Ensure that protective measures are appropriate for the specific threat condition
+  and do not cause unnecessary panic.
+
+
+  ### Local adaptation notes
+
+  Threat conditions and protective measures may vary based on geographic areas or
+  specific sectors, so local authorities may provide additional guidance.'
+structured_data:
+  definition: A system for communicating the risk of terrorist acts through graduated
+    threat conditions.
+  key_questions:
+  - What are the current threat conditions?
+  - What protective measures should be implemented at each threat level?
+  misconceptions:
+  - The system is only for government use.
+  - All areas have the same threat conditions.
+requires: []
+suggested_edges: []
+citations:
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_001
+  claim_text: The Homeland Security Advisory System is a national framework designed
+    to communicate the risk of terrorist acts to federal, state, and local authorities,
+    the private sector, and the public.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: 'The Homeland Security Advisory System was designed to provide a national
+      framework and comprehensive means to disseminate information regarding the risk
+      of terrorist acts to the following: Federal, state, and local authorities, The
+      private sector, The American people'
+    start_char: 0
+    end_char: 255
+    support_strength: strong
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_002
+  claim_text: It uses a set of graduated threat conditions to indicate the level of
+    risk.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: This system provides warnings in the form of a set of graduated 'threat
+      conditions' that increase as the risk of the threat increases.
+    start_char: 256
+    end_char: 340
+    support_strength: strong
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_003
+  claim_text: This system helps ensure that everyone, from government agencies to
+    private businesses and the general public, is aware of potential threats and can
+    take appropriate actions to protect themselves and reduce vulnerabilities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: At each threat condition, government entities and the private sector,
+      including businesses and schools, would implement a corresponding set of 'protective
+      measures' to further reduce vulnerability or increase response capability during
+      a period of heightened alert.
+    start_char: 341
+    end_char: 534
+    support_strength: medium
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_004
+  claim_text: Awareness of the current threat condition and understanding of the corresponding
+    protective measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures that the government, the private sector, and the public
+      can take.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_005
+  claim_text: Monitor announcements from official sources to stay informed about the
+    current threat condition.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: Threat conditions may be assigned for the entire nation, or they may
+      be set for a particular geographic area or industrial sector.
+    start_char: 535
+    end_char: 620
+    support_strength: medium
+- object_id: security.homeland-security-advisory-system
+  claim_id: clm_009
+  claim_text: Threat conditions and protective measures may vary based on geographic
+    areas or specific sectors, so local authorities may provide additional guidance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: Threat conditions may be assigned for the entire nation, or they may
+      be set for a particular geographic area or industrial sector.
+    start_char: 535
+    end_char: 620
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000260

@@ -1,0 +1,128 @@
+id: earthquake.know-the-terms
+slug: earthquake.know-the-terms
+seed_type: glossary
+co_type: glossary
+canonical_title: 'Earthquake: Know the Terms'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: earthquake
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A glossary of terms to help identify earthquake hazards.
+summary_medium: This glossary provides key terms related to earthquake hazards, aiding
+  in understanding and identifying potential risks.
+plain_language: Learn important terms that describe earthquake hazards to better understand
+  and recognize them.
+markdown_body: '### What this is
+
+  This is a glossary of terms related to earthquake hazards. Understanding these terms
+  is crucial for identifying and preparing for potential earthquake risks.
+
+
+  ### Why it matters
+
+  Knowing the terminology associated with earthquakes helps in recognizing hazards
+  and understanding safety information, which is essential for effective preparedness
+  and response.
+
+
+  ### What you need
+
+  No specific tools or materials are needed to familiarize yourself with these terms.
+
+
+  ### How to do it
+
+  Read through the glossary and ensure you understand each term. Consider how each
+  term might relate to your local environment and potential earthquake risks.
+
+
+  ### Common failure modes
+
+  Not taking the time to understand the terms can lead to confusion during an actual
+  earthquake event, potentially increasing risk.
+
+
+  ### Safety/boundary notes
+
+  Ensure that you understand the context in which each term is used to avoid misinterpretation.
+
+
+  ### Local adaptation notes
+
+  Consider how these terms apply to your local area, as regional differences in geology
+  and infrastructure can affect earthquake hazards.'
+structured_data:
+  definition: A glossary of terms to help identify earthquake hazards.
+  key_questions:
+  - What are the key terms related to earthquake hazards?
+  - How can understanding these terms help in earthquake preparedness?
+  misconceptions:
+  - Believing that knowing terms alone is sufficient for earthquake preparedness.
+requires: []
+suggested_edges: []
+citations:
+- object_id: earthquake.know-the-terms
+  claim_id: clm_001
+  claim_text: This is a glossary of terms related to earthquake hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 66
+    support_strength: strong
+- object_id: earthquake.know-the-terms
+  claim_id: clm_002
+  claim_text: Understanding these terms is crucial for identifying and preparing for
+    potential earthquake risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 66
+    support_strength: medium
+- object_id: earthquake.know-the-terms
+  claim_id: clm_003
+  claim_text: Knowing the terminology associated with earthquakes helps in recognizing
+    hazards and understanding safety information, which is essential for effective
+    preparedness and response.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 66
+    support_strength: medium
+- object_id: earthquake.know-the-terms
+  claim_id: clm_004
+  claim_text: Not taking the time to understand the terms can lead to confusion during
+    an actual earthquake event, potentially increasing risk.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 66
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000147

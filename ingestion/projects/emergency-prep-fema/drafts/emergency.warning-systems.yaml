@@ -1,0 +1,189 @@
+id: emergency.warning-systems
+slug: emergency-warning-systems
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Warning Systems
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Overview of national and local emergency warning systems.
+summary_medium: This reference sheet provides an overview of the Emergency Alert System
+  (EAS) and NOAA Weather Radio (NWR), key components of national and local emergency
+  warning systems.
+plain_language: Learn about the systems used to warn the public during emergencies,
+  including the Emergency Alert System and NOAA Weather Radio.
+markdown_body: '### What this is
+
+  Emergency warning systems are designed to alert the public about imminent threats
+  or emergencies. The Emergency Alert System (EAS) is a national public warning system
+  that requires broadcasters, satellite digital audio service and direct broadcast
+  satellite providers to provide the President with a communications capability to
+  address the American people within 10 minutes during a national emergency. NOAA
+  Weather Radio (NWR) is a nationwide network of radio stations broadcasting continuous
+  weather information directly from the nearest National Weather Service office.
+
+
+  ### Why it matters
+
+  These systems are crucial for public safety, providing timely alerts that can save
+  lives and reduce harm during emergencies. Understanding and accessing these systems
+  ensures you receive critical information when it matters most.
+
+
+  ### What you need
+
+  To effectively use these systems, you need to ensure your local radio and TV stations
+  participate in the EAS and determine if NOAA Weather Radio is available in your
+  area. If available, consider purchasing a NOAA weather radio receiver.
+
+
+  ### How to do it
+
+  1. Check with local radio and TV stations to confirm their participation in the
+  EAS. 2. Determine the availability of NOAA Weather Radio in your area by contacting
+  local authorities or visiting the National Weather Service website. 3. Purchase
+  a NOAA weather radio receiver if NWR is available. 4. Stay informed about local
+  community warning methods by consulting local authorities.
+
+
+  ### Common failure modes
+
+  A common failure mode is the lack of awareness of local warning systems, which can
+  lead to missed alerts and increased risk during emergencies.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your NOAA weather radio receiver is properly configured and maintained
+  to receive alerts effectively.
+
+
+  ### Local adaptation notes
+
+  The availability of NOAA Weather Radio and participation of local stations in the
+  EAS may vary. Check with local authorities for specific information relevant to
+  your area.'
+structured_data:
+  definition: Emergency warning systems are mechanisms to alert the public about imminent
+    threats or emergencies.
+  key_questions:
+  - What is the Emergency Alert System (EAS)?
+  - How does NOAA Weather Radio (NWR) function?
+  - How can I ensure I receive emergency alerts?
+  misconceptions:
+  - All areas have the same level of access to emergency warning systems.
+  - Owning a NOAA weather radio receiver is unnecessary if you have a smartphone.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-warning-systems
+  claim_id: clm_001
+  claim_text: Emergency warning systems are designed to alert the public about imminent
+    threats or emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: The Emergency Alert System (EAS) can address the entire nation on very
+      short notice in case of a grave threat or national emergency.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency-warning-systems
+  claim_id: clm_002
+  claim_text: The Emergency Alert System (EAS) is a national public warning system
+    that requires broadcasters, satellite digital audio service and direct broadcast
+    satellite providers to provide the President with a communications capability
+    to address the American people within 10 minutes during a national emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: The Emergency Alert System (EAS) can address the entire nation on very
+      short notice in case of a grave threat or national emergency.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency-warning-systems
+  claim_id: clm_003
+  claim_text: NOAA Weather Radio (NWR) is a nationwide network of radio stations broadcasting
+    continuous weather information directly from the nearest National Weather Service
+    office.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: National Oceanic & Atmospheric Administration (NOAA) Weather Radio (NWR)
+      is a nationwide network of radio stations broadcasting continuous weather information
+      directly from a nearby National Weather Service office to specially configured
+      NOAA weather radio receivers.
+    start_char: 101
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-warning-systems
+  claim_id: clm_004
+  claim_text: These systems are crucial for public safety, providing timely alerts
+    that can save lives and reduce harm during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: The Emergency Alert System (EAS) can address the entire nation on very
+      short notice in case of a grave threat or national emergency.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency-warning-systems
+  claim_id: clm_005
+  claim_text: To effectively use these systems, you need to ensure your local radio
+    and TV stations participate in the EAS and determine if NOAA Weather Radio is
+    available in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: Ask if your local radio and TV stations participate in the EAS. Determine
+      if NOAA Weather Radio is available where you live.
+    start_char: 101
+    end_char: 200
+    support_strength: strong
+- object_id: emergency-warning-systems
+  claim_id: clm_006
+  claim_text: If available, consider purchasing a NOAA weather radio receiver.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: If so, consider purchasing a NOAA weather radio receiver.
+    start_char: 201
+    end_char: 250
+    support_strength: strong
+- object_id: emergency-warning-systems
+  claim_id: clm_007
+  claim_text: Stay informed about local community warning methods by consulting local
+    authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 19
+    page_end: 19
+    segment_id: src.fema.are-you-ready.2004::seg_000024
+    excerpt: Ask local authorities about methods used to warn your community.
+    start_char: 251
+    end_char: 300
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000024

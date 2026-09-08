@@ -1,0 +1,29 @@
+name: emergency-prep-fema
+created: '2026-09-07T23:32:55.801320+00:00'
+sources:
+- id: src.fema.are-you-ready.2004
+  file: sources/fema-are-you-ready.pdf
+  title: Are You Ready? An In-Depth Guide to Citizen Preparedness
+  source_kind: BOOK
+llm:
+  base_url: https://api.openai.com/v1
+  model: gpt-4o
+  temperature: 0.2
+passes:
+  parse:
+    completed: '2026-09-07T23:54:24.094582Z'
+  extract:
+    completed: '2026-09-08T00:12:41.387772Z'
+  draft:
+    completed: '2026-09-08T03:36:53.966968Z'
+  cite:
+    completed: '2026-09-08T04:32:52.737683Z'
+  canonicalize:
+    completed: '2026-09-08T04:16:28.893911Z'
+  edges:
+    completed: '2026-09-08T04:17:12.147695Z'
+  bundles:
+    completed: '2026-09-08T04:25:30.327406Z'
+  load:
+    completed: '2026-09-08T04:35:16.028236Z'
+job_id: null

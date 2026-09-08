@@ -1,0 +1,101 @@
+id: environment.pool-water-conservation
+slug: environment.pool-water-conservation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Pool Water Conservation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: environment
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: low
+summary_short: Conserve water in pools by using water-saving filters and covers.
+summary_medium: Recommendations for conserving water in pools include installing water-saving
+  filters and using pool covers to reduce evaporation.
+plain_language: To save water in your pool, you can install a water-saving filter
+  and use a pool cover to prevent evaporation.
+markdown_body: '### What this is
+
+  This reference sheet provides guidance on how to conserve water in swimming pools
+  through the use of specific equipment and practices.
+
+
+  ### Why it matters
+
+  Conserving water in pools is important to reduce water waste, especially in areas
+  prone to drought or with limited water resources. Using less water also helps lower
+  utility bills and supports environmental sustainability.
+
+
+  ### What you need
+
+  To implement these water conservation measures, you will need a water-saving pool
+  filter and a pool cover.
+
+
+  ### How to do it
+
+  1. Install a water-saving pool filter. Traditional filters can use between 180 to
+  250 gallons of water per backflush. A water-saving filter reduces this usage significantly.
+
+  2. Use a pool cover when the pool is not in use to minimize water loss through evaporation.
+
+
+  ### Common failure modes
+
+  One common failure mode is water loss through evaporation if the pool is not covered
+  when not in use.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  The effectiveness of these measures may depend on the availability of water-saving
+  pool equipment in your area.'
+structured_data:
+  tools:
+  - water-saving pool filter
+  - pool cover
+  materials: []
+  success_criteria: Reduced water usage in pool maintenance.
+  failure_modes: Water loss through evaporation.
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: environment.pool-water-conservation
+  claim_id: clm_001
+  claim_text: Traditional filters can use between 180 to 250 gallons of water per
+    backflush.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 194
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000297
+    excerpt: A single back fl ushing with a traditional fi lter uses 180 to 250 gallons
+      of water.
+    start_char: 49
+    end_char: 111
+    support_strength: strong
+- object_id: environment.pool-water-conservation
+  claim_id: clm_002
+  claim_text: Use a pool cover when the pool is not in use to minimize water loss
+    through evaporation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 194
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000297
+    excerpt: Cover pools and spas to reduce evaporation of water.
+    start_char: 113
+    end_char: 151
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000297

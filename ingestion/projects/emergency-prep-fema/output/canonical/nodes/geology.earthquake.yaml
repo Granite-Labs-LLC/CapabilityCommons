@@ -1,0 +1,141 @@
+id: geology.earthquake
+slug: geology.earthquake
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Earthquakes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: An overview of earthquakes, defined as a sudden slipping or movement
+  of a portion of the earth's crust, followed by vibrations.
+summary_medium: Earthquakes are sudden movements of the earth's crust that result
+  in vibrations. This concept explores the causes and effects of these natural phenomena.
+plain_language: An earthquake happens when a part of the earth's crust suddenly moves,
+  causing the ground to shake.
+markdown_body: '### What this is
+
+  An earthquake is a natural event characterized by the sudden slipping or movement
+  of a portion of the earth''s crust. This movement is typically accompanied and followed
+  by a series of vibrations or seismic waves.
+
+
+  ### Why it matters
+
+  Understanding earthquakes is crucial because they can have significant impacts on
+  human life and infrastructure. They can cause buildings to collapse, trigger landslides,
+  and lead to tsunamis, making them a major natural hazard.
+
+
+  ### What you need
+
+  To understand earthquakes, one needs a basic knowledge of geology, particularly
+  the structure of the earth''s crust and tectonic plates.
+
+
+  ### How to do it
+
+  Studying earthquakes involves examining seismic data, understanding tectonic plate
+  movements, and learning about the different types of seismic waves.
+
+
+  ### Common failure modes
+
+  Misinterpreting seismic data or underestimating the potential impact of an earthquake
+  can lead to inadequate preparedness and response.
+
+
+  ### Safety/boundary notes
+
+  While studying earthquakes, it''s important to consider safety measures for earthquake-prone
+  areas, such as building codes and emergency preparedness plans.
+
+
+  ### Local adaptation notes
+
+  In regions prone to earthquakes, local adaptations may include specific building
+  designs and community education programs to enhance resilience.'
+structured_data:
+  definition: An earthquake is a sudden slipping or movement of a portion of the earth's
+    crust, accompanied and followed by a series of vibrations.
+  key_questions:
+  - What causes earthquakes?
+  - How are earthquakes measured?
+  - What are the effects of earthquakes on the environment and human structures?
+  misconceptions:
+  - Earthquakes only occur in certain parts of the world.
+  - All earthquakes are highly destructive.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geology.earthquake
+  claim_id: clm_001
+  claim_text: An earthquake is a natural event characterized by the sudden slipping
+    or movement of a portion of the earth's crust. This movement is typically accompanied
+    and followed by a series of vibrations or seismic waves.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000148
+    excerpt: A sudden slipping or movement of a portion of the earth's crust, accompanied
+      and followed by a series of vibrations.
+    start_char: 0
+    end_char: 104
+    support_strength: strong
+- object_id: geology.earthquake
+  claim_id: clm_002
+  claim_text: Understanding earthquakes is crucial because they can have significant
+    impacts on human life and infrastructure. They can cause buildings to collapse,
+    trigger landslides, and lead to tsunamis, making them a major natural hazard.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: One of the most frightening and destructive phenomena of nature is a
+      severe earthquake and its terrible aftereffects. If the earthquake occurs in
+      a populated area, it may cause many deaths and injuries and extensive property
+      damage.
+    start_char: 0
+    end_char: 263
+    support_strength: strong
+- object_id: geology.earthquake
+  claim_id: clm_003
+  claim_text: To understand earthquakes, one needs a basic knowledge of geology, particularly
+    the structure of the earth's crust and tectonic plates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: For hundreds of millions of years, the forces of plate tectonics have
+      shaped the earth, as the huge plates that form the earth's surface slowly move
+      over, under, and past each other.
+    start_char: 105
+    end_char: 263
+    support_strength: medium
+- object_id: geology.earthquake
+  claim_id: clm_004
+  claim_text: Studying earthquakes involves examining seismic data, understanding
+    tectonic plate movements, and learning about the different types of seismic waves.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: For hundreds of millions of years, the forces of plate tectonics have
+      shaped the earth, as the huge plates that form the earth's surface slowly move
+      over, under, and past each other.
+    start_char: 105
+    end_char: 263
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000148

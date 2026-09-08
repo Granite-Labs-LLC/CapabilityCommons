@@ -1,0 +1,155 @@
+id: emergency.hazard-assessment-worksheet
+slug: emergency.hazard-assessment-worksheet
+seed_type: worksheet
+co_type: worksheet
+canonical_title: Emergency Hazard Assessment Worksheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A worksheet to assess and reduce family risk from hazards.
+summary_medium: This worksheet helps families assess risks from various hazards and
+  emergencies and suggests ways to reduce these risks.
+plain_language: Use this worksheet to figure out what kinds of emergencies could happen
+  in your area and how risky they are. Then, think about what you can do to make those
+  risks smaller.
+markdown_body: '### What this is
+
+  This is a worksheet designed to help individuals and families assess the risk levels
+  of various natural and technological hazards that may affect them. It includes a
+  list of potential hazards and a space to record the risk level and strategies for
+  risk reduction.
+
+
+  ### Why it matters
+
+  Understanding the risks associated with different hazards allows families to prepare
+  effectively and reduce potential harm. By assessing these risks, families can take
+  proactive steps to ensure their safety and resilience in the face of emergencies.
+
+
+  ### What you need
+
+  You will need access to local hazard information, which can be obtained from local
+  authorities or FEMA''s hazard maps. A printed copy of the worksheet is also necessary
+  to record findings.
+
+
+  ### How to do it
+
+  1. Consult local authorities or FEMA''s website to gather information about potential
+  hazards in your area. 2. Use the worksheet to list each hazard and assess its risk
+  level as none, low, moderate, or high. 3. For each hazard, identify and record strategies
+  to reduce your risk.
+
+
+  ### Common failure modes
+
+  Failing to complete a thorough risk assessment or neglecting to consult local authorities
+  and available resources can lead to incomplete or inaccurate risk evaluations.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all family members are involved in the assessment process to increase
+  awareness and preparedness.
+
+
+  ### Local adaptation notes
+
+  Consider local hazard types and community resources when assessing risks and planning
+  risk reduction strategies.'
+structured_data:
+  tools:
+  - hazard maps
+  materials: []
+  success_criteria:
+  - Complete risk assessment for all listed hazards
+  - Identify actionable risk reduction strategies
+  failure_modes:
+  - Incomplete risk assessment
+  - Failure to consult authorities
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hazard-assessment-worksheet
+  claim_id: clm_001
+  claim_text: This is a worksheet designed to help individuals and families assess
+    the risk levels of various natural and technological hazards that may affect them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 17
+    page_end: 18
+    segment_id: src.fema.are-you-ready.2004::seg_000023
+    excerpt: Ask local authorities about each possible hazard or emergency and use
+      the worksheet that follows to record your fi ndings and suggestions for reducing
+      your family's risk.
+    start_char: 0
+    end_char: 130
+    support_strength: strong
+- object_id: emergency.hazard-assessment-worksheet
+  claim_id: clm_002
+  claim_text: Understanding the risks associated with different hazards allows families
+    to prepare effectively and reduce potential harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    start_char: 0
+    end_char: 70
+    support_strength: medium
+- object_id: emergency.hazard-assessment-worksheet
+  claim_id: clm_003
+  claim_text: You will need access to local hazard information, which can be obtained
+    from local authorities or FEMA's hazard maps.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 17
+    page_end: 18
+    segment_id: src.fema.are-you-ready.2004::seg_000023
+    excerpt: You also can consult FEMA for hazard maps for your area.
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency.hazard-assessment-worksheet
+  claim_id: clm_004
+  claim_text: Consult local authorities or FEMA's website to gather information about
+    potential hazards in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency.hazard-assessment-worksheet
+  claim_id: clm_005
+  claim_text: Failing to complete a thorough risk assessment or neglecting to consult
+    local authorities and available resources can lead to incomplete or inaccurate
+    risk evaluations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000023

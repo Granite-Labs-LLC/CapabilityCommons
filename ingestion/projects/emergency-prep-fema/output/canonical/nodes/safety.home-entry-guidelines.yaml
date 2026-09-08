@@ -1,0 +1,265 @@
+id: safety.home-entry-guidelines
+slug: safety.home-entry-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Home Entry Guidelines After a Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for safely entering a home after a disaster.
+summary_medium: Guidelines for safely entering a home after a disaster, including
+  checks for gas leaks, electrical safety, structural integrity, and contamination.
+plain_language: Learn how to safely enter your home after a disaster by checking for
+  gas leaks, electrical hazards, structural damage, and contamination.
+markdown_body: '# What this is
+
+  This reference sheet provides guidelines for safely entering your home after a disaster.
+  It includes checks for gas leaks, electrical safety, structural integrity, and contamination.
+
+
+  # Why it matters
+
+  Entering a home after a disaster can be dangerous due to potential gas leaks, electrical
+  hazards, structural damage, and contamination. Following these guidelines helps
+  ensure your safety and the safety of others.
+
+
+  # What you need
+
+  You will need access to the main gas valve, main fuse box, or circuit breaker. It
+  may also be helpful to have contact information for local authorities and professional
+  inspectors.
+
+
+  # How to do it
+
+  1. Do not enter if you smell gas, see floodwaters around the building, or if the
+  home was damaged by fire and not declared safe by authorities.
+
+  2. If you smell gas or hear a hissing sound, open a window, leave immediately, and
+  turn off the main gas valve from outside. Call the gas company from a neighbor''s
+  residence.
+
+  3. Check the electrical system only if it is safe. Turn off electricity at the main
+  fuse box or circuit breaker if possible.
+
+  4. Inspect the roof, foundation, and chimney for cracks. Leave immediately if collapse
+  seems possible.
+
+  5. If appliances are wet, turn off electricity, unplug them, and let them dry. Have
+  them checked by a professional before use.
+
+  6. Check water and sewage systems for damage. Turn off the main water valve if pipes
+  are damaged. Consult local authorities about water safety.
+
+  7. Dispose of any food or supplies that may be contaminated.
+
+  8. Pump out flooded basements gradually to prevent structural damage.
+
+  9. Be cautious of falling objects when opening cabinets.
+
+  10. Clean up chemical spills and disinfect contaminated items.
+
+  11. Document damages and contact your insurance agent.
+
+
+  # Common failure modes
+
+  Ignoring gas smells can lead to explosions. Entering a building with structural
+  damage can result in collapse. Using electrical systems without inspection can cause
+  shocks or fires.
+
+
+  # Safety/boundary notes
+
+  Do not enter if you smell gas or see floodwaters. Avoid using open flames until
+  you are sure there is no gas leak.
+
+
+  # Local adaptation notes
+
+  Consider local building codes and the availability of professional inspectors when
+  adapting these guidelines.'
+structured_data:
+  tools:
+  - main gas valve
+  - main fuse box
+  - circuit breaker
+  materials: []
+  success_criteria:
+  - No gas smell detected
+  - Electrical system inspected and safe
+  - Structural integrity confirmed
+  - Water and sewage systems functional
+  failure_modes:
+  - Gas explosion
+  - Electrical shock
+  - Structural collapse
+  safety_boundary:
+  - Do not enter if gas is smelled
+  - Avoid using open flames
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_001
+  claim_text: Do not enter if you smell gas, see floodwaters around the building,
+    or if the home was damaged by fire and not declared safe by authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: 'Do not enter if: You smell gas. Floodwaters remain around the building.
+      Your home was damaged by fire and the authorities have not declared it safe.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_002
+  claim_text: If you smell gas or hear a hissing sound, open a window, leave immediately,
+    and turn off the main gas valve from outside. Call the gas company from a neighbor's
+    residence.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: If you smell gas or hear a hissing or blowing sound, open a window and
+      leave immediately. Turn off the main gas valve from the outside, if you can.
+      Call the gas company from a neighbor's residence.
+    start_char: 151
+    end_char: 320
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_003
+  claim_text: Check the electrical system only if it is safe. Turn off electricity
+    at the main fuse box or circuit breaker if possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Check the electrical system unless you are wet, standing in water, or
+      unsure of your safety. If possible, turn off the electricity at the main fuse
+      box or circuit breaker.
+    start_char: 321
+    end_char: 450
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_004
+  claim_text: Inspect the roof, foundation, and chimney for cracks. Leave immediately
+    if collapse seems possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Roof, foundation, and chimney cracks. If it looks like the building may
+      collapse, leave immediately.
+    start_char: 451
+    end_char: 520
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_005
+  claim_text: If appliances are wet, turn off electricity, unplug them, and let them
+    dry. Have them checked by a professional before use.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: If appliances are wet, turn off the electricity at the main fuse box
+      or circuit breaker. Then, unplug appliances and let them dry out. Have appliances
+      checked by a professional before using them again.
+    start_char: 521
+    end_char: 650
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_006
+  claim_text: Check water and sewage systems for damage. Turn off the main water valve
+    if pipes are damaged. Consult local authorities about water safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: If pipes are damaged, turn off the main water valve. Check with local
+      authorities before using any water; the water could be contaminated.
+    start_char: 651
+    end_char: 750
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_007
+  claim_text: Dispose of any food or supplies that may be contaminated.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Throw out all food and other supplies that you suspect may have become
+      contaminated or come in to contact with floodwater.
+    start_char: 751
+    end_char: 820
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_008
+  claim_text: Pump out flooded basements gradually to prevent structural damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: If your basement has flooded, pump it out gradually (about one third
+      of the water per day) to avoid damage.
+    start_char: 821
+    end_char: 890
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_009
+  claim_text: Be cautious of falling objects when opening cabinets.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Open cabinets. Be alert for objects that may fall.
+    start_char: 891
+    end_char: 930
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_010
+  claim_text: Clean up chemical spills and disinfect contaminated items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Clean up household chemical spills. Disinfect items that may have been
+      contaminated by raw sewage, bacteria, or chemicals.
+    start_char: 931
+    end_char: 1000
+    support_strength: strong
+- object_id: safety.home-entry-guidelines
+  claim_id: clm_011
+  claim_text: Document damages and contact your insurance agent.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 182
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000275
+    excerpt: Call your insurance agent. Take pictures of damages. Keep good records
+      of repair and cleaning costs.
+    start_char: 1001
+    end_char: 1060
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000275

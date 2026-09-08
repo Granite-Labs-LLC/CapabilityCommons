@@ -1,0 +1,200 @@
+id: emergency.disaster-supplies-checklist
+slug: emergency.disaster-supplies-checklist
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Disaster Supplies Checklist
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Checklist for disaster supplies kit.
+summary_medium: A checklist to help determine what to include in a disaster supplies
+  kit to meet family needs.
+plain_language: This checklist helps you figure out what items to include in your
+  disaster supplies kit to ensure your family is prepared for emergencies.
+markdown_body: '# What this is
+
+  This is a checklist designed to help you gather the necessary supplies for a disaster
+  supplies kit tailored to your family''s specific needs.
+
+
+  # Why it matters
+
+  Having a well-prepared disaster supplies kit can be crucial during emergencies,
+  ensuring that your family has the essentials needed to survive and stay safe.
+
+
+  # What you need
+
+  You need to assess your family''s specific needs and gather supplies such as food,
+  water, medical supplies, and other essentials.
+
+
+  # How to do it
+
+  Review the checklist and gather items such as non-perishable food, water, first
+  aid supplies, medications, flashlights, batteries, and important documents. Customize
+  the kit based on your family''s unique requirements.
+
+
+  # Common failure modes
+
+  Common issues include having an incomplete kit or inadequate supplies that do not
+  meet the family''s needs.
+
+
+  # Safety/boundary notes
+
+  Ensure that all items are safe to use and stored properly to prevent accidents or
+  spoilage.
+
+
+  # Local adaptation notes
+
+  Consider regional supply variations and family-specific needs when compiling your
+  kit.'
+structured_data:
+  tools: []
+  materials:
+  - disaster supplies kit
+  success_criteria:
+  - Complete kit with adequate supplies for family needs
+  failure_modes:
+  - Incomplete kit
+  - Inadequate supplies
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: A basic kit with essential supplies for survival.
+    tools: []
+    materials:
+    - disaster supplies kit
+    expected_time: Varies based on family needs
+    expected_cost: Varies based on items included
+    success_checks:
+    - All necessary items are included
+    - Kit is easily accessible
+    stop_conditions:
+    - Kit is complete and meets family needs
+    common_mistakes:
+    - Forgetting essential items
+    - Not updating the kit regularly
+    variants:
+    - label: Urban
+      when: Living in a city
+      notes: Consider space constraints and access to resources.
+    - label: Off-grid
+      when: Living in remote areas
+      notes: Include additional supplies for longer isolation periods.
+    when_to_escalate:
+    - If unsure about specific needs, consult emergency preparedness resources.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_001
+  claim_text: This is a checklist designed to help you gather the necessary supplies
+    for a disaster supplies kit tailored to your family's specific needs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_002
+  claim_text: Having a well-prepared disaster supplies kit can be crucial during emergencies,
+    ensuring that your family has the essentials needed to survive and stay safe.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_003
+  claim_text: You need to assess your family's specific needs and gather supplies
+    such as food, water, medical supplies, and other essentials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_004
+  claim_text: Review the checklist and gather items such as non-perishable food, water,
+    first aid supplies, medications, flashlights, batteries, and important documents.
+    Customize the kit based on your family's unique requirements.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_005
+  claim_text: Common issues include having an incomplete kit or inadequate supplies
+    that do not meet the family's needs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_006
+  claim_text: Ensure that all items are safe to use and stored properly to prevent
+    accidents or spoilage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+- object_id: emergency.disaster-supplies-checklist
+  claim_id: clm_007
+  claim_text: Consider regional supply variations and family-specific needs when compiling
+    your kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000298
+    excerpt: The following list is to help you determine what to include in your disaster
+      supplies kit that will meet your family's needs.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000298

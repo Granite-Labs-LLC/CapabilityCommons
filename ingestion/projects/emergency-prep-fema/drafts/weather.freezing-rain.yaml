@@ -1,0 +1,102 @@
+id: weather.freezing-rain
+slug: weather.freezing-rain
+seed_type: extracted
+co_type: glossary
+canonical_title: Freezing Rain
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: moderate
+summary_short: Freezing rain creates ice coatings on surfaces.
+summary_medium: Freezing rain occurs when rain freezes upon contact with surfaces,
+  forming ice on roads, trees, and power lines.
+plain_language: Freezing rain is rain that turns into ice when it hits the ground,
+  making roads and other surfaces slippery and dangerous.
+markdown_body: '### What this is
+
+  Freezing rain is a type of precipitation where rain droplets freeze upon impact
+  with surfaces, resulting in a layer of ice.
+
+
+  ### Why it matters
+
+  Freezing rain can create hazardous conditions by forming ice on roads, walkways,
+  trees, and power lines, leading to accidents, power outages, and damage to infrastructure.
+
+
+  ### What you need
+
+  Awareness of weather forecasts and preparedness for icy conditions.
+
+
+  ### How to do it
+
+  Monitor weather reports for freezing rain alerts and take precautions such as avoiding
+  travel and securing outdoor items.
+
+
+  ### Common failure modes
+
+  Underestimating the impact of ice accumulation on surfaces, leading to accidents
+  or injuries.
+
+
+  ### Safety/boundary notes
+
+  Exercise caution when walking or driving on icy surfaces and be prepared for potential
+  power outages.
+
+
+  ### Local adaptation notes
+
+  In regions prone to freezing rain, infrastructure may be adapted to better withstand
+  ice accumulation.'
+structured_data:
+  definition: Rain that freezes when it hits the ground, creating a coating of ice
+    on roads, walkways, trees, and power lines.
+  key_questions:
+  - What conditions lead to freezing rain?
+  - How does freezing rain impact transportation and infrastructure?
+  misconceptions:
+  - Freezing rain is the same as sleet or snow.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.freezing-rain
+  claim_id: clm_001
+  claim_text: Freezing rain is a type of precipitation where rain droplets freeze
+    upon impact with surfaces, resulting in a layer of ice.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000120
+    excerpt: Rain that freezes when it hits the ground, creating a coating of ice
+      on roads, walkways, trees, and power lines.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: weather.freezing-rain
+  claim_id: clm_002
+  claim_text: Freezing rain can create hazardous conditions by forming ice on roads,
+    walkways, trees, and power lines, leading to accidents, power outages, and damage
+    to infrastructure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000120
+    excerpt: Rain that freezes when it hits the ground, creating a coating of ice
+      on roads, walkways, trees, and power lines.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000120

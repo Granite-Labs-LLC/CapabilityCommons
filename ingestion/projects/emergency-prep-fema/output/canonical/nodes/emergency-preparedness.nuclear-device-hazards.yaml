@@ -1,0 +1,185 @@
+id: emergency-preparedness.nuclear-device-hazards
+slug: emergency-preparedness.nuclear-device-hazards
+seed_type: extracted
+co_type: concept_note
+canonical_title: Hazards of Nuclear Devices
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Factors affecting nuclear device hazards include device size, detonation
+  height, surface nature, and weather conditions.
+summary_medium: This concept note outlines the factors affecting the hazards of nuclear
+  devices, including the size of the device, the height at which it is detonated,
+  the nature of the surface beneath the explosion, and the existing meteorological
+  conditions.
+plain_language: Understanding the hazards of nuclear devices involves considering
+  how big the device is, how high it explodes, what kind of surface it explodes over,
+  and the weather at the time.
+markdown_body: '### What this is
+
+  This concept note explains the various factors that influence the hazards associated
+  with nuclear devices. These factors determine the extent, nature, and timing of
+  the hazards that may arise from a nuclear explosion.
+
+
+  ### Why it matters
+
+  Understanding these factors is crucial for emergency preparedness and response planning.
+  It helps in predicting the potential impact of a nuclear explosion and in implementing
+  effective safety measures.
+
+
+  ### What you need
+
+  Knowledge of the factors affecting nuclear hazards, including device size, detonation
+  height, surface characteristics, and weather conditions.
+
+
+  ### How to do it
+
+  Analyze each factor: assess the size of the nuclear device, determine the height
+  of detonation, evaluate the surface type beneath the explosion, and consider current
+  weather conditions such as wind speed and direction.
+
+
+  ### Common failure modes
+
+  Failing to consider all factors can lead to inaccurate predictions of hazard effects,
+  potentially resulting in inadequate preparedness and response.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all assessments are conducted with safety as a priority, and that predictions
+  are used to inform protective measures.
+
+
+  ### Local adaptation notes
+
+  Local geography and climate should be considered when applying these concepts to
+  specific areas.'
+structured_data:
+  definition: The hazards of nuclear devices are influenced by several key factors
+    that affect the extent and nature of the impact.
+  key_questions:
+  - What factors influence the hazards of nuclear devices?
+  - How does the size of the device affect the hazard?
+  - What role does the height of detonation play?
+  - How do surface characteristics and weather conditions impact the hazard?
+  misconceptions:
+  - The size of the device is the only factor that matters.
+  - Weather conditions do not significantly affect nuclear hazards.
+  safety_boundary: This is background/awareness information about a hazard, adapted
+    from FEMA's public citizen-preparedness guide. It is not a substitute for official
+    warnings, alerts, or instructions from local emergency management, law enforcement,
+    or emergency responders during an actual event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.nuclear-device-hazards
+  claim_id: clm_001
+  claim_text: The extent, nature, and timing of the hazards that may arise from a
+    nuclear explosion are influenced by various factors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000249
+    excerpt: 'The extent, nature, and arrival time of these hazards are difficult
+      to predict. The geographical dispersion of hazard effects will be defined by
+      the following: Size of the device. A more powerful bomb will produce more distant
+      effects. Height above the ground the device was detonated. This will determine
+      the extent of blast effects. Nature of the surface beneath the explosion. Some
+      materials are more likely to become radioactive and airborne than others. Flat
+      areas are more susceptible to blast effects. Existing meteorological conditions.
+      Wind speed and direction will affect arrival time of fallout; precipitation
+      may wash fallout from the atmosphere.'
+    start_char: 0
+    end_char: 503
+    support_strength: strong
+- object_id: emergency-preparedness.nuclear-device-hazards
+  claim_id: clm_002
+  claim_text: Understanding these factors is crucial for emergency preparedness and
+    response planning.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000249
+    excerpt: 'The extent, nature, and arrival time of these hazards are difficult
+      to predict. The geographical dispersion of hazard effects will be defined by
+      the following: Size of the device. A more powerful bomb will produce more distant
+      effects. Height above the ground the device was detonated. This will determine
+      the extent of blast effects. Nature of the surface beneath the explosion. Some
+      materials are more likely to become radioactive and airborne than others. Flat
+      areas are more susceptible to blast effects. Existing meteorological conditions.
+      Wind speed and direction will affect arrival time of fallout; precipitation
+      may wash fallout from the atmosphere.'
+    start_char: 0
+    end_char: 503
+    support_strength: medium
+- object_id: emergency-preparedness.nuclear-device-hazards
+  claim_id: clm_003
+  claim_text: Knowledge of the factors affecting nuclear hazards, including device
+    size, detonation height, surface characteristics, and weather conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000249
+    excerpt: 'The geographical dispersion of hazard effects will be defined by the
+      following: Size of the device. A more powerful bomb will produce more distant
+      effects. Height above the ground the device was detonated. This will determine
+      the extent of blast effects. Nature of the surface beneath the explosion. Some
+      materials are more likely to become radioactive and airborne than others. Flat
+      areas are more susceptible to blast effects. Existing meteorological conditions.
+      Wind speed and direction will affect arrival time of fallout; precipitation
+      may wash fallout from the atmosphere.'
+    start_char: 84
+    end_char: 503
+    support_strength: strong
+- object_id: emergency-preparedness.nuclear-device-hazards
+  claim_id: clm_004
+  claim_text: 'Analyze each factor: assess the size of the nuclear device, determine
+    the height of detonation, evaluate the surface type beneath the explosion, and
+    consider current weather conditions such as wind speed and direction.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000249
+    excerpt: 'The geographical dispersion of hazard effects will be defined by the
+      following: Size of the device. A more powerful bomb will produce more distant
+      effects. Height above the ground the device was detonated. This will determine
+      the extent of blast effects. Nature of the surface beneath the explosion. Some
+      materials are more likely to become radioactive and airborne than others. Flat
+      areas are more susceptible to blast effects. Existing meteorological conditions.
+      Wind speed and direction will affect arrival time of fallout; precipitation
+      may wash fallout from the atmosphere.'
+    start_char: 84
+    end_char: 503
+    support_strength: strong
+- object_id: emergency-preparedness.nuclear-device-hazards
+  claim_id: clm_005
+  claim_text: Failing to consider all factors can lead to inaccurate predictions of
+    hazard effects, potentially resulting in inadequate preparedness and response.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000249
+    excerpt: The extent, nature, and arrival time of these hazards are difficult to
+      predict.
+    start_char: 0
+    end_char: 63
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000249

@@ -1,0 +1,218 @@
+id: emergency-preparedness.managing-food-supplies
+slug: emergency-preparedness.managing-food-supplies
+seed_type: skill_guide
+co_type: skill_guide
+canonical_title: Managing Food Supplies During Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts:
+- disaster preparedness
+- household management
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to manage food supplies effectively during emergencies.
+summary_medium: This guide provides essential steps for managing food supplies during
+  emergencies, focusing on storage, rotation, and selection of non-perishable items
+  to ensure food safety and availability.
+plain_language: This guide helps you prepare and manage your food supplies in case
+  of an emergency. It covers how to store food properly, rotate your supplies to keep
+  them fresh, and choose the right non-perishable foods.
+markdown_body: "# What this is\nThis guide explains how to manage food supplies effectively\
+  \ during emergencies. It includes tips on storing, rotating, and selecting non-perishable\
+  \ food items to ensure you have enough safe food available when needed.\n\n# Why\
+  \ it matters\nProper management of food supplies is crucial during emergencies to\
+  \ prevent spoilage, ensure food safety, and maintain adequate nutrition. Having\
+  \ a well-organized food supply can reduce stress and increase resilience in crisis\
+  \ situations.\n\n# What you need\nYou'll need storage containers, shelves, and labels\
+  \ to organize your food supplies. It's also important to have a list of non-perishable\
+  \ food items that are suitable for long-term storage.\n\n# How to do it\n1. Store\
+  \ food in a cool, dry place to prevent spoilage. Use airtight containers to protect\
+  \ against pests and moisture. \n2. Rotate your supplies regularly by using older\
+  \ items first and replacing them with new ones. \n3. Select non-perishable foods\
+  \ that are high in nutrition and have a long shelf life, such as canned goods, dried\
+  \ fruits, and grains.\n\n# Common failure modes\nCommon issues include food spoilage\
+  \ due to improper storage conditions, insufficient supplies due to poor planning,\
+  \ and contamination from pests or expired items.\n\n# Safety/boundary notes\nAvoid\
+  \ consuming expired foods and ensure all food is stored under proper conditions\
+  \ to prevent contamination and spoilage.\n\n# Local adaptation notes\nConsider the\
+  \ availability of local food items and how the local climate might impact storage\
+  \ conditions. Adjust your food selection and storage methods accordingly."
+structured_data:
+  tools:
+  - storage containers
+  - shelves
+  - labels
+  materials: []
+  success_criteria:
+  - Food remains unspoiled and safe to consume
+  - Adequate supplies are maintained
+  - Food is rotated regularly
+  failure_modes:
+  - spoilage
+  - insufficient supplies
+  - contamination
+  safety_boundary:
+  - avoid expired foods
+  - ensure proper storage conditions
+  implementation:
+    smallest_viable_version: Store and rotate a basic supply of non-perishable foods.
+    tools:
+    - storage containers
+    - shelves
+    - labels
+    materials: []
+    expected_time: 1-2 hours
+    expected_cost: low
+    success_checks:
+    - Food is organized and labeled
+    - Oldest items are used first
+    stop_conditions:
+    - Food shows signs of spoilage
+    - Storage area becomes unsuitable
+    common_mistakes:
+    - Not checking expiration dates
+    - Improper storage conditions
+    variants:
+    - label: urban
+      when: Limited space for storage
+      notes: Use vertical storage solutions and compact containers.
+    - label: off-grid
+      when: Lack of refrigeration
+      notes: Focus on dried and canned goods that do not require refrigeration.
+    when_to_escalate:
+    - Significant spoilage detected
+    - Pest infestation occurs
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.managing-food-supplies
+  claim_id: clm_001
+  claim_text: Store food in a cool, dry place to prevent spoilage. Use airtight containers
+    to protect against pests and moisture.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Keep food in covered containers
+    start_char: 0
+    end_char: 35
+    support_strength: medium
+- object_id: emergency-preparedness.managing-food-supplies
+  claim_id: clm_002
+  claim_text: Rotate your supplies regularly by using older items first and replacing
+    them with new ones.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Discard any food that has an unusual odor, color, or texture
+    start_char: 0
+    end_char: 62
+    support_strength: weak
+- object_id: emergency-preparedness.managing-food-supplies
+  claim_id: clm_003
+  claim_text: Select non-perishable foods that are high in nutrition and have a long
+    shelf life, such as canned goods, dried fruits, and grains.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Commercially canned food may be eaten out of the can without warming.
+    start_char: 0
+    end_char: 62
+    support_strength: medium
+- object_id: emergency-preparedness.managing-food-supplies
+  claim_id: clm_004
+  claim_text: Avoid consuming expired foods and ensure all food is stored under proper
+    conditions to prevent contamination and spoilage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Discard any food that has come into contact with contaminated floodwater.
+    start_char: 0
+    end_char: 62
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000059
+bundle_overrides:
+  hook: Properly managing your food supplies during emergencies can ensure safety
+    and nutrition when you need it most.
+  primer: In times of emergency, having a well-organized and managed food supply can
+    make a significant difference in your ability to cope with the situation. Emergencies
+    can disrupt normal food supply chains, making it essential to have a stockpile
+    of non-perishable foods that can sustain you and your family. This involves selecting
+    foods that are nutritious and have a long shelf life, such as canned goods, dried
+    fruits, and grains. Proper storage is crucial to prevent spoilage and contamination.
+    Food should be kept in a cool, dry place, ideally in airtight containers to protect
+    against pests and moisture. Regularly rotating your supplies by using older items
+    first and replacing them with new ones ensures that your food remains fresh and
+    safe to consume. Avoiding expired foods and ensuring proper storage conditions
+    are key to maintaining a reliable food supply during emergencies.
+  guide: '1. **Select Non-Perishable Foods**: Choose items that are high in nutrition
+    and have a long shelf life. Good options include canned goods, dried fruits, grains,
+    and other non-perishable items. These foods should be able to sustain you without
+    the need for refrigeration.
+
+
+    2. **Proper Storage**: Store your food in a cool, dry place to prevent spoilage.
+    Use airtight containers to protect against pests and moisture. Ensure that the
+    storage area is clean and organized, with shelves and labels to help you keep
+    track of your supplies.
+
+
+    3. **Rotate Supplies**: Regularly check your food supplies and use older items
+    first. This practice, known as ''first in, first out,'' helps prevent spoilage
+    and ensures that your food remains fresh. Replace used items with new ones to
+    maintain a steady supply.
+
+
+    4. **Check Expiration Dates**: Regularly inspect your food supplies for expiration
+    dates. Discard any items that are expired or show signs of spoilage, such as unusual
+    odors, colors, or textures.
+
+
+    5. **Adapt to Local Conditions**: Consider local climate and available food items
+    when planning your food storage. Adjust your selection and storage methods to
+    suit your environment, ensuring that your supplies remain safe and effective.'
+  reference:
+  - Store food in a cool, dry place.
+  - Use airtight containers to protect against pests.
+  - Rotate supplies regularly, using older items first.
+  - Select non-perishable foods with long shelf lives.
+  - Avoid consuming expired foods.
+  - Ensure proper storage conditions to prevent spoilage.
+  worksheet:
+  - List five non-perishable food items you can store for emergencies.
+  - Identify a suitable storage area in your home and describe how you will organize
+    it.
+  - Create a rotation schedule for your food supplies.
+  - Check the expiration dates of your current food supplies and note any that need
+    replacing.
+  - Describe how you would adapt your food storage plan for a different climate.
+  teach_forward_kit:
+    three_minute_version: Managing food supplies during emergencies involves selecting
+      non-perishable foods, storing them properly, and rotating them regularly to
+      ensure freshness and safety. Key steps include using airtight containers, keeping
+      food in a cool, dry place, and checking expiration dates.
+    ten_minute_outline:
+    - Introduction to the importance of managing food supplies during emergencies.
+    - Discuss selecting non-perishable foods with long shelf lives.
+    - Explain proper storage techniques to prevent spoilage.
+    - Highlight the importance of rotating supplies and checking expiration dates.
+    - Discuss adapting storage methods to local conditions.
+    discussion_prompts:
+    - Why is it important to have a well-organized food supply during emergencies?
+    - What are some challenges you might face in managing food supplies?
+    - How can local climate affect your food storage plan?
+    - What are some strategies for ensuring your food supplies remain fresh and safe?

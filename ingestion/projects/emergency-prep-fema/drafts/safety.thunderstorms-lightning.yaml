@@ -1,0 +1,128 @@
+id: safety.thunderstorms-lightning
+slug: safety.thunderstorms-lightning
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Thunderstorms and Lightning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Overview of the dangers associated with thunderstorms and lightning.
+summary_medium: This section provides an overview of the dangers associated with thunderstorms
+  and lightning, including statistics on injuries and fatalities, and facts about
+  their occurrence and characteristics.
+plain_language: Thunderstorms and lightning are dangerous weather phenomena that can
+  cause injuries, fatalities, and property damage. Understanding their characteristics
+  and associated risks can help in taking appropriate safety measures.
+markdown_body: '### What this is
+
+  Thunderstorms are weather events characterized by the presence of lightning and
+  thunder. They can occur singly, in clusters, or in lines, and are often accompanied
+  by heavy rain, strong winds, hail, and sometimes tornadoes.
+
+
+  ### Why it matters
+
+  Thunderstorms and lightning pose significant risks to personal safety and property.
+  In the U.S., lightning injures about 300 people and kills 80 annually. Flash flooding,
+  a common thunderstorm hazard, causes over 140 fatalities each year.
+
+
+  ### What you need
+
+  Awareness of weather conditions, access to a safe indoor location, and knowledge
+  of safety precautions to take during thunderstorms.
+
+
+  ### How to do it
+
+  Stay indoors during thunderstorms, avoid using electrical appliances, and do not
+  take shelter under trees. Be aware of the weather forecast and seek shelter if thunderstorms
+  are predicted.
+
+
+  ### Common failure modes
+
+  Ignoring weather warnings, staying outdoors during a storm, and using electrical
+  devices during a thunderstorm.
+
+
+  ### Safety/boundary notes
+
+  Avoid outdoor activities during thunderstorms. If caught outside, seek shelter in
+  a building or vehicle immediately.
+
+
+  ### Local adaptation notes
+
+  In the western U.S., dry thunderstorms are common and can start wildfires. Be aware
+  of local weather patterns and adapt safety measures accordingly.'
+structured_data:
+  definition: Thunderstorms are severe weather events that produce lightning and thunder,
+    often accompanied by heavy rain, strong winds, hail, and tornadoes.
+  key_questions:
+  - What are the main dangers associated with thunderstorms?
+  - How can individuals protect themselves from lightning?
+  - What are the characteristics of severe thunderstorms?
+  misconceptions:
+  - Lightning only strikes during heavy rain.
+  - Heat lightning is not dangerous.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.thunderstorms-lightning
+  claim_id: clm_001
+  claim_text: Thunderstorms are weather events characterized by the presence of lightning
+    and thunder. They can occur singly, in clusters, or in lines, and are often accompanied
+    by heavy rain, strong winds, hail, and sometimes tornadoes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 74
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000108
+    excerpt: All thunderstorms are dangerous. Every thunderstorm produces lightning...
+      Other associated dangers of thunderstorms include tornadoes, strong winds, hail,
+      and flash flooding.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: safety.thunderstorms-lightning
+  claim_id: clm_002
+  claim_text: Thunderstorms and lightning pose significant risks to personal safety
+    and property. In the U.S., lightning injures about 300 people and kills 80 annually.
+    Flash flooding, a common thunderstorm hazard, causes over 140 fatalities each
+    year.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 74
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000108
+    excerpt: In the United States, an average of 300 people are injured and 80 people
+      are killed each year by lightning... Flash flooding is responsible for more
+      fatalities—more than 140 annually—than any other thunderstorm-associated hazard.
+    start_char: 50
+    end_char: 250
+    support_strength: strong
+- object_id: safety.thunderstorms-lightning
+  claim_id: clm_003
+  claim_text: In the western U.S., dry thunderstorms are common and can start wildfires.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 74
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000108
+    excerpt: Dry thunderstorms that do not produce rain that reaches the ground are
+      most prevalent in the western United States... lightning can still reach the
+      ground and can start wildfires.
+    start_char: 300
+    end_char: 400
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000108

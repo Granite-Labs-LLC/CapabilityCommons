@@ -1,0 +1,126 @@
+id: emergency-management.heat-wave-definition
+slug: emergency-management.heat-wave-definition
+seed_type: concept_note
+co_type: glossary
+canonical_title: Understanding Heat Waves
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Defines a heat wave as a prolonged period of excessive heat, often
+  combined with excessive humidity.
+summary_medium: A heat wave is characterized by a prolonged period of excessive heat,
+  often accompanied by high humidity levels, posing significant health risks.
+plain_language: A heat wave happens when there is a long stretch of very hot weather,
+  often with a lot of humidity, which can be dangerous for people's health.
+markdown_body: '### What this is
+
+  A heat wave is a weather phenomenon characterized by a prolonged period of excessively
+  high temperatures, which is often accompanied by high humidity. These conditions
+  can last for several days and can significantly impact health and safety.
+
+
+  ### Why it matters
+
+  Heat waves can pose serious health risks, including heat exhaustion and heat stroke,
+  especially for vulnerable populations such as the elderly, children, and those with
+  pre-existing health conditions. Understanding what a heat wave is can help in preparing
+  and taking necessary precautions to mitigate its effects.
+
+
+  ### What you need
+
+  Awareness of local weather forecasts, access to cooling resources such as air conditioning
+  or fans, and knowledge of symptoms of heat-related illnesses.
+
+
+  ### How to do it
+
+  Monitor weather reports during the summer months, stay hydrated, avoid strenuous
+  activities during peak heat, and ensure access to cool environments. Check on vulnerable
+  individuals and follow public health advisories.
+
+
+  ### Common failure modes
+
+  Ignoring weather warnings, not staying hydrated, and failing to recognize symptoms
+  of heat-related illnesses can lead to severe health consequences.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize staying cool and hydrated. Seek medical attention if symptoms
+  of heat exhaustion or heat stroke occur.
+
+
+  ### Local adaptation notes
+
+  Adapt strategies based on local climate conditions and available resources. Urban
+  areas may experience higher temperatures due to the urban heat island effect.'
+structured_data:
+  definition: A heat wave is a prolonged period of excessive heat, often combined
+    with excessive humidity.
+  key_questions:
+  - What defines a heat wave?
+  - How does humidity affect the impact of a heat wave?
+  - What are the health risks associated with heat waves?
+  misconceptions:
+  - Heat waves are only dangerous in desert climates.
+  - Humidity does not affect the severity of a heat wave.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.heat-wave-definition
+  claim_id: clm_001
+  claim_text: A heat wave is a weather phenomenon characterized by a prolonged period
+    of excessively high temperatures, which is often accompanied by high humidity.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 88
+    page_end: 88
+    segment_id: src.fema.are-you-ready.2004::seg_000134
+    excerpt: Prolonged period of excessive heat, often combined with excessive humidity.
+    start_char: 0
+    end_char: 70
+    support_strength: strong
+- object_id: emergency-management.heat-wave-definition
+  claim_id: clm_002
+  claim_text: Heat waves can pose serious health risks, including heat exhaustion
+    and heat stroke, especially for vulnerable populations such as the elderly, children,
+    and those with pre-existing health conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Most heat disorders occur because the victim has been overexposed to
+      heat or has over-exercised for his or her age and physical condition. Older
+      adults, young children, and those who are sick or overweight are more likely
+      to succumb to extreme heat.
+    start_char: 171
+    end_char: 379
+    support_strength: strong
+- object_id: emergency-management.heat-wave-definition
+  claim_id: clm_003
+  claim_text: Urban areas may experience higher temperatures due to the urban heat
+    island effect.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Also, asphalt and concrete store heat longer and gradually release heat
+      at night, which can produce higher nighttime temperatures known as the "urban
+      heat island effect."
+    start_char: 493
+    end_char: 633
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000134

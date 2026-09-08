@@ -1,0 +1,269 @@
+id: emergency.special-needs-planning
+slug: emergency.special-needs-planning
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Emergency Planning for Individuals with Special Needs
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts:
+- special needs
+- community assistance
+- emergency preparedness
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Prepare for emergencies with special needs considerations.
+summary_medium: Guidance for individuals with special needs to prepare for emergencies,
+  including community registration, creating support networks, and maintaining necessary
+  supplies.
+plain_language: If you have special needs, it's important to prepare for emergencies
+  by registering with local services, building a support network, and ensuring you
+  have necessary supplies.
+markdown_body: '# What this is
+
+  This guide helps individuals with special needs prepare for emergencies by outlining
+  steps to ensure their safety and well-being.
+
+
+  # Why it matters
+
+  In emergencies, individuals with special needs may face additional challenges. Proper
+  planning can ensure they receive the necessary assistance and maintain their health
+  and safety.
+
+
+  # What you need
+
+  You need to register with local emergency services, create a support network, and
+  gather specialized items like wheelchair batteries, oxygen, and medications.
+
+
+  # How to do it
+
+  1. Register with your local emergency services or fire department to ensure you
+  receive assistance.
+
+  2. Create a network of neighbors, relatives, friends, and coworkers who can help
+  you in an emergency.
+
+  3. Discuss your needs with your employer and ensure your workplace is prepared.
+
+  4. If mobility impaired, have an escape chair ready, especially in high-rise buildings.
+
+  5. Keep specialized items ready, such as extra wheelchair batteries, oxygen, catheters,
+  medications, and food for service animals.
+
+
+  # Common failure modes
+
+  Failing to register with emergency services, not having a robust support network,
+  and lacking sufficient specialized supplies can lead to increased risk during emergencies.
+
+
+  # Safety/boundary notes
+
+  Ensure all equipment is in good working order and that your support network is familiar
+  with its operation.
+
+
+  # Local adaptation notes
+
+  Consider the availability of community assistance and cooperation from building
+  management when planning.'
+structured_data:
+  tools:
+  - escape chair
+  materials:
+  - wheelchair batteries
+  - oxygen
+  - catheters
+  - medication
+  - service animal food
+  success_criteria:
+  - Registered with local emergency services
+  - Established a reliable support network
+  - Prepared specialized items
+  failure_modes:
+  - Lack of registration with emergency services
+  - Inadequate support network
+  - Insufficient supply of specialized items
+  safety_boundary: Ensure all necessary equipment is operational and accessible.
+  implementation:
+    smallest_viable_version: Register with local emergency services and prepare essential
+      supplies.
+    tools:
+    - escape chair
+    materials:
+    - wheelchair batteries
+    - oxygen
+    - catheters
+    - medication
+    - service animal food
+    expected_time: Varies based on individual needs
+    expected_cost: Varies based on required supplies
+    success_checks:
+    - All necessary registrations completed
+    - Support network established
+    - Supplies prepared
+    stop_conditions:
+    - Unable to secure necessary supplies
+    - Lack of support network
+    common_mistakes:
+    - Not registering with emergency services
+    - Failing to prepare enough supplies
+    variants:
+    - label: Urban
+      when: Living in a high-rise building
+      notes: Ensure accessible exits and have an escape chair.
+    when_to_escalate:
+    - Unable to establish a support network
+    - Lack of cooperation from building management
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.special-needs-planning
+  claim_id: clm_001
+  claim_text: Register with your local emergency services or fire department to ensure
+    you receive assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 30
+    segment_id: src.fema.are-you-ready.2004::seg_000041
+    excerpt: Register with the office of emergency services or the local fire department
+      for assistance so needed help can be provided.
+    start_char: 64
+    end_char: 162
+    support_strength: strong
+- object_id: emergency.special-needs-planning
+  claim_id: clm_002
+  claim_text: Create a network of neighbors, relatives, friends, and coworkers who
+    can help you in an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 30
+    segment_id: src.fema.are-you-ready.2004::seg_000041
+    excerpt: Create a network of neighbors, relatives, friends, and coworkers to aid
+      you in an emergency.
+    start_char: 164
+    end_char: 237
+    support_strength: strong
+- object_id: emergency.special-needs-planning
+  claim_id: clm_003
+  claim_text: Discuss your needs with your employer and ensure your workplace is prepared.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 30
+    segment_id: src.fema.are-you-ready.2004::seg_000041
+    excerpt: Discuss your needs with your employer.
+    start_char: 239
+    end_char: 273
+    support_strength: strong
+- object_id: emergency.special-needs-planning
+  claim_id: clm_004
+  claim_text: If mobility impaired, have an escape chair ready, especially in high-rise
+    buildings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 30
+    segment_id: src.fema.are-you-ready.2004::seg_000041
+    excerpt: If you are mobility impaired and live or work in a high-rise building,
+      have an escape chair.
+    start_char: 275
+    end_char: 353
+    support_strength: strong
+- object_id: emergency.special-needs-planning
+  claim_id: clm_005
+  claim_text: Keep specialized items ready, such as extra wheelchair batteries, oxygen,
+    catheters, medications, and food for service animals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 30
+    segment_id: src.fema.are-you-ready.2004::seg_000041
+    excerpt: Keep specialized items ready, including extra wheelchair batteries, oxygen,
+      catheters, medication, food for service animals, and any other items you might
+      need.
+    start_char: 355
+    end_char: 486
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000041
+bundle_overrides:
+  hook: Emergency planning for individuals with special needs is crucial to ensure
+    safety and well-being during unexpected situations.
+  primer: Emergencies can pose significant challenges for individuals with special
+    needs, making it essential to have a well-thought-out plan. This involves registering
+    with local emergency services to ensure you receive timely assistance. Building
+    a support network of neighbors, friends, and coworkers is also vital, as they
+    can provide immediate help when needed. Discussing your specific needs with your
+    employer can ensure that your workplace is prepared to accommodate you during
+    an emergency. For those with mobility impairments, having an escape chair ready,
+    especially in high-rise buildings, can be lifesaving. Additionally, keeping specialized
+    items such as extra wheelchair batteries, oxygen, catheters, medications, and
+    food for service animals ensures that you have everything you need to maintain
+    your health and safety during an emergency. Proper planning can significantly
+    reduce risks and provide peace of mind.
+  guide: '1. **Register with Local Emergency Services**: Contact your local emergency
+    services or fire department to register your needs. This ensures that they are
+    aware of your situation and can provide the necessary assistance during an emergency.
+
+
+    2. **Build a Support Network**: Create a network of neighbors, relatives, friends,
+    and coworkers who can assist you in an emergency. Make sure they are aware of
+    your needs and how they can help.
+
+
+    3. **Discuss Needs with Your Employer**: Talk to your employer about your specific
+    needs and ensure that your workplace has a plan in place to accommodate you during
+    an emergency.
+
+
+    4. **Prepare for Mobility Impairments**: If you have mobility challenges, especially
+    in high-rise buildings, have an escape chair ready. This can help you evacuate
+    safely if needed.
+
+
+    5. **Gather Specialized Supplies**: Keep essential items ready, such as extra
+    wheelchair batteries, oxygen, catheters, medications, and food for service animals.
+    Regularly check these supplies to ensure they are in good condition and not expired.
+
+
+    6. **Regularly Review and Update Your Plan**: Emergency plans should be reviewed
+    and updated regularly to account for any changes in your needs or circumstances.'
+  reference:
+  - Register with local emergency services.
+  - Create a support network.
+  - Discuss needs with your employer.
+  - Have an escape chair if mobility impaired.
+  - Keep specialized items ready.
+  worksheet:
+  - List the local emergency services you need to register with.
+  - Identify at least three people who can be part of your support network.
+  - Outline a conversation plan with your employer about your emergency needs.
+  - Check the condition of your escape chair and other mobility aids.
+  - Inventory your specialized supplies and note expiration dates.
+  teach_forward_kit:
+    three_minute_version: Ensure safety during emergencies by registering with local
+      services, building a support network, and preparing necessary supplies for individuals
+      with special needs.
+    ten_minute_outline:
+    - Introduction to emergency planning for special needs.
+    - Importance of registering with local emergency services.
+    - Building a reliable support network.
+    - Discussing needs with employers.
+    - Preparing for mobility challenges.
+    - Gathering and maintaining specialized supplies.
+    discussion_prompts:
+    - Why is it important to register with local emergency services?
+    - How can a support network be beneficial during an emergency?
+    - What challenges might arise if specialized supplies are not prepared?
+    - How can workplaces better accommodate employees with special needs during emergencies?

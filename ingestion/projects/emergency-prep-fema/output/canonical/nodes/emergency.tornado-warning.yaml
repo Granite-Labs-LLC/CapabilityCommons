@@ -1,0 +1,167 @@
+id: emergency.tornado-warning
+slug: emergency.tornado-warning
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Tornado Warning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: high
+summary_short: Take immediate shelter during a tornado warning.
+summary_medium: Instructions for immediate action when a tornado warning is issued,
+  including taking shelter.
+plain_language: If a tornado warning is issued, it means a tornado has been seen or
+  detected by radar. You should go to a safe place immediately.
+markdown_body: '### What this is
+
+  A tornado warning means that a tornado has been sighted or detected by weather radar.
+  It is a signal to take immediate action to protect yourself.
+
+
+  ### Why it matters
+
+  Tornadoes can cause significant damage and pose a serious threat to life. Taking
+  immediate shelter can greatly reduce the risk of injury or death.
+
+
+  ### What you need
+
+  A safe location, such as a basement or an interior room on the lowest floor of a
+  sturdy building, away from windows.
+
+
+  ### How to do it
+
+  Upon receiving a tornado warning, immediately move to your designated safe area.
+  Avoid windows and cover yourself with a mattress or heavy blankets if possible.
+
+
+  ### Common failure modes
+
+  Delaying taking shelter or ignoring the warning can lead to increased risk of injury.
+
+
+  ### Safety/boundary notes
+
+  Ensure your safe area is accessible and free of hazards. Do not leave your shelter
+  until the warning has been lifted.
+
+
+  ### Local adaptation notes
+
+  Adapt your shelter plan based on your local environment and building structures.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Reaching a safe shelter promptly and staying there until the warning
+    is lifted.
+  failure_modes: Delaying shelter; ignoring the warning.
+  safety_boundary: Stay in a secure location until the all-clear is given.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.tornado-warning
+  claim_id: clm_001
+  claim_text: A tornado warning means that a tornado has been sighted or detected
+    by weather radar.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar.
+    start_char: 0
+    end_char: 56
+    support_strength: strong
+- object_id: emergency.tornado-warning
+  claim_id: clm_002
+  claim_text: Tornadoes can cause significant damage and pose a serious threat to
+    life.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 58
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000079
+    excerpt: Tornadoes are nature's most violent storms. Spawned from powerful thunderstorms,
+      tornadoes can cause fatalities and devastate a neighborhood in seconds.
+    start_char: 0
+    end_char: 139
+    support_strength: strong
+- object_id: emergency.tornado-warning
+  claim_id: clm_003
+  claim_text: A safe location, such as a basement or an interior room on the lowest
+    floor of a sturdy building, away from windows.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Go to a pre-designated shelter area such as a safe room, basement, storm
+      cellar, or the lowest building level.
+    start_char: 0
+    end_char: 97
+    support_strength: strong
+- object_id: emergency.tornado-warning
+  claim_id: clm_004
+  claim_text: Upon receiving a tornado warning, immediately move to your designated
+    safe area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If you are under a tornado WARNING, seek shelter immediately!
+    start_char: 0
+    end_char: 57
+    support_strength: strong
+- object_id: emergency.tornado-warning
+  claim_id: clm_005
+  claim_text: Avoid windows and cover yourself with a mattress or heavy blankets if
+    possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If there is no basement, go to the center of an interior room on the
+      lowest level (closet, interior hallway) away from corners, windows, doors, and
+      outside walls.
+    start_char: 97
+    end_char: 215
+    support_strength: strong
+- object_id: emergency.tornado-warning
+  claim_id: clm_006
+  claim_text: Delaying taking shelter or ignoring the warning can lead to increased
+    risk of injury.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If you see approaching storms or any of the danger signs, be prepared
+      to take shelter immediately.
+    start_char: 0
+    end_char: 97
+    support_strength: medium
+- object_id: emergency.tornado-warning
+  claim_id: clm_007
+  claim_text: Ensure your safe area is accessible and free of hazards. Do not leave
+    your shelter until the warning has been lifted.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Do not open windows.
+    start_char: 215
+    end_char: 235
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000082

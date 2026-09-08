@@ -1,0 +1,297 @@
+id: fire-safety.heating-sources
+slug: fire-safety.heating-sources
+seed_type: extracted
+co_type: skill_guide
+canonical_title: 'Fire Safety: Using Heating Sources Safely'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Learn how to safely use heating sources to prevent fires.
+summary_medium: This guide provides safety measures for using heating sources, such
+  as kerosene heaters and fireplaces, to prevent fires. It includes inspection tips
+  and proper fuel usage.
+plain_language: Using heating sources like fireplaces and kerosene heaters can be
+  risky if not done properly. This guide will help you understand how to use these
+  sources safely to prevent fires.
+markdown_body: '### What this is
+
+  This guide covers safety measures for using various heating sources, including kerosene
+  heaters and fireplaces, to prevent fire hazards.
+
+
+  ### Why it matters
+
+  Improper use of heating sources can lead to fires, causing damage to property and
+  endangering lives. Understanding and implementing safety measures can significantly
+  reduce these risks.
+
+
+  ### What you need
+
+  You will need kerosene heaters, a metal container for ashes, and access to a certified
+  specialist for inspections.
+
+
+  ### How to do it
+
+  1. Check with your local fire department about the legality of using kerosene heaters.
+
+  2. Always fill kerosene heaters outside and only when they are cool.
+
+  3. Place heaters at least three feet away from flammable materials and ensure proper
+  insulation of floors and walls.
+
+  4. Use only the designated fuel for your unit and follow the manufacturer''s instructions.
+
+  5. Store ashes in a metal container outside and away from your residence.
+
+  6. Keep open flames away from walls, furniture, and other flammable items.
+
+  7. Use a screen in front of fireplaces.
+
+  8. Have heating units inspected and cleaned annually by a certified specialist.
+
+
+  ### Common failure modes
+
+  Improper fuel use, uninspected units, and placing heaters too close to flammable
+  materials.
+
+
+  ### Safety/boundary notes
+
+  Ensure all safety measures are followed to prevent fire hazards.
+
+
+  ### Local adaptation notes
+
+  Check local regulations regarding the use of specific heating sources like kerosene
+  heaters.'
+structured_data:
+  tools:
+  - kerosene heaters
+  materials:
+  - metal container
+  success_criteria: Heating sources are used without causing any fire incidents.
+  failure_modes:
+  - improper fuel use
+  - uninspected units
+  safety_boundary: Maintain a safe distance from flammable materials and ensure proper
+    insulation.
+  implementation:
+    smallest_viable_version: Use a kerosene heater safely by following all guidelines.
+    tools:
+    - kerosene heaters
+    materials:
+    - metal container
+    expected_time: Varies depending on the heating source and inspection requirements.
+    expected_cost: medium
+    success_checks:
+    - Heater is placed at a safe distance from flammable materials.
+    - Correct fuel is used as per manufacturer's instructions.
+    - Heater is inspected and cleaned annually.
+    stop_conditions:
+    - Heater shows signs of malfunction.
+    - Fuel is not available or incorrect.
+    - Local regulations prohibit use.
+    common_mistakes:
+    - Using the wrong type of fuel.
+    - Not maintaining a safe distance from flammable materials.
+    - Neglecting annual inspections.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Ensure compliance with local fire safety regulations.
+    - label: Off-grid
+      when: Living in a remote area without access to regular inspections.
+      notes: Consider alternative heating sources that require less maintenance.
+    when_to_escalate:
+    - If the heater malfunctions repeatedly.
+    - If unsure about the correct type of fuel to use.
+    - If local regulations change regarding heating source usage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.heating-sources
+  claim_id: clm_001
+  claim_text: Check with your local fire department about the legality of using kerosene
+    heaters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Check with your local fi re department on the legality of using kerosene
+      heaters in your community.
+    start_char: 59
+    end_char: 134
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_002
+  claim_text: Always fill kerosene heaters outside and only when they are cool.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Be sure to fi ll kerosene heaters outside, and be sure they have cooled.
+    start_char: 136
+    end_char: 194
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_003
+  claim_text: Place heaters at least three feet away from flammable materials and
+    ensure proper insulation of floors and walls.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Place heaters at least three feet away from fl ammable materials. Make
+      sure the fl oor and nearby walls are properly insulated.
+    start_char: 196
+    end_char: 292
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_004
+  claim_text: Use only the designated fuel for your unit and follow the manufacturer's
+    instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Use only the type of fuel designated for your unit and follow manufacturer's
+      instructions.
+    start_char: 294
+    end_char: 367
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_005
+  claim_text: Store ashes in a metal container outside and away from your residence.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Store ashes in a metal container outside and away from your residence.
+    start_char: 369
+    end_char: 431
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_006
+  claim_text: Keep open flames away from walls, furniture, and other flammable items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Keep open fl ames away from walls, furniture, drapery, and fl ammable
+      items.
+    start_char: 433
+    end_char: 493
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_007
+  claim_text: Use a screen in front of fireplaces.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Keep a screen in front of the fi replace.
+    start_char: 495
+    end_char: 531
+    support_strength: strong
+- object_id: fire-safety.heating-sources
+  claim_id: clm_008
+  claim_text: Have heating units inspected and cleaned annually by a certified specialist.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 118
+    page_end: 118
+    segment_id: src.fema.are-you-ready.2004::seg_000184
+    excerpt: Have heating units inspected and cleaned annually by a certifi ed specialist.
+    start_char: 533
+    end_char: 597
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000184
+bundle_overrides:
+  hook: Using heating sources safely can prevent fires, protect your home, and save
+    lives.
+  primer: Heating sources like kerosene heaters and fireplaces are common in many
+    homes, especially during colder months. While they provide warmth, they also pose
+    significant fire risks if not used correctly. Understanding how to safely operate
+    these heating devices is crucial to prevent accidents. This guide will cover essential
+    safety measures, such as keeping heaters away from flammable materials, using
+    the correct type of fuel, and ensuring regular maintenance. By following these
+    guidelines, you can enjoy the comfort of a warm home without compromising safety.
+  guide: '1. **Check Local Regulations**: Before using a kerosene heater, contact
+    your local fire department to ensure it''s legal in your area.
+
+
+    2. **Safe Refueling Practices**: Always fill kerosene heaters outside and only
+    when they are cool to prevent accidental fires.
+
+
+    3. **Maintain Safe Distances**: Place heaters at least three feet away from flammable
+    materials like curtains, furniture, and walls. Ensure that floors and walls are
+    properly insulated.
+
+
+    4. **Use Correct Fuel**: Only use the type of fuel specified by the manufacturer
+    for your heating unit. This prevents malfunctions and potential hazards.
+
+
+    5. **Ash Disposal**: Store ashes from fireplaces in a metal container, and keep
+    it outside and away from your residence to prevent fire risks.
+
+
+    6. **Manage Open Flames**: Keep open flames away from walls, furniture, and other
+    flammable items. Always use a screen in front of fireplaces to contain sparks.
+
+
+    7. **Regular Maintenance**: Have all heating units inspected and cleaned annually
+    by a certified specialist to ensure they are in safe working condition.'
+  reference:
+  - Check with local fire department about kerosene heater legality.
+  - Fill kerosene heaters outside and when cool.
+  - Keep heaters three feet away from flammable materials.
+  - Use only designated fuel and follow manufacturer's instructions.
+  - Store ashes in a metal container outside.
+  - Keep open flames away from flammable items.
+  - Use a screen in front of fireplaces.
+  - Inspect and clean heating units annually.
+  worksheet:
+  - List three safety measures to follow when using a kerosene heater.
+  - Describe the correct procedure for refueling a kerosene heater.
+  - Identify three common household items that should be kept away from heaters.
+  - Explain why it's important to use the correct type of fuel for your heating unit.
+  - Outline the steps for safely disposing of fireplace ashes.
+  - Discuss the importance of annual inspections for heating units.
+  teach_forward_kit:
+    three_minute_version: Ensure heating sources are used safely by maintaining distance
+      from flammable materials, using the correct fuel, and conducting regular inspections.
+    ten_minute_outline:
+    - Introduction to heating source safety.
+    - Discuss local regulations and legality.
+    - Explain safe refueling practices.
+    - Highlight the importance of maintaining safe distances.
+    - Discuss the use of correct fuel and manufacturer's instructions.
+    - Explain proper ash disposal methods.
+    - Discuss the importance of managing open flames.
+    - Conclude with the necessity of regular maintenance and inspections.
+    discussion_prompts:
+    - Why is it important to check local regulations before using a kerosene heater?
+    - What are the risks of not using the correct type of fuel for your heater?
+    - How can regular maintenance prevent fire hazards?
+    - What are some common mistakes people make when using heating sources?

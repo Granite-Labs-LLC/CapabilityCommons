@@ -1,0 +1,196 @@
+id: emergency.community-planning
+slug: emergency.community-planning
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Community and Other Emergency Plans
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Learn about community, workplace, and school emergency plans.
+summary_medium: Guidance on understanding and engaging with community disaster/emergency
+  plans, including workplace and school plans.
+plain_language: This concept helps you understand the importance of knowing the emergency
+  plans in your community, workplace, and your children's school. It guides you on
+  how to find and engage with these plans.
+markdown_body: '# What this is
+
+  This concept focuses on the importance of understanding and engaging with emergency
+  plans at the community, workplace, and school levels.
+
+
+  # Why it matters
+
+  Knowing these plans ensures you are prepared for emergencies and can respond effectively,
+  reducing risks to yourself and others.
+
+
+  # What you need
+
+  You need to gather information from local officials, your employer, and your children''s
+  school about their respective emergency plans.
+
+
+  # How to do it
+
+  Start by asking local officials if your community has a disaster plan, how to obtain
+  it, and what it covers. Inquire about the frequency of updates. At work, ask your
+  employer about disaster policies and how emergency information will be communicated.
+  For schools, discuss the disaster procedures in place.
+
+
+  # Common failure modes
+
+  Common issues include lack of awareness of community plans, inadequate workplace
+  policies, and being uninformed about school procedures.
+
+
+  # Safety/boundary notes
+
+
+  # Local adaptation notes
+
+  Consider community-specific hazards and how often plans are updated.'
+structured_data:
+  definition: Community and other emergency plans are structured guidelines and procedures
+    designed to prepare for and respond to disasters.
+  key_questions:
+  - Does my community have a disaster plan?
+  - What does the plan contain?
+  - How often is it updated?
+  - What hazards does it cover?
+  - What are the workplace policies for emergencies?
+  - What are the disaster procedures at my child's school?
+  misconceptions:
+  - Assuming all plans are the same regardless of location.
+  - Believing that knowing the plan is unnecessary if emergencies are rare.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.community-planning
+  claim_id: clm_001
+  claim_text: This concept focuses on the importance of understanding and engaging
+    with emergency plans at the community, workplace, and school levels.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: In addition to fi nding out about your community's plan, it is important
+      that you know what plans are in place for your workplace and your children's
+      school or day care center.
+    start_char: 0
+    end_char: 154
+    support_strength: strong
+- object_id: emergency.community-planning
+  claim_id: clm_002
+  claim_text: Knowing these plans ensures you are prepared for emergencies and can
+    respond effectively, reducing risks to yourself and others.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: However, many disasters allow no time for people to gather even the most
+      basic necessities, which is why planning ahead is essential.
+    start_char: 278
+    end_char: 368
+    support_strength: medium
+- object_id: emergency.community-planning
+  claim_id: clm_003
+  claim_text: You need to gather information from local officials, your employer,
+    and your children's school about their respective emergency plans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: Ask local offi cials the following questions about your community's disaster/
+      emergency plans.
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: 'Know your children''s school emergency plan: Ask how the school will
+      communicate with families during a crisis.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: If you are an employer, make sure your workplace has a building evacuation
+      plan that is regularly practiced.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: emergency.community-planning
+  claim_id: clm_004
+  claim_text: Start by asking local officials if your community has a disaster plan,
+    how to obtain it, and what it covers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: Ask local offi cials the following questions about your community's disaster/
+      emergency plans. Does my community have a plan? Yes No Can I obtain a copy?
+      Yes No What does the plan contain?
+    start_char: 0
+    end_char: 154
+    support_strength: strong
+- object_id: emergency.community-planning
+  claim_id: clm_005
+  claim_text: At work, ask your employer about disaster policies and how emergency
+    information will be communicated.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: Ask your employer about workplace policies regarding disasters and emergencies,
+      including understanding how you will be provided emergency and warning information.
+    start_char: 155
+    end_char: 268
+    support_strength: strong
+- object_id: emergency.community-planning
+  claim_id: clm_006
+  claim_text: For schools, discuss the disaster procedures in place.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: Contact your children's school or day care center to discuss their disaster
+      procedures.
+    start_char: 269
+    end_char: 338
+    support_strength: strong
+- object_id: emergency.community-planning
+  claim_id: clm_007
+  claim_text: Common issues include lack of awareness of community plans, inadequate
+    workplace policies, and being uninformed about school procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000028
+    excerpt: In addition to fi nding out about your community's plan, it is important
+      that you know what plans are in place for your workplace and your children's
+      school or day care center.
+    start_char: 0
+    end_char: 154
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000028

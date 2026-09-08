@@ -1,0 +1,256 @@
+id: emergency-preparedness.general-public-guide
+slug: emergency-preparedness.general-public-guide
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: General Public Guide to Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A guide for the public on preparing for emergencies, including creating
+  plans and assembling a disaster supplies kit.
+summary_medium: This guide helps the public learn how to protect themselves and their
+  families against various hazards by developing, practicing, and maintaining emergency
+  plans and assembling a disaster supplies kit.
+plain_language: Learn how to prepare for emergencies by making plans and gathering
+  supplies.
+markdown_body: '# What this is
+
+  This guide is designed to help the general public prepare for emergencies by providing
+  information on how to develop, practice, and maintain emergency plans, as well as
+  how to assemble a disaster supplies kit.
+
+
+  # Why it matters
+
+  Being prepared for emergencies can significantly reduce the risks to you and your
+  family during disasters. Having a plan and necessary supplies can help ensure safety
+  and survival when relying on your own resources.
+
+
+  # What you need
+
+  To prepare, you need to develop a comprehensive emergency plan and assemble a disaster
+  supplies kit with food, water, and other essentials.
+
+
+  # How to do it
+
+  Start by identifying potential hazards in your area. Develop a plan that includes
+  what to do before, during, and after a disaster. Practice this plan regularly. Assemble
+  a disaster supplies kit with enough provisions to last for several days.
+
+
+  # Common failure modes
+
+  Common mistakes include incomplete emergency plans and insufficient supplies in
+  the disaster kit.
+
+
+  # Safety/boundary notes
+
+  Ensure your plans account for the specific needs of your household and consider
+  local environmental and infrastructural factors.
+
+
+  # Local adaptation notes
+
+  Adapt your plans and kits based on local differences in buildings, infrastructure,
+  and environmental features.'
+structured_data:
+  tools: []
+  materials:
+  - disaster supplies kit
+  success_criteria:
+  - Complete emergency plans
+  - Sufficient supplies in kit
+  failure_modes:
+  - Incomplete emergency plans
+  - Insufficient supplies
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: Create a basic emergency plan and gather essential supplies.
+    tools: []
+    materials:
+    - disaster supplies kit
+    expected_time: Varies
+    expected_cost: Low
+    success_checks:
+    - Plan is comprehensive
+    - Kit is fully stocked
+    stop_conditions:
+    - Plan is not practiced
+    - Kit is missing essentials
+    common_mistakes:
+    - Not updating plans
+    - Neglecting to check kit regularly
+    variants:
+    - label: Urban
+      when: Living in a city
+      notes: Consider public transportation and high-rise buildings in your plans.
+    - label: Off-grid
+      when: Living in remote areas
+      notes: Focus on self-sufficiency and alternative power sources.
+    when_to_escalate:
+    - If unable to create a plan
+    - If kit cannot be completed
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_001
+  claim_text: This guide is designed to help the general public prepare for emergencies
+    by providing information on how to develop, practice, and maintain emergency plans,
+    as well as how to assemble a disaster supplies kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The guide has been designed to help the citizens of this nation learn
+      how to protect themselves and their families against all types of hazards. It
+      can be used as a reference source or as a step-by-step manual. The focus of
+      the content is on how to develop, practice, and maintain emergency plans that
+      reflect what must be done before, during, and after a disaster to protect people
+      and their property. Also included is information on how to assemble a disaster
+      supplies kit that contains the food, water, and other supplies in sufficient
+      quantity for individuals and their families to survive following a disaster
+      in the event they must rely on their own resources.
+    start_char: 172
+    end_char: 682
+    support_strength: strong
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies can significantly reduce the risks to
+    you and your family during disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The guide has been designed to help the citizens of this nation learn
+      how to protect themselves and their families against all types of hazards.
+    start_char: 172
+    end_char: 283
+    support_strength: medium
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_003
+  claim_text: Having a plan and necessary supplies can help ensure safety and survival
+    when relying on your own resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: Also included is information on how to assemble a disaster supplies kit
+      that contains the food, water, and other supplies in sufficient quantity for
+      individuals and their families to survive following a disaster in the event
+      they must rely on their own resources.
+    start_char: 556
+    end_char: 682
+    support_strength: strong
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_004
+  claim_text: To prepare, you need to develop a comprehensive emergency plan and assemble
+    a disaster supplies kit with food, water, and other essentials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property. Also included is information on how to
+      assemble a disaster supplies kit that contains the food, water, and other supplies
+      in sufficient quantity for individuals and their families to survive following
+      a disaster in the event they must rely on their own resources.
+    start_char: 303
+    end_char: 682
+    support_strength: strong
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_005
+  claim_text: Start by identifying potential hazards in your area. Develop a plan
+    that includes what to do before, during, and after a disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property.
+    start_char: 303
+    end_char: 515
+    support_strength: strong
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_006
+  claim_text: Practice this plan regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property.
+    start_char: 303
+    end_char: 515
+    support_strength: medium
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_007
+  claim_text: Assemble a disaster supplies kit with enough provisions to last for
+    several days.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: Also included is information on how to assemble a disaster supplies kit
+      that contains the food, water, and other supplies in sufficient quantity for
+      individuals and their families to survive following a disaster in the event
+      they must rely on their own resources.
+    start_char: 556
+    end_char: 682
+    support_strength: strong
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_008
+  claim_text: Common mistakes include incomplete emergency plans and insufficient
+    supplies in the disaster kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property. Also included is information on how to
+      assemble a disaster supplies kit that contains the food, water, and other supplies
+      in sufficient quantity for individuals and their families to survive following
+      a disaster in the event they must rely on their own resources.
+    start_char: 303
+    end_char: 682
+    support_strength: medium
+- object_id: emergency-preparedness.general-public-guide
+  claim_id: clm_009
+  claim_text: Ensure your plans account for the specific needs of your household and
+    consider local environmental and infrastructural factors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: This publication is, however, too brief to cover every factor, situation,
+      or difference in buildings, infrastructure, or other environmental features
+      that might be of interest.
+    start_char: 88
+    end_char: 172
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000002

@@ -1,0 +1,231 @@
+id: emergency-preparedness.hepa-filter-use
+slug: emergency-preparedness.hepa-filter-use
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Using HEPA Filters During Biological Attacks
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidance on using HEPA filters during biological attacks to improve
+  air safety.
+summary_medium: Learn how to use HEPA filters effectively during biological attacks
+  to enhance air safety in homes and buildings.
+plain_language: This guide explains how to use HEPA filters to improve air safety
+  during biological attacks. It covers the use of central heating and cooling systems
+  and portable HEPA filters.
+markdown_body: '### What this is
+
+  This guide provides instructions on using HEPA filters to improve air quality during
+  biological attacks.
+
+
+  ### Why it matters
+
+  HEPA filters can help remove biological agents from the air, providing a safer environment
+  during a biological attack.
+
+
+  ### What you need
+
+  A central heating and cooling system with a HEPA filter or a portable HEPA filter.
+
+
+  ### How to do it
+
+  If you have a central system with a HEPA filter, keep it running or turn on the
+  fan. If using a portable HEPA filter, take it to your shelter room and turn it on.
+
+
+  ### Common failure modes
+
+  HEPA filters do not filter chemical agents.
+
+
+  ### Safety/boundary notes
+
+  HEPA filters are effective for biological agents but not for chemical threats.
+
+
+  ### Local adaptation notes
+
+  Ensure the availability of a central heating and cooling system or a portable HEPA
+  filter.'
+structured_data:
+  tools:
+  - HEPA filter
+  - central heating and cooling system
+  materials: []
+  success_criteria:
+  - Air is filtered to remove biological agents
+  failure_modes:
+  - HEPA filters do not filter chemical agents
+  safety_boundary: HEPA filters are not effective against chemical agents.
+  implementation:
+    smallest_viable_version: Use a portable HEPA filter in a shelter room.
+    tools:
+    - HEPA filter
+    - central heating and cooling system
+    materials: []
+    expected_time: Immediate setup
+    expected_cost: Low
+    success_checks:
+    - Air quality is improved by filtering biological agents.
+    stop_conditions:
+    - If the HEPA filter is not functioning or unavailable.
+    common_mistakes:
+    - Not turning on the fan in the central system.
+    - Using HEPA filters for chemical agents.
+    variants:
+    - label: Urban
+      when: In an apartment with a central system.
+      notes: Ensure the central system is running.
+    - label: Off-grid
+      when: Without a central system.
+      notes: Use a portable HEPA filter.
+    when_to_escalate:
+    - If the HEPA filter is not effectively improving air quality.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.hepa-filter-use
+  claim_id: clm_001
+  claim_text: HEPA filters can help remove biological agents from the air, providing
+    a safer environment during a biological attack.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: HEPA fi lters are useful in biological attacks. If you have a central
+      heating and cooling system in your home with a HEPA fi lter, leave it on if
+      it is running or turn the fan on if it is not running. Moving the air in the
+      house through the fi lter will help remove the agents from the air.
+    start_char: 0
+    end_char: 204
+    support_strength: strong
+- object_id: emergency-preparedness.hepa-filter-use
+  claim_id: clm_002
+  claim_text: A central heating and cooling system with a HEPA filter or a portable
+    HEPA filter.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 157
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000243
+    excerpt: Consider installing a High Effi ciency Particulate Air (HEPA) fi lter
+      in your furnace return duct. These fi lters remove particles in the 0.3 to 10
+      micron range and will fi lter out most biological agents that may enter your
+      house. If you do not have a central heating or cooling system, a stand-alone
+      portable HEPA fi lter can be used.
+    start_char: 110
+    end_char: 371
+    support_strength: strong
+- object_id: emergency-preparedness.hepa-filter-use
+  claim_id: clm_003
+  claim_text: If you have a central system with a HEPA filter, keep it running or
+    turn on the fan. If using a portable HEPA filter, take it to your shelter room
+    and turn it on.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: If you have a central heating and cooling system in your home with a
+      HEPA fi lter, leave it on if it is running or turn the fan on if it is not running.
+      Moving the air in the house through the fi lter will help remove the agents
+      from the air. If you have a portable HEPA fi lter, take it with you to the internal
+      room where you are seeking shelter and turn it on.
+    start_char: 0
+    end_char: 204
+    support_strength: strong
+- object_id: emergency-preparedness.hepa-filter-use
+  claim_id: clm_004
+  claim_text: HEPA filters do not filter chemical agents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 159
+    page_end: 159
+    segment_id: src.fema.are-you-ready.2004::seg_000245
+    excerpt: HEPA fi lters will not fi lter chemical agents.
+    start_char: 205
+    end_char: 243
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000245
+bundle_overrides:
+  hook: HEPA filters can significantly enhance air safety during biological attacks
+    by removing harmful agents from the air.
+  primer: HEPA (High Efficiency Particulate Air) filters are designed to capture particles
+    as small as 0.3 microns, making them effective at removing most biological agents
+    from the air. During a biological attack, the air can become contaminated with
+    harmful agents that pose health risks. By using HEPA filters, you can reduce the
+    concentration of these agents in your home, creating a safer environment. HEPA
+    filters can be integrated into central heating and cooling systems or used as
+    portable units. It's important to note that while HEPA filters are effective against
+    biological agents, they do not filter out chemical agents. Therefore, they should
+    be used as part of a broader emergency preparedness plan.
+  guide: '1. **Identify Your System**: Determine if your home has a central heating
+    and cooling system with a HEPA filter or if you need a portable HEPA filter.
+
+
+    2. **Central System Usage**: If you have a central system with a HEPA filter,
+    ensure it is running. If it''s not running, turn on the fan to circulate air through
+    the filter. This helps to continuously remove biological agents from the air.
+
+
+    3. **Portable HEPA Filter Usage**: If you do not have a central system, use a
+    portable HEPA filter. Place it in the room where you will be sheltering during
+    a biological attack. Turn it on to start filtering the air.
+
+
+    4. **Monitor Air Quality**: Regularly check the air quality in your home. If you
+    notice any issues or if the HEPA filter is not functioning properly, take corrective
+    action immediately.
+
+
+    5. **Maintenance**: Regularly replace or clean the HEPA filter according to the
+    manufacturer''s instructions to ensure it remains effective.
+
+
+    6. **Limitations**: Remember that HEPA filters do not filter chemical agents.
+    They should be used in conjunction with other safety measures during a biological
+    attack.'
+  reference:
+  - HEPA filters capture particles as small as 0.3 microns.
+  - Effective against biological agents, not chemical agents.
+  - Use with central systems or as portable units.
+  - Keep central system fans running to circulate air.
+  - Place portable units in shelter rooms.
+  worksheet:
+  - Identify whether your home has a central system with a HEPA filter.
+  - Practice turning on the fan in your central system.
+  - Locate a suitable room for sheltering and place a portable HEPA filter there.
+  - Check and replace the HEPA filter as needed.
+  - Discuss with your household the limitations of HEPA filters regarding chemical
+    agents.
+  teach_forward_kit:
+    three_minute_version: HEPA filters can improve air safety during biological attacks
+      by removing harmful agents. Use them in central systems or as portable units,
+      but remember they don't filter chemical agents.
+    ten_minute_outline:
+    - Introduction to HEPA filters and their purpose.
+    - How HEPA filters work in central systems.
+    - Using portable HEPA filters effectively.
+    - Limitations of HEPA filters.
+    - Practical steps for maintenance and use.
+    - Discussion on integrating HEPA filters into emergency plans.
+    discussion_prompts:
+    - How can HEPA filters be integrated into your current emergency preparedness
+      plan?
+    - What are the limitations of using HEPA filters during biological attacks?
+    - How often should HEPA filters be checked and maintained?
+    - What additional measures can be taken alongside HEPA filters to ensure safety
+      during a biological attack?

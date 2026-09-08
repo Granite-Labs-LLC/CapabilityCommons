@@ -1,0 +1,168 @@
+id: hazards.natural-hazards
+slug: hazards.natural-hazards
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Natural Hazards Reference Sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: hazards
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A list of natural hazards to consider in emergency planning.
+summary_medium: This reference sheet lists various natural hazards such as floods,
+  hurricanes, and earthquakes, which are important to consider when planning for emergencies.
+plain_language: This sheet provides a list of different natural hazards that can occur,
+  such as floods and earthquakes. Knowing about these can help you prepare for emergencies.
+markdown_body: '### What this is
+
+  This is a reference sheet that lists various natural hazards. It is intended to
+  help individuals and communities recognize the types of natural events that may
+  require emergency planning.
+
+
+  ### Why it matters
+
+  Understanding the types of natural hazards that can occur in your area is crucial
+  for effective emergency preparedness. Being aware of these hazards allows you to
+  develop plans to protect yourself, your family, and your property.
+
+
+  ### What you need
+
+  Familiarity with the types of natural hazards listed here is the first step in emergency
+  planning. Additional resources may be needed to develop specific emergency plans.
+
+
+  ### How to do it
+
+  Review the list of natural hazards and assess which ones are relevant to your location.
+  Use this information to guide your emergency planning efforts, ensuring you have
+  strategies in place for each applicable hazard.
+
+
+  ### Common failure modes
+
+  Failing to consider all relevant hazards can lead to inadequate emergency planning.
+  Ignoring less common hazards can also result in being unprepared for unexpected
+  events.
+
+
+  ### Safety/boundary notes
+
+  Ensure that emergency plans are comprehensive and include safety measures for each
+  type of hazard. Regularly update plans to reflect any changes in risk or new information.
+
+
+  ### Local adaptation notes
+
+  Adapt the list of hazards to reflect the specific risks in your local area. Some
+  hazards may be more prevalent or severe depending on geographic and climatic conditions.'
+structured_data:
+  definition: Natural hazards are severe and extreme weather and environmental events
+    that can cause damage and pose risks to life and property.
+  key_questions:
+  - What natural hazards are most likely to occur in my area?
+  - How can I prepare for each type of hazard?
+  - What resources are available to help with emergency planning?
+  misconceptions:
+  - Natural hazards are rare and unlikely to affect me.
+  - Only certain types of hazards require emergency planning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: hazards.natural-hazards
+  claim_id: clm_001
+  claim_text: This is a reference sheet that lists various natural hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 11
+    page_end: 11
+    segment_id: src.fema.are-you-ready.2004::seg_000014
+    excerpt: '- Floods
+
+      - Hurricanes
+
+      - Thunderstorms and lightning
+
+      - Tornadoes
+
+      - Winter storms and extreme cold
+
+      - Extreme heat
+
+      - Earthquakes
+
+      - Volcanoes
+
+      - Landslides and debris flow
+
+      - Tsunamis
+
+      - Fires
+
+      - Wildfires'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: hazards.natural-hazards
+  claim_id: clm_002
+  claim_text: Understanding the types of natural hazards that can occur in your area
+    is crucial for effective emergency preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Every citizen in this country is part of a national emergency management
+      system that is all about protection–protecting people and property from all
+      types of hazards.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: hazards.natural-hazards
+  claim_id: clm_003
+  claim_text: Review the list of natural hazards and assess which ones are relevant
+    to your location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Identifying hazards and assessing potential risk to the community.
+    start_char: 500
+    end_char: 550
+    support_strength: medium
+- object_id: hazards.natural-hazards
+  claim_id: clm_004
+  claim_text: Failing to consider all relevant hazards can lead to inadequate emergency
+    planning.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Identifying hazards and assessing potential risk to the community.
+    start_char: 500
+    end_char: 550
+    support_strength: medium
+- object_id: hazards.natural-hazards
+  claim_id: clm_005
+  claim_text: Ensure that emergency plans are comprehensive and include safety measures
+    for each type of hazard.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Coordinating emergency plans to ensure a quick and effective response.
+    start_char: 550
+    end_char: 600
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000014

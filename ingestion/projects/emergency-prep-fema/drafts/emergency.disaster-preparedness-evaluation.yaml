@@ -1,0 +1,170 @@
+id: emergency.disaster-preparedness-evaluation
+slug: emergency.disaster-preparedness-evaluation
+seed_type: assessment
+co_type: assessment
+canonical_title: Emergency Disaster Preparedness Evaluation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts:
+- disaster preparedness
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: Evaluate your personal and family preparedness for disasters.
+summary_medium: This assessment helps you evaluate how prepared you and your family
+  are for various threat levels and disasters, ensuring you have a disaster plan,
+  supplies kit, and knowledge of community warning systems.
+plain_language: Use this evaluation to check if you and your family are ready for
+  emergencies. It covers having a plan, a kit, knowing warning systems, and understanding
+  evacuations.
+markdown_body: '### What this is
+
+  This is an assessment tool designed to help individuals and families evaluate their
+  preparedness for various disaster scenarios. It focuses on key areas such as having
+  a disaster plan, a supplies kit, and understanding community warning systems.
+
+
+  ### Why it matters
+
+  Being prepared for disasters can significantly reduce the risks and impacts on you
+  and your family. This evaluation ensures you have the necessary plans and resources
+  in place to respond effectively to emergencies.
+
+
+  ### What you need
+
+  To complete this assessment, you need to have a family disaster plan, a disaster
+  supplies kit, knowledge of community warning systems, and an understanding of evacuation
+  procedures.
+
+
+  ### How to do it
+
+  Review your current preparedness against the guidelines provided. Ensure you have
+  a comprehensive disaster plan, a well-stocked supplies kit, and are familiar with
+  local warning systems and evacuation routes. Check the current threat level through
+  reliable sources and adjust your preparedness accordingly.
+
+
+  ### Common failure modes
+
+  Common issues include not having a complete disaster plan, insufficient supplies
+  in the kit, or lack of awareness of community warning systems and evacuation procedures.
+
+
+  ### Safety/boundary notes
+
+  Ensure all family members are aware of the disaster plan and know how to use the
+  supplies kit. Regularly update your knowledge of community warning systems.
+
+
+  ### Local adaptation notes
+
+  Adapt your disaster plan and supplies kit based on local hazards and community resources
+  available.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - A complete family disaster plan is in place.
+  - A disaster supplies kit is prepared and stocked.
+  - Knowledge of community warning systems is up-to-date.
+  - Evacuation procedures are understood and practiced.
+  failure_modes:
+  - Lack of preparedness for threat levels.
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.disaster-preparedness-evaluation
+  claim_id: clm_001
+  claim_text: This is an assessment tool designed to help individuals and families
+    evaluate their preparedness for various disaster scenarios. It focuses on key
+    areas such as having a disaster plan, a supplies kit, and understanding community
+    warning systems.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 177
+    page_end: 177
+    segment_id: src.fema.are-you-ready.2004::seg_000268
+    excerpt: 'By following the instructions in this guide, you should now have the
+      following: A family disaster plan that sets forth what you and your family need
+      to do to prepare for and respond to all types of hazards. A disaster supplies
+      kit filled with items you would need to sustain you and your family for at least
+      three days, maybe more. Knowledge of your community warning systems and what
+      you should do when these are activated.'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.disaster-preparedness-evaluation
+  claim_id: clm_002
+  claim_text: Being prepared for disasters can significantly reduce the risks and
+    impacts on you and your family.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 177
+    page_end: 177
+    segment_id: src.fema.are-you-ready.2004::seg_000268
+    excerpt: 'By following the instructions in this guide, you should now have the
+      following: A family disaster plan... Knowledge of your community warning systems...
+      Compare the above actions with the personal action guidelines for each of the
+      threat levels. Determine how well you are prepared for each of the five levels.'
+    start_char: 0
+    end_char: 400
+    support_strength: medium
+- object_id: emergency.disaster-preparedness-evaluation
+  claim_id: clm_003
+  claim_text: To complete this assessment, you need to have a family disaster plan,
+    a disaster supplies kit, knowledge of community warning systems, and an understanding
+    of evacuation procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 177
+    page_end: 177
+    segment_id: src.fema.are-you-ready.2004::seg_000268
+    excerpt: 'By following the instructions in this guide, you should now have the
+      following: A family disaster plan... A disaster supplies kit... Knowledge of
+      your community warning systems... An understanding of why evacuations are necessary
+      and what you would need to do in the case of an evacuation.'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.disaster-preparedness-evaluation
+  claim_id: clm_004
+  claim_text: Review your current preparedness against the guidelines provided. Ensure
+    you have a comprehensive disaster plan, a well-stocked supplies kit, and are familiar
+    with local warning systems and evacuation routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 177
+    page_end: 177
+    segment_id: src.fema.are-you-ready.2004::seg_000268
+    excerpt: 'By following the instructions in this guide, you should now have the
+      following: A family disaster plan... A disaster supplies kit... Knowledge of
+      your community warning systems... An understanding of why evacuations are necessary...'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.disaster-preparedness-evaluation
+  claim_id: clm_005
+  claim_text: Common issues include not having a complete disaster plan, insufficient
+    supplies in the kit, or lack of awareness of community warning systems and evacuation
+    procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 177
+    page_end: 177
+    segment_id: src.fema.are-you-ready.2004::seg_000268
+    excerpt: 'By following the instructions in this guide, you should now have the
+      following: A family disaster plan... A disaster supplies kit... Knowledge of
+      your community warning systems... An understanding of why evacuations are necessary...'
+    start_char: 0
+    end_char: 400
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000268

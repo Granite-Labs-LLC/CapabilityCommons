@@ -1,0 +1,263 @@
+id: emergency.earthquake-preparedness
+slug: emergency.earthquake-preparedness
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Earthquake Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Prepare for earthquakes by securing heavy objects and conducting drills.
+summary_medium: Guidelines for preparing for an earthquake, including securing heavy
+  objects, repairing utility connections, and conducting drills.
+plain_language: Learn how to prepare your home and family for an earthquake by securing
+  heavy items, fixing utility lines, and practicing safety drills.
+markdown_body: '### What this is
+
+  This guide provides steps to prepare your home and family for an earthquake, focusing
+  on securing objects, repairing utilities, and conducting safety drills.
+
+
+  ### Why it matters
+
+  Earthquakes can cause significant damage and injury. Proper preparation can minimize
+  risks to your home and loved ones.
+
+
+  ### What you need
+
+  - Bolts
+
+  - Flexible pipe fittings
+
+  - Professional help for utility repairs
+
+
+  ### How to do it
+
+  1. Repair defective electrical wiring and leaky gas lines with professional help.
+
+  2. Secure heavy appliances like water heaters and refrigerators to wall studs.
+
+  3. Place heavy objects on lower shelves and fasten shelves and frames to walls.
+
+  4. Install flexible pipe fittings to prevent leaks.
+
+  5. Conduct regular earthquake drills with your family, practicing ''Drop, Cover,
+  and Hold On''.
+
+
+  ### Common failure modes
+
+  - Gas leaks
+
+  - Falling objects
+
+  - Unsecured heavy items
+
+
+  ### Safety/boundary notes
+
+  Do not attempt to repair gas or electrical lines yourself; seek professional assistance.
+
+
+  ### Local adaptation notes
+
+  Consider local building codes and recommendations from local authorities for additional
+  safety measures.'
+structured_data:
+  tools:
+  - bolts
+  - flexible pipe fittings
+  materials: []
+  success_criteria:
+  - All heavy items are secured
+  - Utility connections are flexible
+  - Family members know safe spots and drill procedures
+  failure_modes:
+  - Gas leaks
+  - Falling objects
+  safety_boundary: Professional help is required for utility repairs.
+  implementation:
+    smallest_viable_version: Secure heavy items and conduct a basic earthquake drill.
+    tools:
+    - bolts
+    - flexible pipe fittings
+    materials: []
+    expected_time: 1-2 days
+    expected_cost: medium
+    success_checks:
+    - All heavy items are secured
+    - Family members know drill procedures
+    stop_conditions:
+    - If professional help is needed for utility repairs
+    common_mistakes:
+    - Not securing all heavy items
+    - Ignoring professional help for utilities
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Focus on securing items in high-rise buildings.
+    - label: Low-budget
+      when: Limited financial resources
+      notes: Prioritize securing the most dangerous items first.
+    when_to_escalate:
+    - If you encounter complex utility issues
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.earthquake-preparedness
+  claim_id: clm_001
+  claim_text: Repair defective electrical wiring and leaky gas lines with professional
+    help.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Repair defective electrical wiring, leaky gas lines, and infl exible
+      utility connections. Get appropriate professional help. Do not work with gas
+      or electrical lines yourself.
+    start_char: 0
+    end_char: 143
+    support_strength: strong
+- object_id: emergency.earthquake-preparedness
+  claim_id: clm_002
+  claim_text: Secure heavy appliances like water heaters and refrigerators to wall
+    studs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Bolt down and secure to the wall studs your water heater, refrigerator,
+      furnace, and gas appliances.
+    start_char: 145
+    end_char: 215
+    support_strength: strong
+- object_id: emergency.earthquake-preparedness
+  claim_id: clm_003
+  claim_text: Place heavy objects on lower shelves and fasten shelves and frames to
+    walls.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Place large or heavy objects on lower shelves. Fasten shelves, mirrors,
+      and large picture frames to walls.
+    start_char: 217
+    end_char: 297
+    support_strength: strong
+- object_id: emergency.earthquake-preparedness
+  claim_id: clm_004
+  claim_text: Install flexible pipe fittings to prevent leaks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Install fl exible pipe fi ttings to avoid gas or water leaks. Flexible
+      fi ttings are more resistant to breakage.
+    start_char: 389
+    end_char: 459
+    support_strength: strong
+- object_id: emergency.earthquake-preparedness
+  claim_id: clm_005
+  claim_text: Conduct regular earthquake drills with your family, practicing 'Drop,
+    Cover, and Hold On'.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: 'Hold earthquake drills with your family members: Drop, cover, and hold
+      on!'
+    start_char: 539
+    end_char: 596
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000154
+bundle_overrides:
+  hook: Earthquake preparedness can significantly reduce the risk of injury and damage
+    to your home, ensuring the safety of your loved ones.
+  primer: Earthquakes are natural disasters that can strike without warning, causing
+    significant damage to buildings and posing serious risks to personal safety. Preparing
+    for an earthquake involves taking proactive steps to secure your home and educate
+    your family on safety measures. Key actions include repairing defective electrical
+    wiring and leaky gas lines, securing heavy appliances like water heaters and refrigerators,
+    and placing heavy objects on lower shelves. Additionally, installing flexible
+    pipe fittings can prevent leaks during an earthquake. Conducting regular earthquake
+    drills with your family, practicing the 'Drop, Cover, and Hold On' technique,
+    is crucial for ensuring everyone knows what to do when an earthquake occurs. By
+    taking these steps, you can minimize the risks associated with earthquakes and
+    protect your home and family.
+  guide: '1. **Repair Utilities**: Begin by inspecting your home for defective electrical
+    wiring and leaky gas lines. These can pose significant hazards during an earthquake.
+    Hire a professional to repair any issues you find, as working with gas or electrical
+    lines yourself can be dangerous.
+
+
+    2. **Secure Heavy Appliances**: Use bolts to secure heavy appliances such as water
+    heaters, refrigerators, and furnaces to wall studs. This prevents them from tipping
+    over during an earthquake, reducing the risk of injury and damage.
+
+
+    3. **Organize Shelves**: Place heavy objects on lower shelves to prevent them
+    from falling. Fasten shelves, mirrors, and large picture frames securely to the
+    walls to keep them in place during tremors.
+
+
+    4. **Install Flexible Pipe Fittings**: Replace rigid pipe fittings with flexible
+    ones to reduce the risk of gas or water leaks. Flexible fittings are more resistant
+    to breakage during an earthquake.
+
+
+    5. **Conduct Earthquake Drills**: Regularly practice earthquake drills with your
+    family. The ''Drop, Cover, and Hold On'' technique involves dropping to the ground,
+    taking cover under sturdy furniture, and holding on until the shaking stops. Ensure
+    everyone knows safe spots in each room of your home.
+
+
+    By following these steps, you can create a safer environment in your home and
+    be better prepared for an earthquake.'
+  reference:
+  - Repair defective electrical wiring and leaky gas lines with professional help.
+  - Secure heavy appliances like water heaters and refrigerators to wall studs.
+  - Place heavy objects on lower shelves and fasten shelves and frames to walls.
+  - Install flexible pipe fittings to prevent leaks.
+  - Conduct regular earthquake drills with your family, practicing 'Drop, Cover, and
+    Hold On'.
+  worksheet:
+  - Identify and list all heavy appliances and objects in your home that need securing.
+  - Create a plan for inspecting and repairing utility lines with professional help.
+  - Practice an earthquake drill with your family and note any areas for improvement.
+  - Research local building codes and recommendations for earthquake safety.
+  - Evaluate your home for potential hazards and make a checklist of necessary actions.
+  teach_forward_kit:
+    three_minute_version: Earthquake preparedness involves securing heavy items, repairing
+      utility lines, and practicing safety drills. Key steps include hiring professionals
+      to fix electrical and gas lines, bolting down heavy appliances, organizing shelves
+      to prevent falling objects, installing flexible pipe fittings, and conducting
+      regular family drills.
+    ten_minute_outline:
+    - Introduction to earthquake risks and the importance of preparedness.
+    - 'Steps to secure your home: repairing utilities and securing appliances.'
+    - Organizing and securing household items to prevent falls.
+    - The role of flexible pipe fittings in preventing leaks.
+    - Conducting and practicing earthquake drills with family.
+    - Review of local safety recommendations and building codes.
+    discussion_prompts:
+    - What are the most common hazards in your home during an earthquake?
+    - How can you involve your family in earthquake preparedness?
+    - What challenges might you face in securing your home, and how can you overcome
+      them?
+    - Why is professional help important for utility repairs?
+    - How can regular drills improve your family's response to an earthquake?

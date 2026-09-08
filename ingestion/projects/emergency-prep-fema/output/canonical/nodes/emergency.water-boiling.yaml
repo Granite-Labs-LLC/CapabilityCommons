@@ -1,0 +1,262 @@
+id: emergency.water-boiling
+slug: emergency.water-boiling
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Boiling Water for Safe Drinking in Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Boil water to ensure it is safe to drink during emergencies.
+summary_medium: Learn how to boil water effectively to make it safe for drinking during
+  emergencies, including tips for improving taste.
+plain_language: Boiling water is a simple and effective way to make sure it's safe
+  to drink during emergencies. Bring the water to a rolling boil for at least one
+  minute, then let it cool before drinking. Pouring it between containers can help
+  improve the taste.
+markdown_body: "### What this is\nThis guide explains how to boil water to make it\
+  \ safe for drinking during emergencies.\n\n### Why it matters\nIn emergencies, access\
+  \ to clean drinking water may be limited. Boiling is a reliable method to kill harmful\
+  \ microorganisms, ensuring the water is safe to consume.\n\n### What you need\n\
+  A large pot or kettle, a heat source, and clean containers for storing boiled water.\n\
+  \n### How to do it\n1. Fill a large pot or kettle with water. \n2. Heat the water\
+  \ until it reaches a rolling boil. \n3. Maintain the boil for at least one minute.\
+  \ \n4. Allow the water to cool before drinking. \n5. To improve taste, pour the\
+  \ cooled water back and forth between two clean containers.\n\n### Common failure\
+  \ modes\nNot boiling the water long enough or using contaminated containers can\
+  \ result in unsafe drinking water.\n\n### Safety/boundary notes\nEnsure containers\
+  \ used for storing boiled water are clean to prevent recontamination.\n\n### Local\
+  \ adaptation notes\nAt higher altitudes, water boils at lower temperatures, so increase\
+  \ the boiling time to ensure safety."
+structured_data:
+  tools:
+  - large pot
+  - kettle
+  materials:
+  - clean containers
+  success_criteria: Water is boiled for at least one minute and stored in clean containers.
+  failure_modes:
+  - insufficient boiling time
+  - contaminated containers
+  safety_boundary: Ensure containers are clean to avoid recontamination.
+  implementation:
+    smallest_viable_version: Boil water for at least one minute to ensure safety.
+    tools:
+    - large pot
+    - kettle
+    materials:
+    - clean containers
+    expected_time: 10-15 minutes
+    expected_cost: low
+    success_checks:
+    - Water is boiled for at least one minute
+    - Water is stored in clean containers
+    stop_conditions:
+    - Water is not boiling
+    - Containers are not clean
+    common_mistakes:
+    - Not boiling long enough
+    - Using dirty containers
+    variants:
+    - label: High Altitude
+      when: Above 2000 meters
+      notes: Increase boiling time to ensure safety.
+    when_to_escalate:
+    - If water remains cloudy after boiling
+    - If there is a risk of chemical contamination
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.water-boiling
+  claim_id: clm_001
+  claim_text: Boiling is a reliable method to kill harmful microorganisms, ensuring
+    the water is safe to consume.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water.
+    start_char: 0
+    end_char: 43
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_002
+  claim_text: Fill a large pot or kettle with water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: In a large pot or kettle, bring water to a rolling boil for 1 full minute.
+    start_char: 44
+    end_char: 102
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_003
+  claim_text: Heat the water until it reaches a rolling boil.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: bring water to a rolling boil for 1 full minute
+    start_char: 66
+    end_char: 102
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_004
+  claim_text: Maintain the boil for at least one minute.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: bring water to a rolling boil for 1 full minute
+    start_char: 66
+    end_char: 102
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_005
+  claim_text: Allow the water to cool before drinking.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Let the water cool before drinking.
+    start_char: 104
+    end_char: 134
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_006
+  claim_text: To improve taste, pour the cooled water back and forth between two clean
+    containers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiled water will taste better if you put oxygen back into it by pouring
+      the water back and forth between two clean containers.
+    start_char: 136
+    end_char: 243
+    support_strength: strong
+- object_id: emergency.water-boiling
+  claim_id: clm_007
+  claim_text: Not boiling the water long enough or using contaminated containers can
+    result in unsafe drinking water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water.
+    start_char: 0
+    end_char: 43
+    support_strength: medium
+- object_id: emergency.water-boiling
+  claim_id: clm_008
+  claim_text: Ensure containers used for storing boiled water are clean to prevent
+    recontamination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: pouring the water back and forth between two clean containers.
+    start_char: 186
+    end_char: 243
+    support_strength: medium
+- object_id: emergency.water-boiling
+  claim_id: clm_009
+  claim_text: At higher altitudes, water boils at lower temperatures, so increase
+    the boiling time to ensure safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water.
+    start_char: 0
+    end_char: 43
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000055
+bundle_overrides:
+  hook: In emergencies, clean drinking water can be scarce. Boiling water is a simple,
+    reliable way to ensure it's safe to drink.
+  primer: During emergencies, access to clean drinking water may be limited, making
+    it crucial to know how to purify water effectively. Boiling water is one of the
+    most reliable methods to kill harmful microorganisms, such as bacteria, viruses,
+    and parasites, ensuring the water is safe for consumption. The process involves
+    heating water until it reaches a rolling boil and maintaining that boil for at
+    least one minute. This method is effective because the high temperature of boiling
+    water kills most pathogens. After boiling, it's important to let the water cool
+    before drinking. To improve the taste, which can sometimes be flat after boiling,
+    you can pour the cooled water back and forth between two clean containers to reintroduce
+    oxygen. It's essential to use clean containers to avoid recontamination of the
+    water. At higher altitudes, water boils at lower temperatures, so it's necessary
+    to increase the boiling time to ensure safety.
+  guide: '1. Gather your materials: a large pot or kettle, a heat source, and clean
+    containers for storing the boiled water.
+
+    2. Fill the pot or kettle with water. Ensure the container is clean to prevent
+    contamination.
+
+    3. Place the pot or kettle on the heat source and turn it on.
+
+    4. Heat the water until it reaches a rolling boil. This means the water is bubbling
+    vigorously and continuously.
+
+    5. Once the water is at a rolling boil, maintain the boil for at least one minute.
+    This duration is crucial to ensure that harmful microorganisms are killed.
+
+    6. After boiling, remove the pot or kettle from the heat source and allow the
+    water to cool before drinking.
+
+    7. To improve the taste of the boiled water, pour it back and forth between two
+    clean containers. This process helps to reintroduce oxygen, making the water taste
+    fresher.
+
+    8. Store the cooled, boiled water in clean containers to prevent recontamination.
+
+    9. If you are at a high altitude (above 2000 meters), increase the boiling time
+    to ensure safety, as water boils at a lower temperature in these conditions.'
+  reference:
+  - Boil water for at least one minute.
+  - Use clean containers to store boiled water.
+  - At high altitudes, increase boiling time.
+  - Pour water between containers to improve taste.
+  - Ensure a rolling boil is achieved.
+  worksheet:
+  - List the materials needed to boil water safely.
+  - Describe the steps to achieve a rolling boil.
+  - Explain why it's important to use clean containers.
+  - Discuss how altitude affects boiling time.
+  - Practice boiling water and timing the process.
+  teach_forward_kit:
+    three_minute_version: Boiling water is a simple and effective way to ensure it's
+      safe to drink during emergencies. Fill a pot with water, bring it to a rolling
+      boil for at least one minute, and let it cool before drinking. Use clean containers
+      to store the water and pour it between containers to improve taste.
+    ten_minute_outline:
+    - Introduction to the importance of clean water in emergencies.
+    - Materials needed for boiling water.
+    - Step-by-step guide to boiling water.
+    - Tips for improving the taste of boiled water.
+    - Considerations for high-altitude boiling.
+    - Q&A session on common mistakes and safety tips.
+    discussion_prompts:
+    - Why is boiling water an effective method for making it safe to drink?
+    - What are the risks of not boiling water long enough?
+    - How can you ensure containers are clean to prevent recontamination?
+    - In what ways can you improve the taste of boiled water?
+    - How does altitude affect the boiling process?

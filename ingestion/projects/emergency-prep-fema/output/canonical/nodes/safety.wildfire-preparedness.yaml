@@ -1,0 +1,292 @@
+id: safety.wildfire-preparedness
+slug: safety.wildfire-preparedness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Wildfire Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Steps to prepare your home if a wildfire threatens.
+summary_medium: Precautions to take if a wildfire threatens your home, including shutting
+  off gas, sealing vents, and preparing for evacuation.
+plain_language: Learn how to prepare your home and family if a wildfire is approaching.
+  This includes turning off utilities, sealing vents, and getting ready to leave quickly
+  if needed.
+markdown_body: '### What this is
+
+  This reference sheet provides guidance on how to prepare your home and family if
+  a wildfire is threatening your area.
+
+
+  ### Why it matters
+
+  Wildfires can spread rapidly and cause significant damage. Being prepared can help
+  protect your home and ensure your safety.
+
+
+  ### What you need
+
+  - Garden hose
+
+  - Lawn sprinklers
+
+  - Fire tools (rake, axe, handsaw or chainsaw, bucket, shovel)
+
+  - Plywood or commercial seals
+
+  - Vehicle with keys
+
+
+  ### How to do it
+
+  1. Shut off gas at the meter. Only a qualified professional can safely turn it back
+  on.
+
+  2. Seal attic and ground vents with pre-cut plywood or commercial seals.
+
+  3. Turn off propane tanks.
+
+  4. Place combustible patio furniture inside.
+
+  5. Connect a garden hose to outside taps and place lawn sprinklers on the roof and
+  near above-ground fuel tanks. Wet the roof.
+
+  6. Wet or remove shrubs within 15 feet of your residence.
+
+  7. Gather fire tools such as a rake, axe, handsaw or chainsaw, bucket, and shovel.
+
+  8. Back your car into the garage or park it in an open space facing the direction
+  of escape. Shut doors and roll up windows. Leave the key in the ignition and the
+  car doors unlocked. Close garage windows and doors, but leave them unlocked. Disconnect
+  automatic garage door openers.
+
+  9. Open fireplace damper. Close fireplace screens.
+
+  10. Close windows, vents, doors, blinds or noncombustible window coverings, and
+  heavy drapes. Remove flammable drapes and curtains.
+
+  11. Move flammable furniture into the center of the residence away from windows
+  and sliding-glass doors.
+
+  12. Close all interior doors and windows to prevent drafts.
+
+  13. Place valuables that will not be damaged by water in a pool or pond.
+
+
+  ### Common failure modes
+
+  Inadequate preparation, such as failing to seal vents or not having fire tools ready.
+
+
+  ### Safety/boundary notes
+
+  Maintain a 15-foot clearance for shrubs around your home.
+
+
+  ### Local adaptation notes
+
+  Adjust the preparation steps based on local fire department recommendations and
+  specific geographic risks.'
+structured_data:
+  tools:
+  - Garden hose
+  - Lawn sprinklers
+  - Rake
+  - Axe
+  - Handsaw
+  - Chainsaw
+  - Bucket
+  - Shovel
+  materials:
+  - Plywood or commercial seals
+  success_criteria:
+  - Home is prepared for wildfire threat
+  - Evacuation is executed safely if necessary
+  failure_modes:
+  - Inadequate preparation
+  safety_boundary: 15 feet clearance for shrubs
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_001
+  claim_text: Shut off gas at the meter. Only a qualified professional can safely
+    turn it back on.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Shut off gas at the meter. Only a qualifi ed professional can safely
+      turn the gas back on.
+    start_char: 190
+    end_char: 250
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_002
+  claim_text: Seal attic and ground vents with pre-cut plywood or commercial seals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Seal attic and ground vents with pre-cut plywood or commercial seals.
+    start_char: 251
+    end_char: 308
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_003
+  claim_text: Turn off propane tanks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Turn off propane tanks.
+    start_char: 309
+    end_char: 331
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_004
+  claim_text: Place combustible patio furniture inside.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Place combustible patio furniture inside.
+    start_char: 332
+    end_char: 371
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_005
+  claim_text: Connect a garden hose to outside taps and place lawn sprinklers on the
+    roof and near above-ground fuel tanks. Wet the roof.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Connect garden hose to outside taps. Place lawn sprinklers on the roof
+      and near above-ground fuel tanks. Wet the roof.
+    start_char: 372
+    end_char: 454
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_006
+  claim_text: Wet or remove shrubs within 15 feet of your residence.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Wet or remove shrubs within 15 feet of your residence.
+    start_char: 455
+    end_char: 505
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_007
+  claim_text: Gather fire tools such as a rake, axe, handsaw or chainsaw, bucket,
+    and shovel.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Gather fi re tools such as a rake, axe, handsaw or chainsaw, bucket,
+      and shovel.
+    start_char: 506
+    end_char: 570
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_008
+  claim_text: Back your car into the garage or park it in an open space facing the
+    direction of escape. Shut doors and roll up windows. Leave the key in the ignition
+    and the car doors unlocked. Close garage windows and doors, but leave them unlocked.
+    Disconnect automatic garage door openers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Back your car into the garage or park it in an open space facing the
+      direction of escape. Shut doors and roll up windows. Leave the key in the ignition
+      and the car doors unlocked. Close garage windows and doors, but leave them unlocked.
+      Disconnect automatic garage door openers.
+    start_char: 571
+    end_char: 764
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_009
+  claim_text: Open fireplace damper. Close fireplace screens.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Open fi replace damper. Close fi replace screens.
+    start_char: 765
+    end_char: 806
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_010
+  claim_text: Close windows, vents, doors, blinds or noncombustible window coverings,
+    and heavy drapes. Remove flammable drapes and curtains.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Close windows, vents, doors, blinds or noncombustible window coverings,
+      and heavy drapes. Remove fl ammable drapes and curtains.
+    start_char: 807
+    end_char: 895
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_011
+  claim_text: Move flammable furniture into the center of the residence away from
+    windows and sliding-glass doors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Move fl ammable furniture into the center of the residence away from
+      windows and sliding-glass doors.
+    start_char: 896
+    end_char: 975
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_012
+  claim_text: Close all interior doors and windows to prevent drafts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Close all interior doors and windows to prevent drafts.
+    start_char: 976
+    end_char: 1025
+    support_strength: strong
+- object_id: safety.wildfire-preparedness
+  claim_id: clm_013
+  claim_text: Place valuables that will not be damaged by water in a pool or pond.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 126
+    page_end: 127
+    segment_id: src.fema.are-you-ready.2004::seg_000192
+    excerpt: Place valuables that will not be damaged by water in a pool or pond.
+    start_char: 1026
+    end_char: 1083
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000192

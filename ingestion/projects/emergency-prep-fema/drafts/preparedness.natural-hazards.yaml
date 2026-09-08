@@ -1,0 +1,311 @@
+id: preparedness.natural-hazards
+slug: preparedness-natural-hazards
+seed_type: module
+co_type: skill_guide
+canonical_title: Preparedness for Natural Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to prepare for various natural hazards.
+summary_medium: This module provides guidance on preparing for natural hazards such
+  as floods, tornadoes, hurricanes, and more.
+plain_language: This guide helps you get ready for different natural disasters by
+  explaining what they are and how to prepare for them.
+markdown_body: '# What this is
+
+  This module is a comprehensive guide to preparing for various natural hazards. It
+  covers a range of disasters including floods, tornadoes, hurricanes, thunderstorms,
+  winter storms, extreme heat, earthquakes, volcanoes, landslides, tsunamis, fires,
+  and wildfires.
+
+
+  # Why it matters
+
+  Natural hazards can cause significant damage and pose serious risks to life and
+  property. Being prepared can help mitigate these risks and ensure safety during
+  such events.
+
+
+  # What you need
+
+  To prepare for natural hazards, you need information about the specific risks in
+  your area, a disaster supplies kit, and a family emergency plan.
+
+
+  # How to do it
+
+  1. Get informed about the types of natural hazards that can occur in your area.
+  2. Develop an emergency plan that includes evacuation routes and communication strategies.
+  3. Assemble a disaster supplies kit with essentials such as water, food, and medical
+  supplies. 4. Practice and maintain your plan regularly.
+
+
+  # Common failure modes
+
+  Failing to update emergency plans, not having a complete disaster supplies kit,
+  and not practicing evacuation routes can lead to increased risk during a natural
+  hazard.
+
+
+  # Safety/boundary notes
+
+  Always prioritize safety by following official guidance and evacuation orders during
+  a natural hazard.
+
+
+  # Local adaptation notes
+
+  Adapt your preparedness plans based on the specific natural hazards prevalent in
+  your local area.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Having a well-practiced emergency plan.
+  - A complete and accessible disaster supplies kit.
+  - Knowledge of local natural hazard risks.
+  failure_modes:
+  - Incomplete disaster supplies kit.
+  - Outdated emergency plan.
+  - Lack of awareness of local hazards.
+  safety_boundary:
+  - Follow local authority guidance.
+  - Evacuate when instructed.
+  implementation:
+    smallest_viable_version: Create a basic emergency plan and kit for one type of
+      natural hazard.
+    tools: []
+    materials: []
+    expected_time: Varies depending on hazard complexity.
+    expected_cost: Low to moderate, depending on kit contents.
+    success_checks:
+    - Plan is up-to-date and practiced.
+    - Kit is complete and accessible.
+    stop_conditions:
+    - Plan is outdated.
+    - Kit is incomplete.
+    common_mistakes:
+    - Ignoring local hazard information.
+    - Not practicing the emergency plan.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Consider high-rise building evacuation plans.
+    - label: Off-grid
+      when: Living in remote areas.
+      notes: Ensure self-sufficiency with additional supplies.
+    when_to_escalate:
+    - If local authorities issue evacuation orders.
+    - If a natural hazard is imminent and severe.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness-natural-hazards
+  claim_id: clm_001
+  claim_text: This module is a comprehensive guide to preparing for various natural
+    hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Part 2 Natural Hazards
+    start_char: 0
+    end_char: 23
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_002
+  claim_text: Natural hazards can cause significant damage and pose serious risks
+    to life and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Disasters disrupt hundreds of thousands of lives every year. Each disaster
+      has lasting effects, both to people and property.
+    start_char: 0
+    end_char: 106
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_003
+  claim_text: Being prepared can help mitigate these risks and ensure safety during
+    such events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 78
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_004
+  claim_text: To prepare for natural hazards, you need information about the specific
+    risks in your area, a disaster supplies kit, and a family emergency plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed, Section 1.2 Emergency Planning and Checklists,
+      Section 1.3 Assemble a Disaster Supplies Kit
+    start_char: 0
+    end_char: 105
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_005
+  claim_text: Get informed about the types of natural hazards that can occur in your
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed
+    start_char: 0
+    end_char: 28
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_006
+  claim_text: Develop an emergency plan that includes evacuation routes and communication
+    strategies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.2 Emergency Planning and Checklists
+    start_char: 0
+    end_char: 45
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_007
+  claim_text: Assemble a disaster supplies kit with essentials such as water, food,
+    and medical supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.3 Assemble a Disaster Supplies Kit
+    start_char: 0
+    end_char: 41
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_008
+  claim_text: Practice and maintain your plan regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.6 Practicing and Maintaining Your Plan
+    start_char: 0
+    end_char: 47
+    support_strength: strong
+- object_id: preparedness-natural-hazards
+  claim_id: clm_009
+  claim_text: Failing to update emergency plans, not having a complete disaster supplies
+    kit, and not practicing evacuation routes can lead to increased risk during a
+    natural hazard.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+- object_id: preparedness-natural-hazards
+  claim_id: clm_010
+  claim_text: Always prioritize safety by following official guidance and evacuation
+    orders during a natural hazard.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: If a disaster occurs in your community, local government and disaster-relief
+      organizations will try to help you, but you need to be ready as well.
+    start_char: 0
+    end_char: 106
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000007
+bundle_overrides:
+  hook: Being prepared for natural hazards can save lives and reduce damage to your
+    property.
+  primer: Natural hazards, such as floods, hurricanes, earthquakes, and wildfires,
+    can cause significant damage and pose serious risks to life and property. Preparing
+    for these events is crucial to ensure safety and minimize potential losses. This
+    involves understanding the specific risks in your area, creating a comprehensive
+    emergency plan, and assembling a disaster supplies kit. An emergency plan should
+    include evacuation routes and communication strategies, while a disaster supplies
+    kit should contain essentials like water, food, and medical supplies. Regular
+    practice and updates to your plan are necessary to maintain readiness. By being
+    informed and prepared, you can reduce fear and anxiety during a disaster and ensure
+    a quicker recovery.
+  guide: '1. **Get Informed**: Research the types of natural hazards that can occur
+    in your area. This includes understanding the local climate and geography to identify
+    potential risks such as floods, earthquakes, or hurricanes.
+
+
+    2. **Develop an Emergency Plan**: Create a plan that includes evacuation routes,
+    communication strategies, and meeting points for family members. Ensure everyone
+    in your household knows the plan and practices it regularly.
+
+
+    3. **Assemble a Disaster Supplies Kit**: Gather essentials such as water, non-perishable
+    food, a first-aid kit, flashlights, batteries, and important documents. Store
+    these items in a portable container that is easily accessible.
+
+
+    4. **Practice and Maintain Your Plan**: Regularly review and practice your emergency
+    plan with your family. Update the plan and supplies kit as needed, especially
+    when there are changes in your household or local hazard information.
+
+
+    5. **Stay Informed During a Hazard**: Monitor local news and weather reports for
+    updates during a natural hazard. Follow official guidance and evacuation orders
+    to ensure your safety.'
+  reference:
+  - Get informed about local natural hazards.
+  - Develop an emergency plan with evacuation routes.
+  - Assemble a disaster supplies kit.
+  - Practice and maintain your emergency plan.
+  - Follow official guidance during a natural hazard.
+  worksheet:
+  - List the natural hazards most likely to occur in your area.
+  - Create a family emergency plan and outline evacuation routes.
+  - Inventory your current disaster supplies kit and identify missing items.
+  - Schedule a family practice session for your emergency plan.
+  - Research local emergency services and their contact information.
+  teach_forward_kit:
+    three_minute_version: Prepare for natural hazards by knowing your local risks,
+      creating an emergency plan, and assembling a disaster supplies kit. Regular
+      practice and updates are key to ensuring safety.
+    ten_minute_outline:
+    - Introduction to natural hazards and their impact.
+    - Steps to get informed about local risks.
+    - Developing a comprehensive emergency plan.
+    - Assembling and maintaining a disaster supplies kit.
+    - Importance of practicing and updating your plan.
+    - Following official guidance during a hazard.
+    discussion_prompts:
+    - What natural hazards are most common in your area?
+    - How can you ensure your emergency plan is effective?
+    - What challenges might you face in assembling a disaster supplies kit?
+    - Why is it important to practice your emergency plan regularly?
+    - How can community involvement enhance preparedness efforts?

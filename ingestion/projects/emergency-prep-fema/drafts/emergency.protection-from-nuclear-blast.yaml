@@ -1,0 +1,257 @@
+id: emergency.protection-from-nuclear-blast
+slug: emergency.protection-from-nuclear-blast
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Protection from a Nuclear Blast
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidance on protecting oneself from a nuclear blast.
+summary_medium: Learn how to protect yourself from a nuclear blast by focusing on
+  distance, shielding, and time as key protective factors.
+plain_language: This guide helps you understand how to protect yourself if a nuclear
+  blast occurs. It emphasizes the importance of staying as far away as possible from
+  fallout, using heavy materials for shielding, and waiting for radiation levels to
+  decrease over time.
+markdown_body: '### What this is
+
+  This guide provides strategies to protect yourself from the effects of a nuclear
+  blast, focusing on the principles of distance, shielding, and time.
+
+
+  ### Why it matters
+
+  In the event of a nuclear blast, understanding how to minimize exposure to radioactive
+  fallout can significantly reduce health risks.
+
+
+  ### What you need
+
+  Awareness of potential target areas, access to a suitable shelter, and knowledge
+  of how to maximize distance and shielding.
+
+
+  ### How to do it
+
+  1. **Distance**: Increase the distance between yourself and fallout particles. Seek
+  shelter in an underground area or the middle floors of a large building. Avoid top
+  floors or areas near flat roofs.
+
+  2. **Shielding**: Use dense materials like concrete, bricks, or earth to shield
+  yourself from radiation.
+
+  3. **Time**: Stay sheltered for at least two weeks, as radiation levels decrease
+  significantly during this period.
+
+
+  ### Common failure modes
+
+  Inadequate shelter or insufficient distance from fallout can increase exposure to
+  radiation.
+
+
+  ### Safety/boundary notes
+
+  Any protection is better than none. Prioritize increasing distance, using effective
+  shielding, and allowing time for radiation levels to decrease.
+
+
+  ### Local adaptation notes
+
+  Adapt strategies based on local infrastructure and potential target areas.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Successfully find and use a suitable shelter.
+  - Maintain adequate distance from fallout.
+  - Use effective shielding materials.
+  failure_modes:
+  - Inadequate shelter
+  - Insufficient distance from fallout
+  safety_boundary: Ensure any shelter used provides adequate protection from fallout.
+  implementation:
+    smallest_viable_version: Find a suitable shelter and stay protected for at least
+      two weeks.
+    tools: []
+    materials: []
+    expected_time: Two weeks
+    expected_cost: Free
+    success_checks:
+    - Shelter is adequate and provides necessary protection.
+    - Distance from fallout is maximized.
+    - Effective shielding is in place.
+    stop_conditions:
+    - Radiation levels have decreased to safe levels.
+    - Shelter is compromised or unsafe.
+    common_mistakes:
+    - Choosing inadequate shelter.
+    - Not staying sheltered long enough.
+    variants:
+    - label: Urban
+      when: In a city with high-rise buildings.
+      notes: Seek shelter in the middle floors of a large building.
+    - label: Off-grid
+      when: In rural or remote areas.
+      notes: Use natural terrain for shielding, such as hills or caves.
+    when_to_escalate:
+    - If unable to find adequate shelter.
+    - If radiation exposure symptoms occur.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_001
+  claim_text: This guide provides strategies to protect yourself from the effects
+    of a nuclear blast, focusing on the principles of distance, shielding, and time.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 167
+    segment_id: src.fema.are-you-ready.2004::seg_000252
+    excerpt: The three factors for protecting oneself from radiation and fallout are
+      distance, shielding, and time.
+    start_char: 556
+    end_char: 616
+    support_strength: strong
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_002
+  claim_text: In the event of a nuclear blast, understanding how to minimize exposure
+    to radioactive fallout can significantly reduce health risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 165
+    page_end: 165
+    segment_id: src.fema.are-you-ready.2004::seg_000250
+    excerpt: Even if individuals are not close enough to the nuclear blast to be affected
+      by the direct impacts, they may be affected by radioactive fallout.
+    start_char: 0
+    end_char: 136
+    support_strength: medium
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_003
+  claim_text: Awareness of potential target areas, access to a suitable shelter, and
+    knowledge of how to maximize distance and shielding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 167
+    segment_id: src.fema.are-you-ready.2004::seg_000252
+    excerpt: Protection from radioactive fallout would require taking shelter in an
+      underground area or in the middle of a large building.
+    start_char: 266
+    end_char: 348
+    support_strength: medium
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_004
+  claim_text: Increase the distance between yourself and fallout particles. Seek shelter
+    in an underground area or the middle floors of a large building. Avoid top floors
+    or areas near flat roofs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 167
+    segment_id: src.fema.are-you-ready.2004::seg_000252
+    excerpt: An underground area such as a home or offi ce building basement offers
+      more protection than the fi rst fl oor of a building. A fl oor near the middle
+      of a high-rise may be better, depending on what is nearby at that level on which
+      signifi cant fallout particles would collect. Flat roofs collect fallout particles
+      so the top fl oor is not a good choice, nor is a fl oor adjacent to a neighboring
+      fl at roof.
+    start_char: 619
+    end_char: 1011
+    support_strength: strong
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_005
+  claim_text: Use dense materials like concrete, bricks, or earth to shield yourself
+    from radiation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 167
+    segment_id: src.fema.are-you-ready.2004::seg_000252
+    excerpt: Shielding the heavier and denser the materials—thick walls, concrete,
+      bricks, books and earth—between you and the fallout particles, the better.
+    start_char: 1013
+    end_char: 1105
+    support_strength: strong
+- object_id: emergency.protection-from-nuclear-blast
+  claim_id: clm_006
+  claim_text: Stay sheltered for at least two weeks, as radiation levels decrease
+    significantly during this period.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 167
+    segment_id: src.fema.are-you-ready.2004::seg_000252
+    excerpt: Radioactive fallout poses the greatest threat to people during the fi
+      rst two weeks, by which time it has declined to about 1 percent of its initial
+      radiation level.
+    start_char: 1107
+    end_char: 1238
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000252
+bundle_overrides:
+  hook: Understanding how to protect yourself from a nuclear blast can significantly
+    reduce health risks by minimizing exposure to radioactive fallout.
+  primer: 'A nuclear blast is a catastrophic event that can cause immediate and long-term
+    harm. While the initial explosion can be devastating, the radioactive fallout
+    that follows poses a significant health risk. Fallout consists of radioactive
+    particles that can spread over large areas, carried by wind and weather patterns.
+    Protecting yourself involves three key principles: distance, shielding, and time.
+    Increasing the distance between yourself and the fallout reduces exposure. Effective
+    shielding involves using dense materials like concrete or earth to block radiation.
+    Lastly, time is crucial, as radiation levels decrease significantly over the first
+    two weeks. Understanding these principles can help you make informed decisions
+    to protect yourself and your loved ones in the event of a nuclear blast.'
+  guide: "1. **Distance**: Immediately seek shelter to increase the distance between\
+    \ yourself and the fallout. Ideal shelters are underground areas or the middle\
+    \ floors of large buildings. Avoid top floors or areas near flat roofs where fallout\
+    \ may accumulate. \n\n2. **Shielding**: Use dense materials to shield yourself\
+    \ from radiation. Thick walls made of concrete, bricks, or even stacks of books\
+    \ can provide effective protection. The more material between you and the fallout,\
+    \ the better. \n\n3. **Time**: Stay sheltered for at least two weeks. Radiation\
+    \ levels drop significantly during this period, reducing the risk of exposure.\
+    \ Do not leave your shelter until authorities declare it safe. \n\n4. **Awareness**:\
+    \ Be aware of potential target areas in your vicinity and plan your sheltering\
+    \ strategy accordingly. \n\n5. **Preparation**: Stock your shelter with essential\
+    \ supplies like food, water, and medical kits to last at least two weeks. \n\n\
+    By following these steps, you can significantly reduce your risk of radiation\
+    \ exposure in the event of a nuclear blast."
+  reference:
+  - 'Distance: Increase distance from fallout.'
+  - 'Shielding: Use dense materials like concrete or earth.'
+  - 'Time: Stay sheltered for at least two weeks.'
+  - Avoid top floors or areas near flat roofs.
+  - Stock shelter with essential supplies.
+  worksheet:
+  - Identify potential shelters in your area and evaluate their effectiveness.
+  - List materials available in your home that could be used for shielding.
+  - Create a checklist of essential supplies for a two-week shelter stay.
+  - Map out a plan to reach your identified shelter quickly in an emergency.
+  - Research local emergency services and their protocols for nuclear events.
+  teach_forward_kit:
+    three_minute_version: In a nuclear blast, protect yourself by maximizing distance
+      from fallout, using dense materials for shielding, and staying sheltered for
+      at least two weeks as radiation levels decrease.
+    ten_minute_outline:
+    - Introduction to nuclear blasts and fallout.
+    - 'Importance of distance: Finding and reaching a suitable shelter.'
+    - 'Effective shielding: Materials and methods.'
+    - 'Time factor: Why two weeks is critical.'
+    - 'Preparation: Stocking your shelter with essentials.'
+    - 'Conclusion: Recap of key protective strategies.'
+    discussion_prompts:
+    - What are the most effective materials for shielding against radiation?
+    - How can you identify potential shelters in urban vs. rural areas?
+    - Why is it important to stay sheltered for two weeks after a nuclear blast?
+    - What challenges might you face in preparing a shelter with essential supplies?

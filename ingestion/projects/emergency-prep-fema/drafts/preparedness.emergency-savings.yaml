@@ -1,0 +1,154 @@
+id: preparedness.emergency-savings
+slug: preparedness.emergency-savings
+seed_type: extracted
+co_type: concept_note
+canonical_title: Emergency Savings for Crisis Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Save money in an emergency account and keep cash accessible for crises.
+summary_medium: Establish an emergency savings account and maintain accessible cash
+  or traveler's checks to ensure financial preparedness during crises.
+plain_language: It's important to have some money saved up specifically for emergencies.
+  This means having a savings account you can use in a crisis and keeping some cash
+  or traveler's checks at home in a safe place.
+markdown_body: '### What this is
+
+  Emergency savings is a financial preparedness strategy that involves setting aside
+  money specifically for use during a crisis. This includes having a dedicated savings
+  account and keeping some cash or traveler''s checks readily accessible.
+
+
+  ### Why it matters
+
+  Having emergency savings ensures that you have the financial resources to handle
+  unexpected situations, such as evacuations or sudden expenses, without relying solely
+  on credit or loans.
+
+
+  ### What you need
+
+  To implement this strategy, you need to set up a savings account designated for
+  emergencies and secure a small amount of cash or traveler''s checks at home.
+
+
+  ### How to do it
+
+  1. Open a savings account specifically for emergencies.
+
+  2. Regularly deposit a portion of your income into this account.
+
+  3. Keep a small amount of cash or traveler''s checks in a safe, easily accessible
+  place at home.
+
+
+  ### Common failure modes
+
+  Failing to regularly contribute to the emergency fund or using the funds for non-emergencies
+  can undermine financial preparedness.
+
+
+  ### Safety/boundary notes
+
+  Ensure that cash kept at home is stored securely to prevent theft or loss.
+
+
+  ### Local adaptation notes
+
+  Consider local banking options and the availability of traveler''s checks in your
+  area.'
+structured_data:
+  definition: Emergency savings is money set aside to be used during unexpected situations
+    or crises.
+  key_questions:
+  - How much should be saved for emergencies?
+  - Where should emergency funds be stored?
+  misconceptions:
+  - Emergency savings can be used for any expense.
+  - Keeping cash at home is unsafe.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.emergency-savings
+  claim_id: clm_001
+  claim_text: Emergency savings is a financial preparedness strategy that involves
+    setting aside money specifically for use during a crisis.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Consider saving money in an emergency savings account that could be used
+      in any crisis.
+    start_char: 374
+    end_char: 449
+    support_strength: strong
+- object_id: preparedness.emergency-savings
+  claim_id: clm_002
+  claim_text: Having emergency savings ensures that you have the financial resources
+    to handle unexpected situations, such as evacuations or sudden expenses, without
+    relying solely on credit or loans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: It is advisable to keep a small amount of cash or traveler's checks at
+      home in a safe place where you can quickly access them in case of evacuation.
+    start_char: 450
+    end_char: 578
+    support_strength: medium
+- object_id: preparedness.emergency-savings
+  claim_id: clm_003
+  claim_text: To implement this strategy, you need to set up a savings account designated
+    for emergencies and secure a small amount of cash or traveler's checks at home.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Consider saving money in an emergency savings account that could be used
+      in any crisis. It is advisable to keep a small amount of cash or traveler's
+      checks at home in a safe place where you can quickly access them in case of
+      evacuation.
+    start_char: 374
+    end_char: 578
+    support_strength: strong
+- object_id: preparedness.emergency-savings
+  claim_id: clm_004
+  claim_text: Failing to regularly contribute to the emergency fund or using the funds
+    for non-emergencies can undermine financial preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Consider saving money in an emergency savings account that could be used
+      in any crisis.
+    start_char: 374
+    end_char: 449
+    support_strength: medium
+- object_id: preparedness.emergency-savings
+  claim_id: clm_005
+  claim_text: Ensure that cash kept at home is stored securely to prevent theft or
+    loss.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: It is advisable to keep a small amount of cash or traveler's checks at
+      home in a safe place where you can quickly access them in case of evacuation.
+    start_char: 450
+    end_char: 578
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000039

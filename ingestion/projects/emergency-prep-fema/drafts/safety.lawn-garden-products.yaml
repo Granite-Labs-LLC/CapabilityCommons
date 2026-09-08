@@ -1,0 +1,106 @@
+id: safety.lawn-garden-products
+slug: safety.lawn-garden-products
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Lawn and Garden Products Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A reference sheet on lawn and garden product safety.
+summary_medium: This reference sheet provides safety information on common lawn and
+  garden products such as herbicides, insecticides, and fungicides/wood preservatives.
+plain_language: Learn about the safety considerations when using common lawn and garden
+  products like herbicides, insecticides, and fungicides.
+markdown_body: '### What this is
+
+  This reference sheet provides an overview of safety considerations for using common
+  lawn and garden products, including herbicides, insecticides, and fungicides/wood
+  preservatives.
+
+
+  ### Why it matters
+
+  Understanding the safety aspects of these products is crucial to prevent harm to
+  humans, pets, and the environment.
+
+
+  ### What you need
+
+  Knowledge of the specific products you are using, including their intended use and
+  safety instructions.
+
+
+  ### How to do it
+
+  Always read and follow the label instructions on each product. Use appropriate protective
+  gear such as gloves and masks, and ensure proper storage away from children and
+  pets.
+
+
+  ### Common failure modes
+
+  Misuse of products, such as over-application or incorrect mixing, can lead to safety
+  hazards.
+
+
+  ### Safety/boundary notes
+
+  Ensure products are used in well-ventilated areas and avoid contact with skin and
+  eyes. Dispose of containers according to local regulations.
+
+
+  ### Local adaptation notes
+
+  Check local guidelines for specific restrictions or recommendations on the use of
+  these products.'
+structured_data:
+  definition: Lawn and garden products include chemicals used to maintain and protect
+    plants and lawns.
+  key_questions:
+  - What are the safety instructions for each product?
+  - How should these products be stored and disposed of?
+  misconceptions:
+  - All lawn and garden products are safe for pets and children.
+  - More product will yield better results.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.lawn-garden-products
+  claim_id: clm_001
+  claim_text: This reference sheet provides an overview of safety considerations for
+    using common lawn and garden products, including herbicides, insecticides, and
+    fungicides/wood preservatives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000207
+    excerpt: '## **Lawn and Garden Products** - Herbicides - Insecticides - Fungicides/wood
+      preservatives'
+    start_char: 0
+    end_char: 87
+    support_strength: strong
+- object_id: safety.lawn-garden-products
+  claim_id: clm_002
+  claim_text: Understanding the safety aspects of these products is crucial to prevent
+    harm to humans, pets, and the environment.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 134
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000204
+    excerpt: Nearly every household uses products containing hazardous materials or
+      chemicals.
+    start_char: 0
+    end_char: 79
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000207

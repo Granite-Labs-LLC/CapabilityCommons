@@ -1,0 +1,295 @@
+id: emergency.workplace-evacuation-plan
+slug: emergency.workplace-evacuation-plan
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Workplace Building Evacuation Plan
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts:
+- workplace
+- employer
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Create and maintain a workplace evacuation plan.
+summary_medium: Guidelines for creating and maintaining a workplace building evacuation
+  plan, including regular practice and securing HVAC systems.
+plain_language: This project involves developing a plan to evacuate a workplace building
+  safely in case of an emergency. It includes practicing the evacuation regularly,
+  ensuring the HVAC system is secure, and having emergency supplies ready.
+markdown_body: '### What this is
+
+  A workplace building evacuation plan is a structured approach to ensure the safe
+  and efficient evacuation of employees during emergencies. It includes procedures
+  for regular practice, securing HVAC systems, and maintaining emergency supplies.
+
+
+  ### Why it matters
+
+  Having a well-developed evacuation plan can save lives and reduce panic during emergencies.
+  It ensures that everyone knows what to do and where to go, minimizing confusion
+  and potential injuries.
+
+
+  ### What you need
+
+  To create an effective plan, you need an evacuation plan template, an HVAC assessment
+  checklist, and an emergency supply list.
+
+
+  ### How to do it
+
+  1. Develop a detailed evacuation plan using a template.
+
+  2. Regularly practice the evacuation with all employees.
+
+  3. Assess the HVAC system for security and the ability to filter contaminants, and
+  know how to turn it off if necessary.
+
+  4. Stock appropriate emergency supplies, considering local needs.
+
+
+  ### Common failure modes
+
+  1. Inadequate evacuation practice leading to confusion during an actual emergency.
+
+  2. Unsecured HVAC systems that could allow contaminants to spread.
+
+  3. Insufficient emergency supplies for employees who cannot go home.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all safety protocols are followed during evacuation drills to prevent
+  accidents.
+
+
+  ### Local adaptation notes
+
+  Consider regional HVAC standards and local emergency supply needs when developing
+  your plan.'
+structured_data:
+  goal: Develop and maintain a comprehensive workplace evacuation plan.
+  deliverables: A documented evacuation plan, a secure HVAC system, and stocked emergency
+    supplies.
+  acceptance_criteria: The plan is regularly practiced, the HVAC system is assessed
+    and secured, and emergency supplies are adequate and accessible.
+  implementation:
+    smallest_viable_version: A basic evacuation plan practiced with employees.
+    tools:
+    - Evacuation plan template
+    - HVAC assessment checklist
+    materials:
+    - Emergency supply list
+    expected_time: 1-2 weeks
+    expected_cost: Varies based on HVAC upgrades and supply purchases
+    success_checks:
+    - Regular evacuation drills
+    - HVAC system security
+    - Adequate emergency supplies
+    stop_conditions:
+    - Failure to practice drills
+    - Insecure HVAC system
+    - Lack of supplies
+    common_mistakes:
+    - Skipping regular drills
+    - Ignoring HVAC security
+    - Underestimating supply needs
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Consider additional evacuation routes and crowd management strategies.
+    - label: Off-grid
+      when: In remote locations
+      notes: Ensure communication systems are in place for emergencies.
+    when_to_escalate:
+    - If the HVAC system cannot be secured
+    - If evacuation drills reveal significant issues
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_001
+  claim_text: A workplace building evacuation plan is a structured approach to ensure
+    the safe and efficient evacuation of employees during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: If you are an employer, make sure your workplace has a building evacuation
+      plan that is regularly practiced.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_002
+  claim_text: It includes procedures for regular practice, securing HVAC systems,
+    and maintaining emergency supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: '- Take a critical look at your heating, ventilation and air conditioning
+      system to determine if it is secure or if it could feasibly be upgraded to better
+      filter potential contaminants, and be sure you know how to turn it off if you
+      need to.
+
+      - Think about what to do if your employees can''t go home.
+
+      - Make sure you have appropriate supplies on hand.'
+    start_char: 101
+    end_char: 300
+    support_strength: strong
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_003
+  claim_text: Having a well-developed evacuation plan can save lives and reduce panic
+    during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: If you are an employer, make sure your workplace has a building evacuation
+      plan that is regularly practiced.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_004
+  claim_text: To create an effective plan, you need an evacuation plan template, an
+    HVAC assessment checklist, and an emergency supply list.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: '- Take a critical look at your heating, ventilation and air conditioning
+      system to determine if it is secure or if it could feasibly be upgraded to better
+      filter potential contaminants, and be sure you know how to turn it off if you
+      need to.
+
+      - Think about what to do if your employees can''t go home.
+
+      - Make sure you have appropriate supplies on hand.'
+    start_char: 101
+    end_char: 300
+    support_strength: medium
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_005
+  claim_text: Regularly practice the evacuation with all employees.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: If you are an employer, make sure your workplace has a building evacuation
+      plan that is regularly practiced.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_006
+  claim_text: Assess the HVAC system for security and the ability to filter contaminants,
+    and know how to turn it off if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: '- Take a critical look at your heating, ventilation and air conditioning
+      system to determine if it is secure or if it could feasibly be upgraded to better
+      filter potential contaminants, and be sure you know how to turn it off if you
+      need to.'
+    start_char: 101
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.workplace-evacuation-plan
+  claim_id: clm_007
+  claim_text: Stock appropriate emergency supplies, considering local needs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 23
+    page_end: 23
+    segment_id: src.fema.are-you-ready.2004::seg_000030
+    excerpt: '- Make sure you have appropriate supplies on hand.'
+    start_char: 250
+    end_char: 300
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000030
+bundle_overrides:
+  hook: A well-prepared workplace evacuation plan can save lives and prevent chaos
+    during emergencies.
+  primer: A workplace building evacuation plan is a critical safety measure designed
+    to ensure the safe and efficient evacuation of employees during emergencies. This
+    plan outlines the procedures for evacuating a building, securing the HVAC systems
+    to prevent the spread of contaminants, and maintaining adequate emergency supplies.
+    Regular practice of the evacuation plan is essential to ensure that all employees
+    know what to do and where to go, reducing confusion and potential injuries during
+    an actual emergency. Creating an effective plan involves using an evacuation plan
+    template, conducting an HVAC assessment, and preparing an emergency supply list.
+    By having a well-developed evacuation plan, workplaces can significantly reduce
+    panic and improve safety during emergencies.
+  guide: '1. **Develop the Evacuation Plan**: Start by using an evacuation plan template
+    to outline the steps for safely exiting the building. Include details such as
+    exit routes, assembly points, and roles for key personnel.
+
+
+    2. **Practice Regularly**: Schedule regular evacuation drills with all employees
+    to ensure everyone is familiar with the plan. These drills should be conducted
+    at least twice a year and after any significant changes to the building layout
+    or staff.
+
+
+    3. **Assess the HVAC System**: Conduct a thorough assessment of your heating,
+    ventilation, and air conditioning (HVAC) system. Ensure it is secure and capable
+    of filtering out potential contaminants. Know how to turn off the system if necessary
+    during an emergency.
+
+
+    4. **Stock Emergency Supplies**: Prepare an emergency supply list and ensure that
+    all necessary items are readily available. Supplies should include first aid kits,
+    flashlights, batteries, water, and non-perishable food items. Consider the specific
+    needs of your location and employees.
+
+
+    5. **Review and Update**: Regularly review and update the evacuation plan to incorporate
+    any changes in building layout, staff, or local regulations. Ensure that all employees
+    are informed of any updates.'
+  reference:
+  - Evacuation plan template
+  - HVAC assessment checklist
+  - Emergency supply list
+  - Regular evacuation drills
+  - HVAC system security
+  - Adequate emergency supplies
+  worksheet:
+  - Identify the primary and secondary exit routes in your workplace.
+  - List the roles and responsibilities of key personnel during an evacuation.
+  - Conduct a mock evacuation drill and note any areas for improvement.
+  - Assess your HVAC system and document any security or filtration upgrades needed.
+  - Create an emergency supply list tailored to your workplace needs.
+  teach_forward_kit:
+    three_minute_version: A workplace evacuation plan ensures safe and efficient evacuation
+      during emergencies. It involves regular drills, securing HVAC systems, and maintaining
+      emergency supplies. Regular practice and updates are crucial for effectiveness.
+    ten_minute_outline:
+    - Introduction to the importance of evacuation plans
+    - Key components of an evacuation plan
+    - Steps to develop and implement the plan
+    - Importance of regular practice and updates
+    - Assessing and securing HVAC systems
+    - Maintaining and updating emergency supplies
+    discussion_prompts:
+    - Why is it important to have a workplace evacuation plan?
+    - What challenges might arise during an evacuation, and how can they be addressed?
+    - How can regular drills improve the effectiveness of an evacuation plan?
+    - What specific considerations should be made for securing HVAC systems?
+    - How can workplaces ensure they have adequate emergency supplies?

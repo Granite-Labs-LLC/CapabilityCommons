@@ -1,0 +1,274 @@
+id: emergency-preparedness.caring-for-pets
+slug: emergency-preparedness.caring-for-pets
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Caring for Pets in Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts:
+- disaster-preparation
+- pet-care
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Prepare a disaster plan for your pets.
+summary_medium: Learn how to prepare a disaster plan for pets, including identifying
+  shelters, gathering supplies, ensuring proper ID and records, and preparing carriers.
+plain_language: This guide helps you prepare a plan to care for your pets during emergencies.
+  It covers finding shelters, gathering necessary supplies, ensuring your pet has
+  ID and records, and preparing carriers.
+markdown_body: '### What this is
+
+  This guide provides steps to prepare a disaster plan for pets, ensuring their safety
+  and well-being during emergencies.
+
+
+  ### Why it matters
+
+  Pets are vulnerable during disasters and require specific preparations to ensure
+  their safety, as they are often not allowed in emergency shelters.
+
+
+  ### What you need
+
+  You''ll need a pet carrier, leash, veterinary records, and knowledge of local pet-friendly
+  accommodations.
+
+
+  ### How to do it
+
+  1. Identify pet-friendly shelters and accommodations. Contact local emergency management
+  or animal control for advice.
+
+  2. Gather necessary pet supplies, including food, water, and a carrier.
+
+  3. Ensure your pet has proper ID and up-to-date veterinary records.
+
+  4. Prepare a pet carrier and leash for easy transport.
+
+
+  ### Common failure modes
+
+  Failing to identify shelter options, insufficient supplies, and missing ID or records
+  can jeopardize pet safety.
+
+
+  ### Safety/boundary notes
+
+  Be aware that pets, except for service animals, are generally not allowed in emergency
+  shelters.
+
+
+  ### Local adaptation notes
+
+  Check local shelter policies and identify pet-friendly accommodations in your area.'
+structured_data:
+  tools:
+  - pet carrier
+  - leash
+  materials:
+  - veterinary records
+  success_criteria:
+  - Pet is safely sheltered with necessary supplies and identification.
+  failure_modes:
+  - Lack of shelter options
+  - Insufficient supplies
+  - Missing ID or records
+  safety_boundary: Pets not allowed in emergency shelters
+  implementation:
+    smallest_viable_version: Prepare a basic emergency kit for your pet with essential
+      supplies and identification.
+    tools:
+    - pet carrier
+    - leash
+    materials:
+    - veterinary records
+    expected_time: 1-2 hours
+    expected_cost: low
+    success_checks:
+    - All necessary supplies are gathered and ready for transport.
+    stop_conditions:
+    - Unable to secure a pet-friendly shelter or accommodation.
+    common_mistakes:
+    - Forgetting to update veterinary records.
+    - Not having a proper ID for the pet.
+    variants:
+    - label: Urban
+      when: Living in a city with limited space.
+      notes: Focus on identifying nearby pet-friendly accommodations.
+    - label: Off-grid
+      when: Living in a remote area.
+      notes: Ensure you have a reliable means of transport for your pet.
+    when_to_escalate:
+    - If no pet-friendly shelters are available.
+    - If your pet has special medical needs.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_001
+  claim_text: Pets are vulnerable during disasters and require specific preparations
+    to ensure their safety, as they are often not allowed in emergency shelters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Know that, with the exception of service animals, pets are not typically
+      permitted in emergency shelters as they may affect the health and safety of
+      other occupants.
+    start_char: 487
+    end_char: 608
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_002
+  claim_text: You'll need a pet carrier, leash, veterinary records, and knowledge
+    of local pet-friendly accommodations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Gathering pet supplies. Ensuring your pet has proper ID and up-to-date
+      veterinarian records. Providing a pet carrier and leash.
+    start_char: 102
+    end_char: 211
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_003
+  claim_text: Identify pet-friendly shelters and accommodations. Contact local emergency
+    management or animal control for advice.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Call your local emergency management office, animal shelter, or animal
+      control office to get advice and information.
+    start_char: 213
+    end_char: 295
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_004
+  claim_text: Gather necessary pet supplies, including food, water, and a carrier.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Gathering pet supplies. Providing a pet carrier and leash.
+    start_char: 102
+    end_char: 211
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_005
+  claim_text: Ensure your pet has proper ID and up-to-date veterinary records.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Ensuring your pet has proper ID and up-to-date veterinarian records.
+    start_char: 145
+    end_char: 211
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_006
+  claim_text: Prepare a pet carrier and leash for easy transport.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Providing a pet carrier and leash.
+    start_char: 187
+    end_char: 211
+    support_strength: strong
+- object_id: emergency-preparedness.caring-for-pets
+  claim_id: clm_007
+  claim_text: Be aware that pets, except for service animals, are generally not allowed
+    in emergency shelters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 30
+    page_end: 31
+    segment_id: src.fema.are-you-ready.2004::seg_000042
+    excerpt: Know that, with the exception of service animals, pets are not typically
+      permitted in emergency shelters as they may affect the health and safety of
+      other occupants.
+    start_char: 487
+    end_char: 608
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000042
+bundle_overrides:
+  hook: In emergencies, your pets rely on you for safety and care—being prepared can
+    make all the difference.
+  primer: When disaster strikes, it's not just humans who are affected—our pets are
+    vulnerable too. Many emergency shelters do not allow pets, except for service
+    animals, due to health and safety concerns. This means pet owners need to have
+    a plan in place to ensure their pets' safety and well-being during such times.
+    Essential preparations include gathering necessary supplies like food, water,
+    and a pet carrier, as well as ensuring your pet has proper identification and
+    up-to-date veterinary records. Additionally, knowing where to find pet-friendly
+    accommodations or shelters is crucial. By taking these steps, you can help ensure
+    your pet remains safe and secure, even in the face of unexpected events.
+  guide: '1. **Identify Pet-Friendly Shelters and Accommodations:** Start by contacting
+    your local emergency management office, animal shelter, or animal control office.
+    They can provide advice and information on pet-friendly shelters in your area.
+    Make a list of these places and keep it accessible.
+
+
+    2. **Gather Necessary Pet Supplies:** Prepare a kit that includes enough food
+    and water for at least three days, a pet carrier, and a leash. Ensure the carrier
+    is sturdy and comfortable for your pet.
+
+
+    3. **Ensure Proper ID and Veterinary Records:** Make sure your pet has a collar
+    with an ID tag that includes your contact information. Keep a copy of your pet''s
+    veterinary records, including vaccination history, in your emergency kit.
+
+
+    4. **Prepare for Easy Transport:** Have a pet carrier and leash ready for quick
+    evacuation. Practice getting your pet into the carrier calmly and efficiently.
+
+
+    5. **Regularly Update Your Plan:** Review and update your emergency plan and supplies
+    regularly. Check expiration dates on food and water, and ensure your pet''s ID
+    and records are current.
+
+
+    By following these steps, you can help ensure your pet''s safety during emergencies.'
+  reference:
+  - Pets are not typically allowed in emergency shelters.
+  - 'Gather pet supplies: food, water, carrier, leash.'
+  - Ensure pet has proper ID and up-to-date veterinary records.
+  - Identify pet-friendly shelters and accommodations.
+  - Contact local emergency management for advice.
+  worksheet:
+  - List three local pet-friendly accommodations or shelters.
+  - Create a checklist of pet supplies needed for emergencies.
+  - Practice placing your pet in a carrier quickly and calmly.
+  - Update your pet's ID tag with current contact information.
+  - Review and update your pet's veterinary records.
+  teach_forward_kit:
+    three_minute_version: In emergencies, pets need special care as they are often
+      not allowed in shelters. Prepare by gathering supplies, ensuring proper ID and
+      records, and knowing where to find pet-friendly accommodations.
+    ten_minute_outline:
+    - Introduction to pet care in emergencies.
+    - Discuss the importance of identifying pet-friendly shelters.
+    - Explain the necessary supplies for pet emergency kits.
+    - Highlight the need for proper ID and veterinary records.
+    - Demonstrate how to prepare a pet carrier for transport.
+    - Conclude with tips on maintaining and updating the emergency plan.
+    discussion_prompts:
+    - Why is it important to have a plan for pets during emergencies?
+    - What challenges might pet owners face in finding pet-friendly shelters?
+    - How can pet owners ensure their pets remain calm during evacuations?
+    - What are some common mistakes people make when preparing for pet emergencies?

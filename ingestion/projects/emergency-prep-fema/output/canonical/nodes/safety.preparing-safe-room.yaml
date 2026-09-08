@@ -1,0 +1,319 @@
+id: safety.preparing-safe-room
+slug: safety.preparing-safe-room
+seed_type: project_blueprint
+co_type: project_blueprint
+canonical_title: Preparing a Safe Room
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for building a safe room to protect against extreme windstorms.
+summary_medium: Guidelines for building a safe room to protect against extreme windstorms,
+  including location options and construction requirements.
+plain_language: Learn how to build a safe room in your home to protect against extreme
+  windstorms like tornadoes and hurricanes.
+markdown_body: "### What this is\nA safe room is a specially designed space in your\
+  \ home that provides high-level protection during extreme windstorms, such as tornadoes\
+  \ and hurricanes.\n\n### Why it matters\nExtreme windstorms can severely damage\
+  \ buildings, posing a threat to occupants. A safe room offers a refuge that can\
+  \ withstand high winds and flying debris, ensuring the safety of you and your family.\n\
+  \n### What you need\nYou will need a suitable location in your home, such as a basement,\
+  \ a concrete slab-on-grade foundation, or an interior room on the first floor. Materials\
+  \ must be wind-resistant, and the room must be properly anchored.\n\n### How to\
+  \ do it\n1. Choose a location: Preferably below ground for maximum protection. \n\
+  2. Ensure the room is adequately anchored to resist overturning and uplift. \n3.\
+  \ Use wind-resistant materials for walls, ceiling, and door. \n4. Ensure all connections\
+  \ are strong enough to resist wind. \n5. Separate the safe room structure from the\
+  \ rest of the residence to prevent damage transfer.\n\n### Common failure modes\n\
+  Overturning, uplift, and penetration by debris are common failure modes if the safe\
+  \ room is not properly constructed.\n\n### Safety/boundary notes\nEnsure the safe\
+  \ room is designed to prevent water accumulation, especially if built below ground.\n\
+  \n### Local adaptation notes\nConsider local weather patterns and potential water\
+  \ accumulation when designing a below-ground safe room."
+structured_data:
+  goal: To build a safe room that provides protection during extreme windstorms.
+  deliverables: A completed safe room that meets safety standards for wind resistance.
+  acceptance_criteria: The safe room must withstand high winds and flying debris,
+    and be separate from the main structure to prevent damage transfer.
+  implementation:
+    smallest_viable_version: A basic safe room built in an interior first-floor room.
+    tools:
+    - Concrete tools
+    - Anchoring tools
+    materials:
+    - Concrete slab
+    - Wind-resistant materials
+    expected_time: Several weeks
+    expected_cost: Medium
+    success_checks:
+    - Room withstands simulated wind pressure
+    - No water accumulation
+    stop_conditions:
+    - Structural instability
+    - Water leakage
+    common_mistakes:
+    - Improper anchoring
+    - Using non-resistant materials
+    variants:
+    - label: Below-ground design
+      when: If local conditions allow
+      notes: Provides maximum protection but requires water prevention measures.
+    when_to_escalate:
+    - If structural integrity is compromised
+    - If water leakage is detected
+  safety_boundary: Safe-room construction must meet FEMA/ICC 500 or an equivalent
+    local-code-compliant design — an improperly anchored or built safe room can fail
+    exactly when it's needed. Consult a qualified contractor or structural engineer
+    and verify compliance with local building code before construction; do not rely
+    on an unverified design during an actual severe-wind event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.preparing-safe-room
+  claim_id: clm_001
+  claim_text: A safe room is a specially designed space in your home that provides
+    high-level protection during extreme windstorms, such as tornadoes and hurricanes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The purpose of a safe room or a wind shelter is to provide a space where
+      you and your family can seek refuge that provides a high level of protection.
+    start_char: 140
+    end_char: 255
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_002
+  claim_text: Extreme windstorms can severely damage buildings, posing a threat to
+    occupants. A safe room offers a refuge that can withstand high winds and flying
+    debris, ensuring the safety of you and your family.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Extreme windstorms in many parts of the country pose a serious threat
+      to buildings and their occupants.
+    start_char: 0
+    end_char: 82
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: To protect its occupants, a safe room must be built to withstand high
+      winds and flying debris, even if the rest of the residence is severely damaged
+      or destroyed.
+    start_char: 442
+    end_char: 599
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_003
+  claim_text: You will need a suitable location in your home, such as a basement,
+    a concrete slab-on-grade foundation, or an interior room on the first floor.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: 'You can build a safe room in one of several places in your home: - Your
+      basement. - Atop a concrete slab-on-grade foundation or garage floor. - An interior
+      room on the first floor.'
+    start_char: 256
+    end_char: 440
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_004
+  claim_text: Materials must be wind-resistant, and the room must be properly anchored.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The safe room must be adequately anchored to resist overturning and uplift.
+      The walls, ceiling, and door of the shelter must withstand wind pressure and
+      resist penetration by windborne objects and falling debris.
+    start_char: 600
+    end_char: 843
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_005
+  claim_text: 'Choose a location: Preferably below ground for maximum protection.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Safe rooms built below ground level provide the greatest protection,
+      but a safe room built in a first-floor interior room also can provide the necessary
+      protection.
+    start_char: 441
+    end_char: 599
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_006
+  claim_text: Ensure the room is adequately anchored to resist overturning and uplift.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The safe room must be adequately anchored to resist overturning and uplift.
+    start_char: 600
+    end_char: 664
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_007
+  claim_text: Use wind-resistant materials for walls, ceiling, and door.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The walls, ceiling, and door of the shelter must withstand wind pressure
+      and resist penetration by windborne objects and falling debris.
+    start_char: 665
+    end_char: 843
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_008
+  claim_text: Ensure all connections are strong enough to resist wind.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The connections between all parts of the safe room must be strong enough
+      to resist the wind.
+    start_char: 844
+    end_char: 923
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_009
+  claim_text: Separate the safe room structure from the rest of the residence to prevent
+    damage transfer.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Sections of either interior or exterior residence walls that are used
+      as walls of the safe room, must be separated from the structure of the residence
+      so that damage to the residence will not cause damage to the safe room.
+    start_char: 924
+    end_char: 1073
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_010
+  claim_text: Overturning, uplift, and penetration by debris are common failure modes
+    if the safe room is not properly constructed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: The safe room must be adequately anchored to resist overturning and uplift.
+      The walls, ceiling, and door of the shelter must withstand wind pressure and
+      resist penetration by windborne objects and falling debris.
+    start_char: 600
+    end_char: 843
+    support_strength: strong
+- object_id: safety.preparing-safe-room
+  claim_id: clm_011
+  claim_text: Ensure the safe room is designed to prevent water accumulation, especially
+    if built below ground.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 62
+    page_end: 62
+    segment_id: src.fema.are-you-ready.2004::seg_000084
+    excerpt: Below-ground safe rooms must be designed to avoid accumulating water
+      during the heavy rains that often accompany severe windstorms.
+    start_char: 441
+    end_char: 599
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000084
+bundle_overrides:
+  hook: In the face of extreme windstorms, a well-prepared safe room can be the difference
+    between safety and disaster for you and your family.
+  primer: A safe room is a fortified space within your home designed to provide protection
+    during extreme windstorms, such as tornadoes and hurricanes. These storms can
+    cause significant damage to buildings, posing a serious threat to occupants. A
+    safe room is constructed to withstand high winds and flying debris, ensuring the
+    safety of its occupants even if the rest of the house is damaged. To build a safe
+    room, you need to select a suitable location, such as a basement, a concrete slab-on-grade
+    foundation, or an interior room on the first floor. The materials used must be
+    wind-resistant, and the room must be properly anchored to prevent overturning
+    and uplift. Additionally, it is crucial to separate the safe room structure from
+    the rest of the residence to prevent damage transfer. Proper construction and
+    material selection are vital to avoid common failure modes like overturning and
+    debris penetration. If built below ground, the design must also prevent water
+    accumulation.
+  guide: '1. **Choose a Location:** Ideally, select a below-ground location for maximum
+    protection. If that''s not possible, an interior room on the first floor can also
+    be effective.
+
+
+    2. **Anchor the Room:** Ensure the safe room is adequately anchored to resist
+    overturning and uplift. This involves using strong anchoring tools and techniques
+    to secure the structure to the foundation.
+
+
+    3. **Select Materials:** Use wind-resistant materials for the walls, ceiling,
+    and door. These materials should be capable of withstanding wind pressure and
+    resisting penetration by windborne objects and debris.
+
+
+    4. **Strengthen Connections:** All connections between parts of the safe room
+    must be strong enough to resist wind forces. This includes ensuring that bolts,
+    screws, and other fasteners are secure and appropriate for high-stress conditions.
+
+
+    5. **Separate from Residence:** The safe room should be structurally independent
+    from the rest of the house. This separation prevents damage to the main structure
+    from affecting the integrity of the safe room.
+
+
+    6. **Water Prevention:** If the safe room is below ground, incorporate measures
+    to prevent water accumulation, such as proper drainage systems, to handle the
+    heavy rains that often accompany severe windstorms.'
+  reference:
+  - 'Choose a location: Preferably below ground.'
+  - Anchor the room to resist overturning and uplift.
+  - Use wind-resistant materials for construction.
+  - Ensure strong connections to resist wind.
+  - Separate the safe room from the main structure.
+  - Prevent water accumulation in below-ground rooms.
+  worksheet:
+  - Identify potential locations in your home for a safe room.
+  - List materials needed for wind-resistant construction.
+  - Sketch a basic design of your safe room, including anchoring points.
+  - Research local building codes related to safe room construction.
+  - Plan a drainage system for a below-ground safe room.
+  teach_forward_kit:
+    three_minute_version: A safe room is a fortified space in your home designed to
+      protect you during extreme windstorms. It should be built in a secure location,
+      using wind-resistant materials, and properly anchored to withstand high winds
+      and debris. Ensure it is separate from the main structure to prevent damage
+      transfer.
+    ten_minute_outline:
+    - Introduction to safe rooms and their purpose.
+    - Importance of location selection and anchoring.
+    - Materials and construction techniques for wind resistance.
+    - Ensuring structural independence from the main house.
+    - Addressing water accumulation in below-ground rooms.
+    - Review of common construction mistakes and how to avoid them.
+    discussion_prompts:
+    - Why is it important to have a safe room in areas prone to extreme windstorms?
+    - What are the key considerations when selecting a location for a safe room?
+    - How can you ensure that a safe room remains structurally sound during a storm?
+    - What are the potential challenges of building a below-ground safe room?

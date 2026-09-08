@@ -1,0 +1,195 @@
+id: emergency-preparedness.elevated-risk-actions
+slug: emergency-preparedness.elevated-risk-actions
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Actions for Elevated Risk Level
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Steps to take during elevated risk levels.
+summary_medium: Guidance on ensuring disaster supplies are ready and updating emergency
+  plans during elevated risk levels.
+plain_language: When the risk level is elevated, make sure your disaster supplies
+  are ready and your family emergency plan is up to date.
+markdown_body: '### What this is
+
+  This reference sheet provides actions to take when the risk level is elevated, indicated
+  by the color yellow. It focuses on preparedness steps to ensure safety and readiness.
+
+
+  ### Why it matters
+
+  Elevated risk levels indicate a higher likelihood of emergencies. Being prepared
+  can help reduce the impact of such events on you and your family.
+
+
+  ### What you need
+
+  You will need your disaster supplies and a copy of your family emergency plan.
+
+
+  ### How to do it
+
+  1. Ensure your disaster supplies are fully stocked and ready for use.
+
+  2. Review and update the telephone numbers in your family emergency plan.
+
+  3. Develop and practice alternate routes to and from work or school.
+
+  4. Stay alert for any suspicious activity and report it to the authorities.
+
+
+  ### Common failure modes
+
+  Failing to update contact information or neglecting to practice alternate routes
+  can lead to confusion during an emergency.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety when reporting suspicious activities. Use discretion
+  and contact authorities when necessary.
+
+
+  ### Local adaptation notes
+
+  Consider local emergency services and routes when updating your family emergency
+  plan.'
+structured_data:
+  tools:
+  - disaster supplies
+  - family emergency plan
+  materials: []
+  success_criteria:
+  - Disaster supplies are ready
+  - Family emergency plan is updated
+  failure_modes:
+  - Outdated contact information
+  - Unpracticed emergency routes
+  safety_boundary:
+  - Report suspicious activity safely
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_001
+  claim_text: This reference sheet provides actions to take when the risk level is
+    elevated, indicated by the color yellow.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Elevated Risk YELLOW
+    start_char: 0
+    end_char: 22
+    support_strength: strong
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_002
+  claim_text: Elevated risk levels indicate a higher likelihood of emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Elevated Risk YELLOW
+    start_char: 0
+    end_char: 22
+    support_strength: medium
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_003
+  claim_text: Ensure your disaster supplies are fully stocked and ready for use.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Ensure disaster supplies are stocked and ready.
+    start_char: 48
+    end_char: 93
+    support_strength: strong
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_004
+  claim_text: Review and update the telephone numbers in your family emergency plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Check telephone numbers in family emergency plan and update as necessary.
+    start_char: 95
+    end_char: 161
+    support_strength: strong
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_005
+  claim_text: Develop and practice alternate routes to and from work or school.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Develop alternate routes to/from work or school and practice them.
+    start_char: 163
+    end_char: 221
+    support_strength: strong
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_006
+  claim_text: Stay alert for any suspicious activity and report it to the authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Continue to be alert for suspicious activity and report it to authorities.
+    start_char: 223
+    end_char: 287
+    support_strength: strong
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_007
+  claim_text: Failing to update contact information or neglecting to practice alternate
+    routes can lead to confusion during an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Check telephone numbers in family emergency plan and update as necessary.
+      Develop alternate routes to/from work or school and practice them.
+    start_char: 95
+    end_char: 221
+    support_strength: medium
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_008
+  claim_text: Always prioritize personal safety when reporting suspicious activities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Continue to be alert for suspicious activity and report it to authorities.
+    start_char: 223
+    end_char: 287
+    support_strength: medium
+- object_id: emergency-preparedness.elevated-risk-actions
+  claim_id: clm_009
+  claim_text: Consider local emergency services and routes when updating your family
+    emergency plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000265
+    excerpt: Develop alternate routes to/from work or school and practice them.
+    start_char: 163
+    end_char: 221
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000265

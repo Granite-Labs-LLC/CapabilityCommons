@@ -1,0 +1,412 @@
+canonical_title: Responding to Biological Threats
+citations:
+- claim_id: clm_001
+  claim_text: Monitor media for official information about the attack, symptoms, and
+    medical advice.
+  object_id: emergency-management.biological-attack-response
+  support:
+  - end_char: 536
+    excerpt: Watch television, listen to radio, or check the Internet for official
+      news and information including signs and symptoms of the disease, areas in danger,
+      if medications or vaccinations are being distributed, and where you should seek
+      medical attention if you become ill.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 269
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Practice good hygiene by washing with soap and water.
+  object_id: emergency-management.biological-attack-response
+  support:
+  - end_char: 662
+    excerpt: Use common sense and practice good hygiene.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 623
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: If exposed, remove contaminated clothing, wash thoroughly, and seek
+    medical attention.
+  object_id: emergency-management.biological-attack-response
+  support:
+  - end_char: 1074
+    excerpt: 'If you are exposed to a biological agent: Remove and bag your clothes
+      and personal items. Follow official instructions for disposal of contaminated
+      items. Wash yourself with soap and water and put on clean clothes. Seek medical
+      assistance.'
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 828
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: Follow official instructions for disposal of contaminated items and
+    possible quarantine measures.
+  object_id: emergency-management.biological-attack-response
+  support:
+  - end_char: 1074
+    excerpt: Follow official instructions for disposal of contaminated items. Seek
+      medical assistance. You may be advised to stay away from others or even quarantined.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 882
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: This guide provides steps to follow if you are exposed to a biological
+    agent, focusing on immediate decontamination and seeking medical help.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: 'If you are exposed to a biological agent: Remove and bag your clothes
+      and personal items. Follow official instructions for disposal of contaminated
+      items. Wash yourself with soap and water and put on clean clothes. Seek medical
+      assistance. You may be advised to stay away from others or even quarantined.'
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Exposure to biological agents can lead to serious health issues. Quick
+    and effective response can reduce the risk of infection and spread.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: The first evidence of an attack may be when you notice symptoms of the
+      disease caused by exposure to an agent. Be suspicious of any symptoms you notice,
+      but do not assume that any illness is a result of the attack. Use common sense
+      and practice good hygiene.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_007
+  claim_text: Access to soap and water, clean clothes, and a way to contact medical
+    authorities.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Wash with soap and water. Contact authorities. Seek medical attention
+      if you become sick.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Remove and bag your clothes and personal items. Follow official instructions
+    for disposal of contaminated items.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Remove and bag your clothes and personal items. Follow official instructions
+      for disposal of contaminated items.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Wash yourself thoroughly with soap and water.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Wash yourself with soap and water and put on clean clothes.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_010
+  claim_text: Put on clean clothes.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Wash yourself with soap and water and put on clean clothes.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_011
+  claim_text: Seek medical assistance immediately. You may be advised to stay away
+    from others or even quarantined.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Seek medical assistance. You may be advised to stay away from others
+      or even quarantined.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_012
+  claim_text: Improper decontamination or failure to seek medical help can increase
+    health risks.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Use common sense and practice good hygiene. Seek medical attention if
+      you become sick.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_013
+  claim_text: Ensure that you follow official instructions and maintain hygiene to
+    prevent further contamination.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Follow official instructions for disposal of contaminated items. Use
+      common sense and practice good hygiene.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_014
+  claim_text: Local health authorities may have specific instructions based on the
+    type of biological agent and available resources.
+  object_id: emergency-management.exposure-response
+  support:
+  - end_char: 300
+    excerpt: Listen to the media for official instructions.
+    page_end: 158
+    page_start: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+co_type: skill_guide
+contexts: []
+cost_band: low
+difficulty: 3
+id: emergency-management.biological-attack-response
+language_code: en
+lifecycle_state: published
+markdown_body: '### What this is
+
+
+  This guide provides steps to take during a biological attack or if exposed to a
+  biological agent, focusing on ensuring personal safety and health.
+
+
+  ### Why it matters
+
+
+  Biological attacks and exposure to biological agents can spread diseases rapidly,
+  and knowing how to respond can prevent illness and save lives.
+
+
+  ### What you need
+
+
+  Access to media (TV, radio, Internet), soap and water, clean clothes, and a means
+  to contact authorities.
+
+
+  ### How to do it
+
+
+  1. Monitor media for official information about the attack, symptoms, and medical
+  advice.
+
+
+  2. Practice good hygiene by washing with soap and water.
+
+
+  3. If exposed, remove contaminated clothing, wash thoroughly, and seek medical attention.
+
+
+  4. Follow official instructions for disposal of contaminated items and possible
+  quarantine measures.
+
+
+  ### Common failure modes
+
+
+  Delayed response due to misinformation or lack of awareness, not practicing hygiene,
+  and not seeking timely medical attention.
+
+
+  ### Safety/boundary notes
+
+
+  Always follow official instructions and do not assume symptoms are related to the
+  attack without confirmation.
+
+
+  ### Local adaptation notes
+
+
+  Adapt response based on local public health guidelines and available resources.'
+plain_language: This guide helps you understand what to do during a biological attack
+  or if exposed to a biological agent, such as staying informed through media, maintaining
+  hygiene, and getting medical help if needed.
+primary_domain: emergency-management
+requires: []
+risk_band: high
+secondary_domains: []
+seed_type: extracted
+slug: emergency-management.biological-attack-response
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000244
+stage: community
+structured_data:
+  failure_modes:
+  - Delayed response due to misinformation.
+  - Ignoring symptoms or not practicing hygiene.
+  - Improper decontamination
+  - Failure to seek medical help
+  implementation:
+    common_mistakes:
+    - Ignoring official advice.
+    - Delaying medical consultation.
+    - Inadequate washing
+    expected_cost: Low
+    expected_time: Varies based on situation
+    materials: []
+    smallest_viable_version: Stay informed and practice hygiene during a biological
+      attack.
+    stop_conditions:
+    - Official declaration of safety.
+    - Medical clearance.
+    - Symptoms worsen despite initial decontamination.
+    - Official instructions contradict initial actions.
+    success_checks:
+    - Access to reliable information sources.
+    - Effective hygiene practices.
+    - Timely medical consultation.
+    - Clothes and personal items are bagged and disposed of properly.
+    - Body is thoroughly washed with soap and water.
+    - Medical assistance is sought promptly.
+    tools: []
+    variants:
+    - label: Urban
+      notes: Increased risk of rapid disease spread.
+      when: In densely populated areas.
+    - label: Off-grid
+      notes: Limited access to media and medical facilities.
+      when: In remote areas.
+    when_to_escalate:
+    - Severe symptoms appear.
+    - Official instructions for quarantine.
+    - If symptoms develop or worsen
+    - If instructed by authorities
+  materials: []
+  safety_boundary:
+  - Follow official instructions and avoid assumptions about symptoms.
+  - Maintain hygiene
+  success_criteria:
+  - Staying informed through reliable media sources.
+  - Practicing good hygiene to prevent disease spread.
+  - Seeking medical attention promptly if symptoms appear.
+  - Effective decontamination and timely medical consultation.
+  tools: []
+suggested_edges: []
+summary_medium: Learn how to respond effectively during a biological attack or exposure
+  by monitoring media for updates, practicing good hygiene, and seeking medical attention
+  when necessary.
+summary_short: Steps to take during a biological attack or exposure, including monitoring
+  media for information and practicing good hygiene.
+version_no: 1
+visibility: public
+bundle_overrides:
+  hook: Understanding how to respond to biological threats can save lives by preventing
+    the spread of disease and ensuring timely medical intervention.
+  primer: Biological threats, such as attacks or accidental exposure to harmful biological
+    agents, pose significant risks to public health. These agents can spread diseases
+    quickly, making it crucial to respond effectively and promptly. The first step
+    in managing such a situation is to stay informed through reliable media sources
+    like TV, radio, or the Internet. This helps you receive official updates on the
+    nature of the threat, symptoms to watch for, and any medical advice or instructions
+    from authorities. Practicing good hygiene, such as washing hands thoroughly with
+    soap and water, is essential to minimize the risk of infection. If you suspect
+    exposure to a biological agent, it is vital to remove contaminated clothing, wash
+    your body thoroughly, and seek medical attention immediately. Following official
+    instructions for the disposal of contaminated items and adhering to quarantine
+    measures, if advised, can further prevent the spread of disease. By understanding
+    these steps, you can protect yourself and others in the event of a biological
+    threat.
+  guide: '1. **Stay Informed**: Regularly monitor reliable media sources such as TV,
+    radio, or the Internet for official updates about the biological threat. This
+    includes information on symptoms, affected areas, and medical advice.
+
+
+    2. **Practice Good Hygiene**: Wash your hands and body thoroughly with soap and
+    water. This simple step is crucial in preventing the spread of infectious agents.
+
+
+    3. **Decontaminate if Exposed**: If you believe you have been exposed to a biological
+    agent, immediately remove and bag your clothes and personal items. Wash yourself
+    thoroughly with soap and water, and put on clean clothes.
+
+
+    4. **Seek Medical Assistance**: Contact medical authorities as soon as possible.
+    They can provide guidance on symptoms and necessary treatments. Be prepared to
+    follow their instructions, which may include quarantine measures.
+
+
+    5. **Dispose of Contaminated Items**: Follow official instructions for the disposal
+    of any contaminated items to prevent further spread of the agent.
+
+
+    6. **Follow Quarantine Measures**: If advised by authorities, adhere to quarantine
+    measures to protect yourself and others from potential infection.
+
+
+    By following these steps, you can effectively manage your response to a biological
+    threat and reduce the risk of infection.'
+  reference:
+  - Monitor media for official updates.
+  - Practice good hygiene with soap and water.
+  - Remove and bag contaminated clothing.
+  - Seek medical assistance immediately.
+  - Follow official disposal instructions.
+  - Adhere to quarantine measures if advised.
+  worksheet:
+  - List three reliable media sources you can use to stay informed during a biological
+    threat.
+  - Describe the steps you would take to practice good hygiene in the event of exposure.
+  - Outline the process for decontaminating yourself if exposed to a biological agent.
+  - Identify local medical facilities you can contact for assistance during a biological
+    threat.
+  - Explain the importance of following official instructions for disposal of contaminated
+    items.
+  teach_forward_kit:
+    three_minute_version: In the event of a biological threat, stay informed through
+      reliable media, practice good hygiene, decontaminate if exposed, seek medical
+      help, and follow official instructions for disposal and quarantine.
+    ten_minute_outline:
+    - Introduction to biological threats and their impact.
+    - Importance of staying informed through media.
+    - Steps for practicing good hygiene.
+    - Decontamination process if exposed.
+    - Seeking medical assistance and following official advice.
+    - Discussion on disposal and quarantine measures.
+    discussion_prompts:
+    - Why is it important to monitor media during a biological threat?
+    - How can good hygiene practices prevent the spread of disease?
+    - What challenges might you face in seeking medical assistance during a biological
+      threat?
+    - Discuss the importance of following official instructions for disposal and quarantine.

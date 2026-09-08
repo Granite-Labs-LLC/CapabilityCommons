@@ -1,0 +1,144 @@
+id: disaster-preparedness.landslides-and-debris-flow
+slug: disaster-preparedness.landslides-and-debris-flow
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Landslides and Debris Flow (Mudslide)
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Understanding landslides and debris flows, their causes, and mitigation
+  strategies.
+summary_medium: Landslides and debris flows are natural disasters involving the movement
+  of rock, earth, or debris down slopes, often triggered by natural events or human
+  activities. Proper land management and zoning can mitigate these risks.
+plain_language: Landslides and debris flows are when large amounts of earth or rock
+  move down a slope, often due to rain, earthquakes, or human activity. They can be
+  dangerous and happen quickly. Good planning and land use can help prevent them.
+markdown_body: '# What this is
+
+  Landslides and debris flows involve the movement of rock, earth, or debris down
+  a slope. They can be triggered by natural events like storms, earthquakes, and volcanic
+  eruptions, or by human activities such as land modification.
+
+
+  # Why it matters
+
+  These events can cause significant damage to property and pose serious risks to
+  human safety. Understanding their causes and implementing mitigation strategies
+  is crucial for disaster preparedness.
+
+
+  # What you need
+
+  Awareness of local geological conditions, knowledge of land-use zoning regulations,
+  and access to professional inspection services.
+
+
+  # How to do it
+
+  Conduct professional inspections of at-risk areas, implement proper land-use zoning,
+  and design infrastructure with slope stability in mind to minimize risks.
+
+
+  # Common failure modes
+
+  Improper land management and zoning can exacerbate the risk of landslides and debris
+  flows.
+
+
+  # Safety/boundary notes
+
+  Ensure that any development in prone areas adheres to safety guidelines and zoning
+  laws.
+
+
+  # Local adaptation notes
+
+  Consider regional land-use policies and local geological conditions when planning
+  mitigation strategies.'
+structured_data:
+  definition: Landslides and debris flows are movements of rock, earth, or debris
+    down a slope, often triggered by natural or human-induced events.
+  key_questions:
+  - What triggers landslides and debris flows?
+  - How can land-use zoning help mitigate these risks?
+  - What are the signs of potential landslides?
+  misconceptions:
+  - Landslides only occur in mountainous regions.
+  - Debris flows are always slow-moving.
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-preparedness.landslides-and-debris-flow
+  claim_id: clm_001
+  claim_text: Landslides and debris flows involve the movement of rock, earth, or
+    debris down a slope. They can be triggered by natural events like storms, earthquakes,
+    and volcanic eruptions, or by human activities such as land modification.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 106
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000166
+    excerpt: Landslides occur in all U.S. states and territories. In a landslide,
+      masses of rock, earth, or debris move down a slope. Landslides may be small
+      or large, slow or rapid. They are activated by storms, earthquakes, volcanic
+      eruptions, fi res, and human modifi cation of land.
+    start_char: 0
+    end_char: 254
+    support_strength: strong
+- object_id: disaster-preparedness.landslides-and-debris-flow
+  claim_id: clm_002
+  claim_text: These events can cause significant damage to property and pose serious
+    risks to human safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 106
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000166
+    excerpt: Debris and mud fl ows are rivers of rock, earth, and other debris saturated
+      with water. They develop when water rapidly accumulates in the ground, during
+      heavy rainfall or rapid snowmelt, changing the earth into a fl owing river of
+      mud or "slurry." They fl ow can rapidly, striking with little or no warning
+      at avalanche speeds.
+    start_char: 255
+    end_char: 512
+    support_strength: medium
+- object_id: disaster-preparedness.landslides-and-debris-flow
+  claim_id: clm_003
+  claim_text: Conduct professional inspections of at-risk areas, implement proper
+    land-use zoning, and design infrastructure with slope stability in mind to minimize
+    risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 106
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000166
+    excerpt: Land-use zoning, professional inspections, and proper design can minimize
+      many landslide, mudfl ow, and debris fl ow problems.
+    start_char: 513
+    end_char: 603
+    support_strength: strong
+- object_id: disaster-preparedness.landslides-and-debris-flow
+  claim_id: clm_004
+  claim_text: Improper land management and zoning can exacerbate the risk of landslides
+    and debris flows.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 106
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000166
+    excerpt: Landslide problems can be caused by land mismanagement, particularly
+      in mountain, canyon, and coastal regions.
+    start_char: 604
+    end_char: 680
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000166

@@ -1,0 +1,179 @@
+id: disaster-preparedness.facilitator-guide
+slug: disaster-preparedness.facilitator-guide
+seed_type: teach_forward_packet
+co_type: teach_forward_packet
+canonical_title: Disaster Preparedness Facilitator Guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-preparedness
+secondary_domains: []
+stage: community
+contexts:
+- school children
+- community organizations
+- scouts
+- social groups
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Facilitator Guide for teaching disaster preparedness.
+summary_medium: The Facilitator Guide aids in teaching disaster preparedness with
+  lesson plans, audience engagement guidelines, and training resources.
+plain_language: This guide helps you teach others about being ready for disasters.
+  It includes lesson plans and resources to make your sessions effective.
+markdown_body: '### What this is
+
+  The Facilitator Guide is a comprehensive resource designed to help individuals teach
+  disaster preparedness effectively. It includes lesson plans, guidelines for engaging
+  different audiences, and additional resources to enhance training sessions.
+
+
+  ### Why it matters
+
+  Teaching disaster preparedness is crucial for ensuring that communities are ready
+  to respond effectively in the event of a disaster. This guide provides the necessary
+  tools and information to deliver impactful training.
+
+
+  ### What you need
+
+  To use this guide, you will need the Facilitator Guide itself, a CD-ROM with teaching
+  aids, electronic visuals, and handouts for distribution.
+
+
+  ### How to do it
+
+  Use the lesson plans and guidelines provided in the guide to structure your training
+  sessions. Engage your audience with the electronic visuals and distribute handouts
+  to reinforce key information.
+
+
+  ### Common failure modes
+
+  Ineffective audience engagement and lack of resource availability can hinder the
+  success of training sessions.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Tailor lesson plans to meet local needs and adapt visuals to ensure they are relevant
+  to the local context.'
+structured_data:
+  tools:
+  - Facilitator Guide
+  - CD-ROM with teaching aids
+  - electronic visuals
+  - handouts
+  materials: []
+  success_criteria:
+  - Effective audience engagement
+  - Comprehensive understanding of disaster preparedness
+  failure_modes:
+  - Ineffective audience engagement
+  - Lack of resource availability
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_001
+  claim_text: The Facilitator Guide is a comprehensive resource designed to help individuals
+    teach disaster preparedness effectively. It includes lesson plans, guidelines
+    for engaging different audiences, and additional resources to enhance training
+    sessions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: The Facilitator Guide includes guidelines on how to deliver training
+      to various audiences, generic lesson plans for teaching disaster preparedness,
+      and information on how to obtain other resources that can be used to augment
+      the material in the *Are You Ready?* guide.
+    start_char: 209
+    end_char: 416
+    support_strength: strong
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_002
+  claim_text: Teaching disaster preparedness is crucial for ensuring that communities
+    are ready to respond effectively in the event of a disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: Teaching others about disaster preparedness is a rewarding experience
+      that results from knowing you have helped your fellow citizens be ready in the
+      event a disaster should strike.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_003
+  claim_text: To use this guide, you will need the Facilitator Guide itself, a CD-ROM
+    with teaching aids, electronic visuals, and handouts for distribution.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: The Facilitator Guide with an accompanying CD-ROM for use with this *Are
+      You Ready?* guide. The CD-ROM contains teaching aids such as electronic visuals
+      that reflect key information and handouts that can be printed and distributed
+      to reinforce what is being presented.
+    start_char: 145
+    end_char: 416
+    support_strength: strong
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_004
+  claim_text: Use the lesson plans and guidelines provided in the guide to structure
+    your training sessions. Engage your audience with the electronic visuals and distribute
+    handouts to reinforce key information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: The Facilitator Guide includes guidelines on how to deliver training
+      to various audiences, generic lesson plans for teaching disaster preparedness...
+      The CD-ROM contains teaching aids such as electronic visuals that reflect key
+      information and handouts that can be printed and distributed to reinforce what
+      is being presented.
+    start_char: 209
+    end_char: 416
+    support_strength: strong
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_005
+  claim_text: Ineffective audience engagement and lack of resource availability can
+    hinder the success of training sessions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: The materials are appropriate for use in training groups such as school
+      children, community organizations, scouts, social groups, and many others.
+    start_char: 145
+    end_char: 209
+    support_strength: medium
+- object_id: disaster-preparedness.facilitator-guide
+  claim_id: clm_006
+  claim_text: Tailor lesson plans to meet local needs and adapt visuals to ensure
+    they are relevant to the local context.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 5
+    page_end: 5
+    segment_id: src.fema.are-you-ready.2004::seg_000006
+    excerpt: The Facilitator Guide includes guidelines on how to deliver training
+      to various audiences...
+    start_char: 209
+    end_char: 416
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000006

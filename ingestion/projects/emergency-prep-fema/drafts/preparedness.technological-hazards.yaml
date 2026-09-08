@@ -1,0 +1,275 @@
+id: preparedness.technological-hazards
+slug: preparedness.technological-hazards
+seed_type: module
+co_type: skill_guide
+canonical_title: Preparedness for Technological Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to prepare for technological hazards like hazardous materials
+  incidents and chemical emergencies.
+summary_medium: This module provides guidance on preparing for technological hazards,
+  including hazardous materials incidents, household chemical emergencies, and nuclear
+  power plant incidents. It covers essential steps to ensure safety and minimize risks.
+plain_language: This guide helps you prepare for emergencies related to technology,
+  such as chemical spills or nuclear plant issues. It explains what to do to stay
+  safe and reduce danger.
+markdown_body: '# What this is
+
+  This module focuses on preparedness for technological hazards, which include hazardous
+  materials incidents, household chemical emergencies, and nuclear power plant incidents.
+  It provides essential information and steps to help individuals and families prepare
+  for these types of emergencies.
+
+
+  # Why it matters
+
+  Technological hazards can pose significant risks to health and safety. Being prepared
+  can help mitigate these risks, ensuring that individuals and families know how to
+  respond effectively to minimize harm.
+
+
+  # What you need
+
+  To prepare for technological hazards, you need to be informed about potential risks
+  in your area, have a plan in place for emergencies, and assemble a disaster supplies
+  kit that includes items specific to technological emergencies.
+
+
+  # How to do it
+
+  1. Get informed about the types of technological hazards that could affect your
+  area. 2. Develop an emergency plan that includes evacuation routes and communication
+  strategies. 3. Assemble a disaster supplies kit with items like protective clothing,
+  masks, and a battery-powered radio. 4. Practice your emergency plan regularly to
+  ensure everyone knows what to do.
+
+
+  # Common failure modes
+
+  Common mistakes include not having a plan, failing to update emergency kits, and
+  not practicing the emergency plan regularly. Additionally, underestimating the severity
+  of technological hazards can lead to inadequate preparation.
+
+
+  # Safety/boundary notes
+
+  Always prioritize safety by following official guidance during an emergency. Avoid
+  exposure to hazardous materials and evacuate if instructed by authorities.
+
+
+  # Local adaptation notes
+
+  Adapt your emergency plan and supplies kit based on the specific technological hazards
+  prevalent in your area. Consider local resources and infrastructure when planning.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Having a comprehensive emergency plan in place.
+  - Possessing a well-stocked disaster supplies kit.
+  - Regularly practicing emergency procedures.
+  failure_modes:
+  - Lack of awareness about local technological hazards.
+  - Inadequate emergency supplies.
+  - Failure to communicate the emergency plan to all family members.
+  safety_boundary:
+  - Follow evacuation orders promptly.
+  - Use protective gear when dealing with hazardous materials.
+  implementation:
+    smallest_viable_version: Create a basic emergency plan and kit for technological
+      hazards.
+    tools: []
+    materials: []
+    expected_time: Varies based on individual preparation needs.
+    expected_cost: Low to moderate, depending on the items needed for the emergency
+      kit.
+    success_checks:
+    - Emergency plan is documented and accessible.
+    - Disaster supplies kit is complete and up-to-date.
+    stop_conditions:
+    - Plan is not practiced regularly.
+    - Supplies kit is incomplete.
+    common_mistakes:
+    - Ignoring local hazard warnings.
+    - Failing to update emergency contact information.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Consider additional communication strategies due to potential network
+        congestion.
+    - label: Off-grid
+      when: Living in a remote area.
+      notes: Ensure self-sufficiency with additional supplies and independent power
+        sources.
+    when_to_escalate:
+    - If hazardous materials are released and you are unsure of safety procedures.
+    - If instructed by local authorities to evacuate.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.technological-hazards
+  claim_id: clm_001
+  claim_text: This module focuses on preparedness for technological hazards, which
+    include hazardous materials incidents, household chemical emergencies, and nuclear
+    power plant incidents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Part 3 Technological Hazards | Section 3.1 Hazardous Materials Incidents
+      | Section 3.2 Household Chemical Emergencies | Section 3.3 Nuclear Power Plants
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: preparedness.technological-hazards
+  claim_id: clm_002
+  claim_text: Technological hazards can pose significant risks to health and safety.
+    Being prepared can help mitigate these risks, ensuring that individuals and families
+    know how to respond effectively to minimize harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000009
+    excerpt: Being prepared can reduce fear, anxiety, and losses that accompany disasters.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: preparedness.technological-hazards
+  claim_id: clm_003
+  claim_text: To prepare for technological hazards, you need to be informed about
+    potential risks in your area, have a plan in place for emergencies, and assemble
+    a disaster supplies kit that includes items specific to technological emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.1 Getting Informed | Section 1.2 Emergency Planning and Checklists
+      | Section 1.3 Assemble a Disaster Supplies Kit
+    start_char: 0
+    end_char: 0
+    support_strength: strong
+- object_id: preparedness.technological-hazards
+  claim_id: clm_004
+  claim_text: Common mistakes include not having a plan, failing to update emergency
+    kits, and not practicing the emergency plan regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 6
+    page_end: 6
+    segment_id: src.fema.are-you-ready.2004::seg_000007
+    excerpt: Section 1.6 Practicing and Maintaining Your Plan
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+- object_id: preparedness.technological-hazards
+  claim_id: clm_005
+  claim_text: Always prioritize safety by following official guidance during an emergency.
+    Avoid exposure to hazardous materials and evacuate if instructed by authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: If a disaster occurs in your community, local government and disaster-relief
+      organizations will try to help you, but you need to be ready as well.
+    start_char: 0
+    end_char: 0
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000007
+bundle_overrides:
+  hook: Being prepared for technological hazards can significantly reduce risks to
+    your health and safety during emergencies.
+  primer: Technological hazards refer to emergencies that arise from human-made sources,
+    such as hazardous materials incidents, household chemical emergencies, and nuclear
+    power plant incidents. These hazards can pose significant risks to health and
+    safety, making preparedness crucial. Understanding the potential risks in your
+    area is the first step in being prepared. This involves knowing the types of technological
+    hazards that could occur and how they might impact you and your community. Once
+    informed, developing a comprehensive emergency plan is essential. This plan should
+    include evacuation routes, communication strategies, and a clear understanding
+    of what to do in different scenarios. Additionally, assembling a disaster supplies
+    kit tailored to technological emergencies is vital. This kit should contain items
+    like protective clothing, masks, and a battery-powered radio. Regularly practicing
+    your emergency plan ensures that everyone knows what to do, reducing panic and
+    confusion during an actual event. Common mistakes in preparedness include not
+    having a plan, failing to update emergency kits, and not practicing the plan regularly.
+    By being proactive and prepared, you can minimize the impact of technological
+    hazards on your life.
+  guide: '1. **Get Informed**: Research the types of technological hazards that could
+    affect your area. This includes understanding local industrial activities, nearby
+    nuclear power plants, and common household chemical risks.
+
+
+    2. **Develop an Emergency Plan**: Create a plan that includes evacuation routes,
+    communication strategies, and roles for each family member. Ensure everyone knows
+    the plan and understands their responsibilities.
+
+
+    3. **Assemble a Disaster Supplies Kit**: Gather essential items specific to technological
+    emergencies. Include protective clothing, masks, a battery-powered radio, and
+    any other items recommended for your specific risks.
+
+
+    4. **Practice Your Plan**: Conduct regular drills to ensure everyone is familiar
+    with the emergency procedures. This helps to identify any gaps in the plan and
+    allows for adjustments as needed.
+
+
+    5. **Stay Updated**: Keep your emergency plan and supplies kit up-to-date. Regularly
+    review and update contact information, and replace expired items in your kit.
+
+
+    6. **Follow Official Guidance**: During an emergency, always prioritize safety
+    by following instructions from local authorities. Evacuate if instructed and avoid
+    exposure to hazardous materials.'
+  reference:
+  - 'Types of technological hazards: hazardous materials incidents, household chemical
+    emergencies, nuclear power plant incidents.'
+  - 'Key components of an emergency plan: evacuation routes, communication strategies,
+    family roles.'
+  - 'Essential items for a disaster supplies kit: protective clothing, masks, battery-powered
+    radio.'
+  - 'Common preparedness mistakes: not having a plan, outdated emergency kits, lack
+    of practice.'
+  - 'Safety priority: follow official guidance, evacuate if instructed.'
+  worksheet:
+  - List three technological hazards that could affect your area.
+  - Create a basic emergency plan outline, including evacuation routes and communication
+    strategies.
+  - Identify five items to include in your disaster supplies kit for technological
+    emergencies.
+  - Conduct a family drill using your emergency plan and note any areas for improvement.
+  - Research local resources and contacts for technological hazard emergencies.
+  teach_forward_kit:
+    three_minute_version: Technological hazards, such as chemical spills and nuclear
+      incidents, pose significant risks. Being prepared involves understanding local
+      risks, creating an emergency plan, assembling a supplies kit, and practicing
+      regularly. Follow official guidance during emergencies to ensure safety.
+    ten_minute_outline:
+    - Introduction to technological hazards and their risks.
+    - Steps to get informed about local hazards.
+    - Developing a comprehensive emergency plan.
+    - Assembling a disaster supplies kit specific to technological emergencies.
+    - Importance of practicing the emergency plan regularly.
+    - Safety tips and following official guidance during emergencies.
+    discussion_prompts:
+    - What are some technological hazards you think are most relevant to your community?
+    - How can you ensure your emergency plan is effective and up-to-date?
+    - What challenges might you face in assembling a disaster supplies kit, and how
+      can you overcome them?
+    - Why is it important to practice your emergency plan regularly?
+    - How can local authorities and communities work together to improve preparedness
+      for technological hazards?

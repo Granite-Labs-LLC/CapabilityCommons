@@ -1,0 +1,184 @@
+id: water-conservation.kitchen-practices
+slug: water-conservation.kitchen-practices
+seed_type: extracted
+co_type: reference_sheet
+canonical_title: 'Water Conservation: Kitchen Practices'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: water-conservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for reducing water usage in the kitchen.
+summary_medium: Learn efficient kitchen practices to conserve water, including dishwasher
+  use, hand washing techniques, and alternative food waste disposal.
+plain_language: This guide provides practical tips for saving water in the kitchen,
+  such as using dishwashers efficiently, washing dishes by hand with minimal water,
+  and composting food waste.
+markdown_body: '### What this is
+
+  This reference sheet offers practical guidelines for reducing water usage in the
+  kitchen through efficient practices.
+
+
+  ### Why it matters
+
+  Conserving water in the kitchen helps reduce utility bills and supports environmental
+  sustainability by minimizing water waste.
+
+
+  ### What you need
+
+  An automatic dishwasher, containers for washing, a pan for cleaning vegetables,
+  and a compost pile.
+
+
+  ### How to do it
+
+  Operate dishwashers only when full and use the ''light wash'' feature. Hand wash
+  dishes using two containers: one with soapy water and another for rinsing. Clean
+  vegetables in a pan of water instead of under running water. Start a compost pile
+  for food waste. Store drinking water in the refrigerator to avoid running the tap.
+  Capture water while waiting for it to heat and use it for other purposes. Avoid
+  rinsing dishes before loading them into the dishwasher. Defrost food in the refrigerator
+  or use a microwave.
+
+
+  ### Common failure modes
+
+  Running the dishwasher when not full, using running water for washing or defrosting,
+  and not capturing water for reuse.
+
+
+  ### Safety/boundary notes
+
+  Ensure that rinse water contains a small amount of chlorine bleach for sanitation.
+
+
+  ### Local adaptation notes
+
+  Adjust practices based on local water availability and regulations.'
+structured_data:
+  definition: Guidelines for reducing water usage in the kitchen.
+  key_questions:
+  - How can I reduce water usage when washing dishes?
+  - What are alternative methods for disposing of food waste?
+  misconceptions:
+  - Rinsing dishes before loading them into the dishwasher is necessary.
+  - Running water is needed to defrost food.
+requires: []
+suggested_edges: []
+citations:
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_001
+  claim_text: Operate dishwashers only when full and use the 'light wash' feature.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Operate automatic dishwashers only when they are fully loaded. Use the
+      'light wash' feature, if available, to use less water.
+    start_char: 11
+    end_char: 116
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_002
+  claim_text: 'Hand wash dishes using two containers: one with soapy water and another
+    for rinsing.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Hand wash dishes by fi lling two containers—one with soapy water and
+      the other with rinse water containing a small amount of chlorine bleach.
+    start_char: 117
+    end_char: 221
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_003
+  claim_text: Clean vegetables in a pan of water instead of under running water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Clean vegetables in a pan fi lled with water rather than running water
+      from the tap.
+    start_char: 222
+    end_char: 284
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_004
+  claim_text: Start a compost pile for food waste.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Start a compost pile as an alternate method of disposing of food waste
+      or simply dispose of food in the garbage.
+    start_char: 285
+    end_char: 373
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_005
+  claim_text: Store drinking water in the refrigerator to avoid running the tap.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Store drinking water in the refrigerator. Do not let the tap run while
+      you are waiting for water to cool.
+    start_char: 374
+    end_char: 451
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_006
+  claim_text: Capture water while waiting for it to heat and use it for other purposes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Avoid wasting water waiting for it to get hot. Capture it for other uses
+      such as plant watering or heat it on the stove or in a microwave.
+    start_char: 452
+    end_char: 563
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_007
+  claim_text: Avoid rinsing dishes before loading them into the dishwasher.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Avoid rinsing dishes before placing them in the dishwasher; just remove
+      large particles of food.
+    start_char: 564
+    end_char: 641
+    support_strength: strong
+- object_id: water-conservation.kitchen-practices
+  claim_id: clm_008
+  claim_text: Defrost food in the refrigerator or use a microwave.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000292
+    excerpt: Avoid using running water to thaw meat or other frozen foods. Defrost
+      food overnight in the refrigerator or use the defrost setting on your microwave
+      oven.
+    start_char: 642
+    end_char: 757
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000292

@@ -1,0 +1,161 @@
+id: disaster-relief.volunteering-guidelines
+slug: disaster-relief.volunteering-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Volunteering Guidelines for Disaster Relief
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-relief
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for helping others after a disaster.
+summary_medium: Guidelines for volunteering, donating money, and providing supplies
+  effectively after a disaster.
+plain_language: Learn how to effectively help others after a disaster by volunteering,
+  donating money, and providing necessary supplies.
+markdown_body: '# What this is
+
+  This is a set of guidelines to help individuals effectively contribute to disaster
+  relief efforts through volunteering, donating money, and providing supplies.
+
+
+  # Why it matters
+
+  In the aftermath of a disaster, coordinated efforts are crucial to ensure that aid
+  reaches those in need efficiently. Uncoordinated actions can overwhelm relief agencies
+  and lead to wasted resources.
+
+
+  # What you need
+
+  A willingness to help, awareness of local needs, and the ability to follow instructions
+  from recognized organizations.
+
+
+  # How to do it
+
+  1. Volunteer with local organizations by checking local news or contacting them
+  directly. Avoid going to disaster areas unless specifically requested.
+
+  2. If volunteering in a disaster area, bring your own food, water, and emergency
+  supplies.
+
+  3. Donate money to recognized disaster relief organizations to ensure funds are
+  used effectively.
+
+  4. Avoid unsolicited donations of items unless specifically requested by relief
+  agencies.
+
+
+  # Common failure modes
+
+  Unsolicited donations can overwhelm agencies, and lack of coordination can lead
+  to ineffective distribution of supplies.
+
+
+  # Safety/boundary notes
+
+  Ensure personal safety by not entering disaster areas unless requested and prepared.
+
+
+  # Local adaptation notes
+
+  Pay attention to local news and specific requests from organizations to tailor your
+  help to current needs.'
+structured_data:
+  tools:
+  - food
+  - water
+  - emergency supplies
+  materials: []
+  success_criteria:
+  - Volunteers are coordinated and effective
+  - Donations are used efficiently
+  failure_modes:
+  - Unsolicited donations overwhelming agencies
+  - Lack of coordination in supply distribution
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-relief.volunteering-guidelines
+  claim_id: clm_001
+  claim_text: Volunteer with local organizations by checking local news or contacting
+    them directly. Avoid going to disaster areas unless specifically requested.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 191
+    segment_id: src.fema.are-you-ready.2004::seg_000288
+    excerpt: Volunteer! Check with local organizations or listen to local news reports
+      for information about where volunteers are needed. **Note:** Until volunteers
+      are specifically requested, stay away from disaster areas.
+    start_char: 109
+    end_char: 256
+    support_strength: strong
+- object_id: disaster-relief.volunteering-guidelines
+  claim_id: clm_002
+  claim_text: If volunteering in a disaster area, bring your own food, water, and
+    emergency supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 191
+    segment_id: src.fema.are-you-ready.2004::seg_000288
+    excerpt: Bring your own food, water, and emergency supplies to a disaster area
+      if you are needed there.
+    start_char: 258
+    end_char: 334
+    support_strength: strong
+- object_id: disaster-relief.volunteering-guidelines
+  claim_id: clm_003
+  claim_text: Donate money to recognized disaster relief organizations to ensure funds
+    are used effectively.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 191
+    segment_id: src.fema.are-you-ready.2004::seg_000288
+    excerpt: Give a check or money order to a recognized disaster relief organization.
+      These groups are organized to process checks, purchase what is needed, and get
+      it to the people who need it most.
+    start_char: 336
+    end_char: 486
+    support_strength: strong
+- object_id: disaster-relief.volunteering-guidelines
+  claim_id: clm_004
+  claim_text: Avoid unsolicited donations of items unless specifically requested by
+    relief agencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 191
+    segment_id: src.fema.are-you-ready.2004::seg_000288
+    excerpt: Do not drop off food, clothing, or any other item to a government agency
+      or disaster relief organization unless a particular item has been requested.
+    start_char: 488
+    end_char: 607
+    support_strength: strong
+- object_id: disaster-relief.volunteering-guidelines
+  claim_id: clm_005
+  claim_text: Unsolicited donations can overwhelm agencies, and lack of coordination
+    can lead to ineffective distribution of supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 190
+    page_end: 191
+    segment_id: src.fema.are-you-ready.2004::seg_000288
+    excerpt: Normally, these organizations do not have the resources to sort through
+      the donated items. Without sufficient planning, much needed supplies will be
+      left unused.
+    start_char: 609
+    end_char: 752
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000288

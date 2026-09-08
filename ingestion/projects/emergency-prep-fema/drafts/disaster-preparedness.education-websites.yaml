@@ -1,0 +1,137 @@
+id: disaster-preparedness.education-websites
+slug: disaster-preparedness.education-websites
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Disaster Preparedness Education Websites
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-preparedness
+secondary_domains:
+- public-education
+stage: foundation
+contexts:
+- disaster-preparedness
+- public-education
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: A list of websites for disaster preparedness education.
+summary_medium: This reference sheet provides a list of government and non-government
+  websites that offer information and resources on disaster preparedness.
+plain_language: This guide lists websites where you can find information about preparing
+  for disasters. It includes both government and non-government resources.
+markdown_body: '# What this is
+
+  This reference sheet lists various websites that provide educational resources on
+  disaster preparedness. These websites include both government and non-government
+  sources.
+
+
+  # Why it matters
+
+  Accessing reliable information is crucial for effective disaster preparedness. These
+  websites offer up-to-date resources and guidance to help individuals and communities
+  prepare for emergencies.
+
+
+  # What you need
+
+  To use this resource, you need internet access to visit the listed websites.
+
+
+  # How to do it
+
+  Visit each website using the provided URLs to explore their resources. Conduct searches
+  on these sites to find the most current and relevant information on disaster preparedness.
+
+
+  # Common failure modes
+
+  Some links may become outdated over time, and information might be incomplete. Always
+  verify the currency of the information you find.
+
+
+  # Safety/boundary notes
+
+  Ensure that the websites you visit are official and secure to avoid misinformation.
+
+
+  # Local adaptation notes
+
+  Check for local websites or resources that may offer more region-specific disaster
+  preparedness information.'
+structured_data:
+  tools:
+  - Internet access
+  materials: []
+  success_criteria:
+  - Access to current and comprehensive disaster preparedness information
+  failure_modes:
+  - Outdated links
+  - Incomplete information
+  safety_boundary: Ensure websites are official and secure.
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-preparedness.education-websites
+  claim_id: clm_001
+  claim_text: This reference sheet lists various websites that provide educational
+    resources on disaster preparedness. These websites include both government and
+    non-government sources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: You can broaden your knowledge of disaster preparedness topics presented
+      in this guide by reviewing information provided at various government and non-government
+      Web sites. Provided below is a list of recommended sites.
+    start_char: 0
+    end_char: 183
+    support_strength: strong
+- object_id: disaster-preparedness.education-websites
+  claim_id: clm_002
+  claim_text: Accessing reliable information is crucial for effective disaster preparedness.
+    These websites offer up-to-date resources and guidance to help individuals and
+    communities prepare for emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: Searches conducted from each home site's page result in the most current
+      and extensive list of available material for the site.
+    start_char: 184
+    end_char: 276
+    support_strength: medium
+- object_id: disaster-preparedness.education-websites
+  claim_id: clm_003
+  claim_text: To use this resource, you need internet access to visit the listed websites.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: The Web address for each site reflects its home address.
+    start_char: 184
+    end_char: 276
+    support_strength: medium
+- object_id: disaster-preparedness.education-websites
+  claim_id: clm_004
+  claim_text: Visit each website using the provided URLs to explore their resources.
+    Conduct searches on these sites to find the most current and relevant information
+    on disaster preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 13
+    page_end: 13
+    segment_id: src.fema.are-you-ready.2004::seg_000019
+    excerpt: Searches conducted from each home site's page result in the most current
+      and extensive list of available material for the site.
+    start_char: 184
+    end_char: 276
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000019

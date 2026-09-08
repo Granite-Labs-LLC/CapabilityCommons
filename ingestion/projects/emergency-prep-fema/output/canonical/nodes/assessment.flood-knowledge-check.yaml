@@ -1,0 +1,146 @@
+id: assessment.flood-knowledge-check
+slug: assessment.flood-knowledge-check
+seed_type: extracted
+co_type: assessment
+canonical_title: Flood Knowledge Check
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: A true or false knowledge check to assess understanding of flood emergencies
+  and safety.
+summary_medium: This assessment consists of a series of true or false questions designed
+  to evaluate your knowledge of flood emergencies, safety measures, and insurance
+  information.
+plain_language: This is a quiz to test what you know about floods, including how to
+  stay safe and what insurance options are available.
+markdown_body: '### What this is
+
+  This is a true or false knowledge check designed to assess your understanding of
+  flood emergencies and safety measures.
+
+
+  ### Why it matters
+
+  Understanding flood risks and safety measures is crucial for personal safety and
+  preparedness during flood emergencies.
+
+
+  ### What you need
+
+  You need to read each statement and decide if it is true or false based on your
+  knowledge of flood emergencies.
+
+
+  ### How to do it
+
+  Review each statement carefully. Mark ''T'' for true or ''F'' for false. After completing
+  all statements, check your answers against the provided answer key.
+
+
+  ### Common failure modes
+
+  Misunderstanding the nature of flood risks or the availability of insurance can
+  lead to incorrect answers.
+
+
+  ### Safety/boundary notes
+
+  Ensure you understand the safety implications of each statement, particularly those
+  related to physical safety during floods.
+
+
+  ### Local adaptation notes
+
+  Consider local flood risks and insurance availability, as these can vary by region.'
+structured_data:
+  type-specific:
+    tools: []
+    materials: []
+    success_criteria:
+    - Correctly identify true or false statements about flood emergencies.
+    failure_modes:
+    - Misinterpretation of flood risk information.
+    - Lack of awareness about flood insurance details.
+    safety_boundary:
+    - Understanding the dangers of floodwaters and the importance of timely insurance.
+requires: []
+suggested_edges: []
+citations:
+- object_id: assessment.flood-knowledge-check
+  claim_id: clm_001
+  claim_text: Flood losses are not covered under homeowners' insurance policies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 55
+    page_end: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: Flood losses are **not covered** under homeowners' insurance policies.
+    start_char: 0
+    end_char: 61
+    support_strength: strong
+- object_id: assessment.flood-knowledge-check
+  claim_id: clm_002
+  claim_text: FEMA manages the National Flood Insurance Program, which makes federally-backed
+    flood insurance available in communities that agree to adopt and enforce floodplain
+    management ordinances to reduce future flood damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 55
+    page_end: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: FEMA manages the National Flood Insurance Program, which makes federally-backed
+      fl ood insurance available in communities that agree to adopt and enforce fl
+      oodplain management ordinances to reduce future fl ood damage.
+    start_char: 62
+    end_char: 244
+    support_strength: strong
+- object_id: assessment.flood-knowledge-check
+  claim_id: clm_003
+  claim_text: Flood insurance is available in most communities through insurance agents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 55
+    page_end: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: Flood insurance is available in most communities through insurance agents.
+    start_char: 245
+    end_char: 316
+    support_strength: strong
+- object_id: assessment.flood-knowledge-check
+  claim_id: clm_004
+  claim_text: There is a 30-day waiting period before flood insurance goes into effect,
+    so don't delay.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 55
+    page_end: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: There is a 30-day waiting period before fl ood insurance goes into effect,
+      so don't delay.
+    start_char: 317
+    end_char: 392
+    support_strength: strong
+- object_id: assessment.flood-knowledge-check
+  claim_id: clm_005
+  claim_text: Flood insurance is available whether the building is in or out of the
+    identified flood-prone area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 55
+    page_end: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    excerpt: Flood insurance is available whether the building is in or out of the
+      identifi ed fl ood-prone area.
+    start_char: 393
+    end_char: 476
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000076

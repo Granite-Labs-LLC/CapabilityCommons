@@ -1,0 +1,186 @@
+id: mental-health.coping-with-disaster
+slug: mental-health.coping-with-disaster
+seed_type: extracted
+co_type: concept_note
+canonical_title: Coping with Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: mental_health
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: Guidance on coping with the emotional impact of disasters.
+summary_medium: This section discusses the emotional impact of disasters and provides
+  guidance on coping mechanisms, recognizing signs of stress, and seeking help.
+plain_language: Disasters can have a big emotional impact. It's important to recognize
+  stress signs, use coping mechanisms, and seek help if needed.
+markdown_body: '# What this is
+
+  This concept note provides guidance on understanding and coping with the emotional
+  impact of disasters.
+
+
+  # Why it matters
+
+  The emotional toll of disasters can be significant, sometimes more so than the physical
+  damage. Recognizing and addressing emotional stress is crucial for recovery.
+
+
+  # What you need
+
+  Awareness of personal and community resources, understanding of stress signs, and
+  willingness to seek help.
+
+
+  # How to do it
+
+  Acknowledge your feelings, focus on strengths, maintain routines, and seek community
+  support. Engage in healthy practices like exercise and meditation.
+
+
+  # Common failure modes
+
+  Ignoring emotional impact and not seeking help can hinder recovery.
+
+
+  # Safety/boundary notes
+
+  Be aware of personal limits and seek professional help if needed.
+
+
+  # Local adaptation notes
+
+  Contact local organizations for counseling and support.'
+structured_data:
+  definition: Coping with disaster involves recognizing the emotional impact and using
+    strategies to manage stress and promote recovery.
+  key_questions:
+  - What are common emotional reactions to disasters?
+  - How can individuals recognize signs of stress?
+  - What coping mechanisms are effective in disaster recovery?
+  misconceptions:
+  - Emotional reactions to disasters are not as important as physical recovery.
+  - Only those directly affected by disasters need to worry about emotional stress.
+requires: []
+suggested_edges: []
+citations:
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_001
+  claim_text: The emotional toll of disasters can be significant, sometimes more so
+    than the physical damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: The emotional toll that disaster brings can sometimes be even more devastating
+      than the financial strains of damage and loss of home, business, or personal
+      property.
+    start_char: 0
+    end_char: 124
+    support_strength: strong
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_002
+  claim_text: Recognizing and addressing emotional stress is crucial for recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Acknowledging your feelings helps you recover.
+    start_char: 234
+    end_char: 270
+    support_strength: strong
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_003
+  claim_text: Awareness of personal and community resources, understanding of stress
+    signs, and willingness to seek help.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Accepting help from community programs and resources is healthy.
+    start_char: 271
+    end_char: 326
+    support_strength: medium
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_004
+  claim_text: Acknowledge your feelings, focus on strengths, maintain routines, and
+    seek community support.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Acknowledging your feelings helps you recover. Focusing on your strengths
+      and abilities helps you heal.
+    start_char: 234
+    end_char: 290
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Maintain a normal family and daily routine, limiting demanding responsibilities
+      on yourself and your family.
+    start_char: 1000
+    end_char: 1085
+    support_strength: strong
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_005
+  claim_text: Engage in healthy practices like exercise and meditation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Take steps to promote your own physical and emotional healing by healthy
+      eating, rest, exercise, relaxation, and meditation.
+    start_char: 860
+    end_char: 946
+    support_strength: strong
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_006
+  claim_text: Ignoring emotional impact and not seeking help can hinder recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Acknowledging your feelings helps you recover.
+    start_char: 234
+    end_char: 270
+    support_strength: medium
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_007
+  claim_text: Be aware of personal limits and seek professional help if needed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Seek help from professional counselors who deal with post-disaster stress.
+    start_char: 800
+    end_char: 860
+    support_strength: strong
+- object_id: mental-health.coping-with-disaster
+  claim_id: clm_008
+  claim_text: Contact local organizations for counseling and support.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Contact local faith-based organizations, voluntary agencies, or professional
+      counselors for counseling.
+    start_char: 327
+    end_char: 400
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000278

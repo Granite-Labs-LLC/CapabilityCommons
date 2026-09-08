@@ -1,0 +1,293 @@
+id: emergency.flood-preparedness
+slug: emergency.flood-preparedness
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Flood Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Prepare for floods by elevating utilities, installing check valves,
+  and constructing barriers.
+summary_medium: Learn how to prepare for floods by avoiding construction in floodplains,
+  elevating utilities, installing check valves, constructing barriers, and sealing
+  walls.
+plain_language: This guide helps you prepare for floods by taking measures like elevating
+  your home's utilities, installing check valves to prevent water backup, and building
+  barriers to keep floodwaters out.
+markdown_body: '# What this is
+
+  This guide provides steps to prepare your home and family for potential flooding,
+  focusing on preventive measures to minimize damage.
+
+
+  # Why it matters
+
+  Floods can cause significant damage to homes and infrastructure. Preparing in advance
+  can reduce the impact and ensure safety.
+
+
+  # What you need
+
+  Check valves, waterproofing compounds, materials for constructing barriers like
+  levees or floodwalls.
+
+
+  # How to do it
+
+  1. Avoid building in flood-prone areas unless you can elevate and reinforce your
+  home.
+
+  2. Elevate the furnace, water heater, and electric panel to prevent flood damage.
+
+  3. Install check valves in sewer traps to prevent floodwater from backing up into
+  your home.
+
+  4. Construct barriers such as levees or floodwalls to stop floodwater from entering
+  your building.
+
+  5. Seal basement walls with waterproofing compounds to prevent seepage.
+
+
+  # Common failure modes
+
+  Floodwater can back up into drains if check valves are not installed. Seepage can
+  occur if walls are not properly sealed.
+
+
+  # Safety/boundary notes
+
+  Do not walk or drive through moving water. Six inches of moving water can knock
+  you down, and cars can be swept away.
+
+
+  # Local adaptation notes
+
+  Consider local flood risks and adapt measures accordingly, such as using materials
+  suitable for your climate.'
+structured_data:
+  tools:
+  - check valves
+  materials:
+  - waterproofing compounds
+  success_criteria:
+  - Home utilities are elevated
+  - Check valves are installed
+  - Barriers are constructed
+  - Walls are sealed
+  failure_modes:
+  - Floodwater backup
+  - Seepage
+  safety_boundary: Avoid walking or driving through moving water.
+  implementation:
+    smallest_viable_version: Install check valves and elevate utilities to prevent
+      flood damage.
+    tools:
+    - check valves
+    materials:
+    - waterproofing compounds
+    expected_time: Several days depending on the size of the home and resources available.
+    expected_cost: medium
+    success_checks:
+    - Utilities are elevated
+    - Check valves are functioning
+    - Barriers are in place
+    stop_conditions:
+    - Floodwater is entering despite barriers
+    - Check valves are not preventing backup
+    common_mistakes:
+    - Not sealing walls properly
+    - Installing check valves incorrectly
+    variants:
+    - label: Urban
+      when: In densely populated areas with limited space for barriers.
+      notes: Focus on sealing and elevating utilities.
+    - label: Off-grid
+      when: In remote areas with limited access to professional services.
+      notes: Use locally available materials for barriers.
+    when_to_escalate:
+    - If floodwater is entering despite all measures
+    - If structural integrity is compromised
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.flood-preparedness
+  claim_id: clm_001
+  claim_text: Avoid building in flood-prone areas unless you can elevate and reinforce
+    your home.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Avoid building in a fl oodplain unless you elevate and reinforce your
+      home.
+    start_char: 48
+    end_char: 106
+    support_strength: strong
+- object_id: emergency.flood-preparedness
+  claim_id: clm_002
+  claim_text: Elevate the furnace, water heater, and electric panel to prevent flood
+    damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Elevate the furnace, water heater, and electric panel if susceptible
+      to fl ooding.
+    start_char: 107
+    end_char: 172
+    support_strength: strong
+- object_id: emergency.flood-preparedness
+  claim_id: clm_003
+  claim_text: Install check valves in sewer traps to prevent floodwater from backing
+    up into your home.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Install "check valves" in sewer traps to prevent fl ood water from backing
+      up into the drains of your home.
+    start_char: 173
+    end_char: 254
+    support_strength: strong
+- object_id: emergency.flood-preparedness
+  claim_id: clm_004
+  claim_text: Construct barriers such as levees or floodwalls to stop floodwater from
+    entering your building.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Construct barriers (levees, beams, fl oodwalls) to stop fl oodwater from
+      entering the building.
+    start_char: 255
+    end_char: 323
+    support_strength: strong
+- object_id: emergency.flood-preparedness
+  claim_id: clm_005
+  claim_text: Seal basement walls with waterproofing compounds to prevent seepage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Seal walls in basements with waterproofi ng compounds to avoid seepage.
+    start_char: 324
+    end_char: 377
+    support_strength: strong
+- object_id: emergency.flood-preparedness
+  claim_id: clm_006
+  claim_text: Do not walk or drive through moving water. Six inches of moving water
+    can knock you down, and cars can be swept away.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Do not walk through moving water. Six inches of moving water can make
+      you fall.
+    start_char: 592
+    end_char: 658
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: A foot of water will fl oat many vehicles. Two feet of rushing water
+      can carry away most vehicles including sport utility vehicles (SUV's) and pick-ups.
+    start_char: 0
+    end_char: 167
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000074
+bundle_overrides:
+  hook: Floods can cause devastating damage, but with the right preparation, you can
+    protect your home and ensure your family's safety.
+  primer: Flood preparedness is essential for minimizing the damage caused by floods,
+    which are among the most common and destructive natural disasters. Floods can
+    occur due to heavy rainfall, storm surges, or overflowing rivers, and they can
+    lead to significant property damage and even loss of life. Preparing for floods
+    involves taking proactive measures to protect your home and ensure the safety
+    of your family. Key steps include avoiding construction in flood-prone areas unless
+    you can elevate and reinforce your home, elevating utilities like furnaces and
+    water heaters, installing check valves to prevent water backup, constructing barriers
+    such as levees or floodwalls, and sealing basement walls with waterproofing compounds.
+    Additionally, it's crucial to avoid walking or driving through moving water, as
+    even six inches can knock you down, and cars can be swept away. By understanding
+    these preventive measures, you can reduce the impact of floods and enhance your
+    resilience against such events.
+  guide: '1. **Avoid Building in Flood-Prone Areas**: If possible, choose to build
+    your home outside of floodplains. If you must build in such areas, ensure your
+    home is elevated and reinforced to withstand potential flooding.
+
+
+    2. **Elevate Utilities**: Raise your furnace, water heater, and electric panel
+    above the expected flood level. This prevents costly damage and ensures these
+    essential systems remain operational during a flood.
+
+
+    3. **Install Check Valves**: Place check valves in sewer traps to prevent floodwater
+    from backing up into your home. This simple installation can save you from significant
+    water damage and sewage issues.
+
+
+    4. **Construct Barriers**: Build barriers like levees or floodwalls around your
+    property to stop floodwater from entering. Use materials that are suitable for
+    your local climate and conditions.
+
+
+    5. **Seal Basement Walls**: Apply waterproofing compounds to basement walls to
+    prevent water seepage. Proper sealing is crucial to maintaining the integrity
+    of your home''s foundation.
+
+
+    6. **Safety Precautions**: Never walk or drive through moving water. Even a small
+    amount of moving water can be dangerous, potentially knocking you down or sweeping
+    your vehicle away.
+
+
+    By following these steps, you can significantly reduce the risk of flood damage
+    to your home and ensure the safety of your family.'
+  reference:
+  - Avoid building in flood-prone areas unless elevated and reinforced.
+  - Elevate furnace, water heater, and electric panel.
+  - Install check valves in sewer traps.
+  - Construct barriers like levees or floodwalls.
+  - Seal basement walls with waterproofing compounds.
+  - Do not walk or drive through moving water.
+  worksheet:
+  - Identify if your home is in a flood-prone area and list potential elevation solutions.
+  - Create a plan to elevate utilities in your home.
+  - Research and list local suppliers for check valves and waterproofing compounds.
+  - Design a simple barrier plan for your property using available materials.
+  - Inspect your basement walls and note areas that need sealing.
+  - Simulate a flood evacuation plan with your family.
+  teach_forward_kit:
+    three_minute_version: Flood preparedness involves elevating your home's utilities,
+      installing check valves, constructing barriers, and sealing walls to prevent
+      water damage and ensure safety.
+    ten_minute_outline:
+    - Introduction to flood risks and impacts.
+    - Importance of avoiding construction in flood-prone areas.
+    - Steps to elevate utilities and their benefits.
+    - How to install check valves and their role in flood prevention.
+    - 'Constructing barriers: materials and methods.'
+    - Sealing basement walls to prevent seepage.
+    - 'Safety tips: avoiding moving water.'
+    - Recap and Q&A.
+    discussion_prompts:
+    - What are the most common flood risks in your area?
+    - Have you or someone you know experienced flood damage? What was the impact?
+    - What challenges might you face in implementing these flood preparedness measures?
+    - How can communities work together to improve flood preparedness?

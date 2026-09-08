@@ -1,0 +1,130 @@
+id: safety.landslide-response
+slug: safety.landslide-response
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Responding to a Landslide or Debris Flow
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: high
+summary_short: Guidelines for responding to a landslide or debris flow.
+summary_medium: Learn how to respond effectively during a landslide or debris flow
+  to ensure personal safety.
+plain_language: If you find yourself in a landslide or debris flow, move away quickly.
+  If you can't escape, curl into a ball and protect your head.
+markdown_body: '# What this is
+
+  This reference sheet provides guidelines on how to respond during a landslide or
+  debris flow to maximize personal safety.
+
+
+  # Why it matters
+
+  Landslides and debris flows can occur suddenly and with great force, posing significant
+  risks to life and property. Knowing how to respond can reduce the risk of injury
+  or death.
+
+
+  # What you need
+
+  Awareness of your surroundings and the ability to move quickly.
+
+
+  # How to do it
+
+  If you notice a landslide or debris flow, immediately move away from its path as
+  quickly as possible. If you cannot escape, curl into a tight ball and protect your
+  head with your arms to minimize injury.
+
+
+  # Common failure modes
+
+  Inability to move quickly enough to escape the path of the landslide or failure
+  to protect the head adequately if caught.
+
+
+  # Safety/boundary notes
+
+  Always prioritize personal safety and avoid areas prone to landslides during heavy
+  rain or after wildfires.
+
+
+  # Local adaptation notes
+
+  Consider local terrain and weather patterns when planning for landslide risks.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successfully moving out of the path of the landslide or minimizing
+    injury by protecting the head.
+  failure_modes: Being caught in the path of the landslide or failing to protect the
+    head.
+  safety_boundary: Avoid areas with a high risk of landslides, especially during adverse
+    weather conditions.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.landslide-response
+  claim_id: clm_001
+  claim_text: If you notice a landslide or debris flow, immediately move away from
+    its path as quickly as possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 109
+    segment_id: src.fema.are-you-ready.2004::seg_000169
+    excerpt: Move away from the path of a landslide or debris fl ow as quickly as
+      possible.
+    start_char: 0
+    end_char: 71
+    support_strength: strong
+- object_id: safety.landslide-response
+  claim_id: clm_002
+  claim_text: If you cannot escape, curl into a tight ball and protect your head with
+    your arms to minimize injury.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 109
+    page_end: 109
+    segment_id: src.fema.are-you-ready.2004::seg_000169
+    excerpt: Curl into a tight ball and protect your head if escape is not possible.
+    start_char: 72
+    end_char: 132
+    support_strength: strong
+- object_id: safety.landslide-response
+  claim_id: clm_003
+  claim_text: Landslides and debris flows can occur suddenly and with great force,
+    posing significant risks to life and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 106
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000166
+    excerpt: They fl ow can rapidly, striking with little or no warning at avalanche
+      speeds.
+    start_char: 354
+    end_char: 418
+    support_strength: strong
+- object_id: safety.landslide-response
+  claim_id: clm_004
+  claim_text: Always prioritize personal safety and avoid areas prone to landslides
+    during heavy rain or after wildfires.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 108
+    page_end: 108
+    segment_id: src.fema.are-you-ready.2004::seg_000167
+    excerpt: Do not build near steep slopes, close to mountain edges, near drainage
+      ways, or natural erosion valleys.
+    start_char: 0
+    end_char: 98
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000169

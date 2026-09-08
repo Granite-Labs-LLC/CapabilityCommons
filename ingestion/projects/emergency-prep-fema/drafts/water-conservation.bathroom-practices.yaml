@@ -1,0 +1,183 @@
+id: water-conservation.bathroom-practices
+slug: water-conservation.bathroom-practices
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: 'Water Conservation: Bathroom Practices'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: water-conservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for reducing water usage in the bathroom.
+summary_medium: Guidelines for reducing water usage in the bathroom, including using
+  low-volume toilets, displacement devices, and ultra-low-flow showerheads.
+plain_language: Learn how to save water in the bathroom by using efficient fixtures
+  and mindful practices.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for reducing water usage in the bathroom
+  by using efficient fixtures and adopting water-saving habits.
+
+
+  ### Why it matters
+
+  Conserving water in the bathroom helps reduce water bills and supports environmental
+  sustainability by minimizing water waste.
+
+
+  ### What you need
+
+  To implement these practices, you may need a low-volume toilet, a toilet displacement
+  device, an ultra-low-flow showerhead, and a bucket.
+
+
+  ### How to do it
+
+  1. Consider purchasing a low-volume toilet that uses less water. Check local regulations
+  as these may be required by law.
+
+  2. Install a toilet displacement device, such as a one-gallon plastic jug of water,
+  in the toilet tank to reduce water usage per flush. Avoid using bricks as they can
+  dissolve and damage the toilet.
+
+  3. Replace your showerhead with an ultra-low-flow version to reduce water flow.
+
+  4. Use a bucket in the shower to catch excess water for watering plants.
+
+  5. Dispose of tissues and similar waste in the trash instead of flushing.
+
+  6. Take short showers and turn off the water when not needed, such as while lathering
+  or brushing teeth.
+
+
+  ### Common failure modes
+
+  Using a brick in the toilet tank can cause damage as it may dissolve and release
+  particles.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Check local legal requirements for low-volume toilets as they may vary.'
+structured_data:
+  definition: Water conservation practices in the bathroom focus on using efficient
+    fixtures and mindful habits to reduce water usage.
+  key_questions:
+  - What are the benefits of using a low-volume toilet?
+  - How can a toilet displacement device help save water?
+  - What are the advantages of an ultra-low-flow showerhead?
+  misconceptions:
+  - Using a brick in the toilet tank is a safe way to save water.
+requires: []
+suggested_edges: []
+citations:
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_001
+  claim_text: Consider purchasing a low-volume toilet that uses less water. Check
+    local regulations as these may be required by law.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: 'Consider purchasing a low-volume toilet that uses less than half the
+      water of older models. Note: In many areas, low-volume units are required by
+      law.'
+    start_char: 3
+    end_char: 136
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_002
+  claim_text: Install a toilet displacement device, such as a one-gallon plastic jug
+    of water, in the toilet tank to reduce water usage per flush. Avoid using bricks
+    as they can dissolve and damage the toilet.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: Install a toilet displacement device to cut down on the amount of water
+      needed to flush. Place a one-gallon plastic jug of water into the tank to displace
+      toilet flow (do not use a brick, it may dissolve and loose pieces may cause
+      damage to the internal parts).
+    start_char: 138
+    end_char: 324
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_003
+  claim_text: Replace your showerhead with an ultra-low-flow version to reduce water
+    flow.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: Replace your showerhead with an ultra-low-flow version.
+    start_char: 326
+    end_char: 377
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_004
+  claim_text: Use a bucket in the shower to catch excess water for watering plants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: Place a bucket in the shower to catch excess water for watering plants.
+    start_char: 379
+    end_char: 440
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_005
+  claim_text: Dispose of tissues and similar waste in the trash instead of flushing.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: Avoid flushing the toilet unnecessarily. Dispose of tissues, insects,
+      and other similar waste in the trash rather than the toilet.
+    start_char: 442
+    end_char: 544
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_006
+  claim_text: Take short showers and turn off the water when not needed, such as while
+    lathering or brushing teeth.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: Avoid taking baths—take short showers—turn on water only to get wet and
+      lather and then again to rinse off. Avoid letting the water run while brushing
+      your teeth, washing your face, or shaving.
+    start_char: 546
+    end_char: 695
+    support_strength: strong
+- object_id: water-conservation.bathroom-practices
+  claim_id: clm_007
+  claim_text: Using a brick in the toilet tank can cause damage as it may dissolve
+    and release particles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 192
+    page_end: 192
+    segment_id: src.fema.are-you-ready.2004::seg_000291
+    excerpt: do not use a brick, it may dissolve and loose pieces may cause damage
+      to the internal parts
+    start_char: 254
+    end_char: 324
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000291

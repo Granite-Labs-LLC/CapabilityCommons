@@ -1,0 +1,118 @@
+id: tornado-safety.fact-sheet
+slug: tornado-safety.fact-sheet
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Tornado Safety Fact Sheet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: tornado-safety
+secondary_domains: []
+stage: foundation
+contexts:
+- general public
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Safety tips for tornado preparedness.
+summary_medium: A fact sheet providing essential safety tips for actions to take before,
+  during, and after a tornado.
+plain_language: This fact sheet gives you important safety tips to help you stay safe
+  before, during, and after a tornado.
+markdown_body: '### What this is
+
+  This fact sheet provides essential safety tips to help individuals prepare for,
+  respond to, and recover from tornadoes.
+
+
+  ### Why it matters
+
+  Tornadoes can cause significant damage and pose serious threats to life and property.
+  Being prepared and knowing what actions to take can greatly reduce risks.
+
+
+  ### What you need
+
+  Access to the Tornado Safety Fact Sheet, awareness of local tornado warnings, and
+  a plan for seeking shelter.
+
+
+  ### How to do it
+
+  Before a tornado, identify a safe place to take shelter, such as a basement or an
+  interior room on the lowest floor. During a tornado, go to your identified safe
+  place immediately and protect your head. After a tornado, stay informed through
+  local news and follow instructions from emergency services.
+
+
+  ### Common failure modes
+
+  Not following safety tips, failing to seek shelter in a timely manner, and not staying
+  informed about weather conditions.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your chosen shelter area is free from windows and potential flying debris.
+
+
+  ### Local adaptation notes
+
+  Adapt safety plans based on local building structures and available shelter options.'
+structured_data:
+  tools:
+  - Tornado Safety Fact Sheet
+  materials: []
+  success_criteria:
+  - Following safety tips effectively
+  - Seeking shelter promptly
+  failure_modes:
+  - Not following safety tips
+  - Delaying shelter
+  safety_boundary: Ensure shelter areas are structurally sound and away from windows.
+requires: []
+suggested_edges: []
+citations:
+- object_id: tornado-safety.fact-sheet
+  claim_id: clm_001
+  claim_text: This fact sheet provides essential safety tips to help individuals prepare
+    for, respond to, and recover from tornadoes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000089
+    excerpt: FEMA Publications *Tornado Fact Sheet*. L-148. Provides safety tips for
+      before, during, and after a tornado
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: tornado-safety.fact-sheet
+  claim_id: clm_004
+  claim_text: Before a tornado, identify a safe place to take shelter, such as a basement
+    or an interior room on the lowest floor.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 63
+    page_end: 64
+    segment_id: src.fema.are-you-ready.2004::seg_000086
+    excerpt: Locate the safest place to seek shelter should you not be able to evacuate.
+    start_char: 0
+    end_char: 70
+    support_strength: medium
+- object_id: tornado-safety.fact-sheet
+  claim_id: clm_006
+  claim_text: After a tornado, stay informed through local news and follow instructions
+    from emergency services.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000089

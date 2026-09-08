@@ -1,0 +1,99 @@
+id: emergency-preparedness.food-water-supplies
+slug: emergency-preparedness.food-water-supplies
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: 'Emergency Preparedness: Food and Water Supplies'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Checklist of essential food and water supplies for emergencies.
+summary_medium: A comprehensive checklist of essential food and water supplies to
+  maintain at home, in vehicles, and at work for emergency preparedness.
+plain_language: This guide provides a list of food and water supplies you should have
+  ready in case of an emergency. It includes items that are easy to store and consume
+  without preparation.
+markdown_body: "### What this is\nThis is a checklist of essential food and water\
+  \ supplies to keep at home, in your vehicle, and at work to ensure you are prepared\
+  \ for emergencies.\n\n### Why it matters\nHaving a stockpile of food and water is\
+  \ crucial during emergencies when access to stores and fresh supplies may be limited.\
+  \ It ensures you and your family can sustain yourselves until normal conditions\
+  \ are restored.\n\n### What you need\nYou need to gather and store items such as\
+  \ water, ready-to-eat foods, canned juices, high-energy foods, vitamins, and special\
+  \ diet foods. These items should be non-perishable and easy to consume.\n\n### How\
+  \ to do it\n1. Assess your storage space at home, in your vehicle, and at work.\
+  \ \n2. Purchase and store water and non-perishable food items. \n3. Regularly check\
+  \ expiration dates and rotate supplies to ensure freshness. \n4. Customize your\
+  \ supplies based on dietary needs and preferences.\n\n### Common failure modes\n\
+  Failing to regularly check and rotate supplies can lead to expired or spoiled food.\
+  \ Not considering special dietary needs can result in inadequate nutrition during\
+  \ emergencies.\n\n### Safety/boundary notes\nEnsure all food items are stored in\
+  \ a cool, dry place to prevent spoilage. Water should be stored in clean, sealed\
+  \ containers.\n\n### Local adaptation notes\nConsider local climate and typical\
+  \ emergency scenarios when selecting and storing supplies. For example, in hot climates,\
+  \ additional water may be necessary."
+structured_data:
+  definition: A list of essential food and water supplies to maintain for emergency
+    preparedness.
+  key_questions:
+  - What types of food and water should be stored for emergencies?
+  - How much of each item should be stored?
+  - How often should supplies be checked and rotated?
+  misconceptions:
+  - You only need to store food and water at home.
+  - All non-perishable foods are suitable for long-term storage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.food-water-supplies
+  claim_id: clm_001
+  claim_text: You need to gather and store items such as water, ready-to-eat foods,
+    canned juices, high-energy foods, vitamins, and special diet foods. These items
+    should be non-perishable and easy to consume.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000303
+    excerpt: Water, Ready-to-eat meats, fruits, and vegetables, Canned or boxed juices,
+      milk, and soup, High-energy foods such as peanut butter, jelly, low-sodium crackers,
+      granola bars, and trail mix, Vitamins, Special foods for infants or persons
+      on special diets
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-preparedness.food-water-supplies
+  claim_id: clm_002
+  claim_text: Failing to regularly check and rotate supplies can lead to expired or
+    spoiled food.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000303
+    excerpt: Regularly check expiration dates and rotate supplies to ensure freshness.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.food-water-supplies
+  claim_id: clm_003
+  claim_text: Ensure all food items are stored in a cool, dry place to prevent spoilage.
+    Water should be stored in clean, sealed containers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000303
+    excerpt: Ensure all food items are stored in a cool, dry place to prevent spoilage.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000303

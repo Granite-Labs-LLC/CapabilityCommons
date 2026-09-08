@@ -1,0 +1,123 @@
+id: disaster-recovery.after-tornado
+slug: disaster-recovery.after-tornado
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: After a Tornado
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-recovery
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidance on recovering from a tornado.
+summary_medium: Instructions for recovering from a tornado, as part of broader disaster
+  recovery efforts.
+plain_language: Learn how to safely recover after a tornado with these step-by-step
+  instructions.
+markdown_body: "### What this is\nThis guide provides instructions on how to recover\
+  \ after experiencing a tornado, focusing on safety and effective recovery strategies.\n\
+  \n### Why it matters\nTornadoes can cause significant damage and pose serious safety\
+  \ risks. Proper recovery steps are crucial to ensure safety and begin rebuilding.\n\
+  \n### What you need\nA clear understanding of safety protocols, access to emergency\
+  \ services, and knowledge of local resources.\n\n### How to do it\n1. Ensure your\
+  \ safety and the safety of others by avoiding damaged structures. \n2. Listen to\
+  \ local authorities for updates and instructions. \n3. Check for injuries and provide\
+  \ first aid if necessary. \n4. Avoid downed power lines and report them to the authorities.\
+  \ \n5. Document damage for insurance purposes. \n6. Begin cleanup and repairs only\
+  \ when it is safe to do so.\n\n### Common failure modes\nIgnoring safety warnings,\
+  \ attempting to enter unsafe structures, and failing to document damage properly.\n\
+  \n### Safety/boundary notes\nAlways prioritize personal safety and the safety of\
+  \ others. Do not enter damaged buildings until they have been declared safe by authorities.\n\
+  \n### Local adaptation notes\nAdapt recovery efforts based on local resources and\
+  \ specific community needs."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successful recovery involves ensuring safety, effectively documenting
+    damage, and beginning the rebuilding process.
+  failure_modes: Entering unsafe areas, neglecting to report hazards, and inadequate
+    documentation of damage.
+  safety_boundary: Do not enter or remain in damaged structures until they are deemed
+    safe by professionals.
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_001
+  claim_text: Ensure your safety and the safety of others by avoiding damaged structures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_002
+  claim_text: Listen to local authorities for updates and instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_003
+  claim_text: Check for injuries and provide first aid if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_004
+  claim_text: Avoid downed power lines and report them to the authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_005
+  claim_text: Document damage for insurance purposes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+- object_id: disaster-recovery.after-tornado
+  claim_id: clm_006
+  claim_text: Begin cleanup and repairs only when it is safe to do so.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 65
+    page_end: 65
+    segment_id: src.fema.are-you-ready.2004::seg_000088
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 0
+    end_char: 60
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000088

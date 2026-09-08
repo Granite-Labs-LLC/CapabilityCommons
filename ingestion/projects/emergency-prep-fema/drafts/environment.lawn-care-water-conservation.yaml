@@ -1,0 +1,175 @@
+id: environment.lawn-care-water-conservation
+slug: environment.lawn-care-water-conservation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Lawn Care for Water Conservation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: environment
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Lawn care tips for conserving water.
+summary_medium: Learn how to conserve water while maintaining your lawn with effective
+  watering strategies, proper mower blade height, and appropriate fertilizer use.
+plain_language: This guide provides tips on how to care for your lawn in a way that
+  conserves water. It includes advice on watering, mowing, and fertilizing.
+markdown_body: "### What this is\nThis reference sheet provides guidelines for maintaining\
+  \ a lawn while conserving water. It covers watering techniques, mower adjustments,\
+  \ and fertilizer use.\n\n### Why it matters\nConserving water is crucial for environmental\
+  \ sustainability, especially in areas prone to drought. Proper lawn care can significantly\
+  \ reduce water usage.\n\n### What you need\nYou will need a sprinkler system, a\
+  \ lawn mower, and fertilizers. Ensure your sprinkler system is efficient and your\
+  \ mower blade is adjustable.\n\n### How to do it\n1. Avoid over watering; lawns\
+  \ typically need one inch of water per week. \n2. Water in short sessions for better\
+  \ absorption. \n3. Position sprinklers to avoid watering paved areas. \n4. Use sprinklers\
+  \ that don't produce a fine mist. \n5. Raise mower blades to at least three inches.\
+  \ \n6. Use drought-resistant seeds. \n7. Apply slow-release fertilizers sparingly.\n\
+  \n### Common failure modes\nOver watering, inefficient sprinkler use, and over-fertilizing\
+  \ are common mistakes that lead to excessive water use.\n\n### Safety/boundary notes\n\
+  Ensure sprinklers and hoses are not left unattended to prevent water wastage.\n\n\
+  ### Local adaptation notes\nAdjust practices based on local climate conditions and\
+  \ the availability of drought-resistant seeds."
+structured_data:
+  tools:
+  - sprinklers
+  - lawn mower
+  materials:
+  - fertilizers
+  success_criteria:
+  - Reduced water usage
+  - Healthy lawn growth
+  failure_modes:
+  - Over watering
+  - Inefficient sprinkler use
+  safety_boundary: Monitor water usage to prevent wastage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_001
+  claim_text: Avoid over watering; lawns typically need one inch of water per week.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Avoid over watering your lawn. A heavy rain eliminates the need for watering
+      for up to two weeks. Most of the year, lawns only need one inch of water per
+      week.
+    start_char: 0
+    end_char: 155
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_002
+  claim_text: Water in short sessions for better absorption.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Water in several short sessions rather than one long one, in order for
+      your lawn to better absorb moisture.
+    start_char: 156
+    end_char: 226
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_003
+  claim_text: Position sprinklers to avoid watering paved areas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Position sprinklers so water lands on the lawn and shrubs and not on
+      paved areas.
+    start_char: 227
+    end_char: 289
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_004
+  claim_text: Use sprinklers that don't produce a fine mist.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Avoid sprinklers that spray a fine mist. Mist can evaporate before it
+      reaches the lawn.
+    start_char: 290
+    end_char: 359
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_005
+  claim_text: Raise mower blades to at least three inches.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Raise the lawn mower blade to at least three inches or to its highest
+      level.
+    start_char: 360
+    end_char: 417
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_006
+  claim_text: Use drought-resistant seeds.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Plant drought-resistant lawn seed.
+    start_char: 418
+    end_char: 451
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_007
+  claim_text: Apply slow-release fertilizers sparingly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Avoid over-fertilizing your lawn. Applying fertilizer increases the need
+      for water. Apply fertilizers that contain slow-release, water-insoluble forms
+      of nitrogen.
+    start_char: 452
+    end_char: 581
+    support_strength: strong
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_008
+  claim_text: Over watering, inefficient sprinkler use, and over-fertilizing are common
+    mistakes that lead to excessive water use.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Avoid over watering your lawn... Avoid sprinklers that spray a fine mist...
+      Avoid over-fertilizing your lawn.
+    start_char: 0
+    end_char: 581
+    support_strength: medium
+- object_id: environment.lawn-care-water-conservation
+  claim_id: clm_009
+  claim_text: Ensure sprinklers and hoses are not left unattended to prevent water
+    wastage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 194
+    segment_id: src.fema.are-you-ready.2004::seg_000296
+    excerpt: Avoid leaving sprinklers or hoses unattended. A garden hose can pour
+      out 600 gallons or more in only a few hours.
+    start_char: 582
+    end_char: 678
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000296

@@ -1,0 +1,158 @@
+id: environment.outdoor-water-conservation
+slug: environment.outdoor-water-conservation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Outdoor Water Conservation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: environment
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Tips for conserving water outdoors.
+summary_medium: Guidance on outdoor water conservation, including checking well pumps,
+  planting drought-tolerant plants, using efficient irrigation, and avoiding water-intensive
+  features.
+plain_language: Learn how to save water outside by checking for leaks, choosing the
+  right plants, and using efficient watering systems.
+markdown_body: '### What this is
+
+  This reference sheet provides tips for conserving water in outdoor spaces, focusing
+  on efficient use of water resources.
+
+
+  ### Why it matters
+
+  Conserving water outdoors helps reduce water waste, lowers utility bills, and supports
+  environmental sustainability, especially in areas prone to drought.
+
+
+  ### What you need
+
+  To implement these tips, you may need a well pump, native or drought-tolerant plants,
+  irrigation devices like drip systems, and mulch.
+
+
+  ### How to do it
+
+  1. Check your well pump regularly for leaks. If it turns on and off without water
+  use, there may be a leak.
+
+  2. Plant native or drought-tolerant plants that require less water once established.
+  Group plants with similar water needs together.
+
+  3. Use efficient irrigation systems like drip irrigation or soaker hoses.
+
+  4. Apply mulch to retain soil moisture and reduce weed competition.
+
+  5. Avoid water-intensive recreational toys and ornamental features unless they use
+  recycled water.
+
+
+  ### Common failure modes
+
+  Leaks in water systems and inefficient irrigation can lead to water waste.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Consider the availability of native plants and local irrigation practices when applying
+  these tips.'
+structured_data:
+  tools:
+  - well pump
+  - irrigation devices
+  materials:
+  - native plants
+  - mulch
+  success_criteria:
+  - Reduced water usage
+  - Healthy plant growth
+  failure_modes:
+  - Leaks in water systems
+  - Inefficient irrigation
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: environment.outdoor-water-conservation
+  claim_id: clm_001
+  claim_text: Check your well pump regularly for leaks. If it turns on and off without
+    water use, there may be a leak.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000294
+    excerpt: Check your well pump periodically. If the automatic pump turns on and
+      off while water is not being used, you have a leak.
+    start_char: 0
+    end_char: 106
+    support_strength: strong
+- object_id: environment.outdoor-water-conservation
+  claim_id: clm_002
+  claim_text: Plant native or drought-tolerant plants that require less water once
+    established. Group plants with similar water needs together.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000294
+    excerpt: Plant native and/or drought-tolerant grasses, ground covers, shrubs,
+      and trees. Once established, they do not need water as frequently and usually
+      will survive a dry period without watering. Group plants together based on similar
+      water needs.
+    start_char: 107
+    end_char: 315
+    support_strength: strong
+- object_id: environment.outdoor-water-conservation
+  claim_id: clm_003
+  claim_text: Use efficient irrigation systems like drip irrigation or soaker hoses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000294
+    excerpt: Install irrigation devices that are the most water efficient for each
+      use. Micro and drip irrigation and soaker hoses are examples of efficient devices.
+    start_char: 316
+    end_char: 431
+    support_strength: strong
+- object_id: environment.outdoor-water-conservation
+  claim_id: clm_004
+  claim_text: Apply mulch to retain soil moisture and reduce weed competition.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000294
+    excerpt: Use mulch to retain moisture in the soil. Mulch also helps control weeds
+      that compete with landscape plants for water.
+    start_char: 432
+    end_char: 515
+    support_strength: strong
+- object_id: environment.outdoor-water-conservation
+  claim_id: clm_005
+  claim_text: Avoid water-intensive recreational toys and ornamental features unless
+    they use recycled water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 193
+    page_end: 193
+    segment_id: src.fema.are-you-ready.2004::seg_000294
+    excerpt: Avoid purchasing recreational water toys that require a constant stream
+      of water. Avoid installing ornamental water features (such as fountains) unless
+      they use recycled water.
+    start_char: 516
+    end_char: 647
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000294

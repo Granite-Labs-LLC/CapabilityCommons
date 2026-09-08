@@ -1,0 +1,181 @@
+id: emergency-preparedness.are-you-ready
+slug: emergency-preparedness-are-you-ready
+seed_type: assessment
+co_type: assessment
+canonical_title: 'Emergency Preparedness: Are You Ready?'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Evaluate your readiness for emergencies.
+summary_medium: This assessment helps you evaluate your readiness for emergencies
+  and identify any preparedness gaps.
+plain_language: This guide helps you check how prepared you are for emergencies and
+  find areas where you might need to improve.
+markdown_body: '# What this is
+
+  This is an assessment tool designed to help individuals and families evaluate their
+  current level of emergency preparedness.
+
+
+  # Why it matters
+
+  Being prepared for emergencies can significantly reduce the impact of disasters
+  on your life. This assessment helps identify areas where you may need to improve
+  your preparedness.
+
+
+  # What you need
+
+  You will need a list of your current emergency supplies, knowledge of your local
+  emergency plans, and an understanding of potential regional emergencies.
+
+
+  # How to do it
+
+  Review your current emergency supplies and plans. Compare them against recommended
+  guidelines to identify any gaps. Consider local emergency scenarios and resources
+  available in your area.
+
+
+  # Common failure modes
+
+  Common issues include incomplete assessments and misidentification of preparedness
+  gaps.
+
+
+  # Safety/boundary notes
+
+  Ensure that your assessment considers all family members'' needs, including pets
+  and those with special requirements.
+
+
+  # Local adaptation notes
+
+  Adapt the assessment to include regional emergency scenarios and the availability
+  of local resources.'
+structured_data:
+  definition: An assessment to evaluate readiness for emergencies.
+  key_questions:
+  - What emergency supplies do you currently have?
+  - Are you aware of local emergency plans?
+  - What are the potential regional emergencies you might face?
+  misconceptions:
+  - Having a basic emergency kit is enough for all scenarios.
+  - Local emergency plans are not necessary to consider.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_001
+  claim_text: This is an assessment tool designed to help individuals and families
+    evaluate their current level of emergency preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 174
+    segment_id: src.fema.are-you-ready.2004::seg_000259
+    excerpt: '4.7'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies can significantly reduce the impact of
+    disasters on your life.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: 'The Homeland Security Advisory System was designed to provide a national
+      framework and comprehensive means to disseminate information regarding the risk
+      of terrorist acts to the following: Federal, state, and local authorities, The
+      private sector, The American people'
+    start_char: 0
+    end_char: 256
+    support_strength: medium
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_003
+  claim_text: You will need a list of your current emergency supplies, knowledge of
+    your local emergency plans, and an understanding of potential regional emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 156
+    support_strength: medium
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_004
+  claim_text: Review your current emergency supplies and plans. Compare them against
+    recommended guidelines to identify any gaps.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 156
+    support_strength: medium
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_005
+  claim_text: Common issues include incomplete assessments and misidentification of
+    preparedness gaps.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 156
+    support_strength: weak
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_006
+  claim_text: Ensure that your assessment considers all family members' needs, including
+    pets and those with special requirements.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 156
+    support_strength: weak
+- object_id: emergency-preparedness.are-you-ready
+  claim_id: clm_007
+  claim_text: Adapt the assessment to include regional emergency scenarios and the
+    availability of local resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 171
+    page_end: 172
+    segment_id: src.fema.are-you-ready.2004::seg_000257
+    excerpt: Before an RDD Event There is no way of knowing how much warning time
+      there will be before an attack by terrorists using an RDD, so being prepared
+      in advance and knowing what to do and when is important.
+    start_char: 0
+    end_char: 156
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000259

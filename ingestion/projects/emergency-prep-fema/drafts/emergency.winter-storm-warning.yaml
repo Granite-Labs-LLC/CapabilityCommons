@@ -1,0 +1,176 @@
+id: emergency.winter-storm-warning
+slug: emergency.winter-storm-warning
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Winter Storm Warning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: moderate
+summary_short: A notice of a winter storm occurring or imminent in your area.
+summary_medium: This reference sheet provides information on a winter storm that is
+  occurring or will soon occur in your area.
+plain_language: A winter storm warning means that a winter storm is happening or will
+  happen soon in your area. Be prepared for severe weather conditions.
+markdown_body: '### What this is
+
+  A Winter Storm Warning is an alert issued by weather authorities indicating that
+  a winter storm is currently happening or is expected to occur soon in your area.
+
+
+  ### Why it matters
+
+  Winter storms can bring heavy snowfall, ice, and strong winds, leading to dangerous
+  conditions such as power outages, road closures, and increased risk of accidents.
+  Being aware of a winter storm warning allows individuals and communities to take
+  necessary precautions to ensure safety.
+
+
+  ### What you need
+
+  Stay informed through local news and weather updates. Have emergency supplies ready,
+  including food, water, warm clothing, and a battery-powered radio.
+
+
+  ### How to do it
+
+  Monitor weather reports and alerts. Avoid unnecessary travel and stay indoors if
+  possible. Prepare your home by insulating pipes and ensuring you have adequate heating
+  fuel.
+
+
+  ### Common failure modes
+
+  Ignoring warnings can lead to being unprepared for power outages or being stranded
+  in dangerous conditions. Failing to stock up on essentials can result in shortages
+  during the storm.
+
+
+  ### Safety/boundary notes
+
+  Ensure you have a plan for staying warm and safe if the power goes out. Avoid using
+  generators or grills indoors to prevent carbon monoxide poisoning.
+
+
+  ### Local adaptation notes
+
+  Adapt your preparations based on local infrastructure and typical weather patterns.
+  Urban areas may face different challenges than rural ones, such as public transportation
+  disruptions.'
+structured_data:
+  definition: A Winter Storm Warning is an official notice that a winter storm is
+    occurring or will soon occur in a specific area.
+  key_questions:
+  - What conditions constitute a winter storm?
+  - How can I prepare for a winter storm?
+  - What are the potential impacts of a winter storm?
+  misconceptions:
+  - A winter storm warning means it will only snow lightly.
+  - Winter storms are not dangerous if you stay indoors.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_001
+  claim_text: A Winter Storm Warning is an alert issued by weather authorities indicating
+    that a winter storm is currently happening or is expected to occur soon in your
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000123
+    excerpt: A winter storm is occurring or will soon occur in your area.
+    start_char: 0
+    end_char: 57
+    support_strength: strong
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_002
+  claim_text: Winter storms can bring heavy snowfall, ice, and strong winds, leading
+    to dangerous conditions such as power outages, road closures, and increased risk
+    of accidents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000123
+    excerpt: A winter storm is occurring or will soon occur in your area.
+    start_char: 0
+    end_char: 57
+    support_strength: weak
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_003
+  claim_text: Being aware of a winter storm warning allows individuals and communities
+    to take necessary precautions to ensure safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000123
+    excerpt: A winter storm is occurring or will soon occur in your area.
+    start_char: 0
+    end_char: 57
+    support_strength: weak
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_004
+  claim_text: Stay informed through local news and weather updates. Have emergency
+    supplies ready, including food, water, warm clothing, and a battery-powered radio.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for more
+      information.
+    start_char: 48
+    end_char: 116
+    support_strength: medium
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_005
+  claim_text: Monitor weather reports and alerts. Avoid unnecessary travel and stay
+    indoors if possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for more
+      information.
+    start_char: 48
+    end_char: 116
+    support_strength: medium
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_006
+  claim_text: Prepare your home by insulating pipes and ensuring you have adequate
+    heating fuel.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000126
+    excerpt: Take Protective Measures
+    start_char: 0
+    end_char: 23
+    support_strength: weak
+- object_id: emergency.winter-storm-warning
+  claim_id: clm_007
+  claim_text: Ensure you have a plan for staying warm and safe if the power goes out.
+    Avoid using generators or grills indoors to prevent carbon monoxide poisoning.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000126
+    excerpt: Take Protective Measures
+    start_char: 0
+    end_char: 23
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000123

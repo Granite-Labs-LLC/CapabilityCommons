@@ -1,0 +1,205 @@
+id: emergency.preparedness-checklist
+slug: emergency.preparedness-checklist
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Preparedness Checklist
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_management
+secondary_domains: []
+stage: community
+contexts:
+- household
+- community
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A checklist for emergency preparedness.
+summary_medium: A checklist covering essential supplies and actions for emergency
+  preparedness.
+plain_language: This checklist helps you prepare for emergencies by listing essential
+  supplies and actions to take before, during, and after an emergency.
+markdown_body: '# What this is
+
+  This is a checklist designed to help individuals and families prepare for emergencies.
+  It includes essential supplies and actions to ensure safety and readiness.
+
+
+  # Why it matters
+
+  Being prepared for emergencies can significantly reduce the impact of disasters
+  on your family and community. Having a plan and the necessary supplies can save
+  lives and minimize stress during a crisis.
+
+
+  # What you need
+
+  You will need an emergency kit, communication devices, and a clear plan that all
+  family members understand.
+
+
+  # How to do it
+
+  1. Gather essential supplies such as water, non-perishable food, first aid kit,
+  flashlight, batteries, and important documents.
+
+  2. Create a communication plan that includes emergency contacts and meeting places.
+
+  3. Stay informed about potential hazards in your area and update your plan accordingly.
+
+
+  # Common failure modes
+
+  Common issues include lack of supplies, poor communication among family members,
+  and failure to update the plan regularly.
+
+
+  # Safety/boundary notes
+
+  Ensure all family members are aware of the emergency plan and know how to execute
+  it. Regularly review and practice the plan.
+
+
+  # Local adaptation notes
+
+  Consider regional hazards and available community resources when creating your emergency
+  plan.'
+structured_data:
+  tools:
+  - communication devices
+  materials:
+  - emergency kit
+  success_criteria:
+  - All family members know the plan
+  - Supplies are readily available
+  failure_modes:
+  - Lack of supplies
+  - Poor communication
+  safety_boundary:
+  - Ensure all family members are aware of the plan
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_001
+  claim_text: This is a checklist designed to help individuals and families prepare
+    for emergencies. It includes essential supplies and actions to ensure safety and
+    readiness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies can significantly reduce the impact of
+    disasters on your family and community. Having a plan and the necessary supplies
+    can save lives and minimize stress during a crisis.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_003
+  claim_text: You will need an emergency kit, communication devices, and a clear plan
+    that all family members understand.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_004
+  claim_text: Gather essential supplies such as water, non-perishable food, first
+    aid kit, flashlight, batteries, and important documents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_005
+  claim_text: Create a communication plan that includes emergency contacts and meeting
+    places.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_006
+  claim_text: Stay informed about potential hazards in your area and update your plan
+    accordingly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_007
+  claim_text: Common issues include lack of supplies, poor communication among family
+    members, and failure to update the plan regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_008
+  claim_text: Ensure all family members are aware of the emergency plan and know how
+    to execute it. Regularly review and practice the plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+- object_id: emergency.preparedness-checklist
+  claim_id: clm_009
+  claim_text: Consider regional hazards and available community resources when creating
+    your emergency plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 170
+    page_end: 170
+    segment_id: src.fema.are-you-ready.2004::seg_000255
+    excerpt: '4.6'
+    start_char: 0
+    end_char: 3
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000255

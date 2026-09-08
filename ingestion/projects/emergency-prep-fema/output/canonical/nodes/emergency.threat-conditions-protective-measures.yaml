@@ -1,0 +1,151 @@
+id: emergency.threat-conditions-protective-measures
+slug: emergency.threat-conditions-protective-measures
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Threat Conditions and Associated Protective Measures
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: A reference sheet detailing threat conditions and associated protective
+  measures for escalating terrorist threats.
+summary_medium: This reference sheet outlines cumulative protective actions for government,
+  private sector, and public in response to escalating terrorist threat levels.
+plain_language: Learn about different threat levels and the protective measures you
+  can take as threats escalate.
+markdown_body: '# What this is
+
+  This reference sheet provides information on threat conditions related to terrorist
+  threats and the associated protective measures that should be taken. It is designed
+  to help government entities, private sector organizations, and the public understand
+  and respond appropriately to varying levels of threat.
+
+
+  # Why it matters
+
+  Understanding threat conditions and the corresponding protective measures is crucial
+  for ensuring safety and preparedness in the face of potential terrorist attacks.
+  As threat levels increase, so does the need for heightened security measures.
+
+
+  # What you need
+
+  Awareness of current threat levels, access to government and local guidelines, and
+  a plan for implementing protective measures.
+
+
+  # How to do it
+
+  1. Monitor threat levels as communicated by authorities.
+
+  2. Implement the recommended protective measures for the current threat level.
+
+  3. As threat levels escalate, add new measures to those already in place.
+
+  4. Ensure all actions are in compliance with local government guidelines.
+
+
+  # Common failure modes
+
+  Failing to respond adequately to the current threat level or neglecting to implement
+  cumulative measures as threat levels rise.
+
+
+  # Safety/boundary notes
+
+  Ensure all protective measures are in line with local laws and regulations. Avoid
+  panic and misinformation by relying on official sources.
+
+
+  # Local adaptation notes
+
+  Adapt the protective measures based on regional threat assessments and local government
+  guidelines.'
+structured_data:
+  definition: Threat conditions are levels of alert that correspond to the risk of
+    terrorist attacks, each with specific protective measures.
+  key_questions:
+  - What are the current threat levels?
+  - What protective measures should be implemented at each level?
+  misconceptions:
+  - All threat levels require the same response.
+  - Protective measures are optional.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.threat-conditions-protective-measures
+  claim_id: clm_001
+  claim_text: This reference sheet provides information on threat conditions related
+    to terrorist threats and the associated protective measures that should be taken.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures that the government, the private sector, and the public
+      can take.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.threat-conditions-protective-measures
+  claim_id: clm_002
+  claim_text: Understanding threat conditions and the corresponding protective measures
+    is crucial for ensuring safety and preparedness in the face of potential terrorist
+    attacks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: This system provides warnings in the form of a set of graduated 'threat
+      conditions' that increase as the risk of the threat increases. At each threat
+      condition, government entities and the private sector, including businesses
+      and schools, would implement a corresponding set of 'protective measures' to
+      further reduce vulnerability or increase response capability during a period
+      of heightened alert.
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.threat-conditions-protective-measures
+  claim_id: clm_003
+  claim_text: As threat levels increase, so does the need for heightened security
+    measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: This system provides warnings in the form of a set of graduated 'threat
+      conditions' that increase as the risk of the threat increases. At each threat
+      condition, government entities and the private sector, including businesses
+      and schools, would implement a corresponding set of 'protective measures' to
+      further reduce vulnerability or increase response capability during a period
+      of heightened alert.
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: emergency.threat-conditions-protective-measures
+  claim_id: clm_004
+  claim_text: In each case, as threat conditions escalate, protective measures are
+    added to those already taken in lower threat conditions. The measures are cumulative.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: In each case, as threat conditions escalate, protective measures are
+      added to those already taken in lower threat conditions. The measures are cumulative.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000261

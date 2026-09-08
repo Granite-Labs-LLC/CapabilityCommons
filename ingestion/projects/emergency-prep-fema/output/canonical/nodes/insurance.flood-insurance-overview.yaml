@@ -1,0 +1,258 @@
+canonical_title: Flood Insurance Overview
+citations:
+- claim_id: clm_001
+  claim_text: Flood insurance is a specific type of insurance policy that covers losses
+    due to flooding, which is not covered under standard homeowners' insurance policies.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 60
+    excerpt: Flood losses are **not covered** under homeowners' insurance policies.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: The National Flood Insurance Program (NFIP) provides a way for homeowners
+    to protect themselves against these risks.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 248
+    excerpt: FEMA manages the National Flood Insurance Program, which makes federally-backed
+      flood insurance available in communities that agree to adopt and enforce floodplain
+      management ordinances to reduce future flood damage.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 61
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: To obtain flood insurance, you need to contact an insurance agent who
+    offers policies through the NFIP.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 301
+    excerpt: Flood insurance is available in most communities through insurance agents.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 249
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: It's important to be aware of the 30-day waiting period before the insurance
+    becomes effective.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 372
+    excerpt: There is a 30-day waiting period before flood insurance goes into effect,
+      so don't delay.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 302
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Flood insurance is available whether or not your property is in a designated
+    flood-prone area.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 451
+    excerpt: Flood insurance is available whether the building is in or out of the
+      identified flood-prone area.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 373
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Communities must adopt and enforce floodplain management ordinances
+    to participate in the NFIP, which can vary by location.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 248
+    excerpt: FEMA manages the National Flood Insurance Program, which makes federally-backed
+      flood insurance available in communities that agree to adopt and enforce floodplain
+      management ordinances to reduce future flood damage.
+    page_end: 55
+    page_start: 55
+    segment_id: src.fema.are-you-ready.2004::seg_000076
+    source_id: src.fema.are-you-ready.2004
+    start_char: 61
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Flood insurance is a type of insurance policy that covers damage to
+    buildings and their contents caused by flooding.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 246
+    excerpt: If you live in a flood-prone area, consider purchasing flood insurance
+      to reduce your risk of flood loss. Buying flood insurance to cover the value
+      of a building and its contents will not only provide greater peace of mind,
+      but will speed the recovery if a flood occurs.
+    page_end: 29
+    page_start: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Flooding can cause significant damage to homes and personal property.
+    Having flood insurance can provide financial protection and peace of mind, ensuring
+    quicker recovery after a flood event.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 246
+    excerpt: Buying flood insurance to cover the value of a building and its contents
+      will not only provide greater peace of mind, but will speed the recovery if
+      a flood occurs.
+    page_end: 29
+    page_start: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    source_id: src.fema.are-you-ready.2004
+    start_char: 104
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Consider purchasing a flood insurance policy if you live in a flood-prone
+    area. Evaluate the value of your building and contents to determine the appropriate
+    coverage.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 155
+    excerpt: If you live in a flood-prone area, consider purchasing flood insurance
+      to reduce your risk of flood loss. Buying flood insurance to cover the value
+      of a building and its contents...
+    page_end: 29
+    page_start: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_010
+  claim_text: Contact an insurance provider or call 1(888)FLOOD29 to learn more about
+    available flood insurance options. Assess your property and personal belongings
+    to decide on the coverage you need.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 199
+    excerpt: You can call 1(888)FLOOD29 to learn more about flood insurance.
+    page_end: 29
+    page_start: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    source_id: src.fema.are-you-ready.2004
+    start_char: 156
+    support_strength: strong
+- claim_id: clm_011
+  claim_text: Ensure that important documents related to your insurance policy are
+    stored safely and copies are included in your disaster supplies kit.
+  object_id: insurance.flood-insurance-overview
+  support:
+  - end_char: 437
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home. Make copies of important documents for your disaster
+      supplies kit.
+    page_end: 29
+    page_start: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    source_id: src.fema.are-you-ready.2004
+    start_char: 246
+    support_strength: strong
+co_type: concept_note
+contexts: []
+cost_band: medium
+difficulty: 2
+id: insurance.flood-insurance-overview
+language_code: en
+lifecycle_state: published
+markdown_body: '### What this is
+
+
+  Flood insurance is a specific type of insurance policy that covers losses due to
+  flooding, which is not covered under standard homeowners'' insurance policies.
+
+
+  ### Why it matters
+
+
+  Flooding can cause significant damage to property, and without flood insurance,
+  homeowners may face substantial financial losses. The National Flood Insurance Program
+  (NFIP) provides a way for homeowners to protect themselves against these risks.
+
+
+  ### What you need
+
+
+  To obtain flood insurance, you need to contact an insurance agent who offers policies
+  through the NFIP. It''s important to be aware of the 30-day waiting period before
+  the insurance becomes effective.
+
+
+  ### How to do it
+
+
+  Contact an insurance agent to purchase a flood insurance policy. Ensure your community
+  participates in the NFIP by adopting floodplain management ordinances. Remember
+  the 30-day waiting period before coverage starts.
+
+
+  ### Common failure modes
+
+
+  A common mistake is assuming that standard homeowners'' insurance covers flood damage.
+  Another is delaying the purchase of flood insurance, not accounting for the 30-day
+  waiting period.
+
+
+  ### Safety/boundary notes
+
+
+  Flood insurance is available whether or not your property is in a designated flood-prone
+  area, but it''s crucial to understand the specific terms and coverage limits of
+  your policy.
+
+
+  ### Local adaptation notes
+
+
+  Communities must adopt and enforce floodplain management ordinances to participate
+  in the NFIP, which can vary by location.'
+plain_language: Flood insurance is not included in standard homeowners' insurance.
+  It's managed by FEMA and available through the National Flood Insurance Program.
+  There's a 30-day waiting period before it starts.
+primary_domain: insurance
+requires: []
+risk_band: moderate
+secondary_domains: []
+seed_type: extracted
+slug: insurance.flood-insurance-overview
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000076
+- src.fema.are-you-ready.2004::seg_000039
+stage: foundation
+structured_data:
+  definition: Flood insurance is a policy that covers property damage specifically
+    caused by flooding.
+  key_questions:
+  - What is covered under flood insurance?
+  - How does the National Flood Insurance Program work?
+  - What is the waiting period for flood insurance?
+  - Do I live in a flood-prone area?
+  - What is the value of my property and contents?
+  - What does my flood insurance policy cover?
+  misconceptions:
+  - Flood damage is covered by standard homeowners' insurance.
+  - Flood insurance is only necessary for homes in flood-prone areas.
+  - Standard home insurance covers flood damage.
+  - Flood insurance is only necessary for homes directly next to water bodies.
+suggested_edges: []
+summary_medium: Flood insurance is managed by FEMA under the National Flood Insurance
+  Program and is available in most communities. It requires a 30-day waiting period
+  before coverage begins.
+summary_short: Overview of flood insurance and its management by FEMA.
+version_no: 1
+visibility: public

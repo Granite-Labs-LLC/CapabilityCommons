@@ -1,0 +1,236 @@
+id: emergency-preparedness.volcanic-ash-protection
+slug: emergency-preparedness.volcanic-ash-protection
+seed_type: assessment
+co_type: skill_guide
+canonical_title: Volcanic Ash Protection
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Learn how to protect yourself from volcanic ash.
+summary_medium: Understand the necessary protective measures during volcanic ash fall,
+  including the use of masks, goggles, and protective clothing.
+plain_language: This guide helps you prepare for and protect yourself during a volcanic
+  ash fall, like the one experienced in Yakima after Mount St. Helens erupted.
+markdown_body: "### What this is\nThis guide provides instructions on how to protect\
+  \ yourself during a volcanic ash fall, focusing on personal protective equipment\
+  \ and safety measures.\n\n### Why it matters\nVolcanic ash can cause respiratory\
+  \ issues, reduce visibility, and create hazardous conditions. Proper protection\
+  \ is essential to minimize health risks and ensure safety.\n\n### What you need\n\
+  You will need protective masks, goggles, and protective clothing to shield yourself\
+  \ from ash particles.\n\n### How to do it\n1. Wear a protective mask to prevent\
+  \ inhaling ash particles. \n2. Use goggles to protect your eyes from irritation.\
+  \ \n3. Wear long-sleeved clothing and cover as much skin as possible. \n4. Limit\
+  \ outdoor exposure and ensure adequate lighting if visibility is reduced.\n\n###\
+  \ Common failure modes\nFailing to use adequate protection can lead to respiratory\
+  \ issues and visibility hazards.\n\n### Safety/boundary notes\nAvoid outdoor exposure\
+  \ without proper protection. Ensure you have adequate lighting if ash fall reduces\
+  \ visibility.\n\n### Local adaptation notes\nConsider the availability of protective\
+  \ gear and community resources for ash cleanup in your area."
+structured_data:
+  tools:
+  - protective masks
+  - goggles
+  materials:
+  - protective clothing
+  success_criteria: Successfully avoid respiratory issues and maintain visibility
+    during ash fall.
+  failure_modes: Inadequate protection leading to respiratory issues and visibility
+    hazards.
+  safety_boundary: Avoid outdoor exposure without protection.
+  implementation:
+    smallest_viable_version: Use basic protective gear like masks and goggles to minimize
+      exposure to ash.
+    tools:
+    - protective masks
+    - goggles
+    materials:
+    - protective clothing
+    expected_time: Immediate response during ash fall
+    expected_cost: Varies based on availability of materials
+    success_checks:
+    - No respiratory issues
+    - Clear visibility maintained
+    stop_conditions:
+    - Severe respiratory distress
+    - Inability to maintain visibility
+    common_mistakes:
+    - Not wearing a mask
+    - Ignoring visibility issues
+    variants:
+    - label: Urban
+      when: In densely populated areas
+      notes: Ensure community resources are available for cleanup.
+    when_to_escalate:
+    - Severe health symptoms
+    - Significant ash accumulation
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to protect yourself during a
+    volcanic ash fall, focusing on personal protective equipment and safety measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Wear long-sleeved shirts and long pants. Use goggles and wear eyeglasses
+      instead of contact lenses. Use a dust mask or hold a damp cloth over your face
+      to help with breathing.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_002
+  claim_text: Volcanic ash can cause respiratory issues, reduce visibility, and create
+    hazardous conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Use a dust mask or hold a damp cloth over your face to help with breathing.
+      Avoid driving in heavy ash fall unless absolutely required.
+    start_char: 100
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_003
+  claim_text: You will need protective masks, goggles, and protective clothing to
+    shield yourself from ash particles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Wear long-sleeved shirts and long pants. Use goggles and wear eyeglasses
+      instead of contact lenses. Use a dust mask or hold a damp cloth over your face
+      to help with breathing.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_004
+  claim_text: Wear a protective mask to prevent inhaling ash particles.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Use a dust mask or hold a damp cloth over your face to help with breathing.
+    start_char: 100
+    end_char: 150
+    support_strength: strong
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_005
+  claim_text: Use goggles to protect your eyes from irritation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Use goggles and wear eyeglasses instead of contact lenses.
+    start_char: 50
+    end_char: 100
+    support_strength: strong
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_006
+  claim_text: Wear long-sleeved clothing and cover as much skin as possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 104
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000159
+    excerpt: Wear long-sleeved shirts and long pants.
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency-preparedness.volcanic-ash-protection
+  claim_id: clm_007
+  claim_text: Limit outdoor exposure and ensure adequate lighting if visibility is
+    reduced.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000161
+    excerpt: The ash fall was so extensive and it became so dark that lights were
+      turned on all day.
+    start_char: 50
+    end_char: 120
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000161
+bundle_overrides:
+  hook: Volcanic ash can pose serious health risks and visibility challenges—learn
+    how to protect yourself effectively.
+  primer: Volcanic ash is not just a nuisance; it can be a serious health hazard.
+    When a volcano erupts, it can release ash into the atmosphere, which then falls
+    to the ground. This ash is made up of tiny, abrasive particles that can cause
+    respiratory issues, irritate the eyes, and reduce visibility. Protecting yourself
+    during an ash fall is crucial to minimize these risks. Essential protective measures
+    include wearing masks to prevent inhalation of ash particles, using goggles to
+    shield your eyes, and wearing long-sleeved clothing to cover your skin. Limiting
+    outdoor exposure and ensuring adequate lighting are also important if visibility
+    is compromised. Understanding these protective steps can help you stay safe during
+    a volcanic ash event.
+  guide: '1. **Wear a Protective Mask**: Use a dust mask or hold a damp cloth over
+    your nose and mouth to prevent inhaling ash particles. This is crucial for protecting
+    your respiratory system.
+
+
+    2. **Use Goggles**: Protect your eyes from irritation by wearing goggles. If you
+    wear glasses, use them instead of contact lenses to avoid further eye irritation.
+
+
+    3. **Wear Protective Clothing**: Dress in long-sleeved shirts and long pants to
+    cover as much skin as possible. This helps prevent skin irritation from ash particles.
+
+
+    4. **Limit Outdoor Exposure**: Stay indoors as much as possible to avoid direct
+    contact with ash. If you must go outside, ensure you are fully protected.
+
+
+    5. **Ensure Adequate Lighting**: Ash fall can significantly reduce visibility.
+    Keep lights on during the day if necessary to maintain visibility indoors and
+    outdoors.
+
+
+    6. **Avoid Driving**: Driving in heavy ash fall can be dangerous due to reduced
+    visibility and slippery roads. Only drive if absolutely necessary and with caution.'
+  reference:
+  - Wear a protective mask to prevent inhaling ash particles.
+  - Use goggles to protect your eyes from irritation.
+  - Wear long-sleeved clothing and cover as much skin as possible.
+  - Limit outdoor exposure and ensure adequate lighting if visibility is reduced.
+  - Avoid driving in heavy ash fall unless absolutely required.
+  worksheet:
+  - List the essential protective gear needed during a volcanic ash fall.
+  - Describe the steps you would take to protect yourself if you were caught outside
+    during an ash fall.
+  - Explain why it is important to avoid wearing contact lenses during an ash fall.
+  - Discuss the potential health risks associated with volcanic ash exposure.
+  - Plan a checklist of items to have ready in case of a volcanic ash fall.
+  teach_forward_kit:
+    three_minute_version: Volcanic ash can cause serious health and visibility issues.
+      Protect yourself by wearing a mask, goggles, and long-sleeved clothing. Stay
+      indoors if possible and ensure good lighting if visibility is reduced.
+    ten_minute_outline:
+    - Introduction to volcanic ash and its hazards
+    - Importance of protective measures
+    - Detailed steps for personal protection
+    - Discussion on visibility and safety
+    - Q&A session
+    discussion_prompts:
+    - What are the most important protective measures during a volcanic ash fall?
+    - How can communities prepare for a volcanic ash event?
+    - What challenges might arise in ensuring everyone has access to protective gear?

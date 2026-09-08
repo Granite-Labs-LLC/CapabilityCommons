@@ -1,0 +1,135 @@
+id: emergency-preparedness.winter-storm-watch
+slug: emergency-preparedness.winter-storm-watch
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Winter Storm Watch
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts:
+- weather
+- emergency
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Monitor weather updates during a winter storm watch.
+summary_medium: Guidance on staying informed about weather conditions during a winter
+  storm watch by tuning into various media sources.
+plain_language: When a winter storm watch is announced, it means a storm might happen
+  in your area. Stay informed by listening to NOAA Weather Radio, commercial radio,
+  or watching TV for updates.
+markdown_body: '### What this is
+
+  A winter storm watch indicates that a winter storm is possible in your area. It
+  is a precautionary alert to prepare for potential severe weather conditions.
+
+
+  ### Why it matters
+
+  Staying informed during a winter storm watch is crucial for safety and preparedness.
+  It allows individuals to take necessary precautions to protect themselves and their
+  property.
+
+
+  ### What you need
+
+  Access to NOAA Weather Radio, commercial radio, or television to receive updates.
+
+
+  ### How to do it
+
+  Tune in to NOAA Weather Radio, commercial radio, or television to receive the latest
+  information and updates about the winter storm. Pay attention to any changes in
+  the weather forecast and follow any instructions provided by local authorities.
+
+
+  ### Common failure modes
+
+  Failing to monitor updates can lead to being unprepared for the storm. Ignoring
+  warnings can result in being caught in dangerous conditions.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your devices are charged or have backup power sources to stay informed
+  during power outages.
+
+
+  ### Local adaptation notes
+
+  In areas where NOAA Weather Radio is not available, rely on local commercial radio
+  or television stations for updates.'
+structured_data:
+  tools:
+  - NOAA Weather Radio
+  - commercial radio
+  - television
+  materials: []
+  success_criteria: Receive timely updates about the winter storm and take appropriate
+    actions based on the information provided.
+  failure_modes: Missing updates or ignoring warnings.
+  safety_boundary: ''
+  implementation:
+    smallest_viable_version: Listen to any available radio or TV for storm updates.
+    tools:
+    - NOAA Weather Radio
+    - commercial radio
+    - television
+    materials: []
+    expected_time: Ongoing during the storm watch period
+    expected_cost: Low, assuming access to radio or TV
+    success_checks:
+    - Receive and understand weather updates
+    - Take appropriate actions based on updates
+    stop_conditions:
+    - Storm watch is lifted
+    - No longer in the affected area
+    common_mistakes:
+    - Not checking updates regularly
+    - Ignoring official warnings
+    variants:
+    - label: Urban
+      when: In a city with reliable media access
+      notes: Use local news channels for updates.
+    - label: Off-grid
+      when: In areas without reliable electricity
+      notes: Use battery-powered radios.
+    when_to_escalate:
+    - If severe weather conditions develop
+    - If local authorities issue evacuation orders
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.winter-storm-watch
+  claim_id: clm_001
+  claim_text: A winter storm watch indicates that a winter storm is possible in your
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: A winter storm is possible in your area.
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: emergency-preparedness.winter-storm-watch
+  claim_id: clm_002
+  claim_text: Tune in to NOAA Weather Radio, commercial radio, or television to receive
+    the latest information and updates about the winter storm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for more
+      information.
+    start_char: 41
+    end_char: 109
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000122

@@ -1,0 +1,189 @@
+id: emergency-preparedness.citizen-corps-overview
+slug: emergency-preparedness.citizen-corps-overview
+seed_type: extracted
+co_type: concept_note
+canonical_title: Citizen Corps Overview
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Citizen Corps engages the public in safety and preparedness through
+  education, training, and volunteer programs.
+summary_medium: Citizen Corps offers opportunities for public participation in safety
+  measures against crime, terrorism, public health issues, and disasters through education,
+  training, and volunteer programs, managed locally by Citizen Corps Councils.
+plain_language: Citizen Corps helps people get involved in making their communities
+  safer by learning about and preparing for emergencies. Local councils organize these
+  efforts, bringing together community leaders and volunteers.
+markdown_body: '### What this is
+
+  Citizen Corps is a national initiative that encourages public participation in safety
+  and preparedness activities. It provides education, training, and volunteer opportunities
+  to help individuals and communities prepare for and respond to emergencies.
+
+
+  ### Why it matters
+
+  By participating in Citizen Corps, individuals can enhance their own safety and
+  contribute to the resilience of their communities against threats like crime, terrorism,
+  public health crises, and natural disasters.
+
+
+  ### What you need
+
+  To get involved, you can join local Citizen Corps Councils, which coordinate efforts
+  with community leaders and stakeholders. Participation may involve attending training
+  sessions or volunteering in community safety programs.
+
+
+  ### How to do it
+
+  Visit the Citizen Corps website or contact your local council to learn about available
+  programs. You can participate in activities like public education on disaster preparedness,
+  citizen training, and volunteer programs.
+
+
+  ### Common failure modes
+
+  Lack of community engagement or insufficient coordination among local stakeholders
+  can hinder the effectiveness of Citizen Corps programs.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all activities comply with local safety regulations and guidelines.
+
+
+  ### Local adaptation notes
+
+  Citizen Corps Councils manage programs locally, allowing for adaptation to specific
+  community needs and resources.'
+structured_data:
+  definition: Citizen Corps is a program that involves the public in emergency preparedness
+    and safety through education, training, and volunteer opportunities.
+  key_questions:
+  - How can individuals participate in Citizen Corps activities?
+  - What roles do local Citizen Corps Councils play?
+  misconceptions:
+  - Citizen Corps is only for professionals.
+  - Participation requires significant time commitment.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_001
+  claim_text: Citizen Corps is a national initiative that encourages public participation
+    in safety and preparedness activities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: Citizen Corps provides opportunities for people across the country to
+      participate in a range of measures to make their families, their homes, and
+      their communities safer from the threats of crime, terrorism, public health
+      issues, and disasters of all kinds.
+    start_char: 0
+    end_char: 174
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_002
+  claim_text: It provides education, training, and volunteer opportunities to help
+    individuals and communities prepare for and respond to emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: Through public education, training opportunities, and volunteer programs,
+      every American can do their part to be better prepared and better protected
+      and to help their communities do the same.
+    start_char: 175
+    end_char: 305
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_003
+  claim_text: By participating in Citizen Corps, individuals can enhance their own
+    safety and contribute to the resilience of their communities against threats like
+    crime, terrorism, public health crises, and natural disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: By participating in Citizen Corps programs, you can make your home, your
+      neighborhood and your community a safer place to live.
+    start_char: 487
+    end_char: 573
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_004
+  claim_text: To get involved, you can join local Citizen Corps Councils, which coordinate
+    efforts with community leaders and stakeholders.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: Citizen Corps is managed at the local level by Citizen Corps Councils,
+      which bring together leaders from law enforcement, fi re, emergency medical
+      and other emergency management, volunteer organizations, local elected offi
+      cials, the private sector, and other community stakeholders.
+    start_char: 306
+    end_char: 487
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_005
+  claim_text: Participation may involve attending training sessions or volunteering
+    in community safety programs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: These Citizen Corps Councils will organize public education on disaster
+      mitigation and preparedness, citizen training, and volunteer programs to give
+      people of all ages and backgrounds the opportunity to support their community's
+      emergency services and to safeguard themselves and their property.
+    start_char: 488
+    end_char: 696
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_006
+  claim_text: Visit the Citizen Corps website or contact your local council to learn
+    about available programs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: To fi nd out more, please visit the Citizen Corps Web site, *www.citizencorps.gov*
+      or visit *www.fema.gov*.
+    start_char: 574
+    end_char: 636
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-corps-overview
+  claim_id: clm_009
+  claim_text: Citizen Corps Councils manage programs locally, allowing for adaptation
+    to specific community needs and resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 4
+    page_end: 4
+    segment_id: src.fema.are-you-ready.2004::seg_000004
+    excerpt: Citizen Corps is managed at the local level by Citizen Corps Councils,
+      which bring together leaders from law enforcement, fi re, emergency medical
+      and other emergency management, volunteer organizations, local elected offi
+      cials, the private sector, and other community stakeholders.
+    start_char: 306
+    end_char: 487
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000004

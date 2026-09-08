@@ -1,0 +1,192 @@
+id: emergency.evacuation-guidelines
+slug: emergency.evacuation-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Evacuation Guidelines
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for safe evacuation during emergencies.
+summary_medium: Evacuation guidelines include maintaining a full tank of gas, making
+  transportation arrangements, listening to local instructions, and securing your
+  home. Additional steps if time permits include gathering supplies and notifying
+  others of your plans.
+plain_language: Learn how to safely evacuate during an emergency by keeping your car
+  ready, planning your route, and securing your home.
+markdown_body: '# What this is
+
+  This is a set of guidelines to help you evacuate safely during an emergency. It
+  includes steps to prepare your vehicle, secure your home, and follow local instructions.
+
+
+  # Why it matters
+
+  Evacuating safely can protect you and your family from harm during emergencies like
+  severe weather or other disasters. Proper preparation can prevent delays and ensure
+  you have the necessary supplies.
+
+
+  # What you need
+
+  A full tank of gas, a battery-powered radio, a disaster supplies kit, sturdy shoes,
+  and protective clothing.
+
+
+  # How to do it
+
+  1. Keep your car''s gas tank full if evacuation seems likely.
+
+  2. Arrange transportation if you don''t have a car.
+
+  3. Listen to a battery-powered radio for local instructions.
+
+  4. Gather your family and evacuate if instructed.
+
+  5. Follow recommended routes and avoid shortcuts.
+
+  6. Secure your home by locking doors and windows and unplugging small appliances.
+
+  7. Notify others of your evacuation plans.
+
+
+  # Common failure modes
+
+  Running out of gas, taking blocked shortcuts, not securing your home properly.
+
+
+  # Safety/boundary notes
+
+  Avoid flooded areas and stay away from downed power lines.
+
+
+  # Local adaptation notes
+
+  Adjust your evacuation plan based on local geography and available resources.'
+structured_data:
+  tools:
+  - battery-powered radio
+  materials:
+  - disaster supplies kit
+  success_criteria:
+  - Evacuate safely following local instructions
+  - Avoid hazards like flooded areas
+  failure_modes:
+  - Running out of gas
+  - Taking blocked shortcuts
+  safety_boundary:
+  - Avoid flooded areas
+  - Stay away from downed power lines
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_001
+  claim_text: Keep your car's gas tank full if evacuation seems likely.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Keep a full tank of gas in your car if an evacuation seems likely.
+    start_char: 0
+    end_char: 59
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_002
+  claim_text: Arrange transportation if you don't have a car.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Make transportation arrangements with friends or your local government
+      if you do not own a car.
+    start_char: 60
+    end_char: 149
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_003
+  claim_text: Listen to a battery-powered radio for local instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Listen to a battery-powered radio and follow local evacuation instructions.
+    start_char: 150
+    end_char: 219
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_004
+  claim_text: Gather your family and evacuate if instructed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Gather your family and go if you are instructed to evacuate immediately.
+    start_char: 220
+    end_char: 288
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_005
+  claim_text: Follow recommended routes and avoid shortcuts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Follow recommended evacuation routes. Do not take shortcuts; they may
+      be blocked.
+    start_char: 289
+    end_char: 362
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_006
+  claim_text: Secure your home by locking doors and windows and unplugging small appliances.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: 'Secure your home: • Close and lock doors and windows. • Unplug electrical
+      equipment, such as radios and televisions, and small appliances, such as toasters
+      and microwaves.'
+    start_char: 363
+    end_char: 533
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_007
+  claim_text: Notify others of your evacuation plans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Let others know where you are going.
+    start_char: 534
+    end_char: 568
+    support_strength: strong
+- object_id: emergency.evacuation-guidelines
+  claim_id: clm_008
+  claim_text: Avoid flooded areas and stay away from downed power lines.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Be alert for washed-out roads and bridges. Do not drive into flooded
+      areas. Stay away from downed power lines.
+    start_char: 569
+    end_char: 661
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000027

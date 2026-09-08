@@ -1,0 +1,160 @@
+id: emergency-management.filtration-in-buildings
+slug: emergency-management.filtration-in-buildings
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Filtration in Buildings for Biological Protection
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidance on filtration systems in buildings to protect against biological
+  agents.
+summary_medium: This reference sheet provides guidance on determining the type and
+  level of filtration in buildings to protect against biological agents, with technical
+  details available from NIOSH.
+plain_language: Learn how to assess and implement filtration systems in buildings
+  to protect against biological threats.
+markdown_body: "# Filtration in Buildings for Biological Protection\n\n## What this\
+  \ is\nThis reference sheet provides guidance on filtration systems in buildings\
+  \ to protect against biological agents. It includes information on determining the\
+  \ type and level of filtration needed and references technical guidance from NIOSH.\n\
+  \n## Why it matters\nFiltration systems are crucial for protecting building occupants\
+  \ from airborne biological threats. Understanding and implementing the right filtration\
+  \ can significantly reduce the risk of exposure during a biological attack.\n\n\
+  ## What you need\nAccess to the NIOSH publication for detailed technical guidance\
+  \ on filtration systems.\n\n## How to do it\n1. Determine the type and level of\
+  \ filtration in your building. \n2. Assess the level of protection it provides against\
+  \ biological agents. \n3. Refer to the NIOSH publication for technical guidance.\
+  \ \n4. Stay informed through media and official channels during a biological attack.\n\
+  \n## Common failure modes\nFailing to assess the current filtration system's effectiveness\
+  \ or not updating systems according to the latest guidelines can leave occupants\
+  \ vulnerable.\n\n## Safety/boundary notes\nIn the event of exposure to a biological\
+  \ agent, follow official instructions for decontamination and seek medical assistance.\n\
+  \n## Local adaptation notes\nConsider local regulations and building codes when\
+  \ implementing or upgrading filtration systems."
+structured_data:
+  definition: Filtration systems in buildings are designed to remove airborne biological
+    agents to protect occupants.
+  key_questions:
+  - What type of filtration system is currently in place?
+  - Does the filtration system meet the recommended standards for biological protection?
+  misconceptions:
+  - All filtration systems provide the same level of protection.
+  - Once installed, filtration systems do not require maintenance or updates.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidance on filtration systems in buildings
+    to protect against biological agents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Building owners and managers should determine the type and level of filtration
+      in their structures and the level of protection it provides against biological
+      agents.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_002
+  claim_text: It includes information on determining the type and level of filtration
+    needed and references technical guidance from NIOSH.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: The National Institute of Occupational Safety and Health (NIOSH) provides
+      technical guidance on this topic in their publication.
+    start_char: 145
+    end_char: 250
+    support_strength: strong
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_003
+  claim_text: Filtration systems are crucial for protecting building occupants from
+    airborne biological threats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Building owners and managers should determine the type and level of filtration
+      in their structures and the level of protection it provides against biological
+      agents.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_004
+  claim_text: Understanding and implementing the right filtration can significantly
+    reduce the risk of exposure during a biological attack.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Building owners and managers should determine the type and level of filtration
+      in their structures and the level of protection it provides against biological
+      agents.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_005
+  claim_text: Access to the NIOSH publication for detailed technical guidance on filtration
+    systems.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: The National Institute of Occupational Safety and Health (NIOSH) provides
+      technical guidance on this topic in their publication.
+    start_char: 145
+    end_char: 250
+    support_strength: strong
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_006
+  claim_text: Stay informed through media and official channels during a biological
+    attack.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: Watch television, listen to radio, or check the Internet for official
+      news and information including signs and symptoms of the disease, areas in danger,
+      if medications or vaccinations are being distributed, and where you should seek
+      medical attention if you become ill.
+    start_char: 251
+    end_char: 497
+    support_strength: strong
+- object_id: emergency-management.filtration-in-buildings
+  claim_id: clm_007
+  claim_text: In the event of exposure to a biological agent, follow official instructions
+    for decontamination and seek medical assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 158
+    page_end: 158
+    segment_id: src.fema.are-you-ready.2004::seg_000244
+    excerpt: 'If you are exposed to a biological agent: Remove and bag your clothes
+      and personal items. Follow official instructions for disposal of contaminated
+      items. Wash yourself with soap and water and put on clean clothes. Seek medical
+      assistance.'
+    start_char: 498
+    end_char: 711
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000244

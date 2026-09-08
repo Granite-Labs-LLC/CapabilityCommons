@@ -1,0 +1,148 @@
+id: emergency-preparedness.special-needs
+slug: emergency-preparedness.special-needs
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Preparedness for Individuals with Special Needs
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidance for individuals with special needs during emergencies.
+summary_medium: Guidance on additional steps for individuals with special needs during
+  emergencies, including hearing and mobility impairments, language barriers, and
+  dietary restrictions.
+plain_language: If you or someone you know has a disability or special need, there
+  are extra steps to take during emergencies to ensure safety and preparedness.
+markdown_body: '# What this is
+
+  This reference sheet provides guidance for individuals with special needs to prepare
+  for emergencies. It includes considerations for those with disabilities, language
+  barriers, and dietary restrictions.
+
+
+  # Why it matters
+
+  Emergencies can pose additional challenges for individuals with special needs. Proper
+  planning and preparation can help mitigate these challenges and ensure safety and
+  well-being.
+
+
+  # What you need
+
+  Awareness of specific needs, community resources, and a plan for communication,
+  transportation, and dietary requirements.
+
+
+  # How to do it
+
+  1. Arrange for special warnings if hearing impaired.
+
+  2. Plan for shelter assistance if mobility impaired.
+
+  3. Seek community support if non-English speaking.
+
+  4. Ensure transportation if without a vehicle.
+
+  5. Prepare an emergency food supply if you have dietary restrictions.
+
+
+  # Common failure modes
+
+  Lack of communication, inadequate transportation, and insufficient food supply can
+  hinder effective emergency response.
+
+
+  # Safety/boundary notes
+
+  Ensure that all plans respect personal safety and boundaries, particularly in terms
+  of mobility and communication.
+
+
+  # Local adaptation notes
+
+  Engage with community and cultural groups for language-specific resources and support.'
+structured_data:
+  definition: Emergency preparedness involves specific steps for individuals with
+    special needs to ensure their safety during emergencies.
+  key_questions:
+  - What additional steps are necessary for individuals with hearing impairments?
+  - How can mobility impairments affect emergency shelter plans?
+  - What role can community groups play for non-English speakers?
+  misconceptions:
+  - All emergency plans are universally applicable without adaptation for special
+    needs.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.special-needs
+  claim_id: clm_001
+  claim_text: Arrange for special warnings if hearing impaired.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000040
+    excerpt: Hearing impaired | May need to make special arrangements to receive warnings.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency-preparedness.special-needs
+  claim_id: clm_002
+  claim_text: Plan for shelter assistance if mobility impaired.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000040
+    excerpt: Mobility impaired | May need special assistance to get to a shelter.
+    start_char: 81
+    end_char: 141
+    support_strength: strong
+- object_id: emergency-preparedness.special-needs
+  claim_id: clm_003
+  claim_text: Seek community support if non-English speaking.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000040
+    excerpt: Non-English speaking persons | May need assistance planning for and responding
+      to emergencies. Community and cultural groups may be able to help keep people
+      informed.
+    start_char: 142
+    end_char: 291
+    support_strength: strong
+- object_id: emergency-preparedness.special-needs
+  claim_id: clm_004
+  claim_text: Ensure transportation if without a vehicle.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000040
+    excerpt: People without vehicles | May need to make arrangements for transportation.
+    start_char: 292
+    end_char: 366
+    support_strength: strong
+- object_id: emergency-preparedness.special-needs
+  claim_id: clm_005
+  claim_text: Prepare an emergency food supply if you have dietary restrictions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 29
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000040
+    excerpt: People with special dietary needs | Should take special precautions to
+      have an adequate emergency food supply.
+    start_char: 367
+    end_char: 455
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000040

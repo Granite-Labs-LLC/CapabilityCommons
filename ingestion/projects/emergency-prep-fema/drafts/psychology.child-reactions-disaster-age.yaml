@@ -1,0 +1,147 @@
+id: psychology.child-reactions-disaster-age
+slug: psychology.child-reactions-disaster-age
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Child Reactions to Disasters by Age
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: psychology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: Common reactions of children to disasters, categorized by age groups.
+summary_medium: This reference sheet outlines typical reactions of children to disasters,
+  categorized by age groups from birth to adolescence, highlighting how these reactions
+  evolve as children grow.
+plain_language: Children react differently to disasters depending on their age. This
+  guide explains these reactions from infancy to adolescence.
+markdown_body: '# What this is
+
+  This reference sheet provides an overview of how children of different age groups
+  typically react to disasters or traumatic events.
+
+
+  # Why it matters
+
+  Understanding age-specific reactions to trauma can help caregivers and professionals
+  provide appropriate support to children affected by disasters.
+
+
+  # What you need
+
+  Awareness of the developmental stages of children and how these stages influence
+  their reactions to trauma.
+
+
+  # How to do it
+
+  Use this guide to identify and understand the typical reactions of children in different
+  age groups following a disaster. This can inform how you support and communicate
+  with them.
+
+
+  # Common failure modes
+
+  Misunderstanding or overlooking the specific needs and reactions of children at
+  different developmental stages can lead to inadequate support.
+
+
+  # Safety/boundary notes
+
+  Ensure that children feel safe and supported, and avoid exposing them to further
+  trauma or misinformation.
+
+
+  # Local adaptation notes
+
+  Consider cultural and environmental factors that may influence children''s reactions
+  and the support they require.'
+structured_data:
+  definition: Age-specific reactions to disasters in children.
+  key_questions:
+  - How do infants typically react to trauma?
+  - What are common reactions in preschool children after a disaster?
+  - How do school-age children process traumatic events?
+  - What are typical adolescent responses to disasters?
+  misconceptions:
+  - All children react the same way to trauma.
+  - Children will naturally forget traumatic events without intervention.
+requires: []
+suggested_edges: []
+citations:
+- object_id: psychology.child-reactions-disaster-age
+  claim_id: clm_001
+  claim_text: Children react differently to disasters depending on their age.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 188
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000283
+    excerpt: Below are common reactions in children after a disaster or traumatic
+      event.
+    start_char: 0
+    end_char: 67
+    support_strength: strong
+- object_id: psychology.child-reactions-disaster-age
+  claim_id: clm_002
+  claim_text: Infants may react to trauma by being irritable, crying more than usual,
+    or wanting to be held and cuddled.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 188
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000283
+    excerpt: Infants may react to trauma by being irritable, crying more than usual,
+      or wanting to be held and cuddled.
+    start_char: 161
+    end_char: 246
+    support_strength: strong
+- object_id: psychology.child-reactions-disaster-age
+  claim_id: clm_003
+  claim_text: Preschool children often feel helpless and powerless in the face of
+    an overwhelming event.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 188
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000283
+    excerpt: Preschool children often feel helpless and powerless in the face of an
+      overwhelming event.
+    start_char: 248
+    end_char: 326
+    support_strength: strong
+- object_id: psychology.child-reactions-disaster-age
+  claim_id: clm_004
+  claim_text: School-age children may become intensely preoccupied with the details
+    of a traumatic event.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 188
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000283
+    excerpt: Some children become intensely preoccupied with the details of a traumatic
+      event and want to talk about it continually.
+    start_char: 497
+    end_char: 586
+    support_strength: strong
+- object_id: psychology.child-reactions-disaster-age
+  claim_id: clm_005
+  claim_text: Teenagers may become involved in dangerous, risk-taking behaviors after
+    a disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 188
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000283
+    excerpt: Teenagers may become involved in dangerous, risk-taking behaviors, such
+      as reckless driving, or alcohol or drug use.
+    start_char: 764
+    end_char: 849
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000283

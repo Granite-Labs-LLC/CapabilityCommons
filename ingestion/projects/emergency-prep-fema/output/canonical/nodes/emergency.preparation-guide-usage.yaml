@@ -1,0 +1,214 @@
+id: emergency.preparation-guide-usage
+slug: emergency.preparation-guide-usage
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Using the FEMA Guide for Practical Disaster Preparation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Guidance on using the FEMA guide for practical disaster preparation.
+summary_medium: This reference sheet provides guidance on using the FEMA guide for
+  practical disaster preparation, emphasizing the importance of consulting local emergency
+  management and Red Cross information.
+plain_language: Learn how to use the FEMA guide to prepare for disasters effectively,
+  with advice on consulting local resources.
+markdown_body: '### What this is
+
+  This is a reference sheet on how to effectively use the FEMA guide, ''Are You Ready?'',
+  for disaster preparation.
+
+
+  ### Why it matters
+
+  Using the FEMA guide helps individuals and communities prepare for, respond to,
+  and recover from disasters. It provides structured advice that, when combined with
+  local information, enhances preparedness.
+
+
+  ### What you need
+
+  To use the guide effectively, you need the FEMA guide itself and access to local
+  emergency management instructions and Red Cross information.
+
+
+  ### How to do it
+
+  Follow the step-by-step advice in the FEMA guide. Supplement this with information
+  from your local emergency management offices and the American Red Cross to ensure
+  comprehensive preparedness.
+
+
+  ### Common failure modes
+
+  Common mistakes include not using the guide at all or ignoring local emergency instructions,
+  which can lead to inadequate preparation.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all advice is adapted to local conditions and regulations to maintain
+  safety.
+
+
+  ### Local adaptation notes
+
+  Consult local emergency management offices to adapt the general advice in the guide
+  to specific local needs and conditions.'
+structured_data:
+  tools:
+  - FEMA guide
+  - local emergency instructions
+  materials: []
+  success_criteria:
+  - Preparedness for disasters
+  - Effective response and recovery
+  failure_modes:
+  - Not using the guide
+  - Ignoring local instructions
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_001
+  claim_text: This is a reference sheet on how to effectively use the FEMA guide,
+    'Are You Ready?', for disaster preparation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: This guide was developed by the Federal Emergency Management Agency (FEMA),
+      which is the agency responsible for responding to national disasters and for
+      helping state and local governments and individuals prepare for emergencies.
+      It contains step-by-step advice on how to prepare for, respond to, and recover
+      from disasters.
+    start_char: 0
+    end_char: 249
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_002
+  claim_text: Using the FEMA guide helps individuals and communities prepare for,
+    respond to, and recover from disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: It contains step-by-step advice on how to prepare for, respond to, and
+      recover from disasters.
+    start_char: 161
+    end_char: 249
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_003
+  claim_text: It provides structured advice that, when combined with local information,
+    enhances preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: Used in conjunction with information and instructions from local emergency
+      management offices and the American Red Cross, *Are You Ready?* will give you
+      what you need to be prepared.
+    start_char: 250
+    end_char: 387
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_004
+  claim_text: To use the guide effectively, you need the FEMA guide itself and access
+    to local emergency management instructions and Red Cross information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: Used in conjunction with information and instructions from local emergency
+      management offices and the American Red Cross, *Are You Ready?* will give you
+      what you need to be prepared.
+    start_char: 250
+    end_char: 387
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_005
+  claim_text: Follow the step-by-step advice in the FEMA guide.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: It contains step-by-step advice on how to prepare for, respond to, and
+      recover from disasters.
+    start_char: 161
+    end_char: 249
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_006
+  claim_text: Supplement this with information from your local emergency management
+    offices and the American Red Cross to ensure comprehensive preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000011
+    excerpt: Used in conjunction with information and instructions from local emergency
+      management offices and the American Red Cross, *Are You Ready?* will give you
+      what you need to be prepared.
+    start_char: 250
+    end_char: 387
+    support_strength: strong
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_007
+  claim_text: Common mistakes include not using the guide at all or ignoring local
+    emergency instructions, which can lead to inadequate preparation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: Through applying what you have learned in this guide, you are taking
+      the necessary steps to be ready when an event occurs.
+    start_char: 79
+    end_char: 161
+    support_strength: medium
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_008
+  claim_text: Ensure that all advice is adapted to local conditions and regulations
+    to maintain safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: It is sometimes necessary to turn to others within the local community
+      for help. The local level is the second tier of the pyramid, and is made up
+      of paid employees and volunteers from the private and public sectors.
+    start_char: 574
+    end_char: 759
+    support_strength: medium
+- object_id: emergency.preparation-guide-usage
+  claim_id: clm_009
+  claim_text: Consult local emergency management offices to adapt the general advice
+    in the guide to specific local needs and conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 9
+    page_end: 10
+    segment_id: src.fema.are-you-ready.2004::seg_000012
+    excerpt: It is sometimes necessary to turn to others within the local community
+      for help. The local level is the second tier of the pyramid, and is made up
+      of paid employees and volunteers from the private and public sectors.
+    start_char: 574
+    end_char: 759
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000011

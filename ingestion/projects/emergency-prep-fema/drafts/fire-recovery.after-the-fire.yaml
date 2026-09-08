@@ -1,0 +1,173 @@
+id: fire-recovery.after-the-fire
+slug: fire-recovery.after-the-fire
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: 'After the Fire: Returning to Normal'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-recovery
+secondary_domains: []
+stage: household
+contexts:
+- homeowners
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guide for recovering from a fire, including first steps and insurance
+  considerations.
+summary_medium: This guide provides essential steps for recovering from a fire, focusing
+  on immediate actions, insurance, and salvaging valuables.
+plain_language: Learn how to recover after a fire, including what to do in the first
+  24 hours and how to handle insurance claims.
+markdown_body: '# What this is
+
+  This reference sheet is a guide for homeowners on how to recover after experiencing
+  a fire. It includes steps to take immediately after the fire, insurance considerations,
+  and tips for salvaging valuables.
+
+
+  # Why it matters
+
+  Recovering from a fire can be overwhelming. This guide helps homeowners navigate
+  the critical first steps to ensure safety and begin the recovery process effectively.
+
+
+  # What you need
+
+  Access to the ''After the Fire: Returning to Normal'' booklet, available online.
+
+
+  # How to do it
+
+  Follow the steps outlined in the booklet, starting with ensuring safety, contacting
+  your insurance provider, and documenting damages. Prioritize replacing important
+  documents and consider professional help for salvage operations.
+
+
+  # Common failure modes
+
+  Delaying the recovery process can lead to further complications, such as mold growth
+  or insurance claim issues.
+
+
+  # Safety/boundary notes
+
+  Ensure the fire department has declared the area safe before entering. Be cautious
+  of structural damage.
+
+
+  # Local adaptation notes
+
+  Consider local resources and support systems available for fire recovery assistance.'
+structured_data:
+  tools:
+  - booklet
+  materials: []
+  success_criteria:
+  - Complete initial recovery steps within 24 hours
+  - Contact insurance provider promptly
+  failure_modes:
+  - Delayed recovery
+  safety_boundary:
+  - Ensure area is declared safe by authorities
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_001
+  claim_text: This reference sheet is a guide for homeowners on how to recover after
+    experiencing a fire. It includes steps to take immediately after the fire, insurance
+    considerations, and tips for salvaging valuables.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 122
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000189
+    excerpt: 'FEMA Publications *After the Fire: Returning to Normal*. FA 046. This
+      16-page booklet provides information about recovering from a fire, including
+      what to do during the first 24 hours, insurance considerations, valuing your
+      property, replacement of valuable documents, salvage hints, fire department
+      operations, and more.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_002
+  claim_text: Recovering from a fire can be overwhelming. This guide helps homeowners
+    navigate the critical first steps to ensure safety and begin the recovery process
+    effectively.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 122
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000189
+    excerpt: This 16-page booklet provides information about recovering from a fire,
+      including what to do during the first 24 hours, insurance considerations, valuing
+      your property, replacement of valuable documents, salvage hints, fire department
+      operations, and more.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_003
+  claim_text: 'Access to the ''After the Fire: Returning to Normal'' booklet, available
+    online.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 122
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000189
+    excerpt: Available online at www.usfa.fema.gov/public/hfs/pubs/atf/after.shtm
+    start_char: 300
+    end_char: 350
+    support_strength: strong
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_004
+  claim_text: Follow the steps outlined in the booklet, starting with ensuring safety,
+    contacting your insurance provider, and documenting damages.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 122
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000189
+    excerpt: This 16-page booklet provides information about recovering from a fire,
+      including what to do during the first 24 hours, insurance considerations, valuing
+      your property, replacement of valuable documents, salvage hints, fire department
+      operations, and more.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_005
+  claim_text: Delaying the recovery process can lead to further complications, such
+    as mold growth or insurance claim issues.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 122
+    page_end: 122
+    segment_id: src.fema.are-you-ready.2004::seg_000189
+    excerpt: This 16-page booklet provides information about recovering from a fire,
+      including what to do during the first 24 hours, insurance considerations, valuing
+      your property, replacement of valuable documents, salvage hints, fire department
+      operations, and more.
+    start_char: 0
+    end_char: 300
+    support_strength: weak
+- object_id: fire-recovery.after-the-fire
+  claim_id: clm_006
+  claim_text: Ensure the fire department has declared the area safe before entering.
+    Be cautious of structural damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: If you detect heat or smoke when entering a damaged building, evacuate
+      immediately.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000189

@@ -1,0 +1,147 @@
+id: emergency-preparedness.biological-agent-dispersion
+slug: emergency-preparedness.biological-agent-dispersion
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Biological Agent Dispersion Methods
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Methods of biological agent dispersion include aerosols, animals, food
+  and water contamination, and person-to-person transmission.
+summary_medium: Biological agents can be dispersed through aerosols, animals, food
+  and water contamination, and person-to-person transmission. These methods can spread
+  bacteria, viruses, and toxins, posing significant threats to humans, livestock,
+  and crops.
+plain_language: 'Biological agents, which are harmful organisms or toxins, can be
+  spread in several ways: through the air, by animals, by contaminating food and water,
+  or from person to person. Understanding these methods helps in preparing for potential
+  biological threats.'
+markdown_body: '### What this is
+
+  Biological agents are harmful organisms or toxins that can cause illness or death
+  in humans, animals, and plants. They can be used as weapons and are categorized
+  into bacteria, viruses, and toxins.
+
+
+  ### Why it matters
+
+  Understanding how biological agents are dispersed is crucial for emergency preparedness.
+  These agents can spread rapidly and cause widespread harm, making it essential to
+  know the methods of dispersion to mitigate risks.
+
+
+  ### What you need
+
+  Awareness of the different methods of biological agent dispersion and access to
+  reliable information sources like the CDC.
+
+
+  ### How to do it
+
+  Biological agents can be dispersed in several ways:
+
+  - **Aerosols**: Agents are sprayed into the air, forming a mist that can travel
+  long distances and be inhaled.
+
+  - **Animals**: Diseases can be spread by insects and animals such as fleas, mice,
+  and mosquitoes.
+
+  - **Food and water contamination**: Pathogens can persist in food and water. Cooking
+  and boiling can deactivate many, but official guidance should be followed.
+
+  - **Person-to-person**: Some agents can spread directly between people, as seen
+  with diseases like smallpox.
+
+
+  ### Common failure modes
+
+  - Underestimating the persistence of certain agents in the environment.
+
+  - Inadequate cooking or boiling of food and water.
+
+
+  ### Safety/boundary notes
+
+  Follow official instructions for decontamination and safety measures. Be aware of
+  the specific characteristics of different biological agents.
+
+
+  ### Local adaptation notes
+
+  Local conditions such as climate and available resources may affect the persistence
+  and spread of biological agents. Adapt strategies accordingly.'
+structured_data:
+  definition: Biological agents are organisms or toxins that can harm humans, animals,
+    and plants.
+  key_questions:
+  - What are the main methods of biological agent dispersion?
+  - How can we mitigate the risks associated with each method?
+  misconceptions:
+  - All biological agents are easily spread and long-lasting.
+  - Boiling water always kills all pathogens instantly.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.biological-agent-dispersion
+  claim_id: clm_001
+  claim_text: Biological agents are harmful organisms or toxins that can cause illness
+    or death in humans, animals, and plants. They can be used as weapons and are categorized
+    into bacteria, viruses, and toxins.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Biological agents are organisms or toxins that can kill or incapacitate
+      people, livestock, and crops. The three basic groups of biological agents that
+      would likely be used as weapons are bacteria, viruses, and toxins.
+    start_char: 0
+    end_char: 187
+    support_strength: strong
+- object_id: emergency-preparedness.biological-agent-dispersion
+  claim_id: clm_002
+  claim_text: 'Biological agents can be dispersed in several ways: Aerosols, Animals,
+    Food and water contamination, Person-to-person.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: 'Biological agents can be dispersed by spraying them into the air, by
+      infecting animals that carry the disease to humans, and by contaminating food
+      and water. Delivery methods include: Aerosols—biological agents are dispersed
+      into the air, forming a fine mist that may drift for miles. Inhaling the agent
+      may cause disease in people or animals. Animals—some diseases are spread by
+      insects and animals, such as fleas, mice, flies, mosquitoes, and livestock.
+      Food and water contamination—some pathogenic organisms and toxins may persist
+      in food and water supplies. Most microbes can be killed, and toxins deactivated,
+      by cooking food and boiling water. Person-to-person—spread of a few infectious
+      agents is also possible.'
+    start_char: 188
+    end_char: 899
+    support_strength: strong
+- object_id: emergency-preparedness.biological-agent-dispersion
+  claim_id: clm_003
+  claim_text: Cooking and boiling can deactivate many pathogens, but official guidance
+    should be followed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Most microbes can be killed, and toxins deactivated, by cooking food
+      and boiling water. Most microbes are killed by boiling water for one minute,
+      but some require longer. Follow official instructions.
+    start_char: 618
+    end_char: 799
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000242

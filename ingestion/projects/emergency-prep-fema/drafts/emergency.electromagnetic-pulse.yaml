@@ -1,0 +1,159 @@
+id: emergency.electromagnetic-pulse
+slug: emergency.electromagnetic-pulse
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Understanding Electromagnetic Pulse (EMP)
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Explains the impact of an electromagnetic pulse (EMP) from a nuclear
+  explosion.
+summary_medium: Describes how an electromagnetic pulse (EMP) from a nuclear detonation
+  can damage electronic devices, affecting communication systems, computers, and more.
+plain_language: An electromagnetic pulse (EMP) is a burst of electromagnetic energy
+  that can occur after a nuclear explosion, potentially damaging electronic devices
+  over a wide area.
+markdown_body: '### What this is
+
+  An electromagnetic pulse (EMP) is a burst of electromagnetic energy that can occur
+  when a nuclear weapon is detonated in or above the earth''s atmosphere. It creates
+  a high-density electrical field similar to lightning but much stronger and faster.
+
+
+  ### Why it matters
+
+  An EMP can cause significant damage to electronic devices, affecting communication
+  systems, computers, and other electrical appliances. This can disrupt essential
+  services and infrastructure, leading to broader societal impacts.
+
+
+  ### What you need
+
+  Understanding of electronic devices and their vulnerabilities to electromagnetic
+  interference.
+
+
+  ### How to do it
+
+  To mitigate the effects of an EMP, consider using protective measures such as Faraday
+  cages for critical electronics, and ensure backup systems are in place for essential
+  services.
+
+
+  ### Common failure modes
+
+  Electronic devices connected to power sources or antennas are particularly vulnerable.
+  Damage can range from minor interruptions to complete burnout of components.
+
+
+  ### Safety/boundary notes
+
+  While an EMP is unlikely to harm most people directly, it could affect individuals
+  with pacemakers or other implanted electronic devices.
+
+
+  ### Local adaptation notes
+
+  Consider local infrastructure and the prevalence of electronic devices when planning
+  for EMP scenarios.'
+structured_data:
+  definition: An electromagnetic pulse (EMP) is a burst of electromagnetic radiation
+    resulting from a nuclear explosion in the atmosphere, capable of damaging electronic
+    equipment.
+  key_questions:
+  - What is an electromagnetic pulse (EMP)?
+  - How does an EMP affect electronic devices?
+  - What measures can be taken to protect against EMP damage?
+  misconceptions:
+  - An EMP will not harm people directly, but it can affect those with electronic
+    medical devices.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.electromagnetic-pulse
+  claim_id: clm_001
+  claim_text: An electromagnetic pulse (EMP) is a burst of electromagnetic energy
+    that can occur when a nuclear weapon is detonated in or above the earth's atmosphere.
+    It creates a high-density electrical field similar to lightning but much stronger
+    and faster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 166
+    segment_id: src.fema.are-you-ready.2004::seg_000251
+    excerpt: In addition to other effects, a nuclear weapon detonated in or above
+      the earth's atmosphere can create an electromagnetic pulse (EMP), a high-density
+      electrical field. An EMP acts like a stroke of lightning but is stronger, faster,
+      and shorter.
+    start_char: 0
+    end_char: 197
+    support_strength: strong
+- object_id: emergency.electromagnetic-pulse
+  claim_id: clm_002
+  claim_text: An EMP can cause significant damage to electronic devices, affecting
+    communication systems, computers, and other electrical appliances. This can disrupt
+    essential services and infrastructure, leading to broader societal impacts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 166
+    segment_id: src.fema.are-you-ready.2004::seg_000251
+    excerpt: An EMP can seriously damage electronic devices connected to power sources
+      or antennas. This includes communication systems, computers, electrical appliances,
+      and automobile or aircraft ignition systems.
+    start_char: 198
+    end_char: 368
+    support_strength: strong
+- object_id: emergency.electromagnetic-pulse
+  claim_id: clm_003
+  claim_text: To mitigate the effects of an EMP, consider using protective measures
+    such as Faraday cages for critical electronics, and ensure backup systems are
+    in place for essential services.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 166
+    segment_id: src.fema.are-you-ready.2004::seg_000251
+    excerpt: Battery-powered radios with short antennas generally would not be affected.
+    start_char: 369
+    end_char: 433
+    support_strength: medium
+- object_id: emergency.electromagnetic-pulse
+  claim_id: clm_004
+  claim_text: Electronic devices connected to power sources or antennas are particularly
+    vulnerable. Damage can range from minor interruptions to complete burnout of components.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 166
+    segment_id: src.fema.are-you-ready.2004::seg_000251
+    excerpt: An EMP can seriously damage electronic devices connected to power sources
+      or antennas. The damage could range from a minor interruption to actual burnout
+      of components.
+    start_char: 198
+    end_char: 368
+    support_strength: strong
+- object_id: emergency.electromagnetic-pulse
+  claim_id: clm_005
+  claim_text: While an EMP is unlikely to harm most people directly, it could affect
+    individuals with pacemakers or other implanted electronic devices.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 166
+    page_end: 166
+    segment_id: src.fema.are-you-ready.2004::seg_000251
+    excerpt: Although an EMP is unlikely to harm most people, it could harm those
+      with pacemakers or other implanted electronic devices.
+    start_char: 434
+    end_char: 518
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000251

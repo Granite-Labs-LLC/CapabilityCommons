@@ -1,0 +1,226 @@
+id: safety.shelter-location
+slug: safety.shelter-location
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Locate the Safest Place for Shelter in Your Home
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Identify the safest shelter locations in your home when evacuation
+  is not possible.
+summary_medium: Learn how to locate the safest areas in your home to seek shelter
+  during emergencies when evacuation is not an option. This guidance applies to various
+  home layouts including apartments, one-story homes, and two-story homes.
+plain_language: This guide helps you find the safest places in your home to take shelter
+  if you can't leave during an emergency. It covers different types of homes like
+  apartments and houses.
+markdown_body: '### What this is
+
+  This guide provides instructions on identifying the safest places in your home to
+  seek shelter during emergencies when evacuation is not possible.
+
+
+  ### Why it matters
+
+  Knowing where to take shelter in your home can protect you from harm during emergencies
+  such as severe weather or other threats when leaving the home is not an option.
+
+
+  ### What you need
+
+  Familiarity with your home''s layout and an understanding of potential hazards.
+
+
+  ### How to do it
+
+  1. For apartments, seek shelter in interior rooms away from windows.
+
+  2. In one-story homes, choose a small, windowless interior room on the lowest floor.
+
+  3. In two-story homes, use a similar approach, prioritizing the first floor. Avoid
+  rooms with large windows or exterior walls.
+
+
+  ### Common failure modes
+
+  Choosing a room with windows or exterior walls, which may not provide adequate protection.
+
+
+  ### Safety/boundary notes
+
+  Ensure the chosen shelter area is free from potential hazards like heavy objects
+  that could fall.
+
+
+  ### Local adaptation notes
+
+  Consider local building codes and typical weather patterns when selecting shelter
+  areas.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successfully identify and prepare a safe shelter area in your
+    home.
+  failure_modes: Selecting an unsafe area with windows or exterior walls.
+  safety_boundary: Avoid areas with potential falling hazards or glass.
+  implementation:
+    smallest_viable_version: Identify a safe, windowless interior room for shelter.
+    tools: []
+    materials: []
+    expected_time: 15 minutes
+    expected_cost: None
+    success_checks:
+    - The chosen room is interior and windowless.
+    - The room is free from heavy objects that could fall.
+    stop_conditions:
+    - If no interior room is available, seek alternative shelter options.
+    common_mistakes:
+    - Choosing a room with windows.
+    - Selecting a room with exterior walls.
+    variants:
+    - label: Urban
+      when: In high-rise buildings.
+      notes: Consider stairwells or interior hallways as alternatives.
+    when_to_escalate:
+    - If structural damage is evident, contact emergency services.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.shelter-location
+  claim_id: clm_001
+  claim_text: For apartments, seek shelter in interior rooms away from windows.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If there is no basement, go to the center of an interior room on the
+      lowest level (closet, interior hallway) away from corners, windows, doors, and
+      outside walls.
+    start_char: 236
+    end_char: 391
+    support_strength: strong
+- object_id: safety.shelter-location
+  claim_id: clm_002
+  claim_text: In one-story homes, choose a small, windowless interior room on the
+    lowest floor.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If there is no basement, go to the center of an interior room on the
+      lowest level (closet, interior hallway) away from corners, windows, doors, and
+      outside walls.
+    start_char: 236
+    end_char: 391
+    support_strength: strong
+- object_id: safety.shelter-location
+  claim_id: clm_003
+  claim_text: In two-story homes, use a similar approach, prioritizing the first floor.
+    Avoid rooms with large windows or exterior walls.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: If there is no basement, go to the center of an interior room on the
+      lowest level (closet, interior hallway) away from corners, windows, doors, and
+      outside walls.
+    start_char: 236
+    end_char: 391
+    support_strength: strong
+- object_id: safety.shelter-location
+  claim_id: clm_004
+  claim_text: Ensure the chosen shelter area is free from potential hazards like heavy
+    objects that could fall.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 61
+    segment_id: src.fema.are-you-ready.2004::seg_000083
+    excerpt: Get under a sturdy table and use your arms to protect your head and neck.
+    start_char: 392
+    end_char: 454
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000086
+bundle_overrides:
+  hook: Knowing the safest place to take shelter in your home can protect you and
+    your loved ones during emergencies when evacuation isn't possible.
+  primer: In emergencies like severe weather or other threats, knowing where to take
+    shelter in your home can be crucial for your safety. This guide helps you identify
+    the safest places in your home to seek shelter when you cannot evacuate. The key
+    is to find a location that minimizes exposure to external dangers such as flying
+    debris or structural collapse. For apartments, interior rooms away from windows
+    are ideal. In one-story homes, a small, windowless interior room on the lowest
+    floor is recommended. For two-story homes, prioritize the first floor and avoid
+    rooms with large windows or exterior walls. It's also important to ensure that
+    the chosen shelter area is free from potential hazards like heavy objects that
+    could fall. By understanding your home's layout and potential risks, you can make
+    informed decisions to keep yourself and your family safe during emergencies.
+  guide: '1. **Identify Your Home Type**: Determine if you live in an apartment, one-story
+    home, or two-story home, as this will guide your shelter selection.
+
+
+    2. **For Apartments**: Seek shelter in an interior room away from windows. Ideal
+    locations include interior hallways, closets, or bathrooms without windows.
+
+
+    3. **For One-Story Homes**: Choose a small, windowless interior room on the lowest
+    floor. This could be a bathroom, closet, or interior hallway. Avoid rooms with
+    windows or exterior walls.
+
+
+    4. **For Two-Story Homes**: Prioritize shelter on the first floor. Select a small,
+    windowless interior room, such as a bathroom or closet. Avoid rooms with large
+    windows or exterior walls.
+
+
+    5. **Check for Hazards**: Ensure the chosen shelter area is free from potential
+    hazards like heavy objects that could fall during an emergency. Remove any items
+    that could pose a risk.
+
+
+    6. **Prepare the Area**: Keep essential supplies like water, a flashlight, and
+    a first-aid kit in your shelter area. Make sure everyone in your household knows
+    where to go and what to do during an emergency.
+
+
+    7. **Practice**: Conduct regular drills to ensure everyone knows how to quickly
+    and safely reach the shelter area.'
+  reference:
+  - Seek shelter in interior rooms away from windows.
+  - Choose a small, windowless interior room on the lowest floor.
+  - Prioritize the first floor in two-story homes.
+  - Avoid rooms with large windows or exterior walls.
+  - Ensure the shelter area is free from potential hazards.
+  worksheet:
+  - List all the interior rooms in your home and identify which ones are windowless.
+  - Draw a floor plan of your home and mark the safest shelter locations.
+  - Identify and remove any potential hazards in your chosen shelter area.
+  - Conduct a drill with your family to practice reaching the shelter area quickly.
+  - Create a checklist of emergency supplies to keep in your shelter area.
+  teach_forward_kit:
+    three_minute_version: In emergencies, find a safe shelter in your home by choosing
+      a small, windowless interior room on the lowest floor. Avoid windows and exterior
+      walls, and ensure the area is free from hazards.
+    ten_minute_outline:
+    - Introduction to the importance of sheltering in place.
+    - Discuss different home types and corresponding shelter strategies.
+    - Explain the importance of avoiding windows and exterior walls.
+    - Highlight the need to remove potential hazards from the shelter area.
+    - Provide tips on preparing and practicing emergency drills.
+    discussion_prompts:
+    - Why is it important to avoid windows and exterior walls during an emergency?
+    - What are some common mistakes people make when choosing a shelter area?
+    - How can you ensure your chosen shelter area is free from hazards?
+    - What steps can you take to prepare your family for an emergency drill?

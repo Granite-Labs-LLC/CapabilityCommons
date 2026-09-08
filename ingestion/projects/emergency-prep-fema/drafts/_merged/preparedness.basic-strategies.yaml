@@ -1,0 +1,225 @@
+id: preparedness.basic-strategies
+slug: preparedness-basic-strategies
+seed_type: module
+co_type: module
+canonical_title: Basic Preparedness Strategies
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn basic preparedness strategies for all disasters.
+summary_medium: This module covers basic preparedness strategies applicable to all
+  disasters, including planning, information gathering, and practice.
+plain_language: Understand and implement basic strategies to prepare for any disaster,
+  focusing on planning, gathering information, and practicing your plan.
+markdown_body: "### What this is\nThis module introduces basic preparedness strategies\
+  \ that can be applied to any type of disaster. It emphasizes the importance of having\
+  \ a comprehensive plan that can be adapted to various hazards.\n\n### Why it matters\n\
+  Being prepared for disasters can significantly reduce the impact on you and your\
+  \ family. A well-thought-out plan ensures that you know what to do and where to\
+  \ go in an emergency, which can save lives.\n\n### What you need\nTo get started,\
+  \ you need to gather information about potential hazards, develop an emergency plan,\
+  \ and assemble a disaster supplies kit.\n\n### How to do it\n1. Get informed about\
+  \ hazards that may affect you. \n2. Develop an emergency plan that includes evacuation\
+  \ routes and communication strategies. \n3. Assemble a disaster supplies kit with\
+  \ essentials like food, water, and medical supplies. \n4. Identify community warning\
+  \ systems and shelters. \n5. Practice your plan regularly to ensure everyone knows\
+  \ what to do.\n\n### Common failure modes\nCommon issues include having an incomplete\
+  \ emergency plan, not practicing the plan, and failing to update the plan with current\
+  \ information.\n\n### Safety/boundary notes\nEnsure your plan includes safe evacuation\
+  \ routes and that all family members are aware of them.\n\n### Local adaptation\
+  \ notes\nAdapt your plan to include community-specific evacuation routes and local\
+  \ warning systems."
+structured_data:
+  definition: Basic preparedness strategies involve planning and preparing for any
+    type of disaster by gathering information, creating a plan, and practicing it.
+  key_questions:
+  - What hazards are most likely to affect my area?
+  - What should be included in an emergency plan?
+  - How can I ensure my family is prepared for a disaster?
+  misconceptions:
+  - Preparedness is only necessary for certain types of disasters.
+  - Once a plan is made, it doesn't need to be updated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness-basic-strategies
+  claim_id: clm_001
+  claim_text: This module introduces basic preparedness strategies that can be applied
+    to any type of disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: In this part of the guide, you will learn preparedness strategies that
+      are common to all disasters.
+    start_char: 0
+    end_char: 90
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_002
+  claim_text: It emphasizes the importance of having a comprehensive plan that can
+    be adapted to various hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: You plan only once, and are able to apply your plan to all types of hazards.
+    start_char: 91
+    end_char: 144
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_003
+  claim_text: Being prepared for disasters can significantly reduce the impact on
+    you and your family.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    start_char: 146
+    end_char: 207
+    support_strength: medium
+- object_id: preparedness-basic-strategies
+  claim_id: clm_004
+  claim_text: A well-thought-out plan ensures that you know what to do and where to
+    go in an emergency, which can save lives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Develop an emergency plan.
+    start_char: 208
+    end_char: 234
+    support_strength: medium
+- object_id: preparedness-basic-strategies
+  claim_id: clm_005
+  claim_text: To get started, you need to gather information about potential hazards,
+    develop an emergency plan, and assemble a disaster supplies kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family. Develop an emergency plan. Collect and assemble disaster supplies kit.
+    start_char: 146
+    end_char: 293
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_006
+  claim_text: Get informed about hazards that may affect you.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Get informed about hazards and emergencies that may affect you and your
+      family.
+    start_char: 146
+    end_char: 207
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_007
+  claim_text: Develop an emergency plan that includes evacuation routes and communication
+    strategies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Develop an emergency plan. Identify the community warning systems and
+      evacuation routes.
+    start_char: 208
+    end_char: 293
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_008
+  claim_text: Assemble a disaster supplies kit with essentials like food, water, and
+    medical supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Collect and assemble disaster supplies kit.
+    start_char: 235
+    end_char: 293
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_009
+  claim_text: Identify community warning systems and shelters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Identify the community warning systems and evacuation routes.
+    start_char: 294
+    end_char: 348
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_010
+  claim_text: Practice your plan regularly to ensure everyone knows what to do.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Practice and maintain your plan.
+    start_char: 349
+    end_char: 377
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_011
+  claim_text: Common issues include having an incomplete emergency plan, not practicing
+    the plan, and failing to update the plan with current information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Practice and maintain your plan.
+    start_char: 349
+    end_char: 377
+    support_strength: medium
+- object_id: preparedness-basic-strategies
+  claim_id: clm_012
+  claim_text: Ensure your plan includes safe evacuation routes and that all family
+    members are aware of them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Identify the community warning systems and evacuation routes.
+    start_char: 294
+    end_char: 348
+    support_strength: strong
+- object_id: preparedness-basic-strategies
+  claim_id: clm_013
+  claim_text: Adapt your plan to include community-specific evacuation routes and
+    local warning systems.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 14
+    page_end: 14
+    segment_id: src.fema.are-you-ready.2004::seg_000020
+    excerpt: Include in your plan required information from community and school plans.
+    start_char: 378
+    end_char: 437
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000020

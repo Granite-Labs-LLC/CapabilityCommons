@@ -1,0 +1,177 @@
+id: emergency-preparedness.disaster-supplies-kit
+slug: emergency-preparedness.disaster-supplies-kit
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Disaster Supplies Kit for Hazardous Materials Incidents
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Essential supplies for a disaster kit tailored to hazardous materials
+  incidents.
+summary_medium: This guide outlines additional supplies to include in a disaster supplies
+  kit specifically for hazardous materials incidents, enhancing preparedness and safety.
+plain_language: Learn what extra items to add to your disaster supplies kit to be
+  ready for hazardous materials incidents.
+markdown_body: '# What this is
+
+  This reference sheet provides guidance on enhancing your disaster supplies kit to
+  better prepare for hazardous materials incidents.
+
+
+  # Why it matters
+
+  In the event of a hazardous materials incident, having the right supplies can help
+  protect you and your family from exposure to dangerous chemicals.
+
+
+  # What you need
+
+  To prepare your disaster supplies kit for hazardous materials incidents, you will
+  need plastic sheeting, duct tape, and scissors.
+
+
+  # How to do it
+
+  Add plastic sheeting, duct tape, and scissors to your existing disaster supplies
+  kit. These items can be used to seal off windows and doors to prevent chemical exposure.
+
+
+  # Common failure modes
+
+  An incomplete disaster kit may leave you unprepared for hazardous materials incidents,
+  increasing the risk of exposure.
+
+
+  # Safety/boundary notes
+
+  Ensure that all family members know how to use the supplies effectively in an emergency.
+
+
+  # Local adaptation notes
+
+  Contact your Local Emergency Planning Committees (LEPCs) to understand specific
+  chemical hazards in your area and adjust your kit accordingly.'
+structured_data:
+  tools:
+  - Scissors
+  materials:
+  - Plastic sheeting
+  - Duct tape
+  success_criteria: A complete disaster supplies kit that includes items specifically
+    for hazardous materials incidents.
+  failure_modes: Incomplete disaster kit
+  safety_boundary: Ensure all items are stored in an accessible location and that
+    family members are trained in their use.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidance on enhancing your disaster supplies
+    kit to better prepare for hazardous materials incidents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: 'You should add the following supplies to your disaster supplies kit:
+      Plastic sheeting. Duct tape. Scissors.'
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_002
+  claim_text: In the event of a hazardous materials incident, having the right supplies
+    can help protect you and your family from exposure to dangerous chemicals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 130
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000197
+    excerpt: Chemicals are found everywhere... But chemicals also can be hazardous
+      to humans or the environment if used or released improperly.
+    start_char: 0
+    end_char: 146
+    support_strength: medium
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_003
+  claim_text: To prepare your disaster supplies kit for hazardous materials incidents,
+    you will need plastic sheeting, duct tape, and scissors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: 'You should add the following supplies to your disaster supplies kit:
+      Plastic sheeting. Duct tape. Scissors.'
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_004
+  claim_text: Add plastic sheeting, duct tape, and scissors to your existing disaster
+    supplies kit. These items can be used to seal off windows and doors to prevent
+    chemical exposure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: Seal the room by covering each window, door, and vent using plastic sheeting
+      and duct tape.
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_005
+  claim_text: An incomplete disaster kit may leave you unprepared for hazardous materials
+    incidents, increasing the risk of exposure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 130
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000197
+    excerpt: You and your community are at risk if a chemical is used unsafely or
+      released in harmful amounts into the environment where you live, work, or play.
+    start_char: 0
+    end_char: 146
+    support_strength: medium
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_006
+  claim_text: Ensure that all family members know how to use the supplies effectively
+    in an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: Follow the instructions carefully. You should stay away from the area
+      to minimize the risk of contamination.
+    start_char: 0
+    end_char: 146
+    support_strength: medium
+- object_id: emergency-preparedness.disaster-supplies-kit
+  claim_id: clm_007
+  claim_text: Contact your Local Emergency Planning Committees (LEPCs) to understand
+    specific chemical hazards in your area and adjust your kit accordingly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to fi nd out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials.
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000199

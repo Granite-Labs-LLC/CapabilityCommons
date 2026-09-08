@@ -1,0 +1,316 @@
+id: safety.hazardous-materials-handling
+slug: safety.hazardous-materials-handling
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Handling Hazardous Materials Safely
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for safely handling hazardous materials.
+summary_medium: Learn to identify, store, and dispose of hazardous materials safely
+  to prevent accidents and health risks.
+plain_language: This guide helps you handle hazardous materials safely by teaching
+  you how to identify them, store them properly, and dispose of them correctly.
+markdown_body: '### What this is
+
+  This guide provides essential practices for safely handling hazardous materials,
+  including identification, storage, and disposal.
+
+
+  ### Why it matters
+
+  Improper handling of hazardous materials can lead to serious health risks, environmental
+  damage, and accidents. Following these guidelines helps prevent such outcomes.
+
+
+  ### What you need
+
+  Original containers for storage, rags for spill cleanup, and access to local hazardous
+  waste collection programs.
+
+
+  ### How to do it
+
+  1. Identify hazardous materials by reading labels and safety data sheets.
+
+  2. Follow manufacturer''s instructions for storage, use, and disposal.
+
+  3. Store materials in their original containers unless they are corroding.
+
+  4. Never store hazardous products in food containers.
+
+  5. Avoid mixing chemicals to prevent dangerous reactions.
+
+  6. Dispose of hazardous waste through local collection programs.
+
+  7. Clean up spills immediately using rags.
+
+  8. Do not smoke near hazardous materials.
+
+
+  ### Common failure modes
+
+  Mixing incompatible chemicals, improper storage leading to leaks, and using food
+  containers for storage.
+
+
+  ### Safety/boundary notes
+
+  Do not smoke near chemicals and avoid contact with spills. Stay at least one-half
+  mile away from large spills.
+
+
+  ### Local adaptation notes
+
+  Check for the availability of local hazardous waste collection programs.'
+structured_data:
+  tools:
+  - original containers
+  materials:
+  - rags for spill cleanup
+  success_criteria:
+  - Hazardous materials are stored and disposed of safely without incidents.
+  failure_modes:
+  - Mixing incompatible chemicals
+  - Improper storage leading to leaks
+  safety_boundary:
+  - Do not smoke near chemicals
+  - Avoid contact with spills
+  implementation:
+    smallest_viable_version: Identify and store hazardous materials in original containers.
+    tools:
+    - original containers
+    materials:
+    - rags for spill cleanup
+    expected_time: Varies based on quantity and type of materials
+    expected_cost: Low, primarily for purchasing storage containers if needed
+    success_checks:
+    - Materials are correctly identified and stored
+    - No incidents during handling
+    stop_conditions:
+    - If a spill occurs, clean immediately
+    - If unsure about handling, consult a professional
+    common_mistakes:
+    - Using food containers for storage
+    - Mixing chemicals
+    variants:
+    - label: Urban
+      when: Living in a city with local disposal programs
+      notes: Utilize city hazardous waste collection services.
+    when_to_escalate:
+    - If a large spill occurs
+    - If there is a chemical reaction
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_001
+  claim_text: Identify hazardous materials by reading labels and safety data sheets.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: 1. a. Learn to identify hazardous materials.
+    start_char: 12
+    end_char: 53
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_002
+  claim_text: Follow manufacturer's instructions for storage, use, and disposal.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: b. Follow manufacture's instructions for storage, use, and disposal.
+    start_char: 56
+    end_char: 118
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_003
+  claim_text: Store materials in their original containers unless they are corroding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: d. Keep products in original containers unless the container is corroding.
+    start_char: 158
+    end_char: 225
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_004
+  claim_text: Never store hazardous products in food containers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: c. Never store hazardous products in food containers.
+    start_char: 121
+    end_char: 166
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_005
+  claim_text: Avoid mixing chemicals to prevent dangerous reactions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: e. Never mix household hazardous chemicals or waste with other products.
+    start_char: 228
+    end_char: 293
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_006
+  claim_text: Dispose of hazardous waste through local collection programs.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: f. Take household hazardous waste to a local collection program.
+    start_char: 296
+    end_char: 357
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_007
+  claim_text: Clean up spills immediately using rags.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: h. Clean up spills immediately with rags.
+    start_char: 366
+    end_char: 403
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_008
+  claim_text: Do not smoke near hazardous materials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: g. Never smoke while using household chemicals.
+    start_char: 360
+    end_char: 403
+    support_strength: strong
+- object_id: safety.hazardous-materials-handling
+  claim_id: clm_009
+  claim_text: Stay at least one-half mile away from large spills.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 145
+    page_end: 145
+    segment_id: src.fema.are-you-ready.2004::seg_000229
+    excerpt: b. Stay upstream, uphill, and upwind! In general, try to go at least
+      one-half mile (usually 8-10 city blocks) from the danger area.
+    start_char: 427
+    end_char: 530
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000229
+bundle_overrides:
+  hook: Handling hazardous materials safely is crucial to prevent health risks and
+    environmental damage—learn how to do it right.
+  primer: Hazardous materials are substances that can pose a risk to health, safety,
+    or the environment. These materials are commonly found in households and workplaces,
+    including cleaning products, paints, and pesticides. Proper handling of these
+    materials is essential to prevent accidents, health issues, and environmental
+    harm. Identifying hazardous materials involves reading labels and safety data
+    sheets, which provide information on the potential risks and safe handling practices.
+    It's important to store these materials in their original containers unless they
+    are corroding, and never in food containers to avoid contamination. Mixing chemicals
+    can lead to dangerous reactions, so it should be avoided. Disposal of hazardous
+    waste should be done through local collection programs to ensure it is handled
+    safely. Immediate cleanup of spills using rags and avoiding smoking near hazardous
+    materials are also critical safety measures. By following these guidelines, you
+    can minimize risks associated with hazardous materials.
+  guide: '1. **Identify Hazardous Materials**: Start by reading the labels and safety
+    data sheets of products to understand their hazards. Look for symbols and warnings
+    that indicate the material is hazardous.
+
+
+    2. **Follow Instructions**: Always adhere to the manufacturer''s instructions
+    for storage, use, and disposal. This ensures that you are handling the materials
+    as intended and minimizing risks.
+
+
+    3. **Proper Storage**: Keep hazardous materials in their original containers unless
+    they are corroding. This helps prevent leaks and ensures that the labels remain
+    intact for future reference.
+
+
+    4. **Avoid Food Containers**: Never transfer hazardous materials into food containers.
+    This prevents accidental ingestion and contamination.
+
+
+    5. **Do Not Mix Chemicals**: Mixing different chemicals can result in dangerous
+    reactions. Always keep chemicals separate unless you are certain they can be safely
+    combined.
+
+
+    6. **Dispose Safely**: Use local hazardous waste collection programs for disposal.
+    These programs are designed to handle hazardous waste safely and prevent environmental
+    contamination.
+
+
+    7. **Immediate Spill Cleanup**: If a spill occurs, clean it up immediately using
+    rags. This prevents the spread of hazardous materials and reduces the risk of
+    accidents.
+
+
+    8. **No Smoking**: Avoid smoking near hazardous materials to prevent fires and
+    explosions.
+
+
+    By following these steps, you can handle hazardous materials safely and reduce
+    the risk of accidents.'
+  reference:
+  - Identify hazardous materials by reading labels and safety data sheets.
+  - Follow manufacturer's instructions for storage, use, and disposal.
+  - Store materials in original containers unless corroding.
+  - Never store hazardous products in food containers.
+  - Avoid mixing chemicals to prevent dangerous reactions.
+  - Dispose of hazardous waste through local collection programs.
+  - Clean up spills immediately using rags.
+  - Do not smoke near hazardous materials.
+  - Stay at least one-half mile away from large spills.
+  worksheet:
+  - List five common household hazardous materials and their potential risks.
+  - Read the label of a cleaning product and identify any hazard symbols.
+  - Practice storing a hazardous material in its original container and explain why
+    this is important.
+  - Research local hazardous waste collection programs and note their operating hours.
+  - Simulate a spill cleanup using water and rags, and describe the steps taken.
+  - Discuss why mixing certain household chemicals can be dangerous.
+  teach_forward_kit:
+    three_minute_version: Handling hazardous materials safely involves identifying
+      them through labels, storing them properly, and disposing of them via local
+      programs. Avoid mixing chemicals and clean spills immediately to prevent accidents.
+    ten_minute_outline:
+    - Introduction to hazardous materials and their risks.
+    - How to identify hazardous materials using labels and safety data sheets.
+    - Proper storage techniques and the importance of original containers.
+    - Dangers of using food containers for hazardous materials.
+    - Risks of mixing chemicals and how to avoid them.
+    - Safe disposal methods through local collection programs.
+    - Steps for immediate spill cleanup.
+    - Safety precautions like avoiding smoking near hazardous materials.
+    discussion_prompts:
+    - What are some common hazardous materials you encounter daily?
+    - Why is it important to store hazardous materials in their original containers?
+    - How can improper disposal of hazardous materials affect the environment?
+    - What steps would you take if you accidentally spilled a hazardous material?

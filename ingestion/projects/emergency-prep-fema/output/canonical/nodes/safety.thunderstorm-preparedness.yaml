@@ -1,0 +1,192 @@
+id: safety.thunderstorm-preparedness
+slug: safety.thunderstorm-preparedness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Thunderstorm Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Guidelines for actions to take before, during, and after a thunderstorm
+  to ensure safety.
+summary_medium: This reference sheet provides essential guidelines for ensuring safety
+  during thunderstorms, including actions to take before, during, and after the storm.
+plain_language: Learn how to stay safe during thunderstorms by following these guidelines
+  for before, during, and after the storm.
+markdown_body: '### What this is
+
+  This is a set of guidelines to help you prepare for and stay safe during thunderstorms.
+
+
+  ### Why it matters
+
+  Thunderstorms can be dangerous due to lightning, strong winds, and heavy rain. Following
+  these guidelines can help prevent injury and damage.
+
+
+  ### What you need
+
+  A NOAA Weather Radio, a safe indoor location, and knowledge of basic first aid.
+
+
+  ### How to do it
+
+  Before a thunderstorm, postpone outdoor activities and secure loose objects. Seek
+  shelter in a building or a hard-topped vehicle. Avoid using corded phones and unplug
+  appliances to prevent damage from power surges. During a thunderstorm, stay away
+  from windows and avoid metal objects. If you are caught outside, find a low area
+  away from tall objects and minimize contact with the ground. After the storm, check
+  for injuries and provide first aid if necessary.
+
+
+  ### Common failure modes
+
+  Injury from lightning strikes or damage from power surges due to not following safety
+  guidelines.
+
+
+  ### Safety/boundary notes
+
+  Avoid metal objects and do not lie flat on the ground during a thunderstorm.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of shelters and local weather patterns when planning your
+  response to thunderstorms.'
+structured_data:
+  tools:
+  - NOAA Weather Radio
+  materials: []
+  success_criteria:
+  - No injuries occur
+  - No damage to property
+  failure_modes:
+  - Injury from lightning
+  - Damage from power surges
+  safety_boundary:
+  - Avoid metal objects
+  - Do not lie flat on the ground
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_001
+  claim_text: Thunderstorms can be dangerous due to lightning, strong winds, and heavy
+    rain.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'The following are guidelines for what you should do if a thunderstorm
+      is likely in your area: Postpone outdoor activities. Get inside a home, building,
+      or hard top automobile (not a convertible). Although you may be injured if lightning
+      strikes your car, you are much safer inside a vehicle than outside.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_002
+  claim_text: A NOAA Weather Radio, a safe indoor location, and knowledge of basic
+    first aid.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Use your battery-operated NOAA Weather Radio for updates from local officials.
+    start_char: 500
+    end_char: 560
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_003
+  claim_text: Before a thunderstorm, postpone outdoor activities and secure loose
+    objects.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Postpone outdoor activities. Secure outdoor objects that could blow away
+      or cause damage.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_004
+  claim_text: Seek shelter in a building or a hard-topped vehicle.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Get inside a home, building, or hard top automobile (not a convertible).
+    start_char: 50
+    end_char: 100
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_005
+  claim_text: Avoid using corded phones and unplug appliances to prevent damage from
+    power surges.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Use a corded telephone only for emergencies. Unplug appliances and other
+      electrical items such as computers and turn off air conditioners. Power surges
+      from lightning can cause serious damage.
+    start_char: 300
+    end_char: 450
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_006
+  claim_text: During a thunderstorm, stay away from windows and avoid metal objects.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'Shutter windows and secure outside doors. Avoid the following: Anything
+      metal—tractors, farm equipment, motorcycles, golf carts, golf clubs, and bicycles.'
+    start_char: 150
+    end_char: 250
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_007
+  claim_text: If you are caught outside, find a low area away from tall objects and
+    minimize contact with the ground.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Seek shelter in a low area under a thick growth of small trees. Go to
+      a low place such as a ravine or valley. Be alert for flash floods.
+    start_char: 600
+    end_char: 700
+    support_strength: strong
+- object_id: safety.thunderstorm-preparedness
+  claim_id: clm_008
+  claim_text: After the storm, check for injuries and provide first aid if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: 'After a Thunderstorm Call 9-1-1 for medical assistance as soon as possible.
+      The following are things you should check when you attempt to give aid to a
+      victim of lightning: Breathing, Heartbeat, Pulse.'
+    start_char: 800
+    end_char: 950
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000114

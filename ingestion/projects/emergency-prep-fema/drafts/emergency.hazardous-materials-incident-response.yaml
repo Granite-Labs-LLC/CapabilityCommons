@@ -1,0 +1,181 @@
+id: emergency.hazardous-materials-incident-response
+slug: emergency.hazardous-materials-incident-response
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Responding to a Hazardous Materials Incident
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for responding to a hazardous materials incident.
+summary_medium: Guidelines for responding to a hazardous materials incident, including
+  evacuation, staying outdoors, vehicle safety, and indoor sheltering.
+plain_language: Learn how to respond safely during a hazardous materials incident
+  by following evacuation orders, seeking shelter, and sealing your environment.
+markdown_body: "# What this is\nThis reference sheet provides guidelines on how to\
+  \ respond during a hazardous materials incident to ensure personal safety and minimize\
+  \ exposure to toxic chemicals.\n\n# Why it matters\nHazardous materials incidents\
+  \ can release toxic chemicals that pose serious health risks. Proper response can\
+  \ prevent exposure and reduce harm.\n\n# What you need\nA radio or television for\
+  \ updates, plastic sheeting, and duct tape for sealing a shelter room.\n\n# How\
+  \ to do it\n1. Listen to local radio or television for instructions. \n2. If asked\
+  \ to evacuate, do so immediately. \n3. If caught outside, move upstream, uphill,\
+  \ and upwind, staying at least one-half mile from the danger area. \n4. In a vehicle,\
+  \ seek shelter in a building or keep windows closed and ventilation off. \n5. If\
+  \ staying indoors, close and lock doors and windows, turn off ventilation, and seal\
+  \ the shelter room with plastic and duct tape.\n\n# Common failure modes\nExposure\
+  \ to toxic chemicals due to improper sealing of shelter or ignoring evacuation orders.\n\
+  \n# Safety/boundary notes\nStay at least one-half mile from the danger area to minimize\
+  \ risk.\n\n# Local adaptation notes\nConsider the availability of shelter rooms\
+  \ and local building ventilation systems when planning your response."
+structured_data:
+  tools:
+  - radio
+  - television
+  - plastic sheeting
+  - duct tape
+  materials: []
+  success_criteria:
+  - Successfully evacuating or sheltering without exposure to hazardous materials.
+  failure_modes:
+  - Exposure to toxic chemicals
+  - Improper sealing of shelter
+  safety_boundary: Stay at least one-half mile from the danger area.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidelines on how to respond during a
+    hazardous materials incident to ensure personal safety and minimize exposure to
+    toxic chemicals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: During a Hazardous Materials Incident Listen to local radio or television
+      stations for detailed information and instructions. Follow the instructions
+      carefully. You should stay away from the area to minimize the risk of contamination.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_002
+  claim_text: Hazardous materials incidents can release toxic chemicals that pose
+    serious health risks. Proper response can prevent exposure and reduce harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 130
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000197
+    excerpt: Chemicals are found everywhere... But chemicals also can be hazardous
+      to humans or the environment if used or released improperly.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_003
+  claim_text: A radio or television for updates, plastic sheeting, and duct tape for
+    sealing a shelter room.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: 'You should add the following supplies to your disaster supplies kit:
+      Plastic sheeting. Duct tape.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_004
+  claim_text: Listen to local radio or television for instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: Listen to local radio or television stations for detailed information
+      and instructions.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_005
+  claim_text: If asked to evacuate, do so immediately.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: 'Asked to evacuate: Do so immediately.'
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_006
+  claim_text: If caught outside, move upstream, uphill, and upwind, staying at least
+    one-half mile from the danger area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: 'Caught Outside: Stay upstream, uphill, and upwind! In general, try to
+      go at least one-half mile from the danger area.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_007
+  claim_text: In a vehicle, seek shelter in a building or keep windows closed and
+    ventilation off.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: 'In a motor vehicle: Stop and seek shelter in a permanent building. If
+      you must remain in your car, keep car windows and vents closed and shut off
+      the air conditioner and heater.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_008
+  claim_text: If staying indoors, close and lock doors and windows, turn off ventilation,
+    and seal the shelter room with plastic and duct tape.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: 'Requested to stay indoors: Close and lock all exterior doors and windows...
+      Seal the room by covering each window, door, and vent using plastic sheeting
+      and duct tape.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: emergency.hazardous-materials-incident-response
+  claim_id: clm_009
+  claim_text: Stay at least one-half mile from the danger area to minimize risk.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 132
+    segment_id: src.fema.are-you-ready.2004::seg_000200
+    excerpt: 'Caught Outside: Stay upstream, uphill, and upwind! In general, try to
+      go at least one-half mile from the danger area.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000200

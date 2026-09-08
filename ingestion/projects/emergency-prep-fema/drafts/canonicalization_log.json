@@ -1,0 +1,1702 @@
+[
+  {
+    "action": "merge",
+    "rationale": "Both drafts provide guidance on responding to biological threats, with overlapping content and sources. They can be combined into a comprehensive guide covering both general biological attacks and specific exposure scenarios.",
+    "canonical_slug": "emergency-management.biological-attack-response",
+    "deprecated_draft_ids": [
+      "emergency-management.biological-attack-response",
+      "emergency-management.exposure-response"
+    ],
+    "merged_object": {
+      "canonical_title": "Responding to Biological Threats",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Monitor media for official information about the attack, symptoms, and medical advice.",
+          "object_id": "emergency-management.biological-attack-response",
+          "support": [
+            {
+              "end_char": 536,
+              "excerpt": "Watch television, listen to radio, or check the Internet for official news and information including signs and symptoms of the disease, areas in danger, if medications or vaccinations are being distributed, and where you should seek medical attention if you become ill.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 269,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Practice good hygiene by washing with soap and water.",
+          "object_id": "emergency-management.biological-attack-response",
+          "support": [
+            {
+              "end_char": 662,
+              "excerpt": "Use common sense and practice good hygiene.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 623,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "If exposed, remove contaminated clothing, wash thoroughly, and seek medical attention.",
+          "object_id": "emergency-management.biological-attack-response",
+          "support": [
+            {
+              "end_char": 1074,
+              "excerpt": "If you are exposed to a biological agent: Remove and bag your clothes and personal items. Follow official instructions for disposal of contaminated items. Wash yourself with soap and water and put on clean clothes. Seek medical assistance.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 828,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Follow official instructions for disposal of contaminated items and possible quarantine measures.",
+          "object_id": "emergency-management.biological-attack-response",
+          "support": [
+            {
+              "end_char": 1074,
+              "excerpt": "Follow official instructions for disposal of contaminated items. Seek medical assistance. You may be advised to stay away from others or even quarantined.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 882,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "This guide provides steps to follow if you are exposed to a biological agent, focusing on immediate decontamination and seeking medical help.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "If you are exposed to a biological agent: Remove and bag your clothes and personal items. Follow official instructions for disposal of contaminated items. Wash yourself with soap and water and put on clean clothes. Seek medical assistance. You may be advised to stay away from others or even quarantined.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Exposure to biological agents can lead to serious health issues. Quick and effective response can reduce the risk of infection and spread.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "The first evidence of an attack may be when you notice symptoms of the disease caused by exposure to an agent. Be suspicious of any symptoms you notice, but do not assume that any illness is a result of the attack. Use common sense and practice good hygiene.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Access to soap and water, clean clothes, and a way to contact medical authorities.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Wash with soap and water. Contact authorities. Seek medical attention if you become sick.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Remove and bag your clothes and personal items. Follow official instructions for disposal of contaminated items.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Remove and bag your clothes and personal items. Follow official instructions for disposal of contaminated items.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Wash yourself thoroughly with soap and water.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Wash yourself with soap and water and put on clean clothes.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "Put on clean clothes.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Wash yourself with soap and water and put on clean clothes.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Seek medical assistance immediately. You may be advised to stay away from others or even quarantined.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Seek medical assistance. You may be advised to stay away from others or even quarantined.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_012",
+          "claim_text": "Improper decontamination or failure to seek medical help can increase health risks.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Use common sense and practice good hygiene. Seek medical attention if you become sick.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_013",
+          "claim_text": "Ensure that you follow official instructions and maintain hygiene to prevent further contamination.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Follow official instructions for disposal of contaminated items. Use common sense and practice good hygiene.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_014",
+          "claim_text": "Local health authorities may have specific instructions based on the type of biological agent and available resources.",
+          "object_id": "emergency-management.exposure-response",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Listen to the media for official instructions.",
+              "page_end": 158,
+              "page_start": 158,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000244",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        }
+      ],
+      "co_type": "skill_guide",
+      "contexts": [],
+      "cost_band": "low",
+      "difficulty": 3,
+      "id": "emergency-management.biological-attack-response",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\n\nThis guide provides steps to take during a biological attack or if exposed to a biological agent, focusing on ensuring personal safety and health.\n\n### Why it matters\n\nBiological attacks and exposure to biological agents can spread diseases rapidly, and knowing how to respond can prevent illness and save lives.\n\n### What you need\n\nAccess to media (TV, radio, Internet), soap and water, clean clothes, and a means to contact authorities.\n\n### How to do it\n\n1. Monitor media for official information about the attack, symptoms, and medical advice.\n\n2. Practice good hygiene by washing with soap and water.\n\n3. If exposed, remove contaminated clothing, wash thoroughly, and seek medical attention.\n\n4. Follow official instructions for disposal of contaminated items and possible quarantine measures.\n\n### Common failure modes\n\nDelayed response due to misinformation or lack of awareness, not practicing hygiene, and not seeking timely medical attention.\n\n### Safety/boundary notes\n\nAlways follow official instructions and do not assume symptoms are related to the attack without confirmation.\n\n### Local adaptation notes\n\nAdapt response based on local public health guidelines and available resources.",
+      "plain_language": "This guide helps you understand what to do during a biological attack or if exposed to a biological agent, such as staying informed through media, maintaining hygiene, and getting medical help if needed.",
+      "primary_domain": "emergency-management",
+      "requires": [],
+      "risk_band": "high",
+      "secondary_domains": [],
+      "seed_type": "extracted",
+      "slug": "emergency-management.biological-attack-response",
+      "source_segment_ids": [
+        "src.fema.are-you-ready.2004::seg_000244"
+      ],
+      "stage": "community",
+      "structured_data": {
+        "failure_modes": [
+          "Delayed response due to misinformation.",
+          "Ignoring symptoms or not practicing hygiene.",
+          "Improper decontamination",
+          "Failure to seek medical help"
+        ],
+        "implementation": {
+          "common_mistakes": [
+            "Ignoring official advice.",
+            "Delaying medical consultation.",
+            "Inadequate washing"
+          ],
+          "expected_cost": "Low",
+          "expected_time": "Varies based on situation",
+          "materials": [],
+          "smallest_viable_version": "Stay informed and practice hygiene during a biological attack.",
+          "stop_conditions": [
+            "Official declaration of safety.",
+            "Medical clearance.",
+            "Symptoms worsen despite initial decontamination.",
+            "Official instructions contradict initial actions."
+          ],
+          "success_checks": [
+            "Access to reliable information sources.",
+            "Effective hygiene practices.",
+            "Timely medical consultation.",
+            "Clothes and personal items are bagged and disposed of properly.",
+            "Body is thoroughly washed with soap and water.",
+            "Medical assistance is sought promptly."
+          ],
+          "tools": [],
+          "variants": [
+            {
+              "label": "Urban",
+              "notes": "Increased risk of rapid disease spread.",
+              "when": "In densely populated areas."
+            },
+            {
+              "label": "Off-grid",
+              "notes": "Limited access to media and medical facilities.",
+              "when": "In remote areas."
+            }
+          ],
+          "when_to_escalate": [
+            "Severe symptoms appear.",
+            "Official instructions for quarantine.",
+            "If symptoms develop or worsen",
+            "If instructed by authorities"
+          ]
+        },
+        "materials": [],
+        "safety_boundary": [
+          "Follow official instructions and avoid assumptions about symptoms.",
+          "Maintain hygiene"
+        ],
+        "success_criteria": [
+          "Staying informed through reliable media sources.",
+          "Practicing good hygiene to prevent disease spread.",
+          "Seeking medical attention promptly if symptoms appear.",
+          "Effective decontamination and timely medical consultation."
+        ],
+        "tools": []
+      },
+      "suggested_edges": [],
+      "summary_medium": "Learn how to respond effectively during a biological attack or exposure by monitoring media for updates, practicing good hygiene, and seeking medical attention when necessary.",
+      "summary_short": "Steps to take during a biological attack or exposure, including monitoring media for information and practicing good hygiene.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct glossaries focusing on different natural hazards: flood and tsunami. They cover separate topics and have unique content relevant to each hazard.",
+    "canonical_slug": "emergency-management.flood-hazard-terms",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct glossaries focusing on different natural hazards: flood and tsunami. They cover separate topics and have unique content relevant to each hazard.",
+    "canonical_slug": "emergency-management.tsunami-terms",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "The drafts 'Basic Awareness in Emergency Preparedness' and 'Basic Guidelines for Emergency Preparedness' cover similar content about emergency preparedness, focusing on awareness, planning, and assembling kits. They can be combined into a single comprehensive document.",
+    "canonical_slug": "emergency-preparedness.basic-awareness",
+    "deprecated_draft_ids": [
+      "emergency-preparedness.basic-awareness",
+      "emergency-preparedness.basic-guidelines"
+    ],
+    "merged_object": {
+      "canonical_title": "Basic Awareness and Guidelines for Emergency Preparedness",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Being prepared for emergencies can significantly reduce the impact of disasters on individuals and communities.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 150,
+              "excerpt": "In this part of the guide, you will learn preparedness strategies that are common to all disasters. You plan only once, and are able to apply your plan to all types of hazards.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            },
+            {
+              "end_char": 300,
+              "excerpt": "Many communities have Local Emergency Planning Committees (LEPCs) whose responsibilities include collecting information about hazardous materials in the community and making this information available to the public upon request. The LEPCs also are tasked with developing an emergency plan to prepare for and respond to chemical emergencies in the community.",
+              "page_end": 131,
+              "page_start": 131,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000199",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Awareness and preparation can save lives and minimize damage.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 250,
+              "excerpt": "When you complete Part 1, you will be able to: Get informed about hazards and emergencies that may affect you and your family.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 151,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "To start, you need an emergency kit checklist and access to reliable information about potential emergencies in your area.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Collect and assemble disaster supplies kit.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 251,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Stay informed by following local news and alerts.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 150,
+              "excerpt": "Learn about the hazards that may strike your community, the risks you face from these hazards, and your community's plans for warning and evacuation.",
+              "page_end": 17,
+              "page_start": 16,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000022",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Prepare an emergency kit with essential supplies such as water, food, and medical items.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "Collect and assemble disaster supplies kit.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 251,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Regularly update your kit and plan based on current information.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 350,
+              "excerpt": "Practice and maintain your plan.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 301,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Common issues include lack of information and unpreparedness, which can lead to panic and inadequate response during emergencies.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 250,
+              "excerpt": "Get informed about hazards and emergencies that may affect you and your family.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 151,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Ensure that your emergency plans and kits are suitable for the specific types of emergencies that may occur in your region.",
+          "object_id": "emergency-preparedness.basic-awareness",
+          "support": [
+            {
+              "end_char": 150,
+              "excerpt": "Learn about the hazards that may strike your community, the risks you face from these hazards, and your community's plans for warning and evacuation.",
+              "page_end": 17,
+              "page_start": 16,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000022",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "concept_note",
+      "contexts": [],
+      "cost_band": "low",
+      "difficulty": 2,
+      "id": "emergency-preparedness.basic-awareness",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "# What this is\n\nThis concept note introduces the basic awareness and guidelines needed for emergency preparedness. It emphasizes the importance of being informed about potential emergencies and having a plan in place.\n\n# Why it matters\n\nBeing prepared for emergencies can significantly reduce the impact of disasters on individuals and communities. Awareness and preparation can save lives and minimize damage.\n\n# What you need\n\nTo start, you need an emergency kit checklist and access to reliable information about potential emergencies in your area. Identify potential emergencies that could affect your area, develop a comprehensive plan, and gather essential supplies such as an emergency kit and communication devices.\n\n# How to do it\n\nStay informed by following local news and alerts. Prepare an emergency kit with essential supplies such as water, food, and medical items. Regularly update your kit and plan based on current information. Begin by researching the types of emergencies common in your region. Develop a plan that includes communication strategies, evacuation routes, and meeting points.\n\n# Common failure modes\n\nCommon issues include lack of information and unpreparedness, which can lead to panic and inadequate response during emergencies. Failing to plan adequately, not updating the emergency kit regularly, and underestimating the supplies needed for an extended period are also common mistakes.\n\n# Safety/boundary notes\n\nEnsure that your emergency plans and kits are suitable for the specific types of emergencies that may occur in your region. Consider the safety of all family members, including pets, and account for any specific needs such as medical conditions.\n\n# Local adaptation notes\n\nConsider regional emergency types when preparing your emergency plans and kits, as different areas may face different risks. Adapt your emergency preparedness plan to account for regional risks and available community resources.",
+      "plain_language": "Learn the basics of being prepared for emergencies by staying informed and having the necessary supplies ready.",
+      "primary_domain": "emergency-preparedness",
+      "requires": [],
+      "risk_band": "low",
+      "secondary_domains": [],
+      "seed_type": "concept_note",
+      "slug": "emergency-preparedness.basic-awareness",
+      "source_segment_ids": [
+        "src.fema.are-you-ready.2004::seg_000021"
+      ],
+      "stage": "foundation",
+      "structured_data": {
+        "definition": "Basic awareness and guidelines in emergency preparedness involve understanding the types of emergencies that can occur and knowing how to prepare for them.",
+        "key_questions": [
+          "What types of emergencies are most likely to occur in my area?",
+          "What supplies should be included in an emergency kit?",
+          "What should my emergency plan include?"
+        ],
+        "misconceptions": [
+          "Emergency preparedness is only necessary for large-scale disasters.",
+          "Once an emergency kit is prepared, it does not need to be updated."
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "An introduction to basic emergency preparedness awareness and guidelines, focusing on the importance of being informed and ready for various types of emergencies.",
+      "summary_short": "Introduction to basic emergency preparedness awareness and guidelines.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft 'Basic Safety Tips for Emergency Preparedness' focuses specifically on safety tips and measures, which is distinct from the broader awareness and guidelines covered in the merged draft.",
+    "canonical_slug": "emergency-preparedness.basic-safety-tips",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Understanding Biological Threats' and 'Understanding Chemical Threats' cover distinct topics related to different types of threats, biological and chemical respectively. Each draft has unique claims, support, and structured data relevant to its specific type of threat.",
+    "canonical_slug": "emergency-preparedness.biological-threats",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts focus on different aspects of emergency preparedness: one on the role of citizens and the other on the role of local communities. They are distinct in their scope and content.",
+    "canonical_slug": "emergency-preparedness.citizen-role",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct and cover different aspects of emergency preparedness. One focuses on clothes and bedding, while the other focuses on equipment and tools.",
+    "canonical_slug": "emergency-preparedness.clothes-bedding-supplies",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct and cover different aspects of emergency preparedness. One focuses on food and water supplies, while the other focuses on medicine kit supplies.",
+    "canonical_slug": "emergency-preparedness.food-water-supplies",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct and cover different aspects of emergency preparedness. One focuses on sanitation and hygiene supplies, while the other focuses on medicine kit supplies.",
+    "canonical_slug": "emergency-preparedness.sanitation-hygiene-supplies",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe actions for different risk levels (elevated, guarded, severe) and are distinct in content and purpose.",
+    "canonical_slug": "emergency-preparedness.elevated-risk-actions",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe actions for different risk levels (elevated, guarded, severe) and are distinct in content and purpose.",
+    "canonical_slug": "emergency-preparedness.guarded-risk-actions",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe actions for different risk levels (elevated, guarded, severe) and are distinct in content and purpose.",
+    "canonical_slug": "emergency-preparedness.severe-risk-actions",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct as they cover different emergency scenarios: one for electricity and one for water shut-off preparation.",
+    "canonical_slug": "emergency.electricity-shutoff-preparation",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Evacuation Guidelines', 'Emergency Sheltering Guidelines', and 'Emergency Water Management' cover distinct topics within emergency preparedness and do not overlap in content.",
+    "canonical_slug": "emergency.evacuation-guidelines",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Evacuation Guidelines', 'Emergency Sheltering Guidelines', and 'Emergency Water Management' cover distinct topics within emergency preparedness and do not overlap in content.",
+    "canonical_slug": "emergency.sheltering-guidelines",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Evacuation Guidelines', 'Emergency Sheltering Guidelines', and 'Emergency Water Management' cover distinct topics within emergency preparedness and do not overlap in content.",
+    "canonical_slug": "emergency.water-management",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Flash Flood Warning', 'Flash Flood Watch', and 'Flood Warning' are distinct documents addressing different types of flood alerts. Each provides specific guidance relevant to the type of alert.",
+    "canonical_slug": "emergency.flash-flood-warning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct, focusing on different emergency preparedness topics: flood and tornado preparedness.",
+    "canonical_slug": "emergency.flood-preparedness",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct, focusing on different emergency preparedness topics: flood and tornado preparedness.",
+    "canonical_slug": "emergency.tornado-preparedness",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe distinct concepts: a 'warning' and a 'watch', each with different timeframes and implications for action.",
+    "canonical_slug": "emergency.hurricane-warning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Emergency Preparedness Basics' and 'Emergency Preparedness Checklist' are distinct in their focus and content. The former provides a conceptual overview, while the latter offers a practical checklist.",
+    "canonical_slug": "emergency.preparedness-basics",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts provide guidance on returning home after an emergency, but they focus on different aspects. The first draft emphasizes staying informed and avoiding hazardous areas, while the second draft highlights the physical and mental challenges of returning home. Merging these provides a comprehensive guide.",
+    "canonical_slug": "emergency.returning-home",
+    "deprecated_draft_ids": [
+      "emergency.returning-home-safely",
+      "emergency.returning-home"
+    ],
+    "merged_object": {
+      "canonical_title": "Returning Home After an Emergency",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Continuously listen to the radio or watch television for updates on the situation.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 92,
+              "excerpt": "Keep listening to the radio and television for news about what to do, where to go, and places to avoid.",
+              "page_end": 169,
+              "page_start": 169,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000254",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Avoid entering damaged areas or those marked as 'radiation hazard' or 'HAZMAT'.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 161,
+              "excerpt": "Stay away from damaged areas. Stay away from areas marked 'radiation hazard' or 'HAZMAT.'",
+              "page_end": 169,
+              "page_start": 169,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000254",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 93,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Follow any specific instructions provided by authorities for returning home.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 210,
+              "excerpt": "Follow the instructions for returning home in Part 5.",
+              "page_end": 169,
+              "page_start": 169,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000254",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 162,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Entering hazardous areas without proper information or ignoring official instructions can lead to serious risks.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 161,
+              "excerpt": "Stay away from damaged areas. Stay away from areas marked 'radiation hazard' or 'HAZMAT.'",
+              "page_end": 169,
+              "page_start": 169,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000254",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 93,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Always stay away from areas marked as radiation hazards or HAZMAT zones, as these pose significant health risks.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 161,
+              "excerpt": "Stay away from areas marked 'radiation hazard' or 'HAZMAT.' Remember that radiation cannot be seen, smelled, or otherwise detected by human senses.",
+              "page_end": 169,
+              "page_start": 169,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000254",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 93,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Returning home after an emergency can present various risks and challenges.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 78,
+              "excerpt": "Returning home can be both physically and mentally challenging. Above all, use caution.",
+              "page_end": 182,
+              "page_start": 182,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000273",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Approach your home with caution. Assess the physical condition of the property before entering.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 206,
+              "excerpt": "Walk carefully around the outside and check for loose power lines, gas leaks, and structural damage. If you have any doubts about safety, have your residence inspected by a qualified building inspector or structural engineer before entering.",
+              "page_end": 182,
+              "page_start": 182,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000274",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Be mentally prepared for potential damage or loss.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 122,
+              "excerpt": "Recovering from a disaster is usually a gradual process. Safety is a primary issue, as are mental and physical well-being.",
+              "page_end": 182,
+              "page_start": 181,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000272",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Always prioritize personal safety over property.",
+          "object_id": "emergency.returning-home",
+          "support": [
+            {
+              "end_char": 69,
+              "excerpt": "Your first concern after a disaster is your family's health and safety.",
+              "page_end": 182,
+              "page_start": 181,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000272",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "reference_sheet",
+      "contexts": [],
+      "cost_band": "medium",
+      "difficulty": 3,
+      "id": "emergency.returning-home",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "# What this is\n\nThis document provides comprehensive guidance on safely returning to your home after an emergency, addressing both physical and mental challenges.\n\n# Why it matters\n\nReturning home after an emergency can be dangerous if proper precautions are not taken. Understanding the risks and challenges can help ensure your safety and mental well-being.\n\n# What you need\n\nAccess to reliable news sources, awareness of potential hazards, a plan for safe return, and mental preparedness for the conditions you may find.\n\n# How to do it\n\n1. Continuously listen to the radio or watch television for updates on the situation.\n2. Avoid entering damaged areas or those marked as 'radiation hazard' or 'HAZMAT'.\n3. Follow any specific instructions provided by authorities for returning home.\n4. Approach your home with caution. Assess the physical condition of the property before entering.\n5. Be mentally prepared for potential damage or loss.\n\n# Common failure modes\n\nEntering hazardous areas without proper information or ignoring official instructions can lead to serious risks. Rushing into the home without assessing safety, underestimating emotional impact, and neglecting necessary precautions.\n\n# Safety/boundary notes\n\nAlways prioritize personal safety over property. If in doubt, seek professional assistance. Stay away from areas marked as radiation hazards or HAZMAT zones, as these pose significant health risks.\n\n# Local adaptation notes\n\nEnsure you have access to local news channels to receive timely updates and instructions. Consider local emergency services' advice and specific regional hazards when planning your return.",
+      "plain_language": "Learn how to safely return to your home after an emergency by staying informed, avoiding dangerous areas, and being mentally prepared for challenges.",
+      "primary_domain": "emergency",
+      "requires": [],
+      "risk_band": "moderate",
+      "secondary_domains": [],
+      "seed_type": "reference_sheet",
+      "slug": "emergency.returning-home",
+      "source_segment_ids": [
+        "src.fema.are-you-ready.2004::seg_000254",
+        "src.fema.are-you-ready.2004::seg_000273",
+        "src.fema.are-you-ready.2004::seg_000274",
+        "src.fema.are-you-ready.2004::seg_000272"
+      ],
+      "stage": "household",
+      "structured_data": {
+        "failure_modes": [
+          "Entering hazardous areas",
+          "Ignoring official instructions",
+          "Rushing into the home without assessing safety",
+          "Underestimating emotional impact"
+        ],
+        "materials": [],
+        "safety_boundary": [
+          "Stay away from radiation hazard areas",
+          "Prioritize personal safety over property"
+        ],
+        "success_criteria": [
+          "Successfully return home without entering hazardous areas",
+          "Stay informed through reliable news sources"
+        ],
+        "tools": [
+          "radio",
+          "television"
+        ],
+        "definition": "Returning home after an emergency involves navigating both physical and mental challenges, requiring careful planning and caution.",
+        "key_questions": [
+          "What are the immediate hazards to look for when returning home?",
+          "How can you prepare mentally for what you might find?",
+          "What steps should be taken to ensure safety upon return?"
+        ],
+        "misconceptions": [
+          "It's safe to return home as soon as the emergency is over.",
+          "Emotional reactions to returning home are not significant."
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "Returning home after an emergency involves both physical and mental challenges. It is crucial to proceed with caution to ensure safety and well-being.",
+      "summary_short": "Guidance on challenges and precautions when returning home after an emergency.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Outdoor Water Conservation' and 'Pool Water Conservation' cover distinct topics within the domain of water conservation, focusing on different environments and methods.",
+    "canonical_slug": "environment.outdoor-water-conservation",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Understanding Earthquakes' and 'Understanding Earthquake Magnitude' cover distinct topics within the domain of geology. One focuses on the general concept of earthquakes, while the other specifically addresses the measurement of earthquake magnitude.",
+    "canonical_slug": "geology.earthquake",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Natural Hazards Reference Sheet' and 'Technological Hazards' cover distinct topics related to different types of hazards. They are both necessary for comprehensive emergency planning and do not overlap in content.",
+    "canonical_slug": "hazards.natural-hazards",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Understanding Heat Cramps', 'Understanding Heat Exhaustion', and 'Understanding Heat Stroke' each cover distinct topics within the domain of heat-related illnesses. Each draft provides unique information specific to its respective condition.",
+    "canonical_slug": "health.heat-cramps",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover the same topic of flood insurance with overlapping content and references to the National Flood Insurance Program (NFIP). The drafts can be combined to create a comprehensive overview of flood insurance.",
+    "canonical_slug": "insurance.flood-insurance-overview",
+    "deprecated_draft_ids": [
+      "insurance.flood-insurance-overview",
+      "insurance.flood-insurance"
+    ],
+    "merged_object": {
+      "canonical_title": "Flood Insurance Overview",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Flood insurance is a specific type of insurance policy that covers losses due to flooding, which is not covered under standard homeowners' insurance policies.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 60,
+              "excerpt": "Flood losses are **not covered** under homeowners' insurance policies.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "The National Flood Insurance Program (NFIP) provides a way for homeowners to protect themselves against these risks.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 248,
+              "excerpt": "FEMA manages the National Flood Insurance Program, which makes federally-backed flood insurance available in communities that agree to adopt and enforce floodplain management ordinances to reduce future flood damage.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 61,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "To obtain flood insurance, you need to contact an insurance agent who offers policies through the NFIP.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 301,
+              "excerpt": "Flood insurance is available in most communities through insurance agents.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 249,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "It's important to be aware of the 30-day waiting period before the insurance becomes effective.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 372,
+              "excerpt": "There is a 30-day waiting period before flood insurance goes into effect, so don't delay.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 302,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Flood insurance is available whether or not your property is in a designated flood-prone area.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 451,
+              "excerpt": "Flood insurance is available whether the building is in or out of the identified flood-prone area.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 373,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Communities must adopt and enforce floodplain management ordinances to participate in the NFIP, which can vary by location.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 248,
+              "excerpt": "FEMA manages the National Flood Insurance Program, which makes federally-backed flood insurance available in communities that agree to adopt and enforce floodplain management ordinances to reduce future flood damage.",
+              "page_end": 55,
+              "page_start": 55,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000076",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 61,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Flood insurance is a type of insurance policy that covers damage to buildings and their contents caused by flooding.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 246,
+              "excerpt": "If you live in a flood-prone area, consider purchasing flood insurance to reduce your risk of flood loss. Buying flood insurance to cover the value of a building and its contents will not only provide greater peace of mind, but will speed the recovery if a flood occurs.",
+              "page_end": 29,
+              "page_start": 28,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000039",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Flooding can cause significant damage to homes and personal property. Having flood insurance can provide financial protection and peace of mind, ensuring quicker recovery after a flood event.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 246,
+              "excerpt": "Buying flood insurance to cover the value of a building and its contents will not only provide greater peace of mind, but will speed the recovery if a flood occurs.",
+              "page_end": 29,
+              "page_start": 28,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000039",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 104,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Consider purchasing a flood insurance policy if you live in a flood-prone area. Evaluate the value of your building and contents to determine the appropriate coverage.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 155,
+              "excerpt": "If you live in a flood-prone area, consider purchasing flood insurance to reduce your risk of flood loss. Buying flood insurance to cover the value of a building and its contents...",
+              "page_end": 29,
+              "page_start": 28,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000039",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "Contact an insurance provider or call 1(888)FLOOD29 to learn more about available flood insurance options. Assess your property and personal belongings to decide on the coverage you need.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 199,
+              "excerpt": "You can call 1(888)FLOOD29 to learn more about flood insurance.",
+              "page_end": 29,
+              "page_start": 28,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000039",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 156,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Ensure that important documents related to your insurance policy are stored safely and copies are included in your disaster supplies kit.",
+          "object_id": "insurance.flood-insurance-overview",
+          "support": [
+            {
+              "end_char": 437,
+              "excerpt": "Store important documents such as insurance policies, deeds, property records, and other important papers in a safe place, such as a safety deposit box away from your home. Make copies of important documents for your disaster supplies kit.",
+              "page_end": 29,
+              "page_start": 28,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000039",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 246,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "concept_note",
+      "contexts": [],
+      "cost_band": "medium",
+      "difficulty": 2,
+      "id": "insurance.flood-insurance-overview",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\n\nFlood insurance is a specific type of insurance policy that covers losses due to flooding, which is not covered under standard homeowners' insurance policies.\n\n### Why it matters\n\nFlooding can cause significant damage to property, and without flood insurance, homeowners may face substantial financial losses. The National Flood Insurance Program (NFIP) provides a way for homeowners to protect themselves against these risks.\n\n### What you need\n\nTo obtain flood insurance, you need to contact an insurance agent who offers policies through the NFIP. It's important to be aware of the 30-day waiting period before the insurance becomes effective.\n\n### How to do it\n\nContact an insurance agent to purchase a flood insurance policy. Ensure your community participates in the NFIP by adopting floodplain management ordinances. Remember the 30-day waiting period before coverage starts.\n\n### Common failure modes\n\nA common mistake is assuming that standard homeowners' insurance covers flood damage. Another is delaying the purchase of flood insurance, not accounting for the 30-day waiting period.\n\n### Safety/boundary notes\n\nFlood insurance is available whether or not your property is in a designated flood-prone area, but it's crucial to understand the specific terms and coverage limits of your policy.\n\n### Local adaptation notes\n\nCommunities must adopt and enforce floodplain management ordinances to participate in the NFIP, which can vary by location.",
+      "plain_language": "Flood insurance is not included in standard homeowners' insurance. It's managed by FEMA and available through the National Flood Insurance Program. There's a 30-day waiting period before it starts.",
+      "primary_domain": "insurance",
+      "requires": [],
+      "risk_band": "moderate",
+      "secondary_domains": [],
+      "seed_type": "extracted",
+      "slug": "insurance.flood-insurance-overview",
+      "source_segment_ids": [
+        "src.fema.are-you-ready.2004::seg_000076",
+        "src.fema.are-you-ready.2004::seg_000039"
+      ],
+      "stage": "foundation",
+      "structured_data": {
+        "definition": "Flood insurance is a policy that covers property damage specifically caused by flooding.",
+        "key_questions": [
+          "What is covered under flood insurance?",
+          "How does the National Flood Insurance Program work?",
+          "What is the waiting period for flood insurance?",
+          "Do I live in a flood-prone area?",
+          "What is the value of my property and contents?",
+          "What does my flood insurance policy cover?"
+        ],
+        "misconceptions": [
+          "Flood damage is covered by standard homeowners' insurance.",
+          "Flood insurance is only necessary for homes in flood-prone areas.",
+          "Standard home insurance covers flood damage.",
+          "Flood insurance is only necessary for homes directly next to water bodies."
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "Flood insurance is managed by FEMA under the National Flood Insurance Program and is available in most communities. It requires a 30-day waiting period before coverage begins.",
+      "summary_short": "Overview of flood insurance and its management by FEMA.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts address different aspects of disaster-related stress. One focuses on easing stress through actionable steps, while the other focuses on recognizing signs of stress.",
+    "canonical_slug": "mental-health.easing-disaster-stress",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover similar topics related to emergency preparedness, with overlapping content about creating plans, identifying hazards, and assembling disaster kits. They can be combined into a single comprehensive module.",
+    "canonical_slug": "preparedness-basic-preparedness",
+    "deprecated_draft_ids": [
+      "preparedness.basic-preparedness",
+      "preparedness.basic-strategies"
+    ],
+    "merged_object": {
+      "canonical_title": "Basic Preparedness",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "This module helps you create a comprehensive emergency plan using worksheets and checklists.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 100,
+              "excerpt": "A series of worksheets to help you obtain information from the community that will form the foundation of your plan.",
+              "page_end": 11,
+              "page_start": 10,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000013",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "It focuses on identifying community hazards, planning evacuation routes, establishing communication strategies, and preparing a disaster supplies kit.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "You will need to fi nd out about hazards that threaten the community, how the population will be warned, evacuation routes to be used in times of disaster, and the emergency plans of the community.",
+              "page_end": 11,
+              "page_start": 10,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000013",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 100,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Having a well-prepared emergency plan can significantly reduce the risks and impacts of disasters on you and your family.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 100,
+              "excerpt": "Disasters disrupt hundreds of thousands of lives every year. Each disaster has lasting effects, both to people and property.",
+              "page_end": 8,
+              "page_start": 8,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000010",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "You will need access to community hazard information, worksheets for planning, and checklists for assembling a disaster supplies kit.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 100,
+              "excerpt": "A series of worksheets to help you obtain information from the community that will form the foundation of your plan.",
+              "page_end": 11,
+              "page_start": 10,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000013",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Incomplete hazard identification and lack of a communication plan can lead to ineffective emergency preparedness.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 300,
+              "excerpt": "You should know how to respond to severe weather or any disaster that could occur in your area.",
+              "page_end": 8,
+              "page_start": 8,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000010",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 200,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Ensure that your plan includes considerations for special needs, such as disabilities, and the care of animals.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 500,
+              "excerpt": "address special needs such as disabilities, take care of animals, and seek shelter.",
+              "page_end": 11,
+              "page_start": 10,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000013",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 400,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "This module introduces basic preparedness strategies that can be applied to any type of disaster.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 90,
+              "excerpt": "In this part of the guide, you will learn preparedness strategies that are common to all disasters.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "It emphasizes the importance of having a comprehensive plan that can be adapted to various hazards.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 144,
+              "excerpt": "You plan only once, and are able to apply your plan to all types of hazards.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 91,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Being prepared for disasters can significantly reduce the impact on you and your family.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 207,
+              "excerpt": "Get informed about hazards and emergencies that may affect you and your family.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 146,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "A well-thought-out plan ensures that you know what to do and where to go in an emergency, which can save lives.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 234,
+              "excerpt": "Develop an emergency plan.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 208,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "To get started, you need to gather information about potential hazards, develop an emergency plan, and assemble a disaster supplies kit.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 293,
+              "excerpt": "Get informed about hazards and emergencies that may affect you and your family. Develop an emergency plan. Collect and assemble disaster supplies kit.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 146,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_012",
+          "claim_text": "Get informed about hazards that may affect you.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 207,
+              "excerpt": "Get informed about hazards and emergencies that may affect you and your family.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 146,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_013",
+          "claim_text": "Develop an emergency plan that includes evacuation routes and communication strategies.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 293,
+              "excerpt": "Develop an emergency plan. Identify the community warning systems and evacuation routes.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 208,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_014",
+          "claim_text": "Assemble a disaster supplies kit with essentials like food, water, and medical supplies.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 293,
+              "excerpt": "Collect and assemble disaster supplies kit.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 235,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_015",
+          "claim_text": "Identify community warning systems and shelters.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 348,
+              "excerpt": "Identify the community warning systems and evacuation routes.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 294,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_016",
+          "claim_text": "Practice your plan regularly to ensure everyone knows what to do.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 377,
+              "excerpt": "Practice and maintain your plan.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 349,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_017",
+          "claim_text": "Common issues include having an incomplete emergency plan, not practicing the plan, and failing to update the plan with current information.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 377,
+              "excerpt": "Practice and maintain your plan.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 349,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_018",
+          "claim_text": "Ensure your plan includes safe evacuation routes and that all family members are aware of them.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 348,
+              "excerpt": "Identify the community warning systems and evacuation routes.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 294,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_019",
+          "claim_text": "Adapt your plan to include community-specific evacuation routes and local warning systems.",
+          "object_id": "preparedness-basic-preparedness",
+          "support": [
+            {
+              "end_char": 437,
+              "excerpt": "Include in your plan required information from community and school plans.",
+              "page_end": 14,
+              "page_start": 14,
+              "segment_id": "src.fema.are-you-ready.2004::seg_000020",
+              "source_id": "src.fema.are-you-ready.2004",
+              "start_char": 378,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "module",
+      "contexts": [],
+      "cost_band": "low",
+      "difficulty": 3,
+      "id": "preparedness.basic-preparedness",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\nThis module helps you create a comprehensive emergency plan using worksheets and checklists. It focuses on identifying community hazards, planning evacuation routes, establishing communication strategies, and preparing a disaster supplies kit.\n\n### Why it matters\nHaving a well-prepared emergency plan can significantly reduce the risks and impacts of disasters on you and your family. It ensures you know what to do, where to go, and how to communicate during emergencies.\n\n### What you need\nTo get started, you need to gather information about potential hazards, develop an emergency plan, and assemble a disaster supplies kit.\n\n### How to do it\n1. Get informed about hazards that may affect you. \n2. Develop an emergency plan that includes evacuation routes and communication strategies. \n3. Assemble a disaster supplies kit with essentials like food, water, and medical supplies. \n4. Identify community warning systems and shelters. \n5. Practice your plan regularly to ensure everyone knows what to do.\n\n### Common failure modes\nCommon issues include having an incomplete emergency plan, not practicing the plan, and failing to update the plan with current information.\n\n### Safety/boundary notes\nEnsure your plan includes safe evacuation routes and that all family members are aware of them.\n\n### Local adaptation notes\nAdapt your plan to include community-specific evacuation routes and local warning systems.",
+      "plain_language": "Learn how to prepare for emergencies by identifying local hazards, planning evacuation routes, setting up communication plans, and assembling a disaster supplies kit.",
+      "primary_domain": "preparedness",
+      "requires": [],
+      "risk_band": "moderate",
+      "secondary_domains": [],
+      "seed_type": "module",
+      "slug": "preparedness-basic-preparedness",
+      "source_segment_ids": [
+        "src.fema.are-you-ready.2004::seg_000013",
+        "src.fema.are-you-ready.2004::seg_000020"
+      ],
+      "stage": "community",
+      "structured_data": {
+        "failure_modes": [
+          "Incomplete hazard identification",
+          "Lack of communication plan"
+        ],
+        "implementation": {
+          "common_mistakes": [
+            "Overlooking specific local hazards",
+            "Failing to update the plan regularly"
+          ],
+          "expected_cost": "Minimal, primarily for printing materials",
+          "expected_time": "Varies based on community size and complexity",
+          "materials": [],
+          "smallest_viable_version": "Create a basic emergency plan using available worksheets and checklists.",
+          "stop_conditions": [
+            "Plan is incomplete",
+            "Communication plan is unclear"
+          ],
+          "success_checks": [
+            "Plan includes all identified hazards",
+            "Communication plan is clear and accessible",
+            "Evacuation routes are well-defined"
+          ],
+          "tools": [
+            "worksheets",
+            "checklists"
+          ],
+          "variants": [
+            {
+              "label": "Urban",
+              "notes": "Focus on high-rise building evacuation and public transport routes.",
+              "when": "In densely populated areas"
+            },
+            {
+              "label": "Rural",
+              "notes": "Consider longer evacuation routes and limited communication infrastructure.",
+              "when": "In sparsely populated areas"
+            }
+          ],
+          "when_to_escalate": [
+            "If local hazards are not well understood",
+            "If community resources are insufficient"
+          ]
+        },
+        "materials": [],
+        "safety_boundary": [],
+        "success_criteria": [
+          "Complete hazard identification",
+          "Effective communication plan",
+          "Prepared evacuation routes",
+          "Comprehensive disaster supplies kit"
+        ],
+        "tools": [
+          "worksheets",
+          "checklists"
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "This module provides worksheets and guidance for creating a community-based emergency plan, focusing on hazard identification, evacuation routes, communication strategies, and disaster supplies checklists.",
+      "summary_short": "Develop a community-based emergency plan with worksheets and guidance.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts cover distinct topics: one focuses on natural hazards and the other on technological hazards. Both are necessary and provide unique information relevant to their respective domains.",
+    "canonical_slug": "preparedness-natural-hazards",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts cover distinct topics: one focuses on handling hazardous materials safely, while the other addresses response actions after an incident. Both are necessary and provide unique guidance.",
+    "canonical_slug": "safety.hazardous-materials-handling",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Indoor Pesticides' and 'Workshop and Painting Supplies Safety Reference' are distinct topics with no overlapping content. Each draft addresses different safety concerns and materials.",
+    "canonical_slug": "safety.indoor-pesticides",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Thunderstorm Preparedness' and 'Winter Storm Preparedness' are distinct topics focusing on different weather events and safety guidelines.",
+    "canonical_slug": "safety.thunderstorm-preparedness",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts focus on water conservation but address different areas: bathroom and kitchen. They are distinct and cover separate practices.",
+    "canonical_slug": "water-conservation.bathroom-practices",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe different weather alerts: 'Severe Thunderstorm Warning' and 'Severe Thunderstorm Watch'. They serve distinct purposes and contain unique information relevant to each alert type.",
+    "canonical_slug": "weather.severe-thunderstorm-warning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe different weather alerts: 'Severe Thunderstorm Warning' and 'Severe Thunderstorm Watch'. They serve distinct purposes and contain unique information relevant to each alert type.",
+    "canonical_slug": "weather.severe-thunderstorm-watch",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Thunderstorm Terms' and 'Winter Storm Terms' are distinct as they cover different weather phenomena, each with its own set of terms and implications.",
+    "canonical_slug": "weather.thunderstorm-terms",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Thunderstorm Terms' and 'Winter Storm Terms' are distinct as they cover different weather phenomena, each with its own set of terms and implications.",
+    "canonical_slug": "weather.winter-storm-terms",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  }
+]

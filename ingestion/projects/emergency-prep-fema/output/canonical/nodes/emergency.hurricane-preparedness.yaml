@@ -1,0 +1,161 @@
+id: emergency.hurricane-preparedness
+slug: emergency.hurricane-preparedness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Hurricane Preparedness Guidelines
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for preparing for a hurricane, including securing property
+  and evacuation criteria.
+summary_medium: This reference sheet provides essential guidelines for hurricane preparedness,
+  including securing your home, managing utilities, and understanding when to evacuate.
+plain_language: Learn how to prepare for a hurricane by securing your home, managing
+  utilities, and knowing when to evacuate.
+markdown_body: "### What this is\nThis is a guide to help you prepare for a hurricane\
+  \ by securing your home, managing utilities, and understanding evacuation criteria.\n\
+  \n### Why it matters\nProper preparation can protect your property and ensure your\
+  \ safety during a hurricane, reducing the risk of injury or damage.\n\n### What\
+  \ you need\nYou will need access to a radio or TV for updates, storm shutters, water\
+  \ containers, and a plan for securing outdoor objects.\n\n### How to do it\n1. Listen\
+  \ to the radio or TV for updates. \n2. Secure your home by closing storm shutters\
+  \ and bringing outdoor objects indoors. \n3. Turn off utilities if instructed, and\
+  \ set your refrigerator to the coldest setting. \n4. Moor your boat if time permits.\
+  \ \n5. Fill bathtubs and large containers with water for sanitation. \n6. Evacuate\
+  \ if directed by authorities or if you live in a vulnerable area.\n\n### Common\
+  \ failure modes\nFailing to secure outdoor objects, ignoring evacuation orders,\
+  \ and staying in unsafe structures can lead to increased risk during a hurricane.\n\
+  \n### Safety/boundary notes\nStay indoors during the hurricane, avoid windows and\
+  \ glass doors, and take refuge in a small interior room if necessary.\n\n### Local\
+  \ adaptation notes\nFollow instructions from local authorities and be aware of specific\
+  \ evacuation routes in your area."
+structured_data:
+  tools:
+  - radio
+  - TV
+  - storm shutters
+  materials:
+  - propane tanks
+  - water containers
+  success_criteria:
+  - Home secured
+  - Utilities managed
+  - Evacuation if necessary
+  failure_modes:
+  - Not securing outdoor objects
+  - Ignoring evacuation orders
+  - Staying in unsafe structures
+  safety_boundary:
+  - Stay indoors
+  - Avoid windows and glass doors
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_001
+  claim_text: Listen to the radio or TV for updates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Listen to the radio or TV for information.'
+    start_char: 62
+    end_char: 102
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_002
+  claim_text: Secure your home by closing storm shutters and bringing outdoor objects
+    indoors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Secure your home, close storm shutters, and secure outdoor objects
+      or bring them indoors.'
+    start_char: 106
+    end_char: 179
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_003
+  claim_text: Turn off utilities if instructed, and set your refrigerator to the coldest
+    setting.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Turn off utilities if instructed to do so. Otherwise, turn the refrigerator
+      thermostat to its coldest setting and keep its doors closed.'
+    start_char: 183
+    end_char: 288
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_004
+  claim_text: Moor your boat if time permits.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Moor your boat if time permits.'
+    start_char: 349
+    end_char: 376
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_005
+  claim_text: Fill bathtubs and large containers with water for sanitation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Ensure a supply of water for sanitary purposes such as cleaning and
+      fl ushing toilets. Fill the bathtub and other large containers with water.'
+    start_char: 380
+    end_char: 497
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_006
+  claim_text: Evacuate if directed by authorities or if you live in a vulnerable area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: 'You should evacuate under the following conditions: - If you are directed
+      by local authorities to do so. Be sure to follow their instructions. - If you
+      live in a mobile home or temporary structure—such shelters are particularly
+      hazardous during hurricanes no matter how well fastened to the ground. - If
+      you live in a high-rise building—hurricane winds are stronger at higher elevations.
+      - If you live on the coast, on a fl oodplain, near a river, or on an inland
+      waterway. - If you feel you are in danger.'
+    start_char: 501
+    end_char: 890
+    support_strength: strong
+- object_id: emergency.hurricane-preparedness
+  claim_id: clm_007
+  claim_text: Stay indoors during the hurricane, avoid windows and glass doors, and
+    take refuge in a small interior room if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 70
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000102
+    excerpt: '- Stay indoors during the hurricane and away from windows and glass
+      doors. - Take refuge in a small interior room, closet, or hallway on the lowest
+      level.'
+    start_char: 1000
+    end_char: 1110
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000102

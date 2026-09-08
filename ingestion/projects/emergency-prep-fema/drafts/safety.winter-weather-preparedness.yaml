@@ -1,0 +1,192 @@
+id: safety.winter-weather-preparedness
+slug: safety.winter-weather-preparedness
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Winter Weather Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for dressing and actions during winter storms.
+summary_medium: Guidelines for dressing appropriately and actions to take during a
+  winter storm or extreme cold conditions.
+plain_language: Learn how to dress and what actions to take to stay safe during winter
+  storms and extreme cold.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines on how to dress and what actions to take
+  during winter storms or extreme cold conditions to ensure safety and prevent health
+  risks.
+
+
+  ### Why it matters
+
+  Winter storms and extreme cold can pose serious health risks such as frostbite and
+  hypothermia. Proper preparation and response can prevent these dangers and ensure
+  safety.
+
+
+  ### What you need
+
+  - NOAA Weather Radio
+
+  - Mittens
+
+  - Hat
+
+  - Scarf
+
+  - Layered clothing
+
+
+  ### How to do it
+
+  Wear several layers of loose-fitting, lightweight, warm clothing. Use mittens instead
+  of gloves, wear a hat, and cover your mouth with a scarf. Listen to weather reports
+  and avoid overexertion. If driving, stay on main roads and inform others of your
+  schedule. If stranded, stay in your vehicle, run the engine periodically for warmth,
+  and maintain ventilation.
+
+
+  ### Common failure modes
+
+  - Frostbite
+
+  - Hypothermia
+
+  - Carbon monoxide poisoning
+
+
+  ### Safety/boundary notes
+
+  Maintain ventilation when using heaters to avoid toxic fumes. Avoid caffeine and
+  alcohol as they can affect body temperature regulation.
+
+
+  ### Local adaptation notes
+
+  Use local weather reports for accurate information. Adapt clothing to fit the local
+  climate conditions.'
+structured_data:
+  tools:
+  - NOAA Weather Radio
+  materials:
+  - Mittens
+  - Hat
+  - Scarf
+  success_criteria:
+  - Stay warm and dry
+  - Avoid frostbite and hypothermia
+  failure_modes:
+  - Frostbite
+  - Hypothermia
+  - Carbon monoxide poisoning
+  safety_boundary:
+  - Maintain ventilation with heaters
+  - Avoid caffeine and alcohol
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_001
+  claim_text: Wear several layers of loose-fitting, lightweight, warm clothing.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Wear several layers of loose fi tting, lightweight, warm clothing rather
+      than one layer of heavy clothing.
+    start_char: 0
+    end_char: 88
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_002
+  claim_text: Use mittens instead of gloves, wear a hat, and cover your mouth with
+    a scarf.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Wear mittens, which are warmer than gloves. Wear a hat. Cover your mouth
+      with a scarf to protect your lungs.
+    start_char: 89
+    end_char: 164
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_003
+  claim_text: Listen to weather reports and avoid overexertion.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Listen to your radio, television, or NOAA Weather Radio for weather reports
+      and emergency information. Avoid overexertion when shoveling snow.
+    start_char: 165
+    end_char: 276
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_004
+  claim_text: If driving, stay on main roads and inform others of your schedule.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: 'Drive only if it is absolutely necessary. If you must drive, consider
+      the following: Travel in the day, don''t travel alone, and keep others informed
+      of your schedule. Stay on main roads; avoid back road shortcuts.'
+    start_char: 577
+    end_char: 764
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_005
+  claim_text: If stranded, stay in your vehicle, run the engine periodically for warmth,
+    and maintain ventilation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Remain in your vehicle where rescuers are most likely to fi nd you. Run
+      the engine and heater about 10 minutes each hour to keep warm. When the engine
+      is running, open an upwind window slightly for ventilation.
+    start_char: 765
+    end_char: 1005
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_006
+  claim_text: Maintain ventilation when using heaters to avoid toxic fumes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Maintain ventilation when using kerosene heaters to avoid build-up of
+      toxic fumes.
+    start_char: 477
+    end_char: 545
+    support_strength: strong
+- object_id: safety.winter-weather-preparedness
+  claim_id: clm_007
+  claim_text: Avoid caffeine and alcohol as they can affect body temperature regulation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 83
+    page_end: 85
+    segment_id: src.fema.are-you-ready.2004::seg_000128
+    excerpt: Eat regularly and drink ample fl uids, but avoid caffeine and alcohol.
+    start_char: 277
+    end_char: 335
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000128

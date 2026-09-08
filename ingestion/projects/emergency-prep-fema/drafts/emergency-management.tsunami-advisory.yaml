@@ -1,0 +1,141 @@
+id: emergency-management.tsunami-advisory
+slug: emergency-management.tsunami-advisory
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Tsunami Advisory
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understanding tsunami advisories after Pacific basin earthquakes.
+summary_medium: A tsunami advisory is issued when an earthquake occurs in the Pacific
+  basin, indicating the potential for a tsunami.
+plain_language: A tsunami advisory is a warning issued when an earthquake happens
+  in the Pacific Ocean area, suggesting that a tsunami might occur.
+markdown_body: '### What this is
+
+  A tsunami advisory is a notification issued to alert the public and relevant authorities
+  about the potential for a tsunami following an earthquake in the Pacific basin.
+
+
+  ### Why it matters
+
+  Tsunami advisories are crucial for public safety as they provide early warning,
+  allowing people to prepare and evacuate if necessary, thereby reducing the risk
+  of injury or loss of life.
+
+
+  ### What you need
+
+  Awareness of local emergency procedures and access to reliable information sources
+  for updates.
+
+
+  ### How to do it
+
+  Upon receiving a tsunami advisory, stay informed through official channels, follow
+  local emergency management instructions, and be prepared to evacuate if advised.
+
+
+  ### Common failure modes
+
+  Ignoring advisories, lack of preparedness, and failure to follow evacuation orders
+  can lead to increased risk during a tsunami event.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety and adhere to official guidance during a tsunami
+  advisory.
+
+
+  ### Local adaptation notes
+
+  Local emergency management agencies may have specific procedures and resources tailored
+  to their region''s needs.'
+structured_data:
+  definition: A tsunami advisory is a warning issued when an earthquake in the Pacific
+    basin may generate a tsunami.
+  key_questions:
+  - What triggers a tsunami advisory?
+  - How should individuals respond to a tsunami advisory?
+  misconceptions:
+  - A tsunami advisory means a tsunami is definitely coming.
+  - Tsunami advisories can be ignored if the weather seems calm.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.tsunami-advisory
+  claim_id: clm_001
+  claim_text: A tsunami advisory is a notification issued to alert the public and
+    relevant authorities about the potential for a tsunami following an earthquake
+    in the Pacific basin.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 113
+    page_end: 113
+    segment_id: src.fema.are-you-ready.2004::seg_000174
+    excerpt: An earthquake has occurred in the Pacifi c basin, which might generate
+      a tsunami.
+    start_char: 0
+    end_char: 71
+    support_strength: strong
+- object_id: emergency-management.tsunami-advisory
+  claim_id: clm_002
+  claim_text: Tsunami advisories are crucial for public safety as they provide early
+    warning, allowing people to prepare and evacuate if necessary, thereby reducing
+    the risk of injury or loss of life.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 114
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000177
+    excerpt: 'During a Tsunami The following are guidelines for what you should do
+      if a tsunami is likely in your area: Turn on your radio to learn if there is
+      a tsunami warning if an earthquake occurs and you are in a coastal area. Move
+      inland to higher ground immediately and stay there.'
+    start_char: 0
+    end_char: 235
+    support_strength: medium
+- object_id: emergency-management.tsunami-advisory
+  claim_id: clm_003
+  claim_text: Upon receiving a tsunami advisory, stay informed through official channels,
+    follow local emergency management instructions, and be prepared to evacuate if
+    advised.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 114
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000177
+    excerpt: 'During a Tsunami The following are guidelines for what you should do
+      if a tsunami is likely in your area: Turn on your radio to learn if there is
+      a tsunami warning if an earthquake occurs and you are in a coastal area. Move
+      inland to higher ground immediately and stay there.'
+    start_char: 0
+    end_char: 235
+    support_strength: medium
+- object_id: emergency-management.tsunami-advisory
+  claim_id: clm_004
+  claim_text: Ignoring advisories, lack of preparedness, and failure to follow evacuation
+    orders can lead to increased risk during a tsunami event.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 114
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000177
+    excerpt: 'During a Tsunami The following are guidelines for what you should do
+      if a tsunami is likely in your area: Turn on your radio to learn if there is
+      a tsunami warning if an earthquake occurs and you are in a coastal area. Move
+      inland to higher ground immediately and stay there.'
+    start_char: 0
+    end_char: 235
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000174

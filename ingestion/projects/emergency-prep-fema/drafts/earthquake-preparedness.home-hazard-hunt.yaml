@@ -1,0 +1,224 @@
+id: earthquake-preparedness.home-hazard-hunt
+slug: earthquake-preparedness.home-hazard-hunt
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Home Hazard Hunt and Earthquake Drill
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: earthquake-preparedness
+secondary_domains: []
+stage: household
+contexts:
+- homeowners
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Conduct a home hazard hunt and earthquake drill.
+summary_medium: Blueprint for identifying home hazards and conducting an earthquake
+  drill to enhance safety.
+plain_language: Learn how to find potential hazards in your home and practice what
+  to do during an earthquake.
+markdown_body: '# What this is
+
+  This project blueprint guides homeowners through a home hazard hunt and an earthquake
+  drill. It helps identify potential dangers in the home and prepares residents for
+  an earthquake.
+
+
+  # Why it matters
+
+  Identifying hazards and practicing drills can significantly reduce the risk of injury
+  during an earthquake. Being prepared can save lives and minimize damage.
+
+
+  # What you need
+
+  A checklist to identify potential hazards in your home.
+
+
+  # How to do it
+
+  1. Use the checklist to inspect each room for potential hazards, such as unsecured
+  furniture or heavy objects on high shelves. 2. Secure or remove identified hazards.
+  3. Conduct an earthquake drill with your family, practicing ''Drop, Cover, and Hold
+  On.''
+
+
+  # Common failure modes
+
+  Missing hazards during the inspection or not taking the drill seriously.
+
+
+  # Safety/boundary notes
+
+  Ensure all family members understand the drill and know the safest spots in each
+  room.
+
+
+  # Local adaptation notes
+
+  Adapt the checklist to include specific hazards relevant to your local environment
+  or building type.'
+structured_data:
+  goal: To ensure the home is safe from potential earthquake hazards and that all
+    residents know how to respond during an earthquake.
+  deliverables: A completed hazard checklist and a practiced earthquake drill.
+  acceptance_criteria: All identified hazards are secured or removed, and all family
+    members can perform the earthquake drill correctly.
+  implementation:
+    smallest_viable_version: Conduct a basic hazard hunt and a simple earthquake drill.
+    tools:
+    - checklist
+    materials: []
+    expected_time: 2 hours
+    expected_cost: Minimal, depending on the need for securing materials.
+    success_checks:
+    - All hazards identified and secured
+    - Drill conducted with all family members
+    stop_conditions:
+    - Inability to secure a major hazard
+    - Family members not understanding the drill
+    common_mistakes:
+    - Overlooking small hazards
+    - Not practicing the drill regularly
+    variants:
+    - label: Urban
+      when: Living in a densely populated area
+      notes: Focus on securing items that could fall from high shelves.
+    - label: Off-grid
+      when: Living in a remote area
+      notes: Ensure communication plans are in place in case of isolation.
+    when_to_escalate:
+    - If a major structural hazard is identified
+    - If family members are unable to perform the drill
+requires: []
+suggested_edges: []
+citations:
+- object_id: earthquake-preparedness.home-hazard-hunt
+  claim_id: clm_001
+  claim_text: This project blueprint guides homeowners through a home hazard hunt
+    and an earthquake drill.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 100
+    page_end: 100
+    segment_id: src.fema.are-you-ready.2004::seg_000156
+    excerpt: '*Family Earthquake Safety Home Hazard Hunt and Drill*. FEMA-113. How
+      to identify home hazards; how to conduct earthquake drills'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: earthquake-preparedness.home-hazard-hunt
+  claim_id: clm_002
+  claim_text: Identifying hazards and practicing drills can significantly reduce the
+    risk of injury during an earthquake.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: 'Hold earthquake drills with your family members: Drop, cover, and hold
+      on!'
+    start_char: 500
+    end_char: 550
+    support_strength: medium
+- object_id: earthquake-preparedness.home-hazard-hunt
+  claim_id: clm_003
+  claim_text: Use the checklist to inspect each room for potential hazards, such as
+    unsecured furniture or heavy objects on high shelves.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: Place large or heavy objects on lower shelves. Fasten shelves, mirrors,
+      and large picture frames to walls.
+    start_char: 200
+    end_char: 300
+    support_strength: strong
+- object_id: earthquake-preparedness.home-hazard-hunt
+  claim_id: clm_004
+  claim_text: Conduct an earthquake drill with your family, practicing 'Drop, Cover,
+    and Hold On.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 98
+    segment_id: src.fema.are-you-ready.2004::seg_000154
+    excerpt: 'Hold earthquake drills with your family members: Drop, cover, and hold
+      on!'
+    start_char: 500
+    end_char: 550
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000156
+bundle_overrides:
+  hook: Prepare your home and family for an earthquake by identifying hazards and
+    practicing life-saving drills.
+  primer: Earthquakes can strike without warning, causing significant damage and posing
+    serious risks to personal safety. By conducting a home hazard hunt and practicing
+    an earthquake drill, homeowners can significantly reduce the risk of injury during
+    such events. This process involves identifying potential dangers in the home,
+    such as unsecured furniture or heavy objects on high shelves, and taking steps
+    to secure or remove these hazards. Practicing an earthquake drill, such as 'Drop,
+    Cover, and Hold On,' ensures that all family members know how to respond quickly
+    and effectively when an earthquake occurs. This preparation can save lives and
+    minimize damage, making it an essential practice for anyone living in earthquake-prone
+    areas.
+  guide: '1. **Prepare a Checklist**: Create or download a checklist to guide you
+    through identifying potential hazards in your home. This checklist should include
+    items like unsecured furniture, heavy objects on high shelves, and any other items
+    that could pose a risk during an earthquake.
+
+
+    2. **Conduct a Home Hazard Hunt**: Go through each room in your home with the
+    checklist. Look for potential hazards such as bookshelves that are not anchored
+    to the wall, heavy picture frames, or mirrors that could fall. Make note of any
+    items that need to be secured or removed.
+
+
+    3. **Secure Identified Hazards**: Use appropriate materials to secure or remove
+    the hazards you identified. This might involve anchoring furniture to walls, moving
+    heavy items to lower shelves, or securing loose objects.
+
+
+    4. **Conduct an Earthquake Drill**: Gather your family and practice the ''Drop,
+    Cover, and Hold On'' drill. This involves dropping to your hands and knees, covering
+    your head and neck (or your entire body if possible) under a sturdy piece of furniture,
+    and holding on until the shaking stops.
+
+
+    5. **Review and Repeat**: After the drill, discuss what went well and what could
+    be improved. Make sure everyone understands the safest spots in each room and
+    knows the drill by heart. Repeat the drill regularly to ensure everyone remains
+    prepared.'
+  reference:
+  - Checklist for home hazard identification
+  - Drop, Cover, and Hold On drill
+  - Securing furniture and heavy objects
+  - Regular drill practice
+  - Family communication plan
+  worksheet:
+  - List three potential hazards you found in your living room.
+  - Describe how you secured a heavy object in your home.
+  - Practice the earthquake drill with your family and note any improvements needed.
+  - Identify the safest spot in each room of your home.
+  - Create a family communication plan for after an earthquake.
+  teach_forward_kit:
+    three_minute_version: Identify and secure hazards in your home, then practice
+      an earthquake drill with your family to ensure everyone knows how to stay safe
+      during an earthquake.
+    ten_minute_outline:
+    - Introduction to earthquake risks
+    - Importance of a home hazard hunt
+    - Step-by-step guide to identifying hazards
+    - How to secure common household hazards
+    - Conducting an effective earthquake drill
+    - Reviewing and improving your preparedness
+    discussion_prompts:
+    - What are some common hazards in homes that people often overlook?
+    - How can practicing drills regularly improve family safety during an earthquake?
+    - What challenges might you face when securing hazards in your home?
+    - How can you adapt your earthquake preparedness plan for different living environments?

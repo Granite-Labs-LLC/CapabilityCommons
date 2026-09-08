@@ -1,0 +1,160 @@
+id: emergency-preparedness.winter-storms-extreme-cold
+slug: emergency-preparedness.winter-storms-extreme-cold
+seed_type: extracted
+co_type: concept_note
+canonical_title: Winter Storms and Extreme Cold
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Understand the impacts of winter storms and extreme cold.
+summary_medium: Winter storms and extreme cold can immobilize regions, cause flooding,
+  and lead to hypothermia.
+plain_language: Learn about how heavy snowfall and extreme cold can affect your area
+  and what risks they pose.
+markdown_body: '### What this is
+
+  Winter storms and extreme cold refer to severe weather conditions characterized
+  by heavy snowfall, freezing temperatures, and strong winds. These conditions can
+  significantly disrupt daily life and pose serious risks to safety and infrastructure.
+
+
+  ### Why it matters
+
+  Understanding the impact of winter storms and extreme cold is crucial for preparedness.
+  These conditions can immobilize entire regions, even those not accustomed to severe
+  winters, leading to dangerous situations such as flooding, storm surges, and hypothermia.
+
+
+  ### What you need
+
+  Awareness of local weather forecasts, emergency supplies like food, water, and blankets,
+  and a plan for staying warm and safe during power outages.
+
+
+  ### How to do it
+
+  Monitor weather updates, prepare an emergency kit, and ensure your home is insulated
+  against the cold. Have a plan for communication and evacuation if necessary.
+
+
+  ### Common failure modes
+
+  Closed highways, blocked roads, and downed power lines can occur, making travel
+  and communication difficult.
+
+
+  ### Safety/boundary notes
+
+  Avoid unnecessary travel during severe weather and ensure you have adequate heating
+  to prevent hypothermia.
+
+
+  ### Local adaptation notes
+
+  Consider local infrastructure and typical weather patterns when preparing for winter
+  storms.'
+structured_data:
+  definition: Winter storms and extreme cold are severe weather events that can cause
+    significant disruption and danger.
+  key_questions:
+  - What are the typical impacts of winter storms in your area?
+  - How can you prepare for extreme cold conditions?
+  misconceptions:
+  - Winter storms only affect regions with typically harsh winters.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_001
+  claim_text: Winter storms and extreme cold refer to severe weather conditions characterized
+    by heavy snowfall, freezing temperatures, and strong winds.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Heavy snowfall and extreme cold can immobilize an entire region.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_002
+  claim_text: These conditions can significantly disrupt daily life and pose serious
+    risks to safety and infrastructure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Winter storms can result in flooding, storm surge, closed highways, blocked
+      roads, downed power lines and hypothermia.
+    start_char: 117
+    end_char: 228
+    support_strength: strong
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_003
+  claim_text: Understanding the impact of winter storms and extreme cold is crucial
+    for preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Heavy snowfall and extreme cold can immobilize an entire region.
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_004
+  claim_text: These conditions can immobilize entire regions, even those not accustomed
+    to severe winters, leading to dangerous situations such as flooding, storm surges,
+    and hypothermia.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Even areas that normally experience mild winters can be hit with a major
+      snowstorm or extreme cold. Winter storms can result in flooding, storm surge,
+      closed highways, blocked roads, downed power lines and hypothermia.
+    start_char: 61
+    end_char: 228
+    support_strength: strong
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_007
+  claim_text: Closed highways, blocked roads, and downed power lines can occur, making
+    travel and communication difficult.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Winter storms can result in flooding, storm surge, closed highways, blocked
+      roads, downed power lines and hypothermia.
+    start_char: 117
+    end_char: 228
+    support_strength: strong
+- object_id: emergency-preparedness.winter-storms-extreme-cold
+  claim_id: clm_008
+  claim_text: Avoid unnecessary travel during severe weather and ensure you have adequate
+    heating to prevent hypothermia.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 80
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000118
+    excerpt: Winter storms can result in flooding, storm surge, closed highways, blocked
+      roads, downed power lines and hypothermia.
+    start_char: 117
+    end_char: 228
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000118

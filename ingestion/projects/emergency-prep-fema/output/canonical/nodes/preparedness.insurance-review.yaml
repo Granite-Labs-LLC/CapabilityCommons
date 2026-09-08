@@ -1,0 +1,225 @@
+id: preparedness.insurance-review
+slug: preparedness.insurance-review
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Reviewing and Obtaining Insurance Coverage
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Ensure you have adequate insurance coverage for property, health, and
+  life.
+summary_medium: Learn how to obtain and review insurance policies to ensure adequate
+  coverage for property, health, and life against possible hazards.
+plain_language: This guide helps you understand how to get and check your insurance
+  policies to make sure you have enough coverage for your home, health, and life.
+markdown_body: '### What this is
+
+  This guide provides steps to obtain and review your insurance policies to ensure
+  you have adequate coverage for property, health, and life.
+
+
+  ### Why it matters
+
+  Having the right insurance coverage is crucial to protect yourself and your family
+  from financial loss due to unforeseen hazards.
+
+
+  ### What you need
+
+  You will need your current insurance policy documents for property, health, and
+  life.
+
+
+  ### How to do it
+
+  1. Obtain insurance if you do not have it.
+
+  2. Review your current policies to check the amount and extent of coverage.
+
+  3. Ensure the coverage meets your needs for all possible hazards.
+
+
+  ### Common failure modes
+
+  1. Inadequate coverage for potential hazards.
+
+  2. Policies that have expired or are not updated.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your coverage is compliant with local laws and regulations.
+
+
+  ### Local adaptation notes
+
+  Check local insurance requirements to ensure compliance and adequacy of coverage.'
+structured_data:
+  tools: []
+  materials:
+  - insurance policy documents
+  success_criteria:
+  - Adequate coverage for all identified hazards
+  - Updated and valid insurance policies
+  failure_modes:
+  - Inadequate coverage
+  - Expired policies
+  safety_boundary: Ensure compliance with local insurance regulations.
+  implementation:
+    smallest_viable_version: Review your current insurance policies to ensure adequate
+      coverage.
+    tools: []
+    materials:
+    - insurance policy documents
+    expected_time: 1-2 hours
+    expected_cost: Varies depending on policy changes
+    success_checks:
+    - Policies are up-to-date and provide adequate coverage
+    stop_conditions:
+    - If policies are outdated or insufficient, contact your insurance provider
+    common_mistakes:
+    - Not checking for all possible hazards
+    - Overlooking policy expiration dates
+    variants:
+    - label: Urban
+      when: Living in a city
+      notes: Consider additional coverage for urban-specific risks like theft.
+    - label: Off-grid
+      when: Living in remote areas
+      notes: Ensure coverage includes natural disasters common in remote areas.
+    when_to_escalate:
+    - If you cannot determine adequate coverage
+    - If policy terms are unclear
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.insurance-review
+  claim_id: clm_001
+  claim_text: Obtain insurance if you do not have it.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000038
+    excerpt: Obtain property, health, and life insurance if you do not have them.
+    start_char: 0
+    end_char: 58
+    support_strength: strong
+- object_id: preparedness.insurance-review
+  claim_id: clm_002
+  claim_text: Review your current policies to check the amount and extent of coverage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000038
+    excerpt: Review existing policies for the amount and extent of coverage to ensure
+      that what you have in place is what is required for you and your family for
+      all possible hazards.
+    start_char: 59
+    end_char: 203
+    support_strength: strong
+- object_id: preparedness.insurance-review
+  claim_id: clm_003
+  claim_text: Ensure the coverage meets your needs for all possible hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000038
+    excerpt: Review existing policies for the amount and extent of coverage to ensure
+      that what you have in place is what is required for you and your family for
+      all possible hazards.
+    start_char: 59
+    end_char: 203
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000038
+bundle_overrides:
+  hook: Protect yourself and your family from unexpected financial loss by ensuring
+    you have the right insurance coverage.
+  primer: Insurance is a crucial part of financial planning that helps protect you
+    from unexpected events that could lead to financial loss. Whether it's your home,
+    health, or life, having the right insurance coverage ensures that you and your
+    family are safeguarded against potential hazards. This guide will walk you through
+    the process of obtaining insurance if you don't have it and reviewing your current
+    policies to ensure they meet your needs. It's important to regularly check your
+    insurance policies to confirm that they are up-to-date and provide adequate coverage
+    for all possible risks. This not only gives you peace of mind but also ensures
+    compliance with local laws and regulations. By understanding your insurance needs
+    and making necessary adjustments, you can avoid common pitfalls such as inadequate
+    coverage or expired policies.
+  guide: '1. **Obtain Insurance**: If you do not currently have insurance, start by
+    identifying the types of coverage you need: property, health, and life insurance.
+    Research different providers and compare their offerings to find the best fit
+    for your needs and budget.
+
+
+    2. **Review Current Policies**: Gather all your existing insurance policy documents.
+    Carefully read through each policy to understand the amount and extent of coverage
+    provided. Pay attention to the details, including coverage limits, exclusions,
+    and premium costs.
+
+
+    3. **Assess Coverage Needs**: Consider any changes in your life circumstances
+    that might affect your insurance needs, such as a new job, marriage, or purchasing
+    a new home. Ensure that your policies cover all potential hazards specific to
+    your situation and location.
+
+
+    4. **Check for Expiry and Updates**: Verify that your policies are current and
+    have not expired. If any policies are nearing expiration, contact your insurance
+    provider to renew or update them as necessary.
+
+
+    5. **Adjust Coverage if Needed**: If you find that your current coverage is insufficient,
+    contact your insurance provider to discuss options for increasing your coverage.
+    This might involve adjusting your policy limits or adding additional coverage
+    for specific risks.
+
+
+    6. **Compliance Check**: Ensure that your insurance coverage complies with local
+    laws and regulations. This might involve consulting with a legal advisor or insurance
+    expert if you are unsure about specific requirements.
+
+
+    By following these steps, you can ensure that your insurance coverage is adequate
+    and up-to-date, providing you with the necessary protection against unforeseen
+    events.'
+  reference:
+  - Obtain property, health, and life insurance if you do not have them.
+  - Review existing policies for the amount and extent of coverage.
+  - Ensure coverage meets your needs for all possible hazards.
+  - Check for policy expiration and renew if necessary.
+  - Adjust coverage to address any identified gaps.
+  - Ensure compliance with local insurance regulations.
+  worksheet:
+  - List all your current insurance policies and their coverage details.
+  - Identify any gaps in your current coverage and note potential risks.
+  - Check the expiration dates of your policies and plan for renewals.
+  - Research additional coverage options for specific hazards you might face.
+  - Contact your insurance provider to discuss any necessary adjustments.
+  teach_forward_kit:
+    three_minute_version: Ensure you have adequate insurance coverage by obtaining
+      necessary policies, reviewing current coverage, and adjusting as needed to protect
+      against all possible hazards.
+    ten_minute_outline:
+    - Introduction to the importance of insurance coverage.
+    - Steps to obtain insurance if not already covered.
+    - How to review and understand current insurance policies.
+    - Assessing and adjusting coverage to meet current needs.
+    - Checking for policy expiration and ensuring compliance.
+    - Q&A session to address common concerns and misconceptions.
+    discussion_prompts:
+    - Why is it important to regularly review your insurance policies?
+    - What are some common risks that might require additional insurance coverage?
+    - How can life changes impact your insurance needs?
+    - What steps can you take if you find your coverage is inadequate?

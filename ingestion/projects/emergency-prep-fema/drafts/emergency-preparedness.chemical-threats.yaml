@@ -1,0 +1,194 @@
+id: emergency-preparedness.chemical-threats
+slug: emergency-preparedness.chemical-threats
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Chemical Threats
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Overview of chemical threats and their effects.
+summary_medium: Learn about chemical threats, including types of agents, their effects,
+  and signs of a chemical release.
+plain_language: Chemical threats involve harmful substances that can affect people,
+  animals, or plants. They can be released in various forms and may not always be
+  detectable by smell or taste.
+markdown_body: '### What this is
+
+  Chemical threats involve the use of poisonous substances that can be in the form
+  of vapors, aerosols, liquids, or solids. These agents can cause harm to people,
+  animals, and plants.
+
+
+  ### Why it matters
+
+  Understanding chemical threats is crucial for preparedness and response. These agents
+  can have immediate or delayed effects and can be challenging to detect and deliver
+  in lethal concentrations.
+
+
+  ### What you need
+
+  Awareness of the signs of chemical release and knowledge of potential delivery methods
+  are essential for safety.
+
+
+  ### How to do it
+
+  Stay informed about the types of chemical agents and their effects. Recognize signs
+  such as difficulty breathing, eye irritation, and nausea as potential indicators
+  of a chemical release.
+
+
+  ### Common failure modes
+
+  Failing to recognize the signs of a chemical release or underestimating the potential
+  impact of chemical agents.
+
+
+  ### Safety/boundary notes
+
+  Chemical agents can be odorless and tasteless, making them difficult to detect without
+  proper equipment.
+
+
+  ### Local adaptation notes
+
+  Consider local industrial activities or transportation routes that might increase
+  the risk of chemical threats in your area.'
+structured_data:
+  definition: Chemical agents are toxic substances that can be released into the environment,
+    affecting living organisms.
+  key_questions:
+  - What are the types of chemical agents?
+  - How can chemical agents be delivered?
+  - What are the signs of a chemical release?
+  misconceptions:
+  - Chemical agents are always detectable by smell or taste.
+  - Chemical attacks are easy to execute effectively.
+  safety_boundary: This is background/awareness information about a hazard, adapted
+    from FEMA's public citizen-preparedness guide. It is not a substitute for official
+    warnings, alerts, or instructions from local emergency management, law enforcement,
+    or emergency responders during an actual event.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_001
+  claim_text: Chemical threats involve the use of poisonous substances that can be
+    in the form of vapors, aerosols, liquids, or solids.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Chemical agents are poisonous vapors, aerosols, liquids, and solids that
+      have toxic effects on people, animals, or plants.
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_002
+  claim_text: These agents can cause harm to people, animals, and plants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Chemical agents are poisonous vapors, aerosols, liquids, and solids that
+      have toxic effects on people, animals, or plants.
+    start_char: 0
+    end_char: 92
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_003
+  claim_text: Understanding chemical threats is crucial for preparedness and response.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: A chemical attack could come without warning.
+    start_char: 276
+    end_char: 313
+    support_strength: medium
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_004
+  claim_text: These agents can have immediate or delayed effects and can be challenging
+    to detect and deliver in lethal concentrations.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: They can have an immediate effect (a few seconds to a few minutes) or
+      a delayed effect (2 to 48 hours). While potentially lethal, chemical agents
+      are diffi cult to deliver in lethal concentrations.
+    start_char: 171
+    end_char: 314
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_005
+  claim_text: Awareness of the signs of chemical release and knowledge of potential
+    delivery methods are essential for safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Signs of a chemical release include people having diffi culty breathing;
+      experiencing eye irritation; losing coordination; becoming nauseated; or having
+      a burning sensation in the nose, throat, and lungs.
+    start_char: 315
+    end_char: 515
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_006
+  claim_text: Stay informed about the types of chemical agents and their effects.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Chemical agents are poisonous vapors, aerosols, liquids, and solids that
+      have toxic effects on people, animals, or plants.
+    start_char: 0
+    end_char: 92
+    support_strength: medium
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_007
+  claim_text: Recognize signs such as difficulty breathing, eye irritation, and nausea
+    as potential indicators of a chemical release.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Signs of a chemical release include people having diffi culty breathing;
+      experiencing eye irritation; losing coordination; becoming nauseated; or having
+      a burning sensation in the nose, throat, and lungs.
+    start_char: 315
+    end_char: 515
+    support_strength: strong
+- object_id: emergency-preparedness.chemical-threats
+  claim_id: clm_008
+  claim_text: Chemical agents can be odorless and tasteless, making them difficult
+    to detect without proper equipment.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 160
+    page_end: 161
+    segment_id: src.fema.are-you-ready.2004::seg_000246
+    excerpt: Some chemical agents may be odorless and tasteless.
+    start_char: 130
+    end_char: 171
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000246

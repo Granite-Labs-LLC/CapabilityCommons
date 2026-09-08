@@ -1,0 +1,175 @@
+id: emergency-management.flood-awareness
+slug: emergency-management.flood-awareness
+seed_type: extracted
+co_type: concept_note
+canonical_title: Flood Awareness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understand flood hazards and risks in the U.S.
+summary_medium: An overview of flood hazards, types, and risks in the United States,
+  emphasizing the importance of awareness regardless of location.
+plain_language: Floods are common in the U.S. and can happen anywhere. It's important
+  to know the risks and be prepared.
+markdown_body: '### What this is
+
+  Flood awareness involves understanding the different types of floods and the risks
+  they pose. Floods can be local or widespread, affecting small areas or entire regions.
+
+
+  ### Why it matters
+
+  Floods are one of the most common natural hazards in the United States. Awareness
+  is crucial because floods can occur anywhere, and even small streams or dry areas
+  can become dangerous.
+
+
+  ### What you need
+
+  Knowledge of local flood risks and potential flood areas, such as low-lying regions
+  or areas near water bodies or dams.
+
+
+  ### How to do it
+
+  Stay informed about flood hazards in your area, understand the types of floods that
+  can occur, and recognize the signs of potential flooding.
+
+
+  ### Common failure modes
+
+  Underestimating flood risk and ignoring small streams or dry areas that can flood.
+
+
+  ### Safety/boundary notes
+
+  Be particularly cautious if you live in low-lying areas or near water bodies.
+
+
+  ### Local adaptation notes
+
+  Consider local geography, such as proximity to rivers, streams, or dams, when assessing
+  flood risk.'
+structured_data:
+  definition: Flood awareness is the understanding of flood hazards, types, and risks.
+  key_questions:
+  - What are the different types of floods?
+  - How can floods affect my area?
+  - What are the signs of an impending flood?
+  misconceptions:
+  - Floods only happen near large rivers.
+  - Dry areas are always safe from flooding.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_001
+  claim_text: Flood awareness involves understanding the different types of floods
+    and the risks they pose. Floods can be local or widespread, affecting small areas
+    or entire regions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Floods are one of the most common hazards in the United States. Flood
+      effects can be local, impacting a neighborhood or community, or very large,
+      affecting entire river basins and multiple states.
+    start_char: 0
+    end_char: 166
+    support_strength: strong
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_002
+  claim_text: Floods are one of the most common natural hazards in the United States.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Floods are one of the most common hazards in the United States.
+    start_char: 0
+    end_char: 50
+    support_strength: strong
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_003
+  claim_text: Awareness is crucial because floods can occur anywhere, and even small
+    streams or dry areas can become dangerous.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Be aware of flood hazards no matter where you live, but especially if
+      you live in a low-lying area, near water or downstream from a dam. Even very
+      small streams, gullies, creeks, culverts, dry streambeds, or low-lying ground
+      that appear harmless in dry weather can flood.
+    start_char: 324
+    end_char: 535
+    support_strength: strong
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_004
+  claim_text: Knowledge of local flood risks and potential flood areas, such as low-lying
+    regions or areas near water bodies or dams.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Be aware of flood hazards no matter where you live, but especially if
+      you live in a low-lying area, near water or downstream from a dam.
+    start_char: 324
+    end_char: 430
+    support_strength: strong
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_005
+  claim_text: Stay informed about flood hazards in your area, understand the types
+    of floods that can occur, and recognize the signs of potential flooding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Flood effects can be local, impacting a neighborhood or community, or
+      very large, affecting entire river basins and multiple states. However, all
+      floods are not alike.
+    start_char: 51
+    end_char: 166
+    support_strength: medium
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_006
+  claim_text: Underestimating flood risk and ignoring small streams or dry areas that
+    can flood.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Even very small streams, gullies, creeks, culverts, dry streambeds, or
+      low-lying ground that appear harmless in dry weather can flood.
+    start_char: 431
+    end_char: 535
+    support_strength: strong
+- object_id: emergency-management.flood-awareness
+  claim_id: clm_007
+  claim_text: Be particularly cautious if you live in low-lying areas or near water
+    bodies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 50
+    page_end: 51
+    segment_id: src.fema.are-you-ready.2004::seg_000067
+    excerpt: Be aware of flood hazards no matter where you live, but especially if
+      you live in a low-lying area, near water or downstream from a dam.
+    start_char: 324
+    end_char: 430
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000067

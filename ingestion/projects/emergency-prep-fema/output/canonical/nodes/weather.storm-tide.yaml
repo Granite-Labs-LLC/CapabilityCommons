@@ -1,0 +1,110 @@
+id: weather.storm-tide
+slug: weather.storm-tide
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Storm Tide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: A storm tide is the combined effect of a storm surge and the normal
+  tide.
+summary_medium: A storm tide results from the combination of a storm surge with the
+  normal tide, leading to a higher water level than the mean sea level.
+plain_language: When a storm pushes extra water onto the shore, it combines with the
+  regular tide to create a storm tide, which is higher than usual water levels.
+markdown_body: '### What this is
+
+  A storm tide is the result of a storm surge combining with the normal tide. For
+  example, if a storm surge raises the water level by 15 feet and the normal high
+  tide is 2 feet, the storm tide would be 17 feet above the mean sea level.
+
+
+  ### Why it matters
+
+  Understanding storm tides is crucial for coastal areas as they can lead to significant
+  flooding and damage. The increased water levels can impact infrastructure, homes,
+  and ecosystems.
+
+
+  ### What you need
+
+  Knowledge of local tide patterns and storm surge predictions can help in preparing
+  for potential storm tides.
+
+
+  ### How to do it
+
+  Monitor weather forecasts for storm surge warnings and compare them with local tide
+  schedules to anticipate potential storm tide levels.
+
+
+  ### Common failure modes
+
+  Underestimating the impact of combined water levels can lead to inadequate preparation
+  and increased risk of damage.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety and evacuate if advised by local authorities during storm
+  tide warnings.
+
+
+  ### Local adaptation notes
+
+  Consider local geographical features and historical data to better predict and prepare
+  for storm tides in your area.'
+structured_data:
+  definition: A storm tide is the combined height of a storm surge and the normal
+    tide.
+  key_questions:
+  - What is the difference between a storm surge and a storm tide?
+  - How can storm tides affect coastal areas?
+  misconceptions:
+  - A storm tide is just a high tide.
+  - Storm tides only occur during hurricanes.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.storm-tide
+  claim_id: clm_001
+  claim_text: A storm tide is the result of a storm surge combining with the normal
+    tide. For example, if a storm surge raises the water level by 15 feet and the
+    normal high tide is 2 feet, the storm tide would be 17 feet above the mean sea
+    level.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000097
+    excerpt: A combination of storm surge and the normal tide (i.e., a 15-foot storm
+      surge combined with a 2-foot normal high tide over the mean sea level creates
+      a 17-foot storm tide).
+    start_char: 0
+    end_char: 140
+    support_strength: strong
+- object_id: weather.storm-tide
+  claim_id: clm_002
+  claim_text: Understanding storm tides is crucial for coastal areas as they can lead
+    to significant flooding and damage. The increased water levels can impact infrastructure,
+    homes, and ecosystems.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 69
+    page_end: 69
+    segment_id: src.fema.are-you-ready.2004::seg_000096
+    excerpt: A dome of water pushed onshore by hurricane and tropical storm winds.
+      Storm surges can reach 25 feet high and be 50-100 miles wide.
+    start_char: 0
+    end_char: 122
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000097

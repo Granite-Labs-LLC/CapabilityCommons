@@ -1,0 +1,217 @@
+id: safety.escape-routes
+slug: safety.escape-routes
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Creating and Posting Home Escape Route Plans
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts:
+- home safety
+- emergency preparedness
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Create and post escape route plans in your home.
+summary_medium: A project blueprint for creating and posting escape route plans in
+  homes, including establishing meeting points for emergencies.
+plain_language: Learn how to draw and display escape routes for your home to ensure
+  everyone knows how to exit safely during an emergency.
+markdown_body: '# What this is
+
+  This project involves creating detailed escape route plans for each floor of your
+  home and posting them where they are easily visible, especially to children.
+
+
+  # Why it matters
+
+  Having clear escape routes can save lives during emergencies like fires by ensuring
+  everyone knows how to exit the home quickly and safely.
+
+
+  # What you need
+
+  You will need blank sheets of paper and writing tools to draw the floor plans and
+  mark escape routes.
+
+
+  # How to do it
+
+  1. Draw a floor plan of your home on a blank sheet of paper for each floor. 2. Mark
+  two escape routes from each room. 3. Ensure children understand the drawings. 4.
+  Post a copy of the drawings at eye level in each child''s room. 5. Establish a meeting
+  point near the home and another outside the immediate area.
+
+
+  # Common failure modes
+
+  Escape routes that are unclear or plans that are not visible to children can lead
+  to confusion during an emergency.
+
+
+  # Safety/boundary notes
+
+  Ensure that escape routes are practical and accessible for all family members, including
+  children and those with mobility issues.
+
+
+  # Local adaptation notes
+
+  Consider different home layouts and local meeting point options when creating your
+  escape plans.'
+structured_data:
+  goal: Create and post clear escape route plans in your home.
+  deliverables: Posted escape route plans for each floor and established meeting points.
+  acceptance_criteria: Plans are visible and understandable to all household members,
+    especially children.
+  implementation:
+    smallest_viable_version: Draw and post escape routes for one floor.
+    tools:
+    - writing tools
+    materials:
+    - blank sheets of paper
+    expected_time: 1-2 hours
+    expected_cost: minimal
+    success_checks:
+    - All family members can identify escape routes and meeting points.
+    stop_conditions:
+    - If plans are not clear or visible, revise and repost.
+    common_mistakes:
+    - Not involving children in the process.
+    - Posting plans too high for children to see.
+    variants:
+    - label: Urban
+      when: In densely populated areas.
+      notes: Consider multiple meeting points due to potential obstructions.
+    when_to_escalate:
+    - If home layout is complex, consider consulting a safety professional.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.escape-routes
+  claim_id: clm_001
+  claim_text: This project involves creating detailed escape route plans for each
+    floor of your home and posting them where they are easily visible, especially
+    to children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 25
+    page_end: 25
+    segment_id: src.fema.are-you-ready.2004::seg_000033
+    excerpt: Draw a floor plan of your home. Use a blank sheet of paper for each floor.
+      Mark two escape routes from each room. Make sure children understand the drawings.
+      Post a copy of the drawings at eye level in each child's room.
+    start_char: 0
+    end_char: 180
+    support_strength: strong
+- object_id: safety.escape-routes
+  claim_id: clm_002
+  claim_text: Having clear escape routes can save lives during emergencies like fires
+    by ensuring everyone knows how to exit the home quickly and safely.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 25
+    page_end: 25
+    segment_id: src.fema.are-you-ready.2004::seg_000033
+    excerpt: Establish a place to meet in the event of an emergency, such as a fire.
+    start_char: 181
+    end_char: 230
+    support_strength: medium
+- object_id: safety.escape-routes
+  claim_id: clm_003
+  claim_text: You will need blank sheets of paper and writing tools to draw the floor
+    plans and mark escape routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 25
+    page_end: 25
+    segment_id: src.fema.are-you-ready.2004::seg_000033
+    excerpt: Draw a floor plan of your home. Use a blank sheet of paper for each floor.
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: safety.escape-routes
+  claim_id: clm_004
+  claim_text: Establish a meeting point near the home and another outside the immediate
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 25
+    page_end: 25
+    segment_id: src.fema.are-you-ready.2004::seg_000033
+    excerpt: 'Establish a place to meet in the event of an emergency, such as a fire.
+      Record the locations below: Near the home, Outside the immediate area.'
+    start_char: 181
+    end_char: 300
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000033
+bundle_overrides:
+  hook: Knowing how to quickly and safely exit your home during an emergency can save
+    lives—make sure everyone in your household is prepared.
+  primer: Creating and posting home escape route plans is a crucial step in emergency
+    preparedness. In the event of a fire or other emergency, having a clear and practiced
+    escape plan can make all the difference. This involves drawing detailed floor
+    plans of your home, marking two escape routes from each room, and ensuring that
+    these plans are visible and understandable to all household members, especially
+    children. It's important to establish a meeting point near your home and another
+    outside the immediate area to ensure everyone can regroup safely. This project
+    requires minimal materials—just some blank sheets of paper and writing tools—and
+    can be completed in a couple of hours. By involving all family members in the
+    process, you ensure that everyone knows what to do and where to go in an emergency.
+  guide: '1. Gather your materials: blank sheets of paper and writing tools.
+
+    2. Start by drawing a floor plan of your home on a separate sheet of paper for
+    each floor. Include all rooms, hallways, and exits.
+
+    3. For each room, identify and mark two escape routes. These could be doors or
+    windows, depending on the room''s layout.
+
+    4. Involve your children in the process. Explain the escape routes to them and
+    ensure they understand the plan.
+
+    5. Post a copy of the escape route plans at eye level in each child''s room and
+    in common areas where everyone can see them.
+
+    6. Establish a meeting point near your home, such as a neighbor''s house or a
+    specific tree in the yard. Also, choose a secondary meeting point outside the
+    immediate area, like a nearby park or community center.
+
+    7. Practice the escape plan with your family regularly to ensure everyone is familiar
+    with the routes and meeting points.
+
+    8. Review and update the plans as needed, especially if there are changes to your
+    home''s layout or if you move to a new home.'
+  reference:
+  - Draw a floor plan for each floor of your home.
+  - Mark two escape routes from each room.
+  - Post plans at eye level for children.
+  - Establish a nearby and a distant meeting point.
+  - Involve children in understanding the plans.
+  - Practice the escape plan regularly.
+  worksheet:
+  - Draw a floor plan of one floor of your home.
+  - Identify and mark two escape routes from each room.
+  - Explain the escape routes to a family member and ensure they understand.
+  - 'Choose and note down two meeting points: one near your home and one further away.'
+  - Practice a mock escape with your family using the routes and meeting points.
+  teach_forward_kit:
+    three_minute_version: Create and post escape route plans for your home to ensure
+      everyone knows how to exit safely during an emergency. Draw floor plans, mark
+      escape routes, and establish meeting points.
+    ten_minute_outline:
+    - Introduction to the importance of escape route plans.
+    - 'Materials needed: paper and writing tools.'
+    - Steps to create floor plans and mark escape routes.
+    - How to involve children and ensure understanding.
+    - Posting plans and establishing meeting points.
+    - Regular practice and plan updates.
+    discussion_prompts:
+    - Why is it important to have multiple escape routes from each room?
+    - How can involving children in the planning process improve safety?
+    - What challenges might arise when establishing meeting points?
+    - How often should families practice their escape plans?

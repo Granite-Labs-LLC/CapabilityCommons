@@ -1,0 +1,184 @@
+id: health-safety.post-disaster-guidelines
+slug: health-safety.post-disaster-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Health and Safety Guidelines After a Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: health-safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for maintaining health and safety after a disaster.
+summary_medium: Guidelines for maintaining health and safety after a disaster, including
+  first aid, exhaustion prevention, and identifying new safety issues.
+plain_language: After a disaster, it's important to focus on health and safety. This
+  includes checking for injuries, preventing exhaustion, and being aware of new safety
+  hazards.
+markdown_body: '# What this is
+
+  This reference sheet provides guidelines for maintaining health and safety in the
+  aftermath of a disaster. It includes advice on first aid, preventing exhaustion,
+  and identifying new safety hazards.
+
+
+  # Why it matters
+
+  After a disaster, ensuring the health and safety of yourself and your family is
+  crucial. Properly addressing injuries and being aware of new hazards can prevent
+  further harm and aid in recovery.
+
+
+  # What you need
+
+  Basic first aid knowledge, blankets, sturdy work boots, gloves, soap, and access
+  to clean water.
+
+
+  # How to do it
+
+  1. Check for injuries and stabilize any seriously injured persons without moving
+  them unless absolutely necessary.
+
+  2. If someone is not breathing, perform artificial respiration.
+
+  3. Maintain body temperature using blankets, but avoid overheating.
+
+  4. Do not give liquids to unconscious individuals.
+
+  5. Pace yourself to avoid exhaustion, drink clean water, eat well, and wear protective
+  gear.
+
+  6. Be vigilant for new safety hazards like gas leaks or contaminated water and report
+  them to authorities.
+
+
+  # Common failure modes
+
+  Moving seriously injured persons unnecessarily, overexertion, and ignoring new safety
+  hazards.
+
+
+  # Safety/boundary notes
+
+  Do not move seriously injured persons unless necessary and do not feed liquids to
+  unconscious persons.
+
+
+  # Local adaptation notes
+
+  Consider the availability of clean water and the response of local authorities when
+  adapting these guidelines to your situation.'
+structured_data:
+  tools:
+  - work boots
+  - gloves
+  materials:
+  - blankets
+  - soap
+  - clean water
+  success_criteria:
+  - Injuries are stabilized
+  - Exhaustion is prevented
+  - New safety hazards are identified and reported
+  failure_modes:
+  - Moving seriously injured persons unnecessarily
+  - Overexertion
+  - Ignoring new safety hazards
+  safety_boundary:
+  - Do not move seriously injured persons unless necessary
+  - Do not feed liquids to unconscious persons
+requires: []
+suggested_edges: []
+citations:
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_001
+  claim_text: Check for injuries and stabilize any seriously injured persons without
+    moving them unless absolutely necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Aiding the Injured Check for injuries. Do not attempt to move seriously
+      injured persons unless they are in immediate danger of death or further injury.
+    start_char: 162
+    end_char: 266
+    support_strength: strong
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_002
+  claim_text: If someone is not breathing, perform artificial respiration.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: If the victim is not breathing, carefully position the victim for artifi
+      cial respiration, clear the airway, and commence mouth-to-mouth resuscitation.
+    start_char: 267
+    end_char: 366
+    support_strength: strong
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_003
+  claim_text: Maintain body temperature using blankets, but avoid overheating.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Maintain body temperature with blankets. Be sure the victim does not
+      become overheated.
+    start_char: 367
+    end_char: 423
+    support_strength: strong
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_004
+  claim_text: Do not give liquids to unconscious individuals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Never try to feed liquids to an unconscious person.
+    start_char: 424
+    end_char: 467
+    support_strength: strong
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_005
+  claim_text: Pace yourself to avoid exhaustion, drink clean water, eat well, and
+    wear protective gear.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Be aware of exhaustion. Don't try to do too much at once. Set priorities
+      and pace yourself. Get enough rest. Drink plenty of clean water. Eat well. Wear
+      sturdy work boots and gloves.
+    start_char: 468
+    end_char: 598
+    support_strength: strong
+- object_id: health-safety.post-disaster-guidelines
+  claim_id: clm_006
+  claim_text: Be vigilant for new safety hazards like gas leaks or contaminated water
+    and report them to authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 181
+    page_end: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    excerpt: Be aware of new safety issues created by the disaster. Watch for washed
+      out roads, contaminated buildings, contaminated water, gas leaks, broken glass,
+      damaged electrical wiring, and slippery floors. Inform local authorities about
+      health and safety issues, including chemical spills, downed power lines, washed
+      out roads, smoldering insulation, and dead animals.
+    start_char: 599
+    end_char: 826
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000272

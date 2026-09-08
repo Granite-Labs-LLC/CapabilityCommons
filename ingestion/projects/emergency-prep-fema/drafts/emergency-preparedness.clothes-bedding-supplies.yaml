@@ -1,0 +1,231 @@
+id: emergency-preparedness.clothes-bedding-supplies
+slug: emergency-preparedness.clothes-bedding-supplies
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Clothes and Bedding Supplies for Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Checklist of essential clothes and bedding for emergencies.
+summary_medium: A checklist of essential clothes and bedding supplies to prepare for
+  emergencies, ensuring comfort and protection in various conditions.
+plain_language: This guide provides a list of clothing and bedding items you should
+  have ready in case of an emergency. It includes clothes for different weather conditions
+  and bedding for comfort.
+markdown_body: '### What this is
+
+  This is a checklist of essential clothing and bedding items to have on hand for
+  emergency preparedness. It ensures you are equipped to handle various weather conditions
+  and maintain comfort during an emergency.
+
+
+  ### Why it matters
+
+  Having the right clothes and bedding is crucial in emergencies to protect against
+  the elements and ensure comfort. This can prevent health issues related to exposure
+  and improve overall resilience.
+
+
+  ### What you need
+
+  You will need a complete change of clothes, sturdy shoes or boots, rain gear, a
+  hat and gloves, extra socks and underwear, thermal underwear, sunglasses, blankets,
+  sleeping bags, and pillows.
+
+
+  ### How to do it
+
+  Gather all the listed items and store them in an accessible location. Consider the
+  climate and personal preferences when selecting specific items. Regularly check
+  and update your supplies to ensure they remain in good condition.
+
+
+  ### Common failure modes
+
+  Failing to include adequate clothing for all weather conditions or neglecting to
+  have enough bedding can lead to discomfort and health risks during an emergency.
+
+
+  ### Safety/boundary notes
+
+
+  ### Local adaptation notes
+
+  Consider local climate conditions and cultural clothing preferences when selecting
+  items for your emergency kit.'
+structured_data:
+  tools: []
+  materials:
+  - Complete change of clothes
+  - Sturdy shoes or boots
+  - Rain gear
+  - Hat and gloves
+  - Extra socks
+  - Extra underwear
+  - Thermal underwear
+  - Sunglasses
+  - Blankets
+  - Sleeping bags
+  - Pillows
+  success_criteria: []
+  failure_modes:
+  - Inadequate clothing
+  - Lack of bedding
+  safety_boundary: ''
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_001
+  claim_text: This is a checklist of essential clothing and bedding items to have
+    on hand for emergency preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_002
+  claim_text: Having the right clothes and bedding is crucial in emergencies to protect
+    against the elements and ensure comfort.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_003
+  claim_text: You will need a complete change of clothes, sturdy shoes or boots, rain
+    gear, a hat and gloves, extra socks and underwear, thermal underwear, sunglasses,
+    blankets, sleeping bags, and pillows.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_004
+  claim_text: Gather all the listed items and store them in an accessible location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_005
+  claim_text: Consider the climate and personal preferences when selecting specific
+    items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_006
+  claim_text: Regularly check and update your supplies to ensure they remain in good
+    condition.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_007
+  claim_text: Failing to include adequate clothing for all weather conditions or neglecting
+    to have enough bedding can lead to discomfort and health risks during an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.clothes-bedding-supplies
+  claim_id: clm_008
+  claim_text: Consider local climate conditions and cultural clothing preferences
+    when selecting items for your emergency kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 199
+    page_end: 199
+    segment_id: src.fema.are-you-ready.2004::seg_000304
+    excerpt: '## **Clothes and Bedding Supplies** | Item | (√) | (√) | (√) | (√) |
+      |------------------------------------|-----|-----|-----|-----| | Complete change
+      of clothes | | | | | | Sturdy shoes or boots | | | | | | Rain gear | | | | |
+      | Hat and gloves | | | | | | Extra socks | | | | | | Extra underwear | | | |
+      | | Thermal underwear | | | | | | Sunglasses | | | | | | Blankets/sleeping bags
+      and pillows | | | |'
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000304

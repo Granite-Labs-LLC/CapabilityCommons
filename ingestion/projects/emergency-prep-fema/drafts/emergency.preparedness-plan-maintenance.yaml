@@ -1,0 +1,224 @@
+id: emergency.preparedness-plan-maintenance
+slug: emergency.preparedness-plan-maintenance
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Practicing and Maintaining Your Emergency Preparedness Plan
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to practice and maintain your emergency preparedness plan.
+summary_medium: Guidance on practicing and maintaining an emergency preparedness plan,
+  including conducting drills and updating supplies.
+plain_language: This guide helps you keep your emergency plan effective by practicing
+  it regularly and updating supplies.
+markdown_body: "### What this is\nThis is a guide to help you practice and maintain\
+  \ your emergency preparedness plan effectively.\n\n### Why it matters\nRegular practice\
+  \ and maintenance of your emergency plan ensure that everyone knows what to do in\
+  \ an emergency and that your supplies are up-to-date.\n\n### What you need\nYou\
+  \ will need your emergency plan, fire alarms, and disaster supplies.\n\n### How\
+  \ to do it\n1. Ask questions to ensure everyone remembers key details like meeting\
+  \ places and phone numbers. \n2. Conduct drills such as 'drop, cover, and hold on'\
+  \ for earthquakes. \n3. Test fire alarms regularly. \n4. Replace and update your\
+  \ disaster supplies as needed.\n\n### Common failure modes\nForgetting plan details\
+  \ or having outdated supplies can hinder your response in an emergency.\n\n### Safety/boundary\
+  \ notes\nEnsure drills are conducted safely and that all participants understand\
+  \ the procedures.\n\n### Local adaptation notes\nAdapt your plan to include local\
+  \ emergency procedures and resources."
+structured_data:
+  tools:
+  - fire alarms
+  materials:
+  - disaster supplies
+  success_criteria: All family members can recall plan details and supplies are current.
+  failure_modes:
+  - forgetting plan details
+  - outdated supplies
+  safety_boundary: Ensure drills are conducted safely.
+  implementation:
+    smallest_viable_version: Conduct a simple drill and check supplies once a year.
+    tools:
+    - fire alarms
+    materials:
+    - disaster supplies
+    expected_time: 1 hour
+    expected_cost: Minimal, mainly for replacing outdated supplies.
+    success_checks:
+    - Family members recall plan details
+    - Supplies are updated
+    stop_conditions:
+    - If any safety issues arise during drills
+    common_mistakes:
+    - Not updating supplies
+    - Skipping regular drills
+    variants:
+    - label: Urban
+      when: Living in a densely populated area
+      notes: Focus on evacuation routes and local emergency services.
+    - label: Off-grid
+      when: Living in a remote area
+      notes: Ensure self-sufficiency with supplies and communication methods.
+    when_to_escalate:
+    - If family members consistently forget plan details
+    - If supplies are frequently outdated
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_001
+  claim_text: Regular practice and maintenance of your emergency plan ensure that
+    everyone knows what to do in an emergency and that your supplies are up-to-date.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: Once you have developed your plan, you need to practice and maintain
+      it. For example, ask questions to make sure your family remembers meeting places,
+      phone numbers, and safety rules. Conduct drills such as drop, cover, and hold
+      on for earthquakes. Test fi re alarms. Replace and update disaster supplies.
+    start_char: 0
+    end_char: 249
+    support_strength: strong
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_002
+  claim_text: You will need your emergency plan, fire alarms, and disaster supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: Test fi re alarms. Replace and update disaster supplies.
+    start_char: 182
+    end_char: 249
+    support_strength: medium
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_003
+  claim_text: Ask questions to ensure everyone remembers key details like meeting
+    places and phone numbers.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: ask questions to make sure your family remembers meeting places, phone
+      numbers, and safety rules.
+    start_char: 58
+    end_char: 136
+    support_strength: strong
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_004
+  claim_text: Conduct drills such as 'drop, cover, and hold on' for earthquakes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: Conduct drills such as drop, cover, and hold on for earthquakes.
+    start_char: 137
+    end_char: 181
+    support_strength: strong
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_005
+  claim_text: Test fire alarms regularly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: Test fi re alarms.
+    start_char: 182
+    end_char: 196
+    support_strength: strong
+- object_id: emergency.preparedness-plan-maintenance
+  claim_id: clm_006
+  claim_text: Replace and update your disaster supplies as needed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 46
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000063
+    excerpt: Replace and update disaster supplies.
+    start_char: 197
+    end_char: 249
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000063
+bundle_overrides:
+  hook: Regular practice and maintenance of your emergency preparedness plan ensure
+    everyone knows what to do in an emergency and that your supplies are up-to-date.
+  primer: An emergency preparedness plan is essential for ensuring safety during unexpected
+    events like natural disasters or accidents. Once you've developed your plan, it's
+    crucial to practice and maintain it regularly. This involves conducting drills,
+    such as 'drop, cover, and hold on' for earthquakes, and testing fire alarms to
+    ensure they work correctly. Additionally, it's important to replace and update
+    your disaster supplies periodically. By doing so, you ensure that everyone in
+    your household knows what to do in an emergency and that your supplies are ready
+    when needed. Regular practice helps reinforce the plan details, such as meeting
+    places and emergency contact numbers, so they are fresh in everyone's mind. This
+    proactive approach can significantly improve your household's readiness and response
+    during an emergency.
+  guide: '1. **Review Your Plan**: Start by reviewing your emergency preparedness
+    plan with all household members. Ensure everyone understands the key details,
+    such as meeting places, emergency contact numbers, and safety rules.
+
+
+    2. **Conduct Drills**: Organize regular drills to practice your plan. For example,
+    conduct ''drop, cover, and hold on'' drills for earthquake preparedness. Make
+    sure everyone participates and understands their role.
+
+
+    3. **Test Fire Alarms**: Regularly test your fire alarms to ensure they are functioning
+    correctly. Replace batteries as needed and make sure everyone knows the sound
+    of the alarm and what to do when it goes off.
+
+
+    4. **Update Supplies**: Check your disaster supplies regularly. Replace expired
+    items and ensure you have enough supplies to last at least 72 hours. Consider
+    the needs of all family members, including pets.
+
+
+    5. **Ask Questions**: Periodically ask family members questions about the plan
+    to ensure they remember important details. This can include asking about meeting
+    places, phone numbers, and what to do in specific scenarios.
+
+
+    6. **Adapt and Improve**: After each drill or review, discuss what went well and
+    what could be improved. Update your plan as needed to address any gaps or changes
+    in your household or environment.'
+  reference:
+  - Review your emergency plan regularly.
+  - Conduct drills such as 'drop, cover, and hold on' for earthquakes.
+  - Test fire alarms regularly.
+  - Replace and update disaster supplies as needed.
+  - Ensure everyone remembers meeting places and emergency contacts.
+  worksheet:
+  - List your household's emergency meeting places and contact numbers.
+  - Schedule a date for your next emergency drill.
+  - Check the expiration dates on your disaster supplies and list items that need
+    replacement.
+  - Test your fire alarms and note any maintenance needed.
+  - Role-play an emergency scenario with your family and discuss the outcome.
+  teach_forward_kit:
+    three_minute_version: Regularly practicing and maintaining your emergency preparedness
+      plan ensures everyone knows what to do in an emergency and keeps your supplies
+      up-to-date. Conduct drills, test alarms, and update supplies to stay prepared.
+    ten_minute_outline:
+    - Introduction to emergency preparedness
+    - Importance of regular practice and maintenance
+    - 'Steps to practice your plan: drills, testing alarms, updating supplies'
+    - Common pitfalls and how to avoid them
+    - Discussion on adapting plans to specific needs
+    - Q&A session
+    discussion_prompts:
+    - What challenges have you faced in maintaining your emergency plan?
+    - How often do you conduct drills, and what have you learned from them?
+    - What strategies do you use to ensure your disaster supplies are up-to-date?
+    - How do you involve all family members in emergency preparedness?

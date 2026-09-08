@@ -1,0 +1,258 @@
+id: safety.technological-hazards-preparedness
+slug: safety.technological-hazards-preparedness
+seed_type: module
+co_type: skill_guide
+canonical_title: Technological Hazards Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Learn to prepare for technological hazards like hazardous materials
+  incidents and nuclear power plant failures.
+summary_medium: This module covers preparedness for technological hazards, including
+  hazardous materials incidents and nuclear power plant failures. It includes recognizing
+  terms, taking protective measures, and knowing actions to take during events.
+plain_language: Understand how to prepare for and respond to technological hazards,
+  such as chemical spills and nuclear plant issues, by learning key terms, protective
+  actions, and resources.
+markdown_body: '# What this is
+
+  This module is about preparing for technological hazards, which include incidents
+  involving hazardous materials and failures at nuclear power plants.
+
+
+  # Why it matters
+
+  Technological hazards can occur with little or no warning and may have long-term
+  health impacts. Understanding these hazards helps in reducing risks and protecting
+  health and safety.
+
+
+  # What you need
+
+  Familiarity with household chemicals and basic safety procedures for handling and
+  disposing of them.
+
+
+  # How to do it
+
+  1. Recognize important terms related to technological hazards.
+
+  2. Learn protective measures to take before, during, and after an incident.
+
+  3. Identify resources for more information and assistance.
+
+
+  # Common failure modes
+
+  Human error and hidden toxic waste are common issues that can lead to technological
+  hazards.
+
+
+  # Safety/boundary notes
+
+  Ensure safe storage and disposal of household chemicals to minimize risk.
+
+
+  # Local adaptation notes
+
+  Consider local industrial activities and potential hazards specific to your area.'
+structured_data:
+  tools:
+  - household chemicals
+  materials: []
+  success_criteria:
+  - Recognize key terms
+  - Implement protective measures
+  - Identify resources
+  failure_modes:
+  - human error
+  - hidden toxic waste
+  safety_boundary: Proper handling and disposal of chemicals
+  implementation:
+    smallest_viable_version: Learn basic safety measures for handling technological
+      hazards.
+    tools:
+    - household chemicals
+    materials: []
+    expected_time: Varies depending on the hazard
+    expected_cost: low
+    success_checks:
+    - Can identify key terms
+    - Knows protective measures
+    - Can find resources
+    stop_conditions:
+    - If unsure about chemical safety
+    - If a hazard is beyond personal control
+    common_mistakes:
+    - Ignoring safety guidelines
+    - Improper disposal of chemicals
+    variants:
+    - label: urban
+      when: Living in a city with industrial activities
+      notes: Focus on local industrial hazards.
+    when_to_escalate:
+    - If a chemical spill occurs
+    - If exposure to radiation is suspected
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_001
+  claim_text: This module is about preparing for technological hazards, which include
+    incidents involving hazardous materials and failures at nuclear power plants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: Technological hazards include hazardous materials incidents and nuclear
+      power plant failures.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_002
+  claim_text: Technological hazards can occur with little or no warning and may have
+    long-term health impacts.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: Usually, little or no warning precedes incidents involving technological
+      hazards. In many cases, victims may not know they have been affected until many
+      years later.
+    start_char: 90
+    end_char: 215
+    support_strength: strong
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_003
+  claim_text: Understanding these hazards helps in reducing risks and protecting health
+    and safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: Use Part 3 to learn what actions to include in your family disaster plan
+      to prepare for and respond to events involving technological hazards.
+    start_char: 316
+    end_char: 422
+    support_strength: medium
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_004
+  claim_text: Familiarity with household chemicals and basic safety procedures for
+    handling and disposing of them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: Learn how to use, store, and dispose of household chemicals in a manner
+      that will reduce the potential for injury to people and the environment.
+    start_char: 423
+    end_char: 522
+    support_strength: strong
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_005
+  claim_text: Human error and hidden toxic waste are common issues that can lead to
+    technological hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: The number of technological incidents is escalating, mainly as a result
+      of the increased number of new substances and the opportunities for human error
+      inherent in the use of these materials.
+    start_char: 216
+    end_char: 316
+    support_strength: strong
+- object_id: safety.technological-hazards-preparedness
+  claim_id: clm_006
+  claim_text: Ensure safe storage and disposal of household chemicals to minimize
+    risk.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 128
+    page_end: 128
+    segment_id: src.fema.are-you-ready.2004::seg_000195
+    excerpt: Learn how to use, store, and dispose of household chemicals in a manner
+      that will reduce the potential for injury to people and the environment.
+    start_char: 423
+    end_char: 522
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000195
+bundle_overrides:
+  hook: Technological hazards can strike without warning, but understanding them can
+    significantly reduce risks and protect your health and safety.
+  primer: Technological hazards refer to incidents that arise from human-made sources,
+    such as hazardous materials spills and nuclear power plant failures. These events
+    can occur suddenly and without warning, potentially leading to long-term health
+    impacts. Being prepared for such hazards is crucial for minimizing risks and ensuring
+    safety. Preparation involves understanding the nature of these hazards, recognizing
+    key terms, and knowing the protective measures to take before, during, and after
+    an incident. Common issues leading to technological hazards include human error
+    and the presence of hidden toxic waste. Familiarity with household chemicals and
+    basic safety procedures for handling and disposing of them is essential. By learning
+    how to safely store and dispose of these chemicals, you can reduce the potential
+    for injury to people and the environment. This knowledge not only helps in safeguarding
+    your health but also contributes to community safety.
+  guide: "1. **Recognize Key Terms**: Familiarize yourself with terms related to technological\
+    \ hazards, such as 'hazardous materials' and 'nuclear incidents'. Understanding\
+    \ these terms will help you identify potential risks. \n\n2. **Learn Protective\
+    \ Measures**: Before an incident, ensure you know how to safely store and dispose\
+    \ of household chemicals. During an incident, follow official guidance and evacuate\
+    \ if necessary. After an incident, avoid affected areas until they are declared\
+    \ safe. \n\n3. **Identify Resources**: Know where to find reliable information\
+    \ and assistance. This could include local emergency services, government websites,\
+    \ and community resources. \n\n4. **Understand Common Failure Modes**: Be aware\
+    \ that human error and hidden toxic waste are common causes of technological hazards.\
+    \ This awareness can help you take proactive steps to prevent incidents. \n\n\
+    5. **Safety Procedures**: Regularly check the storage of household chemicals to\
+    \ ensure they are secure and not expired. Follow guidelines for the disposal of\
+    \ hazardous materials to prevent environmental contamination. \n\n6. **Local Adaptation**:\
+    \ Consider the specific industrial activities in your area that might pose technological\
+    \ hazards. Tailor your preparedness plans to address these local risks."
+  reference:
+  - 'Technological hazards: incidents from human-made sources.'
+  - 'Hazardous materials: chemicals that pose risks to health and safety.'
+  - 'Nuclear incidents: failures or accidents at nuclear power plants.'
+  - 'Human error: a common cause of technological hazards.'
+  - 'Hidden toxic waste: improperly disposed of hazardous materials.'
+  - 'Protective measures: actions to reduce risk before, during, and after incidents.'
+  worksheet:
+  - List three examples of technological hazards in your area.
+  - Identify and define five key terms related to technological hazards.
+  - Outline a plan for safely storing and disposing of household chemicals.
+  - Research and list local resources for information and assistance during a technological
+    hazard.
+  - Describe a scenario involving a technological hazard and the steps you would take
+    to respond.
+  teach_forward_kit:
+    three_minute_version: Technological hazards, such as chemical spills and nuclear
+      incidents, can occur without warning and have long-term health impacts. Understanding
+      these hazards and knowing how to respond can significantly reduce risks. Key
+      steps include recognizing important terms, learning protective measures, and
+      identifying resources for assistance.
+    ten_minute_outline:
+    - Introduction to technological hazards
+    - Importance of preparedness
+    - Key terms and definitions
+    - Protective measures before, during, and after incidents
+    - Common causes of technological hazards
+    - Local adaptation and resources
+    discussion_prompts:
+    - What are some technological hazards you might encounter in your community?
+    - How can human error contribute to technological hazards?
+    - Why is it important to safely store and dispose of household chemicals?
+    - What resources are available to help you prepare for technological hazards?

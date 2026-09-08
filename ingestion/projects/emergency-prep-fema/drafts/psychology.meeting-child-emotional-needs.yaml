@@ -1,0 +1,298 @@
+id: psychology.meeting-child-emotional-needs
+slug: psychology.meeting-child-emotional-needs
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Meeting the Child's Emotional Needs Post-Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: psychology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: Guide to meeting children's emotional needs after a disaster.
+summary_medium: Guides adults on how to meet children's emotional needs post-disaster
+  by encouraging expression and clarifying misunderstandings.
+plain_language: Learn how to support children's emotional well-being after a disaster
+  by encouraging them to express their feelings and clarifying any misunderstandings
+  they may have.
+markdown_body: '### What this is
+
+  This guide helps adults support children''s emotional needs following a disaster
+  by encouraging open communication and addressing misunderstandings.
+
+
+  ### Why it matters
+
+  Children''s emotional reactions can be heavily influenced by the adults around them.
+  Providing the right support can help them process the event and reduce anxiety.
+
+
+  ### What you need
+
+  A calm demeanor, patience, and the ability to listen and communicate effectively
+  with children.
+
+
+  ### How to do it
+
+  Encourage children to express their thoughts and feelings. Listen carefully and
+  answer their questions simply, especially for younger children. Clarify any misunderstandings
+  about the event and provide reassurance about safety. Use creative methods like
+  drawing or storytelling if children struggle to express themselves verbally.
+
+
+  ### Common failure modes
+
+  Ignoring children''s emotional needs or providing incorrect or overly detailed information
+  can increase anxiety.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the information shared is appropriate for the child''s age and understanding.
+
+
+  ### Local adaptation notes
+
+  Consider cultural differences in communication styles and emotional expression when
+  applying these guidelines.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Children feel heard and reassured, with reduced anxiety about
+    the disaster.
+  failure_modes: Ignoring emotional needs, providing incorrect information.
+  safety_boundary: Ensure communication is age-appropriate and sensitive to the child's
+    emotional state.
+  implementation:
+    smallest_viable_version: Encourage children to express their feelings and clarify
+      misunderstandings about the disaster.
+    tools: []
+    materials: []
+    expected_time: Varies based on child's needs
+    expected_cost: None
+    success_checks:
+    - Children express their feelings.
+    - Children's misunderstandings are clarified.
+    stop_conditions:
+    - Child becomes overly distressed.
+    - Child refuses to engage.
+    common_mistakes:
+    - Overloading children with information.
+    - Ignoring children's emotional cues.
+    variants:
+    - label: Urban
+      when: In densely populated areas.
+      notes: Consider noise and space limitations when choosing communication methods.
+    - label: Low-budget
+      when: Resources are limited.
+      notes: Use free resources like drawing materials or storytelling.
+    when_to_escalate:
+    - If the child shows signs of severe anxiety or depression.
+    - If the child is unable to resume normal activities.
+requires: []
+suggested_edges: []
+citations:
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_001
+  claim_text: This guide helps adults support children's emotional needs following
+    a disaster by encouraging open communication and addressing misunderstandings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: Adults should encourage children and adolescents to share their thoughts
+      and feelings about the incident. Clarify misunderstandings about risk and danger
+      by listening to children's concerns and answering questions.
+    start_char: 78
+    end_char: 248
+    support_strength: strong
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_002
+  claim_text: Children's emotional reactions can be heavily influenced by the adults
+    around them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 187
+    page_end: 188
+    segment_id: src.fema.are-you-ready.2004::seg_000281
+    excerpt: Children's coping with disaster or emergencies is often tied to the way
+      parents cope. They can detect adults' fears and sadness.
+    start_char: 330
+    end_char: 422
+    support_strength: strong
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_003
+  claim_text: Providing the right support can help them process the event and reduce
+    anxiety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: Try to understand what is causing anxieties and fears.
+    start_char: 449
+    end_char: 495
+    support_strength: medium
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_004
+  claim_text: Encourage children to express their thoughts and feelings. Listen carefully
+    and answer their questions simply, especially for younger children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: Adults should encourage children and adolescents to share their thoughts
+      and feelings about the incident. Listen to what the child is saying. If a young
+      child is asking questions about the event, answer them simply without the elaboration
+      needed for an older child or adult.
+    start_char: 78
+    end_char: 366
+    support_strength: strong
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_005
+  claim_text: Clarify any misunderstandings about the event and provide reassurance
+    about safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: Clarify misunderstandings about risk and danger by listening to children's
+      concerns and answering questions. Maintain a sense of calm by validating children's
+      concerns and perceptions and with discussion of concrete plans for safety.
+    start_char: 178
+    end_char: 366
+    support_strength: strong
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_006
+  claim_text: Use creative methods like drawing or storytelling if children struggle
+    to express themselves verbally.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: If a child has difficulty expressing feelings, allow the child to draw
+      a picture or tell a story of what happened.
+    start_char: 367
+    end_char: 449
+    support_strength: strong
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_007
+  claim_text: Ignoring children's emotional needs or providing incorrect or overly
+    detailed information can increase anxiety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: Some children are comforted by knowing more or less information than
+      others; decide what level of information your particular child needs.
+    start_char: 248
+    end_char: 366
+    support_strength: medium
+- object_id: psychology.meeting-child-emotional-needs
+  claim_id: clm_008
+  claim_text: Ensure that the information shared is appropriate for the child's age
+    and understanding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000284
+    excerpt: If a young child is asking questions about the event, answer them simply
+      without the elaboration needed for an older child or adult.
+    start_char: 306
+    end_char: 366
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000284
+bundle_overrides:
+  hook: Supporting a child's emotional needs after a disaster is crucial for their
+    recovery and well-being.
+  primer: After a disaster, children can experience a range of emotions, from fear
+    and confusion to anxiety and sadness. These emotional reactions are often influenced
+    by the adults around them, as children look to caregivers for cues on how to respond
+    to the situation. It's important for adults to provide a supportive environment
+    where children feel safe to express their thoughts and feelings. Open communication
+    helps children process the event and reduces misunderstandings about the risks
+    involved. Adults should listen carefully, answer questions simply, and use age-appropriate
+    language. Creative methods like drawing or storytelling can be helpful for children
+    who struggle to articulate their feelings verbally. Ignoring a child's emotional
+    needs or providing too much information can increase anxiety, so it's crucial
+    to find a balance that suits the child's age and understanding.
+  guide: '1. **Create a Safe Environment**: Ensure the child feels physically and
+    emotionally safe. Maintain a calm demeanor and reassure them that they are secure.
+
+
+    2. **Encourage Expression**: Invite the child to share their thoughts and feelings
+    about the disaster. Use open-ended questions to facilitate conversation, such
+    as ''How are you feeling about what happened?''
+
+
+    3. **Listen Actively**: Pay close attention to what the child says. Validate their
+    feelings by acknowledging their emotions, saying things like ''It''s okay to feel
+    scared.''
+
+
+    4. **Clarify Misunderstandings**: Address any misconceptions the child may have
+    about the event. Provide clear, simple explanations to correct misunderstandings
+    about risk and safety.
+
+
+    5. **Use Age-Appropriate Language**: Tailor your communication to the child''s
+    age and comprehension level. Younger children may need simpler explanations, while
+    older children might require more detailed discussions.
+
+
+    6. **Incorporate Creative Expression**: If verbal communication is challenging,
+    encourage the child to express themselves through drawing, storytelling, or play.
+    This can help them process their emotions in a non-threatening way.
+
+
+    7. **Monitor Emotional Cues**: Be attentive to the child''s emotional state. If
+    they show signs of distress or anxiety, offer comfort and reassurance.
+
+
+    8. **Provide Consistent Support**: Regularly check in with the child to see how
+    they are feeling and offer ongoing support as they process the event.'
+  reference:
+  - Encourage open communication.
+  - Listen actively to children's concerns.
+  - Clarify misunderstandings about the event.
+  - Use age-appropriate language.
+  - Incorporate creative expression methods.
+  - Provide reassurance about safety.
+  - Monitor for signs of distress or anxiety.
+  worksheet:
+  - List three ways you can encourage a child to express their feelings after a disaster.
+  - Describe how you would explain a disaster to a 5-year-old versus a 12-year-old.
+  - Create a short story or drawing activity that could help a child express their
+    emotions.
+  - Identify signs that a child might be experiencing anxiety after a disaster.
+  - Role-play a conversation with a child who has misunderstandings about a recent
+    disaster.
+  teach_forward_kit:
+    three_minute_version: After a disaster, support children's emotional needs by
+      encouraging them to express their feelings, listening actively, and clarifying
+      misunderstandings. Use age-appropriate language and creative methods like drawing
+      to help them process the event.
+    ten_minute_outline:
+    - Introduction to children's emotional needs post-disaster.
+    - Importance of adult influence on children's reactions.
+    - Steps to encourage open communication.
+    - Clarifying misunderstandings and providing reassurance.
+    - Using creative methods for expression.
+    - Monitoring and addressing signs of distress.
+    discussion_prompts:
+    - Why is it important to tailor communication to a child's age?
+    - How can creative activities aid in emotional expression?
+    - What are some signs that a child might need additional support after a disaster?

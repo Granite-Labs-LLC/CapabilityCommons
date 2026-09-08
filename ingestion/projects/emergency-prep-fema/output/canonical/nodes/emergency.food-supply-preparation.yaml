@@ -1,0 +1,103 @@
+id: emergency.food-supply-preparation
+slug: emergency.food-supply-preparation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Food Supply Preparation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for preparing emergency food supplies.
+summary_medium: Guidelines for preparing food supplies for emergencies, focusing on
+  non-perishable items and special dietary needs.
+plain_language: Learn how to prepare food supplies for emergencies by focusing on
+  non-perishable items and considering special dietary needs.
+markdown_body: "### What this is\nThis guide provides instructions on how to prepare\
+  \ food supplies for emergencies, ensuring you have adequate nutrition without relying\
+  \ on refrigeration or cooking.\n\n### Why it matters\nIn emergencies, access to\
+  \ fresh food and cooking facilities may be limited. Having a well-prepared food\
+  \ supply can ensure you and your family stay nourished during such times.\n\n###\
+  \ What you need\nA selection of non-perishable food items, a manual can opener,\
+  \ and consideration of any special dietary needs.\n\n### How to do it\n1. Choose\
+  \ non-perishable foods that do not require refrigeration or cooking, such as canned\
+  \ goods and dry mixes. \n2. Avoid foods that increase thirst, like salty snacks.\
+  \ Opt for items like salt-free crackers and canned foods with high liquid content.\
+  \ \n3. Include a manual can opener in your supplies. \n4. Consider any special dietary\
+  \ needs when selecting food items.\n\n### Common failure modes\nIncluding foods\
+  \ that require refrigeration or cooking, or forgetting a manual can opener.\n\n\
+  ### Safety/boundary notes\nEnsure all food items are stored properly to avoid spoilage.\n\
+  \n### Local adaptation notes\nConsider the availability of local food supplies and\
+  \ cultural dietary preferences when selecting items."
+structured_data:
+  tools:
+  - manual can opener
+  materials: []
+  success_criteria: Having a diverse and adequate supply of non-perishable food items
+    that meet the dietary needs of all household members.
+  failure_modes:
+  - Including foods that require refrigeration or cooking
+  safety_boundary: Ensure food is stored in a cool, dry place to prevent spoilage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.food-supply-preparation
+  claim_id: clm_001
+  claim_text: Choose non-perishable foods that do not require refrigeration or cooking,
+    such as canned goods and dry mixes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 35
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000049
+    excerpt: Stock canned foods, dry mixes, and other staples that do not require
+      refrigeration, cooking, water, or special preparation.
+    start_char: 126
+    end_char: 223
+    support_strength: strong
+- object_id: emergency.food-supply-preparation
+  claim_id: clm_002
+  claim_text: Avoid foods that increase thirst, like salty snacks. Opt for items like
+    salt-free crackers and canned foods with high liquid content.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 35
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000049
+    excerpt: Avoid foods that will make you thirsty. Choose salt-free crackers, whole
+      grain cereals, and canned foods with high liquid content.
+    start_char: 0
+    end_char: 125
+    support_strength: strong
+- object_id: emergency.food-supply-preparation
+  claim_id: clm_003
+  claim_text: Include a manual can opener in your supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 35
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000049
+    excerpt: Be sure to include a manual can opener.
+    start_char: 224
+    end_char: 259
+    support_strength: strong
+- object_id: emergency.food-supply-preparation
+  claim_id: clm_004
+  claim_text: Consider any special dietary needs when selecting food items.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 35
+    page_end: 36
+    segment_id: src.fema.are-you-ready.2004::seg_000049
+    excerpt: Include special dietary needs.
+    start_char: 260
+    end_char: 285
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000049

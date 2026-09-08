@@ -1,0 +1,250 @@
+id: education.facing-fear-curriculum
+slug: education.facing-fear-curriculum
+seed_type: module
+co_type: module
+canonical_title: 'Facing Fear: Helping Young People Deal with Terrorism and Tragic
+  Events'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: education
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: A curriculum to help young people manage fears about terrorism and
+  tragic events.
+summary_medium: This curriculum aids young people in dealing with fears related to
+  terrorism and tragic events by reducing anxiety and clarifying safety threats.
+plain_language: Facing Fear is a school curriculum that helps students understand
+  and manage their fears about terrorism and tragic events. It aims to reduce anxiety
+  and confusion about safety threats.
+markdown_body: '### What this is
+
+  Facing Fear is a school curriculum developed by the American Red Cross. It is designed
+  to help young people understand and manage their fears related to terrorism and
+  tragic events.
+
+
+  ### Why it matters
+
+  In today''s world, young people are often exposed to news about terrorism and tragic
+  events, which can lead to anxiety and confusion. This curriculum aims to alleviate
+  these worries by providing clear information and coping strategies.
+
+
+  ### What you need
+
+  Access to the curriculum materials, which can be found online or through your local
+  Red Cross chapter.
+
+
+  ### How to do it
+
+  Implement the curriculum in a school setting, using the provided materials to guide
+  discussions and activities that help students process their emotions and understand
+  safety threats.
+
+
+  ### Common failure modes
+
+  If not properly addressed, discussing these topics can increase anxiety among students.
+  It''s important to follow the curriculum guidelines closely.
+
+
+  ### Safety/boundary notes
+
+  Ensure that discussions are age-appropriate and that students feel safe expressing
+  their feelings.
+
+
+  ### Local adaptation notes
+
+  Contact your local Red Cross chapter for additional resources or support tailored
+  to your community.'
+structured_data:
+  tools:
+  - curriculum materials
+  materials:
+  - printed or digital curriculum guides
+  success_criteria:
+  - Students demonstrate reduced anxiety and improved understanding of safety threats.
+  failure_modes:
+  - Increased anxiety if topics are not handled sensitively.
+  safety_boundary:
+  - Ensure discussions are age-appropriate and supportive.
+requires: []
+suggested_edges: []
+citations:
+- object_id: education.facing-fear-curriculum
+  claim_id: clm_001
+  claim_text: Facing Fear is a school curriculum developed by the American Red Cross.
+    It is designed to help young people understand and manage their fears related
+    to terrorism and tragic events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000065
+    excerpt: 'Publications *Facing Fear: Helping Young People Deal with Terrorism
+      and Tragic Events*. A school curriculum designed to help alleviate worries and
+      clear up confusion about perceived and actual threats to safety.'
+    start_char: 0
+    end_char: 171
+    support_strength: strong
+- object_id: education.facing-fear-curriculum
+  claim_id: clm_002
+  claim_text: In today's world, young people are often exposed to news about terrorism
+    and tragic events, which can lead to anxiety and confusion. This curriculum aims
+    to alleviate these worries by providing clear information and coping strategies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000065
+    excerpt: A school curriculum designed to help alleviate worries and clear up confusion
+      about perceived and actual threats to safety.
+    start_char: 81
+    end_char: 171
+    support_strength: medium
+- object_id: education.facing-fear-curriculum
+  claim_id: clm_003
+  claim_text: Access to the curriculum materials, which can be found online or through
+    your local Red Cross chapter.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000065
+    excerpt: Available online at www.redcross.org/disaster/masters/ facingfear, or
+      contact your local Red Cross chapter.
+    start_char: 172
+    end_char: 244
+    support_strength: strong
+- object_id: education.facing-fear-curriculum
+  claim_id: clm_004
+  claim_text: Implement the curriculum in a school setting, using the provided materials
+    to guide discussions and activities that help students process their emotions
+    and understand safety threats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000065
+    excerpt: A school curriculum designed to help alleviate worries and clear up confusion
+      about perceived and actual threats to safety.
+    start_char: 81
+    end_char: 171
+    support_strength: medium
+- object_id: education.facing-fear-curriculum
+  claim_id: clm_007
+  claim_text: Contact your local Red Cross chapter for additional resources or support
+    tailored to your community.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 47
+    page_end: 47
+    segment_id: src.fema.are-you-ready.2004::seg_000065
+    excerpt: or contact your local Red Cross chapter.
+    start_char: 220
+    end_char: 244
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000065
+bundle_overrides:
+  hook: In a world where young people are frequently exposed to news of terrorism
+    and tragic events, the Facing Fear curriculum empowers them to manage their fears
+    and understand safety threats.
+  primer: Facing Fear is a curriculum developed by the American Red Cross to help
+    young people navigate their emotions and fears related to terrorism and tragic
+    events. With the constant stream of news and information, children and teenagers
+    can often feel overwhelmed and anxious about their safety and the safety of their
+    loved ones. This curriculum provides a structured approach to addressing these
+    fears by offering clear information and practical coping strategies. It is designed
+    to be implemented in school settings, where educators can guide discussions and
+    activities that help students process their emotions and gain a better understanding
+    of perceived and actual threats to safety. The materials are accessible online
+    or through local Red Cross chapters, ensuring that educators have the resources
+    they need to support their students effectively. By following the curriculum guidelines,
+    educators can create a safe environment where students feel comfortable expressing
+    their feelings and learning how to manage their fears.
+  guide: '1. **Access the Materials**: Obtain the Facing Fear curriculum materials
+    online at www.redcross.org/disaster/masters/facingfear or contact your local Red
+    Cross chapter for physical copies.
+
+
+    2. **Prepare the Environment**: Ensure the classroom is a safe and supportive
+    space for open discussions. Set ground rules for respectful communication and
+    confidentiality.
+
+
+    3. **Introduce the Topic**: Begin with a discussion about current events related
+    to terrorism and tragic events. Gauge students'' understanding and feelings about
+    these topics.
+
+
+    4. **Use Curriculum Activities**: Follow the curriculum''s structured activities
+    and discussions. These may include role-playing scenarios, group discussions,
+    and individual reflection exercises.
+
+
+    5. **Facilitate Discussions**: Encourage students to share their thoughts and
+    feelings. Use guided questions to help them articulate their fears and understand
+    the difference between perceived and actual threats.
+
+
+    6. **Teach Coping Strategies**: Introduce coping mechanisms such as deep breathing,
+    mindfulness, and positive thinking. Encourage students to practice these strategies
+    in and out of the classroom.
+
+
+    7. **Evaluate Understanding**: Assess students'' understanding through discussions
+    and feedback. Look for signs of reduced anxiety and improved comprehension of
+    safety threats.
+
+
+    8. **Provide Support**: Be available for one-on-one discussions with students
+    who may need additional support. Refer them to school counselors if necessary.
+
+
+    9. **Adapt to Local Needs**: Contact your local Red Cross chapter for additional
+    resources or support tailored to your community''s specific needs.'
+  reference:
+  - Facing Fear curriculum materials
+  - American Red Cross
+  - www.redcross.org/disaster/masters/facingfear
+  - Local Red Cross chapter
+  - 'Coping strategies: deep breathing, mindfulness, positive thinking'
+  - Age-appropriate discussions
+  - Safety and support in discussions
+  worksheet:
+  - List three things that make you feel safe when you hear about scary events.
+  - Write a short paragraph about a time you felt scared and how you overcame that
+    fear.
+  - Draw a picture of a place where you feel safe and explain why.
+  - Role-play a scenario where you help a friend who is feeling anxious about a news
+    event.
+  - Identify and list three coping strategies you can use when you feel anxious.
+  teach_forward_kit:
+    three_minute_version: Facing Fear is a curriculum by the American Red Cross designed
+      to help young people manage fears related to terrorism and tragic events. It
+      provides clear information and coping strategies to reduce anxiety and confusion
+      about safety threats.
+    ten_minute_outline:
+    - Introduction to Facing Fear and its purpose
+    - Accessing the curriculum materials
+    - Creating a supportive classroom environment
+    - Implementing activities and discussions
+    - Teaching coping strategies
+    - Evaluating student understanding
+    - Adapting resources to local needs
+    discussion_prompts:
+    - How do you feel when you hear about tragic events in the news?
+    - What are some ways we can support each other when we're feeling scared?
+    - Why is it important to understand the difference between perceived and actual
+      threats?
+    - How can coping strategies help us manage our fears?
+    - What role do educators play in helping students feel safe?

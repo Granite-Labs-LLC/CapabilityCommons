@@ -1,0 +1,131 @@
+id: safety.thunderstorm-quiz
+slug: safety.thunderstorm-quiz
+seed_type: assessment
+co_type: assessment
+canonical_title: Thunderstorm Safety Quiz
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: A quiz to test knowledge of thunderstorm safety.
+summary_medium: This quiz assesses understanding of safety measures to take during
+  thunderstorms.
+plain_language: Take this quiz to see how much you know about staying safe during
+  thunderstorms.
+markdown_body: '### What this is
+
+  This is a true or false quiz designed to test your knowledge of thunderstorm safety
+  practices.
+
+
+  ### Why it matters
+
+  Understanding how to stay safe during thunderstorms can prevent injuries and save
+  lives. Thunderstorms can be dangerous, with risks such as lightning strikes and
+  strong winds.
+
+
+  ### What you need
+
+  You need basic knowledge of thunderstorm safety guidelines to complete this quiz.
+
+
+  ### How to do it
+
+  Read each statement about thunderstorm safety and decide if it is true or false.
+  Check your answers against the provided answer key.
+
+
+  ### Common failure modes
+
+  Misunderstanding the protection offered by rubber materials or the safety of using
+  certain devices during a storm.
+
+
+  ### Safety/boundary notes
+
+  Ensure you are in a safe location when taking the quiz, especially if a thunderstorm
+  is occurring.
+
+
+  ### Local adaptation notes
+
+  Consider local weather patterns and common practices when discussing thunderstorm
+  safety.'
+structured_data:
+  type-specific:
+    tools: []
+    materials: []
+    success_criteria:
+    - Correctly identify true or false statements about thunderstorm safety.
+    failure_modes:
+    - Believing incorrect safety measures, such as relying on rubber for protection.
+    safety_boundary:
+    - Ensure quiz participants are not in a hazardous location during a thunderstorm.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.thunderstorm-quiz
+  claim_id: clm_001
+  claim_text: Understanding how to stay safe during thunderstorms can prevent injuries
+    and save lives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: The following are guidelines for what you should do if a thunderstorm
+      is likely in your area...
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.thunderstorm-quiz
+  claim_id: clm_002
+  claim_text: Thunderstorms can be dangerous, with risks such as lightning strikes
+    and strong winds.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000111
+    excerpt: Severe Thunderstorm Warning... Warnings indicate imminent danger to life
+      and property...
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.thunderstorm-quiz
+  claim_id: clm_003
+  claim_text: Misunderstanding the protection offered by rubber materials or the safety
+    of using certain devices during a storm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Remember, rubber-soled shoes and rubber tires provide NO protection from
+      lightning...
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.thunderstorm-quiz
+  claim_id: clm_004
+  claim_text: Ensure you are in a safe location when taking the quiz, especially if
+    a thunderstorm is occurring.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 77
+    page_end: 79
+    segment_id: src.fema.are-you-ready.2004::seg_000114
+    excerpt: Get inside a home, building, or hard top automobile...
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000114

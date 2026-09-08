@@ -1,0 +1,229 @@
+id: emergency.water-shutoff-preparation
+slug: emergency.water-shutoff-preparation
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Preparing to Shut Off Water in an Emergency
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to prepare to shut off your water supply in an emergency.
+summary_medium: This guide helps you locate, test, and label your water shut-off valve
+  to ensure you can quickly and effectively stop water flow in an emergency.
+plain_language: This guide will show you how to find and prepare your water shut-off
+  valve so you can turn off your water supply quickly if there's an emergency.
+markdown_body: '### What this is
+
+  This guide provides steps to prepare for shutting off your home''s water supply
+  in an emergency.
+
+
+  ### Why it matters
+
+  Being able to quickly shut off your water supply can prevent water damage and other
+  hazards during emergencies.
+
+
+  ### What you need
+
+  A valve tag for labeling the shut-off valve.
+
+
+  ### How to do it
+
+  1. Locate the shut-off valve for the main water line entering your house.
+
+  2. Check that the valve can be completely shut off; replace it if it''s rusted or
+  doesn''t close fully.
+
+  3. Label the valve with a tag for easy identification.
+
+  4. Ensure all household members know the valve''s location and how to operate it.
+
+
+  ### Common failure modes
+
+  The valve may be rusted open or only partially close, preventing effective shut-off.
+
+
+  ### Safety/boundary notes
+
+  Ensure the valve is accessible and operable by all responsible household members.
+
+
+  ### Local adaptation notes
+
+  Consider local plumbing codes and practices when replacing or maintaining the valve.'
+structured_data:
+  tools:
+  - valve tag
+  materials: []
+  success_criteria:
+  - Valve is easily accessible and operable
+  - All household members are informed
+  failure_modes:
+  - Valve rusted open
+  - Valve partially closes
+  safety_boundary: []
+  implementation:
+    smallest_viable_version: Locate and label the water shut-off valve.
+    tools:
+    - valve tag
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: low
+    success_checks:
+    - Valve is labeled and operable
+    - Household members know the location
+    stop_conditions:
+    - Valve cannot be located
+    - Valve is inoperable
+    common_mistakes:
+    - Not checking valve functionality
+    - Forgetting to inform household members
+    variants:
+    - label: Urban
+      when: In apartment buildings
+      notes: Check with building management for valve location.
+    when_to_escalate:
+    - Valve replacement needed
+    - Valve location unknown
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.water-shutoff-preparation
+  claim_id: clm_001
+  claim_text: Locate the shut-off valve for the main water line entering your house.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Locate the shut-off valve for the water line that enters your house.
+    start_char: 0
+    end_char: 62
+    support_strength: strong
+- object_id: emergency.water-shutoff-preparation
+  claim_id: clm_002
+  claim_text: Check that the valve can be completely shut off; replace it if it's
+    rusted or doesn't close fully.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Make sure this valve can be completely shut off. Your valve may be rusted
+      open, or it may only partially close. Replace it if necessary.
+    start_char: 63
+    end_char: 184
+    support_strength: strong
+- object_id: emergency.water-shutoff-preparation
+  claim_id: clm_003
+  claim_text: Label the valve with a tag for easy identification.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Label this valve with a tag for easy identifi cation, and make sure all
+      household members know where it is located.
+    start_char: 185
+    end_char: 267
+    support_strength: strong
+- object_id: emergency.water-shutoff-preparation
+  claim_id: clm_004
+  claim_text: Ensure all household members know the valve's location and how to operate
+    it.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: make sure all household members know where it is located.
+    start_char: 227
+    end_char: 267
+    support_strength: strong
+- object_id: emergency.water-shutoff-preparation
+  claim_id: clm_005
+  claim_text: The valve may be rusted open or only partially close, preventing effective
+    shut-off.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Your valve may be rusted open, or it may only partially close.
+    start_char: 104
+    end_char: 159
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000036
+bundle_overrides:
+  hook: Knowing how to shut off your home's water supply in an emergency can prevent
+    costly water damage and ensure your family's safety.
+  primer: In an emergency, such as a burst pipe or natural disaster, being able to
+    quickly shut off your home's water supply is crucial. The main water shut-off
+    valve is a key component in this process. It is typically located where the main
+    water line enters your home. Ensuring that this valve is functional and easily
+    accessible can save you from significant water damage and other hazards. Regular
+    maintenance, such as checking for rust or partial closure, is necessary to ensure
+    the valve works when needed. Additionally, labeling the valve and informing all
+    household members of its location and operation are essential steps in emergency
+    preparedness. This guide will walk you through the process of locating, testing,
+    and labeling your water shut-off valve.
+  guide: '1. **Locate the Shut-Off Valve**: Find the main water shut-off valve in
+    your home. It is usually located where the main water line enters the house, such
+    as in the basement, crawl space, or utility area.
+
+
+    2. **Test the Valve**: Turn the valve to ensure it can be completely shut off.
+    If the valve is rusted open or only partially closes, it may not function properly
+    in an emergency. If necessary, replace the valve to ensure it can fully stop the
+    water flow.
+
+
+    3. **Label the Valve**: Use a valve tag to label the shut-off valve clearly. This
+    will help you and others identify it quickly during an emergency.
+
+
+    4. **Inform Household Members**: Make sure all household members know the location
+    of the shut-off valve and how to operate it. Conduct a brief demonstration if
+    needed.
+
+
+    5. **Regular Maintenance**: Periodically check the valve to ensure it remains
+    operable and free of rust or other obstructions. Regular checks will help ensure
+    that the valve is ready to function when needed.'
+  reference:
+  - Locate the main water shut-off valve.
+  - Check valve functionality regularly.
+  - Label the valve for easy identification.
+  - Inform all household members about the valve's location and operation.
+  - Replace the valve if it is rusted or does not close fully.
+  worksheet:
+  - Find and list the location of your home's main water shut-off valve.
+  - Test the valve to ensure it can be completely shut off.
+  - Create a label for the valve and attach it.
+  - Discuss with household members where the valve is located and how to use it.
+  - Schedule a regular check-up for the valve's functionality.
+  teach_forward_kit:
+    three_minute_version: Locate and test your home's main water shut-off valve, label
+      it, and ensure everyone in the household knows how to use it in an emergency.
+    ten_minute_outline:
+    - Introduction to the importance of water shut-off valves.
+    - Step-by-step guide to locating and testing the valve.
+    - Instructions on labeling the valve.
+    - Discussion on informing household members.
+    - Tips for regular maintenance and checks.
+    discussion_prompts:
+    - Why is it important to know how to shut off your home's water supply?
+    - What challenges might you face in locating or operating the shut-off valve?
+    - How can you ensure all household members are prepared to use the valve in an
+      emergency?

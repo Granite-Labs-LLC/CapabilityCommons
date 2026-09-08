@@ -1,0 +1,199 @@
+id: emergency-preparedness.natural-hazards-overview
+slug: emergency-preparedness.natural-hazards-overview
+seed_type: module
+co_type: module
+canonical_title: Overview of Natural Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Learn about natural hazards and how to incorporate this knowledge into
+  your disaster plan.
+summary_medium: This module provides an overview of natural hazards, their characteristics,
+  associated terms, and protective measures. It aims to help individuals incorporate
+  this information into their family disaster plans.
+plain_language: Understand different types of natural hazards and learn how to prepare
+  for them by including this information in your family disaster plan.
+markdown_body: '# What this is
+
+  This module offers an overview of various natural hazards, including their characteristics,
+  associated terms, and protective measures. It is designed to help individuals understand
+  the risks posed by natural hazards and how to incorporate this knowledge into their
+  family disaster plans.
+
+
+  # Why it matters
+
+  Natural hazards such as floods, fires, earthquakes, tornadoes, and windstorms affect
+  thousands of people every year. Understanding these hazards and preparing for them
+  can help protect lives, property, and communities.
+
+
+  # What you need
+
+  To effectively use this module, you need to be willing to learn about different
+  natural hazards and be prepared to update your family disaster plan with this information.
+
+
+  # How to do it
+
+  1. Learn about the natural hazards that pose a risk to your area. 2. Understand
+  the characteristics and terms associated with each hazard. 3. Take protective measures
+  to avoid or lessen the impact of these events. 4. Include this information in your
+  family disaster plan.
+
+
+  # Common failure modes
+
+  Failing to update your disaster plan with new information about natural hazards
+  or neglecting to take recommended protective measures can increase risk during an
+  event.
+
+
+  # Safety/boundary notes
+
+  Ensure that all family members are aware of the disaster plan and understand the
+  protective measures to take during a natural hazard event.
+
+
+  # Local adaptation notes
+
+  Adapt the information and protective measures to suit the specific natural hazards
+  prevalent in your geographical location.'
+structured_data:
+  definition: Natural hazards are natural events that threaten lives, property, and
+    other assets. They often occur in the same geographical locations due to weather
+    patterns or physical characteristics of an area.
+  key_questions:
+  - What natural hazards are common in my area?
+  - What are the characteristics and terms associated with these hazards?
+  - What protective measures can be taken to mitigate the impact of these hazards?
+  misconceptions:
+  - Natural hazards cannot be predicted.
+  - There is nothing that can be done to prepare for natural hazards.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.natural-hazards-overview
+  claim_id: clm_001
+  claim_text: This module offers an overview of various natural hazards, including
+    their characteristics, associated terms, and protective measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: Part 2 includes information about many types of natural hazards. Natural
+      hazards are natural events that threaten lives, property, and other assets.
+      Often, natural hazards can be predicted. They tend to occur repeatedly in the
+      same geographical locations because they are related to weather patterns or
+      physical characteristics of an area.
+    start_char: 0
+    end_char: 353
+    support_strength: strong
+- object_id: emergency-preparedness.natural-hazards-overview
+  claim_id: clm_002
+  claim_text: Natural hazards such as floods, fires, earthquakes, tornadoes, and windstorms
+    affect thousands of people every year.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: Natural hazards such as fl ood, fi re, earthquake, tornado, and windstorms
+      affect thousands of people every year.
+    start_char: 354
+    end_char: 422
+    support_strength: strong
+- object_id: emergency-preparedness.natural-hazards-overview
+  claim_id: clm_003
+  claim_text: Understanding these hazards and preparing for them can help protect
+    lives, property, and communities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: We need to know what our risks are from natrual hazards and take sensible
+      precautions to protect ourselves, our families, and our communities.
+    start_char: 423
+    end_char: 515
+    support_strength: strong
+- object_id: emergency-preparedness.natural-hazards-overview
+  claim_id: clm_004
+  claim_text: Include this information in your family disaster plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: Use Part 2 to learn about the hazards that pose a risk to you. Include
+      the pertinent information in your family disaster plan.
+    start_char: 516
+    end_char: 605
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000066
+bundle_overrides:
+  hook: Understanding natural hazards can save lives and protect property by helping
+    you prepare effectively.
+  primer: Natural hazards are events that occur due to natural processes and can pose
+    significant threats to life, property, and the environment. Common examples include
+    floods, fires, earthquakes, tornadoes, and windstorms. These hazards often occur
+    in predictable patterns, usually in specific geographical areas due to weather
+    conditions or physical characteristics of the region. By understanding these hazards,
+    individuals and communities can take proactive steps to mitigate their impact.
+    This involves learning about the characteristics and terms associated with each
+    hazard, recognizing the risks they pose, and incorporating this knowledge into
+    a family disaster plan. Preparing for natural hazards is crucial as it can significantly
+    reduce the potential for harm and increase resilience against these events.
+  guide: "1. Identify the natural hazards common in your area by researching local\
+    \ history and consulting with local authorities or resources. \n2. Learn about\
+    \ the characteristics of each hazard. For example, understand how floods develop,\
+    \ the signs of an approaching tornado, or the aftershocks of an earthquake. \n\
+    3. Familiarize yourself with the terminology associated with these hazards, such\
+    \ as 'evacuation order' for fires or 'seismic activity' for earthquakes. \n4.\
+    \ Develop a family disaster plan that includes specific actions to take for each\
+    \ type of hazard. This plan should cover evacuation routes, emergency contacts,\
+    \ and a communication strategy. \n5. Gather necessary supplies such as food, water,\
+    \ first aid kits, and other essentials that might be needed during a natural hazard\
+    \ event. \n6. Regularly review and update your disaster plan to incorporate new\
+    \ information or changes in your environment or family situation. \n7. Educate\
+    \ all family members about the plan and conduct regular drills to ensure everyone\
+    \ knows what to do in case of an emergency."
+  reference:
+  - 'Natural hazards: floods, fires, earthquakes, tornadoes, windstorms'
+  - 'Characteristics: predictable patterns, geographical occurrence'
+  - 'Protective measures: family disaster plan, emergency supplies'
+  - 'Key terms: evacuation order, seismic activity'
+  - 'Resources: local authorities, historical data'
+  worksheet:
+  - List the natural hazards that are most likely to occur in your area.
+  - Describe the characteristics of two natural hazards you might face.
+  - Create a basic family disaster plan for one type of natural hazard.
+  - Identify three protective measures you can take to prepare for a natural hazard.
+  - Conduct a mock drill with your family based on your disaster plan.
+  teach_forward_kit:
+    three_minute_version: Natural hazards are events like floods and earthquakes that
+      can threaten lives and property. By understanding these hazards and preparing
+      through a family disaster plan, you can reduce risks and protect your loved
+      ones.
+    ten_minute_outline:
+    - Introduction to natural hazards
+    - Examples of common natural hazards
+    - Characteristics and patterns of occurrence
+    - Importance of understanding and preparing for hazards
+    - Steps to create a family disaster plan
+    - Review and update strategies for disaster preparedness
+    discussion_prompts:
+    - What natural hazards are you most concerned about in your area?
+    - How can understanding natural hazards change your approach to emergency preparedness?
+    - What challenges might you face when creating a family disaster plan?
+    - How can communities work together to improve preparedness for natural hazards?

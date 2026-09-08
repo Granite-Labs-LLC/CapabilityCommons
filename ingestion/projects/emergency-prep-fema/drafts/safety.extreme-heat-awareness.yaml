@@ -1,0 +1,145 @@
+id: safety.extreme-heat-awareness
+slug: safety.extreme-heat-awareness
+seed_type: extracted
+co_type: concept_note
+canonical_title: Extreme Heat Awareness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understanding the dangers and effects of extreme heat.
+summary_medium: This section discusses the dangers of extreme heat, its effects on
+  the human body, and the increased risks for certain populations and urban areas.
+plain_language: Extreme heat can be dangerous because it makes it hard for our bodies
+  to stay cool. This can lead to illnesses, especially in older adults, young children,
+  and people who are sick or overweight. Urban areas can be hotter due to the 'urban
+  heat island effect.'
+markdown_body: '### What this is
+
+  Extreme heat refers to very high temperatures that can be dangerous to human health.
+  It becomes particularly hazardous when combined with high humidity, which makes
+  it difficult for the body to cool itself through evaporation.
+
+
+  ### Why it matters
+
+  Extreme heat can lead to serious health issues, including heat-related illnesses.
+  It is especially dangerous for vulnerable populations such as older adults, young
+  children, and those with pre-existing health conditions. Urban areas are often more
+  affected due to the ''urban heat island effect,'' where concrete and asphalt retain
+  heat.
+
+
+  ### What you need
+
+  Awareness of the risks associated with extreme heat and understanding of how to
+  protect oneself and others, especially in urban environments.
+
+
+  ### How to do it
+
+  Stay informed about weather conditions, limit outdoor activities during peak heat,
+  stay hydrated, and seek air-conditioned environments when possible. Pay special
+  attention to vulnerable individuals.
+
+
+  ### Common failure modes
+
+  Overexposure to heat and over-exercising during high temperatures can lead to heat-related
+  illnesses.
+
+
+  ### Safety/boundary notes
+
+  Ensure that vulnerable populations are monitored during extreme heat events.
+
+
+  ### Local adaptation notes
+
+  Urban areas may require additional measures due to higher nighttime temperatures
+  caused by the urban heat island effect.'
+structured_data:
+  definition: Extreme heat is a period of high temperatures that can pose health risks.
+  key_questions:
+  - What are the health risks associated with extreme heat?
+  - Who is most vulnerable to heat-related illnesses?
+  - How does the urban heat island effect impact temperatures?
+  misconceptions:
+  - Extreme heat only affects people who are outdoors.
+  - Urban and rural areas experience the same heat risks.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.extreme-heat-awareness
+  claim_id: clm_001
+  claim_text: Extreme heat refers to very high temperatures that can be dangerous
+    to human health. It becomes particularly hazardous when combined with high humidity,
+    which makes it difficult for the body to cool itself through evaporation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Heat kills by pushing the human body beyond its limits. In extreme heat
+      and high humidity, evaporation is slowed and the body must work extra hard to
+      maintain a normal temperature.
+    start_char: 0
+    end_char: 132
+    support_strength: strong
+- object_id: safety.extreme-heat-awareness
+  claim_id: clm_002
+  claim_text: Extreme heat can lead to serious health issues, including heat-related
+    illnesses. It is especially dangerous for vulnerable populations such as older
+    adults, young children, and those with pre-existing health conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Most heat disorders occur because the victim has been overexposed to
+      heat or has over-exercised for his or her age and physical condition. Older
+      adults, young children, and those who are sick or overweight are more likely
+      to succumb to extreme heat.
+    start_char: 134
+    end_char: 329
+    support_strength: strong
+- object_id: safety.extreme-heat-awareness
+  claim_id: clm_003
+  claim_text: Urban areas are often more affected due to the 'urban heat island effect,'
+    where concrete and asphalt retain heat.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Consequently, people living in urban areas may be at greater risk from
+      the effects of a prolonged heat wave than those living in rural areas. Also,
+      asphalt and concrete store heat longer and gradually release heat at night,
+      which can produce higher nighttime temperatures known as the 'urban heat island
+      effect.'
+    start_char: 331
+    end_char: 545
+    support_strength: strong
+- object_id: safety.extreme-heat-awareness
+  claim_id: clm_004
+  claim_text: Overexposure to heat and over-exercising during high temperatures can
+    lead to heat-related illnesses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 86
+    page_end: 87
+    segment_id: src.fema.are-you-ready.2004::seg_000132
+    excerpt: Most heat disorders occur because the victim has been overexposed to
+      heat or has over-exercised for his or her age and physical condition.
+    start_char: 134
+    end_char: 245
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000132

@@ -1,0 +1,215 @@
+id: preparedness.important-documents
+slug: preparedness.important-documents
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Safely Storing Important Documents for Disaster Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: preparedness
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Learn how to store important documents safely and make copies for your
+  disaster supplies kit.
+summary_medium: This guide advises on the safe storage of important documents and
+  making copies for inclusion in a disaster supplies kit, ensuring their availability
+  during emergencies.
+plain_language: Keep your important documents safe by storing them in a secure location
+  and making copies for your emergency kit.
+markdown_body: '### What this is
+
+  This guide helps you understand how to store important documents securely and make
+  copies for your disaster supplies kit.
+
+
+  ### Why it matters
+
+  In emergencies, having access to important documents like insurance policies and
+  property records can be crucial for recovery and peace of mind.
+
+
+  ### What you need
+
+  A safety deposit box or another secure location, and materials to make copies of
+  your documents.
+
+
+  ### How to do it
+
+  Store original documents such as insurance policies, deeds, and property records
+  in a safety deposit box or another secure place away from your home. Make copies
+  of these documents and include them in your disaster supplies kit.
+
+
+  ### Common failure modes
+
+  Failing to update copies regularly, not storing originals in a secure location,
+  or forgetting to include copies in the disaster kit.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the location where you store your documents is secure and accessible
+  only to trusted individuals.
+
+
+  ### Local adaptation notes
+
+  Consider local risks such as floods or fires when choosing a storage location for
+  your documents.'
+structured_data:
+  tools:
+  - safety deposit box
+  materials: []
+  success_criteria:
+  - Documents are stored securely
+  - Copies are included in the disaster kit
+  failure_modes:
+  - Documents are lost or damaged
+  - Copies are outdated
+  safety_boundary: Ensure the storage location is secure and accessible
+  implementation:
+    smallest_viable_version: Store copies of important documents in a secure location.
+    tools:
+    - safety deposit box
+    materials: []
+    expected_time: 1 hour
+    expected_cost: low
+    success_checks:
+    - Documents are stored securely
+    - Copies are included in the disaster kit
+    stop_conditions:
+    - All documents are safely stored and copies are made
+    common_mistakes:
+    - Not updating document copies
+    - Storing documents in an insecure location
+    variants:
+    - label: Urban
+      when: Living in a city with easy access to banks
+      notes: Consider using a bank's safety deposit box for secure storage.
+    - label: Off-grid
+      when: Living in remote areas
+      notes: Use a fireproof and waterproof safe at home.
+    when_to_escalate:
+    - If you cannot secure a safe storage location
+requires: []
+suggested_edges: []
+citations:
+- object_id: preparedness.important-documents
+  claim_id: clm_001
+  claim_text: Store original documents such as insurance policies, deeds, and property
+    records in a safety deposit box or another secure place away from your home.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home.
+    start_char: 295
+    end_char: 424
+    support_strength: strong
+- object_id: preparedness.important-documents
+  claim_id: clm_002
+  claim_text: Make copies of these documents and include them in your disaster supplies
+    kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Make copies of important documents for your disaster supplies kit.
+    start_char: 425
+    end_char: 479
+    support_strength: strong
+- object_id: preparedness.important-documents
+  claim_id: clm_003
+  claim_text: Ensure that the location where you store your documents is secure and
+    accessible only to trusted individuals.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 29
+    segment_id: src.fema.are-you-ready.2004::seg_000039
+    excerpt: Store important documents such as insurance policies, deeds, property
+      records, and other important papers in a safe place, such as a safety deposit
+      box away from your home.
+    start_char: 295
+    end_char: 424
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000039
+bundle_overrides:
+  hook: In emergencies, having quick access to important documents like insurance
+    policies and property records can be crucial for recovery and peace of mind.
+  primer: Disaster preparedness involves more than just having food and water on hand;
+    it also means ensuring that your important documents are safe and accessible.
+    These documents include insurance policies, property deeds, birth certificates,
+    and other critical papers that may be needed to prove ownership, identity, or
+    coverage after a disaster. Storing these documents securely is essential to protect
+    them from damage or loss. A safety deposit box at a bank is a recommended option
+    because it is both secure and away from potential home hazards like fire or flooding.
+    Additionally, making copies of these documents and including them in your disaster
+    supplies kit ensures that you have access to them even if you cannot reach the
+    originals. It's important to regularly update these copies to reflect any changes
+    in your documents. Ensuring that only trusted individuals have access to these
+    documents is also crucial for security.
+  guide: '1. **Gather Important Documents**: Collect all essential documents such
+    as insurance policies, property deeds, birth certificates, and any other critical
+    papers.
+
+
+    2. **Choose a Secure Storage Location**: Decide on a secure location for the original
+    documents. A safety deposit box at a bank is ideal because it is secure and not
+    located at your home, reducing the risk of loss due to home-related disasters.
+
+
+    3. **Make Copies**: Create copies of all important documents. These can be physical
+    copies or digital scans stored on a secure, password-protected device.
+
+
+    4. **Include Copies in Your Disaster Kit**: Place the copies in your disaster
+    supplies kit. Ensure they are stored in a waterproof and fireproof container to
+    protect them from damage.
+
+
+    5. **Regularly Update Copies**: Set a reminder to review and update the copies
+    regularly, especially after any changes to the documents.
+
+
+    6. **Limit Access**: Ensure that the location where you store your documents is
+    secure and accessible only to trusted individuals. This prevents unauthorized
+    access and ensures that the documents are available when needed.'
+  reference:
+  - Store original documents in a safety deposit box or secure location away from
+    home.
+  - Make copies of important documents for your disaster supplies kit.
+  - Ensure storage locations are secure and accessible only to trusted individuals.
+  - Regularly update document copies to reflect any changes.
+  worksheet:
+  - List all important documents you need to secure.
+  - Identify a secure location for storing original documents.
+  - Create a checklist for making copies of each document.
+  - Plan a schedule for regularly updating document copies.
+  - Discuss with family members who will have access to these documents.
+  teach_forward_kit:
+    three_minute_version: Store your important documents like insurance policies in
+      a secure location such as a safety deposit box. Make copies and include them
+      in your disaster kit to ensure you have access during emergencies.
+    ten_minute_outline:
+    - Introduction to the importance of document security in disaster preparedness.
+    - Steps to gather and identify important documents.
+    - Options for secure storage locations.
+    - How to make and store copies in a disaster kit.
+    - Importance of updating copies regularly.
+    - Ensuring limited and secure access to documents.
+    discussion_prompts:
+    - Why is it important to store documents away from home?
+    - What are the risks of not updating document copies regularly?
+    - How can you ensure that only trusted individuals have access to your documents?

@@ -1,0 +1,177 @@
+id: emergency.preparedness-overview
+slug: emergency.preparedness-overview
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Overview of Emergency Preparedness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Understand the importance of being prepared for disasters.
+summary_medium: An overview of the importance of being prepared for disasters, highlighting
+  the need for self-sufficiency for at least three days.
+plain_language: Learn why it's crucial to be prepared for emergencies and how to ensure
+  you can take care of yourself for at least three days.
+markdown_body: '### What this is
+
+  This concept note provides an overview of the importance of being prepared for emergencies
+  and disasters. It emphasizes the need for individuals to be self-sufficient for
+  at least three days following a disaster.
+
+
+  ### Why it matters
+
+  Disasters can disrupt lives and communities, causing significant damage to people
+  and property. While local government and disaster-relief organizations will assist,
+  they may not be able to reach everyone immediately. Being prepared ensures that
+  you can manage on your own until help arrives.
+
+
+  ### What you need
+
+  To be prepared, you should have a plan for shelter, first aid, food, water, and
+  sanitation for at least three days.
+
+
+  ### How to do it
+
+  Identify the types of disasters that could occur in your area, such as hurricanes,
+  earthquakes, or extreme weather. Prepare a kit with essential supplies and create
+  a plan for how you will respond to these events.
+
+
+  ### Common failure modes
+
+  Failing to prepare adequately can lead to an inability to be self-sufficient, which
+  can exacerbate the impact of a disaster.
+
+
+  ### Safety/boundary notes
+
+  Ensure that your preparedness plan includes considerations for safety and security
+  during a disaster.
+
+
+  ### Local adaptation notes
+
+  Adapt your preparedness plan to the specific types of disasters that are most likely
+  to occur in your local area.'
+structured_data:
+  definition: Emergency preparedness involves planning and preparing for potential
+    disasters to ensure safety and self-sufficiency.
+  key_questions:
+  - What types of disasters are most likely to occur in my area?
+  - How can I ensure I have enough supplies for at least three days?
+  misconceptions:
+  - Believing that government aid will always arrive immediately after a disaster.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparedness-overview
+  claim_id: clm_001
+  claim_text: This concept note provides an overview of the importance of being prepared
+    for emergencies and disasters.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: The need to prepare is real. Disasters disrupt hundreds of thousands
+      of lives every year. Each disaster has lasting effects, both to people and property.
+    start_char: 0
+    end_char: 126
+    support_strength: strong
+- object_id: emergency.preparedness-overview
+  claim_id: clm_002
+  claim_text: It emphasizes the need for individuals to be self-sufficient for at
+    least three days following a disaster.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should also be ready to be self-sufficient for at least three days.
+      This may mean providing for your own shelter, first aid, food, water, and sanitation.
+    start_char: 302
+    end_char: 417
+    support_strength: strong
+- object_id: emergency.preparedness-overview
+  claim_id: clm_003
+  claim_text: Disasters can disrupt lives and communities, causing significant damage
+    to people and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: Disasters disrupt hundreds of thousands of lives every year. Each disaster
+      has lasting effects, both to people and property.
+    start_char: 0
+    end_char: 126
+    support_strength: strong
+- object_id: emergency.preparedness-overview
+  claim_id: clm_004
+  claim_text: While local government and disaster-relief organizations will assist,
+    they may not be able to reach everyone immediately.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: If a disaster occurs in your community, local government and disaster-relief
+      organizations will try to help you, but you need to be ready as well. Local
+      responders may not be able to reach you immediately, or they may need to focus
+      their efforts elsewhere.
+    start_char: 127
+    end_char: 301
+    support_strength: strong
+- object_id: emergency.preparedness-overview
+  claim_id: clm_005
+  claim_text: Being prepared ensures that you can manage on your own until help arrives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should also be ready to be self-sufficient for at least three days.
+    start_char: 302
+    end_char: 348
+    support_strength: medium
+- object_id: emergency.preparedness-overview
+  claim_id: clm_006
+  claim_text: To be prepared, you should have a plan for shelter, first aid, food,
+    water, and sanitation for at least three days.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: This may mean providing for your own shelter, first aid, food, water,
+      and sanitation.
+    start_char: 349
+    end_char: 417
+    support_strength: strong
+- object_id: emergency.preparedness-overview
+  claim_id: clm_007
+  claim_text: Identify the types of disasters that could occur in your area, such
+    as hurricanes, earthquakes, or extreme weather.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 8
+    page_end: 8
+    segment_id: src.fema.are-you-ready.2004::seg_000010
+    excerpt: You should know how to respond to severe weather or any disaster that
+      could occur in your area—hurricanes, earthquakes, extreme cold, flooding, or
+      terrorism.
+    start_char: 418
+    end_char: 546
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000010

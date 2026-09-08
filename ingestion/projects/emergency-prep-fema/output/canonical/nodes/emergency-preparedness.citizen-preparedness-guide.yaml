@@ -1,0 +1,162 @@
+id: emergency-preparedness.citizen-preparedness-guide
+slug: emergency-preparedness.citizen-preparedness-guide
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Citizen Preparedness Guide
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: A guide to help citizens prepare for emergencies.
+summary_medium: This guide provides essential information on how citizens can prepare
+  for various emergencies, enhancing readiness and resilience.
+plain_language: Learn how to prepare yourself and your family for emergencies with
+  this comprehensive guide.
+markdown_body: '### What this is
+
+  This guide is an introduction to citizen preparedness, offering detailed information
+  on how individuals and families can prepare for emergencies.
+
+
+  ### Why it matters
+
+  Being prepared for emergencies can significantly reduce the impact of disasters
+  on individuals and communities, ensuring safety and resilience.
+
+
+  ### What you need
+
+  A willingness to plan and gather necessary resources for emergency situations.
+
+
+  ### How to do it
+
+  Follow the steps outlined in the guide to assess risks, create a plan, and assemble
+  an emergency kit.
+
+
+  ### Common failure modes
+
+  Failing to regularly update emergency plans and supplies, or not practicing emergency
+  drills.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all family members are aware of the emergency plan and know how to execute
+  it safely.
+
+
+  ### Local adaptation notes
+
+  Consider local risks and resources when developing your emergency preparedness plan.'
+structured_data:
+  definition: Citizen preparedness involves planning and taking actions to ensure
+    safety and resilience in the face of emergencies.
+  key_questions:
+  - What types of emergencies are most likely to occur in my area?
+  - What steps can I take to prepare my family for these emergencies?
+  misconceptions:
+  - Emergency preparedness is only necessary for large-scale disasters.
+  - Once a plan is made, it does not need to be updated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_001
+  claim_text: This guide is an introduction to citizen preparedness, offering detailed
+    information on how individuals and families can prepare for emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The guide has been designed to help the citizens of this nation learn
+      how to protect themselves and their families against all types of hazards.
+    start_char: 286
+    end_char: 374
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies can significantly reduce the impact of
+    disasters on individuals and communities, ensuring safety and resilience.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property.
+    start_char: 375
+    end_char: 510
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_003
+  claim_text: Follow the steps outlined in the guide to assess risks, create a plan,
+    and assemble an emergency kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: Also included is information on how to assemble a disaster supplies kit
+      that contains the food, water, and other supplies in sufficient quantity for
+      individuals and their families to survive following a disaster.
+    start_char: 511
+    end_char: 678
+    support_strength: strong
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_004
+  claim_text: Failing to regularly update emergency plans and supplies, or not practicing
+    emergency drills.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property.
+    start_char: 375
+    end_char: 510
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_005
+  claim_text: Ensure that all family members are aware of the emergency plan and know
+    how to execute it safely.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: The focus of the content is on how to develop, practice, and maintain
+      emergency plans that reflect what must be done before, during, and after a disaster
+      to protect people and their property.
+    start_char: 375
+    end_char: 510
+    support_strength: medium
+- object_id: emergency-preparedness.citizen-preparedness-guide
+  claim_id: clm_006
+  claim_text: Consider local risks and resources when developing your emergency preparedness
+    plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 2
+    page_end: 2
+    segment_id: src.fema.are-you-ready.2004::seg_000002
+    excerpt: This publication is, however, too brief to cover every factor, situation,
+      or difference in buildings, infrastructure, or other environmental features
+      that might be of interest.
+    start_char: 168
+    end_char: 285
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000001

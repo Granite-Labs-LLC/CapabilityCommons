@@ -1,0 +1,288 @@
+id: fire-safety.general-guidelines
+slug: fire-safety.general-guidelines
+seed_type: extracted
+co_type: skill_guide
+canonical_title: General Fire Safety Guidelines
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: fire-safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for fire safety including the use of extinguishers and sprinkler
+  systems.
+summary_medium: Learn essential fire safety practices such as using fire extinguishers,
+  considering sprinkler systems, and proper escape techniques.
+plain_language: This guide covers basic fire safety tips, including how to use fire
+  extinguishers, the importance of sprinkler systems, and safe ways to escape a fire.
+markdown_body: '### What this is
+
+  This guide provides general fire safety guidelines to help you prepare for and respond
+  to fire emergencies effectively.
+
+
+  ### Why it matters
+
+  Understanding fire safety can save lives and minimize damage during a fire. Proper
+  preparation and response can prevent injuries and ensure a safe escape.
+
+
+  ### What you need
+
+  - A-B-C-type fire extinguishers
+
+  - Knowledge of fire escape routes
+
+  - Possibly an automatic fire sprinkler system
+
+
+  ### How to do it
+
+  1. Install A-B-C-type fire extinguishers in your home and teach family members how
+  to use them.
+
+  2. Consider installing an automatic fire sprinkler system.
+
+  3. Have your local fire department inspect your residence for fire safety.
+
+  4. Practice ''Stop, Drop, and Roll'' if your clothes catch fire.
+
+  5. Check closed doors for heat before opening during a fire.
+
+  6. Crawl low under smoke to your exit and close doors behind you.
+
+  7. Once out, stay out and call 9-1-1.
+
+
+  ### Common failure modes
+
+  Uninspected systems and non-functional extinguishers can fail during a fire emergency.
+
+
+  ### Safety/boundary notes
+
+  Always ensure fire safety equipment is functional and regularly inspected. Do not
+  reenter a burning building once you have exited.
+
+
+  ### Local adaptation notes
+
+  Consult with local fire departments for specific fire safety regulations and resources
+  available in your area.'
+structured_data:
+  tools:
+  - A-B-C-type fire extinguishers
+  materials: []
+  success_criteria:
+  - Functional fire extinguishers
+  - Clear escape routes
+  - Family members trained in fire safety
+  failure_modes:
+  - Uninspected systems
+  - Non-functional extinguishers
+  safety_boundary: Ensure all fire safety equipment is regularly inspected and functional.
+  implementation:
+    smallest_viable_version: Install and maintain A-B-C-type fire extinguishers and
+      practice fire escape techniques.
+    tools:
+    - A-B-C-type fire extinguishers
+    materials: []
+    expected_time: Varies depending on installation and training
+    expected_cost: medium
+    success_checks:
+    - All family members know how to use fire extinguishers
+    - Regular inspections of fire safety equipment
+    stop_conditions:
+    - If fire safety equipment is not functional
+    - If escape routes are blocked
+    common_mistakes:
+    - Not inspecting fire extinguishers regularly
+    - Not practicing escape routes
+    variants: []
+    when_to_escalate:
+    - If fire safety equipment is not functioning
+    - If unsure about fire safety measures
+requires: []
+suggested_edges: []
+citations:
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_001
+  claim_text: Install A-B-C-type fire extinguishers in your home and teach family
+    members how to use them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Install A-B-C-type fi re extinguishers in your residence and teach family
+      members how to use them.
+    start_char: 38
+    end_char: 115
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_002
+  claim_text: Consider installing an automatic fire sprinkler system.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Consider installing an automatic fi re sprinkler system in your residence.
+    start_char: 116
+    end_char: 176
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_003
+  claim_text: Have your local fire department inspect your residence for fire safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Ask your local fi re department to inspect your residence for fi re safety
+      and prevention.
+    start_char: 177
+    end_char: 245
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_004
+  claim_text: Practice 'Stop, Drop, and Roll' if your clothes catch fire.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: 'If your clothes catch on fi re, you should: • Stop, drop, and roll—until
+      the fi re is extinguished.'
+    start_char: 246
+    end_char: 323
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_005
+  claim_text: Check closed doors for heat before opening during a fire.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Check closed doors for heat before you open them.
+    start_char: 324
+    end_char: 367
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_006
+  claim_text: Crawl low under smoke to your exit and close doors behind you.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Crawl low under any smoke to your exit—heavy smoke and poisonous gases
+      collect fi rst along the ceiling. Close doors behind you as you escape to delay
+      the spread of the fi re.
+    start_char: 568
+    end_char: 707
+    support_strength: strong
+- object_id: fire-safety.general-guidelines
+  claim_id: clm_007
+  claim_text: Once out, stay out and call 9-1-1.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 119
+    page_end: 120
+    segment_id: src.fema.are-you-ready.2004::seg_000187
+    excerpt: Stay out once you are safely out. Do not reenter. Call 9-1-1.
+    start_char: 708
+    end_char: 764
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000187
+bundle_overrides:
+  hook: Fire safety knowledge can save lives and minimize damage during emergencies,
+    ensuring you and your loved ones are prepared to act swiftly and safely.
+  primer: Fire safety is crucial for protecting lives and property. Fires can occur
+    unexpectedly, and having a plan in place can make all the difference. Basic fire
+    safety involves understanding how to use fire extinguishers, recognizing the importance
+    of fire sprinkler systems, and knowing safe evacuation procedures. A-B-C-type
+    fire extinguishers are versatile and can handle most types of fires, making them
+    essential for any home. Additionally, automatic fire sprinkler systems can help
+    control fires before they spread, providing an extra layer of protection. It's
+    also important to have your local fire department inspect your home for potential
+    hazards and to practice fire drills regularly. In the event of a fire, knowing
+    how to 'Stop, Drop, and Roll' can prevent serious injury if your clothes catch
+    fire. Checking doors for heat before opening them, crawling low under smoke, and
+    closing doors behind you as you exit are critical steps for a safe escape. Once
+    you are out, never re-enter a burning building and call 9-1-1 immediately.
+  guide: '1. **Install A-B-C-type Fire Extinguishers**: Place these extinguishers
+    in accessible locations throughout your home, such as the kitchen and garage.
+    Teach all family members how to use them properly.
+
+
+    2. **Consider Fire Sprinkler Systems**: Evaluate the feasibility of installing
+    an automatic fire sprinkler system in your home. These systems can help control
+    fires early, reducing damage and increasing safety.
+
+
+    3. **Fire Department Inspection**: Contact your local fire department to conduct
+    a fire safety inspection of your residence. They can identify potential hazards
+    and provide recommendations for improvement.
+
+
+    4. **Practice ''Stop, Drop, and Roll''**: Ensure everyone in your household knows
+    this technique to extinguish flames on clothing. Practice regularly to ensure
+    it becomes second nature.
+
+
+    5. **Check Doors for Heat**: Before opening any closed door during a fire, feel
+    it with the back of your hand. If it''s hot, do not open it, as there may be fire
+    on the other side.
+
+
+    6. **Crawl Low Under Smoke**: Smoke rises, so staying low to the ground will help
+    you avoid inhaling toxic fumes. Crawl to the nearest exit and close doors behind
+    you to slow the spread of fire.
+
+
+    7. **Stay Out and Call 9-1-1**: Once you have safely exited the building, do not
+    go back inside for any reason. Call emergency services immediately to report the
+    fire.'
+  reference:
+  - Install A-B-C-type fire extinguishers.
+  - Consider installing a fire sprinkler system.
+  - Have fire department inspect your home.
+  - Practice 'Stop, Drop, and Roll'.
+  - Check doors for heat before opening.
+  - Crawl low under smoke to exit.
+  - Once out, stay out and call 9-1-1.
+  worksheet:
+  - Identify locations in your home for A-B-C-type fire extinguishers.
+  - Research the cost and installation process for fire sprinkler systems.
+  - Schedule a fire safety inspection with your local fire department.
+  - Conduct a family practice session for 'Stop, Drop, and Roll'.
+  - Simulate a fire drill, checking doors for heat and practicing crawling low.
+  - Create a family emergency plan that includes a designated meeting spot outside.
+  teach_forward_kit:
+    three_minute_version: Fire safety is about preparation and quick action. Install
+      A-B-C-type fire extinguishers, consider sprinkler systems, and practice safe
+      evacuation techniques like 'Stop, Drop, and Roll'. Always check doors for heat,
+      crawl low under smoke, and once out, stay out and call 9-1-1.
+    ten_minute_outline:
+    - Introduction to fire safety importance.
+    - Installing and using A-B-C-type fire extinguishers.
+    - Benefits of fire sprinkler systems.
+    - Role of fire department inspections.
+    - Practicing 'Stop, Drop, and Roll'.
+    - 'Safe evacuation: checking doors and crawling low.'
+    - 'Emergency protocol: staying out and calling 9-1-1.'
+    discussion_prompts:
+    - Why is it important to have A-B-C-type fire extinguishers in the home?
+    - How can a fire sprinkler system enhance home safety?
+    - What are the benefits of having regular fire department inspections?
+    - Discuss the importance of practicing 'Stop, Drop, and Roll'.
+    - Why should you check doors for heat before opening them during a fire?
+    - What are the risks of re-entering a burning building?

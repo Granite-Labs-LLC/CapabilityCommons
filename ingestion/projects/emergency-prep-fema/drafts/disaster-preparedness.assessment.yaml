@@ -1,0 +1,158 @@
+id: disaster-preparedness.assessment
+slug: disaster-preparedness.assessment
+seed_type: assessment
+co_type: assessment
+canonical_title: Disaster Preparedness Assessment
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: disaster-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Evaluate your preparedness for local disaster risks.
+summary_medium: An assessment scenario to evaluate preparedness for different disaster
+  risks after moving to a new location.
+plain_language: This assessment helps you understand and evaluate the disaster risks
+  in your new location and how to prepare for them.
+markdown_body: '# What this is
+
+  This is an assessment scenario designed to help you evaluate your preparedness for
+  local disaster risks after moving to a new location.
+
+
+  # Why it matters
+
+  Understanding the specific disaster risks in your area is crucial for effective
+  preparedness. This ensures you have the right supplies and plans in place to protect
+  yourself and your family.
+
+
+  # What you need
+
+  You need to assess local environmental risks, maintain appropriate disaster supplies,
+  and consider insurance needs based on your new location.
+
+
+  # How to do it
+
+  1. Evaluate the local risks by researching environmental hazards specific to your
+  area. 2. Maintain a disaster supplies kit tailored to these risks. 3. Consider insurance
+  options that cover potential local disasters, such as flood insurance.
+
+
+  # Common failure modes
+
+  A common mistake is underestimating local risks due to unfamiliarity with the new
+  environment or relying solely on neighbors'' perceptions.
+
+
+  # Safety/boundary notes
+
+  Ensure that your disaster plan includes all family members and considers any specific
+  needs, such as medical requirements.
+
+
+  # Local adaptation notes
+
+  Adapt your disaster preparedness plan based on changes in the local environment
+  and community risk perceptions.'
+structured_data:
+  type-specific:
+    tools: []
+    materials: []
+    success_criteria: Successfully identify local disaster risks and prepare accordingly.
+    failure_modes: Underestimating local risks or failing to prepare adequately.
+    safety_boundary: Ensure all family members are included in the disaster plan.
+  implementation:
+    smallest_viable_version: Identify local risks and prepare a basic disaster supplies
+      kit.
+    tools: []
+    materials: []
+    expected_time: 1-2 hours
+    expected_cost: Varies based on supplies needed
+    success_checks:
+    - Local risks are identified.
+    - Disaster supplies kit is prepared.
+    - Insurance needs are evaluated.
+    stop_conditions:
+    - All local risks are assessed.
+    - Supplies kit is complete.
+    - Insurance coverage is confirmed.
+    common_mistakes:
+    - Ignoring local environmental risks.
+    - Failing to update supplies regularly.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Consider additional risks such as infrastructure failure.
+    - label: Off-grid
+      when: Living in a remote area.
+      notes: Ensure self-sufficiency in supplies and communication.
+    when_to_escalate:
+    - If local risks are unclear.
+    - If unsure about appropriate insurance coverage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: disaster-preparedness.assessment
+  claim_id: clm_001
+  claim_text: Understanding the specific disaster risks in your area is crucial for
+    effective preparedness.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: We need to know what our risks are from natural hazards and take sensible
+      precautions to protect ourselves, our families, and our communities.
+    start_char: 131
+    end_char: 234
+    support_strength: strong
+- object_id: disaster-preparedness.assessment
+  claim_id: clm_002
+  claim_text: Evaluate the local risks by researching environmental hazards specific
+    to your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 48
+    page_end: 48
+    segment_id: src.fema.are-you-ready.2004::seg_000066
+    excerpt: Use Part 2 to learn about the hazards that pose a risk to you.
+    start_char: 235
+    end_char: 283
+    support_strength: strong
+- object_id: disaster-preparedness.assessment
+  claim_id: clm_003
+  claim_text: Consider insurance options that cover potential local disasters, such
+    as flood insurance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000068
+    excerpt: You continue to see public service announcements from the federal government
+      about flood insurance and the need to protect yourself from flood damage.
+    start_char: 232
+    end_char: 355
+    support_strength: medium
+- object_id: disaster-preparedness.assessment
+  claim_id: clm_004
+  claim_text: A common mistake is underestimating local risks due to unfamiliarity
+    with the new environment or relying solely on neighbors' perceptions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000068
+    excerpt: You think this kind of preparation is no longer necessary based on what
+      your neighbors have told you.
+    start_char: 145
+    end_char: 211
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000068

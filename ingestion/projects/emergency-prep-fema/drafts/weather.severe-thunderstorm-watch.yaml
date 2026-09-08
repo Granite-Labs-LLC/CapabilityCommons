@@ -1,0 +1,174 @@
+id: weather.severe-thunderstorm-watch
+slug: weather.severe-thunderstorm-watch
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Severe Thunderstorm Watch
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Understand what a Severe Thunderstorm Watch means.
+summary_medium: A Severe Thunderstorm Watch indicates that severe thunderstorms are
+  likely in your area. Stay informed through NOAA Weather Radio, commercial radio,
+  or television.
+plain_language: A Severe Thunderstorm Watch means that severe thunderstorms are likely
+  to happen in your area. Keep an eye on the sky and listen to NOAA Weather Radio,
+  commercial radio, or TV for updates.
+markdown_body: '### What this is
+
+  A Severe Thunderstorm Watch is an alert issued when severe thunderstorms are likely
+  to occur in your area.
+
+
+  ### Why it matters
+
+  Understanding a Severe Thunderstorm Watch helps you prepare for potentially dangerous
+  weather conditions, reducing the risk of harm.
+
+
+  ### What you need
+
+  Access to NOAA Weather Radio, commercial radio, or television to stay informed.
+
+
+  ### How to do it
+
+  When a Severe Thunderstorm Watch is issued, watch the sky for signs of a storm and
+  stay tuned to NOAA Weather Radio, commercial radio, or television for updates and
+  instructions.
+
+
+  ### Common failure modes
+
+  Ignoring the watch or failing to stay informed can lead to being unprepared for
+  severe weather.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety by seeking shelter if a storm approaches.
+
+
+  ### Local adaptation notes
+
+  Adapt your response based on local weather patterns and available communication
+  channels.'
+structured_data:
+  definition: A Severe Thunderstorm Watch is an alert indicating that severe thunderstorms
+    are likely to occur.
+  key_questions:
+  - What should I do when a Severe Thunderstorm Watch is issued?
+  - How can I stay informed about severe weather?
+  misconceptions:
+  - A watch means a storm is definitely happening.
+  - You don't need to take action until a warning is issued.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_001
+  claim_text: A Severe Thunderstorm Watch is an alert issued when severe thunderstorms
+    are likely to occur in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Severe Thunderstorm Watch Tells you when and where severe thunderstorms
+      are likely to occur.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_002
+  claim_text: Understanding a Severe Thunderstorm Watch helps you prepare for potentially
+    dangerous weather conditions, reducing the risk of harm.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Watch the sky and stay tuned to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 90
+    end_char: 168
+    support_strength: medium
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_003
+  claim_text: Access to NOAA Weather Radio, commercial radio, or television to stay
+    informed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 119
+    end_char: 168
+    support_strength: strong
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_004
+  claim_text: When a Severe Thunderstorm Watch is issued, watch the sky for signs
+    of a storm and stay tuned to NOAA Weather Radio, commercial radio, or television
+    for updates and instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Watch the sky and stay tuned to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 90
+    end_char: 168
+    support_strength: strong
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_005
+  claim_text: Ignoring the watch or failing to stay informed can lead to being unprepared
+    for severe weather.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Watch the sky and stay tuned to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 90
+    end_char: 168
+    support_strength: medium
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_006
+  claim_text: Always prioritize safety by seeking shelter if a storm approaches.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Watch the sky and stay tuned to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 90
+    end_char: 168
+    support_strength: medium
+- object_id: weather.severe-thunderstorm-watch
+  claim_id: clm_007
+  claim_text: Adapt your response based on local weather patterns and available communication
+    channels.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 76
+    page_end: 76
+    segment_id: src.fema.are-you-ready.2004::seg_000110
+    excerpt: Watch the sky and stay tuned to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 90
+    end_char: 168
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000110

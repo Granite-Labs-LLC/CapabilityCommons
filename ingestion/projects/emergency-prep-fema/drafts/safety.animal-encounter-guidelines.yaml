@@ -1,0 +1,158 @@
+id: safety.animal-encounter-guidelines
+slug: safety.animal-encounter-guidelines
+seed_type: safety_notice
+co_type: safety_notice
+canonical_title: Guidelines for Safely Handling Animal Encounters During Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Guidelines for safely handling encounters with wild or injured animals
+  during emergencies.
+summary_medium: These guidelines provide instructions on how to safely manage encounters
+  with wild or injured animals during emergencies, emphasizing the importance of avoiding
+  direct contact and seeking professional assistance.
+plain_language: Learn how to safely deal with wild or injured animals during emergencies
+  by avoiding direct contact and contacting professionals for help.
+markdown_body: '### What this is
+
+  This document provides guidelines for safely handling encounters with wild or injured
+  animals during emergencies. It emphasizes the importance of avoiding direct contact
+  and seeking professional assistance.
+
+
+  ### Why it matters
+
+  During emergencies, wild or injured animals may pose a threat to human safety. Proper
+  handling of these situations can prevent injuries and health risks.
+
+
+  ### What you need
+
+  Awareness of local animal control and wildlife resource contacts, and knowledge
+  of basic safety precautions.
+
+
+  ### How to do it
+
+  - Do not approach or attempt to help an injured or stranded animal. Instead, call
+  your local animal control or wildlife resource office.
+
+  - Avoid cornering wild animals or trying to rescue them, as they may feel threatened
+  and endanger themselves.
+
+  - If wild animals take refuge in your home, provide an escape route by opening a
+  window. Do not attempt to capture or handle them.
+
+  - Do not attempt to move dead animals due to health risks. Contact your local emergency
+  management or health department for assistance.
+
+  - If bitten by an animal, seek immediate medical attention.
+
+
+  ### Common failure modes
+
+  Approaching wild animals, handling dead animals.
+
+
+  ### Safety/boundary notes
+
+  Avoid contact with wild animals and do not attempt to move dead animals.
+
+
+  ### Local adaptation notes
+
+  Contact local animal control or health department for specific guidance.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: []
+  failure_modes:
+  - Approaching wild animals
+  - Handling dead animals
+  safety_boundary:
+  - Avoid contact with wild animals
+  - Do not attempt to move dead animals
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.animal-encounter-guidelines
+  claim_id: clm_001
+  claim_text: Do not approach or attempt to help an injured or stranded animal. Instead,
+    call your local animal control or wildlife resource office.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000276
+    excerpt: Do not approach or attempt to help an injured or stranded animal. Call
+      your local animal control offi ce or wildlife resource offi ce.
+    start_char: 13
+    end_char: 112
+    support_strength: strong
+- object_id: safety.animal-encounter-guidelines
+  claim_id: clm_002
+  claim_text: Avoid cornering wild animals or trying to rescue them, as they may feel
+    threatened and endanger themselves.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000276
+    excerpt: Do not corner wild animals or try to rescue them. Wild animals will likely
+      feel threatened and may endanger themselves by dashing off into fl oodwaters,
+      fi re, and so forth.
+    start_char: 113
+    end_char: 243
+    support_strength: strong
+- object_id: safety.animal-encounter-guidelines
+  claim_id: clm_003
+  claim_text: If wild animals take refuge in your home, provide an escape route by
+    opening a window. Do not attempt to capture or handle them.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000276
+    excerpt: If you encounter animals in this situation, open a window or provide
+      another escape route and the animal will likely leave on its own. Do not attempt
+      to capture or handle the animal.
+    start_char: 345
+    end_char: 474
+    support_strength: strong
+- object_id: safety.animal-encounter-guidelines
+  claim_id: clm_004
+  claim_text: Do not attempt to move dead animals due to health risks. Contact your
+    local emergency management or health department for assistance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000276
+    excerpt: Do not attempt to move a dead animal. Animal carcasses can present serious
+      health risks. Contact your local emergency management offi ce or health department
+      for help and instructions.
+    start_char: 475
+    end_char: 608
+    support_strength: strong
+- object_id: safety.animal-encounter-guidelines
+  claim_id: clm_005
+  claim_text: If bitten by an animal, seek immediate medical attention.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 184
+    page_end: 184
+    segment_id: src.fema.are-you-ready.2004::seg_000276
+    excerpt: If bitten by an animal, seek immediate medical attention.
+    start_char: 609
+    end_char: 661
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000276

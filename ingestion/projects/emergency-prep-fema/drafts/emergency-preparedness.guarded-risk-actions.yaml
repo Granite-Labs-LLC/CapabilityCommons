@@ -1,0 +1,189 @@
+id: emergency-preparedness.guarded-risk-actions
+slug: emergency-preparedness.guarded-risk-actions
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Actions for Guarded Risk Level
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Actions to take at a guarded risk level.
+summary_medium: Review and update disaster supplies and stay alert to suspicious activity
+  at a guarded risk level.
+plain_language: At a guarded risk level, check your disaster supplies for outdated
+  items and be aware of any suspicious activities around you.
+markdown_body: '### What this is
+
+  This reference sheet outlines the actions to take when the risk level is guarded.
+  It includes reviewing your disaster supplies and being vigilant about your surroundings.
+
+
+  ### Why it matters
+
+  Being prepared at a guarded risk level ensures that you are ready for potential
+  emergencies and can respond quickly if the situation escalates.
+
+
+  ### What you need
+
+  You need to have access to your stored disaster supplies and be aware of your surroundings.
+
+
+  ### How to do it
+
+  1. Review your stored disaster supplies and replace any items that are outdated.
+
+  2. Stay alert to any suspicious activity in your area and report it to the proper
+  authorities.
+
+
+  ### Common failure modes
+
+  Failing to replace outdated supplies or ignoring suspicious activities can leave
+  you unprepared in an emergency.
+
+
+  ### Safety/boundary notes
+
+  Ensure that you report suspicious activities to authorities rather than confronting
+  them yourself.
+
+
+  ### Local adaptation notes
+
+  Consider local threats and adjust your vigilance and supplies accordingly.'
+structured_data:
+  tools: []
+  materials:
+  - disaster supplies
+  success_criteria:
+  - All outdated supplies are replaced
+  - Suspicious activities are reported
+  failure_modes:
+  - Outdated supplies are not replaced
+  - Suspicious activities go unreported
+  safety_boundary:
+  - Report suspicious activities to authorities
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_001
+  claim_text: This reference sheet outlines the actions to take when the risk level
+    is guarded. It includes reviewing your disaster supplies and being vigilant about
+    your surroundings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Review stored disaster supplies and replace items that are outdated.
+      Be alert to suspicious activity and report it to proper authorities.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_002
+  claim_text: Being prepared at a guarded risk level ensures that you are ready for
+    potential emergencies and can respond quickly if the situation escalates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures that the government, the private sector, and the public
+      can take.
+    start_char: 0
+    end_char: 228
+    support_strength: medium
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_003
+  claim_text: You need to have access to your stored disaster supplies and be aware
+    of your surroundings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Review stored disaster supplies and replace items that are outdated.
+      Be alert to suspicious activity and report it to proper authorities.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_004
+  claim_text: Review your stored disaster supplies and replace any items that are
+    outdated.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Review stored disaster supplies and replace items that are outdated.
+    start_char: 0
+    end_char: 62
+    support_strength: strong
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_005
+  claim_text: Stay alert to any suspicious activity in your area and report it to
+    the proper authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Be alert to suspicious activity and report it to proper authorities.
+    start_char: 63
+    end_char: 122
+    support_strength: strong
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_006
+  claim_text: Failing to replace outdated supplies or ignoring suspicious activities
+    can leave you unprepared in an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Review stored disaster supplies and replace items that are outdated.
+      Be alert to suspicious activity and report it to proper authorities.
+    start_char: 0
+    end_char: 122
+    support_strength: medium
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_007
+  claim_text: Ensure that you report suspicious activities to authorities rather than
+    confronting them yourself.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000264
+    excerpt: Be alert to suspicious activity and report it to proper authorities.
+    start_char: 63
+    end_char: 122
+    support_strength: strong
+- object_id: emergency-preparedness.guarded-risk-actions
+  claim_id: clm_008
+  claim_text: Consider local threats and adjust your vigilance and supplies accordingly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks.
+    start_char: 0
+    end_char: 108
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000264

@@ -1,0 +1,118 @@
+id: weather.winter-storm-terms
+slug: weather.winter-storm-terms
+seed_type: glossary
+co_type: glossary
+canonical_title: Winter Storm Terms
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Glossary of winter storm terms.
+summary_medium: A glossary of terms related to winter storm hazards to aid in identification
+  and understanding.
+plain_language: Learn the terms used to describe winter storms so you can better understand
+  and identify these weather hazards.
+markdown_body: '### What this is
+
+  This is a glossary of terms related to winter storms. Understanding these terms
+  can help you identify and prepare for winter storm hazards.
+
+
+  ### Why it matters
+
+  Knowing the specific terms used in weather forecasts and warnings can help you better
+  understand the severity and potential impact of winter storms, allowing you to take
+  appropriate precautions.
+
+
+  ### What you need
+
+  Familiarity with basic weather terminology and an interest in understanding winter
+  storm conditions.
+
+
+  ### How to do it
+
+  Review the glossary of terms related to winter storms. Pay attention to terms that
+  describe the intensity, duration, and potential impact of these weather events.
+
+
+  ### Common failure modes
+
+  Ignoring or misunderstanding weather terms can lead to inadequate preparation for
+  severe winter weather.
+
+
+  ### Safety/boundary notes
+
+  Ensure you understand the terms fully to avoid misinterpretation that could lead
+  to safety risks during a winter storm.
+
+
+  ### Local adaptation notes
+
+  Some terms may have specific meanings or implications depending on your local weather
+  patterns and regional forecasts.'
+structured_data:
+  definition: A glossary of terms related to winter storm hazards.
+  key_questions:
+  - What are the key terms used to describe winter storms?
+  - How can understanding these terms help in preparing for winter storms?
+  misconceptions:
+  - All winter storms are the same.
+  - Understanding weather terms is not important for safety.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.winter-storm-terms
+  claim_id: clm_001
+  claim_text: Understanding these terms can help you identify and prepare for winter
+    storm hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000119
+    excerpt: 'Familiarize yourself with these terms to help identify a winter storm
+      hazard:'
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: weather.winter-storm-terms
+  claim_id: clm_002
+  claim_text: Knowing the specific terms used in weather forecasts and warnings can
+    help you better understand the severity and potential impact of winter storms,
+    allowing you to take appropriate precautions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000119
+    excerpt: 'Familiarize yourself with these terms to help identify a winter storm
+      hazard:'
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: weather.winter-storm-terms
+  claim_id: clm_003
+  claim_text: Ignoring or misunderstanding weather terms can lead to inadequate preparation
+    for severe winter weather.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000119
+    excerpt: 'Familiarize yourself with these terms to help identify a winter storm
+      hazard:'
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000119

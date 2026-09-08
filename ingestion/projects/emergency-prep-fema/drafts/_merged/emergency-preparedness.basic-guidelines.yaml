@@ -1,0 +1,140 @@
+id: emergency-preparedness.basic-guidelines
+slug: emergency-preparedness.basic-guidelines
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Basic Guidelines for Emergency Preparedness
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Initial steps and considerations for emergency preparedness.
+summary_medium: Learn the basic guidelines for emergency preparedness, including identifying
+  potential emergencies, developing a plan, and gathering necessary supplies.
+plain_language: This guide helps you understand the first steps to prepare for emergencies,
+  such as making a plan and collecting essential items.
+markdown_body: '# What this is
+
+  This concept note provides basic guidelines for preparing for emergencies. It covers
+  the initial steps you should take to ensure you and your family are ready for unexpected
+  situations.
+
+
+  # Why it matters
+
+  Being prepared for emergencies can significantly reduce the impact of disasters
+  on your life. It ensures that you have a plan and the necessary resources to respond
+  effectively, minimizing harm and disruption.
+
+
+  # What you need
+
+  To start, you need to identify potential emergencies that could affect your area,
+  develop a comprehensive plan, and gather essential supplies such as an emergency
+  kit and communication devices.
+
+
+  # How to do it
+
+  Begin by researching the types of emergencies common in your region. Develop a plan
+  that includes communication strategies, evacuation routes, and meeting points. Assemble
+  an emergency kit with items like water, non-perishable food, first aid supplies,
+  and important documents.
+
+
+  # Common failure modes
+
+  Common mistakes include failing to plan adequately, not updating the emergency kit
+  regularly, and underestimating the supplies needed for an extended period.
+
+
+  # Safety/boundary notes
+
+  Ensure that your emergency plan considers the safety of all family members, including
+  pets, and accounts for any specific needs such as medical conditions.
+
+
+  # Local adaptation notes
+
+  Adapt your emergency preparedness plan to account for regional risks and available
+  community resources. Stay informed about local emergency services and support networks.'
+structured_data:
+  definition: Emergency preparedness involves planning and gathering resources to
+    effectively respond to potential emergencies.
+  key_questions:
+  - What types of emergencies are most likely to occur in my area?
+  - What should my emergency plan include?
+  - What supplies are essential for my emergency kit?
+  misconceptions:
+  - Emergency preparedness is only necessary for large-scale disasters.
+  - Once an emergency kit is assembled, it does not need to be updated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.basic-guidelines
+  claim_id: clm_001
+  claim_text: Being prepared for emergencies can significantly reduce the impact of
+    disasters on your life.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Many communities have Local Emergency Planning Committees (LEPCs) whose
+      responsibilities include collecting information about hazardous materials in
+      the community and making this information available to the public upon request.
+      The LEPCs also are tasked with developing an emergency plan to prepare for and
+      respond to chemical emergencies in the community.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: emergency-preparedness.basic-guidelines
+  claim_id: clm_002
+  claim_text: To start, you need to identify potential emergencies that could affect
+    your area, develop a comprehensive plan, and gather essential supplies such as
+    an emergency kit and communication devices.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: The LEPCs also are tasked with developing an emergency plan to prepare
+      for and respond to chemical emergencies in the community.
+    start_char: 150
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.basic-guidelines
+  claim_id: clm_003
+  claim_text: Begin by researching the types of emergencies common in your region.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: Contact the LEPCs to find out more about chemical hazards and what needs
+      to be done to minimize the risk to individuals and the community from these
+      materials.
+    start_char: 250
+    end_char: 400
+    support_strength: medium
+- object_id: emergency-preparedness.basic-guidelines
+  claim_id: clm_004
+  claim_text: Assemble an emergency kit with items like water, non-perishable food,
+    first aid supplies, and important documents.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 131
+    page_end: 131
+    segment_id: src.fema.are-you-ready.2004::seg_000199
+    excerpt: 'See Section 1.3: Assemble a Disaster Supplies Kit'
+    start_char: 400
+    end_char: 450
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000196

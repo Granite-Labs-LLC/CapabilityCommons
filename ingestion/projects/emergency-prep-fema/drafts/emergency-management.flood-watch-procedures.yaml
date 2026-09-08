@@ -1,0 +1,230 @@
+id: emergency-management.flood-watch-procedures
+slug: emergency-management.flood-watch-procedures
+seed_type: reference_sheet
+co_type: skill_guide
+canonical_title: Flood Watch Procedures
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-management
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Actions to take during a flood watch.
+summary_medium: Guidance on actions to take during a flood watch, including monitoring
+  weather updates.
+plain_language: Learn what to do when a flood watch is issued, including how to stay
+  informed about weather updates.
+markdown_body: '### What this is
+
+  This guide provides steps to follow when a flood watch is issued, indicating that
+  flooding is possible in your area.
+
+
+  ### Why it matters
+
+  Staying informed during a flood watch can help you prepare for potential flooding,
+  ensuring your safety and minimizing damage.
+
+
+  ### What you need
+
+  You will need access to a NOAA Weather Radio, commercial radio, or television to
+  receive updates.
+
+
+  ### How to do it
+
+  When a flood watch is announced, immediately tune in to NOAA Weather Radio, commercial
+  radio, or television. These sources will provide the latest information and updates
+  on the potential for flooding in your area.
+
+
+  ### Common failure modes
+
+  Common mistakes include missing updates due to not monitoring the radio or television,
+  and ignoring warnings that are issued.
+
+
+  ### Safety/boundary notes
+
+  Ensure you have a reliable way to receive updates, especially if power outages are
+  possible.
+
+
+  ### Local adaptation notes
+
+  Consider local radio stations or community alert systems that may provide additional
+  relevant information.'
+structured_data:
+  tools:
+  - NOAA Weather Radio
+  - commercial radio
+  - television
+  materials: []
+  success_criteria:
+  - Receive timely updates on flood conditions
+  - Respond appropriately to warnings
+  failure_modes:
+  - Missing updates
+  - Ignoring warnings
+  safety_boundary: []
+  implementation:
+    smallest_viable_version: Monitor weather updates using available radio or television.
+    tools:
+    - NOAA Weather Radio
+    - commercial radio
+    - television
+    materials: []
+    expected_time: Continuous monitoring during the flood watch period.
+    expected_cost: free
+    success_checks:
+    - You are informed of any changes in flood conditions.
+    stop_conditions:
+    - Flood watch is lifted or upgraded to a warning.
+    common_mistakes:
+    - Not checking updates frequently enough.
+    - Ignoring the updates.
+    variants:
+    - label: Urban
+      when: In densely populated areas.
+      notes: Use local news channels for more specific updates.
+    when_to_escalate:
+    - If a flood warning is issued, prepare for immediate action.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-management.flood-watch-procedures
+  claim_id: clm_001
+  claim_text: This guide provides steps to follow when a flood watch is issued, indicating
+    that flooding is possible in your area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Flooding is possible. Tune in to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 0
+    end_char: 87
+    support_strength: strong
+- object_id: emergency-management.flood-watch-procedures
+  claim_id: clm_002
+  claim_text: You will need access to a NOAA Weather Radio, commercial radio, or television
+    to receive updates.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 28
+    end_char: 87
+    support_strength: strong
+- object_id: emergency-management.flood-watch-procedures
+  claim_id: clm_003
+  claim_text: When a flood watch is announced, immediately tune in to NOAA Weather
+    Radio, commercial radio, or television.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Flooding is possible. Tune in to NOAA Weather Radio, commercial radio,
+      or television for information.
+    start_char: 0
+    end_char: 87
+    support_strength: strong
+- object_id: emergency-management.flood-watch-procedures
+  claim_id: clm_004
+  claim_text: Common mistakes include missing updates due to not monitoring the radio
+    or television, and ignoring warnings that are issued.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 28
+    end_char: 87
+    support_strength: medium
+- object_id: emergency-management.flood-watch-procedures
+  claim_id: clm_005
+  claim_text: Ensure you have a reliable way to receive updates, especially if power
+    outages are possible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 52
+    page_end: 52
+    segment_id: src.fema.are-you-ready.2004::seg_000070
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for information.
+    start_char: 28
+    end_char: 87
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000070
+bundle_overrides:
+  hook: Stay safe and minimize damage by knowing exactly what to do when a flood watch
+    is issued in your area.
+  primer: A flood watch is an alert issued by weather authorities indicating that
+    conditions are favorable for flooding in your area. It is crucial to stay informed
+    and prepared during this time to ensure your safety and protect your property.
+    Flooding can occur rapidly, and being caught unprepared can lead to dangerous
+    situations. To stay informed, you will need access to a NOAA Weather Radio, commercial
+    radio, or television. These sources will provide the latest updates and information
+    on the potential for flooding. Common mistakes during a flood watch include not
+    monitoring updates frequently enough and ignoring warnings. It is essential to
+    have a reliable way to receive updates, especially if power outages are possible.
+    Local radio stations or community alert systems may also provide additional relevant
+    information.
+  guide: "1. **Understand the Alert**: A flood watch means that conditions are favorable\
+    \ for flooding. It does not mean flooding will definitely occur, but it is a possibility.\
+    \ \n\n2. **Tune In for Updates**: Immediately tune in to a NOAA Weather Radio,\
+    \ commercial radio, or television for the latest information. These sources will\
+    \ provide updates on weather conditions and any changes in the flood watch status.\
+    \ \n\n3. **Prepare for Possible Flooding**: Gather emergency supplies such as\
+    \ water, food, medications, and important documents. Ensure that your family knows\
+    \ the emergency plan and evacuation routes. \n\n4. **Monitor Continuously**: Keep\
+    \ monitoring the radio or television for updates. Flood conditions can change\
+    \ rapidly, and staying informed is crucial. \n\n5. **Avoid Common Mistakes**:\
+    \ Do not ignore warnings or fail to check updates frequently. These mistakes can\
+    \ lead to being unprepared if conditions worsen. \n\n6. **Plan for Power Outages**:\
+    \ Ensure you have a battery-powered radio or other means to receive updates if\
+    \ the power goes out. \n\n7. **Local Information**: Consider using local radio\
+    \ stations or community alert systems for additional information specific to your\
+    \ area."
+  reference:
+  - Flood watch indicates possible flooding.
+  - Tune in to NOAA Weather Radio, commercial radio, or television for updates.
+  - 'Common mistakes: missing updates, ignoring warnings.'
+  - Ensure a reliable way to receive updates, especially during power outages.
+  - Local stations may provide additional information.
+  worksheet:
+  - List the local radio stations that provide weather updates in your area.
+  - Identify the nearest evacuation routes from your home.
+  - Create a checklist of emergency supplies to gather during a flood watch.
+  - Practice tuning into NOAA Weather Radio or other sources for updates.
+  - Discuss with your family the steps to take if a flood warning is issued.
+  teach_forward_kit:
+    three_minute_version: A flood watch means that conditions are favorable for flooding.
+      Stay informed by tuning into NOAA Weather Radio, commercial radio, or television
+      for updates. Prepare by gathering emergency supplies and knowing evacuation
+      routes. Avoid common mistakes like ignoring updates and ensure you have a reliable
+      way to receive information, especially if power outages occur.
+    ten_minute_outline:
+    - Introduction to Flood Watch
+    - Importance of Staying Informed
+    - How to Receive Updates
+    - Preparing for Possible Flooding
+    - Common Mistakes to Avoid
+    - Local Adaptations and Resources
+    discussion_prompts:
+    - Why is it important to stay informed during a flood watch?
+    - What are some reliable sources for weather updates?
+    - How can you prepare your home and family for a potential flood?
+    - What are the consequences of ignoring flood watch updates?
+    - How can local resources be utilized during a flood watch?

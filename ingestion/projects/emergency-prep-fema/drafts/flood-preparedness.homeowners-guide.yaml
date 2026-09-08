@@ -1,0 +1,178 @@
+id: flood-preparedness.homeowners-guide
+slug: flood-preparedness.homeowners-guide
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: 'Homeowner''s Guide to Retrofitting: Six Ways to Protect Your House
+  from Flooding'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: flood-preparedness
+secondary_domains: []
+stage: household
+contexts:
+- homeowners
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidance for homeowners on retrofitting homes to prevent flood damage.
+summary_medium: This guide provides detailed information on six retrofitting techniques
+  to protect homes from flooding, aimed at homeowners seeking to mitigate flood risks.
+plain_language: Learn how to retrofit your home to protect it from flooding with this
+  detailed guide, which covers six effective methods.
+markdown_body: '# What this is
+
+  This guide is a comprehensive resource for homeowners looking to retrofit their
+  homes to prevent flood damage. It details six specific methods that can be implemented
+  to protect homes from flooding.
+
+
+  # Why it matters
+
+  Flooding can cause significant damage to homes, leading to costly repairs and loss
+  of property. By retrofitting homes, homeowners can reduce the risk of flood damage,
+  ensuring safety and preserving property value.
+
+
+  # What you need
+
+  Access to the guide, which includes a brochure and a detailed manual, is essential.
+  Homeowners may also need to consult with professionals for certain retrofitting
+  techniques.
+
+
+  # How to do it
+
+  The guide outlines six retrofitting techniques, providing step-by-step instructions
+  and considerations for each method. Homeowners should assess their specific needs
+  and conditions to choose the most appropriate techniques.
+
+
+  # Common failure modes
+
+  Improper retrofitting can lead to inadequate flood protection. It''s crucial to
+  follow the guide carefully and consult professionals when necessary.
+
+
+  # Safety/boundary notes
+
+  Ensure all retrofitting work complies with local building codes and safety standards.
+
+
+  # Local adaptation notes
+
+  Consider local flood risks and building regulations when planning retrofitting projects.'
+structured_data:
+  tools:
+  - brochure
+  - manual
+  materials: []
+  success_criteria:
+  - Effective implementation of retrofitting techniques
+  - Reduced flood damage
+  failure_modes:
+  - Improper retrofitting
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_001
+  claim_text: This guide is a comprehensive resource for homeowners looking to retrofit
+    their homes to prevent flood damage. It details six specific methods that can
+    be implemented to protect homes from flooding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 56
+    page_end: 56
+    segment_id: src.fema.are-you-ready.2004::seg_000077
+    excerpt: 'Homeowner''s Guide to Retrofi tting: Six Ways to Protect Your House
+      from Flooding. L-235. A brochure about obtaining information about how to protect
+      your home from fl ooding.'
+    start_char: 142
+    end_char: 282
+    support_strength: strong
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_002
+  claim_text: Flooding can cause significant damage to homes, leading to costly repairs
+    and loss of property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 56
+    page_end: 56
+    segment_id: src.fema.are-you-ready.2004::seg_000077
+    excerpt: Information for homeowners on preparedness, safety, and recovery from
+      a fl ood.
+    start_char: 95
+    end_char: 142
+    support_strength: medium
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_003
+  claim_text: By retrofitting homes, homeowners can reduce the risk of flood damage,
+    ensuring safety and preserving property value.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 56
+    page_end: 56
+    segment_id: src.fema.are-you-ready.2004::seg_000077
+    excerpt: 'Homeowner''s Guide to Retrofi tting: Six Ways to Protect Your House
+      from Flooding. FEMA-312. A detailed manual on how to protect your home from
+      fl ooding.'
+    start_char: 282
+    end_char: 398
+    support_strength: strong
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_004
+  claim_text: Access to the guide, which includes a brochure and a detailed manual,
+    is essential.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 56
+    page_end: 56
+    segment_id: src.fema.are-you-ready.2004::seg_000077
+    excerpt: 'Homeowner''s Guide to Retrofi tting: Six Ways to Protect Your House
+      from Flooding. L-235. A brochure about obtaining information about how to protect
+      your home from fl ooding.'
+    start_char: 142
+    end_char: 282
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 56
+    page_end: 56
+    segment_id: src.fema.are-you-ready.2004::seg_000077
+    excerpt: 'Homeowner''s Guide to Retrofi tting: Six Ways to Protect Your House
+      from Flooding. FEMA-312. A detailed manual on how to protect your home from
+      fl ooding.'
+    start_char: 282
+    end_char: 398
+    support_strength: strong
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_005
+  claim_text: Improper retrofitting can lead to inadequate flood protection.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Avoid building in a fl oodplain unless you elevate and reinforce your
+      home.
+    start_char: 56
+    end_char: 114
+    support_strength: medium
+- object_id: flood-preparedness.homeowners-guide
+  claim_id: clm_006
+  claim_text: Ensure all retrofitting work complies with local building codes and
+    safety standards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 53
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000074
+    excerpt: Elevate the furnace, water heater, and electric panel if susceptible
+      to fl ooding.
+    start_char: 114
+    end_char: 180
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000077

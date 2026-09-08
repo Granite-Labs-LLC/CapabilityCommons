@@ -1,0 +1,181 @@
+id: emergency-preparedness.hurricane-awareness
+slug: emergency-preparedness.hurricane-awareness
+seed_type: extracted
+co_type: concept_note
+canonical_title: Hurricane Awareness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Understand hurricanes, their classification, and impacts.
+summary_medium: Learn about hurricanes, their classification using the Saffir-Simpson
+  Hurricane Scale, and the potential impacts including wind damage, storm surges,
+  and flooding.
+plain_language: Hurricanes are powerful storms that can cause severe damage. They
+  are classified by wind speed and potential damage, and can lead to flooding and
+  other hazards.
+markdown_body: '# What this is
+
+  A hurricane is a type of tropical cyclone, which is a low-pressure system typically
+  forming in the tropics. It is characterized by thunderstorms and a counterclockwise
+  wind circulation in the Northern Hemisphere.
+
+
+  # Why it matters
+
+  Hurricanes can cause catastrophic damage to coastlines and areas several hundred
+  miles inland. They bring high winds, heavy rain, storm surges, and can lead to flooding
+  and landslides, posing significant risks to life and property.
+
+
+  # What you need
+
+  Awareness of the hurricane season, which runs from June to November, and understanding
+  of the Saffir-Simpson Hurricane Scale to assess potential risks.
+
+
+  # How to do it
+
+  Monitor weather reports during hurricane season, understand the categories of hurricanes,
+  and prepare for potential impacts such as securing property and having an evacuation
+  plan.
+
+
+  # Common failure modes
+
+  Underestimating the severity of lower category hurricanes, not preparing for inland
+  flooding, and failing to evacuate when advised.
+
+
+  # Safety/boundary notes
+
+  Always follow local authority guidance on evacuations and safety measures. Be aware
+  of the potential for flooding and landslides, especially in mountainous areas.
+
+
+  # Local adaptation notes
+
+  Adapt preparation and response plans based on local geography and infrastructure
+  vulnerabilities.'
+structured_data:
+  definition: A hurricane is a tropical cyclone with sustained winds of at least 74
+    mph, classified into five categories based on wind speed and damage potential.
+  key_questions:
+  - What is a hurricane?
+  - How are hurricanes classified?
+  - What are the potential impacts of a hurricane?
+  misconceptions:
+  - Only coastal areas are affected by hurricanes.
+  - Lower category hurricanes are not dangerous.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_001
+  claim_text: A hurricane is a type of tropical cyclone, which is a low-pressure system
+    typically forming in the tropics. It is characterized by thunderstorms and a counterclockwise
+    wind circulation in the Northern Hemisphere.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: A hurricane is a type of tropical cyclone, the generic term for a low
+      pressure system that generally forms in the tropics. A typical cyclone is accompanied
+      by thunderstorms, and in the Northern Hemisphere, a counterclockwise circulation
+      of winds near the earth's surface.
+    start_char: 0
+    end_char: 228
+    support_strength: strong
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_002
+  claim_text: Hurricanes can cause catastrophic damage to coastlines and areas several
+    hundred miles inland. They bring high winds, heavy rain, storm surges, and can
+    lead to flooding and landslides, posing significant risks to life and property.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: Hurricanes can cause catastrophic damage to coastlines and several hundred
+      miles inland. Winds can exceed 155 miles per hour. Hurricanes and tropical storms
+      can also spawn tornadoes and microbursts, create storm surges along the coast,
+      and cause extensive damage from heavy rainfall.
+    start_char: 229
+    end_char: 526
+    support_strength: strong
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_003
+  claim_text: Awareness of the hurricane season, which runs from June to November,
+    and understanding of the Saffir-Simpson Hurricane Scale to assess potential risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: The Atlantic hurricane season lasts from June to November, with the peak
+      season from mid-August to late October. Hurricanes are classified into five
+      categories based on their wind speed, central pressure, and damage potential
+      (see chart).
+    start_char: 147
+    end_char: 526
+    support_strength: strong
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_004
+  claim_text: Monitor weather reports during hurricane season, understand the categories
+    of hurricanes, and prepare for potential impacts such as securing property and
+    having an evacuation plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: Hurricanes are classified into five categories based on their wind speed,
+      central pressure, and damage potential (see chart). Category Three and higher
+      hurricanes are considered major hurricanes, though Categories One and Two are
+      still extremely dangerous and warrant your full attention.
+    start_char: 527
+    end_char: 726
+    support_strength: medium
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_005
+  claim_text: Underestimating the severity of lower category hurricanes, not preparing
+    for inland flooding, and failing to evacuate when advised.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: Category Three and higher hurricanes are considered major hurricanes,
+      though Categories One and Two are still extremely dangerous and warrant your
+      full attention. Floods are the deadly and destructive result. Slow moving storms
+      and tropical storms moving into mountainous regions tend to produce especially
+      heavy rain.
+    start_char: 527
+    end_char: 726
+    support_strength: medium
+- object_id: emergency-preparedness.hurricane-awareness
+  claim_id: clm_006
+  claim_text: Always follow local authority guidance on evacuations and safety measures.
+    Be aware of the potential for flooding and landslides, especially in mountainous
+    areas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 66
+    page_end: 68
+    segment_id: src.fema.are-you-ready.2004::seg_000090
+    excerpt: Excessive rain can trigger landslides or mud slides, especially in mountainous
+      regions. Flash flooding can occur due to intense rainfall. Flooding on rivers
+      and streams may persist for several days or more after the storm.
+    start_char: 727
+    end_char: 926
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000090

@@ -1,0 +1,146 @@
+id: weather.sleet
+slug: weather.sleet
+seed_type: glossary
+co_type: glossary
+canonical_title: Sleet
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Sleet is rain that turns into ice pellets before reaching the ground.
+summary_medium: Sleet consists of rain that freezes into ice pellets before reaching
+  the ground, often causing slippery conditions on roads.
+plain_language: Sleet happens when rain freezes into small ice pellets before it hits
+  the ground. This can make roads very slippery.
+markdown_body: '### What this is
+
+  Sleet is a type of precipitation that occurs when rain falls through a layer of
+  cold air and freezes into ice pellets before reaching the ground.
+
+
+  ### Why it matters
+
+  Sleet can create hazardous conditions, especially on roads and sidewalks, as the
+  ice pellets can cause surfaces to become slippery and dangerous for driving and
+  walking.
+
+
+  ### What you need
+
+  Awareness of weather forecasts and conditions to prepare for sleet, and appropriate
+  footwear or vehicle equipment to handle slippery surfaces.
+
+
+  ### How to do it
+
+  Monitor weather reports to anticipate sleet conditions. If sleet is expected, take
+  precautions such as driving slowly, using winter tires, or wearing shoes with good
+  traction.
+
+
+  ### Common failure modes
+
+  Ignoring weather warnings about sleet can lead to accidents due to slippery roads.
+  Not using appropriate footwear or vehicle equipment can increase the risk of falls
+  or crashes.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety by avoiding travel during sleet conditions if possible.
+  If you must travel, ensure your vehicle is equipped for winter conditions.
+
+
+  ### Local adaptation notes
+
+  In areas where sleet is common, local authorities may provide additional resources
+  or advisories to help residents prepare and stay safe.'
+structured_data:
+  definition: Sleet is rain that turns to ice pellets before reaching the ground.
+  key_questions:
+  - What causes sleet to form?
+  - How does sleet affect road conditions?
+  misconceptions:
+  - Sleet is the same as hail. (In reality, sleet is smaller and forms differently.)
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.sleet
+  claim_id: clm_001
+  claim_text: Sleet is a type of precipitation that occurs when rain falls through
+    a layer of cold air and freezes into ice pellets before reaching the ground.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000121
+    excerpt: Rain that turns to ice pellets before reaching the ground.
+    start_char: 0
+    end_char: 55
+    support_strength: strong
+- object_id: weather.sleet
+  claim_id: clm_002
+  claim_text: Sleet can create hazardous conditions, especially on roads and sidewalks,
+    as the ice pellets can cause surfaces to become slippery and dangerous for driving
+    and walking.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000121
+    excerpt: Sleet also causes moisture on roads to freeze and become slippery.
+    start_char: 56
+    end_char: 112
+    support_strength: strong
+- object_id: weather.sleet
+  claim_id: clm_003
+  claim_text: Awareness of weather forecasts and conditions to prepare for sleet,
+    and appropriate footwear or vehicle equipment to handle slippery surfaces.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for more
+      information.
+    start_char: 47
+    end_char: 125
+    support_strength: medium
+- object_id: weather.sleet
+  claim_id: clm_004
+  claim_text: Monitor weather reports to anticipate sleet conditions. If sleet is
+    expected, take precautions such as driving slowly, using winter tires, or wearing
+    shoes with good traction.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000122
+    excerpt: Tune in to NOAA Weather Radio, commercial radio, or television for more
+      information.
+    start_char: 47
+    end_char: 125
+    support_strength: medium
+- object_id: weather.sleet
+  claim_id: clm_005
+  claim_text: Ignoring weather warnings about sleet can lead to accidents due to slippery
+    roads. Not using appropriate footwear or vehicle equipment can increase the risk
+    of falls or crashes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 81
+    page_end: 81
+    segment_id: src.fema.are-you-ready.2004::seg_000121
+    excerpt: Sleet also causes moisture on roads to freeze and become slippery.
+    start_char: 56
+    end_char: 112
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000121

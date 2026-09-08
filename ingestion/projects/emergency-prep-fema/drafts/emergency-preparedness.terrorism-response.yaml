@@ -1,0 +1,275 @@
+id: emergency-preparedness.terrorism-response
+slug: emergency-preparedness.terrorism-response
+seed_type: module
+co_type: skill_guide
+canonical_title: Preparing for and Responding to Terrorist Threats
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Learn to prepare for and respond to terrorist threats.
+summary_medium: This module guides you in preparing for and responding to terrorist
+  threats, including recognizing terms, taking protective measures, and identifying
+  resources.
+plain_language: This guide helps you understand how to prepare for and respond to
+  terrorist threats by recognizing key terms, taking protective measures, and knowing
+  what actions to take during an event.
+markdown_body: "### What this is\nThis module provides guidance on how to prepare\
+  \ for and respond to terrorist threats. It includes recognizing important terms,\
+  \ taking protective measures, and identifying resources for more information.\n\n\
+  ### Why it matters\nTerrorist threats pose significant risks to national security,\
+  \ including loss of life, property destruction, and economic impact. Being prepared\
+  \ can help mitigate these risks.\n\n### What you need\nUnderstanding of local political\
+  \ and technological contexts, a family disaster plan, and access to reliable information\
+  \ sources.\n\n### How to do it\n1. Recognize important terms related to terrorism.\
+  \ \n2. Include specific actions in your family disaster plan to address terrorist\
+  \ threats. \n3. Take protective measures such as staying informed and having emergency\
+  \ supplies ready. \n4. Know what actions to take if a terrorist event occurs, such\
+  \ as following official instructions and seeking shelter.\n\n### Common failure\
+  \ modes\nInadequate preparation and failure to recognize threats can lead to increased\
+  \ vulnerability during a terrorist event.\n\n### Safety/boundary notes\nEnsure that\
+  \ your actions do not cause panic or spread misinformation. Follow official guidance\
+  \ and instructions.\n\n### Local adaptation notes\nConsider local political unrest\
+  \ and technological infrastructure when preparing for terrorist threats."
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Ability to recognize important terms related to terrorism.
+  - Implementation of protective measures in a family disaster plan.
+  - Knowledge of actions to take during a terrorist event.
+  failure_modes:
+  - Inadequate preparation
+  - Failure to recognize threats
+  safety_boundary: This is general household planning guidance adapted from FEMA's
+    public citizen-preparedness material, not tactical or operational guidance. In
+    an actual threat or active incident, follow the direction of law enforcement and
+    emergency responders rather than this plan.
+  implementation:
+    smallest_viable_version: Include basic protective measures in your family disaster
+      plan.
+    tools: []
+    materials: []
+    expected_time: Varies based on preparation level
+    expected_cost: Minimal, primarily time investment
+    success_checks:
+    - Family disaster plan includes actions for terrorist threats.
+    - Family members understand protective measures.
+    stop_conditions:
+    - Lack of clear information on threats.
+    - Inability to implement protective measures.
+    common_mistakes:
+    - Ignoring the importance of preparation.
+    - Failing to update the disaster plan regularly.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Focus on evacuation routes and public transportation options.
+    - label: Off-grid
+      when: Living in a remote area.
+      notes: Ensure self-sufficiency with supplies and communication tools.
+    when_to_escalate:
+    - If local authorities issue a specific threat warning.
+    - If unable to ensure family safety with current measures.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_001
+  claim_text: This module provides guidance on how to prepare for and respond to terrorist
+    threats. It includes recognizing important terms, taking protective measures,
+    and identifying resources for more information.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: 'Use Part 4 to learn what actions to include in your family disaster
+      plan to prepare for and respond to terrorist threats. When you complete Part
+      4, you will be able to: - Recognize important terms. - Take protective measures
+      for terrorist threats. - Know what actions to take if an event occurs. - Identify
+      resources for more information about terrorist threats.'
+    start_char: 0
+    end_char: 328
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_002
+  claim_text: Terrorist threats pose significant risks to national security, including
+    loss of life, property destruction, and economic impact.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: These threats have brought about large-scale losses of life, the destruction
+      of property, widespread illness and injury, the displacement of large numbers
+      of people, and devastating economic loss.
+    start_char: 63
+    end_char: 216
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_003
+  claim_text: Being prepared can help mitigate these risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: Use Part 4 to learn what actions to include in your family disaster plan
+      to prepare for and respond to terrorist threats.
+    start_char: 0
+    end_char: 89
+    support_strength: medium
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_004
+  claim_text: Recognize important terms related to terrorism.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: 'When you complete Part 4, you will be able to: - Recognize important
+      terms.'
+    start_char: 90
+    end_char: 141
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_005
+  claim_text: Include specific actions in your family disaster plan to address terrorist
+    threats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: Use Part 4 to learn what actions to include in your family disaster plan
+      to prepare for and respond to terrorist threats.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_006
+  claim_text: Take protective measures such as staying informed and having emergency
+    supplies ready.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: 'When you complete Part 4, you will be able to: - Take protective measures
+      for terrorist threats.'
+    start_char: 142
+    end_char: 212
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_007
+  claim_text: Know what actions to take if a terrorist event occurs, such as following
+    official instructions and seeking shelter.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 146
+    page_end: 146
+    segment_id: src.fema.are-you-ready.2004::seg_000230
+    excerpt: 'When you complete Part 4, you will be able to: - Know what actions to
+      take if an event occurs.'
+    start_char: 213
+    end_char: 277
+    support_strength: strong
+- object_id: emergency-preparedness.terrorism-response
+  claim_id: clm_008
+  claim_text: Inadequate preparation and failure to recognize threats can lead to
+    increased vulnerability during a terrorist event.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 148
+    page_end: 150
+    segment_id: src.fema.are-you-ready.2004::seg_000232
+    excerpt: Within the immediate area of a terrorist event, you would need to rely
+      on police, fi re, and other offi cials for instructions. However, you can prepare
+      in much the same way you would prepare for other crisis events.
+    start_char: 678
+    end_char: 875
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000230
+bundle_overrides:
+  hook: Understanding how to prepare for and respond to terrorist threats can significantly
+    reduce risks to your safety and well-being.
+  primer: Terrorist threats are a serious concern that can impact national security,
+    leading to loss of life, property damage, and economic disruption. Being prepared
+    for such events is crucial to mitigate these risks. This involves recognizing
+    key terms related to terrorism, incorporating specific actions into your family
+    disaster plan, and taking protective measures such as staying informed and having
+    emergency supplies ready. Knowing what actions to take during a terrorist event,
+    such as following official instructions and seeking shelter, is also vital. Inadequate
+    preparation and failure to recognize threats can increase vulnerability during
+    such events. Therefore, understanding the local political and technological context
+    and having access to reliable information sources are essential components of
+    effective preparation.
+  guide: '1. **Recognize Important Terms**: Familiarize yourself with key terms related
+    to terrorism, such as ''shelter-in-place'', ''evacuation'', and ''emergency alert''.
+    Understanding these terms will help you follow instructions during an event.
+
+
+    2. **Develop a Family Disaster Plan**: Include specific actions in your plan to
+    address terrorist threats. This should involve identifying safe areas in your
+    home, establishing communication plans, and knowing evacuation routes.
+
+
+    3. **Stay Informed**: Keep up-to-date with reliable news sources and official
+    alerts. Sign up for local emergency notifications and understand the different
+    types of alerts you might receive.
+
+
+    4. **Prepare Emergency Supplies**: Assemble an emergency kit with essentials such
+    as water, non-perishable food, a flashlight, batteries, a first-aid kit, and any
+    necessary medications.
+
+
+    5. **Know What to Do During an Event**: If a terrorist event occurs, follow official
+    instructions immediately. This may involve seeking shelter, evacuating, or avoiding
+    certain areas. Ensure all family members know these procedures.
+
+
+    6. **Review and Update Regularly**: Regularly review and update your disaster
+    plan and emergency supplies. Practice drills with your family to ensure everyone
+    knows what to do.'
+  reference:
+  - Recognize important terms related to terrorism.
+  - Include specific actions in your family disaster plan.
+  - Stay informed with reliable sources.
+  - Prepare emergency supplies.
+  - Follow official instructions during an event.
+  - Review and update your plan regularly.
+  worksheet:
+  - List five key terms related to terrorism and their meanings.
+  - Create a checklist of items for your emergency supply kit.
+  - Draft a communication plan for your family in case of a terrorist event.
+  - Identify and mark evacuation routes from your home.
+  - Role-play a scenario where you follow official instructions during a terrorist
+    event.
+  teach_forward_kit:
+    three_minute_version: Terrorist threats are serious risks that require preparation.
+      Recognize key terms, include specific actions in your family disaster plan,
+      stay informed, and prepare emergency supplies. Know what to do during an event
+      and review your plan regularly.
+    ten_minute_outline:
+    - Introduction to terrorist threats and their impact.
+    - Importance of recognizing key terms.
+    - Steps to develop a family disaster plan.
+    - How to stay informed and prepare emergency supplies.
+    - Actions to take during a terrorist event.
+    - Reviewing and updating your plan.
+    discussion_prompts:
+    - Why is it important to recognize key terms related to terrorism?
+    - What challenges might you face when preparing for a terrorist threat?
+    - How can staying informed help mitigate the risks of a terrorist event?
+    - What are some common mistakes people make in their disaster planning?
+    - How can you ensure your family is prepared for a terrorist threat?

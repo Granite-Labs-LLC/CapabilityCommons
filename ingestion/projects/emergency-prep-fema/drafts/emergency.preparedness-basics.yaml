@@ -1,0 +1,204 @@
+id: emergency.preparedness-basics
+slug: emergency.preparedness-basics
+seed_type: extracted
+co_type: concept_note
+canonical_title: Emergency Preparedness Basics
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_management
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Introduction to emergency preparedness basics.
+summary_medium: This section introduces the basics of emergency preparedness, emphasizing
+  the importance of being ready for various types of emergencies.
+plain_language: Learn the basics of preparing for emergencies, including identifying
+  potential risks, creating a family emergency plan, and assembling a supply kit.
+markdown_body: '# What this is
+
+  Emergency preparedness involves being ready for unexpected events that can disrupt
+  daily life. This includes understanding potential risks, planning for emergencies,
+  and having necessary supplies.
+
+
+  # Why it matters
+
+  Being prepared for emergencies can significantly reduce the impact of disasters
+  on individuals and families. It ensures safety and can save lives.
+
+
+  # What you need
+
+  To start, you need to identify potential emergencies in your area, develop a family
+  emergency plan, and assemble an emergency supply kit.
+
+
+  # How to do it
+
+  1. Identify potential emergencies specific to your region. 2. Develop a family emergency
+  plan that includes communication strategies and evacuation routes. 3. Assemble an
+  emergency supply kit with essentials like water, food, and medical supplies.
+
+
+  # Common failure modes
+
+  Common issues include lack of preparedness, incomplete emergency plans, and insufficient
+  supplies.
+
+
+  # Safety/boundary notes
+
+  Ensure that all family members are aware of the emergency plan and know how to use
+  the emergency kit.
+
+
+  # Local adaptation notes
+
+  Consider regional risk factors and utilize community resources to enhance your emergency
+  preparedness plan.'
+structured_data:
+  definition: Emergency preparedness is the process of ensuring readiness for unexpected
+    events that can cause harm or disruption.
+  key_questions:
+  - What types of emergencies are most likely to occur in my area?
+  - How can I effectively communicate with my family during an emergency?
+  - What items should be included in an emergency supply kit?
+  misconceptions:
+  - Emergency preparedness is only necessary for large-scale disasters.
+  - Once a plan is made, it does not need to be updated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.preparedness-basics
+  claim_id: clm_001
+  claim_text: Emergency preparedness involves being ready for unexpected events that
+    can disrupt daily life. This includes understanding potential risks, planning
+    for emergencies, and having necessary supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: You may need to survive on your own after a disaster. This means having
+      your own food, water, and other supplies in sufficient quantity to last for
+      at least three days.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: emergency.preparedness-basics
+  claim_id: clm_002
+  claim_text: Being prepared for emergencies can significantly reduce the impact of
+    disasters on individuals and families. It ensures safety and can save lives.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: Local officials and relief workers will be on the scene after a disaster,
+      but they cannot reach everyone immediately. You could get help in hours, or
+      it might take days.
+    start_char: 151
+    end_char: 300
+    support_strength: medium
+- object_id: emergency.preparedness-basics
+  claim_id: clm_003
+  claim_text: To start, you need to identify potential emergencies in your area, develop
+    a family emergency plan, and assemble an emergency supply kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: A disaster supplies kit is a collection of basic items that members of
+      a household may need in the event of a disaster.
+    start_char: 301
+    end_char: 450
+    support_strength: medium
+- object_id: emergency.preparedness-basics
+  claim_id: clm_004
+  claim_text: Identify potential emergencies specific to your region.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: You may need to survive on your own after a disaster.
+    start_char: 0
+    end_char: 50
+    support_strength: weak
+- object_id: emergency.preparedness-basics
+  claim_id: clm_005
+  claim_text: Develop a family emergency plan that includes communication strategies
+    and evacuation routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: Local officials and relief workers will be on the scene after a disaster,
+      but they cannot reach everyone immediately.
+    start_char: 151
+    end_char: 250
+    support_strength: weak
+- object_id: emergency.preparedness-basics
+  claim_id: clm_006
+  claim_text: Assemble an emergency supply kit with essentials like water, food, and
+    medical supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: A disaster supplies kit is a collection of basic items that members of
+      a household may need in the event of a disaster.
+    start_char: 301
+    end_char: 450
+    support_strength: strong
+- object_id: emergency.preparedness-basics
+  claim_id: clm_007
+  claim_text: Common issues include lack of preparedness, incomplete emergency plans,
+    and insufficient supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: You may need to survive on your own after a disaster. This means having
+      your own food, water, and other supplies in sufficient quantity to last for
+      at least three days.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: emergency.preparedness-basics
+  claim_id: clm_008
+  claim_text: Ensure that all family members are aware of the emergency plan and know
+    how to use the emergency kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: Make sure all family members know where the kit is kept.
+    start_char: 451
+    end_char: 500
+    support_strength: strong
+- object_id: emergency.preparedness-basics
+  claim_id: clm_009
+  claim_text: Consider regional risk factors and utilize community resources to enhance
+    your emergency preparedness plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: You may need to survive on your own after a disaster.
+    start_char: 0
+    end_char: 50
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000045

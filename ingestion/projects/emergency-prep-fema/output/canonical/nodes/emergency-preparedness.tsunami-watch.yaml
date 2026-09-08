@@ -1,0 +1,157 @@
+id: emergency-preparedness.tsunami-watch
+slug: emergency-preparedness.tsunami-watch
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Tsunami Watch
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: A tsunami watch indicates a potential tsunami at least two hours away.
+summary_medium: A tsunami watch is issued when a tsunami has been or may have been
+  generated, but is at least two hours away from the area in question.
+plain_language: A tsunami watch means that a tsunami might have been created, but
+  it is at least two hours away from reaching the area.
+markdown_body: '### What this is
+
+  A tsunami watch is an alert that indicates a tsunami has been or may have been generated.
+  It is a precautionary measure to inform people that a tsunami could potentially
+  impact the area, but it is at least two hours away.
+
+
+  ### Why it matters
+
+  Understanding a tsunami watch is crucial for preparedness and safety. It provides
+  an early warning that allows individuals and communities to take necessary precautions
+  and prepare for a possible tsunami impact.
+
+
+  ### What you need
+
+  Awareness of local emergency procedures and access to reliable information sources
+  to stay updated on the situation.
+
+
+  ### How to do it
+
+  Upon receiving a tsunami watch, monitor official communication channels for updates
+  and prepare to evacuate if necessary. Ensure you have an emergency kit ready and
+  know the evacuation routes.
+
+
+  ### Common failure modes
+
+  Ignoring the watch, assuming it will not escalate, or not having an evacuation plan
+  can lead to inadequate preparation.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize safety and follow instructions from local authorities. Do not
+  wait for a tsunami warning to take action.
+
+
+  ### Local adaptation notes
+
+  Local authorities may have specific procedures and communication channels. Familiarize
+  yourself with these to ensure timely and accurate information.'
+structured_data:
+  definition: A tsunami watch is an alert indicating a potential tsunami that is at
+    least two hours away from the area.
+  key_questions:
+  - What is the difference between a tsunami watch and a tsunami warning?
+  - How should one prepare when a tsunami watch is issued?
+  misconceptions:
+  - A tsunami watch means a tsunami will definitely occur.
+  - There is no need to prepare until a warning is issued.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.tsunami-watch
+  claim_id: clm_001
+  claim_text: A tsunami watch is an alert that indicates a tsunami has been or may
+    have been generated. It is a precautionary measure to inform people that a tsunami
+    could potentially impact the area, but it is at least two hours away.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 113
+    page_end: 113
+    segment_id: src.fema.are-you-ready.2004::seg_000175
+    excerpt: A tsunami was or may have been generated, but is at least two hours travel
+      time to the area in Watch status.
+    start_char: 0
+    end_char: 89
+    support_strength: strong
+- object_id: emergency-preparedness.tsunami-watch
+  claim_id: clm_002
+  claim_text: Understanding a tsunami watch is crucial for preparedness and safety.
+    It provides an early warning that allows individuals and communities to take necessary
+    precautions and prepare for a possible tsunami impact.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 113
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000177
+    excerpt: 'During a Tsunami The following are guidelines for what you should do
+      if a tsunami is likely in your area: Turn on your radio to learn if there is
+      a tsunami warning if an earthquake occurs and you are in a coastal area. Move
+      inland to higher ground immediately and stay there.'
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.tsunami-watch
+  claim_id: clm_003
+  claim_text: Upon receiving a tsunami watch, monitor official communication channels
+    for updates and prepare to evacuate if necessary. Ensure you have an emergency
+    kit ready and know the evacuation routes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 113
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000177
+    excerpt: 'During a Tsunami The following are guidelines for what you should do
+      if a tsunami is likely in your area: Turn on your radio to learn if there is
+      a tsunami warning if an earthquake occurs and you are in a coastal area. Move
+      inland to higher ground immediately and stay there.'
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.tsunami-watch
+  claim_id: clm_004
+  claim_text: Ignoring the watch, assuming it will not escalate, or not having an
+    evacuation plan can lead to inadequate preparation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 115
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000178
+    excerpt: What is clear is that no possession is worth your life and that it is
+      important to get to higher ground away from the coast and stay there until it
+      is safe to return.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: emergency-preparedness.tsunami-watch
+  claim_id: clm_005
+  claim_text: Always prioritize safety and follow instructions from local authorities.
+    Do not wait for a tsunami warning to take action.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 115
+    page_end: 115
+    segment_id: src.fema.are-you-ready.2004::seg_000178
+    excerpt: What is clear is that no possession is worth your life and that it is
+      important to get to higher ground away from the coast and stay there until it
+      is safe to return.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000175

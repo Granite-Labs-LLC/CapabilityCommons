@@ -1,0 +1,111 @@
+id: safety.fire-escape-guidelines
+slug: safety.fire-escape-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Safety Guidelines for Fire Escape and Disaster Recovery
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for safely escaping fires and recovering from disasters.
+summary_medium: This reference sheet provides essential safety guidelines for escaping
+  fires and instructions for recovering from disasters.
+plain_language: Learn how to safely escape from a fire and what steps to take to recover
+  from a disaster.
+markdown_body: '### What this is
+
+  This document provides safety guidelines for escaping fires and instructions for
+  recovering from disasters.
+
+
+  ### Why it matters
+
+  Understanding how to safely escape a fire and recover from a disaster can save lives
+  and minimize harm.
+
+
+  ### What you need
+
+  Familiarity with your building''s fire escape plan and basic disaster recovery steps.
+
+
+  ### How to do it
+
+  In case of a fire, follow your building''s escape plan, stay low to avoid smoke,
+  and use the stairs instead of elevators. After a disaster, assess the situation,
+  ensure safety, and follow recovery instructions.
+
+
+  ### Common failure modes
+
+  Not knowing the escape plan, using elevators during a fire, and not having a disaster
+  recovery plan.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize personal safety and follow official guidelines during emergencies.
+
+
+  ### Local adaptation notes
+
+  Adapt the guidelines to fit local building codes and disaster recovery resources.'
+structured_data:
+  definition: Guidelines for escaping fires and recovering from disasters.
+  key_questions:
+  - What is the safest way to escape a fire?
+  - What steps should be taken after a disaster?
+  misconceptions:
+  - It's safe to use elevators during a fire.
+  - Disaster recovery is only about rebuilding.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.fire-escape-guidelines
+  claim_id: clm_001
+  claim_text: In case of a fire, follow your building's escape plan, stay low to avoid
+    smoke, and use the stairs instead of elevators.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: Do not use elevators.
+    start_char: 238
+    end_char: 258
+    support_strength: strong
+- object_id: safety.fire-escape-guidelines
+  claim_id: clm_002
+  claim_text: After a disaster, assess the situation, ensure safety, and follow recovery
+    instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 155
+    segment_id: src.fema.are-you-ready.2004::seg_000239
+    excerpt: Follow the instructions for recovering from a disaster in Part 5.
+    start_char: 66
+    end_char: 126
+    support_strength: medium
+- object_id: safety.fire-escape-guidelines
+  claim_id: clm_003
+  claim_text: Not knowing the escape plan, using elevators during a fire, and not
+    having a disaster recovery plan.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 154
+    page_end: 154
+    segment_id: src.fema.are-you-ready.2004::seg_000236
+    excerpt: Do not use elevators.
+    start_char: 238
+    end_char: 258
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000239

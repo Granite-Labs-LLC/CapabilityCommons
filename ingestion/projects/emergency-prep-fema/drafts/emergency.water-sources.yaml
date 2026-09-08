@@ -1,0 +1,256 @@
+id: emergency.water-sources
+slug: emergency.water-sources
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Water Sources
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A reference sheet listing safe and unsafe water sources during emergencies.
+summary_medium: This reference sheet provides a list of water sources that are safe
+  and unsafe to use during emergencies, helping individuals identify viable options
+  for water when usual supplies are disrupted.
+plain_language: In emergencies, it's crucial to know which water sources are safe
+  to use. This guide lists safe options like melted ice cubes and water from pipes,
+  and warns against unsafe sources like radiators and toilet water.
+markdown_body: '### What this is
+
+  This reference sheet helps identify safe and unsafe water sources during emergencies
+  when regular water supplies are unavailable.
+
+
+  ### Why it matters
+
+  Access to clean water is essential for survival, especially in emergencies. Knowing
+  which sources are safe can prevent illness and ensure you have water for drinking,
+  cooking, and hygiene.
+
+
+  ### What you need
+
+  - Knowledge of your home''s water systems
+
+  - Access to emergency supplies for water treatment
+
+
+  ### How to do it
+
+  #### Safe Water Sources:
+
+  - **Melted ice cubes**: Use ice from your freezer as it melts.
+
+  - **Water drained from the water heater**: Ensure the heater is undamaged before
+  use.
+
+  - **Liquids from canned goods**: Use juices from canned fruits and vegetables.
+
+  - **Water drained from pipes**: Access water remaining in your home''s plumbing.
+
+
+  #### Unsafe Water Sources:
+
+  - **Radiators**: Water may contain harmful chemicals.
+
+  - **Hot water boilers**: Not safe for drinking.
+
+  - **Water beds**: Chemicals in the vinyl or added fungicides make this water unsafe.
+
+  - **Toilet bowl or flush tank**: Contains contaminants.
+
+  - **Swimming pools and spas**: Chemicals are too concentrated for drinking but may
+  be used for hygiene.
+
+
+  ### Common failure modes
+
+  - Using water from unsafe sources without treatment.
+
+  - Failing to treat water of uncertain quality.
+
+
+  ### Safety/boundary notes
+
+  Always treat water of uncertain quality before use. Methods include boiling, chlorination,
+  and distillation.
+
+
+  ### Local adaptation notes
+
+  Adapt this guide based on available resources and local water systems.'
+structured_data:
+  definition: A guide to identify safe and unsafe water sources during emergencies.
+  key_questions:
+  - What are the safe sources of water during an emergency?
+  - Which water sources should be avoided?
+  misconceptions:
+  - All household water sources are safe to use in emergencies.
+  - Swimming pool water is safe to drink.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.water-sources
+  claim_id: clm_001
+  claim_text: 'Melted ice cubes: Use ice from your freezer as it melts.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Melted ice cubes
+    start_char: 0
+    end_char: 16
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_002
+  claim_text: 'Water drained from the water heater: Ensure the heater is undamaged
+    before use.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Water drained from the water heater (if the water heater has not been
+      damaged)
+    start_char: 17
+    end_char: 84
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_003
+  claim_text: 'Liquids from canned goods: Use juices from canned fruits and vegetables.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Liquids from canned goods such as fruit or vegetable juices
+    start_char: 85
+    end_char: 137
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_004
+  claim_text: 'Water drained from pipes: Access water remaining in your home''s plumbing.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Water drained from pipes
+    start_char: 138
+    end_char: 161
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_005
+  claim_text: 'Radiators: Water may contain harmful chemicals.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Radiators
+    start_char: 162
+    end_char: 171
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_006
+  claim_text: 'Hot water boilers: Not safe for drinking.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Hot water boilers (home heating system)
+    start_char: 172
+    end_char: 210
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_007
+  claim_text: 'Water beds: Chemicals in the vinyl or added fungicides make this water
+    unsafe.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Water beds (fungicides added to the water or chemicals in the vinyl may
+      make water unsafe to use)
+    start_char: 211
+    end_char: 292
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_008
+  claim_text: 'Toilet bowl or flush tank: Contains contaminants.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Water from the toilet bowl or flush tank
+    start_char: 293
+    end_char: 331
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_009
+  claim_text: 'Swimming pools and spas: Chemicals are too concentrated for drinking
+    but may be used for hygiene.'
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Swimming pools and spas (chemicals used to kill germs are too concentrated
+      for safe drinking but can be used for personal hygiene, cleaning, and related
+      uses)
+    start_char: 332
+    end_char: 459
+    support_strength: strong
+- object_id: emergency.water-sources
+  claim_id: clm_010
+  claim_text: Always treat water of uncertain quality before use. Methods include
+    boiling, chlorination, and distillation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 40
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000054
+    excerpt: Water Treatment Treat all water of uncertain quality before using it
+      for drinking, food washing or preparation, washing dishes, brushing teeth, or
+      making ice.
+    start_char: 460
+    end_char: 567
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000055
+    excerpt: Boiling is the safest method of treating water.
+    start_char: 0
+    end_char: 44
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 41
+    segment_id: src.fema.are-you-ready.2004::seg_000056
+    excerpt: You can use household liquid bleach to kill microorganisms.
+    start_char: 0
+    end_char: 55
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: While the two methods described above will kill most microbes in water,
+      distillation will remove microbes (germs) that resist these methods, as well
+      as heavy metals, salts, and most other chemicals.
+    start_char: 0
+    end_char: 211
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000054

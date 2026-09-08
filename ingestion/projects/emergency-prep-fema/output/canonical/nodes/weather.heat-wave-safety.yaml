@@ -1,0 +1,149 @@
+id: weather.heat-wave-safety
+slug: weather.heat-wave-safety
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Heat Wave Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: weather
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Safety tips for heat waves.
+summary_medium: Guidance on understanding the heat index, recognizing heat disorders,
+  and implementing heat wave safety measures.
+plain_language: Learn how to stay safe during a heat wave by understanding the heat
+  index and recognizing signs of heat-related illnesses.
+markdown_body: '# What this is
+
+  This reference sheet provides information on how to stay safe during a heat wave.
+  It includes details on the heat index, common heat disorders, and practical safety
+  tips.
+
+
+  # Why it matters
+
+  Heat waves can pose serious health risks, including heat exhaustion and heat stroke.
+  Understanding how to protect yourself and others during extreme heat is crucial
+  for safety.
+
+
+  # What you need
+
+  Awareness of local weather conditions, access to cooling resources, and knowledge
+  of heat-related health symptoms.
+
+
+  # How to do it
+
+  Monitor the heat index to understand the risk level. Stay hydrated, avoid strenuous
+  activities during peak heat, and seek air-conditioned environments. Recognize symptoms
+  of heat disorders and respond promptly.
+
+
+  # Common failure modes
+
+  Ignoring heat warnings, inadequate hydration, and failure to recognize early signs
+  of heat-related illnesses.
+
+
+  # Safety/boundary notes
+
+  Ensure access to emergency services if symptoms of heat stroke occur. Vulnerable
+  populations, such as the elderly and young children, require extra precautions.
+
+
+  # Local adaptation notes
+
+  Adapt safety measures based on local climate conditions and available resources.'
+structured_data:
+  definition: A heat wave is a prolonged period of excessively hot weather, which
+    may be accompanied by high humidity.
+  key_questions:
+  - What is the heat index?
+  - What are the symptoms of heat exhaustion and heat stroke?
+  - How can I stay safe during a heat wave?
+  misconceptions:
+  - Heat waves only affect those who are outdoors.
+  - Drinking any liquid is sufficient to stay hydrated.
+requires: []
+suggested_edges: []
+citations:
+- object_id: weather.heat-wave-safety
+  claim_id: clm_001
+  claim_text: This reference sheet provides information on how to stay safe during
+    a heat wave. It includes details on the heat index, common heat disorders, and
+    practical safety tips.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000163
+    excerpt: 'Heat Wave: A Major Summer Killer. An online brochure describing the
+      heat index, heat disorders, and heat wave safety tips.'
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: weather.heat-wave-safety
+  claim_id: clm_002
+  claim_text: Heat waves can pose serious health risks, including heat exhaustion
+    and heat stroke.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000163
+    excerpt: 'Heat Wave: A Major Summer Killer. An online brochure describing the
+      heat index, heat disorders, and heat wave safety tips.'
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+- object_id: weather.heat-wave-safety
+  claim_id: clm_003
+  claim_text: Monitor the heat index to understand the risk level. Stay hydrated,
+    avoid strenuous activities during peak heat, and seek air-conditioned environments.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000163
+    excerpt: 'Heat Wave: A Major Summer Killer. An online brochure describing the
+      heat index, heat disorders, and heat wave safety tips.'
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: weather.heat-wave-safety
+  claim_id: clm_004
+  claim_text: Recognize symptoms of heat disorders and respond promptly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000163
+    excerpt: 'Heat Wave: A Major Summer Killer. An online brochure describing the
+      heat index, heat disorders, and heat wave safety tips.'
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+- object_id: weather.heat-wave-safety
+  claim_id: clm_005
+  claim_text: Ensure access to emergency services if symptoms of heat stroke occur.
+    Vulnerable populations, such as the elderly and young children, require extra
+    precautions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 105
+    page_end: 105
+    segment_id: src.fema.are-you-ready.2004::seg_000163
+    excerpt: 'Heat Wave: A Major Summer Killer. An online brochure describing the
+      heat index, heat disorders, and heat wave safety tips.'
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000163

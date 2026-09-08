@@ -1,0 +1,161 @@
+id: emergency-preparedness.biological-threats
+slug: emergency-preparedness.biological-threats
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Biological Threats
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Overview of biological threats and their characteristics.
+summary_medium: Learn about biological threats, including types of agents, their characteristics,
+  and methods of dispersion.
+plain_language: Biological threats involve harmful organisms or toxins that can affect
+  humans, animals, and plants. Understanding these threats helps in preparing for
+  potential biological attacks.
+markdown_body: '### What this is
+
+  Biological threats involve the use of organisms or toxins to harm or incapacitate
+  humans, animals, or crops. These threats can come from bacteria, viruses, or toxins.
+
+
+  ### Why it matters
+
+  Understanding biological threats is crucial for preparedness and response to potential
+  attacks that could impact public health and safety.
+
+
+  ### What you need
+
+  Awareness of the types of biological agents and their dispersion methods is essential
+  for effective preparedness.
+
+
+  ### How to do it
+
+  Biological agents can be dispersed through aerosols, animals, contaminated food
+  and water, and person-to-person contact. It''s important to follow official guidance
+  on decontamination and prevention.
+
+
+  ### Common failure modes
+
+  Challenges include the difficulty in growing and maintaining agents and their breakdown
+  in sunlight.
+
+
+  ### Safety/boundary notes
+
+  Ensure to follow official instructions for decontamination, such as cooking food
+  and boiling water to deactivate toxins.
+
+
+  ### Local adaptation notes
+
+  Local conditions may affect the persistence and spread of biological agents, requiring
+  tailored response strategies.'
+structured_data:
+  definition: Biological threats are the use of organisms or toxins to harm or incapacitate
+    living beings.
+  key_questions:
+  - What are the main types of biological agents?
+  - How can biological agents be dispersed?
+  - What are effective methods for decontamination?
+  misconceptions:
+  - All biological agents are long-lived.
+  - Boiling water for a short time is always sufficient to kill microbes.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_001
+  claim_text: Biological threats involve the use of organisms or toxins to harm or
+    incapacitate humans, animals, or crops.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Biological agents are organisms or toxins that can kill or incapacitate
+      people, livestock, and crops.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_002
+  claim_text: These threats can come from bacteria, viruses, or toxins.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: The three basic groups of biological agents that would likely be used
+      as weapons are bacteria, viruses, and toxins.
+    start_char: 96
+    end_char: 194
+    support_strength: strong
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_003
+  claim_text: Biological agents can be dispersed through aerosols, animals, contaminated
+    food and water, and person-to-person contact.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Biological agents can be dispersed by spraying them into the air, by
+      infecting animals that carry the disease to humans, and by contaminating food
+      and water.
+    start_char: 195
+    end_char: 331
+    support_strength: strong
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_004
+  claim_text: It's important to follow official guidance on decontamination and prevention.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Follow offi cial instructions.
+    start_char: 332
+    end_char: 353
+    support_strength: medium
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_005
+  claim_text: Challenges include the difficulty in growing and maintaining agents
+    and their breakdown in sunlight.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Most biological agents are diffi cult to grow and maintain. Many break
+      down quickly when exposed to sunlight and other environmental factors.
+    start_char: 354
+    end_char: 469
+    support_strength: strong
+- object_id: emergency-preparedness.biological-threats
+  claim_id: clm_006
+  claim_text: Ensure to follow official instructions for decontamination, such as
+    cooking food and boiling water to deactivate toxins.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 156
+    page_end: 157
+    segment_id: src.fema.are-you-ready.2004::seg_000242
+    excerpt: Most microbes can be killed, and toxins deactivated, by cooking food
+      and boiling water. Most microbes are killed by boiling water for one minute,
+      but some require longer. Follow offi cial instructions.
+    start_char: 470
+    end_char: 620
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000242

@@ -1,0 +1,225 @@
+id: automotive.product-safety
+slug: automotive.product-safety
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Automotive Product Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: automotive
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: A list of common automotive products.
+summary_medium: This reference sheet provides a list of common automotive products
+  including motor oil, fuel additives, and antifreeze.
+plain_language: This document lists various products used in vehicles, such as oils,
+  fluids, and additives.
+markdown_body: '### What this is
+
+  This reference sheet lists common automotive products that are essential for vehicle
+  maintenance and operation.
+
+
+  ### Why it matters
+
+  Understanding the different types of automotive products is crucial for maintaining
+  vehicle performance and safety. Each product serves a specific function, such as
+  lubrication, cooling, or cleaning, which helps in the efficient operation of a vehicle.
+
+
+  ### What you need
+
+  Familiarity with the types of automotive products and their specific uses in vehicle
+  maintenance.
+
+
+  ### How to do it
+
+  Identify the specific needs of your vehicle and select the appropriate product from
+  the list. For example, use motor oil for engine lubrication and antifreeze for temperature
+  regulation.
+
+
+  ### Common failure modes
+
+  Using the wrong type of product can lead to vehicle damage. For instance, using
+  incorrect oil viscosity can affect engine performance.
+
+
+  ### Safety/boundary notes
+
+  Always follow the manufacturer''s guidelines when selecting and using automotive
+  products to ensure safety and compatibility.
+
+
+  ### Local adaptation notes
+
+  Product availability and specifications may vary by region, so check local automotive
+  stores for the correct products.'
+structured_data:
+  definition: A list of products commonly used in automotive maintenance.
+  key_questions:
+  - What are the functions of each automotive product?
+  - How do I choose the right product for my vehicle?
+  misconceptions:
+  - All motor oils are the same.
+  - Antifreeze is only necessary in cold climates.
+requires: []
+suggested_edges: []
+citations:
+- object_id: automotive.product-safety
+  claim_id: clm_001
+  claim_text: This reference sheet lists common automotive products that are essential
+    for vehicle maintenance and operation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000206
+    excerpt: '## **Automotive Products**
+
+
+      - Motor oil
+
+      - Fuel additives
+
+      - Carburetor and fuel injection cleaners
+
+      - Air conditioning refrigerants
+
+      - Starter fluids
+
+      - Automotive batteries
+
+      - Transmission and brake fluid
+
+      - Antifreeze'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: automotive.product-safety
+  claim_id: clm_002
+  claim_text: Understanding the different types of automotive products is crucial
+    for maintaining vehicle performance and safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000206
+    excerpt: '## **Automotive Products**
+
+
+      - Motor oil
+
+      - Fuel additives
+
+      - Carburetor and fuel injection cleaners
+
+      - Air conditioning refrigerants
+
+      - Starter fluids
+
+      - Automotive batteries
+
+      - Transmission and brake fluid
+
+      - Antifreeze'
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: automotive.product-safety
+  claim_id: clm_003
+  claim_text: Each product serves a specific function, such as lubrication, cooling,
+    or cleaning, which helps in the efficient operation of a vehicle.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000206
+    excerpt: '## **Automotive Products**
+
+
+      - Motor oil
+
+      - Fuel additives
+
+      - Carburetor and fuel injection cleaners
+
+      - Air conditioning refrigerants
+
+      - Starter fluids
+
+      - Automotive batteries
+
+      - Transmission and brake fluid
+
+      - Antifreeze'
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: automotive.product-safety
+  claim_id: clm_004
+  claim_text: Using the wrong type of product can lead to vehicle damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000206
+    excerpt: '## **Automotive Products**
+
+
+      - Motor oil
+
+      - Fuel additives
+
+      - Carburetor and fuel injection cleaners
+
+      - Air conditioning refrigerants
+
+      - Starter fluids
+
+      - Automotive batteries
+
+      - Transmission and brake fluid
+
+      - Antifreeze'
+    start_char: 0
+    end_char: 200
+    support_strength: weak
+- object_id: automotive.product-safety
+  claim_id: clm_005
+  claim_text: Always follow the manufacturer's guidelines when selecting and using
+    automotive products to ensure safety and compatibility.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000206
+    excerpt: '## **Automotive Products**
+
+
+      - Motor oil
+
+      - Fuel additives
+
+      - Carburetor and fuel injection cleaners
+
+      - Air conditioning refrigerants
+
+      - Starter fluids
+
+      - Automotive batteries
+
+      - Transmission and brake fluid
+
+      - Antifreeze'
+    start_char: 0
+    end_char: 200
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000206

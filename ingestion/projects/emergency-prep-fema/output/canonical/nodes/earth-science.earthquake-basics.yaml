@@ -1,0 +1,147 @@
+id: earth-science.earthquake-basics
+slug: earth-science.earthquake-basics
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Earthquake Basics
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: earth-science
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: low
+summary_short: An overview of earthquakes and their causes.
+summary_medium: An overview of earthquakes, describing their causes, the role of plate
+  tectonics, and potential impacts on populated areas.
+plain_language: Earthquakes are sudden movements of the Earth's surface caused by
+  the release of energy from the Earth's crust. They are often the result of the movement
+  of tectonic plates.
+markdown_body: '# What this is
+
+  An earthquake is a sudden movement of the Earth''s surface caused by the abrupt
+  release of energy that has accumulated over time.
+
+
+  # Why it matters
+
+  Earthquakes can be extremely destructive, especially in populated areas, leading
+  to loss of life, injuries, and significant property damage.
+
+
+  # What you need
+
+  Understanding the basic causes and effects of earthquakes can help in preparing
+  for and mitigating their impacts.
+
+
+  # How to do it
+
+  Learn about the movement of tectonic plates and how their interactions can lead
+  to earthquakes. Recognize the signs of potential earthquakes and understand safety
+  measures.
+
+
+  # Common failure modes
+
+  Ignoring the signs of potential earthquakes or failing to prepare adequately can
+  lead to increased risk during an event.
+
+
+  # Safety/boundary notes
+
+  Ensure that you have a safety plan in place if you live in an earthquake-prone area.
+
+
+  # Local adaptation notes
+
+  Consider local building codes and safety regulations that are designed to minimize
+  earthquake damage.'
+structured_data:
+  definition: An earthquake is a sudden shaking of the ground caused by the movement
+    of the Earth's tectonic plates.
+  key_questions:
+  - What causes an earthquake?
+  - How do tectonic plates contribute to earthquakes?
+  - What are the potential impacts of an earthquake in populated areas?
+  misconceptions:
+  - Earthquakes only happen in certain parts of the world.
+  - All earthquakes cause significant damage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: earth-science.earthquake-basics
+  claim_id: clm_001
+  claim_text: An earthquake is a sudden movement of the Earth's surface caused by
+    the abrupt release of energy that has accumulated over time.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: An earthquake is a sudden movement of the earth, caused by the abrupt
+      release of strain that has accumulated over a long time.
+    start_char: 72
+    end_char: 160
+    support_strength: strong
+- object_id: earth-science.earthquake-basics
+  claim_id: clm_002
+  claim_text: Earthquakes can be extremely destructive, especially in populated areas,
+    leading to loss of life, injuries, and significant property damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: If the earthquake occurs in a populated area, it may cause many deaths
+      and injuries and extensive property damage.
+    start_char: 365
+    end_char: 446
+    support_strength: strong
+- object_id: earth-science.earthquake-basics
+  claim_id: clm_003
+  claim_text: Learn about the movement of tectonic plates and how their interactions
+    can lead to earthquakes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 94
+    page_end: 95
+    segment_id: src.fema.are-you-ready.2004::seg_000146
+    excerpt: For hundreds of millions of years, the forces of plate tectonics have
+      shaped the earth, as the huge plates that form the earth's surface slowly move
+      over, under, and past each other.
+    start_char: 161
+    end_char: 303
+    support_strength: medium
+- object_id: earth-science.earthquake-basics
+  claim_id: clm_004
+  claim_text: Recognize the signs of potential earthquakes and understand safety measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 71
+    support_strength: weak
+- object_id: earth-science.earthquake-basics
+  claim_id: clm_005
+  claim_text: Ensure that you have a safety plan in place if you live in an earthquake-prone
+    area.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000147
+    excerpt: 'Familiarize yourself with these terms to help identify an earthquake
+      hazard:'
+    start_char: 0
+    end_char: 71
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000146

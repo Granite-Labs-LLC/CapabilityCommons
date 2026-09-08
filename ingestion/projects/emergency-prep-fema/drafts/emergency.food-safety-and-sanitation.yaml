@@ -1,0 +1,161 @@
+id: emergency.food-safety-and-sanitation
+slug: emergency.food-safety-and-sanitation
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Food Safety and Sanitation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: moderate
+summary_short: Guidelines for maintaining food safety and sanitation during emergencies.
+summary_medium: Guidelines for maintaining food safety and sanitation during emergencies,
+  including proper food storage, handling, and alternative cooking methods.
+plain_language: Learn how to keep food safe and maintain sanitation during emergencies
+  with these guidelines on storage, handling, and cooking.
+markdown_body: "### What this is\nThis reference sheet provides guidelines for maintaining\
+  \ food safety and sanitation during emergencies. It covers proper food storage,\
+  \ handling, and alternative cooking methods.\n\n### Why it matters\nDuring emergencies,\
+  \ maintaining food safety and sanitation is crucial to prevent illness and ensure\
+  \ access to safe food. Contaminated food can lead to health risks, especially when\
+  \ resources are limited.\n\n### What you need\nYou will need soap, boiled or disinfected\
+  \ water, canned baby formula, candle warmers, chafing dishes, fondue pots, a fireplace,\
+  \ charcoal grills, camp stoves, and dry ice.\n\n### How to do it\n1. Keep food in\
+  \ covered containers and cooking utensils clean. \n2. Dispose of garbage properly,\
+  \ burying it if necessary. \n3. Wash hands frequently with soap and boiled or disinfected\
+  \ water. \n4. Use only pre-prepared canned baby formula for infants. \n5. Discard\
+  \ any food that has been in contact with contaminated water or has been at room\
+  \ temperature for over two hours. \n6. Use alternative cooking sources like candle\
+  \ warmers or camp stoves outdoors. \n7. Handle dry ice with heavy gloves and use\
+  \ it to keep food frozen.\n\n### Common failure modes\nFood contamination, sanitation\
+  \ issues, and fire hazards can occur if guidelines are not followed.\n\n### Safety/boundary\
+  \ notes\nUse charcoal grills and camp stoves outdoors only. Handle dry ice with\
+  \ heavy gloves to avoid injury.\n\n### Local adaptation notes\nConsider the availability\
+  \ of dry ice and access to alternative cooking sources in your area."
+structured_data:
+  tools:
+  - soap
+  - boiled or disinfected water
+  - canned baby formula
+  - candle warmers
+  - chafing dishes
+  - fondue pots
+  - fireplace
+  - charcoal grills
+  - camp stoves
+  - dry ice
+  materials: []
+  success_criteria:
+  - Food is stored safely
+  - Sanitation is maintained
+  - Alternative cooking methods are used safely
+  failure_modes:
+  - food contamination
+  - sanitation issues
+  - fire hazards
+  safety_boundary:
+  - Use charcoal grills and camp stoves outdoors only
+  - Handle dry ice with heavy gloves
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_001
+  claim_text: Keep food in covered containers and cooking utensils clean.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Keep food in covered containers - Keep cooking and eating utensils clean
+    start_char: 3
+    end_char: 62
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_002
+  claim_text: Dispose of garbage properly, burying it if necessary.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Keep garbage in closed containers and dispose outside, burying garbage
+      if necessary
+    start_char: 63
+    end_char: 133
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_003
+  claim_text: Wash hands frequently with soap and boiled or disinfected water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Keep your hands clean by washing them frequently with soap and water
+      that has been boiled or disinfected
+    start_char: 134
+    end_char: 217
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_004
+  claim_text: Use only pre-prepared canned baby formula for infants.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Use only pre-prepared canned baby formula for infants
+    start_char: 218
+    end_char: 266
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_005
+  claim_text: Discard any food that has been in contact with contaminated water or
+    has been at room temperature for over two hours.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Discard any food that has come into contact with contaminated fl oodwater
+      - Discard any food that has been at room temperature for two hours or more
+    start_char: 267
+    end_char: 372
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_006
+  claim_text: Use alternative cooking sources like candle warmers or camp stoves outdoors.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Alternative cooking sources in times of emergency include candle warmers,
+      chafi ng dishes, fondue pots, or a fi replace. - Charcoal grills and camp stoves
+      are for outdoor use only.
+    start_char: 373
+    end_char: 512
+    support_strength: strong
+- object_id: emergency.food-safety-and-sanitation
+  claim_id: clm_007
+  claim_text: Handle dry ice with heavy gloves and use it to keep food frozen.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 43
+    segment_id: src.fema.are-you-ready.2004::seg_000060
+    excerpt: Use dry ice. Twenty-fi ve pounds of dry ice will keep a 10-cubic-foot
+      freezer below freezing for 3-4 days. Use care when handling dry ice, and wear
+      dry, heavy gloves to avoid injury.
+    start_char: 513
+    end_char: 644
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000060

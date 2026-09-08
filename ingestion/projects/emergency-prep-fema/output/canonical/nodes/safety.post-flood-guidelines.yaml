@@ -1,0 +1,200 @@
+id: safety.post-flood-guidelines
+slug: safety.post-flood-guidelines
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Post-Flood Safety Guidelines
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for safety and health after a flood.
+summary_medium: Guidelines for safety and health after a flood, including water safety,
+  structural integrity, and sanitation.
+plain_language: After a flood, it's important to ensure your safety by checking water
+  safety, avoiding floodwaters, and being cautious of structural damage.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for ensuring safety and health after a
+  flood.
+
+
+  ### Why it matters
+
+  Floods can leave behind dangerous conditions such as contaminated water, structural
+  damage, and health hazards from sewage. Following these guidelines can help prevent
+  injury and illness.
+
+
+  ### What you need
+
+  Awareness of local news reports, caution around floodwaters and damaged structures,
+  and cleaning supplies for disinfection.
+
+
+  ### How to do it
+
+  1. Listen for news reports to confirm the safety of the community''s water supply.
+
+  2. Avoid floodwaters, which may be contaminated or electrically charged.
+
+  3. Be cautious of weakened roads and avoid moving water.
+
+  4. Report downed power lines to the power company.
+
+  5. Only return home when authorities say it''s safe.
+
+  6. Use caution when entering buildings, checking for hidden damage.
+
+  7. Service damaged sewage systems promptly.
+
+  8. Clean and disinfect all items that got wet.
+
+
+  ### Common failure modes
+
+  Drinking contaminated water, structural collapse, and health hazards from sewage.
+
+
+  ### Safety/boundary notes
+
+  Avoid entering buildings surrounded by floodwaters and be cautious of hidden structural
+  damage.
+
+
+  ### Local adaptation notes
+
+  Follow local authority guidelines and adapt cleaning and safety measures to available
+  resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Safe drinking water is confirmed.
+  - Floodwaters are avoided.
+  - Downed power lines are reported.
+  - Buildings are entered with caution and checked for damage.
+  - Sewage systems are serviced.
+  - All wet items are cleaned and disinfected.
+  failure_modes:
+  - Drinking contaminated water.
+  - Entering structurally unsound buildings.
+  - Ignoring health hazards from sewage.
+  safety_boundary:
+  - Avoid floodwaters and downed power lines.
+  - Do not enter buildings surrounded by floodwaters.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_001
+  claim_text: Listen for news reports to confirm the safety of the community's water
+    supply.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Listen for news reports to learn whether the community's water supply
+      is safe to drink.
+    start_char: 0
+    end_char: 79
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_002
+  claim_text: Avoid floodwaters, which may be contaminated or electrically charged.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Avoid floodwaters; water may be contaminated by oil, gasoline, or raw
+      sewage. Water may also be electrically charged from underground or downed power
+      lines.
+    start_char: 80
+    end_char: 222
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_003
+  claim_text: Be cautious of weakened roads and avoid moving water.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Avoid moving water. Be aware of areas where floodwaters have receded.
+      Roads may have weakened and could collapse under the weight of a car.
+    start_char: 223
+    end_char: 323
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_004
+  claim_text: Report downed power lines to the power company.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Stay away from downed power lines, and report them to the power company.
+    start_char: 324
+    end_char: 384
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_005
+  claim_text: Only return home when authorities say it's safe.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Return home only when authorities indicate it is safe.
+    start_char: 385
+    end_char: 432
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_006
+  claim_text: Use caution when entering buildings, checking for hidden damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Use extreme caution when entering buildings; there may be hidden damage,
+      particularly in foundations.
+    start_char: 476
+    end_char: 563
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_007
+  claim_text: Service damaged sewage systems promptly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Service damaged septic tanks, cesspools, pits, and leaching systems as
+      soon as possible. Damaged sewage systems are serious health hazards.
+    start_char: 564
+    end_char: 678
+    support_strength: strong
+- object_id: safety.post-flood-guidelines
+  claim_id: clm_008
+  claim_text: Clean and disinfect all items that got wet.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 54
+    page_end: 54
+    segment_id: src.fema.are-you-ready.2004::seg_000075
+    excerpt: Clean and disinfect everything that got wet. Mud left from floodwater
+      can contain sewage and chemicals.
+    start_char: 679
+    end_char: 754
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000075

@@ -1,0 +1,169 @@
+id: emergency.hurricane-recovery
+slug: emergency.hurricane-recovery
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Hurricane Recovery Instructions
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Instructions for recovering from a hurricane.
+summary_medium: This reference sheet provides instructions for recovering from a hurricane,
+  as outlined in Part 5 of the source material.
+plain_language: Learn how to safely recover from a hurricane with these step-by-step
+  instructions.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for recovering from a hurricane, based
+  on disaster recovery instructions.
+
+
+  ### Why it matters
+
+  Recovering from a hurricane safely and effectively is crucial to minimize further
+  harm and begin rebuilding.
+
+
+  ### What you need
+
+  Access to recovery instructions and any necessary tools or resources as outlined
+  in Part 5.
+
+
+  ### How to do it
+
+  Follow the detailed recovery instructions provided in Part 5 of the source material
+  to ensure a safe and effective recovery process.
+
+
+  ### Common failure modes
+
+  Not following the recovery instructions can lead to safety hazards and prolonged
+  recovery time.
+
+
+  ### Safety/boundary notes
+
+  Ensure all safety guidelines are followed to prevent injury or further damage during
+  recovery.
+
+
+  ### Local adaptation notes
+
+  Adapt the recovery instructions to fit local conditions and available resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: Successful recovery with minimal additional damage or injury.
+  failure_modes: Ignoring safety guidelines or recovery instructions.
+  safety_boundary: Follow all safety instructions to avoid injury.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidelines for recovering from a hurricane,
+    based on disaster recovery instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_002
+  claim_text: Recovering from a hurricane safely and effectively is crucial to minimize
+    further harm and begin rebuilding.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_003
+  claim_text: Access to recovery instructions and any necessary tools or resources
+    as outlined in Part 5.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_004
+  claim_text: Follow the detailed recovery instructions provided in Part 5 of the
+    source material to ensure a safe and effective recovery process.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_005
+  claim_text: Not following the recovery instructions can lead to safety hazards and
+    prolonged recovery time.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_006
+  claim_text: Ensure all safety guidelines are followed to prevent injury or further
+    damage during recovery.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: emergency.hurricane-recovery
+  claim_id: clm_007
+  claim_text: Adapt the recovery instructions to fit local conditions and available
+    resources.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 71
+    page_end: 71
+    segment_id: src.fema.are-you-ready.2004::seg_000103
+    excerpt: After a Hurricane Follow the instructions for recovering from a disaster
+      in Part 5.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000103

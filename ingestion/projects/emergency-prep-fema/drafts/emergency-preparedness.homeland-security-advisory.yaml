@@ -1,0 +1,173 @@
+id: emergency-preparedness.homeland-security-advisory
+slug: emergency-preparedness.homeland-security-advisory
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Understanding the Homeland Security Advisory System
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: community
+contexts:
+- public safety
+- emergency response
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Guidance on the Homeland Security Advisory System for citizens.
+summary_medium: This reference sheet provides guidance for citizens to understand
+  and respond to the Homeland Security Advisory System, including monitoring threat
+  levels and following public safety instructions.
+plain_language: Learn how to understand and respond to different threat levels in
+  the Homeland Security Advisory System to ensure your safety.
+markdown_body: '### What this is
+
+  The Homeland Security Advisory System is a tool used to communicate the risk of
+  terrorist attacks to the public. It uses a color-coded system to indicate different
+  threat levels.
+
+
+  ### Why it matters
+
+  Understanding the threat levels can help you take appropriate actions to ensure
+  your safety and the safety of those around you. It is crucial for staying informed
+  and prepared during potential emergencies.
+
+
+  ### What you need
+
+  Awareness of the current threat level and the ability to follow public safety instructions.
+  Access to reliable sources of information such as government announcements or trusted
+  news outlets.
+
+
+  ### How to do it
+
+  Monitor the current threat level through official channels. Follow any specific
+  instructions provided by local authorities or emergency services. Stay informed
+  about changes in threat levels and adjust your actions accordingly.
+
+
+  ### Common failure modes
+
+  Misinterpreting the threat levels or not complying with the guidance provided can
+  lead to increased risk during emergencies.
+
+
+  ### Safety/boundary notes
+
+  Always prioritize instructions from local emergency services and authorities. Do
+  not rely solely on unofficial sources for threat level information.
+
+
+  ### Local adaptation notes
+
+  Be aware of regional variations in threat levels and local emergency protocols that
+  may affect how you should respond.'
+structured_data:
+  definition: The Homeland Security Advisory System is a color-coded alert system
+    that communicates the risk of terrorist attacks.
+  key_questions:
+  - What are the current threat levels?
+  - How should I respond to different threat levels?
+  misconceptions:
+  - All threat levels require the same response.
+  - The system is only relevant during national emergencies.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_001
+  claim_text: The Homeland Security Advisory System is a tool used to communicate
+    the risk of terrorist attacks to the public. It uses a color-coded system to indicate
+    different threat levels.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: The Homeland Security Advisory System was designed to provide a national
+      framework and comprehensive means to disseminate information regarding the risk
+      of terrorist acts... There are fi ve threat conditions, each identifi ed by
+      a description and corresponding color.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_002
+  claim_text: Understanding the threat levels can help you take appropriate actions
+    to ensure your safety and the safety of those around you.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures that the government, the private sector, and the public
+      can take.
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_003
+  claim_text: Awareness of the current threat level and the ability to follow public
+    safety instructions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures that the government, the private sector, and the public
+      can take.
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_004
+  claim_text: Monitor the current threat level through official channels.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 174
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000260
+    excerpt: The Homeland Security Advisory System was designed to provide a national
+      framework and comprehensive means to disseminate information regarding the risk
+      of terrorist acts...
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_005
+  claim_text: Misinterpreting the threat levels or not complying with the guidance
+    provided can lead to increased risk during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Each threat condition assigns a level of alert appropriate to the increasing
+      risk of terrorist attacks. Beneath each threat condition are some suggested
+      protective measures...
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: emergency-preparedness.homeland-security-advisory
+  claim_id: clm_006
+  claim_text: Always prioritize instructions from local emergency services and authorities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 175
+    page_end: 175
+    segment_id: src.fema.are-you-ready.2004::seg_000261
+    excerpt: Beneath each threat condition are some suggested protective measures
+      that the government, the private sector, and the public can take.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000262

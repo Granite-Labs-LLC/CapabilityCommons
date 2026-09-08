@@ -1,0 +1,237 @@
+canonical_title: Returning Home After an Emergency
+citations:
+- claim_id: clm_001
+  claim_text: Continuously listen to the radio or watch television for updates on
+    the situation.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 92
+    excerpt: Keep listening to the radio and television for news about what to do,
+      where to go, and places to avoid.
+    page_end: 169
+    page_start: 169
+    segment_id: src.fema.are-you-ready.2004::seg_000254
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Avoid entering damaged areas or those marked as 'radiation hazard' or
+    'HAZMAT'.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 161
+    excerpt: Stay away from damaged areas. Stay away from areas marked 'radiation
+      hazard' or 'HAZMAT.'
+    page_end: 169
+    page_start: 169
+    segment_id: src.fema.are-you-ready.2004::seg_000254
+    source_id: src.fema.are-you-ready.2004
+    start_char: 93
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: Follow any specific instructions provided by authorities for returning
+    home.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 210
+    excerpt: Follow the instructions for returning home in Part 5.
+    page_end: 169
+    page_start: 169
+    segment_id: src.fema.are-you-ready.2004::seg_000254
+    source_id: src.fema.are-you-ready.2004
+    start_char: 162
+    support_strength: medium
+- claim_id: clm_004
+  claim_text: Entering hazardous areas without proper information or ignoring official
+    instructions can lead to serious risks.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 161
+    excerpt: Stay away from damaged areas. Stay away from areas marked 'radiation
+      hazard' or 'HAZMAT.'
+    page_end: 169
+    page_start: 169
+    segment_id: src.fema.are-you-ready.2004::seg_000254
+    source_id: src.fema.are-you-ready.2004
+    start_char: 93
+    support_strength: medium
+- claim_id: clm_005
+  claim_text: Always stay away from areas marked as radiation hazards or HAZMAT zones,
+    as these pose significant health risks.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 161
+    excerpt: Stay away from areas marked 'radiation hazard' or 'HAZMAT.' Remember
+      that radiation cannot be seen, smelled, or otherwise detected by human senses.
+    page_end: 169
+    page_start: 169
+    segment_id: src.fema.are-you-ready.2004::seg_000254
+    source_id: src.fema.are-you-ready.2004
+    start_char: 93
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Returning home after an emergency can present various risks and challenges.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 78
+    excerpt: Returning home can be both physically and mentally challenging. Above
+      all, use caution.
+    page_end: 182
+    page_start: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000273
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Approach your home with caution. Assess the physical condition of the
+    property before entering.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 206
+    excerpt: Walk carefully around the outside and check for loose power lines, gas
+      leaks, and structural damage. If you have any doubts about safety, have your
+      residence inspected by a qualified building inspector or structural engineer
+      before entering.
+    page_end: 182
+    page_start: 182
+    segment_id: src.fema.are-you-ready.2004::seg_000274
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Be mentally prepared for potential damage or loss.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 122
+    excerpt: Recovering from a disaster is usually a gradual process. Safety is a
+      primary issue, as are mental and physical well-being.
+    page_end: 182
+    page_start: 181
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_009
+  claim_text: Always prioritize personal safety over property.
+  object_id: emergency.returning-home
+  support:
+  - end_char: 69
+    excerpt: Your first concern after a disaster is your family's health and safety.
+    page_end: 182
+    page_start: 181
+    segment_id: src.fema.are-you-ready.2004::seg_000272
+    source_id: src.fema.are-you-ready.2004
+    start_char: 0
+    support_strength: strong
+co_type: reference_sheet
+contexts: []
+cost_band: medium
+difficulty: 3
+id: emergency.returning-home
+language_code: en
+lifecycle_state: published
+markdown_body: '# What this is
+
+
+  This document provides comprehensive guidance on safely returning to your home after
+  an emergency, addressing both physical and mental challenges.
+
+
+  # Why it matters
+
+
+  Returning home after an emergency can be dangerous if proper precautions are not
+  taken. Understanding the risks and challenges can help ensure your safety and mental
+  well-being.
+
+
+  # What you need
+
+
+  Access to reliable news sources, awareness of potential hazards, a plan for safe
+  return, and mental preparedness for the conditions you may find.
+
+
+  # How to do it
+
+
+  1. Continuously listen to the radio or watch television for updates on the situation.
+
+  2. Avoid entering damaged areas or those marked as ''radiation hazard'' or ''HAZMAT''.
+
+  3. Follow any specific instructions provided by authorities for returning home.
+
+  4. Approach your home with caution. Assess the physical condition of the property
+  before entering.
+
+  5. Be mentally prepared for potential damage or loss.
+
+
+  # Common failure modes
+
+
+  Entering hazardous areas without proper information or ignoring official instructions
+  can lead to serious risks. Rushing into the home without assessing safety, underestimating
+  emotional impact, and neglecting necessary precautions.
+
+
+  # Safety/boundary notes
+
+
+  Always prioritize personal safety over property. If in doubt, seek professional
+  assistance. Stay away from areas marked as radiation hazards or HAZMAT zones, as
+  these pose significant health risks.
+
+
+  # Local adaptation notes
+
+
+  Ensure you have access to local news channels to receive timely updates and instructions.
+  Consider local emergency services'' advice and specific regional hazards when planning
+  your return.'
+plain_language: Learn how to safely return to your home after an emergency by staying
+  informed, avoiding dangerous areas, and being mentally prepared for challenges.
+primary_domain: emergency
+requires: []
+risk_band: moderate
+secondary_domains: []
+seed_type: reference_sheet
+slug: emergency.returning-home
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000254
+- src.fema.are-you-ready.2004::seg_000273
+- src.fema.are-you-ready.2004::seg_000274
+- src.fema.are-you-ready.2004::seg_000272
+stage: household
+structured_data:
+  failure_modes:
+  - Entering hazardous areas
+  - Ignoring official instructions
+  - Rushing into the home without assessing safety
+  - Underestimating emotional impact
+  materials: []
+  safety_boundary:
+  - Stay away from radiation hazard areas
+  - Prioritize personal safety over property
+  success_criteria:
+  - Successfully return home without entering hazardous areas
+  - Stay informed through reliable news sources
+  tools:
+  - radio
+  - television
+  definition: Returning home after an emergency involves navigating both physical
+    and mental challenges, requiring careful planning and caution.
+  key_questions:
+  - What are the immediate hazards to look for when returning home?
+  - How can you prepare mentally for what you might find?
+  - What steps should be taken to ensure safety upon return?
+  misconceptions:
+  - It's safe to return home as soon as the emergency is over.
+  - Emotional reactions to returning home are not significant.
+suggested_edges: []
+summary_medium: Returning home after an emergency involves both physical and mental
+  challenges. It is crucial to proceed with caution to ensure safety and well-being.
+summary_short: Guidance on challenges and precautions when returning home after an
+  emergency.
+version_no: 1
+visibility: public

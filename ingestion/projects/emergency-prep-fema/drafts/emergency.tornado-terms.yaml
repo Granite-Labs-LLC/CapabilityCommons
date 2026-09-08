@@ -1,0 +1,183 @@
+id: emergency.tornado-terms
+slug: emergency.tornado-terms
+seed_type: glossary
+co_type: glossary
+canonical_title: Tornado Terms Glossary
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Glossary of tornado-related terms.
+summary_medium: A glossary of terms to help identify tornado hazards.
+plain_language: Learn the key terms used to describe tornado conditions and warnings.
+markdown_body: '### What this is
+
+  This glossary provides definitions for key terms used in the context of tornado
+  hazards.
+
+
+  ### Why it matters
+
+  Understanding these terms can help you recognize and respond appropriately to tornado
+  warnings and conditions.
+
+
+  ### What you need
+
+  Familiarity with these terms is essential for interpreting weather alerts and taking
+  appropriate safety measures.
+
+
+  ### How to do it
+
+  Review each term and its definition to ensure you understand the conditions they
+  describe.
+
+
+  ### Common failure modes
+
+  Misunderstanding these terms can lead to inadequate preparation or response to tornado
+  threats.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all household members are familiar with these terms to enhance collective
+  safety during tornado events.
+
+
+  ### Local adaptation notes
+
+  Local weather services may use additional terms or provide specific guidance relevant
+  to your area.'
+structured_data:
+  definition: A glossary of terms related to identifying tornado hazards.
+  key_questions:
+  - What is a tornado warning?
+  - What is a tornado watch?
+  - What is a funnel cloud?
+  - What constitutes a severe thunderstorm?
+  misconceptions:
+  - A tornado watch means a tornado has been sighted.
+  - A funnel cloud is the same as a tornado.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.tornado-terms
+  claim_id: clm_001
+  claim_text: This glossary provides definitions for key terms used in the context
+    of tornado hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000080
+    excerpt: 'Familiarize yourself with these terms to help identify a tornado hazard:'
+    start_char: 0
+    end_char: 69
+    support_strength: strong
+- object_id: emergency.tornado-terms
+  claim_id: clm_002
+  claim_text: Understanding these terms can help you recognize and respond appropriately
+    to tornado warnings and conditions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Tornadoes are possible. Remain alert for approaching storms. Watch the
+      sky and stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 77
+    support_strength: medium
+- object_id: emergency.tornado-terms
+  claim_id: clm_003
+  claim_text: Familiarity with these terms is essential for interpreting weather alerts
+    and taking appropriate safety measures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Tornadoes are possible. Remain alert for approaching storms. Watch the
+      sky and stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 77
+    support_strength: medium
+- object_id: emergency.tornado-terms
+  claim_id: clm_004
+  claim_text: Misunderstanding these terms can lead to inadequate preparation or response
+    to tornado threats.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Tornadoes are possible. Remain alert for approaching storms. Watch the
+      sky and stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 77
+    support_strength: medium
+- object_id: emergency.tornado-terms
+  claim_id: clm_005
+  claim_text: Ensure that all household members are familiar with these terms to enhance
+    collective safety during tornado events.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000081
+    excerpt: Tornadoes are possible. Remain alert for approaching storms. Watch the
+      sky and stay tuned to NOAA Weather Radio, commercial radio, or television for
+      information.
+    start_char: 0
+    end_char: 144
+    support_strength: medium
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 60
+    page_end: 60
+    segment_id: src.fema.are-you-ready.2004::seg_000082
+    excerpt: A tornado has been sighted or indicated by weather radar. Take shelter
+      immediately.
+    start_char: 0
+    end_char: 77
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000080

@@ -1,0 +1,242 @@
+id: emergency.electricity-shutoff-preparation
+slug: emergency.electricity-shutoff-preparation
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Preparing to Shut Off Electricity in an Emergency
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Learn how to prepare for shutting off electricity in emergencies.
+summary_medium: This guide provides steps to prepare for shutting off electricity
+  in emergencies to prevent ignition of leaking natural gas.
+plain_language: This guide helps you prepare to turn off electricity in emergencies,
+  which is important to prevent fires if there's a gas leak.
+markdown_body: '### What this is
+
+  This is a guide on preparing to shut off electricity in your home during an emergency
+  situation.
+
+
+  ### Why it matters
+
+  In emergencies, such as a natural gas leak, electrical sparks can ignite the gas,
+  leading to fires or explosions. Knowing how to shut off electricity can prevent
+  such hazards.
+
+
+  ### What you need
+
+  You need to know the location of your home''s main electrical shut-off switch and
+  ensure it is accessible.
+
+
+  ### How to do it
+
+  1. Locate your home''s main electrical shut-off switch.
+
+  2. Ensure all responsible household members know where it is and how to operate
+  it.
+
+  3. Practice turning it off and on to ensure it works properly.
+
+
+  ### Common failure modes
+
+  Failing to locate the main switch, not ensuring all household members are informed,
+  or having a malfunctioning switch.
+
+
+  ### Safety/boundary notes
+
+  Avoid creating sparks near potential gas leaks. Ensure the area is safe before operating
+  the switch.
+
+
+  ### Local adaptation notes
+
+  Consider local building codes and regulations regarding electrical systems.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria: All household members can locate and operate the main electrical
+    shut-off switch.
+  failure_modes: Inability to locate the switch or operate it effectively.
+  safety_boundary: Ensure no gas leaks are present when operating the switch.
+  implementation:
+    smallest_viable_version: Identify and practice using the main electrical shut-off
+      switch.
+    tools: []
+    materials: []
+    expected_time: 10 minutes
+    expected_cost: None
+    success_checks:
+    - All household members can locate the switch.
+    - All household members can operate the switch.
+    stop_conditions:
+    - If the switch is not functioning properly.
+    - If there is a suspected gas leak.
+    common_mistakes:
+    - Not informing all household members.
+    - Not practicing the shut-off procedure.
+    variants:
+    - label: Urban
+      when: Living in an apartment building.
+      notes: Coordinate with building management for access to main electrical controls.
+    when_to_escalate:
+    - If the switch is damaged or inaccessible.
+    - If there is a strong smell of gas.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.electricity-shutoff-preparation
+  claim_id: clm_001
+  claim_text: In emergencies, such as a natural gas leak, electrical sparks can ignite
+    the gas, leading to fires or explosions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Electricity Electrical sparks have the potential of igniting natural
+      gas if it is leaking.
+    start_char: 0
+    end_char: 85
+    support_strength: strong
+- object_id: emergency.electricity-shutoff-preparation
+  claim_id: clm_002
+  claim_text: You need to know the location of your home's main electrical shut-off
+    switch and ensure it is accessible.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: Locate your electricity circuit box. Teach all responsible household
+      members how to shut off the electricity to the entire house.
+    start_char: 0
+    end_char: 125
+    support_strength: strong
+- object_id: emergency.electricity-shutoff-preparation
+  claim_id: clm_003
+  claim_text: Ensure all responsible household members know where it is and how to
+    operate it.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: Teach all responsible household members how to shut off the electricity
+      to the entire house.
+    start_char: 0
+    end_char: 125
+    support_strength: strong
+- object_id: emergency.electricity-shutoff-preparation
+  claim_id: clm_004
+  claim_text: Practice turning it off and on to ensure it works properly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 28
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000037
+    excerpt: Teach all responsible household members how to shut off the electricity
+      to the entire house.
+    start_char: 0
+    end_char: 125
+    support_strength: medium
+- object_id: emergency.electricity-shutoff-preparation
+  claim_id: clm_005
+  claim_text: Avoid creating sparks near potential gas leaks. Ensure the area is safe
+    before operating the switch.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Electricity Electrical sparks have the potential of igniting natural
+      gas if it is leaking.
+    start_char: 0
+    end_char: 85
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000036
+bundle_overrides:
+  hook: Knowing how to shut off your home's electricity in an emergency can prevent
+    fires or explosions caused by gas leaks.
+  primer: In emergency situations, such as a natural gas leak, electrical sparks can
+    ignite the gas, leading to potentially dangerous fires or explosions. This makes
+    it crucial to know how to quickly and safely shut off your home's electricity.
+    The main electrical shut-off switch is a critical component in your home that
+    allows you to cut off power to the entire house. It's important for all responsible
+    household members to know the location of this switch and how to operate it. Practicing
+    the shut-off procedure ensures that everyone is prepared and that the switch functions
+    properly. Additionally, safety precautions must be taken to avoid creating sparks
+    near potential gas leaks. This guide will help you understand the steps necessary
+    to prepare for such emergencies, ensuring the safety of your household.
+  guide: '1. **Locate the Main Electrical Shut-off Switch**: Find the main electrical
+    shut-off switch in your home. This is usually located in the circuit breaker box
+    or fuse box. Make sure it is easily accessible and not blocked by any objects.
+
+
+    2. **Educate Household Members**: Ensure that all responsible members of your
+    household know where the main shut-off switch is located. Explain the importance
+    of being able to shut off the electricity in an emergency.
+
+
+    3. **Practice the Shut-off Procedure**: Regularly practice turning the switch
+    off and on to ensure it works properly. This will also help household members
+    become familiar with the process.
+
+
+    4. **Safety Precautions**: Before operating the switch, ensure that there are
+    no gas leaks present. Avoid creating sparks, which can ignite leaking gas. If
+    you suspect a gas leak, evacuate the area and contact emergency services.
+
+
+    5. **Coordinate with Building Management**: If you live in an apartment building,
+    coordinate with building management to ensure you have access to the main electrical
+    controls.
+
+
+    6. **Regular Checks**: Periodically check the switch for any signs of damage or
+    malfunction. If the switch is not functioning properly, contact a professional
+    electrician for repairs.'
+  reference:
+  - Locate the main electrical shut-off switch.
+  - Educate all responsible household members.
+  - Practice turning the switch off and on.
+  - Ensure no gas leaks are present before operating the switch.
+  - Coordinate with building management if necessary.
+  - Regularly check the switch for damage.
+  worksheet:
+  - Identify the location of your home's main electrical shut-off switch.
+  - List the steps to safely shut off the electricity in an emergency.
+  - Role-play an emergency scenario with household members to practice the shut-off
+    procedure.
+  - Inspect the switch for any signs of damage or malfunction.
+  - Discuss with household members the importance of knowing how to operate the switch.
+  teach_forward_kit:
+    three_minute_version: In emergencies like gas leaks, knowing how to shut off your
+      home's electricity can prevent fires. Locate your main electrical shut-off switch,
+      ensure all household members know how to use it, and practice the procedure
+      regularly.
+    ten_minute_outline:
+    - Introduction to the importance of shutting off electricity in emergencies.
+    - Steps to locate and identify the main electrical shut-off switch.
+    - Educating and practicing with household members.
+    - Safety precautions to avoid creating sparks near gas leaks.
+    - Coordination with building management for apartment dwellers.
+    - Regular maintenance and checks of the shut-off switch.
+    discussion_prompts:
+    - Why is it important to know how to shut off your home's electricity?
+    - What are the potential risks if the main electrical shut-off switch is not accessible?
+    - How can you ensure all household members are prepared for an emergency shut-off?
+    - What safety measures should be taken before operating the switch in a suspected
+      gas leak scenario?

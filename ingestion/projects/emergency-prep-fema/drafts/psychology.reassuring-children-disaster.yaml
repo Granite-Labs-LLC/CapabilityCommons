@@ -1,0 +1,318 @@
+id: psychology.reassuring-children-disaster
+slug: psychology.reassuring-children-disaster
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Reassuring Children After a Disaster
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: psychology
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Strategies to reassure children after a disaster.
+summary_medium: Provides strategies to reassure children after a disaster, including
+  maintaining routines and involving them in recovery plans.
+plain_language: Learn how to comfort and support children after a disaster by maintaining
+  routines and involving them in recovery activities.
+markdown_body: '### What this is
+
+  This guide provides strategies to help reassure children after experiencing a disaster.
+  It focuses on maintaining a sense of normalcy and involving children in recovery
+  efforts.
+
+
+  ### Why it matters
+
+  Children can be particularly vulnerable to stress and anxiety after a disaster.
+  Providing reassurance and involving them in recovery can help mitigate these effects
+  and promote emotional healing.
+
+
+  ### What you need
+
+  A calm demeanor, willingness to communicate, and the ability to involve children
+  in daily routines and recovery tasks.
+
+
+  ### How to do it
+
+  1. Offer personal contact through hugs and touch to reassure children.
+
+  2. Calmly share factual information about the disaster and recovery plans.
+
+  3. Encourage children to express their feelings.
+
+  4. Spend extra time with them, especially during bedtime.
+
+  5. Re-establish daily routines for work, school, play, meals, and rest.
+
+  6. Involve children in recovery by assigning them specific chores.
+
+  7. Praise responsible behavior.
+
+  8. Understand that children may react differently and adjust your approach accordingly.
+
+
+  ### Common failure modes
+
+  Disruption of routine, lack of involvement, or failing to address children''s emotional
+  needs.
+
+
+  ### Safety/boundary notes
+
+  Monitor children''s reactions and seek professional help if stress persists or worsens.
+
+
+  ### Local adaptation notes
+
+  Adapt routines and involvement tasks to fit local cultural practices and available
+  resources.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Children feel reassured and safe.
+  - Children are involved in recovery activities.
+  - Daily routines are re-established.
+  failure_modes:
+  - Disruption of routine
+  - Lack of involvement
+  safety_boundary:
+  - Seek professional help if stress persists or worsens.
+  implementation:
+    smallest_viable_version: Reassure children by maintaining routines and involving
+      them in recovery.
+    tools: []
+    materials: []
+    expected_time: Varies based on the situation.
+    expected_cost: Minimal, primarily time and attention.
+    success_checks:
+    - Children express feeling safe.
+    - Routines are followed.
+    - Children participate in recovery tasks.
+    stop_conditions:
+    - Child's stress worsens.
+    - Child's behavior interferes with daily life.
+    common_mistakes:
+    - Ignoring children's emotional needs.
+    - Failing to maintain routines.
+    variants:
+    - label: Urban
+      when: In urban settings with limited space.
+      notes: Focus on indoor activities and community resources.
+    - label: Renter
+      when: For families renting homes.
+      notes: Coordinate with landlords for any necessary repairs or safety checks.
+    when_to_escalate:
+    - Child's stress persists or worsens.
+    - Child's behavior disrupts daily life.
+requires: []
+suggested_edges: []
+citations:
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_001
+  claim_text: Offer personal contact through hugs and touch to reassure children.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Personal contact is reassuring. Hug and touch your children.
+    start_char: 55
+    end_char: 95
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_002
+  claim_text: Calmly share factual information about the disaster and recovery plans.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Calmly provide factual information about the recent disaster and current
+      plans for insuring their safety along with recovery plans.
+    start_char: 97
+    end_char: 211
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_003
+  claim_text: Encourage children to express their feelings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Encourage your children to talk about their feelings.
+    start_char: 213
+    end_char: 261
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_004
+  claim_text: Spend extra time with them, especially during bedtime.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Spend extra time with your children such as at bedtime.
+    start_char: 263
+    end_char: 319
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_005
+  claim_text: Re-establish daily routines for work, school, play, meals, and rest.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Re-establish your daily routine for work, school, play, meals, and rest.
+    start_char: 321
+    end_char: 389
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_006
+  claim_text: Involve children in recovery by assigning them specific chores.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Involve your children by giving them specific chores to help them feel
+      they are helping to restore family and community life.
+    start_char: 391
+    end_char: 491
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_007
+  claim_text: Praise responsible behavior.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Praise and recognize responsible behavior.
+    start_char: 493
+    end_char: 535
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_008
+  claim_text: Understand that children may react differently and adjust your approach
+    accordingly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: Understand that your children will have a range of reactions to disasters.
+    start_char: 537
+    end_char: 600
+    support_strength: strong
+- object_id: psychology.reassuring-children-disaster
+  claim_id: clm_009
+  claim_text: Monitor children's reactions and seek professional help if stress persists
+    or worsens.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 189
+    page_end: 189
+    segment_id: src.fema.are-you-ready.2004::seg_000285
+    excerpt: If you have tried to create a reassuring environment by following the
+      steps above, but your child continues to exhibit stress, if the reactions worsen
+      over time, or if they cause interference with daily behavior at school, at home,
+      or with other relationships, it may be appropriate to talk to a professional.
+    start_char: 602
+    end_char: 880
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000285
+bundle_overrides:
+  hook: Helping children feel safe and secure after a disaster is crucial for their
+    emotional recovery and well-being.
+  primer: Disasters can be traumatic for everyone, but children are particularly vulnerable
+    to the stress and anxiety that follow such events. Their sense of security can
+    be deeply shaken, and they may not have the tools to process their emotions effectively.
+    As caregivers, it's important to provide reassurance and stability to help them
+    cope. This involves maintaining a sense of normalcy through daily routines, encouraging
+    open communication about their feelings, and involving them in recovery efforts.
+    By doing so, we can help children regain a sense of control and safety, which
+    is essential for their emotional healing. It's also important to monitor their
+    reactions and be prepared to seek professional help if their stress persists or
+    worsens.
+  guide: '1. **Offer Personal Contact**: Physical touch, such as hugs, can be very
+    comforting to children. It reassures them that they are safe and loved.
+
+
+    2. **Share Factual Information**: Calmly explain what happened during the disaster
+    and what steps are being taken to ensure safety and recovery. This helps children
+    understand the situation and reduces fear of the unknown.
+
+
+    3. **Encourage Expression**: Invite children to talk about their feelings. Listen
+    to them without judgment and validate their emotions.
+
+
+    4. **Spend Extra Time Together**: Especially during bedtime, spend additional
+    time with your children to provide comfort and security.
+
+
+    5. **Re-establish Routines**: Try to maintain regular schedules for work, school,
+    play, meals, and rest. Routines provide a sense of normalcy and stability.
+
+
+    6. **Involve Them in Recovery**: Assign age-appropriate chores to help them feel
+    they are contributing to the recovery process. This can empower them and foster
+    a sense of responsibility.
+
+
+    7. **Praise Responsible Behavior**: Recognize and praise children when they act
+    responsibly. Positive reinforcement encourages them to continue such behavior.
+
+
+    8. **Adjust Your Approach**: Understand that each child may react differently.
+    Be flexible and adjust your approach based on their individual needs.
+
+
+    9. **Monitor and Seek Help**: Keep an eye on their reactions. If stress persists
+    or worsens, consider consulting a professional for additional support.'
+  reference:
+  - Offer personal contact through hugs and touch.
+  - Calmly share factual information about the disaster.
+  - Encourage children to express their feelings.
+  - Spend extra time with them, especially during bedtime.
+  - Re-establish daily routines.
+  - Involve children in recovery with specific chores.
+  - Praise responsible behavior.
+  - Adjust your approach based on children's reactions.
+  - Monitor reactions and seek professional help if needed.
+  worksheet:
+  - List three ways you can provide personal contact to reassure a child.
+  - Write down a simple explanation of a recent event that you could share with a
+    child.
+  - Describe a routine you can re-establish to provide stability.
+  - Identify two chores that children can help with during recovery.
+  - Think of a situation where you can praise a child for responsible behavior.
+  teach_forward_kit:
+    three_minute_version: After a disaster, reassure children by maintaining routines,
+      involving them in recovery, and providing emotional support. Monitor their reactions
+      and seek help if stress persists.
+    ten_minute_outline:
+    - Introduction to the impact of disasters on children.
+    - Importance of personal contact and reassurance.
+    - Sharing factual information calmly.
+    - Encouraging emotional expression.
+    - Re-establishing daily routines.
+    - Involving children in recovery efforts.
+    - Praising responsible behavior.
+    - Adjusting approaches based on individual reactions.
+    - Monitoring and seeking professional help if necessary.
+    discussion_prompts:
+    - Why is maintaining a routine important for children after a disaster?
+    - How can involving children in recovery efforts benefit them?
+    - What are some signs that a child might need professional help after a disaster?

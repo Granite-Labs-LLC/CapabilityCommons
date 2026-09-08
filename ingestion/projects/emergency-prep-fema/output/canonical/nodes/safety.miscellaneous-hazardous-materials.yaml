@@ -1,0 +1,139 @@
+id: safety.miscellaneous-hazardous-materials
+slug: safety.miscellaneous-hazardous-materials
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Miscellaneous Hazardous Materials
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: A list of miscellaneous hazardous materials.
+summary_medium: A reference sheet listing miscellaneous hazardous materials such as
+  batteries, mercury thermostats, fluorescent light bulbs, and driveway sealer.
+plain_language: This reference sheet provides a list of various hazardous materials
+  that require careful handling and disposal.
+markdown_body: '### What this is
+
+  This reference sheet lists various miscellaneous hazardous materials that are commonly
+  found in households and require special handling due to their potential risks.
+
+
+  ### Why it matters
+
+  Proper identification and handling of hazardous materials are crucial to prevent
+  environmental contamination and ensure personal safety. These materials can pose
+  health risks if not managed correctly.
+
+
+  ### What you need
+
+  Awareness of the types of materials that are considered hazardous and knowledge
+  of local disposal regulations.
+
+
+  ### How to do it
+
+  Identify these materials in your home and follow local guidelines for safe disposal.
+  For example, batteries should be recycled at designated facilities, and mercury-containing
+  devices should be handled with care to avoid breakage.
+
+
+  ### Common failure modes
+
+  Improper disposal of these materials can lead to environmental damage and health
+  hazards. For instance, throwing batteries in regular trash can lead to chemical
+  leaks.
+
+
+  ### Safety/boundary notes
+
+  Always wear protective gear when handling hazardous materials and ensure they are
+  stored in a safe location away from children and pets.
+
+
+  ### Local adaptation notes
+
+  Check with local waste management authorities for specific disposal instructions
+  and recycling programs available in your area.'
+structured_data:
+  definition: A list of household items that are considered hazardous due to their
+    chemical composition or potential environmental impact.
+  key_questions:
+  - What are the common hazardous materials found in households?
+  - How should these materials be disposed of safely?
+  misconceptions:
+  - All household waste can be disposed of in regular trash.
+  - Hazardous materials are only found in industrial settings.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.miscellaneous-hazardous-materials
+  claim_id: clm_001
+  claim_text: This reference sheet lists various miscellaneous hazardous materials
+    that are commonly found in households and require special handling due to their
+    potential risks.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000210
+    excerpt: '## **Miscellaneous** - Batteries - Mercury thermostats or thermometers
+      - Fluorescent light bulbs - Driveway sealer'
+    start_char: 0
+    end_char: 105
+    support_strength: strong
+- object_id: safety.miscellaneous-hazardous-materials
+  claim_id: clm_002
+  claim_text: Proper identification and handling of hazardous materials are crucial
+    to prevent environmental contamination and ensure personal safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 136
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000212
+    excerpt: Dispose of hazardous materials correctly. Take household hazardous waste
+      to a local collection program. Check with your county or state environmental
+      or solid waste agency to learn if there is a household hazardous waste collection
+      program in your area.
+    start_char: 0
+    end_char: 256
+    support_strength: medium
+- object_id: safety.miscellaneous-hazardous-materials
+  claim_id: clm_003
+  claim_text: Improper disposal of these materials can lead to environmental damage
+    and health hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 136
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000212
+    excerpt: Dispose of hazardous materials correctly. Take household hazardous waste
+      to a local collection program. Check with your county or state environmental
+      or solid waste agency to learn if there is a household hazardous waste collection
+      program in your area.
+    start_char: 0
+    end_char: 256
+    support_strength: medium
+- object_id: safety.miscellaneous-hazardous-materials
+  claim_id: clm_004
+  claim_text: Always wear protective gear when handling hazardous materials and ensure
+    they are stored in a safe location away from children and pets.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 136
+    page_end: 137
+    segment_id: src.fema.are-you-ready.2004::seg_000212
+    excerpt: Clean up any chemical spill immediately. Use rags to clean up the spill.
+      Wear gloves and eye protection.
+    start_char: 0
+    end_char: 256
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000210

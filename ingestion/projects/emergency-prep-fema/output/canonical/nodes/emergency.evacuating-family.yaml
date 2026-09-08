@@ -1,0 +1,345 @@
+id: emergency.evacuating-family
+slug: emergency.evacuating-family
+seed_type: candidate
+co_type: skill_guide
+canonical_title: Evacuating Yourself and Your Family
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidance on evacuating yourself and your family during community evacuations.
+summary_medium: Guidance on evacuating yourself and your family during community evacuations,
+  including understanding local warnings and planning ahead for different types of
+  hazards.
+plain_language: Learn how to evacuate safely with your family during emergencies by
+  understanding local warnings and planning ahead.
+markdown_body: '# What this is
+
+  This guide provides instructions on how to safely evacuate yourself and your family
+  during community emergencies. It covers understanding local warnings and planning
+  for different hazards.
+
+
+  # Why it matters
+
+  Evacuating promptly and safely can protect you and your family from harm during
+  emergencies. Understanding local warnings and having a plan can make a critical
+  difference.
+
+
+  # What you need
+
+  You will need an emergency kit and communication devices to stay informed and prepared.
+
+
+  # How to do it
+
+  Monitor local media for evacuation orders. Respond to sirens or calls from local
+  officials. Plan evacuation routes in advance and ensure your emergency kit is ready.
+  Be aware of the time available based on the type of hazard.
+
+
+  # Common failure modes
+
+  Common mistakes include not having enough preparation time and being unaware of
+  local warnings.
+
+
+  # Safety/boundary notes
+
+  Ensure you follow all local evacuation orders and do not delay leaving if instructed.
+
+
+  # Local adaptation notes
+
+  Adapt your plan based on local warning systems and the types of hazards common in
+  your region.'
+structured_data:
+  tools:
+  - communication devices
+  materials:
+  - emergency kit
+  success_criteria:
+  - Evacuate safely with all family members.
+  - Follow local evacuation orders promptly.
+  failure_modes:
+  - insufficient preparation time
+  - lack of awareness of warnings
+  safety_boundary: Follow all local evacuation orders and do not delay leaving if
+    instructed.
+  implementation:
+    smallest_viable_version: Prepare an emergency kit and know your evacuation routes.
+    tools:
+    - communication devices
+    materials:
+    - emergency kit
+    expected_time: Varies based on hazard
+    expected_cost: low
+    success_checks:
+    - All family members are evacuated safely.
+    - Emergency kit is complete and accessible.
+    stop_conditions:
+    - Evacuation order is lifted.
+    - Safe return is confirmed by authorities.
+    common_mistakes:
+    - Delaying evacuation
+    - Ignoring local warnings
+    variants:
+    - label: Urban
+      when: Living in a densely populated area
+      notes: Consider public transportation options and potential traffic congestion.
+    when_to_escalate:
+    - If unable to evacuate due to mobility issues
+    - If local warnings are unclear
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.evacuating-family
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to safely evacuate yourself
+    and your family during community emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: When community evacuations become necessary, local officials provide
+      information to the public through the media.
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_002
+  claim_text: It covers understanding local warnings and planning for different hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_003
+  claim_text: Evacuating promptly and safely can protect you and your family from
+    harm during emergencies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: Additionally, there may be circumstances under which you and your family
+      feel threatened or endangered and you need to leave your home, school, or workplace
+      to avoid these situations.
+    start_char: 99
+    end_char: 247
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_004
+  claim_text: Understanding local warnings and having a plan can make a critical difference.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_005
+  claim_text: You will need an emergency kit and communication devices to stay informed
+    and prepared.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Gather your disaster supplies kit.
+    start_char: 185
+    end_char: 217
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_006
+  claim_text: Monitor local media for evacuation orders.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: When community evacuations become necessary, local officials provide
+      information to the public through the media.
+    start_char: 0
+    end_char: 98
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_007
+  claim_text: Respond to sirens or calls from local officials.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: In some circumstances, other warning methods, such as sirens or telephone
+      calls, also are used.
+    start_char: 99
+    end_char: 179
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_008
+  claim_text: Plan evacuation routes in advance and ensure your emergency kit is ready.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Follow recommended evacuation routes. Do not take shortcuts; they may
+      be blocked.
+    start_char: 620
+    end_char: 698
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_009
+  claim_text: Be aware of the time available based on the type of hazard.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: The amount of time you have to leave will depend on the hazard.
+    start_char: 248
+    end_char: 303
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_010
+  claim_text: Common mistakes include not having enough preparation time and being
+    unaware of local warnings.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 20
+    page_end: 20
+    segment_id: src.fema.are-you-ready.2004::seg_000025
+    excerpt: However, many disasters allow no time for people to gather even the most
+      basic necessities, which is why planning ahead is essential.
+    start_char: 304
+    end_char: 421
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_011
+  claim_text: Ensure you follow all local evacuation orders and do not delay leaving
+    if instructed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 21
+    page_end: 21
+    segment_id: src.fema.are-you-ready.2004::seg_000027
+    excerpt: Gather your family and go if you are instructed to evacuate immediately.
+    start_char: 385
+    end_char: 448
+    support_strength: strong
+- object_id: emergency.evacuating-family
+  claim_id: clm_012
+  claim_text: Adapt your plan based on local warning systems and the types of hazards
+    common in your region.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 16
+    page_end: 17
+    segment_id: src.fema.are-you-ready.2004::seg_000022
+    excerpt: Learn about the hazards that may strike your community, the risks you
+      face from these hazards, and your community's plans for warning and evacuation.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000025
+bundle_overrides:
+  hook: In an emergency, knowing how to evacuate quickly and safely can be the difference
+    between safety and danger for you and your family.
+  primer: Evacuating yourself and your family during emergencies is a critical skill
+    that can protect you from harm. Emergencies can happen at any time, and being
+    prepared can make a significant difference in your safety. This guide focuses
+    on understanding local warnings, planning for different hazards, and ensuring
+    you have the necessary tools and plans in place. Local officials will provide
+    information through media channels, and it's important to monitor these for evacuation
+    orders. Having an emergency kit ready and knowing your evacuation routes in advance
+    are key components of a successful evacuation plan. Common mistakes include not
+    having enough preparation time and being unaware of local warnings, which can
+    lead to dangerous delays. By understanding the types of hazards common in your
+    area and adapting your plan accordingly, you can ensure a safer evacuation process.
+  guide: '1. **Stay Informed**: Regularly monitor local media outlets for any updates
+    on potential emergencies or evacuation orders. This includes radio, television,
+    and official social media channels.
+
+
+    2. **Understand Local Warnings**: Familiarize yourself with the warning systems
+    used in your community, such as sirens or emergency alerts on your phone. Respond
+    promptly to any alerts or instructions from local officials.
+
+
+    3. **Prepare an Emergency Kit**: Assemble a kit that includes essentials such
+    as water, non-perishable food, a flashlight, batteries, a first-aid kit, and any
+    necessary medications. Ensure that this kit is easily accessible.
+
+
+    4. **Plan Your Evacuation Route**: Identify multiple evacuation routes from your
+    home to a safe location. Avoid shortcuts as they may be blocked. Practice these
+    routes with your family to ensure everyone is familiar with them.
+
+
+    5. **Communicate with Family Members**: Establish a communication plan with your
+    family. Decide on a meeting point and ensure everyone knows how to reach it. Keep
+    communication devices charged and ready.
+
+
+    6. **Act Promptly**: If an evacuation order is given, do not delay. Gather your
+    family and emergency kit, and leave immediately. Follow the recommended routes
+    and instructions from local authorities.
+
+
+    7. **Adapt Your Plan**: Be aware of the specific hazards in your area, such as
+    floods, hurricanes, or wildfires, and adjust your evacuation plan accordingly.
+    This may include considering public transportation options or potential traffic
+    congestion in urban areas.'
+  reference:
+  - Monitor local media for evacuation orders.
+  - Respond to sirens or calls from local officials.
+  - Prepare an emergency kit with essentials.
+  - Plan evacuation routes in advance.
+  - Be aware of the time available based on the hazard.
+  - Follow all local evacuation orders promptly.
+  - Adapt your plan based on local hazards.
+  worksheet:
+  - List the local media channels you will monitor for evacuation orders.
+  - Identify the warning systems used in your community.
+  - Create a checklist for your emergency kit.
+  - Map out at least two evacuation routes from your home.
+  - Discuss and document your family communication plan.
+  - Research the common hazards in your area and note any specific preparations needed.
+  teach_forward_kit:
+    three_minute_version: In emergencies, evacuate promptly by monitoring local media
+      for orders, preparing an emergency kit, and knowing your evacuation routes.
+      Respond to local warnings and adapt your plan based on local hazards.
+    ten_minute_outline:
+    - Introduction to the importance of evacuation planning.
+    - Understanding local warnings and communication systems.
+    - Steps to prepare an emergency kit.
+    - Planning and practicing evacuation routes.
+    - Family communication strategies during an evacuation.
+    - Adapting plans for specific local hazards.
+    discussion_prompts:
+    - What are the most common hazards in your area, and how do they affect evacuation
+      plans?
+    - How can you ensure all family members are informed and prepared for an evacuation?
+    - What challenges might you face during an evacuation, and how can you overcome
+      them?

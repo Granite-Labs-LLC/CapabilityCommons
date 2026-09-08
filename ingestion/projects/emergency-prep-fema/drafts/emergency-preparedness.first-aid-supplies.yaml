@@ -1,0 +1,152 @@
+id: emergency-preparedness.first-aid-supplies
+slug: emergency-preparedness.first-aid-supplies
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: First Aid Supplies Checklist
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: low
+risk_band: low
+summary_short: Checklist of essential first aid supplies for various locations.
+summary_medium: A comprehensive checklist of essential first aid supplies needed for
+  home, vehicle, and work environments.
+plain_language: This checklist provides a list of first aid supplies that are essential
+  to have at home, in your vehicle, and at work. It includes items like bandages,
+  antiseptics, and a first aid manual.
+markdown_body: '### What this is
+
+  This is a checklist of essential first aid supplies that should be available in
+  your home, vehicle, and workplace. It ensures you are prepared for minor injuries
+  and emergencies.
+
+
+  ### Why it matters
+
+  Having a well-stocked first aid kit can help you respond effectively to common injuries
+  and emergencies, potentially reducing the severity of an injury and providing immediate
+  care until professional help is available.
+
+
+  ### What you need
+
+  You need to gather various first aid supplies such as adhesive bandages, sterile
+  dressings, gauze pads, hand sanitizer, medical gloves, scissors, tweezers, a thermometer,
+  and a first aid manual.
+
+
+  ### How to do it
+
+  Review the checklist and ensure that each item is present in your first aid kits
+  at home, in your vehicle, and at work. Regularly check and replenish supplies as
+  needed, especially after use.
+
+
+  ### Common failure modes
+
+  Failing to regularly check and replenish supplies can lead to missing critical items
+  during an emergency. Ensure all items are within their expiration dates.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all users of the first aid kit are familiar with its contents and know
+  how to use them safely. Keep the kit out of reach of children.
+
+
+  ### Local adaptation notes
+
+  Consider local hazards and specific needs when customizing your first aid kit. For
+  example, include sunscreen if you are in a sunny area or additional cold packs in
+  colder climates.'
+structured_data:
+  definition: A list of essential first aid supplies to have in various locations.
+  key_questions:
+  - What supplies are essential for a first aid kit?
+  - How often should I check my first aid supplies?
+  - What specific items should be included for different environments?
+  misconceptions:
+  - A first aid kit is only necessary at home.
+  - Once stocked, a first aid kit does not need regular checks.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.first-aid-supplies
+  claim_id: clm_001
+  claim_text: This is a checklist of essential first aid supplies that should be available
+    in your home, vehicle, and workplace.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000299
+    excerpt: '### **First Aid Supplies** | Supplies | Home (√) | Vehicle (√) | Work
+      (√) |'
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: emergency-preparedness.first-aid-supplies
+  claim_id: clm_002
+  claim_text: You need to gather various first aid supplies such as adhesive bandages,
+    sterile dressings, gauze pads, hand sanitizer, medical gloves, scissors, tweezers,
+    a thermometer, and a first aid manual.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000299
+    excerpt: '| Adhesive bandages, various sizes | | | | 5" x 9" sterile dressing
+      | | | | Conforming roller gauze bandage | | | | Germicidal hand wipes or waterless,
+      alcohol-based hand sanitizer | | | | Pairs large, medical grade, non-latex gloves
+      | | | | Scissors (small, personal) | | | | Tweezers | | | | Thermometer | |
+      | | First aid manual |'
+    start_char: 81
+    end_char: 500
+    support_strength: strong
+- object_id: emergency-preparedness.first-aid-supplies
+  claim_id: clm_003
+  claim_text: Review the checklist and ensure that each item is present in your first
+    aid kits at home, in your vehicle, and at work.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000299
+    excerpt: '| Supplies | Home (√) | Vehicle (√) | Work (√) |'
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: emergency-preparedness.first-aid-supplies
+  claim_id: clm_004
+  claim_text: Failing to regularly check and replenish supplies can lead to missing
+    critical items during an emergency.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000299
+    excerpt: Ensure all items are within their expiration dates.
+    start_char: 0
+    end_char: 80
+    support_strength: weak
+- object_id: emergency-preparedness.first-aid-supplies
+  claim_id: clm_005
+  claim_text: Consider local hazards and specific needs when customizing your first
+    aid kit.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 196
+    page_end: 196
+    segment_id: src.fema.are-you-ready.2004::seg_000299
+    excerpt: Sunscreen
+    start_char: 500
+    end_char: 520
+    support_strength: weak
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000299

@@ -43,7 +43,7 @@ def convert_pdf_to_markdown(pdf_path: str) -> dict:
             "Install with: pip install -e '.[ingest]'"
         )
 
-    config_parser = ConfigParser({"paginate_output": True})
+    config_parser = ConfigParser({"paginate_output": True, "output_format": "markdown"})
     converter = PdfConverter(
         config=config_parser.generate_config_dict(),
         artifact_dict=create_model_dict(),

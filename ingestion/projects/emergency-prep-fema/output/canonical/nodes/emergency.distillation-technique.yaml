@@ -1,0 +1,236 @@
+id: emergency.distillation-technique
+slug: emergency.distillation-technique
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Distillation Technique for Water Purification
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to distill water to remove impurities.
+summary_medium: A guide on how to distill water to remove microbes, heavy metals,
+  salts, and other impurities.
+plain_language: This guide teaches you how to purify water by distillation, which
+  removes germs, heavy metals, salts, and other impurities.
+markdown_body: '### What this is
+
+  Distillation is a method of purifying water by boiling it and collecting the vapor,
+  which leaves behind impurities.
+
+
+  ### Why it matters
+
+  Distillation is crucial in emergency situations where water may be contaminated
+  with microbes, heavy metals, or salts that other purification methods cannot remove.
+
+
+  ### What you need
+
+  You will need a pot, a cup, and a lid that fits the pot.
+
+
+  ### How to do it
+
+  1. Fill a pot halfway with water.
+
+  2. Tie a cup to the handle on the pot''s lid so that the cup hangs right-side-up
+  when the lid is upside-down. Ensure the cup does not touch the water.
+
+  3. Boil the water for 20 minutes.
+
+  4. Collect the distilled water that drips from the lid into the cup.
+
+
+  ### Common failure modes
+
+  Ensure the cup is not dangling into the water, and boil the water for the full 20
+  minutes to ensure proper distillation.
+
+
+  ### Safety/boundary notes
+
+  Be cautious when handling boiling water to avoid burns.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of pots and cups and the specific impurities in local
+  water sources.'
+structured_data:
+  tools:
+  - pot
+  - lid
+  materials:
+  - cup
+  success_criteria: Water collected in the cup is free from microbes, heavy metals,
+    and salts.
+  failure_modes:
+  - cup dangling into water
+  - insufficient boiling time
+  safety_boundary: Avoid burns by handling boiling water carefully.
+  implementation:
+    smallest_viable_version: Boil water and collect the vapor to purify it.
+    tools:
+    - pot
+    - lid
+    materials:
+    - cup
+    expected_time: 20 minutes
+    expected_cost: low
+    success_checks:
+    - Water in the cup is clear and free of impurities.
+    stop_conditions:
+    - If the cup touches the water, adjust it immediately.
+    common_mistakes:
+    - Not boiling long enough
+    - Cup touching the water
+    variants:
+    - label: Urban
+      when: Limited space for boiling
+      notes: Use a smaller pot if necessary.
+    when_to_escalate:
+    - If water remains contaminated after distillation
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.distillation-technique
+  claim_id: clm_001
+  claim_text: Distillation is a method of purifying water by boiling it and collecting
+    the vapor, which leaves behind impurities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: Distillation involves boiling water and then collecting only the vapor
+      that condenses. The condensed vapor will not include salt or most other impurities.
+    start_char: 0
+    end_char: 140
+    support_strength: strong
+- object_id: emergency.distillation-technique
+  claim_id: clm_002
+  claim_text: Distillation is crucial in emergency situations where water may be contaminated
+    with microbes, heavy metals, or salts that other purification methods cannot remove.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 42
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000058
+    excerpt: Distillation | √ | √
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: emergency.distillation-technique
+  claim_id: clm_003
+  claim_text: You will need a pot, a cup, and a lid that fits the pot.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: To distill, fi ll a pot halfway with water. Tie a cup to the handle on
+      the pot's lid so that the cup will hang right-side-up when the lid is upside-down
+    start_char: 141
+    end_char: 250
+    support_strength: strong
+- object_id: emergency.distillation-technique
+  claim_id: clm_004
+  claim_text: Boil the water for 20 minutes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: boil the water for 20 minutes.
+    start_char: 251
+    end_char: 275
+    support_strength: strong
+- object_id: emergency.distillation-technique
+  claim_id: clm_005
+  claim_text: Collect the distilled water that drips from the lid into the cup.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: The water that drips from the lid into the cup is distilled.
+    start_char: 276
+    end_char: 325
+    support_strength: strong
+- object_id: emergency.distillation-technique
+  claim_id: clm_006
+  claim_text: Ensure the cup is not dangling into the water, and boil the water for
+    the full 20 minutes to ensure proper distillation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 41
+    page_end: 42
+    segment_id: src.fema.are-you-ready.2004::seg_000057
+    excerpt: make sure the cup is not dangling into the water and boil the water for
+      20 minutes.
+    start_char: 141
+    end_char: 275
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000057
+bundle_overrides:
+  hook: In emergency situations, distillation can be a lifesaver by turning contaminated
+    water into safe drinking water.
+  primer: Distillation is a water purification method that involves boiling water
+    and collecting the vapor. This process effectively removes impurities such as
+    microbes, heavy metals, and salts, which are often present in contaminated water
+    sources. Distillation is particularly useful in emergency situations where other
+    purification methods may not be effective. The basic setup requires a pot, a cup,
+    and a lid. By boiling the water, the impurities are left behind, and the vapor
+    that condenses is collected as purified water. This method is simple yet effective,
+    making it a valuable skill to have in situations where clean water is not readily
+    available.
+  guide: "To distill water, follow these steps: \n1. Gather your materials: a pot,\
+    \ a cup, and a lid that fits the pot. \n2. Fill the pot halfway with water. \n\
+    3. Tie the cup to the handle of the pot's lid so that the cup hangs right-side-up\
+    \ when the lid is placed upside-down. Ensure the cup does not touch the water.\
+    \ \n4. Place the lid on the pot upside-down, ensuring the cup is positioned to\
+    \ catch the distilled water. \n5. Boil the water for 20 minutes. During this time,\
+    \ the water will evaporate, and the vapor will condense on the lid, dripping into\
+    \ the cup. \n6. After 20 minutes, carefully remove the cup and allow it to cool.\
+    \ The water collected in the cup is now distilled and safe to drink. \nRemember\
+    \ to handle boiling water with care to avoid burns, and ensure the cup is not\
+    \ dangling into the water to achieve proper distillation."
+  reference:
+  - Distillation involves boiling water and collecting vapor.
+  - Removes impurities like microbes, heavy metals, and salts.
+  - Requires a pot, a cup, and a lid.
+  - Boil water for 20 minutes.
+  - Ensure the cup does not touch the water.
+  worksheet:
+  - List the materials needed for water distillation.
+  - Describe the process of setting up a distillation system.
+  - Explain why the cup should not touch the water during distillation.
+  - What are the signs that distillation has been successful?
+  - Discuss the safety precautions to take when distilling water.
+  teach_forward_kit:
+    three_minute_version: Distillation purifies water by boiling it and collecting
+      the vapor, leaving impurities behind. It's crucial in emergencies for removing
+      contaminants like microbes and heavy metals. You need a pot, a cup, and a lid.
+      Boil the water for 20 minutes, ensuring the cup doesn't touch the water, and
+      collect the distilled water.
+    ten_minute_outline:
+    - Introduction to distillation and its importance.
+    - Materials required for distillation.
+    - Step-by-step process of setting up and executing distillation.
+    - Common mistakes and how to avoid them.
+    - Safety tips for handling boiling water.
+    - Q&A session to clarify doubts.
+    discussion_prompts:
+    - Why is distillation an effective method for water purification?
+    - What are some situations where distillation would be necessary?
+    - How does distillation compare to other water purification methods?
+    - What challenges might you face when setting up a distillation system?
+    - Discuss the importance of safety when handling boiling water.

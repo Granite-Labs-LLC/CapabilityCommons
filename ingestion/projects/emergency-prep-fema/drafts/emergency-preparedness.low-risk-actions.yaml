@@ -1,0 +1,163 @@
+id: emergency-preparedness.low-risk-actions
+slug: emergency-preparedness.low-risk-actions
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Low Risk Emergency Preparedness Actions
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency-preparedness
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for low-risk emergency preparedness actions.
+summary_medium: Learn how to prepare a family emergency plan, create an emergency
+  supply kit, and engage in community volunteer opportunities.
+plain_language: This guide helps you take low-risk actions to prepare for emergencies,
+  like making a family plan, gathering supplies, and volunteering in your community.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for taking low-risk actions to prepare
+  for emergencies. It includes steps for developing a family emergency plan, creating
+  an emergency supply kit, and participating in community volunteer opportunities.
+
+
+  ### Why it matters
+
+  Being prepared for emergencies can significantly reduce risks and improve safety
+  for you and your family. By having a plan and the necessary supplies, you can respond
+  more effectively during a crisis.
+
+
+  ### What you need
+
+  To get started, you''ll need to create a family emergency plan, assemble an emergency
+  supply kit, and explore volunteer opportunities in your community.
+
+
+  ### How to do it
+
+  1. Develop a family emergency plan and practice it with your family. Share it with
+  friends and visit www.Ready.gov for guidance.
+
+  2. Assemble an emergency supply kit with essentials like water, food, and first
+  aid supplies.
+
+  3. Stay informed by visiting www.Ready.gov or calling 1-800-BE-READY.
+
+  4. Learn how to shelter safely and turn off utilities in your home.
+
+  5. Engage in community volunteer opportunities such as Citizen Corps or Neighborhood
+  Watch, and consider taking first aid or CPR courses.
+
+
+  ### Common failure modes
+
+  Failing to regularly update and practice your emergency plan can lead to confusion
+  during an actual emergency. Not maintaining your emergency supply kit can result
+  in missing or expired items when needed.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all family members are aware of the emergency plan and know how to safely
+  turn off utilities. Regularly check and update your emergency supply kit.
+
+
+  ### Local adaptation notes
+
+  Consider local community volunteer opportunities that may be specific to your area,
+  such as local CERT programs or neighborhood initiatives.'
+structured_data:
+  tools:
+  - emergency supply kit
+  - family emergency plan
+  materials: []
+  success_criteria:
+  - Family emergency plan is developed and practiced
+  - Emergency supply kit is complete and up-to-date
+  - Participation in community volunteer opportunities
+  failure_modes:
+  - Plan not practiced
+  - Kit incomplete
+  - Lack of community engagement
+  safety_boundary:
+  - Knowledge of utility shut-off procedures
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency-preparedness.low-risk-actions
+  claim_id: clm_001
+  claim_text: Develop a family emergency plan and practice it with your family. Share
+    it with friends and visit www.Ready.gov for guidance.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000263
+    excerpt: Develop a family emergency plan. Share it with family and friends, and
+      practice the plan. Visit www.Ready.gov for help creating a plan.
+    start_char: 8
+    end_char: 112
+    support_strength: strong
+- object_id: emergency-preparedness.low-risk-actions
+  claim_id: clm_002
+  claim_text: Assemble an emergency supply kit with essentials like water, food, and
+    first aid supplies.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000263
+    excerpt: Create an "Emergency Supply Kit" for your household.
+    start_char: 114
+    end_char: 155
+    support_strength: strong
+- object_id: emergency-preparedness.low-risk-actions
+  claim_id: clm_003
+  claim_text: Stay informed by visiting www.Ready.gov or calling 1-800-BE-READY.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000263
+    excerpt: Be informed. Visit www.Ready.gov or obtain a copy of "Preparing Makes
+      Sense, Get Ready Now" by calling 1-800-BE-READY.
+    start_char: 157
+    end_char: 250
+    support_strength: strong
+- object_id: emergency-preparedness.low-risk-actions
+  claim_id: clm_004
+  claim_text: Learn how to shelter safely and turn off utilities in your home.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000263
+    excerpt: Know where to shelter and how to turn off utilities (power, gas, and
+      water) to your home.
+    start_char: 252
+    end_char: 317
+    support_strength: strong
+- object_id: emergency-preparedness.low-risk-actions
+  claim_id: clm_005
+  claim_text: Engage in community volunteer opportunities such as Citizen Corps or
+    Neighborhood Watch, and consider taking first aid or CPR courses.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 176
+    page_end: 176
+    segment_id: src.fema.are-you-ready.2004::seg_000263
+    excerpt: Examine volunteer opportunities in your community, such as Citizen Corps,
+      Volunteers in Police Service, Neighborhood Watch or others, and donate your
+      time. Consider completing an American Red Cross first aid or CPR course, or
+      Community Emergency Response Team (CERT) course.
+    start_char: 319
+    end_char: 512
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000263

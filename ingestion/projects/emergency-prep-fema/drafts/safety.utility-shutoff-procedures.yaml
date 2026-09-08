@@ -1,0 +1,295 @@
+id: safety.utility-shutoff-procedures
+slug: safety.utility-shutoff-procedures
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Utility Shut-off Procedures for Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn how to safely shut off utilities like natural gas and water during
+  emergencies.
+summary_medium: Guidance on shutting off utilities such as natural gas and water during
+  disasters to prevent hazards. Includes contacting local utility companies for procedures
+  and practicing shut-off without turning off utilities.
+plain_language: This guide helps you learn how to safely turn off utilities like natural
+  gas and water in case of an emergency. It includes steps to follow and safety tips.
+markdown_body: '# What this is
+
+  This guide provides instructions on how to safely shut off utilities, such as natural
+  gas and water, during emergencies to prevent hazards like fires and water contamination.
+
+
+  # Why it matters
+
+  In disasters, utility lines can become damaged, leading to gas leaks or water contamination.
+  Knowing how to shut off utilities can prevent fires and ensure water safety.
+
+
+  # What you need
+
+  Contact information for local utility companies, knowledge of your utility meter
+  configurations, and a special tool for the street valve if needed.
+
+
+  # How to do it
+
+  1. Contact your local gas company to learn the proper shut-off procedure for your
+  gas meter. Share this information with all household members.
+
+  2. Practice the gas shut-off procedure without actually turning off the gas.
+
+  3. If you smell gas or hear a hissing noise, evacuate immediately, turn off the
+  gas at the main valve, and call the gas company from a safe location.
+
+  4. Learn how to shut off water at the main house valve to prevent contamination.
+  Do not use the street valve as it requires a special tool.
+
+
+  # Common failure modes
+
+  Incorrect shut-off procedure, attempting to turn gas back on without professional
+  help.
+
+
+  # Safety/boundary notes
+
+  Never attempt to turn the gas back on yourself. Always have a qualified professional
+  do it.
+
+
+  # Local adaptation notes
+
+  Modify shut-off procedures based on guidance from your local utility company.'
+structured_data:
+  tools:
+  - special tool for street valve
+  materials: []
+  success_criteria:
+  - All household members know how to shut off utilities safely.
+  failure_modes:
+  - Incorrect shut-off procedure
+  - Attempting to turn gas back on without professional help
+  safety_boundary:
+  - Do not attempt to turn gas back on yourself
+  implementation:
+    smallest_viable_version: Teach household members how to shut off utilities safely.
+    tools:
+    - special tool for street valve
+    materials: []
+    expected_time: 30 minutes
+    expected_cost: None
+    success_checks:
+    - Household members can demonstrate the shut-off procedure.
+    stop_conditions:
+    - If gas is smelled or a hissing noise is heard, evacuate immediately.
+    common_mistakes:
+    - Not contacting utility companies for proper procedures.
+    variants:
+    - label: Urban
+      when: Living in a densely populated area.
+      notes: Ensure all household members know the location of the main shut-off valves.
+    when_to_escalate:
+    - If unsure about the shut-off procedure, contact a professional.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to safely shut off utilities,
+    such as natural gas and water, during emergencies to prevent hazards like fires
+    and water contamination.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: In the event of a disaster, you may be instructed to shut off the utility
+      service at your home. Natural gas leaks and explosions are responsible for a
+      significant number of fires following disasters. It is vital that all household
+      members know how to shut off natural gas.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_002
+  claim_text: In disasters, utility lines can become damaged, leading to gas leaks
+    or water contamination. Knowing how to shut off utilities can prevent fires and
+    ensure water safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: Natural gas leaks and explosions are responsible for a significant number
+      of fires following disasters. It is vital that all household members know how
+      to shut off natural gas.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: Cracked lines may pollute the water supply to your house. It is wise
+      to shut off your water until you hear from authorities that it is safe for drinking.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_003
+  claim_text: Contact your local gas company to learn the proper shut-off procedure
+    for your gas meter. Share this information with all household members.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: Because there are different gas shut-off procedures for different gas
+      meter configurations, it is important to contact your local gas company for
+      guidance on preparation and response regarding gas appliances and gas service
+      to your home.
+    start_char: 200
+    end_char: 400
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_004
+  claim_text: Practice the gas shut-off procedure without actually turning off the
+    gas.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: Be sure not to actually turn off the gas when practicing the proper gas
+      shut-off procedure.
+    start_char: 400
+    end_char: 500
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_005
+  claim_text: If you smell gas or hear a hissing noise, evacuate immediately, turn
+    off the gas at the main valve, and call the gas company from a safe location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: If you smell gas or hear a blowing or hissing noise, open a window and
+      get everyone out quickly. Turn off the gas, using the outside main valve if
+      you can, and call the gas company from a neighbor's home.
+    start_char: 500
+    end_char: 700
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_006
+  claim_text: Learn how to shut off water at the main house valve to prevent contamination.
+    Do not use the street valve as it requires a special tool.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 27
+    page_end: 28
+    segment_id: src.fema.are-you-ready.2004::seg_000036
+    excerpt: It is vital that all household members learn how to shut off the water
+      at the main house valve. The effects of gravity may drain the water in your
+      hot water heater and toilet tanks unless you trap it in your house by shutting
+      off the main house valve (not the street valve in the cement box at the curb—this
+      valve is extremely difficult to turn and requires a special tool).
+    start_char: 100
+    end_char: 400
+    support_strength: strong
+- object_id: safety.utility-shutoff-procedures
+  claim_id: clm_007
+  claim_text: Never attempt to turn the gas back on yourself. Always have a qualified
+    professional do it.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 26
+    page_end: 27
+    segment_id: src.fema.are-you-ready.2004::seg_000035
+    excerpt: CAUTION – If you turn off the gas for any reason, a qualified professional
+      must turn it back on. NEVER attempt to turn the gas back on yourself.
+    start_char: 700
+    end_char: 800
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000035
+bundle_overrides:
+  hook: Knowing how to safely shut off utilities during emergencies can prevent fires
+    and ensure water safety, protecting your home and loved ones.
+  primer: In the event of a disaster, utility lines such as those for natural gas
+    and water can become damaged, leading to potential hazards like gas leaks or water
+    contamination. Understanding how to safely shut off these utilities is crucial
+    for preventing fires and ensuring the safety of your water supply. This guide
+    provides essential instructions on how to turn off utilities like natural gas
+    and water during emergencies. It is important for all household members to be
+    familiar with these procedures to act quickly and effectively when needed. The
+    guide emphasizes the importance of contacting local utility companies to learn
+    the specific shut-off procedures for your home, as different configurations may
+    require different actions. Additionally, practicing the shut-off procedures without
+    actually turning off the utilities is recommended to ensure everyone knows what
+    to do in an emergency. Remember, never attempt to turn the gas back on yourself;
+    always have a qualified professional do it.
+  guide: '1. **Contact Local Utility Companies**: Reach out to your local gas and
+    water companies to learn the proper shut-off procedures for your specific utility
+    meter configurations. Share this information with all household members.
+
+
+    2. **Practice the Procedure**: Familiarize yourself with the gas shut-off procedure
+    by practicing it without actually turning off the gas. This ensures everyone knows
+    what to do in an emergency.
+
+
+    3. **Respond to Gas Leaks**: If you smell gas or hear a hissing noise, evacuate
+    the premises immediately. Turn off the gas at the main valve if it is safe to
+    do so, and call the gas company from a safe location.
+
+
+    4. **Shut Off Water**: Learn how to shut off the water at the main house valve
+    to prevent contamination. Avoid using the street valve as it requires a special
+    tool and is difficult to operate.
+
+
+    5. **Safety Precautions**: Never attempt to turn the gas back on yourself. Always
+    have a qualified professional handle it to ensure safety.
+
+
+    6. **Review and Update**: Regularly review the shut-off procedures with your household
+    and update any information as needed, especially if there are changes to your
+    utility services or household members.'
+  reference:
+  - Contact local utility companies for shut-off procedures.
+  - Practice gas shut-off without turning it off.
+  - Evacuate if you smell gas or hear hissing.
+  - Shut off water at the main house valve.
+  - Never turn gas back on yourself; call a professional.
+  worksheet:
+  - List the contact information for your local gas and water companies.
+  - Identify and label the main gas and water shut-off valves in your home.
+  - Practice the gas shut-off procedure with all household members.
+  - Discuss and document the steps to take if a gas leak is suspected.
+  - Review the procedure for shutting off water at the main house valve.
+  teach_forward_kit:
+    three_minute_version: In emergencies, knowing how to shut off utilities like gas
+      and water can prevent fires and contamination. Contact your local utility companies
+      for specific shut-off procedures, practice these procedures with your household,
+      and never attempt to turn the gas back on yourself.
+    ten_minute_outline:
+    - Introduction to utility shut-off importance
+    - Contacting utility companies for procedures
+    - Practicing shut-off procedures
+    - Responding to gas leaks
+    - Shutting off water safely
+    - Reviewing safety precautions
+    discussion_prompts:
+    - Why is it important to know how to shut off utilities during emergencies?
+    - What steps should you take if you suspect a gas leak in your home?
+    - How can practicing shut-off procedures with your household improve safety?
+    - What are the risks of attempting to turn the gas back on yourself?

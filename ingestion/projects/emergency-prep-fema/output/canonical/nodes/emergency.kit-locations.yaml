@@ -1,0 +1,205 @@
+id: emergency.kit-locations
+slug: emergency.kit-locations
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Emergency Kit Locations
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency_preparedness
+secondary_domains: []
+stage: foundation
+contexts:
+- home
+- work
+- vehicle
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for preparing emergency supply kits for home, work, and
+  vehicles.
+summary_medium: Learn how to prepare and store emergency supply kits at home, work,
+  and in vehicles to ensure readiness for evacuation or sheltering.
+plain_language: This guide helps you prepare emergency kits for different locations
+  like home, work, and your car, so you're ready for any situation.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for preparing emergency supply kits for
+  your home, workplace, and vehicle.
+
+
+  ### Why it matters
+
+  Emergencies can happen at any time and place. Having a well-prepared kit ensures
+  you have the necessary supplies to either evacuate quickly or shelter in place.
+
+
+  ### What you need
+
+  You need to gather essential supplies such as food, water, first aid supplies, flares,
+  jumper cables, and walking shoes.
+
+
+  ### How to do it
+
+  1. **Home**: Store a kit with essential food, water, and supplies for at least three
+  days in a designated place. Ensure all family members know its location. Consider
+  additional supplies for up to two weeks of sheltering.
+
+  2. **Work**: Keep a ''grab and go'' kit with food, water, and walking shoes in case
+  of evacuation.
+
+  3. **Vehicle**: Maintain a kit with food, water, first aid supplies, flares, jumper
+  cables, and seasonal items in your car.
+
+
+  ### Common failure modes
+
+  Kits not being accessible, having insufficient supplies, or family members not knowing
+  the kit''s location.
+
+
+  ### Safety/boundary notes
+
+  Ensure kits are stored in safe, easily accessible locations.
+
+
+  ### Local adaptation notes
+
+  Consider regional climate and workplace policies when preparing kits.'
+structured_data:
+  tools: []
+  materials:
+  - food
+  - water
+  - first aid supplies
+  - flares
+  - jumper cables
+  - walking shoes
+  success_criteria:
+  - Kits are accessible and contain sufficient supplies for the intended duration.
+  - All family members are aware of the kit locations.
+  failure_modes:
+  - Kit not accessible
+  - Insufficient supplies
+  - Lack of awareness of kit location
+  safety_boundary: []
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.kit-locations
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidelines for preparing emergency supply
+    kits for your home, workplace, and vehicle.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: Since you do not know where you will be when an emergency occurs, prepare
+      supplies for home, work, and vehicles.
+    start_char: 0
+    end_char: 110
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_002
+  claim_text: Having a well-prepared kit ensures you have the necessary supplies to
+    either evacuate quickly or shelter in place.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 32
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000046
+    excerpt: You may need to survive on your own after a disaster. This means having
+      your own food, water, and other supplies in suffi cient quantity to last for
+      at least three days.
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_003
+  claim_text: You need to gather essential supplies such as food, water, first aid
+    supplies, flares, jumper cables, and walking shoes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: This kit should contain food, water, fi rst aid supplies, fl ares, jumper
+      cables, and seasonal supplies.
+    start_char: 361
+    end_char: 440
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_004
+  claim_text: Store a kit with essential food, water, and supplies for at least three
+    days in a designated place.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: Your disaster supplies kit should contain essential food, water, and
+      supplies for at least three days.
+    start_char: 0
+    end_char: 87
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_005
+  claim_text: Ensure all family members know its location.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: Make sure all family members know where the kit is kept.
+    start_char: 189
+    end_char: 238
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_006
+  claim_text: Consider additional supplies for up to two weeks of sheltering.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: Additionally, you may want to consider having supplies for sheltering
+      for up to two weeks.
+    start_char: 239
+    end_char: 318
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_007
+  claim_text: Keep a 'grab and go' kit with food, water, and walking shoes in case
+    of evacuation.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: This kit should be in one container, and ready to 'grab and go' in case
+      you are evacuated from your work place. Make sure you have food and water in
+      the kit. Also, be sure to have comfortable walking shoes at your workplace in
+      case an evacuation requires walking long distances.
+    start_char: 88
+    end_char: 360
+    support_strength: strong
+- object_id: emergency.kit-locations
+  claim_id: clm_008
+  claim_text: Maintain a kit with food, water, first aid supplies, flares, jumper
+    cables, and seasonal items in your car.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 33
+    page_end: 33
+    segment_id: src.fema.are-you-ready.2004::seg_000047
+    excerpt: In case you are stranded, keep a kit of emergency supplies in your car.
+      This kit should contain food, water, fi rst aid supplies, fl ares, jumper cables,
+      and seasonal supplies.
+    start_char: 441
+    end_char: 572
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000047

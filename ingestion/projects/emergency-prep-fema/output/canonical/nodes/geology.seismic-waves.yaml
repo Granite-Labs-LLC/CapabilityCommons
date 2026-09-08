@@ -1,0 +1,117 @@
+id: geology.seismic-waves
+slug: geology.seismic-waves
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Seismic Waves
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: geology
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Seismic waves are vibrations from an earthquake fault causing destruction.
+summary_medium: Seismic waves are vibrations that travel outward from an earthquake
+  fault, causing most of the destruction during earthquakes.
+plain_language: Seismic waves are the vibrations that spread out from where an earthquake
+  starts. These vibrations are what usually cause the most damage during an earthquake.
+markdown_body: '### What this is
+
+  Seismic waves are vibrations that travel outward from the point of fault slippage
+  during an earthquake. They move at speeds of several miles per second.
+
+
+  ### Why it matters
+
+  Understanding seismic waves is crucial because they are responsible for most of
+  the damage during earthquakes. This knowledge helps in designing structures that
+  can withstand such forces.
+
+
+  ### What you need
+
+  A basic understanding of geology and earthquake mechanics.
+
+
+  ### How to do it
+
+  To study seismic waves, one can use seismographs to measure the vibrations and analyze
+  their patterns to understand the earthquake''s impact.
+
+
+  ### Common failure modes
+
+  Misinterpreting seismic data can lead to inadequate structural designs that fail
+  during earthquakes.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all seismic studies and constructions adhere to local safety regulations
+  and building codes.
+
+
+  ### Local adaptation notes
+
+  Consider local geological conditions when applying seismic wave knowledge to construction
+  and safety planning.'
+structured_data:
+  definition: Seismic waves are vibrations that travel outward from the earthquake
+    fault.
+  key_questions:
+  - What are seismic waves?
+  - How do seismic waves cause destruction?
+  - What speeds do seismic waves travel at?
+  misconceptions:
+  - Seismic waves are not the same as the initial fault slippage, but rather the vibrations
+    that result from it.
+requires: []
+suggested_edges: []
+citations:
+- object_id: geology.seismic-waves
+  claim_id: clm_001
+  claim_text: Seismic waves are vibrations that travel outward from the point of fault
+    slippage during an earthquake.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000152
+    excerpt: Vibrations that travel outward from the earthquake fault at speeds of
+      several miles per second.
+    start_char: 0
+    end_char: 90
+    support_strength: strong
+- object_id: geology.seismic-waves
+  claim_id: clm_002
+  claim_text: They move at speeds of several miles per second.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000152
+    excerpt: Vibrations that travel outward from the earthquake fault at speeds of
+      several miles per second.
+    start_char: 0
+    end_char: 90
+    support_strength: strong
+- object_id: geology.seismic-waves
+  claim_id: clm_003
+  claim_text: Understanding seismic waves is crucial because they are responsible
+    for most of the damage during earthquakes.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 96
+    page_end: 96
+    segment_id: src.fema.are-you-ready.2004::seg_000152
+    excerpt: the vibrations of seismic waves cause most of the destruction during
+      earthquakes.
+    start_char: 91
+    end_char: 147
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000152

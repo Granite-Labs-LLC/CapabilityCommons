@@ -1,0 +1,149 @@
+id: emergency.school-emergency-plans
+slug: emergency.school-emergency-plans
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Understanding School Emergency Plans
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: emergency
+secondary_domains: []
+stage: community
+contexts:
+- school
+- emergency preparedness
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Guidelines for understanding school emergency plans.
+summary_medium: Guidelines for understanding and engaging with school emergency plans,
+  including communication, supplies, and shelter-in-place procedures.
+plain_language: Learn how to understand and engage with your children's school emergency
+  plans, focusing on communication, supplies, and shelter-in-place procedures.
+markdown_body: "# What this is\nThis reference sheet provides guidance on understanding\
+  \ and engaging with school emergency plans. It covers key aspects such as communication\
+  \ methods, supplies, and shelter-in-place procedures.\n\n# Why it matters\nKnowing\
+  \ the school's emergency plan helps ensure the safety of your children during a\
+  \ crisis. It prepares you to respond appropriately and ensures you understand the\
+  \ school's procedures.\n\n# What you need\nYou need to ask the school about their\
+  \ communication methods, available supplies, and shelter-in-place procedures.\n\n\
+  # How to do it\n1. Ask the school how they will communicate with families during\
+  \ a crisis. \n2. Inquire if the school has adequate food, water, and other basic\
+  \ supplies. \n3. Understand the school's shelter-in-place procedures and their evacuation\
+  \ plans.\n\n# Common failure modes\nInadequate communication, insufficient supplies,\
+  \ and locked access during emergencies can hinder effective response.\n\n# Safety/boundary\
+  \ notes\nDuring shelter-in-place procedures, you may not be able to pick up your\
+  \ children as the school may lock doors for safety.\n\n# Local adaptation notes\n\
+  Monitor local media for updates on school openings and closings, and follow local\
+  \ emergency officials' directions."
+structured_data:
+  definition: A school emergency plan outlines procedures for communication, supplies,
+    and shelter-in-place during a crisis.
+  key_questions:
+  - How will the school communicate with families during a crisis?
+  - Does the school have adequate supplies for emergencies?
+  - What are the school's shelter-in-place and evacuation procedures?
+  misconceptions:
+  - Parents can always pick up their children during an emergency.
+  - Schools will have unlimited supplies during a crisis.
+requires: []
+suggested_edges: []
+citations:
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidance on understanding and engaging
+    with school emergency plans. It covers key aspects such as communication methods,
+    supplies, and shelter-in-place procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: 'Know your children''s school emergency plan: - Ask how the school will
+      communicate with families during a crisis. - Ask if the school stores adequate
+      food, water, and other basic supplies. - Find out if the school is prepared
+      to shelter-in-place if need be, and where they plan to go if they must get away.'
+    start_char: 0
+    end_char: 264
+    support_strength: strong
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_002
+  claim_text: Knowing the school's emergency plan helps ensure the safety of your
+    children during a crisis.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: In cases where schools institute procedures to shelter-in-place, you
+      may not be permitted to drive to the school to pick up your children. Even if
+      you go to the school, the doors will likely be locked to keep your children
+      safe.
+    start_char: 265
+    end_char: 445
+    support_strength: medium
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_003
+  claim_text: You need to ask the school about their communication methods, available
+    supplies, and shelter-in-place procedures.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: 'Know your children''s school emergency plan: - Ask how the school will
+      communicate with families during a crisis. - Ask if the school stores adequate
+      food, water, and other basic supplies. - Find out if the school is prepared
+      to shelter-in-place if need be, and where they plan to go if they must get away.'
+    start_char: 0
+    end_char: 264
+    support_strength: strong
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_004
+  claim_text: Inadequate communication, insufficient supplies, and locked access during
+    emergencies can hinder effective response.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: In cases where schools institute procedures to shelter-in-place, you
+      may not be permitted to drive to the school to pick up your children. Even if
+      you go to the school, the doors will likely be locked to keep your children
+      safe.
+    start_char: 265
+    end_char: 445
+    support_strength: medium
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_005
+  claim_text: During shelter-in-place procedures, you may not be able to pick up your
+    children as the school may lock doors for safety.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: In cases where schools institute procedures to shelter-in-place, you
+      may not be permitted to drive to the school to pick up your children. Even if
+      you go to the school, the doors will likely be locked to keep your children
+      safe.
+    start_char: 265
+    end_char: 445
+    support_strength: strong
+- object_id: emergency.school-emergency-plans
+  claim_id: clm_006
+  claim_text: Monitor local media for updates on school openings and closings, and
+    follow local emergency officials' directions.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 22
+    page_end: 22
+    segment_id: src.fema.are-you-ready.2004::seg_000029
+    excerpt: Monitor local media outlets for announcements about changes in school
+      openings and closings, and follow the directions of local emergency officials.
+    start_char: 446
+    end_char: 556
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000029

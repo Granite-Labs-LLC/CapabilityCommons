@@ -1,0 +1,271 @@
+id: mental-health.easing-disaster-stress
+slug: mental-health.easing-disaster-stress
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Easing Disaster-Related Stress
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: mental_health
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Learn how to manage stress after a disaster through communication,
+  professional help, and maintaining routines.
+summary_medium: This guide provides strategies for easing stress related to disasters,
+  emphasizing the importance of talking about feelings, seeking professional help,
+  and maintaining daily routines.
+plain_language: This guide helps you manage stress after a disaster by talking about
+  your feelings, getting professional help, and keeping up with daily routines.
+markdown_body: '### What this is
+
+  This guide offers strategies to help individuals manage and ease stress following
+  a disaster.
+
+
+  ### Why it matters
+
+  Disasters can have a profound emotional impact, sometimes more severe than physical
+  or financial damage. Managing stress is crucial for recovery and maintaining mental
+  health.
+
+
+  ### What you need
+
+  Access to support networks, professional counseling services, and a commitment to
+  self-care routines.
+
+
+  ### How to do it
+
+  1. Talk about your feelings with someone you trust.
+
+  2. Seek professional counseling if needed.
+
+  3. Maintain a healthy lifestyle with proper nutrition, rest, and exercise.
+
+  4. Keep up with daily routines to provide a sense of normalcy.
+
+  5. Engage in community support and memorial activities.
+
+
+  ### Common failure modes
+
+  Isolating oneself, neglecting self-care, and avoiding professional help can exacerbate
+  stress.
+
+
+  ### Safety/boundary notes
+
+  Ensure that any professional help sought is from qualified and reputable sources.
+
+
+  ### Local adaptation notes
+
+  Consider local resources such as community centers, faith-based organizations, and
+  local government services for additional support.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - Reduced feelings of anxiety and stress.
+  - Improved communication about emotions.
+  - Maintenance of daily routines.
+  failure_modes:
+  - Isolation from support networks.
+  - Neglect of physical and emotional self-care.
+  safety_boundary: Ensure professional counselors are licensed and reputable.
+  implementation:
+    smallest_viable_version: Talk about your feelings and maintain daily routines.
+    tools: []
+    materials: []
+    expected_time: Varies by individual
+    expected_cost: free
+    success_checks:
+    - You feel less anxious.
+    - You are able to talk about your emotions.
+    stop_conditions:
+    - If stress worsens despite efforts.
+    - If professional help is needed.
+    common_mistakes:
+    - Avoiding talking about feelings.
+    - Neglecting self-care routines.
+    variants:
+    - label: Urban
+      when: In a city environment with access to local services.
+      notes: Utilize city-based support groups and services.
+    - label: Renter
+      when: Living in rented accommodation.
+      notes: Ensure your rental insurance is up-to-date.
+    when_to_escalate:
+    - If feelings of hopelessness persist.
+    - If there is an increase in substance use.
+requires: []
+suggested_edges: []
+citations:
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_001
+  claim_text: Disasters can have a profound emotional impact, sometimes more severe
+    than physical or financial damage.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: The emotional toll that disaster brings can sometimes be even more devastating
+      than the fi nancial strains of damage and loss of home, business, or personal
+      property.
+    start_char: 0
+    end_char: 112
+    support_strength: strong
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_002
+  claim_text: Managing stress is crucial for recovery and maintaining mental health.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Acknowledging your feelings helps you recover. Focusing on your strengths
+      and abilities helps you heal.
+    start_char: 208
+    end_char: 276
+    support_strength: medium
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_003
+  claim_text: Talk about your feelings with someone you trust.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Talk with someone about your feelings—anger, sorrow, and other emotions
+      even though it may be diffi cult.
+    start_char: 1058
+    end_char: 1125
+    support_strength: strong
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_004
+  claim_text: Seek professional counseling if needed.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Seek help from professional counselors who deal with post-disaster stress.
+    start_char: 1127
+    end_char: 1185
+    support_strength: strong
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_005
+  claim_text: Maintain a healthy lifestyle with proper nutrition, rest, and exercise.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Take steps to promote your own physical and emotional healing by healthy
+      eating, rest, exercise, relaxation, and meditation.
+    start_char: 1191
+    end_char: 1274
+    support_strength: strong
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_006
+  claim_text: Keep up with daily routines to provide a sense of normalcy.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Maintain a normal family and daily routine, limiting demanding responsibilities
+      on yourself and your family.
+    start_char: 1276
+    end_char: 1349
+    support_strength: strong
+- object_id: mental-health.easing-disaster-stress
+  claim_id: clm_007
+  claim_text: Engage in community support and memorial activities.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 185
+    page_end: 187
+    segment_id: src.fema.are-you-ready.2004::seg_000278
+    excerpt: Participate in memorials. Use existing support groups of family, friends,
+      and religious institutions.
+    start_char: 1351
+    end_char: 1419
+    support_strength: strong
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000278
+bundle_overrides:
+  hook: Managing stress after a disaster is crucial for emotional recovery and maintaining
+    mental health.
+  primer: Disasters, whether natural or man-made, can leave a lasting emotional impact
+    on individuals and communities. The stress that follows such events can sometimes
+    be more overwhelming than the physical or financial damage incurred. This stress
+    can manifest in various ways, including anxiety, depression, and a sense of hopelessness.
+    It's important to recognize these feelings and take proactive steps to manage
+    them. By talking about your emotions, seeking professional counseling, and maintaining
+    a healthy lifestyle, you can begin to heal and regain a sense of normalcy. Engaging
+    in community support activities and keeping up with daily routines can also provide
+    comfort and stability. Remember, managing stress is not just about coping in the
+    moment but also about fostering long-term mental health and resilience.
+  guide: '1. **Talk About Your Feelings**: Open up to someone you trust about your
+    emotions. This could be a family member, friend, or a support group. Sharing your
+    feelings can help you process them and feel less isolated.
+
+
+    2. **Seek Professional Counseling**: If you find it difficult to manage stress
+    on your own, consider reaching out to a professional counselor. They can provide
+    guidance and strategies tailored to your needs.
+
+
+    3. **Maintain a Healthy Lifestyle**: Ensure you are eating nutritious meals, getting
+    enough rest, and engaging in regular physical activity. These habits can significantly
+    impact your emotional well-being.
+
+
+    4. **Keep Up with Daily Routines**: Try to maintain your usual daily activities
+    as much as possible. This can provide a sense of normalcy and control amidst the
+    chaos.
+
+
+    5. **Engage in Community Support**: Participate in community activities or memorials.
+    These can offer a sense of belonging and shared experience, which can be comforting.
+
+
+    6. **Limit Demanding Responsibilities**: Be mindful not to overburden yourself
+    or your family with too many responsibilities. Allow yourself the time and space
+    to heal.'
+  reference:
+  - Talk about your feelings with someone you trust.
+  - Seek professional counseling if needed.
+  - Maintain a healthy lifestyle with proper nutrition, rest, and exercise.
+  - Keep up with daily routines to provide a sense of normalcy.
+  - Engage in community support and memorial activities.
+  worksheet:
+  - List three people you can talk to about your feelings.
+  - Identify one professional counseling service in your area.
+  - Create a daily routine that includes time for rest, exercise, and meals.
+  - Find a community support group or activity you can join.
+  - Reflect on a past experience where maintaining a routine helped you cope with
+    stress.
+  teach_forward_kit:
+    three_minute_version: Disasters can deeply affect our emotions. To manage stress,
+      talk about your feelings, seek professional help if needed, maintain a healthy
+      lifestyle, keep up with daily routines, and engage in community support.
+    ten_minute_outline:
+    - Introduction to disaster-related stress
+    - Importance of managing stress for recovery
+    - 'Steps to manage stress: communication, counseling, lifestyle'
+    - Role of daily routines and community support
+    - Conclusion and encouragement to seek help
+    discussion_prompts:
+    - Why do you think talking about feelings is important after a disaster?
+    - How can maintaining a routine help in stressful times?
+    - What are some barriers to seeking professional help, and how can they be overcome?
+    - In what ways can community support aid in emotional recovery?

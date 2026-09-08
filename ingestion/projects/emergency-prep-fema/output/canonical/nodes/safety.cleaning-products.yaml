@@ -1,0 +1,127 @@
+id: safety.cleaning-products
+slug: safety.cleaning-products
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Safety Considerations for Common Cleaning Products
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: moderate
+summary_short: Safety considerations for common cleaning products.
+summary_medium: A list of common cleaning products that may require safety considerations
+  due to their chemical nature.
+plain_language: This guide provides a list of common cleaning products that you should
+  handle with care because they can be hazardous.
+markdown_body: '### What this is
+
+  This reference sheet lists common cleaning products that require careful handling
+  due to potential safety hazards.
+
+
+  ### Why it matters
+
+  Many cleaning products contain chemicals that can be harmful if not used properly.
+  Understanding which products require special attention can help prevent accidents
+  and ensure safe usage.
+
+
+  ### What you need
+
+  Awareness of the cleaning products you use and their potential hazards.
+
+
+  ### How to do it
+
+  Identify the cleaning products in your home or workplace. Refer to this list to
+  determine which products require special handling and follow the safety instructions
+  on their labels.
+
+
+  ### Common failure modes
+
+  Ignoring safety instructions, mixing incompatible products, or using products in
+  poorly ventilated areas can lead to harmful exposure.
+
+
+  ### Safety/boundary notes
+
+  Always read and follow the manufacturer''s instructions. Use protective gear if
+  recommended, and ensure proper ventilation when using these products.
+
+
+  ### Local adaptation notes
+
+  Consider local regulations and guidelines regarding the use and disposal of cleaning
+  products.'
+structured_data:
+  definition: A list of cleaning products that require safety considerations.
+  key_questions:
+  - What are the potential hazards of using these cleaning products?
+  - How can I safely use these products?
+  misconceptions:
+  - All cleaning products are safe if used in small amounts.
+  - Mixing cleaning products can enhance their effectiveness.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.cleaning-products
+  claim_id: clm_001
+  claim_text: This reference sheet lists common cleaning products that require careful
+    handling due to potential safety hazards.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 135
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000205
+    excerpt: '- Oven cleaners
+
+      - Drain cleaners
+
+      - Wood and metal cleaners and polishes
+
+      - Toilet cleaners
+
+      - Tub, tile, shower cleaners
+
+      - Bleach (laundry)
+
+      - Pool chemicals'
+    start_char: 0
+    end_char: 134
+    support_strength: strong
+- object_id: safety.cleaning-products
+  claim_id: clm_002
+  claim_text: Many cleaning products contain chemicals that can be harmful if not
+    used properly.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 134
+    page_end: 135
+    segment_id: src.fema.are-you-ready.2004::seg_000204
+    excerpt: Nearly every household uses products containing hazardous materials or
+      chemicals.
+    start_char: 0
+    end_char: 72
+    support_strength: strong
+- object_id: safety.cleaning-products
+  claim_id: clm_003
+  claim_text: Ignoring safety instructions, mixing incompatible products, or using
+    products in poorly ventilated areas can lead to harmful exposure.
+  support:
+  - source_id: src.fema.are-you-ready.2004
+    page_start: 133
+    page_end: 133
+    segment_id: src.fema.are-you-ready.2004::seg_000202
+    excerpt: Open windows and vents and turn on fans to provide ventilation.
+    start_char: 113
+    end_char: 169
+    support_strength: medium
+source_segment_ids:
+- src.fema.are-you-ready.2004::seg_000205
