@@ -8,9 +8,9 @@ from fastapi import Depends, Header, HTTPException, Request
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from capability_commons.api.auth import resolve_api_key
 from capability_commons.config import get_settings
 from capability_commons.db.models import Workspace
-from capability_commons.api.auth import resolve_api_key
 from capability_commons.db.session import get_session
 
 PUBLIC_WORKSPACE_SLUG = "capability-commons"
@@ -98,9 +98,7 @@ async def get_public_or_authenticated_workspace(
             return ws
 
     # Anonymous — resolve the public workspace
-    row = await session.execute(
-        select(Workspace).where(Workspace.slug == PUBLIC_WORKSPACE_SLUG)
-    )
+    row = await session.execute(select(Workspace).where(Workspace.slug == PUBLIC_WORKSPACE_SLUG))
     ws = row.scalar_one_or_none()
     if ws is None:
         raise HTTPException(status_code=503, detail="Public workspace not configured")

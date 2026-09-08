@@ -2,6 +2,7 @@
 
 Provides create/get/list for jobs and start/complete/fail for individual passes.
 """
+
 from __future__ import annotations
 
 import uuid
@@ -16,8 +17,14 @@ from capability_commons.db.models import IngestJob, IngestJobPass
 from capability_commons.domain.enums import IngestJobStatus, IngestPassStatus
 
 INGEST_PASS_NAMES = [
-    "parse", "extract", "draft", "cite",
-    "canonicalize", "edges", "bundles", "load",
+    "parse",
+    "extract",
+    "draft",
+    "cite",
+    "canonicalize",
+    "edges",
+    "bundles",
+    "load",
 ]
 
 
@@ -55,11 +62,7 @@ class IngestService:
 
     async def get_job(self, job_id: uuid.UUID) -> IngestJob | None:
         """Fetch a job with its passes."""
-        stmt = (
-            select(IngestJob)
-            .where(IngestJob.id == job_id)
-            .options(selectinload(IngestJob.passes))
-        )
+        stmt = select(IngestJob).where(IngestJob.id == job_id).options(selectinload(IngestJob.passes))
         result = await self.session.execute(stmt)
         return result.scalar_one_or_none()
 

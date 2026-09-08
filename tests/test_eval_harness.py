@@ -1,4 +1,5 @@
 """Tests for the eval harness scoring logic (EVAL-1)."""
+
 from __future__ import annotations
 
 from capability_commons.cli.eval import GoldEntry, QueryResult, _render_report

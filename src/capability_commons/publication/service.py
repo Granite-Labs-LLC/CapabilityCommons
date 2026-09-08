@@ -11,8 +11,10 @@ from capability_commons.db.models import (
     ContextObjectEntity,
     ContextObjectFacet,
     ContradictionCase,
-    Edge as EdgeModel,
     ReviewRecord,
+)
+from capability_commons.db.models import (
+    Edge as EdgeModel,
 )
 from capability_commons.domain.enums import COType, LifecycleState, NodeKind
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
@@ -45,8 +47,7 @@ class PublicationService:
 
     async def build_graph_data(self) -> GraphResponse:
         result = await self.session.execute(
-            select(ContextObject)
-            .where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
+            select(ContextObject).where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
         )
         objects = list(result.scalars().all())
 
@@ -59,18 +60,20 @@ class PublicationService:
             version_id_to_slug[version.id] = obj.slug
             facets = await self._group_facets(version.id)
             domain = (facets.get("domain") or ["foundation"])[0]
-            nodes.append(GraphNode(
-                id=obj.slug,
-                slug=obj.slug,
-                title=version.title,
-                type=obj.type.value,
-                domain=domain,
-                stage=version.stage.value if version.stage else "foundation",
-                difficulty=version.difficulty or 1,
-                risk_band=version.risk_band.value if version.risk_band else "low",
-                beginner_safe=version.beginner_safe,
-                plain_language=version.plain_language or "",
-            ))
+            nodes.append(
+                GraphNode(
+                    id=obj.slug,
+                    slug=obj.slug,
+                    title=version.title,
+                    type=obj.type.value,
+                    domain=domain,
+                    stage=version.stage.value if version.stage else "foundation",
+                    difficulty=version.difficulty or 1,
+                    risk_band=version.risk_band.value if version.risk_band else "low",
+                    beginner_safe=version.beginner_safe,
+                    plain_language=version.plain_language or "",
+                )
+            )
 
         if not version_id_to_slug:
             return GraphResponse(nodes=nodes, edges=[])
@@ -88,11 +91,13 @@ class PublicationService:
             src_slug = version_id_to_slug.get(edge.src_id)
             dst_slug = version_id_to_slug.get(edge.dst_id)
             if src_slug and dst_slug:
-                edges.append(GraphEdge(
-                    source=src_slug,
-                    target=dst_slug,
-                    type=edge.edge_type.value,
-                ))
+                edges.append(
+                    GraphEdge(
+                        source=src_slug,
+                        target=dst_slug,
+                        type=edge.edge_type.value,
+                    )
+                )
 
         return GraphResponse(nodes=nodes, edges=edges)
 
@@ -148,8 +153,9 @@ class PublicationService:
 
     async def _get_published_object(self, slug: str) -> ContextObject:
         result = await self.session.execute(
-            select(ContextObject)
-            .where(ContextObject.slug == slug, ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
+            select(ContextObject).where(
+                ContextObject.slug == slug, ContextObject.lifecycle_state == LifecycleState.PUBLISHED
+            )
         )
         obj = result.scalar_one_or_none()
         if obj is None or obj.current_version is None:
@@ -195,8 +201,7 @@ class PublicationService:
         result = await self.session.execute(
             select(ContradictionCase.status, func.count(ContradictionCase.id))
             .where(
-                (ContradictionCase.left_version_id == version_id)
-                | (ContradictionCase.right_version_id == version_id)
+                (ContradictionCase.left_version_id == version_id) | (ContradictionCase.right_version_id == version_id)
             )
             .group_by(ContradictionCase.status)
         )

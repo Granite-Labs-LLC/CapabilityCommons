@@ -1,4 +1,5 @@
 """Unit tests for `_attribute_predicates` (PLAN retrieval P1-9)."""
+
 from __future__ import annotations
 
 from sqlalchemy import select
@@ -65,9 +66,7 @@ def test_beginner_safe_caps_risk_and_difficulty():
 
 
 def test_beginner_safe_respects_explicit_difficulty():
-    sql = _compile(_attribute_predicates(
-        PublicSearchFilters(beginner_safe=True, difficulty_max=2)
-    ))
+    sql = _compile(_attribute_predicates(PublicSearchFilters(beginner_safe=True, difficulty_max=2)))
     assert "context_object_versions.difficulty <= 2" in sql
     # Should NOT emit a second `difficulty <= 3` clause.
     assert sql.count("difficulty <=") == 1

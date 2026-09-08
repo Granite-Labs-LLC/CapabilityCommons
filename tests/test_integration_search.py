@@ -1,4 +1,5 @@
 """Integration tests for the search adapter: indexing, ranking, segment fetch."""
+
 from __future__ import annotations
 
 import uuid
@@ -31,18 +32,23 @@ def _skill_structured(statement: str = "Do it") -> dict:
 
 
 async def _create_and_index(svc, indexer, workspace, slug_suffix, title, body, structured_data):
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-srch-{slug_suffix}-{uuid.uuid4().hex[:6]}",
-        type=COType.SKILL_GUIDE,
-        canonical_title=title,
-    ))
-    ver = await svc.create_version(obj.id, CreateVersionRequest(
-        title=title,
-        plain_language=f"Plain language for {title}.",
-        markdown_body=body,
-        structured_data=structured_data,
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-srch-{slug_suffix}-{uuid.uuid4().hex[:6]}",
+            type=COType.SKILL_GUIDE,
+            canonical_title=title,
+        )
+    )
+    ver = await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title=title,
+            plain_language=f"Plain language for {title}.",
+            markdown_body=body,
+            structured_data=structured_data,
+        ),
+    )
     await svc.publish_version(obj.id, ver.id)
     await indexer.reindex_version(ver.id)
     return obj, ver
@@ -56,7 +62,11 @@ async def test_search_returns_indexed_objects(db_session, workspace):
     search = PostgresSearchAdapter(db_session)
 
     obj, _ = await _create_and_index(
-        svc, indexer, workspace, "findme", "Rainwater Harvesting Technique",
+        svc,
+        indexer,
+        workspace,
+        "findme",
+        "Rainwater Harvesting Technique",
         "# Rainwater Harvesting\n\nCollect rainwater from rooftops using gutters and barrels.",
         _skill_structured("Harvest rainwater from rooftops"),
     )
@@ -78,18 +88,23 @@ async def test_search_excludes_unpublished(db_session, workspace):
     svc = RegistryService(db_session)
     search = PostgresSearchAdapter(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-srch-nopub-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Unpublished Sentinel Object",
-    ))
-    await svc.create_version(obj.id, CreateVersionRequest(
-        title="Unpublished Sentinel",
-        plain_language="Not published.",
-        markdown_body="# Unpublished Sentinel",
-        structured_data={"definition": "Not published."},
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-srch-nopub-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Unpublished Sentinel Object",
+        )
+    )
+    await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Unpublished Sentinel",
+            plain_language="Not published.",
+            markdown_body="# Unpublished Sentinel",
+            structured_data={"definition": "Not published."},
+        ),
+    )
 
     hits = await search.search(
         workspace_id=workspace.id,
@@ -109,7 +124,11 @@ async def test_fetch_segments(db_session, workspace):
     search = PostgresSearchAdapter(db_session)
 
     _, ver = await _create_and_index(
-        svc, indexer, workspace, "fetchseg", "Fetch Segments Test",
+        svc,
+        indexer,
+        workspace,
+        "fetchseg",
+        "Fetch Segments Test",
         "# Fetch Test\n\nSome content for segment fetching.",
         _skill_structured("Fetch segments"),
     )

@@ -1,4 +1,5 @@
 """Tests for EntityService.merge_entities downstream relation remapping."""
+
 from __future__ import annotations
 
 import uuid

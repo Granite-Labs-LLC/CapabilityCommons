@@ -1,8 +1,8 @@
 """Serialize structured_data fields into retrieval-friendly text segments."""
+
 from __future__ import annotations
 
 from typing import Any
-
 
 # Fields to extract from structured_data, keyed by their label for retrieval
 IMPLEMENTATION_FIELDS = [

@@ -5,6 +5,7 @@ from the public site. They write structured rows into the existing
 `feedback` table so the existing audit / review infrastructure can pick
 them up (no new table required for the MVP).
 """
+
 from __future__ import annotations
 
 from typing import Literal

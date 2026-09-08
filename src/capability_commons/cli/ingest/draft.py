@@ -1,8 +1,8 @@
 """Pass 2: Draft canonical YAML objects from extraction matrix via LLM."""
+
 from __future__ import annotations
 
 from fnmatch import fnmatch
-from pathlib import Path
 
 import orjson
 import polars as pl
@@ -14,14 +14,13 @@ from capability_commons.cli.ingest.llm_client import LLMClient
 from capability_commons.cli.ingest.models import SourceSegment
 from capability_commons.cli.ingest.project import IngestProject
 from capability_commons.domain.enums import (
-    COType,
     CostBand,
+    COType,
     LifecycleState,
     RiskBand,
     StageType,
     VisibilityType,
 )
-
 
 REQUIRED_BODY_SECTIONS = (
     "What this is",
@@ -40,6 +39,7 @@ ACTIONABLE_TYPES = {COType.SKILL_GUIDE, COType.PROJECT_BLUEPRINT}
 
 class ImplementationVariant(BaseModel, extra="allow"):
     """One contextual variant of a how-to (renter, low-budget, off-grid, …)."""
+
     label: str = Field(..., min_length=1)
     when: str = Field(..., min_length=1)  # plain-language scope
     notes: str | None = None
@@ -51,21 +51,23 @@ class ImplementationEnvelope(BaseModel, extra="allow"):
     Every actionable object (skill_guide, project_blueprint) must populate this
     so retrieval can surface a real action plan rather than a document blurb.
     """
-    smallest_viable_version: str = Field(..., min_length=1,
-        description="The smallest thing the user can do RIGHT NOW that still helps.")
+
+    smallest_viable_version: str = Field(
+        ..., min_length=1, description="The smallest thing the user can do RIGHT NOW that still helps."
+    )
     tools: list[str] = Field(default_factory=list)
     materials: list[str] = Field(default_factory=list)
     expected_time: str | None = Field(None, description="e.g. '30 minutes', '2 hours'")
     expected_cost: str | None = Field(None, description="e.g. 'free', '$5–$20'")
-    success_checks: list[str] = Field(default_factory=list,
-        description="Concrete checks that confirm it worked.")
-    stop_conditions: list[str] = Field(default_factory=list,
-        description="Hard stops: when to abort and not continue.")
+    success_checks: list[str] = Field(default_factory=list, description="Concrete checks that confirm it worked.")
+    stop_conditions: list[str] = Field(default_factory=list, description="Hard stops: when to abort and not continue.")
     common_mistakes: list[str] = Field(default_factory=list)
-    variants: list[ImplementationVariant] = Field(default_factory=list,
-        description="Renter, low-budget, urban, off-grid adaptations.")
-    when_to_escalate: list[str] = Field(default_factory=list,
-        description="Conditions under which the user should call a pro.")
+    variants: list[ImplementationVariant] = Field(
+        default_factory=list, description="Renter, low-budget, urban, off-grid adaptations."
+    )
+    when_to_escalate: list[str] = Field(
+        default_factory=list, description="Conditions under which the user should call a pro."
+    )
 
 
 class SuggestedEdge(BaseModel, extra="allow"):
@@ -79,6 +81,7 @@ class DraftObject(BaseModel, extra="allow"):
     Required fields here mirror the schema documented in USER_TEMPLATE so that
     incomplete drafts fail validation rather than silently passing.
     """
+
     # Identity
     id: str
     slug: str
@@ -120,9 +123,7 @@ class DraftObject(BaseModel, extra="allow"):
         lower = v.lower()
         missing = [s for s in REQUIRED_BODY_SECTIONS if s.lower() not in lower]
         if missing:
-            raise ValueError(
-                "markdown_body missing required sections: " + ", ".join(missing)
-            )
+            raise ValueError("markdown_body missing required sections: " + ", ".join(missing))
         return v
 
     @model_validator(mode="after")
@@ -147,6 +148,7 @@ class DraftObject(BaseModel, extra="allow"):
             "implementation": validated.model_dump(),
         }
         return self
+
 
 SYSTEM_PROMPT = (
     "You are a Capability Commons object drafter. Convert source material into "
@@ -271,9 +273,7 @@ async def run_draft(
                 response_model=DraftObject,
             )
             # Attach source segment lineage
-            result.source_segment_ids = [
-                sid for sid in seg_ids if sid in segments_by_id
-            ]
+            result.source_segment_ids = [sid for sid in seg_ids if sid in segments_by_id]
             # Write as YAML
             draft_path = project.drafts_dir / f"{slug}.yaml"
             with open(draft_path, "w") as f:

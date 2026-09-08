@@ -1,4 +1,5 @@
 """Tests for LLM passes with mocked responses."""
+
 from __future__ import annotations
 
 from unittest.mock import AsyncMock, patch
@@ -10,11 +11,11 @@ import yaml
 
 from capability_commons.cli.ingest.models import (
     BundleOutput,
-    ClaimCitation,
-    CitationSpan,
     CanonicalizationDecision,
-    ExtractionRow,
+    CitationSpan,
+    ClaimCitation,
     ExtractedEdge,
+    ExtractionRow,
     SourceSegment,
 )
 from capability_commons.cli.ingest.project import IngestProject
@@ -26,12 +27,14 @@ def project_with_segments(tmp_path):
     proj = IngestProject.init(
         projects_root=tmp_path / "projects",
         name="test-passes",
-        sources=[{
-            "id": "src.test",
-            "file": "sources/test.pdf",
-            "title": "Test Book",
-            "source_kind": "BOOK",
-        }],
+        sources=[
+            {
+                "id": "src.test",
+                "file": "sources/test.pdf",
+                "title": "Test Book",
+                "source_kind": "BOOK",
+            }
+        ],
     )
     segments = [
         SourceSegment(
@@ -67,22 +70,24 @@ class TestExtractPass:
         from capability_commons.cli.ingest.extract import ExtractionResponse, run_extract
         from capability_commons.cli.ingest.llm_client import LLMClient
 
-        mock_result = ExtractionResponse(rows=[
-            ExtractionRow(
-                source_id="src.test",
-                section_id="sec_001",
-                start_page=1,
-                end_page=1,
-                heading_path="Chapter 1 > Water Storage",
-                segment_ids=["seg_000001"],
-                candidate_slug="water.safe-storage",
-                candidate_type="skill_guide",
-                primary_domain="water",
-                stage="household",
-                summary="How to store water safely.",
-                confidence=0.9,
-            ),
-        ])
+        mock_result = ExtractionResponse(
+            rows=[
+                ExtractionRow(
+                    source_id="src.test",
+                    section_id="sec_001",
+                    start_page=1,
+                    end_page=1,
+                    heading_path="Chapter 1 > Water Storage",
+                    segment_ids=["seg_000001"],
+                    candidate_slug="water.safe-storage",
+                    candidate_type="skill_guide",
+                    primary_domain="water",
+                    stage="household",
+                    summary="How to store water safely.",
+                    confidence=0.9,
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -97,22 +102,24 @@ class TestExtractPass:
         from capability_commons.cli.ingest.extract import ExtractionResponse, run_extract
         from capability_commons.cli.ingest.llm_client import LLMClient
 
-        mock_result = ExtractionResponse(rows=[
-            ExtractionRow(
-                source_id="src.test",
-                section_id="sec_001",
-                start_page=2,
-                end_page=2,
-                heading_path="Chapter 1 > Treatment",
-                segment_ids=["seg_000002"],
-                candidate_slug="water.treatment",
-                candidate_type="skill_guide",
-                primary_domain="water",
-                stage="household",
-                summary="Water treatment methods.",
-                confidence=0.85,
-            ),
-        ])
+        mock_result = ExtractionResponse(
+            rows=[
+                ExtractionRow(
+                    source_id="src.test",
+                    section_id="sec_001",
+                    start_page=2,
+                    end_page=2,
+                    heading_path="Chapter 1 > Treatment",
+                    segment_ids=["seg_000002"],
+                    candidate_slug="water.treatment",
+                    candidate_type="skill_guide",
+                    primary_domain="water",
+                    stage="household",
+                    summary="Water treatment methods.",
+                    confidence=0.85,
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         generate_mock = AsyncMock(return_value=mock_result)
@@ -125,25 +132,28 @@ class TestExtractPass:
 
 class TestDraftPass:
     async def test_writes_draft_yaml(self, project_with_segments):
-        from capability_commons.cli.ingest.draft import run_draft
-        from capability_commons.cli.ingest.llm_client import LLMClient
         from pydantic import BaseModel
 
+        from capability_commons.cli.ingest.draft import run_draft
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
         # Create matrix first
-        matrix_data = [{
-            "source_id": "src.test",
-            "section_id": "sec_001",
-            "start_page": 1,
-            "end_page": 1,
-            "heading_path": "Chapter 1 > Water Storage",
-            "segment_ids": "seg_000001",
-            "candidate_slug": "water.safe-storage",
-            "candidate_type": "skill_guide",
-            "primary_domain": "water",
-            "stage": "household",
-            "summary": "How to store water safely.",
-            "confidence": 0.9,
-        }]
+        matrix_data = [
+            {
+                "source_id": "src.test",
+                "section_id": "sec_001",
+                "start_page": 1,
+                "end_page": 1,
+                "heading_path": "Chapter 1 > Water Storage",
+                "segment_ids": "seg_000001",
+                "candidate_slug": "water.safe-storage",
+                "candidate_type": "skill_guide",
+                "primary_domain": "water",
+                "stage": "household",
+                "summary": "How to store water safely.",
+                "confidence": 0.9,
+            }
+        ]
         pl.DataFrame(matrix_data).write_csv(project_with_segments.matrix_file)
 
         class DraftObject(BaseModel, extra="allow"):
@@ -173,20 +183,22 @@ class TestDraftPass:
         from capability_commons.cli.ingest.draft import run_draft
         from capability_commons.cli.ingest.llm_client import LLMClient
 
-        matrix_data = [{
-            "source_id": "src.test",
-            "section_id": "sec_001",
-            "start_page": 1,
-            "end_page": 1,
-            "heading_path": "Chapter 1 > Water Storage",
-            "segment_ids": "seg_000001",
-            "candidate_slug": "water.safe-storage",
-            "candidate_type": "skill_guide",
-            "primary_domain": "water",
-            "stage": "household",
-            "summary": "How to store water safely.",
-            "confidence": 0.9,
-        }]
+        matrix_data = [
+            {
+                "source_id": "src.test",
+                "section_id": "sec_001",
+                "start_page": 1,
+                "end_page": 1,
+                "heading_path": "Chapter 1 > Water Storage",
+                "segment_ids": "seg_000001",
+                "candidate_slug": "water.safe-storage",
+                "candidate_type": "skill_guide",
+                "primary_domain": "water",
+                "stage": "household",
+                "summary": "How to store water safely.",
+                "confidence": 0.9,
+            }
+        ]
         pl.DataFrame(matrix_data).write_csv(project_with_segments.matrix_file)
 
         # Pre-create existing draft
@@ -218,25 +230,27 @@ class TestCitePass:
         with open(draft_file, "w") as f:
             yaml.dump(draft_obj, f)
 
-        mock_result = CitationResponse(citations=[
-            ClaimCitation(
-                object_id="water.safe-storage",
-                claim_id="clm_001",
-                claim_text="Store water in food-grade containers",
-                support=[
-                    CitationSpan(
-                        source_id="src.test",
-                        page_start=1,
-                        page_end=1,
-                        segment_id="seg_000001",
-                        excerpt="Water should be stored in food-grade containers",
-                        start_char=0,
-                        end_char=47,
-                        support_strength="strong",
-                    )
-                ],
-            ),
-        ])
+        mock_result = CitationResponse(
+            citations=[
+                ClaimCitation(
+                    object_id="water.safe-storage",
+                    claim_id="clm_001",
+                    claim_text="Store water in food-grade containers",
+                    support=[
+                        CitationSpan(
+                            source_id="src.test",
+                            page_start=1,
+                            page_end=1,
+                            segment_id="seg_000001",
+                            excerpt="Water should be stored in food-grade containers",
+                            start_char=0,
+                            end_char=47,
+                            support_strength="strong",
+                        )
+                    ],
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -288,23 +302,27 @@ class TestCitePass:
             yaml.dump(draft_obj, f)
 
         # The LLM "hallucinates" a span pointing to seg_999999.
-        mock_result = CitationResponse(citations=[
-            ClaimCitation(
-                object_id="water.safe-storage",
-                claim_id="clm_001",
-                claim_text="Hallucinated claim",
-                support=[
-                    CitationSpan(
-                        source_id="src.test",
-                        page_start=99, page_end=99,
-                        segment_id="seg_999999",
-                        excerpt="not real",
-                        start_char=0, end_char=8,
-                        support_strength="strong",
-                    )
-                ],
-            ),
-        ])
+        mock_result = CitationResponse(
+            citations=[
+                ClaimCitation(
+                    object_id="water.safe-storage",
+                    claim_id="clm_001",
+                    claim_text="Hallucinated claim",
+                    support=[
+                        CitationSpan(
+                            source_id="src.test",
+                            page_start=99,
+                            page_end=99,
+                            segment_id="seg_999999",
+                            excerpt="not real",
+                            start_char=0,
+                            end_char=8,
+                            support_strength="strong",
+                        )
+                    ],
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -356,20 +374,22 @@ class TestCanonicalizePass:
             with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
                 yaml.dump(draft, f)
 
-        mock_result = CanonicalizeResponse(decisions=[
-            CanonicalizationDecision(
-                action="merge",
-                rationale="These cover the same topic",
-                canonical_slug="water.safe-storage",
-                deprecated_draft_ids=["water.safe-storage", "water.water-storage"],
-                merged_object={
-                    "slug": "water.safe-storage",
-                    "canonical_title": "Safe Water Storage (Merged)",
-                    "primary_domain": "water",
-                    "summary_short": "Merged guide.",
-                },
-            ),
-        ])
+        mock_result = CanonicalizeResponse(
+            decisions=[
+                CanonicalizationDecision(
+                    action="merge",
+                    rationale="These cover the same topic",
+                    canonical_slug="water.safe-storage",
+                    deprecated_draft_ids=["water.safe-storage", "water.water-storage"],
+                    merged_object={
+                        "slug": "water.safe-storage",
+                        "canonical_title": "Safe Water Storage (Merged)",
+                        "primary_domain": "water",
+                        "summary_short": "Merged guide.",
+                    },
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -405,15 +425,17 @@ class TestCanonicalizePass:
             with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
                 yaml.dump(draft, f)
 
-        mock_result = CanonicalizeResponse(decisions=[
-            CanonicalizationDecision(
-                action="merge",
-                rationale="duplicates",
-                canonical_slug="water.a",
-                deprecated_draft_ids=["water.b"],
-                merged_object=None,
-            ),
-        ])
+        mock_result = CanonicalizeResponse(
+            decisions=[
+                CanonicalizationDecision(
+                    action="merge",
+                    rationale="duplicates",
+                    canonical_slug="water.a",
+                    deprecated_draft_ids=["water.b"],
+                    merged_object=None,
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -445,18 +467,20 @@ class TestCanonicalizePass:
             with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
                 yaml.dump(draft, f)
 
-        mock_result = CanonicalizeResponse(decisions=[
-            CanonicalizationDecision(
-                action="split",
-                rationale="storage and treatment are distinct",
-                canonical_slug="water.everything",
-                deprecated_draft_ids=["water.everything"],
-                split_objects=[
-                    {"slug": "water.storage", "canonical_title": "Storage"},
-                    {"slug": "water.treatment", "canonical_title": "Treatment"},
-                ],
-            ),
-        ])
+        mock_result = CanonicalizeResponse(
+            decisions=[
+                CanonicalizationDecision(
+                    action="split",
+                    rationale="storage and treatment are distinct",
+                    canonical_slug="water.everything",
+                    deprecated_draft_ids=["water.everything"],
+                    split_objects=[
+                        {"slug": "water.storage", "canonical_title": "Storage"},
+                        {"slug": "water.treatment", "canonical_title": "Treatment"},
+                    ],
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
@@ -494,14 +518,16 @@ class TestEdgesPass:
             with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
                 yaml.dump(draft, f)
 
-        mock_result = EdgesResponse(edges=[
-            ExtractedEdge(
-                source_id="water.treatment",
-                target_id="water.storage",
-                edge_type="prerequisite_for",
-                confidence=0.85,
-            ),
-        ])
+        mock_result = EdgesResponse(
+            edges=[
+                ExtractedEdge(
+                    source_id="water.treatment",
+                    target_id="water.storage",
+                    edge_type="prerequisite_for",
+                    confidence=0.85,
+                ),
+            ]
+        )
 
         client = LLMClient(base_url="https://test", api_key="test", model="test")
         with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):

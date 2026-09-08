@@ -3,6 +3,7 @@
 Uses a simple dict with timestamp-based expiry. Suitable for single-process
 deployments; swap for Redis-backed cache in production clusters.
 """
+
 from __future__ import annotations
 
 import hashlib

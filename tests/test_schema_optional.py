@@ -1,8 +1,9 @@
 """Tests that workspace_id is optional on public-facing request schemas."""
+
 from __future__ import annotations
 
-from capability_commons.schemas.search import SearchRequest
 from capability_commons.schemas.retrieval import RetrievalRequest
+from capability_commons.schemas.search import SearchRequest
 
 
 def test_search_request_workspace_id_optional():

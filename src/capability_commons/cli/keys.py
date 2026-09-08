@@ -1,4 +1,5 @@
 """CLI for managing API keys."""
+
 from __future__ import annotations
 
 import asyncio
@@ -17,9 +18,7 @@ async def create_key(db_url: str, workspace_slug: str, name: str, ttl_hours: int
     session_factory = async_sessionmaker(bind=engine, expire_on_commit=False)
 
     async with session_factory() as session:
-        result = await session.execute(
-            select(Workspace).where(Workspace.slug == workspace_slug)
-        )
+        result = await session.execute(select(Workspace).where(Workspace.slug == workspace_slug))
         ws = result.scalar_one_or_none()
         if ws is None:
             print(f"ERROR: workspace '{workspace_slug}' not found")
@@ -105,7 +104,7 @@ async def rotate_key(db_url: str, old_key_id: str, name: str | None = None, ttl_
 
     await engine.dispose()
     print(f"Old key '{old_key_id}' revoked.")
-    print(f"New key created:")
+    print("New key created:")
     print(f"  Name: {new_key.name}")
     print(f"  Key:  {raw_key}")
     print(f"  ID:   {new_key.id}")
@@ -120,19 +119,17 @@ async def list_keys(db_url: str, workspace_slug: str) -> None:
     session_factory = async_sessionmaker(bind=engine, expire_on_commit=False)
 
     async with session_factory() as session:
-        result = await session.execute(
-            select(Workspace).where(Workspace.slug == workspace_slug)
-        )
+        result = await session.execute(select(Workspace).where(Workspace.slug == workspace_slug))
         ws = result.scalar_one_or_none()
         if ws is None:
             print(f"ERROR: workspace '{workspace_slug}' not found")
             await engine.dispose()
             return
 
-        result = await session.execute(
+        keys_result = await session.execute(
             select(ApiKey).where(ApiKey.workspace_id == ws.id).order_by(ApiKey.created_at.desc())
         )
-        keys = result.scalars().all()
+        keys = keys_result.scalars().all()
 
     await engine.dispose()
 
@@ -177,6 +174,7 @@ def main() -> None:
 
     if args.db_url is None:
         from capability_commons.config import get_settings
+
         db_url = get_settings().database_url
     else:
         db_url = args.db_url

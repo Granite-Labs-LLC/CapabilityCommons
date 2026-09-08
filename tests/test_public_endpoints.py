@@ -1,4 +1,5 @@
 """Tests for public API endpoints."""
+
 from __future__ import annotations
 
 import inspect
@@ -23,6 +24,7 @@ def test_public_graph_endpoint_exists():
 def test_graph_response_schema():
     """GraphResponse must have nodes and edges fields."""
     from capability_commons.schemas.graph import GraphResponse
+
     fields = GraphResponse.model_fields
     assert "nodes" in fields
     assert "edges" in fields

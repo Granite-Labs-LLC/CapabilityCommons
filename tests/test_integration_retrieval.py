@@ -1,4 +1,5 @@
 """Integration tests for the retrieval service: plan → search → graph → evidence pack."""
+
 from __future__ import annotations
 
 import uuid
@@ -32,40 +33,52 @@ def _skill_structured(statement: str = "Do it") -> dict:
 
 
 async def _seed_and_index(svc, indexer, workspace):
-    concept_obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-ret-concept-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Water Safety Basics",
-    ))
-    concept_ver = await svc.create_version(concept_obj.id, CreateVersionRequest(
-        title="Water Safety Basics",
-        plain_language="Understanding safe drinking water sources and treatment methods.",
-        markdown_body="# Water Safety\n\nTreatment methods include boiling, filtration, and chemical disinfection.",
-        structured_data={"definition": "Core principles of household water safety."},
-    ))
+    concept_obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-ret-concept-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Water Safety Basics",
+        )
+    )
+    concept_ver = await svc.create_version(
+        concept_obj.id,
+        CreateVersionRequest(
+            title="Water Safety Basics",
+            plain_language="Understanding safe drinking water sources and treatment methods.",
+            markdown_body="# Water Safety\n\nTreatment methods include boiling, filtration, and chemical disinfection.",
+            structured_data={"definition": "Core principles of household water safety."},
+        ),
+    )
 
-    skill_obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-ret-skill-{uuid.uuid4().hex[:6]}",
-        type=COType.SKILL_GUIDE,
-        canonical_title="Boil Water for Drinking",
-    ))
-    skill_ver = await svc.create_version(skill_obj.id, CreateVersionRequest(
-        title="Boil Water for Drinking",
-        plain_language="How to make water safe by bringing it to a rolling boil.",
-        markdown_body="# Boiling Water\n\nBring water to a rolling boil for at least one minute. At altitude, boil for three minutes.",
-        structured_data=_skill_structured("Boil water to make it safe for drinking"),
-    ))
+    skill_obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-ret-skill-{uuid.uuid4().hex[:6]}",
+            type=COType.SKILL_GUIDE,
+            canonical_title="Boil Water for Drinking",
+        )
+    )
+    skill_ver = await svc.create_version(
+        skill_obj.id,
+        CreateVersionRequest(
+            title="Boil Water for Drinking",
+            plain_language="How to make water safe by bringing it to a rolling boil.",
+            markdown_body="# Boiling Water\n\nBring water to a rolling boil for at least one minute. At altitude, boil for three minutes.",
+            structured_data=_skill_structured("Boil water to make it safe for drinking"),
+        ),
+    )
 
     await svc.publish_version(concept_obj.id, concept_ver.id)
     await svc.publish_version(skill_obj.id, skill_ver.id)
 
     await svc.create_edge(
         workspace_id=workspace.id,
-        src_node_kind=NodeKind.OBJECT_VERSION, src_id=concept_ver.id,
+        src_node_kind=NodeKind.OBJECT_VERSION,
+        src_id=concept_ver.id,
         edge_type=EdgeType.PREREQUISITE_FOR,
-        dst_node_kind=NodeKind.OBJECT_VERSION, dst_id=skill_ver.id,
+        dst_node_kind=NodeKind.OBJECT_VERSION,
+        dst_id=skill_ver.id,
     )
 
     await indexer.reindex_version(concept_ver.id)
@@ -117,9 +130,7 @@ async def test_retrieval_run_persisted(db_session, workspace):
 
     await retrieval.execute_plan(request)
 
-    result = await db_session.execute(
-        select(RetrievalRun).where(RetrievalRun.workspace_id == workspace.id)
-    )
+    result = await db_session.execute(select(RetrievalRun).where(RetrievalRun.workspace_id == workspace.id))
     runs = result.scalars().all()
     assert len(runs) > 0
     run = runs[-1]

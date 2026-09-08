@@ -1,4 +1,5 @@
 """File attachment API routes."""
+
 from __future__ import annotations
 
 import hashlib
@@ -17,8 +18,15 @@ from capability_commons.storage.adapters import LocalStorageAdapter, StorageAdap
 router = APIRouter()
 
 ALLOWED_MEDIA_TYPES = {
-    "image/jpeg", "image/png", "image/gif", "image/webp", "image/svg+xml",
-    "application/pdf", "text/plain", "text/markdown", "text/csv",
+    "image/jpeg",
+    "image/png",
+    "image/gif",
+    "image/webp",
+    "image/svg+xml",
+    "application/pdf",
+    "text/plain",
+    "text/markdown",
+    "text/csv",
 }
 
 
@@ -89,9 +97,7 @@ async def list_files(
     session: DBSession,
     workspace: CurrentWorkspace,
 ) -> list[FileMetadataResponse]:
-    result = await session.execute(
-        select(ObjectFile).where(ObjectFile.context_object_version_id == version_id)
-    )
+    result = await session.execute(select(ObjectFile).where(ObjectFile.context_object_version_id == version_id))
     files = list(result.scalars().all())
     return [FileMetadataResponse.model_validate(f, from_attributes=True) for f in files]
 
@@ -105,9 +111,7 @@ async def download_file(
     workspace: CurrentWorkspace,
     storage: StorageAdapter = Depends(get_storage_adapter),
 ) -> Response:
-    result = await session.execute(
-        select(ObjectFile).where(ObjectFile.id == file_id)
-    )
+    result = await session.execute(select(ObjectFile).where(ObjectFile.id == file_id))
     obj_file = result.scalar_one_or_none()
     if not obj_file:
         raise HTTPException(404, "File not found")
@@ -132,9 +136,7 @@ async def delete_file(
     workspace: CurrentWorkspace,
     storage: StorageAdapter = Depends(get_storage_adapter),
 ) -> None:
-    result = await session.execute(
-        select(ObjectFile).where(ObjectFile.id == file_id)
-    )
+    result = await session.execute(select(ObjectFile).where(ObjectFile.id == file_id))
     obj_file = result.scalar_one_or_none()
     if not obj_file:
         raise HTTPException(404, "File not found")

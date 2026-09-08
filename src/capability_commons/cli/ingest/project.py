@@ -1,4 +1,5 @@
 """Ingestion project directory management and manifest I/O."""
+
 from __future__ import annotations
 
 from datetime import datetime, timezone
@@ -13,8 +14,16 @@ from capability_commons.cli.ingest.models import (
 )
 
 SUBDIRS = [
-    "sources", "segments", "matrix", "drafts", "citations",
-    "edges", "output", "output/canonical/nodes", "output/imports", "logs",
+    "sources",
+    "segments",
+    "matrix",
+    "drafts",
+    "citations",
+    "edges",
+    "output",
+    "output/canonical/nodes",
+    "output/imports",
+    "logs",
 ]
 
 

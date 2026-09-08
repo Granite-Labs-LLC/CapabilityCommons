@@ -1,11 +1,11 @@
 """Tests for the strict canonical-object draft schema."""
+
 from __future__ import annotations
 
 import pytest
 from pydantic import ValidationError
 
-from capability_commons.cli.ingest.draft import DraftObject, REQUIRED_BODY_SECTIONS
-
+from capability_commons.cli.ingest.draft import REQUIRED_BODY_SECTIONS, DraftObject
 
 VALID_BODY = "\n".join(f"## {s}\nSomething" for s in REQUIRED_BODY_SECTIONS)
 
@@ -97,8 +97,7 @@ def test_skill_guide_requires_implementation_envelope():
 
 
 def test_project_blueprint_requires_implementation_envelope():
-    kwargs = _minimal_kwargs(co_type="project_blueprint",
-                              structured_data={"tools": []})
+    kwargs = _minimal_kwargs(co_type="project_blueprint", structured_data={"tools": []})
     with pytest.raises(ValidationError):
         DraftObject(**kwargs)
 

@@ -1,4 +1,5 @@
 """Canonical draft schema -- the release gate for Pass 2 output."""
+
 from __future__ import annotations
 
 from typing import Any
@@ -6,10 +7,24 @@ from typing import Any
 from pydantic import BaseModel, field_validator
 
 VALID_CO_TYPES = {
-    "concept_note", "skill_guide", "project_blueprint", "module", "assessment",
-    "reference_sheet", "learning_path", "teach_forward_packet", "local_adaptation",
-    "field_report", "worksheet", "glossary", "safety_notice", "correction",
-    "expert_review", "translation", "community_map", "resource_directory",
+    "concept_note",
+    "skill_guide",
+    "project_blueprint",
+    "module",
+    "assessment",
+    "reference_sheet",
+    "learning_path",
+    "teach_forward_packet",
+    "local_adaptation",
+    "field_report",
+    "worksheet",
+    "glossary",
+    "safety_notice",
+    "correction",
+    "expert_review",
+    "translation",
+    "community_map",
+    "resource_directory",
 }
 
 
@@ -19,6 +34,7 @@ class CanonicalDraft(BaseModel, extra="allow"):
     This enforces the fields that downstream passes (cite, canonicalize,
     edges, load) depend on.
     """
+
     id: str
     slug: str
     co_type: str

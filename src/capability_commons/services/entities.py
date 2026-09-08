@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.db.models import ContextObjectEntity, Edge, Entity, EntityAlias
 from capability_commons.domain.enums import EntityStatus, EntityType, NodeKind
-from capability_commons.services.exceptions import ConflictError, NotFoundError
+from capability_commons.services.exceptions import ConflictError
 from capability_commons.services.helpers import add_outbox_event, get_entity, get_workspace
 
 
@@ -79,10 +79,14 @@ class EntityService:
         query: str,
         entity_types: list[EntityType] | None = None,
     ) -> list[Entity]:
-        stmt = select(Entity).outerjoin(EntityAlias, EntityAlias.entity_id == Entity.id).where(
-            Entity.workspace_id == workspace_id,
-            Entity.status == EntityStatus.ACTIVE,
-            or_(Entity.canonical_name.ilike(f"%{query}%"), EntityAlias.alias.ilike(f"%{query}%")),
+        stmt = (
+            select(Entity)
+            .outerjoin(EntityAlias, EntityAlias.entity_id == Entity.id)
+            .where(
+                Entity.workspace_id == workspace_id,
+                Entity.status == EntityStatus.ACTIVE,
+                or_(Entity.canonical_name.ilike(f"%{query}%"), EntityAlias.alias.ilike(f"%{query}%")),
+            )
         )
         if entity_types:
             stmt = stmt.where(Entity.entity_type.in_(entity_types))
@@ -105,10 +109,7 @@ class EntityService:
 
         # 1. Remap EntityAlias rows from source to target
         # Delete source aliases that already exist on target
-        duplicate_aliases = (
-            select(EntityAlias.alias)
-            .where(EntityAlias.entity_id == target.id)
-        ).scalar_subquery()
+        duplicate_aliases = (select(EntityAlias.alias).where(EntityAlias.entity_id == target.id)).scalar_subquery()
         await self.session.execute(
             delete(EntityAlias).where(
                 and_(
@@ -118,16 +119,13 @@ class EntityService:
             )
         )
         await self.session.execute(
-            update(EntityAlias)
-            .where(EntityAlias.entity_id == source.id)
-            .values(entity_id=target.id)
+            update(EntityAlias).where(EntityAlias.entity_id == source.id).values(entity_id=target.id)
         )
 
         # 2. Delete duplicate ContextObjectEntity rows (where both source and target
         #    link to the same version), then remap remaining rows.
         duplicate_versions = (
-            select(ContextObjectEntity.context_object_version_id)
-            .where(ContextObjectEntity.entity_id == target.id)
+            select(ContextObjectEntity.context_object_version_id).where(ContextObjectEntity.entity_id == target.id)
         ).scalar_subquery()
 
         await self.session.execute(
@@ -139,16 +137,15 @@ class EntityService:
             )
         )
         await self.session.execute(
-            update(ContextObjectEntity)
-            .where(ContextObjectEntity.entity_id == source.id)
-            .values(entity_id=target.id)
+            update(ContextObjectEntity).where(ContextObjectEntity.entity_id == source.id).values(entity_id=target.id)
         )
 
         # 3. Deduplicate + remap Edge rows where source entity appears as src or dst.
         # Delete source-as-src edges that would duplicate a target-as-src edge.
         target_src_edges = (
-            select(Edge.dst_id, Edge.dst_node_kind, Edge.edge_type)
-            .where(and_(Edge.src_id == target.id, Edge.src_node_kind == NodeKind.ENTITY))
+            select(Edge.dst_id, Edge.dst_node_kind, Edge.edge_type).where(
+                and_(Edge.src_id == target.id, Edge.src_node_kind == NodeKind.ENTITY)
+            )
         ).subquery()
         await self.session.execute(
             delete(Edge).where(
@@ -163,8 +160,9 @@ class EntityService:
         )
         # Delete source-as-dst edges that would duplicate a target-as-dst edge.
         target_dst_edges = (
-            select(Edge.src_id, Edge.src_node_kind, Edge.edge_type)
-            .where(and_(Edge.dst_id == target.id, Edge.dst_node_kind == NodeKind.ENTITY))
+            select(Edge.src_id, Edge.src_node_kind, Edge.edge_type).where(
+                and_(Edge.dst_id == target.id, Edge.dst_node_kind == NodeKind.ENTITY)
+            )
         ).subquery()
         await self.session.execute(
             delete(Edge).where(

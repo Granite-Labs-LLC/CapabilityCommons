@@ -5,7 +5,7 @@ from enum import Enum
 
 class StrEnum(str, Enum):
     def __str__(self) -> str:
-        return self.value
+        return str(self.value)
 
 
 class WorkspaceVisibility(StrEnum):
@@ -136,6 +136,7 @@ class EdgeType(StrEnum):
       CONTAINS:           src contains dst as a member
       BUILDS_ON:          src builds on dst (but doesn't strictly require it)
     """
+
     CONTAINS = "contains"
     PREREQUISITE_FOR = "prerequisite_for"
     BUILDS_ON = "builds_on"

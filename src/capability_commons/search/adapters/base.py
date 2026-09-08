@@ -15,7 +15,9 @@ class SearchAdapter(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    async def search(self, *, workspace_id, query, filters, top_k, object_types=None, only_published=True) -> list[SearchHit]:
+    async def search(
+        self, *, workspace_id, query, filters, top_k, object_types=None, only_published=True
+    ) -> list[SearchHit]:
         raise NotImplementedError
 
     @abc.abstractmethod

@@ -1,9 +1,6 @@
 from __future__ import annotations
 
-import uuid
-
 import pytest
-import pytest_asyncio
 
 from capability_commons.domain.enums import (
     COType,
@@ -11,7 +8,6 @@ from capability_commons.domain.enums import (
     FacetType,
     LifecycleState,
     NodeKind,
-    VisibilityType,
 )
 from capability_commons.schemas.objects import CreateObjectRequest, CreateVersionRequest
 from capability_commons.services.registry import RegistryService
@@ -62,21 +58,41 @@ async def test_edge_creation(db_session, workspace):
     """Create two objects and link them with an edge."""
     service = RegistryService(db_session)
 
-    obj_a = await service.create_object(CreateObjectRequest(
-        workspace_id=workspace.id, slug="node-a", type=COType.CONCEPT_NOTE, canonical_title="Node A",
-    ))
-    ver_a = await service.create_version(obj_a.id, CreateVersionRequest(
-        title="Node A v1", plain_language="Node A.", markdown_body="Body A.",
-        structured_data={"definition": "A concept."},
-    ))
+    obj_a = await service.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug="node-a",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Node A",
+        )
+    )
+    ver_a = await service.create_version(
+        obj_a.id,
+        CreateVersionRequest(
+            title="Node A v1",
+            plain_language="Node A.",
+            markdown_body="Body A.",
+            structured_data={"definition": "A concept."},
+        ),
+    )
 
-    obj_b = await service.create_object(CreateObjectRequest(
-        workspace_id=workspace.id, slug="node-b", type=COType.CONCEPT_NOTE, canonical_title="Node B",
-    ))
-    ver_b = await service.create_version(obj_b.id, CreateVersionRequest(
-        title="Node B v1", plain_language="Node B.", markdown_body="Body B.",
-        structured_data={"definition": "Another concept."},
-    ))
+    obj_b = await service.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug="node-b",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Node B",
+        )
+    )
+    ver_b = await service.create_version(
+        obj_b.id,
+        CreateVersionRequest(
+            title="Node B v1",
+            plain_language="Node B.",
+            markdown_body="Body B.",
+            structured_data={"definition": "Another concept."},
+        ),
+    )
 
     edge = await service.create_edge(
         workspace_id=workspace.id,
@@ -94,30 +110,44 @@ async def test_facet_attachment(db_session, workspace):
     """Create object, attach facets, verify retrieval."""
     service = RegistryService(db_session)
 
-    obj = await service.create_object(CreateObjectRequest(
-        workspace_id=workspace.id, slug="faceted", type=COType.SKILL_GUIDE, canonical_title="Faceted",
-    ))
-    version = await service.create_version(obj.id, CreateVersionRequest(
-        title="Faceted v1", plain_language="Test.", markdown_body="Body.",
-        structured_data={
-            "performance_statement": "Do it",
-            "learning_objectives": ["Learn it"],
-            "steps_summary": ["Step 1"],
-            "success_criteria": ["Done"],
-            "failure_modes": ["Not done"],
-            "safety_boundary": "None",
-            "teach_forward": {
-                "three_minute_script": "Explain.",
-                "ten_minute_outline": ["Intro"],
-                "handout_points": ["Point"],
+    obj = await service.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug="faceted",
+            type=COType.SKILL_GUIDE,
+            canonical_title="Faceted",
+        )
+    )
+    version = await service.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Faceted v1",
+            plain_language="Test.",
+            markdown_body="Body.",
+            structured_data={
+                "performance_statement": "Do it",
+                "learning_objectives": ["Learn it"],
+                "steps_summary": ["Step 1"],
+                "success_criteria": ["Done"],
+                "failure_modes": ["Not done"],
+                "safety_boundary": "None",
+                "teach_forward": {
+                    "three_minute_script": "Explain.",
+                    "ten_minute_outline": ["Intro"],
+                    "handout_points": ["Point"],
+                },
             },
-        },
-    ))
+        ),
+    )
 
-    await service.attach_facets(obj.id, version.id, [
-        {"facet_type": FacetType.DOMAIN.value, "facet_value": "water"},
-        {"facet_type": FacetType.AUDIENCE.value, "facet_value": "general"},
-    ])
+    await service.attach_facets(
+        obj.id,
+        version.id,
+        [
+            {"facet_type": FacetType.DOMAIN.value, "facet_value": "water"},
+            {"facet_type": FacetType.AUDIENCE.value, "facet_value": "general"},
+        ],
+    )
 
     refreshed = await service.get_version(version.id)
     facet_types = [f.facet_type for f in refreshed.facets]

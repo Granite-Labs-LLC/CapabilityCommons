@@ -1,4 +1,5 @@
 """Tests that verify auth is wired into route handler signatures."""
+
 from __future__ import annotations
 
 import inspect
@@ -51,6 +52,7 @@ def test_retrieval_requires_workspace():
 def test_public_routes_do_not_require_workspace():
     """Public routes should NOT require auth."""
     from capability_commons.api.routes import public
+
     assert not _has_workspace_param(public.public_object)
     assert not _has_workspace_param(public.public_module)
     assert not _has_workspace_param(public.public_path)

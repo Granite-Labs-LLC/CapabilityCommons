@@ -1,4 +1,5 @@
 """CLI entry point: python -m capability_commons.cli.ingest <command> <project>."""
+
 from __future__ import annotations
 
 import argparse
@@ -40,14 +41,18 @@ def add_llm_args(parser):
 
 
 def cmd_init(args):
-    from capability_commons.cli.ingest.project import IngestProject
     import shutil
-    sources = [{
-        "id": args.source_id,
-        "file": f"sources/{Path(args.source).name}",
-        "title": args.source_title,
-        "source_kind": args.source_kind,
-    }]
+
+    from capability_commons.cli.ingest.project import IngestProject
+
+    sources = [
+        {
+            "id": args.source_id,
+            "file": f"sources/{Path(args.source).name}",
+            "title": args.source_title,
+            "source_kind": args.source_kind,
+        }
+    ]
     proj = IngestProject.init(PROJECTS_ROOT, args.project, sources)
     # Copy source file
     dest = proj.root / "sources" / Path(args.source).name
@@ -58,6 +63,7 @@ def cmd_init(args):
 def cmd_parse(args):
     from capability_commons.cli.ingest.parse import run_parse
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     run_parse(proj)
 
@@ -65,6 +71,7 @@ def cmd_parse(args):
 def cmd_extract(args):
     from capability_commons.cli.ingest.extract import run_extract
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_extract(proj, client, sections_filter=args.sections, yes=args.yes))
@@ -73,6 +80,7 @@ def cmd_extract(args):
 def cmd_draft(args):
     from capability_commons.cli.ingest.draft import run_draft
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_draft(proj, client, skip_existing=args.skip_existing, slugs_filter=args.slugs, yes=args.yes))
@@ -81,6 +89,7 @@ def cmd_draft(args):
 def cmd_cite(args):
     from capability_commons.cli.ingest.cite import run_cite
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_cite(proj, client, slugs_filter=args.slugs, yes=args.yes))
@@ -89,6 +98,7 @@ def cmd_cite(args):
 def cmd_canonicalize(args):
     from capability_commons.cli.ingest.canonicalize import run_canonicalize
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_canonicalize(proj, client, yes=args.yes))
@@ -97,6 +107,7 @@ def cmd_canonicalize(args):
 def cmd_edges(args):
     from capability_commons.cli.ingest.edges import run_edges
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_edges(proj, client, yes=args.yes))
@@ -105,6 +116,7 @@ def cmd_edges(args):
 def cmd_bundles(args):
     from capability_commons.cli.ingest.bundles import run_bundles
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     client = get_llm_client(args, proj.manifest.llm)
     asyncio.run(run_bundles(proj, client, skip_existing=args.skip_existing, slugs_filter=args.slugs, yes=args.yes))
@@ -113,6 +125,7 @@ def cmd_bundles(args):
 def cmd_load(args):
     from capability_commons.cli.ingest.load import run_load
     from capability_commons.cli.ingest.project import IngestProject
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     asyncio.run(run_load(proj, db_url=args.db_url, publish=args.publish, dry_run=args.dry_run))
 
@@ -120,6 +133,7 @@ def cmd_load(args):
 def cmd_validate(args):
     from capability_commons.cli.ingest.project import IngestProject
     from capability_commons.cli.ingest.validate import print_validation_report, run_validate
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     report = run_validate(proj)
     print_validation_report(report)
@@ -129,6 +143,7 @@ def cmd_validate(args):
 def cmd_status(args):
     from capability_commons.cli.ingest.project import IngestProject
     from capability_commons.cli.ingest.validate import run_status
+
     proj = IngestProject.load(PROJECTS_ROOT, args.project)
     run_status(proj)
 

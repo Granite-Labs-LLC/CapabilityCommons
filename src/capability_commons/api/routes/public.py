@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from fastapi import APIRouter
-
 from sqlalchemy import func, select
 
 from capability_commons.api.deps import DBSession
@@ -65,16 +64,12 @@ async def public_metrics(session: DBSession) -> PublicMetricsResponse:
     per-workspace breakdown, no PII.
     """
     objects = await session.scalar(
-        select(func.count(ContextObject.id)).where(
-            ContextObject.lifecycle_state == LifecycleState.PUBLISHED
-        )
+        select(func.count(ContextObject.id)).where(ContextObject.lifecycle_state == LifecycleState.PUBLISHED)
     )
     edges = await session.scalar(select(func.count(Edge.id)))
     evidence_spans = await session.scalar(select(func.count(EvidenceSpan.id)))
     ingest_jobs = await session.scalar(select(func.count(IngestJob.id)))
-    last_job_at = await session.scalar(
-        select(func.max(IngestJob.completed_at))
-    )
+    last_job_at = await session.scalar(select(func.max(IngestJob.completed_at)))
     return PublicMetricsResponse(
         objects=int(objects or 0),
         edges=int(edges or 0),

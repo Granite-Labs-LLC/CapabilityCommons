@@ -1,4 +1,5 @@
 """Tests for the strict publish-readiness gate (PLAN P1-8)."""
+
 from __future__ import annotations
 
 import yaml
@@ -11,8 +12,7 @@ def _project(tmp_path):
     return IngestProject.init(
         projects_root=tmp_path / "projects",
         name="test-publish-gate",
-        sources=[{"id": "src.test", "file": "sources/x.pdf",
-                  "title": "T", "source_kind": "BOOK"}],
+        sources=[{"id": "src.test", "file": "sources/x.pdf", "title": "T", "source_kind": "BOOK"}],
     )
 
 
@@ -60,9 +60,7 @@ def test_strict_passes_when_envelope_and_citations_present(tmp_path):
 
 def test_strict_blocks_when_fewer_than_two_citations(tmp_path):
     project = _project(tmp_path)
-    _write(project, citations=[
-        {"claim_id": "clm_001", "claim_text": "a", "source_id": "src.test"}
-    ])
+    _write(project, citations=[{"claim_id": "clm_001", "claim_text": "a", "source_id": "src.test"}])
     report = run_validate(project, strict=True)
     assert any("at least 2 citations" in b for b in report.publish_blockers)
     # Blockers must also surface as errors so load() refuses.
@@ -73,18 +71,20 @@ def test_strict_blocks_actionable_without_envelope(tmp_path):
     project = _project(tmp_path)
     _write(project, structured_data={"tools": []})  # no implementation
     report = run_validate(project, strict=True)
-    assert any("requires structured_data.implementation" in b
-                for b in report.publish_blockers)
+    assert any("requires structured_data.implementation" in b for b in report.publish_blockers)
 
 
 def test_strict_blocks_envelope_missing_required_fields(tmp_path):
     project = _project(tmp_path)
-    _write(project, structured_data={
-        "implementation": {
-            "smallest_viable_version": "do x",
-            # missing stop_conditions and success_checks
-        }
-    })
+    _write(
+        project,
+        structured_data={
+            "implementation": {
+                "smallest_viable_version": "do x",
+                # missing stop_conditions and success_checks
+            }
+        },
+    )
     report = run_validate(project, strict=True)
     assert any("envelope missing" in b for b in report.publish_blockers)
 
@@ -93,8 +93,9 @@ def test_strict_blocks_high_risk_without_safety(tmp_path):
     project = _project(tmp_path)
     # Concept_note skips the envelope requirement but still must have safety
     # boundary at risk=high.
-    _write(project, slug="water.dangerous", co_type="concept_note",
-           risk_band="high", structured_data={"definition": "x"})
+    _write(
+        project, slug="water.dangerous", co_type="concept_note", risk_band="high", structured_data={"definition": "x"}
+    )
     report = run_validate(project, strict=True)
     # The non-strict path already blocks high-risk without safety_boundary,
     # so it surfaces as an error AND a publish blocker.
@@ -123,41 +124,54 @@ def test_validator_accepts_source_id_inside_support_spans(tmp_path):
     so a top-level `source_id` is absent. The validator must NOT warn on
     that shape — only when neither location has it."""
     project = _project(tmp_path)
-    _write(project, citations=[
-        {
-            "claim_id": "clm_001",
-            "claim_text": "x",
-            "support": [{
-                "source_id": "src.test",
-                "segment_id": "src.test::seg_000001",
-                "excerpt": "evidence",
-                "page_start": 1, "page_end": 1,
-                "start_char": 0, "end_char": 8,
-                "support_strength": "strong",
-            }],
-        },
-        {
-            "claim_id": "clm_002",
-            "claim_text": "y",
-            "support": [{
-                "source_id": "src.test",
-                "segment_id": "src.test::seg_000002",
-                "excerpt": "more evidence",
-                "page_start": 2, "page_end": 2,
-                "start_char": 0, "end_char": 13,
-                "support_strength": "strong",
-            }],
-        },
-    ])
+    _write(
+        project,
+        citations=[
+            {
+                "claim_id": "clm_001",
+                "claim_text": "x",
+                "support": [
+                    {
+                        "source_id": "src.test",
+                        "segment_id": "src.test::seg_000001",
+                        "excerpt": "evidence",
+                        "page_start": 1,
+                        "page_end": 1,
+                        "start_char": 0,
+                        "end_char": 8,
+                        "support_strength": "strong",
+                    }
+                ],
+            },
+            {
+                "claim_id": "clm_002",
+                "claim_text": "y",
+                "support": [
+                    {
+                        "source_id": "src.test",
+                        "segment_id": "src.test::seg_000002",
+                        "excerpt": "more evidence",
+                        "page_start": 2,
+                        "page_end": 2,
+                        "start_char": 0,
+                        "end_char": 13,
+                        "support_strength": "strong",
+                    }
+                ],
+            },
+        ],
+    )
     report = run_validate(project)
     assert not any("missing source_id" in w for w in report.warnings)
 
 
 def test_validator_warns_when_neither_top_level_nor_support_has_source_id(tmp_path):
     project = _project(tmp_path)
-    _write(project, citations=[
-        {"claim_id": "clm_001", "claim_text": "x",
-         "support": [{"segment_id": "x", "excerpt": "y"}]},
-    ])
+    _write(
+        project,
+        citations=[
+            {"claim_id": "clm_001", "claim_text": "x", "support": [{"segment_id": "x", "excerpt": "y"}]},
+        ],
+    )
     report = run_validate(project)
     assert any("missing source_id" in w for w in report.warnings)

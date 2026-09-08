@@ -10,6 +10,7 @@ from capability_commons.domain.enums import COType, LifecycleState
 
 class PublicSearchFilters(BaseModel):
     """UX-friendly search filters for the public interface."""
+
     stage: str | None = Field(None, description="foundation, household, productive, community, advanced")
     difficulty_max: int | None = Field(None, ge=1, le=5, description="Max difficulty (1=easiest, 5=hardest)")
     cost_band: str | None = Field(None, description="free, low, medium, high")

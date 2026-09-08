@@ -15,7 +15,9 @@ router = APIRouter()
 
 
 @router.post("/edges", response_model=EdgeResponse)
-async def create_edge(request: CreateEdgeRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> EdgeResponse:
+async def create_edge(
+    request: CreateEdgeRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace
+) -> EdgeResponse:
     data = request.model_dump()
     data["workspace_id"] = workspace.id
     service = RegistryService(session)

@@ -1,4 +1,5 @@
 """Pass 1: Generate extraction matrix from segments via LLM."""
+
 from __future__ import annotations
 
 import orjson
@@ -76,17 +77,12 @@ async def run_extract(
 
     # Apply filter
     if sections_filter:
-        section_groups = {
-            k: v for k, v in section_groups.items()
-            if sections_filter.lower() in k.lower()
-        }
+        section_groups = {k: v for k, v in section_groups.items() if sections_filter.lower() in k.lower()}
 
     console.print(f"  {len(section_groups)} sections to process")
 
     # Estimate tokens
-    total_text = "\n".join(
-        seg.text for segs in section_groups.values() for seg in segs
-    )
+    total_text = "\n".join(seg.text for segs in section_groups.values() for seg in segs)
     est_tokens = client.estimate_tokens(total_text + SYSTEM_PROMPT + USER_TEMPLATE)
     console.print(f"  Estimated input tokens: ~{est_tokens:,}")
 
@@ -102,8 +98,7 @@ async def run_extract(
 
     for section_name, section_segments in section_groups.items():
         section_text = "\n\n".join(
-            f"[{seg.segment_id} | pages {seg.page_start}-{seg.page_end}]\n{seg.text}"
-            for seg in section_segments
+            f"[{seg.segment_id} | pages {seg.page_start}-{seg.page_end}]\n{seg.text}" for seg in section_segments
         )
         user_msg = USER_TEMPLATE.format(
             schema=orjson.dumps(schema_json).decode(),
@@ -128,9 +123,7 @@ async def run_extract(
         # Serialize list columns as pipe-delimited strings for CSV
         for col in df.columns:
             if df[col].dtype.base_type() == pl.List:
-                df = df.with_columns(
-                    pl.col(col).cast(pl.List(pl.Utf8)).list.join("|").alias(col)
-                )
+                df = df.with_columns(pl.col(col).cast(pl.List(pl.Utf8)).list.join("|").alias(col))
         df.write_csv(project.matrix_file)
 
     project.mark_pass_complete("extract")

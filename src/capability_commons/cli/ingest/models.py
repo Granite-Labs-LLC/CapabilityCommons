@@ -1,4 +1,5 @@
 """Pydantic models for ingestion pipeline intermediate artifacts."""
+
 from __future__ import annotations
 
 from datetime import datetime
@@ -6,11 +7,12 @@ from typing import Literal
 
 from pydantic import BaseModel
 
-
 # --- Pass 0: Segments ---
+
 
 class SourceSegment(BaseModel):
     """A page-preserving text segment extracted from a source document."""
+
     source_id: str
     segment_id: str
     page_start: int
@@ -25,8 +27,10 @@ class SourceSegment(BaseModel):
 
 # --- Pass 1: Extraction Matrix ---
 
+
 class ExtractionRow(BaseModel):
     """A candidate capability object identified from source material."""
+
     source_id: str
     section_id: str
     start_page: int
@@ -35,9 +39,20 @@ class ExtractionRow(BaseModel):
     segment_ids: list[str]
     candidate_slug: str
     candidate_type: Literal[
-        "concept_note", "skill_guide", "project_blueprint", "module", "assessment",
-        "reference_sheet", "learning_path", "teach_forward_packet", "local_adaptation",
-        "field_report", "worksheet", "glossary", "safety_notice", "correction",
+        "concept_note",
+        "skill_guide",
+        "project_blueprint",
+        "module",
+        "assessment",
+        "reference_sheet",
+        "learning_path",
+        "teach_forward_packet",
+        "local_adaptation",
+        "field_report",
+        "worksheet",
+        "glossary",
+        "safety_notice",
+        "correction",
     ]
     primary_domain: str
     secondary_domains: list[str] = []
@@ -57,8 +72,10 @@ class ExtractionRow(BaseModel):
 
 # --- Pass 3: Citations ---
 
+
 class CitationSpan(BaseModel):
     """A link from a claim to a source text span."""
+
     source_id: str
     page_start: int
     page_end: int
@@ -71,6 +88,7 @@ class CitationSpan(BaseModel):
 
 class ClaimCitation(BaseModel):
     """A drafted claim linked to supporting source spans."""
+
     object_id: str
     claim_id: str
     claim_text: str
@@ -79,8 +97,10 @@ class ClaimCitation(BaseModel):
 
 # --- Pass 4: Canonicalization ---
 
+
 class CanonicalizationDecision(BaseModel):
     """A merge/split/keep decision for a group of similar drafts."""
+
     action: Literal["keep", "merge", "split"]
     rationale: str
     canonical_slug: str
@@ -91,8 +111,10 @@ class CanonicalizationDecision(BaseModel):
 
 # --- Pass 5: Edges ---
 
+
 class ExtractedEdge(BaseModel):
     """A typed directed edge between two knowledge objects."""
+
     source_id: str
     target_id: str
     edge_type: str
@@ -103,8 +125,10 @@ class ExtractedEdge(BaseModel):
 
 # --- Pass 6: Bundles ---
 
+
 class BundleOutput(BaseModel):
     """Six-part public bundle for a knowledge object."""
+
     hook: str
     primer: str
     guide: str
@@ -115,8 +139,10 @@ class BundleOutput(BaseModel):
 
 # --- Validation ---
 
+
 class ValidationReport(BaseModel):
     """Summary report from the validate command."""
+
     objects_count: int
     edges_count: int
     citations_count: int
@@ -131,13 +157,16 @@ class ValidationReport(BaseModel):
 
 # --- Project Manifest ---
 
+
 class PassStatus(BaseModel):
     """Completion status for a single pipeline pass."""
+
     completed: datetime | None = None
 
 
 class PassesStatus(BaseModel):
     """Completion status for all pipeline passes."""
+
     parse: PassStatus = PassStatus()
     extract: PassStatus = PassStatus()
     draft: PassStatus = PassStatus()
@@ -150,6 +179,7 @@ class PassesStatus(BaseModel):
 
 class LLMConfig(BaseModel):
     """LLM provider configuration."""
+
     base_url: str = "https://api.openai.com/v1"
     model: str = "gpt-4o"
     temperature: float = 0.2
@@ -157,6 +187,7 @@ class LLMConfig(BaseModel):
 
 class ManifestSource(BaseModel):
     """A source document registered in the project."""
+
     id: str
     file: str
     title: str
@@ -165,6 +196,7 @@ class ManifestSource(BaseModel):
 
 class ProjectManifest(BaseModel):
     """Top-level manifest for an ingestion project."""
+
     name: str
     created: str
     sources: list[ManifestSource]

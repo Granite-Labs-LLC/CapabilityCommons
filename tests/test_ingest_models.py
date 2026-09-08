@@ -1,4 +1,5 @@
 """Tests for ingestion pipeline Pydantic models."""
+
 from __future__ import annotations
 
 import pytest

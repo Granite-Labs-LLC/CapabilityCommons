@@ -1,4 +1,5 @@
 """Tests for the heuristic intent classifier (retrieval P0-5)."""
+
 from __future__ import annotations
 
 import pytest

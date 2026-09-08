@@ -1,4 +1,5 @@
 """Tests for evidence API routes."""
+
 from __future__ import annotations
 
 import uuid
@@ -16,30 +17,39 @@ def client():
 
 def test_create_evidence_source_requires_auth(client):
     """POST /v1/evidence/sources should require authentication."""
-    response = client.post("/v1/evidence/sources", json={
-        "source_kind": "BOOK",
-        "title": "Test Source",
-    })
+    response = client.post(
+        "/v1/evidence/sources",
+        json={
+            "source_kind": "BOOK",
+            "title": "Test Source",
+        },
+    )
     assert response.status_code == 401
 
 
 def test_create_evidence_span_requires_auth(client):
     """POST /v1/evidence/spans should require authentication."""
-    response = client.post("/v1/evidence/spans", json={
-        "source_id": str(uuid.uuid4()),
-        "start_char": 0,
-        "end_char": 100,
-        "excerpt": "test",
-    })
+    response = client.post(
+        "/v1/evidence/spans",
+        json={
+            "source_id": str(uuid.uuid4()),
+            "start_char": 0,
+            "end_char": 100,
+            "excerpt": "test",
+        },
+    )
     assert response.status_code == 401
 
 
 def test_attach_edge_citation_requires_auth(client):
     """POST /v1/evidence/edge_citations should require authentication."""
-    response = client.post("/v1/evidence/edge_citations", json={
-        "edge_id": str(uuid.uuid4()),
-        "evidence_span_id": str(uuid.uuid4()),
-    })
+    response = client.post(
+        "/v1/evidence/edge_citations",
+        json={
+            "edge_id": str(uuid.uuid4()),
+            "evidence_span_id": str(uuid.uuid4()),
+        },
+    )
     assert response.status_code == 401
 
 

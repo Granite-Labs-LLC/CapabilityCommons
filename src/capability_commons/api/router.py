@@ -1,6 +1,23 @@
 from fastapi import APIRouter
 
-from capability_commons.api.routes import ask, audit, contribute, edges, entities, evidence, feedback, files, health, ingest, metrics, objects, public, retrieval, reviews, search
+from capability_commons.api.routes import (
+    ask,
+    audit,
+    contribute,
+    edges,
+    entities,
+    evidence,
+    feedback,
+    files,
+    health,
+    ingest,
+    metrics,
+    objects,
+    public,
+    retrieval,
+    reviews,
+    search,
+)
 
 api_router = APIRouter()
 api_router.include_router(health.router, tags=["health"])

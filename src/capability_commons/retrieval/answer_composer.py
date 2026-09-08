@@ -8,9 +8,8 @@ Transforms an EvidencePackResponse into a user-facing AskResponse by:
 5. Mapping citations from evidence spans
 6. Identifying related objects from graph edges / next_steps
 """
-from __future__ import annotations
 
-import uuid
+from __future__ import annotations
 
 from capability_commons.domain.enums import RetrievalIntent
 from capability_commons.schemas.ask import (
@@ -107,25 +106,33 @@ def _build_implementation_steps(evidence: EvidencePackResponse) -> list[Implemen
         # Step 1 is always the smallest viable thing the user can do now.
         svv = envelope.get("smallest_viable_version")
         top_slug = next(
-            (n.slug for n in evidence.evidence
-             if n.type in ("skill_guide", "project_blueprint")
-             and _envelope_for(n) is envelope),
+            (
+                n.slug
+                for n in evidence.evidence
+                if n.type in ("skill_guide", "project_blueprint") and _envelope_for(n) is envelope
+            ),
             None,
         )
         if svv:
-            steps.append(ImplementationStep(
-                step=1,
-                action=svv,
-                tools=list(envelope.get("tools") or []),
-                materials=list(envelope.get("materials") or []),
-                time_estimate=envelope.get("expected_time"),
-                source_slug=top_slug,
-            ))
+            steps.append(
+                ImplementationStep(
+                    step=1,
+                    action=svv,
+                    tools=list(envelope.get("tools") or []),
+                    materials=list(envelope.get("materials") or []),
+                    time_estimate=envelope.get("expected_time"),
+                    source_slug=top_slug,
+                )
+            )
         # Then one step per success_check (these are the user's milestones).
         for i, check in enumerate(envelope.get("success_checks") or [], start=2):
-            steps.append(ImplementationStep(
-                step=i, action=f"Confirm: {check}", source_slug=top_slug,
-            ))
+            steps.append(
+                ImplementationStep(
+                    step=i,
+                    action=f"Confirm: {check}",
+                    source_slug=top_slug,
+                )
+            )
         if steps:
             return steps
 
@@ -137,11 +144,13 @@ def _build_implementation_steps(evidence: EvidencePackResponse) -> list[Implemen
         if node.type not in actionable_types:
             continue
         step_num += 1
-        steps.append(ImplementationStep(
-            step=step_num,
-            action=node.summary_short or node.title,
-            source_slug=node.slug,
-        ))
+        steps.append(
+            ImplementationStep(
+                step=step_num,
+                action=node.summary_short or node.title,
+                source_slug=node.slug,
+            )
+        )
     return steps
 
 
@@ -156,12 +165,14 @@ def _build_citations(evidence: EvidencePackResponse) -> list[AskCitation]:
             if not excerpt or excerpt in seen_excerpts:
                 continue
             seen_excerpts.add(excerpt)
-            citations.append(AskCitation(
-                source_title=getattr(cite, "source_title", node.title),
-                slug=node.slug,
-                excerpt=excerpt,
-                support_strength="strong" if float(node.score) > 0.7 else "moderate",
-            ))
+            citations.append(
+                AskCitation(
+                    source_title=getattr(cite, "source_title", node.title),
+                    slug=node.slug,
+                    excerpt=excerpt,
+                    support_strength="strong" if float(node.score) > 0.7 else "moderate",
+                )
+            )
 
     return citations
 
@@ -175,11 +186,13 @@ def _build_related_objects(evidence: EvidencePackResponse) -> list[RelatedObject
         slug = ns.get("slug", "")
         if slug and slug not in seen_slugs:
             seen_slugs.add(slug)
-            related.append(RelatedObject(
-                slug=slug,
-                title=ns.get("title", slug),
-                role=ns.get("role", "related"),
-            ))
+            related.append(
+                RelatedObject(
+                    slug=slug,
+                    title=ns.get("title", slug),
+                    role=ns.get("role", "related"),
+                )
+            )
 
     return related
 
@@ -203,7 +216,7 @@ def _extract_action_now(evidence: EvidencePackResponse, intent: RetrievalIntent)
     """Prefer the envelope's smallest_viable_version; fall back to top summary."""
     envelope = _top_envelope(evidence)
     if envelope and envelope.get("smallest_viable_version"):
-        return envelope["smallest_viable_version"]
+        return str(envelope["smallest_viable_version"])
     if not evidence.evidence:
         return None
     top = evidence.evidence[0]
@@ -220,19 +233,14 @@ def _detect_uncertainties(evidence: EvidencePackResponse) -> list[str]:
 
     if float(evidence.sufficiency_score) < 0.5:
         uncertainties.append(
-            "The available evidence may not fully address your question. "
-            "Consider consulting additional sources."
+            "The available evidence may not fully address your question. Consider consulting additional sources."
         )
 
     if evidence.contradictions:
-        uncertainties.append(
-            f"There are {len(evidence.contradictions)} conflicting viewpoints in the evidence."
-        )
+        uncertainties.append(f"There are {len(evidence.contradictions)} conflicting viewpoints in the evidence.")
 
     if len(evidence.evidence) < 3:
-        uncertainties.append(
-            "Limited evidence available. Verify critical details independently."
-        )
+        uncertainties.append("Limited evidence available. Verify critical details independently.")
 
     return uncertainties
 
@@ -300,11 +308,13 @@ def _related_with_next_steps(evidence: EvidencePackResponse) -> list[RelatedObje
         slug = ns.get("slug") or ""
         if not slug or slug in seen:
             continue
-        related.append(RelatedObject(
-            slug=slug,
-            title=str(ns.get("title") or slug),
-            role=str(ns.get("role") or "next-step"),
-        ))
+        related.append(
+            RelatedObject(
+                slug=slug,
+                title=str(ns.get("title") or slug),
+                role=str(ns.get("role") or "next-step"),
+            )
+        )
         seen.add(slug)
     return related
 
@@ -344,9 +354,7 @@ def compose_answer(
     stops = _extract_stop_conditions(evidence)
     when_to_get_help = _extract_when_to_get_help(evidence)
     if intent in SAFETY_EMPHASIS_INTENTS and not warnings and not when_to_get_help:
-        when_to_get_help.append(
-            "If you're unsure about any step, consult a qualified professional before proceeding."
-        )
+        when_to_get_help.append("If you're unsure about any step, consult a qualified professional before proceeding.")
 
     return AskResponse(
         answer=answer,

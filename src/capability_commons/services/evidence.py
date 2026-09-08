@@ -118,7 +118,15 @@ class EvidenceService:
     async def list_citations_for_version(self, version_id: uuid.UUID) -> list[dict]:
         await get_version(self.session, version_id)
         stmt = (
-            select(EvidenceSpan.id, EvidenceSource.id, EvidenceSource.title, EvidenceSource.uri, EvidenceSpan.excerpt, EvidenceSpan.start_char, EvidenceSpan.end_char)
+            select(
+                EvidenceSpan.id,
+                EvidenceSource.id,
+                EvidenceSource.title,
+                EvidenceSource.uri,
+                EvidenceSpan.excerpt,
+                EvidenceSpan.start_char,
+                EvidenceSpan.end_char,
+            )
             .select_from(join(EvidenceSpan, EvidenceSource, EvidenceSpan.source_id == EvidenceSource.id))
             .where(EvidenceSpan.context_object_version_id == version_id)
             .order_by(EvidenceSource.title.asc(), EvidenceSpan.start_char.asc())

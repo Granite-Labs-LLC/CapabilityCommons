@@ -1,4 +1,5 @@
 """Tests for the audit service."""
+
 from __future__ import annotations
 
 
@@ -7,9 +8,14 @@ def test_audit_event_type_enum():
     from capability_commons.domain.enums import AuditEventType
 
     expected = {
-        "object_created", "version_created", "version_published",
-        "version_deprecated", "edge_created", "edge_removed",
-        "review_submitted", "object_edited",
+        "object_created",
+        "version_created",
+        "version_published",
+        "version_deprecated",
+        "edge_created",
+        "edge_removed",
+        "review_submitted",
+        "object_edited",
     }
     actual = {e.value for e in AuditEventType}
     assert actual == expected
@@ -21,17 +27,24 @@ def test_audit_event_model_exists():
 
     columns = {c.name for c in AuditEvent.__table__.columns}
     expected = {
-        "id", "workspace_id", "event_type", "actor_key_id",
-        "target_object_id", "target_version_id", "target_edge_id",
-        "detail", "created_at",
+        "id",
+        "workspace_id",
+        "event_type",
+        "actor_key_id",
+        "target_object_id",
+        "target_version_id",
+        "target_edge_id",
+        "detail",
+        "created_at",
     }
     assert expected.issubset(columns), f"Missing columns: {expected - columns}"
 
 
 def test_audit_service_exists():
     """AuditService should have record_event, get_object_history, get_workspace_timeline."""
-    from capability_commons.audit.service import AuditService
     import inspect
+
+    from capability_commons.audit.service import AuditService
 
     assert hasattr(AuditService, "record_event")
     assert hasattr(AuditService, "get_object_history")
@@ -58,11 +71,13 @@ def test_audit_schemas():
 def test_audit_routes_wired():
     """Audit routes should be wired in the API router."""
     from fastapi.testclient import TestClient
+
     from capability_commons.main import app
 
     client = TestClient(app)
 
     import uuid
+
     r = client.get(f"/v1/audit/objects/{uuid.uuid4()}")
     assert r.status_code == 401, f"Expected 401, got {r.status_code}"
 
@@ -73,6 +88,7 @@ def test_audit_routes_wired():
 def test_registry_service_imports_audit():
     """RegistryService should import and use AuditService."""
     import inspect
+
     from capability_commons.services import registry
 
     source = inspect.getsource(registry)
@@ -83,6 +99,7 @@ def test_registry_service_imports_audit():
 def test_review_service_imports_audit():
     """ReviewService should import and use AuditService."""
     import inspect
+
     from capability_commons.services import review
 
     source = inspect.getsource(review)

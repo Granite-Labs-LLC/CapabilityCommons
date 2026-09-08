@@ -5,22 +5,23 @@ Blocks publishing when:
 - Required safety_boundary is missing from structured_data on types that need it
 - Unresolved contradictions reference the version
 """
+
 from __future__ import annotations
 
 import uuid
 from dataclasses import dataclass, field
 
-from sqlalchemy import select, func
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.db.models import (
-    ContradictionCase,
     ContextObjectVersion,
+    ContradictionCase,
     ReviewRecord,
 )
 from capability_commons.domain.enums import (
-    COType,
     ContradictionStatus,
+    COType,
     ReviewOutcome,
     RiskBand,
 )
@@ -39,6 +40,7 @@ HIGH_RISK_BANDS = {RiskBand.HIGH, RiskBand.EXPERT_ONLY}
 @dataclass
 class GateResult:
     """Result of a publish gate check."""
+
     passed: bool
     blockers: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
@@ -57,9 +59,7 @@ class PublishGate:
         if version.risk_band in HIGH_RISK_BANDS:
             has_approval = await self._has_approved_review(version.id)
             if not has_approval:
-                blockers.append(
-                    f"Risk band '{version.risk_band.value}' requires an approved review before publishing"
-                )
+                blockers.append(f"Risk band '{version.risk_band.value}' requires an approved review before publishing")
 
         # 2. Safety boundary gate
         if object_type in SAFETY_BOUNDARY_REQUIRED_TYPES:
@@ -69,16 +69,12 @@ class PublishGate:
             profile = sd.get("implementation_profile", {}) or {}
             has_escalation = bool(profile.get("escalation_guidance"))
             if not has_safety and not has_escalation:
-                blockers.append(
-                    f"Type '{object_type.value}' requires a safety_boundary or escalation_guidance"
-                )
+                blockers.append(f"Type '{object_type.value}' requires a safety_boundary or escalation_guidance")
 
         # 3. Unresolved contradictions gate
         open_count = await self._count_open_contradictions(version.id)
         if open_count > 0:
-            blockers.append(
-                f"{open_count} unresolved contradiction(s) must be resolved before publishing"
-            )
+            blockers.append(f"{open_count} unresolved contradiction(s) must be resolved before publishing")
 
         # Advisory warnings (don't block)
         if not version.summary_short:
@@ -104,12 +100,13 @@ class PublishGate:
         """Count unresolved contradictions involving this version."""
         result = await self.session.scalar(
             select(func.count()).where(
-                (ContradictionCase.left_version_id == version_id)
-                | (ContradictionCase.right_version_id == version_id),
-                ContradictionCase.status.in_([
-                    ContradictionStatus.OPEN,
-                    ContradictionStatus.TRIAGED,
-                ]),
+                (ContradictionCase.left_version_id == version_id) | (ContradictionCase.right_version_id == version_id),
+                ContradictionCase.status.in_(
+                    [
+                        ContradictionStatus.OPEN,
+                        ContradictionStatus.TRIAGED,
+                    ]
+                ),
             )
         )
         return result or 0

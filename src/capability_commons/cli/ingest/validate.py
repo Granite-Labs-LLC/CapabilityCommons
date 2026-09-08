@@ -1,7 +1,6 @@
 """Validate and status commands for ingestion projects."""
-from __future__ import annotations
 
-from pathlib import Path
+from __future__ import annotations
 
 import orjson
 import yaml
@@ -60,17 +59,11 @@ def _check_publish_gate(obj: dict, slug: str, lifecycle: str) -> list[str]:
     if co_type in ACTIONABLE_TYPES:
         envelope = (obj.get("structured_data") or {}).get("implementation")
         if not envelope:
-            blockers.append(
-                f"{slug}: {co_type} requires structured_data.implementation envelope"
-            )
+            blockers.append(f"{slug}: {co_type} requires structured_data.implementation envelope")
         else:
-            missing = [
-                f for f in ENVELOPE_REQUIRED_FIELDS if not envelope.get(f)
-            ]
+            missing = [f for f in ENVELOPE_REQUIRED_FIELDS if not envelope.get(f)]
             if missing:
-                blockers.append(
-                    f"{slug}: implementation envelope missing: {', '.join(missing)}"
-                )
+                blockers.append(f"{slug}: implementation envelope missing: {', '.join(missing)}")
 
     # 3. Safety review for high-risk content.
     risk = obj.get("risk_band", "")
@@ -218,6 +211,7 @@ def run_validate(project: IngestProject, *, strict: bool = False) -> ValidationR
     edges_count = 0
     if project.edges_file.exists():
         import polars as pl
+
         edges_df = pl.read_csv(project.edges_file)
         edges_count = len(edges_df)
         for row in edges_df.iter_rows(named=True):
@@ -234,9 +228,7 @@ def run_validate(project: IngestProject, *, strict: bool = False) -> ValidationR
 
     # Citation coverage threshold
     if objects_count > 0 and coverage < MIN_CITATION_COVERAGE:
-        warnings.append(
-            f"Citation coverage {coverage:.0%} is below minimum threshold {MIN_CITATION_COVERAGE:.0%}"
-        )
+        warnings.append(f"Citation coverage {coverage:.0%} is below minimum threshold {MIN_CITATION_COVERAGE:.0%}")
 
     # Surface publish-gate blockers as errors so the load step refuses to ship
     # broken content. Keep them in `publish_blockers` too for granular UI.
@@ -258,16 +250,14 @@ def print_validation_report(report: ValidationReport, console: Console | None = 
     """Print a formatted validation report."""
     console = console or Console()
 
-    console.print(f"\n[bold]Validation Report[/bold]")
+    console.print("\n[bold]Validation Report[/bold]")
     console.print(f"  Objects: {report.objects_count}")
     console.print(f"  Edges: {report.edges_count}")
     console.print(f"  Citations: {report.citations_count}")
     console.print(f"  Citation coverage: {report.citation_coverage:.0%}")
 
     if report.publish_blockers:
-        console.print(
-            f"\n[red bold]Publish blockers ({len(report.publish_blockers)}):[/red bold]"
-        )
+        console.print(f"\n[red bold]Publish blockers ({len(report.publish_blockers)}):[/red bold]")
         for b in report.publish_blockers:
             console.print(f"  [red]✗[/red] {b}")
 

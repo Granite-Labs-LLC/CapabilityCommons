@@ -1,4 +1,5 @@
 """OpenAI-compatible LLM client with Pydantic validation and retry."""
+
 from __future__ import annotations
 
 import json
@@ -7,6 +8,7 @@ from typing import TypeVar
 
 import tiktoken
 from openai import AsyncOpenAI
+from openai.types.chat import ChatCompletionMessageParam
 from pydantic import BaseModel, ValidationError
 
 T = TypeVar("T", bound=BaseModel)
@@ -19,10 +21,7 @@ class LLMValidationError(Exception):
         self.last_response = last_response
         self.last_error = last_error
         self.retries = retries
-        super().__init__(
-            f"LLM output failed validation after {retries} retries. "
-            f"Last error: {last_error}"
-        )
+        super().__init__(f"LLM output failed validation after {retries} retries. Last error: {last_error}")
 
 
 class LLMClient:
@@ -58,7 +57,7 @@ class LLMClient:
         On validation failure, retries with the error appended to the
         conversation. Raises LLMValidationError after max_retries failures.
         """
-        messages = [
+        messages: list[ChatCompletionMessageParam] = [
             {"role": "system", "content": system},
             {"role": "user", "content": user + "\n\nRespond with valid JSON only."},
         ]
@@ -82,11 +81,12 @@ class LLMClient:
                 last_error = str(e)
                 if attempt < max_retries:
                     messages.append({"role": "assistant", "content": raw})
-                    messages.append({
-                        "role": "user",
-                        "content": f"JSON validation failed: {last_error}. "
-                        "Fix the output and return valid JSON.",
-                    })
+                    messages.append(
+                        {
+                            "role": "user",
+                            "content": f"JSON validation failed: {last_error}. Fix the output and return valid JSON.",
+                        }
+                    )
 
         raise LLMValidationError(last_response, last_error, max_retries)
 

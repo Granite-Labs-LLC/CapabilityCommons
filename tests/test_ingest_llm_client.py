@@ -1,4 +1,5 @@
 """Tests for LLM client with Pydantic validation and retry."""
+
 from __future__ import annotations
 
 import json
@@ -26,9 +27,7 @@ class TestLLMClientGenerate:
 
     async def test_successful_generation(self, client):
         mock_response = AsyncMock()
-        mock_response.choices = [
-            AsyncMock(message=AsyncMock(content=json.dumps({"name": "test", "score": 0.9})))
-        ]
+        mock_response.choices = [AsyncMock(message=AsyncMock(content=json.dumps({"name": "test", "score": 0.9})))]
         mock_create = AsyncMock(return_value=mock_response)
         with patch.object(client._client.chat.completions, "create", new=mock_create):
             result = await client.generate(
@@ -45,9 +44,7 @@ class TestLLMClientGenerate:
             AsyncMock(message=AsyncMock(content=json.dumps({"name": "test"})))  # missing score
         ]
         good_response = AsyncMock()
-        good_response.choices = [
-            AsyncMock(message=AsyncMock(content=json.dumps({"name": "test", "score": 0.5})))
-        ]
+        good_response.choices = [AsyncMock(message=AsyncMock(content=json.dumps({"name": "test", "score": 0.5})))]
         mock_create = AsyncMock(side_effect=[bad_response, good_response])
         with patch.object(client._client.chat.completions, "create", new=mock_create):
             result = await client.generate(
@@ -59,9 +56,7 @@ class TestLLMClientGenerate:
 
     async def test_raises_after_max_retries(self, client):
         bad_response = AsyncMock()
-        bad_response.choices = [
-            AsyncMock(message=AsyncMock(content="not json at all"))
-        ]
+        bad_response.choices = [AsyncMock(message=AsyncMock(content="not json at all"))]
         mock_create = AsyncMock(return_value=bad_response)
         with patch.object(client._client.chat.completions, "create", new=mock_create):
             with pytest.raises(LLMValidationError):

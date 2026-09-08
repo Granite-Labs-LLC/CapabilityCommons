@@ -1,4 +1,5 @@
 """Embedding pipeline: pluggable provider with OpenAI default."""
+
 from __future__ import annotations
 
 import uuid
@@ -12,8 +13,7 @@ from capability_commons.db.models import ContentSegment
 
 class EmbeddingProvider(ABC):
     @abstractmethod
-    async def embed(self, texts: list[str]) -> list[list[float]]:
-        ...
+    async def embed(self, texts: list[str]) -> list[list[float]]: ...
 
 
 class OpenAIEmbeddingProvider(EmbeddingProvider):
@@ -21,6 +21,7 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         self.model = model
         self.dimensions = dimensions
         import openai
+
         self.client = openai.AsyncOpenAI(api_key=api_key)
 
     async def embed(self, texts: list[str]) -> list[list[float]]:
@@ -35,8 +36,10 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
 class EmbeddingService:
     def __init__(self, session: AsyncSession, provider: EmbeddingProvider | None = None) -> None:
         self.session = session
+        self.provider: EmbeddingProvider | None
         if provider is None:
             from capability_commons.config import get_settings
+
             settings = get_settings()
             if settings.openai_api_key:
                 self.provider = OpenAIEmbeddingProvider(

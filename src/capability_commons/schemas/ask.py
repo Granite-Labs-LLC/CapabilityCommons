@@ -9,6 +9,7 @@ from capability_commons.domain.enums import RetrievalIntent
 
 class AskContext(BaseModel):
     """User's situational context for filtering and ranking."""
+
     housing_type: str | None = None
     climate_zone: str | None = None
     budget_profile: str | None = None

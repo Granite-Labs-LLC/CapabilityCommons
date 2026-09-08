@@ -1,4 +1,5 @@
 """API routes for ingest job management."""
+
 from __future__ import annotations
 
 import uuid

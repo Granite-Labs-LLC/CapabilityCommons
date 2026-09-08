@@ -41,9 +41,7 @@ class VersionIndexer:
 
     async def reindex_version(self, version_id: uuid.UUID) -> list[ContentSegment]:
         version = await get_version(self.session, version_id)
-        await self.session.execute(
-            delete(ContentSegment).where(ContentSegment.context_object_version_id == version_id)
-        )
+        await self.session.execute(delete(ContentSegment).where(ContentSegment.context_object_version_id == version_id))
         indexable = build_indexable_text(
             markdown_body=version.markdown_body,
             plain_language=version.plain_language,

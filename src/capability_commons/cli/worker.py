@@ -1,4 +1,5 @@
 """Outbox event consumer — polls for unprocessed events and dispatches handlers."""
+
 from __future__ import annotations
 
 import asyncio
@@ -47,9 +48,7 @@ class OutboxWorker:
         from capability_commons.db.models import RateLimitLog
 
         cutoff = datetime.now(timezone.utc) - timedelta(hours=1)
-        result = await session.execute(
-            delete(RateLimitLog).where(RateLimitLog.window_start < cutoff)
-        )
+        result = await session.execute(delete(RateLimitLog).where(RateLimitLog.window_start < cutoff))
         await session.commit()
         return result.rowcount or 0
 
@@ -99,11 +98,13 @@ class OutboxWorker:
             # process (uncaught, escaping run()'s while loop), leaving a
             # growing backlog with nobody consuming it.
             async with self.session_factory() as session:
-                event = (await session.execute(
-                    select(OutboxEvent)
-                    .where(OutboxEvent.id == event_id, OutboxEvent.processed_at.is_(None))
-                    .with_for_update(skip_locked=True)
-                )).scalar_one_or_none()
+                event = (
+                    await session.execute(
+                        select(OutboxEvent)
+                        .where(OutboxEvent.id == event_id, OutboxEvent.processed_at.is_(None))
+                        .with_for_update(skip_locked=True)
+                    )
+                ).scalar_one_or_none()
                 if event is None:
                     continue  # already processed or claimed by another worker
 
@@ -118,7 +119,8 @@ class OutboxWorker:
                     await session.rollback()
                     logger.exception(
                         "Failed to process event %d (%s) — leaving unprocessed for retry",
-                        event_id, event_type,
+                        event_id,
+                        event_type,
                     )
                     continue
 
@@ -140,6 +142,7 @@ class OutboxWorker:
     async def _handle_version_published(self, session, event: OutboxEvent) -> None:
         """Reindex the published version for search."""
         import uuid
+
         from capability_commons.search.indexer import VersionIndexer
 
         version_id = uuid.UUID(event.payload.get("version_id", str(event.aggregate_id)))
@@ -150,6 +153,7 @@ class OutboxWorker:
     async def _handle_version_reindexed(self, session, event: OutboxEvent) -> None:
         """Generate embeddings for reindexed segments."""
         import uuid
+
         from capability_commons.config import get_settings
 
         settings = get_settings()
@@ -159,6 +163,7 @@ class OutboxWorker:
 
         version_id = uuid.UUID(event.payload.get("version_id", str(event.aggregate_id)))
         from capability_commons.services.embedding import EmbeddingService
+
         embedding_svc = EmbeddingService(session)
         count = await embedding_svc.embed_version(version_id)
         logger.info("Generated embeddings for version %s (%d segments)", version_id, count)
@@ -175,6 +180,7 @@ def main() -> None:
     args = parser.parse_args()
 
     from capability_commons.config import get_settings
+
     settings = get_settings()
 
     db_url = args.db_url or settings.database_url

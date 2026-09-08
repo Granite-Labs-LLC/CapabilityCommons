@@ -1,5 +1,6 @@
-import pytest
 from unittest.mock import AsyncMock
+
+import pytest
 
 from capability_commons.services.embedding import EmbeddingProvider, EmbeddingService
 
@@ -20,6 +21,7 @@ async def test_embed_version_no_provider():
 
 def test_fake_provider_returns_correct_count():
     import asyncio
+
     provider = FakeProvider()
     result = asyncio.run(provider.embed(["hello", "world"]))
     assert len(result) == 2

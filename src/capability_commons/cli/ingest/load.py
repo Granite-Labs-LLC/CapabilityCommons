@@ -1,4 +1,5 @@
 """Pass 7: Validate, write seed-compatible output, and load to database."""
+
 from __future__ import annotations
 
 import shutil
@@ -80,6 +81,7 @@ async def run_load(
 
     if db_url is None:
         from capability_commons.config import get_settings
+
         db_url = get_settings().database_url
 
     await seed_graph(project.output_dir, db_url)

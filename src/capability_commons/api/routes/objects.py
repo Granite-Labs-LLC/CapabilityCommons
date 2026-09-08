@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 
 from capability_commons.api.deps import ActorID, CurrentWorkspace, DBSession
 from capability_commons.schemas.objects import (
@@ -16,7 +16,6 @@ from capability_commons.schemas.objects import (
     PublishVersionResponse,
     UpdateVersionRequest,
     VersionDetailResponse,
-    VersionListResponse,
     VersionResponse,
 )
 from capability_commons.schemas.pagination import PaginatedResponse, PaginationParams
@@ -53,9 +52,11 @@ async def list_objects(
     params = PaginationParams(cursor=cursor, limit=min(limit, 100))
     service = RegistryService(session)
     objects, total = await service.list_objects(
-        workspace.id, cursor_id=params.decode_cursor(), limit=params.limit,
+        workspace.id,
+        cursor_id=params.decode_cursor(),
+        limit=params.limit,
     )
-    items = objects[:params.limit]
+    items = objects[: params.limit]
     has_more = len(objects) > params.limit
     next_cursor = PaginatedResponse.encode_cursor(items[-1].id) if has_more and items else None
     return PaginatedResponse(
@@ -66,7 +67,9 @@ async def list_objects(
 
 
 @router.post("/objects", response_model=ObjectResponse)
-async def create_object(request: CreateObjectRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> ObjectResponse:
+async def create_object(
+    request: CreateObjectRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace
+) -> ObjectResponse:
     request.workspace_id = workspace.id
     service = RegistryService(session)
     obj = await service.create_object(request, actor_id=actor_id)
@@ -74,14 +77,18 @@ async def create_object(request: CreateObjectRequest, session: DBSession, actor_
 
 
 @router.post("/objects/{object_id}/versions", response_model=VersionResponse)
-async def create_version(object_id: uuid.UUID, request: CreateVersionRequest, session: DBSession, actor_id: ActorID) -> VersionResponse:
+async def create_version(
+    object_id: uuid.UUID, request: CreateVersionRequest, session: DBSession, actor_id: ActorID
+) -> VersionResponse:
     service = RegistryService(session)
     version = await service.create_version(object_id, request, actor_id=actor_id)
     return VersionResponse.model_validate(version, from_attributes=True)
 
 
 @router.patch("/objects/{object_id}/versions/{version_id}", response_model=VersionResponse)
-async def update_version(object_id: uuid.UUID, version_id: uuid.UUID, request: UpdateVersionRequest, session: DBSession) -> VersionResponse:
+async def update_version(
+    object_id: uuid.UUID, version_id: uuid.UUID, request: UpdateVersionRequest, session: DBSession
+) -> VersionResponse:
     service = RegistryService(session)
     version = await service.update_draft_version(object_id, version_id, request)
     return VersionResponse.model_validate(version, from_attributes=True)
@@ -116,7 +123,9 @@ async def publish_check(object_id: uuid.UUID, version_id: uuid.UUID, session: DB
 
 
 @router.post("/objects/{object_id}/versions/{version_id}/facets", response_model=VersionDetailResponse)
-async def attach_facets(object_id: uuid.UUID, version_id: uuid.UUID, request: AttachFacetsRequest, session: DBSession) -> VersionDetailResponse:
+async def attach_facets(
+    object_id: uuid.UUID, version_id: uuid.UUID, request: AttachFacetsRequest, session: DBSession
+) -> VersionDetailResponse:
     service = RegistryService(session)
     version = await service.attach_facets(object_id, version_id, [facet.model_dump() for facet in request.facets])
     await session.refresh(version, attribute_names=["facets", "entities", "review_records"])
@@ -124,7 +133,9 @@ async def attach_facets(object_id: uuid.UUID, version_id: uuid.UUID, request: At
 
 
 @router.post("/objects/{object_id}/versions/{version_id}/entities", response_model=VersionDetailResponse)
-async def attach_entities(object_id: uuid.UUID, version_id: uuid.UUID, request: AttachEntitiesRequest, session: DBSession) -> VersionDetailResponse:
+async def attach_entities(
+    object_id: uuid.UUID, version_id: uuid.UUID, request: AttachEntitiesRequest, session: DBSession
+) -> VersionDetailResponse:
     service = RegistryService(session)
     version = await service.attach_entities(object_id, version_id, [entity.model_dump() for entity in request.entities])
     await session.refresh(version, attribute_names=["facets", "entities", "review_records"])

@@ -1,1 +1,1 @@
-from .indexer import chunk_text, VersionIndexer
+from .indexer import VersionIndexer, chunk_text

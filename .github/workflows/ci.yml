@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.14"
-      - run: pip install mypy
+      - run: pip install -e ".[dev]"
       - run: mypy src/capability_commons/
 
   test:
@@ -35,8 +35,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.14"
-      - run: pip install -e ".[dev]"
-      - run: pytest tests/ --ignore=tests/test_integration.py --ignore=tests/test_integration_audit.py --ignore=tests/test_integration_storage.py --ignore=tests/test_integration_embedding.py --ignore=tests/test_integration_publication.py --ignore=tests/test_integration_search.py --ignore=tests/test_integration_retrieval.py -v
+      - run: pip install -e ".[dev,ingest]"
+      # polars has no compiled runtime for Python 3.14 yet (confirmed via
+      # polars-runtime-32's own PyPI classifiers, which list only 3.10-3.13)
+      # -- these 5 deselects are the tests that actually exercise polars at
+      # runtime, not a blanket ingest skip. See STATUS.md's Tests section.
+      - run: >
+          pytest tests/ --ignore=tests/test_integration.py --ignore=tests/test_integration_audit.py --ignore=tests/test_integration_storage.py --ignore=tests/test_integration_embedding.py --ignore=tests/test_integration_publication.py --ignore=tests/test_integration_search.py --ignore=tests/test_integration_retrieval.py
+          --deselect tests/test_ingest_passes.py::TestExtractPass::test_writes_matrix_csv
+          --deselect tests/test_ingest_passes.py::TestExtractPass::test_sections_filter
+          --deselect tests/test_ingest_passes.py::TestDraftPass::test_writes_draft_yaml
+          --deselect tests/test_ingest_passes.py::TestDraftPass::test_skip_existing
+          --deselect tests/test_ingest_passes.py::TestEdgesPass::test_writes_edges_csv
+          -v
 
   integration:
     runs-on: ubuntu-latest

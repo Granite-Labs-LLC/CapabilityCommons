@@ -1,4 +1,5 @@
 """Pass 4: Canonicalize and deduplicate drafts via LLM + fuzzy matching."""
+
 from __future__ import annotations
 
 import shutil
@@ -54,7 +55,7 @@ def find_similar_groups(
         summary_a = drafts[slug_a].get("summary_short", "")
         domain_a = drafts[slug_a].get("primary_domain", "")
 
-        for slug_b in slugs[i + 1:]:
+        for slug_b in slugs[i + 1 :]:
             if slug_b in visited:
                 continue
             domain_b = drafts[slug_b].get("primary_domain", "")
@@ -92,16 +93,10 @@ def _merge_lineage(originals: list[dict]) -> tuple[list[str], list[dict]]:
 
 def _apply_merge(decision, drafts, project, merged_dir, console) -> None:
     if not decision.merged_object:
-        console.print(
-            f"    [red]merge skipped[/red] {decision.canonical_slug}: "
-            "no merged_object returned"
-        )
+        console.print(f"    [red]merge skipped[/red] {decision.canonical_slug}: no merged_object returned")
         return
     if not decision.deprecated_draft_ids:
-        console.print(
-            f"    [red]merge skipped[/red] {decision.canonical_slug}: "
-            "no deprecated_draft_ids"
-        )
+        console.print(f"    [red]merge skipped[/red] {decision.canonical_slug}: no deprecated_draft_ids")
         return
 
     merged = dict(decision.merged_object)
@@ -129,23 +124,16 @@ def _apply_merge(decision, drafts, project, merged_dir, console) -> None:
             shutil.move(str(src), str(merged_dir / src.name))
 
     console.print(
-        f"    [green]merge[/green] -> {decision.canonical_slug} "
-        f"(deprecated: {decision.deprecated_draft_ids})"
+        f"    [green]merge[/green] -> {decision.canonical_slug} (deprecated: {decision.deprecated_draft_ids})"
     )
 
 
 def _apply_split(decision, drafts, project, split_dir, console) -> None:
     if not decision.split_objects:
-        console.print(
-            f"    [red]split skipped[/red] {decision.canonical_slug}: "
-            "no split_objects returned"
-        )
+        console.print(f"    [red]split skipped[/red] {decision.canonical_slug}: no split_objects returned")
         return
     if not decision.deprecated_draft_ids:
-        console.print(
-            f"    [red]split skipped[/red] {decision.canonical_slug}: "
-            "no deprecated_draft_ids"
-        )
+        console.print(f"    [red]split skipped[/red] {decision.canonical_slug}: no deprecated_draft_ids")
         return
 
     parents = [drafts[d] for d in decision.deprecated_draft_ids if d in drafts]
@@ -174,8 +162,7 @@ def _apply_split(decision, drafts, project, split_dir, console) -> None:
             shutil.move(str(src), str(split_dir / src.name))
 
     console.print(
-        f"    [blue]split[/blue] {decision.canonical_slug} -> {written} "
-        f"(original: {decision.deprecated_draft_ids})"
+        f"    [blue]split[/blue] {decision.canonical_slug} -> {written} (original: {decision.deprecated_draft_ids})"
     )
 
 
@@ -222,9 +209,7 @@ async def run_canonicalize(
 
     for group in groups:
         group_drafts = {slug: drafts[slug] for slug in group}
-        drafts_text = "\n---\n".join(
-            yaml.dump(obj, default_flow_style=False) for obj in group_drafts.values()
-        )
+        drafts_text = "\n---\n".join(yaml.dump(obj, default_flow_style=False) for obj in group_drafts.values())
 
         user_msg = USER_TEMPLATE.format(drafts=drafts_text)
 

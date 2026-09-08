@@ -1,4 +1,5 @@
 """Tests for health endpoint."""
+
 from __future__ import annotations
 
 import inspect
@@ -25,6 +26,7 @@ def test_detailed_health_accepts_session():
 def test_check_migrations_function_exists():
     """Migration check function should be importable."""
     from capability_commons.main import check_pending_migrations
+
     assert callable(check_pending_migrations)
 
 

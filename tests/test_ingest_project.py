@@ -1,4 +1,5 @@
 """Tests for ingestion project directory management."""
+
 from __future__ import annotations
 
 import pytest
@@ -18,12 +19,14 @@ class TestIngestProjectInit:
         proj = IngestProject.init(
             projects_root=projects_root,
             name="test-project",
-            sources=[{
-                "id": "src.test",
-                "file": "/tmp/test.pdf",
-                "title": "Test Book",
-                "source_kind": "BOOK",
-            }],
+            sources=[
+                {
+                    "id": "src.test",
+                    "file": "/tmp/test.pdf",
+                    "title": "Test Book",
+                    "source_kind": "BOOK",
+                }
+            ],
         )
         assert (proj.root / "manifest.yaml").exists()
         assert (proj.root / "sources").is_dir()
@@ -39,12 +42,14 @@ class TestIngestProjectInit:
         proj = IngestProject.init(
             projects_root=projects_root,
             name="test-project",
-            sources=[{
-                "id": "src.test",
-                "file": "/tmp/test.pdf",
-                "title": "Test Book",
-                "source_kind": "BOOK",
-            }],
+            sources=[
+                {
+                    "id": "src.test",
+                    "file": "/tmp/test.pdf",
+                    "title": "Test Book",
+                    "source_kind": "BOOK",
+                }
+            ],
         )
         manifest = yaml.safe_load((proj.root / "manifest.yaml").read_text())
         assert manifest["name"] == "test-project"

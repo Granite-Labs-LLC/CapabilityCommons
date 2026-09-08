@@ -19,7 +19,9 @@ router = APIRouter()
 
 
 @router.post("/evidence/sources", response_model=EvidenceSourceResponse)
-async def create_source(request: CreateEvidenceSourceRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace) -> EvidenceSourceResponse:
+async def create_source(
+    request: CreateEvidenceSourceRequest, session: DBSession, actor_id: ActorID, workspace: CurrentWorkspace
+) -> EvidenceSourceResponse:
     data = request.model_dump()
     data["workspace_id"] = workspace.id
     service = EvidenceService(session)
@@ -28,7 +30,9 @@ async def create_source(request: CreateEvidenceSourceRequest, session: DBSession
 
 
 @router.post("/evidence/spans", response_model=EvidenceSpanResponse)
-async def create_span(request: CreateEvidenceSpanRequest, session: DBSession, workspace: CurrentWorkspace) -> EvidenceSpanResponse:
+async def create_span(
+    request: CreateEvidenceSpanRequest, session: DBSession, workspace: CurrentWorkspace
+) -> EvidenceSpanResponse:
     service = EvidenceService(session)
     span = await service.create_span(**request.model_dump())
     return EvidenceSpanResponse.model_validate(span, from_attributes=True)
@@ -42,7 +46,9 @@ async def attach_edge_citation(request: EdgeCitationRequest, session: DBSession,
 
 
 @router.get("/objects/{object_id}/versions/{version_id}/citations", response_model=list[CitationResponse])
-async def list_citations(object_id: uuid.UUID, version_id: uuid.UUID, session: DBSession, workspace: CurrentWorkspace) -> list[CitationResponse]:
+async def list_citations(
+    object_id: uuid.UUID, version_id: uuid.UUID, session: DBSession, workspace: CurrentWorkspace
+) -> list[CitationResponse]:
     service = EvidenceService(session)
     citations = await service.list_citations_for_version(version_id)
     return [CitationResponse.model_validate(item) for item in citations]

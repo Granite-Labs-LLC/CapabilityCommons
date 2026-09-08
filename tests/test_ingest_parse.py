@@ -1,10 +1,10 @@
 """Tests for Pass 0: PDF parsing to segments."""
+
 from __future__ import annotations
 
 from unittest.mock import patch
 
 import orjson
-import pytest
 
 from capability_commons.cli.ingest.models import SourceSegment
 from capability_commons.cli.ingest.parse import (
@@ -81,12 +81,7 @@ Treat water before storage.
     def test_marker_paginate_separators_are_normalized(self):
         # Format produced by marker-pdf with paginate_output=True.
         sep = "-" * 48
-        md = (
-            f"\n\n{{0}}{sep}\n\n"
-            "# Intro\nIntro on first page.\n"
-            f"\n\n{{1}}{sep}\n\n"
-            "# Body\nBody on second page.\n"
-        )
+        md = f"\n\n{{0}}{sep}\n\n# Intro\nIntro on first page.\n\n\n{{1}}{sep}\n\n# Body\nBody on second page.\n"
         segs = markdown_to_segments(md, source_id="src.test")
         assert [(s.page_start, s.page_end) for s in segs] == [(1, 1), (2, 2)]
         for s in segs:
@@ -100,12 +95,14 @@ class TestRunParse:
         proj = IngestProject.init(
             projects_root=projects_root,
             name="test-parse",
-            sources=[{
-                "id": "src.test",
-                "file": "sources/test.pdf",
-                "title": "Test",
-                "source_kind": "BOOK",
-            }],
+            sources=[
+                {
+                    "id": "src.test",
+                    "file": "sources/test.pdf",
+                    "title": "Test",
+                    "source_kind": "BOOK",
+                }
+            ],
         )
         # Mock marker to return known markdown
         mock_md = "# Chapter 1\nSome content.\n## Section A\nMore content.\n"

@@ -1,4 +1,5 @@
 """Integration tests for the audit service against real Postgres."""
+
 from __future__ import annotations
 
 import uuid
@@ -17,12 +18,14 @@ async def test_create_object_emits_audit_event(db_session, workspace):
     svc = RegistryService(db_session)
     audit = AuditService(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-audit-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Audit Test Object",
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-audit-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Audit Test Object",
+        )
+    )
     await db_session.commit()
 
     events = await audit.get_object_history(obj.id)
@@ -37,18 +40,23 @@ async def test_publish_emits_audit_event(db_session, workspace):
     svc = RegistryService(db_session)
     audit = AuditService(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-audit-pub-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Audit Publish Test",
-    ))
-    ver = await svc.create_version(obj.id, CreateVersionRequest(
-        title="Audit Publish v1",
-        plain_language="Test.",
-        markdown_body="# Test",
-        structured_data={"definition": "Test."},
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-audit-pub-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Audit Publish Test",
+        )
+    )
+    ver = await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Audit Publish v1",
+            plain_language="Test.",
+            markdown_body="# Test",
+            structured_data={"definition": "Test."},
+        ),
+    )
     await svc.publish_version(obj.id, ver.id)
     await db_session.commit()
 
@@ -66,18 +74,21 @@ async def test_workspace_timeline(db_session, workspace):
     audit = AuditService(db_session)
 
     for i in range(3):
-        await svc.create_object(CreateObjectRequest(
-            workspace_id=workspace.id,
-            slug=f"test-audit-tl-{i}-{uuid.uuid4().hex[:6]}",
-            type=COType.CONCEPT_NOTE,
-            canonical_title=f"Timeline Test {i}",
-        ))
+        await svc.create_object(
+            CreateObjectRequest(
+                workspace_id=workspace.id,
+                slug=f"test-audit-tl-{i}-{uuid.uuid4().hex[:6]}",
+                type=COType.CONCEPT_NOTE,
+                canonical_title=f"Timeline Test {i}",
+            )
+        )
     await db_session.commit()
 
     timeline = await audit.get_workspace_timeline(workspace.id)
     assert len(timeline) >= 3
 
     creates = await audit.get_workspace_timeline(
-        workspace.id, event_type=AuditEventType.OBJECT_CREATED,
+        workspace.id,
+        event_type=AuditEventType.OBJECT_CREATED,
     )
     assert all(e.event_type == AuditEventType.OBJECT_CREATED for e in creates)

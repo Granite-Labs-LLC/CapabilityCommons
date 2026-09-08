@@ -40,17 +40,12 @@ def _attribute_predicates(attrs: PublicSearchFilters | None):
     if attrs.risk_band:
         try:
             target = RiskBand(attrs.risk_band)
-            allowed = [
-                rb for rb, rank in _RISK_RANK.items() if rank <= _RISK_RANK[target]
-            ]
+            allowed = [rb for rb, rank in _RISK_RANK.items() if rank <= _RISK_RANK[target]]
             preds.append(ContextObjectVersion.risk_band.in_(allowed))
         except ValueError:
             pass
     if attrs.beginner_safe:
-        allowed = [
-            rb for rb, rank in _RISK_RANK.items()
-            if rank <= _RISK_RANK[_BEGINNER_SAFE_RISK_CEILING]
-        ]
+        allowed = [rb for rb, rank in _RISK_RANK.items() if rank <= _RISK_RANK[_BEGINNER_SAFE_RISK_CEILING]]
         preds.append(ContextObjectVersion.risk_band.in_(allowed))
         # Also cap difficulty for "beginner-safe" to ≤3 unless caller already
         # asked for tighter.
@@ -58,11 +53,9 @@ def _attribute_predicates(attrs: PublicSearchFilters | None):
             preds.append(ContextObjectVersion.difficulty <= 3)
     if attrs.cost_band:
         try:
-            target = CostBand(attrs.cost_band)
-            allowed = [
-                cb for cb, rank in _COST_RANK.items() if rank <= _COST_RANK[target]
-            ]
-            preds.append(ContextObjectVersion.cost_band.in_(allowed))
+            cost_target = CostBand(attrs.cost_band)
+            allowed_costs = [cb for cb, rank in _COST_RANK.items() if rank <= _COST_RANK[cost_target]]
+            preds.append(ContextObjectVersion.cost_band.in_(allowed_costs))
         except ValueError:
             pass
     if attrs.language_code:
@@ -137,7 +130,9 @@ class PostgresSearchAdapter(SearchAdapter):
         for predicate in _attribute_predicates(attributes):
             stmt = stmt.where(predicate)
 
-        result = await self.session.execute(stmt.order_by(rank.desc(), ContextObjectVersion.created_at.desc()).limit(top_k))
+        result = await self.session.execute(
+            stmt.order_by(rank.desc(), ContextObjectVersion.created_at.desc()).limit(top_k)
+        )
         rows = result.all()
         version_ids = [row[0].id for row in rows]
         facets_by_version = await self._load_facets(version_ids)
@@ -192,9 +187,7 @@ class PostgresSearchAdapter(SearchAdapter):
         attributes: PublicSearchFilters | None = None,
     ) -> list[SearchHit]:
         """Pure vector search via pgvector cosine similarity."""
-        vector_score = (
-            1 - ContentSegment.embedding.cosine_distance(query_embedding)
-        ).label("vector_score")
+        vector_score = (1 - ContentSegment.embedding.cosine_distance(query_embedding)).label("vector_score")
 
         stmt = (
             select(
@@ -233,9 +226,9 @@ class PostgresSearchAdapter(SearchAdapter):
         for predicate in _attribute_predicates(attributes):
             stmt = stmt.where(predicate)
 
-        stmt = stmt.group_by(ContentSegment.context_object_version_id).order_by(
-            func.max(vector_score).desc()
-        ).limit(top_k)
+        stmt = (
+            stmt.group_by(ContentSegment.context_object_version_id).order_by(func.max(vector_score).desc()).limit(top_k)
+        )
 
         result = await self.session.execute(stmt)
         version_score_map = {row[0]: float(row[1]) for row in result.all()}

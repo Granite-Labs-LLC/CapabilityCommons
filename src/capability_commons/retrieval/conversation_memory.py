@@ -4,11 +4,12 @@ Stores and retrieves conversation turns so follow-up queries can
 incorporate context from prior turns. Each turn records the query,
 resolved intent, and a summary of the answer for context injection.
 """
+
 from __future__ import annotations
 
 import uuid
 
-from sqlalchemy import select, func
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from capability_commons.db.models import ConversationTurn
@@ -20,9 +21,7 @@ class ConversationMemory:
     def __init__(self, session: AsyncSession) -> None:
         self.session = session
 
-    async def get_or_create_conversation_id(
-        self, conversation_id: uuid.UUID | None
-    ) -> tuple[uuid.UUID, bool]:
+    async def get_or_create_conversation_id(self, conversation_id: uuid.UUID | None) -> tuple[uuid.UUID, bool]:
         """Return (conversation_id, is_new). Generates a new ID if None provided."""
         if conversation_id is None:
             return uuid.uuid4(), True
@@ -61,8 +60,7 @@ class ConversationMemory:
         """Save a new turn to the conversation."""
         # Get next turn number
         max_turn = await self.session.scalar(
-            select(func.max(ConversationTurn.turn_number))
-            .where(ConversationTurn.conversation_id == conversation_id)
+            select(func.max(ConversationTurn.turn_number)).where(ConversationTurn.conversation_id == conversation_id)
         )
         turn_number = (max_turn or 0) + 1
 

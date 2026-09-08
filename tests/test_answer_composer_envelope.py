@@ -1,4 +1,5 @@
 """compose_answer must surface the implementation envelope (PLAN P1-8)."""
+
 from __future__ import annotations
 
 import uuid
@@ -11,7 +12,6 @@ from capability_commons.schemas.retrieval import (
     EvidencePackResponse,
     RetrievalPlan,
 )
-
 
 _ENVELOPE = {
     "smallest_viable_version": "Pour 1 gallon into a clean food-grade jug.",
@@ -115,8 +115,11 @@ def _make_pack(intent: RetrievalIntent, node_type: str = "concept_note", **extra
     )
     plan = RetrievalPlan(
         intent=intent,
-        search_top_k=10, graph_depth=1, iteration_limit=1,
-        edge_types=[], rerank_weights={},
+        search_top_k=10,
+        graph_depth=1,
+        iteration_limit=1,
+        edge_types=[],
+        rerank_weights={},
     )
     return EvidencePackResponse(
         run_id=uuid.uuid4(),
@@ -187,9 +190,13 @@ def test_contradictions_surface_on_response():
     """ANSWER-1: contradictions from the evidence pack flow to the
     AskResponse.contradictions list (previously dropped)."""
     pack = _make_pack(RetrievalIntent.HOW_TO)
-    pack.contradictions = [{
-        "dimension": "safety", "severity": "high", "status": "open",
-    }]
+    pack.contradictions = [
+        {
+            "dimension": "safety",
+            "severity": "high",
+            "status": "open",
+        }
+    ]
     resp = compose_answer(pack, RetrievalIntent.HOW_TO, _request())
     assert len(resp.contradictions) == 1
     assert "Conflicting evidence" in resp.contradictions[0]
@@ -200,11 +207,13 @@ def test_next_steps_promote_to_related_objects():
     """ANSWER-1: graph-expansion next_steps the planner produced now
     appear in related_objects (previously dropped on the floor)."""
     pack = _make_pack(RetrievalIntent.HOW_TO)
-    pack.next_steps = [{
-        "slug": "water.advanced-treatment",
-        "title": "Advanced water treatment",
-        "role": "next-step",
-    }]
+    pack.next_steps = [
+        {
+            "slug": "water.advanced-treatment",
+            "title": "Advanced water treatment",
+            "role": "next-step",
+        }
+    ]
     resp = compose_answer(pack, RetrievalIntent.HOW_TO, _request())
     slugs = [r.slug for r in resp.related_objects]
     assert "water.advanced-treatment" in slugs

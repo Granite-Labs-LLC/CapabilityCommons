@@ -5,9 +5,10 @@ from datetime import datetime, timezone
 from decimal import Decimal
 from typing import Any
 
-from sqlalchemy import and_, delete, func, select, update
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from capability_commons.audit.service import AuditService
 from capability_commons.db.models import (
     ContextObject,
     ContextObjectEntity,
@@ -15,24 +16,30 @@ from capability_commons.db.models import (
     ContextObjectVersion,
     Edge,
 )
-from capability_commons.audit.service import AuditService
-from capability_commons.services.publish_gate import PublishGate
 from capability_commons.domain.enums import (
     AuditEventType,
     COType,
     EdgeType,
+    FacetType,
     LifecycleState,
     NodeKind,
     ProvenanceMethod,
     RelationStatus,
     ValidityStatus,
     VisibilityType,
-    FacetType,
 )
 from capability_commons.schemas.objects import CreateObjectRequest, CreateVersionRequest, UpdateVersionRequest
 from capability_commons.schemas.structured_data import validate_structured_data_or_raise
 from capability_commons.services.exceptions import ConflictError, ForbiddenError, NotFoundError, ValidationError
-from capability_commons.services.helpers import add_outbox_event, assert_node_exists, get_entity, get_object, get_version, get_workspace
+from capability_commons.services.helpers import (
+    add_outbox_event,
+    assert_node_exists,
+    get_entity,
+    get_object,
+    get_version,
+    get_workspace,
+)
+from capability_commons.services.publish_gate import PublishGate
 
 
 class RegistryService:
@@ -306,7 +313,9 @@ class RegistryService:
         await self.session.refresh(edge)
         return edge
 
-    async def publish_version(self, object_id: uuid.UUID, version_id: uuid.UUID, bypass_gate: bool = False) -> ContextObject:
+    async def publish_version(
+        self, object_id: uuid.UUID, version_id: uuid.UUID, bypass_gate: bool = False
+    ) -> ContextObject:
         obj = await get_object(self.session, object_id)
         version = await self._assert_version_belongs(object_id, version_id)
         validate_structured_data_or_raise(obj.type, version.structured_data)
@@ -316,9 +325,7 @@ class RegistryService:
             gate = PublishGate(self.session)
             result = await gate.check(version, obj.type)
             if not result.passed:
-                raise ValueError(
-                    f"Publish gate blocked: {'; '.join(result.blockers)}"
-                )
+                raise ValueError(f"Publish gate blocked: {'; '.join(result.blockers)}")
 
         now = datetime.now(timezone.utc)
 
@@ -396,7 +403,9 @@ class RegistryService:
         object_types: list[COType] | None = None,
         visibility: VisibilityType | None = VisibilityType.PUBLIC,
     ) -> list[ContextObject]:
-        stmt = select(ContextObject).where(ContextObject.workspace_id == workspace_id, ContextObject.current_version_id.is_not(None))
+        stmt = select(ContextObject).where(
+            ContextObject.workspace_id == workspace_id, ContextObject.current_version_id.is_not(None)
+        )
         if object_types:
             stmt = stmt.where(ContextObject.type.in_(object_types))
         if visibility is not None:
@@ -427,9 +436,7 @@ class RegistryService:
         cursor_id: uuid.UUID | None = None,
         limit: int = 20,
     ) -> tuple[list[ContextObject], int]:
-        count_stmt = select(func.count(ContextObject.id)).where(
-            ContextObject.workspace_id == workspace_id
-        )
+        count_stmt = select(func.count(ContextObject.id)).where(ContextObject.workspace_id == workspace_id)
         total = (await self.session.execute(count_stmt)).scalar() or 0
 
         stmt = (
@@ -443,10 +450,7 @@ class RegistryService:
             if cursor_obj is not None:
                 stmt = stmt.where(
                     (ContextObject.created_at < cursor_obj.created_at)
-                    | (
-                        (ContextObject.created_at == cursor_obj.created_at)
-                        & (ContextObject.id < cursor_id)
-                    )
+                    | ((ContextObject.created_at == cursor_obj.created_at) & (ContextObject.id < cursor_id))
                 )
 
         result = await self.session.execute(stmt)
@@ -471,12 +475,16 @@ class RegistryService:
         if edge_type == EdgeType.CONTAINS and src_node_kind != NodeKind.OBJECT_VERSION:
             raise ValidationError("contains edges must originate from object versions")
 
-        if edge_type in {
-            EdgeType.REQUIRES_TOOL,
-            EdgeType.REQUIRES_MATERIAL,
-            EdgeType.APPLIES_IN,
-            EdgeType.ADAPTED_FOR,
-        } and dst_node_kind != NodeKind.ENTITY:
+        if (
+            edge_type
+            in {
+                EdgeType.REQUIRES_TOOL,
+                EdgeType.REQUIRES_MATERIAL,
+                EdgeType.APPLIES_IN,
+                EdgeType.ADAPTED_FOR,
+            }
+            and dst_node_kind != NodeKind.ENTITY
+        ):
             raise ValidationError(f"{edge_type.value} edges normally target entities")
 
         if edge_type in {EdgeType.SUPERSEDES, EdgeType.DEPRECATED_BY, EdgeType.CORRECTED_BY}:
@@ -497,4 +505,3 @@ class RegistryService:
             dst_version = await get_version(self.session, dst_id)
             if src_version.context_object.type != dst_version.context_object.type:
                 raise ValidationError("translated_from must connect objects of equivalent semantic type")
-

@@ -11,11 +11,11 @@ Usage:
         --api  http://127.0.0.1:8100 \\
         --out  eval/reports/2026-05-14.md
 """
+
 from __future__ import annotations
 
 import argparse
 import asyncio
-import json
 import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -171,16 +171,10 @@ def _render_report(results: list[QueryResult], api_base: str) -> str:
     ]
     for r in results:
         mark = "✅" if r.passed else "❌"
-        intent_cell = (
-            "—" if r.entry.intent is None
-            else ("✓" if r.ask_intent_match else f"✗ ({r.entry.intent})")
-        )
+        intent_cell = "—" if r.entry.intent is None else ("✓" if r.ask_intent_match else f"✗ ({r.entry.intent})")
         action = "yes" if r.ask_has_action_now else "—"
         top = ", ".join(r.search_top_slugs[:3]) or "—"
-        lines.append(
-            f"| {mark} | {r.entry.query[:60]} | {intent_cell} | "
-            f"{r.ask_citation_count} | {action} | `{top}` |"
-        )
+        lines.append(f"| {mark} | {r.entry.query[:60]} | {intent_cell} | {r.ask_citation_count} | {action} | `{top}` |")
 
     failures = [r for r in results if not r.passed]
     if failures:
@@ -190,22 +184,16 @@ def _render_report(results: list[QueryResult], api_base: str) -> str:
             lines.append(f"- error: `{r.error or 'none'}`")
             if not r.expects_any_hit:
                 lines.append(
-                    f"- expects_any missed: `{r.entry.expects_any}`; "
-                    f"got `{r.search_top_slugs[:r.entry.top_n]}`"
+                    f"- expects_any missed: `{r.entry.expects_any}`; got `{r.search_top_slugs[: r.entry.top_n]}`"
                 )
             if not r.expects_all_hit:
                 lines.append(
-                    f"- expects_all missed: `{r.entry.expects_all}`; "
-                    f"got `{r.search_top_slugs[:r.entry.top_n]}`"
+                    f"- expects_all missed: `{r.entry.expects_all}`; got `{r.search_top_slugs[: r.entry.top_n]}`"
                 )
             if r.ask_citation_count < r.entry.min_citations:
-                lines.append(
-                    f"- citations: {r.ask_citation_count} < {r.entry.min_citations}"
-                )
+                lines.append(f"- citations: {r.ask_citation_count} < {r.entry.min_citations}")
             if r.ask_intent_match is False:
-                lines.append(
-                    f"- intent mismatch: expected `{r.entry.intent}`"
-                )
+                lines.append(f"- intent mismatch: expected `{r.entry.intent}`")
             lines.append("")
 
     return "\n".join(lines)

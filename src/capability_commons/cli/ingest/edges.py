@@ -1,4 +1,5 @@
 """Pass 5: Extract typed edges from the object set via LLM."""
+
 from __future__ import annotations
 
 import orjson
@@ -55,14 +56,16 @@ async def run_edges(
         with open(draft_file) as f:
             obj = yaml.safe_load(f)
         slug = obj.get("slug") or obj.get("id", draft_file.stem)
-        summaries.append({
-            "slug": slug,
-            "type": obj.get("co_type") or obj.get("seed_type", ""),
-            "title": obj.get("canonical_title") or obj.get("title", ""),
-            "summary": obj.get("summary_short", ""),
-            "requires": obj.get("requires", []),
-            "suggested_edges": obj.get("suggested_edges", []),
-        })
+        summaries.append(
+            {
+                "slug": slug,
+                "type": obj.get("co_type") or obj.get("seed_type", ""),
+                "title": obj.get("canonical_title") or obj.get("title", ""),
+                "summary": obj.get("summary_short", ""),
+                "requires": obj.get("requires", []),
+                "suggested_edges": obj.get("suggested_edges", []),
+            }
+        )
 
     console.print(f"  {len(summaries)} objects for edge extraction")
 
@@ -74,12 +77,14 @@ async def run_edges(
             key = (s["slug"], edge["target_id"], edge["edge_type"])
             if key not in existing_edges:
                 existing_edges.add(key)
-                suggested.append({
-                    "source_id": s["slug"],
-                    "target_id": edge["target_id"],
-                    "edge_type": edge["edge_type"],
-                    "confidence": edge.get("confidence", 0.8),
-                })
+                suggested.append(
+                    {
+                        "source_id": s["slug"],
+                        "target_id": edge["target_id"],
+                        "edge_type": edge["edge_type"],
+                        "confidence": edge.get("confidence", 0.8),
+                    }
+                )
 
     # Estimate and confirm
     objects_text = orjson.dumps(summaries).decode()

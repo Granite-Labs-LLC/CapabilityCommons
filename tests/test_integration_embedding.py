@@ -1,4 +1,5 @@
 """Integration tests for the embedding pipeline: publish → outbox → index → embed."""
+
 from __future__ import annotations
 
 import uuid
@@ -31,18 +32,23 @@ async def test_publish_creates_outbox_event(db_session, workspace):
     """Publishing a version should emit a version.published outbox event."""
     svc = RegistryService(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-embed-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Embedding Test Object",
-    ))
-    ver = await svc.create_version(obj.id, CreateVersionRequest(
-        title="Embedding Test v1",
-        plain_language="A test for the embedding pipeline.",
-        markdown_body="# Embedding Test\n\nThis tests the full pipeline.",
-        structured_data={"definition": "A test concept."},
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-embed-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Embedding Test Object",
+        )
+    )
+    ver = await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Embedding Test v1",
+            plain_language="A test for the embedding pipeline.",
+            markdown_body="# Embedding Test\n\nThis tests the full pipeline.",
+            structured_data={"definition": "A test concept."},
+        ),
+    )
 
     await svc.publish_version(obj.id, ver.id)
 
@@ -69,30 +75,35 @@ async def test_reindex_creates_segments(db_session, workspace):
     """Indexing a published version should create content_segments rows."""
     svc = RegistryService(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-seg-{uuid.uuid4().hex[:6]}",
-        type=COType.SKILL_GUIDE,
-        canonical_title="Segment Test",
-    ))
-    ver = await svc.create_version(obj.id, CreateVersionRequest(
-        title="Segment Test v1",
-        plain_language="A skill for testing segment creation.",
-        markdown_body="# Segment Test\n\nStep 1: Do the thing.\n\nStep 2: Verify.",
-        structured_data={
-            "performance_statement": "Test it",
-            "learning_objectives": ["Test"],
-            "steps_summary": ["Step 1"],
-            "success_criteria": ["Passes"],
-            "failure_modes": ["Fails"],
-            "safety_boundary": "None",
-            "teach_forward": {
-                "three_minute_script": "Explain.",
-                "ten_minute_outline": ["Intro"],
-                "handout_points": ["Point"],
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-seg-{uuid.uuid4().hex[:6]}",
+            type=COType.SKILL_GUIDE,
+            canonical_title="Segment Test",
+        )
+    )
+    ver = await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Segment Test v1",
+            plain_language="A skill for testing segment creation.",
+            markdown_body="# Segment Test\n\nStep 1: Do the thing.\n\nStep 2: Verify.",
+            structured_data={
+                "performance_statement": "Test it",
+                "learning_objectives": ["Test"],
+                "steps_summary": ["Step 1"],
+                "success_criteria": ["Passes"],
+                "failure_modes": ["Fails"],
+                "safety_boundary": "None",
+                "teach_forward": {
+                    "three_minute_script": "Explain.",
+                    "ten_minute_outline": ["Intro"],
+                    "handout_points": ["Point"],
+                },
             },
-        },
-    ))
+        ),
+    )
     await svc.publish_version(obj.id, ver.id)
 
     indexer = VersionIndexer(db_session)
@@ -100,9 +111,7 @@ async def test_reindex_creates_segments(db_session, workspace):
 
     assert len(segments) > 0
 
-    result = await db_session.execute(
-        select(ContentSegment).where(ContentSegment.context_object_version_id == ver.id)
-    )
+    result = await db_session.execute(select(ContentSegment).where(ContentSegment.context_object_version_id == ver.id))
     db_segments = result.scalars().all()
     assert len(db_segments) == len(segments)
     for seg in db_segments:
@@ -115,18 +124,23 @@ async def test_embed_version_stores_vectors(db_session, workspace):
     """EmbeddingService.embed_version should store vectors on segments using a fake provider."""
     svc = RegistryService(db_session)
 
-    obj = await svc.create_object(CreateObjectRequest(
-        workspace_id=workspace.id,
-        slug=f"test-vec-{uuid.uuid4().hex[:6]}",
-        type=COType.CONCEPT_NOTE,
-        canonical_title="Vector Test",
-    ))
-    ver = await svc.create_version(obj.id, CreateVersionRequest(
-        title="Vector Test v1",
-        plain_language="Testing embedding storage.",
-        markdown_body="# Vector Test\n\nContent for embedding.",
-        structured_data={"definition": "A vector test."},
-    ))
+    obj = await svc.create_object(
+        CreateObjectRequest(
+            workspace_id=workspace.id,
+            slug=f"test-vec-{uuid.uuid4().hex[:6]}",
+            type=COType.CONCEPT_NOTE,
+            canonical_title="Vector Test",
+        )
+    )
+    ver = await svc.create_version(
+        obj.id,
+        CreateVersionRequest(
+            title="Vector Test v1",
+            plain_language="Testing embedding storage.",
+            markdown_body="# Vector Test\n\nContent for embedding.",
+            structured_data={"definition": "A vector test."},
+        ),
+    )
     await svc.publish_version(obj.id, ver.id)
 
     indexer = VersionIndexer(db_session)
@@ -137,9 +151,7 @@ async def test_embed_version_stores_vectors(db_session, workspace):
 
     assert count > 0
 
-    result = await db_session.execute(
-        select(ContentSegment).where(ContentSegment.context_object_version_id == ver.id)
-    )
+    result = await db_session.execute(select(ContentSegment).where(ContentSegment.context_object_version_id == ver.id))
     for seg in result.scalars().all():
         assert seg.embedding is not None
 
@@ -175,9 +187,7 @@ async def test_worker_leaves_failed_event_unprocessed_for_retry(db_session):
 
     assert succeeded == 0
 
-    result = await db_session.execute(
-        select(OutboxEvent).where(OutboxEvent.id == event.id)
-    )
+    result = await db_session.execute(select(OutboxEvent).where(OutboxEvent.id == event.id))
     refreshed = result.scalar_one()
     assert refreshed.processed_at is None
 
@@ -250,9 +260,7 @@ async def test_worker_recovers_session_after_flush_failure_without_crashing(db_s
     # file (a separate, already-known test-hygiene gap — db_session's
     # teardown deletes test workspaces but not their outbox events). What
     # matters here is only these two specific events' own outcomes.
-    result = await db_session.execute(
-        select(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id]))
-    )
+    result = await db_session.execute(select(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id])))
     by_id = {e.id: e for e in result.scalars().all()}
     assert by_id[bad_id].processed_at is None, "the permanently-failing event must stay unprocessed for retry"
     assert by_id[good_id].processed_at is not None

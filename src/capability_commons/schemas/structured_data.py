@@ -10,6 +10,7 @@ from capability_commons.domain.enums import AssessmentType, COType, SeverityLeve
 
 class ToolTier(BaseModel):
     """A tool or material with tier classification."""
+
     name: str
     tier: str = Field(description="essential, recommended, or nice_to_have")
     substitutes: list[str] = Field(default_factory=list)
@@ -21,6 +22,7 @@ class ImplementationProfile(BaseModel):
     Any object type can carry these fields to make it actionable.
     Stored as structured_data["implementation_profile"].
     """
+
     smallest_viable_version: str | None = Field(None, description="Minimum viable version someone can attempt")
     preflight_checks: list[str] = Field(default_factory=list, description="Checks before starting")
     tools_tiered: list[ToolTier] = Field(default_factory=list, description="Tools with tier classification")

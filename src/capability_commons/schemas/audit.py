@@ -1,4 +1,5 @@
 """Schemas for audit event API responses."""
+
 from __future__ import annotations
 
 import uuid

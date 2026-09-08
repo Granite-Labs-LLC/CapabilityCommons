@@ -4,9 +4,9 @@ import hashlib
 from datetime import datetime, timezone
 
 from fastapi import Request, Response
-from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.ext.asyncio import async_sessionmaker
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 
 from capability_commons.config import get_settings
 from capability_commons.db.models import RateLimitLog
@@ -46,14 +46,19 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
 
         async with self.session_factory() as session:
             # Upsert with increment
-            stmt = pg_insert(RateLimitLog).values(
-                key_hash=key_hash,
-                window_start=window_start,
-                request_count=1,
-            ).on_conflict_do_update(
-                constraint="uq_rate_limit_key_window",
-                set_={"request_count": RateLimitLog.request_count + 1},
-            ).returning(RateLimitLog.request_count)
+            stmt = (
+                pg_insert(RateLimitLog)
+                .values(
+                    key_hash=key_hash,
+                    window_start=window_start,
+                    request_count=1,
+                )
+                .on_conflict_do_update(
+                    constraint="uq_rate_limit_key_window",
+                    set_={"request_count": RateLimitLog.request_count + 1},
+                )
+                .returning(RateLimitLog.request_count)
+            )
 
             result = await session.execute(stmt)
             count = result.scalar_one()

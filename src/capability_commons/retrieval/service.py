@@ -15,9 +15,9 @@ from capability_commons.db.models import (
     ContextObject,
     ContextObjectVersion,
     ContradictionCase,
-    ReviewRecord,
     RetrievalRun,
     RetrievalStep,
+    ReviewRecord,
 )
 from capability_commons.domain.enums import LifecycleState, RetrievalRunStatus, RetrievalStepType, ReviewOutcome
 from capability_commons.graph.adapters.relational_graph import RelationalGraphAdapter
@@ -61,6 +61,11 @@ class RetrievalService:
 
     async def execute_plan(self, task_spec: RetrievalRequest) -> EvidencePackResponse:
         task_spec = self._with_resolved_intent(task_spec)
+        assert task_spec.intent is not None  # guaranteed by _with_resolved_intent
+        # workspace_id is Optional on the schema (anonymous callers resolve
+        # to PublicWorkspace, per PLAN.md P0-6) but every route handler
+        # fills it in before calling execute_plan.
+        assert task_spec.workspace_id is not None
         plan = self.compile_plan(task_spec)
         run = RetrievalRun(
             workspace_id=task_spec.workspace_id,
@@ -84,7 +89,10 @@ class RetrievalService:
             iteration,
             RetrievalStepType.RESOLVE_SEEDS,
             query_text=task_spec.query,
-            inputs={"seed_object_ids": [str(s) for s in task_spec.seed_object_ids], "seed_entity_ids": [str(s) for s in task_spec.seed_entity_ids]},
+            inputs={
+                "seed_object_ids": [str(s) for s in task_spec.seed_object_ids],
+                "seed_entity_ids": [str(s) for s in task_spec.seed_entity_ids],
+            },
             outputs={"seed_nodes": [{"node_kind": seed["node_kind"], "id": str(seed["id"])} for seed in seed_nodes]},
             started_at=time.perf_counter(),
         )
@@ -105,7 +113,11 @@ class RetrievalService:
             iteration,
             RetrievalStepType.SEARCH,
             query_text=task_spec.query,
-            inputs={"filters": task_spec.facet_filters, "top_k": plan.search_top_k, "hybrid": query_embedding is not None},
+            inputs={
+                "filters": task_spec.facet_filters,
+                "top_k": plan.search_top_k,
+                "hybrid": query_embedding is not None,
+            },
             outputs={"hit_count": len(hits), "version_ids": [str(hit.version_id) for hit in hits]},
             started_at=started_at,
         )
@@ -113,7 +125,10 @@ class RetrievalService:
         graph_edges = []
         graph_hits = []
         if plan.graph_depth > 0:
-            graph_seed_nodes = [*seed_nodes, *[{"node_kind": "object_version", "id": hit.version_id} for hit in hits[:5]]]
+            graph_seed_nodes = [
+                *seed_nodes,
+                *[{"node_kind": "object_version", "id": hit.version_id} for hit in hits[:5]],
+            ]
             started_at = time.perf_counter()
             graph_edges = await self.graph.neighbors(
                 graph_seed_nodes,
@@ -128,9 +143,7 @@ class RetrievalService:
                 if edge.dst_node_kind == "object_version" and edge.dst_id not in search_version_ids:
                     graph_version_ids.add(edge.dst_id)
             if graph_version_ids:
-                graph_hits = await self._resolve_graph_candidates(
-                    list(graph_version_ids), task_spec.workspace_id
-                )
+                graph_hits = await self._resolve_graph_candidates(list(graph_version_ids), task_spec.workspace_id)
             await self._log_step(
                 run.id,
                 iteration,
@@ -147,7 +160,9 @@ class RetrievalService:
         # Merge search hits + graph candidates for reranking
         all_candidates = list(hits) + graph_hits
         started_at = time.perf_counter()
-        reranked = await self._rerank_hits(all_candidates, task_spec, graph_version_ids=graph_version_ids if graph_edges else set())
+        reranked = await self._rerank_hits(
+            all_candidates, task_spec, graph_version_ids=graph_version_ids if graph_edges else set()
+        )
         await self._log_step(
             run.id,
             iteration,
@@ -198,7 +213,12 @@ class RetrievalService:
             return run.result_summary
         if format == "markdown":
             summary = run.result_summary
-            lines = [f"# Evidence Pack — {summary.get('intent', run.intent.value)}", "", f"**Query:** {summary.get('query', run.query_text)}", ""]
+            lines = [
+                f"# Evidence Pack — {summary.get('intent', run.intent.value)}",
+                "",
+                f"**Query:** {summary.get('query', run.query_text)}",
+                "",
+            ]
             for idx, evidence in enumerate(summary.get("evidence", []), start=1):
                 lines.append(f"## {idx}. {evidence['title']}")
                 lines.append(f"- Type: `{evidence['type']}`")
@@ -227,7 +247,9 @@ class RetrievalService:
             if run is None or run.workspace_id != workspace_id:
                 raise ValueError(f"Retrieval run {run_id} not found")
         result = await self.session.execute(
-            select(RetrievalStep).where(RetrievalStep.retrieval_run_id == run_id).order_by(RetrievalStep.iteration_no.asc(), RetrievalStep.created_at.asc())
+            select(RetrievalStep)
+            .where(RetrievalStep.retrieval_run_id == run_id)
+            .order_by(RetrievalStep.iteration_no.asc(), RetrievalStep.created_at.asc())
         )
         return [RetrievalStepResponse.model_validate(step, from_attributes=True) for step in result.scalars().all()]
 
@@ -253,19 +275,21 @@ class RetrievalService:
         )
         hits = []
         for version, obj in result.all():
-            hits.append(SearchHit(
-                object_id=obj.id,
-                version_id=version.id,
-                slug=obj.slug,
-                type=obj.type,
-                title=version.title,
-                summary_short=version.summary_short,
-                plain_language=version.plain_language,
-                score=0.0,  # No search score; graph bonus applied in rerank
-                lifecycle_state=obj.lifecycle_state,
-                validity_status=version.validity_status.value,
-                facets={},
-            ))
+            hits.append(
+                SearchHit(
+                    object_id=obj.id,
+                    version_id=version.id,
+                    slug=obj.slug,
+                    type=obj.type,
+                    title=version.title,
+                    summary_short=version.summary_short,
+                    plain_language=version.plain_language,
+                    score=0.0,  # No search score; graph bonus applied in rerank
+                    lifecycle_state=obj.lifecycle_state,
+                    validity_status=version.validity_status.value,
+                    facets={},
+                )
+            )
         return hits
 
     async def _rerank_hits(
@@ -288,7 +312,11 @@ class RetrievalService:
             facet_bonus = 0.05 * len(hit.facets)
             published_bonus = 0.15 if hit.lifecycle_state == LifecycleState.PUBLISHED else 0.0
             verified_bonus = 0.15 if (task_spec.required_evidence.prefer_verified and review_count > 0) else 0.0
-            citation_bonus = min(0.10, 0.02 * citation_count) if (task_spec.required_evidence.must_cite_sources and citation_count > 0) else 0.0
+            citation_bonus = (
+                min(0.10, 0.02 * citation_count)
+                if (task_spec.required_evidence.must_cite_sources and citation_count > 0)
+                else 0.0
+            )
             graph_bonus = 0.10 if hit.version_id in graph_version_ids else 0.0
 
             score = search_score + published_bonus + verified_bonus + citation_bonus + facet_bonus + graph_bonus
@@ -334,9 +362,7 @@ class RetrievalService:
         sufficiency_score: float,
     ) -> EvidencePackResponse:
         top_items = reranked[:8]
-        structured_by_version = await self._load_structured_data(
-            [item["version_id"] for item in top_items]
-        )
+        structured_by_version = await self._load_structured_data([item["version_id"] for item in top_items])
         evidence_nodes: list[EvidenceNode] = []
         for item in top_items:
             rationale = self._build_rationale(task_spec, item)
@@ -371,7 +397,14 @@ class RetrievalService:
         return pack
 
     async def render_evidence_pack_from_pack(self, pack: EvidencePackResponse) -> str:
-        lines = [f"# Evidence Pack — {pack.intent.value}", "", f"**Query:** {pack.query}", "", f"**Sufficiency:** {pack.sufficiency_score}", ""]
+        lines = [
+            f"# Evidence Pack — {pack.intent.value}",
+            "",
+            f"**Query:** {pack.query}",
+            "",
+            f"**Sufficiency:** {pack.sufficiency_score}",
+            "",
+        ]
         for index, node in enumerate(pack.evidence, start=1):
             lines.append(f"## {index}. {node.title}")
             lines.append(f"- Type: `{node.type}`")
@@ -385,14 +418,13 @@ class RetrievalService:
             lines.append("")
         return "\n".join(lines)
 
-    async def _load_structured_data(
-        self, version_ids: list[uuid.UUID]
-    ) -> dict[uuid.UUID, dict[str, Any]]:
+    async def _load_structured_data(self, version_ids: list[uuid.UUID]) -> dict[uuid.UUID, dict[str, Any]]:
         if not version_ids:
             return {}
         result = await self.session.execute(
-            select(ContextObjectVersion.id, ContextObjectVersion.structured_data)
-            .where(ContextObjectVersion.id.in_(version_ids))
+            select(ContextObjectVersion.id, ContextObjectVersion.structured_data).where(
+                ContextObjectVersion.id.in_(version_ids)
+            )
         )
         return {vid: data for vid, data in result.all() if data}
 
@@ -456,6 +488,9 @@ class RetrievalService:
         return steps
 
     def _build_rationale(self, task_spec: RetrievalRequest, item: dict[str, Any]) -> str:
+        # Only ever called from execute_plan() on a task_spec that has
+        # already gone through _with_resolved_intent().
+        assert task_spec.intent is not None
         reasons = [f"ranked highly for `{task_spec.intent.value}`"]
         if item["review_count"] > 0:
             reasons.append("has approved or verified review history")

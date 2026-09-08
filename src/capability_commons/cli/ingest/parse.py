@@ -1,8 +1,8 @@
 """Pass 0: Parse PDFs into page-preserving markdown segments."""
+
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 import orjson
 import yaml
@@ -10,20 +10,19 @@ import yaml
 from capability_commons.cli.ingest.models import SourceSegment
 from capability_commons.cli.ingest.project import IngestProject
 
-
 PAGE_SEPARATOR_DASHES = "-" * 48
 # marker-pdf paginate_output format: "\n\n{N}{'-'*48}\n\n" preceding each page
 # (N is 0-indexed). We normalize this to <!-- PAGE M --> markers (1-indexed).
-_MARKER_PAGE_RE = re.compile(
-    r"\n*\{(\d+)\}" + re.escape(PAGE_SEPARATOR_DASHES) + r"-*\n*"
-)
+_MARKER_PAGE_RE = re.compile(r"\n*\{(\d+)\}" + re.escape(PAGE_SEPARATOR_DASHES) + r"-*\n*")
 
 
 def _normalize_marker_pagination(markdown: str) -> str:
     """Convert marker's `{N}----...----` page separators into `<!-- PAGE M -->`."""
+
     def repl(m: re.Match) -> str:
         page_1indexed = int(m.group(1)) + 1
         return f"\n\n<!-- PAGE {page_1indexed} -->\n\n"
+
     return _MARKER_PAGE_RE.sub(repl, markdown)
 
 
@@ -34,14 +33,11 @@ def convert_pdf_to_markdown(pdf_path: str) -> dict:
     page separators which we normalize into ``<!-- PAGE N -->`` markers.
     """
     try:
-        from marker.converters.pdf import PdfConverter
         from marker.config.parser import ConfigParser
+        from marker.converters.pdf import PdfConverter
         from marker.models import create_model_dict
     except ImportError:
-        raise ImportError(
-            "marker-pdf is required for PDF parsing. "
-            "Install with: pip install -e '.[ingest]'"
-        )
+        raise ImportError("marker-pdf is required for PDF parsing. Install with: pip install -e '.[ingest]'")
 
     config_parser = ConfigParser({"paginate_output": True, "output_format": "markdown"})
     converter = PdfConverter(
@@ -53,9 +49,7 @@ def convert_pdf_to_markdown(pdf_path: str) -> dict:
     rendered = converter(pdf_path)
     metadata = getattr(rendered, "metadata", {}) or {}
     page_stats = metadata.get("page_stats", [])
-    n_pages = len(page_stats) if page_stats else max(
-        1, len(_MARKER_PAGE_RE.findall(rendered.markdown))
-    )
+    n_pages = len(page_stats) if page_stats else max(1, len(_MARKER_PAGE_RE.findall(rendered.markdown)))
     markdown = _normalize_marker_pagination(rendered.markdown)
     return {
         "markdown": markdown,
@@ -112,10 +106,7 @@ def markdown_to_segments(
         attributed to its actual content page, not the next page.
         """
         # Mask out marker spans that overlap [start, end).
-        spans = [
-            (m.start(), m.end())
-            for m in page_re.finditer(markdown, start, end)
-        ]
+        spans = [(m.start(), m.end()) for m in page_re.finditer(markdown, start, end)]
 
         def in_marker(pos: int) -> bool:
             for s, e in spans:
@@ -148,16 +139,18 @@ def markdown_to_segments(
     if not splits:
         text = _clean_text(0, len(markdown))
         if text:
-            segments.append(SourceSegment(
-                source_id=source_id,
-                segment_id=f"{source_id}::seg_000001",
-                page_start=_page_at(0),
-                page_end=_page_at(_last_content_pos(0, len(markdown))),
-                heading_path=[],
-                text=text,
-                start_char=0,
-                end_char=len(markdown),
-            ))
+            segments.append(
+                SourceSegment(
+                    source_id=source_id,
+                    segment_id=f"{source_id}::seg_000001",
+                    page_start=_page_at(0),
+                    page_end=_page_at(_last_content_pos(0, len(markdown))),
+                    heading_path=[],
+                    text=text,
+                    start_char=0,
+                    end_char=len(markdown),
+                )
+            )
         return segments
 
     for i, (start, heading_path) in enumerate(splits):
@@ -167,16 +160,18 @@ def markdown_to_segments(
             continue
 
         seg_num = i + 1
-        segments.append(SourceSegment(
-            source_id=source_id,
-            segment_id=f"{source_id}::seg_{seg_num:06d}",
-            page_start=_page_at(start),
-            page_end=_page_at(_last_content_pos(start, end)),
-            heading_path=heading_path,
-            text=text,
-            start_char=start,
-            end_char=end,
-        ))
+        segments.append(
+            SourceSegment(
+                source_id=source_id,
+                segment_id=f"{source_id}::seg_{seg_num:06d}",
+                page_start=_page_at(start),
+                page_end=_page_at(_last_content_pos(start, end)),
+                heading_path=heading_path,
+                text=text,
+                start_char=start,
+                end_char=end,
+            )
+        )
 
     return segments
 
@@ -205,14 +200,16 @@ def run_parse(project: IngestProject) -> None:
         segments = markdown_to_segments(markdown, source.id)
         all_segments.extend(segments)
 
-        source_records.append({
-            "source_id": source.id,
-            "title": source.title,
-            "source_kind": source.source_kind,
-            "file": source.file,
-            "pages": n_pages,
-            "segments": len(segments),
-        })
+        source_records.append(
+            {
+                "source_id": source.id,
+                "title": source.title,
+                "source_kind": source.source_kind,
+                "file": source.file,
+                "pages": n_pages,
+                "segments": len(segments),
+            }
+        )
         console.print(f"    → {len(segments)} segments from {n_pages} pages")
 
     # Write segments JSONL
@@ -226,4 +223,6 @@ def run_parse(project: IngestProject) -> None:
         yaml.dump(source_records, f, default_flow_style=False)
 
     project.mark_pass_complete("parse")
-    console.print(f"[green]Parse complete:[/green] {len(all_segments)} segments from {len(project.manifest.sources)} source(s)")
+    console.print(
+        f"[green]Parse complete:[/green] {len(all_segments)} segments from {len(project.manifest.sources)} source(s)"
+    )

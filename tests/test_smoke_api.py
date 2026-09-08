@@ -4,6 +4,7 @@ These tests only check that routes are registered and auth dependencies fire bef
 any DB access, so they run in the unit-test CI job without a live Postgres. Happy-path
 behavior for public endpoints is covered by tests/test_integration_publication.py.
 """
+
 from __future__ import annotations
 
 import uuid
@@ -25,40 +26,52 @@ def test_objects_requires_auth(client):
 
 
 def test_create_edge_requires_auth(client):
-    r = client.post("/v1/edges", json={
-        "src_node_kind": "object_version",
-        "src_id": str(uuid.uuid4()),
-        "edge_type": "prerequisite_for",
-        "dst_node_kind": "object_version",
-        "dst_id": str(uuid.uuid4()),
-    })
+    r = client.post(
+        "/v1/edges",
+        json={
+            "src_node_kind": "object_version",
+            "src_id": str(uuid.uuid4()),
+            "edge_type": "prerequisite_for",
+            "dst_node_kind": "object_version",
+            "dst_id": str(uuid.uuid4()),
+        },
+    )
     assert r.status_code == 401
 
 
 def test_create_object_requires_auth(client):
-    r = client.post("/v1/objects", json={
-        "workspace_id": str(uuid.uuid4()),
-        "slug": "test",
-        "type": "concept_note",
-        "canonical_title": "Test",
-    })
+    r = client.post(
+        "/v1/objects",
+        json={
+            "workspace_id": str(uuid.uuid4()),
+            "slug": "test",
+            "type": "concept_note",
+            "canonical_title": "Test",
+        },
+    )
     assert r.status_code == 401
 
 
 def test_evidence_requires_auth(client):
-    r = client.post("/v1/evidence/sources", json={
-        "source_kind": "book",
-        "title": "Test Source",
-    })
+    r = client.post(
+        "/v1/evidence/sources",
+        json={
+            "source_kind": "book",
+            "title": "Test Source",
+        },
+    )
     assert r.status_code == 401
 
 
 def test_reviews_requires_auth(client):
-    r = client.post("/v1/reviews", json={
-        "context_object_version_id": str(uuid.uuid4()),
-        "review_type": "safety",
-        "outcome": "approved",
-    })
+    r = client.post(
+        "/v1/reviews",
+        json={
+            "context_object_version_id": str(uuid.uuid4()),
+            "review_type": "safety",
+            "outcome": "approved",
+        },
+    )
     assert r.status_code == 401
 
 
@@ -67,18 +80,24 @@ def test_retrieval_allows_anonymous_access(client):
     anonymous callers resolve to the public workspace via PublicWorkspace,
     not CurrentWorkspace) — it must NOT require auth. This replaces a stale
     pre-P0-6 assertion that expected 401 here."""
-    r = client.post("/v1/retrieve/evidence_pack", json={
-        "query": "test",
-        "intent": "how_to",
-    })
+    r = client.post(
+        "/v1/retrieve/evidence_pack",
+        json={
+            "query": "test",
+            "intent": "how_to",
+        },
+    )
     assert r.status_code != 401
 
 
 def test_ingest_requires_auth(client):
-    r = client.post("/v1/ingest/jobs", json={
-        "source_id": "src.test.book.2024",
-        "source_title": "Test Book",
-    })
+    r = client.post(
+        "/v1/ingest/jobs",
+        json={
+            "source_id": "src.test.book.2024",
+            "source_title": "Test Book",
+        },
+    )
     assert r.status_code == 401
 
 
@@ -112,12 +131,15 @@ def test_file_list_requires_auth(client):
 
 
 def test_contradictions_requires_auth(client):
-    r = client.post("/v1/contradictions", json={
-        "left_version_id": str(uuid.uuid4()),
-        "right_version_id": str(uuid.uuid4()),
-        "dimension": "method",
-        "severity": "medium",
-    })
+    r = client.post(
+        "/v1/contradictions",
+        json={
+            "left_version_id": str(uuid.uuid4()),
+            "right_version_id": str(uuid.uuid4()),
+            "dimension": "method",
+            "severity": "medium",
+        },
+    )
     assert r.status_code == 401
 
 

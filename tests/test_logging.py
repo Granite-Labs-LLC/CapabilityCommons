@@ -1,4 +1,5 @@
 """Tests for logging middleware."""
+
 from __future__ import annotations
 
 import inspect

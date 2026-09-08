@@ -10,8 +10,6 @@ from capability_commons.cli.seed import (
 )
 from capability_commons.domain.enums import COType, EdgeType, FacetType
 from capability_commons.schemas.structured_data import (
-    AssessmentStructuredData,
-    ModuleStructuredData,
     validate_structured_data,
 )
 

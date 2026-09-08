@@ -1,4 +1,5 @@
 """API schemas for ingest job endpoints."""
+
 from __future__ import annotations
 
 import uuid

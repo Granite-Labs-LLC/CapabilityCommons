@@ -29,9 +29,7 @@ async def health_detailed(session: DBSession) -> dict:
 
     # Migration version
     try:
-        result = await session.execute(
-            text("SELECT version_num FROM alembic_version ORDER BY version_num")
-        )
+        result = await session.execute(text("SELECT version_num FROM alembic_version ORDER BY version_num"))
         versions = [row[0] for row in result.fetchall()]
         checks["migration_heads"] = ",".join(versions) if versions else "none"
     except Exception:

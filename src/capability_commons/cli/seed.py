@@ -1,4 +1,5 @@
 """CLI seed command: load capability and curriculum nodes into Postgres."""
+
 from __future__ import annotations
 
 import asyncio
@@ -12,18 +13,18 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
 from capability_commons.db.models import (
-    OutboxEvent,
     ContextObject,
     ContextObjectFacet,
     ContextObjectVersion,
     Edge,
     EvidenceSource,
     EvidenceSpan,
+    OutboxEvent,
     Workspace,
 )
 from capability_commons.domain.enums import (
-    COType,
     CostBand,
+    COType,
     EdgeType,
     EvidenceSourceKind,
     FacetType,
@@ -193,8 +194,11 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # 1. Ensure workspace exists
         workspace = await _ensure_workspace(session)
 
-        # 2. Insert nodes, collect slug -> version_id mapping
-        slug_to_version_id: dict[str, uuid.UUID] = {}
+        # 2. Insert nodes, collect slug -> version_id mapping. An existing
+        # object (found via the "already exists" branch below, or resolved
+        # cross-pack) may legitimately have no current_version_id yet if it
+        # was created but never published — hence Optional, not UUID.
+        slug_to_version_id: dict[str, uuid.UUID | None] = {}
         slug_to_object_id: dict[str, uuid.UUID] = {}
         created = 0
         skipped = 0
@@ -214,12 +218,14 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             if existing.scalar_one_or_none():
                 skipped += 1
                 # Still need IDs for edge creation
-                obj = (await session.execute(
-                    select(ContextObject).where(
-                        ContextObject.workspace_id == workspace.id,
-                        ContextObject.slug == slug,
+                obj = (
+                    await session.execute(
+                        select(ContextObject).where(
+                            ContextObject.workspace_id == workspace.id,
+                            ContextObject.slug == slug,
+                        )
                     )
-                )).scalar_one()
+                ).scalar_one()
                 slug_to_object_id[slug] = obj.id
                 slug_to_version_id[slug] = obj.current_version_id
                 continue
@@ -267,20 +273,24 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             obj.published_at = obj.created_at
 
             # Emit publish event so the worker indexes/embeds this version
-            session.add(OutboxEvent(
-                aggregate_type="context_object",
-                aggregate_id=obj.id,
-                event_type="version.published",
-                payload={"object_id": str(obj.id), "version_id": str(version.id)},
-            ))
+            session.add(
+                OutboxEvent(
+                    aggregate_type="context_object",
+                    aggregate_id=obj.id,
+                    event_type="version.published",
+                    payload={"object_id": str(obj.id), "version_id": str(version.id)},
+                )
+            )
 
             # Add facets
             for facet_type, facet_value in map_facets(node):
-                session.add(ContextObjectFacet(
-                    context_object_version_id=version.id,
-                    facet_type=facet_type,
-                    facet_value=facet_value,
-                ))
+                session.add(
+                    ContextObjectFacet(
+                        context_object_version_id=version.id,
+                        facet_type=facet_type,
+                        facet_value=facet_value,
+                    )
+                )
 
             slug_to_object_id[slug] = obj.id
             slug_to_version_id[slug] = version.id
@@ -314,6 +324,9 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     continue
                 prereq_vid = slug_to_version_id[prereq_id]
                 dependant_vid = slug_to_version_id[dependant_slug]
+                if prereq_vid is None or dependant_vid is None:
+                    print(f"  WARN: {prereq_id} or {dependant_slug} has no published version yet")
+                    continue
                 if await _edge_exists(prereq_vid, EdgeType.PREREQUISITE_FOR, dependant_vid):
                     continue
                 edge = Edge(
@@ -346,6 +359,9 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     continue
                 src_vid = slug_to_version_id[src_slug]
                 dst_vid = slug_to_version_id[target_id]
+                if src_vid is None or dst_vid is None:
+                    print(f"  WARN: {src_slug} or {target_id} has no published version yet")
+                    continue
                 et = normalize_edge_type(edge_type_str)
                 if et is None:
                     print(f"  WARN: unknown edge type {edge_type_str}")
@@ -377,14 +393,15 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             if src_slug not in slug_to_version_id:
                 continue
             version_id = slug_to_version_id[src_slug]
+            if version_id is None:
+                print(f"  WARN: {src_slug} has no published version yet, skipping its citations")
+                continue
             for citation in node.get("citations", []):
                 for span in citation.get("support", []):
                     source_ext_id = span.get("source_id", "")
                     # Find-or-create EvidenceSource by external_id
                     es_result = await session.execute(
-                        select(EvidenceSource).where(
-                            EvidenceSource.external_id == source_ext_id
-                        )
+                        select(EvidenceSource).where(EvidenceSource.external_id == source_ext_id)
                     )
                     ev_source = es_result.scalar_one_or_none()
                     if ev_source is None:
@@ -424,17 +441,21 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # data_dir's own nodes (e.g. a second seed pack's edges.csv linking
         # to objects a prior, separate `seed_graph()` run already loaded)
         # against the database before giving up on it.
-        referenced_slugs = {row["source_id"] for row in csv_edges} | {
-            row["target_id"] for row in csv_edges
-        }
+        referenced_slugs = {row["source_id"] for row in csv_edges} | {row["target_id"] for row in csv_edges}
         unresolved_slugs = referenced_slugs - slug_to_version_id.keys()
         if unresolved_slugs:
-            existing_objs = (await session.execute(
-                select(ContextObject).where(
-                    ContextObject.workspace_id == workspace.id,
-                    ContextObject.slug.in_(unresolved_slugs),
+            existing_objs = (
+                (
+                    await session.execute(
+                        select(ContextObject).where(
+                            ContextObject.workspace_id == workspace.id,
+                            ContextObject.slug.in_(unresolved_slugs),
+                        )
+                    )
                 )
-            )).scalars().all()
+                .scalars()
+                .all()
+            )
             for obj in existing_objs:
                 slug_to_object_id[obj.slug] = obj.id
                 slug_to_version_id[obj.slug] = obj.current_version_id
@@ -457,6 +478,9 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
 
             src_vid = slug_to_version_id[src_slug]
             dst_vid = slug_to_version_id[dst_slug]
+            if src_vid is None or dst_vid is None:
+                print(f"  WARN: {src_slug} or {dst_slug} has no published version yet, skipping edge")
+                continue
 
             if await _edge_exists(src_vid, edge_type, dst_vid):
                 csv_edge_skipped += 1
@@ -494,15 +518,15 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         await session.commit()
 
     await engine.dispose()
-    print(f"Seed complete: {created} objects created, {skipped} skipped, "
-          f"{req_edges} prerequisite edges (from YAML), "
-          f"{csv_edge_count} CSV edges created, {csv_edge_skipped} CSV edges skipped (duplicates)")
+    print(
+        f"Seed complete: {created} objects created, {skipped} skipped, "
+        f"{req_edges} prerequisite edges (from YAML), "
+        f"{csv_edge_count} CSV edges created, {csv_edge_skipped} CSV edges skipped (duplicates)"
+    )
 
 
 async def _ensure_workspace(session: AsyncSession) -> Workspace:
-    result = await session.execute(
-        select(Workspace).where(Workspace.slug == "capability-commons")
-    )
+    result = await session.execute(select(Workspace).where(Workspace.slug == "capability-commons"))
     ws = result.scalar_one_or_none()
     if ws:
         return ws
@@ -526,6 +550,7 @@ def main() -> None:
 
     if args.db_url is None:
         from capability_commons.config import get_settings
+
         db_url = get_settings().database_url
     else:
         db_url = args.db_url

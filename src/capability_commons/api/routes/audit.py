@@ -1,4 +1,5 @@
 """Audit event API routes."""
+
 from __future__ import annotations
 
 import uuid
@@ -36,6 +37,9 @@ async def get_workspace_timeline(
 ) -> list[AuditEventResponse]:
     svc = AuditService(session)
     events = await svc.get_workspace_timeline(
-        workspace.id, limit=limit, offset=offset, event_type=event_type,
+        workspace.id,
+        limit=limit,
+        offset=offset,
+        event_type=event_type,
     )
     return [AuditEventResponse.model_validate(e, from_attributes=True) for e in events]

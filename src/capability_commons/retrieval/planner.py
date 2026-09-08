@@ -3,7 +3,6 @@ from __future__ import annotations
 from capability_commons.domain.enums import EdgeType, RetrievalIntent
 from capability_commons.schemas.retrieval import RetrievalPlan, RetrievalRequest
 
-
 INTENT_EDGE_TYPES: dict[RetrievalIntent, list[EdgeType]] = {
     RetrievalIntent.HOW_TO: [
         EdgeType.SUPPORTED_BY,
@@ -66,6 +65,9 @@ INTENT_EDGE_TYPES: dict[RetrievalIntent, list[EdgeType]] = {
 
 class RetrievalPlanner:
     def compile_plan(self, task: RetrievalRequest) -> RetrievalPlan:
+        # Callers always pass a task_spec already run through
+        # RetrievalService._with_resolved_intent().
+        assert task.intent is not None
         edge_types = [edge.value for edge in INTENT_EDGE_TYPES.get(task.intent, [])]
         weights = {
             "search_score": 0.45,

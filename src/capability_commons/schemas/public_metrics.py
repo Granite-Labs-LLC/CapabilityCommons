@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 class PublicMetricsResponse(BaseModel):
     """Counts surfaced on the public status page (FE-STATUS-1)."""
+
     objects: int
     edges: int
     evidence_spans: int
@@ -14,6 +15,7 @@ class PublicMetricsResponse(BaseModel):
 
 class PublicQualityMetricsResponse(BaseModel):
     """Answer-quality aggregates (METRICS-2). Anonymous; aggregates only."""
+
     retrieval_runs_total: int
     retrieval_runs_completed: int
     completion_rate: float

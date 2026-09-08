@@ -12,6 +12,7 @@ class ImplementationVariant(BaseModel):
 
     Matches the ingest envelope shape produced by Pass 2 (draft).
     """
+
     label: str
     when: str
     notes: str | None = None
@@ -26,6 +27,7 @@ class PublicImplementationProfile(BaseModel):
     `tools_tiered` / `estimated_time_hours` etc., `project_implementation_profile`
     coerces it into this shape for the public surface.
     """
+
     smallest_viable_version: str | None = None
     tools: list[str] = Field(default_factory=list)
     materials: list[str] = Field(default_factory=list)
@@ -55,11 +57,13 @@ def _coerce_variants(value: Any) -> list[ImplementationVariant]:
     out: list[ImplementationVariant] = []
     for v in value:
         if isinstance(v, dict) and v.get("label"):
-            out.append(ImplementationVariant(
-                label=str(v["label"]),
-                when=str(v.get("when") or ""),
-                notes=v.get("notes"),
-            ))
+            out.append(
+                ImplementationVariant(
+                    label=str(v["label"]),
+                    when=str(v.get("when") or ""),
+                    notes=v.get("notes"),
+                )
+            )
         elif isinstance(v, str) and v.strip():
             out.append(ImplementationVariant(label=v, when=""))
     return out
@@ -93,21 +97,13 @@ def project_implementation_profile(
         or structured_data.get("materials", [])
     )
     success_checks = _coerce_str_list(
-        impl.get("success_checks")
-        or legacy.get("success_checks")
-        or structured_data.get("success_criteria")
+        impl.get("success_checks") or legacy.get("success_checks") or structured_data.get("success_criteria")
     )
     stop_conditions = _coerce_str_list(
-        impl.get("stop_conditions")
-        or legacy.get("stop_conditions")
-        or structured_data.get("stop_conditions")
+        impl.get("stop_conditions") or legacy.get("stop_conditions") or structured_data.get("stop_conditions")
     )
-    common_mistakes = _coerce_str_list(
-        impl.get("common_mistakes") or legacy.get("common_mistakes")
-    )
-    variants = _coerce_variants(
-        impl.get("variants") or legacy.get("variants") or structured_data.get("variants")
-    )
+    common_mistakes = _coerce_str_list(impl.get("common_mistakes") or legacy.get("common_mistakes"))
+    variants = _coerce_variants(impl.get("variants") or legacy.get("variants") or structured_data.get("variants"))
 
     # Legacy stored time as float hours; coerce to a human string.
     expected_time = impl.get("expected_time")
@@ -124,10 +120,7 @@ def project_implementation_profile(
         when_to_escalate = [str(legacy["escalation_guidance"])]
 
     profile = PublicImplementationProfile(
-        smallest_viable_version=(
-            impl.get("smallest_viable_version")
-            or legacy.get("smallest_viable_version")
-        ),
+        smallest_viable_version=(impl.get("smallest_viable_version") or legacy.get("smallest_viable_version")),
         tools=tools,
         materials=materials,
         expected_time=expected_time,
@@ -139,17 +132,19 @@ def project_implementation_profile(
         when_to_escalate=when_to_escalate,
     )
 
-    if not any([
-        profile.smallest_viable_version,
-        profile.tools,
-        profile.materials,
-        profile.expected_time,
-        profile.success_checks,
-        profile.stop_conditions,
-        profile.common_mistakes,
-        profile.variants,
-        profile.when_to_escalate,
-    ]):
+    if not any(
+        [
+            profile.smallest_viable_version,
+            profile.tools,
+            profile.materials,
+            profile.expected_time,
+            profile.success_checks,
+            profile.stop_conditions,
+            profile.common_mistakes,
+            profile.variants,
+            profile.when_to_escalate,
+        ]
+    ):
         return None
     return profile
 

@@ -7,13 +7,11 @@ from typing import Any
 
 from pgvector.sqlalchemy import Vector
 from sqlalchemy import (
-    JSON,
     BigInteger,
     Boolean,
     CheckConstraint,
     Computed,
     DateTime,
-    Enum as SQLAEnum,
     ForeignKey,
     Index,
     Integer,
@@ -25,16 +23,19 @@ from sqlalchemy import (
     UniqueConstraint,
     text,
 )
+from sqlalchemy import (
+    Enum as SQLAEnum,
+)
 from sqlalchemy.dialects.postgresql import JSONB, TSVECTOR, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from capability_commons.db.base import Base
 from capability_commons.domain.enums import (
     AuditEventType,
-    COType,
     ContradictionDimension,
     ContradictionStatus,
     CostBand,
+    COType,
     EdgeType,
     EntityStatus,
     EntityType,
@@ -73,13 +74,19 @@ class Workspace(Base):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     slug: Mapped[str] = mapped_column(Text, unique=True, nullable=False)
     name: Mapped[str] = mapped_column(Text, nullable=False)
-    visibility: Mapped[WorkspaceVisibility] = mapped_column(_enum(WorkspaceVisibility, "workspace_visibility"), nullable=False, default=WorkspaceVisibility.PUBLIC)
+    visibility: Mapped[WorkspaceVisibility] = mapped_column(
+        _enum(WorkspaceVisibility, "workspace_visibility"), nullable=False, default=WorkspaceVisibility.PUBLIC
+    )
     default_language: Mapped[str] = mapped_column(Text, nullable=False, default="en")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
-    context_objects: Mapped[list[ContextObject]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
+    context_objects: Mapped[list[ContextObject]] = relationship(
+        back_populates="workspace", cascade="all, delete-orphan"
+    )
     entities: Mapped[list[Entity]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
-    evidence_sources: Mapped[list[EvidenceSource]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
+    evidence_sources: Mapped[list[EvidenceSource]] = relationship(
+        back_populates="workspace", cascade="all, delete-orphan"
+    )
     retrieval_runs: Mapped[list[RetrievalRun]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
 
 
@@ -88,17 +95,27 @@ class ContextObject(Base):
     __table_args__ = (UniqueConstraint("workspace_id", "slug", name="uq_context_objects_workspace_slug"),)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     slug: Mapped[str] = mapped_column(Text, nullable=False)
     type: Mapped[COType] = mapped_column(_enum(COType, "co_type"), nullable=False)
     canonical_title: Mapped[str] = mapped_column(Text, nullable=False)
-    current_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id"), nullable=True)
-    lifecycle_state: Mapped[LifecycleState] = mapped_column(_enum(LifecycleState, "lifecycle_state"), nullable=False, default=LifecycleState.DRAFT)
-    visibility: Mapped[VisibilityType] = mapped_column(_enum(VisibilityType, "visibility_type"), nullable=False, default=VisibilityType.PUBLIC)
+    current_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id"), nullable=True
+    )
+    lifecycle_state: Mapped[LifecycleState] = mapped_column(
+        _enum(LifecycleState, "lifecycle_state"), nullable=False, default=LifecycleState.DRAFT
+    )
+    visibility: Mapped[VisibilityType] = mapped_column(
+        _enum(VisibilityType, "visibility_type"), nullable=False, default=VisibilityType.PUBLIC
+    )
     default_language: Mapped[str] = mapped_column(Text, nullable=False, default="en")
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
-    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"), server_onupdate=text("now()"))
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=text("now()"), server_onupdate=text("now()")
+    )
     published_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     archived_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
@@ -131,7 +148,9 @@ class ContextObjectVersion(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    context_object_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_objects.id", ondelete="CASCADE"), nullable=False)
+    context_object_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_objects.id", ondelete="CASCADE"), nullable=False
+    )
     version_no: Mapped[int] = mapped_column(Integer, nullable=False)
     title: Mapped[str] = mapped_column(Text, nullable=False)
     summary_short: Mapped[str | None] = mapped_column(Text, nullable=True)
@@ -139,8 +158,12 @@ class ContextObjectVersion(Base):
     summary_long: Mapped[str | None] = mapped_column(Text, nullable=True)
     plain_language: Mapped[str] = mapped_column(Text, nullable=False)
     markdown_body: Mapped[str] = mapped_column(Text, nullable=False)
-    structured_data: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
-    validity_status: Mapped[ValidityStatus] = mapped_column(_enum(ValidityStatus, "validity_status"), nullable=False, default=ValidityStatus.CURRENT)
+    structured_data: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
+    validity_status: Mapped[ValidityStatus] = mapped_column(
+        _enum(ValidityStatus, "validity_status"), nullable=False, default=ValidityStatus.CURRENT
+    )
     valid_from: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     valid_to: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     stage: Mapped[StageType | None] = mapped_column(_enum(StageType, "stage_type"), nullable=True)
@@ -148,7 +171,9 @@ class ContextObjectVersion(Base):
     estimated_minutes: Mapped[int | None] = mapped_column(Integer, nullable=True)
     cost_band: Mapped[CostBand] = mapped_column(_enum(CostBand, "cost_band"), nullable=False, default=CostBand.FREE)
     risk_band: Mapped[RiskBand] = mapped_column(_enum(RiskBand, "risk_band"), nullable=False, default=RiskBand.LOW)
-    reading_level: Mapped[ReadingLevel] = mapped_column(_enum(ReadingLevel, "reading_level"), nullable=False, default=ReadingLevel.GENERAL)
+    reading_level: Mapped[ReadingLevel] = mapped_column(
+        _enum(ReadingLevel, "reading_level"), nullable=False, default=ReadingLevel.GENERAL
+    )
     beginner_safe: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
     teach_forward_ready: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     requires_professional: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
@@ -156,7 +181,9 @@ class ContextObjectVersion(Base):
     evidence_confidence: Mapped[Decimal | None] = mapped_column(Numeric(3, 2), nullable=True)
     locale_scope: Mapped[str] = mapped_column(Text, nullable=False, default="global")
     language_code: Mapped[str] = mapped_column(Text, nullable=False, default="en")
-    supersedes_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id"), nullable=True)
+    supersedes_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id"), nullable=True
+    )
     checksum: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
@@ -178,13 +205,25 @@ class ContextObjectVersion(Base):
         nullable=True,
     )
 
-    context_object: Mapped[ContextObject] = relationship(back_populates="versions", foreign_keys=[context_object_id], lazy="joined")
+    context_object: Mapped[ContextObject] = relationship(
+        back_populates="versions", foreign_keys=[context_object_id], lazy="joined"
+    )
     supersedes_version: Mapped[ContextObjectVersion | None] = relationship(remote_side="ContextObjectVersion.id")
-    facets: Mapped[list[ContextObjectFacet]] = relationship(back_populates="version", cascade="all, delete-orphan", lazy="selectin")
-    entities: Mapped[list[ContextObjectEntity]] = relationship(back_populates="version", cascade="all, delete-orphan", lazy="selectin")
-    review_records: Mapped[list[ReviewRecord]] = relationship(back_populates="version", cascade="all, delete-orphan", lazy="selectin")
-    object_files: Mapped[list[ObjectFile]] = relationship(back_populates="version", cascade="all, delete-orphan", lazy="selectin")
-    segments: Mapped[list[ContentSegment]] = relationship(back_populates="version", cascade="all, delete-orphan", lazy="selectin")
+    facets: Mapped[list[ContextObjectFacet]] = relationship(
+        back_populates="version", cascade="all, delete-orphan", lazy="selectin"
+    )
+    entities: Mapped[list[ContextObjectEntity]] = relationship(
+        back_populates="version", cascade="all, delete-orphan", lazy="selectin"
+    )
+    review_records: Mapped[list[ReviewRecord]] = relationship(
+        back_populates="version", cascade="all, delete-orphan", lazy="selectin"
+    )
+    object_files: Mapped[list[ObjectFile]] = relationship(
+        back_populates="version", cascade="all, delete-orphan", lazy="selectin"
+    )
+    segments: Mapped[list[ContentSegment]] = relationship(
+        back_populates="version", cascade="all, delete-orphan", lazy="selectin"
+    )
     evidence_spans: Mapped[list[EvidenceSpan]] = relationship(back_populates="version", lazy="selectin")
 
 
@@ -195,7 +234,9 @@ class ContextObjectFacet(Base):
         Index("idx_cof_facet_lookup", "facet_type", "facet_value", "context_object_version_id"),
     )
 
-    context_object_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
+    context_object_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
     facet_type: Mapped[FacetType] = mapped_column(_enum(FacetType, "facet_type"), nullable=False)
     facet_value: Mapped[str] = mapped_column(Text, nullable=False)
 
@@ -210,16 +251,26 @@ class Entity(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     entity_type: Mapped[EntityType] = mapped_column(_enum(EntityType, "entity_type"), nullable=False)
     canonical_name: Mapped[str] = mapped_column(Text, nullable=False)
-    status: Mapped[EntityStatus] = mapped_column(_enum(EntityStatus, "entity_status"), nullable=False, default=EntityStatus.ACTIVE)
-    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    status: Mapped[EntityStatus] = mapped_column(
+        _enum(EntityStatus, "entity_status"), nullable=False, default=EntityStatus.ACTIVE
+    )
+    metadata_json: Mapped[dict[str, Any]] = mapped_column(
+        "metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     workspace: Mapped[Workspace] = relationship(back_populates="entities", lazy="selectin")
-    aliases: Mapped[list[EntityAlias]] = relationship(back_populates="entity", cascade="all, delete-orphan", lazy="selectin")
-    object_links: Mapped[list[ContextObjectEntity]] = relationship(back_populates="entity", cascade="all, delete-orphan", lazy="selectin")
+    aliases: Mapped[list[EntityAlias]] = relationship(
+        back_populates="entity", cascade="all, delete-orphan", lazy="selectin"
+    )
+    object_links: Mapped[list[ContextObjectEntity]] = relationship(
+        back_populates="entity", cascade="all, delete-orphan", lazy="selectin"
+    )
 
 
 class EntityAlias(Base):
@@ -230,7 +281,9 @@ class EntityAlias(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    entity_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("entities.id", ondelete="CASCADE"), nullable=False)
+    entity_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("entities.id", ondelete="CASCADE"), nullable=False
+    )
     alias: Mapped[str] = mapped_column(Text, nullable=False)
 
     entity: Mapped[Entity] = relationship(back_populates="aliases")
@@ -238,10 +291,16 @@ class EntityAlias(Base):
 
 class ContextObjectEntity(Base):
     __tablename__ = "context_object_entities"
-    __table_args__ = (PrimaryKeyConstraint("context_object_version_id", "entity_id", name="pk_context_object_entities"),)
+    __table_args__ = (
+        PrimaryKeyConstraint("context_object_version_id", "entity_id", name="pk_context_object_entities"),
+    )
 
-    context_object_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
-    entity_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("entities.id", ondelete="CASCADE"), nullable=False)
+    context_object_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
+    entity_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("entities.id", ondelete="CASCADE"), nullable=False
+    )
     mention_count: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
     role_label: Mapped[str | None] = mapped_column(Text, nullable=True)
     is_primary: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
@@ -259,7 +318,9 @@ class Edge(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     src_node_kind: Mapped[NodeKind] = mapped_column(_enum(NodeKind, "node_kind"), nullable=False)
     src_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
     edge_type: Mapped[EdgeType] = mapped_column(_enum(EdgeType, "edge_type"), nullable=False)
@@ -267,11 +328,17 @@ class Edge(Base):
     dst_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
     ordinal: Mapped[int | None] = mapped_column(Integer, nullable=True)
     confidence: Mapped[Decimal] = mapped_column(Numeric(3, 2), nullable=False, default=Decimal("1.0"))
-    provenance_method: Mapped[ProvenanceMethod] = mapped_column(_enum(ProvenanceMethod, "provenance_method"), nullable=False, default=ProvenanceMethod.HUMAN_AUTHORED)
-    status: Mapped[RelationStatus] = mapped_column(_enum(RelationStatus, "relation_status"), nullable=False, default=RelationStatus.CURRENT)
+    provenance_method: Mapped[ProvenanceMethod] = mapped_column(
+        _enum(ProvenanceMethod, "provenance_method"), nullable=False, default=ProvenanceMethod.HUMAN_AUTHORED
+    )
+    status: Mapped[RelationStatus] = mapped_column(
+        _enum(RelationStatus, "relation_status"), nullable=False, default=RelationStatus.CURRENT
+    )
     valid_from: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     valid_to: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
-    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    metadata_json: Mapped[dict[str, Any]] = mapped_column(
+        "metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
@@ -282,21 +349,31 @@ class EvidenceSource(Base):
     __tablename__ = "evidence_sources"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
-    source_kind: Mapped[EvidenceSourceKind] = mapped_column(_enum(EvidenceSourceKind, "evidence_source_kind"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
+    source_kind: Mapped[EvidenceSourceKind] = mapped_column(
+        _enum(EvidenceSourceKind, "evidence_source_kind"), nullable=False
+    )
     title: Mapped[str] = mapped_column(Text, nullable=False)
     uri: Mapped[str | None] = mapped_column(Text, nullable=True)
     citation_text: Mapped[str | None] = mapped_column(Text, nullable=True)
-    trust_tier: Mapped[TrustTier] = mapped_column(_enum(TrustTier, "trust_tier"), nullable=False, default=TrustTier.SECONDARY)
+    trust_tier: Mapped[TrustTier] = mapped_column(
+        _enum(TrustTier, "trust_tier"), nullable=False, default=TrustTier.SECONDARY
+    )
     license: Mapped[str | None] = mapped_column(Text, nullable=True)
     language_code: Mapped[str] = mapped_column(Text, nullable=False, default="en")
     external_id: Mapped[str | None] = mapped_column(String(255), nullable=True, unique=True, index=True)
-    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    metadata_json: Mapped[dict[str, Any]] = mapped_column(
+        "metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     workspace: Mapped[Workspace] = relationship(back_populates="evidence_sources", lazy="selectin")
-    spans: Mapped[list[EvidenceSpan]] = relationship(back_populates="source", cascade="all, delete-orphan", lazy="selectin")
+    spans: Mapped[list[EvidenceSpan]] = relationship(
+        back_populates="source", cascade="all, delete-orphan", lazy="selectin"
+    )
 
 
 class EvidenceSpan(Base):
@@ -307,28 +384,42 @@ class EvidenceSpan(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    source_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("evidence_sources.id", ondelete="CASCADE"), nullable=False)
-    context_object_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True)
-    segment_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("content_segments.id", ondelete="SET NULL"), nullable=True)
+    source_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("evidence_sources.id", ondelete="CASCADE"), nullable=False
+    )
+    context_object_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True
+    )
+    segment_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("content_segments.id", ondelete="SET NULL"), nullable=True
+    )
     start_char: Mapped[int] = mapped_column(Integer, nullable=False)
     end_char: Mapped[int] = mapped_column(Integer, nullable=False)
     excerpt: Mapped[str] = mapped_column(Text, nullable=False)
     checksum: Mapped[str | None] = mapped_column(Text, nullable=True)
-    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    metadata_json: Mapped[dict[str, Any]] = mapped_column(
+        "metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     source: Mapped[EvidenceSource] = relationship(back_populates="spans", lazy="joined")
     version: Mapped[ContextObjectVersion | None] = relationship(back_populates="evidence_spans", lazy="joined")
     segment: Mapped[ContentSegment | None] = relationship(back_populates="evidence_spans", lazy="joined")
-    edge_links: Mapped[list[EdgeEvidenceSpan]] = relationship(back_populates="evidence_span", cascade="all, delete-orphan", lazy="selectin")
+    edge_links: Mapped[list[EdgeEvidenceSpan]] = relationship(
+        back_populates="evidence_span", cascade="all, delete-orphan", lazy="selectin"
+    )
 
 
 class EdgeEvidenceSpan(Base):
     __tablename__ = "edge_evidence_spans"
     __table_args__ = (PrimaryKeyConstraint("edge_id", "evidence_span_id", name="pk_edge_evidence_spans"),)
 
-    edge_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("edges.id", ondelete="CASCADE"), nullable=False)
-    evidence_span_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("evidence_spans.id", ondelete="CASCADE"), nullable=False)
+    edge_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("edges.id", ondelete="CASCADE"), nullable=False
+    )
+    evidence_span_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("evidence_spans.id", ondelete="CASCADE"), nullable=False
+    )
 
     edge: Mapped[Edge] = relationship(back_populates="evidence_links")
     evidence_span: Mapped[EvidenceSpan] = relationship(back_populates="edge_links")
@@ -339,13 +430,19 @@ class ReviewRecord(Base):
     __table_args__ = (Index("idx_review_records_version", "context_object_version_id", "created_at"),)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
-    context_object_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
+    context_object_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
     review_type: Mapped[ReviewType] = mapped_column(_enum(ReviewType, "review_type"), nullable=False)
     outcome: Mapped[ReviewOutcome] = mapped_column(_enum(ReviewOutcome, "review_outcome"), nullable=False)
     reviewer_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     commentary: Mapped[str | None] = mapped_column(Text, nullable=True)
-    checklist: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    checklist: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     version: Mapped[ContextObjectVersion] = relationship(back_populates="review_records", lazy="joined")
@@ -356,18 +453,32 @@ class ContradictionCase(Base):
     __table_args__ = (Index("idx_contradiction_cases_versions", "left_version_id", "right_version_id"),)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
-    left_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
-    right_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
-    dimension: Mapped[ContradictionDimension] = mapped_column(_enum(ContradictionDimension, "contradiction_dimension"), nullable=False)
-    severity: Mapped[SeverityLevel] = mapped_column(_enum(SeverityLevel, "severity_level"), nullable=False, default=SeverityLevel.MEDIUM)
-    status: Mapped[ContradictionStatus] = mapped_column(_enum(ContradictionStatus, "contradiction_status"), nullable=False, default=ContradictionStatus.OPEN)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
+    left_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
+    right_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
+    dimension: Mapped[ContradictionDimension] = mapped_column(
+        _enum(ContradictionDimension, "contradiction_dimension"), nullable=False
+    )
+    severity: Mapped[SeverityLevel] = mapped_column(
+        _enum(SeverityLevel, "severity_level"), nullable=False, default=SeverityLevel.MEDIUM
+    )
+    status: Mapped[ContradictionStatus] = mapped_column(
+        _enum(ContradictionStatus, "contradiction_status"), nullable=False, default=ContradictionStatus.OPEN
+    )
     opened_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     opened_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
     resolved_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     resolved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     resolution_note: Mapped[str | None] = mapped_column(Text, nullable=True)
-    resolution_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True)
+    resolution_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True
+    )
 
 
 class ContentSegment(Base):
@@ -386,13 +497,19 @@ class ContentSegment(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
-    context_object_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
+    context_object_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
     ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
     text_content: Mapped[str] = mapped_column(Text, nullable=False)
     token_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
     embedding: Mapped[list[float] | None] = mapped_column(Vector(1536), nullable=True)
-    metadata_json: Mapped[dict[str, Any]] = mapped_column("metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    metadata_json: Mapped[dict[str, Any]] = mapped_column(
+        "metadata", JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     version: Mapped[ContextObjectVersion] = relationship(back_populates="segments", lazy="joined")
@@ -404,16 +521,26 @@ class RetrievalRun(Base):
     __table_args__ = (Index("idx_retrieval_runs_workspace_created_at", "workspace_id", "created_at"),)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     requester_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     intent: Mapped[RetrievalIntent] = mapped_column(_enum(RetrievalIntent, "retrieval_intent"), nullable=False)
     query_text: Mapped[str] = mapped_column(Text, nullable=False)
     task_spec: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False)
-    compiled_plan: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
-    status: Mapped[RetrievalRunStatus] = mapped_column(_enum(RetrievalRunStatus, "retrieval_run_status"), nullable=False, default=RetrievalRunStatus.RUNNING)
+    compiled_plan: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
+    status: Mapped[RetrievalRunStatus] = mapped_column(
+        _enum(RetrievalRunStatus, "retrieval_run_status"), nullable=False, default=RetrievalRunStatus.RUNNING
+    )
     sufficiency_score: Mapped[Decimal] = mapped_column(Numeric(4, 3), nullable=False, default=Decimal("0.0"))
-    budget_snapshot: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
-    result_summary: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    budget_snapshot: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
+    result_summary: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
@@ -429,14 +556,24 @@ class RetrievalStep(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    retrieval_run_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("retrieval_runs.id", ondelete="CASCADE"), nullable=False)
+    retrieval_run_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("retrieval_runs.id", ondelete="CASCADE"), nullable=False
+    )
     iteration_no: Mapped[int] = mapped_column(Integer, nullable=False)
-    step_type: Mapped[RetrievalStepType] = mapped_column(_enum(RetrievalStepType, "retrieval_step_type"), nullable=False)
+    step_type: Mapped[RetrievalStepType] = mapped_column(
+        _enum(RetrievalStepType, "retrieval_step_type"), nullable=False
+    )
     query_text: Mapped[str | None] = mapped_column(Text, nullable=True)
-    inputs: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
-    outputs: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    inputs: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
+    outputs: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     latency_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    budget_spent: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    budget_spent: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
 
     run: Mapped[RetrievalRun] = relationship(back_populates="steps")
@@ -447,7 +584,9 @@ class ObjectFile(Base):
     __table_args__ = (CheckConstraint("byte_size IS NULL OR byte_size >= 0", name="byte_size_non_negative"),)
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    context_object_version_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False)
+    context_object_version_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="CASCADE"), nullable=False
+    )
     object_store_key: Mapped[str] = mapped_column(Text, nullable=False)
     media_type: Mapped[str] = mapped_column(Text, nullable=False)
     byte_size: Mapped[int | None] = mapped_column(BigInteger, nullable=True)
@@ -479,7 +618,9 @@ class ApiKey(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     key_hash: Mapped[str] = mapped_column(Text, nullable=False)
     name: Mapped[str] = mapped_column(Text, nullable=False)
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
@@ -507,6 +648,7 @@ class RateLimitLog(Base):
 
 class ConversationTurn(Base):
     """Stores individual turns of a multi-turn ask conversation."""
+
     __tablename__ = "conversation_turns"
     __table_args__ = (
         Index("idx_conversation_turns_conversation", "conversation_id", "turn_number"),
@@ -515,7 +657,9 @@ class ConversationTurn(Base):
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     conversation_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     turn_number: Mapped[int] = mapped_column(Integer, nullable=False)
     query: Mapped[str] = mapped_column(Text, nullable=False)
     resolved_intent: Mapped[str] = mapped_column(Text, nullable=False)
@@ -527,6 +671,7 @@ class ConversationTurn(Base):
 
 class IngestJob(Base):
     """Tracks an ingestion pipeline run from init through load."""
+
     __tablename__ = "ingest_jobs"
     __table_args__ = (
         Index("idx_ingest_jobs_workspace_status", "workspace_id", "status"),
@@ -534,22 +679,31 @@ class IngestJob(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     project_name: Mapped[str] = mapped_column(Text, nullable=False)
-    status: Mapped[IngestJobStatus] = mapped_column(_enum(IngestJobStatus, "ingest_job_status"), nullable=False, default=IngestJobStatus.PENDING)
+    status: Mapped[IngestJobStatus] = mapped_column(
+        _enum(IngestJobStatus, "ingest_job_status"), nullable=False, default=IngestJobStatus.PENDING
+    )
     source_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
-    config_json: Mapped[dict[str, Any]] = mapped_column(JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb"))
+    config_json: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, nullable=False, default=dict, server_default=text("'{}'::jsonb")
+    )
     error_log: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))
     created_by: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), nullable=True)
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
-    passes: Mapped[list[IngestJobPass]] = relationship(back_populates="job", cascade="all, delete-orphan", order_by="IngestJobPass.ordinal")
+    passes: Mapped[list[IngestJobPass]] = relationship(
+        back_populates="job", cascade="all, delete-orphan", order_by="IngestJobPass.ordinal"
+    )
 
 
 class IngestJobPass(Base):
     """Tracks an individual pass within an ingest job."""
+
     __tablename__ = "ingest_job_passes"
     __table_args__ = (
         UniqueConstraint("ingest_job_id", "pass_name", name="uq_ingest_job_pass"),
@@ -557,10 +711,14 @@ class IngestJobPass(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    ingest_job_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("ingest_jobs.id", ondelete="CASCADE"), nullable=False)
+    ingest_job_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("ingest_jobs.id", ondelete="CASCADE"), nullable=False
+    )
     pass_name: Mapped[str] = mapped_column(Text, nullable=False)
     ordinal: Mapped[int] = mapped_column(Integer, nullable=False)
-    status: Mapped[IngestPassStatus] = mapped_column(_enum(IngestPassStatus, "ingest_pass_status"), nullable=False, default=IngestPassStatus.PENDING)
+    status: Mapped[IngestPassStatus] = mapped_column(
+        _enum(IngestPassStatus, "ingest_pass_status"), nullable=False, default=IngestPassStatus.PENDING
+    )
     output_path: Mapped[str | None] = mapped_column(Text, nullable=True)
     artifact_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     error_message: Mapped[str | None] = mapped_column(Text, nullable=True)
@@ -572,6 +730,7 @@ class IngestJobPass(Base):
 
 class Feedback(Base):
     """User feedback on answers, objects, or general reports."""
+
     __tablename__ = "feedback"
     __table_args__ = (
         Index("idx_feedback_created", "created_at"),
@@ -598,11 +757,21 @@ class AuditEvent(Base):
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    workspace_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False
+    )
     event_type: Mapped[AuditEventType] = mapped_column(_enum(AuditEventType, "audit_event_type"), nullable=False)
-    actor_key_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("api_keys.id", ondelete="SET NULL"), nullable=True)
-    target_object_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_objects.id", ondelete="SET NULL"), nullable=True)
-    target_version_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True)
-    target_edge_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("edges.id", ondelete="SET NULL"), nullable=True)
+    actor_key_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("api_keys.id", ondelete="SET NULL"), nullable=True
+    )
+    target_object_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_objects.id", ondelete="SET NULL"), nullable=True
+    )
+    target_version_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("context_object_versions.id", ondelete="SET NULL"), nullable=True
+    )
+    target_edge_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("edges.id", ondelete="SET NULL"), nullable=True
+    )
     detail: Mapped[dict[str, Any] | None] = mapped_column(JSONB, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, server_default=text("now()"))

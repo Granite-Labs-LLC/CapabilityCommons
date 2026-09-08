@@ -29,9 +29,7 @@ def is_key_expired(expire_at: datetime | None) -> bool:
 
 async def resolve_api_key(session: AsyncSession, raw_key: str) -> tuple[ApiKey, Workspace] | None:
     key_hash = hash_key(raw_key)
-    result = await session.execute(
-        select(ApiKey).where(ApiKey.key_hash == key_hash, ApiKey.revoked_at.is_(None))
-    )
+    result = await session.execute(select(ApiKey).where(ApiKey.key_hash == key_hash, ApiKey.revoked_at.is_(None)))
     api_key = result.scalar_one_or_none()
     if api_key is None:
         return None

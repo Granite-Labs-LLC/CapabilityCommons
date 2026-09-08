@@ -10,6 +10,7 @@ project manifest, every method is a no-op; if the DB is unreachable,
 errors are swallowed with a console warning rather than failing the
 ingestion.
 """
+
 from __future__ import annotations
 
 import uuid
@@ -60,6 +61,7 @@ class JobTracker:
             async with self._session() as session:
                 if session is None:
                     return
+                assert self.job_id is not None  # guaranteed by self.enabled
                 await IngestService(session).start_pass(self.job_id, pass_name)
         except Exception as exc:  # noqa: BLE001 — best-effort tracker
             _warn(f"start_pass({pass_name}) failed: {exc}")
@@ -77,6 +79,7 @@ class JobTracker:
             async with self._session() as session:
                 if session is None:
                     return
+                assert self.job_id is not None  # guaranteed by self.enabled
                 await IngestService(session).complete_pass(
                     self.job_id,
                     pass_name,
@@ -93,9 +96,8 @@ class JobTracker:
             async with self._session() as session:
                 if session is None:
                     return
-                await IngestService(session).fail_pass(
-                    self.job_id, pass_name, error_message
-                )
+                assert self.job_id is not None  # guaranteed by self.enabled
+                await IngestService(session).fail_pass(self.job_id, pass_name, error_message)
         except Exception as exc:  # noqa: BLE001
             _warn(f"fail_pass({pass_name}) failed: {exc}")
 
@@ -116,6 +118,7 @@ def tracker_for(project: "IngestProject", db_url: str | None = None) -> JobTrack
 def _warn(message: str) -> None:
     try:
         from rich.console import Console
+
         Console().print(f"[yellow]job tracker:[/yellow] {message}")
     except Exception:  # noqa: BLE001
         print(f"job tracker: {message}")

@@ -3,6 +3,7 @@
 The tracker is best-effort and DB-backed; these tests validate behavior
 without a live Postgres by exercising the no-op path and the bind logic.
 """
+
 from __future__ import annotations
 
 import asyncio
@@ -16,8 +17,7 @@ def _project(tmp_path):
     return IngestProject.init(
         projects_root=tmp_path / "projects",
         name="test-tracker",
-        sources=[{"id": "src.x", "file": "sources/x.pdf",
-                   "title": "X", "source_kind": "BOOK"}],
+        sources=[{"id": "src.x", "file": "sources/x.pdf", "title": "X", "source_kind": "BOOK"}],
     )
 
 

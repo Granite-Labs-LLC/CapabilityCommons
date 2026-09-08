@@ -1,4 +1,5 @@
 """Pass 6: Generate six-part bundles for core topic objects via LLM."""
+
 from __future__ import annotations
 
 from fnmatch import fnmatch

@@ -1,4 +1,5 @@
 """Append-only audit event log for governance transparency."""
+
 from __future__ import annotations
 
 import uuid

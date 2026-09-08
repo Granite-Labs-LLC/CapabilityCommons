@@ -20,9 +20,7 @@ async def db_session():
     async with session_factory() as session:
         yield session
         # Clean up test data by deleting test workspaces (cascades)
-        await session.execute(
-            text("DELETE FROM workspaces WHERE slug LIKE 'test-%'")
-        )
+        await session.execute(text("DELETE FROM workspaces WHERE slug LIKE 'test-%'"))
         await session.commit()
 
     await engine.dispose()

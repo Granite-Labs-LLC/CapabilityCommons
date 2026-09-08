@@ -5,11 +5,11 @@ from datetime import datetime
 from decimal import Decimal
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field
 
 from capability_commons.domain.enums import (
-    COType,
     CostBand,
+    COType,
     LifecycleState,
     ReadingLevel,
     RiskBand,

@@ -1,4 +1,5 @@
 """Pass 3: Link claims in drafts to source spans via LLM."""
+
 from __future__ import annotations
 
 from fnmatch import fnmatch
@@ -85,13 +86,9 @@ async def run_cite(
         # Scope strictly to the object's extracted source segments. Without
         # them we cannot honestly cite — skip rather than fabricate support
         # from arbitrary segments of the source.
-        source_seg_ids = {
-            sid for sid in obj.get("source_segment_ids", []) if sid in segments_by_id
-        }
+        source_seg_ids = {sid for sid in obj.get("source_segment_ids", []) if sid in segments_by_id}
         if not source_seg_ids:
-            console.print(
-                f"    [yellow]⚠[/yellow] {slug}: no source_segment_ids — skipping"
-            )
+            console.print(f"    [yellow]⚠[/yellow] {slug}: no source_segment_ids — skipping")
             continue
 
         primary_segs = [segments_by_id[sid] for sid in source_seg_ids]
@@ -118,8 +115,7 @@ async def run_cite(
         relevant_segs = list(relevant.values())
         allowed_seg_ids = set(relevant)
         segments_text = "\n\n".join(
-            f"[{s.segment_id} | pages {s.page_start}-{s.page_end}]\n{s.text}"
-            for s in relevant_segs[:50]
+            f"[{s.segment_id} | pages {s.page_start}-{s.page_end}]\n{s.text}" for s in relevant_segs[:50]
         )
 
         user_msg = USER_TEMPLATE.format(
@@ -137,9 +133,7 @@ async def run_cite(
             # Drop citations whose support points outside the allowed
             # segment set; the LLM occasionally invents segment IDs or
             # returns the short form without the "<source_id>::" prefix.
-            allowed_short = {
-                sid.split("::", 1)[1]: sid for sid in allowed_seg_ids if "::" in sid
-            }
+            allowed_short = {sid.split("::", 1)[1]: sid for sid in allowed_seg_ids if "::" in sid}
 
             def _normalize_segment_id(sid: str) -> str | None:
                 if sid in allowed_seg_ids:
@@ -155,8 +149,7 @@ async def run_cite(
                     if norm is None:
                         continue
                     clean_support.append(
-                        span if norm == span.segment_id
-                        else span.model_copy(update={"segment_id": norm})
+                        span if norm == span.segment_id else span.model_copy(update={"segment_id": norm})
                     )
                 if not clean_support:
                     dropped += 1
@@ -169,15 +162,12 @@ async def run_cite(
 
             all_citations.extend(c.model_dump() for c in kept)
             suffix = f" ({dropped} unsupported dropped)" if dropped else ""
-            console.print(
-                f"    [green]✓[/green] {slug}: {len(kept)} citations{suffix}"
-            )
+            console.print(f"    [green]✓[/green] {slug}: {len(kept)} citations{suffix}")
         except Exception as e:
             console.print(f"    [red]✗[/red] {slug}: {e}")
 
     # Write evidence map
-    with open(project.evidence_map_file, "wb") as f:
-        f.write(orjson.dumps(all_citations, option=orjson.OPT_INDENT_2))
+    project.evidence_map_file.write_bytes(orjson.dumps(all_citations, option=orjson.OPT_INDENT_2))
 
     project.mark_pass_complete("cite")
     console.print(f"[green]Cite complete:[/green] {len(all_citations)} citations linked")
