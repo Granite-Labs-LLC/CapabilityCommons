@@ -38,6 +38,7 @@ from capability_commons.domain.enums import (
     VisibilityType,
     WorkspaceVisibility,
 )
+from capability_commons.services.publish_gate import HIGH_RISK_BANDS
 
 SEED_TYPE_TO_CO_TYPE = {
     "skill": COType.SKILL_GUIDE,
@@ -213,6 +214,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         # report instead of silently invisible (unsearchable) objects
         # discovered much later via missing content_segments.
         emitted_publish_events: list[tuple[str, uuid.UUID, uuid.UUID]] = []
+        held_for_review_slugs: list[str] = []
 
         for node in nodes:
             # Prefer the canonical slug; fall back to id for legacy seed data.
@@ -244,6 +246,16 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             co_type = resolve_co_type(node)
             lifecycle_str = node.get("lifecycle_state", "published").lower()
             lifecycle = LifecycleState(lifecycle_str) if lifecycle_str else LifecycleState.PUBLISHED
+            risk_band = RISK_MAP.get(node.get("risk_band", "low"), RiskBand.LOW)
+            # Same rule the API's PublishGate enforces: high-risk content needs
+            # an approved review before it goes public. Seeding used to bypass
+            # it entirely -- the 2026-09-08 FEMA load published 55 high-risk
+            # objects with no review. Load them as in_review instead; their
+            # citations and edges still load so a reviewer has the evidence.
+            held_for_review = lifecycle == LifecycleState.PUBLISHED and risk_band in HIGH_RISK_BANDS
+            if held_for_review:
+                lifecycle = LifecycleState.IN_REVIEW
+                held_for_review_slugs.append(slug)
             obj = ContextObject(
                 workspace_id=workspace.id,
                 slug=slug,
@@ -274,25 +286,27 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                 difficulty=node.get("difficulty"),
                 estimated_minutes=estimated_minutes,
                 cost_band=COST_MAP.get(node.get("cost_band", "free"), CostBand.FREE),
-                risk_band=RISK_MAP.get(node.get("risk_band", "low"), RiskBand.LOW),
+                risk_band=risk_band,
             )
             session.add(version)
             await session.flush()
 
-            # Set current_version_id and mark as published
+            # Set current_version_id either way (a reviewer needs the version),
+            # but only mark published and index for search when not held.
             obj.current_version_id = version.id
-            obj.published_at = obj.created_at
+            if not held_for_review:
+                obj.published_at = obj.created_at
 
-            # Emit publish event so the worker indexes/embeds this version
-            session.add(
-                OutboxEvent(
-                    aggregate_type="context_object",
-                    aggregate_id=obj.id,
-                    event_type="version.published",
-                    payload={"object_id": str(obj.id), "version_id": str(version.id)},
+                # Emit publish event so the worker indexes/embeds this version
+                session.add(
+                    OutboxEvent(
+                        aggregate_type="context_object",
+                        aggregate_id=obj.id,
+                        event_type="version.published",
+                        payload={"object_id": str(obj.id), "version_id": str(version.id)},
+                    )
                 )
-            )
-            emitted_publish_events.append((slug, obj.id, version.id))
+                emitted_publish_events.append((slug, obj.id, version.id))
 
             # Add facets
             for facet_type, facet_value in map_facets(node):
@@ -565,6 +579,12 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         f"{req_edges} prerequisite edges (from YAML), "
         f"{csv_edge_count} CSV edges created, {csv_edge_skipped} CSV edges skipped (duplicates)"
     )
+    if held_for_review_slugs:
+        print(
+            f"  Held {len(held_for_review_slugs)} high-risk objects as in_review (need an approved review to publish):"
+        )
+        for slug in held_for_review_slugs:
+            print(f"    {slug}")
 
 
 async def _ensure_workspace(session: AsyncSession) -> Workspace:
