@@ -357,6 +357,12 @@ async def run_draft(
                 user=user_msg,
                 response_model=DraftObject,
             )
+            # The matrix slug is canonical: the draft file is named by it and
+            # --skip-existing looks it up. The model sometimes rewrites it
+            # (3 of 32 OSHA drafts dropped the dot namespace, e.g.
+            # safety.x -> safety-x), leaving file name and slug disagreeing.
+            result.slug = slug
+            result.id = slug
             # Attach source segment lineage
             result.source_segment_ids = [sid for sid in seg_ids if sid in segments_by_id]
             # Write as YAML

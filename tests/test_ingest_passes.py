@@ -179,6 +179,53 @@ class TestDraftPass:
         obj = yaml.safe_load(draft_file.read_text())
         assert obj["canonical_title"] == "Emergency Water Storage"
 
+    async def test_matrix_slug_wins_over_model_rewrite(self, project_with_segments):
+        """The model sometimes rewrites the slug (e.g. drops the dot namespace);
+        the draft must keep the matrix slug so file name and slug agree."""
+        from pydantic import BaseModel
+
+        from capability_commons.cli.ingest.draft import run_draft
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        matrix_data = [
+            {
+                "source_id": "src.test",
+                "section_id": "sec_001",
+                "start_page": 1,
+                "end_page": 1,
+                "heading_path": "Chapter 1 > Water Storage",
+                "segment_ids": "seg_000001",
+                "candidate_slug": "water.safe-storage",
+                "candidate_type": "skill_guide",
+                "primary_domain": "water",
+                "stage": "household",
+                "summary": "How to store water safely.",
+                "confidence": 0.9,
+            }
+        ]
+        pl.DataFrame(matrix_data).write_csv(project_with_segments.matrix_file)
+
+        class DraftObject(BaseModel, extra="allow"):
+            id: str
+            slug: str
+            canonical_title: str
+            markdown_body: str
+
+        mock_result = DraftObject(
+            id="water-safe-storage",
+            slug="water-safe-storage",
+            canonical_title="Emergency Water Storage",
+            markdown_body="# What this is\nHow to store water safely.",
+        )
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_draft(project_with_segments, client, yes=True)
+
+        obj = yaml.safe_load((project_with_segments.drafts_dir / "water.safe-storage.yaml").read_text())
+        assert obj["slug"] == "water.safe-storage"
+        assert obj["id"] == "water.safe-storage"
+
     async def test_skip_existing(self, project_with_segments):
         from capability_commons.cli.ingest.draft import run_draft
         from capability_commons.cli.ingest.llm_client import LLMClient
