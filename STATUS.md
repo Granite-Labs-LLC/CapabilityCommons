@@ -134,17 +134,17 @@ Two seed packs loaded on startup: 25 capability objects (water, food, shelter, p
 
 `eval/` — a gold-query retrieval harness (`eval/gold/queries.yaml`) scored against `/v1/search` and `/v1/public/ask`: search recall, citation count, intent match (informational), and `action_now` presence. Cheap enough to run per-PR; not yet wired into CI. Latest recorded run: `eval/reports/2026-09-07.md`, still 3/11 passed, but the failure reasons changed completely once the two 2026-09-07 fixes below landed — see "Content/vision gap" for the full account. The 2026-05-14 baseline (`eval/reports/2026-05-14-smoke.md`) is now superseded.
 
-### CI/CD — All 4 CI jobs green as of 2026-09-08 (first time ever — see below)
+### CI/CD — All jobs green as of 2026-09-13 (first went green 2026-09-08 — see below)
 
 | Component | Status |
 |-----------|--------|
-| GitHub Actions CI | **All 4 jobs pass**: lint, typecheck, test, integration. Docker build passes as its own job too. |
+| GitHub Actions CI | **All jobs pass**: lint, typecheck, test, integration, eval, docker. |
 | GitHub Actions CD | Configured, but currently fails on every run — "missing server host" (a deployment secret was never set for this repo). Infrastructure/ops configuration, not a code issue; needs the actual SSH host secret from whoever owns the deploy target. |
 | Linting | ruff (E, F, I, W rules) + `ruff format` — both clean |
 | Type checking | mypy, `pydantic.mypy` plugin enabled, 0 errors |
 | Integration tests | pgvector/pgvector:pg16 service in CI — passes |
 | Docker build | Passes; verified the built image's app actually imports (51 routes) |
-| Eval harness in CI | Not yet wired |
+| Eval harness in CI | Wired 2026-09-13, informational only (`continue-on-error`; gold set not yet trusted) and a no-op unless `OPENAI_API_KEY` is set as a repo secret (real API spend per run otherwise) |
 
 **2026-09-08: CI had failed on literally every push since at least April 2026** (checked run history back through the first recorded runs — this table's previous "Configured"/"Verified in CI" language was aspirational, not actually true). Ran a full local validation pass against all 4 CI jobs and fixed every real gap:
 - **lint**: 163 ruff errors (142 auto-fixed; the remaining 24 were `__init__.py` re-exports, fixed with a standard per-file-ignore for F401/F403) + `ruff format` had apparently never been run (99/150 files needed it).
@@ -153,6 +153,8 @@ Two seed packs loaded on startup: 25 capability objects (water, food, shelter, p
 - **test**: `ci.yml` never installed the project or its dependencies before running mypy (typecheck job), and never installed `[ingest]` extras before collecting ingest-dependent test files (4 files failed to even import). Installing `[ingest]` on Python 3.14 turned out not to work either (marker-pdf's own dependency tree — Pillow — fails to build a wheel here, the same underlying "Python 3.14 ecosystem immaturity" issue as polars). Fixed by ignoring the 4 ingest-only files in the `test` job (real ingest work already runs via a separate Python 3.13 environment locally, not CI's 3.14) and adding `rich` directly to `[dev]` (pure-Python, needed transitively by non-ingest-marked tests via `cli/ingest/validate.py`). Also found and deselected 2 tests (`test_health.py::test_health`, `test_smoke_api.py::test_retrieval_allows_anonymous_access`) that instantiate the FastAPI app via `TestClient` — its startup lifespan needs a real Postgres connection, which only the `integration` job provisions; these belong there, not in the DB-less `test` job (not yet moved — see TODO.md).
 
 Full account: three commits, `58e93ba`, `fca8c88`, `c4916c4`.
+
+**2026-09-13 follow-up**: moved `test_health.py::test_health` and `test_smoke_api.py::test_retrieval_allows_anonymous_access` into `integration` as planned, and wired the eval harness in as a new job (see table above). Found a real bug while doing it: combining the two moved tests into the same `pytest` invocation as `test_integration_*.py` passed locally but failed deterministically in CI — `RuntimeError: ... Future ... attached to a different loop`. Root cause: the app's async DB engine is a process-wide singleton whose connection pool binds to whichever event loop was active on its first `TestClient`-triggered startup; any second `TestClient(app)` instantiation in the same pytest process reuses that pool under a different loop and crashes. Reproduced in <1s locally with zero load — this session had previously (wrongly) written off the identical failure as resource-contention flakiness. Fixed for CI by running each of the two tests as its own separate `pytest` invocation; the underlying engine-lifecycle bug is still open (see TODO.md).
 
 ### Deployment — Functional
 
@@ -167,11 +169,15 @@ Full account: three commits, `58e93ba`, `fca8c88`, `c4916c4`.
 | Backup/restore | Automated daily + manual scripts in `deploy/` |
 | Cloud deployment docs | Linux production guide with Quick Deploy |
 
-### Frontend (CapabilityCommonsSite) — Integrated, feature-complete + stretch merged
+### Frontend (CapabilityCommonsSite) — Integrated, feature-complete + stretch merged; submodule pointer fixed 2026-09-13
 
-Astro 6 + React 19 static site consuming the backend API, integrated as a git submodule at `apps/site`. `astro check` clean as of the last merge (2026-05-14).
+Astro 6 + React 19 static site consuming the backend API, integrated as a git submodule at `apps/site`. `astro check` clean.
 
-All prior functionality (landing, object explorer, detail pages, graph viz, search, learning paths, syllabus, AskTutor, implementation profiles, bundle viewer, ring explorer, feedback, print styles, offline page, glossary) remains in place. Known frontend issues from the last smoke test are tracked in Known gaps below (static build performance, editorial auth, PWA polish).
+**2026-09-13**: found and fixed a real gap — this repo's `apps/site` submodule pointer had been pinned to a commit that only ever existed in one local checkout and was **never pushed to the submodule's own remote**, while the submodule's real `origin/main` sat 18 merged-PR commits ahead (contribute forms, review/ingest dashboards, PWA, print bundles, the frontend halves of ANSWER-1/METRICS-2/REV-2/MULTI-1). Verified the real history builds cleanly against the current backend, then bumped the pointer to adopt it — the old orphaned commit's history is preserved on a local branch (`backup-local-unpushed-fe-work`), not discarded. Full account in the `frontend_submodule_divergence` memory.
+
+Also fixed the `astro build` performance issue while investigating: `listPublicObjects()` had no caching (unlike graph data) and was hit ~7× per build, each call triggering the backend's list endpoint to fully render every object server-side; `explore/[slug].astro` and `print/[slug].astro` also each redundantly re-fetched their own object individually per page. Fixed both — cut build time from 10+ minutes to ~3:10, and fixed real intermittent build failures in `print/[slug].astro` (redundant fetches could exhaust the dev backend's connections under load) as a side effect.
+
+All prior functionality (landing, object explorer, detail pages, graph viz, search, learning paths, syllabus, AskTutor, implementation profiles, bundle viewer, ring explorer, feedback, print styles, offline page, glossary) remains in place, now via the real upstream implementations rather than the orphaned local ones.
 
 ### Tests — 401 passing, 6 failing (all understood), fully re-verified 2026-09-08
 

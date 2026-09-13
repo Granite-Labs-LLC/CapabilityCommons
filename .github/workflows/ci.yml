@@ -84,17 +84,26 @@ jobs:
           python-version: "3.14"
       - run: pip install -e ".[dev]"
       - run: alembic upgrade head
-      # test_health / test_retrieval_allows_anonymous_access are added here
-      # explicitly (not moved into a test_integration_*.py file) because they
-      # belong topically with health.py/smoke_api.py, not the integration
-      # suite -- they just happen to need the real Postgres this job
-      # provisions, since TestClient(app) runs the app's startup lifespan.
-      # Deselected from the `test` job above for the same reason.
       - run: >
           pytest tests/test_integration.py tests/test_integration_audit.py tests/test_integration_storage.py tests/test_integration_embedding.py tests/test_integration_publication.py tests/test_integration_search.py tests/test_integration_retrieval.py
-          tests/test_health.py::test_health
-          tests/test_smoke_api.py::test_retrieval_allows_anonymous_access
           -v
+      # test_health / test_retrieval_allows_anonymous_access instantiate the
+      # FastAPI app via TestClient, which runs its startup lifespan -- they
+      # need a real Postgres, hence running here rather than in the DB-less
+      # `test` job. Each runs as its OWN pytest invocation (not combined with
+      # each other, or with the tests above): the app's async DB engine is a
+      # process-wide singleton whose connection pool binds to whichever event
+      # loop was active on its first TestClient-triggered startup. A second
+      # TestClient(app) instantiation in the SAME pytest process reuses that
+      # pool under a different loop and crashes with "Future ... attached to
+      # a different loop" -- confirmed deterministic (not load-related) by
+      # reproducing it locally in <1s with zero contention, order-independent
+      # (whichever of these two runs second fails), and unrelated to
+      # test_integration*.py (still fails with only these two combined).
+      # Separate processes each get a fresh engine/loop, so this sidesteps it;
+      # the actual fix belongs in the app's engine lifecycle, not here.
+      - run: pytest tests/test_health.py::test_health -v
+      - run: pytest tests/test_smoke_api.py::test_retrieval_allows_anonymous_access -v
 
   docker:
     runs-on: ubuntu-latest
