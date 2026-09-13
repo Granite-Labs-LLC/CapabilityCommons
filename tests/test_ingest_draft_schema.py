@@ -5,7 +5,15 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from capability_commons.cli.ingest.draft import REQUIRED_BODY_SECTIONS, DraftObject
+from capability_commons.cli.ingest.draft import (
+    IMPLEMENTATION_EXAMPLE,
+    REQUIRED_BODY_SECTIONS,
+    USER_TEMPLATE,
+    DraftObject,
+    ImplementationEnvelope,
+    _merge_duplicate_slug_rows,
+)
+from capability_commons.domain.enums import CostBand, RiskBand, StageType
 
 VALID_BODY = "\n".join(f"## {s}\nSomething" for s in REQUIRED_BODY_SECTIONS)
 
@@ -127,3 +135,40 @@ def test_envelope_normalized_into_structured_data():
     assert impl["variants"][0]["label"] == "renter"
     # Defaults preserved.
     assert isinstance(impl["common_mistakes"], list)
+
+
+def test_prompt_implementation_example_is_valid_envelope():
+    """The example rendered into the draft prompt must itself pass the
+    validator, so the prompt can't drift from what DraftObject requires."""
+    ImplementationEnvelope.model_validate(IMPLEMENTATION_EXAMPLE)
+    obj = DraftObject.model_validate(_minimal_kwargs(structured_data={"implementation": IMPLEMENTATION_EXAMPLE}))
+    assert obj.structured_data["implementation"]["smallest_viable_version"]
+
+
+def test_prompt_renders_nested_implementation_example():
+    rendered = USER_TEMPLATE.format(matrix_row="{}", segments="seg")
+    assert '"implementation": {' in rendered
+    for field in ImplementationEnvelope.model_fields:
+        assert f'"{field}"' in rendered
+
+
+@pytest.mark.parametrize("enum_cls", [StageType, CostBand, RiskBand])
+def test_prompt_lists_exact_enum_values(enum_cls):
+    """Enum fields in the prompt are generated from the validator's enums, so
+    the model is never told a value (like 'DRAFT' or 'medium') it will reject."""
+    rendered = USER_TEMPLATE.format(matrix_row="{}", segments="seg")
+    assert "one of " + " | ".join(m.value for m in enum_cls) in rendered
+
+
+def test_duplicate_slug_rows_merged_before_drafting():
+    """Two matrix rows with one slug must become one draft over both segments,
+    not two drafts where the second silently overwrites the first."""
+    rows = [
+        {"candidate_slug": "a", "segment_ids": "seg_1"},
+        {"candidate_slug": "b", "segment_ids": "seg_2"},
+        {"candidate_slug": "a", "segment_ids": "seg_3|seg_1"},
+    ]
+    merged = _merge_duplicate_slug_rows(rows)
+    assert [r["candidate_slug"] for r in merged] == ["a", "b"]
+    assert merged[0]["segment_ids"] == "seg_1|seg_3"
+    assert rows[0]["segment_ids"] == "seg_1"  # input rows not mutated

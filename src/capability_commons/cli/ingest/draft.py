@@ -171,19 +171,65 @@ SYSTEM_PROMPT = (
     "Separate universal guidance from local adaptation. Output only valid JSON."
 )
 
-USER_TEMPLATE = """Target object YAML schema fields:
-- id, seed_type, co_type, slug, canonical_title, version_no (1), lifecycle_state (DRAFT)
-- visibility (public), language_code (en), primary_domain, secondary_domains, stage
-- contexts, difficulty (1-5), cost_band, risk_band
+# Rendered into the prompt verbatim so the model sees the exact nested shape.
+# Diagnosed 2026-09-13 on the USDA canning run: with only a prose description
+# of the envelope, gpt-4o returned the flat skill-style keys (tools, materials,
+# success_criteria, failure_modes, safety_boundary) on every attempt --
+# including all 3 retries that quoted the validation error back to it -- and
+# never produced structured_data.implementation. 11 of 75 USDA drafts failed
+# this way. Kept as data (not prose) so tests can assert it stays a valid
+# ImplementationEnvelope.
+IMPLEMENTATION_EXAMPLE: dict = {
+    "smallest_viable_version": "One sentence: the smallest step the user can take right now that still helps.",
+    "tools": ["..."],
+    "materials": ["..."],
+    "expected_time": "e.g. 2 hours",
+    "expected_cost": "e.g. $5-$20",
+    "success_checks": ["..."],
+    "stop_conditions": ["..."],
+    "common_mistakes": ["..."],
+    "variants": [{"label": "renter", "when": "...", "notes": "..."}],
+    "when_to_escalate": ["..."],
+}
+
+# Braces doubled because USER_TEMPLATE goes through str.format().
+_IMPLEMENTATION_EXAMPLE_JSON = (
+    orjson.dumps({"implementation": IMPLEMENTATION_EXAMPLE}, option=orjson.OPT_INDENT_2)
+    .decode()
+    .replace("{", "{{")
+    .replace("}", "}}")
+)
+
+# Generated from the enums DraftObject validates against. The prompt used to
+# say `lifecycle_state (DRAFT)` and list stage/cost_band/risk_band without
+# values, so first attempts routinely came back with 'DRAFT', 'medium', or an
+# invented stage and burned a retry on every object (seen 2026-09-13, USDA).
+_ENUM_FIELDS = "\n".join(
+    f"- {name}: one of {' | '.join(member.value for member in enum_cls)}"
+    for name, enum_cls in (("stage", StageType), ("cost_band", CostBand), ("risk_band", RiskBand))
+)
+
+USER_TEMPLATE = (
+    """Target object YAML schema fields (enum values are lowercase and must match exactly):
+- id, seed_type, co_type, slug, canonical_title, version_no (1), lifecycle_state ("draft")
+- visibility ("public"), language_code ("en"), primary_domain (string)
+- secondary_domains, contexts (JSON lists of strings; [] when none)
+"""
+    + _ENUM_FIELDS
+    + """
+- difficulty (integer 1-5)
 - summary_short, summary_medium, plain_language
-- markdown_body (with sections: What this is, Why it matters, What you need, How to do it, Common failure modes, Safety/boundary notes, Local adaptation notes)
-- structured_data (type-specific: tools, materials, success_criteria, failure_modes, safety_boundary for skills; goal, deliverables, acceptance_criteria for projects; definition, key_questions, misconceptions for concepts).
-  For skill_guide and project_blueprint objects, also include
-  structured_data.implementation with: smallest_viable_version (one sentence),
-  tools (list), materials (list), expected_time, expected_cost,
-  success_checks (list), stop_conditions (list), common_mistakes (list),
-  variants (list of {{label, when, notes}} for renter / low-budget / urban /
-  off-grid), when_to_escalate (list of conditions for calling a pro).
+- markdown_body (ONE markdown string, not an object, with "## " headings: What this is, Why it matters, What you need, How to do it, Common failure modes, Safety/boundary notes, Local adaptation notes)
+- structured_data: a JSON object whose keys depend on co_type:
+  skill_guide: tools, materials, success_criteria, failure_modes, safety_boundary, implementation
+  project_blueprint: goal, deliverables, acceptance_criteria, safety_boundary, implementation
+  concept_note: definition, key_questions, misconceptions
+  REQUIRED for skill_guide and project_blueprint: structured_data.implementation,
+  a NESTED object inside structured_data (not flat keys on structured_data).
+  The draft is rejected without it. structured_data must contain:
+"""
+    + _IMPLEMENTATION_EXAMPLE_JSON
+    + """
 - requires (flat list of prerequisite slugs)
 - suggested_edges (list of {{target_id, edge_type}})
 - citations (empty list — will be populated in citation pass)
@@ -195,6 +241,29 @@ Supporting source segments:
 {segments}
 
 Return a JSON object with all the fields listed above. The markdown_body should contain real explanatory content synthesized from the source segments, not just a summary."""
+)
+
+
+def _merge_duplicate_slug_rows(rows: list[dict]) -> list[dict]:
+    """Collapse extraction-matrix rows that share a candidate_slug into one.
+
+    Extraction can assign the same slug to adjacent segments covering one
+    topic (USDA 2026-09-13: selecting-preparing-canning-fruit on seg_000065
+    and seg_000066). Drafting each row separately wrote the same
+    `<slug>.yaml` twice, silently keeping only the last segment's draft.
+    Merge their segment_ids so a single draft sees all of the source.
+    """
+    merged: dict[str, dict] = {}
+    for row in rows:
+        slug = row["candidate_slug"]
+        if slug not in merged:
+            merged[slug] = dict(row)
+            continue
+        existing = merged[slug]
+        ids = [s for s in (existing.get("segment_ids") or "").split("|") if s]
+        ids += [s for s in (row.get("segment_ids") or "").split("|") if s and s not in ids]
+        existing["segment_ids"] = "|".join(ids)
+    return list(merged.values())
 
 
 async def run_draft(
@@ -221,7 +290,7 @@ async def run_draft(
     # Estimate tokens
     total_text = ""
     rows_to_process = []
-    for row in df.iter_rows(named=True):
+    for row in _merge_duplicate_slug_rows(list(df.iter_rows(named=True))):
         slug = row["candidate_slug"]
         if slugs_filter and not fnmatch(slug, slugs_filter):
             continue
@@ -302,6 +371,13 @@ async def run_draft(
             console.print(f"    [green]✓[/green] {slug}")
         except Exception as e:
             console.print(f"    [red]✗[/red] {slug}: {e}")
+            # The exception only says what was missing, not what the model
+            # produced instead -- keep its last raw output for diagnosis.
+            last_response = getattr(e, "last_response", None)
+            if last_response:
+                failed_path = project.drafts_dir.parent / "logs" / f"draft-failed.{slug}.json"
+                failed_path.parent.mkdir(exist_ok=True)
+                failed_path.write_text(last_response)
 
     project.mark_pass_complete("draft")
     console.print(f"[green]Draft complete:[/green] {drafted} objects written")
