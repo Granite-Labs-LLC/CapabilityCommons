@@ -69,11 +69,12 @@ def _check_publish_gate(obj: dict, slug: str, lifecycle: str) -> list[str]:
     risk = obj.get("risk_band", "")
     if risk in ("high", "expert_only"):
         sd = obj.get("structured_data") or {}
-        safety = sd.get("safety_boundary") or sd.get("safety_review")
+        profile = sd.get("implementation_profile") or {}
+        safety = sd.get("safety_boundary") or sd.get("safety_review") or profile.get("escalation_guidance")
         if not safety:
             blockers.append(
                 f"{slug}: risk_band={risk} requires structured_data.safety_boundary "
-                "(or safety_review note) before publish"
+                "(or safety_review/escalation_guidance) before publish"
             )
 
     return blockers
@@ -189,14 +190,33 @@ def run_validate(project: IngestProject, *, strict: bool = False) -> ValidationR
                 if sid not in segment_ids:
                     warnings.append(f"{slug}: references unknown segment '{sid}'")
 
-        # Safety checks
+        # Safety checks.
+        #
+        # This is deliberately broader than PublishGate.SAFETY_BOUNDARY_REQUIRED_TYPES
+        # (which only requires safety_boundary for skill_guide/project_blueprint/
+        # local_adaptation): any object drafted with risk_band=high/expert_only
+        # should explain its own risk boundary before publish, regardless of
+        # co_type -- a concept_note or reference_sheet about, say, carbon
+        # monoxide poisoning is exactly the kind of high-risk content that
+        # should self-explain its boundary even though PublishGate wouldn't
+        # block it. Confirmed reasonable in practice: this caught 21 real FEMA
+        # objects in the 2026-09-08 run, all of which got real safety content
+        # authored, not stripped down to satisfy the checker. Kept in sync
+        # with PublishGate's accepted alternative field (escalation_guidance)
+        # so this ingest-time check is never *stricter* about what counts as
+        # satisfying it, only broader about which objects it applies to.
         failure_modes = sd.get("failure_modes") or obj.get("payload", {}).get("failure_modes")
         if failure_modes and not risk:
             warnings.append(f"{slug}: has failure_modes but no risk_band")
         if risk in ("high", "expert_only"):
-            safety = sd.get("safety_boundary") or obj.get("payload", {}).get("safety_boundary")
+            profile = sd.get("implementation_profile") or obj.get("payload", {}).get("implementation_profile") or {}
+            safety = (
+                sd.get("safety_boundary")
+                or obj.get("payload", {}).get("safety_boundary")
+                or profile.get("escalation_guidance")
+            )
             if not safety:
-                errors.append(f"{slug}: risk_band={risk} requires safety_boundary")
+                errors.append(f"{slug}: risk_band={risk} requires safety_boundary (or escalation_guidance)")
 
         # Strict publish-gate checks (PLAN P1-8)
         if strict:

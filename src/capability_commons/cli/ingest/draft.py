@@ -149,6 +149,20 @@ class DraftObject(BaseModel, extra="allow"):
         }
         return self
 
+    @model_validator(mode="after")
+    def _id_matches_slug(self):
+        """`slug` is the one identifier the rest of the pipeline resolves by
+        (seed.py, edges.py, validate.py all key on it; `id` is only a fallback
+        for legacy seed CSVs that predate `slug`). The LLM drafts `id` and
+        `slug` independently and sometimes gives an object a dot-namespaced
+        `id` that disagrees with its own dash-only `slug` — the edges pass
+        then can't tell the two apart from a genuinely different target,
+        producing "Edge target not in drafts" errors for an object that
+        actually exists. Force them to agree at the source instead of
+        reconciling identifiers downstream."""
+        self.id = self.slug
+        return self
+
 
 SYSTEM_PROMPT = (
     "You are a Capability Commons object drafter. Convert source material into "

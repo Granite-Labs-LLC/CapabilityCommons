@@ -119,6 +119,12 @@ class LocalAdaptationStructuredData(BaseModel):
     changes_from_canonical: list[str] = Field(min_length=1)
     applicability_limits: list[str] = Field(min_length=1)
     evidence_note: str
+    # PublishGate.SAFETY_BOUNDARY_REQUIRED_TYPES includes LOCAL_ADAPTATION, but
+    # this field was missing here, so Pydantic's default extra="ignore" would
+    # silently strip it before the gate ever saw it -- no object of this type
+    # could ever have published. Mirrors the identical ProjectBlueprintStructuredData
+    # fix (2026-09-07).
+    safety_boundary: str
 
 
 class CorrectionStructuredData(BaseModel):
