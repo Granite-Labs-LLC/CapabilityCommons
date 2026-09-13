@@ -46,9 +46,9 @@ jobs:
       # individual tests, since the whole environment can't support them.
       # test_health / test_retrieval_allows_anonymous_access instantiate the
       # FastAPI app via TestClient, which runs its startup lifespan
-      # (migration/DB connectivity check) -- they need a real Postgres and
-      # belong with the `integration` job below, not here. Deselected rather
-      # than silently passing by accident; see TODO.md for moving them.
+      # (migration/DB connectivity check) -- they need a real Postgres, so
+      # they run in the `integration` job below instead (which provisions
+      # one), not here. Deselected rather than silently passing by accident.
       - run: >
           pytest tests/ --ignore=tests/test_integration.py --ignore=tests/test_integration_audit.py --ignore=tests/test_integration_storage.py --ignore=tests/test_integration_embedding.py --ignore=tests/test_integration_publication.py --ignore=tests/test_integration_search.py --ignore=tests/test_integration_retrieval.py
           --ignore=tests/test_ingest_draft_schema.py
@@ -84,10 +84,87 @@ jobs:
           python-version: "3.14"
       - run: pip install -e ".[dev]"
       - run: alembic upgrade head
-      - run: pytest tests/test_integration.py tests/test_integration_audit.py tests/test_integration_storage.py tests/test_integration_embedding.py tests/test_integration_publication.py tests/test_integration_search.py tests/test_integration_retrieval.py -v
+      # test_health / test_retrieval_allows_anonymous_access are added here
+      # explicitly (not moved into a test_integration_*.py file) because they
+      # belong topically with health.py/smoke_api.py, not the integration
+      # suite -- they just happen to need the real Postgres this job
+      # provisions, since TestClient(app) runs the app's startup lifespan.
+      # Deselected from the `test` job above for the same reason.
+      - run: >
+          pytest tests/test_integration.py tests/test_integration_audit.py tests/test_integration_storage.py tests/test_integration_embedding.py tests/test_integration_publication.py tests/test_integration_search.py tests/test_integration_retrieval.py
+          tests/test_health.py::test_health
+          tests/test_smoke_api.py::test_retrieval_allows_anonymous_access
+          -v
 
   docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t capability-commons .
+
+  eval:
+    runs-on: ubuntu-latest
+    # Informational only, not a merge gate -- eval/README.md itself says the
+    # harness is "suitable for CI gating once we trust the gold set," and we
+    # don't yet: eval/gold/queries.yaml has entries referencing slugs that
+    # don't exist anywhere in the corpus (see TODO.md). `continue-on-error`
+    # below means a low/failing score never blocks a PR; the report is
+    # uploaded as a build artifact to track the trend over time instead.
+    #
+    # Every step is gated on OPENAI_API_KEY being configured as a repo
+    # secret. Without it the job is a fast no-op (green, nothing runs):
+    # seeding + embedding the corpus costs real OpenAI API spend on every
+    # single push/PR, and that's a cost decision for whoever owns this
+    # repo's billing, not something to turn on unilaterally. Add the secret
+    # in the repo's Actions settings to opt in.
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: capability_commons
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@localhost:5432/capability_commons
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        run: pip install -e ".[dev]"
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        run: alembic upgrade head
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        name: Seed corpus
+        run: |
+          python -m capability_commons.cli.seed --data-dir expanded_seed
+          python -m capability_commons.cli.seed --data-dir capability_commons_module_seed_pack_v1
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        name: Start API + worker, drain embeddings
+        run: |
+          uvicorn capability_commons.main:app --host 127.0.0.1 --port 8100 &
+          python -m capability_commons.cli.worker &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:8100/health && break; sleep 1; done
+          sleep 20  # let the worker drain the outbox (embeddings) before querying
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        name: Run eval (informational)
+        continue-on-error: true
+        run: |
+          mkdir -p eval/reports
+          python -m capability_commons.cli.eval run --gold eval/gold/queries.yaml --api http://127.0.0.1:8100 --out eval/reports/ci-run.md
+      - if: ${{ env.OPENAI_API_KEY != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: eval/reports/ci-run.md
+          if-no-files-found: ignore

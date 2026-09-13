@@ -202,6 +202,17 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
         slug_to_object_id: dict[str, uuid.UUID] = {}
         created = 0
         skipped = 0
+        # Diagnostic-only: track (slug, object_id, version_id) for every
+        # version.published event we emit this run. A 2026-09-08 FEMA load
+        # left 10 outbox events referencing an object_id/version_id that
+        # matched no row in the DB, even though seed_graph() reported all
+        # 275 objects created successfully and they do exist by creation
+        # timestamp -- never root-caused, and the stuck events were deleted
+        # before anyone could inspect them. Verify against the DB right
+        # after commit so a recurrence produces an immediate, actionable
+        # report instead of silently invisible (unsearchable) objects
+        # discovered much later via missing content_segments.
+        emitted_publish_events: list[tuple[str, uuid.UUID, uuid.UUID]] = []
 
         for node in nodes:
             # Prefer the canonical slug; fall back to id for legacy seed data.
@@ -281,6 +292,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
                     payload={"object_id": str(obj.id), "version_id": str(version.id)},
                 )
             )
+            emitted_publish_events.append((slug, obj.id, version.id))
 
             # Add facets
             for facet_type, facet_value in map_facets(node):
@@ -516,6 +528,36 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             csv_edge_count += 1
 
         await session.commit()
+
+        # Post-commit integrity check for the never-root-caused orphaned-
+        # outbox-event bug (see comment above emitted_publish_events). Query
+        # fresh from the DB rather than trusting the just-flushed session.
+        if emitted_publish_events:
+            check_object_ids = {oid for _, oid, _ in emitted_publish_events}
+            check_version_ids = {vid for _, _, vid in emitted_publish_events}
+            real_object_ids = set(
+                (await session.execute(select(ContextObject.id).where(ContextObject.id.in_(check_object_ids))))
+                .scalars()
+                .all()
+            )
+            real_version_ids = set(
+                (
+                    await session.execute(
+                        select(ContextObjectVersion.id).where(ContextObjectVersion.id.in_(check_version_ids))
+                    )
+                )
+                .scalars()
+                .all()
+            )
+            orphaned = [
+                (slug, oid, vid)
+                for slug, oid, vid in emitted_publish_events
+                if oid not in real_object_ids or vid not in real_version_ids
+            ]
+            if orphaned:
+                print(f"  WARN: {len(orphaned)} outbox event(s) reference a row that doesn't exist post-commit:")
+                for slug, oid, vid in orphaned:
+                    print(f"    {slug}: object_id={oid} (exists={oid in real_object_ids}) version_id={vid}")
 
     await engine.dispose()
     print(

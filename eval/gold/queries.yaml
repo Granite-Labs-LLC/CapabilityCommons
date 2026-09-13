@@ -36,10 +36,19 @@
 
 - query: "Starter solar for lights and phone"
   intent: how_to
+  # 2026-09-13 reconciliation: no object anywhere in the corpus (seed pack,
+  # FEMA) is specifically about small-scale/starter solar setups -- a real
+  # content gap, not a naming mismatch (confirmed via full-corpus grep for
+  # "solar"). power.backup-power-plan/power.load-audit are the closest real
+  # neighbors (general backup-power planning) and are accepted so a
+  # reasonable adjacent answer can pass while the gap stays open; don't
+  # treat a future pass here as proof the gap closed.
   expects_any:
     - power.starter-solar
     - solar.lights-and-phone
     - power.backup-runtime
+    - power.backup-power-plan
+    - power.load-audit
 
 - query: "Renter-safe food resilience"
   intent: localize
@@ -47,9 +56,18 @@
     - food.pantry-rotation
     - food.preservation
     - food-storage-rotation
+    # food.safe-preservation-basics is the real seed-pack slug for what this
+    # entry's "food.preservation" was clearly trying to name (2026-09-13).
+    - food.safe-preservation-basics
 
 - query: "Why is my rain barrel system not flowing?"
   intent: debug_failure
+  # 2026-09-13 reconciliation: confirmed via full-corpus grep -- no rain
+  # barrel / gravity-flow / DIY water-catchment content exists anywhere yet
+  # (seed pack or FEMA). This is real homesteading/permaculture territory,
+  # explicitly flagged elsewhere as a not-yet-sourced domain. Left failing
+  # on purpose, same pattern as the Spanish placeholder query below: the
+  # correct signal today is "we haven't authored this," not a retrieval bug.
   expects_any:
     - water.rain-barrel
     - water.gravity-flow
@@ -61,6 +79,8 @@
     - power.load-audit
     - power.runtime
     - power.literacy
+    # power.runtime-calculation is the real seed-pack slug (2026-09-13).
+    - power.runtime-calculation
 
 # --- GGG-2026-03 corpus queries (real ingested data) ------------------------
 
@@ -72,15 +92,21 @@
 
 - query: "Compare propane vs solar fridge for renters"
   intent: compare_options
+  # Same solar content gap as "Starter solar for lights and phone" above.
   expects_any:
     - power.starter-solar
     - power.backup-runtime
+    - power.backup-power-plan
 
 - query: "Is bleach safe for treating drinking water?"
   intent: safety_check
   expects_any:
     - water.safe-storage
     - water.chlorine-treatment
+    # emergency.chlorination is FEMA's real, well-cited slug for exactly
+    # this question (2026-09-13) -- see docs/superpowers/specs/
+    # 2026-09-06-retrieval-verification-backfill-design.md.
+    - emergency.chlorination
 
 - query: "How should I think about chokepoint risk in markets?"
   intent: how_to
