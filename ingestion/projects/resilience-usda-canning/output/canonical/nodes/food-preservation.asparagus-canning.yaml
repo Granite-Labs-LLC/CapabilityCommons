@@ -1,0 +1,313 @@
+id: food-preservation.asparagus-canning
+slug: food-preservation.asparagus-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: 'Canning Asparagus: Spears or Pieces'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Instructions for canning asparagus using a pressure canner.
+summary_medium: Detailed guide on canning asparagus, including preparation, packing
+  methods, and pressure canning times.
+plain_language: Learn how to can asparagus safely using a pressure canner, with steps
+  for both hot and raw packing.
+markdown_body: "### What this is\nThis guide provides instructions for canning asparagus,\
+  \ either as spears or pieces, using a pressure canner. It includes details on quantity,\
+  \ quality, preparation, and processing times.\n\n### Why it matters\nCanning asparagus\
+  \ allows you to preserve this seasonal vegetable for long-term storage, ensuring\
+  \ you have access to it year-round while maintaining its nutritional value.\n\n\
+  ### What you need\nYou will need a pressure canner, jars, lids, boiling water, and\
+  \ optionally, salt. Ensure you have tender, tight-tipped asparagus spears that are\
+  \ 4 to 6 inches long.\n\n### How to do it\n1. Wash and trim the asparagus, removing\
+  \ tough scales and stems. Cut into 1-inch pieces or leave whole. \n2. For hot packing,\
+  \ cover asparagus with boiling water and boil for 2-3 minutes. Fill hot jars with\
+  \ hot asparagus, leaving 1-inch headspace. For raw packing, fill hot jars with raw\
+  \ asparagus tightly, leaving 1-inch headspace. \n3. Add 1 teaspoon of salt per quart\
+  \ if desired. Add boiling water, leaving 1-inch headspace. Remove air bubbles and\
+  \ adjust headspace. Wipe jar rims, adjust lids, and process in a pressure canner.\
+  \ \n4. Process pints for 30 minutes and quarts for 40 minutes at the appropriate\
+  \ pressure for your altitude.\n\n### Common failure modes\nIncorrect pressure settings\
+  \ or incomplete sealing can lead to spoilage. Ensure you follow the recommended\
+  \ pressure settings for your altitude.\n\n### Safety/boundary notes\nAlways use\
+  \ the correct pressure settings for your altitude to ensure safety and prevent foodborne\
+  \ illness.\n\n### Local adaptation notes\nConsider the availability of asparagus\
+  \ in your area and adjust the pressure settings based on local altitude."
+structured_data:
+  goal: Safely preserve asparagus using a pressure canner.
+  deliverables: Canned asparagus in jars, ready for storage.
+  acceptance_criteria: Jars are sealed properly, and asparagus is preserved without
+    spoilage.
+  implementation:
+    smallest_viable_version: Canning asparagus using a pressure canner with correct
+      pressure settings.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - asparagus
+    - boiling water
+    - salt (optional)
+    expected_time: Approximately 2 hours including preparation and processing time.
+    expected_cost: Moderate, depending on asparagus availability and equipment.
+    success_checks:
+    - Jars are sealed properly
+    - Asparagus is preserved without spoilage
+    stop_conditions:
+    - Pressure canner does not reach required pressure
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Inadequate headspace
+    variants:
+    - label: Urban
+      when: Limited space for equipment
+      notes: Consider smaller batch sizes.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stove-top pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If pressure canner malfunctions
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_001
+  claim_text: This guide provides instructions for canning asparagus, either as spears
+    or pieces, using a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: 'ASPARAGUS—SPEARS OR PIECES... Procedure: Wash asparagus and trim of
+      tough scales. Break of tough stems and wash again. Cut into 1-inch pieces or
+      can whole.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_002
+  claim_text: It includes details on quantity, quality, preparation, and processing
+    times.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: 'Quantity: An average of 24-1/2 pounds is needed per canner load of 7
+      quarts... Quality: Use tender, tight-tipped spears, 4 to 6 inches long.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_004
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and optionally,
+    salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Add 1 teaspoon of salt per quart to the jars, if desired. Add boiling
+      water, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_005
+  claim_text: Ensure you have tender, tight-tipped asparagus spears that are 4 to
+    6 inches long.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: 'Quality: Use tender, tight-tipped spears, 4 to 6 inches long.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_006
+  claim_text: Wash and trim the asparagus, removing tough scales and stems. Cut into
+    1-inch pieces or leave whole.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: 'Procedure: Wash asparagus and trim of tough scales. Break of tough stems
+      and wash again. Cut into 1-inch pieces or can whole.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_007
+  claim_text: For hot packing, cover asparagus with boiling water and boil for 2-3
+    minutes. Fill hot jars with hot asparagus, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Hot pack—Cover asparagus with boiling water. Boil 2 or 3 minutes. Loosely
+      fill hot jars with hot asparagus, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_008
+  claim_text: For raw packing, fill hot jars with raw asparagus tightly, leaving 1-inch
+    headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Raw pack—Fill hot jars with raw asparagus, packing as tightly as possible
+      without crushing, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_009
+  claim_text: Add 1 teaspoon of salt per quart if desired. Add boiling water, leaving
+    1-inch headspace. Remove air bubbles and adjust headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Add 1 teaspoon of salt per quart to the jars, if desired. Add boiling
+      water, leaving 1-inch headspace. Remove air bubbles and adjust headspace if
+      needed.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_010
+  claim_text: Process pints for 30 minutes and quarts for 40 minutes at the appropriate
+    pressure for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Recommended process time for Asparagus in a dial-gauge pressure canner...
+      Hot and Raw... Pints 30 min... Quarts 40
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.asparagus-canning
+  claim_id: clm_012
+  claim_text: Ensure you follow the recommended pressure settings for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Canner Pressure (PSI) at Altitudes of... 0–2,000 ft 11 lb... 2,001–4,000
+      ft 12 lb... 4,001–6,000 ft 13 lb... 6,001–8,000 ft 14 lb
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000154
+bundle_overrides:
+  hook: Preserve the taste of spring all year round by learning how to can asparagus
+    safely and effectively.
+  primer: Canning asparagus is a fantastic way to enjoy this nutritious vegetable
+    throughout the year, long after its peak season has passed. The process involves
+    using a pressure canner, which is essential for safely preserving low-acid foods
+    like asparagus. By canning asparagus, you can maintain its flavor and nutritional
+    value, making it a convenient addition to meals at any time. The process requires
+    some basic equipment, including a pressure canner, jars, lids, and optionally,
+    salt. The asparagus should be fresh, with tender, tight-tipped spears that are
+    4 to 6 inches long. You can choose to can the asparagus as whole spears or cut
+    them into 1-inch pieces, depending on your preference. The key to successful canning
+    is following the correct procedures for preparation, packing, and processing times,
+    ensuring that the jars are sealed properly to prevent spoilage.
+  guide: '1. **Prepare the Asparagus**: Start by washing the asparagus thoroughly.
+    Trim off any tough scales and break off the tough stems. You can either cut the
+    asparagus into 1-inch pieces or leave them whole, depending on your preference.
+
+
+    2. **Choose Your Packing Method**: For hot packing, cover the asparagus with boiling
+    water and boil for 2-3 minutes. Then, fill hot jars with the hot asparagus, leaving
+    a 1-inch headspace. For raw packing, tightly fill hot jars with raw asparagus,
+    also leaving a 1-inch headspace.
+
+
+    3. **Add Salt and Water**: If desired, add 1 teaspoon of salt per quart to the
+    jars. Pour boiling water into the jars, maintaining the 1-inch headspace. Remove
+    any air bubbles by gently tapping the jars or using a non-metallic spatula.
+
+
+    4. **Seal the Jars**: Wipe the rims of the jars to ensure they are clean. Place
+    the lids on the jars and adjust the bands until they are fingertip tight.
+
+
+    5. **Process the Jars**: Place the jars in a pressure canner. Process pints for
+    30 minutes and quarts for 40 minutes. Adjust the pressure according to your altitude:
+    11 lb for 0-2,000 ft, 12 lb for 2,001-4,000 ft, 13 lb for 4,001-6,000 ft, and
+    14 lb for 6,001-8,000 ft.
+
+
+    6. **Cool and Store**: Once processing is complete, allow the canner to depressurize
+    naturally. Remove the jars and let them cool undisturbed for 12-24 hours. Check
+    the seals before storing the jars in a cool, dark place.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Boiling water
+  - Salt (optional)
+  - Tender, tight-tipped asparagus spears, 4-6 inches long
+  - 'Hot pack: Boil asparagus for 2-3 minutes'
+  - 'Raw pack: Pack raw asparagus tightly'
+  - Process pints for 30 minutes, quarts for 40 minutes
+  - 'Adjust pressure for altitude: 11 lb (0-2,000 ft), 12 lb (2,001-4,000 ft), 13
+    lb (4,001-6,000 ft), 14 lb (6,001-8,000 ft)'
+  worksheet:
+  - List the equipment needed for canning asparagus.
+  - Describe the difference between hot packing and raw packing.
+  - Calculate the pressure setting for your altitude.
+  - Explain the importance of leaving a 1-inch headspace in the jars.
+  - Identify common mistakes in the canning process and how to avoid them.
+  teach_forward_kit:
+    three_minute_version: Canning asparagus involves washing and trimming the vegetable,
+      choosing between hot or raw packing, adding salt and boiling water, sealing
+      the jars, and processing them in a pressure canner. Adjust the pressure based
+      on your altitude to ensure safety.
+    ten_minute_outline:
+    - Introduction to canning asparagus and its benefits
+    - Overview of necessary equipment and ingredients
+    - Step-by-step guide to preparing and packing asparagus
+    - Explanation of processing times and pressure settings
+    - Tips for ensuring successful canning and avoiding spoilage
+    - Q&A session to address common concerns and questions
+    discussion_prompts:
+    - Why is it important to use a pressure canner for asparagus?
+    - What are the risks of not following the correct pressure settings?
+    - How does altitude affect the canning process?
+    - What are some creative ways to use canned asparagus in meals?

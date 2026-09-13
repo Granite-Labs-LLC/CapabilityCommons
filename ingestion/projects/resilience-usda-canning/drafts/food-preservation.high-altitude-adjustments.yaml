@@ -1,0 +1,175 @@
+id: food-preservation.high-altitude-adjustments
+slug: food-preservation.high-altitude-adjustments
+seed_type: extracted
+co_type: concept_note
+canonical_title: High Altitude Adjustments in Food Preservation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Adjust canning processes at high altitudes to ensure food safety.
+summary_medium: At high altitudes, boiling temperatures are lower, requiring adjustments
+  in canning processes to prevent spoilage and ensure safety.
+plain_language: When canning food at high altitudes, you need to adjust the process
+  time or canner pressure because water boils at lower temperatures, which can affect
+  food safety.
+markdown_body: '### What this is
+
+  This concept explains the necessary adjustments for canning food at high altitudes.
+  Due to lower boiling temperatures at higher altitudes, standard canning processes
+  may not be effective.
+
+
+  ### Why it matters
+
+  Proper adjustments are crucial to ensure that the canning process effectively kills
+  bacteria and prevents food spoilage, maintaining food safety.
+
+
+  ### What you need
+
+  Knowledge of your local altitude and the corresponding adjustments in process time
+  or canner pressure.
+
+
+  ### How to do it
+
+  Increase the process time or adjust the canner pressure according to your altitude.
+  If unsure about your altitude, contact your local county Extension agent or the
+  local district conservationist.
+
+
+  ### Common failure modes
+
+  Using sea-level process times at high altitudes can lead to underprocessing and
+  potential spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure accurate altitude information to apply the correct adjustments and maintain
+  food safety.
+
+
+  ### Local adaptation notes
+
+  Consult local resources like the county Extension agent for specific altitude information.'
+structured_data:
+  definition: High altitude adjustments in canning involve modifying process time
+    or canner pressure to compensate for lower boiling temperatures.
+  key_questions:
+  - Why does altitude affect boiling temperature?
+  - How do you determine the correct process adjustments for your altitude?
+  misconceptions:
+  - Canning processes are the same regardless of altitude.
+  - Boiling temperature is not affected by altitude.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_001
+  claim_text: Due to lower boiling temperatures at higher altitudes, standard canning
+    processes may not be effective.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: Water boils at lower temperatures as altitude increases. Lower boiling
+      temperatures are less effective for killing bacteria.
+    start_char: 72
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_002
+  claim_text: Proper adjustments are crucial to ensure that the canning process effectively
+    kills bacteria and prevents food spoilage, maintaining food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: Increasing the process time or canner pressure compensates for lower
+      boiling temperatures.
+    start_char: 151
+    end_char: 211
+    support_strength: strong
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_003
+  claim_text: Knowledge of your local altitude and the corresponding adjustments in
+    process time or canner pressure.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: If you do not know the altitude, contact your local county Extension
+      agent.
+    start_char: 292
+    end_char: 353
+    support_strength: medium
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_004
+  claim_text: Increase the process time or adjust the canner pressure according to
+    your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: Increasing the process time or canner pressure compensates for lower
+      boiling temperatures.
+    start_char: 151
+    end_char: 211
+    support_strength: strong
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_005
+  claim_text: Using sea-level process times at high altitudes can lead to underprocessing
+    and potential spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: Using the process time for canning food at sea level may result in spoilage
+      if you live at altitudes of 1,000 feet or more.
+    start_char: 0
+    end_char: 71
+    support_strength: strong
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_006
+  claim_text: Ensure accurate altitude information to apply the correct adjustments
+    and maintain food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: If you do not know the altitude, contact your local county Extension
+      agent.
+    start_char: 292
+    end_char: 353
+    support_strength: medium
+- object_id: food-preservation.high-altitude-adjustments
+  claim_id: clm_007
+  claim_text: Consult local resources like the county Extension agent for specific
+    altitude information.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 21
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000020
+    excerpt: If you do not know the altitude, contact your local county Extension
+      agent.
+    start_char: 292
+    end_char: 353
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000020

@@ -1,0 +1,216 @@
+id: food-safety.botulism-prevention
+slug: food-safety.botulism-prevention
+seed_type: safety_notice
+co_type: safety_notice
+canonical_title: Botulism Prevention in Home Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food_safety
+secondary_domains:
+- home_canning
+stage: household
+contexts:
+- home canning
+- food preservation
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Prevent botulism in home-canned foods by following USDA guidelines.
+summary_medium: Guidelines for preventing botulism in home-canned foods, emphasizing
+  the importance of following USDA-endorsed methods and boiling low-acid foods before
+  consumption if deviations occur.
+plain_language: To prevent botulism, always follow USDA guidelines when canning low-acid
+  foods. If you're unsure about the canning process used, boil the food before eating.
+markdown_body: '### What this is
+
+  This is a safety notice about preventing botulism in home-canned foods by adhering
+  to USDA guidelines.
+
+
+  ### Why it matters
+
+  Botulism is a serious illness caused by a toxin that can develop in improperly canned
+  foods. Following proper canning procedures is crucial to prevent this risk.
+
+
+  ### What you need
+
+  USDA-endorsed canning guidelines, a saucepan for boiling.
+
+
+  ### How to do it
+
+  Always can low-acid and tomato foods according to USDA guidelines. If there''s any
+  doubt about the canning process, boil the food for 10 minutes if you''re below 1,000
+  ft elevation, adding an extra minute for each additional 1,000 ft.
+
+
+  ### Common failure modes
+
+  Not following USDA guidelines can lead to botulism poisoning.
+
+
+  ### Safety/boundary notes
+
+  Boiling is not a substitute for proper canning methods and does not guarantee safety
+  if the food was significantly underprocessed.
+
+
+  ### Local adaptation notes
+
+  Adjust boiling time based on local altitude.'
+structured_data:
+  tools: []
+  materials: []
+  success_criteria:
+  - No botulism poisoning occurs.
+  failure_modes:
+  - Botulism poisoning
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Boil for 10 minutes at altitudes below 1,000 ft; add
+    1 minute per 1,000 ft elevation.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_001
+  claim_text: This is a safety notice about preventing botulism in home-canned foods
+    by adhering to USDA guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: 'Caution: All home-canned foods should be canned according to the procedures
+      in this Guide. Low-acid and tomato foods not canned according to the recommendations
+      in this publication or according to other USDA-endorsed recommendations present
+      a risk of botulism.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_002
+  claim_text: Botulism is a serious illness caused by a toxin that can develop in
+    improperly canned foods.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: The bacterium Clostridium botulinum is destroyed in low-acid foods when
+      they are processed at the correct time and pressure in pressure canners. Using
+      boiling water canners for these foods poses a real risk of botulism poisoning.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_003
+  claim_text: Following proper canning procedures is crucial to prevent this risk.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: The recommendation is to only can low-acid and tomato foods according
+      to the procedures in this Guide.
+    start_char: 300
+    end_char: 400
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_004
+  claim_text: USDA-endorsed canning guidelines, a saucepan for boiling.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: If it is possible that any deviation from the USDA-endorsed methods occurred,
+      to prevent the risk of botulism, low-acid and tomato foods should be boiled
+      in a saucepan before consuming.
+    start_char: 200
+    end_char: 300
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_005
+  claim_text: Always can low-acid and tomato foods according to USDA guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: The recommendation is to only can low-acid and tomato foods according
+      to the procedures in this Guide.
+    start_char: 300
+    end_char: 400
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_006
+  claim_text: If there's any doubt about the canning process, boil the food for 10
+    minutes if you're below 1,000 ft elevation, adding an extra minute for each additional
+    1,000 ft.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: At altitudes below 1,000 ft, boil foods for 10 minutes. Add an additional
+      minute of boiling time for each additional 1,000 ft elevation.
+    start_char: 100
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_007
+  claim_text: Not following USDA guidelines can lead to botulism poisoning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Using boiling water canners for these foods poses a real risk of botulism
+      poisoning.
+    start_char: 100
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_008
+  claim_text: Boiling is not a substitute for proper canning methods and does not
+    guarantee safety if the food was significantly underprocessed.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: However, this is not intended to serve as a recommendation for consuming
+      foods known to be significantly underprocessed according to current standards
+      and recommended methods.
+    start_char: 400
+    end_char: 500
+    support_strength: strong
+- object_id: food-safety.botulism-prevention
+  claim_id: clm_009
+  claim_text: Adjust boiling time based on local altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: At altitudes below 1,000 ft, boil foods for 10 minutes. Add an additional
+      minute of boiling time for each additional 1,000 ft elevation.
+    start_char: 100
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000004

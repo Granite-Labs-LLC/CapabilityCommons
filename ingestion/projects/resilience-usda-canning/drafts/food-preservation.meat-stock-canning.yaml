@@ -1,0 +1,314 @@
+id: food-preservation.meat-stock-canning
+slug: food-preservation.meat-stock-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Meat Stock or Broth
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts:
+- home-canning
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guide to canning meat stock or broth using pressure canning.
+summary_medium: This project blueprint provides a detailed procedure for canning meat
+  stock or broth, including preparation, packing, and processing times for both dial-gauge
+  and weighted-gauge pressure canners.
+plain_language: Learn how to safely can meat stock or broth at home using a pressure
+  canner. This guide covers everything from preparing the stock to processing it in
+  jars.
+markdown_body: '### What this is
+
+  This is a guide for canning meat stock or broth using a pressure canner. It includes
+  steps for preparing the stock, filling jars, and processing them safely.
+
+
+  ### Why it matters
+
+  Canning meat stock allows you to preserve it for long-term storage, ensuring you
+  have a ready supply for soups, stews, and other recipes. Proper canning prevents
+  spoilage and ensures food safety.
+
+
+  ### What you need
+
+  You''ll need a pressure canner, jars, lids, fresh trimmed beef or poultry bones,
+  water, and optional salt.
+
+
+  ### How to do it
+
+  1. Prepare the bones by sawing or cracking them and simmering in water for flavor
+  extraction. 2. Skim off excess fat from the cooled broth. 3. Reheat the broth to
+  boiling, fill jars leaving 1-inch headspace, and wipe rims clean. 4. Process jars
+  in a pressure canner according to the recommended times and pressures for your altitude.
+
+
+  ### Common failure modes
+
+  Excess fat in the broth can prevent proper sealing. Incorrect pressure during canning
+  can lead to spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure the pressure canner reaches the correct pressure for your altitude to avoid
+  contamination.
+
+
+  ### Local adaptation notes
+
+  Adapt the recipe based on the availability of bones in your area.'
+structured_data:
+  goal: Safely can meat stock or broth for long-term storage.
+  deliverables: Canned jars of meat stock or broth.
+  acceptance_criteria: Jars are properly sealed and stored without spoilage.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure is maintained during canning to
+    prevent contamination.'
+  implementation:
+    smallest_viable_version: Prepare a small batch of broth and can it using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    - saw or bone cracker
+    materials:
+    - fresh trimmed beef or poultry bones
+    - water
+    - salt (optional)
+    expected_time: 4-5 hours
+    expected_cost: $10-$30
+    success_checks:
+    - Jars are sealed properly.
+    - No spoilage or contamination is evident.
+    stop_conditions:
+    - If the pressure canner does not reach the required pressure.
+    - If jars do not seal properly.
+    common_mistakes:
+    - Not skimming enough fat from the broth.
+    - Incorrect pressure settings for altitude.
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner.
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing.
+    - If there are signs of spoilage after canning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning meat stock or broth using a pressure canner.
+    It includes steps for preparing the stock, filling jars, and processing them safely.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Reheat broth to boiling and fill jars, leaving 1-inch headspace. Wipe
+      rims of jars with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_002
+  claim_text: Canning meat stock allows you to preserve it for long-term storage,
+    ensuring you have a ready supply for soups, stews, and other recipes. Proper canning
+    prevents spoilage and ensures food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Reheat broth to boiling and fill jars, leaving 1-inch headspace. Wipe
+      rims of jars with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_003
+  claim_text: You'll need a pressure canner, jars, lids, fresh trimmed beef or poultry
+    bones, water, and optional salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Saw or crack fresh trimmed beef bones (with meat removed) to enhance
+      extraction of flavor. Rinse bones and place in a large stockpot, cover bones
+      with water.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_004
+  claim_text: Prepare the bones by sawing or cracking them and simmering in water
+    for flavor extraction.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Saw or crack fresh trimmed beef bones (with meat removed) to enhance
+      extraction of flavor. Rinse bones and place in a large stockpot, cover bones
+      with water.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_005
+  claim_text: Skim off excess fat from the cooled broth.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Remove bones and cool broth; skim off excess fat and discard.
+    start_char: 150
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_006
+  claim_text: Reheat the broth to boiling, fill jars leaving 1-inch headspace, and
+    wipe rims clean.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Reheat broth to boiling and fill jars, leaving 1-inch headspace. Wipe
+      rims of jars with a dampened clean paper towel.
+    start_char: 200
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_007
+  claim_text: Process jars in a pressure canner according to the recommended times
+    and pressures for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: '| Recommended process time for Meat Stock in a dial-gauge pressure canner
+      |'
+    start_char: 300
+    end_char: 400
+    support_strength: strong
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_008
+  claim_text: Excess fat in the broth can prevent proper sealing.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: Remove bones and cool broth; skim off excess fat and discard.
+    start_char: 150
+    end_char: 200
+    support_strength: medium
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_009
+  claim_text: Incorrect pressure during canning can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: '| Recommended process time for Meat Stock in a dial-gauge pressure canner
+      |'
+    start_char: 300
+    end_char: 400
+    support_strength: medium
+- object_id: food-preservation.meat-stock-canning
+  claim_id: clm_010
+  claim_text: Ensure the pressure canner reaches the correct pressure for your altitude
+    to avoid contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 137
+    page_end: 137
+    segment_id: src.usda.home-canning.2015::seg_000193
+    excerpt: '| Recommended process time for Meat Stock in a dial-gauge pressure canner
+      |'
+    start_char: 300
+    end_char: 400
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000193
+bundle_overrides:
+  hook: Preserve your homemade meat stock for months with safe and effective canning
+    techniques.
+  primer: Canning meat stock or broth is a practical way to ensure you have a ready
+    supply of flavorful base for soups, stews, and other recipes. By using a pressure
+    canner, you can safely store your stock for long-term use, preventing spoilage
+    and maintaining food safety. The process involves preparing the stock by simmering
+    bones, skimming excess fat, and then reheating the broth before filling jars.
+    Proper sealing and processing in a pressure canner are crucial to avoid contamination
+    and ensure the jars are shelf-stable. This method is especially useful for those
+    who enjoy cooking from scratch and want to make the most of their ingredients.
+  guide: 'To can meat stock or broth, start by gathering your materials: fresh trimmed
+    beef or poultry bones, water, optional salt, a pressure canner, jars, and lids.
+    Begin by preparing the bones. Saw or crack them to enhance flavor extraction,
+    then rinse and place them in a large stockpot. Cover the bones with water and
+    simmer to create a rich broth. Once the broth is ready, remove the bones and allow
+    the broth to cool. Skim off any excess fat, as too much fat can prevent proper
+    sealing of the jars. Reheat the broth to boiling. While the broth is reheating,
+    prepare your jars by washing them thoroughly. Fill the hot jars with the boiling
+    broth, leaving a 1-inch headspace. Wipe the rims of the jars with a dampened clean
+    paper towel to ensure a good seal. Adjust the lids and place the jars in the pressure
+    canner. Process the jars according to the recommended times and pressures for
+    your altitude. This step is crucial to ensure the safety and longevity of the
+    canned stock. Once processed, allow the jars to cool undisturbed. Check the seals
+    before storing the jars in a cool, dark place.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Fresh trimmed beef or poultry bones
+  - Water
+  - Optional salt
+  - 1-inch headspace
+  - Skim excess fat
+  - Reheat broth to boiling
+  - Process according to altitude
+  worksheet:
+  - List the materials needed for canning meat stock.
+  - Describe the process of preparing the bones for broth.
+  - Explain why it's important to skim excess fat from the broth.
+  - Outline the steps for filling and sealing jars.
+  - Identify the correct pressure settings for your altitude.
+  teach_forward_kit:
+    three_minute_version: Canning meat stock involves preparing a flavorful broth
+      from bones, skimming excess fat, and using a pressure canner to safely seal
+      the broth in jars for long-term storage.
+    ten_minute_outline:
+    - Introduction to canning meat stock
+    - Materials and tools needed
+    - Preparing and simmering the bones
+    - Skimming fat and reheating broth
+    - Filling jars and ensuring a proper seal
+    - Processing in a pressure canner
+    - Safety tips and common mistakes
+    discussion_prompts:
+    - Why is pressure canning necessary for meat stock?
+    - What are the risks of not skimming enough fat?
+    - How does altitude affect the canning process?
+    - What are some signs of spoilage to watch for?

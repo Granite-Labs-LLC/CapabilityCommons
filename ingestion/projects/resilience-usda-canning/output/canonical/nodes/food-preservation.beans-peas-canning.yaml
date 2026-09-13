@@ -1,0 +1,333 @@
+canonical_title: Canning Dried Beans or Peas
+citations:
+- claim_id: clm_001
+  claim_text: This is a guide for canning dried beans or peas using a pressure canner.
+    It includes instructions for preparation, processing times, and adjustments for
+    altitude.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: 'Procedure: Place dried beans or peas in a large pot and cover with water.
+      Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans,
+      you may cover sorted and washed beans with boiling water in a saucepan. Boil
+      2 minutes, remove from heat, soak 1 hour and drain. Cover beans soaked by either
+      method with fresh water and boil 30 minutes. Add 1/2 teaspoon of salt per pint
+      or 1 teaspoon per quart to the jar, if desired. Fill hot jars with beans or
+      peas and cooking water, leaving 1-inch headspace. Remove air bubbles and adjust
+      headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust
+      lids and process.'
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Canning dried beans or peas allows you to preserve them for long-term
+    storage, ensuring you have a ready supply of nutritious food.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: 'Procedure: Place dried beans or peas in a large pot and cover with water.
+      Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans,
+      you may cover sorted and washed beans with boiling water in a saucepan. Boil
+      2 minutes, remove from heat, soak 1 hour and drain. Cover beans soaked by either
+      method with fresh water and boil 30 minutes.'
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and dried
+    beans or peas. Optionally, you can add salt for flavor.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the jar,
+      if desired. Fill hot jars with beans or peas and cooking water, leaving 1-inch
+      headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: Sort and rinse the beans or peas, discarding any discolored seeds.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: 'Quality: Select mature, dry seeds. Sort out and discard discolored seeds.'
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Soak them in water for 12 to 18 hours in a cool place, or use the quick
+    soak method by boiling for 2 minutes, then soaking for 1 hour.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: 'Procedure: Place dried beans or peas in a large pot and cover with water.
+      Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans,
+      you may cover sorted and washed beans with boiling water in a saucepan. Boil
+      2 minutes, remove from heat, soak 1 hour and drain.'
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Drain and cover with fresh water, then boil for 30 minutes.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Cover beans soaked by either method with fresh water and boil 30 minutes.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Add salt to jars if desired, fill jars with beans and cooking water,
+    leaving 1-inch headspace.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the jar,
+      if desired. Fill hot jars with beans or peas and cooking water, leaving 1-inch
+      headspace.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Process in a pressure canner according to the recommended times and
+    pressures for your altitude.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Adjust lids and process.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_010
+  claim_text: Incorrect pressure or incomplete seal can lead to spoilage. Ensure the
+    pressure is correct for your altitude and that jars are sealed properly.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Adjust lids and process.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: weak
+- claim_id: clm_011
+  claim_text: Always use a pressure canner for low-acid foods like beans to prevent
+    the risk of botulism. Adjust pressure settings based on your altitude.
+  object_id: food-preservation.beans-peas-canning
+  support:
+  - end_char: 619
+    excerpt: Adjust lids and process.
+    page_end: 115
+    page_start: 114
+    segment_id: src.usda.home-canning.2015::seg_000156
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: weak
+co_type: project_blueprint
+contexts: []
+cost_band: medium
+difficulty: 3
+id: food-preservation.beans-peas-canning
+language_code: en
+lifecycle_state: published
+markdown_body: "### What this is\nThis is a guide for canning dried beans or peas\
+  \ using a pressure canner. It includes instructions for preparation, processing\
+  \ times, and adjustments for altitude.\n\n### Why it matters\nCanning dried beans\
+  \ or peas allows you to preserve them for long-term storage, ensuring you have a\
+  \ ready supply of nutritious food.\n\n### What you need\nYou will need a pressure\
+  \ canner, jars, lids, boiling water, and dried beans or peas. Optionally, you can\
+  \ add salt for flavor.\n\n### How to do it\n1. Sort and rinse the beans or peas,\
+  \ discarding any discolored seeds. \n2. Soak them in water for 12 to 18 hours in\
+  \ a cool place, or use the quick soak method by boiling for 2 minutes, then soaking\
+  \ for 1 hour. \n3. Drain and cover with fresh water, then boil for 30 minutes. \n\
+  4. Add salt to jars if desired, fill jars with beans and cooking water, leaving\
+  \ 1-inch headspace. \n5. Remove air bubbles, adjust headspace, wipe rims, and adjust\
+  \ lids. \n6. Process in a pressure canner according to the recommended times and\
+  \ pressures for your altitude.\n\n### Common failure modes\nIncorrect pressure or\
+  \ incomplete seal can lead to spoilage. Ensure the pressure is correct for your\
+  \ altitude and that jars are sealed properly.\n\n### Safety/boundary notes\nAlways\
+  \ use a pressure canner for low-acid foods like beans to prevent the risk of botulism.\
+  \ Adjust pressure settings based on your altitude.\n\n### Local adaptation notes\n\
+  Adapt the process based on the availability of beans or peas and your local altitude."
+plain_language: This guide will help you can dried beans or peas using a pressure
+  canner. It includes steps for preparation, processing times, and how to adjust for
+  different altitudes.
+primary_domain: food-preservation
+requires: []
+risk_band: high
+secondary_domains: []
+seed_type: extracted
+slug: food-preservation.beans-peas-canning
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000156
+stage: household
+structured_data:
+  acceptance_criteria: Jars are sealed properly and processed at the correct pressure
+    for the specified time.
+  deliverables: Canned jars of dried beans or peas.
+  goal: Safely can dried beans or peas for long-term storage.
+  implementation:
+    common_mistakes:
+    - Not adjusting pressure for altitude
+    - Overfilling jars
+    expected_cost: Moderate, depending on the cost of beans and canning supplies.
+    expected_time: Approximately 24 hours including soaking time.
+    materials:
+    - dried beans or peas
+    - boiling water
+    - salt (optional)
+    smallest_viable_version: Canning a single batch of beans or peas using a pressure
+      canner.
+    stop_conditions:
+    - Pressure not reaching required level
+    - Jars not sealing
+    success_checks:
+    - Jars are sealed
+    - Correct pressure used
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    variants:
+    - label: Urban
+      notes: Consider smaller batch sizes.
+      when: Limited space for storing large quantities of canned goods.
+    - label: Off-grid
+      notes: Use a stove-top pressure canner.
+      when: No access to electric canners.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If unsure about pressure settings for altitude
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+suggested_edges: []
+summary_medium: Learn how to safely can dried beans or peas using a pressure canner,
+  including preparation, processing times, and adjustments for altitude.
+summary_short: Guide to canning dried beans or peas using a pressure canner.
+version_no: 1
+visibility: public
+bundle_overrides:
+  hook: Preserve your dried beans or peas for long-term storage and ensure a ready
+    supply of nutritious food with canning.
+  primer: Canning dried beans or peas is a practical method to preserve these nutritious
+    staples for long-term storage. Using a pressure canner is essential because beans
+    and peas are low-acid foods, which require higher temperatures to eliminate the
+    risk of botulism. The process involves soaking the beans to rehydrate them, boiling
+    them to soften, and then sealing them in jars with a pressure canner. This method
+    not only extends the shelf life of your beans or peas but also ensures you have
+    a convenient and ready-to-use ingredient for various meals. Proper canning techniques,
+    including adjusting for altitude, are crucial to ensure safety and prevent spoilage.
+  guide: '1. Gather your materials: dried beans or peas, a pressure canner, jars,
+    lids, boiling water, and optional salt.
+
+    2. Sort and rinse the beans or peas, discarding any discolored seeds.
+
+    3. Soak the beans in water for 12 to 18 hours in a cool place. Alternatively,
+    use the quick soak method by boiling the beans for 2 minutes, then soaking for
+    1 hour.
+
+    4. Drain the soaked beans and cover them with fresh water. Boil for 30 minutes.
+
+    5. If desired, add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the
+    jars.
+
+    6. Fill the hot jars with the beans and cooking water, leaving a 1-inch headspace.
+
+    7. Remove air bubbles by gently tapping the jars or using a non-metallic spatula.
+    Adjust the headspace if necessary.
+
+    8. Wipe the rims of the jars with a dampened clean paper towel to ensure a good
+    seal.
+
+    9. Place the lids on the jars and adjust the bands until fingertip tight.
+
+    10. Process the jars in a pressure canner according to the recommended times and
+    pressures for your altitude.
+
+    11. Once processed, allow the jars to cool undisturbed for 12 to 24 hours. Check
+    the seals before storing.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Dried beans or peas
+  - Boiling water
+  - Salt (optional)
+  - 'Soak time: 12-18 hours or quick soak method'
+  - 'Boil time: 30 minutes'
+  - 'Headspace: 1 inch'
+  - Altitude adjustments for pressure
+  worksheet:
+  - Sort and rinse a batch of dried beans or peas. Note any discolored seeds you discard.
+  - 'Try both soaking methods: the long soak and the quick soak. Record the differences
+    in texture.'
+  - Practice filling jars with beans and water, ensuring you leave the correct headspace.
+  - Simulate removing air bubbles and adjusting headspace using a non-metallic spatula.
+  - Research the recommended pressure settings for your altitude and note them down.
+  - After processing, check the seals on your jars and document any that did not seal
+    properly.
+  teach_forward_kit:
+    three_minute_version: Canning dried beans or peas involves soaking, boiling, and
+      sealing them in jars using a pressure canner. This method preserves them for
+      long-term storage, ensuring a nutritious food supply. Adjust pressure settings
+      based on your altitude to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Materials needed for canning beans or peas
+    - 'Step-by-step process: sorting, soaking, boiling, and canning'
+    - Importance of using a pressure canner for low-acid foods
+    - Adjusting for altitude and ensuring proper seals
+    - Safety tips and common mistakes to avoid
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid foods like beans?
+    - What are the potential risks if the pressure or seal is incorrect?
+    - How does altitude affect the canning process?
+    - What are some practical uses for canned beans or peas in everyday cooking?

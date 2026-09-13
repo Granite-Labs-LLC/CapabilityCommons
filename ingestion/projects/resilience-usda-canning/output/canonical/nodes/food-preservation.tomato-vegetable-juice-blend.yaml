@@ -1,0 +1,251 @@
+id: food-preservation.tomato-vegetable-juice-blend
+slug: food-preservation.tomato-vegetable-juice-blend
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Tomato and Vegetable Juice Blend Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning a tomato and vegetable juice blend.
+summary_medium: Instructions for canning a blend of tomato and vegetable juice, including
+  preparation, acidification, and processing times.
+plain_language: Learn how to can a juice blend made from tomatoes and vegetables.
+  This guide covers preparation, adding acid, and processing the jars safely.
+markdown_body: '### What this is
+
+  This project blueprint provides instructions for canning a tomato and vegetable
+  juice blend. It includes steps for preparing the juice, adding necessary acid, and
+  processing the jars using different canning methods.
+
+
+  ### Why it matters
+
+  Canning a tomato and vegetable juice blend allows you to preserve the flavors and
+  nutrients of fresh produce for later use. Proper canning ensures the juice is safe
+  to consume and has a long shelf life.
+
+
+  ### What you need
+
+  You will need 22 pounds of tomatoes, up to 3 cups of chopped vegetables (such as
+  celery, onions, carrots, and peppers), bottled lemon juice or citric acid, salt
+  (optional), a sieve or food mill, and a canner (boiling-water or pressure canner).
+
+
+  ### How to do it
+
+  1. Crush and simmer the tomatoes. 2. Add up to 3 cups of chopped vegetables. 3.
+  Simmer for 20 minutes. 4. Press the mixture through a sieve or food mill. 5. Add
+  lemon juice or citric acid to jars. 6. Add salt if desired. 7. Reheat the juice
+  to boiling. 8. Fill jars, leaving 1/2-inch headspace. 9. Wipe rims, adjust lids,
+  and process jars according to the canning method and altitude.
+
+
+  ### Common failure modes
+
+  Not adding enough acid can lead to unsafe preservation. Ensure jars are sealed properly
+  to avoid spoilage.
+
+
+  ### Safety/boundary notes
+
+  Acidification is crucial for safety. Follow all steps carefully to ensure the juice
+  is safe for consumption.
+
+
+  ### Local adaptation notes
+
+  Adjust vegetable types based on local availability. Ensure processing times and
+  pressures are adjusted for local altitude.'
+structured_data:
+  goal: To safely can a tomato and vegetable juice blend.
+  deliverables: Canned jars of tomato and vegetable juice blend.
+  acceptance_criteria: Jars are sealed properly and stored safely.
+  implementation:
+    smallest_viable_version: Canning a small batch using a boiling-water canner.
+    tools:
+    - sieve
+    - food mill
+    - boiling-water canner
+    - pressure canner
+    materials:
+    - tomatoes
+    - vegetables
+    - bottled lemon juice
+    - citric acid
+    - salt
+    expected_time: 3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - Juice is clear and free of spoilage
+    stop_conditions:
+    - Jars do not seal
+    - Signs of spoilage
+    common_mistakes:
+    - Not adding enough acid
+    - Improper sealing
+    variants:
+    - label: Urban
+      when: Limited space for canning equipment
+      notes: Consider smaller batch sizes.
+    when_to_escalate:
+    - Jars do not seal after processing
+    - Visible spoilage in jars
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.tomato-vegetable-juice-blend
+  claim_id: clm_001
+  claim_text: You will need 22 pounds of tomatoes, up to 3 cups of chopped vegetables
+    (such as celery, onions, carrots, and peppers), bottled lemon juice or citric
+    acid, salt (optional), a sieve or food mill, and a canner (boiling-water or pressure
+    canner).
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 89
+    page_end: 90
+    segment_id: src.usda.home-canning.2015::seg_000117
+    excerpt: An average of 22 pounds of tomatoes is needed per canner load of 7 quarts.
+      No more than 3 cups of other vegetables may be added for each 22 pounds of tomatoes.
+    start_char: 0
+    end_char: 123
+    support_strength: strong
+- object_id: food-preservation.tomato-vegetable-juice-blend
+  claim_id: clm_002
+  claim_text: Crush and simmer the tomatoes. Add up to 3 cups of chopped vegetables.
+    Simmer for 20 minutes. Press the mixture through a sieve or food mill.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 89
+    page_end: 90
+    segment_id: src.usda.home-canning.2015::seg_000117
+    excerpt: Crush and simmer tomatoes as for making tomato juice. Add no more than
+      3 cups of any combination of finely chopped celery, onions, carrots, and peppers
+      for each 22 lbs of tomatoes. Simmer mixture 20 minutes. Press hot cooked tomatoes
+      and vegetables through a sieve or food mill to remove skins and seeds.
+    start_char: 0
+    end_char: 256
+    support_strength: strong
+- object_id: food-preservation.tomato-vegetable-juice-blend
+  claim_id: clm_003
+  claim_text: Add lemon juice or citric acid to jars.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 89
+    page_end: 90
+    segment_id: src.usda.home-canning.2015::seg_000117
+    excerpt: Add bottled lemon juice or citric acid to jars.
+    start_char: 257
+    end_char: 297
+    support_strength: strong
+- object_id: food-preservation.tomato-vegetable-juice-blend
+  claim_id: clm_004
+  claim_text: Reheat the juice to boiling. Fill jars, leaving 1/2-inch headspace.
+    Wipe rims, adjust lids, and process jars according to the canning method and altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 89
+    page_end: 90
+    segment_id: src.usda.home-canning.2015::seg_000117
+    excerpt: Reheat tomato-vegetable juice blend to boiling and fill immediately into
+      hot jars, leaving 1/2-inch headspace. Wipe rims of jars with a dampened clean
+      paper towel. Adjust lids and process.
+    start_char: 298
+    end_char: 455
+    support_strength: strong
+- object_id: food-preservation.tomato-vegetable-juice-blend
+  claim_id: clm_005
+  claim_text: Not adding enough acid can lead to unsafe preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Acidification: To ensure safe acidity in whole, crushed, or juiced tomatoes,
+      add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid per
+      quart of tomatoes.'
+    start_char: 94
+    end_char: 247
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000117
+bundle_overrides:
+  hook: Preserve the fresh taste of summer with homemade tomato and vegetable juice,
+    ensuring a nutritious boost all year round.
+  primer: Canning a tomato and vegetable juice blend is a practical way to enjoy the
+    flavors and nutrients of fresh produce long after the growing season ends. This
+    process involves preparing a mixture of tomatoes and vegetables, adding necessary
+    acid to ensure safety, and processing the jars using a canner. The acidification
+    step is crucial because it prevents the growth of harmful bacteria, such as those
+    that cause botulism. By following a tested recipe, you can safely preserve your
+    juice blend for later use. You'll need 22 pounds of tomatoes and up to 3 cups
+    of chopped vegetables like celery, onions, carrots, and peppers. The process includes
+    simmering the mixture, straining it, adding lemon juice or citric acid, and sealing
+    the jars properly. This method not only extends the shelf life of your produce
+    but also allows you to enjoy homemade juice that is free from preservatives and
+    additives.
+  guide: 'To can a tomato and vegetable juice blend, start by gathering your ingredients:
+    22 pounds of tomatoes, up to 3 cups of chopped vegetables (such as celery, onions,
+    carrots, and peppers), bottled lemon juice or citric acid, and salt if desired.
+    You''ll also need a sieve or food mill and a canner (either boiling-water or pressure
+    canner). Begin by washing and preparing your tomatoes and vegetables. Crush the
+    tomatoes and place them in a large pot. Add the chopped vegetables and simmer
+    the mixture for about 20 minutes. Once simmered, press the mixture through a sieve
+    or food mill to remove skins and seeds, resulting in a smooth juice. Next, prepare
+    your jars by adding 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric
+    acid per quart of juice. This step is essential for safe preservation. Reheat
+    the juice to boiling, then fill the hot jars, leaving a 1/2-inch headspace. Wipe
+    the rims of the jars with a clean, damp paper towel to ensure a good seal. Adjust
+    the lids and process the jars in your canner according to the method and altitude
+    guidelines. After processing, let the jars cool undisturbed for 12-24 hours. Check
+    the seals before storing. Properly sealed jars can be stored in a cool, dark place
+    for up to a year.'
+  reference:
+  - 22 pounds of tomatoes per 7 quarts
+  - Up to 3 cups of chopped vegetables
+  - Bottled lemon juice or citric acid for acidification
+  - Simmer mixture for 20 minutes
+  - Reheat juice to boiling before canning
+  - Leave 1/2-inch headspace in jars
+  - Process jars according to canning method and altitude
+  worksheet:
+  - List the equipment needed for canning the juice blend.
+  - Calculate the amount of lemon juice or citric acid needed for 14 quarts of juice.
+  - Describe the steps to prepare the tomatoes and vegetables for canning.
+  - Explain why acidification is important in the canning process.
+  - Identify signs of spoilage in canned goods.
+  teach_forward_kit:
+    three_minute_version: Canning a tomato and vegetable juice blend involves preparing
+      a mixture of tomatoes and vegetables, adding acid for safety, and processing
+      in a canner. This preserves the juice for long-term storage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Ingredients and equipment needed
+    - Step-by-step preparation and canning process
+    - Importance of acidification for safety
+    - Tips for successful canning and storage
+    discussion_prompts:
+    - Why is acidification crucial in canning tomato and vegetable juice?
+    - What are the potential risks if canning steps are not followed properly?
+    - How can you adapt the recipe based on local vegetable availability?

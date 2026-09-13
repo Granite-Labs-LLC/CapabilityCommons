@@ -1,0 +1,280 @@
+id: food-preservation.crab-meat-canning
+slug: food-preservation.crab-meat-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning King and Dungeness Crab Meat
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning king and Dungeness crab meat using pressure canning.
+summary_medium: Detailed procedure for canning king and Dungeness crab meat, including
+  preparation, packing, and processing times for dial-gauge and weighted-gauge pressure
+  canners.
+plain_language: This guide explains how to can king and Dungeness crab meat safely
+  using a pressure canner. It covers preparation, packing, and processing to ensure
+  the crab meat is preserved correctly.
+markdown_body: '### What this is
+
+  This is a guide for canning king and Dungeness crab meat using a pressure canner.
+  It includes steps for preparation, packing, and processing to ensure safe preservation.
+
+
+  ### Why it matters
+
+  Canning crab meat allows for long-term storage and preservation, making it possible
+  to enjoy crab out of season. Proper canning prevents spoilage and ensures food safety.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, salt, lemon juice, and citric acid. Fresh
+  crabs are also required.
+
+
+  ### How to do it
+
+  1. Keep live crabs on ice until ready to can. 2. Wash crabs thoroughly. 3. Simmer
+  crabs for 20 minutes in water with lemon juice and salt. 4. Cool, drain, and remove
+  meat. 5. Soak meat in a lemon juice or vinegar solution. 6. Drain and squeeze out
+  excess moisture. 7. Fill jars with crab meat, add citric acid or lemon juice, and
+  cover with boiling water. 8. Process in a pressure canner according to altitude-specific
+  guidelines.
+
+
+  ### Common failure modes
+
+  Incorrect pressure can lead to under-processing. An acidic flavor may develop if
+  not processed correctly.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained during canning to avoid contamination. Follow
+  altitude-specific pressure guidelines.
+
+
+  ### Local adaptation notes
+
+  Availability of crab may vary by region. Adjust quantities based on local availability.'
+structured_data:
+  goal: To safely can king and Dungeness crab meat using a pressure canner.
+  deliverables: Properly canned crab meat that is safe for long-term storage.
+  acceptance_criteria: Crab meat is canned without spoilage, maintaining safety and
+    quality.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure the pressure canner is used correctly and pressure
+    is maintained according to altitude-specific guidelines.'
+  implementation:
+    smallest_viable_version: Start by preparing the crabs and setting up the pressure
+      canner.
+    tools:
+    - Pressure canner
+    - Jars
+    materials:
+    - Salt
+    - Lemon juice
+    - Citric acid
+    expected_time: Approximately 2-3 hours
+    expected_cost: $20-$50 depending on crab availability
+    success_checks:
+    - Jars are sealed properly
+    - Crab meat is free from spoilage
+    stop_conditions:
+    - Pressure is not maintained
+    - Jars do not seal
+    common_mistakes:
+    - Not maintaining correct pressure
+    - Overfilling jars
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If there is any sign of spoilage
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.crab-meat-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning king and Dungeness crab meat using a pressure
+    canner. It includes steps for preparation, packing, and processing to ensure safe
+    preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 140
+    segment_id: src.usda.home-canning.2015::seg_000197
+    excerpt: 'Procedure: Keep live crabs on ice until ready to can. Wash crabs thoroughly,
+      using several changes of cold water. Simmer crabs 20 minutes in water containing
+      cup of lemon juice and 2 tablespoons of salt (or up to 1 cup of salt, if desired)
+      per gallon. Cool in cold water, drain, remove back shell, then remove meat from
+      body and claws. Soak meat 2 minutes in cold water containing 2 cups of lemon
+      juice or 4 cups of white vinegar, and 2 tablespoons of salt (or up to 1 cup
+      of salt, if desired) per gallon. Drain and squeeze crab meat to remove excess
+      moisture. Fill hot half-pint jars with 6 ounces of crab meat and pint jars with
+      12 ounces, leaving 1-inch headspace. Add 1/2 teaspoon of citric acid or 2 tablespoons
+      of lemon juice to each half-pint jar, or 1 teaspoon of citric acid or 4 tablespoons
+      of lemon juice per pint jar. Cover with fresh boiling water, leaving 1-inch
+      headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.'
+    start_char: 0
+    end_char: 1028
+    support_strength: strong
+- object_id: food-preservation.crab-meat-canning
+  claim_id: clm_002
+  claim_text: Canning crab meat allows for long-term storage and preservation, making
+    it possible to enjoy crab out of season. Proper canning prevents spoilage and
+    ensures food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 140
+    segment_id: src.usda.home-canning.2015::seg_000197
+    excerpt: Crab meat canned according to the following procedure may have a distinctly
+      acidic flavor and freezing is the preferred method of preservation at this time.
+    start_char: 0
+    end_char: 1028
+    support_strength: medium
+- object_id: food-preservation.crab-meat-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, salt, lemon juice, and citric
+    acid. Fresh crabs are also required.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 140
+    segment_id: src.usda.home-canning.2015::seg_000197
+    excerpt: 'Procedure: Keep live crabs on ice until ready to can. Wash crabs thoroughly,
+      using several changes of cold water. Simmer crabs 20 minutes in water containing
+      cup of lemon juice and 2 tablespoons of salt (or up to 1 cup of salt, if desired)
+      per gallon. Cool in cold water, drain, remove back shell, then remove meat from
+      body and claws. Soak meat 2 minutes in cold water containing 2 cups of lemon
+      juice or 4 cups of white vinegar, and 2 tablespoons of salt (or up to 1 cup
+      of salt, if desired) per gallon. Drain and squeeze crab meat to remove excess
+      moisture. Fill hot half-pint jars with 6 ounces of crab meat and pint jars with
+      12 ounces, leaving 1-inch headspace. Add 1/2 teaspoon of citric acid or 2 tablespoons
+      of lemon juice to each half-pint jar, or 1 teaspoon of citric acid or 4 tablespoons
+      of lemon juice per pint jar. Cover with fresh boiling water, leaving 1-inch
+      headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.'
+    start_char: 0
+    end_char: 1028
+    support_strength: strong
+- object_id: food-preservation.crab-meat-canning
+  claim_id: clm_004
+  claim_text: Incorrect pressure can lead to under-processing. An acidic flavor may
+    develop if not processed correctly.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 140
+    segment_id: src.usda.home-canning.2015::seg_000197
+    excerpt: Crab meat canned according to the following procedure may have a distinctly
+      acidic flavor and freezing is the preferred method of preservation at this time.
+    start_char: 0
+    end_char: 1028
+    support_strength: medium
+- object_id: food-preservation.crab-meat-canning
+  claim_id: clm_005
+  claim_text: Ensure proper pressure is maintained during canning to avoid contamination.
+    Follow altitude-specific pressure guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 140
+    segment_id: src.usda.home-canning.2015::seg_000197
+    excerpt: '| Recommended process time for King and Dungeness Crab Meat in a dial-gauge
+      pressure canner |             |                 | Canner Pressure (PSI) at Altitudes
+      of |                    |                    |                    |  |'
+    start_char: 0
+    end_char: 1028
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000197
+bundle_overrides:
+  hook: Canning crab meat allows you to enjoy the taste of fresh crab all year round,
+    ensuring safety and preventing spoilage.
+  primer: Canning king and Dungeness crab meat is a method of preserving these delicious
+    seafood delicacies for long-term storage. By using a pressure canner, you can
+    safely store crab meat, making it possible to enjoy it even when it's out of season.
+    The process involves several steps, including preparing the crabs, packing them
+    into jars, and processing them under pressure to ensure they are preserved correctly.
+    This method is essential because crab meat is low in acid, which means it requires
+    the high temperatures of a pressure canner to prevent the growth of harmful bacteria.
+    Proper canning not only extends the shelf life of crab meat but also maintains
+    its flavor and nutritional value. However, it's crucial to follow the guidelines
+    carefully, as incorrect pressure or processing times can lead to spoilage or an
+    acidic taste. With the right equipment and attention to detail, you can successfully
+    can crab meat and enjoy it at any time.
+  guide: "To can king and Dungeness crab meat, follow these steps: \n\n1. **Prepare\
+    \ the Crabs**: Keep live crabs on ice until you're ready to can them. This ensures\
+    \ they remain fresh. Wash the crabs thoroughly using several changes of cold water\
+    \ to remove any impurities. \n\n2. **Cook the Crabs**: Simmer the crabs for 20\
+    \ minutes in a pot of water containing 1 cup of lemon juice and 2 tablespoons\
+    \ of salt per gallon. This step helps in cooking the crabs and infusing them with\
+    \ flavor. \n\n3. **Cool and Clean**: After simmering, cool the crabs in cold water,\
+    \ then drain them. Remove the back shell and extract the meat from the body and\
+    \ claws. \n\n4. **Soak the Meat**: Soak the crab meat for 2 minutes in a solution\
+    \ of 2 cups of lemon juice or 4 cups of white vinegar, and 2 tablespoons of salt\
+    \ per gallon of water. This helps in preserving the meat and enhancing its flavor.\
+    \ \n\n5. **Drain and Pack**: Drain the meat and squeeze out excess moisture. Fill\
+    \ hot half-pint jars with 6 ounces of crab meat and pint jars with 12 ounces,\
+    \ leaving a 1-inch headspace. Add 1/2 teaspoon of citric acid or 2 tablespoons\
+    \ of lemon juice to each half-pint jar, or 1 teaspoon of citric acid or 4 tablespoons\
+    \ of lemon juice per pint jar. \n\n6. **Seal and Process**: Cover the crab meat\
+    \ with fresh boiling water, maintaining a 1-inch headspace. Remove air bubbles\
+    \ and adjust the headspace if necessary. Wipe the rims of the jars with a damp\
+    \ paper towel, adjust the lids, and process in a pressure canner according to\
+    \ altitude-specific guidelines. \n\n7. **Cool and Store**: Once processed, allow\
+    \ the jars to cool. Check the seals and store the jars in a cool, dark place."
+  reference:
+  - Pressure canner
+  - Jars (half-pint and pint)
+  - Salt
+  - Lemon juice
+  - Citric acid
+  - Live crabs
+  - Boiling water
+  - Altitude-specific pressure guidelines
+  worksheet:
+  - List the materials needed for canning crab meat.
+  - Describe the process of preparing crabs for canning.
+  - Explain why a pressure canner is necessary for canning crab meat.
+  - Calculate the amount of lemon juice needed for 3 gallons of water.
+  - Identify common mistakes in the canning process and how to avoid them.
+  teach_forward_kit:
+    three_minute_version: Canning crab meat involves preparing fresh crabs, cooking
+      them, and then sealing them in jars using a pressure canner. This method ensures
+      long-term preservation and safety by preventing bacterial growth.
+    ten_minute_outline:
+    - Introduction to canning crab meat and its benefits
+    - Materials and equipment needed
+    - Step-by-step process of preparing and cooking crabs
+    - Packing crab meat into jars and adding preservatives
+    - Processing jars in a pressure canner
+    - Safety tips and common mistakes to avoid
+    discussion_prompts:
+    - Why is pressure canning necessary for low-acid foods like crab meat?
+    - What are the potential risks of not following canning guidelines?
+    - How does canning crab meat compare to other preservation methods like freezing?

@@ -1,0 +1,326 @@
+id: food-preservation.selecting-preparing-canning-fruit
+slug: food-preservation.selecting-preparing-canning-fruit
+seed_type: candidate
+co_type: skill_guide
+canonical_title: Selecting, Preparing, and Canning Fruit and Fruit Products
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for selecting, preparing, and canning fruit and fruit products.
+summary_medium: Learn how to select, prepare, and can fruit and fruit products safely
+  and effectively.
+plain_language: This guide helps you choose the right fruit, prepare it, and can it
+  properly to preserve it for future use.
+markdown_body: '## What this is
+
+  This guide provides instructions on how to select, prepare, and can fruit and fruit
+  products. It covers the entire process from choosing the right fruit to ensuring
+  proper canning techniques.
+
+
+  ## Why it matters
+
+  Canning fruit allows you to preserve seasonal produce for later use, reducing waste
+  and ensuring you have access to fruit year-round. Proper canning techniques prevent
+  spoilage and ensure food safety.
+
+
+  ## What you need
+
+  - Canning jars
+
+  - Pressure canner
+
+  - Fruit preparation tools
+
+
+  ## How to do it
+
+  1. **Select appropriate fruit**: Choose fresh, ripe fruit without blemishes or signs
+  of spoilage.
+
+  2. **Prepare fruit for canning**: Wash, peel, and cut the fruit as necessary.
+
+  3. **Follow canning procedures**: Sterilize jars, fill with prepared fruit, and
+  process using a pressure canner.
+
+
+  ## Common failure modes
+
+  - Improper sealing of jars can lead to spoilage.
+
+  - Not following the correct processing time can result in under-processed fruit.
+
+
+  ## Safety/boundary notes
+
+  Ensure proper sterilization of jars and equipment to prevent contamination and spoilage.
+
+
+  ## Local adaptation notes
+
+  Adapt the process based on the availability of different fruit types in your area.'
+structured_data:
+  tools:
+  - Canning jars
+  - Pressure canner
+  - Fruit preparation tools
+  materials: []
+  success_criteria:
+  - Jars are properly sealed and stored.
+  - Fruit is preserved without spoilage.
+  failure_modes:
+  - Improper sealing
+  - Spoilage
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper sterilization'
+  implementation:
+    smallest_viable_version: Select and prepare a small batch of fruit for canning.
+    tools:
+    - Canning jars
+    - Pressure canner
+    - Fruit preparation tools
+    materials: []
+    expected_time: 2-3 hours
+    expected_cost: $10-$30
+    success_checks:
+    - Jars are sealed properly.
+    - No signs of spoilage after canning.
+    stop_conditions:
+    - If jars do not seal properly, do not store them.
+    common_mistakes:
+    - Not sterilizing jars properly.
+    - Using overripe or damaged fruit.
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner.
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars consistently fail to seal, seek expert advice.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to select, prepare, and can
+    fruit and fruit products.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 54
+    page_end: 54
+    segment_id: src.usda.home-canning.2015::seg_000066
+    excerpt: Selecting, Preparing, and Canning Fruit and Fruit Products
+    start_char: 0
+    end_char: 54
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_002
+  claim_text: Canning fruit allows you to preserve seasonal produce for later use,
+    reducing waste and ensuring you have access to fruit year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 52
+    page_end: 52
+    segment_id: src.usda.home-canning.2015::seg_000065
+    excerpt: Home Canning
+    start_char: 0
+    end_char: 11
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_003
+  claim_text: Proper canning techniques prevent spoilage and ensure food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 44
+    page_end: 46
+    segment_id: src.usda.home-canning.2015::seg_000062
+    excerpt: Proper heat processing destroys this bacterium in canned food.
+    start_char: 0
+    end_char: 54
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_004
+  claim_text: Choose fresh, ripe fruit without blemishes or signs of spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 54
+    page_end: 54
+    segment_id: src.usda.home-canning.2015::seg_000066
+    excerpt: Selecting, Preparing, and Canning Fruit and Fruit Products
+    start_char: 0
+    end_char: 54
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_005
+  claim_text: Wash, peel, and cut the fruit as necessary.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 57
+    page_end: 57
+    segment_id: src.usda.home-canning.2015::seg_000069
+    excerpt: Wash, remove stems, quarter, and core fruit.
+    start_char: 0
+    end_char: 54
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_006
+  claim_text: Sterilize jars, fill with prepared fruit, and process using a pressure
+    canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 57
+    page_end: 57
+    segment_id: src.usda.home-canning.2015::seg_000069
+    excerpt: Fill hot into sterile half-pint or pint jars, leaving 1/4-inch headspace.
+    start_char: 0
+    end_char: 54
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_007
+  claim_text: Improper sealing of jars can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 44
+    page_end: 46
+    segment_id: src.usda.home-canning.2015::seg_000062
+    excerpt: Hermetic seal prevents reentry of air or microorganisms into packaged
+      foods.
+    start_char: 0
+    end_char: 54
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_008
+  claim_text: Not following the correct processing time can result in under-processed
+    fruit.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 57
+    page_end: 57
+    segment_id: src.usda.home-canning.2015::seg_000069
+    excerpt: Recommended process time for Apple Butter in a boiling-water canner
+    start_char: 0
+    end_char: 54
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-fruit
+  claim_id: clm_009
+  claim_text: Ensure proper sterilization of jars and equipment to prevent contamination
+    and spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 57
+    page_end: 57
+    segment_id: src.usda.home-canning.2015::seg_000069
+    excerpt: Fill hot into sterile half-pint or pint jars, leaving 1/4-inch headspace.
+    start_char: 0
+    end_char: 54
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000065
+- src.usda.home-canning.2015::seg_000066
+bundle_overrides:
+  hook: Preserve the taste of summer all year long by learning how to can your favorite
+    fruits safely and effectively.
+  primer: Canning fruit is a time-honored method of preserving the bounty of seasonal
+    produce, allowing you to enjoy fresh flavors throughout the year. This process
+    involves selecting ripe, blemish-free fruit, preparing it by washing, peeling,
+    and cutting, and then sealing it in sterilized jars using a pressure canner. Proper
+    canning not only reduces food waste but also ensures that you have access to nutritious
+    fruit even when it's out of season. The key to successful canning lies in following
+    precise techniques to prevent spoilage and ensure food safety. By mastering the
+    art of canning, you can savor the taste of your favorite fruits long after the
+    harvest season has ended.
+  guide: 'Step 1: Select the Fruit
+
+    Choose fresh, ripe fruit that is free from blemishes or signs of spoilage. The
+    quality of the fruit directly affects the quality of the canned product.
+
+
+    Step 2: Prepare the Fruit
+
+    Wash the fruit thoroughly under running water. Depending on the type of fruit,
+    you may need to peel, core, or slice it. For example, apples should be peeled
+    and cored, while berries may only need a gentle rinse.
+
+
+    Step 3: Sterilize the Jars
+
+    Before filling, sterilize your canning jars by boiling them in water for at least
+    10 minutes. This step is crucial to prevent contamination and spoilage.
+
+
+    Step 4: Fill the Jars
+
+    Pack the prepared fruit into the hot, sterilized jars, leaving about 1/4-inch
+    of headspace at the top. This space allows for expansion during processing.
+
+
+    Step 5: Process the Jars
+
+    Place the filled jars in a pressure canner. Follow the manufacturer''s instructions
+    for your specific canner model, ensuring you use the correct pressure and processing
+    time for the type of fruit and your altitude.
+
+
+    Step 6: Seal the Jars
+
+    After processing, remove the jars from the canner and let them cool. As they cool,
+    the lids should seal with a ''pop'' sound. Check the seals by pressing the center
+    of each lid; it should not flex up and down.
+
+
+    Step 7: Store the Jars
+
+    Store the sealed jars in a cool, dark place. Properly canned and sealed fruit
+    can last for up to a year.'
+  reference:
+  - Select fresh, ripe fruit without blemishes.
+  - Wash, peel, and cut fruit as necessary.
+  - Sterilize jars before filling.
+  - Use a pressure canner for processing.
+  - Leave 1/4-inch headspace in jars.
+  - Ensure jars are sealed properly.
+  - Store in a cool, dark place.
+  worksheet:
+  - Identify three types of fruit you want to can and list their preparation steps.
+  - Practice sterilizing jars by boiling them for 10 minutes.
+  - Simulate filling jars with fruit, ensuring you leave the correct headspace.
+  - Research the correct pressure and processing time for one type of fruit at your
+    altitude.
+  - Check the seals on a set of jars and note any that did not seal properly.
+  teach_forward_kit:
+    three_minute_version: Canning fruit involves selecting ripe, blemish-free fruit,
+      preparing it by washing and cutting, and sealing it in sterilized jars using
+      a pressure canner. This process preserves the fruit for year-round enjoyment
+      and prevents spoilage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Steps for selecting and preparing fruit.
+    - Importance of sterilizing jars.
+    - Detailed canning process using a pressure canner.
+    - Checking seals and storing canned fruit.
+    - Common mistakes and how to avoid them.
+    discussion_prompts:
+    - What are the benefits of canning fruit at home?
+    - How does the canning process prevent spoilage?
+    - What are some common mistakes people make when canning fruit?
+    - How can you ensure the jars are properly sealed?
+    - What are some creative ways to use canned fruit in recipes?

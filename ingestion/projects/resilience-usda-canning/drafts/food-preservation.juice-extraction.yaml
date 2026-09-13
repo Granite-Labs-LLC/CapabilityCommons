@@ -1,0 +1,315 @@
+id: food-preservation.juice-extraction
+slug: food-preservation.juice-extraction
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Juice Extraction for Jelly Making
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guide on extracting juice from fruits for jelly making.
+summary_medium: Learn how to extract juice from various fruits using boiling and straining
+  techniques, essential for making clear jelly.
+plain_language: This guide teaches you how to extract juice from fruits like apples
+  and grapes, which is a key step in making jelly. You'll learn to boil the fruit
+  and strain the juice properly.
+markdown_body: '### What this is
+
+  This guide provides instructions on how to extract juice from fruits such as apples,
+  blackberries, and grapes, which is a crucial step in jelly making.
+
+
+  ### Why it matters
+
+  Proper juice extraction is essential for making clear jelly. Incorrect techniques
+  can lead to cloudy jelly, affecting both appearance and texture.
+
+
+  ### What you need
+
+  You''ll need a saucepan, a jelly bag or cheesecloth, a thermometer, and the fruit
+  you wish to extract juice from.
+
+
+  ### How to do it
+
+  1. Add water to the fruit as specified in the table. 2. Simmer the fruit until tender.
+  3. Strain the juice through a colander, then through a jelly bag or double layer
+  of cheesecloth. Avoid pressing the bag to prevent cloudiness. 4. Measure the juice
+  and add sugar and lemon juice as needed. 5. Boil the mixture to the jellying point,
+  using a thermometer or spoon test to check doneness.
+
+
+  ### Common failure modes
+
+  Cloudy juice can result from squeezing the jelly bag. Ensure not to press the bag
+  while straining.
+
+
+  ### Safety/boundary notes
+
+  Handle hot liquids with care to avoid burns. Ensure jars are sterilized before filling.
+
+
+  ### Local adaptation notes
+
+  Adjust boiling times based on altitude as specified in the temperature table.'
+structured_data:
+  tools:
+  - saucepan
+  - jelly bag
+  - thermometer
+  materials:
+  - fruit
+  - sugar
+  - lemon juice
+  success_criteria:
+  - Clear juice is extracted without cloudiness.
+  failure_modes:
+  - Cloudy juice due to pressing the jelly bag.
+  safety_boundary:
+  - Handle hot liquids carefully.
+  implementation:
+    smallest_viable_version: Simmer fruit and strain through a jelly bag to extract
+      clear juice.
+    tools:
+    - saucepan
+    - jelly bag
+    - thermometer
+    materials:
+    - fruit
+    - sugar
+    - lemon juice
+    expected_time: 1-2 hours
+    expected_cost: $5-$15
+    success_checks:
+    - Juice is clear and free of pulp.
+    stop_conditions:
+    - Juice becomes cloudy.
+    common_mistakes:
+    - Pressing the jelly bag, causing cloudiness.
+    variants:
+    - label: renter
+      when: Limited kitchen space
+      notes: Use a smaller saucepan and strain over a sink.
+    when_to_escalate:
+    - If juice remains cloudy despite careful straining.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_001
+  claim_text: This guide provides instructions on how to extract juice from fruits
+    such as apples, blackberries, and grapes, which is a crucial step in jelly making.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: To Extract Juice | Apples | Blackberries | Grapes
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_002
+  claim_text: Proper juice extraction is essential for making clear jelly. Incorrect
+    techniques can lead to cloudy jelly, affecting both appearance and texture.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Pressing or squeezing the bag or cloth will cause cloudy jelly.
+    start_char: 300
+    end_char: 350
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_003
+  claim_text: You'll need a saucepan, a jelly bag or cheesecloth, a thermometer, and
+    the fruit you wish to extract juice from.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: strain through a double layer of cheesecloth or a jelly bag
+    start_char: 200
+    end_char: 250
+    support_strength: medium
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_004
+  claim_text: Add water to the fruit as specified in the table. Simmer the fruit until
+    tender.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Add water to fruits that require it, as listed in the table of ingredients
+      below. Then simmer according to the times below until fruit is soft.
+    start_char: 400
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_005
+  claim_text: Strain the juice through a colander, then through a jelly bag or double
+    layer of cheesecloth. Avoid pressing the bag to prevent cloudiness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: strain through a colander, then strain through a double layer of cheesecloth
+      or a jelly bag. Pressing or squeezing the bag or cloth will cause cloudy jelly.
+    start_char: 200
+    end_char: 350
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_006
+  claim_text: Measure the juice and add sugar and lemon juice as needed.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: measure fruit juice, sugar, and lemon juice according to the ingredients
+      in the table above
+    start_char: 350
+    end_char: 400
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_007
+  claim_text: Boil the mixture to the jellying point, using a thermometer or spoon
+    test to check doneness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Boil over high heat to the jellying point. To test jelly for doneness,
+      use one of the following methods.
+    start_char: 400
+    end_char: 450
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_008
+  claim_text: Cloudy juice can result from squeezing the jelly bag. Ensure not to
+    press the bag while straining.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Pressing or squeezing the bag or cloth will cause cloudy jelly.
+    start_char: 300
+    end_char: 350
+    support_strength: strong
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_009
+  claim_text: Handle hot liquids with care to avoid burns. Ensure jars are sterilized
+    before filling.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Remove from heat and quickly skim off foam. Fill sterile jars
+    start_char: 500
+    end_char: 550
+    support_strength: medium
+- object_id: food-preservation.juice-extraction
+  claim_id: clm_010
+  claim_text: Adjust boiling times based on altitude as specified in the temperature
+    table.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: 'Use a jelly or candy thermometer and boil until mixture reaches the
+      following temperatures at altitudes of:'
+    start_char: 450
+    end_char: 500
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000264
+bundle_overrides:
+  hook: Mastering juice extraction is the secret to making perfectly clear and delicious
+    homemade jelly.
+  primer: Juice extraction is a fundamental step in jelly making, involving the careful
+    boiling and straining of fruits like apples, blackberries, and grapes. The goal
+    is to obtain a clear juice that will set properly when combined with sugar and
+    lemon juice. This process requires some basic kitchen tools, such as a saucepan,
+    a jelly bag or cheesecloth, and a thermometer. The key to success lies in simmering
+    the fruit until tender and then straining it without applying pressure, as squeezing
+    can lead to cloudy juice. This clarity is crucial for both the appearance and
+    texture of the final jelly product. Additionally, handling hot liquids with care
+    and ensuring jars are sterilized before use are important safety considerations.
+    Adjusting boiling times based on altitude can also affect the outcome, so it's
+    important to follow guidelines closely.
+  guide: '1. Gather your materials: fruit, sugar, lemon juice, a saucepan, a jelly
+    bag or cheesecloth, and a thermometer.
+
+    2. Prepare the fruit by washing and cutting it into small pieces. If using apples,
+    remove the cores.
+
+    3. Place the fruit in a saucepan and add water as specified in your recipe or
+    table of ingredients.
+
+    4. Simmer the fruit over medium heat until it becomes soft and tender. This usually
+    takes about 30-45 minutes.
+
+    5. Once the fruit is tender, strain the juice through a colander to remove large
+    pieces, then through a jelly bag or double layer of cheesecloth to ensure clarity.
+    Avoid pressing the bag to prevent cloudiness.
+
+    6. Measure the extracted juice and add sugar and lemon juice according to your
+    recipe.
+
+    7. Return the mixture to the saucepan and bring it to a boil over high heat. Use
+    a thermometer to monitor the temperature and boil until it reaches the jellying
+    point.
+
+    8. Test for doneness using a spoon test or thermometer. The jelly should set when
+    cooled.
+
+    9. Carefully pour the hot jelly into sterilized jars, leaving some headspace.
+    Seal the jars and allow them to cool.
+
+    10. Store the jelly in a cool, dark place and enjoy your homemade creation!'
+  reference:
+  - Use a saucepan, jelly bag or cheesecloth, and a thermometer.
+  - Simmer fruit until tender before straining.
+  - Avoid pressing the jelly bag to prevent cloudy juice.
+  - Measure juice and add sugar and lemon juice as needed.
+  - Boil to the jellying point, checking with a thermometer.
+  - Handle hot liquids with care and sterilize jars before filling.
+  - Adjust boiling times based on altitude.
+  worksheet:
+  - List the fruits you plan to use for juice extraction.
+  - Simulate the process of straining juice without pressing the bag.
+  - Measure the temperature of boiling juice to practice reaching the jellying point.
+  - Calculate the amount of sugar and lemon juice needed for your juice volume.
+  - Practice sterilizing jars and handling hot liquids safely.
+  teach_forward_kit:
+    three_minute_version: Juice extraction is key for making clear jelly. Simmer fruit,
+      strain without pressing, and boil to the jellying point. Handle hot liquids
+      with care.
+    ten_minute_outline:
+    - Introduction to juice extraction and its importance in jelly making.
+    - Overview of necessary tools and ingredients.
+    - 'Step-by-step process: simmering, straining, and boiling.'
+    - Common mistakes and how to avoid them.
+    - Safety tips for handling hot liquids and sterilizing jars.
+    - Q&A session.
+    discussion_prompts:
+    - Why is it important not to press the jelly bag during straining?
+    - How does altitude affect the boiling process in jelly making?
+    - What are some safety precautions to consider when handling hot liquids?

@@ -1,0 +1,153 @@
+id: home-canning.altitude-adjustment
+slug: home-canning.altitude-adjustment
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Altitude Adjustment for Home Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: home_canning
+secondary_domains:
+- food_preservation
+stage: household
+contexts:
+- home canning
+- food preservation
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Guidelines for adjusting canning process times based on altitude.
+summary_medium: Learn how to adjust canning process times according to your altitude
+  to ensure safe food preservation.
+plain_language: When canning foods at home, it's important to adjust the processing
+  time based on your altitude. This ensures that the food is safely preserved.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for adjusting the processing times of canned
+  foods based on your altitude above sea level.
+
+
+  ### Why it matters
+
+  The boiling temperature of liquids decreases at higher altitudes, which can affect
+  the safety of canned foods. Adjusting processing times ensures that food is safely
+  preserved.
+
+
+  ### What you need
+
+  To determine the correct processing time, you need to know your altitude above sea
+  level.
+
+
+  ### How to do it
+
+  If you are unsure of your altitude, consult your county Extension agent or local
+  district conservationist with the Soil Conservation Service. Adjust your canning
+  process times according to the altitude to ensure safe preservation.
+
+
+  ### Common failure modes
+
+  Not adjusting processing times for altitude can lead to under-processed foods, which
+  may not be safe to consume.
+
+
+  ### Safety/boundary notes
+
+  Always ensure that you have the correct altitude information to adjust processing
+  times accurately.
+
+
+  ### Local adaptation notes
+
+  Altitude can vary significantly even within a single state or county. Always verify
+  your specific location''s altitude.'
+structured_data:
+  definition: Adjusting canning process times based on altitude to ensure safe food
+    preservation.
+  key_questions:
+  - How does altitude affect the boiling point of liquids?
+  - Why is it important to adjust canning times for altitude?
+  misconceptions:
+  - Altitude adjustments are only necessary in mountainous regions.
+  - All areas within a state have the same altitude.
+requires: []
+suggested_edges: []
+citations:
+- object_id: home-canning.altitude-adjustment
+  claim_id: clm_001
+  claim_text: The boiling temperature of liquids decreases at higher altitudes, which
+    can affect the safety of canned foods.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: Since the boiling temperature of liquid is lower at higher elevations,
+      it is critical that additional time be given for the safe processing of foods
+      at altitudes above sea level.
+    start_char: 92
+    end_char: 206
+    support_strength: strong
+- object_id: home-canning.altitude-adjustment
+  claim_id: clm_002
+  claim_text: To determine the correct processing time, you need to know your altitude
+    above sea level.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: It is important to know your approximate elevation or altitude above
+      sea level in order to determine a safe processing time for canned foods.
+    start_char: 0
+    end_char: 91
+    support_strength: strong
+- object_id: home-canning.altitude-adjustment
+  claim_id: clm_003
+  claim_text: If you are unsure of your altitude, consult your county Extension agent
+    or local district conservationist with the Soil Conservation Service.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: If you are unsure about the altitude where you will be canning foods,
+      consult your county Extension agent. An alternative source of information would
+      be your local district conservationist with the Soil Conservation Service.
+    start_char: 407
+    end_char: 609
+    support_strength: strong
+- object_id: home-canning.altitude-adjustment
+  claim_id: clm_004
+  claim_text: Not adjusting processing times for altitude can lead to under-processed
+    foods, which may not be safe to consume.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: Since the boiling temperature of liquid is lower at higher elevations,
+      it is critical that additional time be given for the safe processing of foods
+      at altitudes above sea level.
+    start_char: 92
+    end_char: 206
+    support_strength: medium
+- object_id: home-canning.altitude-adjustment
+  claim_id: clm_005
+  claim_text: Altitude can vary significantly even within a single state or county.
+    Always verify your specific location's altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: It is not practical to include a list of altitudes in this guide, since
+      there is wide variation within a State and even a county.
+    start_char: 207
+    end_char: 312
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000011

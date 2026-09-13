@@ -1,0 +1,220 @@
+id: food-safety.pressure-canning
+slug: food-safety.pressure-canning
+seed_type: safety_notice
+co_type: safety_notice
+canonical_title: Safety Guidelines for Pressure Canning Low-Acid Foods
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food_safety
+secondary_domains:
+- home_canning
+stage: household
+contexts:
+- home canning
+- food preservation
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guidelines for safe pressure canning of low-acid foods to prevent botulism.
+summary_medium: Pressure canning is essential for safely preserving low-acid foods
+  like meats and vegetables. This guide outlines the importance of using accurate
+  pressure canner gauges and following correct process times to prevent botulism.
+plain_language: Learn how to safely can low-acid foods using a pressure canner to
+  avoid the risk of botulism poisoning.
+markdown_body: '### What this is
+
+  This guide provides safety guidelines for pressure canning low-acid foods such as
+  meat, poultry, seafood, and vegetables. It emphasizes the importance of using a
+  pressure canner to prevent botulism.
+
+
+  ### Why it matters
+
+  Botulism is a serious foodborne illness caused by the bacterium Clostridium botulinum.
+  Proper pressure canning destroys these bacteria in low-acid foods, preventing the
+  production of a deadly toxin.
+
+
+  ### What you need
+
+  A pressure canner with an accurate gauge, up-to-date process times and pressures
+  for your specific food and jar size, and knowledge of your altitude to adjust processing
+  times if necessary.
+
+
+  ### How to do it
+
+  Ensure your pressure canner gauge is accurate. Use the correct process times and
+  pressures for the type of food, jar size, and altitude. Check that jars are sealed
+  properly and show no signs of spoilage before consuming.
+
+
+  ### Common failure modes
+
+  Using a boiling water canner instead of a pressure canner for low-acid foods can
+  lead to botulism. Inaccurate gauges or incorrect processing times can also result
+  in unsafe food.
+
+
+  ### Safety/boundary notes
+
+  Always use a pressure canner for low-acid foods. If unsure about the canning process,
+  boil the food for 10 minutes before consuming, adding 1 minute for every 1,000 ft
+  above 1,000 ft elevation.
+
+
+  ### Local adaptation notes
+
+  Adjust boiling times based on your local altitude to ensure safety.'
+structured_data:
+  tools:
+  - pressure canner
+  materials: []
+  success_criteria:
+  - Food processed in a pressure canner
+  - Accurate gauge
+  - Correct process times and pressures used
+  - Proper jar sealing
+  failure_modes:
+  - Botulism poisoning
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Pressure canning required for low-acid foods'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-safety.pressure-canning
+  claim_id: clm_001
+  claim_text: This guide provides safety guidelines for pressure canning low-acid
+    foods such as meat, poultry, seafood, and vegetables. It emphasizes the importance
+    of using a pressure canner to prevent botulism.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Pressure canning is the only recommended method for canning meat, poultry,
+      seafood, and vegetables. The bacterium Clostridium botulinum is destroyed in
+      low-acid foods when they are processed at the correct time and pressure in pressure
+      canners.
+    start_char: 0
+    end_char: 203
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_002
+  claim_text: Botulism is a serious foodborne illness caused by the bacterium Clostridium
+    botulinum. Proper pressure canning destroys these bacteria in low-acid foods,
+    preventing the production of a deadly toxin.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: The bacterium Clostridium botulinum is destroyed in low-acid foods when
+      they are processed at the correct time and pressure in pressure canners. Using
+      boiling water canners for these foods poses a real risk of botulism poisoning.
+    start_char: 77
+    end_char: 203
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_003
+  claim_text: A pressure canner with an accurate gauge, up-to-date process times and
+    pressures for your specific food and jar size, and knowledge of your altitude
+    to adjust processing times if necessary.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: 'All low-acid foods canned according to the approved recommendations
+      may be eaten without boiling them when you are sure of all the following: Food
+      was processed in a pressure canner. Gauge of the pressure canner was accurate.
+      Up-to-date researched process times and pressures were used for the size of
+      jar, style of pack, and kind of food being canned. The process time and pressure
+      recommended for sterilizing the food at your altitude was followed.'
+    start_char: 564
+    end_char: 1024
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_004
+  claim_text: Ensure your pressure canner gauge is accurate. Use the correct process
+    times and pressures for the type of food, jar size, and altitude. Check that jars
+    are sealed properly and show no signs of spoilage before consuming.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: 'All low-acid foods canned according to the approved recommendations
+      may be eaten without boiling them when you are sure of all the following: Food
+      was processed in a pressure canner. Gauge of the pressure canner was accurate.
+      Up-to-date researched process times and pressures were used for the size of
+      jar, style of pack, and kind of food being canned. The process time and pressure
+      recommended for sterilizing the food at your altitude was followed. Jar lid
+      is irmly sealed and concave. Nothing has leaked from jar. No liquid spurts out
+      when jar is opened. No unnatural or ''of'' odors can be detected.'
+    start_char: 564
+    end_char: 1245
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_005
+  claim_text: Using a boiling water canner instead of a pressure canner for low-acid
+    foods can lead to botulism. Inaccurate gauges or incorrect processing times can
+    also result in unsafe food.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Using boiling water canners for these foods poses a real risk of botulism
+      poisoning.
+    start_char: 204
+    end_char: 264
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_006
+  claim_text: Always use a pressure canner for low-acid foods. If unsure about the
+    canning process, boil the food for 10 minutes before consuming, adding 1 minute
+    for every 1,000 ft above 1,000 ft elevation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Pressure canning is the only recommended method for canning meat, poultry,
+      seafood, and vegetables. If Clostridium botulinum bacteria survive and grow
+      inside a sealed jar of food, they can produce a poisonous toxin. Even a taste
+      of food containing this toxin can be fatal. Boiling food 10 minutes at altitudes
+      below 1,000 ft should destroy this poison when it is present. For altitudes
+      at and above 1,000 ft, add 1 additional minute per 1,000 ft additional elevation.
+    start_char: 0
+    end_char: 488
+    support_strength: strong
+- object_id: food-safety.pressure-canning
+  claim_id: clm_007
+  claim_text: Adjust boiling times based on your local altitude to ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Boiling food 10 minutes at altitudes below 1,000 ft should destroy this
+      poison when it is present. For altitudes at and above 1,000 ft, add 1 additional
+      minute per 1,000 ft additional elevation.
+    start_char: 311
+    end_char: 488
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000006

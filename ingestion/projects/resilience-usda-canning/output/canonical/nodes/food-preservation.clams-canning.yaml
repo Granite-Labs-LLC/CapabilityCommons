@@ -1,0 +1,302 @@
+id: food-preservation.clams-canning
+slug: food-preservation.clams-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Clams
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Procedure for canning clams using pressure canning.
+summary_medium: Detailed procedure for canning clams, including preparation, packing,
+  and processing times for both dial-gauge and weighted-gauge pressure canners.
+plain_language: Learn how to safely can clams at home using a pressure canner, with
+  step-by-step instructions for preparation and processing.
+markdown_body: '### What this is
+
+  This guide provides a detailed procedure for canning clams using a pressure canner.
+  It includes steps for preparing the clams, packing them into jars, and processing
+  them at the correct pressure and time.
+
+
+  ### Why it matters
+
+  Canning clams allows for long-term storage and preservation of this seafood, making
+  it available for use at any time. Proper canning ensures safety and maintains the
+  quality of the clams.
+
+
+  ### What you need
+
+  You will need live clams, a pressure canner, jars, salt, lemon juice or citric acid,
+  a meat grinder or food processor (if mincing), and basic kitchen tools.
+
+
+  ### How to do it
+
+  1. Keep clams live on ice until ready to can. 2. Scrub and rinse the shells, steam
+  for 5 minutes, and open. 3. Remove and wash the clam meat in salted water. 4. Boil
+  the meat in water with lemon juice or citric acid for 2 minutes, then drain. 5.
+  For minced clams, grind the meat. 6. Fill hot jars with clam pieces, add clam juice
+  and boiling water, leaving 1-inch headspace. 7. Remove air bubbles, wipe jar rims,
+  adjust lids, and process in a pressure canner according to altitude-specific guidelines.
+
+
+  ### Common failure modes
+
+  Incorrect pressure or processing time can lead to spoilage. Ensure jars are sealed
+  properly and pressure is maintained throughout the process.
+
+
+  ### Safety/boundary notes
+
+  Ensure the pressure canner is functioning correctly and avoid contamination by maintaining
+  cleanliness throughout the process.
+
+
+  ### Local adaptation notes
+
+  The availability of clams may vary by region, and adjustments may be needed based
+  on local seafood sources.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - meat grinder or food processor
+  materials:
+  - live clams
+  - salt
+  - lemon juice or citric acid
+  success_criteria:
+  - Clams are safely canned and stored without spoilage.
+  failure_modes:
+  - Incorrect pressure
+  - Excess moisture
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure; Avoid contamination'
+  implementation:
+    smallest_viable_version: Canning clams using a pressure canner with correct pressure
+      and time.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - live clams
+    - salt
+    - lemon juice
+    expected_time: Approximately 2 hours
+    expected_cost: Moderate, depending on clam availability
+    success_checks:
+    - Jars are sealed properly
+    - Clams are preserved without spoilage
+    stop_conditions:
+    - Pressure not maintained
+    - Jars not sealing
+    common_mistakes:
+    - Not maintaining correct pressure
+    - Not removing air bubbles
+    variants:
+    - label: Urban
+      when: Limited access to fresh clams
+      notes: Consider sourcing clams from a reliable seafood market.
+    when_to_escalate:
+    - If pressure canner malfunctions
+    - If jars do not seal properly
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.clams-canning
+  claim_id: clm_001
+  claim_text: Keep clams live on ice until ready to can.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Keep clams live on ice until ready to can.
+    start_char: 0
+    end_char: 38
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_002
+  claim_text: Scrub and rinse the shells, steam for 5 minutes, and open.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Scrub shells thoroughly and rinse, steam 5 minutes, and open.
+    start_char: 39
+    end_char: 94
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_003
+  claim_text: Remove and wash the clam meat in salted water.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Remove clam meat. Collect and save clam juice. Wash clam meat in water
+      containing 1 teaspoon of salt per quart.
+    start_char: 95
+    end_char: 181
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_004
+  claim_text: Boil the meat in water with lemon juice or citric acid for 2 minutes,
+    then drain.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Rinse and cover clam meat with boiling water containing 2 tablespoons
+      of lemon juice or 1/2 teaspoon of citric acid per gallon. Boil 2 minutes and
+      drain.
+    start_char: 182
+    end_char: 276
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_005
+  claim_text: For minced clams, grind the meat.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: To make minced clams, grind clams with a meat grinder or food processor.
+    start_char: 277
+    end_char: 338
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_006
+  claim_text: Fill hot jars with clam pieces, add clam juice and boiling water, leaving
+    1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Fill hot jars loosely with pieces and add hot clam juice and boiling
+      water if needed, leaving 1-inch headspace.
+    start_char: 339
+    end_char: 424
+    support_strength: strong
+- object_id: food-preservation.clams-canning
+  claim_id: clm_007
+  claim_text: Remove air bubbles, wipe jar rims, adjust lids, and process in a pressure
+    canner according to altitude-specific guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 139
+    page_end: 139
+    segment_id: src.usda.home-canning.2015::seg_000196
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 425
+    end_char: 514
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000196
+bundle_overrides:
+  hook: Canning clams at home ensures you have delicious seafood ready to use anytime,
+    while preserving their freshness and flavor.
+  primer: Canning clams is a method of preserving these tasty seafood morsels for
+    long-term storage. This process involves using a pressure canner, which is essential
+    for safely canning low-acid foods like clams. The pressure canner allows the clams
+    to be processed at a high enough temperature to kill any harmful bacteria and
+    prevent spoilage. Before starting, it's important to keep the clams alive on ice
+    until you're ready to begin. The process involves cleaning the clams, steaming
+    them, and then removing the meat. The clam meat is then boiled briefly in a solution
+    of water and lemon juice or citric acid to ensure safety and enhance flavor. Once
+    prepared, the clam meat is packed into jars with clam juice and boiling water,
+    leaving some space at the top of the jar. The jars are then sealed and processed
+    in the pressure canner according to specific guidelines that vary depending on
+    your altitude. This method not only extends the shelf life of clams but also ensures
+    that they are safe to eat.
+  guide: '1. **Preparation**: Keep your clams live on ice until you''re ready to start
+    canning. This ensures they remain fresh and safe to eat.
+
+
+    2. **Cleaning and Steaming**: Scrub the clam shells thoroughly and rinse them
+    under cold water. Steam the clams for about 5 minutes until they open. This makes
+    it easier to remove the meat.
+
+
+    3. **Removing and Washing Meat**: Carefully remove the clam meat from the shells.
+    Wash the meat in a solution of water containing 1 teaspoon of salt per quart.
+    This helps to clean the meat and remove any remaining sand or debris.
+
+
+    4. **Boiling with Acid**: Rinse the clam meat and cover it with boiling water
+    that contains 2 tablespoons of lemon juice or 1/2 teaspoon of citric acid per
+    gallon. Boil the meat for 2 minutes, then drain. This step is crucial for ensuring
+    the safety of the canned clams.
+
+
+    5. **Packing Jars**: If you prefer minced clams, grind the meat using a meat grinder
+    or food processor. Fill hot jars loosely with the clam pieces. Add hot clam juice
+    and boiling water if needed, leaving a 1-inch headspace at the top of the jar.
+
+
+    6. **Sealing and Processing**: Remove any air bubbles from the jars, wipe the
+    rims clean, and adjust the lids. Process the jars in a pressure canner according
+    to altitude-specific guidelines. This step is vital for ensuring the clams are
+    safely preserved.'
+  reference:
+  - Keep clams live on ice until ready to can.
+  - Scrub and rinse the shells, steam for 5 minutes, and open.
+  - Remove and wash the clam meat in salted water.
+  - Boil the meat in water with lemon juice or citric acid for 2 minutes, then drain.
+  - For minced clams, grind the meat.
+  - Fill hot jars with clam pieces, add clam juice and boiling water, leaving 1-inch
+    headspace.
+  - Remove air bubbles, wipe jar rims, adjust lids, and process in a pressure canner
+    according to altitude-specific guidelines.
+  worksheet:
+  - List the materials and tools needed for canning clams.
+  - Describe the process of cleaning and preparing clams for canning.
+  - Explain why it is important to use a pressure canner for clams.
+  - Calculate the correct processing time for your altitude.
+  - Practice filling jars with clam meat and adjusting headspace.
+  - Simulate checking for air bubbles and sealing jars properly.
+  teach_forward_kit:
+    three_minute_version: Canning clams involves keeping them live on ice, cleaning
+      and steaming them, removing the meat, and boiling it with lemon juice or citric
+      acid. The meat is then packed into jars with clam juice and processed in a pressure
+      canner to ensure safety and preservation.
+    ten_minute_outline:
+    - Introduction to canning clams and its benefits.
+    - Overview of necessary materials and tools.
+    - 'Step-by-step process: Keeping clams on ice, cleaning, steaming, and removing
+      meat.'
+    - Importance of boiling with acid and its role in safety.
+    - Packing jars and ensuring proper headspace.
+    - Sealing jars and processing in a pressure canner.
+    - Discussion on common mistakes and safety tips.
+    discussion_prompts:
+    - Why is it important to keep clams on ice before canning?
+    - What are the risks of not using a pressure canner for clams?
+    - How does boiling with lemon juice or citric acid contribute to food safety?
+    - What are some common mistakes to avoid when canning clams?
+    - How can you ensure that the jars are properly sealed?

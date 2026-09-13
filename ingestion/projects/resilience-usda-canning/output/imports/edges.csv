@@ -1,0 +1,16 @@
+source_id,target_id,edge_type,sequence,condition,confidence
+food-preservation.acidity-processing,food-safety.tomato-acidification,prerequisite_for,,,0.9
+food-preservation.canning-methods,food-safety.safe-canning,prerequisite_for,,,0.9
+food-preservation.canning-methods,food-safety.pressure-canning,prerequisite_for,,,0.9
+food-preservation.canning-methods,food-preservation.home-canning-guide,prerequisite_for,,,0.8
+food-preservation.principles-of-home-canning,home-canning.introduction,prerequisite_for,,,0.8
+food-preservation.high-altitude-adjustments,home-canning.altitude-adjustment,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-vegetables,food-preservation.mixed-vegetables-canning,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-fruit,food-preservation.jams-and-jellies-canning,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-tomatoes,food-preservation.crushed-tomatoes,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-tomatoes,food-preservation.standard-tomato-sauce,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-tomatoes,food-preservation.tomato-juice-canning,prerequisite_for,,,0.8
+food-preservation.selecting-preparing-canning-tomatoes,food-preservation.tomato-vegetable-juice-blend,prerequisite_for,,,0.8
+food-preservation.acidity-processing,food-safety.botulism-prevention,prerequisite_for,,,0.9
+food-preservation.acidity-processing,food-preservation.crushed-tomatoes,prerequisite_for,,,0.8
+food-preservation.acidity-processing,food-preservation.standard-tomato-sauce,prerequisite_for,,,0.8

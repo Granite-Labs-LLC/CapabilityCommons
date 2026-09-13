@@ -1,0 +1,252 @@
+id: food-preservation.fish-quart-canning
+slug: food-preservation.fish-quart-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Fish in Quart Jars
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning fish in quart jars using a pressure canner.
+summary_medium: Detailed procedure for canning fish in quart jars, including preparation,
+  packing, and processing times for both dial-gauge and weighted-gauge pressure canners.
+plain_language: This guide explains how to safely can fish in quart jars using a pressure
+  canner. It includes steps for preparing the fish, packing it into jars, and processing
+  it at the correct pressure and time.
+markdown_body: '### What this is
+
+  This is a detailed guide for canning fish in quart jars using a pressure canner.
+  It covers preparation, packing, and processing to ensure safe preservation.
+
+
+  ### Why it matters
+
+  Canning fish allows for long-term storage without refrigeration, preserving the
+  nutritional value and flavor of the fish.
+
+
+  ### What you need
+
+  You''ll need a pressure canner, quart jars, salt, and optionally vinegar and oil.
+  Ensure you have fresh or properly thawed fish.
+
+
+  ### How to do it
+
+  1. Bleed and eviscerate the fish immediately after catching. 2. Rinse and cut the
+  fish into jar-length fillets or chunks. 3. Pack the fish into hot quart jars, leaving
+  1-inch headspace. 4. Clean jar rims and adjust lids. 5. Process in a pressure canner
+  for 160 minutes at the appropriate pressure for your altitude.
+
+
+  ### Common failure modes
+
+  Formation of struvite crystals, incorrect pressure leading to underprocessing.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained throughout the canning process to avoid contamination
+  and ensure safety.
+
+
+  ### Local adaptation notes
+
+  Adapt the procedure based on the availability of local fish varieties.'
+structured_data:
+  tools:
+  - pressure canner
+  materials:
+  - quart jars
+  - salt
+  success_criteria:
+  - Fish is safely canned and shelf-stable.
+  failure_modes:
+  - Struvite crystals
+  - Incorrect pressure
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure; Avoid contamination'
+  implementation:
+    smallest_viable_version: Canning fish in quart jars using a pressure canner.
+    tools:
+    - pressure canner
+    materials:
+    - quart jars
+    - salt
+    expected_time: 3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed properly
+    - Fish is preserved without spoilage
+    stop_conditions:
+    - Pressure not maintained
+    - Jars not sealing
+    common_mistakes:
+    - Incorrect pressure settings
+    - Improper jar sealing
+    variants:
+    - label: Urban
+      when: Limited space for canning equipment
+      notes: Consider smaller batches or shared canning facilities.
+    when_to_escalate:
+    - If pressure cannot be maintained
+    - If jars do not seal properly
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.fish-quart-canning
+  claim_id: clm_001
+  claim_text: Bleed and eviscerate the fish immediately after catching.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 141
+    page_end: 142
+    segment_id: src.usda.home-canning.2015::seg_000199
+    excerpt: 'Caution: Bleed and eviscerate ish immediately after catching, never
+      more than 2 hours after they are caught.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.fish-quart-canning
+  claim_id: clm_002
+  claim_text: Rinse and cut the fish into jar-length fillets or chunks.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 141
+    page_end: 142
+    segment_id: src.usda.home-canning.2015::seg_000199
+    excerpt: Cut the ish into jar-length ilets or chunks of any size.
+    start_char: 300
+    end_char: 350
+    support_strength: strong
+- object_id: food-preservation.fish-quart-canning
+  claim_id: clm_003
+  claim_text: Pack the fish into hot quart jars, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 141
+    page_end: 142
+    segment_id: src.usda.home-canning.2015::seg_000199
+    excerpt: Pack solidly into hot quart jars, leaving 1-inch headspace.
+    start_char: 400
+    end_char: 450
+    support_strength: strong
+- object_id: food-preservation.fish-quart-canning
+  claim_id: clm_004
+  claim_text: Process in a pressure canner for 160 minutes at the appropriate pressure
+    for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 141
+    page_end: 142
+    segment_id: src.usda.home-canning.2015::seg_000199
+    excerpt: For safety's sake, you must have a complete, uninterrupted 160 minutes
+      (2 hours and 40 minutes) at a minimum pressure required for your altitude.
+    start_char: 600
+    end_char: 700
+    support_strength: strong
+- object_id: food-preservation.fish-quart-canning
+  claim_id: clm_005
+  claim_text: Formation of struvite crystals, incorrect pressure leading to underprocessing.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 141
+    page_end: 142
+    segment_id: src.usda.home-canning.2015::seg_000199
+    excerpt: Glass-like crystals of struvite, or magnesium ammonium phosphate, sometime
+      form in canned salmon.
+    start_char: 100
+    end_char: 200
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000199
+bundle_overrides:
+  hook: Canning fish in quart jars allows you to enjoy fresh-tasting seafood year-round
+    without the need for refrigeration.
+  primer: Canning fish is a method of preserving seafood by packing it into jars and
+    processing it under high pressure. This technique ensures that the fish remains
+    safe to eat and retains its nutritional value for extended periods. The process
+    involves several critical steps, including bleeding and eviscerating the fish
+    immediately after catching, cutting it into appropriate sizes, and packing it
+    into jars. The jars are then processed in a pressure canner, which is essential
+    for eliminating bacteria and ensuring the fish is preserved safely. This method
+    is particularly useful for those who catch fish in large quantities and want to
+    store it for future use. By following the correct procedures, you can avoid common
+    issues such as the formation of struvite crystals or underprocessing due to incorrect
+    pressure settings.
+  guide: '1. Begin by bleeding and eviscerating the fish immediately after catching.
+    This step is crucial and should be done within two hours to ensure freshness and
+    safety.
+
+    2. Rinse the fish thoroughly under cold water to remove any blood or debris.
+
+    3. Cut the fish into fillets or chunks that will fit comfortably into your quart
+    jars. Ensure the pieces are of uniform size for even processing.
+
+    4. Prepare your quart jars by washing them in hot, soapy water and rinsing well.
+    Keep them hot until ready to use.
+
+    5. Pack the fish pieces solidly into the hot jars, leaving a 1-inch headspace
+    at the top. This space is necessary to allow for expansion during processing.
+
+    6. Clean the rims of the jars with a damp cloth to remove any residue that could
+    prevent sealing.
+
+    7. Place the lids on the jars and adjust the bands until they are fingertip tight.
+
+    8. Process the jars in a pressure canner for 160 minutes. The pressure required
+    will depend on your altitude, so consult a reliable source to determine the correct
+    settings.
+
+    9. Once processing is complete, allow the canner to depressurize naturally before
+    removing the jars.
+
+    10. Let the jars cool undisturbed for 12-24 hours. Check the seals before storing
+    the jars in a cool, dark place.'
+  reference:
+  - Bleed and eviscerate fish immediately after catching.
+  - Rinse and cut fish into jar-length fillets or chunks.
+  - Pack fish into hot quart jars, leaving 1-inch headspace.
+  - Process in a pressure canner for 160 minutes at appropriate pressure.
+  - Ensure proper pressure to avoid underprocessing.
+  - Watch for struvite crystals in canned fish.
+  worksheet:
+  - List the steps needed to prepare fish for canning.
+  - Describe how to determine the correct pressure for your altitude.
+  - Explain the importance of headspace in canning jars.
+  - Identify potential issues that can arise during the canning process.
+  - Practice packing a jar with fish and adjusting the lid correctly.
+  teach_forward_kit:
+    three_minute_version: Canning fish in quart jars involves bleeding and eviscerating
+      the fish, cutting it into pieces, packing it into jars, and processing in a
+      pressure canner for safety and long-term storage.
+    ten_minute_outline:
+    - Introduction to canning fish and its benefits.
+    - Step-by-step preparation and packing process.
+    - Importance of pressure canning and safety measures.
+    - Common issues and how to avoid them.
+    - Q&A session to address any concerns.
+    discussion_prompts:
+    - Why is it important to bleed and eviscerate fish immediately after catching?
+    - What are the risks of not maintaining proper pressure during canning?
+    - How can you tell if a jar has sealed properly after processing?
+    - What are struvite crystals, and why might they form in canned fish?

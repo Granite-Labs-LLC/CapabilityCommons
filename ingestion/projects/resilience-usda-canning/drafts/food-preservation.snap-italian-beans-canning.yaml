@@ -1,0 +1,265 @@
+id: food-preservation.snap-italian-beans-canning
+slug: food-preservation.snap-italian-beans-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Snap and Italian Beans
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning snap and Italian beans using a pressure canner.
+summary_medium: Detailed instructions for canning snap and Italian beans, including
+  preparation, packing methods, and processing times using a pressure canner.
+plain_language: Learn how to preserve snap and Italian beans by canning them safely
+  using a pressure canner. This guide covers the steps from preparation to processing.
+markdown_body: "### What this is\nThis is a guide for canning snap and Italian beans\
+  \ using a pressure canner. It includes instructions on preparation, packing, and\
+  \ processing to ensure safe preservation.\n\n### Why it matters\nCanning beans allows\
+  \ you to preserve them for long-term storage, ensuring you have access to nutritious\
+  \ vegetables year-round.\n\n### What you need\nYou will need a pressure canner,\
+  \ jars, lids, boiling water, and optionally canning salt.\n\n### How to do it\n\
+  1. Select tender, crisp pods and discard any diseased ones. \n2. Wash beans and\
+  \ trim ends. \n3. Choose between hot pack or raw pack methods. For hot pack, boil\
+  \ beans for 5 minutes before packing. For raw pack, fill jars tightly with raw beans.\
+  \ \n4. Add 1 teaspoon of canning salt per quart if desired. \n5. Cover beans with\
+  \ boiling water, leaving 1-inch headspace. \n6. Remove air bubbles, adjust headspace,\
+  \ wipe rims, and adjust lids. \n7. Process in a pressure canner according to your\
+  \ altitude.\n\n### Common failure modes\nIncorrect pressure or incomplete sealing\
+  \ can lead to spoilage.\n\n### Safety/boundary notes\nEnsure the correct pressure\
+  \ is used for your altitude to prevent spoilage and ensure safety.\n\n### Local\
+  \ adaptation notes\nConsider the availability of beans and adjust processing times\
+  \ based on local altitude."
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials:
+  - boiling water
+  - canning salt
+  success_criteria:
+  - Properly sealed jars
+  - Beans are preserved without spoilage
+  failure_modes:
+  - Incorrect pressure
+  - Incomplete seal
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude'
+  implementation:
+    smallest_viable_version: Canning beans using a pressure canner with correct pressure
+      for altitude.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - boiling water
+    - canning salt
+    expected_time: 2-3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - Beans are preserved
+    stop_conditions:
+    - Jars do not seal after processing
+    - Pressure is incorrect
+    common_mistakes:
+    - Not adjusting for altitude
+    - Improper sealing
+    variants:
+    - label: Urban
+      when: Limited space for storage
+      notes: Consider smaller batch sizes.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If unsure about pressure settings
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_001
+  claim_text: Select tender, crisp pods and discard any diseased ones.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Select illed but tender, crisp pods. Remove and discard diseased and
+      rusty pods.
+    start_char: 89
+    end_char: 144
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_002
+  claim_text: Wash beans and trim ends.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Wash beans and trim ends.
+    start_char: 145
+    end_char: 169
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_003
+  claim_text: Choose between hot pack or raw pack methods. For hot pack, boil beans
+    for 5 minutes before packing. For raw pack, fill jars tightly with raw beans.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Hot pack—Cover with boiling water; boil 5 minutes. Fill hot jars, loosely
+      leaving 1-inch headspace. Raw pack—Fill hot jars tightly with raw beans, leaving
+      1-inch headspace.
+    start_char: 170
+    end_char: 290
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_004
+  claim_text: Add 1 teaspoon of canning salt per quart if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Add 1 teaspoon of canning salt per quart to the jar, if desired.
+    start_char: 291
+    end_char: 343
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_005
+  claim_text: Cover beans with boiling water, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Add boiling water, leaving 1-inch headspace.
+    start_char: 344
+    end_char: 385
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_006
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000162
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 386
+    end_char: 474
+    support_strength: strong
+- object_id: food-preservation.snap-italian-beans-canning
+  claim_id: clm_007
+  claim_text: Process in a pressure canner according to your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000163
+    excerpt: Recommended process time for Snap and Italian Beans in a dial-gauge pressure
+      canner Canner Pressure (PSI) at Altitudes of 4,001-2,001-6,001-Style Process
+      Jar of Pack Size Time 2,000 ft 4,000 ft 6,000 ft 8,000 ft Hot Pints 20 min 11
+      lb 12 lb 13 lb 14 lb and 25 11 12 13 14 Quarts Raw
+    start_char: 0
+    end_char: 250
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000162
+bundle_overrides:
+  hook: Preserve your garden's bounty and enjoy fresh beans year-round by mastering
+    the art of canning snap and Italian beans.
+  primer: Canning is a method of preserving food in which the food contents are processed
+    and sealed in an airtight container. This guide focuses on canning snap and Italian
+    beans using a pressure canner, which is essential for safely preserving low-acid
+    foods like beans. By canning your beans, you can enjoy their fresh taste and nutritional
+    benefits long after the growing season has ended. The process involves selecting
+    the best beans, preparing them, and then using a pressure canner to ensure they
+    are safely preserved. This method helps prevent spoilage and extends the shelf
+    life of your beans, making it a valuable skill for anyone interested in food preservation.
+  guide: '1. **Select Beans**: Choose tender, crisp pods and discard any that are
+    diseased or rusty. This ensures that only the best quality beans are preserved.
+
+
+    2. **Prepare Beans**: Wash the beans thoroughly and trim the ends. This step is
+    crucial for removing dirt and any potential contaminants.
+
+
+    3. **Choose Packing Method**: Decide between the hot pack or raw pack method.
+    For hot pack, boil the beans for 5 minutes before packing them into jars. For
+    raw pack, fill the jars tightly with raw beans.
+
+
+    4. **Add Salt (Optional)**: If desired, add 1 teaspoon of canning salt per quart
+    to enhance flavor.
+
+
+    5. **Fill Jars**: Cover the beans with boiling water, leaving a 1-inch headspace
+    at the top of the jar. This space is necessary for the expansion of food during
+    processing.
+
+
+    6. **Prepare Jars for Canning**: Remove air bubbles by gently tapping the jars
+    or using a non-metallic spatula. Adjust the headspace if needed, wipe the rims
+    with a clean, damp paper towel, and secure the lids.
+
+
+    7. **Process in Pressure Canner**: Place the jars in a pressure canner and process
+    them according to the recommended time and pressure for your altitude. This step
+    is critical for ensuring the beans are safely preserved and free from harmful
+    bacteria.'
+  reference:
+  - Select tender, crisp pods; discard diseased ones.
+  - Wash beans and trim ends.
+  - 'Hot pack: Boil beans for 5 minutes.'
+  - 'Raw pack: Fill jars tightly with raw beans.'
+  - Add 1 teaspoon of canning salt per quart (optional).
+  - Cover beans with boiling water, leaving 1-inch headspace.
+  - Remove air bubbles, adjust headspace, wipe rims, adjust lids.
+  - Process in a pressure canner according to altitude.
+  worksheet:
+  - Identify and select the best quality beans for canning.
+  - Practice washing and trimming beans efficiently.
+  - Experiment with both hot pack and raw pack methods.
+  - Calculate the correct headspace for different jar sizes.
+  - Simulate the process of removing air bubbles and adjusting lids.
+  - Research the correct pressure settings for your altitude.
+  teach_forward_kit:
+    three_minute_version: Canning snap and Italian beans involves selecting quality
+      beans, preparing them, and using a pressure canner to ensure safe preservation.
+      Choose between hot or raw packing methods, add salt if desired, and process
+      according to altitude-specific guidelines.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Steps for selecting and preparing beans.
+    - Explanation of hot pack vs. raw pack methods.
+    - Importance of headspace and removing air bubbles.
+    - Overview of pressure canning and altitude adjustments.
+    - Safety tips and common mistakes to avoid.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for beans?
+    - What are the differences between hot pack and raw pack methods?
+    - How does altitude affect the canning process?
+    - What are some common mistakes in canning and how can they be avoided?

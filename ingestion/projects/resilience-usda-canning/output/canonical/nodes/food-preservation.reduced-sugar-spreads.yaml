@@ -1,0 +1,218 @@
+id: food-preservation.reduced-sugar-spreads
+slug: food-preservation.reduced-sugar-spreads
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Making Reduced-Sugar Fruit Spreads
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for making reduced-sugar fruit spreads using gelatin and
+  low-calorie sweeteners.
+summary_medium: Learn how to make reduced-sugar fruit spreads using gelatin as a thickener
+  and low-calorie sweeteners for a healthier alternative to traditional jams.
+plain_language: This project guides you through making fruit spreads that are lower
+  in sugar by using gelatin and low-calorie sweeteners. These spreads are not processed
+  in jars but should be refrigerated and used within four weeks.
+markdown_body: '### What this is
+
+  This project involves making fruit spreads that are lower in sugar and calories
+  compared to traditional jams and jellies. Gelatin is used as a thickening agent,
+  and low-calorie sweeteners provide the sweetness.
+
+
+  ### Why it matters
+
+  Reduced-sugar fruit spreads offer a healthier alternative for those looking to decrease
+  their sugar intake while still enjoying flavorful spreads.
+
+
+  ### What you need
+
+  You will need gelatin, a saucepan, sweet fruits, apple juice, spices, and a liquid
+  low-calorie sweetener.
+
+
+  ### How to do it
+
+  Combine the sweet fruits, apple juice, spices, and low-calorie sweetener in a saucepan.
+  Bring the mixture to a boil and add gelatin to thicken. Once thickened, allow the
+  spread to cool before refrigerating.
+
+
+  ### Common failure modes
+
+  Insufficient thickening can occur if the gelatin is not properly dissolved or if
+  the proportions are incorrect.
+
+
+  ### Safety/boundary notes
+
+  These spreads should not be processed in jars. They must be refrigerated and consumed
+  within four weeks to ensure safety.
+
+
+  ### Local adaptation notes
+
+  Adjust the types of fruits and spices based on local availability and personal taste
+  preferences.'
+structured_data:
+  goal: Create a reduced-sugar fruit spread using gelatin and low-calorie sweeteners.
+  deliverables: A batch of reduced-sugar fruit spread.
+  acceptance_criteria: The spread should be thickened properly and have a sweet flavor
+    without excessive sugar.
+  implementation:
+    smallest_viable_version: A simple fruit spread using gelatin and low-calorie sweeteners.
+    tools:
+    - saucepan
+    materials:
+    - gelatin
+    - sweet fruits
+    - apple juice
+    - spices
+    - liquid low-calorie sweetener
+    expected_time: 1 hour
+    expected_cost: Low
+    success_checks:
+    - Spread is thickened
+    - Sweet flavor is achieved
+    stop_conditions:
+    - Spread does not thicken
+    - Off-flavor develops
+    common_mistakes:
+    - Not dissolving gelatin properly
+    - Incorrect sweetener proportions
+    variants:
+    - label: Urban
+      when: Limited kitchen space
+      notes: Use smaller batches to accommodate space constraints.
+    when_to_escalate:
+    - Spread remains liquid after cooling
+    - Unpleasant taste or smell
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.reduced-sugar-spreads
+  claim_id: clm_001
+  claim_text: This project involves making fruit spreads that are lower in sugar and
+    calories compared to traditional jams and jellies. Gelatin is used as a thickening
+    agent, and low-calorie sweeteners provide the sweetness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 191
+    page_end: 191
+    segment_id: src.usda.home-canning.2015::seg_000273
+    excerpt: A variety of fruit spreads may be made that are tasteful, yet lower in
+      sugars and calories than regular jams and jellies. Gelatin may be used as a
+      thickening agent, as indicated in two of the following recipes. Sweet fruits,
+      apple juice, spices, and/or a liquid, low-calorie sweetener are used to provide
+      the sweet flavor of the fruit spreads.
+    start_char: 0
+    end_char: 317
+    support_strength: strong
+- object_id: food-preservation.reduced-sugar-spreads
+  claim_id: clm_002
+  claim_text: Reduced-sugar fruit spreads offer a healthier alternative for those
+    looking to decrease their sugar intake while still enjoying flavorful spreads.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 191
+    page_end: 191
+    segment_id: src.usda.home-canning.2015::seg_000273
+    excerpt: A variety of fruit spreads may be made that are tasteful, yet lower in
+      sugars and calories than regular jams and jellies.
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+- object_id: food-preservation.reduced-sugar-spreads
+  claim_id: clm_003
+  claim_text: You will need gelatin, a saucepan, sweet fruits, apple juice, spices,
+    and a liquid low-calorie sweetener.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 191
+    page_end: 192
+    segment_id: src.usda.home-canning.2015::seg_000275
+    excerpt: 2 tbsp unflavored gelatin powder 1 qt bottle unsweetened apple juice
+      2 tbsp bottled lemon juice 2 tbsp liquid low-calorie sweetener
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: food-preservation.reduced-sugar-spreads
+  claim_id: clm_004
+  claim_text: These spreads should not be processed in jars. They must be refrigerated
+    and consumed within four weeks to ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 191
+    page_end: 191
+    segment_id: src.usda.home-canning.2015::seg_000273
+    excerpt: When gelatin is used in the recipe, the jars of spread should not be
+      processed. They should be refrigerated and used within 4 weeks.
+    start_char: 318
+    end_char: 417
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000273
+bundle_overrides:
+  hook: Discover how to enjoy delicious fruit spreads with less sugar and calories,
+    perfect for a healthier lifestyle.
+  primer: Reduced-sugar fruit spreads offer a tasty alternative to traditional jams
+    and jellies, allowing you to enjoy the sweet flavors of fruit without the high
+    sugar content. These spreads use gelatin as a thickening agent and low-calorie
+    sweeteners to maintain sweetness. Unlike regular jams, these spreads are not processed
+    in jars but must be refrigerated and consumed within four weeks. This method is
+    ideal for those looking to reduce their sugar intake while still enjoying flavorful
+    spreads. You will need basic ingredients like sweet fruits, apple juice, spices,
+    and a liquid low-calorie sweetener, along with a saucepan for preparation. The
+    process involves boiling the mixture and adding gelatin to achieve the desired
+    thickness. This project is simple, cost-effective, and can be adapted to suit
+    local fruit availability and personal taste preferences.
+  guide: 'To make a reduced-sugar fruit spread, start by gathering your ingredients:
+    gelatin, sweet fruits of your choice, unsweetened apple juice, spices (such as
+    cinnamon or nutmeg), and a liquid low-calorie sweetener. Begin by preparing your
+    fruits, ensuring they are clean and cut into small pieces. In a saucepan, combine
+    the fruits, apple juice, and spices. Heat the mixture over medium heat until it
+    begins to boil. Stir occasionally to prevent sticking. Once boiling, reduce the
+    heat and add the gelatin, stirring continuously to ensure it dissolves completely.
+    This step is crucial for achieving the right consistency. After the gelatin is
+    fully incorporated, add the liquid low-calorie sweetener to taste. Continue to
+    simmer the mixture for a few more minutes, then remove it from the heat. Allow
+    the spread to cool slightly before transferring it to clean containers. Refrigerate
+    the spread immediately and use it within four weeks. Remember, these spreads are
+    not suitable for canning and must be kept refrigerated to ensure safety.'
+  reference:
+  - Use gelatin as a thickening agent.
+  - Combine sweet fruits, apple juice, spices, and sweetener.
+  - Boil the mixture before adding gelatin.
+  - Refrigerate and consume within four weeks.
+  - Do not process in jars.
+  worksheet:
+  - List the fruits you plan to use and their quantities.
+  - Calculate the amount of gelatin needed for your batch size.
+  - Experiment with different spices to find your preferred flavor.
+  - Record the amount of sweetener used and adjust to taste.
+  - Note the time taken for the spread to thicken and cool.
+  teach_forward_kit:
+    three_minute_version: Learn to make healthier fruit spreads using gelatin and
+      low-calorie sweeteners. These spreads are easy to prepare, require refrigeration,
+      and offer a tasty alternative to sugary jams.
+    ten_minute_outline:
+    - Introduction to reduced-sugar fruit spreads
+    - Ingredients and tools needed
+    - Step-by-step preparation process
+    - Safety and storage guidelines
+    - Tips for flavor customization
+    - Q&A session
+    discussion_prompts:
+    - What are the benefits of using low-calorie sweeteners in fruit spreads?
+    - How does gelatin contribute to the texture of the spread?
+    - What challenges might arise when making reduced-sugar spreads?
+    - How can you adapt the recipe to suit different fruits or personal tastes?

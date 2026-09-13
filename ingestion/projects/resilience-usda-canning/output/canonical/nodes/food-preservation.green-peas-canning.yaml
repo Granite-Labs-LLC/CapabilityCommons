@@ -1,0 +1,292 @@
+id: food-preservation.green-peas-canning
+slug: food-preservation.green-peas-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Green or English Peas
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning green or English peas using a pressure canner.
+summary_medium: Detailed instructions for canning green or English peas, including
+  preparation, packing methods, and pressure canning times.
+plain_language: This guide explains how to can green or English peas using a pressure
+  canner. It covers selecting peas, preparing them, and the steps for both hot and
+  raw packing methods.
+markdown_body: '### What this is
+
+  This is a guide for canning green or English peas using a pressure canner. It includes
+  instructions for preparing the peas, packing them into jars, and processing them
+  safely.
+
+
+  ### Why it matters
+
+  Canning peas allows you to preserve them for long-term storage, ensuring you have
+  access to this nutritious vegetable year-round.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, boiling water, and optionally, salt.
+
+
+  ### How to do it
+
+  Start by shelling and washing the peas. For hot packing, cover peas with boiling
+  water, boil for 2 minutes, and fill jars with hot peas and liquid, leaving 1-inch
+  headspace. For raw packing, fill jars with raw peas, add boiling water, and leave
+  1-inch headspace. Remove air bubbles, adjust headspace, wipe rims, adjust lids,
+  and process in a pressure canner according to the altitude-specific guidelines.
+
+
+  ### Common failure modes
+
+  Common issues include incorrect pressure settings and incomplete seals, which can
+  lead to spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure you use the correct pressure for your altitude to prevent spoilage and ensure
+  safety.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of fresh peas and adjust processing pressure based on
+  local altitude.'
+structured_data:
+  goal: To safely can green or English peas for long-term storage.
+  deliverables: Canned jars of green or English peas.
+  acceptance_criteria: Jars are properly sealed and processed at the correct pressure
+    for the specified time.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure settings based on altitude to
+    prevent foodborne illness.'
+  implementation:
+    smallest_viable_version: Shell and wash peas, then process them in a pressure
+      canner.
+    tools:
+    - Pressure canner
+    - Jars
+    - Lids
+    materials:
+    - Green or English peas
+    - Boiling water
+    - Salt (optional)
+    expected_time: Approximately 2 hours
+    expected_cost: $5-$20
+    success_checks:
+    - Jars are sealed properly
+    - Correct pressure is maintained during processing
+    stop_conditions:
+    - Pressure drops below recommended level
+    - Jars do not seal
+    common_mistakes:
+    - Not adjusting pressure for altitude
+    - Overfilling jars
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner from a local community
+        center or kitchen.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If pressure cannot be maintained
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning green or English peas using a pressure canner.
+    It includes instructions for preparing the peas, packing them into jars, and processing
+    them safely.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Shell and wash peas. Add 1 teaspoon of salt per quart to the jar, if
+      desired. Hot pack—Cover with boiling water. Bring to a boil in a saucepan, and
+      boil 2 minutes. Fill hot jars loosely with hot peas, and add cooking liquid,
+      leaving 1-inch headspace. Raw pack—Fill hot jars with raw peas, add boiling
+      water, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_002
+  claim_text: Canning peas allows you to preserve them for long-term storage, ensuring
+    you have access to this nutritious vegetable year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: An average of 31-1/2 pounds (in pods) is needed per canner load of 7
+      quarts; an average of 20 pounds is needed per canner load of 9 pints. A bushel
+      weighs 30 pounds and yields 5 to 10 quarts—an average of 4-1/2 pounds per quart.
+    start_char: 0
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and optionally,
+    salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Shell and wash peas. Add 1 teaspoon of salt per quart to the jar, if
+      desired. Hot pack—Cover with boiling water. Bring to a boil in a saucepan, and
+      boil 2 minutes.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_004
+  claim_text: Start by shelling and washing the peas. For hot packing, cover peas
+    with boiling water, boil for 2 minutes, and fill jars with hot peas and liquid,
+    leaving 1-inch headspace. For raw packing, fill jars with raw peas, add boiling
+    water, and leave 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Shell and wash peas. Hot pack—Cover with boiling water. Bring to a boil
+      in a saucepan, and boil 2 minutes. Fill hot jars loosely with hot peas, and
+      add cooking liquid, leaving 1-inch headspace. Raw pack—Fill hot jars with raw
+      peas, add boiling water, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_005
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, adjust lids, and process
+    in a pressure canner according to the altitude-specific guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_006
+  claim_text: Common issues include incorrect pressure settings and incomplete seals,
+    which can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Adjust lids and process. Recommended process time for Peas, Green or
+      English in a dial-gauge pressure canner.
+    start_char: 0
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.green-peas-canning
+  claim_id: clm_007
+  claim_text: Ensure you use the correct pressure for your altitude to prevent spoilage
+    and ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 124
+    segment_id: src.usda.home-canning.2015::seg_000174
+    excerpt: Recommended process time for Peas, Green or English in a dial-gauge pressure
+      canner. Canner Pressure (PSI) at Altitudes of 0–2,000 ft, 2,001–4,000 ft, 4,001–6,000
+      ft, 6,001–8,000 ft.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000174
+bundle_overrides:
+  hook: Preserve the taste of fresh peas year-round by learning how to can them safely
+    and effectively.
+  primer: 'Canning green or English peas is a fantastic way to enjoy this nutritious
+    vegetable throughout the year. The process involves using a pressure canner, which
+    is essential for safely preserving low-acid foods like peas. By canning your peas,
+    you can ensure that you have a ready supply of this healthy vegetable, even when
+    they''re out of season. The process requires some basic equipment: a pressure
+    canner, jars, lids, and boiling water. Optionally, you can add salt for flavor.
+    There are two main methods for packing peas into jars: hot packing and raw packing.
+    Hot packing involves boiling the peas before placing them in jars, while raw packing
+    involves placing raw peas directly into jars and covering them with boiling water.
+    Both methods require careful attention to detail, such as removing air bubbles,
+    adjusting headspace, and ensuring proper sealing to prevent spoilage. It''s crucial
+    to follow altitude-specific guidelines for pressure settings to ensure safety
+    and prevent foodborne illnesses.'
+  guide: "1. Gather your materials: green or English peas, a pressure canner, jars,\
+    \ lids, boiling water, and optionally, salt.\n2. Shell and wash the peas thoroughly.\n\
+    3. Choose your packing method:\n   - Hot Pack: Boil the peas for 2 minutes. Fill\
+    \ hot jars loosely with the hot peas and cooking liquid, leaving a 1-inch headspace.\n\
+    \   - Raw Pack: Fill hot jars with raw peas, then add boiling water, leaving a\
+    \ 1-inch headspace.\n4. Add 1 teaspoon of salt per quart to the jar, if desired.\n\
+    5. Remove air bubbles by gently tapping the jars or using a non-metallic spatula.\n\
+    6. Adjust the headspace if necessary by adding more liquid.\n7. Wipe the rims\
+    \ of the jars with a clean, damp paper towel to ensure a good seal.\n8. Place\
+    \ the lids on the jars and adjust the bands until they are fingertip tight.\n\
+    9. Process the jars in a pressure canner according to the altitude-specific guidelines:\n\
+    \   - For altitudes of 0-2,000 ft, use 11 PSI.\n   - For altitudes of 2,001-4,000\
+    \ ft, use 12 PSI.\n   - For altitudes of 4,001-6,000 ft, use 13 PSI.\n   - For\
+    \ altitudes of 6,001-8,000 ft, use 14 PSI.\n10. Once processing is complete, allow\
+    \ the canner to depressurize naturally before removing the jars.\n11. Check the\
+    \ seals after the jars have cooled. If any jars did not seal, refrigerate and\
+    \ use them first."
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Boiling water
+  - Salt (optional)
+  - Hot pack method
+  - Raw pack method
+  - 1-inch headspace
+  - Altitude-specific pressure settings
+  worksheet:
+  - List the materials needed for canning peas.
+  - Describe the difference between hot packing and raw packing.
+  - Explain why altitude-specific pressure settings are important.
+  - Practice adjusting headspace and removing air bubbles in a jar.
+  - Simulate the process of checking jar seals after canning.
+  teach_forward_kit:
+    three_minute_version: Canning peas involves using a pressure canner to preserve
+      them safely. Start by shelling and washing the peas, then choose between hot
+      packing or raw packing methods. Ensure you follow altitude-specific pressure
+      settings to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to canning peas and its benefits
+    - Overview of necessary materials and equipment
+    - Step-by-step guide to hot packing
+    - Step-by-step guide to raw packing
+    - Importance of altitude-specific pressure settings
+    - Common mistakes and how to avoid them
+    discussion_prompts:
+    - Why is it important to use a pressure canner for peas?
+    - What are the potential risks of not following altitude-specific guidelines?
+    - How can you ensure a proper seal on your jars?

@@ -1,0 +1,309 @@
+id: food-preservation.selecting-preparing-canning-tomatoes
+slug: food-preservation.selecting-preparing-canning-tomatoes
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Selecting, Preparing, and Canning Tomatoes and Tomato Products
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for canning tomatoes and tomato products.
+summary_medium: Learn how to select, prepare, and can tomatoes safely and effectively.
+plain_language: This guide helps you choose the right tomatoes, prepare them, and
+  can them safely.
+markdown_body: '# What this is
+
+  This guide provides step-by-step instructions for selecting, preparing, and canning
+  tomatoes and tomato products.
+
+
+  # Why it matters
+
+  Canning tomatoes properly ensures they are preserved safely, preventing spoilage
+  and maintaining quality.
+
+
+  # What you need
+
+  You''ll need canning jars, a pressure canner, and a tomato corer.
+
+
+  # How to do it
+
+  Select ripe, firm tomatoes. Wash them thoroughly and remove stems. Core the tomatoes
+  and prepare them according to your recipe. Fill sterilized jars with tomatoes, leaving
+  appropriate headspace. Process jars in a pressure canner according to the recommended
+  time and pressure for your altitude.
+
+
+  # Common failure modes
+
+  Improper sealing of jars can lead to spoilage. Ensure lids are properly secured
+  and jars are processed for the correct time.
+
+
+  # Safety/boundary notes
+
+  Ensure proper sealing to avoid contamination. Follow canning guidelines closely
+  to prevent foodborne illness.
+
+
+  # Local adaptation notes
+
+  Consider the availability of tomatoes in your area and adhere to local canning regulations.'
+structured_data:
+  tools:
+  - pressure canner
+  - tomato corer
+  materials:
+  - canning jars
+  success_criteria:
+  - Jars are sealed properly
+  - No spoilage after processing
+  failure_modes:
+  - Improper sealing
+  - Spoilage
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper sealing; Avoid contamination'
+  implementation:
+    smallest_viable_version: Select and prepare tomatoes for canning.
+    tools:
+    - pressure canner
+    - tomato corer
+    materials:
+    - canning jars
+    expected_time: 2-3 hours
+    expected_cost: $10-$30
+    success_checks:
+    - Jars are sealed properly
+    - No spoilage after processing
+    stop_conditions:
+    - If jars do not seal
+    - If spoilage is detected
+    common_mistakes:
+    - Not following altitude adjustments
+    - Overfilling jars
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If spoilage is detected
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_001
+  claim_text: This guide provides step-by-step instructions for selecting, preparing,
+    and canning tomatoes and tomato products.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 86
+    page_end: 86
+    segment_id: src.usda.home-canning.2015::seg_000113
+    excerpt: Selecting, Preparing, and Canning Tomatoes and Tomato Products
+    start_char: 0
+    end_char: 64
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_002
+  claim_text: Canning tomatoes properly ensures they are preserved safely, preventing
+    spoilage and maintaining quality.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Quality: Select only disease-free, preferably vine-ripened, firm fruit
+      for canning.'
+    start_char: 0
+    end_char: 94
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_003
+  claim_text: You'll need canning jars, a pressure canner, and a tomato corer.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Recommendation: Use of a pressure canner will result in higher quality
+      and more nutritious canned tomato products.'
+    start_char: 407
+    end_char: 501
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_004
+  claim_text: Select ripe, firm tomatoes. Wash them thoroughly and remove stems. Core
+    the tomatoes and prepare them according to your recipe.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Quality: Select only disease-free, preferably vine-ripened, firm fruit
+      for canning.'
+    start_char: 0
+    end_char: 94
+    support_strength: strong
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 89
+    segment_id: src.usda.home-canning.2015::seg_000116
+    excerpt: 'Procedure: Wash, remove stems, and trim off bruised or discolored portions.'
+    start_char: 0
+    end_char: 71
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_005
+  claim_text: Fill sterilized jars with tomatoes, leaving appropriate headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 89
+    segment_id: src.usda.home-canning.2015::seg_000116
+    excerpt: Fill hot jars with hot tomato juice, leaving 1/2-inch headspace.
+    start_char: 466
+    end_char: 522
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_006
+  claim_text: Process jars in a pressure canner according to the recommended time
+    and pressure for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Recommendation: Use of a pressure canner will result in higher quality
+      and more nutritious canned tomato products.'
+    start_char: 407
+    end_char: 501
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_007
+  claim_text: Improper sealing of jars can lead to spoilage. Ensure lids are properly
+    secured and jars are processed for the correct time.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Caution: Do not can tomatoes from dead or frost-killed vines.'
+    start_char: 96
+    end_char: 145
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_008
+  claim_text: Ensure proper sealing to avoid contamination. Follow canning guidelines
+    closely to prevent foodborne illness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Caution: Do not can tomatoes from dead or frost-killed vines.'
+    start_char: 96
+    end_char: 145
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-tomatoes
+  claim_id: clm_009
+  claim_text: Consider the availability of tomatoes in your area and adhere to local
+    canning regulations.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Quality: Select only disease-free, preferably vine-ripened, firm fruit
+      for canning.'
+    start_char: 0
+    end_char: 94
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000113
+bundle_overrides:
+  hook: Preserving tomatoes through canning not only extends their shelf life but
+    also locks in their fresh flavor and nutritional value.
+  primer: Canning tomatoes is a time-honored method of preserving the bounty of the
+    harvest. By selecting ripe, firm, and disease-free tomatoes, you ensure the best
+    quality for your canned goods. The process involves washing, coring, and preparing
+    the tomatoes, then filling sterilized jars with the prepared tomatoes and processing
+    them in a pressure canner. This method prevents spoilage and maintains the quality
+    of the tomatoes. Proper sealing is crucial to avoid contamination and ensure the
+    safety of the preserved food. Canning requires some specific equipment, such as
+    canning jars, a pressure canner, and a tomato corer. Adhering to local canning
+    regulations and guidelines is essential to prevent foodborne illnesses and ensure
+    successful preservation.
+  guide: '1. Gather your materials: canning jars, a pressure canner, and a tomato
+    corer.
+
+    2. Select ripe, firm tomatoes that are free from disease. Wash them thoroughly
+    and remove the stems.
+
+    3. Core the tomatoes and prepare them according to your chosen recipe.
+
+    4. Sterilize your canning jars by boiling them in water for 10 minutes.
+
+    5. Fill the hot jars with the prepared tomatoes, leaving about 1/2-inch headspace
+    at the top.
+
+    6. Secure the lids on the jars, ensuring they are tightly sealed.
+
+    7. Place the jars in the pressure canner and process them according to the recommended
+    time and pressure for your altitude.
+
+    8. Once processing is complete, carefully remove the jars and let them cool. Check
+    the seals to ensure they are secure.
+
+    9. Store the sealed jars in a cool, dark place. If any jars did not seal properly,
+    refrigerate and use them soon.'
+  reference:
+  - Select disease-free, vine-ripened, firm tomatoes.
+  - Wash and core tomatoes before canning.
+  - Use a pressure canner for processing.
+  - Leave 1/2-inch headspace in jars.
+  - Process jars according to altitude-specific guidelines.
+  - Ensure proper sealing to prevent spoilage.
+  worksheet:
+  - List the equipment needed for canning tomatoes.
+  - Describe the steps to properly prepare tomatoes for canning.
+  - Explain why a pressure canner is necessary for canning tomatoes.
+  - Calculate the processing time for your altitude.
+  - Check the seals on your jars after processing and describe how to identify a proper
+    seal.
+  teach_forward_kit:
+    three_minute_version: Canning tomatoes involves selecting ripe, firm tomatoes,
+      washing and coring them, then filling sterilized jars and processing them in
+      a pressure canner. Proper sealing is essential to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Materials and equipment needed.
+    - Step-by-step process of preparing and canning tomatoes.
+    - Importance of proper sealing and processing.
+    - Safety tips and common mistakes to avoid.
+    - Q&A session.
+    discussion_prompts:
+    - What are the benefits of canning tomatoes at home?
+    - How does altitude affect the canning process?
+    - What are some common mistakes to avoid when canning tomatoes?
+    - Why is it important to ensure proper sealing of jars?

@@ -1,0 +1,294 @@
+id: food-preservation.chicken-rabbit-canning
+slug: food-preservation.chicken-rabbit-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Chicken or Rabbit
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Canning chicken or rabbit using hot and raw pack methods.
+summary_medium: Learn how to can chicken or rabbit using hot and raw pack methods
+  with specific processing times and pressures for different types of pressure canners.
+plain_language: This guide explains how to safely can chicken or rabbit at home using
+  pressure canning methods. It includes steps for preparing the meat, filling jars,
+  and processing them in a pressure canner.
+markdown_body: '### What this is
+
+  This project blueprint provides detailed instructions for canning chicken or rabbit
+  using pressure canning methods. It covers both hot pack and raw pack techniques,
+  ensuring safe preservation of the meat.
+
+
+  ### Why it matters
+
+  Canning chicken or rabbit allows for long-term storage of meat without refrigeration,
+  making it a practical solution for preserving food and reducing waste.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, salt, and broth. Freshly killed and dressed
+  chicken or rabbit is required, along with basic kitchen tools for preparation.
+
+
+  ### How to do it
+
+  1. Choose freshly killed and dressed, healthy animals. Chill dressed chicken for
+  6 to 12 hours before canning. Soak dressed rabbits for 1 hour in salted water, then
+  rinse. 2. Remove excess fat and cut the meat into pieces suitable for canning. 3.
+  For hot pack, cook the meat until about two-thirds done, then fill hot jars with
+  meat and hot broth, leaving 1-1/4 inch headspace. For raw pack, fill hot jars loosely
+  with raw meat, leaving the same headspace. 4. Wipe jar rims, adjust lids, and process
+  in a pressure canner according to the recommended times and pressures based on altitude
+  and jar size.
+
+
+  ### Common failure modes
+
+  Insufficient liquid cover in jars can lead to poor preservation. Incorrect pressure
+  during canning can result in unsafe food.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained throughout the canning process to avoid contamination
+  and ensure food safety.
+
+
+  ### Local adaptation notes
+
+  Adapt the process based on the availability of chicken or rabbit in your area.'
+structured_data:
+  goal: Safely can chicken or rabbit for long-term storage.
+  deliverables: Canned jars of chicken or rabbit.
+  acceptance_criteria: Jars are sealed properly and stored safely with no signs of
+    spoilage.
+  implementation:
+    smallest_viable_version: Canning a single jar of chicken or rabbit using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - salt
+    - broth
+    expected_time: 3-4 hours
+    expected_cost: medium
+    success_checks:
+    - Jars are sealed properly
+    - No signs of spoilage
+    stop_conditions:
+    - Jar lids do not seal
+    - Signs of spoilage
+    common_mistakes:
+    - Incorrect pressure settings
+    - Improper jar sealing
+    variants:
+    - label: Low-budget
+      when: Using less expensive cuts of meat
+      notes: Ensure meat is fresh and properly prepared.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If there are signs of spoilage
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_001
+  claim_text: This project blueprint provides detailed instructions for canning chicken
+    or rabbit using pressure canning methods. It covers both hot pack and raw pack
+    techniques, ensuring safe preservation of the meat.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Choose freshly killed and dressed, healthy animals. Large chickens are
+      more flavorful than fryers. Dressed chicken should be chilled for 6 to 12 hours
+      before canning. Dressed rabbits should be soaked 1 hour in water containing
+      1 tablespoon of salt per quart, and then rinsed. Remove excess fat. Cut the
+      chicken or rabbit into suitable sizes for canning. Can with or without bones.
+      The hot pack is preferred for best liquid cover and quality during storage.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_002
+  claim_text: Canning chicken or rabbit allows for long-term storage of meat without
+    refrigeration, making it a practical solution for preserving food and reducing
+    waste.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: The hot pack is preferred for best liquid cover and quality during storage.
+    start_char: 300
+    end_char: 350
+    support_strength: medium
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, salt, and broth. Freshly killed
+    and dressed chicken or rabbit is required, along with basic kitchen tools for
+    preparation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Choose freshly killed and dressed, healthy animals. Large chickens are
+      more flavorful than fryers. Dressed chicken should be chilled for 6 to 12 hours
+      before canning. Dressed rabbits should be soaked 1 hour in water containing
+      1 tablespoon of salt per quart, and then rinsed. Remove excess fat.
+    start_char: 0
+    end_char: 250
+    support_strength: strong
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_004
+  claim_text: Choose freshly killed and dressed, healthy animals. Chill dressed chicken
+    for 6 to 12 hours before canning. Soak dressed rabbits for 1 hour in salted water,
+    then rinse.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Choose freshly killed and dressed, healthy animals. Large chickens are
+      more flavorful than fryers. Dressed chicken should be chilled for 6 to 12 hours
+      before canning. Dressed rabbits should be soaked 1 hour in water containing
+      1 tablespoon of salt per quart, and then rinsed.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_005
+  claim_text: For hot pack, cook the meat until about two-thirds done, then fill hot
+    jars with meat and hot broth, leaving 1-1/4 inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Hot pack—Boil, steam, or bake meat until about two-thirds done. Add 1
+      teaspoon salt per quart to the jar, if desired. Fill hot jars with pieces and
+      hot broth, leaving 1-1/4 inch headspace.
+    start_char: 300
+    end_char: 450
+    support_strength: strong
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_006
+  claim_text: For raw pack, fill hot jars loosely with raw meat, leaving the same
+    headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Raw pack—Add 1 teaspoon salt per quart, if desired. Fill hot jars loosely
+      with raw meat pieces, leaving 1-1/4-inch headspace. Do not add liquid.
+    start_char: 450
+    end_char: 550
+    support_strength: strong
+- object_id: food-preservation.chicken-rabbit-canning
+  claim_id: clm_007
+  claim_text: Wipe jar rims, adjust lids, and process in a pressure canner according
+    to the recommended times and pressures based on altitude and jar size.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 550
+    end_char: 600
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000188
+bundle_overrides:
+  hook: Canning chicken or rabbit allows you to store meat long-term without refrigeration,
+    reducing waste and ensuring you have food ready when you need it.
+  primer: 'Canning is a method of preserving food in which the food contents are processed
+    and sealed in an airtight container. This guide focuses on canning chicken or
+    rabbit using pressure canning methods. Pressure canning is essential for low-acid
+    foods like meats because it reaches the high temperatures necessary to kill harmful
+    bacteria. By canning chicken or rabbit, you can store meat for extended periods
+    without the need for refrigeration, making it a practical solution for those looking
+    to preserve food and reduce waste. The process involves preparing the meat, filling
+    jars, and processing them in a pressure canner. There are two main techniques:
+    hot pack and raw pack. Hot pack involves cooking the meat before canning, which
+    helps improve the quality and liquid coverage during storage. Raw pack involves
+    placing raw meat directly into jars. Both methods require careful attention to
+    detail to ensure safety and quality.'
+  guide: "To can chicken or rabbit, you'll need a pressure canner, jars, salt, and\
+    \ broth. Start by selecting freshly killed and dressed, healthy animals. For chicken,\
+    \ chill the dressed meat for 6 to 12 hours before canning. For rabbit, soak the\
+    \ dressed meat for 1 hour in water with 1 tablespoon of salt per quart, then rinse.\
+    \ Remove excess fat and cut the meat into pieces suitable for canning. \n\nFor\
+    \ the hot pack method, cook the meat until it's about two-thirds done. Fill hot\
+    \ jars with the cooked meat and hot broth, leaving a 1-1/4 inch headspace. Optionally,\
+    \ add 1 teaspoon of salt per quart. For the raw pack method, fill hot jars loosely\
+    \ with raw meat pieces, leaving the same headspace, and do not add liquid. \n\n\
+    Wipe the rims of the jars with a damp paper towel to ensure a clean seal. Adjust\
+    \ the lids and process the jars in a pressure canner. The processing time and\
+    \ pressure depend on your altitude and the size of the jars. Follow the recommended\
+    \ guidelines to ensure safety. Once processed, let the jars cool and check the\
+    \ seals. Properly sealed jars can be stored in a cool, dark place for long-term\
+    \ use."
+  reference:
+  - Pressure canner
+  - Jars
+  - Salt
+  - Broth
+  - Hot pack method
+  - Raw pack method
+  - 1-1/4 inch headspace
+  - Wipe jar rims
+  - Adjust lids
+  - Process according to altitude and jar size
+  worksheet:
+  - List the materials needed for canning chicken or rabbit.
+  - Describe the steps for preparing chicken for canning.
+  - Explain the difference between hot pack and raw pack methods.
+  - Calculate the processing time and pressure needed for your altitude.
+  - Practice sealing jars and checking for proper seals.
+  teach_forward_kit:
+    three_minute_version: Canning chicken or rabbit involves using a pressure canner
+      to safely preserve meat for long-term storage. Choose fresh, healthy animals,
+      prepare the meat, and use either the hot pack or raw pack method to fill jars.
+      Process the jars in a pressure canner, ensuring proper pressure and time based
+      on altitude.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Materials and tools required
+    - Preparation of chicken or rabbit
+    - Hot pack vs. raw pack methods
+    - Processing jars in a pressure canner
+    - Safety tips and checking seals
+    discussion_prompts:
+    - Why is pressure canning necessary for meats?
+    - What are the advantages of canning meat at home?
+    - How does altitude affect the canning process?
+    - What are the signs of a properly sealed jar?
+    - What safety precautions should be taken during canning?

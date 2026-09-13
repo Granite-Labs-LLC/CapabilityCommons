@@ -1,0 +1,401 @@
+id: food-preservation.crushed-tomatoes
+slug: food-preservation.crushed-tomatoes
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Crushed Tomatoes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning crushed tomatoes with acidification and processing
+  times.
+summary_medium: Learn how to can crushed tomatoes, including preparation, acidification,
+  and processing times for both boiling-water and pressure canners.
+plain_language: This guide will help you can crushed tomatoes safely by following
+  the correct preparation and processing steps.
+markdown_body: "# What this is\nThis is a guide for canning crushed tomatoes, which\
+  \ are ideal for use in soups, stews, and casseroles. The process involves washing,\
+  \ peeling, crushing, and heating tomatoes, followed by acidification and processing\
+  \ in jars.\n\n# Why it matters\nCanning crushed tomatoes allows you to preserve\
+  \ the freshness and flavor of tomatoes for later use. Proper canning techniques\
+  \ ensure the safety and quality of the preserved product.\n\n# What you need\nYou\
+  \ will need fresh tomatoes, bottled lemon juice or citric acid, salt (optional),\
+  \ a boiling-water canner or pressure canner, jars, lids, and basic kitchen tools\
+  \ like a large pot and a wooden spoon.\n\n# How to do it\n1. Wash and peel the tomatoes\
+  \ by dipping them in boiling water until skins split, then in cold water. \n2. Remove\
+  \ cores and any damaged parts, then quarter the tomatoes. \n3. Heat one-sixth of\
+  \ the quarters in a pot, crushing them to release juice. \n4. Gradually add the\
+  \ rest of the tomatoes, stirring constantly, and boil gently for 5 minutes. \n5.\
+  \ Add lemon juice or citric acid to jars, and salt if desired. \n6. Fill jars with\
+  \ hot tomatoes, leaving 1/2-inch headspace, remove air bubbles, and adjust lids.\
+  \ \n7. Process jars using the recommended times and pressures for your altitude.\n\
+  \n# Common failure modes\nNot adding enough acid can result in unsafe acidity levels.\
+  \ Inadequate processing time or pressure can lead to spoilage.\n\n# Safety/boundary\
+  \ notes\nEnsure proper acidification and processing to prevent the growth of harmful\
+  \ bacteria. Follow altitude-specific processing guidelines.\n\n# Local adaptation\
+  \ notes\nAdjust processing times and pressures based on local altitude using the\
+  \ provided tables."
+structured_data:
+  goal: To safely can crushed tomatoes for long-term storage.
+  deliverables: Properly canned jars of crushed tomatoes.
+  acceptance_criteria: Jars are sealed and stored without spoilage, maintaining quality
+    and safety.
+  implementation:
+    smallest_viable_version: Canning a single batch of crushed tomatoes using a boiling-water
+      canner.
+    tools:
+    - boiling-water canner
+    - pressure canner
+    - large pot
+    - wooden spoon
+    materials:
+    - fresh tomatoes
+    - bottled lemon juice or citric acid
+    - salt
+    - jars
+    - lids
+    expected_time: 3-4 hours
+    expected_cost: Moderate, depending on the cost of tomatoes and canning supplies.
+    success_checks:
+    - Jars are sealed properly
+    - No spoilage or off-smells
+    stop_conditions:
+    - Jars do not seal
+    - Visible spoilage
+    common_mistakes:
+    - Not following altitude-specific processing times
+    - Skipping acidification
+    variants:
+    - label: Urban
+      when: Limited space for canning equipment
+      notes: Consider smaller batches or using a smaller canner.
+    when_to_escalate:
+    - If jars do not seal
+    - If there are signs of spoilage after processing
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_001
+  claim_text: This is a guide for canning crushed tomatoes, which are ideal for use
+    in soups, stews, and casseroles.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: A high-quality product, ideally suited for use in soups, stews, and casseroles.
+    start_char: 0
+    end_char: 74
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_002
+  claim_text: The process involves washing, peeling, crushing, and heating tomatoes,
+    followed by acidification and processing in jars.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Wash tomatoes and dip in boiling water for 30 to 60 seconds or until
+      skins split. Then dip in cold water, slip off skins, and remove cores. Trim
+      off any bruised or discolored portions and quarter. Heat one-sixth of the quarters
+      quickly in a large pot, crushing them with a wooden mallet or spoon as they
+      are added to the pot.
+    start_char: 77
+    end_char: 341
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_003
+  claim_text: Canning crushed tomatoes allows you to preserve the freshness and flavor
+    of tomatoes for later use.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: A high-quality product, ideally suited for use in soups, stews, and casseroles.
+    start_char: 0
+    end_char: 74
+    support_strength: medium
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_004
+  claim_text: Proper canning techniques ensure the safety and quality of the preserved
+    product.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: To ensure safe acidity in whole, crushed, or juiced tomatoes, add 2 tablespoons
+      of bottled lemon juice or 1/2 teaspoon of citric acid per quart of tomatoes.
+    start_char: 116
+    end_char: 244
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_005
+  claim_text: You will need fresh tomatoes, bottled lemon juice or citric acid, salt
+    (optional), a boiling-water canner or pressure canner, jars, lids, and basic kitchen
+    tools like a large pot and a wooden spoon.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Add bottled lemon juice or citric acid to jars. Add 1 teaspoon of salt
+      per quart to the jars, if desired. Fill hot jars immediately with hot tomatoes,
+      leaving 1/2-inch headspace. Remove air bubbles and adjust headspace if needed.
+      Wipe rims of jars with a dampened clean paper towel. Adjust lids and process.
+    start_char: 541
+    end_char: 741
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_006
+  claim_text: Wash and peel the tomatoes by dipping them in boiling water until skins
+    split, then in cold water.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Wash tomatoes and dip in boiling water for 30 to 60 seconds or until
+      skins split. Then dip in cold water, slip off skins, and remove cores.
+    start_char: 77
+    end_char: 179
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_007
+  claim_text: Remove cores and any damaged parts, then quarter the tomatoes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Then dip in cold water, slip off skins, and remove cores. Trim off any
+      bruised or discolored portions and quarter.
+    start_char: 144
+    end_char: 223
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_008
+  claim_text: Heat one-sixth of the quarters in a pot, crushing them to release juice.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Heat one-sixth of the quarters quickly in a large pot, crushing them
+      with a wooden mallet or spoon as they are added to the pot. This will exude
+      juice.
+    start_char: 224
+    end_char: 341
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_009
+  claim_text: Gradually add the rest of the tomatoes, stirring constantly, and boil
+    gently for 5 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Once the tomatoes are boiling, gradually add remaining quartered tomatoes,
+      stirring constantly. These remaining tomatoes do not need to be crushed. They
+      will soften with heating and stirring. Continue until all tomatoes are added.
+      Then boil gently 5 minutes.
+    start_char: 342
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_010
+  claim_text: Add lemon juice or citric acid to jars, and salt if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Add bottled lemon juice or citric acid to jars. Add 1 teaspoon of salt
+      per quart to the jars, if desired.
+    start_char: 501
+    end_char: 573
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_011
+  claim_text: Fill jars with hot tomatoes, leaving 1/2-inch headspace, remove air
+    bubbles, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Fill hot jars immediately with hot tomatoes, leaving 1/2-inch headspace.
+      Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a
+      dampened clean paper towel. Adjust lids and process.
+    start_char: 574
+    end_char: 741
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_012
+  claim_text: Process jars using the recommended times and pressures for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Adjust lids and process. (Acidification is still required for the pressure
+      canning options; follow all steps in the Procedures above for any of the processing
+      options.)
+    start_char: 707
+    end_char: 741
+    support_strength: medium
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_013
+  claim_text: Not adding enough acid can result in unsafe acidity levels.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: To ensure safe acidity in whole, crushed, or juiced tomatoes, add 2 tablespoons
+      of bottled lemon juice or 1/2 teaspoon of citric acid per quart of tomatoes.
+    start_char: 116
+    end_char: 244
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_014
+  claim_text: Inadequate processing time or pressure can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: The boiling water and pressure alternatives are equal processes with
+      different time/temperature combinations calculated for these products.
+    start_char: 487
+    end_char: 598
+    support_strength: medium
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_015
+  claim_text: Ensure proper acidification and processing to prevent the growth of
+    harmful bacteria.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: To ensure safe acidity in whole, crushed, or juiced tomatoes, add 2 tablespoons
+      of bottled lemon juice or 1/2 teaspoon of citric acid per quart of tomatoes.
+    start_char: 116
+    end_char: 244
+    support_strength: strong
+- object_id: food-preservation.crushed-tomatoes
+  claim_id: clm_016
+  claim_text: Follow altitude-specific processing guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 90
+    page_end: 91
+    segment_id: src.usda.home-canning.2015::seg_000118
+    excerpt: Adjust lids and process. (Acidification is still required for the pressure
+      canning options; follow all steps in the Procedures above for any of the processing
+      options.)
+    start_char: 707
+    end_char: 741
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000118
+bundle_overrides:
+  hook: Preserve the taste of summer all year round by learning how to safely can
+    crushed tomatoes for your favorite recipes.
+  primer: Canning crushed tomatoes is a practical way to preserve the freshness and
+    flavor of tomatoes, making them available for use in soups, stews, and casseroles
+    throughout the year. The process involves several key steps to ensure both the
+    quality and safety of the preserved product. First, tomatoes are washed, peeled,
+    and crushed. This is followed by heating the tomatoes and adding an acidifying
+    agent such as bottled lemon juice or citric acid to ensure safe acidity levels.
+    Proper canning techniques, including the use of a boiling-water canner or pressure
+    canner, are essential to prevent spoilage and the growth of harmful bacteria.
+    By following these steps, you can enjoy the taste of ripe tomatoes long after
+    the growing season has ended.
+  guide: '1. Gather your materials: fresh tomatoes, bottled lemon juice or citric
+    acid, salt (optional), jars, lids, a boiling-water canner or pressure canner,
+    a large pot, and a wooden spoon.
+
+
+    2. Wash the tomatoes thoroughly. To peel them, dip the tomatoes in boiling water
+    for 30 to 60 seconds until the skins split, then transfer them to cold water.
+    Slip off the skins and remove the cores.
+
+
+    3. Trim off any bruised or discolored portions of the tomatoes and quarter them.
+
+
+    4. In a large pot, heat one-sixth of the quartered tomatoes, crushing them with
+    a wooden spoon to release their juice.
+
+
+    5. Gradually add the remaining tomatoes to the pot, stirring constantly. Allow
+    the mixture to boil gently for 5 minutes.
+
+
+    6. Prepare your jars by adding 2 tablespoons of bottled lemon juice or 1/2 teaspoon
+    of citric acid per quart. Add 1 teaspoon of salt per quart if desired.
+
+
+    7. Fill the jars with the hot tomato mixture, leaving a 1/2-inch headspace. Remove
+    any air bubbles and adjust the headspace if necessary. Wipe the rims of the jars
+    with a clean, damp paper towel and adjust the lids.
+
+
+    8. Process the jars using the recommended times and pressures for your altitude,
+    ensuring proper sealing and safety.'
+  reference:
+  - Wash and peel tomatoes by boiling and cooling.
+  - Remove cores and damaged parts, then quarter.
+  - Crush and heat one-sixth of the tomatoes.
+  - Add remaining tomatoes, boil for 5 minutes.
+  - Add lemon juice or citric acid to jars.
+  - Fill jars, leaving 1/2-inch headspace.
+  - Process jars according to altitude guidelines.
+  worksheet:
+  - List the materials needed for canning crushed tomatoes.
+  - Describe the process of peeling tomatoes using boiling water.
+  - Explain why acidification is important in canning tomatoes.
+  - Outline the steps for filling and sealing jars.
+  - Research the processing times and pressures for your altitude.
+  teach_forward_kit:
+    three_minute_version: Canning crushed tomatoes involves washing, peeling, and
+      crushing tomatoes, then heating them and adding acid to ensure safety. Fill
+      jars with the hot mixture, seal them, and process using a canner. This preserves
+      the tomatoes for use in various dishes throughout the year.
+    ten_minute_outline:
+    - Introduction to canning crushed tomatoes and its benefits.
+    - Materials and tools required for the process.
+    - Step-by-step guide to preparing and processing tomatoes.
+    - Importance of acidification and safety measures.
+    - Discussion on processing times and altitude adjustments.
+    - Q&A session to address common concerns and mistakes.
+    discussion_prompts:
+    - Why is it important to add acid to canned tomatoes?
+    - What are the risks of not following proper canning procedures?
+    - How can you adjust the process for different altitudes?
+    - What are some common mistakes people make when canning tomatoes?

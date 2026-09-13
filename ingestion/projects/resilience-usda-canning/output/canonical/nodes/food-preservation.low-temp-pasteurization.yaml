@@ -1,0 +1,312 @@
+canonical_title: Low-Temperature Pasteurization for Pickles
+citations:
+- claim_id: clm_001
+  claim_text: Low-temperature pasteurization is a method used in home canning to improve
+    the texture of pickles by carefully controlling the water temperature during processing.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 89
+    excerpt: The following treatment results in a better product texture but must
+      be carefully managed to avoid possible spoilage.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: This technique helps maintain the crispness of pickles while ensuring
+    they are safely preserved.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 89
+    excerpt: The following treatment results in a better product texture but must
+      be carefully managed to avoid possible spoilage.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: You will need a canner, a candy or jelly thermometer, and jars filled
+    with pickles.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 278
+    excerpt: Check with a candy or jelly thermometer to be certain that the water
+      temperature is at least 180°F during the entire 30 minutes.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 182
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: Place jars in a canner filled halfway with warm water (120°F to 140°F).
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 143
+    excerpt: Place jars in a canner filled half way with warm (120°F to 140°F) water.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 91
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Add hot water until it is 1 inch above the jars.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 183
+    excerpt: Then, add hot water to a level 1 inch above jars.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 145
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Heat the water to maintain a temperature of 180°F to 185°F for 30 minutes.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 249
+    excerpt: Heat the water enough to maintain 180°F to 185°F water temperature for
+      30 minutes.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 185
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Use a thermometer to ensure the temperature stays at least 180°F throughout
+    the process.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 278
+    excerpt: Check with a candy or jelly thermometer to be certain that the water
+      temperature is at least 180°F during the entire 30 minutes.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 182
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Spoilage can occur if the temperature drops below 180°F. Pickles may
+    soften if the temperature exceeds 185°F.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 336
+    excerpt: Temperatures higher than 185°F may cause unnecessary softening of pickles.
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 280
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Use this method only when specified by a recipe. Incorrect use can lead
+    to spoilage or poor texture.
+  object_id: food-preservation.low-temp-pasteurization
+  support:
+  - end_char: 374
+    excerpt: 'Caution: Use only when recipe indicates.'
+    page_end: 150
+    page_start: 150
+    segment_id: src.usda.home-canning.2015::seg_000207
+    source_id: src.usda.home-canning.2015
+    start_char: 338
+    support_strength: strong
+co_type: skill_guide
+contexts: []
+cost_band: low
+difficulty: 3
+id: food-preservation.low-temp-pasteurization
+language_code: en
+lifecycle_state: published
+markdown_body: '### What this is
+
+  Low-temperature pasteurization is a method used in home canning to improve the texture
+  of pickles by carefully controlling the water temperature during processing.
+
+
+  ### Why it matters
+
+  This technique helps maintain the crispness of pickles while ensuring they are safely
+  preserved. It is crucial to manage the temperature accurately to prevent spoilage.
+
+
+  ### What you need
+
+  You will need a canner, a candy or jelly thermometer, and jars filled with pickles.
+  Ensure you have a recipe that specifies this method.
+
+
+  ### How to do it
+
+  1. Place jars in a canner filled halfway with warm water (120°F to 140°F).
+
+  2. Add hot water until it is 1 inch above the jars.
+
+  3. Heat the water to maintain a temperature of 180°F to 185°F for 30 minutes.
+
+  4. Use a thermometer to ensure the temperature stays at least 180°F throughout the
+  process.
+
+
+  ### Common failure modes
+
+  Spoilage can occur if the temperature drops below 180°F. Pickles may soften if the
+  temperature exceeds 185°F.
+
+
+  ### Safety/boundary notes
+
+  Use this method only when specified by a recipe. Incorrect use can lead to spoilage
+  or poor texture.
+
+
+  ### Local adaptation notes
+
+  Adjustments may be necessary based on altitude or specific equipment used.'
+plain_language: This guide explains how to use low-temperature pasteurization to make
+  pickles with better texture without risking spoilage.
+primary_domain: food-preservation
+requires: []
+risk_band: moderate
+secondary_domains: []
+seed_type: extracted
+slug: food-preservation.low-temp-pasteurization
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000207
+- src.usda.home-canning.2015::seg_000205
+stage: household
+structured_data:
+  failure_modes:
+  - Spoilage
+  - Softening of pickles
+  - Incorrect temperature leading to spoilage.
+  implementation:
+    common_mistakes:
+    - Not monitoring the temperature closely
+    - Using the method without recipe indication
+    - Not maintaining the correct temperature.
+    - Overheating the pickles.
+    expected_cost: low
+    expected_time: 30 minutes
+    materials: []
+    smallest_viable_version: Maintain water temperature between 180°F to 185°F for
+      30 minutes.
+    stop_conditions:
+    - Temperature drops below 180°F
+    - Temperature exceeds 185°F
+    - Temperature exceeds 185°F (85°C).
+    success_checks:
+    - Water temperature is consistently between 180°F to 185°F.
+    - Pickles maintain texture and are free from spoilage.
+    tools:
+    - candy thermometer
+    - canner
+    - thermometer
+    - water bath
+    variants:
+    - label: Urban
+      notes: Use a smaller water bath setup.
+      when: Limited space for equipment.
+    when_to_escalate:
+    - If spoilage is suspected despite following instructions
+    - If unable to maintain the correct temperature consistently.
+  materials: []
+  safety_boundary:
+  - Use only when recipe indicates
+  - Maintain temperature between 180°F and 185°F (82°C to 85°C).
+  success_criteria:
+  - Water temperature maintained between 180°F to 185°F for 30 minutes
+  - Pickles are safely pasteurized without loss of texture.
+  tools:
+  - candy thermometer
+  - canner
+  - thermometer
+  - water bath
+suggested_edges: []
+summary_medium: Learn how to use low-temperature pasteurization to enhance pickle
+  texture while preventing spoilage.
+summary_short: Improve pickle texture with low-temperature pasteurization.
+version_no: 1
+visibility: public
+bundle_overrides:
+  hook: Want to keep your pickles crisp and delicious? Discover how low-temperature
+    pasteurization can enhance their texture while ensuring safety.
+  primer: Low-temperature pasteurization is a technique used in home canning to preserve
+    pickles while maintaining their crispness. This method involves carefully controlling
+    the water temperature during the canning process to prevent spoilage and ensure
+    the pickles remain crunchy. The process requires a canner, a candy or jelly thermometer,
+    and jars filled with pickles. It is crucial to follow a recipe that specifies
+    this method, as incorrect use can lead to spoilage or poor texture. By maintaining
+    the water temperature between 180°F and 185°F for 30 minutes, you can achieve
+    the desired results. This method is particularly beneficial for those who enjoy
+    homemade pickles with a firm texture, as it prevents the softening that can occur
+    with higher temperatures.
+  guide: 'To perform low-temperature pasteurization for pickles, follow these steps:
+
+
+    1. **Prepare Your Equipment**: Gather a canner, a candy or jelly thermometer,
+    and jars filled with pickles. Ensure you have a recipe that specifies low-temperature
+    pasteurization.
+
+
+    2. **Set Up the Canner**: Place the jars in a canner filled halfway with warm
+    water, between 120°F and 140°F.
+
+
+    3. **Add Hot Water**: Carefully add hot water until it reaches 1 inch above the
+    tops of the jars.
+
+
+    4. **Heat the Water**: Gradually heat the water to maintain a temperature between
+    180°F and 185°F. Use the thermometer to monitor the temperature closely.
+
+
+    5. **Maintain the Temperature**: Keep the water at this temperature range for
+    30 minutes. Ensure the temperature does not drop below 180°F, as this can lead
+    to spoilage, or exceed 185°F, which may soften the pickles.
+
+
+    6. **Complete the Process**: After 30 minutes, remove the jars from the canner
+    and allow them to cool. Check that the seals are intact before storing the pickles.
+
+
+    By following these steps, you can successfully pasteurize your pickles at a low
+    temperature, enhancing their texture while ensuring they are safely preserved.'
+  reference:
+  - Maintain water temperature between 180°F to 185°F for 30 minutes.
+  - Use a candy or jelly thermometer to monitor temperature.
+  - Place jars in a canner with water 1 inch above the jars.
+  - Use only when specified by a recipe.
+  - Spoilage can occur if temperature drops below 180°F.
+  - Pickles may soften if temperature exceeds 185°F.
+  worksheet:
+  - List the equipment needed for low-temperature pasteurization.
+  - Describe the steps to set up the canner for this method.
+  - Explain why maintaining the correct temperature is crucial.
+  - What are the potential consequences of incorrect temperature management?
+  - Practice monitoring water temperature with a thermometer.
+  teach_forward_kit:
+    three_minute_version: Low-temperature pasteurization is a method to keep pickles
+      crisp by maintaining water temperature between 180°F and 185°F for 30 minutes.
+      Use a thermometer to ensure accuracy and follow a recipe that specifies this
+      method to avoid spoilage.
+    ten_minute_outline:
+    - Introduction to low-temperature pasteurization
+    - Importance of maintaining pickle texture
+    - Required equipment and setup
+    - Step-by-step process
+    - Common mistakes and how to avoid them
+    - Q&A session
+    discussion_prompts:
+    - Why is temperature control critical in low-temperature pasteurization?
+    - What are the benefits of using this method over traditional canning?
+    - How can you ensure the temperature remains consistent throughout the process?
+    - What adjustments might be necessary for different altitudes or equipment?

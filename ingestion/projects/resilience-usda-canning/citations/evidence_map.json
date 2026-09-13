@@ -1,0 +1,172 @@
+[
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_001",
+    "claim_text": "This is a guide for canning tomato juice, detailing the steps needed to prepare, acidify, and process the juice using various canning methods.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Procedure: Wash, remove stems, and trim off bruised or discolored portions. To prevent juice from separating, quickly cut about 1 pound of fruit into quarters and put directly into saucepan. Heat immediately to boiling while crushing. Continue to slowly add and crush freshly cut tomato quarters to the boiling mixture. Make sure the mixture boils constantly and vigorously while you add the remaining tomatoes. Simmer 5 minutes after you add all pieces.",
+        "start_char": 0,
+        "end_char": 500,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_002",
+    "claim_text": "Canning tomato juice allows for long-term storage and preservation of tomatoes, making them available year-round and reducing food waste.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "An average of 23 pounds is needed per canner load of 7 quarts, or an average of 14 pounds per canner load of 9 pints. A bushel weighs 53 pounds and yields 15 to 18 quarts of juice—an average of 3-1/4 pounds per quart.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_003",
+    "claim_text": "You'll need fresh tomatoes, a sieve or food mill, a boiling-water canner or pressure canner, and jars with lids. Acidification agents like bottled lemon juice or citric acid are also required.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Press both types of heated juice through a sieve or food mill to remove skins and seeds. Add bottled lemon juice or citric acid to jars.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_004",
+    "claim_text": "Wash and trim tomatoes, removing stems and any bruised parts. Cut about 1 pound of tomatoes into quarters and heat immediately to boiling while crushing.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Wash, remove stems, and trim off bruised or discolored portions. To prevent juice from separating, quickly cut about 1 pound of fruit into quarters and put directly into saucepan. Heat immediately to boiling while crushing.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_005",
+    "claim_text": "Continue adding and crushing more tomatoes, ensuring the mixture boils constantly. Simmer for 5 minutes.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Continue to slowly add and crush freshly cut tomato quarters to the boiling mixture. Make sure the mixture boils constantly and vigorously while you add the remaining tomatoes. Simmer 5 minutes after you add all pieces.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_006",
+    "claim_text": "Press the heated mixture through a sieve or food mill to remove skins and seeds. Add bottled lemon juice or citric acid to jars.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Press both types of heated juice through a sieve or food mill to remove skins and seeds. Add bottled lemon juice or citric acid to jars.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_007",
+    "claim_text": "Heat juice again to boiling, add salt if desired, and fill jars leaving 1/2-inch headspace. Wipe rims, adjust lids, and process jars using the recommended times and pressures for your altitude and canning method.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Heat juice again to boiling. Add 1 teaspoon of salt per quart to the jars, if desired. Fill hot jars with hot tomato juice, leaving 1/2-inch headspace. Wipe rims of jars with a dampened clean paper towel. Adjust lids and process.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_008",
+    "claim_text": "Juice separation can occur if tomatoes are not boiled immediately after cutting.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "To prevent juice from separating, quickly cut about 1 pound of fruit into quarters and put directly into saucepan. Heat immediately to boiling while crushing.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_009",
+    "claim_text": "Ensure proper acidification to prevent spoilage and follow recommended processing times and pressures to ensure safety.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Add bottled lemon juice or citric acid to jars. (Acidification is still required for the pressure canning options; follow all steps in the Procedures above for any of the processing options.)",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "food-preservation.tomato-juice-canning",
+    "claim_id": "clm_010",
+    "claim_text": "Adjust processing times and pressures based on local altitude and available canning equipment.",
+    "support": [
+      {
+        "source_id": "src.usda.home-canning.2015",
+        "page_start": 88,
+        "page_end": 89,
+        "segment_id": "src.usda.home-canning.2015::seg_000116",
+        "excerpt": "Recommended process time for Tomato Juice in a boiling-water canner... Process Time at Altitudes of...",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  }
+]

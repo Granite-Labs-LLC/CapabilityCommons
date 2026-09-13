@@ -1,0 +1,307 @@
+id: food-preservation.beets-canning
+slug: food-preservation.beets-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: 'Canning Beets: Whole, Cubed, or Sliced'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Instructions for canning beets using a pressure canner.
+summary_medium: Detailed guide on canning beets, including preparation, packing, and
+  processing times using a pressure canner.
+plain_language: Learn how to can beets safely using a pressure canner, with steps
+  for preparation, packing, and processing.
+markdown_body: "### What this is\nThis guide provides step-by-step instructions for\
+  \ canning beets, whether whole, cubed, or sliced, using a pressure canner.\n\n###\
+  \ Why it matters\nCanning beets allows for long-term storage and preservation of\
+  \ their nutritional value, making them available year-round.\n\n### What you need\n\
+  You will need a pressure canner, jars, lids, boiling water, and optionally, salt.\n\
+  \n### How to do it\n1. Trim beet tops, leaving an inch of stem and roots. Scrub\
+  \ well. \n2. Boil beets until skins slip off easily (15-25 minutes). \n3. Cool,\
+  \ remove skins, and trim stems and roots. \n4. Cut beets as desired. \n5. Pack hot\
+  \ beets into jars, add hot water, and leave 1-inch headspace. \n6. Process in a\
+  \ pressure canner according to altitude-specific guidelines.\n\n### Common failure\
+  \ modes\nIncorrect pressure settings or incomplete seals can lead to spoilage.\n\
+  \n### Safety/boundary notes\nEnsure correct pressure settings based on your altitude\
+  \ to prevent foodborne illness.\n\n### Local adaptation notes\nConsider local availability\
+  \ of beets and adjust pressure settings for your altitude."
+structured_data:
+  goal: Safely can beets for long-term storage.
+  deliverables: Canned beets in jars.
+  acceptance_criteria: Jars are sealed properly with no spoilage.
+  implementation:
+    smallest_viable_version: Canning a small batch of beets using a pressure canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - beets
+    - boiling water
+    - salt (optional)
+    expected_time: 2-3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - No spoilage
+    stop_conditions:
+    - Incorrect pressure
+    - Jar seals fail
+    common_mistakes:
+    - Incorrect pressure settings
+    - Not leaving enough headspace
+    variants:
+    - label: Urban
+      when: Limited space for storing large quantities
+      notes: Consider smaller batches.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stovetop pressure canner.
+    when_to_escalate:
+    - Persistent seal failures
+    - Unusual spoilage signs
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.beets-canning
+  claim_id: clm_001
+  claim_text: This guide provides step-by-step instructions for canning beets, whether
+    whole, cubed, or sliced, using a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: 'BEETS—WHOLE, CUBED, OR SLICED...Procedure: Trim off beet tops, leaving
+      an inch of stem and roots to reduce bleeding of color. Scrub well. Cover with
+      boiling water. Boil until skins slip off easily; about 15 to 25 minutes depending
+      on size. Cool, remove skins, and trim off stems and roots. Leave baby beets
+      whole. Cut medium or large beets into 1/2-inch cubes or slices.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_002
+  claim_text: Canning beets allows for long-term storage and preservation of their
+    nutritional value, making them available year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...An average of 21 pounds (without tops)
+      is needed per canner load of 7 quarts; an average of 13-1/2 pounds is needed
+      per canner load of 9 pints. A bushel (without tops) weighs 52 pounds and yields
+      15 to 20 quarts—an average of 3 pounds per quart.
+    start_char: 0
+    end_char: 300
+    support_strength: medium
+- object_id: food-preservation.beets-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and optionally,
+    salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Add 1 teaspoon of salt per quart to the
+      jar, if desired. Fill hot jars with hot beets and fresh hot water, leaving 1-inch
+      headspace.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_004
+  claim_text: Trim beet tops, leaving an inch of stem and roots. Scrub well.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: 'BEETS—WHOLE, CUBED, OR SLICED...Procedure: Trim off beet tops, leaving
+      an inch of stem and roots to reduce bleeding of color. Scrub well.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_005
+  claim_text: Boil beets until skins slip off easily (15-25 minutes).
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Boil until skins slip off easily; about
+      15 to 25 minutes depending on size.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_006
+  claim_text: Cool, remove skins, and trim stems and roots.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Cool, remove skins, and trim off stems
+      and roots.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_007
+  claim_text: Cut beets as desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Leave baby beets whole. Cut medium or
+      large beets into 1/2-inch cubes or slices.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_008
+  claim_text: Pack hot beets into jars, add hot water, and leave 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Fill hot jars with hot beets and fresh
+      hot water, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_009
+  claim_text: Process in a pressure canner according to altitude-specific guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: Recommended process time for Beets in a dial-gauge pressure canner...Canner
+      Pressure (PSI) at Altitudes of...Hot...Pints...30 min...11 lb...12 lb...13 lb...14
+      lb...Quarts...35...11...12...13...14...
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.beets-canning
+  claim_id: clm_010
+  claim_text: Incorrect pressure settings or incomplete seals can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: BEETS—WHOLE, CUBED, OR SLICED...Adjust lids and process.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.beets-canning
+  claim_id: clm_011
+  claim_text: Ensure correct pressure settings based on your altitude to prevent foodborne
+    illness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 118
+    page_end: 118
+    segment_id: src.usda.home-canning.2015::seg_000164
+    excerpt: Recommended process time for Beets in a dial-gauge pressure canner...Canner
+      Pressure (PSI) at Altitudes of...
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000164
+bundle_overrides:
+  hook: Preserve the vibrant taste and nutrition of beets year-round by learning how
+    to can them safely at home.
+  primer: Canning beets is a practical way to enjoy their nutritional benefits throughout
+    the year. Beets are rich in essential nutrients like fiber, folate, and vitamin
+    C, making them a healthy addition to your diet. By canning, you can store beets
+    for long periods without losing their nutritional value. The process involves
+    using a pressure canner, which is essential for safely preserving low-acid foods
+    like beets. This method prevents the growth of harmful bacteria, ensuring your
+    canned beets are safe to eat. You'll need fresh beets, a pressure canner, jars,
+    lids, boiling water, and optionally, salt. The process includes preparing the
+    beets by trimming, boiling, and peeling them, then packing them into jars with
+    hot water before processing them in the canner. Following altitude-specific guidelines
+    for pressure settings is crucial to prevent spoilage and foodborne illness. With
+    the right tools and careful attention to detail, you can successfully can beets
+    and enjoy them whenever you like.
+  guide: 'To can beets, start by gathering your materials: fresh beets, a pressure
+    canner, jars, lids, boiling water, and salt if desired. Begin by trimming the
+    beet tops, leaving about an inch of stem and roots to minimize color bleeding.
+    Scrub the beets thoroughly to remove any dirt. Next, place the beets in a pot
+    of boiling water and cook them until the skins slip off easily, which usually
+    takes 15 to 25 minutes depending on their size. Once boiled, cool the beets in
+    cold water, then remove the skins and trim off any remaining stems and roots.
+    Decide how you want to cut the beets—leave small ones whole, or cut larger ones
+    into 1/2-inch cubes or slices. Pack the hot beets into sterilized jars, adding
+    boiling water to cover them, and leave a 1-inch headspace at the top of each jar.
+    If you like, add 1 teaspoon of salt per quart jar for flavor. Secure the lids
+    on the jars and place them in the pressure canner. Process the jars according
+    to the pressure and time guidelines specific to your altitude to ensure safety.
+    Once processed, let the jars cool and check that the seals are intact before storing
+    them.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Boiling water
+  - Salt (optional)
+  - Trim beet tops, leave 1-inch stem
+  - Boil beets 15-25 minutes
+  - Cool and peel beets
+  - Cut beets as desired
+  - Pack into jars, add hot water
+  - Leave 1-inch headspace
+  - Process in pressure canner
+  worksheet:
+  - List the materials needed for canning beets.
+  - Describe the process of preparing beets before canning.
+  - Explain why it's important to follow altitude-specific guidelines when using a
+    pressure canner.
+  - Outline the steps for packing beets into jars.
+  - Identify common mistakes to avoid during the canning process.
+  teach_forward_kit:
+    three_minute_version: Canning beets involves trimming, boiling, peeling, and cutting
+      them before packing into jars with hot water. Use a pressure canner to process
+      the jars, ensuring you follow altitude-specific pressure guidelines to prevent
+      spoilage.
+    ten_minute_outline:
+    - Introduction to canning beets and its benefits
+    - Materials and tools needed
+    - Step-by-step preparation of beets
+    - Packing beets into jars
+    - Processing jars in a pressure canner
+    - Safety tips and common mistakes
+    discussion_prompts:
+    - Why is it important to use a pressure canner for beets?
+    - What are the risks of not following proper canning procedures?
+    - How does altitude affect the canning process?
+    - What are some alternative ways to preserve beets?

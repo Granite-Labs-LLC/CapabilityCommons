@@ -1,0 +1,300 @@
+id: food-preservation.fish-pint-canning
+slug: food-preservation.fish-pint-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Fish in Pint Jars
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Procedure for canning fish in pint jars using pressure canning.
+summary_medium: Detailed instructions for preparing, packing, and pressure canning
+  fish in pint jars, including safety precautions and processing times.
+plain_language: Learn how to safely can fish in pint jars using a pressure canner,
+  with step-by-step instructions and important safety tips.
+markdown_body: '### What this is
+
+  This guide provides instructions for canning fish, such as salmon and trout, in
+  pint jars using a pressure canner. It includes preparation steps, packing methods,
+  and processing times for both dial-gauge and weighted-gauge pressure canners.
+
+
+  ### Why it matters
+
+  Canning fish allows for long-term preservation, making it possible to enjoy fresh-caught
+  fish year-round. Proper canning techniques ensure safety and quality, preventing
+  spoilage and contamination.
+
+
+  ### What you need
+
+  You will need a pressure canner, pint jars with lids, salt (optional), and fresh
+  fish such as salmon or trout. Ensure you have access to ice for keeping fish fresh
+  before canning.
+
+
+  ### How to do it
+
+  1. Bleed and eviscerate fish immediately after catching. Keep on ice until ready
+  to can. 2. Thaw frozen fish in the refrigerator. Rinse in cold water, optionally
+  adding vinegar to remove slime. 3. Remove head, tail, fins, and scales. For halibut,
+  remove bones and skin. 4. Cut fish into 3.5-inch lengths. Pack into hot pint jars,
+  leaving 1-inch headspace. Add 1 teaspoon of salt per pint if desired. 5. Clean jar
+  rims, adjust lids, and process in a pressure canner. For dial-gauge canners, process
+  at 11-14 PSI depending on altitude for 100 minutes. For weighted-gauge canners,
+  process at 10-15 PSI depending on altitude for 100 minutes.
+
+
+  ### Common failure modes
+
+  Formation of struvite crystals, which are safe but can be mistaken for glass. Incorrect
+  pressure can lead to under-processed jars, risking spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained throughout the canning process to prevent contamination.
+  Follow altitude adjustments for pressure settings.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of local fish species when planning your canning project.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  materials:
+  - salt
+  success_criteria:
+  - Properly sealed jars
+  - No spoilage or contamination
+  failure_modes:
+  - Struvite crystals
+  - Incorrect pressure
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure; Avoid contamination'
+  implementation:
+    smallest_viable_version: Canning fish in pint jars using a pressure canner.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - salt
+    expected_time: 100 minutes processing time, plus preparation
+    expected_cost: Moderate, depending on fish availability
+    success_checks:
+    - Jars are sealed
+    - Fish is preserved without spoilage
+    stop_conditions:
+    - Pressure not maintained
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Improper jar sealing
+    variants:
+    - label: Urban
+      when: Limited access to fresh fish
+      notes: Consider sourcing fish from local markets.
+    - label: Off-grid
+      when: Limited access to electricity
+      notes: Use a manual pressure canner.
+    when_to_escalate:
+    - Persistent sealing issues
+    - Signs of spoilage
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_001
+  claim_text: Bleed and eviscerate fish immediately after catching. Keep on ice until
+    ready to can.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: Bleed and eviscerate ish immediately after catching, never more than
+      2 hours after they are caught. Keep cleaned ish on ice until ready to can.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_002
+  claim_text: Thaw frozen fish in the refrigerator. Rinse in cold water, optionally
+    adding vinegar to remove slime.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: If the ish is frozen, thaw it in the refrigerator before canning. Rinse
+      the ish in cold water. You can add vinegar to the water (2 tablespoons per quart)
+      to help remove slime.
+    start_char: 124
+    end_char: 256
+    support_strength: strong
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_003
+  claim_text: Remove head, tail, fins, and scales. For halibut, remove bones and skin.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: Remove head, tail, ins, and scales; it is not necessary to remove the
+      skin. You can leave the bones in most ish because the bones become very soft
+      and are a good source of calcium. For halibut, remove the head, tail, ins, skin,
+      and the bones.
+    start_char: 257
+    end_char: 409
+    support_strength: strong
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_004
+  claim_text: Cut fish into 3.5-inch lengths. Pack into hot pint jars, leaving 1-inch
+    headspace. Add 1 teaspoon of salt per pint if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: Cut cleaned ish into 3-1/2-inch lengths. If the skin has been left on
+      the ish, pack the ish skin out, for a nicer appearance or skin in, for easier
+      jar cleaning. Fill hot pint jars, leaving 1-inch headspace. Add 1 teaspoon of
+      salt per pint, if desired.
+    start_char: 410
+    end_char: 576
+    support_strength: strong
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_005
+  claim_text: For dial-gauge canners, process at 11-14 PSI depending on altitude for
+    100 minutes. For weighted-gauge canners, process at 10-15 PSI depending on altitude
+    for 100 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: '| Recommended process time for Fish in Pint Jars in a dial-gauge pressure
+      canner | Pints | 100 min | 11 lb | 12 lb | 13 lb | 14 lb |'
+    start_char: 578
+    end_char: 678
+    support_strength: strong
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: '| Recommended process time for Fish in Pint Jars in a weighted-gauge
+      pressure canner | Pints | 100 min | 10 lb | 15 lb |'
+    start_char: 680
+    end_char: 780
+    support_strength: strong
+- object_id: food-preservation.fish-pint-canning
+  claim_id: clm_006
+  claim_text: Formation of struvite crystals, which are safe but can be mistaken for
+    glass.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 140
+    page_end: 141
+    segment_id: src.usda.home-canning.2015::seg_000198
+    excerpt: Glass-like crystals of struvite, or magnesium ammonium phosphate, sometime
+      form in canned salmon. There is no way for the home canner to prevent these
+      crystals from forming, but they usually dissolve when heated and are safe to
+      eat.
+    start_char: 123
+    end_char: 256
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000198
+bundle_overrides:
+  hook: Preserve your fresh catch year-round by learning how to safely can fish in
+    pint jars using a pressure canner.
+  primer: Canning fish is a method of preserving fresh fish like salmon and trout
+    for long-term storage. This process involves using a pressure canner, which is
+    essential for safely preserving low-acid foods such as fish. The pressure canner
+    heats the jars to a high temperature, killing bacteria and preventing spoilage.
+    Proper canning techniques ensure that the fish remains safe to eat and retains
+    its quality over time. Before canning, fish must be properly prepared by bleeding
+    and eviscerating immediately after catching, and keeping it on ice until ready
+    to can. If the fish is frozen, it should be thawed in the refrigerator. The fish
+    is then cut into pieces, packed into jars, and processed in the pressure canner.
+    This method not only extends the shelf life of the fish but also allows you to
+    enjoy the taste of fresh-caught fish throughout the year.
+  guide: '1. Start by bleeding and eviscerating the fish immediately after catching
+    it. Keep the fish on ice until you are ready to can it.
+
+    2. If the fish is frozen, thaw it in the refrigerator. Rinse the fish in cold
+    water, and you can add vinegar (2 tablespoons per quart) to help remove any slime.
+
+    3. Prepare the fish by removing the head, tail, fins, and scales. For halibut,
+    also remove the bones and skin.
+
+    4. Cut the fish into 3.5-inch lengths. If you prefer, you can leave the skin on
+    for a nicer appearance or remove it for easier jar cleaning.
+
+    5. Pack the fish pieces into hot pint jars, leaving a 1-inch headspace. Add 1
+    teaspoon of salt per pint if desired.
+
+    6. Clean the jar rims and adjust the lids.
+
+    7. Process the jars in a pressure canner. For dial-gauge canners, process at 11-14
+    PSI depending on your altitude for 100 minutes. For weighted-gauge canners, process
+    at 10-15 PSI depending on altitude for 100 minutes.
+
+    8. After processing, allow the jars to cool and check that they are properly sealed
+    before storing.'
+  reference:
+  - Bleed and eviscerate fish immediately; keep on ice.
+  - Thaw frozen fish in the refrigerator.
+  - Remove head, tail, fins, and scales.
+  - Cut fish into 3.5-inch lengths.
+  - Pack into hot pint jars, leaving 1-inch headspace.
+  - Add 1 teaspoon of salt per pint, if desired.
+  - Process in a pressure canner for 100 minutes.
+  - 'Dial-gauge: 11-14 PSI; Weighted-gauge: 10-15 PSI.'
+  - Check for proper sealing after cooling.
+  worksheet:
+  - List the steps for preparing fish before canning.
+  - Describe how to pack fish into jars for canning.
+  - Explain the differences in processing times and pressures for dial-gauge and weighted-gauge
+    canners.
+  - Identify potential issues that can arise during the canning process and how to
+    prevent them.
+  - Discuss the importance of maintaining proper pressure during canning.
+  teach_forward_kit:
+    three_minute_version: Canning fish in pint jars involves preparing the fish by
+      cleaning and cutting it, packing it into jars, and processing it in a pressure
+      canner. This method ensures long-term preservation and safety. Key steps include
+      maintaining the correct pressure and processing time based on your altitude.
+    ten_minute_outline:
+    - Introduction to canning fish and its benefits.
+    - 'Preparation steps: bleeding, eviscerating, and thawing.'
+    - Packing fish into jars and adding optional salt.
+    - 'Pressure canning process: equipment and settings.'
+    - Common issues and safety precautions.
+    - Q&A session.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for fish?
+    - What are the risks of not following proper canning procedures?
+    - How can you ensure that your canned fish is safe to eat?
+    - What are some local fish varieties that can be canned using this method?

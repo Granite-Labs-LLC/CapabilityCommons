@@ -1,0 +1,306 @@
+id: food-preservation.tuna-canning
+slug: food-preservation.tuna-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Tuna at Home
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning tuna using pressure canners.
+summary_medium: Detailed procedure for canning tuna, including preparation, packing,
+  and processing times for both dial-gauge and weighted-gauge pressure canners.
+plain_language: This guide explains how to can tuna at home using a pressure canner.
+  It covers preparation, packing, and processing steps to ensure safe and tasty canned
+  tuna.
+markdown_body: '### What this is
+
+  This is a detailed guide for canning tuna at home using a pressure canner. It includes
+  steps for preparing the tuna, packing it into jars, and processing it safely.
+
+
+  ### Why it matters
+
+  Canning tuna at home allows you to preserve fresh tuna for long-term storage, ensuring
+  you have a supply of high-quality, homemade canned fish.
+
+
+  ### What you need
+
+  You will need fresh tuna, a pressure canner, jars, salt, and oil or water for packing.
+
+
+  ### How to do it
+
+  1. Keep tuna on ice until ready to can. 2. Remove viscera and wash the fish in cold
+  water. 3. Precook the fish by baking or steaming. 4. Refrigerate overnight to firm
+  the meat. 5. Remove skin, bones, and dark flesh. 6. Cut into pieces suitable for
+  jars. 7. Pack into jars with water or oil, leaving 1-inch headspace. 8. Add salt
+  if desired. 9. Process in a pressure canner according to altitude-specific guidelines.
+
+
+  ### Common failure modes
+
+  Formation of struvite crystals, incorrect pressure settings, and contamination.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained during canning to avoid contamination and ensure
+  safety.
+
+
+  ### Local adaptation notes
+
+  Adjust the procedure based on the availability of tuna and local canning regulations.'
+structured_data:
+  goal: To safely can tuna for long-term storage.
+  deliverables: Canned tuna in jars, processed and sealed correctly.
+  acceptance_criteria: Tuna is canned without contamination, jars are sealed properly,
+    and the product is safe to consume.
+  implementation:
+    smallest_viable_version: Canning tuna using a pressure canner with basic preparation
+      and processing.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - tuna
+    - salt
+    - oil or water
+    expected_time: Approximately 5-6 hours including preparation and processing time.
+    expected_cost: Moderate, depending on the cost of tuna and canning supplies.
+    success_checks:
+    - Jars are sealed properly
+    - No signs of contamination
+    stop_conditions:
+    - Pressure canner does not reach required pressure
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Improper jar sealing
+    variants:
+    - label: Low-budget
+      when: Using less expensive tuna cuts
+      notes: Ensure proper cleaning and preparation to maintain quality.
+    when_to_escalate:
+    - If pressure cannot be maintained
+    - If jars do not seal after processing
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_001
+  claim_text: Keep tuna on ice until ready to can.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Keep tuna on ice until ready to can.
+    start_char: 0
+    end_char: 32
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_002
+  claim_text: Remove viscera and wash the fish in cold water.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Remove viscera and wash ish well in cold water.
+    start_char: 33
+    end_char: 76
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_003
+  claim_text: Precook the fish by baking or steaming.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Precook ish by baking at 250°F for 2-1/2 to 4 hours (depending on size)
+      or at 350°F for 1 hour. The ish may also be cooked in a steamer for 2 to 4 hours.
+    start_char: 77
+    end_char: 198
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_004
+  claim_text: Refrigerate overnight to firm the meat.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Refrigerate cooked ish overnight to irm the meat.
+    start_char: 199
+    end_char: 243
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_005
+  claim_text: Remove skin, bones, and dark flesh.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Peel of the skin with a knife, removing blood vessels and any discolored
+      lesh. Cut meat away from bones; cut out and discard all bones, in bases, and
+      dark lesh.
+    start_char: 244
+    end_char: 340
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_006
+  claim_text: Cut into pieces suitable for jars.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Cut quarters crosswise into lengths suitable for half-pint or pint jars.
+    start_char: 341
+    end_char: 399
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_007
+  claim_text: Pack into jars with water or oil, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Fill into hot jars, pressing down gently to make a solid pack. Tuna may
+      be packed in water or oil, whichever is preferred. Add water or oil to jars,
+      leaving 1-inch headspace.
+    start_char: 400
+    end_char: 514
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_008
+  claim_text: Add salt if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Add 1/2 teaspoon of salt per half-pint or 1 teaspoon of salt per pint,
+      if desired.
+    start_char: 515
+    end_char: 581
+    support_strength: strong
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_009
+  claim_text: Process in a pressure canner according to altitude-specific guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Adjust lids and process.
+    start_char: 582
+    end_char: 606
+    support_strength: medium
+- object_id: food-preservation.tuna-canning
+  claim_id: clm_010
+  claim_text: Formation of struvite crystals, incorrect pressure settings, and contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 144
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000202
+    excerpt: Glass-like crystals of struvite, or magnesium ammonium phosphate, sometime
+      form in canned tuna.
+    start_char: 82
+    end_char: 159
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000202
+bundle_overrides:
+  hook: Canning tuna at home ensures you have a supply of high-quality, homemade canned
+    fish, perfect for long-term storage.
+  primer: Canning tuna at home is a practical way to preserve fresh fish for future
+    use. This process involves preparing the tuna, packing it into jars, and processing
+    it using a pressure canner to ensure safety and longevity. The key steps include
+    keeping the tuna on ice until ready to can, removing the viscera, and washing
+    the fish thoroughly. Precooking the fish by baking or steaming is essential, followed
+    by refrigerating it overnight to firm the meat. After removing the skin, bones,
+    and dark flesh, the tuna is cut into pieces suitable for jars. The tuna is then
+    packed into jars with water or oil, leaving a 1-inch headspace, and salt can be
+    added if desired. Finally, the jars are processed in a pressure canner according
+    to altitude-specific guidelines. This method not only preserves the tuna but also
+    maintains its nutritional value and flavor.
+  guide: "1. **Preparation**: Keep the tuna on ice until you're ready to start canning.\
+    \ This helps maintain its freshness. \n\n2. **Cleaning**: Remove the viscera and\
+    \ wash the fish thoroughly in cold water to ensure it's clean and ready for cooking.\
+    \ \n\n3. **Precooking**: You can either bake the fish at 250°F for 2.5 to 4 hours\
+    \ or at 350°F for 1 hour, or steam it for 2 to 4 hours, depending on the size.\
+    \ This step is crucial for partially cooking the fish before canning. \n\n4. **Refrigeration**:\
+    \ After cooking, refrigerate the fish overnight. This helps firm up the meat,\
+    \ making it easier to handle and pack. \n\n5. **Trimming**: Peel off the skin\
+    \ using a knife, and remove any blood vessels and discolored flesh. Cut the meat\
+    \ away from the bones and discard all bones and dark flesh. \n\n6. **Cutting**:\
+    \ Cut the fish into pieces that will fit into your jars. This usually means cutting\
+    \ the quarters crosswise into lengths suitable for half-pint or pint jars. \n\n\
+    7. **Packing**: Pack the tuna into hot jars, pressing down gently to make a solid\
+    \ pack. You can choose to pack it in water or oil, depending on your preference.\
+    \ Leave a 1-inch headspace in the jars. \n\n8. **Adding Salt**: If desired, add\
+    \ 1/2 teaspoon of salt per half-pint or 1 teaspoon per pint. \n\n9. **Canning**:\
+    \ Process the jars in a pressure canner according to altitude-specific guidelines.\
+    \ Ensure the pressure is maintained correctly to avoid contamination and ensure\
+    \ safety."
+  reference:
+  - Keep tuna on ice until ready to can.
+  - Remove viscera and wash the fish in cold water.
+  - Precook the fish by baking or steaming.
+  - Refrigerate overnight to firm the meat.
+  - Remove skin, bones, and dark flesh.
+  - Cut into pieces suitable for jars.
+  - Pack into jars with water or oil, leaving 1-inch headspace.
+  - Add salt if desired.
+  - Process in a pressure canner according to altitude-specific guidelines.
+  worksheet:
+  - List the materials and tools needed for canning tuna.
+  - Describe the steps involved in cleaning and preparing the tuna for canning.
+  - Explain the importance of precooking the tuna before canning.
+  - Calculate the correct headspace needed when packing tuna into jars.
+  - Discuss the role of pressure canning in ensuring the safety of canned tuna.
+  - Identify common mistakes to avoid during the canning process.
+  teach_forward_kit:
+    three_minute_version: Canning tuna involves keeping the fish fresh, cleaning it,
+      precooking, and then packing it into jars with water or oil. The jars are then
+      processed in a pressure canner to ensure safety and longevity.
+    ten_minute_outline:
+    - Introduction to canning tuna and its benefits.
+    - 'Overview of the preparation process: keeping tuna on ice, cleaning, and precooking.'
+    - Detailed steps for packing tuna into jars.
+    - Explanation of the pressure canning process and its importance.
+    - Discussion of common mistakes and safety tips.
+    - Q&A session to address any concerns or questions.
+    discussion_prompts:
+    - Why is it important to keep tuna on ice until ready to can?
+    - What are the benefits of precooking tuna before canning?
+    - How does pressure canning ensure the safety of canned tuna?
+    - What are some common mistakes to avoid when canning tuna at home?

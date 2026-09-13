@@ -1,0 +1,211 @@
+id: home-canning.introduction
+slug: home-canning.introduction
+seed_type: extracted
+co_type: concept_note
+canonical_title: Introduction to Home Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: home_canning
+secondary_domains:
+- food_preservation
+stage: foundation
+contexts:
+- beginner canners
+- food preservation
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Introduction to home canning, covering scientific principles, equipment,
+  and procedures.
+summary_medium: An overview of home canning, including scientific principles, equipment,
+  and procedures for safe and high-quality canned products.
+plain_language: Learn about home canning, including the science behind it, the tools
+  you need, and how to can foods safely and effectively.
+markdown_body: '### What this is
+
+  Home canning is a method of preserving food that has evolved significantly over
+  the past 180 years. This introduction provides an overview of the scientific principles,
+  equipment, and procedures necessary for safe and high-quality home canning.
+
+
+  ### Why it matters
+
+  Understanding the principles and procedures of home canning is crucial for ensuring
+  food safety and quality. Proper canning prevents spoilage and extends the shelf
+  life of food, making it a valuable skill for food preservation.
+
+
+  ### What you need
+
+  To begin home canning, you will need jars, lids, and basic canning equipment. Familiarity
+  with canning procedures and ingredients is also essential.
+
+
+  ### How to do it
+
+  Follow the scientific principles and use the appropriate equipment to can foods
+  safely. This involves selecting the right jars and lids, using the correct canning
+  techniques, and adjusting for altitude if necessary.
+
+
+  ### Common failure modes
+
+  Failure to follow proper canning procedures can lead to food spoilage or unsafe
+  canned products. Always use tested guidelines to ensure safety.
+
+
+  ### Safety/boundary notes
+
+  Ensure that you are using up-to-date, research-based guidelines to avoid health
+  risks associated with improper canning.
+
+
+  ### Local adaptation notes
+
+  Adjust canning procedures based on local altitude and availability of ingredients
+  to ensure optimal results.'
+structured_data:
+  definition: Home canning is the process of preserving food by sealing it in airtight
+    containers.
+  key_questions:
+  - What are the scientific principles behind home canning?
+  - What equipment is necessary for home canning?
+  - How do you ensure the safety and quality of canned products?
+  misconceptions:
+  - Canning is the same as other preservation methods like freezing or drying.
+  - Any jar or lid can be used for canning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: home-canning.introduction
+  claim_id: clm_001
+  claim_text: Home canning is a method of preserving food that has evolved significantly
+    over the past 180 years.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Home canning has changed greatly in the 180 years since it was introduced
+      as a way to preserve food.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_002
+  claim_text: This introduction provides an overview of the scientific principles,
+    equipment, and procedures necessary for safe and high-quality home canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: The first part of this publication explains the scientific principles
+      on which canning techniques are based, discusses canning equipment, and describes
+      the proper use of jars and lids.
+    start_char: 81
+    end_char: 222
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_003
+  claim_text: Understanding the principles and procedures of home canning is crucial
+    for ensuring food safety and quality.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: This publication contains many new research-based recommendations for
+      canning safer and better quality food at home.
+    start_char: 518
+    end_char: 608
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_004
+  claim_text: Proper canning prevents spoilage and extends the shelf life of food,
+    making it a valuable skill for food preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Scientists have found ways to produce safer, higher quality products.
+    start_char: 81
+    end_char: 140
+    support_strength: medium
+- object_id: home-canning.introduction
+  claim_id: clm_005
+  claim_text: To begin home canning, you will need jars, lids, and basic canning equipment.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: discusses canning equipment, and describes the proper use of jars and
+      lids.
+    start_char: 140
+    end_char: 222
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_006
+  claim_text: Follow the scientific principles and use the appropriate equipment to
+    can foods safely.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: explains the scientific principles on which canning techniques are based,
+      discusses canning equipment
+    start_char: 81
+    end_char: 140
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_007
+  claim_text: Failure to follow proper canning procedures can lead to food spoilage
+    or unsafe canned products.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 5
+    page_end: 5
+    segment_id: src.usda.home-canning.2015::seg_000006
+    excerpt: Pressure canning is the only recommended method for canning meat, poultry,
+      seafood, and vegetables. The bacterium Clostridium botulinum is destroyed in
+      low-acid foods when they are processed at the correct time and pressure in pressure
+      canners.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_008
+  claim_text: Ensure that you are using up-to-date, research-based guidelines to avoid
+    health risks associated with improper canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Research is continually being conducted in areas that affect food preservation
+      recommendations. Make sure your food preservation information is always current
+      with up-to-date tested guidelines.
+    start_char: 609
+    end_char: 739
+    support_strength: strong
+- object_id: home-canning.introduction
+  claim_id: clm_009
+  claim_text: Adjust canning procedures based on local altitude and availability of
+    ingredients to ensure optimal results.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Finally, processing adjustments for altitudes above sea level are given
+      for each food.
+    start_char: 355
+    end_char: 422
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000005

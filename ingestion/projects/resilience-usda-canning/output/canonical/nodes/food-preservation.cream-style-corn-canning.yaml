@@ -1,0 +1,310 @@
+id: food-preservation.cream-style-corn-canning
+slug: food-preservation.cream-style-corn-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Cream Style Corn
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning cream style corn using a pressure canner.
+summary_medium: This project blueprint provides detailed instructions for canning
+  cream style corn, including preparation, hot packing, and pressure canning procedures.
+plain_language: Learn how to preserve cream style corn by canning it safely using
+  a pressure canner. This guide covers everything from selecting the right corn to
+  processing it under the correct pressure.
+markdown_body: '### What this is
+
+  This is a guide for canning cream style corn using a pressure canner. It includes
+  steps for preparing the corn, hot packing it into jars, and processing it under
+  pressure to ensure safe preservation.
+
+
+  ### Why it matters
+
+  Canning cream style corn allows you to preserve the fresh taste of corn for later
+  use, reducing food waste and providing a convenient way to enjoy corn year-round.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, boiling water, and about 20 pounds
+  of sweet corn in husks for a canner load of 9 pints.
+
+
+  ### How to do it
+
+  1. Husk the corn, remove silk, and wash the ears. 2. Blanch the ears in boiling
+  water for 4 minutes. 3. Cut the corn from the cob and scrape the remaining corn
+  with a table knife. 4. For hot packing, add two cups of boiling water to each quart
+  of corn and heat to boiling. 5. Add 1/2 teaspoon salt to each jar if desired. 6.
+  Fill hot pint jars with the corn mixture, leaving a 1-inch headspace. 7. Remove
+  air bubbles, adjust headspace, wipe rims, and adjust lids. 8. Process in a pressure
+  canner: 85 minutes at 11 lb pressure for 0–2,000 ft, 12 lb for 2,001–4,000 ft, 13
+  lb for 4,001–6,000 ft, and 14 lb for 6,001–8,000 ft using a dial-gauge canner. For
+  a weighted-gauge canner, process at 10 lb for 0–1,000 ft and 15 lb above 1,000 ft.
+
+
+  ### Common failure modes
+
+  Incorrect pressure settings or incomplete seals can lead to spoilage. Ensure the
+  pressure is adjusted for your altitude and that jars are sealed properly.
+
+
+  ### Safety/boundary notes
+
+  Always use the correct pressure for your altitude to prevent foodborne illness.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of corn and adjust processing pressure based on local
+  altitude.'
+structured_data:
+  goal: Safely preserve cream style corn using a pressure canner.
+  deliverables: Properly canned cream style corn in pint jars.
+  acceptance_criteria: Jars are sealed properly, and corn is preserved without spoilage.
+  implementation:
+    smallest_viable_version: Canning a single batch of cream style corn using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - sweet corn
+    - boiling water
+    expected_time: Approximately 2 hours
+    expected_cost: Moderate, depending on corn availability
+    success_checks:
+    - Jars are sealed
+    - Corn is preserved without spoilage
+    stop_conditions:
+    - Pressure is incorrect
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Not removing air bubbles
+    variants:
+    - label: Urban
+      when: Limited space for corn storage
+      notes: Consider smaller batch sizes.
+    - label: Off-grid
+      when: Limited access to electricity
+      notes: Ensure alternative heat sources for canning.
+    when_to_escalate:
+    - If unsure about pressure settings
+    - If jars do not seal after processing
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_001
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and about
+    20 pounds of sweet corn in husks for a canner load of 9 pints.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: An average of 20 pounds (in husks) of sweet corn is needed per canner
+      load of 9 pints.
+    start_char: 0
+    end_char: 85
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_002
+  claim_text: Husk the corn, remove silk, and wash the ears.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Husk corn, remove silk, and wash ears.
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_003
+  claim_text: Blanch the ears in boiling water for 4 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Blanch ears 4 minutes in boiling water.
+    start_char: 41
+    end_char: 75
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_004
+  claim_text: Cut the corn from the cob and scrape the remaining corn with a table
+    knife.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Cut corn from cob at about the center of kernel. Scrape remaining corn
+      from cobs with a table knife.
+    start_char: 76
+    end_char: 165
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_005
+  claim_text: For hot packing, add two cups of boiling water to each quart of corn
+    and heat to boiling.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: To each quart of corn and scrapings, in a saucepan, add two cups of boiling
+      water. Heat to boiling.
+    start_char: 166
+    end_char: 235
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_006
+  claim_text: Add 1/2 teaspoon salt to each jar if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Add 1/2 teaspoon salt to each jar, if desired.
+    start_char: 236
+    end_char: 275
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_007
+  claim_text: Fill hot pint jars with the corn mixture, leaving a 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Fill hot pint jar with hot corn mixture, leaving 1-inch headspace.
+    start_char: 276
+    end_char: 331
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_008
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 332
+    end_char: 435
+    support_strength: strong
+- object_id: food-preservation.cream-style-corn-canning
+  claim_id: clm_009
+  claim_text: 'Process in a pressure canner: 85 minutes at 11 lb pressure for 0–2,000
+    ft, 12 lb for 2,001–4,000 ft, 13 lb for 4,001–6,000 ft, and 14 lb for 6,001–8,000
+    ft using a dial-gauge canner. For a weighted-gauge canner, process at 10 lb for
+    0–1,000 ft and 15 lb above 1,000 ft.'
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 119
+    page_end: 120
+    segment_id: src.usda.home-canning.2015::seg_000166
+    excerpt: Recommended process time for Cream Style Corn in a dial-gauge pressure
+      canner... 85 min... 11 lb... 12 lb... 13 lb... 14 lb... in a weighted-gauge
+      pressure canner... 85 min... 10 lb... 15 lb...
+    start_char: 436
+    end_char: 700
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000166
+bundle_overrides:
+  hook: Preserve the fresh taste of summer corn all year round by learning how to
+    can cream style corn safely at home.
+  primer: Canning cream style corn is a method of preserving the delicious taste of
+    fresh corn so you can enjoy it throughout the year. This process involves using
+    a pressure canner, which is essential for safely preserving low-acid foods like
+    corn. By canning your own corn, you can reduce food waste, save money, and have
+    a convenient supply of corn ready for your favorite recipes. The process starts
+    with selecting fresh sweet corn, husking it, and removing the silk. After blanching
+    the corn, it is cut from the cob and packed into jars with boiling water. The
+    jars are then sealed and processed in a pressure canner to ensure they are safe
+    for long-term storage. This method requires attention to detail, especially regarding
+    pressure settings, which vary based on altitude. With the right tools and careful
+    adherence to guidelines, you can successfully can cream style corn and enjoy its
+    sweet flavor whenever you like.
+  guide: 'To can cream style corn, start by gathering your supplies: a pressure canner,
+    jars, lids, boiling water, and about 20 pounds of sweet corn in husks for a canner
+    load of 9 pints. Begin by husking the corn, removing the silk, and washing the
+    ears thoroughly. Next, blanch the ears in boiling water for 4 minutes to prepare
+    them for canning. After blanching, cut the corn from the cob at about the center
+    of the kernel and use a table knife to scrape the remaining corn from the cobs.
+    For hot packing, add two cups of boiling water to each quart of corn and heat
+    it to boiling. If desired, add 1/2 teaspoon of salt to each jar for flavor. Fill
+    hot pint jars with the corn mixture, leaving a 1-inch headspace. Remove any air
+    bubbles, adjust the headspace if necessary, wipe the rims of the jars with a clean,
+    damp paper towel, and adjust the lids. Process the jars in a pressure canner for
+    85 minutes. The pressure settings depend on your altitude: 11 lb pressure for
+    0–2,000 ft, 12 lb for 2,001–4,000 ft, 13 lb for 4,001–6,000 ft, and 14 lb for
+    6,001–8,000 ft using a dial-gauge canner. For a weighted-gauge canner, use 10
+    lb for 0–1,000 ft and 15 lb above 1,000 ft. Ensure the jars are sealed properly
+    after processing to prevent spoilage.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Boiling water
+  - 20 pounds of sweet corn
+  - Husk, remove silk, wash ears
+  - Blanch corn for 4 minutes
+  - Cut and scrape corn from cob
+  - Hot pack with boiling water
+  - Add 1/2 teaspoon salt per jar (optional)
+  - Fill jars, leave 1-inch headspace
+  - Remove air bubbles, adjust lids
+  - Process for 85 minutes at correct pressure
+  worksheet:
+  - List all the materials needed for canning cream style corn.
+  - Describe the process of preparing corn for canning.
+  - Explain the importance of adjusting pressure based on altitude.
+  - Calculate the amount of corn needed for a smaller batch of 4 pints.
+  - Practice setting up a pressure canner and adjusting the pressure settings.
+  - Simulate filling a jar with corn mixture and checking for proper headspace.
+  teach_forward_kit:
+    three_minute_version: Canning cream style corn involves preparing fresh corn,
+      packing it into jars, and processing it in a pressure canner to ensure safe
+      preservation. This method allows you to enjoy the taste of fresh corn year-round
+      while reducing food waste.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Overview of materials and tools needed
+    - Step-by-step preparation of corn
+    - Explanation of hot packing and pressure canning
+    - Importance of pressure settings and altitude adjustments
+    - Tips for ensuring proper sealing and storage
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid foods like corn?
+    - What are some common mistakes to avoid when canning cream style corn?
+    - How does altitude affect the pressure settings for canning?
+    - What are the benefits of canning your own vegetables compared to buying canned
+      goods?

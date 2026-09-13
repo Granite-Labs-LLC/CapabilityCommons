@@ -1,0 +1,301 @@
+id: food-preservation.soups-canning
+slug: food-preservation.soups-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Soups
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guide to safely canning soups using a pressure canner.
+summary_medium: This guide provides detailed instructions for canning soups, including
+  preparation, processing times, and safety precautions to ensure a successful and
+  safe canning process.
+plain_language: Learn how to can soups safely at home using a pressure canner, with
+  step-by-step instructions and important safety tips.
+markdown_body: '### What this is
+
+  This is a guide for canning soups at home using a pressure canner. It includes instructions
+  for preparing ingredients, processing times, and safety precautions.
+
+
+  ### Why it matters
+
+  Canning soups allows for long-term storage of homemade soups, preserving their flavor
+  and nutritional value while ensuring food safety.
+
+
+  ### What you need
+
+  A pressure canner, jars, lids, boiling water, and ingredients such as vegetables,
+  meat, or seafood. Ensure all equipment is clean and in good condition.
+
+
+  ### How to do it
+
+  Prepare your ingredients by washing and cooking them as needed. Combine cooked ingredients
+  with broth or water, boil for 5 minutes, and fill jars halfway with solids. Add
+  liquid, leaving a 1-inch headspace. Process in a pressure canner according to altitude-specific
+  pressure guidelines.
+
+
+  ### Common failure modes
+
+  Incorrect pressure can lead to unsafe preservation. Ensure seals are complete and
+  pressure is adjusted for altitude.
+
+
+  ### Safety/boundary notes
+
+  Do not add thickeners like flour or cream. Adjust pressure for altitude to ensure
+  safety.
+
+
+  ### Local adaptation notes
+
+  Consider local ingredient availability and altitude when adjusting processing pressure.'
+structured_data:
+  goal: Safely preserve homemade soups using a pressure canner.
+  deliverables: Canned soups stored in jars with complete seals.
+  acceptance_criteria: Jars are sealed properly and stored safely. Soup is safe to
+    consume after canning.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure is used based on altitude. Do
+    not add thickeners.'
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of soup using a pressure
+      canner.
+    tools:
+    - Pressure canner
+    - Jars
+    - Lids
+    materials:
+    - Vegetables
+    - Meat
+    - Seafood
+    - Water
+    - Salt
+    expected_time: Approximately 2-3 hours
+    expected_cost: $5-$20 depending on ingredients
+    success_checks:
+    - Jars are sealed properly
+    - Soup is safe to consume
+    stop_conditions:
+    - Pressure is not reaching required levels
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Adding thickeners
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If pressure cannot be maintained
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.soups-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning soups at home using a pressure canner. It
+    includes instructions for preparing ingredients, processing times, and safety
+    precautions.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: Select, wash, and prepare vegetables, meat, and seafoods as described
+      for the specific foods. Cover meat with water and cook until tender. Cool meat
+      and remove bones. Cook vegetables. Drain all foods and combine with meat broth,
+      tomatoes, or water to cover. Boil 5 minutes.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.soups-canning
+  claim_id: clm_002
+  claim_text: Canning soups allows for long-term storage of homemade soups, preserving
+    their flavor and nutritional value while ensuring food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: 'Caution: Do not add noodles or other pasta, rice, flour, cream, milk
+      or other thickening agents to home canned soups.'
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.soups-canning
+  claim_id: clm_003
+  claim_text: A pressure canner, jars, lids, boiling water, and ingredients such as
+    vegetables, meat, or seafood. Ensure all equipment is clean and in good condition.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: Select, wash, and prepare vegetables, meat, and seafoods as described
+      for the specific foods.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.soups-canning
+  claim_id: clm_004
+  claim_text: Prepare your ingredients by washing and cooking them as needed. Combine
+    cooked ingredients with broth or water, boil for 5 minutes, and fill jars halfway
+    with solids. Add liquid, leaving a 1-inch headspace. Process in a pressure canner
+    according to altitude-specific pressure guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: Drain all foods and combine with meat broth, tomatoes, or water to cover.
+      Boil 5 minutes. Fill hot jars only halfway with mixture of solids. Add and cover
+      with remaining liquid, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.soups-canning
+  claim_id: clm_005
+  claim_text: Incorrect pressure can lead to unsafe preservation. Ensure seals are
+    complete and pressure is adjusted for altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: Canner Pressure (PSI) at Altitudes of 0–2,000 ft 11 lb, 2,001–4,000 ft
+      12 lb, 4,001–6,000 ft 13 lb, 6,001–8,000 ft 14 lb.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.soups-canning
+  claim_id: clm_006
+  claim_text: Do not add thickeners like flour or cream. Adjust pressure for altitude
+    to ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: 'Caution: Do not add noodles or other pasta, rice, flour, cream, milk
+      or other thickening agents to home canned soups.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.soups-canning
+  claim_id: clm_007
+  claim_text: Consider local ingredient availability and altitude when adjusting processing
+    pressure.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000179
+    excerpt: Canner Pressure (PSI) at Altitudes of 0–2,000 ft 11 lb, 2,001–4,000 ft
+      12 lb, 4,001–6,000 ft 13 lb, 6,001–8,000 ft 14 lb.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000179
+bundle_overrides:
+  hook: Preserve your homemade soups for long-term storage while maintaining their
+    flavor and nutritional value with safe canning techniques.
+  primer: Canning soups at home is a practical way to store your favorite homemade
+    soups for extended periods. This process involves using a pressure canner, which
+    is essential for safely preserving low-acid foods like vegetables, meats, and
+    seafood. The pressure canner ensures that the soup reaches temperatures high enough
+    to kill harmful bacteria, such as those that cause botulism. Before starting,
+    it's crucial to gather all necessary equipment, including a pressure canner, jars,
+    lids, and your chosen ingredients. The process involves preparing your ingredients
+    by washing and cooking them, combining them with broth or water, and boiling for
+    a short period. The mixture is then placed into jars, which are sealed and processed
+    in the pressure canner. It's important to follow altitude-specific pressure guidelines
+    to ensure safety. Avoid adding thickeners like flour or cream, as these can interfere
+    with the canning process. By following these steps, you can enjoy your homemade
+    soups anytime, knowing they are safely preserved.
+  guide: '1. Gather your equipment: a pressure canner, jars, lids, and your chosen
+    ingredients such as vegetables, meat, or seafood. Ensure all equipment is clean
+    and in good condition.
+
+
+    2. Prepare your ingredients: Wash and cook vegetables, meat, or seafood as needed.
+    For meats, cover with water and cook until tender, then cool and remove bones.
+    Cook vegetables separately.
+
+
+    3. Combine ingredients: Drain cooked foods and combine them with meat broth, tomatoes,
+    or water to cover. Bring the mixture to a boil and let it boil for 5 minutes.
+
+
+    4. Fill the jars: Fill hot jars halfway with the mixture of solids. Add the remaining
+    liquid, leaving a 1-inch headspace at the top of each jar.
+
+
+    5. Seal the jars: Place lids on the jars and secure them according to the manufacturer''s
+    instructions.
+
+
+    6. Process in the pressure canner: Place the jars in the pressure canner. Adjust
+    the pressure based on your altitude (e.g., 11 lb for 0-2,000 ft, 12 lb for 2,001-4,000
+    ft, etc.). Process the jars for the recommended time.
+
+
+    7. Cool and store: Once processing is complete, allow the canner to cool naturally.
+    Remove the jars and let them cool on a towel or rack. Check seals before storing.
+    Properly sealed jars can be stored in a cool, dark place for long-term use.'
+  reference:
+  - Use a pressure canner for low-acid foods.
+  - Do not add thickeners like flour or cream.
+  - 'Adjust pressure for altitude: 11 lb (0-2,000 ft), 12 lb (2,001-4,000 ft), etc.'
+  - Boil ingredients for 5 minutes before canning.
+  - Leave a 1-inch headspace in jars.
+  - Ensure jars are sealed properly before storage.
+  worksheet:
+  - List the equipment needed for canning soups.
+  - Describe the steps to prepare ingredients for canning.
+  - Explain why altitude affects canning pressure.
+  - Identify common mistakes in the canning process.
+  - Practice filling jars with the correct headspace.
+  - Check seals on cooled jars and describe the process.
+  teach_forward_kit:
+    three_minute_version: Canning soups at home involves using a pressure canner to
+      safely preserve soups for long-term storage. Prepare your ingredients, boil
+      them, and fill jars halfway with solids, adding liquid to leave a 1-inch headspace.
+      Process in a pressure canner, adjusting for altitude, and ensure jars are sealed
+      properly before storing.
+    ten_minute_outline:
+    - Introduction to canning soups and its benefits.
+    - Overview of necessary equipment and ingredients.
+    - Step-by-step guide to preparing and combining ingredients.
+    - Instructions for filling jars and processing in a pressure canner.
+    - Safety precautions and common mistakes to avoid.
+    - Tips for checking seals and storing canned soups.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for soups?
+    - What are the risks of not adjusting pressure for altitude?
+    - How can you ensure that your jars are sealed properly?
+    - What are some common mistakes people make when canning soups?
+    - How does canning affect the nutritional value of soups?

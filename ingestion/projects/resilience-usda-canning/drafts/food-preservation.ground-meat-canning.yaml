@@ -1,0 +1,238 @@
+id: food-preservation.ground-meat-canning
+slug: food-preservation.ground-meat-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Ground or Chopped Meat
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide for canning ground or chopped meat using pressure canners.
+summary_medium: Detailed procedure for canning ground or chopped meat, including preparation,
+  packing, and processing times for both dial-gauge and weighted-gauge pressure canners.
+plain_language: Learn how to safely can ground or chopped meat at home using a pressure
+  canner. This guide covers preparation, packing, and processing steps.
+markdown_body: '### What this is
+
+  This is a guide for canning ground or chopped meat, such as beef, pork, or venison,
+  using a pressure canner. It includes steps for preparation, packing, and processing.
+
+
+  ### Why it matters
+
+  Canning meat allows for long-term storage without refrigeration, preserving the
+  nutritional value and flavor while ensuring food safety.
+
+
+  ### What you need
+
+  You will need fresh meat, a pressure canner, jars, salt, and either boiling meat
+  broth, tomato juice, or water.
+
+
+  ### How to do it
+
+  1. Choose fresh, chilled meat. For venison, add pork fat before grinding. 2. Shape
+  meat into patties or balls, or cut sausage into links. 3. Lightly brown the meat.
+  4. Remove excess fat. 5. Fill hot jars with meat, add liquid, and leave 1-inch headspace.
+  6. Remove air bubbles, adjust headspace, and add salt if desired. 7. Wipe jar rims,
+  adjust lids, and process in a pressure canner according to altitude-specific guidelines.
+
+
+  ### Common failure modes
+
+  Excess fat in jars or incorrect pressure during canning can lead to spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper pressure is maintained during canning to avoid contamination and ensure
+  food safety.
+
+
+  ### Local adaptation notes
+
+  Adapt the recipe based on the availability of different types of meat in your area.'
+structured_data:
+  goal: Safely can ground or chopped meat for long-term storage.
+  deliverables: Canned jars of ground or chopped meat.
+  acceptance_criteria: Jars are sealed properly, and meat is preserved without spoilage.
+  implementation:
+    smallest_viable_version: Canning a small batch of ground meat using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - fresh meat
+    - salt
+    - boiling meat broth or tomato juice or water
+    expected_time: Approximately 2 hours including preparation and processing time.
+    expected_cost: Moderate, depending on the cost of meat and canning supplies.
+    success_checks:
+    - Jars are sealed
+    - No spoilage or off-flavors
+    stop_conditions:
+    - Jars do not seal
+    - Meat shows signs of spoilage
+    common_mistakes:
+    - Not removing excess fat
+    - Incorrect pressure settings
+    variants:
+    - label: Urban
+      when: Limited access to fresh meat
+      notes: Consider sourcing meat from local butchers or farmers' markets.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If there are signs of spoilage
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.ground-meat-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning ground or chopped meat, such as beef, pork,
+    or venison, using a pressure canner. It includes steps for preparation, packing,
+    and processing.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 136
+    page_end: 136
+    segment_id: src.usda.home-canning.2015::seg_000190
+    excerpt: Choose fresh, chilled meat. With venison, add one part high-quality pork
+      fat to three or four parts venison before grinding. Use freshly made sausage,
+      seasoned with salt and cayenne pepper (sage may cause a bitter off-flavor).
+      Shape chopped meat into patties or balls or cut cased sausage into 3- to 4-inch
+      links. Cook until lightly browned. Ground meat may be sauteed without shaping.
+      Remove excess fat. Fill hot jars with pieces. Add boiling meat broth, tomato
+      juice, or water, leaving 1-inch headspace. Remove air bubbles and adjust headspace
+      if needed. Add 1 teaspoon of salt per quart to the jars, if desired. Wipe rims
+      of jars with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 651
+    support_strength: strong
+- object_id: food-preservation.ground-meat-canning
+  claim_id: clm_002
+  claim_text: Canning meat allows for long-term storage without refrigeration, preserving
+    the nutritional value and flavor while ensuring food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 136
+    page_end: 136
+    segment_id: src.usda.home-canning.2015::seg_000190
+    excerpt: Fill hot jars with pieces. Add boiling meat broth, tomato juice, or water,
+      leaving 1-inch headspace. Remove air bubbles and adjust headspace if needed.
+      Add 1 teaspoon of salt per quart to the jars, if desired. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 380
+    end_char: 651
+    support_strength: medium
+- object_id: food-preservation.ground-meat-canning
+  claim_id: clm_003
+  claim_text: You will need fresh meat, a pressure canner, jars, salt, and either
+    boiling meat broth, tomato juice, or water.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 136
+    page_end: 136
+    segment_id: src.usda.home-canning.2015::seg_000190
+    excerpt: Choose fresh, chilled meat... Fill hot jars with pieces. Add boiling
+      meat broth, tomato juice, or water, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 651
+    support_strength: strong
+- object_id: food-preservation.ground-meat-canning
+  claim_id: clm_004
+  claim_text: Ensure proper pressure is maintained during canning to avoid contamination
+    and ensure food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 136
+    page_end: 136
+    segment_id: src.usda.home-canning.2015::seg_000190
+    excerpt: Adjust lids and process.
+    start_char: 635
+    end_char: 651
+    support_strength: weak
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000190
+bundle_overrides:
+  hook: Canning ground or chopped meat allows you to enjoy delicious, home-cooked
+    meals anytime without the need for refrigeration, preserving both flavor and nutrition.
+  primer: Canning ground or chopped meat is a practical way to preserve meat for long-term
+    storage without refrigeration. This method is particularly useful for those who
+    want to ensure they have a reliable source of protein available at all times.
+    Using a pressure canner, you can safely store meats like beef, pork, or venison.
+    The process involves preparing the meat by grinding and lightly browning it, then
+    packing it into jars with a liquid such as meat broth, tomato juice, or water.
+    The jars are then sealed and processed under pressure to ensure they are free
+    from bacteria and other contaminants. This method not only extends the shelf life
+    of the meat but also retains its nutritional value and flavor. It's important
+    to follow safety guidelines closely, as improper canning can lead to spoilage
+    or foodborne illnesses.
+  guide: "1. Start by selecting fresh, chilled meat. If you're using venison, mix\
+    \ in one part high-quality pork fat to three or four parts venison before grinding.\
+    \ \n2. Shape the ground meat into patties or balls, or cut cased sausage into\
+    \ 3- to 4-inch links. Alternatively, you can sauté the ground meat without shaping\
+    \ it. \n3. Lightly brown the meat in a pan, then remove any excess fat. \n4. Prepare\
+    \ your jars by filling them with the browned meat, leaving a 1-inch headspace\
+    \ at the top. \n5. Add boiling meat broth, tomato juice, or water to the jars,\
+    \ maintaining the 1-inch headspace. \n6. Remove any air bubbles by gently tapping\
+    \ the jars or using a non-metallic spatula. Adjust the headspace if necessary.\
+    \ \n7. If desired, add 1 teaspoon of salt per quart to the jars. \n8. Wipe the\
+    \ rims of the jars with a dampened clean paper towel to ensure a good seal. \n\
+    9. Place the lids on the jars and adjust them according to the manufacturer's\
+    \ instructions. \n10. Process the jars in a pressure canner, following altitude-specific\
+    \ guidelines to ensure proper pressure is maintained. \n11. Once processed, allow\
+    \ the jars to cool undisturbed. Check the seals before storing."
+  reference:
+  - Fresh meat
+  - Pressure canner
+  - Jars and lids
+  - Salt (optional)
+  - Boiling meat broth, tomato juice, or water
+  - 1-inch headspace
+  - Remove air bubbles
+  - Adjust lids and process
+  worksheet:
+  - List the types of meat you can use for canning.
+  - Describe the process of preparing the meat before canning.
+  - Explain the importance of maintaining proper pressure during canning.
+  - Calculate the headspace needed for a quart jar.
+  - Identify common mistakes in the canning process and how to avoid them.
+  teach_forward_kit:
+    three_minute_version: Canning ground or chopped meat involves preparing the meat,
+      packing it into jars with liquid, and processing it in a pressure canner to
+      ensure long-term storage without refrigeration. This method preserves the meat's
+      nutritional value and flavor while ensuring safety.
+    ten_minute_outline:
+    - Introduction to canning ground meat
+    - Importance of canning for preservation
+    - Materials and tools needed
+    - Step-by-step canning process
+    - Safety precautions and common mistakes
+    - Q&A session
+    discussion_prompts:
+    - Why is pressure canning necessary for meat?
+    - What are the benefits of canning meat at home?
+    - How can you ensure the safety of canned meat?
+    - What challenges might you face when canning meat?

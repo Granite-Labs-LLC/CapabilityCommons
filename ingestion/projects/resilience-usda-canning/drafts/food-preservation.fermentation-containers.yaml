@@ -1,0 +1,205 @@
+canonical_title: Suitable Containers, Covers, and Weights for Fermenting Food
+citations:
+- claim_id: clm_001
+  claim_text: You will need a 1-gallon container for every 5 pounds of vegetables.
+    Suitable materials include stone crocks, food-grade plastic, and glass containers.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 217
+    excerpt: A 1-gallon container is needed for each 5 pounds of fresh vegetables.
+      Therefore, a 5-gallon stone crock is of ideal size for fermenting about 25 pounds
+      of fresh cabbage or cucumbers. Food-grade plastic and glass containers are excellent
+      substitutes for stone crocks.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Place vegetables and brine in the container, ensuring they are 1 to
+    2 inches under the brine.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 276
+    excerpt: Cabbage and cucumbers must be kept 1 to 2 inches under brine while fermenting.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 218
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: Use a dinner plate or glass pie plate slightly smaller than the container
+    opening to cover the vegetables. Weight it down with sealed jars filled with water.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 551
+    excerpt: After adding prepared vegetables and brine, insert a suitably sized dinner
+      plate or glass pie plate inside the fermentation container. The plate must be
+      slightly smaller than the container opening, yet large enough to cover most
+      of the shredded cabbage or cucumbers. To keep the plate under the brine, weight
+      it down with 2 to 3 sealed quart jars filled with water.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 277
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: Cover the container with a clean, heavy towel to prevent contamination.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 664
+    excerpt: Covering the container opening with a clean, heavy bath towel helps to
+      prevent contamination from insects and molds while the vegetables are fermenting.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 552
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Using non-food-grade plastics can lead to contamination.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 276
+    excerpt: 'Caution: Be certain that foods contact only food-grade plastics. Do
+      not use garbage bags or trash liners.'
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 218
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Not keeping vegetables submerged can result in spoilage.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 276
+    excerpt: Cabbage and cucumbers must be kept 1 to 2 inches under brine while fermenting.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 218
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Only use food-grade plastics. Avoid using garbage bags or trash liners.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 276
+    excerpt: 'Caution: Be certain that foods contact only food-grade plastics. Do
+      not use garbage bags or trash liners.'
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 218
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Ensure all materials are cleaned thoroughly before use.
+  object_id: food-preservation.fermentation-containers
+  support:
+  - end_char: 756
+    excerpt: The fermentation container, plate, and jars must be washed in hot sudsy
+      water, and rinsed well with very hot water before use.
+    page_end: 152
+    page_start: 151
+    segment_id: src.usda.home-canning.2015::seg_000208
+    source_id: src.usda.home-canning.2015
+    start_char: 665
+    support_strength: strong
+co_type: reference_sheet
+contexts: []
+cost_band: low
+difficulty: 2
+id: food-preservation.fermentation-containers
+language_code: en
+lifecycle_state: published
+markdown_body: '# What this is
+
+
+  This guide provides information on selecting appropriate containers, covers, and
+  weights for fermenting vegetables like cabbage and cucumbers.
+
+
+  ### Why it matters
+
+
+  Choosing the right materials is crucial to ensure the vegetables remain submerged
+  in brine, preventing spoilage and contamination during fermentation.
+
+
+  ### What you need
+
+
+  You will need a 1-gallon container for every 5 pounds of vegetables. Suitable materials
+  include stone crocks, food-grade plastic, and glass containers.
+
+
+  ### How to do it
+
+
+  Place vegetables and brine in the container, ensuring they are 1 to 2 inches under
+  the brine. Use a dinner plate or glass pie plate slightly smaller than the container
+  opening to cover the vegetables. Weight it down with sealed jars filled with water.
+  Cover the container with a clean, heavy towel to prevent contamination.
+
+
+  ### Common failure modes
+
+
+  Using non-food-grade plastics can lead to contamination. Not keeping vegetables
+  submerged can result in spoilage.
+
+
+  ### Safety/boundary notes
+
+
+  Only use food-grade plastics. Avoid using garbage bags or trash liners.
+
+
+  ### Local adaptation notes
+
+
+  Adjust container size based on the amount of vegetables being fermented. Ensure
+  all materials are cleaned thoroughly before use.'
+plain_language: This guide helps you pick the right containers and materials for fermenting
+  foods like cabbage and cucumbers, ensuring they stay submerged and safe from contamination.
+primary_domain: food-preservation
+requires: []
+risk_band: low
+secondary_domains: []
+seed_type: reference_sheet
+slug: food-preservation.fermentation-containers
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000208
+stage: foundation
+structured_data:
+  definition: Guidelines for selecting containers and materials for fermenting food.
+  key_questions:
+  - What size container is needed for fermenting a specific amount of vegetables?
+  - What materials are safe to use for fermentation?
+  misconceptions:
+  - Any plastic container can be used for fermentation.
+  - Vegetables do not need to be fully submerged in brine.
+  failure_modes:
+  - Using unsuitable containers
+  - Improper sealing leading to contamination
+  materials: []
+  safety_boundary: Use only food-grade materials and ensure cleanliness.
+  success_criteria:
+  - Proper fermentation without spoilage
+  - Food remains submerged during fermentation
+  tools:
+  - containers
+  - covers
+  - weights
+suggested_edges: []
+summary_medium: Learn how to choose the right containers, covers, and weights for
+  effective and safe food fermentation.
+summary_short: Guidelines for selecting suitable containers, covers, and weights for
+  fermenting food.
+version_no: 1
+visibility: public

@@ -1,0 +1,190 @@
+id: food-safety.tomato-acidification
+slug: food-safety.tomato-acidification
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Tomato Acidification for Safe Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: high
+summary_short: Guidelines for acidifying tomatoes to ensure safe acidity levels during
+  canning.
+summary_medium: Learn how to properly acidify tomatoes using lemon juice, citric acid,
+  or vinegar to ensure safe canning practices.
+plain_language: When canning tomatoes, it's important to add acid to ensure they are
+  safe to eat. You can use bottled lemon juice, citric acid, or vinegar, but vinegar
+  might change the flavor.
+markdown_body: '### What this is
+
+  This guide explains how to acidify tomatoes to ensure they reach safe acidity levels
+  for canning.
+
+
+  ### Why it matters
+
+  Acidifying tomatoes is crucial to prevent the growth of harmful bacteria during
+  storage. Proper acidity ensures the safety and quality of canned tomatoes.
+
+
+  ### What you need
+
+  You''ll need bottled lemon juice, citric acid, or vinegar, and optionally sugar
+  to offset the acid taste. A pressure canner is recommended for higher quality results.
+
+
+  ### How to do it
+
+  Add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid per quart
+  of tomatoes. For pints, use 1 tablespoon of lemon juice or 1/4 teaspoon of citric
+  acid. Alternatively, use 4 tablespoons of 5% acidity vinegar per quart, but be aware
+  of potential flavor changes. Add the acid directly to jars before filling with tomatoes.
+
+
+  ### Common failure modes
+
+  Using vinegar can lead to undesirable flavor changes. Not adding enough acid can
+  result in unsafe acidity levels.
+
+
+  ### Safety/boundary notes
+
+  Ensure all tomatoes are disease-free and preferably vine-ripened. Do not use tomatoes
+  from dead or frost-killed vines.
+
+
+  ### Local adaptation notes
+
+  Adjust acid quantities based on local tomato varieties and personal taste preferences.
+  Consider local availability of acidifying agents.'
+structured_data:
+  definition: Acidification is the process of adding acid to tomatoes to ensure safe
+    acidity levels for canning.
+  key_questions:
+  - Why is acidification necessary for canning tomatoes?
+  - What are the recommended acidifying agents and their quantities?
+  misconceptions:
+  - Vinegar is always a suitable substitute for lemon juice or citric acid without
+    affecting flavor.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_001
+  claim_text: This guide explains how to acidify tomatoes to ensure they reach safe
+    acidity levels for canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Acidification: To ensure safe acidity in whole, crushed, or juiced tomatoes,
+      add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid per
+      quart of tomatoes.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_002
+  claim_text: Acidifying tomatoes is crucial to prevent the growth of harmful bacteria
+    during storage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Acidification: To ensure safe acidity in whole, crushed, or juiced tomatoes...'
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_003
+  claim_text: You'll need bottled lemon juice, citric acid, or vinegar, and optionally
+    sugar to offset the acid taste.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: Acid can be added directly to the jars before filling with product. Add
+      sugar to offset acid taste, if desired.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_004
+  claim_text: Add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid
+    per quart of tomatoes. For pints, use 1 tablespoon of lemon juice or 1/4 teaspoon
+    of citric acid.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid
+      per quart of tomatoes. For pints, use 1 tablespoon bottled lemon juice or 1/4
+      teaspoon citric acid.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_005
+  claim_text: Alternatively, use 4 tablespoons of 5% acidity vinegar per quart, but
+    be aware of potential flavor changes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: Four tablespoons of a 5 percent acidity vinegar per quart may be used
+      instead of lemon juice or citric acid. However, vinegar may cause undesirable
+      flavor changes.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_006
+  claim_text: Using vinegar can lead to undesirable flavor changes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: However, vinegar may cause undesirable flavor changes.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-safety.tomato-acidification
+  claim_id: clm_007
+  claim_text: Ensure all tomatoes are disease-free and preferably vine-ripened. Do
+    not use tomatoes from dead or frost-killed vines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 88
+    page_end: 88
+    segment_id: src.usda.home-canning.2015::seg_000115
+    excerpt: 'Select only disease-free, preferably vine-ripened, firm fruit for canning.
+      Caution: Do not can tomatoes from dead or frost-killed vines.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000115

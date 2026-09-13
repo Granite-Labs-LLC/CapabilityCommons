@@ -1,0 +1,238 @@
+id: food-preservation.fermented-pickled-canning
+slug: food-preservation.fermented-pickled-canning
+seed_type: project_blueprint
+co_type: project_blueprint
+canonical_title: Preparing and Canning Fermented Foods and Pickled Vegetables
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Guidelines for canning fermented foods and pickled vegetables.
+summary_medium: Detailed steps and precautions for preparing and canning fermented
+  foods and pickled vegetables, ensuring safety and quality.
+plain_language: Learn how to safely prepare and can fermented foods and pickled vegetables,
+  including necessary steps and precautions.
+markdown_body: '# What this is
+
+  This project blueprint provides guidelines for preparing and canning fermented foods
+  and pickled vegetables. It includes steps to ensure the safety and quality of the
+  preserved foods.
+
+
+  # Why it matters
+
+  Canning fermented foods and pickled vegetables allows for long-term storage and
+  consumption, preserving the flavors and nutritional benefits of seasonal produce.
+
+
+  # What you need
+
+  You will need canning jars, fermentation weights, vinegar, and sterilized equipment
+  to ensure proper acidity and prevent contamination.
+
+
+  # How to do it
+
+  1. Prepare your ingredients by cleaning and cutting them as needed. 2. Ferment the
+  foods using appropriate fermentation weights to keep them submerged. 3. Once fermentation
+  is complete, prepare the pickling solution with vinegar. 4. Pack the fermented foods
+  into sterilized canning jars and fill with the pickling solution. 5. Seal the jars
+  properly and process them in a boiling water canner for the recommended time.
+
+
+  # Common failure modes
+
+  Improper sealing of jars can lead to spoilage. Contamination can occur if equipment
+  is not properly sterilized.
+
+
+  # Safety/boundary notes
+
+  Ensure the proper acidity level by using the correct amount of vinegar. Always use
+  sterilized equipment to prevent contamination.
+
+
+  # Local adaptation notes
+
+  Consider the availability of ingredients and local taste preferences when preparing
+  your pickling solution.'
+structured_data:
+  tools:
+  - canning jars
+  - fermentation weights
+  materials:
+  - vinegar
+  success_criteria:
+  - Properly sealed jars
+  - No signs of contamination
+  failure_modes:
+  - improper sealing
+  - contamination
+  safety_boundary:
+  - ensure proper acidity
+  - use sterilized equipment
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of pickled vegetables using
+      basic equipment.
+    tools:
+    - canning jars
+    - fermentation weights
+    materials:
+    - vinegar
+    expected_time: 1-2 days for fermentation, 1 hour for canning
+    expected_cost: medium
+    success_checks:
+    - Jars are sealed properly
+    - No spoilage after processing
+    stop_conditions:
+    - Jars do not seal
+    - Signs of spoilage
+    common_mistakes:
+    - Using unsterilized equipment
+    - Incorrect vinegar concentration
+    variants:
+    - label: urban
+      when: Limited space for fermentation
+      notes: Use smaller jars and ferment in a cool, dark place.
+    when_to_escalate:
+    - Persistent contamination issues
+    - Repeated failure to seal jars
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.fermented-pickled-canning
+  claim_id: clm_001
+  claim_text: This project blueprint provides guidelines for preparing and canning
+    fermented foods and pickled vegetables.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 146
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000204
+    excerpt: Preparing and Canning Fermented Foods and Pickled Vegetables
+    start_char: 0
+    end_char: 56
+    support_strength: strong
+- object_id: food-preservation.fermented-pickled-canning
+  claim_id: clm_002
+  claim_text: Canning fermented foods and pickled vegetables allows for long-term
+    storage and consumption, preserving the flavors and nutritional benefits of seasonal
+    produce.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 146
+    page_end: 146
+    segment_id: src.usda.home-canning.2015::seg_000204
+    excerpt: Preparing and Canning Fermented Foods and Pickled Vegetables
+    start_char: 0
+    end_char: 56
+    support_strength: weak
+- object_id: food-preservation.fermented-pickled-canning
+  claim_id: clm_003
+  claim_text: You will need canning jars, fermentation weights, vinegar, and sterilized
+    equipment to ensure proper acidity and prevent contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Suitable containers, covers, and weights for fermenting foods
+    start_char: 0
+    end_char: 56
+    support_strength: medium
+- object_id: food-preservation.fermented-pickled-canning
+  claim_id: clm_004
+  claim_text: Improper sealing of jars can lead to spoilage. Contamination can occur
+    if equipment is not properly sterilized.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Suitable containers, covers, and weights for fermenting foods
+    start_char: 0
+    end_char: 56
+    support_strength: medium
+- object_id: food-preservation.fermented-pickled-canning
+  claim_id: clm_005
+  claim_text: Ensure the proper acidity level by using the correct amount of vinegar.
+    Always use sterilized equipment to prevent contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Suitable containers, covers, and weights for fermenting foods
+    start_char: 0
+    end_char: 56
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000204
+bundle_overrides:
+  hook: Preserve the flavors and nutritional benefits of seasonal produce by learning
+    how to safely can fermented foods and pickled vegetables.
+  primer: 'Canning fermented foods and pickled vegetables is a time-honored method
+    of preserving seasonal produce for long-term storage. This process not only extends
+    the shelf life of your favorite fruits and vegetables but also maintains their
+    nutritional value and enhances their flavors. To successfully can these foods,
+    you''ll need some basic equipment: canning jars, fermentation weights, vinegar,
+    and sterilized tools. The process involves fermenting the foods to develop their
+    flavors, preparing a pickling solution, and then sealing them in jars to prevent
+    spoilage. Proper sealing and sterilization are crucial to avoid contamination
+    and ensure the safety of the preserved foods. By mastering this technique, you
+    can enjoy the taste of summer vegetables all year round.'
+  guide: "1. Gather your materials: canning jars, fermentation weights, vinegar, and\
+    \ sterilized equipment. \n2. Prepare your ingredients by cleaning and cutting\
+    \ them as needed. \n3. Begin the fermentation process by placing the vegetables\
+    \ in a suitable container and using fermentation weights to keep them submerged\
+    \ in their juices. Allow them to ferment for 1-2 days in a cool, dark place. \n\
+    4. Once fermentation is complete, prepare the pickling solution by mixing vinegar\
+    \ with water and any desired spices. \n5. Sterilize your canning jars by boiling\
+    \ them in water for 10 minutes. \n6. Pack the fermented vegetables into the sterilized\
+    \ jars, leaving about 1/2 inch of headspace. \n7. Pour the pickling solution over\
+    \ the vegetables, ensuring they are completely covered. \n8. Wipe the rims of\
+    \ the jars clean, place the lids on, and screw on the bands until fingertip tight.\
+    \ \n9. Process the jars in a boiling water canner for the recommended time based\
+    \ on your altitude and recipe. \n10. Remove the jars and let them cool undisturbed\
+    \ for 12-24 hours. Check the seals by pressing the center of each lid; it should\
+    \ not flex up and down. \n11. Store the sealed jars in a cool, dark place. If\
+    \ any jars did not seal properly, refrigerate and consume them first."
+  reference:
+  - Canning jars
+  - Fermentation weights
+  - Vinegar
+  - Sterilized equipment
+  - Proper acidity level
+  - Boiling water canner
+  - Sealing jars
+  - Preventing contamination
+  worksheet:
+  - List the equipment needed for canning fermented foods.
+  - Describe the steps to properly sterilize canning jars.
+  - Explain the importance of maintaining proper acidity levels in pickling.
+  - Identify common signs of spoilage in canned foods.
+  - Practice sealing a jar and checking the seal after cooling.
+  teach_forward_kit:
+    three_minute_version: Canning fermented foods and pickled vegetables allows you
+      to preserve seasonal produce for long-term storage. The process involves fermenting
+      the vegetables, preparing a pickling solution, and sealing them in sterilized
+      jars. Proper sealing and sterilization are crucial to prevent spoilage and contamination.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Overview of necessary equipment and materials
+    - Step-by-step guide to fermenting and pickling
+    - Importance of sterilization and proper sealing
+    - Common issues and how to avoid them
+    - Q&A session
+    discussion_prompts:
+    - What are the benefits of canning your own fermented foods?
+    - Have you ever encountered spoilage in home-canned goods? How did you handle
+      it?
+    - What are some creative ways to use pickled vegetables in meals?

@@ -1,0 +1,339 @@
+id: food-preservation.spinach-greens-canning
+slug: food-preservation.spinach-greens-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Spinach and Other Greens
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning spinach and other greens using a pressure canner.
+summary_medium: This project blueprint provides detailed instructions for canning
+  spinach and other greens, focusing on quantity, quality, and the canning process
+  using a pressure canner.
+plain_language: Learn how to preserve spinach and other greens by canning them. This
+  guide covers everything from selecting the right greens to using a pressure canner
+  safely.
+markdown_body: '### What this is
+
+  This guide explains how to can spinach and other greens using a pressure canner.
+  It includes steps for preparing the greens, packing them into jars, and processing
+  them safely.
+
+
+  ### Why it matters
+
+  Canning spinach and other greens allows you to preserve their nutritional value
+  and enjoy them year-round. Proper canning ensures food safety and quality.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, boiling water, and fresh spinach or
+  other greens.
+
+
+  ### How to do it
+
+  1. Select fresh, undamaged greens. 2. Wash greens thoroughly to remove grit. 3.
+  Blanch greens by steaming for 3-5 minutes. 4. Pack hot jars loosely with greens,
+  add boiling water, and leave a 1-inch headspace. 5. Remove air bubbles, wipe jar
+  rims, and adjust lids. 6. Process jars in a pressure canner according to the manufacturer''s
+  instructions.
+
+
+  ### Common failure modes
+
+  Incorrect pressure or incomplete sealing can lead to spoilage. Ensure the pressure
+  is adjusted for your altitude.
+
+
+  ### Safety/boundary notes
+
+  Always use a pressure canner for low-acid foods like greens to prevent the risk
+  of botulism.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of greens and adjust processing times based on local altitude.'
+structured_data:
+  goal: To safely can spinach and other greens for long-term storage.
+  deliverables: Canned jars of spinach or other greens.
+  acceptance_criteria: Jars are sealed properly with no spoilage.
+  implementation:
+    smallest_viable_version: Canning a small batch of greens using a pressure canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - fresh spinach or greens
+    - boiling water
+    expected_time: 2-3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - No spoilage after cooling
+    stop_conditions:
+    - Jars do not seal
+    - Pressure is incorrect
+    common_mistakes:
+    - Not adjusting pressure for altitude
+    - Overfilling jars
+    variants:
+    - label: Urban
+      when: Limited space for equipment
+      notes: Consider smaller batches or shared canning facilities.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If unsure about pressure settings
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_001
+  claim_text: This guide explains how to can spinach and other greens using a pressure
+    canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: 'Procedure: Wash only small amounts of greens at one time. Drain water
+      and continue rinsing until water is clear and free of grit. Cut out tough stems
+      and midribs. Place 1 pound of greens at a time in cheesecloth bag or blancher
+      basket and steam 3 to 5 minutes or until well wilted. Add 1/2 teaspoon of salt
+      to each quart jar, if desired. Fill hot jars loosely with greens and add fresh
+      boiling water, leaving 1-inch headspace. Remove air bubbles and adjust headspace
+      if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids
+      and process.'
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_002
+  claim_text: Canning spinach and other greens allows you to preserve their nutritional
+    value and enjoy them year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: 'Quality: Can only freshly harvested greens. Discard any wilted, discolored,
+      diseased, or insectdamaged leaves. Leaves should be tender and attractive in
+      color.'
+    start_char: 0
+    end_char: 549
+    support_strength: medium
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and fresh
+    spinach or other greens.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: 'Procedure: Wash only small amounts of greens at one time. Drain water
+      and continue rinsing until water is clear and free of grit. Cut out tough stems
+      and midribs. Place 1 pound of greens at a time in cheesecloth bag or blancher
+      basket and steam 3 to 5 minutes or until well wilted. Add 1/2 teaspoon of salt
+      to each quart jar, if desired. Fill hot jars loosely with greens and add fresh
+      boiling water, leaving 1-inch headspace. Remove air bubbles and adjust headspace
+      if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids
+      and process.'
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_004
+  claim_text: Blanch greens by steaming for 3-5 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: Place 1 pound of greens at a time in cheesecloth bag or blancher basket
+      and steam 3 to 5 minutes or until well wilted.
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_005
+  claim_text: Pack hot jars loosely with greens, add boiling water, and leave a 1-inch
+    headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: Fill hot jars loosely with greens and add fresh boiling water, leaving
+      1-inch headspace.
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_006
+  claim_text: Remove air bubbles, wipe jar rims, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 128
+    page_end: 128
+    segment_id: src.usda.home-canning.2015::seg_000180
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_007
+  claim_text: Process jars in a pressure canner according to the manufacturer's instructions.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 129
+    page_end: 129
+    segment_id: src.usda.home-canning.2015::seg_000181
+    excerpt: Recommended process time for Spinach and Other Greens in a dial-gauge
+      pressure canner Canner Pressure (PSI) at Altitudes of Style of Pack Jar Size
+      Process Time 0– 2,000 ft 2,001– 4,000 ft 4,001– 6,000 ft 6,001– 8,000 ft Hot
+      Pints 70 min 11 lb 12 lb 13 lb 14 lb Quarts 90 11 12 13 14
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+- object_id: food-preservation.spinach-greens-canning
+  claim_id: clm_008
+  claim_text: Always use a pressure canner for low-acid foods like greens to prevent
+    the risk of botulism.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 129
+    page_end: 129
+    segment_id: src.usda.home-canning.2015::seg_000181
+    excerpt: Recommended process time for Spinach and Other Greens in a dial-gauge
+      pressure canner Canner Pressure (PSI) at Altitudes of Style of Pack Jar Size
+      Process Time 0– 2,000 ft 2,001– 4,000 ft 4,001– 6,000 ft 6,001– 8,000 ft Hot
+      Pints 70 min 11 lb 12 lb 13 lb 14 lb Quarts 90 11 12 13 14
+    start_char: 0
+    end_char: 549
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000180
+bundle_overrides:
+  hook: Preserve the nutritional value of spinach and other greens year-round by learning
+    how to can them safely.
+  primer: Canning spinach and other greens is a practical way to preserve their nutritional
+    value and enjoy them throughout the year. This process involves using a pressure
+    canner, which is essential for safely preserving low-acid foods like greens. The
+    pressure canner ensures that the jars are sealed properly, preventing spoilage
+    and the risk of botulism, a serious foodborne illness. Before starting, you'll
+    need fresh spinach or other greens, jars, lids, and boiling water. The process
+    begins with selecting fresh, undamaged greens and washing them thoroughly to remove
+    any grit. Blanching the greens by steaming them for 3-5 minutes helps to preserve
+    their color and texture. Once blanched, the greens are packed loosely into hot
+    jars, boiling water is added, and a 1-inch headspace is left. After removing air
+    bubbles and wiping the jar rims, the lids are adjusted, and the jars are processed
+    in a pressure canner according to the manufacturer's instructions. This method
+    not only extends the shelf life of your greens but also ensures they remain safe
+    to eat.
+  guide: '1. Gather your materials: fresh spinach or other greens, a pressure canner,
+    jars, lids, and boiling water.
+
+
+    2. Select fresh, undamaged greens. Discard any wilted, discolored, or insect-damaged
+    leaves.
+
+
+    3. Wash the greens thoroughly in small batches to remove dirt and grit. Rinse
+    until the water runs clear.
+
+
+    4. Blanch the greens by placing them in a cheesecloth bag or blancher basket.
+    Steam them for 3-5 minutes until they are well wilted.
+
+
+    5. Prepare your jars by sterilizing them in boiling water. Keep them hot until
+    ready to use.
+
+
+    6. Pack the hot jars loosely with the blanched greens. Add boiling water to cover
+    the greens, leaving a 1-inch headspace at the top of each jar.
+
+
+    7. Remove any air bubbles by gently tapping the jars or using a non-metallic utensil.
+    Adjust the headspace if necessary.
+
+
+    8. Wipe the rims of the jars with a clean, damp paper towel to ensure a good seal.
+
+
+    9. Place the lids on the jars and screw on the bands until they are fingertip
+    tight.
+
+
+    10. Process the jars in a pressure canner according to the manufacturer''s instructions,
+    adjusting for your altitude. Typically, this involves processing pints for 70
+    minutes and quarts for 90 minutes at the appropriate pressure.
+
+
+    11. Once processing is complete, allow the canner to cool and depressurize naturally
+    before removing the jars.
+
+
+    12. Check the seals after the jars have cooled. The lids should not flex up and
+    down when pressed.
+
+
+    13. Store the sealed jars in a cool, dark place. Unsealed jars should be refrigerated
+    and used promptly.'
+  reference:
+  - Use a pressure canner for low-acid foods like greens.
+  - Blanch greens by steaming for 3-5 minutes.
+  - Pack hot jars loosely with greens and add boiling water.
+  - Leave a 1-inch headspace in jars.
+  - Remove air bubbles and wipe jar rims.
+  - Process jars according to altitude-specific pressure settings.
+  worksheet:
+  - List the materials needed for canning spinach and other greens.
+  - Describe the blanching process and its purpose.
+  - Explain why a pressure canner is necessary for canning greens.
+  - Calculate the processing time and pressure needed for your altitude.
+  - Practice packing a jar with greens, ensuring the correct headspace.
+  teach_forward_kit:
+    three_minute_version: Canning spinach and other greens involves using a pressure
+      canner to safely preserve their nutritional value. Start by selecting fresh
+      greens, wash them thoroughly, and blanch by steaming for 3-5 minutes. Pack the
+      greens into hot jars, add boiling water, and leave a 1-inch headspace. Remove
+      air bubbles, wipe rims, and adjust lids. Process in a pressure canner according
+      to altitude-specific instructions.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Materials and tools needed for canning greens.
+    - 'Step-by-step process: selecting, washing, blanching, packing, and processing.'
+    - Importance of using a pressure canner for safety.
+    - Common mistakes and how to avoid them.
+    - Q&A session and practical demonstration.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid foods?
+    - What are the potential risks if canning is not done correctly?
+    - How does altitude affect the canning process?
+    - What are some alternative methods for preserving greens?

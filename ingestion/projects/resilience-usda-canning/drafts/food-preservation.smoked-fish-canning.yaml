@@ -1,0 +1,352 @@
+id: food-preservation.smoked-fish-canning
+slug: food-preservation.smoked-fish-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Smoked Fish
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: advanced
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Procedure for canning smoked fish using pressure canners.
+summary_medium: Detailed instructions for safely canning smoked fish, including preparation,
+  packing, and processing times for both dial-gauge and weighted-gauge pressure canners.
+plain_language: Learn how to safely can smoked fish using a pressure canner, with
+  step-by-step instructions for preparation, packing, and processing.
+markdown_body: '### What this is
+
+  This is a guide for canning smoked fish using a pressure canner. It includes instructions
+  for preparing, packing, and processing smoked fish to ensure safety and quality.
+
+
+  ### Why it matters
+
+  Canning smoked fish allows for long-term preservation, making it possible to enjoy
+  this food without refrigeration. However, it requires careful attention to processing
+  times and pressures to prevent foodborne illness.
+
+
+  ### What you need
+
+  A 16 to 22 quart pressure canner, pint canning jars, smoked fish, and a clean, damp
+  paper towel.
+
+
+  ### How to do it
+
+  Thaw smoked fish in the refrigerator if previously frozen. Cut fish into pieces
+  that fit vertically in pint jars, leaving a 1-inch headspace. Pack fish into hot
+  jars without adding liquid. Clean jar rims and adjust lids. Fill the pressure canner
+  with 4 quarts of cool tap water and place jars on the rack. Process for 110 minutes
+  at the appropriate pressure for your altitude.
+
+
+  ### Common failure modes
+
+  Using incorrect pressure or processing time can lead to unsafe food. Strong flavors
+  may develop if the fish is heavily smoked.
+
+
+  ### Safety/boundary notes
+
+  Ensure the correct pressure is used for your altitude. Do not taste lightly smoked
+  fish before canning as it is not fully cooked.
+
+
+  ### Local adaptation notes
+
+  Availability of smoked fish may vary by region. Ensure fish is smoked using tested
+  methods.'
+structured_data:
+  goal: Safely preserve smoked fish using pressure canning.
+  deliverables: Canned smoked fish in pint jars.
+  acceptance_criteria: Fish is safely canned and shelf-stable, with no signs of spoilage.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Follow exact processing times and pressures to prevent
+    contamination.'
+  implementation:
+    smallest_viable_version: Pack smoked fish into jars and process in a pressure
+      canner.
+    tools:
+    - Pressure canner
+    materials:
+    - Pint canning jars
+    - Smoked fish
+    expected_time: Approximately 2 hours
+    expected_cost: $5-$20
+    success_checks:
+    - Jars are sealed properly
+    - Fish is preserved without spoilage
+    stop_conditions:
+    - Incorrect pressure or time
+    - Signs of spoilage
+    common_mistakes:
+    - Using incorrect pressure
+    - Overpacking jars
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If unsure about pressure settings
+    - If jars do not seal properly
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning smoked fish using a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Follow these recommended canning instructions carefully. Use a 16 to
+      22 quart pressure canner for this procedure; do not use smaller pressure saucepans.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_002
+  claim_text: Canning smoked fish allows for long-term preservation, making it possible
+    to enjoy this food without refrigeration.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Lightly smoked ish is recommended for canning because the smoked lavor
+      will become stronger and the lesh drier after processing.
+    start_char: 0
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_003
+  claim_text: It requires careful attention to processing times and pressures to prevent
+    foodborne illness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: It is critical to product safety that the processing directions are followed
+      exactly.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_004
+  claim_text: Thaw smoked fish in the refrigerator if previously frozen.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: If smoked ish has been frozen, thaw in the refrigerator until no ice
+      crystals remain before canning.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_005
+  claim_text: Cut fish into pieces that fit vertically in pint jars, leaving a 1-inch
+    headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: cut ish into pieces that will it vertically into pint canning jars, leaving
+      1-inch headspace.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_006
+  claim_text: Pack fish into hot jars without adding liquid.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Pack smoked ish vertically into hot jars, leaving 1-inch headspace between
+      the pieces and the top rim of the jar. The ish may be packed either loosely
+      or tightly. Do not add liquid to the jars.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_007
+  claim_text: Fill the pressure canner with 4 quarts of cool tap water and place jars
+    on the rack.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: measure 4 quarts (16 cups) of cool tap water and pour into the pressure
+      canner.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_008
+  claim_text: Process for 110 minutes at the appropriate pressure for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Recommended process time for Smoked Fish in a dial-gauge pressure canner...
+      Process Time 110 min
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_009
+  claim_text: Using incorrect pressure or processing time can lead to unsafe food.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: It is critical to product safety that the processing directions are followed
+      exactly.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_010
+  claim_text: Strong flavors may develop if the fish is heavily smoked.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Lightly smoked ish is recommended for canning because the smoked lavor
+      will become stronger and the lesh drier after processing.
+    start_char: 0
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_011
+  claim_text: Ensure the correct pressure is used for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: Recommended process time for Smoked Fish in a dial-gauge pressure canner...
+      Canner Pressure (PSI) at Altitudes of
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.smoked-fish-canning
+  claim_id: clm_012
+  claim_text: Do not taste lightly smoked fish before canning as it is not fully cooked.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 143
+    page_end: 144
+    segment_id: src.usda.home-canning.2015::seg_000201
+    excerpt: However, because it has not yet been cooked, do not taste lightly smoked
+      ish before canning.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000201
+bundle_overrides:
+  hook: Canning smoked fish allows you to enjoy this delicacy year-round without refrigeration,
+    but it requires precise methods to ensure safety.
+  primer: Canning smoked fish is a method of preserving fish that has been lightly
+    smoked, allowing it to be stored without refrigeration for extended periods. This
+    process involves using a pressure canner, which is essential for safely preserving
+    low-acid foods like fish. The pressure canner reaches higher temperatures than
+    boiling water canners, which is necessary to eliminate the risk of botulism, a
+    potentially fatal foodborne illness. Before starting, ensure you have a 16 to
+    22 quart pressure canner, pint canning jars, and smoked fish. If your fish has
+    been frozen, it must be thawed in the refrigerator until no ice crystals remain.
+    The fish should be cut into pieces that fit vertically in the jars, leaving a
+    1-inch headspace. It's important not to add any liquid to the jars, as the fish
+    will release its own juices during processing. The jars are then processed in
+    the pressure canner for 110 minutes at the appropriate pressure for your altitude.
+    This method not only preserves the fish but also intensifies its smoky flavor,
+    making it a delicious addition to your pantry.
+  guide: '1. **Prepare the Fish**: If your smoked fish has been frozen, thaw it in
+    the refrigerator until completely defrosted. Cut the fish into pieces that will
+    fit vertically in pint jars, ensuring you leave a 1-inch headspace at the top
+    of each jar.
+
+
+    2. **Pack the Jars**: Sterilize your pint jars and keep them hot. Pack the fish
+    pieces into the jars without adding any liquid. The fish should be packed either
+    loosely or tightly, but ensure the 1-inch headspace is maintained.
+
+
+    3. **Prepare the Canner**: Pour 4 quarts of cool tap water into your pressure
+    canner. Place the jars on the rack inside the canner.
+
+
+    4. **Seal and Process**: Clean the rims of the jars with a clean, damp paper towel
+    to ensure a good seal. Place the lids on the jars and screw on the bands until
+    fingertip tight. Close the canner lid and follow the manufacturer''s instructions
+    to vent the canner for 10 minutes before pressurizing.
+
+
+    5. **Processing**: Process the jars for 110 minutes at the pressure recommended
+    for your altitude. This is crucial to ensure the fish is safe to eat.
+
+
+    6. **Cooling and Storing**: Once processing is complete, allow the canner to depressurize
+    naturally. Remove the jars and let them cool on a towel or rack for 12-24 hours.
+    Check the seals before storing the jars in a cool, dark place.'
+  reference:
+  - Use a 16 to 22 quart pressure canner.
+  - Thaw smoked fish in the refrigerator if previously frozen.
+  - Cut fish to fit vertically in pint jars, leaving a 1-inch headspace.
+  - Do not add liquid to jars.
+  - Process for 110 minutes at the correct pressure for your altitude.
+  - Ensure jars are sealed properly before storage.
+  worksheet:
+  - List the materials needed for canning smoked fish.
+  - Describe the steps to prepare smoked fish for canning.
+  - Explain why it's important to use a pressure canner for this process.
+  - Calculate the processing pressure needed for your altitude.
+  - Outline the steps to check if the jars are sealed properly after processing.
+  teach_forward_kit:
+    three_minute_version: Canning smoked fish involves using a pressure canner to
+      safely preserve lightly smoked fish. The fish is packed into pint jars without
+      liquid, leaving a 1-inch headspace, and processed for 110 minutes at the appropriate
+      pressure for your altitude. This method ensures long-term preservation and enhances
+      the smoky flavor.
+    ten_minute_outline:
+    - Introduction to canning smoked fish and its benefits.
+    - Materials and equipment needed.
+    - Step-by-step preparation and packing of fish.
+    - Importance of using a pressure canner and correct processing times.
+    - Checking seals and storing canned fish.
+    - Safety considerations and common mistakes.
+    discussion_prompts:
+    - Why is it necessary to use a pressure canner for smoked fish?
+    - What are the risks of not following the exact processing times and pressures?
+    - How does the canning process affect the flavor and texture of smoked fish?
+    - What are some signs that canned fish may not be safe to eat?

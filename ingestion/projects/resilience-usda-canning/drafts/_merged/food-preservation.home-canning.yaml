@@ -1,0 +1,196 @@
+id: food-preservation.home-canning
+slug: food-preservation.home-canning
+seed_type: concept_note
+co_type: concept_note
+canonical_title: Home Canning
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: medium
+risk_band: moderate
+summary_short: Introduction to home canning and its significance.
+summary_medium: Home canning is a method of preserving food by processing and sealing
+  it in airtight containers. This concept note provides an overview of its importance
+  and basic principles.
+plain_language: Home canning is a way to preserve food by sealing it in jars to keep
+  it safe to eat for a long time.
+markdown_body: '# What this is
+
+  Home canning is a method of food preservation that involves processing and sealing
+  food in airtight containers. This technique allows for long-term storage of food,
+  maintaining its safety and nutritional value.
+
+
+  # Why it matters
+
+  Home canning is important because it enables individuals to preserve seasonal produce,
+  reduce food waste, and ensure a supply of food that is free from preservatives.
+  It is a valuable skill for self-sufficiency and can contribute to food security.
+
+
+  # What you need
+
+  To start home canning, you need canning jars, lids, a large pot or pressure canner,
+  and basic kitchen utensils. It''s also important to have access to fresh produce
+  and a reliable source of canning recipes.
+
+
+  # How to do it
+
+  The process involves preparing the food, filling jars, sealing them with lids, and
+  processing them in a boiling water bath or pressure canner to ensure they are airtight.
+  It''s crucial to follow tested recipes to ensure safety.
+
+
+  # Common failure modes
+
+  Common issues include jars not sealing properly, food spoilage due to improper processing,
+  and contamination from unsterilized equipment.
+
+
+  # Safety/boundary notes
+
+  Always use tested recipes and follow guidelines to prevent foodborne illnesses.
+  Ensure all equipment is clean and jars are properly sealed.
+
+
+  # Local adaptation notes
+
+  Adjust recipes and processing times based on altitude and local produce availability.'
+structured_data:
+  definition: Home canning is a method of preserving food by sealing it in airtight
+    containers.
+  key_questions:
+  - What are the basic steps involved in home canning?
+  - Why is it important to follow tested recipes?
+  - What equipment is necessary for home canning?
+  misconceptions:
+  - Canning is only for fruits and vegetables.
+  - Any jar can be used for canning.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.home-canning
+  claim_id: clm_001
+  claim_text: Home canning is a method of food preservation that involves processing
+    and sealing food in airtight containers.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Home canning has changed greatly in the 180 years since it was introduced
+      as a way to preserve food.
+    start_char: 0
+    end_char: 80
+    support_strength: medium
+- object_id: food-preservation.home-canning
+  claim_id: clm_002
+  claim_text: This technique allows for long-term storage of food, maintaining its
+    safety and nutritional value.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Scientists have found ways to produce safer, higher quality products.
+    start_char: 81
+    end_char: 136
+    support_strength: medium
+- object_id: food-preservation.home-canning
+  claim_id: clm_003
+  claim_text: Home canning is important because it enables individuals to preserve
+    seasonal produce, reduce food waste, and ensure a supply of food that is free
+    from preservatives.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: This publication contains many new research-based recommendations for
+      canning safer and better quality food at home.
+    start_char: 437
+    end_char: 523
+    support_strength: medium
+- object_id: food-preservation.home-canning
+  claim_id: clm_004
+  claim_text: To start home canning, you need canning jars, lids, a large pot or pressure
+    canner, and basic kitchen utensils.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: The first part of this publication explains the scientific principles
+      on which canning techniques are based, discusses canning equipment, and describes
+      the proper use of jars and lids.
+    start_char: 137
+    end_char: 276
+    support_strength: medium
+- object_id: food-preservation.home-canning
+  claim_id: clm_005
+  claim_text: The process involves preparing the food, filling jars, sealing them
+    with lids, and processing them in a boiling water bath or pressure canner to ensure
+    they are airtight.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: It describes basic canning ingredients and procedures and how to use
+      them to achieve safe, high-quality canned products.
+    start_char: 277
+    end_char: 356
+    support_strength: medium
+- object_id: food-preservation.home-canning
+  claim_id: clm_006
+  claim_text: Common issues include jars not sealing properly, food spoilage due to
+    improper processing, and contamination from unsterilized equipment.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: 'Caution: All home-canned foods should be canned according to the procedures
+      in this Guide. Low-acid and tomato foods not canned according to the recommendations
+      in this publication or according to other USDA-endorsed recommendations present
+      a risk of botulism.'
+    start_char: 0
+    end_char: 233
+    support_strength: strong
+- object_id: food-preservation.home-canning
+  claim_id: clm_007
+  claim_text: Always use tested recipes and follow guidelines to prevent foodborne
+    illnesses.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 3
+    page_end: 3
+    segment_id: src.usda.home-canning.2015::seg_000004
+    excerpt: 'Caution: All home-canned foods should be canned according to the procedures
+      in this Guide.'
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: food-preservation.home-canning
+  claim_id: clm_008
+  claim_text: Adjust recipes and processing times based on altitude and local produce
+    availability.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 4
+    page_end: 4
+    segment_id: src.usda.home-canning.2015::seg_000005
+    excerpt: Finally, processing adjustments for altitudes above sea level are given
+      for each food.
+    start_char: 357
+    end_char: 436
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000002

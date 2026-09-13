@@ -1,0 +1,196 @@
+id: food-preservation.why-canning
+slug: food-preservation.why-canning
+seed_type: extracted
+co_type: concept_note
+canonical_title: Why Canning Foods is Beneficial
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Explains the benefits of canning foods, including cost savings and
+  nutritional preservation.
+summary_medium: Canning is a cost-effective method to preserve food, retaining nutritional
+  value and preventing spoilage.
+plain_language: Canning food at home can save money and keep food nutritious for longer
+  periods.
+markdown_body: '### What this is
+
+  Canning is a method of preserving food by processing and sealing it in airtight
+  containers.
+
+
+  ### Why it matters
+
+  Canning helps save money by preserving homegrown food and can retain more nutrients
+  than some store-bought produce. It also prevents food spoilage and allows for enjoying
+  seasonal foods year-round.
+
+
+  ### What you need
+
+  High-quality fresh produce, canning jars, lids, and a reliable canning method.
+
+
+  ### How to do it
+
+  Select fresh produce, prepare it according to canning guidelines, and process it
+  in jars using a water bath or pressure canner to ensure a proper seal.
+
+
+  ### Common failure modes
+
+  Using poor quality produce, jars failing to seal, and improper storage leading to
+  spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper canning techniques to avoid foodborne illnesses.
+
+
+  ### Local adaptation notes
+
+  Adjust canning methods based on local produce availability and climate conditions.'
+structured_data:
+  definition: Canning is a method of preserving food by processing and sealing it
+    in airtight containers.
+  key_questions:
+  - How does canning preserve food?
+  - What are the nutritional benefits of canning?
+  - What are common issues in canning?
+  misconceptions:
+  - Canning always reduces nutritional value significantly.
+  - All canned foods are less healthy than fresh foods.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.why-canning
+  claim_id: clm_001
+  claim_text: Canning is a method of preserving food by processing and sealing it
+    in airtight containers.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: Canning can be a safe and economical way to preserve quality food at
+      home.
+    start_char: 0
+    end_char: 67
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_002
+  claim_text: Canning helps save money by preserving homegrown food and can retain
+    more nutrients than some store-bought produce.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: Disregarding the value of your labor, canning homegrown food may save
+      you half the cost of buying commercially canned food.
+    start_char: 68
+    end_char: 177
+    support_strength: strong
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: If vegetables are handled properly and canned promptly after harvest,
+      they can be more nutritious than fresh produce sold in local stores.
+    start_char: 539
+    end_char: 664
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_003
+  claim_text: It also prevents food spoilage and allows for enjoying seasonal foods
+    year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: Proper canning practices... prevent the growth of undesirable bacteria,
+      yeasts, and molds; and help form a high vacuum in jars.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_004
+  claim_text: High-quality fresh produce, canning jars, lids, and a reliable canning
+    method.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: carefully selecting and washing fresh
+      food, using acceptable jars and self-sealing lids.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_005
+  claim_text: Select fresh produce, prepare it according to canning guidelines, and
+    process it in jars using a water bath or pressure canner to ensure a proper seal.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: carefully selecting and washing fresh
+      food, processing jars in a boiling-water or pressure canner for the correct
+      period of time.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_006
+  claim_text: Using poor quality produce, jars failing to seal, and improper storage
+    leading to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: The advantages of home canning are lost when you start with poor quality
+      fresh foods; when jars fail to seal properly; when food spoils.
+    start_char: 665
+    end_char: 765
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_007
+  claim_text: Ensure proper canning techniques to avoid foodborne illnesses.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Growth of the bacterium Clostridium botulinum in canned food may cause
+      botulism—a deadly form of food poisoning.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.why-canning
+  claim_id: clm_008
+  claim_text: Adjust canning methods based on local produce availability and climate
+    conditions.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 19
+    page_end: 21
+    segment_id: src.usda.home-canning.2015::seg_000019
+    excerpt: Whether food should be processed in a pressure canner or boiling-water
+      canner to control botulinum bacteria depends on the acidity of the food.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000016

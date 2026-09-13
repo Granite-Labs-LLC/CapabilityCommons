@@ -1,0 +1,286 @@
+id: food-preservation.selecting-preparing-canning-vegetables
+slug: food-preservation.selecting-preparing-canning-vegetables
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Selecting, Preparing, and Canning Vegetables
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Learn how to select, prepare, and can vegetables safely.
+summary_medium: This guide provides instructions on selecting, preparing, and canning
+  vegetables to ensure safety and quality, focusing on proper techniques and equipment
+  use.
+plain_language: This guide helps you choose the right vegetables, prepare them properly,
+  and can them safely using a pressure canner.
+markdown_body: '### What this is
+
+  This guide explains how to select, prepare, and can vegetables and vegetable products
+  safely and effectively.
+
+
+  ### Why it matters
+
+  Proper canning techniques are crucial to prevent food spoilage and contamination,
+  ensuring that preserved vegetables are safe to eat.
+
+
+  ### What you need
+
+  You will need fresh vegetables, canning jars, and a pressure canner.
+
+
+  ### How to do it
+
+  Start by selecting fresh, high-quality vegetables. Wash and prepare them according
+  to the specific requirements of each type. Use a pressure canner to process the
+  vegetables, ensuring that the jars are sealed properly to prevent contamination.
+
+
+  ### Common failure modes
+
+  Improper sealing of jars and contamination during the canning process are common
+  issues.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the pressure canner is used correctly and maintain cleanliness throughout
+  the process.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of local vegetables and adapt canning practices to suit
+  regional preferences.'
+structured_data:
+  tools:
+  - pressure canner
+  materials:
+  - canning jars
+  success_criteria:
+  - Jars are sealed properly and stored without spoilage.
+  failure_modes:
+  - Improper sealing
+  - Contamination
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure; Maintain cleanliness'
+  implementation:
+    smallest_viable_version: Select fresh vegetables and can them using a pressure
+      canner.
+    tools:
+    - pressure canner
+    materials:
+    - canning jars
+    expected_time: 2-3 hours
+    expected_cost: $20-$50
+    success_checks:
+    - All jars are sealed properly.
+    - No signs of spoilage after storage.
+    stop_conditions:
+    - If jars do not seal properly, do not store them.
+    - If contamination is suspected, discard the batch.
+    common_mistakes:
+    - Not using a pressure canner for low-acid vegetables.
+    - Failing to maintain cleanliness during preparation.
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner.
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars consistently fail to seal, seek expert advice.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_001
+  claim_text: This guide explains how to select, prepare, and can vegetables and vegetable
+    products safely and effectively.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 112
+    page_end: 112
+    segment_id: src.usda.home-canning.2015::seg_000152
+    excerpt: Guide 4 Selecting, Preparing, and Canning Vegetables and Vegetable Products
+    start_char: 0
+    end_char: 73
+    support_strength: strong
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_002
+  claim_text: Proper canning techniques are crucial to prevent food spoilage and contamination,
+    ensuring that preserved vegetables are safe to eat.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 112
+    page_end: 112
+    segment_id: src.usda.home-canning.2015::seg_000152
+    excerpt: Guide 4 Selecting, Preparing, and Canning Vegetables and Vegetable Products
+    start_char: 0
+    end_char: 73
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_003
+  claim_text: You will need fresh vegetables, canning jars, and a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: An average of 24-1/2 pounds is needed per canner load of 7 quarts; an
+      average of 16 pounds is needed per canner load of 9 pints.
+    start_char: 0
+    end_char: 73
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_004
+  claim_text: Start by selecting fresh, high-quality vegetables. Wash and prepare
+    them according to the specific requirements of each type. Use a pressure canner
+    to process the vegetables, ensuring that the jars are sealed properly to prevent
+    contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Use tender, tight-tipped spears, 4 to 6 inches long. Wash asparagus and
+      trim of tough scales.
+    start_char: 0
+    end_char: 73
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_005
+  claim_text: Improper sealing of jars and contamination during the canning process
+    are common issues.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 73
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_006
+  claim_text: Ensure that the pressure canner is used correctly and maintain cleanliness
+    throughout the process.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 114
+    page_end: 114
+    segment_id: src.usda.home-canning.2015::seg_000154
+    excerpt: Recommended process time for Asparagus in a dial-gauge pressure canner
+    start_char: 0
+    end_char: 73
+    support_strength: medium
+- object_id: food-preservation.selecting-preparing-canning-vegetables
+  claim_id: clm_007
+  claim_text: Consider the availability of local vegetables and adapt canning practices
+    to suit regional preferences.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 112
+    page_end: 112
+    segment_id: src.usda.home-canning.2015::seg_000153
+    excerpt: Table of Contents
+    start_char: 0
+    end_char: 73
+    support_strength: weak
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000152
+bundle_overrides:
+  hook: Preserving your own vegetables not only saves money but also ensures you have
+    delicious, safe-to-eat produce all year round.
+  primer: Canning vegetables is a time-honored method of preserving food that allows
+    you to enjoy the taste of fresh produce long after the growing season has ended.
+    The process involves selecting high-quality vegetables, preparing them correctly,
+    and using a pressure canner to safely seal them in jars. This method is crucial
+    for preventing spoilage and contamination, ensuring that your preserved vegetables
+    remain safe to eat. Proper canning techniques are essential, as improper sealing
+    or contamination can lead to foodborne illnesses. By following tested recipes
+    and maintaining cleanliness throughout the process, you can successfully preserve
+    your vegetables. This guide will walk you through the necessary steps, from selecting
+    the best produce to ensuring your jars are sealed correctly.
+  guide: '1. **Select Fresh Vegetables**: Choose high-quality, fresh vegetables. Look
+    for those that are ripe and free from blemishes or signs of spoilage.
+
+
+    2. **Prepare the Vegetables**: Wash the vegetables thoroughly under running water.
+    Depending on the type, you may need to peel, chop, or blanch them. Follow specific
+    preparation guidelines for each vegetable type.
+
+
+    3. **Gather Your Equipment**: You will need canning jars, lids, and a pressure
+    canner. Ensure all equipment is clean and in good working condition.
+
+
+    4. **Fill the Jars**: Pack the prepared vegetables into the jars, leaving the
+    recommended headspace. Remove any air bubbles by gently tapping the jars or using
+    a non-metallic spatula.
+
+
+    5. **Seal the Jars**: Wipe the rims of the jars with a clean, damp cloth to remove
+    any residue. Place the lids on the jars and screw on the bands until fingertip
+    tight.
+
+
+    6. **Process in a Pressure Canner**: Follow the manufacturer''s instructions for
+    your pressure canner. Process the jars at the recommended pressure and time for
+    the specific vegetable and jar size.
+
+
+    7. **Cool and Store**: Once processing is complete, allow the jars to cool undisturbed
+    for 12-24 hours. Check the seals by pressing the center of each lid. If it does
+    not pop back, the jar is sealed. Store sealed jars in a cool, dark place.'
+  reference:
+  - Select fresh, blemish-free vegetables.
+  - Use a pressure canner for low-acid vegetables.
+  - Maintain cleanliness throughout the process.
+  - Leave recommended headspace in jars.
+  - Process jars at correct pressure and time.
+  - Check seals after cooling.
+  worksheet:
+  - List five vegetables you want to can and research their specific preparation requirements.
+  - Practice packing a jar with water to understand headspace and air bubble removal.
+  - Simulate the sealing process by practicing with empty jars and lids.
+  - Create a checklist for the canning process to ensure no steps are missed.
+  - Research local vegetable availability and plan a canning schedule based on seasonal
+    produce.
+  teach_forward_kit:
+    three_minute_version: Canning vegetables involves selecting fresh produce, preparing
+      them properly, and using a pressure canner to safely preserve them. This process
+      prevents spoilage and ensures food safety. Key steps include washing and preparing
+      vegetables, filling jars with the correct headspace, and processing them in
+      a pressure canner. Proper sealing and cleanliness are crucial to avoid contamination.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Importance of selecting high-quality vegetables.
+    - Step-by-step canning process overview.
+    - Common mistakes and how to avoid them.
+    - Safety tips and ensuring proper sealing.
+    - Discussion on local adaptation and seasonal planning.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid vegetables?
+    - What are some common mistakes in the canning process, and how can they be prevented?
+    - How can you adapt canning practices to suit local vegetable availability?
+    - Discuss the importance of cleanliness in the canning process.
+    - What are the signs of a properly sealed jar?

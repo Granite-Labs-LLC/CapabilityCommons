@@ -1,0 +1,208 @@
+id: food-preservation.pie-fillings-overview
+slug: food-preservation.pie-fillings-overview
+seed_type: extracted
+co_type: concept_note
+canonical_title: Overview of Pie Fillings for Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: An overview of pie fillings for canning, focusing on the use of Clear
+  Jel® and fruit variety considerations.
+summary_medium: This concept note provides an overview of pie fillings for canning,
+  emphasizing the importance of using Clear Jel® for consistency and considerations
+  for fruit variety and flavor adjustments.
+plain_language: Learn how to make pie fillings for canning using Clear Jel® to ensure
+  a good consistency. Adjust fruit, sugar, and spices to your taste, but keep the
+  lemon juice amount the same for safety.
+markdown_body: '### What this is
+
+  This is an overview of how to prepare pie fillings for canning. It includes guidance
+  on using Clear Jel® as a thickening agent and considerations for selecting and adjusting
+  fruit varieties and flavors.
+
+
+  ### Why it matters
+
+  Using the right ingredients and methods ensures that canned pie fillings have a
+  desirable consistency and flavor, and are safe to store and use.
+
+
+  ### What you need
+
+  Clear Jel® (a modified corn starch), canning jars, selected fruits, sugar, spices,
+  and lemon juice.
+
+
+  ### How to do it
+
+  Select your fruit and adjust the sugar and spices to your taste. Use Clear Jel®
+  to achieve the right consistency. Do not alter the amount of lemon juice as it is
+  crucial for safety. For frozen fruits like cherries and blueberries, rinse off any
+  added sugar and use the juice to replace some of the water in the recipe.
+
+
+  ### Common failure modes
+
+  Using other starches instead of Clear Jel® can result in a runny sauce consistency.
+
+
+  ### Safety/boundary notes
+
+  Do not change the amount of lemon juice in the recipe as it is important for controlling
+  safety and storage stability.
+
+
+  ### Local adaptation notes
+
+  Clear Jel® may not be available in all grocery stores. Check with local extension
+  services for availability.'
+structured_data:
+  definition: Pie fillings for canning are prepared using specific ingredients and
+    methods to ensure safety and quality.
+  key_questions:
+  - Why is Clear Jel® preferred over other starches?
+  - How does fruit variety affect the flavor of pie fillings?
+  - Why is the amount of lemon juice important?
+  misconceptions:
+  - Any starch can be used for pie fillings.
+  - The amount of lemon juice can be adjusted without affecting safety.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_001
+  claim_text: This is an overview of how to prepare pie fillings for canning. It includes
+    guidance on using Clear Jel® as a thickening agent and considerations for selecting
+    and adjusting fruit varieties and flavors.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: '"Clear Jel®" is a chemically modified corn starch that produces excellent
+      sauce consistency even after fillings are canned and baked. Other available
+      starches break down when used in these pie fillings, causing a runny sauce consistency.
+      Because the variety of fruit may alter the flavor of the fruit pie, it is suggested
+      that you first make a single quart, make a pie with it, and serve. Then adjust
+      the sugar and spices in the recipe to suit your personal preferences.'
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_002
+  claim_text: Using the right ingredients and methods ensures that canned pie fillings
+    have a desirable consistency and flavor, and are safe to store and use.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: The following fruit fillings are excellent and safe products. Each canned
+      quart makes one 8-inch to 9-inch pie. The filling may be used as toppings on
+      dessert or pastries.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_003
+  claim_text: Clear Jel® (a modified corn starch), canning jars, selected fruits,
+    sugar, spices, and lemon juice.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: '"Clear Jel®" is a chemically modified corn starch that produces excellent
+      sauce consistency even after fillings are canned and baked.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_004
+  claim_text: Select your fruit and adjust the sugar and spices to your taste. Use
+    Clear Jel® to achieve the right consistency. Do not alter the amount of lemon
+    juice as it is crucial for safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: Because the variety of fruit may alter the flavor of the fruit pie, it
+      is suggested that you first make a single quart, make a pie with it, and serve.
+      Then adjust the sugar and spices in the recipe to suit your personal preferences.
+      The amount of lemon juice should not be altered, as it aids in controlling the
+      safety and storage stability of the fillings.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_005
+  claim_text: For frozen fruits like cherries and blueberries, rinse off any added
+    sugar and use the juice to replace some of the water in the recipe.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: When using frozen cherries and blueberries, select unsweetened fruit.
+      If sugar has been added, rinse it off while fruit is frozen. Thaw fruit, then
+      collect, measure, and use juice from fruit to partially replace the water specified
+      in the recipe.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_006
+  claim_text: Using other starches instead of Clear Jel® can result in a runny sauce
+    consistency.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: Other available starches break down when used in these pie fillings,
+      causing a runny sauce consistency.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_007
+  claim_text: Do not change the amount of lemon juice in the recipe as it is important
+    for controlling safety and storage stability.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: The amount of lemon juice should not be altered, as it aids in controlling
+      the safety and storage stability of the fillings.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.pie-fillings-overview
+  claim_id: clm_008
+  claim_text: Clear Jel® may not be available in all grocery stores. Check with local
+    extension services for availability.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 77
+    segment_id: src.usda.home-canning.2015::seg_000102
+    excerpt: Clear Jel® is available only through a few supply outlets and is not
+      currently available in grocery stores. Find out about its availability prior
+      to gathering other ingredients to make these pie fillings. If you cannot find
+      it, ask your county Extension family and consumer sciences educator about sources
+      for Clear Jel®.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000102

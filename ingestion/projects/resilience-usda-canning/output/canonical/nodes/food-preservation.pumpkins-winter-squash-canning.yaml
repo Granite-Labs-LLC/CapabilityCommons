@@ -1,0 +1,355 @@
+id: food-preservation.pumpkins-winter-squash-canning
+slug: food-preservation.pumpkins-winter-squash-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Pumpkins and Winter Squash
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning pumpkins and winter squash using a pressure canner.
+summary_medium: Learn how to safely can pumpkins and winter squash by cutting into
+  cubes, boiling, and processing in a pressure canner. Includes quantity, quality,
+  and processing time guidelines.
+plain_language: This guide explains how to can pumpkins and winter squash. You'll
+  need to cut them into cubes, boil them, and use a pressure canner to process them
+  safely.
+markdown_body: "### What this is\nThis is a guide for canning pumpkins and winter\
+  \ squash using a pressure canner. It includes instructions on preparing the vegetables,\
+  \ the necessary equipment, and the processing times required for safe preservation.\n\
+  \n### Why it matters\nCanning pumpkins and winter squash allows you to preserve\
+  \ these nutritious vegetables for long-term storage, making them available year-round.\
+  \ Proper canning prevents spoilage and ensures food safety.\n\n### What you need\n\
+  You will need a pressure canner, jars, lids, and boiling water. The vegetables should\
+  \ be mature with a hard rind and stringless pulp.\n\n### How to do it\n1. Wash the\
+  \ pumpkins or squash, remove seeds, and cut into 1-inch slices. Peel and cut into\
+  \ 1-inch cubes. \n2. Boil cubes for 2 minutes. \n3. Fill hot jars with cubes and\
+  \ cooking liquid, leaving 1-inch headspace. \n4. Remove air bubbles, adjust headspace,\
+  \ wipe rims, and adjust lids. \n5. Process in a pressure canner: Pints for 55 minutes\
+  \ and quarts for 90 minutes at the appropriate pressure for your altitude.\n\n###\
+  \ Common failure modes\nIncorrect pressure or incomplete seal can lead to spoilage.\
+  \ Ensure the pressure is correct for your altitude and that jars are sealed properly.\n\
+  \n### Safety/boundary notes\nEnsure the pressure canner is set to the correct pressure\
+  \ for your altitude to prevent foodborne illness.\n\n### Local adaptation notes\n\
+  Consider the availability of pumpkins and squash in your area and adjust the pressure\
+  \ settings based on local altitude."
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials:
+  - pumpkins
+  - winter squash
+  - boiling water
+  success_criteria:
+  - Jars are sealed properly
+  - Canned product is shelf-stable
+  failure_modes:
+  - Incorrect pressure
+  - Incomplete seal
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude'
+  implementation:
+    smallest_viable_version: Canning a small batch of pumpkin cubes using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - pumpkins
+    - winter squash
+    - boiling water
+    expected_time: Approximately 2 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - No spoilage after cooling
+    stop_conditions:
+    - Pressure not reaching required level
+    - Jars not sealing
+    common_mistakes:
+    - Incorrect pressure setting
+    - Overfilling jars
+    variants:
+    - label: Urban
+      when: Limited space for canning
+      notes: Consider smaller batches.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stovetop pressure canner.
+    when_to_escalate:
+    - If pressure cannot be maintained
+    - If jars do not seal
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning pumpkins and winter squash using a pressure
+    canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: PUMPKINS AND WINTER SQUASH—CUBED
+    start_char: 0
+    end_char: 40
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_002
+  claim_text: It includes instructions on preparing the vegetables, the necessary
+    equipment, and the processing times required for safe preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Procedure: Wash, remove seeds, cut into 1-inch-wide slices, and peel.
+      Cut flesh into 1-inch cubes. Boil 2 minutes in water. Fill hot jars with cubes
+      and cooking liquid, leaving 1-inch headspace. Remove air bubbles and adjust
+      headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust
+      lids and process.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_003
+  claim_text: Canning pumpkins and winter squash allows you to preserve these nutritious
+    vegetables for long-term storage, making them available year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Quality: Pumpkins and squash should have a hard rind and stringless,
+      mature pulp of ideal quality for cooking fresh.'
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_004
+  claim_text: Proper canning prevents spoilage and ensures food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Caution: Do not mash or puree.'
+    start_char: 0
+    end_char: 30
+    support_strength: medium
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_005
+  claim_text: You will need a pressure canner, jars, lids, and boiling water.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Procedure: Wash, remove seeds, cut into 1-inch-wide slices, and peel.
+      Cut flesh into 1-inch cubes. Boil 2 minutes in water. Fill hot jars with cubes
+      and cooking liquid, leaving 1-inch headspace. Remove air bubbles and adjust
+      headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust
+      lids and process.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_006
+  claim_text: The vegetables should be mature with a hard rind and stringless pulp.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Quality: Pumpkins and squash should have a hard rind and stringless,
+      mature pulp of ideal quality for cooking fresh.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_007
+  claim_text: Wash the pumpkins or squash, remove seeds, and cut into 1-inch slices.
+    Peel and cut into 1-inch cubes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Procedure: Wash, remove seeds, cut into 1-inch-wide slices, and peel.
+      Cut flesh into 1-inch cubes.'
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_008
+  claim_text: Boil cubes for 2 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Boil 2 minutes in water.
+    start_char: 0
+    end_char: 20
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_009
+  claim_text: Fill hot jars with cubes and cooking liquid, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Fill hot jars with cubes and cooking liquid, leaving 1-inch headspace.
+    start_char: 0
+    end_char: 80
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_010
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 120
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_011
+  claim_text: 'Process in a pressure canner: Pints for 55 minutes and quarts for 90
+    minutes at the appropriate pressure for your altitude.'
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Recommended process time for Pumpkin and Winter Squash in a dial-gauge
+      pressure canner... Hot Pints 55 min... Quarts 90 min...
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_012
+  claim_text: Incorrect pressure or incomplete seal can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: 'Caution: Do not mash or puree.'
+    start_char: 0
+    end_char: 30
+    support_strength: medium
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_013
+  claim_text: Ensure the pressure is correct for your altitude and that jars are sealed
+    properly.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Recommended process time for Pumpkin and Winter Squash in a dial-gauge
+      pressure canner... Canner Pressure (PSI) at Altitudes...
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.pumpkins-winter-squash-canning
+  claim_id: clm_014
+  claim_text: Ensure the pressure canner is set to the correct pressure for your altitude
+    to prevent foodborne illness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 127
+    page_end: 127
+    segment_id: src.usda.home-canning.2015::seg_000178
+    excerpt: Recommended process time for Pumpkin and Winter Squash in a dial-gauge
+      pressure canner... Canner Pressure (PSI) at Altitudes...
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000178
+bundle_overrides:
+  hook: Preserve the taste of fall all year round by learning how to safely can pumpkins
+    and winter squash using a pressure canner.
+  primer: Canning pumpkins and winter squash is a great way to enjoy these nutritious
+    vegetables throughout the year. The process involves using a pressure canner,
+    which is essential for safely preserving low-acid foods like pumpkins and squash.
+    By canning, you can store these vegetables for long periods without spoilage,
+    making them a convenient addition to your pantry. The key to successful canning
+    is ensuring that the vegetables are mature, with a hard rind and stringless pulp.
+    Proper preparation and processing are crucial to prevent foodborne illnesses and
+    ensure the jars are sealed correctly. This guide will walk you through the necessary
+    steps, from preparing the vegetables to processing them in a pressure canner,
+    ensuring you have a safe and delicious product to enjoy year-round.
+  guide: 'To can pumpkins and winter squash, you''ll need a pressure canner, jars,
+    lids, and boiling water. Start by selecting mature pumpkins or squash with a hard
+    rind and stringless pulp. Wash the vegetables thoroughly, then remove the seeds
+    and cut them into 1-inch-wide slices. Peel the slices and cut the flesh into 1-inch
+    cubes. Boil the cubes in water for 2 minutes to prepare them for canning. Next,
+    fill hot jars with the boiled cubes and the cooking liquid, leaving a 1-inch headspace
+    at the top of each jar. Remove any air bubbles by gently tapping the jars or using
+    a non-metallic utensil. Adjust the headspace if necessary, then wipe the rims
+    of the jars with a clean, damp paper towel to ensure a good seal. Place the lids
+    on the jars and secure them with the rings. Process the jars in a pressure canner:
+    pints should be processed for 55 minutes, and quarts for 90 minutes, at the appropriate
+    pressure for your altitude. After processing, allow the jars to cool undisturbed.
+    Check that the lids have sealed properly before storing the jars in a cool, dark
+    place.'
+  reference:
+  - Use a pressure canner for low-acid foods.
+  - Select mature pumpkins or squash with a hard rind.
+  - Cut into 1-inch cubes.
+  - Boil cubes for 2 minutes.
+  - Leave 1-inch headspace in jars.
+  - Process pints for 55 minutes, quarts for 90 minutes.
+  - Adjust pressure for your altitude.
+  worksheet:
+  - List the equipment needed for canning pumpkins and winter squash.
+  - Describe the steps to prepare the vegetables for canning.
+  - Explain why a pressure canner is necessary for this process.
+  - Calculate the processing time for your altitude.
+  - Practice filling jars with the correct headspace and removing air bubbles.
+  teach_forward_kit:
+    three_minute_version: Canning pumpkins and winter squash involves cutting them
+      into cubes, boiling for 2 minutes, and processing in a pressure canner. Ensure
+      jars are filled with a 1-inch headspace and process pints for 55 minutes and
+      quarts for 90 minutes, adjusting for altitude.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Necessary equipment and ingredients.
+    - Step-by-step preparation of pumpkins and squash.
+    - Importance of using a pressure canner.
+    - Detailed processing times and altitude adjustments.
+    - Safety tips and common mistakes to avoid.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid foods?
+    - What are the risks of not adjusting for altitude?
+    - How can you ensure that jars are sealed properly?
+    - What are some signs of spoilage in canned goods?

@@ -1,0 +1,299 @@
+id: food-preservation.jelly-without-pectin
+slug: food-preservation.jelly-without-pectin
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Making Jelly Without Added Pectin
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Make jelly using fruits naturally high in pectin.
+summary_medium: Learn how to make jelly without added pectin using firm fruits that
+  are naturally high in pectin.
+plain_language: This guide helps you make jelly without using commercial pectin by
+  selecting and preparing fruits that naturally contain enough pectin.
+markdown_body: "### What this is\nThis project blueprint provides instructions for\
+  \ making jelly without added pectin by using fruits that are naturally high in pectin.\n\
+  \n### Why it matters\nMaking jelly without added pectin allows you to use natural\
+  \ ingredients and can be more cost-effective. It also helps in understanding the\
+  \ natural properties of fruits.\n\n### What you need\nYou will need firm fruits\
+  \ high in pectin, a large saucepan, a colander, cheesecloth or a jelly bag, and\
+  \ water as required.\n\n### How to do it\n1. Select a mixture of about 3/4 ripe\
+  \ and 1/4 underripe fruits. \n2. Wash all fruits thoroughly. \n3. Crush soft fruits\
+  \ or berries; cut firmer fruits into small pieces. \n4. Add water to the fruits\
+  \ as needed. \n5. Place the fruit and water in a large saucepan and bring to a boil.\
+  \ \n6. Simmer until the fruit is soft, stirring to prevent scorching. \n7. Strain\
+  \ the mixture through a colander lined with cheesecloth or a jelly bag to obtain\
+  \ clear juice.\n\n### Common failure modes\nCloudy jelly can occur if the juice\
+  \ is not properly strained. Insufficient jellying may happen if the fruit does not\
+  \ contain enough natural pectin.\n\n### Safety/boundary notes\nEnsure that all fruits\
+  \ are washed thoroughly to remove any contaminants.\n\n### Local adaptation notes\n\
+  Adapt the fruit selection based on local availability of fruits high in natural\
+  \ pectin."
+structured_data:
+  goal: Produce jelly without added pectin using natural fruit pectin.
+  deliverables: Clear, well-set jelly.
+  acceptance_criteria: The jelly should be clear and have a good set without the addition
+    of commercial pectin.
+  implementation:
+    smallest_viable_version: Use a small batch of fruit to test the jellying process.
+    tools:
+    - large saucepan
+    - colander
+    - cheesecloth
+    - jelly bag
+    materials:
+    - firm fruits high in pectin
+    - water
+    expected_time: 2-3 hours
+    expected_cost: low
+    success_checks:
+    - Jelly is clear and well-set
+    stop_conditions:
+    - Jelly does not set after cooling
+    common_mistakes:
+    - Using overripe fruits
+    - Not straining juice properly
+    variants:
+    - label: Urban
+      when: Limited access to fresh fruits
+      notes: Consider visiting local farmers' markets for fresh produce.
+    when_to_escalate:
+    - If jelly consistently fails to set, consider consulting a professional or using
+      commercial pectin.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_001
+  claim_text: This project blueprint provides instructions for making jelly without
+    added pectin by using fruits that are naturally high in pectin.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Use only firm fruits naturally high in pectin.
+    start_char: 0
+    end_char: 44
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_002
+  claim_text: Making jelly without added pectin allows you to use natural ingredients
+    and can be more cost-effective.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Use only firm fruits naturally high in pectin.
+    start_char: 0
+    end_char: 44
+    support_strength: medium
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_003
+  claim_text: Select a mixture of about 3/4 ripe and 1/4 underripe fruits.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Select a mixture of about 3/4 ripe and 1/4 underripe fruit.
+    start_char: 45
+    end_char: 98
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_004
+  claim_text: Wash all fruits thoroughly.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Wash all fruits thoroughly before cooking.
+    start_char: 99
+    end_char: 134
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_005
+  claim_text: Crush soft fruits or berries; cut firmer fruits into small pieces.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Crush soft fruits or berries; cut firmer fruits into small pieces.
+    start_char: 135
+    end_char: 197
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_006
+  claim_text: Add water to the fruits as needed.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Add water to fruits that require it, as listed in the table of ingredients
+      below.
+    start_char: 198
+    end_char: 266
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_007
+  claim_text: Place the fruit and water in a large saucepan and bring to a boil.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Put fruit and water in large saucepan and bring to a boil.
+    start_char: 267
+    end_char: 316
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_008
+  claim_text: Simmer until the fruit is soft, stirring to prevent scorching.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Then simmer according to the times below until fruit is soft, while stirring
+      to prevent scorching.
+    start_char: 317
+    end_char: 396
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_009
+  claim_text: Strain the mixture through a colander lined with cheesecloth or a jelly
+    bag to obtain clear juice.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: When fruit is tender, strain through a colander, then strain through
+      a double layer of cheesecloth or a jelly bag.
+    start_char: 0
+    end_char: 115
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_010
+  claim_text: Cloudy jelly can occur if the juice is not properly strained.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 186
+    segment_id: src.usda.home-canning.2015::seg_000264
+    excerpt: Pressing or squeezing the bag or cloth will cause cloudy jelly.
+    start_char: 116
+    end_char: 165
+    support_strength: strong
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_011
+  claim_text: Insufficient jellying may happen if the fruit does not contain enough
+    natural pectin.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Use only firm fruits naturally high in pectin.
+    start_char: 0
+    end_char: 44
+    support_strength: medium
+- object_id: food-preservation.jelly-without-pectin
+  claim_id: clm_012
+  claim_text: Ensure that all fruits are washed thoroughly to remove any contaminants.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 185
+    page_end: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    excerpt: Wash all fruits thoroughly before cooking.
+    start_char: 99
+    end_char: 134
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000263
+bundle_overrides:
+  hook: Discover how to make delicious jelly using only natural ingredients, saving
+    money and avoiding added pectin.
+  primer: Making jelly without added pectin is a traditional method that relies on
+    the natural pectin found in certain fruits. Pectin is a natural thickening agent
+    that helps jelly set. By using fruits that are naturally high in pectin, such
+    as apples, quinces, and some berries, you can create jelly without needing commercial
+    pectin. This approach not only allows you to use more natural ingredients but
+    can also be more cost-effective. The process involves selecting the right mix
+    of ripe and underripe fruits, as underripe fruits tend to have higher pectin levels.
+    Proper preparation and cooking techniques are essential to ensure the jelly sets
+    correctly and remains clear. This method is perfect for those who enjoy traditional
+    cooking techniques and want to explore the natural properties of fruits.
+  guide: '1. **Select Fruits**: Choose a mixture of about 3/4 ripe and 1/4 underripe
+    fruits. This balance helps ensure there is enough natural pectin for the jelly
+    to set.
+
+    2. **Wash Fruits**: Thoroughly wash all fruits to remove any dirt or contaminants.
+
+    3. **Prepare Fruits**: Crush soft fruits or berries. For firmer fruits, cut them
+    into small pieces to help release their juices and pectin.
+
+    4. **Add Water**: Depending on the fruit, add water as needed to prevent sticking
+    and burning during cooking.
+
+    5. **Cook the Mixture**: Place the prepared fruit and water in a large saucepan.
+    Bring the mixture to a boil, then reduce the heat and simmer. Stir occasionally
+    to prevent scorching, and cook until the fruit is soft.
+
+    6. **Strain the Juice**: Once the fruit is tender, strain the mixture through
+    a colander lined with cheesecloth or a jelly bag to obtain clear juice. Avoid
+    pressing or squeezing the bag, as this can lead to cloudy jelly.
+
+    7. **Check for Pectin**: Test the juice for pectin content by placing a small
+    amount in a dish and adding a few drops of alcohol. If it forms a gel-like substance,
+    it has enough pectin.
+
+    8. **Cook the Jelly**: Return the clear juice to the saucepan and bring it to
+    a boil. Cook until it reaches the desired jelly consistency, which can be tested
+    by placing a small amount on a cold plate to see if it sets.'
+  reference:
+  - Use firm fruits naturally high in pectin.
+  - Select 3/4 ripe and 1/4 underripe fruits.
+  - Wash all fruits thoroughly.
+  - Crush soft fruits; cut firmer fruits into pieces.
+  - Add water as needed.
+  - Boil and simmer until fruit is soft.
+  - Strain through cheesecloth or jelly bag.
+  - Avoid pressing the bag to prevent cloudy jelly.
+  worksheet:
+  - List three fruits that are naturally high in pectin.
+  - Describe the process of testing juice for pectin content.
+  - Explain why it's important to use a mix of ripe and underripe fruits.
+  - Outline the steps to prevent jelly from becoming cloudy.
+  - Calculate the amount of water needed for a given fruit mixture.
+  teach_forward_kit:
+    three_minute_version: Learn to make jelly without added pectin by using fruits
+      high in natural pectin. Select a mix of ripe and underripe fruits, wash them
+      thoroughly, and prepare by crushing or cutting. Cook with water, strain for
+      clear juice, and boil until set.
+    ten_minute_outline:
+    - Introduction to natural pectin and its role in jelly making.
+    - 'Selecting and preparing fruits: ripe vs. underripe.'
+    - 'Cooking process: boiling and simmering.'
+    - Straining for clear juice and testing for pectin.
+    - Final cooking and setting the jelly.
+    - Common issues and troubleshooting.
+    discussion_prompts:
+    - What are the benefits of making jelly without added pectin?
+    - How does the ripeness of fruit affect the jelly-making process?
+    - What challenges might arise when using natural pectin, and how can they be addressed?
+    - Discuss the environmental and health impacts of using natural ingredients over
+      commercial additives.

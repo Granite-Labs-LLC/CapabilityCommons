@@ -1,0 +1,288 @@
+id: food-preservation.okra-canning
+slug: food-preservation.okra-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Okra
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: high
+summary_short: Guide to canning okra using a pressure canner.
+summary_medium: This project blueprint provides detailed instructions for canning
+  okra, including necessary quantities, quality selection, and processing times using
+  a pressure canner.
+plain_language: Learn how to preserve okra by canning it using a pressure canner.
+  This guide covers everything from selecting the right okra to processing it safely.
+markdown_body: '# What this is
+
+  This is a guide for canning okra using a pressure canner. It includes instructions
+  on selecting, preparing, and processing okra to ensure safe preservation.
+
+
+  # Why it matters
+
+  Canning okra allows you to preserve it for long-term storage, making it available
+  even when it''s out of season. Proper canning prevents spoilage and maintains nutritional
+  value.
+
+
+  # What you need
+
+  You''ll need a pressure canner, jars, lids, boiling water, and fresh okra. Optional:
+  salt for seasoning.
+
+
+  # How to do it
+
+  1. Select young, tender okra pods and discard any that are diseased or rust-spotted.
+  2. Wash and trim the ends of the pods. 3. Boil the okra in hot water for 2 minutes
+  and drain. 4. Fill hot jars with the okra and cooking liquid, leaving 1-inch headspace.
+  5. Add 1 teaspoon of salt per quart if desired. 6. Remove air bubbles, adjust headspace,
+  wipe rims, and adjust lids. 7. Process in a pressure canner according to the recommended
+  times and pressures for your altitude.
+
+
+  # Common failure modes
+
+  Incorrect pressure settings or incomplete seals can lead to spoilage. Ensure the
+  pressure is adjusted for your altitude and that jars are sealed properly.
+
+
+  # Safety/boundary notes
+
+  Always use the correct pressure for your altitude to ensure safety. Follow the recommended
+  processing times closely.
+
+
+  # Local adaptation notes
+
+  Consider the availability of okra in your area and adjust the pressure settings
+  based on your local altitude.'
+structured_data:
+  goal: To safely preserve okra by canning it using a pressure canner.
+  deliverables: Canned okra that is safely preserved and ready for long-term storage.
+  acceptance_criteria: Jars are sealed properly, and the okra is preserved without
+    spoilage.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure the pressure canner is set to the correct pressure
+    for your altitude.'
+  implementation:
+    smallest_viable_version: Can a small batch of okra using a pressure canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - fresh okra
+    - boiling water
+    - salt (optional)
+    expected_time: Approximately 2 hours
+    expected_cost: $5-$20
+    success_checks:
+    - Jars are sealed properly.
+    - No spoilage or discoloration in the canned okra.
+    stop_conditions:
+    - If the pressure canner does not reach the correct pressure.
+    - If jars do not seal properly.
+    common_mistakes:
+    - Not adjusting pressure for altitude.
+    - Failing to remove air bubbles before sealing jars.
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner.
+      notes: Consider borrowing a pressure canner or using a community kitchen.
+    when_to_escalate:
+    - If jars do not seal after processing.
+    - If there is any sign of spoilage in the canned okra.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.okra-canning
+  claim_id: clm_001
+  claim_text: Select young, tender okra pods and discard any that are diseased or
+    rust-spotted.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Select young, tender pods. Remove and discard diseased and rust-spotted
+      pods.
+    start_char: 104
+    end_char: 158
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_002
+  claim_text: Wash and trim the ends of the pods.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Wash pods and trim ends.
+    start_char: 160
+    end_char: 184
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_003
+  claim_text: Boil the okra in hot water for 2 minutes and drain.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Cover with hot water in a saucepan, boil 2 minutes and drain.
+    start_char: 186
+    end_char: 236
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_004
+  claim_text: Fill hot jars with the okra and cooking liquid, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Fill hot jars with hot okra and cooking liquid, leaving 1-inch headspace.
+    start_char: 238
+    end_char: 303
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_005
+  claim_text: Add 1 teaspoon of salt per quart if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Add 1 teaspoon of salt per quart to the jar, if desired.
+    start_char: 305
+    end_char: 354
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_006
+  claim_text: Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 356
+    end_char: 466
+    support_strength: strong
+- object_id: food-preservation.okra-canning
+  claim_id: clm_007
+  claim_text: Process in a pressure canner according to the recommended times and
+    pressures for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 123
+    page_end: 123
+    segment_id: src.usda.home-canning.2015::seg_000173
+    excerpt: Recommended process time for Okra in a dial-gauge pressure canner
+    start_char: 468
+    end_char: 524
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000173
+bundle_overrides:
+  hook: Preserve your garden's bounty and enjoy fresh okra year-round by learning
+    how to can it safely and effectively.
+  primer: Canning okra is a fantastic way to preserve this nutritious vegetable for
+    long-term storage, allowing you to enjoy its taste and benefits even when it's
+    out of season. The process involves using a pressure canner, which is essential
+    for safely preserving low-acid foods like okra. By following a few straightforward
+    steps, you can ensure that your canned okra remains safe to eat and retains its
+    nutritional value. The key to successful canning lies in selecting the right okra
+    pods, preparing them properly, and processing them at the correct pressure and
+    time for your altitude. This guide will walk you through each step, from selecting
+    young, tender pods to sealing the jars correctly. With a little practice, you'll
+    be able to can okra with confidence, reducing food waste and enjoying the fruits
+    of your labor throughout the year.
+  guide: '1. **Select Okra Pods**: Choose young, tender okra pods for the best results.
+    Discard any pods that are diseased or have rust spots, as these can affect the
+    quality and safety of your canned okra.
+
+
+    2. **Prepare the Okra**: Wash the okra pods thoroughly under running water to
+    remove any dirt or debris. Trim the ends of the pods to prepare them for canning.
+
+
+    3. **Blanch the Okra**: Place the okra in a saucepan and cover with hot water.
+    Bring the water to a boil and let the okra boil for 2 minutes. After boiling,
+    drain the okra immediately to stop the cooking process.
+
+
+    4. **Fill the Jars**: Fill hot, sterilized jars with the blanched okra and the
+    cooking liquid, leaving a 1-inch headspace at the top of each jar. If desired,
+    add 1 teaspoon of salt per quart for seasoning.
+
+
+    5. **Prepare the Jars for Canning**: Remove any air bubbles by gently tapping
+    the jars or using a non-metallic spatula. Adjust the headspace if necessary. Wipe
+    the rims of the jars with a clean, damp paper towel to ensure a good seal. Place
+    the lids on the jars and adjust the bands until they are fingertip-tight.
+
+
+    6. **Process the Jars**: Place the jars in a pressure canner and process them
+    according to the recommended times and pressures for your altitude. This step
+    is crucial for ensuring the safety of your canned okra.
+
+
+    7. **Cool and Store**: Once processed, allow the jars to cool undisturbed for
+    12-24 hours. Check the seals before storing the jars in a cool, dark place. Properly
+    sealed jars can be stored for up to a year.'
+  reference:
+  - Select young, tender okra pods.
+  - Wash and trim the ends of the pods.
+  - Boil okra in hot water for 2 minutes and drain.
+  - Fill hot jars with okra and cooking liquid, leaving 1-inch headspace.
+  - Add 1 teaspoon of salt per quart if desired.
+  - Remove air bubbles, adjust headspace, wipe rims, and adjust lids.
+  - Process in a pressure canner according to recommended times and pressures for
+    your altitude.
+  worksheet:
+  - Identify the signs of a diseased or rust-spotted okra pod.
+  - Practice trimming the ends of okra pods.
+  - Simulate the blanching process by timing a 2-minute boil.
+  - Calculate the correct headspace for a jar filled with okra.
+  - Experiment with adding salt to one jar and leaving another unsalted to compare
+    taste.
+  - Check the seals on cooled jars and identify any that did not seal properly.
+  teach_forward_kit:
+    three_minute_version: Canning okra involves selecting young pods, washing and
+      trimming them, blanching in boiling water, filling jars with okra and liquid,
+      and processing in a pressure canner. Ensure proper sealing and storage for long-term
+      preservation.
+    ten_minute_outline:
+    - Introduction to canning okra and its benefits.
+    - 'Step-by-step process: selection, preparation, and blanching.'
+    - Filling jars and adding optional salt.
+    - Sealing jars and processing in a pressure canner.
+    - Cooling, checking seals, and storing jars.
+    - Safety tips and common mistakes to avoid.
+    discussion_prompts:
+    - Why is it important to select young, tender okra pods for canning?
+    - What are the risks of not using a pressure canner for low-acid foods like okra?
+    - How can you ensure that your jars are properly sealed after processing?
+    - What are some creative ways to use canned okra in meals?

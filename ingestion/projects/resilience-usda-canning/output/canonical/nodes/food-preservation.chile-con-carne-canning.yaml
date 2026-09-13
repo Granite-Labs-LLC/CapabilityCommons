@@ -1,0 +1,375 @@
+id: food-preservation.chile-con-carne-canning
+slug: food-preservation.chile-con-carne-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Chile Con Carne
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning chile con carne using pressure canning.
+summary_medium: Detailed instructions for preparing and pressure canning chile con
+  carne, including preparation steps, jar filling, and processing times for different
+  altitudes.
+plain_language: This guide will help you safely can chile con carne at home using
+  a pressure canner. It includes steps for preparing the ingredients, filling jars,
+  and processing them at the correct pressure for your altitude.
+markdown_body: '### What this is
+
+  This is a step-by-step guide for canning chile con carne using a pressure canner.
+  It includes preparation of ingredients, filling jars, and processing them under
+  pressure to ensure safe preservation.
+
+
+  ### Why it matters
+
+  Canning chile con carne allows you to preserve this hearty meal for long-term storage,
+  making it convenient to enjoy at any time. Proper canning prevents spoilage and
+  ensures food safety.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, dried pinto or red kidney beans, ground beef,
+  onions, optional peppers, chili powder, tomatoes, and salt.
+
+
+  ### How to do it
+
+  1. Soak beans in water for 12-18 hours, then drain. 2. Cook beans with fresh water
+  and salt for 30 minutes, then drain. 3. Brown ground beef with onions and optional
+  peppers. 4. Combine all ingredients and simmer for 5 minutes. 5. Fill hot jars with
+  the mixture, leaving 1-inch headspace. 6. Process in a pressure canner for 75 minutes
+  at the appropriate pressure for your altitude.
+
+
+  ### Common failure modes
+
+  Using incorrect pressure or thickening the mixture can lead to unsafe canning results.
+
+
+  ### Safety/boundary notes
+
+  Ensure the correct pressure is used based on your altitude to avoid contamination
+  and ensure safety.
+
+
+  ### Local adaptation notes
+
+  Adjust the recipe based on the availability of local ingredients, such as different
+  types of peppers.'
+structured_data:
+  goal: Safely preserve chile con carne using pressure canning.
+  deliverables: 9 pints of canned chile con carne.
+  acceptance_criteria: Jars are sealed properly and processed at the correct pressure
+    for safety.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure is maintained throughout the canning
+    process to prevent contamination.'
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of chile con carne using
+      a pressure canner.
+    tools:
+    - Pressure canner
+    - Jars
+    materials:
+    - Dried pinto or red kidney beans
+    - Ground beef
+    - Onions
+    - Peppers (optional)
+    - Chili powder
+    - Tomatoes
+    - Salt
+    expected_time: Approximately 2 hours
+    expected_cost: $10-$30
+    success_checks:
+    - Jars are sealed and processed correctly
+    - No spoilage after storage
+    stop_conditions:
+    - Pressure is not maintained
+    - Jars do not seal
+    common_mistakes:
+    - Incorrect pressure settings
+    - Thickening the mixture
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner for this project.
+    when_to_escalate:
+    - If jars do not seal properly
+    - If there are signs of spoilage
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_001
+  claim_text: This is a step-by-step guide for canning chile con carne using a pressure
+    canner. It includes preparation of ingredients, filling jars, and processing them
+    under pressure to ensure safe preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: 'Procedure: Wash beans thoroughly and place them in a 2 qt. saucepan.
+      Add cold water to a level of 2 to 3 inches above the beans and soak 12 to 18
+      hours. Drain and discard water. Combine beans with 5-1/2 cups of fresh water
+      and 2 teaspoons salt. Bring to a boil. Reduce heat and simmer 30 minutes. Drain
+      and discard water. Brown ground beef, chopped onions, and peppers (if desired),
+      in a skillet. Drain off fat and add 3 teaspoons salt, pepper, chili powder,
+      tomatoes and drained cooked beans. Simmer 5 minutes. Caution: Do not thicken.
+      Fill hot jars, leaving 1-inch head-space. Remove air bubbles and adjust headspace
+      if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids
+      and process.'
+    start_char: 0
+    end_char: 697
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_002
+  claim_text: Canning chile con carne allows you to preserve this hearty meal for
+    long-term storage, making it convenient to enjoy at any time. Proper canning prevents
+    spoilage and ensures food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Fill hot jars, leaving 1-inch head-space. Remove air bubbles and adjust
+      headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust
+      lids and process.
+    start_char: 597
+    end_char: 697
+    support_strength: medium
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, dried pinto or red kidney beans,
+    ground beef, onions, optional peppers, chili powder, tomatoes, and salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: 3 cups dried pinto or red kidney beans, 5-1/2 cups water, 5 tsp salt
+      (separated), 3 lbs ground beef, 1-1/2 cups chopped onions, 1 cup chopped peppers
+      of your choice (optional), 3 to 6 tbsp chili powder, 2 quarts crushed or whole
+      tomatoes
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_004
+  claim_text: Soak beans in water for 12-18 hours, then drain.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Wash beans thoroughly and place them in a 2 qt. saucepan. Add cold water
+      to a level of 2 to 3 inches above the beans and soak 12 to 18 hours. Drain and
+      discard water.
+    start_char: 0
+    end_char: 140
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_005
+  claim_text: Cook beans with fresh water and salt for 30 minutes, then drain.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Combine beans with 5-1/2 cups of fresh water and 2 teaspoons salt. Bring
+      to a boil. Reduce heat and simmer 30 minutes. Drain and discard water.
+    start_char: 141
+    end_char: 229
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_006
+  claim_text: Brown ground beef with onions and optional peppers.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Brown ground beef, chopped onions, and peppers (if desired), in a skillet.
+    start_char: 230
+    end_char: 285
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_007
+  claim_text: Combine all ingredients and simmer for 5 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Drain off fat and add 3 teaspoons salt, pepper, chili powder, tomatoes
+      and drained cooked beans. Simmer 5 minutes.
+    start_char: 286
+    end_char: 355
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_008
+  claim_text: Fill hot jars with the mixture, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: Fill hot jars, leaving 1-inch head-space.
+    start_char: 597
+    end_char: 620
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_009
+  claim_text: Process in a pressure canner for 75 minutes at the appropriate pressure
+    for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: '| Recommended process time for Chile Con Carne in a dial-gauge pressure
+      canner |                                       |                 |                |                    |                    |                    |
+
+      |------------------------------------------------------------------------------|---------------------------------------|-----------------|----------------|--------------------|--------------------|--------------------|
+
+      |                                                                              |
+      Canner Pressure (PSI) at Altitudes of |                 |                |                    |                    |                    |
+
+      | Style<br>of Pack                                                             |
+      Jar<br>Size                           | Process<br>Time | 0–<br>2,000 ft | 2,001–<br>4,000
+      ft | 4,001–<br>6,000 ft | 6,001–<br>8,000 ft |
+
+      | Hot                                                                          |
+      Pints                                 | 75 min          | 11 lb          | 12
+      lb              | 13 lb              | 14 lb              |'
+    start_char: 698
+    end_char: 1226
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_010
+  claim_text: Using incorrect pressure or thickening the mixture can lead to unsafe
+    canning results.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: 'Caution: Do not thicken.'
+    start_char: 355
+    end_char: 374
+    support_strength: strong
+- object_id: food-preservation.chile-con-carne-canning
+  claim_id: clm_011
+  claim_text: Ensure the correct pressure is used based on your altitude to avoid
+    contamination and ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 138
+    page_end: 138
+    segment_id: src.usda.home-canning.2015::seg_000194
+    excerpt: '| Recommended process time for Chile Con Carne in a dial-gauge pressure
+      canner |                                       |                 |                |                    |                    |                    |
+
+      |------------------------------------------------------------------------------|---------------------------------------|-----------------|----------------|--------------------|--------------------|--------------------|
+
+      |                                                                              |
+      Canner Pressure (PSI) at Altitudes of |                 |                |                    |                    |                    |
+
+      | Style<br>of Pack                                                             |
+      Jar<br>Size                           | Process<br>Time | 0–<br>2,000 ft | 2,001–<br>4,000
+      ft | 4,001–<br>6,000 ft | 6,001–<br>8,000 ft |
+
+      | Hot                                                                          |
+      Pints                                 | 75 min          | 11 lb          | 12
+      lb              | 13 lb              | 14 lb              |'
+    start_char: 698
+    end_char: 1226
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000194
+bundle_overrides:
+  hook: Preserve your favorite hearty meal for any time of the year with safe and
+    convenient canning of chile con carne.
+  primer: Canning chile con carne is a practical way to store this delicious and hearty
+    meal for long-term use. By using a pressure canner, you ensure that the food is
+    preserved safely, preventing spoilage and maintaining its flavor. The process
+    involves preparing the ingredients, filling jars, and processing them under pressure.
+    This method is particularly important for low-acid foods like meats and beans,
+    as it prevents the growth of harmful bacteria such as Clostridium botulinum. The
+    key to successful canning is following the steps carefully, especially maintaining
+    the correct pressure based on your altitude. This guide will walk you through
+    the process, ensuring that your chile con carne is safely preserved and ready
+    to enjoy whenever you want.
+  guide: To can chile con carne, you'll need a pressure canner, jars, dried pinto
+    or red kidney beans, ground beef, onions, optional peppers, chili powder, tomatoes,
+    and salt. Begin by washing the beans thoroughly and soaking them in a saucepan
+    with water 2 to 3 inches above the beans for 12 to 18 hours. Drain and discard
+    the water. Next, cook the beans with 5-1/2 cups of fresh water and 2 teaspoons
+    of salt. Bring to a boil, reduce heat, and simmer for 30 minutes before draining
+    again. In a skillet, brown the ground beef with chopped onions and optional peppers.
+    Drain off the fat and add 3 teaspoons of salt, pepper, chili powder, tomatoes,
+    and the drained cooked beans. Simmer this mixture for 5 minutes. Fill hot jars
+    with the mixture, leaving a 1-inch headspace. Remove air bubbles and adjust the
+    headspace if needed. Wipe the rims of the jars with a dampened clean paper towel,
+    adjust the lids, and process in a pressure canner for 75 minutes. Ensure you use
+    the correct pressure for your altitude to avoid contamination.
+  reference:
+  - Pressure canner
+  - Jars
+  - Dried pinto or red kidney beans
+  - Ground beef
+  - Onions
+  - Peppers (optional)
+  - Chili powder
+  - Tomatoes
+  - Salt
+  - Soak beans 12-18 hours
+  - Simmer beans 30 minutes
+  - Brown beef with onions and peppers
+  - Simmer all ingredients 5 minutes
+  - Fill jars, 1-inch headspace
+  - Process 75 minutes at correct pressure
+  worksheet:
+  - List the ingredients needed for canning chile con carne.
+  - Describe the process of preparing the beans before canning.
+  - Explain why it is important to maintain the correct pressure during canning.
+  - Calculate the pressure needed for your altitude.
+  - Outline the steps to fill and seal the jars properly.
+  - Identify common mistakes and how to avoid them.
+  teach_forward_kit:
+    three_minute_version: Canning chile con carne involves soaking and cooking beans,
+      browning beef with onions and peppers, combining ingredients, and processing
+      in a pressure canner. Ensure correct pressure for your altitude to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Overview of necessary equipment and ingredients
+    - Step-by-step preparation of beans and meat
+    - Filling jars and ensuring proper headspace
+    - Processing in a pressure canner with altitude considerations
+    - Common mistakes and safety tips
+    discussion_prompts:
+    - Why is pressure canning necessary for low-acid foods?
+    - What are the risks of not maintaining the correct pressure?
+    - How can you adapt the recipe based on local ingredient availability?
+    - What are the signs of spoilage in canned goods?

@@ -1,0 +1,325 @@
+id: food-preservation.mushrooms-canning
+slug: food-preservation.mushrooms-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: 'Canning Mushrooms: Whole or Sliced'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning mushrooms using a pressure canner.
+summary_medium: Learn how to safely can whole or sliced mushrooms using a pressure
+  canner, including preparation, processing times, and safety guidelines.
+plain_language: This guide explains how to can mushrooms at home using a pressure
+  canner. It covers selecting the right mushrooms, preparing them, and processing
+  them safely.
+markdown_body: '### What this is
+
+  This is a guide for canning whole or sliced mushrooms using a pressure canner. It
+  includes instructions on selecting, preparing, and processing mushrooms to ensure
+  safe preservation.
+
+
+  ### Why it matters
+
+  Canning mushrooms allows you to preserve them for long-term storage, making them
+  available for use in various recipes throughout the year. Proper canning ensures
+  safety and maintains the quality of the mushrooms.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, boiling water, and optionally, salt
+  and ascorbic acid powder or vitamin C tablets.
+
+
+  ### How to do it
+
+  1. Select small to medium-sized domestic mushrooms with short stems and tight veils.
+  Avoid wild mushrooms.
+
+  2. Trim stems and discolored parts, soak in cold water for 10 minutes, and wash
+  thoroughly.
+
+  3. Boil mushrooms for 5 minutes.
+
+  4. Fill hot jars with mushrooms, leaving 1-inch headspace. Add salt and ascorbic
+  acid if desired.
+
+  5. Add fresh hot water, remove air bubbles, and adjust headspace.
+
+  6. Wipe jar rims, adjust lids, and process in a pressure canner according to altitude-specific
+  pressure guidelines.
+
+
+  ### Common failure modes
+
+  Incorrect pressure settings or incomplete seals can lead to spoilage or unsafe canned
+  mushrooms.
+
+
+  ### Safety/boundary notes
+
+  Ensure the correct pressure is used for your altitude to prevent foodborne illness.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of mushrooms and adjust pressure settings based on local
+  altitude.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials:
+  - boiling water
+  - salt
+  - ascorbic acid powder or vitamin C tablets
+  success_criteria:
+  - Mushrooms are safely canned with no spoilage
+  - Jars are sealed properly
+  failure_modes:
+  - Incorrect pressure
+  - Incomplete seal
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude'
+  implementation:
+    smallest_viable_version: Canning mushrooms using a pressure canner with correct
+      pressure settings.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - boiling water
+    - salt
+    - ascorbic acid powder or vitamin C tablets
+    expected_time: 2 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - No spoilage
+    stop_conditions:
+    - Pressure is incorrect
+    - Seal is incomplete
+    common_mistakes:
+    - Using incorrect pressure
+    - Not adjusting for altitude
+    variants:
+    - label: Urban
+      when: Limited space for canning equipment
+      notes: Consider smaller batch sizes.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stovetop pressure canner.
+    when_to_escalate:
+    - If unsure about pressure settings
+    - If jars do not seal properly
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning whole or sliced mushrooms using a pressure
+    canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: MUSHROOMS—WHOLE OR SLICED
+    start_char: 4
+    end_char: 31
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_002
+  claim_text: Select small to medium-sized domestic mushrooms with short stems and
+    tight veils. Avoid wild mushrooms.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: 'Select only brightly colored, small to medium-size domestic mushrooms
+      with short stems, tight veils (unopened caps), and no discoloration. Caution:
+      Do not can wild mushrooms.'
+    start_char: 82
+    end_char: 210
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_003
+  claim_text: Trim stems and discolored parts, soak in cold water for 10 minutes,
+    and wash thoroughly.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Trim stems and discolored parts. Soak in cold water for 10 minutes to
+      remove dirt. Wash in clean water.
+    start_char: 212
+    end_char: 285
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_004
+  claim_text: Boil mushrooms for 5 minutes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Cover with water in a saucepan and boil 5 minutes.
+    start_char: 301
+    end_char: 344
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_005
+  claim_text: Fill hot jars with mushrooms, leaving 1-inch headspace. Add salt and
+    ascorbic acid if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Fill hot jars with hot mushrooms, leaving 1-inch headspace. Add 1/2 teaspoon
+      of salt per pint to the jar, if desired. For better color, add 1/8 teaspoon
+      of ascorbic acid powder, or a 500-milligram tablet of vitamin C.
+    start_char: 346
+    end_char: 505
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_006
+  claim_text: Add fresh hot water, remove air bubbles, and adjust headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Add fresh hot water, leaving 1-inch headspace. Remove air bubbles and
+      adjust headspace if needed.
+    start_char: 507
+    end_char: 585
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_007
+  claim_text: Wipe jar rims, adjust lids, and process in a pressure canner according
+    to altitude-specific pressure guidelines.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 587
+    end_char: 646
+    support_strength: strong
+- object_id: food-preservation.mushrooms-canning
+  claim_id: clm_008
+  claim_text: Ensure the correct pressure is used for your altitude to prevent foodborne
+    illness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000172
+    excerpt: Recommended process time for Mushrooms in a dial-gauge pressure canner
+    start_char: 648
+    end_char: 715
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000172
+bundle_overrides:
+  hook: Preserve your mushrooms for year-round enjoyment with safe and effective canning
+    techniques.
+  primer: Canning mushrooms is a practical way to preserve them for long-term storage,
+    ensuring you have access to them throughout the year. This process involves using
+    a pressure canner, which is essential for safely preserving low-acid foods like
+    mushrooms. The key to successful canning is selecting the right mushrooms, preparing
+    them properly, and following precise canning procedures to prevent spoilage and
+    foodborne illnesses. You'll need small to medium-sized domestic mushrooms with
+    short stems and tight veils, as these are ideal for canning. Avoid wild mushrooms
+    due to safety concerns. Once selected, the mushrooms need to be cleaned, boiled,
+    and packed into jars with the right headspace and pressure settings. This guide
+    will walk you through each step, ensuring your canned mushrooms are safe and delicious.
+  guide: '1. **Select Mushrooms**: Choose small to medium-sized domestic mushrooms
+    with short stems and tight veils. Avoid wild mushrooms for safety reasons.
+
+
+    2. **Prepare Mushrooms**: Trim the stems and remove any discolored parts. Soak
+    the mushrooms in cold water for 10 minutes to remove dirt, then wash them thoroughly.
+
+
+    3. **Boil Mushrooms**: Place the mushrooms in a saucepan, cover with water, and
+    boil for 5 minutes.
+
+
+    4. **Fill Jars**: Using hot jars, fill them with the boiled mushrooms, leaving
+    a 1-inch headspace. If desired, add 1/2 teaspoon of salt per pint and 1/8 teaspoon
+    of ascorbic acid powder or a 500-milligram vitamin C tablet for better color.
+
+
+    5. **Add Water and Remove Air Bubbles**: Pour fresh hot water into the jars, maintaining
+    the 1-inch headspace. Remove any air bubbles and adjust the headspace if necessary.
+
+
+    6. **Seal and Process**: Wipe the rims of the jars with a damp paper towel to
+    ensure a clean seal. Adjust the lids and process the jars in a pressure canner
+    according to altitude-specific pressure guidelines. This step is crucial to prevent
+    foodborne illnesses.
+
+
+    7. **Check Seals**: After processing, ensure that the jars are sealed properly.
+    If any jars did not seal, refrigerate and use them soon.'
+  reference:
+  - Select small to medium-sized domestic mushrooms.
+  - Avoid wild mushrooms.
+  - Trim stems and discolored parts.
+  - Soak in cold water for 10 minutes.
+  - Boil mushrooms for 5 minutes.
+  - Fill hot jars, leaving 1-inch headspace.
+  - Add salt and ascorbic acid if desired.
+  - Add fresh hot water, remove air bubbles.
+  - Wipe jar rims, adjust lids.
+  - Process in a pressure canner according to altitude.
+  worksheet:
+  - List the steps for preparing mushrooms before canning.
+  - Explain why it's important to use a pressure canner for mushrooms.
+  - Describe how to adjust for altitude when canning.
+  - Practice filling jars with the correct headspace and removing air bubbles.
+  - Simulate checking jar seals after processing.
+  teach_forward_kit:
+    three_minute_version: Canning mushrooms involves selecting the right type, cleaning,
+      boiling, and using a pressure canner to ensure safety. Key steps include maintaining
+      a 1-inch headspace in jars and adjusting pressure for altitude.
+    ten_minute_outline:
+    - Introduction to canning mushrooms and its benefits.
+    - Selection and preparation of mushrooms.
+    - Boiling and filling jars with mushrooms.
+    - Importance of using a pressure canner.
+    - Adjusting for altitude and ensuring proper seals.
+    - Safety tips and common mistakes to avoid.
+    discussion_prompts:
+    - Why is it important to avoid canning wild mushrooms?
+    - What are the risks of not using a pressure canner for mushrooms?
+    - How does altitude affect the canning process?
+    - What are some signs that a jar has not sealed properly?

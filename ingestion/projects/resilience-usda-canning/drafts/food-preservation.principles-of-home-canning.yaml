@@ -1,0 +1,196 @@
+id: food-preservation.principles-of-home-canning
+slug: food-preservation.principles-of-home-canning
+seed_type: extracted
+co_type: concept_note
+canonical_title: Principles of Home Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: moderate
+summary_short: Introduction to the principles of home canning.
+summary_medium: Learn the fundamental principles of home canning, focusing on scientific
+  and safety considerations for effective food preservation.
+plain_language: Home canning is a method of preserving food by sealing it in airtight
+  containers. This process involves understanding scientific principles and safety
+  measures to ensure food is preserved effectively and safely.
+markdown_body: '### What this is
+
+  Home canning is a method of preserving food by processing and sealing it in airtight
+  containers. This technique allows for long-term storage of food by preventing spoilage
+  and maintaining nutritional value.
+
+
+  ### Why it matters
+
+  Understanding the principles of home canning is crucial for ensuring food safety
+  and preventing foodborne illnesses. Proper canning techniques prevent the growth
+  of harmful bacteria and extend the shelf life of food.
+
+
+  ### What you need
+
+  To start home canning, you need canning jars, lids, a pressure canner or boiling
+  water canner, and knowledge of safe canning practices.
+
+
+  ### How to do it
+
+  The canning process involves preparing food, filling jars, sealing them with lids,
+  and processing them in a canner to destroy microorganisms. The method used depends
+  on the acidity of the food.
+
+
+  ### Common failure modes
+
+  Improper sealing, incorrect processing times, and using damaged jars can lead to
+  spoilage and foodborne illnesses.
+
+
+  ### Safety/boundary notes
+
+  Always follow tested recipes and guidelines to ensure safety. Use the correct canning
+  method for the type of food being preserved.
+
+
+  ### Local adaptation notes
+
+  Adjustments may be needed for altitude, as boiling points change with elevation,
+  affecting processing times.'
+structured_data:
+  definition: Home canning is a food preservation method that involves processing
+    food in sealed containers to prevent spoilage.
+  key_questions:
+  - What are the safety considerations for home canning?
+  - How does the acidity of food affect the canning process?
+  misconceptions:
+  - All foods can be canned using the same method.
+  - Canning is unsafe if not done in a professional setting.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_001
+  claim_text: Home canning is a method of preserving food by processing and sealing
+    it in airtight containers.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: ... using acceptable jars and self-sealing
+      lids, processing jars in a boiling-water or pressure canner for the correct
+      period of time.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_002
+  claim_text: This technique allows for long-term storage of food by preventing spoilage
+    and maintaining nutritional value.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: Canning can be a safe and economical way to preserve quality food at
+      home. ... If vegetables are handled properly and canned promptly after harvest,
+      they can be more nutritious than fresh produce sold in local stores.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_003
+  claim_text: Understanding the principles of home canning is crucial for ensuring
+    food safety and preventing foodborne illnesses.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: ... prevent the growth of undesirable
+      bacteria, yeasts, and molds; and help form a high vacuum in jars.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_004
+  claim_text: To start home canning, you need canning jars, lids, a pressure canner
+    or boiling water canner, and knowledge of safe canning practices.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: ... using acceptable jars and self-sealing
+      lids, processing jars in a boiling-water or pressure canner for the correct
+      period of time.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_005
+  claim_text: The canning process involves preparing food, filling jars, sealing them
+    with lids, and processing them in a canner to destroy microorganisms.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000017
+    excerpt: 'Proper canning practices include: ... processing jars in a boiling-water
+      or pressure canner for the correct period of time.'
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_006
+  claim_text: The method used depends on the acidity of the food.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 14
+    page_end: 14
+    segment_id: src.usda.home-canning.2015::seg_000015
+    excerpt: Food acidity and processing methods
+    start_char: 0
+    end_char: 50
+    support_strength: medium
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_007
+  claim_text: Improper sealing, incorrect processing times, and using damaged jars
+    can lead to spoilage and foodborne illnesses.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 16
+    page_end: 16
+    segment_id: src.usda.home-canning.2015::seg_000016
+    excerpt: The advantages of home canning are lost when you start with poor quality
+      fresh foods; when jars fail to seal properly; when food spoils; and when flavors,
+      texture, color, and nutrients deteriorate during prolonged storage.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.principles-of-home-canning
+  claim_id: clm_008
+  claim_text: Adjustments may be needed for altitude, as boiling points change with
+    elevation, affecting processing times.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 6
+    page_end: 6
+    segment_id: src.usda.home-canning.2015::seg_000011
+    excerpt: It is important to know your approximate elevation or altitude above
+      sea level in order to determine a safe processing time for canned foods. Since
+      the boiling temperature of liquid is lower at higher elevations, it is critical
+      that additional time be given for the safe processing of foods at altitudes
+      above sea level.
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000014

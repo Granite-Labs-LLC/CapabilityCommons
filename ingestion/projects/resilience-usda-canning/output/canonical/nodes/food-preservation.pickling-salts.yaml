@@ -1,0 +1,243 @@
+canonical_title: Salts Used in Pickling
+citations:
+- claim_id: clm_001
+  claim_text: Use canning or pickling salt for best results.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 47
+    excerpt: Use of canning or pickling salt is recommended.
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Both iodized and noniodized table salts can be used, but noncaking agents
+    in table salt may cloud the brine.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 176
+    excerpt: Fermented and nonfermented pickles may be safely made using either iodized
+      or noniodized table salt. However, noncaking materials added to table salts
+      may make the brine cloudy.
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 48
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: Avoid using flake salt due to its variable density.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 223
+    excerpt: Flake salt varies in density and is not recommended for use.
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 177
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: Reduced-sodium salts can be used in quick pickles but not in fermented
+    pickles.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 391
+    excerpt: 'Reduced-sodium salts, for example mixtures of sodium and potassium chloride,
+      may be used in quick pickle recipes, as indicated in this guide. **Caution:
+      Use of reduced-sodium salt in fermented pickle recipes is not recommended.**'
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 224
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: Using table salt with noncaking agents can result in cloudy brine.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 176
+    excerpt: However, noncaking materials added to table salts may make the brine
+      cloudy.
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 122
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Using reduced-sodium salt in fermented pickles can lead to unsatisfactory
+    results.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 391
+    excerpt: '**Caution: Use of reduced-sodium salt in fermented pickle recipes is
+      not recommended.**'
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 353
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: Do not use reduced-sodium salts in fermented pickle recipes as it can
+    compromise the safety and quality of the pickles.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 391
+    excerpt: '**Caution: Use of reduced-sodium salt in fermented pickle recipes is
+      not recommended.**'
+    page_end: 152
+    page_start: 152
+    segment_id: src.usda.home-canning.2015::seg_000209
+    source_id: src.usda.home-canning.2015
+    start_char: 353
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Choosing the right type of salt is crucial for successful pickling.
+    Different salts can affect the taste, texture, and safety of the pickled product.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 22
+    excerpt: Salts used in pickling
+    page_end: 149
+    page_start: 148
+    segment_id: src.usda.home-canning.2015::seg_000205
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_009
+  claim_text: Avoid using salts with additives like iodine or anti-caking agents,
+    as they can cloud the brine or alter the flavor.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 22
+    excerpt: Salts used in pickling
+    page_end: 149
+    page_start: 148
+    segment_id: src.usda.home-canning.2015::seg_000205
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_010
+  claim_text: Using the wrong type of salt can lead to undesirable flavors, cloudiness
+    in the brine, or spoilage.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 22
+    excerpt: Salts used in pickling
+    page_end: 149
+    page_start: 148
+    segment_id: src.usda.home-canning.2015::seg_000205
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_011
+  claim_text: Ensure that the salt used is food-grade and free from additives that
+    could affect the pickling process.
+  object_id: food-preservation.pickling-salts
+  support:
+  - end_char: 22
+    excerpt: Salts used in pickling
+    page_end: 149
+    page_start: 148
+    segment_id: src.usda.home-canning.2015::seg_000205
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+co_type: reference_sheet
+contexts: []
+cost_band: free
+difficulty: 2
+id: food-preservation.pickling-salts
+language_code: en
+lifecycle_state: published
+markdown_body: '### What this is
+
+
+  This reference sheet provides information on the types of salts used in pickling
+  and their effects on the pickling process.
+
+
+  ### Why it matters
+
+
+  Choosing the right type of salt is crucial for successful pickling. Different salts
+  can affect the clarity of the brine and the safety of the pickling process.
+
+
+  ### What you need
+
+
+  Knowledge of the different types of salts available for pickling and their properties.
+
+
+  ### How to do it
+
+
+  Use canning or pickling salt for best results. Both iodized and noniodized table
+  salts can be used, but noncaking agents in table salt may cloud the brine. Avoid
+  using flake salt due to its variable density. Reduced-sodium salts can be used in
+  quick pickles but not in fermented pickles.
+
+
+  ### Common failure modes
+
+
+  Using table salt with noncaking agents can result in cloudy brine. Using reduced-sodium
+  salt in fermented pickles can lead to unsatisfactory results.
+
+
+  ### Safety/boundary notes
+
+
+  Do not use reduced-sodium salts in fermented pickle recipes as it can compromise
+  the safety and quality of the pickles.
+
+
+  ### Local adaptation notes
+
+
+  Adjust salt types based on local availability, ensuring to avoid those with noncaking
+  agents for clear brine.'
+plain_language: This guide explains which salts to use for pickling, how they affect
+  the process, and what to avoid.
+primary_domain: food-preservation
+requires: []
+risk_band: low
+secondary_domains: []
+seed_type: extracted
+slug: food-preservation.pickling-salts
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000209
+- src.usda.home-canning.2015::seg_000205
+stage: foundation
+structured_data:
+  definition: Guidance on the selection and use of salts in pickling processes.
+  key_questions:
+  - What types of salt are recommended for pickling?
+  - Why should flake salt be avoided?
+  - Can reduced-sodium salts be used in all pickling recipes?
+  misconceptions:
+  - All table salts are suitable for pickling.
+  - Reduced-sodium salts can be used interchangeably with regular salts in all pickling
+    recipes.
+  failure_modes:
+  - Cloudy brine
+  - Off-flavors
+  materials:
+  - salt
+  safety_boundary: Use food-grade salts without additives.
+  success_criteria:
+  - Clear brine
+  - Desired flavor profile
+  tools:
+  - salt
+suggested_edges: []
+summary_medium: Learn about the types of salts used in pickling and their effects
+  on the process, including recommendations and cautions.
+summary_short: Guidance on selecting salts for pickling.
+version_no: 1
+visibility: public

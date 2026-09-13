@@ -1,0 +1,407 @@
+id: food-preservation.peach-apple-salsa
+slug: food-preservation.peach-apple-salsa
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Peach Apple Salsa Canning Project
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Learn how to make and can Peach Apple Salsa.
+summary_medium: This project blueprint guides you through making and canning Peach
+  Apple Salsa, detailing ingredients, procedure, and processing times.
+plain_language: This guide will help you make and preserve Peach Apple Salsa using
+  a boiling-water canner. It includes step-by-step instructions and safety tips.
+markdown_body: '### What this is
+
+  This project blueprint provides instructions for making and canning Peach Apple
+  Salsa. It includes a list of ingredients, the procedure for preparation, and the
+  recommended processing times for safe canning.
+
+
+  ### Why it matters
+
+  Canning Peach Apple Salsa allows you to preserve the flavors of fresh peaches and
+  apples, providing a delicious condiment that can be enjoyed year-round. Proper canning
+  ensures the salsa is safe to eat and maintains its quality.
+
+
+  ### What you need
+
+  You will need an 8- or 10-quart Dutch oven or saucepot, a boiling-water canner,
+  pint jars, lids, and a cheesecloth or muslin spice bag. Ingredients include Roma
+  tomatoes, yellow onions, green bell peppers, hard unripe peaches, Granny Smith apples,
+  mixed pickling spice, canning salt, crushed red pepper flakes, light brown sugar,
+  and cider vinegar.
+
+
+  ### How to do it
+
+  1. Prepare a spice bag with pickling spice using cheesecloth. 2. Wash, peel, and
+  chop tomatoes, onions, and bell peppers. 3. Wash, peel, and soak peaches and apples
+  in an ascorbic acid solution, then chop. 4. Combine all ingredients in a saucepot,
+  add the spice bag, and bring to a boil. 5. Simmer for 30 minutes. 6. Fill hot pint
+  jars with salsa, leaving appropriate headspace, and process in a boiling-water canner
+  for the recommended time based on altitude.
+
+
+  ### Common failure modes
+
+  Common issues include browning of fruit if not properly soaked in ascorbic acid
+  and improper sealing of jars if headspace is not correctly adjusted.
+
+
+  ### Safety/boundary notes
+
+  Ensure jars are properly sealed and processed for the correct time to prevent spoilage.
+  Adjust processing time based on altitude to ensure safety.
+
+
+  ### Local adaptation notes
+
+  Adjust processing times for altitudes above 1,000 feet as specified in the procedure.'
+structured_data:
+  goal: To make and can Peach Apple Salsa safely.
+  deliverables: 7 pint jars of Peach Apple Salsa.
+  acceptance_criteria: Jars are properly sealed and salsa is preserved without spoilage.
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of Peach Apple Salsa using
+      a boiling-water canner.
+    tools:
+    - Dutch oven
+    - boiling-water canner
+    - jars
+    - lids
+    materials:
+    - Roma tomatoes
+    - yellow onions
+    - green bell peppers
+    - hard unripe peaches
+    - Granny Smith apples
+    - mixed pickling spice
+    - canning salt
+    - crushed red pepper flakes
+    - light brown sugar
+    - cider vinegar
+    expected_time: Approximately 2 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed properly
+    - Salsa has a balanced flavor
+    stop_conditions:
+    - Improper jar sealing
+    - Salsa does not reach boiling
+    common_mistakes:
+    - Not adjusting processing time for altitude
+    - Incorrect headspace in jars
+    variants:
+    - label: Urban
+      when: Limited kitchen space
+      notes: Use smaller batches to accommodate space constraints.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If there are signs of spoilage after canning
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_001
+  claim_text: This project blueprint provides instructions for making and canning
+    Peach Apple Salsa. It includes a list of ingredients, the procedure for preparation,
+    and the recommended processing times for safe canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: '### PEACH APPLE SALSA
+
+
+      6 cups chopped Roma tomatoes
+
+
+      2-1/2 cups diced yellow onions
+
+
+      2 cups chopped green bell peppers
+
+
+      10 cups chopped hard, unripe peaches
+
+
+      2 cups chopped Granny Smith apples
+
+
+      4 tbsp mixed pickling spice
+
+
+      1 tbsp canning salt
+
+
+      2 tsp crushed red pepper flakes
+
+
+      3-3/4 cups (1-1/4 pounds) packed light brown sugar
+
+
+      2-1/4 cups cider vinegar (5%)
+
+
+      **Yield:** About 7 pint jars
+
+
+      **Procedure:** Place pickling spice on a clean, double-layered, 6-inch-square
+      piece of 100% cheesecloth. Bring corners together and tie with a clean string.
+      (Or use a purchased muslin spice bag). Wash and peel tomatoes (place washed
+      tomatoes in boiling water for 1 minute, immediately place in cold water, and
+      slip off skins). Chop into 1/2-inch pieces. Peel, wash and dice onions into
+      1/4-inch pieces. Wash, core, and seed bell peppers; chop into 1/4-inch pieces.
+      Combine chopped tomatoes, onions and peppers in an 8- or 10- quart Dutch oven
+      or saucepot. Wash, peel and pit peaches; cut into halves and soak for 10 minutes
+      in an ascorbic acid solution (1500 mg in half gallon water). Wash, peel and
+      core apples; cut into halves and soak for 10 minutes in ascorbic acid solution.
+      Quickly chop peaches and apples into 1/2-inch cubes to prevent browning. Add
+      chopped peaches and apples to the saucepot with the vegetables. Add the pickling
+      spice bag to the saucepot; stir in the salt, red pepper flakes, brown sugar
+      and vinegar. Bring to boiling, stirring gently to mix ingredients. Reduce heat
+      and simmer 30 minutes, stirring occasionally. Remove spice bag from pan and
+      discard. With a slotted spoon, fill salsa solids into hot pint jars, leaving
+      1-1/4-inch headspace (about 3/4 pound solids in each jar). Cover with cooking
+      liquid, leaving 1/2-inch headspace. Remove air bubbles and adjust headspace
+      if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids
+      and process.'
+    start_char: 0
+    end_char: 1575
+    support_strength: strong
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_002
+  claim_text: Canning Peach Apple Salsa allows you to preserve the flavors of fresh
+    peaches and apples, providing a delicious condiment that can be enjoyed year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: '### PEACH APPLE SALSA
+
+
+      6 cups chopped Roma tomatoes
+
+
+      2-1/2 cups diced yellow onions
+
+
+      2 cups chopped green bell peppers
+
+
+      10 cups chopped hard, unripe peaches
+
+
+      2 cups chopped Granny Smith apples
+
+
+      4 tbsp mixed pickling spice
+
+
+      1 tbsp canning salt
+
+
+      2 tsp crushed red pepper flakes
+
+
+      3-3/4 cups (1-1/4 pounds) packed light brown sugar
+
+
+      2-1/4 cups cider vinegar (5%)
+
+
+      **Yield:** About 7 pint jars'
+    start_char: 0
+    end_char: 1575
+    support_strength: medium
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_003
+  claim_text: You will need an 8- or 10-quart Dutch oven or saucepot, a boiling-water
+    canner, pint jars, lids, and a cheesecloth or muslin spice bag.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: Combine chopped tomatoes, onions and peppers in an 8- or 10- quart Dutch
+      oven or saucepot.
+    start_char: 0
+    end_char: 1575
+    support_strength: strong
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_004
+  claim_text: Ingredients include Roma tomatoes, yellow onions, green bell peppers,
+    hard unripe peaches, Granny Smith apples, mixed pickling spice, canning salt,
+    crushed red pepper flakes, light brown sugar, and cider vinegar.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: '6 cups chopped Roma tomatoes
+
+
+      2-1/2 cups diced yellow onions
+
+
+      2 cups chopped green bell peppers
+
+
+      10 cups chopped hard, unripe peaches
+
+
+      2 cups chopped Granny Smith apples
+
+
+      4 tbsp mixed pickling spice
+
+
+      1 tbsp canning salt
+
+
+      2 tsp crushed red pepper flakes
+
+
+      3-3/4 cups (1-1/4 pounds) packed light brown sugar
+
+
+      2-1/4 cups cider vinegar (5%)'
+    start_char: 0
+    end_char: 1575
+    support_strength: strong
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_005
+  claim_text: Common issues include browning of fruit if not properly soaked in ascorbic
+    acid and improper sealing of jars if headspace is not correctly adjusted.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: Wash, peel and pit peaches; cut into halves and soak for 10 minutes in
+      an ascorbic acid solution (1500 mg in half gallon water). Wash, peel and core
+      apples; cut into halves and soak for 10 minutes in ascorbic acid solution.
+    start_char: 0
+    end_char: 1575
+    support_strength: strong
+- object_id: food-preservation.peach-apple-salsa
+  claim_id: clm_006
+  claim_text: Ensure jars are properly sealed and processed for the correct time to
+    prevent spoilage. Adjust processing time based on altitude to ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 76
+    page_end: 76
+    segment_id: src.usda.home-canning.2015::seg_000101
+    excerpt: '| Recommended process time for Peach-Apple Salsa in a boiling-water
+      canner |       |                              |          |          |  |
+
+      |--------------------------------------------------------------------------|-------|------------------------------|----------|----------|--|
+
+      |                                                                          |       |
+      Process Time at Altitudes of |          |          |  |
+
+      | Style                                                                    |
+      Jar   | 0- 1,001- Above              |          |          |  |
+
+      | of Pack                                                                  |
+      Size  | 1,000 ft                     | 6,000 ft | 6,000 ft |  |
+
+      | Hot                                                                      |
+      Pints | 15 min                       | 20       | 25       |  |'
+    start_char: 0
+    end_char: 1575
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000101
+bundle_overrides:
+  hook: Preserve the delightful flavors of summer with Peach Apple Salsa, a delicious
+    condiment you can enjoy year-round.
+  primer: Canning Peach Apple Salsa is a fantastic way to capture the fresh, vibrant
+    flavors of peaches and apples, allowing you to enjoy them long after the season
+    ends. This process involves preparing a mixture of fruits and vegetables, seasoning
+    them with spices, and preserving them in jars using a boiling-water canner. The
+    salsa combines the sweetness of peaches and apples with the tanginess of tomatoes
+    and the spice of peppers, creating a versatile condiment that pairs well with
+    many dishes. Canning not only extends the shelf life of your salsa but also ensures
+    that it remains safe to eat by preventing the growth of bacteria. By following
+    the proper canning procedures, including adjusting processing times for altitude
+    and ensuring jars are sealed correctly, you can enjoy your homemade salsa throughout
+    the year.
+  guide: "To make and can Peach Apple Salsa, start by gathering your ingredients:\
+    \ Roma tomatoes, yellow onions, green bell peppers, hard unripe peaches, Granny\
+    \ Smith apples, mixed pickling spice, canning salt, crushed red pepper flakes,\
+    \ light brown sugar, and cider vinegar. You'll also need an 8- or 10-quart Dutch\
+    \ oven or saucepot, a boiling-water canner, pint jars, lids, and a cheesecloth\
+    \ or muslin spice bag. \n\n1. Prepare a spice bag by placing the pickling spice\
+    \ in a piece of cheesecloth and tying it securely. \n2. Wash, peel, and chop the\
+    \ tomatoes, onions, and bell peppers. \n3. Wash, peel, and soak the peaches and\
+    \ apples in an ascorbic acid solution for 10 minutes to prevent browning, then\
+    \ chop them. \n4. Combine the chopped tomatoes, onions, bell peppers, peaches,\
+    \ and apples in the saucepot. Add the spice bag, salt, red pepper flakes, brown\
+    \ sugar, and vinegar. \n5. Bring the mixture to a boil, stirring gently. Reduce\
+    \ the heat and let it simmer for 30 minutes, stirring occasionally. \n6. Remove\
+    \ the spice bag and discard it. \n7. Using a slotted spoon, fill the hot pint\
+    \ jars with the salsa solids, leaving a 1-1/4-inch headspace. Cover with the cooking\
+    \ liquid, leaving a 1/2-inch headspace. \n8. Remove air bubbles, adjust headspace\
+    \ if necessary, wipe the rims of the jars, and adjust the lids. \n9. Process the\
+    \ jars in a boiling-water canner for the recommended time based on your altitude\
+    \ (15 minutes for 0-1,000 ft, 20 minutes for 1,001-6,000 ft, and 25 minutes above\
+    \ 6,000 ft). \n10. After processing, let the jars cool and check the seals. Properly\
+    \ sealed jars can be stored for future enjoyment."
+  reference:
+  - 6 cups chopped Roma tomatoes
+  - 2-1/2 cups diced yellow onions
+  - 2 cups chopped green bell peppers
+  - 10 cups chopped hard, unripe peaches
+  - 2 cups chopped Granny Smith apples
+  - 4 tbsp mixed pickling spice
+  - 1 tbsp canning salt
+  - 2 tsp crushed red pepper flakes
+  - 3-3/4 cups packed light brown sugar
+  - 2-1/4 cups cider vinegar (5%)
+  - 'Yield: About 7 pint jars'
+  - 'Processing times: 15 min (0-1,000 ft), 20 min (1,001-6,000 ft), 25 min (above
+    6,000 ft)'
+  worksheet:
+  - List all the ingredients needed for Peach Apple Salsa and check them off as you
+    gather them.
+  - Practice preparing a spice bag using cheesecloth and pickling spice.
+  - Simulate the process of peeling and chopping fruits and vegetables, focusing on
+    maintaining uniform sizes.
+  - Create a step-by-step plan for the canning process, including timing for each
+    step.
+  - Conduct a mock setup of your canning station, ensuring all tools and ingredients
+    are within reach.
+  - Review the altitude adjustments for processing times and determine the correct
+    time for your location.
+  teach_forward_kit:
+    three_minute_version: Peach Apple Salsa canning captures the essence of fresh
+      fruits and spices, preserving them for year-round enjoyment. By following a
+      precise canning process, including preparing ingredients, using a spice bag,
+      and adjusting processing times for altitude, you ensure a safe and delicious
+      product.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Overview of Peach Apple Salsa ingredients
+    - Step-by-step preparation of salsa mixture
+    - Importance of using a spice bag
+    - Canning process and altitude adjustments
+    - Checking seals and storing canned salsa
+    discussion_prompts:
+    - Why is it important to adjust processing times based on altitude?
+    - What are the potential risks if jars are not sealed properly?
+    - How does soaking fruit in ascorbic acid solution prevent browning?
+    - What are some creative ways to use Peach Apple Salsa in meals?

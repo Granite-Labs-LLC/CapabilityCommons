@@ -1,0 +1,220 @@
+id: food-preservation.jam-without-pectin
+slug: food-preservation.jam-without-pectin
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Making Jam Without Added Pectin
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: low
+summary_short: Make jam using fully ripe fruits without added pectin.
+summary_medium: Learn to make jam without added pectin by using the natural pectin
+  in fully ripe fruits. Follow the steps to prepare, boil, and test the jam for doneness.
+plain_language: This guide helps you make jam using only the natural pectin found
+  in ripe fruits, without adding commercial pectin.
+markdown_body: "# What this is\nThis project blueprint provides instructions for making\
+  \ jam without added pectin, using the natural pectin in fully ripe fruits.\n\n#\
+  \ Why it matters\nMaking jam without added pectin allows you to use fewer ingredients\
+  \ and rely on the natural properties of the fruit, which can enhance flavor and\
+  \ texture.\n\n# What you need\nFully ripe fruits, sugar, lemon juice (for some fruits),\
+  \ a large saucepan, a thermometer, sterile jars, and a boiling-water canner.\n\n\
+  # How to do it\n1. Wash and rinse fruits thoroughly. Do not soak. Remove stems,\
+  \ skins, and pits, then crush the fruit. For seedy berries, use a sieve or food\
+  \ mill. \n2. Measure crushed fruit into a large saucepan. Add sugar and bring to\
+  \ a boil while stirring constantly. \n3. Boil until the mixture thickens. Use a\
+  \ thermometer or refrigerator test to check for doneness. \n4. Remove from heat,\
+  \ skim off foam, and fill sterile jars with jam, leaving 1/4 inch headspace. \n\
+  5. Process jars in a boiling-water canner for the recommended time based on altitude.\n\
+  \n# Common failure modes\nRunny jam due to insufficient boiling or incorrect testing\
+  \ for doneness.\n\n# Safety/boundary notes\nEnsure jars are sterile and processed\
+  \ correctly to prevent spoilage.\n\n# Local adaptation notes\nAdjust sugar and lemon\
+  \ juice quantities based on fruit sweetness and acidity."
+structured_data:
+  goal: Create homemade jam without added pectin.
+  deliverables: Jars of jam made from fully ripe fruits.
+  acceptance_criteria: Jam should have a proper gel consistency and be safely preserved
+    in jars.
+  implementation:
+    smallest_viable_version: Make a small batch of jam using ripe fruits and sugar.
+    tools:
+    - saucepan
+    - thermometer
+    materials:
+    - ripe fruits
+    - sugar
+    - lemon juice
+    - sterile jars
+    expected_time: 2 hours
+    expected_cost: Low
+    success_checks:
+    - Jam gels properly
+    - Jars are sealed correctly
+    stop_conditions:
+    - Mixture does not gel after testing
+    - Jars do not seal
+    common_mistakes:
+    - Not boiling long enough
+    - Incorrect jar sealing
+    variants:
+    - label: Low-budget
+      when: Using seasonal fruits
+      notes: Use fruits in season to reduce costs.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If jam remains runny after multiple tests
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.jam-without-pectin
+  claim_id: clm_001
+  claim_text: Wash and rinse fruits thoroughly. Do not soak. Remove stems, skins,
+    and pits, then crush the fruit. For seedy berries, use a sieve or food mill.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 187
+    segment_id: src.usda.home-canning.2015::seg_000265
+    excerpt: Wash and rinse all fruits thoroughly before cooking. Do not soak. For
+      best flavor, use fully ripe fruit. Remove stems, skins, and pits from fruit;
+      cut into pieces and crush. For berries, remove stems and blossoms and crush.
+      Seedy berries may be put through a sieve or food mill.
+    start_char: 0
+    end_char: 272
+    support_strength: strong
+- object_id: food-preservation.jam-without-pectin
+  claim_id: clm_002
+  claim_text: Measure crushed fruit into a large saucepan. Add sugar and bring to
+    a boil while stirring constantly.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 187
+    segment_id: src.usda.home-canning.2015::seg_000265
+    excerpt: Measure crushed fruit into large saucepan using the ingredient quantities
+      specified in the table below. Add sugar and bring to a boil while stirring rapidly
+      and constantly.
+    start_char: 273
+    end_char: 384
+    support_strength: strong
+- object_id: food-preservation.jam-without-pectin
+  claim_id: clm_003
+  claim_text: Boil until the mixture thickens. Use a thermometer or refrigerator test
+    to check for doneness.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 187
+    segment_id: src.usda.home-canning.2015::seg_000265
+    excerpt: Continue to boil until mixture thickens. Use one of the following tests
+      to determine when jams and jellies are ready to fill.
+    start_char: 385
+    end_char: 472
+    support_strength: strong
+- object_id: food-preservation.jam-without-pectin
+  claim_id: clm_004
+  claim_text: Remove from heat, skim off foam, and fill sterile jars with jam, leaving
+    1/4 inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 187
+    segment_id: src.usda.home-canning.2015::seg_000265
+    excerpt: Remove from heat and skim off foam quickly. Fill sterile jars (see page
+      1-14) with jam. Use a measuring cup or ladle the jam through a wide-mouthed
+      funnel, leaving 1/4 inch headspace.
+    start_char: 473
+    end_char: 589
+    support_strength: strong
+- object_id: food-preservation.jam-without-pectin
+  claim_id: clm_005
+  claim_text: Process jars in a boiling-water canner for the recommended time based
+    on altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 186
+    page_end: 187
+    segment_id: src.usda.home-canning.2015::seg_000265
+    excerpt: Adjust lids and process. Recommended process time for Jam without Added
+      Pectin in a boiling-water canner
+    start_char: 590
+    end_char: 652
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000265
+bundle_overrides:
+  hook: Discover how to make delicious homemade jam using just ripe fruits and sugar,
+    without any added pectin.
+  primer: Making jam without added pectin is a traditional method that relies on the
+    natural pectin found in fully ripe fruits. Pectin is a natural thickening agent
+    that helps jam set, and many fruits contain enough of it to create a perfect consistency
+    without needing commercial pectin. This method not only reduces the number of
+    ingredients but also enhances the natural flavor and texture of the fruit. To
+    make jam this way, you'll need ripe fruits, sugar, and sometimes lemon juice,
+    which can help with both flavor and setting. The process involves washing and
+    preparing the fruit, cooking it with sugar until it thickens, and then preserving
+    it in sterile jars. This method is cost-effective and allows for customization
+    based on the fruit's natural sweetness and acidity. It's important to ensure proper
+    boiling and testing for doneness to achieve the right consistency and to process
+    the jars correctly to prevent spoilage.
+  guide: '1. Start by selecting fully ripe fruits, as they contain the most natural
+    pectin. Wash and rinse the fruits thoroughly, but do not soak them. Remove any
+    stems, skins, and pits, then crush the fruit. For seedy berries, you may want
+    to use a sieve or food mill to remove seeds.
+
+
+    2. Measure the crushed fruit into a large saucepan. Add sugar according to your
+    taste and the fruit''s natural sweetness. Stir the mixture constantly as you bring
+    it to a boil.
+
+
+    3. Continue boiling the mixture until it thickens. You can use a thermometer to
+    check the temperature or perform a refrigerator test by placing a small amount
+    of jam on a cold plate to see if it sets.
+
+
+    4. Once the jam has reached the desired consistency, remove it from the heat.
+    Quickly skim off any foam that has formed on the surface.
+
+
+    5. Fill sterile jars with the hot jam, leaving about 1/4 inch of headspace at
+    the top. This space is crucial for proper sealing.
+
+
+    6. Process the jars in a boiling-water canner for the recommended time, which
+    varies depending on your altitude. This step is essential to ensure the jam is
+    safely preserved and can be stored for later use.'
+  reference:
+  - Use fully ripe fruits for best results.
+  - Wash fruits thoroughly; do not soak.
+  - Crush fruits and remove seeds if necessary.
+  - Boil fruit and sugar mixture until thickened.
+  - Use a thermometer or cold plate test for doneness.
+  - Fill sterile jars, leaving 1/4 inch headspace.
+  - Process jars in a boiling-water canner.
+  worksheet:
+  - List the fruits you plan to use and their natural pectin levels.
+  - Calculate the amount of sugar needed based on the fruit's sweetness.
+  - Practice the refrigerator test with a small batch of jam.
+  - Record the boiling time needed to achieve the desired consistency.
+  - Note the altitude adjustments required for your canning process.
+  teach_forward_kit:
+    three_minute_version: Learn to make jam without added pectin by using ripe fruits
+      and sugar. Prepare the fruit, boil with sugar until thick, and preserve in jars.
+    ten_minute_outline:
+    - Introduction to natural pectin and its role in jam-making.
+    - Steps to prepare and crush the fruit.
+    - Boiling process and testing for doneness.
+    - Filling jars and ensuring proper sealing.
+    - Canning process and altitude adjustments.
+    discussion_prompts:
+    - What are the benefits of making jam without added pectin?
+    - How does the natural pectin in fruits affect the jam's texture?
+    - What challenges might arise when making jam this way?
+    - How can you adjust the recipe based on different fruits?

@@ -1,0 +1,250 @@
+id: food-preservation.peach-salsa
+slug: food-preservation.peach-salsa
+seed_type: project_blueprint
+co_type: project_blueprint
+canonical_title: Peach Salsa Canning Project
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Learn how to make and can Peach Salsa using a simple substitution method.
+summary_medium: This project blueprint guides you through making and canning Peach
+  Salsa by substituting peaches for mangoes in a standard salsa recipe.
+plain_language: This project will teach you how to make Peach Salsa by following the
+  Mango Salsa recipe but using peaches instead of mangoes. You'll learn how to can
+  the salsa safely.
+markdown_body: '### What this is
+
+  This is a project blueprint for making and canning Peach Salsa. It involves using
+  a standard Mango Salsa recipe but substituting peaches for mangoes.
+
+
+  ### Why it matters
+
+  Canning Peach Salsa allows you to preserve the fresh taste of peaches in a spicy
+  salsa form, providing a unique and flavorful addition to your pantry.
+
+
+  ### What you need
+
+  You will need a Dutch oven, a boiling-water canner, jars, and lids. The main ingredient
+  is hard, underripe but yellow peaches.
+
+
+  ### How to do it
+
+  Follow the Mango Salsa procedure, substituting diced peaches for mangoes. Ensure
+  that the peaches are hard and underripe for the best texture and flavor.
+
+
+  ### Common failure modes
+
+  Improper sealing of jars can lead to spoilage. Ensure that all jars are sealed correctly
+  to prevent this.
+
+
+  ### Safety/boundary notes
+
+  Ensure that all canning equipment is sterilized and that jars are sealed properly
+  to prevent contamination.
+
+
+  ### Local adaptation notes
+
+  Adjust the spice level to suit local taste preferences, but ensure that the acidity
+  level is maintained for safe canning.'
+structured_data:
+  goal: To successfully make and can Peach Salsa.
+  deliverables: Canned jars of Peach Salsa.
+  acceptance_criteria: The salsa is properly canned with all jars sealed correctly.
+  implementation:
+    smallest_viable_version: Make a small batch of Peach Salsa using the mango salsa
+      recipe with peaches.
+    tools:
+    - Dutch oven
+    - boiling-water canner
+    materials:
+    - jars
+    - lids
+    - hard, underripe yellow peaches
+    expected_time: 2-3 hours
+    expected_cost: medium
+    success_checks:
+    - All jars are sealed properly
+    - Salsa has the desired flavor and texture
+    stop_conditions:
+    - Jars do not seal
+    - Salsa has an off flavor
+    common_mistakes:
+    - Using overripe peaches
+    - Improper jar sealing
+    variants:
+    - label: Low-budget
+      when: If cost is a concern
+      notes: Use recycled jars and lids if they are in good condition.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If there is any sign of spoilage
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_001
+  claim_text: This is a project blueprint for making and canning Peach Salsa. It involves
+    using a standard Mango Salsa recipe but substituting peaches for mangoes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000100
+    excerpt: Follow directions for Mango Salsa using diced hard, underripe but yellow
+      peaches in place of the mango.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_002
+  claim_text: You will need a Dutch oven, a boiling-water canner, jars, and lids.
+    The main ingredient is hard, underripe but yellow peaches.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000100
+    excerpt: Follow directions for Mango Salsa using diced hard, underripe but yellow
+      peaches in place of the mango.
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: Combine all ingredients in an 8-quart Dutch oven or stockpot.
+    start_char: 0
+    end_char: 62
+    support_strength: medium
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_003
+  claim_text: Follow the Mango Salsa procedure, substituting diced peaches for mangoes.
+    Ensure that the peaches are hard and underripe for the best texture and flavor.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000100
+    excerpt: Follow directions for Mango Salsa using diced hard, underripe but yellow
+      peaches in place of the mango.
+    start_char: 0
+    end_char: 95
+    support_strength: strong
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_004
+  claim_text: Improper sealing of jars can lead to spoilage. Ensure that all jars
+    are sealed correctly to prevent this.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_005
+  claim_text: Ensure that all canning equipment is sterilized and that jars are sealed
+    properly to prevent contamination.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+- object_id: food-preservation.peach-salsa
+  claim_id: clm_006
+  claim_text: Adjust the spice level to suit local taste preferences, but ensure that
+    the acidity level is maintained for safe canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: 1-1/4 cups cider vinegar (5%)
+    start_char: 0
+    end_char: 95
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000100
+bundle_overrides:
+  hook: Preserve the fresh taste of peaches in a spicy salsa form, adding a unique
+    and flavorful twist to your pantry.
+  primer: Peach Salsa is a delightful twist on the traditional Mango Salsa, offering
+    a sweet and spicy combination that can be enjoyed year-round. By substituting
+    peaches for mangoes, you can create a unique salsa that captures the essence of
+    summer. The process involves canning, which is a method of preserving food by
+    sealing it in airtight containers. This ensures that the salsa remains fresh and
+    safe to eat for months. The key to a successful Peach Salsa is using hard, underripe
+    yellow peaches, which provide the best texture and flavor. Canning requires some
+    specific equipment, including a Dutch oven, a boiling-water canner, jars, and
+    lids. It's important to ensure that all equipment is sterilized to prevent contamination
+    and spoilage. Adjusting the spice level to suit your taste is possible, but maintaining
+    the correct acidity level is crucial for safe canning. This project not only teaches
+    you how to make Peach Salsa but also provides valuable skills in food preservation.
+  guide: 'To make and can Peach Salsa, start by gathering your ingredients and equipment.
+    You will need hard, underripe yellow peaches, a Dutch oven, a boiling-water canner,
+    jars, and lids. Begin by preparing the peaches: peel, pit, and dice them into
+    small pieces. Next, follow the Mango Salsa recipe, substituting the diced peaches
+    for mangoes. Combine all ingredients in an 8-quart Dutch oven or stockpot. Bring
+    the mixture to a boil, then reduce the heat and simmer for about 10 minutes, stirring
+    occasionally. While the salsa is cooking, prepare your jars by sterilizing them
+    in boiling water. Once the salsa is ready, carefully ladle it into the hot jars,
+    leaving about 1/2 inch of headspace. Wipe the rims of the jars with a dampened
+    clean paper towel to remove any residue. Place the lids on the jars and adjust
+    the bands until they are fingertip tight. Process the jars in a boiling-water
+    canner for the recommended time based on your altitude. After processing, remove
+    the jars and let them cool undisturbed for 12-24 hours. Check the seals by pressing
+    the center of each lid; it should not flex up and down. Store the sealed jars
+    in a cool, dark place. If any jars did not seal properly, refrigerate them and
+    use the salsa within a week.'
+  reference:
+  - Use hard, underripe yellow peaches.
+  - Substitute peaches for mangoes in the Mango Salsa recipe.
+  - Sterilize all canning equipment.
+  - Ensure jars are sealed properly to prevent spoilage.
+  - Adjust spice level but maintain acidity for safe canning.
+  - Process jars in a boiling-water canner.
+  worksheet:
+  - List the equipment needed for canning Peach Salsa.
+  - Describe the steps to prepare peaches for the salsa.
+  - Explain how to check if the jars are sealed properly.
+  - Identify common mistakes in the canning process.
+  - Adjust the spice level of the salsa and note the changes in flavor.
+  teach_forward_kit:
+    three_minute_version: Learn to make Peach Salsa by substituting peaches for mangoes
+      in a Mango Salsa recipe. Use hard, underripe peaches for the best texture. Properly
+      sterilize equipment and ensure jars are sealed to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to Peach Salsa and its benefits.
+    - Overview of necessary equipment and ingredients.
+    - Step-by-step guide to preparing and cooking the salsa.
+    - Canning process and importance of proper sealing.
+    - Common mistakes and how to avoid them.
+    - Tips for adjusting spice levels while maintaining safety.
+    discussion_prompts:
+    - Why is it important to use underripe peaches in this recipe?
+    - What are the risks of improper jar sealing?
+    - How can you safely adjust the spice level of the salsa?
+    - Discuss the benefits of canning as a food preservation method.

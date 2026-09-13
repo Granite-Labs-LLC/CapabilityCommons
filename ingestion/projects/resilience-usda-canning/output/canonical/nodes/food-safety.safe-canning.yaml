@@ -1,0 +1,189 @@
+id: food-safety.safe-canning
+slug: food-safety.safe-canning
+seed_type: extracted
+co_type: concept_note
+canonical_title: Safe Canning Practices
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Proper canning methods prevent botulism.
+summary_medium: Discusses the importance of proper canning methods to prevent botulism
+  and ensure food safety.
+plain_language: Learn how to safely can food at home to prevent botulism by using
+  correct processing times and sterilization methods.
+markdown_body: '### What this is
+
+  This concept note explains the importance of using proper canning methods to prevent
+  the growth of Clostridium botulinum, which can cause botulism, a serious form of
+  food poisoning.
+
+
+  ### Why it matters
+
+  Botulism is a potentially deadly illness caused by a toxin produced by the bacterium
+  Clostridium botulinum. Ensuring safe canning practices is crucial to prevent this
+  toxin from developing in home-canned foods.
+
+
+  ### What you need
+
+  Understanding of research-based process times and proper sterilization techniques
+  for canning.
+
+
+  ### How to do it
+
+  Use the recommended processing times to ensure the destruction of heat-resistant
+  microorganisms. Properly sterilize jars and store them below 95°F to prevent spoilage.
+
+
+  ### Common failure modes
+
+  Improper processing times and inadequate sterilization can lead to the survival
+  of harmful bacteria.
+
+
+  ### Safety/boundary notes
+
+  Store canned jars below 95°F to maintain safety and quality.
+
+
+  ### Local adaptation notes
+
+  Adjust storage conditions based on local climate to ensure jars remain below the
+  recommended temperature.'
+structured_data:
+  definition: Safe canning involves using research-based processing times and proper
+    sterilization to prevent botulism.
+  key_questions:
+  - What conditions allow Clostridium botulinum to grow?
+  - How can proper canning prevent botulism?
+  misconceptions:
+  - Washing fresh food is enough to remove all bacteria.
+  - Canning without following research-based times is safe.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-safety.safe-canning
+  claim_id: clm_001
+  claim_text: This concept note explains the importance of using proper canning methods
+    to prevent the growth of Clostridium botulinum, which can cause botulism, a serious
+    form of food poisoning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Growth of the bacterium Clostridium botulinum in canned food may cause
+      botulism—a deadly form of food poisoning.
+    start_char: 0
+    end_char: 96
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_002
+  claim_text: Botulism is a potentially deadly illness caused by a toxin produced
+    by the bacterium Clostridium botulinum. Ensuring safe canning practices is crucial
+    to prevent this toxin from developing in home-canned foods.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Growth of the bacterium Clostridium botulinum in canned food may cause
+      botulism—a deadly form of food poisoning.
+    start_char: 0
+    end_char: 96
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_003
+  claim_text: Understanding of research-based process times and proper sterilization
+    techniques for canning.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Blanching also helps, but the vital controls are the method of canning
+      and making sure the recommended research-based process times, found in these
+      guides, are used.
+    start_char: 417
+    end_char: 558
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_004
+  claim_text: Use the recommended processing times to ensure the destruction of heat-resistant
+    microorganisms.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: The processing times in these guides ensure destruction of the largest
+      expected number of heatresistant microorganisms in home-canned foods.
+    start_char: 559
+    end_char: 673
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_005
+  claim_text: Properly sterilize jars and store them below 95°F to prevent spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Properly sterilized canned food will be free of spoilage if lids seal
+      and jars are stored below 95°F.
+    start_char: 674
+    end_char: 747
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_006
+  claim_text: Improper processing times and inadequate sterilization can lead to the
+    survival of harmful bacteria.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Blanching also helps, but the vital controls are the method of canning
+      and making sure the recommended research-based process times, found in these
+      guides, are used.
+    start_char: 417
+    end_char: 558
+    support_strength: medium
+- object_id: food-safety.safe-canning
+  claim_id: clm_007
+  claim_text: Store canned jars below 95°F to maintain safety and quality.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Properly sterilized canned food will be free of spoilage if lids seal
+      and jars are stored below 95°F.
+    start_char: 674
+    end_char: 747
+    support_strength: strong
+- object_id: food-safety.safe-canning
+  claim_id: clm_008
+  claim_text: Adjust storage conditions based on local climate to ensure jars remain
+    below the recommended temperature.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 17
+    page_end: 18
+    segment_id: src.usda.home-canning.2015::seg_000018
+    excerpt: Storing jars at 50° to 70°F enhances retention of quality.
+    start_char: 748
+    end_char: 798
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000018

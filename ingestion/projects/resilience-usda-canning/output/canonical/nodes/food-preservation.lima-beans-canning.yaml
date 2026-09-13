@@ -1,0 +1,287 @@
+id: food-preservation.lima-beans-canning
+slug: food-preservation.lima-beans-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Fresh Lima Beans
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning fresh lima beans using a pressure canner.
+summary_medium: Detailed instructions for canning fresh lima beans, covering quantity,
+  quality, procedure, and processing times using a pressure canner.
+plain_language: Learn how to can fresh lima beans safely using a pressure canner,
+  with steps for both hot and raw packing methods.
+markdown_body: '### What this is
+
+  This guide provides instructions for canning fresh lima beans using a pressure canner.
+  It includes details on the quantity of beans needed, the quality to look for, and
+  the step-by-step procedure for both hot and raw packing methods.
+
+
+  ### Why it matters
+
+  Canning lima beans allows you to preserve them for long-term storage, ensuring you
+  have access to nutritious food year-round. Proper canning techniques prevent spoilage
+  and foodborne illnesses.
+
+
+  ### What you need
+
+  You will need fresh lima beans, a pressure canner, jars, lids, boiling water, and
+  optionally, salt.
+
+
+  ### How to do it
+
+  1. Shell and wash the beans thoroughly. 2. For hot pack, cover beans with boiling
+  water and heat to boil. Fill hot jars loosely, leaving 1-inch headspace. For raw
+  pack, fill hot jars with raw beans without pressing down. 3. Add 1 teaspoon of salt
+  per quart if desired. 4. Add boiling water, maintaining the appropriate headspace.
+  5. Remove air bubbles, adjust headspace, wipe rims, and adjust lids. 6. Process
+  in a pressure canner according to your altitude''s requirements.
+
+
+  ### Common failure modes
+
+  Incorrect pressure or incomplete sealing can lead to spoilage. Ensure the pressure
+  canner is set to the correct pressure for your altitude.
+
+
+  ### Safety/boundary notes
+
+  Always use a pressure canner for low-acid foods like lima beans to prevent the risk
+  of botulism. Adjust processing times and pressure based on altitude.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of fresh lima beans in your area and adjust processing
+  times for your local altitude.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials:
+  - fresh lima beans
+  - boiling water
+  - salt (optional)
+  success_criteria:
+  - Properly sealed jars
+  - Correct pressure maintained throughout processing
+  failure_modes:
+  - Incorrect pressure
+  - Incomplete seal
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude'
+  implementation:
+    smallest_viable_version: Canning a single batch of lima beans using a pressure
+      canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - fresh lima beans
+    - boiling water
+    - salt (optional)
+    expected_time: 2-3 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed properly
+    - Beans are preserved without spoilage
+    stop_conditions:
+    - Pressure not reaching required level
+    - Jars not sealing
+    common_mistakes:
+    - Not adjusting for altitude
+    - Overfilling jars
+    variants:
+    - label: Urban
+      when: Limited space for storing large quantities
+      notes: Consider smaller batch sizes.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stovetop pressure canner.
+    when_to_escalate:
+    - If unsure about pressure settings
+    - If jars do not seal after processing
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_001
+  claim_text: This guide provides instructions for canning fresh lima beans using
+    a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 116
+    page_end: 116
+    segment_id: src.usda.home-canning.2015::seg_000159
+    excerpt: 'Procedure: Shell beans and wash thoroughly. Hot pack—Cover beans with
+      boiling water and heat to boil. Fill hot jars loosely, leaving 1-inch headspace.
+      Raw pack—Fill hot jars with raw beans. Do not press or shake down.'
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_002
+  claim_text: Canning lima beans allows you to preserve them for long-term storage,
+    ensuring you have access to nutritious food year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 116
+    page_end: 116
+    segment_id: src.usda.home-canning.2015::seg_000159
+    excerpt: An average of 28 pounds is needed per canner load of 7 quarts; an average
+      of 18 pounds is needed per canner load of 9 pints.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_003
+  claim_text: Proper canning techniques prevent spoilage and foodborne illnesses.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 116
+    page_end: 116
+    segment_id: src.usda.home-canning.2015::seg_000159
+    excerpt: Adjust lids and process.
+    start_char: 200
+    end_char: 220
+    support_strength: weak
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_004
+  claim_text: You will need fresh lima beans, a pressure canner, jars, lids, boiling
+    water, and optionally, salt.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 116
+    page_end: 116
+    segment_id: src.usda.home-canning.2015::seg_000159
+    excerpt: Add 1 teaspoon of salt per quart to the jar, if desired. Add boiling
+      water, leaving the same headspaces listed above.
+    start_char: 220
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_005
+  claim_text: Process in a pressure canner according to your altitude's requirements.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 117
+    page_end: 117
+    segment_id: src.usda.home-canning.2015::seg_000160
+    excerpt: Recommended process time for Lima Beans in a dial-gauge pressure canner
+      Canner Pressure (PSI) at Altitudes of Style of Pack Jar Size Process Time 0–
+      2,000 ft 2,001– 4,000 ft 4,001– 6,000 ft 6,001– 8,000 ft Hot Pints 40 min 11
+      lb 12 lb 13 lb 14 lb and Raw Quarts 50 11 12 13 14
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.lima-beans-canning
+  claim_id: clm_006
+  claim_text: Always use a pressure canner for low-acid foods like lima beans to prevent
+    the risk of botulism.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 116
+    page_end: 116
+    segment_id: src.usda.home-canning.2015::seg_000159
+    excerpt: Adjust lids and process.
+    start_char: 200
+    end_char: 220
+    support_strength: weak
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000159
+bundle_overrides:
+  hook: Preserve your fresh lima beans for year-round enjoyment with safe and effective
+    canning techniques.
+  primer: Canning is a method of preserving food in which the food contents are processed
+    and sealed in an airtight container. Canning fresh lima beans is a great way to
+    ensure you have access to nutritious food throughout the year. Lima beans, like
+    other low-acid foods, require pressure canning to prevent the risk of botulism,
+    a serious foodborne illness. The process involves preparing the beans, packing
+    them into jars, and processing them in a pressure canner. This method not only
+    extends the shelf life of the beans but also retains their nutritional value.
+    By following proper canning techniques, you can avoid spoilage and ensure the
+    safety of your preserved food. You'll need fresh lima beans, a pressure canner,
+    jars, lids, boiling water, and optionally, salt. Whether you choose the hot pack
+    or raw pack method, maintaining the correct pressure and processing time according
+    to your altitude is crucial for success.
+  guide: "1. Gather your materials: fresh lima beans, a pressure canner, jars, lids,\
+    \ boiling water, and salt (optional).\n2. Shell and wash the lima beans thoroughly.\n\
+    3. Choose your packing method:\n   - Hot Pack: Cover the beans with boiling water\
+    \ and heat them to a boil. Fill hot jars loosely with the beans, leaving a 1-inch\
+    \ headspace.\n   - Raw Pack: Fill hot jars with raw beans without pressing down,\
+    \ leaving a 1-inch headspace.\n4. If desired, add 1 teaspoon of salt per quart\
+    \ to the jar.\n5. Pour boiling water over the beans in the jars, maintaining the\
+    \ 1-inch headspace.\n6. Remove air bubbles by running a non-metallic spatula around\
+    \ the inside of the jar.\n7. Wipe the rims of the jars with a clean, damp cloth\
+    \ to ensure a good seal.\n8. Place the lids on the jars and adjust the bands until\
+    \ they are fingertip tight.\n9. Place the jars in the pressure canner. Follow\
+    \ the manufacturer's instructions for venting the canner and bringing it to the\
+    \ correct pressure.\n10. Process the jars according to the recommended time and\
+    \ pressure for your altitude:\n    - For hot pack pints, process for 40 minutes\
+    \ at 11 PSI (0–2,000 ft), adjusting for higher altitudes.\n    - For raw pack\
+    \ quarts, process for 50 minutes at 11 PSI (0–2,000 ft), adjusting for higher\
+    \ altitudes.\n11. Once processing is complete, turn off the heat and allow the\
+    \ canner to depressurize naturally.\n12. Carefully remove the jars and let them\
+    \ cool undisturbed for 12-24 hours.\n13. Check the seals. If the center of the\
+    \ lid is indented and does not flex, the jar is sealed. Store sealed jars in a\
+    \ cool, dark place."
+  reference:
+  - Fresh lima beans
+  - Pressure canner
+  - Jars and lids
+  - Boiling water
+  - Salt (optional)
+  - Hot pack method
+  - Raw pack method
+  - 1-inch headspace
+  - Pressure settings by altitude
+  - 'Processing times: 40 min for pints, 50 min for quarts'
+  worksheet:
+  - List the materials needed for canning lima beans.
+  - Describe the difference between hot pack and raw pack methods.
+  - Explain why pressure canning is necessary for lima beans.
+  - Calculate the processing time and pressure needed for your altitude.
+  - Practice sealing jars and checking for proper seals.
+  teach_forward_kit:
+    three_minute_version: Canning fresh lima beans involves using a pressure canner
+      to safely preserve the beans for long-term storage. Start by shelling and washing
+      the beans. Choose between hot pack or raw pack methods, fill jars with beans,
+      and add boiling water. Adjust lids and process in a pressure canner according
+      to altitude-specific guidelines. Ensure jars are sealed properly before storing.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Materials needed for canning lima beans
+    - Step-by-step guide for hot pack and raw pack methods
+    - Importance of pressure canning for low-acid foods
+    - Altitude adjustments for pressure and processing time
+    - Checking seals and storing canned beans
+    discussion_prompts:
+    - Why is pressure canning essential for preserving lima beans?
+    - What are the risks of not following proper canning procedures?
+    - How does altitude affect the canning process?
+    - What are some common mistakes to avoid when canning?
+    - How can you ensure the safety and quality of your canned goods?

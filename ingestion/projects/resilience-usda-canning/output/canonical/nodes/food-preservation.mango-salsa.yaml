@@ -1,0 +1,251 @@
+id: food-preservation.mango-salsa
+slug: food-preservation.mango-salsa
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Mango Salsa Canning Project
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: moderate
+summary_short: Learn how to make and can Mango Salsa.
+summary_medium: This project blueprint guides you through making and canning Mango
+  Salsa, including necessary ingredients, tools, and processing times.
+plain_language: This guide will help you make and preserve Mango Salsa using a boiling-water
+  canner. Follow the steps to ensure safe and delicious results.
+markdown_body: '# What this is
+
+  This is a project blueprint for making and canning Mango Salsa, a flavorful condiment
+  that combines diced mango, red bell pepper, onion, and spices.
+
+
+  # Why it matters
+
+  Canning Mango Salsa allows you to preserve the fresh flavors of mango and other
+  ingredients, providing a homemade alternative to store-bought salsas.
+
+
+  # What you need
+
+  You''ll need green mangoes, red bell pepper, yellow onion, crushed red pepper flakes,
+  garlic, ginger, light brown sugar, cider vinegar, water, a Dutch oven or stockpot,
+  a boiling-water canner, jars, and lids.
+
+
+  # How to do it
+
+  1. Wash all produce thoroughly. 2. Peel and chop mango into 1/2-inch cubes. 3. Dice
+  bell pepper and finely chop onions. 4. Combine all ingredients in a large pot and
+  bring to a boil. 5. Simmer for 5 minutes. 6. Fill hot jars with the salsa, leaving
+  1/2-inch headspace. 7. Process jars in a boiling-water canner according to altitude-specific
+  times.
+
+
+  # Common failure modes
+
+  Improper sealing of jars or skin irritation from handling green mangoes without
+  gloves.
+
+
+  # Safety/boundary notes
+
+  Wear gloves when handling green mangoes to prevent skin irritation similar to poison
+  ivy.
+
+
+  # Local adaptation notes
+
+  Adjust processing time based on altitude: 10 minutes for 0–1,000 ft, 15 minutes
+  for 1,001–6,000 ft, and 20 minutes above 6,000 ft.'
+structured_data:
+  goal: To successfully make and can Mango Salsa.
+  deliverables: Six half-pint jars of canned Mango Salsa.
+  acceptance_criteria: Jars are properly sealed and salsa has a balanced flavor.
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of Mango Salsa using a
+      boiling-water canner.
+    tools:
+    - Dutch oven
+    - boiling-water canner
+    materials:
+    - jars
+    - lids
+    expected_time: 2 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - Salsa has correct consistency
+    stop_conditions:
+    - Jars do not seal
+    - Mangoes cause skin irritation
+    common_mistakes:
+    - Not wearing gloves
+    - Incorrect processing time
+    variants:
+    - label: Urban
+      when: Limited kitchen space
+      notes: Use smaller batches to accommodate space.
+    - label: Off-grid
+      when: No access to electric stove
+      notes: Use a propane burner for heating.
+    when_to_escalate:
+    - Jars do not seal after processing
+    - Severe skin reaction occurs
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.mango-salsa
+  claim_id: clm_001
+  claim_text: This is a project blueprint for making and canning Mango Salsa, a flavorful
+    condiment that combines diced mango, red bell pepper, onion, and spices.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: 6 cups diced unripe mango (about 3 to 4 large, hard green mangoes) 1-1/2
+      cups diced red bell pepper 1/2 cup finely chopped yellow onion 1/2 tsp crushed
+      red pepper flakes
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: food-preservation.mango-salsa
+  claim_id: clm_002
+  claim_text: Canning Mango Salsa allows you to preserve the fresh flavors of mango
+    and other ingredients, providing a homemade alternative to store-bought salsas.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: 'Yield: About 6 half-pint jars'
+    start_char: 452
+    end_char: 475
+    support_strength: medium
+- object_id: food-preservation.mango-salsa
+  claim_id: clm_003
+  claim_text: You'll need green mangoes, red bell pepper, yellow onion, crushed red
+    pepper flakes, garlic, ginger, light brown sugar, cider vinegar, water, a Dutch
+    oven or stockpot, a boiling-water canner, jars, and lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: 6 cups diced unripe mango (about 3 to 4 large, hard green mangoes) 1-1/2
+      cups diced red bell pepper 1/2 cup finely chopped yellow onion 1/2 tsp crushed
+      red pepper flakes 2 tsp finely chopped garlic 2 tsp finely chopped ginger 1
+      cup light brown sugar 1-1/4 cups cider vinegar (5%) 1/2 cup water
+    start_char: 0
+    end_char: 300
+    support_strength: strong
+- object_id: food-preservation.mango-salsa
+  claim_id: clm_004
+  claim_text: Wear gloves when handling green mangoes to prevent skin irritation similar
+    to poison ivy.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: 'Caution: Handling green mangoes may irritate the skin of some people
+      in the same way as poison ivy. (They belong to the same plant family.) To avoid
+      this reaction, wear plastic or rubber gloves while working with raw green mango.'
+    start_char: 301
+    end_char: 475
+    support_strength: strong
+- object_id: food-preservation.mango-salsa
+  claim_id: clm_005
+  claim_text: 'Adjust processing time based on altitude: 10 minutes for 0–1,000 ft,
+    15 minutes for 1,001–6,000 ft, and 20 minutes above 6,000 ft.'
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 75
+    page_end: 75
+    segment_id: src.usda.home-canning.2015::seg_000099
+    excerpt: '| Recommended process time for Mango Salsa in a boiling-water canner
+      |             |                |                    |                |  | Process
+      Time at Altitudes of |             |                |                    |                |  |
+      Style<br>of Pack                                                   | Jar<br>Size
+      | 0–<br>1,000 ft | 1,001–<br>6,000 ft | Above 6,000 ft |  | Hot                                                                |
+      Half-pints  | 10 min         | 15                 | 20             |  |'
+    start_char: 476
+    end_char: 800
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000099
+bundle_overrides:
+  hook: Preserve the vibrant flavors of mango and spices with homemade Mango Salsa,
+    a delicious alternative to store-bought options.
+  primer: Mango Salsa is a delightful condiment that combines the sweetness of mangoes
+    with the crispness of red bell peppers and the zing of onions and spices. By canning
+    this salsa, you can enjoy the fresh flavors year-round, making it a perfect addition
+    to your pantry. Canning involves preserving food in jars by heating them to a
+    temperature that destroys harmful microorganisms and inactivates enzymes. This
+    process ensures that the salsa remains safe to eat and retains its taste and nutritional
+    value. The key ingredients for Mango Salsa include unripe green mangoes, red bell
+    peppers, yellow onions, garlic, ginger, light brown sugar, cider vinegar, and
+    water. You'll also need a Dutch oven or stockpot, a boiling-water canner, jars,
+    and lids. It's important to wear gloves when handling green mangoes, as they can
+    cause skin irritation similar to poison ivy. Additionally, processing times must
+    be adjusted based on your altitude to ensure proper preservation.
+  guide: "1. Gather all your ingredients and equipment: green mangoes, red bell pepper,\
+    \ yellow onion, crushed red pepper flakes, garlic, ginger, light brown sugar,\
+    \ cider vinegar, water, a Dutch oven or stockpot, a boiling-water canner, jars,\
+    \ and lids. \n2. Wash all produce thoroughly to remove any dirt or contaminants.\
+    \ \n3. Peel the mangoes and chop them into 1/2-inch cubes. Dice the red bell pepper\
+    \ and finely chop the onions. \n4. In a large pot, combine the diced mango, bell\
+    \ pepper, onion, garlic, ginger, brown sugar, cider vinegar, and water. \n5. Bring\
+    \ the mixture to a boil over medium-high heat, stirring occasionally. \n6. Once\
+    \ boiling, reduce the heat and let it simmer for 5 minutes to allow the flavors\
+    \ to meld. \n7. Carefully fill the hot jars with the salsa, leaving 1/2-inch headspace\
+    \ at the top. \n8. Wipe the rims of the jars with a clean, damp cloth to ensure\
+    \ a good seal. \n9. Place the lids on the jars and screw on the bands until fingertip\
+    \ tight. \n10. Process the jars in a boiling-water canner. Adjust the processing\
+    \ time based on your altitude: 10 minutes for 0–1,000 ft, 15 minutes for 1,001–6,000\
+    \ ft, and 20 minutes above 6,000 ft. \n11. After processing, remove the jars and\
+    \ let them cool undisturbed for 12-24 hours. \n12. Check the seals by pressing\
+    \ the center of each lid. If it doesn't pop back, the jar is sealed. \n13. Store\
+    \ sealed jars in a cool, dark place. Any unsealed jars should be refrigerated\
+    \ and used promptly."
+  reference:
+  - 6 cups diced unripe mango
+  - 1-1/2 cups diced red bell pepper
+  - 1/2 cup finely chopped yellow onion
+  - 1/2 tsp crushed red pepper flakes
+  - 2 tsp finely chopped garlic
+  - 2 tsp finely chopped ginger
+  - 1 cup light brown sugar
+  - 1-1/4 cups cider vinegar (5%)
+  - 1/2 cup water
+  - Wear gloves when handling green mangoes
+  - Adjust processing time based on altitude
+  worksheet:
+  - List all the ingredients needed for Mango Salsa.
+  - Describe the steps to safely handle and prepare green mangoes.
+  - Calculate the processing time for your altitude.
+  - Explain the importance of leaving headspace in the jars.
+  - Identify signs that a jar has not sealed properly.
+  teach_forward_kit:
+    three_minute_version: Mango Salsa is a tasty condiment made from mangoes, peppers,
+      and spices. Canning it allows you to preserve its fresh flavors. Key steps include
+      preparing the ingredients, cooking them, filling jars, and processing them in
+      a boiling-water canner, adjusting for altitude.
+    ten_minute_outline:
+    - Introduction to Mango Salsa and its uses
+    - Overview of canning and its benefits
+    - Detailed list of ingredients and equipment
+    - Step-by-step preparation and canning process
+    - Safety tips, including handling mangoes and adjusting for altitude
+    - Q&A session
+    discussion_prompts:
+    - What are the benefits of canning your own salsa compared to buying it?
+    - How does altitude affect the canning process?
+    - What precautions should be taken when handling green mangoes?
+    - Discuss the importance of proper jar sealing in food preservation.

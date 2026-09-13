@@ -1,0 +1,29 @@
+name: resilience-usda-canning
+created: '2026-09-13T13:03:44.700213+00:00'
+sources:
+- id: src.usda.home-canning.2015
+  file: sources/usda-home-canning.pdf
+  title: USDA Complete Guide to Home Canning (2015 revision)
+  source_kind: BOOK
+llm:
+  base_url: https://api.openai.com/v1
+  model: gpt-4o
+  temperature: 0.2
+passes:
+  parse:
+    completed: '2026-09-13T14:01:42.723959Z'
+  extract:
+    completed: '2026-09-13T14:36:43.960936Z'
+  draft:
+    completed: '2026-09-13T17:46:13.616438Z'
+  cite:
+    completed: '2026-09-13T18:10:58.171817Z'
+  canonicalize:
+    completed: '2026-09-13T18:15:34.687761Z'
+  edges:
+    completed: '2026-09-13T18:16:10.618827Z'
+  bundles:
+    completed: '2026-09-13T18:23:28.660038Z'
+  load:
+    completed: '2026-09-13T18:27:28.845969Z'
+job_id: null

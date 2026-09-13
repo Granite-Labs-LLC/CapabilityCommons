@@ -1,0 +1,346 @@
+id: food-preservation.standard-tomato-sauce
+slug: food-preservation.standard-tomato-sauce
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Standard Tomato Sauce Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning standard tomato sauce, including preparation and processing.
+summary_medium: This project blueprint provides detailed instructions for canning
+  standard tomato sauce, covering preparation, acidification, and processing times
+  using different canning methods.
+plain_language: Learn how to can standard tomato sauce by preparing tomatoes, simmering
+  the sauce, adding acid and salt, and processing jars using a boiling-water or pressure
+  canner.
+markdown_body: '### What this is
+
+  This is a guide for canning standard tomato sauce, which involves preparing tomatoes,
+  simmering them to the desired consistency, and processing them in jars using a boiling-water
+  or pressure canner.
+
+
+  ### Why it matters
+
+  Canning tomato sauce allows you to preserve the flavor and nutrients of fresh tomatoes
+  for long-term storage, providing a convenient and ready-to-use ingredient for various
+  recipes.
+
+
+  ### What you need
+
+  You will need tomatoes, bottled lemon juice or citric acid, salt (optional), a boiling-water
+  canner or pressure canner, jars, lids, and basic kitchen tools.
+
+
+  ### How to do it
+
+  1. Prepare and press tomatoes as for making tomato juice. 2. Simmer the sauce in
+  a large saucepan until it reaches the desired consistency, reducing by one-third
+  for thin sauce or by one-half for thick sauce. 3. Add bottled lemon juice or citric
+  acid to jars. 4. Optionally, add 1 teaspoon of salt per quart. 5. Fill hot jars,
+  leaving 1/4-inch headspace, remove air bubbles, and adjust headspace if needed.
+  6. Wipe rims, adjust lids, and process jars using the recommended times and pressures
+  for your altitude and canner type.
+
+
+  ### Common failure modes
+
+  Not achieving the correct sauce consistency, improper acidification, and incorrect
+  processing times or pressures can lead to spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure proper acidification to prevent the growth of harmful bacteria. Follow all
+  processing instructions carefully to ensure food safety.
+
+
+  ### Local adaptation notes
+
+  Adjust processing times and pressures based on local altitude and available canning
+  equipment.'
+structured_data:
+  goal: To can standard tomato sauce safely and effectively.
+  deliverables: Canned jars of tomato sauce.
+  acceptance_criteria: Jars are sealed properly with no spoilage, and sauce has the
+    desired consistency.
+  implementation:
+    smallest_viable_version: Canning a small batch of tomato sauce using a boiling-water
+      canner.
+    tools:
+    - boiling-water canner
+    - pressure canner
+    materials:
+    - tomatoes
+    - bottled lemon juice or citric acid
+    - salt
+    expected_time: 3-4 hours
+    expected_cost: Moderate
+    success_checks:
+    - Jars are sealed
+    - Sauce has desired consistency
+    stop_conditions:
+    - Jars do not seal
+    - Sauce consistency is incorrect
+    common_mistakes:
+    - Incorrect acidification
+    - Improper jar sealing
+    variants:
+    - label: Urban
+      when: Limited space for equipment
+      notes: Consider using smaller batches and a boiling-water canner.
+    - label: Off-grid
+      when: No access to electricity
+      notes: Use a stove or outdoor burner for heating.
+    when_to_escalate:
+    - If jars do not seal
+    - If unsure about acidification process
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_001
+  claim_text: This is a guide for canning standard tomato sauce, which involves preparing
+    tomatoes, simmering them to the desired consistency, and processing them in jars
+    using a boiling-water or pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Prepare and press as for making tomato juice, see page 3-5. Simmer in
+      large-diameter saucepan until sauce reaches desired consistency. Boil until
+      volume is reduced by about one-third for thin sauce, or by one-half for thick
+      sauce.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_002
+  claim_text: Canning tomato sauce allows you to preserve the flavor and nutrients
+    of fresh tomatoes for long-term storage, providing a convenient and ready-to-use
+    ingredient for various recipes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: A bushel weighs 53 pounds and yields 10 to 12 quarts of sauce—an average
+      of 5 pounds per quart.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_003
+  claim_text: You will need tomatoes, bottled lemon juice or citric acid, salt (optional),
+    a boiling-water canner or pressure canner, jars, lids, and basic kitchen tools.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Add bottled lemon juice or citric acid to jars. Add 1 teaspoon of salt
+      per quart to the jars, if desired.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_004
+  claim_text: Prepare and press tomatoes as for making tomato juice. Simmer the sauce
+    in a large saucepan until it reaches the desired consistency, reducing by one-third
+    for thin sauce or by one-half for thick sauce.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Prepare and press as for making tomato juice, see page 3-5. Simmer in
+      large-diameter saucepan until sauce reaches desired consistency. Boil until
+      volume is reduced by about one-third for thin sauce, or by one-half for thick
+      sauce.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_005
+  claim_text: Add bottled lemon juice or citric acid to jars. Optionally, add 1 teaspoon
+    of salt per quart.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Add bottled lemon juice or citric acid to jars. Add 1 teaspoon of salt
+      per quart to the jars, if desired.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_006
+  claim_text: Fill hot jars, leaving 1/4-inch headspace, remove air bubbles, and adjust
+    headspace if needed.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Fill hot jars, leaving 1/4-inch headspace. Remove air bubbles and adjust
+      headspace if needed.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_007
+  claim_text: Wipe rims, adjust lids, and process jars using the recommended times
+    and pressures for your altitude and canner type.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_008
+  claim_text: Not achieving the correct sauce consistency, improper acidification,
+    and incorrect processing times or pressures can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Acidification is still required for the pressure canning options; follow
+      all steps in the Procedures above for any of the processing options.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_009
+  claim_text: Ensure proper acidification to prevent the growth of harmful bacteria.
+    Follow all processing instructions carefully to ensure food safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Acidification is still required for the pressure canning options; follow
+      all steps in the Procedures above for any of the processing options.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: food-preservation.standard-tomato-sauce
+  claim_id: clm_010
+  claim_text: Adjust processing times and pressures based on local altitude and available
+    canning equipment.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 91
+    page_end: 92
+    segment_id: src.usda.home-canning.2015::seg_000119
+    excerpt: Recommended process time for Standard Tomato Sauce in a boiling-water
+      canner
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000119
+bundle_overrides:
+  hook: Preserve the taste of summer all year round by learning how to can your own
+    tomato sauce, ensuring you have a ready-to-use ingredient for countless recipes.
+  primer: Canning tomato sauce is a practical way to preserve the fresh taste and
+    nutrients of tomatoes for long-term storage. This process involves preparing tomatoes,
+    simmering them to the desired consistency, and sealing them in jars using a boiling-water
+    or pressure canner. By canning your own tomato sauce, you can enjoy the flavors
+    of ripe tomatoes throughout the year, and have a convenient ingredient ready for
+    use in various dishes like pasta, soups, and stews. The process requires some
+    basic kitchen tools and ingredients, including fresh tomatoes, bottled lemon juice
+    or citric acid for acidification, and optional salt for flavor. Proper canning
+    techniques are crucial to ensure food safety and prevent spoilage, making it important
+    to follow recommended guidelines for processing times and pressures, especially
+    considering your local altitude.
+  guide: '1. Gather your materials: fresh tomatoes, bottled lemon juice or citric
+    acid, salt (optional), jars, lids, and a boiling-water or pressure canner.
+
+    2. Prepare the tomatoes by washing them thoroughly. Remove stems and any blemishes.
+    Cut the tomatoes into quarters.
+
+    3. Simmer the tomatoes in a large saucepan until they soften. Use a food mill
+    or sieve to remove skins and seeds, resulting in a smooth sauce.
+
+    4. Return the sauce to the saucepan and simmer until it reaches your desired consistency.
+    Reduce by one-third for a thinner sauce or by half for a thicker sauce.
+
+    5. Sterilize your jars and lids by boiling them in water for at least 10 minutes.
+
+    6. Add 2 tablespoons of bottled lemon juice or 1/2 teaspoon of citric acid to
+    each quart jar. Optionally, add 1 teaspoon of salt per quart.
+
+    7. Fill the hot jars with the sauce, leaving a 1/4-inch headspace. Remove air
+    bubbles by gently tapping the jars or using a non-metallic spatula.
+
+    8. Wipe the rims of the jars with a clean, damp cloth to ensure a good seal. Place
+    the lids on the jars and screw on the bands until fingertip tight.
+
+    9. Process the jars in a boiling-water or pressure canner, adjusting the time
+    and pressure based on your altitude and canner type. Refer to canning guidelines
+    for specific times.
+
+    10. Once processed, remove the jars and let them cool undisturbed for 12-24 hours.
+    Check the seals before storing. Properly sealed jars can be stored in a cool,
+    dark place for up to a year.'
+  reference:
+  - Tomatoes
+  - Bottled lemon juice or citric acid
+  - Salt (optional)
+  - Boiling-water canner or pressure canner
+  - Jars and lids
+  - Simmer until desired consistency
+  - Leave 1/4-inch headspace
+  - Adjust processing for altitude
+  worksheet:
+  - List the materials and tools needed for canning tomato sauce.
+  - Describe the steps to prepare tomatoes for canning.
+  - Explain the importance of acidification in canning tomato sauce.
+  - Calculate the processing time adjustments needed for your local altitude.
+  - Practice filling jars and removing air bubbles.
+  - Simulate checking jar seals and discuss what to do if a jar does not seal properly.
+  teach_forward_kit:
+    three_minute_version: Canning tomato sauce involves preparing and simmering tomatoes,
+      adding acid for safety, and processing jars in a canner. This preserves the
+      sauce for long-term storage, allowing you to enjoy fresh tomato flavor year-round.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Materials and tools required
+    - Step-by-step canning process
+    - Importance of acidification and safety measures
+    - Adjusting for altitude
+    - Checking seals and storing canned sauce
+    discussion_prompts:
+    - Why is acidification important in canning tomato sauce?
+    - What are the potential risks if canning instructions are not followed?
+    - How does altitude affect the canning process?
+    - What are some creative ways to use canned tomato sauce in recipes?

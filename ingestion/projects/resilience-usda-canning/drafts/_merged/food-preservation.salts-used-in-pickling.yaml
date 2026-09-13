@@ -1,0 +1,131 @@
+id: food-preservation.salts-used-in-pickling
+slug: food-preservation.salts-used-in-pickling
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Salts Used in Pickling
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Overview of different salts used in pickling.
+summary_medium: This reference sheet provides information on the types of salts used
+  in pickling and their effects on the pickling process.
+plain_language: Learn about the different types of salts you can use for pickling
+  and how they affect the process.
+markdown_body: '### What this is
+
+  This reference sheet explains the various types of salts used in pickling, including
+  their properties and how they influence the pickling process.
+
+
+  ### Why it matters
+
+  Choosing the right type of salt is crucial for successful pickling. Different salts
+  can affect the taste, texture, and safety of the pickled product.
+
+
+  ### What you need
+
+  Understanding of different salt types such as table salt, kosher salt, and pickling
+  salt.
+
+
+  ### How to do it
+
+  Select the appropriate salt based on the recipe and desired outcome. Avoid using
+  salts with additives like iodine or anti-caking agents, as they can cloud the brine
+  or alter the flavor.
+
+
+  ### Common failure modes
+
+  Using the wrong type of salt can lead to undesirable flavors, cloudiness in the
+  brine, or spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure that the salt used is food-grade and free from additives that could affect
+  the pickling process.
+
+
+  ### Local adaptation notes
+
+  In regions where certain salts are unavailable, consider local alternatives that
+  match the properties of recommended salts.'
+structured_data:
+  tools:
+  - salt
+  materials:
+  - salt
+  success_criteria:
+  - Clear brine
+  - Desired flavor profile
+  failure_modes:
+  - Cloudy brine
+  - Off-flavors
+  safety_boundary: Use food-grade salts without additives.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.salts-used-in-pickling
+  claim_id: clm_001
+  claim_text: Choosing the right type of salt is crucial for successful pickling.
+    Different salts can affect the taste, texture, and safety of the pickled product.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Salts used in pickling
+    start_char: 0
+    end_char: 22
+    support_strength: medium
+- object_id: food-preservation.salts-used-in-pickling
+  claim_id: clm_002
+  claim_text: Avoid using salts with additives like iodine or anti-caking agents,
+    as they can cloud the brine or alter the flavor.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Salts used in pickling
+    start_char: 0
+    end_char: 22
+    support_strength: medium
+- object_id: food-preservation.salts-used-in-pickling
+  claim_id: clm_003
+  claim_text: Using the wrong type of salt can lead to undesirable flavors, cloudiness
+    in the brine, or spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Salts used in pickling
+    start_char: 0
+    end_char: 22
+    support_strength: medium
+- object_id: food-preservation.salts-used-in-pickling
+  claim_id: clm_004
+  claim_text: Ensure that the salt used is food-grade and free from additives that
+    could affect the pickling process.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 148
+    page_end: 149
+    segment_id: src.usda.home-canning.2015::seg_000205
+    excerpt: Salts used in pickling
+    start_char: 0
+    end_char: 22
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000205

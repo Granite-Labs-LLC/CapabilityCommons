@@ -1,0 +1,284 @@
+id: food-preservation.canning-meats
+slug: food-preservation.canning-meats
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Preparing and Canning Poultry, Red Meats, and Seafoods
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts:
+- home-canning
+- food-safety
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guidelines for safely canning poultry, red meats, and seafoods.
+summary_medium: Learn how to safely and effectively preserve poultry, red meats, and
+  seafoods through canning, focusing on preparation, processing, and safety measures.
+plain_language: This guide helps you can poultry, red meats, and seafoods safely at
+  home, ensuring they are preserved properly to avoid spoilage and contamination.
+markdown_body: '# What this is
+
+  This guide provides detailed instructions on how to prepare and can poultry, red
+  meats, and seafoods. It focuses on the steps necessary to ensure safe preservation
+  through canning.
+
+
+  # Why it matters
+
+  Canning meats allows for long-term storage without refrigeration, making it a valuable
+  skill for preserving food. Proper canning prevents spoilage and foodborne illnesses.
+
+
+  # What you need
+
+  You will need a pressure canner, jars, and lids. Ensure all equipment is clean and
+  in good condition to prevent contamination.
+
+
+  # How to do it
+
+  1. Prepare the meats by cleaning and cutting them into appropriate sizes. 2. Pack
+  the meats into jars, leaving the recommended headspace. 3. Seal the jars with lids
+  and process them in a pressure canner at the correct pressure and time for your
+  altitude. 4. Allow the jars to cool and check seals before storing.
+
+
+  # Common failure modes
+
+  Improper sealing of jars and contamination during preparation or processing can
+  lead to spoilage.
+
+
+  # Safety/boundary notes
+
+  Ensure the pressure canner reaches the correct pressure and maintain it for the
+  required time. Avoid contamination by using clean equipment and handling meats properly.
+
+
+  # Local adaptation notes
+
+  Consider the availability of meats in your area and any local canning practices
+  that may affect processing times or methods.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials: []
+  success_criteria:
+  - Jars are properly sealed
+  - No signs of spoilage
+  failure_modes:
+  - improper sealing
+  - contamination
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: ensure proper pressure; avoid contamination'
+  implementation:
+    smallest_viable_version: Can small batches of meat using a pressure canner.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials: []
+    expected_time: 2-3 hours
+    expected_cost: medium
+    success_checks:
+    - Jars are sealed
+    - No spoilage detected
+    stop_conditions:
+    - Pressure not maintained
+    - Signs of contamination
+    common_mistakes:
+    - Not maintaining pressure
+    - Improper jar sealing
+    variants:
+    - label: urban
+      when: Limited space for canning
+      notes: Consider smaller batches or shared kitchen facilities.
+    when_to_escalate:
+    - If pressure cannot be maintained
+    - If contamination is suspected
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.canning-meats
+  claim_id: clm_001
+  claim_text: This guide provides detailed instructions on how to prepare and can
+    poultry, red meats, and seafoods.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 133
+    page_end: 133
+    segment_id: src.usda.home-canning.2015::seg_000186
+    excerpt: Guide 5 **Preparing and Canning Poultry, Red Meats, and Seafoods**
+    start_char: 0
+    end_char: 60
+    support_strength: strong
+- object_id: food-preservation.canning-meats
+  claim_id: clm_002
+  claim_text: Canning meats allows for long-term storage without refrigeration, making
+    it a valuable skill for preserving food.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 133
+    page_end: 133
+    segment_id: src.usda.home-canning.2015::seg_000186
+    excerpt: Guide 5 **Preparing and Canning Poultry, Red Meats, and Seafoods**
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+- object_id: food-preservation.canning-meats
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, and lids.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 133
+    page_end: 133
+    segment_id: src.usda.home-canning.2015::seg_000186
+    excerpt: Guide 5 **Preparing and Canning Poultry, Red Meats, and Seafoods**
+    start_char: 0
+    end_char: 60
+    support_strength: medium
+- object_id: food-preservation.canning-meats
+  claim_id: clm_004
+  claim_text: Prepare the meats by cleaning and cutting them into appropriate sizes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Cut the chicken or rabbit into suitable sizes for canning.
+    start_char: 215
+    end_char: 263
+    support_strength: strong
+- object_id: food-preservation.canning-meats
+  claim_id: clm_005
+  claim_text: Pack the meats into jars, leaving the recommended headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Fill hot jars with pieces and hot broth, leaving 1-1/4 inch headspace.
+    start_char: 355
+    end_char: 420
+    support_strength: strong
+- object_id: food-preservation.canning-meats
+  claim_id: clm_006
+  claim_text: Seal the jars with lids and process them in a pressure canner at the
+    correct pressure and time for your altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Adjust lids and process.
+    start_char: 465
+    end_char: 487
+    support_strength: medium
+- object_id: food-preservation.canning-meats
+  claim_id: clm_007
+  claim_text: Improper sealing of jars and contamination during preparation or processing
+    can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 421
+    end_char: 487
+    support_strength: medium
+- object_id: food-preservation.canning-meats
+  claim_id: clm_008
+  claim_text: Ensure the pressure canner reaches the correct pressure and maintain
+    it for the required time.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 135
+    page_end: 135
+    segment_id: src.usda.home-canning.2015::seg_000188
+    excerpt: Adjust lids and process.
+    start_char: 465
+    end_char: 487
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000186
+bundle_overrides:
+  hook: Canning meats allows you to store them long-term without refrigeration, making
+    it a valuable skill for food preservation.
+  primer: Canning is a method of preserving food in which the food contents are processed
+    and sealed in an airtight container. This guide focuses on canning poultry, red
+    meats, and seafoods, which are low-acid foods that require careful handling to
+    prevent spoilage and foodborne illnesses. The process involves using a pressure
+    canner, which is essential for safely canning these types of foods due to their
+    low acidity. The pressure canner heats the contents to a temperature that destroys
+    harmful bacteria, such as Clostridium botulinum, which can cause botulism. Proper
+    canning ensures that meats can be stored for extended periods without refrigeration,
+    making it an ideal method for those looking to preserve food for emergencies or
+    to enjoy seasonal meats year-round. Key steps include preparing the meats by cleaning
+    and cutting them into appropriate sizes, packing them into jars with the correct
+    headspace, sealing the jars, and processing them at the correct pressure and time
+    for your altitude. Ensuring that jars are properly sealed and free from contamination
+    is crucial to prevent spoilage.
+  guide: "1. Gather your equipment: a pressure canner, jars, and lids. Ensure all\
+    \ equipment is clean and in good condition. \n\n2. Prepare the meats: Clean and\
+    \ cut poultry, red meats, or seafood into sizes suitable for canning. Remove any\
+    \ excess fat or gristle. \n\n3. Pack the jars: Fill hot jars with the prepared\
+    \ meat, leaving the recommended headspace (usually 1-1/4 inches). You may add\
+    \ hot broth or water to cover the meat, if desired. \n\n4. Seal the jars: Wipe\
+    \ the rims of the jars with a clean, damp paper towel to remove any residue. Place\
+    \ the lids on the jars and adjust the bands until they are fingertip-tight. \n\
+    \n5. Process the jars: Place the jars in the pressure canner. Follow the manufacturer's\
+    \ instructions to secure the lid and vent the canner for 10 minutes. Adjust the\
+    \ pressure according to your altitude and process the jars for the recommended\
+    \ time. \n\n6. Cool and store: Once processing is complete, allow the canner to\
+    \ depressurize naturally. Remove the jars and let them cool undisturbed for 12-24\
+    \ hours. Check the seals before storing the jars in a cool, dark place."
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Clean equipment
+  - 1-1/4 inch headspace
+  - Correct pressure and time for altitude
+  - Check seals after cooling
+  worksheet:
+  - List the equipment needed for canning meats.
+  - Describe the steps to prepare meats for canning.
+  - Explain how to ensure jars are properly sealed.
+  - Identify common mistakes in the canning process.
+  - Calculate the processing time for your altitude.
+  teach_forward_kit:
+    three_minute_version: Canning meats involves using a pressure canner to safely
+      preserve poultry, red meats, and seafoods. The process includes cleaning and
+      cutting the meat, packing it into jars, sealing the jars, and processing them
+      at the correct pressure and time. Proper sealing and avoiding contamination
+      are crucial to prevent spoilage.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Equipment and preparation
+    - Step-by-step canning process
+    - Common mistakes and how to avoid them
+    - Safety tips and storage
+    discussion_prompts:
+    - Why is a pressure canner necessary for canning meats?
+    - What are the risks of improper canning?
+    - How can you ensure your canned meats are safe to eat?
+    - Discuss the benefits of canning meats at home.

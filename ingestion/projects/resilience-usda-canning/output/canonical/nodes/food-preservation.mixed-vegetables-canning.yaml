@@ -1,0 +1,308 @@
+id: food-preservation.mixed-vegetables-canning
+slug: food-preservation.mixed-vegetables-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Mixed Vegetables
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning mixed vegetables using a pressure canner.
+summary_medium: This project blueprint provides detailed instructions for canning
+  mixed vegetables, including preparation, packing, and processing using a pressure
+  canner.
+plain_language: Learn how to safely can mixed vegetables at home using a pressure
+  canner. This guide covers everything from preparing the vegetables to processing
+  them in jars.
+markdown_body: '### What this is
+
+  This is a guide for canning mixed vegetables using a pressure canner. It includes
+  steps for preparing the vegetables, packing them into jars, and processing them
+  to ensure they are safely preserved.
+
+
+  ### Why it matters
+
+  Canning mixed vegetables allows you to preserve a variety of vegetables for long-term
+  storage, ensuring you have access to nutritious food year-round.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, and boiling water. The vegetables include
+  carrots, sweet corn, green beans, lima beans, tomatoes, and zucchini.
+
+
+  ### How to do it
+
+  Wash and prepare the vegetables as needed. Combine them in a large pot, add water
+  to cover, and boil for 5 minutes. Fill hot jars with the vegetables and liquid,
+  leaving a 1-inch headspace. Remove air bubbles, adjust headspace, wipe rims, and
+  adjust lids. Process the jars in a pressure canner according to the manufacturer''s
+  instructions.
+
+
+  ### Common failure modes
+
+  Failure to maintain correct pressure can lead to under-processed jars. Incomplete
+  seals can result in spoilage.
+
+
+  ### Safety/boundary notes
+
+  Ensure you use the correct pressure for your altitude to prevent spoilage and ensure
+  safety.
+
+
+  ### Local adaptation notes
+
+  Adjust the vegetable mix based on local availability and ensure you account for
+  local altitude when determining pressure settings.'
+structured_data:
+  goal: Safely preserve mixed vegetables using a pressure canner.
+  deliverables: 7 quarts of canned mixed vegetables.
+  acceptance_criteria: Jars are sealed properly and stored safely.
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude and proper sealing
+    of jars.'
+  implementation:
+    smallest_viable_version: Prepare and can a small batch of mixed vegetables using
+      a pressure canner.
+    tools:
+    - Pressure canner
+    - Jars
+    - Lids
+    materials:
+    - Carrots
+    - Sweet corn
+    - Green beans
+    - Lima beans
+    - Tomatoes
+    - Zucchini
+    - Boiling water
+    expected_time: Approximately 2-3 hours
+    expected_cost: $20-$50 depending on vegetable prices
+    success_checks:
+    - Jars are sealed properly
+    - Vegetables are fully submerged in liquid
+    stop_conditions:
+    - Jars do not seal
+    - Pressure is not maintained
+    common_mistakes:
+    - Not removing air bubbles
+    - Incorrect headspace
+    variants:
+    - label: renter
+      when: If you do not own a pressure canner
+      notes: Consider borrowing or renting a pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If unsure about pressure settings for altitude
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_001
+  claim_text: This is a guide for canning mixed vegetables using a pressure canner.
+    It includes steps for preparing the vegetables, packing them into jars, and processing
+    them to ensure they are safely preserved.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 121
+    page_end: 121
+    segment_id: src.usda.home-canning.2015::seg_000170
+    excerpt: 'Procedure: Except for zucchini, wash and prepare vegetables as described
+      previously for each vegetable. Wash, trim, and slice or cube zucchini; combine
+      all vegetables in a large pot or kettle, and add enough water to cover pieces.
+      Add 1 teaspoon salt per quart to the jar, if desired. Boil 5 minutes and fill
+      hot jars with hot pieces and liquid, leaving 1-inch headspace. Remove air bubbles
+      and adjust headspace if needed. Wipe rims of jars with a dampened clean paper
+      towel. Adjust lids and process.'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_002
+  claim_text: Canning mixed vegetables allows you to preserve a variety of vegetables
+    for long-term storage, ensuring you have access to nutritious food year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 121
+    page_end: 121
+    segment_id: src.usda.home-canning.2015::seg_000170
+    excerpt: 'Yield: 7 quarts Optional mix—You may change the suggested proportions
+      or substitute other favorite vegetables except leafy greens, dried beans, cream-style
+      corn, squash and sweet potatoes.'
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, and boiling water. The
+    vegetables include carrots, sweet corn, green beans, lima beans, tomatoes, and
+    zucchini.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 121
+    page_end: 121
+    segment_id: src.usda.home-canning.2015::seg_000170
+    excerpt: 6 cups sliced carrots 6 cups cut, whole kernel sweet corn 6 cups cut
+      green beans 6 cups shelled lima beans 4 cups whole or crushed tomatoes 4 cups
+      diced zucchini
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_004
+  claim_text: Wash and prepare the vegetables as needed. Combine them in a large pot,
+    add water to cover, and boil for 5 minutes. Fill hot jars with the vegetables
+    and liquid, leaving a 1-inch headspace. Remove air bubbles, adjust headspace,
+    wipe rims, and adjust lids. Process the jars in a pressure canner according to
+    the manufacturer's instructions.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 121
+    page_end: 121
+    segment_id: src.usda.home-canning.2015::seg_000170
+    excerpt: 'Procedure: Except for zucchini, wash and prepare vegetables as described
+      previously for each vegetable. Wash, trim, and slice or cube zucchini; combine
+      all vegetables in a large pot or kettle, and add enough water to cover pieces.
+      Add 1 teaspoon salt per quart to the jar, if desired. Boil 5 minutes and fill
+      hot jars with hot pieces and liquid, leaving 1-inch headspace. Remove air bubbles
+      and adjust headspace if needed. Wipe rims of jars with a dampened clean paper
+      towel. Adjust lids and process.'
+    start_char: 0
+    end_char: 400
+    support_strength: strong
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_005
+  claim_text: Failure to maintain correct pressure can lead to under-processed jars.
+    Incomplete seals can result in spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000171
+    excerpt: Recommended process time for Mixed Vegetables in a dial-gauge pressure
+      canner Canner Pressure (PSI) at Altitudes of 4.001-Style Jar Process 0-2.001-6.001
+      of Pack Size Time 2,000 ft 4,000 ft 6,000 ft 8,000 ft Hot Pints 75 min 11 lb
+      12 lb 13 lb 14 lb Quarts 90 11 12 13 14
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_006
+  claim_text: Ensure you use the correct pressure for your altitude to prevent spoilage
+    and ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 122
+    page_end: 122
+    segment_id: src.usda.home-canning.2015::seg_000171
+    excerpt: Recommended process time for Mixed Vegetables in a dial-gauge pressure
+      canner Canner Pressure (PSI) at Altitudes of 4.001-Style Jar Process 0-2.001-6.001
+      of Pack Size Time 2,000 ft 4,000 ft 6,000 ft 8,000 ft Hot Pints 75 min 11 lb
+      12 lb 13 lb 14 lb Quarts 90 11 12 13 14
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: food-preservation.mixed-vegetables-canning
+  claim_id: clm_007
+  claim_text: Adjust the vegetable mix based on local availability and ensure you
+    account for local altitude when determining pressure settings.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 121
+    page_end: 121
+    segment_id: src.usda.home-canning.2015::seg_000170
+    excerpt: Optional mix—You may change the suggested proportions or substitute other
+      favorite vegetables except leafy greens, dried beans, cream-style corn, squash
+      and sweet potatoes.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000170
+bundle_overrides:
+  hook: Preserve your garden's bounty and enjoy nutritious vegetables year-round by
+    learning how to can mixed vegetables safely at home.
+  primer: Canning mixed vegetables is a practical way to preserve a variety of vegetables
+    for long-term storage. This process involves using a pressure canner, which is
+    essential for safely preserving low-acid foods like vegetables. By canning at
+    home, you can ensure that you have access to nutritious, home-grown produce throughout
+    the year, even when certain vegetables are out of season. The process requires
+    some specific equipment, including a pressure canner, jars, and lids, and involves
+    several steps to ensure the vegetables are safely preserved. The vegetables commonly
+    used in mixed vegetable canning include carrots, sweet corn, green beans, lima
+    beans, tomatoes, and zucchini. It's important to follow the canning process carefully,
+    maintaining the correct pressure and processing time, especially considering your
+    local altitude, to prevent spoilage and ensure safety. Adjusting the vegetable
+    mix based on what's available locally is possible, but certain vegetables like
+    leafy greens and squash should be avoided due to safety concerns.
+  guide: 'To can mixed vegetables, start by gathering your equipment: a pressure canner,
+    jars, lids, and the vegetables you plan to can. Common vegetables include carrots,
+    sweet corn, green beans, lima beans, tomatoes, and zucchini. Begin by washing
+    and preparing the vegetables. For zucchini, trim and slice or cube it. Combine
+    all the vegetables in a large pot, adding enough water to cover them. Optionally,
+    add 1 teaspoon of salt per quart to the jar for flavor. Boil the vegetables for
+    5 minutes. Next, fill hot jars with the hot vegetables and liquid, leaving a 1-inch
+    headspace at the top. Remove any air bubbles by gently tapping the jars or using
+    a non-metallic spatula. Adjust the headspace if necessary. Wipe the rims of the
+    jars with a damp paper towel to ensure a clean seal. Place the lids on the jars
+    and secure them with rings. Process the jars in a pressure canner according to
+    the manufacturer''s instructions, adjusting for your altitude. For altitudes of
+    0-2,000 feet, process pints for 75 minutes at 11 pounds of pressure and quarts
+    for 90 minutes. Adjust the pressure for higher altitudes as needed. Once processed,
+    allow the jars to cool undisturbed for 12-24 hours. Check the seals before storing
+    the jars in a cool, dark place.'
+  reference:
+  - Pressure canner
+  - Jars and lids
+  - Carrots, sweet corn, green beans, lima beans, tomatoes, zucchini
+  - 1 teaspoon salt per quart (optional)
+  - Boil vegetables for 5 minutes
+  - Leave 1-inch headspace
+  - Process pints for 75 minutes, quarts for 90 minutes
+  - Adjust pressure for altitude
+  worksheet:
+  - List the vegetables you plan to can and their quantities.
+  - Calculate the processing time and pressure needed for your altitude.
+  - Practice filling a jar with water to the correct headspace.
+  - Simulate removing air bubbles from a jar using a spatula.
+  - Create a checklist for the canning process to ensure all steps are followed.
+  teach_forward_kit:
+    three_minute_version: Canning mixed vegetables involves preparing and boiling
+      vegetables, filling jars, and processing them in a pressure canner to ensure
+      safe preservation. Key steps include maintaining correct pressure and processing
+      time, especially considering altitude.
+    ten_minute_outline:
+    - Introduction to canning and its benefits
+    - Necessary equipment and ingredients
+    - Step-by-step canning process
+    - Importance of pressure and altitude adjustments
+    - Common mistakes and how to avoid them
+    - Safety tips and storage recommendations
+    discussion_prompts:
+    - Why is it important to use a pressure canner for low-acid foods?
+    - How does altitude affect the canning process?
+    - What are some common mistakes in canning and how can they be prevented?
+    - Discuss the benefits of preserving vegetables at home.
+    - What adjustments might you make based on the vegetables available locally?

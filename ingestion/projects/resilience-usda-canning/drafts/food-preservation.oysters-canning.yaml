@@ -1,0 +1,324 @@
+id: food-preservation.oysters-canning
+slug: food-preservation.oysters-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Oysters
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: productive
+contexts:
+- home-canning
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Learn how to safely can oysters using a pressure canner.
+summary_medium: This guide provides detailed instructions for canning oysters, including
+  preparation, packing, and processing times for both dial-gauge and weighted-gauge
+  pressure canners.
+plain_language: Canning oysters involves keeping them on ice, heating to open shells,
+  washing, and then processing in a pressure canner to ensure safety and preservation.
+markdown_body: '### What this is
+
+  This project blueprint guides you through the process of canning oysters at home
+  using a pressure canner. It includes steps for preparation, packing, and processing
+  to ensure safe preservation.
+
+
+  ### Why it matters
+
+  Canning oysters allows you to preserve them for longer periods, making them available
+  even when fresh oysters are not in season. Proper canning ensures safety by preventing
+  bacterial growth.
+
+
+  ### What you need
+
+  You will need live oysters, a pressure canner, jars, salt, and basic kitchen tools.
+  Ensure you have access to fresh oysters and a reliable pressure canner.
+
+
+  ### How to do it
+
+  1. Keep live oysters on ice until ready to can. 2. Wash the shells and heat them
+  in a preheated oven at 400°F for 5 to 7 minutes. 3. Cool briefly in ice water, then
+  drain and open the shells to remove the meat. 4. Wash the meat in a saltwater solution
+  (1/2 cup salt per gallon of water) and drain. 5. Fill hot half-pint or pint jars
+  with drained oysters, adding 1/2 teaspoon salt per pint if desired. 6. Cover with
+  fresh boiling water, leaving a 1-inch headspace. 7. Remove air bubbles, adjust headspace,
+  wipe rims, adjust lids, and process in a pressure canner. For dial-gauge canners,
+  process for 75 minutes at 11 lb pressure (0–2,000 ft), 12 lb (2,001–4,000 ft), 13
+  lb (4,001–6,000 ft), or 14 lb (6,001–8,000 ft). For weighted-gauge canners, process
+  for 75 minutes at 10 lb pressure (0–1,000 ft) or 15 lb (above 1,000 ft).
+
+
+  ### Common failure modes
+
+  Incorrect pressure settings or excess moisture in jars can lead to spoilage. Ensure
+  proper pressure and headspace to avoid these issues.
+
+
+  ### Safety/boundary notes
+
+  Always use a pressure canner to ensure the oysters reach a safe temperature to prevent
+  bacterial growth. Avoid contamination by maintaining cleanliness throughout the
+  process.
+
+
+  ### Local adaptation notes
+
+  Adapt the process based on the availability of oysters in your region. Ensure you
+  have access to fresh, high-quality oysters for the best results.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  materials:
+  - oysters
+  - salt
+  success_criteria:
+  - Oysters are safely canned with no spoilage.
+  - Jars are sealed properly.
+  failure_modes:
+  - Incorrect pressure
+  - Excess moisture
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure proper pressure; Avoid contamination'
+  implementation:
+    smallest_viable_version: Canning oysters using a pressure canner with proper preparation
+      and processing.
+    tools:
+    - pressure canner
+    - jars
+    materials:
+    - oysters
+    - salt
+    expected_time: Approximately 2 hours
+    expected_cost: Medium
+    success_checks:
+    - Jars are sealed and free from spoilage.
+    - Oysters are preserved safely.
+    stop_conditions:
+    - Pressure not reaching required levels
+    - Signs of spoilage after processing
+    common_mistakes:
+    - Not maintaining correct pressure
+    - Improper jar sealing
+    variants:
+    - label: Urban
+      when: Limited access to fresh oysters
+      notes: Consider sourcing oysters from reputable suppliers.
+    when_to_escalate:
+    - If pressure cannot be maintained
+    - If jars do not seal properly
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_001
+  claim_text: This project blueprint guides you through the process of canning oysters
+    at home using a pressure canner. It includes steps for preparation, packing, and
+    processing to ensure safe preservation.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: Keep live oysters on ice until ready to can. Wash shells. Heat 5 to 7
+      minutes in preheated oven at 400°F. Cool briefly in ice water. Drain, open shell,
+      and remove meat. Wash meat in water containing 1/2 cup salt per gallon. Drain.
+      Add 1/2 teaspoon salt to each pint, if desired. Fill hot half-pint or pint jars
+      with drained oysters and cover with fresh boiling water, leaving 1-inch headspace.
+      Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a
+      dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_002
+  claim_text: Canning oysters allows you to preserve them for longer periods, making
+    them available even when fresh oysters are not in season. Proper canning ensures
+    safety by preventing bacterial growth.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: Keep live oysters on ice until ready to can. Wash shells. Heat 5 to 7
+      minutes in preheated oven at 400°F. Cool briefly in ice water. Drain, open shell,
+      and remove meat. Wash meat in water containing 1/2 cup salt per gallon. Drain.
+      Add 1/2 teaspoon salt to each pint, if desired. Fill hot half-pint or pint jars
+      with drained oysters and cover with fresh boiling water, leaving 1-inch headspace.
+      Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a
+      dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_003
+  claim_text: You will need live oysters, a pressure canner, jars, salt, and basic
+    kitchen tools. Ensure you have access to fresh oysters and a reliable pressure
+    canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: Keep live oysters on ice until ready to can. Wash shells. Heat 5 to 7
+      minutes in preheated oven at 400°F. Cool briefly in ice water. Drain, open shell,
+      and remove meat. Wash meat in water containing 1/2 cup salt per gallon. Drain.
+      Add 1/2 teaspoon salt to each pint, if desired. Fill hot half-pint or pint jars
+      with drained oysters and cover with fresh boiling water, leaving 1-inch headspace.
+      Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a
+      dampened clean paper towel. Adjust lids and process.
+    start_char: 0
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_004
+  claim_text: For dial-gauge canners, process for 75 minutes at 11 lb pressure (0–2,000
+    ft), 12 lb (2,001–4,000 ft), 13 lb (4,001–6,000 ft), or 14 lb (6,001–8,000 ft).
+    For weighted-gauge canners, process for 75 minutes at 10 lb pressure (0–1,000
+    ft) or 15 lb (above 1,000 ft).
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: '| Recommended process time for Oysters in a dial-gauge pressure canner
+      | Half-pints or Pints | 75 min | 11 lb | 12 lb | 13 lb | 14 lb | | Recommended
+      process time for Oysters in a weighted-gauge pressure canner | Half-pints or
+      Pints | 75 min | 10 lb | 15 lb |'
+    start_char: 501
+    end_char: 1000
+    support_strength: strong
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_005
+  claim_text: Incorrect pressure settings or excess moisture in jars can lead to spoilage.
+    Ensure proper pressure and headspace to avoid these issues.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: Remove air bubbles and adjust headspace if needed. Wipe rims of jars
+      with a dampened clean paper towel. Adjust lids and process.
+    start_char: 400
+    end_char: 500
+    support_strength: medium
+- object_id: food-preservation.oysters-canning
+  claim_id: clm_006
+  claim_text: Always use a pressure canner to ensure the oysters reach a safe temperature
+    to prevent bacterial growth. Avoid contamination by maintaining cleanliness throughout
+    the process.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 142
+    page_end: 143
+    segment_id: src.usda.home-canning.2015::seg_000200
+    excerpt: Adjust lids and process.
+    start_char: 480
+    end_char: 500
+    support_strength: weak
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000200
+bundle_overrides:
+  hook: Canning oysters at home ensures you have a delicious seafood treat available
+    year-round, even when they're out of season.
+  primer: Canning oysters is a method of preserving these delicate seafood delicacies
+    so they can be enjoyed long after their harvest. The process involves using a
+    pressure canner, which is essential for safely preserving low-acid foods like
+    oysters. By canning oysters, you can prevent bacterial growth and spoilage, ensuring
+    that your oysters remain safe to eat. This method is particularly useful for those
+    who live far from the coast or want to enjoy oysters when they are not in season.
+    To can oysters, you will need live oysters, a pressure canner, jars, salt, and
+    basic kitchen tools. The process includes preparing the oysters by keeping them
+    on ice, heating them to open the shells, washing the meat, and then processing
+    them in a pressure canner. Proper pressure and cleanliness are crucial to avoid
+    spoilage and ensure safety.
+  guide: '1. **Prepare the Oysters**: Keep live oysters on ice until you''re ready
+    to can them. This keeps them fresh and safe. Wash the shells thoroughly to remove
+    any dirt or debris.
+
+
+    2. **Heat the Oysters**: Preheat your oven to 400°F. Place the oysters in the
+    oven for 5 to 7 minutes. This will help open the shells slightly, making it easier
+    to remove the meat.
+
+
+    3. **Cool and Clean**: After heating, quickly cool the oysters in ice water. Drain
+    them, open the shells, and remove the meat. Wash the oyster meat in a saltwater
+    solution (1/2 cup salt per gallon of water) and drain well.
+
+
+    4. **Pack the Jars**: Fill hot, sterilized half-pint or pint jars with the drained
+    oysters. If desired, add 1/2 teaspoon of salt per pint. Cover the oysters with
+    fresh boiling water, leaving a 1-inch headspace at the top of the jar.
+
+
+    5. **Remove Air Bubbles**: Use a non-metallic spatula to remove any air bubbles
+    in the jars. Adjust the headspace if necessary.
+
+
+    6. **Seal the Jars**: Wipe the rims of the jars with a clean, damp paper towel
+    to remove any residue. Place the lids on the jars and screw on the bands until
+    they are fingertip-tight.
+
+
+    7. **Process in a Pressure Canner**: Place the jars in a pressure canner. For
+    dial-gauge canners, process for 75 minutes at 11 lb pressure (0–2,000 ft), 12
+    lb (2,001–4,000 ft), 13 lb (4,001–6,000 ft), or 14 lb (6,001–8,000 ft). For weighted-gauge
+    canners, process for 75 minutes at 10 lb pressure (0–1,000 ft) or 15 lb (above
+    1,000 ft).
+
+
+    8. **Cool and Store**: After processing, let the jars cool naturally. Check the
+    seals before storing. Properly sealed jars can be stored in a cool, dark place
+    for up to a year.'
+  reference:
+  - Keep live oysters on ice until ready to can.
+  - Preheat oven to 400°F.
+  - Heat oysters for 5-7 minutes.
+  - Cool in ice water and drain.
+  - Wash oyster meat in saltwater solution.
+  - Fill jars with oysters and boiling water, leaving 1-inch headspace.
+  - Process in a pressure canner for 75 minutes.
+  - 'Dial-gauge: 11-14 lb pressure depending on altitude.'
+  - 'Weighted-gauge: 10-15 lb pressure depending on altitude.'
+  worksheet:
+  - List the materials and tools needed for canning oysters.
+  - Describe the process of preparing oysters before canning.
+  - Explain the importance of using a pressure canner for oysters.
+  - Calculate the correct pressure settings for your altitude.
+  - Practice sealing jars and checking for proper seals.
+  - Identify signs of spoilage in canned oysters.
+  teach_forward_kit:
+    three_minute_version: Canning oysters involves cleaning and heating the oysters,
+      packing them in jars, and processing them in a pressure canner to ensure safety
+      and preservation. This method allows you to enjoy oysters year-round.
+    ten_minute_outline:
+    - Introduction to canning oysters and its benefits.
+    - Materials and tools required.
+    - Step-by-step preparation and canning process.
+    - Importance of pressure settings and altitude adjustments.
+    - Safety tips and common mistakes to avoid.
+    - Q&A session.
+    discussion_prompts:
+    - Why is it important to use a pressure canner for oysters?
+    - What are the risks of not following proper canning procedures?
+    - How does altitude affect the pressure settings in canning?
+    - What are some signs that canned oysters have spoiled?

@@ -1,0 +1,378 @@
+id: food-preservation.sweet-potatoes-canning
+slug: food-preservation.sweet-potatoes-canning
+seed_type: extracted
+co_type: project_blueprint
+canonical_title: Canning Sweet Potatoes
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: household
+contexts: []
+difficulty: 3
+cost_band: medium
+risk_band: high
+summary_short: Guide to canning sweet potatoes using a pressure canner.
+summary_medium: Detailed instructions for canning sweet potatoes, including preparation,
+  packing, and processing times using a pressure canner.
+plain_language: Learn how to safely can sweet potatoes using a pressure canner, with
+  step-by-step instructions and tips for success.
+markdown_body: '### What this is
+
+  This guide provides instructions for canning sweet potatoes using a pressure canner.
+  It covers the necessary quantities, quality of potatoes, and detailed steps for
+  preparation and processing.
+
+
+  ### Why it matters
+
+  Canning sweet potatoes allows for long-term storage and preservation of this nutritious
+  vegetable, making it available year-round.
+
+
+  ### What you need
+
+  You will need a pressure canner, jars, lids, boiling water, and optionally, salt.
+  Choose small to medium-sized, mature sweet potatoes.
+
+
+  ### How to do it
+
+  1. Wash and boil or steam sweet potatoes until partially soft (15-20 minutes). 2.
+  Remove skins and cut into uniform pieces. 3. Fill hot jars with potatoes, leaving
+  1-inch headspace. 4. Add 1 teaspoon of salt per quart if desired. 5. Cover with
+  boiling water or syrup, leaving 1-inch headspace. 6. Remove air bubbles and adjust
+  headspace. 7. Wipe rims, adjust lids, and process in a pressure canner. For dial-gauge
+  canners, process pints for 65 minutes and quarts for 90 minutes at 11-14 PSI depending
+  on altitude. For weighted-gauge canners, process pints for 65 minutes and quarts
+  for 90 minutes at 10-15 PSI depending on altitude.
+
+
+  ### Common failure modes
+
+  Incorrect pressure or incomplete sealing can lead to spoilage. Ensure the correct
+  pressure is used for your altitude.
+
+
+  ### Safety/boundary notes
+
+  Always use a pressure canner and adjust pressure according to your altitude to ensure
+  safety.
+
+
+  ### Local adaptation notes
+
+  Consider the availability of sweet potatoes and adjust processing pressure based
+  on local altitude.'
+structured_data:
+  tools:
+  - pressure canner
+  - jars
+  - lids
+  materials:
+  - sweet potatoes
+  - boiling water
+  - salt (optional)
+  success_criteria:
+  - Properly sealed jars
+  - Correct processing pressure and time
+  failure_modes:
+  - Incorrect pressure
+  - Incomplete seal
+  safety_boundary: 'Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood)
+    must be processed in a pressure canner, never a boiling-water canner; tomatoes
+    must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested
+    recipe directs. Vent the canner 10 minutes before pressurizing, use the exact
+    process time and pressure for your jar size, pack style, canner type, and altitude,
+    and check dial gauges for accuracy every year. Use only tested recipes and never
+    shorten process times. Do not taste food from an unsealed jar or one showing spoilage
+    (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced
+    botulinum toxin, which can be fatal whether swallowed or through skin contact,
+    and follow USDA disposal and detoxification steps. If any deviation from USDA-tested
+    methods may have occurred, boil low-acid and tomato foods in a saucepan before
+    eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft.
+    Specific to this object: Ensure correct pressure for altitude'
+  implementation:
+    smallest_viable_version: Canning sweet potatoes using a pressure canner with correct
+      pressure for altitude.
+    tools:
+    - pressure canner
+    - jars
+    - lids
+    materials:
+    - sweet potatoes
+    - boiling water
+    - salt (optional)
+    expected_time: 2-3 hours
+    expected_cost: medium
+    success_checks:
+    - Jars are sealed properly
+    - No spoilage after processing
+    stop_conditions:
+    - Pressure not reaching required level
+    - Jars not sealing
+    common_mistakes:
+    - Using incorrect pressure
+    - Not adjusting for altitude
+    variants:
+    - label: Urban
+      when: Limited space for storing large quantities
+      notes: Consider smaller batches.
+    - label: Off-grid
+      when: No access to electric pressure canner
+      notes: Use a stove-top pressure canner.
+    when_to_escalate:
+    - If jars do not seal after processing
+    - If unsure about pressure adjustments for altitude
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_001
+  claim_text: This guide provides instructions for canning sweet potatoes using a
+    pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: It is not recommended to dry pack sweet potatoes.
+    start_char: 0
+    end_char: 50
+    support_strength: medium
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_002
+  claim_text: Canning sweet potatoes allows for long-term storage and preservation
+    of this nutritious vegetable, making it available year-round.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Choose small to medium-sized potatoes. They should be mature and not
+      too fibrous.
+    start_char: 150
+    end_char: 220
+    support_strength: medium
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_003
+  claim_text: You will need a pressure canner, jars, lids, boiling water, and optionally,
+    salt. Choose small to medium-sized, mature sweet potatoes.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Choose small to medium-sized potatoes. They should be mature and not
+      too fibrous.
+    start_char: 150
+    end_char: 220
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_004
+  claim_text: Wash and boil or steam sweet potatoes until partially soft (15-20 minutes).
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Wash potatoes and boil or steam until partially soft (15 to 20 minutes).
+    start_char: 230
+    end_char: 290
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_005
+  claim_text: Remove skins and cut into uniform pieces.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Remove skins. Cut medium potatoes, if needed, so that pieces are uniform
+      in size.
+    start_char: 290
+    end_char: 350
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_006
+  claim_text: Fill hot jars with potatoes, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Fill hot jars, leaving 1-inch headspace.
+    start_char: 370
+    end_char: 400
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_007
+  claim_text: Add 1 teaspoon of salt per quart if desired.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Add 1 teaspoon salt per quart to the jar, if desired.
+    start_char: 400
+    end_char: 440
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_008
+  claim_text: Cover with boiling water or syrup, leaving 1-inch headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Cover with your choice of fresh boiling water or syrup, leaving 1-inch
+      headspace.
+    start_char: 440
+    end_char: 500
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_009
+  claim_text: Remove air bubbles and adjust headspace.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Remove air bubbles and adjust headspace if needed.
+    start_char: 500
+    end_char: 540
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_010
+  claim_text: Wipe rims, adjust lids, and process in a pressure canner.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: Wipe rims of jars with a dampened clean paper towel. Adjust lids and
+      process.
+    start_char: 540
+    end_char: 600
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_011
+  claim_text: For dial-gauge canners, process pints for 65 minutes and quarts for
+    90 minutes at 11-14 PSI depending on altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: '| Recommended process time for Sweet Potatoes in a dial-gauge pressure
+      canner |'
+    start_char: 600
+    end_char: 660
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_012
+  claim_text: For weighted-gauge canners, process pints for 65 minutes and quarts
+    for 90 minutes at 10-15 PSI depending on altitude.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: '| Recommended process time for Sweet Potatoes in a weighted-gauge pressure
+      canner |'
+    start_char: 660
+    end_char: 720
+    support_strength: strong
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_013
+  claim_text: Incorrect pressure or incomplete sealing can lead to spoilage.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: It is not recommended to dry pack sweet potatoes.
+    start_char: 0
+    end_char: 50
+    support_strength: weak
+- object_id: food-preservation.sweet-potatoes-canning
+  claim_id: clm_014
+  claim_text: Always use a pressure canner and adjust pressure according to your altitude
+    to ensure safety.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 125
+    page_end: 125
+    segment_id: src.usda.home-canning.2015::seg_000176
+    excerpt: '| Recommended process time for Sweet Potatoes in a dial-gauge pressure
+      canner |'
+    start_char: 600
+    end_char: 660
+    support_strength: medium
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000176
+bundle_overrides:
+  hook: Preserve the delicious taste and nutrition of sweet potatoes year-round by
+    learning how to can them safely and effectively.
+  primer: Canning sweet potatoes is a practical way to store this nutritious vegetable
+    for long-term use, making it available throughout the year. The process involves
+    using a pressure canner, which is essential for safely preserving low-acid foods
+    like sweet potatoes. By canning, you can enjoy the convenience of having sweet
+    potatoes ready to use in various recipes without worrying about spoilage. The
+    key to successful canning is following precise steps to ensure the jars are sealed
+    properly and the contents are preserved safely. This guide will walk you through
+    the necessary equipment, preparation, and processing steps to achieve perfectly
+    canned sweet potatoes.
+  guide: To can sweet potatoes, you'll need a pressure canner, jars, lids, boiling
+    water, and optionally, salt. Start by selecting small to medium-sized, mature
+    sweet potatoes that are not too fibrous. Wash them thoroughly and boil or steam
+    until they are partially soft, which takes about 15-20 minutes. Once softened,
+    remove the skins and cut the potatoes into uniform pieces. Next, fill hot jars
+    with the potato pieces, leaving a 1-inch headspace at the top. If you prefer,
+    add 1 teaspoon of salt per quart for flavor. Cover the potatoes with boiling water
+    or syrup, again leaving a 1-inch headspace. Remove any air bubbles by gently tapping
+    the jars or using a non-metallic spatula. Adjust the headspace if necessary. Wipe
+    the rims of the jars with a clean, damp paper towel to ensure a good seal. Place
+    the lids on the jars and secure them with rings. Process the jars in a pressure
+    canner. For dial-gauge canners, process pints for 65 minutes and quarts for 90
+    minutes at 11-14 PSI, adjusting for altitude. For weighted-gauge canners, use
+    10-15 PSI. After processing, let the jars cool undisturbed for 12-24 hours. Check
+    the seals before storing. Properly canned sweet potatoes should have a vacuum
+    seal and can be stored in a cool, dark place for up to a year.
+  reference:
+  - Use a pressure canner for low-acid foods.
+  - Select small to medium-sized, mature sweet potatoes.
+  - Boil or steam potatoes until partially soft (15-20 minutes).
+  - Remove skins and cut into uniform pieces.
+  - Fill jars with potatoes, leaving 1-inch headspace.
+  - Add 1 teaspoon of salt per quart if desired.
+  - Cover with boiling water or syrup, leaving 1-inch headspace.
+  - Remove air bubbles and adjust headspace.
+  - Wipe rims, adjust lids, and process in a pressure canner.
+  - Process pints for 65 minutes and quarts for 90 minutes.
+  - 'Adjust pressure for altitude: 11-14 PSI for dial-gauge, 10-15 PSI for weighted-gauge.'
+  worksheet:
+  - List the equipment needed for canning sweet potatoes.
+  - Describe the steps to prepare sweet potatoes for canning.
+  - Explain the importance of adjusting pressure based on altitude.
+  - Practice filling jars with sweet potatoes and adjusting headspace.
+  - Simulate the process of checking jar seals after canning.
+  teach_forward_kit:
+    three_minute_version: Canning sweet potatoes involves using a pressure canner
+      to safely preserve them for long-term storage. Start by selecting and preparing
+      the potatoes, then fill jars, leaving headspace. Process in a pressure canner,
+      adjusting for altitude, and ensure jars are sealed properly.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Necessary equipment and ingredients.
+    - Step-by-step preparation of sweet potatoes.
+    - Filling jars and adjusting headspace.
+    - Processing in a pressure canner with altitude adjustments.
+    - Checking seals and storing canned sweet potatoes.
+    discussion_prompts:
+    - Why is a pressure canner necessary for canning sweet potatoes?
+    - What are the risks of not adjusting pressure for altitude?
+    - How can you tell if a jar is properly sealed after canning?
+    - What are some creative ways to use canned sweet potatoes in recipes?

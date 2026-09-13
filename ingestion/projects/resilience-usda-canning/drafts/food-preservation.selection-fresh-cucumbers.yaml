@@ -1,0 +1,131 @@
+id: food-preservation.selection-fresh-cucumbers
+slug: food-preservation.selection-fresh-cucumbers
+seed_type: reference_sheet
+co_type: reference_sheet
+canonical_title: Selection of Fresh Cucumbers for Canning
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: food-preservation
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: low
+risk_band: low
+summary_short: Guidelines for selecting fresh cucumbers for canning.
+summary_medium: Learn how to select the right quantity and quality of cucumbers for
+  canning, including size and shape considerations.
+plain_language: This guide helps you choose the best cucumbers for canning, focusing
+  on how many you need and what qualities to look for.
+markdown_body: '### What this is
+
+  This reference sheet provides guidelines for selecting fresh cucumbers suitable
+  for canning, focusing on both quantity and quality.
+
+
+  ### Why it matters
+
+  Choosing the right cucumbers ensures successful canning results, with optimal texture
+  and flavor in the preserved product.
+
+
+  ### What you need
+
+  Knowledge of cucumber sizes and quantities needed for different canning loads.
+
+
+  ### How to do it
+
+  Select firm cucumbers of the appropriate size: about 1-1/2 inches for gherkins and
+  4 inches for dills. Use odd-shaped and more mature cucumbers for relishes and bread-and-butter
+  style pickles. For quantity, an average of 14 pounds is needed per canner load of
+  7 quarts, and 9 pounds for 9 pints. A bushel weighs 48 pounds and yields 16 to 24
+  quarts, averaging 2 pounds per quart.
+
+
+  ### Common failure modes
+
+  Using cucumbers that are too mature or not firm enough can result in poor texture
+  and flavor in the canned product.
+
+
+  ### Safety/boundary notes
+
+  Ensure cucumbers are fresh and free from spoilage to prevent contamination.
+
+
+  ### Local adaptation notes
+
+  Consider local cucumber varieties that meet the size and firmness criteria.'
+structured_data:
+  definition: Guidelines for selecting cucumbers for canning based on size, shape,
+    and quantity.
+  key_questions:
+  - What size should cucumbers be for different types of pickles?
+  - How many cucumbers are needed for a canner load?
+  misconceptions:
+  - All cucumbers are suitable for canning.
+  - Quantity does not affect canning results.
+requires: []
+suggested_edges: []
+citations:
+- object_id: food-preservation.selection-fresh-cucumbers
+  claim_id: clm_001
+  claim_text: 'Select firm cucumbers of the appropriate size: about 1-1/2 inches for
+    gherkins and 4 inches for dills.'
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 150
+    page_end: 150
+    segment_id: src.usda.home-canning.2015::seg_000206
+    excerpt: 'Select firm cucumbers of the appropriate size: about 1-1/2 inches for
+      gherkins and 4 inches for dills.'
+    start_char: 90
+    end_char: 167
+    support_strength: strong
+- object_id: food-preservation.selection-fresh-cucumbers
+  claim_id: clm_002
+  claim_text: Use odd-shaped and more mature cucumbers for relishes and bread-and-butter
+    style pickles.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 150
+    page_end: 150
+    segment_id: src.usda.home-canning.2015::seg_000206
+    excerpt: Use odd-shaped and more mature cucumbers for relishes and bread-and-butter
+      style pickles.
+    start_char: 168
+    end_char: 241
+    support_strength: strong
+- object_id: food-preservation.selection-fresh-cucumbers
+  claim_id: clm_003
+  claim_text: An average of 14 pounds is needed per canner load of 7 quarts, and 9
+    pounds for 9 pints.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 150
+    page_end: 150
+    segment_id: src.usda.home-canning.2015::seg_000206
+    excerpt: An average of 14 pounds is needed per canner load of 7 quarts; an average
+      of 9 pounds is needed per canner load of 9 pints.
+    start_char: 10
+    end_char: 89
+    support_strength: strong
+- object_id: food-preservation.selection-fresh-cucumbers
+  claim_id: clm_004
+  claim_text: A bushel weighs 48 pounds and yields 16 to 24 quarts, averaging 2 pounds
+    per quart.
+  support:
+  - source_id: src.usda.home-canning.2015
+    page_start: 150
+    page_end: 150
+    segment_id: src.usda.home-canning.2015::seg_000206
+    excerpt: A bushel weighs 48 pounds and yields 16 to 24 quarts—an average of 2
+      pounds per quart.
+    start_char: 90
+    end_char: 167
+    support_strength: strong
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000206

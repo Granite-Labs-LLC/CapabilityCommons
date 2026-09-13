@@ -1,0 +1,350 @@
+canonical_title: Preparing and Canning Jams and Jellies
+citations:
+- claim_id: clm_001
+  claim_text: This guide covers the process of preparing and canning jams and jellies.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 46
+    excerpt: Guide 7 **Preparing and Canning Jams and Jellies**
+    page_end: 183
+    page_start: 183
+    segment_id: src.usda.home-canning.2015::seg_000261
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: Canning jams and jellies allows you to preserve seasonal fruits, reduce
+    food waste, and enjoy homemade spreads year-round.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 111
+    excerpt: Use only firm fruits naturally high in pectin. Select a mixture of about
+      3/4 ripe and 1/4 underripe fruit.
+    page_end: 185
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_003
+  claim_text: Proper canning techniques are crucial to prevent spoilage and ensure
+    food safety.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or
+      ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: You will need canning jars, lids, a canner, and fresh fruit. Additional
+    tools include a jar lifter, funnel, and a ladle.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or
+      ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_005
+  claim_text: Prepare the fruit by washing and cutting it as needed.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 111
+    excerpt: Wash all fruits thoroughly before cooking. Crush soft fruits or berries;
+      cut firmer fruits into small pieces.
+    page_end: 185
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000263
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: Sterilize jars and lids by boiling them.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Fill sterile jars (see page 1-14) with jelly.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_007
+  claim_text: Cook the fruit with sugar and pectin to the desired consistency.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Using no more than 6 to 8 cups of extracted fruit juice at a time, measure
+      fruit juice, sugar, and lemon juice according to the ingredients in the table
+      above and heat to boiling.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Fill jars with the hot mixture, leaving appropriate headspace.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or
+      ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: Seal jars with lids and process them in a boiling water canner for the
+    recommended time.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Adjust lids and process.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_010
+  claim_text: Improper sealing can lead to spoilage.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Adjust lids and process.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+- claim_id: clm_011
+  claim_text: Contamination can occur if jars or lids are not properly sterilized.
+  object_id: food-preservation.jams-and-jellies-canning
+  support:
+  - end_char: 157
+    excerpt: Fill sterile jars (see page 1-14) with jelly.
+    page_end: 186
+    page_start: 185
+    segment_id: src.usda.home-canning.2015::seg_000264
+    source_id: src.usda.home-canning.2015
+    start_char: 0
+    support_strength: medium
+co_type: skill_guide
+contexts: []
+cost_band: medium
+difficulty: 3
+id: food-preservation.jams-and-jellies-canning
+language_code: en
+lifecycle_state: published
+markdown_body: '# What this is
+
+
+  This guide covers the process of preparing and canning jams and jellies. It includes
+  steps for selecting fruit, preparing it for canning, and sealing it in jars to preserve
+  flavor and safety.
+
+
+  ### Why it matters
+
+
+  Canning jams and jellies allows you to preserve seasonal fruits, reduce food waste,
+  and enjoy homemade spreads year-round. Proper canning techniques are crucial to
+  prevent spoilage and ensure food safety.
+
+
+  ### What you need
+
+
+  You will need canning jars, lids, a canner, and fresh fruit. Additional tools include
+  a jar lifter, funnel, and a ladle.
+
+
+  ### How to do it
+
+
+  1. Prepare the fruit by washing and cutting it as needed. 2. Sterilize jars and
+  lids by boiling them. 3. Cook the fruit with sugar and pectin to the desired consistency.
+  4. Fill jars with the hot mixture, leaving appropriate headspace. 5. Seal jars with
+  lids and process them in a boiling water canner for the recommended time.
+
+
+  ### Common failure modes
+
+
+  Improper sealing can lead to spoilage. Contamination can occur if jars or lids are
+  not properly sterilized.
+
+
+  ### Safety/boundary notes
+
+
+  Ensure proper sterilization of jars and lids. Follow recommended canning methods
+  to prevent foodborne illness.
+
+
+  ### Local adaptation notes
+
+
+  Consider the availability of local fruits and adjust processing times for altitude
+  if necessary.'
+plain_language: This guide will teach you how to make and can your own jams and jellies,
+  ensuring they are safe to eat and taste great.
+primary_domain: food-preservation
+requires: []
+risk_band: moderate
+secondary_domains: []
+seed_type: skill_guide
+slug: food-preservation.jams-and-jellies-canning
+source_segment_ids:
+- src.usda.home-canning.2015::seg_000261
+- src.usda.home-canning.2015::seg_000260
+stage: household
+structured_data:
+  failure_modes:
+  - improper sealing
+  - contamination
+  implementation:
+    common_mistakes:
+    - Not sterilizing jars
+    - Overfilling jars
+    - Incorrect headspace
+    expected_cost: medium
+    expected_time: 2-3 hours
+    materials:
+    - canning jars
+    - lids
+    - fresh fruit
+    - sugar
+    - pectin
+    smallest_viable_version: Prepare and can a small batch of jam using available
+      seasonal fruit.
+    stop_conditions:
+    - If jars do not seal
+    - If contamination is suspected
+    success_checks:
+    - Jars are sealed properly
+    - No spoilage after storage
+    tools:
+    - canner
+    - jar lifter
+    - funnel
+    - ladle
+    variants:
+    - label: Urban
+      notes: Consider using smaller batches or shared kitchen spaces.
+      when: Limited space for canning equipment
+    - label: Off-grid
+      notes: Use a stovetop canner with a propane burner.
+      when: No access to electric canner
+    when_to_escalate:
+    - If jars consistently fail to seal
+    - If signs of spoilage are frequent
+  materials:
+  - canning jars
+  - lids
+  - fresh fruit
+  - sugar
+  - pectin
+  safety_boundary: Ensure proper sterilization and use recommended canning methods.
+  success_criteria: Jars are properly sealed and stored without spoilage.
+  tools:
+  - canner
+  - jar lifter
+  - funnel
+  - ladle
+suggested_edges: []
+summary_medium: This guide provides detailed instructions on preparing and canning
+  jams and jellies, emphasizing techniques to ensure safety and quality.
+summary_short: Learn how to safely prepare and can jams and jellies.
+version_no: 1
+visibility: public
+bundle_overrides:
+  hook: Preserve the taste of summer all year long by learning how to can your own
+    jams and jellies, reducing food waste and enjoying homemade spreads anytime.
+  primer: Canning jams and jellies is a time-honored method of preserving the flavors
+    of fresh, seasonal fruits. By learning this skill, you can enjoy the taste of
+    your favorite fruits throughout the year, even when they are out of season. The
+    process involves cooking fruit with sugar and pectin to create a thick, sweet
+    spread, which is then sealed in jars to prevent spoilage. Proper canning techniques
+    are essential to ensure food safety and prevent contamination. You'll need some
+    basic equipment, including canning jars, lids, a canner, and tools like a jar
+    lifter and funnel. The process begins with selecting and preparing the fruit,
+    followed by sterilizing the jars and lids. Once the fruit mixture is ready, it's
+    poured into the jars, sealed, and processed in a boiling water canner. This guide
+    will walk you through each step, ensuring your homemade jams and jellies are both
+    delicious and safe to eat.
+  guide: '1. Gather your materials: canning jars, lids, a canner, fresh fruit, sugar,
+    and pectin. You''ll also need tools like a jar lifter, funnel, and ladle.
+
+
+    2. Prepare the fruit: Wash all fruits thoroughly. For soft fruits or berries,
+    crush them. For firmer fruits, cut them into small pieces.
+
+
+    3. Sterilize jars and lids: Boil them in water for at least 10 minutes to ensure
+    they are free from any contaminants.
+
+
+    4. Cook the fruit: Combine the prepared fruit with sugar and pectin in a large
+    pot. Heat the mixture to a rolling boil, stirring constantly until it reaches
+    the desired consistency.
+
+
+    5. Fill the jars: Use a ladle and funnel to pour the hot fruit mixture into the
+    sterilized jars, leaving about 1/4 inch of headspace at the top.
+
+
+    6. Seal the jars: Place the lids on the jars and secure them with rings. Ensure
+    they are tight but not overly so.
+
+
+    7. Process the jars: Place the filled jars in a boiling water canner. Process
+    them for the recommended time based on your altitude and the type of fruit used.
+
+
+    8. Cool and store: Remove the jars from the canner and let them cool undisturbed
+    for 12-24 hours. Check the seals before storing them in a cool, dark place.'
+  reference:
+  - Use firm fruits high in pectin.
+  - Sterilize jars and lids by boiling.
+  - Cook fruit with sugar and pectin.
+  - Leave 1/4 inch headspace in jars.
+  - Process jars in a boiling water canner.
+  worksheet:
+  - List the fruits you want to preserve and their pectin levels.
+  - Describe the process of sterilizing jars and why it's important.
+  - Calculate the amount of sugar needed for a batch of jam using a given fruit.
+  - Practice filling jars with water to learn about headspace.
+  - Simulate a canning process with empty jars to understand timing.
+  teach_forward_kit:
+    three_minute_version: Canning jams and jellies involves preparing fruit, cooking
+      it with sugar and pectin, and sealing it in sterilized jars. This process preserves
+      the fruit and prevents spoilage, allowing you to enjoy homemade spreads year-round.
+    ten_minute_outline:
+    - Introduction to canning and its benefits.
+    - Overview of necessary materials and tools.
+    - Step-by-step process of preparing and cooking fruit.
+    - Instructions for sterilizing jars and lids.
+    - Guidelines for filling and sealing jars.
+    - Processing jars in a boiling water canner.
+    - Tips for ensuring proper seals and storage.
+    discussion_prompts:
+    - What are the benefits of canning your own jams and jellies?
+    - How does the canning process prevent spoilage?
+    - What challenges might you face when canning at home?
+    - How can you adapt the process for different types of fruit?
+    - What are some signs that a jar has not sealed properly?

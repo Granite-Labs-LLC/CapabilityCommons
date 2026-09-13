@@ -1,0 +1,1828 @@
+[
+  {
+    "action": "keep",
+    "rationale": "The drafts for canning asparagus and canning beets are distinct, covering different vegetables with unique preparation and processing instructions.",
+    "canonical_slug": "food-preservation.asparagus-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts for canning okra and canning peppers are distinct, each focusing on different vegetables with specific preparation and processing guidelines.",
+    "canonical_slug": "food-preservation.okra-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "The drafts contain overlapping claims and instructions for canning dried beans or peas. They can be combined into a single comprehensive guide.",
+    "canonical_slug": "food-preservation.beans-peas-canning",
+    "deprecated_draft_ids": [
+      "food-preservation.beans-peas-canning"
+    ],
+    "merged_object": {
+      "canonical_title": "Canning Dried Beans or Peas",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "This is a guide for canning dried beans or peas using a pressure canner. It includes instructions for preparation, processing times, and adjustments for altitude.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Procedure: Place dried beans or peas in a large pot and cover with water. Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans, you may cover sorted and washed beans with boiling water in a saucepan. Boil 2 minutes, remove from heat, soak 1 hour and drain. Cover beans soaked by either method with fresh water and boil 30 minutes. Add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the jar, if desired. Fill hot jars with beans or peas and cooking water, leaving 1-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Canning dried beans or peas allows you to preserve them for long-term storage, ensuring you have a ready supply of nutritious food.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Procedure: Place dried beans or peas in a large pot and cover with water. Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans, you may cover sorted and washed beans with boiling water in a saucepan. Boil 2 minutes, remove from heat, soak 1 hour and drain. Cover beans soaked by either method with fresh water and boil 30 minutes.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "You will need a pressure canner, jars, lids, boiling water, and dried beans or peas. Optionally, you can add salt for flavor.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the jar, if desired. Fill hot jars with beans or peas and cooking water, leaving 1-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Sort and rinse the beans or peas, discarding any discolored seeds.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Quality: Select mature, dry seeds. Sort out and discard discolored seeds.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Soak them in water for 12 to 18 hours in a cool place, or use the quick soak method by boiling for 2 minutes, then soaking for 1 hour.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Procedure: Place dried beans or peas in a large pot and cover with water. Soak 12 to 18 hours in a cool place. Drain water. To quickly hydrate beans, you may cover sorted and washed beans with boiling water in a saucepan. Boil 2 minutes, remove from heat, soak 1 hour and drain.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Drain and cover with fresh water, then boil for 30 minutes.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Cover beans soaked by either method with fresh water and boil 30 minutes.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Add salt to jars if desired, fill jars with beans and cooking water, leaving 1-inch headspace.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Add 1/2 teaspoon of salt per pint or 1 teaspoon per quart to the jar, if desired. Fill hot jars with beans or peas and cooking water, leaving 1-inch headspace.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Remove air bubbles, adjust headspace, wipe rims, and adjust lids.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened clean paper towel. Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Process in a pressure canner according to the recommended times and pressures for your altitude.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "Incorrect pressure or incomplete seal can lead to spoilage. Ensure the pressure is correct for your altitude and that jars are sealed properly.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "weak"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Always use a pressure canner for low-acid foods like beans to prevent the risk of botulism. Adjust pressure settings based on your altitude.",
+          "object_id": "food-preservation.beans-peas-canning",
+          "support": [
+            {
+              "end_char": 619,
+              "excerpt": "Adjust lids and process.",
+              "page_end": 115,
+              "page_start": 114,
+              "segment_id": "src.usda.home-canning.2015::seg_000156",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "weak"
+            }
+          ]
+        }
+      ],
+      "co_type": "project_blueprint",
+      "contexts": [],
+      "cost_band": "medium",
+      "difficulty": 3,
+      "id": "food-preservation.beans-peas-canning",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\nThis is a guide for canning dried beans or peas using a pressure canner. It includes instructions for preparation, processing times, and adjustments for altitude.\n\n### Why it matters\nCanning dried beans or peas allows you to preserve them for long-term storage, ensuring you have a ready supply of nutritious food.\n\n### What you need\nYou will need a pressure canner, jars, lids, boiling water, and dried beans or peas. Optionally, you can add salt for flavor.\n\n### How to do it\n1. Sort and rinse the beans or peas, discarding any discolored seeds. \n2. Soak them in water for 12 to 18 hours in a cool place, or use the quick soak method by boiling for 2 minutes, then soaking for 1 hour. \n3. Drain and cover with fresh water, then boil for 30 minutes. \n4. Add salt to jars if desired, fill jars with beans and cooking water, leaving 1-inch headspace. \n5. Remove air bubbles, adjust headspace, wipe rims, and adjust lids. \n6. Process in a pressure canner according to the recommended times and pressures for your altitude.\n\n### Common failure modes\nIncorrect pressure or incomplete seal can lead to spoilage. Ensure the pressure is correct for your altitude and that jars are sealed properly.\n\n### Safety/boundary notes\nAlways use a pressure canner for low-acid foods like beans to prevent the risk of botulism. Adjust pressure settings based on your altitude.\n\n### Local adaptation notes\nAdapt the process based on the availability of beans or peas and your local altitude.",
+      "plain_language": "This guide will help you can dried beans or peas using a pressure canner. It includes steps for preparation, processing times, and how to adjust for different altitudes.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "high",
+      "secondary_domains": [],
+      "seed_type": "extracted",
+      "slug": "food-preservation.beans-peas-canning",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000156"
+      ],
+      "stage": "household",
+      "structured_data": {
+        "acceptance_criteria": "Jars are sealed properly and processed at the correct pressure for the specified time.",
+        "deliverables": "Canned jars of dried beans or peas.",
+        "goal": "Safely can dried beans or peas for long-term storage.",
+        "implementation": {
+          "common_mistakes": [
+            "Not adjusting pressure for altitude",
+            "Overfilling jars"
+          ],
+          "expected_cost": "Moderate, depending on the cost of beans and canning supplies.",
+          "expected_time": "Approximately 24 hours including soaking time.",
+          "materials": [
+            "dried beans or peas",
+            "boiling water",
+            "salt (optional)"
+          ],
+          "smallest_viable_version": "Canning a single batch of beans or peas using a pressure canner.",
+          "stop_conditions": [
+            "Pressure not reaching required level",
+            "Jars not sealing"
+          ],
+          "success_checks": [
+            "Jars are sealed",
+            "Correct pressure used"
+          ],
+          "tools": [
+            "pressure canner",
+            "jars",
+            "lids"
+          ],
+          "variants": [
+            {
+              "label": "Urban",
+              "notes": "Consider smaller batch sizes.",
+              "when": "Limited space for storing large quantities of canned goods."
+            },
+            {
+              "label": "Off-grid",
+              "notes": "Use a stove-top pressure canner.",
+              "when": "No access to electric canners."
+            }
+          ],
+          "when_to_escalate": [
+            "If jars do not seal after processing",
+            "If unsure about pressure settings for altitude"
+          ]
+        },
+        "safety_boundary": "Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood) must be processed in a pressure canner, never a boiling-water canner; tomatoes must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested recipe directs. Vent the canner 10 minutes before pressurizing, use the exact process time and pressure for your jar size, pack style, canner type, and altitude, and check dial gauges for accuracy every year. Use only tested recipes and never shorten process times. Do not taste food from an unsealed jar or one showing spoilage (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced botulinum toxin, which can be fatal whether swallowed or through skin contact, and follow USDA disposal and detoxification steps. If any deviation from USDA-tested methods may have occurred, boil low-acid and tomato foods in a saucepan before eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft."
+      },
+      "suggested_edges": [],
+      "summary_medium": "Learn how to safely can dried beans or peas using a pressure canner, including preparation, processing times, and adjustments for altitude.",
+      "summary_short": "Guide to canning dried beans or peas using a pressure canner.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning carrots is distinct and complete, covering specific instructions for this vegetable.",
+    "canonical_slug": "food-preservation.carrots-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning chile con carne is distinct and complete, covering specific instructions for this dish.",
+    "canonical_slug": "food-preservation.chile-con-carne-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning crab meat is distinct and complete, covering specific instructions for this seafood.",
+    "canonical_slug": "food-preservation.crab-meat-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning cream style corn is distinct and complete, covering specific instructions for this type of corn.",
+    "canonical_slug": "food-preservation.cream-style-corn-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning fish in quart jars is distinct and complete, covering specific instructions for this type of fish canning.",
+    "canonical_slug": "food-preservation.fish-quart-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning green or English peas is distinct and complete, covering specific instructions for these vegetables.",
+    "canonical_slug": "food-preservation.green-peas-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning ground or chopped meat is distinct and complete, covering specific instructions for this type of meat.",
+    "canonical_slug": "food-preservation.ground-meat-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning fresh lima beans is distinct and complete, covering specific instructions for these beans.",
+    "canonical_slug": "food-preservation.lima-beans-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning mixed vegetables is distinct and complete, covering specific instructions for this mixture.",
+    "canonical_slug": "food-preservation.mixed-vegetables-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning mushrooms is distinct and complete, covering specific instructions for these fungi.",
+    "canonical_slug": "food-preservation.mushrooms-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning pumpkins and winter squash is distinct and complete, covering specific instructions for these vegetables.",
+    "canonical_slug": "food-preservation.pumpkins-winter-squash-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning snap and Italian beans is distinct and complete, covering specific instructions for these beans.",
+    "canonical_slug": "food-preservation.snap-italian-beans-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning soups is distinct and complete, covering specific instructions for this type of food.",
+    "canonical_slug": "food-preservation.soups-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning spinach and other greens is distinct and complete, covering specific instructions for these greens.",
+    "canonical_slug": "food-preservation.spinach-greens-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning succotash is distinct and complete, covering specific instructions for this mixture.",
+    "canonical_slug": "food-preservation.succotash-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning sweet potatoes is distinct and complete, covering specific instructions for these potatoes.",
+    "canonical_slug": "food-preservation.sweet-potatoes-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning tuna is distinct and complete, covering specific instructions for this fish.",
+    "canonical_slug": "food-preservation.tuna-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning white potatoes is distinct and complete, covering specific instructions for these potatoes.",
+    "canonical_slug": "food-preservation.white-potatoes-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft for canning whole kernel corn is distinct and complete, covering specific instructions for this type of corn.",
+    "canonical_slug": "food-preservation.whole-kernel-corn-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct, covering different topics related to canning different types of food.",
+    "canonical_slug": "food-preservation.clams-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct, covering different topics related to canning different types of food.",
+    "canonical_slug": "food-preservation.fish-pint-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct, covering different topics related to canning different types of food.",
+    "canonical_slug": "food-preservation.meat-chunks-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct, covering different topics related to canning different types of food.",
+    "canonical_slug": "food-preservation.smoked-fish-canning",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover similar content about suitable containers, covers, and weights for fermenting foods. They share the same source and have overlapping claims. Merging them will consolidate the information into a comprehensive guide.",
+    "canonical_slug": "food-preservation.fermentation-containers",
+    "deprecated_draft_ids": [
+      "food-preservation.fermentation-containers",
+      "food-preservation.suitable-containers-for-fermenting"
+    ],
+    "merged_object": {
+      "canonical_title": "Suitable Containers, Covers, and Weights for Fermenting Food",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "You will need a 1-gallon container for every 5 pounds of vegetables. Suitable materials include stone crocks, food-grade plastic, and glass containers.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 217,
+              "excerpt": "A 1-gallon container is needed for each 5 pounds of fresh vegetables. Therefore, a 5-gallon stone crock is of ideal size for fermenting about 25 pounds of fresh cabbage or cucumbers. Food-grade plastic and glass containers are excellent substitutes for stone crocks.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Place vegetables and brine in the container, ensuring they are 1 to 2 inches under the brine.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 276,
+              "excerpt": "Cabbage and cucumbers must be kept 1 to 2 inches under brine while fermenting.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 218,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Use a dinner plate or glass pie plate slightly smaller than the container opening to cover the vegetables. Weight it down with sealed jars filled with water.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 551,
+              "excerpt": "After adding prepared vegetables and brine, insert a suitably sized dinner plate or glass pie plate inside the fermentation container. The plate must be slightly smaller than the container opening, yet large enough to cover most of the shredded cabbage or cucumbers. To keep the plate under the brine, weight it down with 2 to 3 sealed quart jars filled with water.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 277,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Cover the container with a clean, heavy towel to prevent contamination.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 664,
+              "excerpt": "Covering the container opening with a clean, heavy bath towel helps to prevent contamination from insects and molds while the vegetables are fermenting.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 552,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Using non-food-grade plastics can lead to contamination.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 276,
+              "excerpt": "Caution: Be certain that foods contact only food-grade plastics. Do not use garbage bags or trash liners.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 218,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Not keeping vegetables submerged can result in spoilage.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 276,
+              "excerpt": "Cabbage and cucumbers must be kept 1 to 2 inches under brine while fermenting.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 218,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Only use food-grade plastics. Avoid using garbage bags or trash liners.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 276,
+              "excerpt": "Caution: Be certain that foods contact only food-grade plastics. Do not use garbage bags or trash liners.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 218,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Ensure all materials are cleaned thoroughly before use.",
+          "object_id": "food-preservation.fermentation-containers",
+          "support": [
+            {
+              "end_char": 756,
+              "excerpt": "The fermentation container, plate, and jars must be washed in hot sudsy water, and rinsed well with very hot water before use.",
+              "page_end": 152,
+              "page_start": 151,
+              "segment_id": "src.usda.home-canning.2015::seg_000208",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 665,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "reference_sheet",
+      "contexts": [],
+      "cost_band": "low",
+      "difficulty": 2,
+      "id": "food-preservation.fermentation-containers",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "# What this is\n\nThis guide provides information on selecting appropriate containers, covers, and weights for fermenting vegetables like cabbage and cucumbers.\n\n### Why it matters\n\nChoosing the right materials is crucial to ensure the vegetables remain submerged in brine, preventing spoilage and contamination during fermentation.\n\n### What you need\n\nYou will need a 1-gallon container for every 5 pounds of vegetables. Suitable materials include stone crocks, food-grade plastic, and glass containers.\n\n### How to do it\n\nPlace vegetables and brine in the container, ensuring they are 1 to 2 inches under the brine. Use a dinner plate or glass pie plate slightly smaller than the container opening to cover the vegetables. Weight it down with sealed jars filled with water. Cover the container with a clean, heavy towel to prevent contamination.\n\n### Common failure modes\n\nUsing non-food-grade plastics can lead to contamination. Not keeping vegetables submerged can result in spoilage.\n\n### Safety/boundary notes\n\nOnly use food-grade plastics. Avoid using garbage bags or trash liners.\n\n### Local adaptation notes\n\nAdjust container size based on the amount of vegetables being fermented. Ensure all materials are cleaned thoroughly before use.",
+      "plain_language": "This guide helps you pick the right containers and materials for fermenting foods like cabbage and cucumbers, ensuring they stay submerged and safe from contamination.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "low",
+      "secondary_domains": [],
+      "seed_type": "reference_sheet",
+      "slug": "food-preservation.fermentation-containers",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000208"
+      ],
+      "stage": "foundation",
+      "structured_data": {
+        "definition": "Guidelines for selecting containers and materials for fermenting food.",
+        "key_questions": [
+          "What size container is needed for fermenting a specific amount of vegetables?",
+          "What materials are safe to use for fermentation?"
+        ],
+        "misconceptions": [
+          "Any plastic container can be used for fermentation.",
+          "Vegetables do not need to be fully submerged in brine."
+        ],
+        "failure_modes": [
+          "Using unsuitable containers",
+          "Improper sealing leading to contamination"
+        ],
+        "materials": [],
+        "safety_boundary": "Use only food-grade materials and ensure cleanliness.",
+        "success_criteria": [
+          "Proper fermentation without spoilage",
+          "Food remains submerged during fermentation"
+        ],
+        "tools": [
+          "containers",
+          "covers",
+          "weights"
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "Learn how to choose the right containers, covers, and weights for effective and safe food fermentation.",
+      "summary_short": "Guidelines for selecting suitable containers, covers, and weights for fermenting food.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover the same topic of home canning with overlapping content and claims. They can be combined into a single comprehensive guide.",
+    "canonical_slug": "food-preservation.home-canning-guide",
+    "deprecated_draft_ids": [
+      "food-preservation.home-canning-guide",
+      "food-preservation.home-canning"
+    ],
+    "merged_object": {
+      "canonical_title": "Home Canning Guide",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "This guide introduces the process of home canning, a method of preserving food by sealing it in airtight containers.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 70,
+              "excerpt": "All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Home canning allows you to preserve seasonal produce, reduce food waste, and ensure you have access to healthy, home-prepared foods year-round.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 70,
+              "excerpt": "All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "weak"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Essential tools include canning jars, a pressure canner, and a water bath canner.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 70,
+              "excerpt": "All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "weak"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "The process involves preparing your food, filling jars, sealing them, and processing them in a canner to ensure they are airtight and safe for storage.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 70,
+              "excerpt": "All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Common issues include contamination and improper sealing, which can lead to spoilage.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 243,
+              "excerpt": "Low-acid and tomato foods not canned according to the recommendations in this publication or according to other USDA-endorsed recommendations present a risk of botulism.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 71,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Ensure proper sterilization of jars and lids, and follow recommended processing times to prevent foodborne illness.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 243,
+              "excerpt": "Low-acid and tomato foods not canned according to the recommendations in this publication or according to other USDA-endorsed recommendations present a risk of botulism.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 71,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Consider the availability of canning equipment and local food types when planning your canning activities.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 70,
+              "excerpt": "All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "weak"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "This technique allows for long-term storage of food, maintaining its safety and nutritional value.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 136,
+              "excerpt": "Scientists have found ways to produce safer, higher quality products.",
+              "page_end": 4,
+              "page_start": 4,
+              "segment_id": "src.usda.home-canning.2015::seg_000005",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 81,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "To start home canning, you need canning jars, lids, a large pot or pressure canner, and basic kitchen utensils.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 276,
+              "excerpt": "The first part of this publication explains the scientific principles on which canning techniques are based, discusses canning equipment, and describes the proper use of jars and lids.",
+              "page_end": 4,
+              "page_start": 4,
+              "segment_id": "src.usda.home-canning.2015::seg_000005",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 137,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "The process involves preparing the food, filling jars, sealing them with lids, and processing them in a boiling water bath or pressure canner to ensure they are airtight.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 356,
+              "excerpt": "It describes basic canning ingredients and procedures and how to use them to achieve safe, high-quality canned products.",
+              "page_end": 4,
+              "page_start": 4,
+              "segment_id": "src.usda.home-canning.2015::seg_000005",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 277,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Common issues include jars not sealing properly, food spoilage due to improper processing, and contamination from unsterilized equipment.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 233,
+              "excerpt": "Caution: All home-canned foods should be canned according to the procedures in this Guide. Low-acid and tomato foods not canned according to the recommendations in this publication or according to other USDA-endorsed recommendations present a risk of botulism.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_012",
+          "claim_text": "Always use tested recipes and follow guidelines to prevent foodborne illnesses.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 80,
+              "excerpt": "Caution: All home-canned foods should be canned according to the procedures in this Guide.",
+              "page_end": 3,
+              "page_start": 3,
+              "segment_id": "src.usda.home-canning.2015::seg_000004",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_013",
+          "claim_text": "Adjust recipes and processing times based on altitude and local produce availability.",
+          "object_id": "food-preservation.home-canning-guide",
+          "support": [
+            {
+              "end_char": 436,
+              "excerpt": "Finally, processing adjustments for altitudes above sea level are given for each food.",
+              "page_end": 4,
+              "page_start": 4,
+              "segment_id": "src.usda.home-canning.2015::seg_000005",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 357,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "reference_sheet",
+      "contexts": [],
+      "cost_band": "medium",
+      "difficulty": 2,
+      "id": "food-preservation.home-canning-guide",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "# What this is\n\nHome canning is a method of food preservation that involves processing and sealing food in airtight containers. This technique allows for long-term storage of food, maintaining its safety and nutritional value.\n\n# Why it matters\n\nHome canning is important because it enables individuals to preserve seasonal produce, reduce food waste, and ensure a supply of food that is free from preservatives. It is a valuable skill for self-sufficiency and can contribute to food security.\n\n# What you need\n\nTo start home canning, you need canning jars, lids, a large pot or pressure canner, and basic kitchen utensils. It's also important to have access to fresh produce and a reliable source of canning recipes.\n\n# How to do it\n\nThe process involves preparing the food, filling jars, sealing them with lids, and processing them in a boiling water bath or pressure canner to ensure they are airtight. It's crucial to follow tested recipes to ensure safety.\n\n# Common failure modes\n\nCommon issues include jars not sealing properly, food spoilage due to improper processing, and contamination from unsterilized equipment.\n\n# Safety/boundary notes\n\nAlways use tested recipes and follow guidelines to prevent foodborne illnesses. Ensure all equipment is clean and jars are properly sealed.\n\n# Local adaptation notes\n\nAdjust recipes and processing times based on altitude and local produce availability.",
+      "plain_language": "Learn the basics of home canning, including the process and how to ensure safety.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "high",
+      "secondary_domains": [],
+      "seed_type": "reference_sheet",
+      "slug": "food-preservation.home-canning-guide",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000001",
+        "src.usda.home-canning.2015::seg_000002"
+      ],
+      "stage": "foundation",
+      "structured_data": {
+        "definition": "Home canning is a method of preserving food by sealing it in airtight containers.",
+        "key_questions": [
+          "What are the essential tools for home canning?",
+          "How can I ensure my canned food is safe?",
+          "What are the basic steps involved in home canning?",
+          "Why is it important to follow tested recipes?",
+          "What equipment is necessary for home canning?"
+        ],
+        "misconceptions": [
+          "Canning is only for fruits and vegetables.",
+          "Once sealed, canned food is safe indefinitely.",
+          "Any jar can be used for canning."
+        ],
+        "safety_boundary": "Botulism risk. Low-acid foods (vegetables, meats, poultry, seafood) must be processed in a pressure canner, never a boiling-water canner; tomatoes must be acidified to pH 4.6 or lower with lemon juice or citric acid as a tested recipe directs. Vent the canner 10 minutes before pressurizing, use the exact process time and pressure for your jar size, pack style, canner type, and altitude, and check dial gauges for accuracy every year. Use only tested recipes and never shorten process times. Do not taste food from an unsealed jar or one showing spoilage (bulging lid, spurting liquid, unnatural odor, mold): treat it as having produced botulinum toxin, which can be fatal whether swallowed or through skin contact, and follow USDA disposal and detoxification steps. If any deviation from USDA-tested methods may have occurred, boil low-acid and tomato foods in a saucepan before eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft."
+      },
+      "suggested_edges": [],
+      "summary_medium": "This guide provides an overview of the home canning process and essential safety considerations.",
+      "summary_short": "An introductory guide to home canning.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Making Jams and Jellies with Added Pectin' and 'Making Jam Without Added Pectin' are distinct as they cover different methods of making jam, one with added pectin and the other without.",
+    "canonical_slug": "food-preservation.jam-jelly-with-pectin",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts 'Making Jam Without Added Pectin' and 'Making Jelly Without Added Pectin' are distinct as they cover different products (jam vs. jelly) and methods, both without added pectin.",
+    "canonical_slug": "food-preservation.jam-without-pectin",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover the same topic of preparing and canning jams and jellies with overlapping content and objectives. They can be combined into a single comprehensive guide.",
+    "canonical_slug": "food-preservation.jams-and-jellies-canning",
+    "deprecated_draft_ids": [
+      "food-preservation.jams-and-jellies-canning",
+      "food-preservation.jams-jellies-canning"
+    ],
+    "merged_object": {
+      "canonical_title": "Preparing and Canning Jams and Jellies",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "This guide covers the process of preparing and canning jams and jellies.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 46,
+              "excerpt": "Guide 7 **Preparing and Canning Jams and Jellies**",
+              "page_end": 183,
+              "page_start": 183,
+              "segment_id": "src.usda.home-canning.2015::seg_000261",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Canning jams and jellies allows you to preserve seasonal fruits, reduce food waste, and enjoy homemade spreads year-round.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 111,
+              "excerpt": "Use only firm fruits naturally high in pectin. Select a mixture of about 3/4 ripe and 1/4 underripe fruit.",
+              "page_end": 185,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000263",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Proper canning techniques are crucial to prevent spoilage and ensure food safety.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "You will need canning jars, lids, a canner, and fresh fruit. Additional tools include a jar lifter, funnel, and a ladle.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Prepare the fruit by washing and cutting it as needed.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 111,
+              "excerpt": "Wash all fruits thoroughly before cooking. Crush soft fruits or berries; cut firmer fruits into small pieces.",
+              "page_end": 185,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000263",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Sterilize jars and lids by boiling them.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Fill sterile jars (see page 1-14) with jelly.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Cook the fruit with sugar and pectin to the desired consistency.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Using no more than 6 to 8 cups of extracted fruit juice at a time, measure fruit juice, sugar, and lemon juice according to the ingredients in the table above and heat to boiling.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Fill jars with the hot mixture, leaving appropriate headspace.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Fill sterile jars (see page 1-14) with jelly. Use a measuring cup or ladle the jelly through a wide-mouthed funnel, leaving 1/4 inch headspace.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Seal jars with lids and process them in a boiling water canner for the recommended time.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Adjust lids and process.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "Improper sealing can lead to spoilage.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Adjust lids and process.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Contamination can occur if jars or lids are not properly sterilized.",
+          "object_id": "food-preservation.jams-and-jellies-canning",
+          "support": [
+            {
+              "end_char": 157,
+              "excerpt": "Fill sterile jars (see page 1-14) with jelly.",
+              "page_end": 186,
+              "page_start": 185,
+              "segment_id": "src.usda.home-canning.2015::seg_000264",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        }
+      ],
+      "co_type": "skill_guide",
+      "contexts": [],
+      "cost_band": "medium",
+      "difficulty": 3,
+      "id": "food-preservation.jams-and-jellies-canning",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "# What this is\n\nThis guide covers the process of preparing and canning jams and jellies. It includes steps for selecting fruit, preparing it for canning, and sealing it in jars to preserve flavor and safety.\n\n### Why it matters\n\nCanning jams and jellies allows you to preserve seasonal fruits, reduce food waste, and enjoy homemade spreads year-round. Proper canning techniques are crucial to prevent spoilage and ensure food safety.\n\n### What you need\n\nYou will need canning jars, lids, a canner, and fresh fruit. Additional tools include a jar lifter, funnel, and a ladle.\n\n### How to do it\n\n1. Prepare the fruit by washing and cutting it as needed. 2. Sterilize jars and lids by boiling them. 3. Cook the fruit with sugar and pectin to the desired consistency. 4. Fill jars with the hot mixture, leaving appropriate headspace. 5. Seal jars with lids and process them in a boiling water canner for the recommended time.\n\n### Common failure modes\n\nImproper sealing can lead to spoilage. Contamination can occur if jars or lids are not properly sterilized.\n\n### Safety/boundary notes\n\nEnsure proper sterilization of jars and lids. Follow recommended canning methods to prevent foodborne illness.\n\n### Local adaptation notes\n\nConsider the availability of local fruits and adjust processing times for altitude if necessary.",
+      "plain_language": "This guide will teach you how to make and can your own jams and jellies, ensuring they are safe to eat and taste great.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "moderate",
+      "secondary_domains": [],
+      "seed_type": "skill_guide",
+      "slug": "food-preservation.jams-and-jellies-canning",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000261",
+        "src.usda.home-canning.2015::seg_000260"
+      ],
+      "stage": "household",
+      "structured_data": {
+        "failure_modes": [
+          "improper sealing",
+          "contamination"
+        ],
+        "implementation": {
+          "common_mistakes": [
+            "Not sterilizing jars",
+            "Overfilling jars",
+            "Incorrect headspace"
+          ],
+          "expected_cost": "medium",
+          "expected_time": "2-3 hours",
+          "materials": [
+            "canning jars",
+            "lids",
+            "fresh fruit",
+            "sugar",
+            "pectin"
+          ],
+          "smallest_viable_version": "Prepare and can a small batch of jam using available seasonal fruit.",
+          "stop_conditions": [
+            "If jars do not seal",
+            "If contamination is suspected"
+          ],
+          "success_checks": [
+            "Jars are sealed properly",
+            "No spoilage after storage"
+          ],
+          "tools": [
+            "canner",
+            "jar lifter",
+            "funnel",
+            "ladle"
+          ],
+          "variants": [
+            {
+              "label": "Urban",
+              "notes": "Consider using smaller batches or shared kitchen spaces.",
+              "when": "Limited space for canning equipment"
+            },
+            {
+              "label": "Off-grid",
+              "notes": "Use a stovetop canner with a propane burner.",
+              "when": "No access to electric canner"
+            }
+          ],
+          "when_to_escalate": [
+            "If jars consistently fail to seal",
+            "If signs of spoilage are frequent"
+          ]
+        },
+        "materials": [
+          "canning jars",
+          "lids",
+          "fresh fruit",
+          "sugar",
+          "pectin"
+        ],
+        "safety_boundary": "Ensure proper sterilization and use recommended canning methods.",
+        "success_criteria": "Jars are properly sealed and stored without spoilage.",
+        "tools": [
+          "canner",
+          "jar lifter",
+          "funnel",
+          "ladle"
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "This guide provides detailed instructions on preparing and canning jams and jellies, emphasizing techniques to ensure safety and quality.",
+      "summary_short": "Learn how to safely prepare and can jams and jellies.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts describe the same process of low-temperature pasteurization for pickles, with overlapping claims and support. Merging them will consolidate the information and avoid redundancy.",
+    "canonical_slug": "food-preservation.low-temp-pasteurization",
+    "deprecated_draft_ids": [
+      "food-preservation.low-temp-pasteurization",
+      "food-preservation.low-temperature-pasteurization"
+    ],
+    "merged_object": {
+      "canonical_title": "Low-Temperature Pasteurization for Pickles",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Low-temperature pasteurization is a method used in home canning to improve the texture of pickles by carefully controlling the water temperature during processing.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 89,
+              "excerpt": "The following treatment results in a better product texture but must be carefully managed to avoid possible spoilage.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "This technique helps maintain the crispness of pickles while ensuring they are safely preserved.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 89,
+              "excerpt": "The following treatment results in a better product texture but must be carefully managed to avoid possible spoilage.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "You will need a canner, a candy or jelly thermometer, and jars filled with pickles.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 278,
+              "excerpt": "Check with a candy or jelly thermometer to be certain that the water temperature is at least 180°F during the entire 30 minutes.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 182,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Place jars in a canner filled halfway with warm water (120°F to 140°F).",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 143,
+              "excerpt": "Place jars in a canner filled half way with warm (120°F to 140°F) water.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 91,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Add hot water until it is 1 inch above the jars.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 183,
+              "excerpt": "Then, add hot water to a level 1 inch above jars.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 145,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Heat the water to maintain a temperature of 180°F to 185°F for 30 minutes.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 249,
+              "excerpt": "Heat the water enough to maintain 180°F to 185°F water temperature for 30 minutes.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 185,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Use a thermometer to ensure the temperature stays at least 180°F throughout the process.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 278,
+              "excerpt": "Check with a candy or jelly thermometer to be certain that the water temperature is at least 180°F during the entire 30 minutes.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 182,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Spoilage can occur if the temperature drops below 180°F. Pickles may soften if the temperature exceeds 185°F.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 336,
+              "excerpt": "Temperatures higher than 185°F may cause unnecessary softening of pickles.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 280,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Use this method only when specified by a recipe. Incorrect use can lead to spoilage or poor texture.",
+          "object_id": "food-preservation.low-temp-pasteurization",
+          "support": [
+            {
+              "end_char": 374,
+              "excerpt": "Caution: Use only when recipe indicates.",
+              "page_end": 150,
+              "page_start": 150,
+              "segment_id": "src.usda.home-canning.2015::seg_000207",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 338,
+              "support_strength": "strong"
+            }
+          ]
+        }
+      ],
+      "co_type": "skill_guide",
+      "contexts": [],
+      "cost_band": "low",
+      "difficulty": 3,
+      "id": "food-preservation.low-temp-pasteurization",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\nLow-temperature pasteurization is a method used in home canning to improve the texture of pickles by carefully controlling the water temperature during processing.\n\n### Why it matters\nThis technique helps maintain the crispness of pickles while ensuring they are safely preserved. It is crucial to manage the temperature accurately to prevent spoilage.\n\n### What you need\nYou will need a canner, a candy or jelly thermometer, and jars filled with pickles. Ensure you have a recipe that specifies this method.\n\n### How to do it\n1. Place jars in a canner filled halfway with warm water (120°F to 140°F).\n2. Add hot water until it is 1 inch above the jars.\n3. Heat the water to maintain a temperature of 180°F to 185°F for 30 minutes.\n4. Use a thermometer to ensure the temperature stays at least 180°F throughout the process.\n\n### Common failure modes\nSpoilage can occur if the temperature drops below 180°F. Pickles may soften if the temperature exceeds 185°F.\n\n### Safety/boundary notes\nUse this method only when specified by a recipe. Incorrect use can lead to spoilage or poor texture.\n\n### Local adaptation notes\nAdjustments may be necessary based on altitude or specific equipment used.",
+      "plain_language": "This guide explains how to use low-temperature pasteurization to make pickles with better texture without risking spoilage.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "moderate",
+      "secondary_domains": [],
+      "seed_type": "extracted",
+      "slug": "food-preservation.low-temp-pasteurization",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000207",
+        "src.usda.home-canning.2015::seg_000205"
+      ],
+      "stage": "household",
+      "structured_data": {
+        "failure_modes": [
+          "Spoilage",
+          "Softening of pickles",
+          "Incorrect temperature leading to spoilage."
+        ],
+        "implementation": {
+          "common_mistakes": [
+            "Not monitoring the temperature closely",
+            "Using the method without recipe indication",
+            "Not maintaining the correct temperature.",
+            "Overheating the pickles."
+          ],
+          "expected_cost": "low",
+          "expected_time": "30 minutes",
+          "materials": [],
+          "smallest_viable_version": "Maintain water temperature between 180°F to 185°F for 30 minutes.",
+          "stop_conditions": [
+            "Temperature drops below 180°F",
+            "Temperature exceeds 185°F",
+            "Temperature exceeds 185°F (85°C)."
+          ],
+          "success_checks": [
+            "Water temperature is consistently between 180°F to 185°F.",
+            "Pickles maintain texture and are free from spoilage."
+          ],
+          "tools": [
+            "candy thermometer",
+            "canner",
+            "thermometer",
+            "water bath"
+          ],
+          "variants": [
+            {
+              "label": "Urban",
+              "notes": "Use a smaller water bath setup.",
+              "when": "Limited space for equipment."
+            }
+          ],
+          "when_to_escalate": [
+            "If spoilage is suspected despite following instructions",
+            "If unable to maintain the correct temperature consistently."
+          ]
+        },
+        "materials": [],
+        "safety_boundary": [
+          "Use only when recipe indicates",
+          "Maintain temperature between 180°F and 185°F (82°C to 85°C)."
+        ],
+        "success_criteria": [
+          "Water temperature maintained between 180°F to 185°F for 30 minutes",
+          "Pickles are safely pasteurized without loss of texture."
+        ],
+        "tools": [
+          "candy thermometer",
+          "canner",
+          "thermometer",
+          "water bath"
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "Learn how to use low-temperature pasteurization to enhance pickle texture while preventing spoilage.",
+      "summary_short": "Improve pickle texture with low-temperature pasteurization.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe distinct canning projects for different types of salsa (Mango Salsa, Peach Apple Salsa, Peach Salsa, and Spicy Cranberry Salsa). Each project has unique ingredients and procedures.",
+    "canonical_slug": "food-preservation.mango-salsa",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe distinct canning projects for different types of salsa (Mango Salsa, Peach Apple Salsa, Peach Salsa, and Spicy Cranberry Salsa). Each project has unique ingredients and procedures.",
+    "canonical_slug": "food-preservation.peach-apple-salsa",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe distinct canning projects for different types of salsa (Mango Salsa, Peach Apple Salsa, Peach Salsa, and Spicy Cranberry Salsa). Each project has unique ingredients and procedures.",
+    "canonical_slug": "food-preservation.peach-salsa",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts describe distinct canning projects for different types of salsa (Mango Salsa, Peach Apple Salsa, Peach Salsa, and Spicy Cranberry Salsa). Each project has unique ingredients and procedures.",
+    "canonical_slug": "food-preservation.spicy-cranberry-salsa",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "merge",
+    "rationale": "Both drafts cover the same topic of salts used in pickling and have overlapping content. Merging them will consolidate the information and remove redundancy.",
+    "canonical_slug": "food-preservation.pickling-salts",
+    "deprecated_draft_ids": [
+      "food-preservation.pickling-salts",
+      "food-preservation.salts-used-in-pickling"
+    ],
+    "merged_object": {
+      "canonical_title": "Salts Used in Pickling",
+      "citations": [
+        {
+          "claim_id": "clm_001",
+          "claim_text": "Use canning or pickling salt for best results.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 47,
+              "excerpt": "Use of canning or pickling salt is recommended.",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_002",
+          "claim_text": "Both iodized and noniodized table salts can be used, but noncaking agents in table salt may cloud the brine.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 176,
+              "excerpt": "Fermented and nonfermented pickles may be safely made using either iodized or noniodized table salt. However, noncaking materials added to table salts may make the brine cloudy.",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 48,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_003",
+          "claim_text": "Avoid using flake salt due to its variable density.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 223,
+              "excerpt": "Flake salt varies in density and is not recommended for use.",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 177,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_004",
+          "claim_text": "Reduced-sodium salts can be used in quick pickles but not in fermented pickles.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 391,
+              "excerpt": "Reduced-sodium salts, for example mixtures of sodium and potassium chloride, may be used in quick pickle recipes, as indicated in this guide. **Caution: Use of reduced-sodium salt in fermented pickle recipes is not recommended.**",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 224,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_005",
+          "claim_text": "Using table salt with noncaking agents can result in cloudy brine.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 176,
+              "excerpt": "However, noncaking materials added to table salts may make the brine cloudy.",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 122,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_006",
+          "claim_text": "Using reduced-sodium salt in fermented pickles can lead to unsatisfactory results.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 391,
+              "excerpt": "**Caution: Use of reduced-sodium salt in fermented pickle recipes is not recommended.**",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 353,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_007",
+          "claim_text": "Do not use reduced-sodium salts in fermented pickle recipes as it can compromise the safety and quality of the pickles.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 391,
+              "excerpt": "**Caution: Use of reduced-sodium salt in fermented pickle recipes is not recommended.**",
+              "page_end": 152,
+              "page_start": 152,
+              "segment_id": "src.usda.home-canning.2015::seg_000209",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 353,
+              "support_strength": "strong"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_008",
+          "claim_text": "Choosing the right type of salt is crucial for successful pickling. Different salts can affect the taste, texture, and safety of the pickled product.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 22,
+              "excerpt": "Salts used in pickling",
+              "page_end": 149,
+              "page_start": 148,
+              "segment_id": "src.usda.home-canning.2015::seg_000205",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_009",
+          "claim_text": "Avoid using salts with additives like iodine or anti-caking agents, as they can cloud the brine or alter the flavor.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 22,
+              "excerpt": "Salts used in pickling",
+              "page_end": 149,
+              "page_start": 148,
+              "segment_id": "src.usda.home-canning.2015::seg_000205",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_010",
+          "claim_text": "Using the wrong type of salt can lead to undesirable flavors, cloudiness in the brine, or spoilage.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 22,
+              "excerpt": "Salts used in pickling",
+              "page_end": 149,
+              "page_start": 148,
+              "segment_id": "src.usda.home-canning.2015::seg_000205",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        },
+        {
+          "claim_id": "clm_011",
+          "claim_text": "Ensure that the salt used is food-grade and free from additives that could affect the pickling process.",
+          "object_id": "food-preservation.pickling-salts",
+          "support": [
+            {
+              "end_char": 22,
+              "excerpt": "Salts used in pickling",
+              "page_end": 149,
+              "page_start": 148,
+              "segment_id": "src.usda.home-canning.2015::seg_000205",
+              "source_id": "src.usda.home-canning.2015",
+              "start_char": 0,
+              "support_strength": "medium"
+            }
+          ]
+        }
+      ],
+      "co_type": "reference_sheet",
+      "contexts": [],
+      "cost_band": "free",
+      "difficulty": 2,
+      "id": "food-preservation.pickling-salts",
+      "language_code": "en",
+      "lifecycle_state": "draft",
+      "markdown_body": "### What this is\n\nThis reference sheet provides information on the types of salts used in pickling and their effects on the pickling process.\n\n### Why it matters\n\nChoosing the right type of salt is crucial for successful pickling. Different salts can affect the clarity of the brine and the safety of the pickling process.\n\n### What you need\n\nKnowledge of the different types of salts available for pickling and their properties.\n\n### How to do it\n\nUse canning or pickling salt for best results. Both iodized and noniodized table salts can be used, but noncaking agents in table salt may cloud the brine. Avoid using flake salt due to its variable density. Reduced-sodium salts can be used in quick pickles but not in fermented pickles.\n\n### Common failure modes\n\nUsing table salt with noncaking agents can result in cloudy brine. Using reduced-sodium salt in fermented pickles can lead to unsatisfactory results.\n\n### Safety/boundary notes\n\nDo not use reduced-sodium salts in fermented pickle recipes as it can compromise the safety and quality of the pickles.\n\n### Local adaptation notes\n\nAdjust salt types based on local availability, ensuring to avoid those with noncaking agents for clear brine.",
+      "plain_language": "This guide explains which salts to use for pickling, how they affect the process, and what to avoid.",
+      "primary_domain": "food-preservation",
+      "requires": [],
+      "risk_band": "low",
+      "secondary_domains": [],
+      "seed_type": "extracted",
+      "slug": "food-preservation.pickling-salts",
+      "source_segment_ids": [
+        "src.usda.home-canning.2015::seg_000209",
+        "src.usda.home-canning.2015::seg_000205"
+      ],
+      "stage": "foundation",
+      "structured_data": {
+        "definition": "Guidance on the selection and use of salts in pickling processes.",
+        "key_questions": [
+          "What types of salt are recommended for pickling?",
+          "Why should flake salt be avoided?",
+          "Can reduced-sodium salts be used in all pickling recipes?"
+        ],
+        "misconceptions": [
+          "All table salts are suitable for pickling.",
+          "Reduced-sodium salts can be used interchangeably with regular salts in all pickling recipes."
+        ],
+        "failure_modes": [
+          "Cloudy brine",
+          "Off-flavors"
+        ],
+        "materials": [
+          "salt"
+        ],
+        "safety_boundary": "Use food-grade salts without additives.",
+        "success_criteria": [
+          "Clear brine",
+          "Desired flavor profile"
+        ],
+        "tools": [
+          "salt"
+        ]
+      },
+      "suggested_edges": [],
+      "summary_medium": "Learn about the types of salts used in pickling and their effects on the process, including recommendations and cautions.",
+      "summary_short": "Guidance on selecting salts for pickling.",
+      "version_no": 1,
+      "visibility": "public"
+    },
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The draft on cucumber selection is distinct and covers a different aspect of pickling, focusing on the selection of cucumbers rather than the types of salts used.",
+    "canonical_slug": "food-preservation.selection-of-fresh-cucumbers",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "Both drafts are distinct as they cover different types of produce (fruit vs. tomatoes) and have unique content specific to each type.",
+    "canonical_slug": "food-preservation.selecting-preparing-canning-fruit",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  },
+  {
+    "action": "keep",
+    "rationale": "The drafts are distinct as they cover different topics: one is about canning tomato sauce and the other about canning tomato juice. They have different processes and requirements.",
+    "canonical_slug": "food-preservation.standard-tomato-sauce",
+    "deprecated_draft_ids": [],
+    "merged_object": null,
+    "split_objects": []
+  }
+]
