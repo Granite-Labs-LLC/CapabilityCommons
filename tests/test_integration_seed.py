@@ -6,7 +6,7 @@ import uuid
 
 import pytest
 import yaml
-from sqlalchemy import select
+from sqlalchemy import delete, select
 
 from capability_commons.cli.seed import seed_graph
 from capability_commons.config import get_settings
@@ -43,20 +43,28 @@ async def test_seed_graph_holds_high_risk_objects_for_review(db_session, tmp_pat
     for node in (_node(high, "high"), _node(low, "low")):
         (nodes_dir / f"{node['slug']}.yaml").write_text(yaml.safe_dump(node))
 
-    await seed_graph(tmp_path, get_settings().database_url)
+    try:
+        await seed_graph(tmp_path, get_settings().database_url)
 
-    result = await db_session.execute(select(ContextObject).where(ContextObject.slug.in_([high, low])))
-    objs = {obj.slug: obj for obj in result.scalars()}
-    assert objs[high].lifecycle_state == LifecycleState.IN_REVIEW
-    assert objs[high].published_at is None
-    assert objs[high].current_version_id is not None  # reviewers need the version
-    assert objs[low].lifecycle_state == LifecycleState.PUBLISHED
-    assert objs[low].published_at is not None
+        result = await db_session.execute(select(ContextObject).where(ContextObject.slug.in_([high, low])))
+        objs = {obj.slug: obj for obj in result.scalars()}
+        assert objs[high].lifecycle_state == LifecycleState.IN_REVIEW
+        assert objs[high].published_at is None
+        assert objs[high].current_version_id is not None  # reviewers need the version
+        assert objs[low].lifecycle_state == LifecycleState.PUBLISHED
+        assert objs[low].published_at is not None
 
-    events = await db_session.execute(
-        select(OutboxEvent.aggregate_id).where(
-            OutboxEvent.event_type == "version.published",
-            OutboxEvent.aggregate_id.in_([objs[high].id, objs[low].id]),
+        events = await db_session.execute(
+            select(OutboxEvent.aggregate_id).where(
+                OutboxEvent.event_type == "version.published",
+                OutboxEvent.aggregate_id.in_([objs[high].id, objs[low].id]),
+            )
         )
-    )
-    assert events.scalars().all() == [objs[low].id]
+        assert events.scalars().all() == [objs[low].id]
+    finally:
+        # seed_graph() writes into the real "capability-commons" workspace, not
+        # a test-% one, so conftest's workspace cleanup doesn't cover these.
+        test_object_ids = select(ContextObject.id).where(ContextObject.slug.in_([high, low]))
+        await db_session.execute(delete(OutboxEvent).where(OutboxEvent.aggregate_id.in_(test_object_ids)))
+        await db_session.execute(delete(ContextObject).where(ContextObject.slug.in_([high, low])))
+        await db_session.commit()

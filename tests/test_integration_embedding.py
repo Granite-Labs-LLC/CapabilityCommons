@@ -5,7 +5,7 @@ from __future__ import annotations
 import uuid
 
 import pytest
-from sqlalchemy import select
+from sqlalchemy import delete, select
 
 from capability_commons.cli.worker import OutboxWorker
 from capability_commons.config import get_settings
@@ -255,15 +255,19 @@ async def test_worker_recovers_session_after_flush_failure_without_crashing(db_s
     finally:
         await worker.stop()
 
-    # Not asserting an exact succeeded count: this can share a batch with
-    # unrelated orphaned outbox events left behind by earlier tests in this
-    # file (a separate, already-known test-hygiene gap — db_session's
-    # teardown deletes test workspaces but not their outbox events). What
-    # matters here is only these two specific events' own outcomes.
-    result = await db_session.execute(select(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id])))
-    by_id = {e.id: e for e in result.scalars().all()}
-    assert by_id[bad_id].processed_at is None, "the permanently-failing event must stay unprocessed for retry"
-    assert by_id[good_id].processed_at is not None
+    # Not asserting an exact succeeded count: on a shared dev database this
+    # can share a batch with unrelated unprocessed events. What matters here
+    # is only these two specific events' own outcomes.
+    try:
+        result = await db_session.execute(select(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id])))
+        by_id = {e.id: e for e in result.scalars().all()}
+        assert by_id[bad_id].processed_at is None, "the permanently-failing event must stay unprocessed for retry"
+        assert by_id[good_id].processed_at is not None
+    finally:
+        # These events have no workspace, so conftest's cleanup can't reach
+        # them; left behind, the worker would retry the bad one forever.
+        await db_session.execute(delete(OutboxEvent).where(OutboxEvent.id.in_([bad_id, good_id])))
+        await db_session.commit()
 
     for ev in by_id.values():
         await db_session.delete(ev)
