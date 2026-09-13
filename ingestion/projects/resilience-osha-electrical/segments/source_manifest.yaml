@@ -1,0 +1,6 @@
+- file: sources/osha-3075-electrical-hazards.pdf
+  pages: 71
+  segments: 196
+  source_id: src.osha.3075.controlling-electrical-hazards
+  source_kind: EXTERNAL_DOC
+  title: Controlling Electrical Hazards (OSHA 3075)

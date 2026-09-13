@@ -1,0 +1,171 @@
+id: safety.electrical-guarding
+slug: safety.electrical-guarding
+seed_type: candidate
+co_type: concept_note
+canonical_title: Electrical Guarding
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: Guarding involves enclosing electric equipment to prevent accidental
+  contact with live parts.
+summary_medium: Guarding involves enclosing electric equipment to prevent accidental
+  contact with live parts, requiring restricted access to authorized personnel only.
+plain_language: Guarding is a safety measure that involves enclosing or locating electrical
+  equipment in a way that prevents accidental contact with live parts. This is crucial
+  for equipment operating at 50 volts or more, and access should be restricted to
+  authorized personnel.
+markdown_body: '## What this is
+
+  Guarding is a safety practice used to prevent accidental contact with live electrical
+  parts by enclosing or locating electrical equipment in secure areas.
+
+
+  ## Why it matters
+
+  Guarding is essential for preventing electrical accidents, especially with equipment
+  operating at 50 volts or more. It ensures that only authorized personnel can access
+  these areas, reducing the risk of injury.
+
+
+  ## What you need
+
+  To implement guarding, you need sturdy permanent screens and conspicuous signs that
+  display warnings such as ''Danger,'' ''Warning,'' or ''Caution.''
+
+
+  ## How to do it
+
+  Place electrical equipment in secure locations like rooms, vaults, or elevated platforms.
+  Use permanent screens as guards and post signs at entrances to alert and restrict
+  unauthorized access.
+
+
+  ## Common failure modes
+
+  Failure can occur if unauthorized access is allowed or if signage is inadequate.
+
+
+  ## Safety/boundary notes
+
+  Guarding is necessary for equipment operating at 50 volts or more.
+
+
+  ## Local adaptation notes
+
+  Signage requirements may vary by location, so ensure compliance with local regulations.'
+structured_data:
+  definition: Guarding involves enclosing or locating electrical equipment to prevent
+    accidental contact with live parts, ensuring access is restricted to authorized
+    personnel.
+  key_questions:
+  - What types of equipment require guarding?
+  - How can guarding be effectively implemented?
+  - What signage is necessary for guarded areas?
+  misconceptions:
+  - Guarding is only necessary for high voltage equipment.
+  - Any type of barrier can be used for guarding.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-guarding
+  claim_id: clm_001
+  claim_text: Guarding is a safety practice used to prevent accidental contact with
+    live electrical parts by enclosing or locating electrical equipment in secure
+    areas.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Guarding involves locating or enclosing electric equipment to make sure
+      people don't accidentally come into contact with its live parts.
+    start_char: 0
+    end_char: 108
+    support_strength: strong
+- object_id: safety.electrical-guarding
+  claim_id: clm_002
+  claim_text: Guarding is essential for preventing electrical accidents, especially
+    with equipment operating at 50 volts or more. It ensures that only authorized
+    personnel can access these areas, reducing the risk of injury.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Effective guarding requires equipment with exposed parts operating at
+      50 volts or more to be placed where it is accessible only to authorized people
+      qualified to work with it.
+    start_char: 109
+    end_char: 229
+    support_strength: strong
+- object_id: safety.electrical-guarding
+  claim_id: clm_003
+  claim_text: To implement guarding, you need sturdy permanent screens and conspicuous
+    signs that display warnings such as 'Danger,' 'Warning,' or 'Caution.'
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Sturdy, permanent screens also can serve as effective guards. Conspicuous
+      signs must be posted at the entrances to electrical rooms and similarly guarded
+      locations to alert people to the electrical hazard and to forbid entry to unauthorized
+      people.
+    start_char: 230
+    end_char: 455
+    support_strength: strong
+- object_id: safety.electrical-guarding
+  claim_id: clm_004
+  claim_text: Place electrical equipment in secure locations like rooms, vaults, or
+    elevated platforms. Use permanent screens as guards and post signs at entrances
+    to alert and restrict unauthorized access.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Recommended locations are a room, vault, or similar enclosure; a balcony,
+      gallery, or elevated platform; or a site elevated 8 feet (2.44 meters) or more
+      above the floor. Sturdy, permanent screens also can serve as effective guards.
+    start_char: 230
+    end_char: 355
+    support_strength: strong
+- object_id: safety.electrical-guarding
+  claim_id: clm_005
+  claim_text: Failure can occur if unauthorized access is allowed or if signage is
+    inadequate.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Conspicuous signs must be posted at the entrances to electrical rooms
+      and similarly guarded locations to alert people to the electrical hazard and
+      to forbid entry to unauthorized people.
+    start_char: 356
+    end_char: 455
+    support_strength: medium
+- object_id: safety.electrical-guarding
+  claim_id: clm_006
+  claim_text: Guarding is necessary for equipment operating at 50 volts or more.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Effective guarding requires equipment with exposed parts operating at
+      50 volts or more to be placed where it is accessible only to authorized people
+      qualified to work with it.
+    start_char: 109
+    end_char: 229
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000022

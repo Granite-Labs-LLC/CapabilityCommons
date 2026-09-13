@@ -1,0 +1,29 @@
+name: resilience-osha-electrical
+created: '2026-09-13T18:17:30.196599+00:00'
+sources:
+- id: src.osha.3075.controlling-electrical-hazards
+  file: sources/osha-3075-electrical-hazards.pdf
+  title: Controlling Electrical Hazards (OSHA 3075)
+  source_kind: EXTERNAL_DOC
+llm:
+  base_url: https://api.openai.com/v1
+  model: gpt-4o
+  temperature: 0.2
+passes:
+  parse:
+    completed: '2026-09-13T18:20:11.114690Z'
+  extract:
+    completed: '2026-09-13T18:30:10.952149Z'
+  draft:
+    completed: '2026-09-13T18:36:42.145076Z'
+  cite:
+    completed: '2026-09-13T18:41:39.939573Z'
+  canonicalize:
+    completed: '2026-09-13T18:42:03.476733Z'
+  edges:
+    completed: '2026-09-13T18:42:10.476163Z'
+  bundles:
+    completed: '2026-09-13T18:42:49.255585Z'
+  load:
+    completed: '2026-09-13T18:44:48.003419Z'
+job_id: null

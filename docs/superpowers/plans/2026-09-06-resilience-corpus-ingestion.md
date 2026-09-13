@@ -31,12 +31,21 @@ Repeat steps 1-9 with:
 - `--source-title "Complete Guide to Home Canning (2015 Revision)"`
 - Extra attention at the draft checkpoint: this document is deep and technical (processing times, altitude adjustments, acidity tables). Make sure `structured_data` captures numeric safety parameters exactly — a canning guide is exactly the kind of high-risk content the publish gate (SAFE-001) exists for. Confirm risky objects actually route to review rather than auto-publishing.
 
-## Source 3: OSHA 3075 — Controlling Electrical Hazards
+## Source 3: OSHA 3075 — Controlling Electrical Hazards — **done 2026-09-13**
+
+**Outcome:** parse 196 segments / 71 pages (page spot-check 8/8) → extract 61 candidates → **scoped to pages 1–24** (33 candidates; pages 25–71 are OSHA agency programs and office directories, not household-resilience content — full matrix kept as `extraction_matrix.full.csv`, decision logged) → draft 32/33, 0 failures (one duplicate slug merged) → cite 184, every draft ≥2 → canonicalize 1 merge → 31 objects → edges 15 → bundles 5 (one per skill_guide) → load 31 objects, 187 evidence spans. **Checkpoint (safety):** unlike USDA, the model rated shock/burn background notes `high`; validation blocked 10 of them for missing `safety_boundary`, authored from the booklet's own statements (shut off current, seek emergency medical help, 10 ft from overhead lines, deenergize + lockout/tag, qualified electricians only). 3 slugs rewritten by the model were restored and the draft pass fixed. Result: 21 published and embedded, 10 held `in_review`. `safety_check` intent resolution was not specifically exercised — no gold query covers electrical safety.
 
 Repeat steps 1-9 with:
 - `--source-id src.osha.3075.controlling-electrical-hazards`
 - `--source-title "Controlling Electrical Hazards (OSHA 3075)"`
 - This document is safety-standard-shaped (hazard → control → citation format), not narrative. Use it specifically to test whether `safety_check` intent resolution and the publish gate's safety-boundary logic behave correctly on genuinely hazard-dense content — a good real-world exercise of the retrieval-intent fixes closed in May.
+
+## Full closeout — 2026-09-13 (all three sources)
+
+1. Eval re-run: `eval/reports/2026-09-13.md`, **6/11** (was 4/11 on 2026-09-08), ≥2 citations 11/11. Per-query comparison: the only two new passes (bleach safety, starter solar) both come from slugs added to the gold file during the 2026-09-13 reconciliation, not from USDA/OSHA content — "starter solar" passes only because `power.circuit-basics` is now accepted, and no solar content exists. No gold query covers canning or electrical safety — add some before using eval to judge these sources.
+2. Corpus (local dev DB): 403 published (every one embedded), 54 `in_review` (44 USDA + 10 OSHA) awaiting human review.
+3. STATUS/TODO updated.
+4. Still open: human review of the 54 held objects; cross-corpus dedup (FEMA/USDA/seed-pack food overlap); FEMA's 4 needs-review objects.
 
 ## Closeout — partial (source 1 of 3 done 2026-09-08; steps below apply to that checkpoint, full closeout waits for USDA + OSHA)
 

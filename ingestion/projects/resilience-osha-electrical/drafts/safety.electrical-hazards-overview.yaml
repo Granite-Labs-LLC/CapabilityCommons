@@ -1,0 +1,163 @@
+id: safety.electrical-hazards-overview
+slug: safety.electrical-hazards-overview
+seed_type: candidate
+co_type: concept_note
+canonical_title: Understanding Electrical Hazards and OSHA Standards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: moderate
+summary_short: An overview of electrical hazards and OSHA standards for safety.
+summary_medium: This concept note provides an overview of electrical hazards and the
+  importance of understanding OSHA standards for electrical safety.
+plain_language: Learn about the dangers of electricity and how OSHA standards help
+  keep you safe.
+markdown_body: '## What this is
+
+  This concept note provides an overview of electrical hazards and the importance
+  of understanding OSHA standards for electrical safety.
+
+
+  ## Why it matters
+
+  Electricity is essential in both personal and professional settings. However, it
+  poses significant hazards if not handled properly. Understanding these hazards and
+  adhering to OSHA standards can prevent accidents and ensure a safe working environment.
+
+
+  ## What you need
+
+  A basic understanding of electrical systems and awareness of OSHA standards related
+  to electrical safety.
+
+
+  ## How to do it
+
+  Familiarize yourself with the types of electrical hazards, such as shocks, burns,
+  and the effects of electricity on the body. Learn about the protective measures
+  like insulation, grounding, and circuit protection devices. Follow OSHA guidelines
+  to minimize risks.
+
+
+  ## Common failure modes
+
+  - Ignoring the potential hazards of electricity due to familiarity.
+
+  - Failing to use proper protective equipment.
+
+  - Not following established safety protocols.
+
+
+  ## Safety/boundary notes
+
+  Always treat electricity with respect and caution. Use appropriate personal protective
+  equipment and follow OSHA standards to ensure safety.
+
+
+  ## Local adaptation notes
+
+  Consider local regulations and standards that may complement or differ from OSHA
+  guidelines.'
+structured_data:
+  definition: Electrical hazards are dangers associated with the use of electricity,
+    including shocks, burns, and other injuries.
+  key_questions:
+  - What are the common electrical hazards?
+  - How do OSHA standards address electrical safety?
+  - What protective measures can minimize electrical risks?
+  misconceptions:
+  - Electricity is only dangerous for those who work directly with it.
+  - Familiarity with electrical systems eliminates the need for caution.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_001
+  claim_text: Electricity is essential in both personal and professional settings.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 6
+    page_end: 6
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000003
+    excerpt: Electricity is essential to modern life, both at home and on the job.
+    start_char: 60
+    end_char: 114
+    support_strength: strong
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_002
+  claim_text: Understanding these hazards and adhering to OSHA standards can prevent
+    accidents and ensure a safe working environment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 8
+    page_end: 8
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000006
+    excerpt: OSHA standards focus on the design and use of electrical equipment and
+      systems... to minimize workplace electrical dangers.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_003
+  claim_text: Familiarize yourself with the types of electrical hazards, such as shocks,
+    burns, and the effects of electricity on the body.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 5
+    page_end: 5
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000002
+    excerpt: What causes shocks? What effect do shocks have on the body? What kind
+      of burns can a shock cause?
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_004
+  claim_text: Learn about the protective measures like insulation, grounding, and
+    circuit protection devices.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000002
+    excerpt: What protection does insulation provide? What is grounding and what protection
+      does it offer? What are circuit protection devices and how do they work?
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_005
+  claim_text: Follow OSHA guidelines to minimize risks.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 9
+    page_end: 9
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000006
+    excerpt: OSHA standards focus on the design and use of electrical equipment and
+      systems... to minimize workplace electrical dangers.
+    start_char: 0
+    end_char: 150
+    support_strength: medium
+- object_id: safety.electrical-hazards-overview
+  claim_id: clm_006
+  claim_text: Always treat electricity with respect and caution.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 6
+    page_end: 6
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000003
+    excerpt: we tend to overlook the hazards electricity poses and fail to treat it
+      with the respect it deserves.
+    start_char: 200
+    end_char: 270
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000002
+- src.osha.3075.controlling-electrical-hazards::seg_000003

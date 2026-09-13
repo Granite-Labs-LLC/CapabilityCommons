@@ -1,0 +1,253 @@
+id: safety.electrical-hazard-prevention
+slug: safety.electrical-hazard-prevention
+seed_type: candidate
+co_type: skill_guide
+canonical_title: Electrical Hazard Prevention
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Learn safe work practices to prevent electrical accidents.
+summary_medium: This guide outlines safe work practices to prevent electrical accidents,
+  including deenergizing equipment, maintaining tools, exercising caution near energized
+  lines, and using protective equipment.
+plain_language: This guide helps you understand how to prevent electrical accidents
+  by following safe work practices.
+markdown_body: '## What this is
+
+  This skill guide provides information on safe work practices to prevent electrical
+  accidents. It includes methods such as deenergizing equipment, maintaining tools,
+  exercising caution near energized lines, and using protective equipment.
+
+
+  ## Why it matters
+
+  Electrical accidents can cause serious injuries or fatalities. By following these
+  safe work practices, you can significantly reduce the risk of electrical hazards
+  in the workplace.
+
+
+  ## What you need
+
+  To implement these practices, you will need appropriate protective equipment and
+  maintenance tools.
+
+
+  ## How to do it
+
+  1. Deenergize electric equipment before inspection or repair.
+
+  2. Keep electric tools properly maintained.
+
+  3. Exercise caution when working near energized lines.
+
+  4. Use appropriate protective equipment.
+
+
+  ## Common failure modes
+
+  - Failure to deenergize equipment before work.
+
+  - Improper maintenance of tools.
+
+
+  ## Safety/boundary notes
+
+  Follow the electrical safety-related work practice requirements detailed in Subpart
+  S of 29 CFR Part 1910 for general industry and Subpart K of 29 CFR Part 1926 for
+  construction applications.
+
+
+  ## Local adaptation notes
+
+  Adjust practices as necessary to comply with local regulations and standards.'
+structured_data:
+  tools:
+  - protective equipment
+  materials:
+  - maintenance tools
+  success_criteria:
+  - All equipment is deenergized before inspection or repair.
+  - Tools are maintained in good condition.
+  - Protective equipment is used correctly.
+  failure_modes:
+  - Failure to deenergize
+  - Improper tool maintenance
+  safety_boundary:
+  - Subpart S of 29 CFR Part 1910
+  - Subpart K of 29 CFR Part 1926
+  implementation:
+    smallest_viable_version: Deenergize equipment before starting any inspection or
+      repair.
+    tools:
+    - protective equipment
+    materials:
+    - maintenance tools
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - Equipment is deenergized before work begins.
+    - Tools are in good working condition.
+    - Protective gear is worn as required.
+    stop_conditions:
+    - If equipment cannot be deenergized safely.
+    - If tools are found to be defective.
+    common_mistakes:
+    - Not verifying equipment is deenergized.
+    - Using damaged tools.
+    variants:
+    - label: renter
+      when: Working in rented facilities.
+      notes: Ensure compliance with both tenant and landlord safety protocols.
+    when_to_escalate:
+    - If unsure about deenergizing procedures.
+    - If protective equipment is unavailable.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-hazard-prevention
+  claim_id: clm_001
+  claim_text: Deenergize electric equipment before inspection or repair.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 20
+    page_end: 20
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000025
+    excerpt: deenergizing electric equipment before inspection or repair
+    start_char: 64
+    end_char: 110
+    support_strength: strong
+- object_id: safety.electrical-hazard-prevention
+  claim_id: clm_002
+  claim_text: Keep electric tools properly maintained.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 20
+    page_end: 20
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000025
+    excerpt: keeping electric tools properly maintained
+    start_char: 112
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-prevention
+  claim_id: clm_003
+  claim_text: Exercise caution when working near energized lines.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 20
+    page_end: 20
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000025
+    excerpt: exercising caution when working near energized lines
+    start_char: 152
+    end_char: 200
+    support_strength: strong
+- object_id: safety.electrical-hazard-prevention
+  claim_id: clm_004
+  claim_text: Use appropriate protective equipment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 20
+    page_end: 20
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000025
+    excerpt: using appropriate protective equipment
+    start_char: 202
+    end_char: 240
+    support_strength: strong
+- object_id: safety.electrical-hazard-prevention
+  claim_id: clm_005
+  claim_text: Follow the electrical safety-related work practice requirements detailed
+    in Subpart S of 29 CFR Part 1910 for general industry and Subpart K of 29 CFR
+    Part 1926 for construction applications.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 20
+    page_end: 20
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000025
+    excerpt: Electrical safety-related work practice requirements for general industry
+      are detailed in Subpart S of 29 CFR Part 1910, in Sections 1910.331–1910.335.
+      For construction applications, electrical safety-related work practice requirements
+      are detailed in Subpart K of 29 CFR Part 1926.416 to 1926.417.
+    start_char: 242
+    end_char: 478
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000025
+bundle_overrides:
+  hook: Preventing electrical hazards is crucial to ensuring safety and avoiding serious
+    injuries or fatalities in the workplace.
+  primer: Electrical hazards pose significant risks in various work environments,
+    potentially leading to severe injuries or even fatalities. Understanding and implementing
+    safe work practices can greatly reduce these risks. Key practices include deenergizing
+    equipment before inspection or repair, maintaining electric tools properly, exercising
+    caution near energized lines, and using appropriate protective equipment. By following
+    these guidelines, workers can create a safer environment and minimize the chances
+    of electrical accidents. Additionally, adhering to specific regulatory requirements,
+    such as those outlined in Subpart S of 29 CFR Part 1910 for general industry and
+    Subpart K of 29 CFR Part 1926 for construction, is essential for compliance and
+    safety. These practices not only protect individuals but also contribute to a
+    culture of safety within the workplace.
+  guide: '1. **Deenergize Equipment**: Before starting any inspection or repair work,
+    ensure that all electrical equipment is deenergized. This involves disconnecting
+    the power source and verifying that the equipment is not live. Use lockout/tagout
+    procedures to prevent accidental re-energization.
+
+
+    2. **Maintain Electric Tools**: Regularly inspect and maintain all electric tools
+    to ensure they are in good working condition. Check for any signs of wear or damage,
+    such as frayed cords or broken casings, and repair or replace tools as necessary.
+
+
+    3. **Exercise Caution Near Energized Lines**: When working near energized lines,
+    maintain a safe distance and be aware of your surroundings. Use insulated tools
+    and wear appropriate protective gear to minimize the risk of accidental contact.
+
+
+    4. **Use Protective Equipment**: Always wear the appropriate personal protective
+    equipment (PPE) when working with or near electrical systems. This may include
+    gloves, goggles, helmets, and insulating clothing, depending on the specific hazards
+    present.
+
+
+    5. **Follow Regulatory Requirements**: Familiarize yourself with and adhere to
+    the electrical safety-related work practice requirements detailed in Subpart S
+    of 29 CFR Part 1910 for general industry and Subpart K of 29 CFR Part 1926 for
+    construction applications. These regulations provide comprehensive guidelines
+    to ensure safety in various work environments.'
+  reference:
+  - Deenergize electric equipment before inspection or repair.
+  - Keep electric tools properly maintained.
+  - Exercise caution when working near energized lines.
+  - Use appropriate protective equipment.
+  - Follow Subpart S of 29 CFR Part 1910 and Subpart K of 29 CFR Part 1926.
+  worksheet:
+  - List three steps you would take to ensure equipment is deenergized before starting
+    work.
+  - Identify and describe two signs of improper tool maintenance.
+  - Explain how you would exercise caution when working near energized lines.
+  - Describe the types of protective equipment you would use for electrical work.
+  - Research and summarize the key points of Subpart S of 29 CFR Part 1910.
+  teach_forward_kit:
+    three_minute_version: Electrical safety is vital to prevent accidents. Always
+      deenergize equipment before work, maintain tools, exercise caution near energized
+      lines, and use protective gear. Follow regulatory guidelines for comprehensive
+      safety.
+    ten_minute_outline:
+    - Introduction to electrical hazards and their risks.
+    - Importance of deenergizing equipment before work.
+    - Steps for maintaining electric tools.
+    - Cautionary measures near energized lines.
+    - Overview of protective equipment and its use.
+    - Summary of relevant regulatory requirements.
+    discussion_prompts:
+    - Why is it important to deenergize equipment before inspection or repair?
+    - What are some common signs that electric tools need maintenance?
+    - How can workers ensure their safety when working near energized lines?
+    - What types of protective equipment are essential for electrical work?
+    - How do regulatory requirements enhance electrical safety in the workplace?

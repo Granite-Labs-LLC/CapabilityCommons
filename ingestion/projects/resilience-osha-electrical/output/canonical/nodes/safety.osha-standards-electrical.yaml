@@ -1,0 +1,180 @@
+id: safety.osha-standards-electrical
+slug: safety.osha-standards-electrical
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: OSHA Standards for Electrical Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: A reference sheet detailing OSHA standards that address electrical
+  safety.
+summary_medium: This reference sheet provides an overview of OSHA standards related
+  to electrical safety, including how these standards minimize hazards and protect
+  workers.
+plain_language: This document explains the OSHA standards that help keep workers safe
+  from electrical hazards, detailing the protections and practices required.
+markdown_body: '## What this is
+
+  This reference sheet provides an overview of the Occupational Safety and Health
+  Administration (OSHA) standards that address electrical safety.
+
+
+  ## Why it matters
+
+  Electrical hazards pose significant risks in the workplace, including shocks, burns,
+  and even fatalities. OSHA standards are designed to minimize these risks and protect
+  workers.
+
+
+  ## What you need
+
+  Understanding of basic electrical safety principles and familiarity with OSHA regulations.
+
+
+  ## How to do it
+
+  OSHA standards cover a range of protections, including insulation, grounding, and
+  circuit protection devices. Employers must ensure that these standards are implemented
+  to protect workers from electrical hazards.
+
+
+  ## Common failure modes
+
+  Failure to comply with OSHA standards can lead to increased risk of electrical accidents
+  and potential legal consequences.
+
+
+  ## Safety/boundary notes
+
+  Always follow OSHA guidelines and ensure that all electrical equipment is properly
+  maintained and inspected.
+
+
+  ## Local adaptation notes
+
+  Adaptations may be necessary based on specific workplace environments and local
+  regulations.'
+structured_data:
+  definition: OSHA standards for electrical safety are regulations designed to protect
+    workers from electrical hazards in the workplace.
+  key_questions:
+  - What OSHA standards address electrical safety?
+  - How do OSHA's standards minimize electrical hazards?
+  - What protections are provided by insulation, grounding, and circuit protection
+    devices?
+  misconceptions:
+  - OSHA standards are optional.
+  - Electrical safety only concerns electricians.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_001
+  claim_text: This reference sheet provides an overview of the Occupational Safety
+    and Health Administration (OSHA) standards that address electrical safety.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 3
+    page_end: 3
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: What OSHA standards address electrical safety? OSHA standards cover many
+      electrical hazards in many different industries.
+    start_char: 0
+    end_char: 100
+    support_strength: strong
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_002
+  claim_text: Electrical hazards pose significant risks in the workplace, including
+    shocks, burns, and even fatalities.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: Electricity has long been recognized as a serious workplace hazard, exposing
+      employees to electric shock, electrocution, burns, fires, and explosions.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_003
+  claim_text: OSHA standards are designed to minimize these risks and protect workers.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 3
+    page_end: 3
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: OSHA's general industry electrical safety standards are published in
+      Title 29 Code of Federal Regulations (CFR), Part 1910.302 through 1910.308 —
+      Design Safety Standards for Electrical Systems, and 1910.331 through 1910.335
+      — Electrical Safety-Related Work Practices Standards.
+    start_char: 0
+    end_char: 250
+    support_strength: medium
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_004
+  claim_text: OSHA standards cover a range of protections, including insulation, grounding,
+    and circuit protection devices.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000002
+    excerpt: What protection does insulation provide? What is grounding and what protection
+      does it offer? What are circuit protection devices and how do they work?
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_005
+  claim_text: Employers must ensure that these standards are implemented to protect
+    workers from electrical hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 3
+    page_end: 3
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: OSHA standards cover many electrical hazards in many different industries.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_006
+  claim_text: Failure to comply with OSHA standards can lead to increased risk of
+    electrical accidents and potential legal consequences.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 3
+    page_end: 3
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: Although OSHA operates a federal occupational safety and health program,
+      24 states and 2 territories operate their own OSHA-approved programs. In those
+      states, the standards and other procedures governing electrical safety may not
+      be identical to the federal requirements. They must, however, be at least as
+      effective as the federal standards.
+    start_char: 0
+    end_char: 350
+    support_strength: medium
+- object_id: safety.osha-standards-electrical
+  claim_id: clm_007
+  claim_text: Always follow OSHA guidelines and ensure that all electrical equipment
+    is properly maintained and inspected.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000002
+    excerpt: What is the best way to protect yourself against electrical hazards?
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000002

@@ -1,0 +1,178 @@
+id: safety.electrical-burns
+slug: safety.electrical-burns
+seed_type: candidate
+co_type: concept_note
+canonical_title: Understanding Electrical Burns
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Overview of burns caused by electrical shocks.
+summary_medium: Learn about different types of burns from electrical shocks, including
+  electrical, arc, and thermal contact burns, and the importance of immediate treatment.
+plain_language: Electrical shocks can cause serious burns that need quick medical
+  attention. These include electrical burns, arc burns, and thermal contact burns.
+markdown_body: '## What this is
+
+  Electrical burns are injuries caused by electric shocks. They can be electrical
+  burns, arc burns, or thermal contact burns.
+
+
+  ## Why it matters
+
+  Electrical burns are serious and require immediate medical attention. They can cause
+  severe tissue damage and other complications if not treated promptly.
+
+
+  ## What you need
+
+  Awareness of the types of burns and the importance of quick medical response.
+
+
+  ## How to do it
+
+  If someone suffers an electrical burn, seek immediate medical help. For arc burns,
+  prompt treatment is crucial. Avoid contact with overheated electrical equipment
+  to prevent thermal contact burns.
+
+
+  ## Common failure modes
+
+  Delaying treatment of burns can lead to severe complications. Ignition of flammable
+  materials can occur if safety precautions are not followed.
+
+
+  ## Safety/boundary notes
+
+  Always maintain a safe distance from electrical hazards and ensure proper safety
+  measures are in place to prevent burns.
+
+
+  ## Local adaptation notes
+
+  Consider local emergency services and protocols for treating electrical burns.'
+structured_data:
+  definition: Electrical burns are injuries caused by electric shocks, including electrical,
+    arc, and thermal contact burns.
+  key_questions:
+  - What are the different types of electrical burns?
+  - Why is immediate medical attention important for electrical burns?
+  misconceptions:
+  - Electrical burns are not serious and do not require immediate treatment.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. Electrical burns are among the most serious burns
+    and require immediate medical attention; arc or flash burns should also be treated
+    promptly. If a person is "frozen" to a live electrical contact, shut off the current
+    immediately. If you or someone else receives a shock, seek emergency medical help
+    immediately.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-burns
+  claim_id: clm_001
+  claim_text: Electrical burns are injuries caused by electric shocks. They can be
+    electrical burns, arc burns, or thermal contact burns.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: An electrical accident can result in an electrical burn, arc burn, thermal
+      contact burn, or a combination of burns.
+    start_char: 46
+    end_char: 144
+    support_strength: strong
+- object_id: safety.electrical-burns
+  claim_id: clm_002
+  claim_text: Electrical burns are serious and require immediate medical attention.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: Electrical burns are among the most serious burns and require immediate
+      medical attention.
+    start_char: 146
+    end_char: 211
+    support_strength: strong
+- object_id: safety.electrical-burns
+  claim_id: clm_003
+  claim_text: They can cause severe tissue damage and other complications if not treated
+    promptly.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: They occur when electric current flows through tissues or bone, generating
+      heat that causes tissue damage.
+    start_char: 213
+    end_char: 292
+    support_strength: strong
+- object_id: safety.electrical-burns
+  claim_id: clm_004
+  claim_text: For arc burns, prompt treatment is crucial.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: Arc or flash burns result from high temperatures caused by an electric
+      arc or explosion near the body. These burns should be treated promptly.
+    start_char: 294
+    end_char: 396
+    support_strength: strong
+- object_id: safety.electrical-burns
+  claim_id: clm_005
+  claim_text: Avoid contact with overheated electrical equipment to prevent thermal
+    contact burns.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: Thermal contact burns are caused when the skin touches hot surfaces of
+      overheated electric conductors, conduits, or other energized equipment.
+    start_char: 398
+    end_char: 511
+    support_strength: strong
+- object_id: safety.electrical-burns
+  claim_id: clm_006
+  claim_text: Delaying treatment of burns can lead to severe complications.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000016
+    excerpt: A severe shock can cause considerably more damage than meets the eye.
+      A victim may suffer internal hemorrhages and destruction of tissues, nerves,
+      and muscles that aren't readily visible.
+    start_char: 0
+    end_char: 176
+    support_strength: medium
+- object_id: safety.electrical-burns
+  claim_id: clm_007
+  claim_text: Ignition of flammable materials can occur if safety precautions are
+    not followed.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 13
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000013
+    excerpt: Extremely high-energy arcs can damage equipment, causing fragmented metal
+      to fly in all directions. Even low-energy arcs can cause violent explosions
+      in atmospheres that contain flammable gases, vapors, or combustible dusts.
+    start_char: 613
+    end_char: 822
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000013

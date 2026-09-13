@@ -1,0 +1,173 @@
+id: safety.circuit-protection-devices
+slug: safety.circuit-protection-devices
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Circuit Protection Devices
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Circuit protection devices automatically limit or stop current flow
+  in the event of faults.
+summary_medium: Circuit protection devices, such as fuses, circuit breakers, GFCIs,
+  and arc-fault interrupters, automatically limit or stop current flow in the event
+  of faults like ground faults, overloads, or short circuits.
+plain_language: Circuit protection devices are safety tools that automatically stop
+  electricity flow when there's a problem, like too much current or a fault. They
+  help prevent fires and electric shocks.
+markdown_body: '## What this is
+
+  Circuit protection devices are safety mechanisms that automatically limit or stop
+  the flow of electrical current in the event of a fault, such as a ground fault,
+  overload, or short circuit.
+
+
+  ## Why it matters
+
+  These devices are crucial for preventing electrical fires and protecting people
+  from electric shocks. They ensure that electrical systems operate safely by interrupting
+  the flow of electricity when a fault is detected.
+
+
+  ## What you need
+
+  Common circuit protection devices include fuses, circuit breakers, ground-fault
+  circuit interrupters (GFCIs), and arc-fault interrupters.
+
+
+  ## How to do it
+
+  Fuses and circuit breakers open the circuit automatically when too much current
+  flows through them. GFCIs are used in high-risk areas to prevent electrocution by
+  shutting off power quickly if a fault is detected. Arc-fault interrupters protect
+  against arc-faults by deenergizing the circuit when an arc is detected.
+
+
+  ## Common failure modes
+
+  Failure modes include overheating and ground faults, which can occur if the devices
+  are not functioning correctly or are improperly installed.
+
+
+  ## Safety/boundary notes
+
+  Ensure that circuit protection devices are installed and maintained by qualified
+  professionals to ensure their effectiveness and safety.
+
+
+  ## Local adaptation notes
+
+  Consider local electrical codes and standards when selecting and installing circuit
+  protection devices.'
+structured_data:
+  definition: Circuit protection devices automatically limit or stop current flow
+    in the event of faults such as ground faults, overloads, or short circuits.
+  key_questions:
+  - What types of circuit protection devices are commonly used?
+  - How do circuit protection devices prevent electrical hazards?
+  - What are the specific functions of fuses, circuit breakers, GFCIs, and arc-fault
+    interrupters?
+  misconceptions:
+  - Circuit protection devices are only necessary for industrial settings.
+  - Once installed, circuit protection devices do not require maintenance.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_001
+  claim_text: Circuit protection devices are safety mechanisms that automatically
+    limit or stop the flow of electrical current in the event of a fault, such as
+    a ground fault, overload, or short circuit.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Circuit protection devices limit or stop the flow of current automatically
+      in the event of a ground fault, overload, or short circuit in the wiring system.
+    start_char: 0
+    end_char: 137
+    support_strength: strong
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_002
+  claim_text: These devices are crucial for preventing electrical fires and protecting
+    people from electric shocks. They ensure that electrical systems operate safely
+    by interrupting the flow of electricity when a fault is detected.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Fuses and circuit breakers are designed to protect conductors and equipment.
+      They prevent wires and other components from overheating and open the circuit
+      when there is a risk of a ground fault.
+    start_char: 264
+    end_char: 398
+    support_strength: medium
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_003
+  claim_text: Common circuit protection devices include fuses, circuit breakers, ground-fault
+    circuit interrupters (GFCIs), and arc-fault interrupters.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Well-known examples of these devices are fuses, circuit breakers, ground-fault
+      circuit interrupters, and arc-fault circuit interrupters.
+    start_char: 138
+    end_char: 235
+    support_strength: strong
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_004
+  claim_text: Fuses and circuit breakers open the circuit automatically when too much
+    current flows through them.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Fuses and circuit breakers open or break the circuit automatically when
+      too much current flows through them.
+    start_char: 236
+    end_char: 318
+    support_strength: strong
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_005
+  claim_text: GFCIs are used in high-risk areas to prevent electrocution by shutting
+    off power quickly if a fault is detected.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Ground-fault circuit interrupters, or GFCIs, are used in wet locations,
+      construction sites, and other high-risk areas. These devices interrupt the flow
+      of electricity within as little as 1/40 of a second to prevent electrocution.
+    start_char: 399
+    end_char: 585
+    support_strength: strong
+- object_id: safety.circuit-protection-devices
+  claim_id: clm_006
+  claim_text: Arc-fault interrupters protect against arc-faults by deenergizing the
+    circuit when an arc is detected.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 19
+    page_end: 19
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000024
+    excerpt: Arc-fault devices provide protection from the effects of arc-faults by
+      recognizing characteristics unique to arcing and by functioning to deenergize
+      the circuit when an arc-fault is detected.
+    start_char: 586
+    end_char: 742
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000024

@@ -1,0 +1,162 @@
+id: safety.protection-against-electrical-hazards
+slug: safety.protection-against-electrical-hazards
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: Protection Against Electrical Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidelines for protecting against electrical hazards.
+summary_medium: Learn about the measures and guidelines necessary to protect against
+  electrical hazards, including identifying hazards and implementing protection measures.
+plain_language: This guide provides information on how to protect yourself from electrical
+  hazards by identifying potential dangers and using protective measures.
+markdown_body: '## What this is
+
+  This reference sheet provides guidelines and measures for protecting against electrical
+  hazards. It covers the identification of hazards and the implementation of protection
+  measures.
+
+
+  ## Why it matters
+
+  Electrical hazards can cause serious injuries or fatalities. Understanding how to
+  protect against these hazards is crucial for maintaining safety in environments
+  where electrical systems are present.
+
+
+  ## What you need
+
+  To effectively protect against electrical hazards, you need insulated tools and
+  protective equipment. Ensuring proper insulation and maintaining safe distances
+  are key safety boundaries.
+
+
+  ## How to do it
+
+  1. Identify potential electrical hazards in your environment.
+
+  2. Use insulated tools and wear protective equipment when working near electrical
+  systems.
+
+  3. Ensure all equipment is properly insulated and maintain safe distances from live
+  electrical parts.
+
+
+  ## Common failure modes
+
+  - Inadequate protection due to improper use of tools or equipment.
+
+  - Failure to identify all potential hazards in the environment.
+
+
+  ## Safety/boundary notes
+
+  Always ensure proper insulation and maintain safe distances from electrical systems
+  to prevent accidents.
+
+
+  ## Local adaptation notes
+
+  Consider the availability of protective equipment and adhere to local electrical
+  standards when implementing safety measures.'
+structured_data:
+  definition: Guidelines and measures for protecting against electrical hazards.
+  key_questions:
+  - What are the common electrical hazards?
+  - How can these hazards be identified?
+  - What protective measures should be implemented?
+  misconceptions:
+  - All electrical hazards are visible.
+  - Protective equipment is optional.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. Before anyone works on electrical equipment it
+    must be deenergized, with lockout and tag procedures used to keep it deenergized;
+    ground-fault circuit interrupters (GFCIs) are used in wet locations. People not
+    qualified to work with electricity, and mechanical equipment, must stay at least
+    10 feet (3.05 meters) away from overhead power lines.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.protection-against-electrical-hazards
+  claim_id: clm_001
+  claim_text: This reference sheet provides guidelines and measures for protecting
+    against electrical hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000018
+    excerpt: Protection Against Electrical Hazards
+    start_char: 0
+    end_char: 34
+    support_strength: strong
+- object_id: safety.protection-against-electrical-hazards
+  claim_id: clm_002
+  claim_text: Electrical hazards can cause serious injuries or fatalities.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000016
+    excerpt: A severe shock can cause considerably more damage than meets the eye.
+      A victim may suffer internal hemorrhages and destruction of tissues, nerves,
+      and muscles that aren't readily visible.
+    start_char: 0
+    end_char: 178
+    support_strength: strong
+- object_id: safety.protection-against-electrical-hazards
+  claim_id: clm_003
+  claim_text: To effectively protect against electrical hazards, you need insulated
+    tools and protective equipment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000020
+    excerpt: Insulators such as glass, mica, rubber, or plastic used to coat metals
+      and other conductors help stop or reduce the flow of electrical current.
+    start_char: 0
+    end_char: 122
+    support_strength: strong
+- object_id: safety.protection-against-electrical-hazards
+  claim_id: clm_004
+  claim_text: Ensure all equipment is properly insulated and maintain safe distances
+    from live electrical parts.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000020
+    excerpt: To be effective, the insulation must be suitable for the voltage used
+      and conditions such as temperature and other environmental factors like moisture,
+      oil, gasoline, corrosive fumes, or other substances that could cause the insulator
+      to fail.
+    start_char: 123
+    end_char: 329
+    support_strength: strong
+- object_id: safety.protection-against-electrical-hazards
+  claim_id: clm_005
+  claim_text: Inadequate protection due to improper use of tools or equipment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: 'Most electrical accidents result from one of the following three factors:
+      unsafe equipment or installation, unsafe environment, or unsafe work practices.'
+    start_char: 0
+    end_char: 176
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000018

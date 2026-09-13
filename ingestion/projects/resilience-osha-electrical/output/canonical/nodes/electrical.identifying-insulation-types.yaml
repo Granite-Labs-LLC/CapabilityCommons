@@ -1,0 +1,177 @@
+id: electrical.identifying-insulation-types
+slug: electrical.identifying-insulation-types
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: Identifying Different Types of Electrical Insulation
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: electrical
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Guidelines on identifying insulation types on electrical conductors.
+summary_medium: Learn how to identify different types of insulation on electrical
+  conductors, including color coding and regulatory requirements.
+plain_language: This guide helps you identify various types of insulation on electrical
+  wires, using color codes and understanding regulatory standards.
+markdown_body: "## What this is\nThis reference sheet provides guidelines on identifying\
+  \ different types of insulation on electrical conductors. It includes information\
+  \ on color coding and regulatory requirements.\n\n## Why it matters\nProper identification\
+  \ of insulation types is crucial for ensuring electrical safety and compliance with\
+  \ regulations. It helps prevent electrical hazards and ensures that the insulation\
+  \ is suitable for the voltage and conditions.\n\n## What you need\nNo specific tools\
+  \ or materials are required, but familiarity with color codes and regulatory standards\
+  \ is beneficial.\n\n## How to do it\n- Check the color coding of the insulation:\
+  \ \n  - Equipment grounding conductors: solid green or green with yellow stripes.\n\
+  \  - Grounded conductors: white or gray.\n  - Ungrounded conductors (hot wires):\
+  \ black or red, but can be any color except green, white, or gray.\n- Inspect insulation\
+  \ for defects, especially on flexible cords like extension cords.\n- Ensure insulation\
+  \ is suitable for the voltage and conditions as per regulatory standards.\n\n##\
+  \ Common failure modes\n- Exposed wires due to damaged insulation.\n- Using insulation\
+  \ not suitable for the voltage or conditions.\n\n## Safety/boundary notes\nAlways\
+  \ ensure that insulation is intact and suitable for the application to prevent electrical\
+  \ hazards.\n\n## Local adaptation notes\nRegulatory requirements may vary by region,\
+  \ so always check local regulations."
+structured_data:
+  definition: Insulation on electrical conductors is often color coded to indicate
+    its purpose and regulatory compliance.
+  key_questions:
+  - What do different insulation colors signify?
+  - What are the regulatory requirements for insulation?
+  misconceptions:
+  - All insulation colors can be used interchangeably.
+  - Insulation is not important for electrical safety.
+requires: []
+suggested_edges: []
+citations:
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_001
+  claim_text: Insulation on conductors is often color coded.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Insulation on conductors is often color coded.
+    start_char: 0
+    end_char: 46
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_002
+  claim_text: Insulated equipment grounding conductors usually are either solid green
+    or green with yellow stripes.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Insulated equipment grounding conductors usually are either solid green
+      or green with yellow stripes.
+    start_char: 48
+    end_char: 139
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_003
+  claim_text: Insulation covering grounded conductors is generally white or gray.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Insulation covering grounded conductors is generally white or gray.
+    start_char: 141
+    end_char: 204
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_004
+  claim_text: Ungrounded conductors, or 'hot wires,' often are black or red, although
+    they may be any color other than green, white, or gray.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Ungrounded conductors, or 'hot wires,' often are black or red, although
+      they may be any color other than green, white, or gray.
+    start_char: 206
+    end_char: 331
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_005
+  claim_text: Before connecting electrical equipment to a power source, it's a good
+    idea to check the insulation for any exposed wires for possible defects.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Before connecting electrical equipment to a power source, it's a good
+      idea to check the insulation for any exposed wires for possible defects.
+    start_char: 333
+    end_char: 454
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_006
+  claim_text: Insulation covering flexible cords such as extension cords is particularly
+    vulnerable to damage.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Insulation covering flexible cords such as extension cords is particularly
+      vulnerable to damage.
+    start_char: 456
+    end_char: 536
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_007
+  claim_text: The insulation that covers conductors in non-construction applications
+    is regulated by Subpart S of 29 CFR 1910.302 through 1910.308, Wiring Design and
+    Protection.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: The insulation that covers conductors in non-construction applications
+      is regulated by Subpart S of 29 CFR 1910.302 through 1910.308, Wiring Design
+      and Protection.
+    start_char: 538
+    end_char: 676
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_008
+  claim_text: Subpart S generally requires insulation on circuit conductors. It also
+    specifies that the insulation used should be suitable for the voltage and conditions.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Subpart S generally requires insulation on circuit conductors. It also
+      specifies that the insulation used should be suitable for the voltage and conditions.
+    start_char: 678
+    end_char: 799
+    support_strength: strong
+- object_id: electrical.identifying-insulation-types
+  claim_id: clm_009
+  claim_text: Conductors used in construction applications are regulated by Subpart
+    K of 29 CFR 1926.402 through 1926.408.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000021
+    excerpt: Conductors used in construction applications are regulated by Subpart
+      K of 29 CFR 1926.402 through 1926.408.
+    start_char: 801
+    end_char: 887
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000021

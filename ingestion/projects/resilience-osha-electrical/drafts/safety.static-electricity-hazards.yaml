@@ -1,0 +1,165 @@
+id: safety.static-electricity-hazards
+slug: safety.static-electricity-hazards
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding the Hazards of Static Electricity
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Explains the dangers of static electricity, including shocks and explosions.
+summary_medium: Static electricity can cause shocks and potentially lead to explosions
+  when discharged near flammable substances. Grounding and preventive measures are
+  essential.
+plain_language: Static electricity can build up on objects and cause shocks. In some
+  cases, it can lead to explosions if it discharges near flammable substances. Grounding
+  can help prevent these dangers.
+markdown_body: '## What this is
+
+  Static electricity is an electrical charge that can build up on the surface of an
+  object. It can cause shocks and, in certain conditions, lead to explosions.
+
+
+  ## Why it matters
+
+  While a static shock is often harmless, static electricity can discharge in environments
+  with flammable substances, potentially causing explosions. Understanding and controlling
+  static electricity is crucial for safety.
+
+
+  ## What you need
+
+  To manage static electricity, grounding equipment and awareness of the materials
+  and conditions that contribute to static buildup are necessary.
+
+
+  ## How to do it
+
+  Identify areas where static electricity is likely to build up, such as where plastic
+  pipes or rubberized belts are used. Implement grounding measures to prevent static
+  discharge.
+
+
+  ## Common failure modes
+
+  Failure to properly ground equipment can lead to static discharge, which may cause
+  explosions if flammable substances are present.
+
+
+  ## Safety/boundary notes
+
+  Ensure all equipment is properly grounded to prevent static discharge.
+
+
+  ## Local adaptation notes
+
+  Consider variations in humidity levels and the types of materials handled, as these
+  can affect static electricity buildup.'
+structured_data:
+  definition: Static electricity is an electrical charge that can build up on the
+    surface of an object and discharge, potentially causing shocks or explosions.
+  key_questions:
+  - What causes static electricity to build up?
+  - How can static electricity be safely discharged?
+  - What are the risks associated with static electricity in work environments?
+  misconceptions:
+  - Static electricity is always harmless.
+  - Grounding is unnecessary unless working with high voltage.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.static-electricity-hazards
+  claim_id: clm_001
+  claim_text: Static electricity is an electrical charge that can build up on the
+    surface of an object. It can cause shocks and, in certain conditions, lead to
+    explosions.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: Static electricity also can cause a shock, though in a different way
+      and generally not as potentially severe as the type of shock described previously.
+      Static electricity can build up on the surface of an object and, under the right
+      conditions, can discharge to a person, causing a shock.
+    start_char: 0
+    end_char: 260
+    support_strength: strong
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: In these cases, for example, static electricity can potentially discharge
+      when sufficient amounts of flammable or combustible substances are located nearby
+      and cause an explosion.
+    start_char: 451
+    end_char: 588
+    support_strength: strong
+- object_id: safety.static-electricity-hazards
+  claim_id: clm_002
+  claim_text: While a static shock is often harmless, static electricity can discharge
+    in environments with flammable substances, potentially causing explosions.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: Static electricity also can cause shocks or can just discharge to an
+      object with much more serious consequences, as when friction causes a high level
+      of static electricity to build up at a specific spot on an object.
+    start_char: 261
+    end_char: 451
+    support_strength: strong
+- object_id: safety.static-electricity-hazards
+  claim_id: clm_003
+  claim_text: To manage static electricity, grounding equipment and awareness of the
+    materials and conditions that contribute to static buildup are necessary.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: Grounding or other measures may be necessary to prevent this static electricity
+      buildup and the results.
+    start_char: 589
+    end_char: 659
+    support_strength: strong
+- object_id: safety.static-electricity-hazards
+  claim_id: clm_004
+  claim_text: Identify areas where static electricity is likely to build up, such
+    as where plastic pipes or rubberized belts are used. Implement grounding measures
+    to prevent static discharge.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: This can happen simply through handling plastic pipes and materials or
+      during normal operation of rubberized drive or machine belts found in many worksites.
+    start_char: 451
+    end_char: 588
+    support_strength: strong
+- object_id: safety.static-electricity-hazards
+  claim_id: clm_005
+  claim_text: Failure to properly ground equipment can lead to static discharge, which
+    may cause explosions if flammable substances are present.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: In these cases, for example, static electricity can potentially discharge
+      when sufficient amounts of flammable or combustible substances are located nearby
+      and cause an explosion.
+    start_char: 451
+    end_char: 588
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000017

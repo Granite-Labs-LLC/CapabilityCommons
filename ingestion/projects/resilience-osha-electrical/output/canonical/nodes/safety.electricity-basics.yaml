@@ -1,0 +1,139 @@
+id: safety.electricity-basics
+slug: safety.electricity-basics
+seed_type: candidate
+co_type: concept_note
+canonical_title: 'Electricity: The Basics'
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Introduction to basic electricity principles and hazards.
+summary_medium: Learn about the basic principles of electricity, its properties, and
+  the potential hazards associated with electrical systems.
+plain_language: This guide explains the basics of electricity, including how it works
+  and the dangers it can pose.
+markdown_body: '## What this is
+
+  This concept note introduces the basic principles of electricity, including its
+  properties and potential hazards.
+
+
+  ## Why it matters
+
+  Understanding electricity is crucial for safety, as improper handling can lead to
+  serious injuries or damage. Knowing the basics helps in identifying and mitigating
+  risks associated with electrical systems.
+
+
+  ## What you need
+
+  No specific tools or materials are required to understand the basics of electricity,
+  but awareness of electrical safety standards is beneficial.
+
+
+  ## How to do it
+
+  Learn about the properties of electricity, such as voltage, current, and resistance.
+  Recognize the potential hazards like electrical shock and short circuits. Always
+  maintain proper insulation and keep a safe distance from live wires.
+
+
+  ## Common failure modes
+
+  - Electrical shock
+
+  - Short circuit
+
+
+  ## Safety/boundary notes
+
+  Ensure proper insulation and maintain a safe distance from live wires to prevent
+  accidents.
+
+
+  ## Local adaptation notes
+
+  Consider local electrical codes and regional safety standards when applying this
+  knowledge.'
+structured_data:
+  definition: Electricity is the flow of electrical power or charge, a fundamental
+    part of nature used in various applications.
+  key_questions:
+  - What are the basic properties of electricity?
+  - What hazards are associated with electrical systems?
+  - How can one ensure safety when dealing with electricity?
+  misconceptions:
+  - Electricity is not dangerous if handled without proper knowledge.
+  - All electrical systems operate the same way regardless of local standards.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electricity-basics
+  claim_id: clm_001
+  claim_text: Understanding electricity is crucial for safety, as improper handling
+    can lead to serious injuries or damage.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: Electricity has long been recognized as a serious workplace hazard, exposing
+      employees to electric shock, electrocution, burns, fires, and explosions.
+    start_char: 0
+    end_char: 137
+    support_strength: strong
+- object_id: safety.electricity-basics
+  claim_id: clm_002
+  claim_text: Learn about the properties of electricity, such as voltage, current,
+    and resistance.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Electricity flows more easily through some materials than others. Some
+      substances such as metals generally offer very little resistance to the flow
+      of electric current and are called 'conductors.'
+    start_char: 0
+    end_char: 186
+    support_strength: medium
+- object_id: safety.electricity-basics
+  claim_id: clm_003
+  claim_text: Recognize the potential hazards like electrical shock and short circuits.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: Electricity travels in closed circuits, normally through a conductor.
+      But sometimes a person's body — an efficient conductor of electricity — mistakenly
+      becomes part of the electric circuit. This can cause an electrical shock.
+    start_char: 0
+    end_char: 256
+    support_strength: strong
+- object_id: safety.electricity-basics
+  claim_id: clm_004
+  claim_text: Always maintain proper insulation and keep a safe distance from live
+    wires.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 9
+    page_end: 9
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000006
+    excerpt: OSHA standards focus on the design and use of electrical equipment and
+      systems. The standards cover only the exposed or operating elements of an electrical
+      installation such as lighting, equipment, motors, machines, appliances, switches,
+      controls, and enclosures, requiring that they be constructed and installed to
+      minimize workplace electrical dangers.
+    start_char: 0
+    end_char: 256
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000007

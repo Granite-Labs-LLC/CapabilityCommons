@@ -1,0 +1,154 @@
+id: safety.electrical-shock-causes
+slug: safety.electrical-shock-causes
+seed_type: extracted
+co_type: concept_note
+canonical_title: Causes of Electrical Shocks
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Explains how electrical shocks occur when the body becomes part of
+  an electric circuit.
+summary_medium: This section explains the causes of electrical shocks, highlighting
+  how a person's body can become part of an electric circuit, leading to a shock.
+plain_language: Electrical shocks happen when electricity flows through a person's
+  body, completing a circuit. This can occur in various ways, such as touching both
+  wires of a circuit or a metal part that has become energized.
+markdown_body: '## What this is
+
+  Electrical shocks occur when a person''s body becomes part of an electric circuit,
+  allowing electricity to flow through it.
+
+
+  ## Why it matters
+
+  Understanding the causes of electrical shocks is crucial for preventing accidents
+  and ensuring safety when working with or around electrical systems.
+
+
+  ## What you need
+
+  Awareness of how circuits work and the conditions that can lead to a shock.
+
+
+  ## How to do it
+
+  Avoid contact with live wires and ensure that all electrical equipment is properly
+  insulated and grounded.
+
+
+  ## Common failure modes
+
+  - Completing a circuit by touching both wires.
+
+  - Contact with one wire and the ground.
+
+  - Touching a metal part that has become energized.
+
+
+  ## Safety/boundary notes
+
+  Always use insulated tools and wear protective gear when working with electricity.
+
+
+  ## Local adaptation notes
+
+  Consider local electrical codes and standards when implementing safety measures.'
+structured_data:
+  definition: An electrical shock occurs when a person's body becomes part of an electric
+    circuit, allowing electricity to flow through it.
+  key_questions:
+  - What conditions lead to an electrical shock?
+  - How can the body become part of an electric circuit?
+  misconceptions:
+  - Only high voltage can cause shocks.
+  - Insulation always prevents shocks.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. Before anyone works on electrical equipment it
+    must be deenergized, with lockout and tag procedures used to keep it deenergized;
+    ground-fault circuit interrupters (GFCIs) are used in wet locations. If a person
+    is "frozen" to a live electrical contact, shut off the current immediately. If
+    you or someone else receives a shock, seek emergency medical help immediately.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-shock-causes
+  claim_id: clm_001
+  claim_text: Electrical shocks occur when a person's body becomes part of an electric
+    circuit, allowing electricity to flow through it.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: Electricity travels in closed circuits, normally through a conductor.
+      But sometimes a person's body — an efficient conductor of electricity — mistakenly
+      becomes part of the electric circuit. This can cause an electrical shock.
+    start_char: 0
+    end_char: 179
+    support_strength: strong
+- object_id: safety.electrical-shock-causes
+  claim_id: clm_002
+  claim_text: Avoid contact with live wires and ensure that all electrical equipment
+    is properly insulated and grounded.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances
+      generally slow or stop the flow of electricity. They are called "insulators."
+    start_char: 0
+    end_char: 179
+    support_strength: medium
+- object_id: safety.electrical-shock-causes
+  claim_id: clm_003
+  claim_text: Completing a circuit by touching both wires.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: 'Shocks occur when a person''s body completes the current path with:
+      - both wires of an electric circuit;'
+    start_char: 180
+    end_char: 250
+    support_strength: strong
+- object_id: safety.electrical-shock-causes
+  claim_id: clm_004
+  claim_text: Contact with one wire and the ground.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: 'Shocks occur when a person''s body completes the current path with:
+      - one wire of an energized circuit and the ground;'
+    start_char: 180
+    end_char: 250
+    support_strength: strong
+- object_id: safety.electrical-shock-causes
+  claim_id: clm_005
+  claim_text: Touching a metal part that has become energized.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: 'Shocks occur when a person''s body completes the current path with:
+      - a metal part that accidentally becomes energized due, for example, to a break
+      in its insulation;'
+    start_char: 180
+    end_char: 250
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000010

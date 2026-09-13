@@ -1,0 +1,16 @@
+source_id,target_id,edge_type,sequence,condition,confidence
+electrical.flow-characteristics,electrical.identifying-insulation-types,prerequisite_for,,,0.8
+electrical.flow-characteristics,electrical.insulation-protection,prerequisite_for,,,0.8
+osha.controlling-electrical-hazards-overview,osha.electrical-hazard-minimization,prerequisite_for,,,0.7
+safety.electrical-hazard-awareness,safety.electrical-hazard-prevention,prerequisite_for,,,0.7
+safety.electrical-hazard-awareness,safety.electrical-hazard-control-program,prerequisite_for,,,0.7
+safety.electrical-current-effects,safety.electrical-shock-response,prerequisite_for,,,0.8
+safety.electrical-shock-causes,safety.electrical-shock-freezing-effect,prerequisite_for,,,0.8
+safety.electricity-basics,safety.electrical-hazards-overview,prerequisite_for,,,0.8
+safety.osha-electrical-standards,safety.osha-standards-electrical,alternative_to,,,0.9
+safety.electrical-hazards-water,safety.electrical-hazard-awareness,builds_on,,,0.7
+safety.grounding-electrical-systems,safety.protect-against-energized-metal-parts,prerequisite_for,,,0.8
+safety.lockout-tagout-procedures,safety.tool-maintenance-electrical-hazards,prerequisite_for,,,0.7
+safety.electrical-hazard-protection,safety.electrical-hazard-prevention,prerequisite_for,,,0.8
+safety.electrical-hazard-protection,safety.protection-against-electrical-hazards,prerequisite_for,,,0.8
+safety.electrical-contact-response,safety.electrical-shock-response,prerequisite_for,,,0.8

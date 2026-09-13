@@ -1,0 +1,256 @@
+canonical_title: Effects of Electric Current and Shocks on the Human Body
+citations:
+- claim_id: clm_001
+  claim_text: 'Below 1 milliampere: Generally not perceptible.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 48
+    excerpt: 'Below 1 milliampere: Generally not perceptible'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_002
+  claim_text: '1 milliampere: Faint tingle.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 80
+    excerpt: '1 milliampere: Faint tingle'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 50
+    support_strength: strong
+- claim_id: clm_003
+  claim_text: '5 milliamperes: Slight shock felt; not painful but disturbing.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 152
+    excerpt: '5 milliamperes: Slight shock felt; not painful but disturbing.'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 82
+    support_strength: strong
+- claim_id: clm_004
+  claim_text: '6–25 milliamperes (women) / 9–30 milliamperes (men): Painful shock,
+    loss of muscular control.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 218
+    excerpt: '6–25 milliamperes (women): Painful shock, loss of muscular control'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 154
+    support_strength: strong
+  - end_char: 290
+    excerpt: '9–30 milliamperes (men): The freezing current or "let-go" range.'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 220
+    support_strength: strong
+- claim_id: clm_005
+  claim_text: '50–150 milliamperes: Extreme pain, respiratory arrest, severe muscular
+    contractions.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 372
+    excerpt: '50–150 milliamperes: Extreme pain, respiratory arrest, severe muscular
+      contractions.'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 292
+    support_strength: strong
+- claim_id: clm_006
+  claim_text: '1,000–4,300 milliamperes: Rhythmic pumping action of the heart ceases;
+    death likely.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 450
+    excerpt: '1,000–4,300 milliamperes: Rhythmic pumping action of the heart ceases;
+      death likely.'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 374
+    support_strength: strong
+- claim_id: clm_007
+  claim_text: '10,000 milliamperes: Cardiac arrest, severe burns; death probable.'
+  object_id: safety.electrical-current-effects
+  support:
+  - end_char: 510
+    excerpt: '10,000 milliamperes: Cardiac arrest, severe burns; death probable.'
+    page_end: 12
+    page_start: 12
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000012
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 452
+    support_strength: strong
+- claim_id: clm_008
+  claim_text: Higher currents can cause more severe injuries.
+  object_id: safety.electrical-shock-effects
+  support:
+  - end_char: 167
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the amount
+      of current flowing through the body'
+    page_end: 11
+    page_start: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_009
+  claim_text: The path affects which organs are impacted.
+  object_id: safety.electrical-shock-effects
+  support:
+  - end_char: 167
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the current''s
+      path through the body'
+    page_end: 11
+    page_start: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_010
+  claim_text: Longer exposure increases the risk of severe injury.
+  object_id: safety.electrical-shock-effects
+  support:
+  - end_char: 167
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the length
+      of time the body remains in the circuit'
+    page_end: 11
+    page_start: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 0
+    support_strength: strong
+- claim_id: clm_011
+  claim_text: Different frequencies can have varying effects on the body.
+  object_id: safety.electrical-shock-effects
+  support:
+  - end_char: 167
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the current''s
+      frequency.'
+    page_end: 11
+    page_start: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    source_id: src.osha.3075.controlling-electrical-hazards
+    start_char: 0
+    support_strength: strong
+co_type: concept_note
+contexts: []
+cost_band: free
+difficulty: 3
+id: safety.electrical-current-effects
+language_code: en
+lifecycle_state: published
+markdown_body: '## What this is
+
+  This reference sheet explains how different levels of electric current affect the
+  human body and the factors that influence the severity of electrical shocks. It
+  provides a detailed look at the reactions and risks associated with exposure to
+  various current levels.
+
+
+  ## Why it matters
+
+  Understanding the effects of electric current and shocks is crucial for safety in
+  environments where electrical exposure is possible. Knowing the potential dangers
+  can help prevent accidents and injuries.
+
+
+  ## What you need
+
+  No specific tools or materials are needed to understand this information, but awareness
+  and caution are essential when working with electricity.
+
+
+  ## How to do it
+
+  Familiarize yourself with the effects of different current levels and factors:
+
+  - **Amount of current**: Higher currents can cause more severe injuries.
+
+  - **Path through the body**: The path affects which organs are impacted.
+
+  - **Duration**: Longer exposure increases the risk of severe injury.
+
+  - **Frequency**: Different frequencies can have varying effects on the body.
+
+
+  ## Common failure modes
+
+  - Involuntary muscle contractions
+
+  - Respiratory arrest
+
+  - Cardiac arrest
+
+
+  ## Safety/boundary notes
+
+  Avoid exposure to high currents and understand let-go thresholds to prevent severe
+  injuries.
+
+
+  ## Local adaptation notes
+
+  Adapt safety measures to local electrical standards and practices.'
+plain_language: Learn how different levels of electric current and factors like current
+  path, duration, and frequency can affect the human body, from mild tingling to severe
+  injury or death.
+primary_domain: safety
+requires: []
+risk_band: high
+secondary_domains: []
+seed_type: extracted
+slug: safety.electrical-current-effects
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000012
+- src.osha.3075.controlling-electrical-hazards::seg_000011
+stage: foundation
+structured_data:
+  definition: The effects of electric current and shocks on the human body vary depending
+    on the current level, path, duration, and frequency, ranging from mild tingling
+    to severe injury or death.
+  key_questions:
+  - What are the effects of different levels of electric current on the human body?
+  - How can exposure to electric current be safely managed?
+  - What factors influence the severity of an electrical shock?
+  - How does the path of current through the body affect the outcome?
+  misconceptions:
+  - All electric shocks are equally dangerous.
+  - Only high voltage is dangerous, not current.
+  - Only high voltage causes severe injuries.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. If a person is "frozen" to a live electrical contact,
+    shut off the current immediately. If you or someone else receives a shock, seek
+    emergency medical help immediately. Before anyone works on electrical equipment
+    it must be deenergized, with lockout and tag procedures used to keep it deenergized;
+    ground-fault circuit interrupters (GFCIs) are used in wet locations.'
+suggested_edges: []
+summary_medium: This reference sheet details the effects of various levels of electric
+  current and shocks on the human body, including potential reactions, risks, and
+  factors affecting severity.
+summary_short: Understand the effects of electric current and shocks on the human
+  body.
+version_no: 1
+visibility: public

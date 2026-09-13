@@ -1,0 +1,231 @@
+id: safety.electrical-hazard-training
+slug: safety.electrical-hazard-training
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Electrical Hazard Training for Employees
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Train employees on electrical safety procedures.
+summary_medium: Guidelines for training employees on electrical safety, focusing on
+  deenergizing equipment, lockout/tagout procedures, using insulating protective equipment,
+  and maintaining safe distances.
+plain_language: This guide helps train employees to safely handle electrical equipment
+  by teaching them to deenergize equipment, use lockout/tagout procedures, wear insulating
+  protective gear, and keep a safe distance from live parts.
+markdown_body: '## What this is
+
+  This is a training guide for employees to ensure they understand and can implement
+  electrical safety procedures effectively.
+
+
+  ## Why it matters
+
+  Proper training in electrical safety is crucial to prevent accidents and injuries
+  in the workplace. Understanding and applying these procedures can save lives and
+  prevent damage to equipment.
+
+
+  ## What you need
+
+  - Insulating protective equipment
+
+  - Lockout/tagout devices
+
+
+  ## How to do it
+
+  1. **Deenergize Equipment**: Ensure all equipment is turned off and deenergized
+  before maintenance.
+
+  2. **Lockout/Tagout Procedures**: Use lockout and tagout devices to ensure equipment
+  remains deenergized during maintenance.
+
+  3. **Use Insulating Protective Equipment**: Wear appropriate insulating gear to
+  protect against electrical shocks.
+
+  4. **Maintain Safe Distances**: Keep a safe distance from any energized parts to
+  avoid accidental contact.
+
+
+  ## Common failure modes
+
+  - Failing to deenergize equipment before maintenance.
+
+  - Improper use of lockout/tagout procedures.
+
+  - Inadequate use of protective equipment.
+
+  - Insufficient distance maintained from energized parts.
+
+
+  ## Safety/boundary notes
+
+  Ensure all equipment is deenergized and proper lockout/tagout procedures are followed
+  to maintain safety.
+
+
+  ## Local adaptation notes
+
+  Adapt training to specific job roles and consider local electrical safety regulations.'
+structured_data:
+  tools:
+  - Lockout/tagout devices
+  materials:
+  - Insulating protective equipment
+  success_criteria:
+  - All employees can demonstrate proper deenergizing of equipment.
+  - Employees correctly use lockout/tagout procedures.
+  - Employees wear appropriate insulating protective equipment.
+  - Safe distances are maintained from energized parts.
+  failure_modes:
+  - Failure to deenergize equipment
+  - Improper lockout/tagout
+  - Inadequate use of protective equipment
+  - Insufficient distance from energized parts
+  safety_boundary:
+  - Ensure equipment is deenergized
+  - Use proper lockout/tagout procedures
+  implementation:
+    smallest_viable_version: Train employees to deenergize equipment and use lockout/tagout
+      procedures.
+    tools:
+    - Lockout/tagout devices
+    materials:
+    - Insulating protective equipment
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - Employees can demonstrate deenergizing procedures.
+    - Correct use of lockout/tagout devices.
+    stop_conditions:
+    - Equipment remains energized.
+    - Improper use of lockout/tagout devices.
+    common_mistakes:
+    - Not deenergizing equipment.
+    - Incorrect lockout/tagout application.
+    variants:
+    - label: renter
+      when: Employees are working in rented facilities.
+      notes: Ensure compliance with both company and facility-specific safety regulations.
+    when_to_escalate:
+    - If an employee is unsure about any procedure.
+    - If equipment cannot be deenergized safely.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety-electrical-hazard-training
+  claim_id: clm_001
+  claim_text: Ensure all equipment is turned off and deenergized before maintenance.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000031
+    excerpt: deenergize the equipment
+    start_char: 161
+    end_char: 181
+    support_strength: strong
+- object_id: safety-electrical-hazard-training
+  claim_id: clm_002
+  claim_text: Use lockout and tagout devices to ensure equipment remains deenergized
+    during maintenance.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000031
+    excerpt: use lockout and tag procedures to ensure that the equipment remains deenergized
+    start_char: 183
+    end_char: 247
+    support_strength: strong
+- object_id: safety-electrical-hazard-training
+  claim_id: clm_003
+  claim_text: Wear appropriate insulating gear to protect against electrical shocks.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000029
+    excerpt: Employees who work directly with electricity should use the personal
+      protective equipment required for the jobs they perform. This equipment may
+      include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose,
+      and industrial protective helmets designed to reduce electric shock hazard.
+    start_char: 0
+    end_char: 282
+    support_strength: strong
+- object_id: safety-electrical-hazard-training
+  claim_id: clm_004
+  claim_text: Keep a safe distance from any energized parts to avoid accidental contact.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000031
+    excerpt: maintain a safe distance from energized parts
+    start_char: 249
+    end_char: 290
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000031
+bundle_overrides:
+  hook: Understanding electrical safety can save lives and prevent costly accidents
+    in the workplace.
+  primer: Electrical hazards are a significant risk in many workplaces, and proper
+    training is essential to ensure employee safety. This training guide focuses on
+    key practices such as deenergizing equipment, using lockout/tagout procedures,
+    wearing appropriate insulating gear, and maintaining safe distances from energized
+    parts. Deenergizing equipment involves turning off and ensuring no electrical
+    energy is present before maintenance. Lockout/tagout procedures are crucial to
+    keep equipment deenergized, preventing accidental re-energization. Insulating
+    protective gear, such as gloves and helmets, helps protect against electrical
+    shocks. Maintaining a safe distance from live parts reduces the risk of accidental
+    contact. By following these practices, employees can significantly reduce the
+    risk of electrical accidents.
+  guide: "1. **Deenergize Equipment**: Before performing any maintenance, ensure that\
+    \ all equipment is turned off and deenergized. This means disconnecting the power\
+    \ source and verifying that no electrical energy is present. \n\n2. **Lockout/Tagout\
+    \ Procedures**: Use lockout and tagout devices to ensure that equipment remains\
+    \ deenergized during maintenance. This involves placing a lock on the power source\
+    \ and attaching a tag indicating that the equipment should not be operated. \n\
+    \n3. **Use Insulating Protective Equipment**: Wear appropriate insulating gear,\
+    \ such as rubber gloves, helmets, and protective clothing, to protect against\
+    \ electrical shocks. This equipment acts as a barrier between you and the electrical\
+    \ current. \n\n4. **Maintain Safe Distances**: Keep a safe distance from any energized\
+    \ parts to avoid accidental contact. This is especially important when working\
+    \ in confined spaces or near high-voltage equipment. \n\nBy following these steps,\
+    \ employees can work safely around electrical equipment and minimize the risk\
+    \ of accidents."
+  reference:
+  - Deenergize equipment before maintenance.
+  - Use lockout/tagout devices.
+  - Wear insulating protective gear.
+  - Maintain safe distances from energized parts.
+  worksheet:
+  - List three types of insulating protective gear and their uses.
+  - Describe the steps involved in a lockout/tagout procedure.
+  - Explain why maintaining a safe distance from energized parts is important.
+  - Identify potential hazards if equipment is not properly deenergized.
+  teach_forward_kit:
+    three_minute_version: Electrical safety training involves deenergizing equipment,
+      using lockout/tagout procedures, wearing protective gear, and maintaining safe
+      distances to prevent accidents.
+    ten_minute_outline:
+    - Introduction to electrical hazards
+    - Importance of deenergizing equipment
+    - Lockout/tagout procedures
+    - Using insulating protective gear
+    - Maintaining safe distances
+    - Q&A session
+    discussion_prompts:
+    - What are the consequences of not following electrical safety procedures?
+    - How can we improve our current safety practices?
+    - What challenges do you face in maintaining electrical safety?

@@ -1,0 +1,3160 @@
+[
+  {
+    "object_id": "electrical.flow-characteristics",
+    "claim_id": "clm_001",
+    "claim_text": "This concept note explains how different materials affect the flow of electricity. It focuses on the roles of conductors and insulators in electrical flow.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Electricity flows more easily through some materials than others. Some substances such as metals generally offer very little resistance to the flow of electric current and are called \"conductors.\" Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances generally slow or stop the flow of electricity. They are called \"insulators.\"",
+        "start_char": 0,
+        "end_char": 366,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.flow-characteristics",
+    "claim_id": "clm_002",
+    "claim_text": "Understanding which materials conduct electricity and which do not is crucial for safety and efficiency in electrical systems. This knowledge helps in designing circuits and preventing electrical hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Electricity flows more easily through some materials than others. Some substances such as metals generally offer very little resistance to the flow of electric current and are called \"conductors.\" Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances generally slow or stop the flow of electricity. They are called \"insulators.\"",
+        "start_char": 0,
+        "end_char": 366,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.flow-characteristics",
+    "claim_id": "clm_003",
+    "claim_text": "Learn about conductors, which are materials that allow electricity to flow easily, such as metals. Insulators, like glass and plastic, resist the flow of electricity and are used to protect us from electric currents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Electricity flows more easily through some materials than others. Some substances such as metals generally offer very little resistance to the flow of electric current and are called \"conductors.\" Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances generally slow or stop the flow of electricity. They are called \"insulators.\"",
+        "start_char": 0,
+        "end_char": 366,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.flow-characteristics",
+    "claim_id": "clm_004",
+    "claim_text": "Misidentifying a conductor as an insulator or vice versa can lead to electrical failures or hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Electricity flows more easily through some materials than others. Some substances such as metals generally offer very little resistance to the flow of electric current and are called \"conductors.\" Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances generally slow or stop the flow of electricity. They are called \"insulators.\"",
+        "start_char": 0,
+        "end_char": 366,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.flow-characteristics",
+    "claim_id": "clm_005",
+    "claim_text": "Always ensure that insulators are used to cover or separate conductive materials to prevent accidental electric shocks.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Electricity travels in closed circuits, normally through a conductor. But sometimes a person's body — an efficient conductor of electricity — mistakenly becomes part of the electric circuit. This can cause an electrical shock.",
+        "start_char": 0,
+        "end_char": 366,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_001",
+    "claim_text": "Insulation on conductors is often color coded.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Insulation on conductors is often color coded.",
+        "start_char": 0,
+        "end_char": 46,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_002",
+    "claim_text": "Insulated equipment grounding conductors usually are either solid green or green with yellow stripes.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Insulated equipment grounding conductors usually are either solid green or green with yellow stripes.",
+        "start_char": 48,
+        "end_char": 139,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_003",
+    "claim_text": "Insulation covering grounded conductors is generally white or gray.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Insulation covering grounded conductors is generally white or gray.",
+        "start_char": 141,
+        "end_char": 204,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_004",
+    "claim_text": "Ungrounded conductors, or 'hot wires,' often are black or red, although they may be any color other than green, white, or gray.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Ungrounded conductors, or 'hot wires,' often are black or red, although they may be any color other than green, white, or gray.",
+        "start_char": 206,
+        "end_char": 331,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_005",
+    "claim_text": "Before connecting electrical equipment to a power source, it's a good idea to check the insulation for any exposed wires for possible defects.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Before connecting electrical equipment to a power source, it's a good idea to check the insulation for any exposed wires for possible defects.",
+        "start_char": 333,
+        "end_char": 454,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_006",
+    "claim_text": "Insulation covering flexible cords such as extension cords is particularly vulnerable to damage.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Insulation covering flexible cords such as extension cords is particularly vulnerable to damage.",
+        "start_char": 456,
+        "end_char": 536,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_007",
+    "claim_text": "The insulation that covers conductors in non-construction applications is regulated by Subpart S of 29 CFR 1910.302 through 1910.308, Wiring Design and Protection.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "The insulation that covers conductors in non-construction applications is regulated by Subpart S of 29 CFR 1910.302 through 1910.308, Wiring Design and Protection.",
+        "start_char": 538,
+        "end_char": 676,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_008",
+    "claim_text": "Subpart S generally requires insulation on circuit conductors. It also specifies that the insulation used should be suitable for the voltage and conditions.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Subpart S generally requires insulation on circuit conductors. It also specifies that the insulation used should be suitable for the voltage and conditions.",
+        "start_char": 678,
+        "end_char": 799,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.identifying-insulation-types",
+    "claim_id": "clm_009",
+    "claim_text": "Conductors used in construction applications are regulated by Subpart K of 29 CFR 1926.402 through 1926.408.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Conductors used in construction applications are regulated by Subpart K of 29 CFR 1926.402 through 1926.408.",
+        "start_char": 801,
+        "end_char": 887,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_001",
+    "claim_text": "Electrical insulation involves using materials such as glass, mica, rubber, or plastic to coat conductors. This coating helps stop or reduce the flow of electrical current.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "Insulators such as glass, mica, rubber, or plastic used to coat metals and other conductors help stop or reduce the flow of electrical current.",
+        "start_char": 0,
+        "end_char": 109,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_002",
+    "claim_text": "Proper insulation is crucial for preventing electrical shocks, fires, and short circuits. It ensures safety in environments where electrical systems are used.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "This helps prevent shock, fires, and short circuits.",
+        "start_char": 110,
+        "end_char": 153,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_003",
+    "claim_text": "To ensure effective insulation, the material must be suitable for the voltage and environmental conditions, including temperature, moisture, and exposure to substances like oil or corrosive fumes.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "To be effective, the insulation must be suitable for the voltage used and conditions such as temperature and other environmental factors like moisture, oil, gasoline, corrosive fumes, or other substances that could cause the insulator to fail.",
+        "start_char": 154,
+        "end_char": 366,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_004",
+    "claim_text": "Select insulation materials that match the voltage requirements and environmental conditions of your electrical system. Regularly inspect insulation for signs of wear or damage.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Before connecting electrical equipment to a power source, it's a good idea to check the insulation for any exposed wires for possible defects.",
+        "start_char": 0,
+        "end_char": 112,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_005",
+    "claim_text": "Insulation can fail if it is not suitable for the voltage or if environmental factors like moisture or corrosive substances degrade it.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "To be effective, the insulation must be suitable for the voltage used and conditions such as temperature and other environmental factors like moisture, oil, gasoline, corrosive fumes, or other substances that could cause the insulator to fail.",
+        "start_char": 154,
+        "end_char": 366,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_006",
+    "claim_text": "Always ensure that insulation is intact and appropriate for the specific electrical application to prevent hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000021",
+        "excerpt": "Before connecting electrical equipment to a power source, it's a good idea to check the insulation for any exposed wires for possible defects.",
+        "start_char": 0,
+        "end_char": 112,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "electrical.insulation-protection",
+    "claim_id": "clm_007",
+    "claim_text": "Consider local environmental conditions, such as humidity or exposure to chemicals, when selecting insulation materials.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "To be effective, the insulation must be suitable for the voltage used and conditions such as temperature and other environmental factors like moisture, oil, gasoline, corrosive fumes, or other substances that could cause the insulator to fail.",
+        "start_char": 154,
+        "end_char": 366,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha.controlling-electrical-hazards-overview",
+    "claim_id": "clm_001",
+    "claim_text": "This document provides a general overview of controlling electrical hazards based on OSHA standards. It serves as an informational guide and does not modify compliance responsibilities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 1,
+        "page_end": 2,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000001",
+        "excerpt": "This booklet provides a generic overview of a standards-related topic. This publication does not alter or determine compliance responsibilities, which are described in the OSHA standards and the Occupational Safety and Health Act.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha.controlling-electrical-hazards-overview",
+    "claim_id": "clm_002",
+    "claim_text": "Understanding electrical hazards and how to control them is crucial for workplace safety. Following OSHA standards helps prevent accidents and ensures a safe working environment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha.controlling-electrical-hazards-overview",
+    "claim_id": "clm_003",
+    "claim_text": "Refer to OSHA standards and the Occupational Safety and Health Act for detailed compliance requirements.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 1,
+        "page_end": 2,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000001",
+        "excerpt": "This publication does not alter or determine compliance responsibilities, which are described in the OSHA standards and the Occupational Safety and Health Act.",
+        "start_char": 100,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha.controlling-electrical-hazards-overview",
+    "claim_id": "clm_004",
+    "claim_text": "Stay updated with current interpretations and decisions by the Occupational Safety and Health Review Commission and the courts.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 1,
+        "page_end": 2,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000001",
+        "excerpt": "Because interpretations and enforcement policy may change over time, the best sources for additional guidance on OSHA compliance requirements are current administrative interpretations and decisions by the Occupational Safety and Health Review Commission and the courts.",
+        "start_char": 200,
+        "end_char": 400,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha.controlling-electrical-hazards-overview",
+    "claim_id": "clm_005",
+    "claim_text": "This document does not alter compliance responsibilities. Always refer to the latest OSHA standards and legal interpretations.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 1,
+        "page_end": 2,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000001",
+        "excerpt": "This publication does not alter or determine compliance responsibilities, which are described in the OSHA standards and the Occupational Safety and Health Act.",
+        "start_char": 100,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_001",
+    "claim_text": "OSHA's standards are regulations that focus on minimizing electrical hazards in the workplace by ensuring that electrical equipment and systems are designed and installed safely.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems. The standards cover only the exposed or operating elements of an electrical installation such as lighting, equipment, motors, machines, appliances, switches, controls, and enclosures, requiring that they be constructed and installed to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 314,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards can lead to serious injuries or fatalities. By adhering to OSHA standards, workplaces can significantly reduce the risk of electrical accidents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 144,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_003",
+    "claim_text": "Understanding of OSHA standards related to electrical safety and access to certified electrical equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "Also, the standards require that certain approved testing organizations test and certify electrical equipment before use in the workplace to ensure it is safe.",
+        "start_char": 315,
+        "end_char": 446,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_004",
+    "claim_text": "Ensure that all electrical installations are performed by qualified personnel and that all equipment is certified by approved testing organizations.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "Also, the standards require that certain approved testing organizations test and certify electrical equipment before use in the workplace to ensure it is safe.",
+        "start_char": 315,
+        "end_char": 446,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_005",
+    "claim_text": "Regularly inspect and maintain electrical systems to comply with OSHA standards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems.",
+        "start_char": 0,
+        "end_char": 314,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_006",
+    "claim_text": "Improper installation of electrical systems.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "The standards cover only the exposed or operating elements of an electrical installation such as lighting, equipment, motors, machines, appliances, switches, controls, and enclosures, requiring that they be constructed and installed to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 314,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_007",
+    "claim_text": "Use of uncertified electrical equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "Also, the standards require that certain approved testing organizations test and certify electrical equipment before use in the workplace to ensure it is safe.",
+        "start_char": 315,
+        "end_char": 446,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "osha-electrical-hazard-minimization",
+    "claim_id": "clm_008",
+    "claim_text": "Always follow OSHA guidelines and use equipment that has been tested and certified by recognized organizations.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "Also, the standards require that certain approved testing organizations test and certify electrical equipment before use in the workplace to ensure it is safe.",
+        "start_char": 315,
+        "end_char": 446,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_001",
+    "claim_text": "Circuit protection devices are safety mechanisms that automatically limit or stop the flow of electrical current in the event of a fault, such as a ground fault, overload, or short circuit.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Circuit protection devices limit or stop the flow of current automatically in the event of a ground fault, overload, or short circuit in the wiring system.",
+        "start_char": 0,
+        "end_char": 137,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_002",
+    "claim_text": "These devices are crucial for preventing electrical fires and protecting people from electric shocks. They ensure that electrical systems operate safely by interrupting the flow of electricity when a fault is detected.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Fuses and circuit breakers are designed to protect conductors and equipment. They prevent wires and other components from overheating and open the circuit when there is a risk of a ground fault.",
+        "start_char": 264,
+        "end_char": 398,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_003",
+    "claim_text": "Common circuit protection devices include fuses, circuit breakers, ground-fault circuit interrupters (GFCIs), and arc-fault interrupters.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Well-known examples of these devices are fuses, circuit breakers, ground-fault circuit interrupters, and arc-fault circuit interrupters.",
+        "start_char": 138,
+        "end_char": 235,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_004",
+    "claim_text": "Fuses and circuit breakers open the circuit automatically when too much current flows through them.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Fuses and circuit breakers open or break the circuit automatically when too much current flows through them.",
+        "start_char": 236,
+        "end_char": 318,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_005",
+    "claim_text": "GFCIs are used in high-risk areas to prevent electrocution by shutting off power quickly if a fault is detected.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Ground-fault circuit interrupters, or GFCIs, are used in wet locations, construction sites, and other high-risk areas. These devices interrupt the flow of electricity within as little as 1/40 of a second to prevent electrocution.",
+        "start_char": 399,
+        "end_char": 585,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.circuit-protection-devices",
+    "claim_id": "clm_006",
+    "claim_text": "Arc-fault interrupters protect against arc-faults by deenergizing the circuit when an arc is detected.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 19,
+        "page_end": 19,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000024",
+        "excerpt": "Arc-fault devices provide protection from the effects of arc-faults by recognizing characteristics unique to arcing and by functioning to deenergize the circuit when an arc-fault is detected.",
+        "start_char": 586,
+        "end_char": 742,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_001",
+    "claim_text": "Electrical burns are injuries caused by electric shocks. They can be electrical burns, arc burns, or thermal contact burns.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "An electrical accident can result in an electrical burn, arc burn, thermal contact burn, or a combination of burns.",
+        "start_char": 46,
+        "end_char": 144,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical burns are serious and require immediate medical attention.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "Electrical burns are among the most serious burns and require immediate medical attention.",
+        "start_char": 146,
+        "end_char": 211,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_003",
+    "claim_text": "They can cause severe tissue damage and other complications if not treated promptly.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "They occur when electric current flows through tissues or bone, generating heat that causes tissue damage.",
+        "start_char": 213,
+        "end_char": 292,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_004",
+    "claim_text": "For arc burns, prompt treatment is crucial.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "Arc or flash burns result from high temperatures caused by an electric arc or explosion near the body. These burns should be treated promptly.",
+        "start_char": 294,
+        "end_char": 396,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_005",
+    "claim_text": "Avoid contact with overheated electrical equipment to prevent thermal contact burns.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "Thermal contact burns are caused when the skin touches hot surfaces of overheated electric conductors, conduits, or other energized equipment.",
+        "start_char": 398,
+        "end_char": 511,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_006",
+    "claim_text": "Delaying treatment of burns can lead to severe complications.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000016",
+        "excerpt": "A severe shock can cause considerably more damage than meets the eye. A victim may suffer internal hemorrhages and destruction of tissues, nerves, and muscles that aren't readily visible.",
+        "start_char": 0,
+        "end_char": 176,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-burns",
+    "claim_id": "clm_007",
+    "claim_text": "Ignition of flammable materials can occur if safety precautions are not followed.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 13,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000013",
+        "excerpt": "Extremely high-energy arcs can damage equipment, causing fragmented metal to fly in all directions. Even low-energy arcs can cause violent explosions in atmospheres that contain flammable gases, vapors, or combustible dusts.",
+        "start_char": 613,
+        "end_char": 822,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_001",
+    "claim_text": "This safety notice provides guidelines for responding to situations where a person is 'frozen' to a live electrical contact.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "If a person is 'frozen' to a live electrical contact, shut off the current immediately. If this is not possible, use boards, poles, or sticks made of wood or any other nonconducting materials and safely push or pull the person away from the contact.",
+        "start_char": 0,
+        "end_char": 232,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_002",
+    "claim_text": "Immediate and correct action is crucial in preventing severe injury or death from electrocution.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "It's important to act quickly, but remember to protect yourself as well from electrocution or shock.",
+        "start_char": 233,
+        "end_char": 309,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_003",
+    "claim_text": "Boards, poles, or sticks made of wood or other nonconducting materials.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "use boards, poles, or sticks made of wood or any other nonconducting materials",
+        "start_char": 97,
+        "end_char": 158,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_004",
+    "claim_text": "Shut off the electrical current immediately if possible.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "If a person is 'frozen' to a live electrical contact, shut off the current immediately.",
+        "start_char": 0,
+        "end_char": 72,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_005",
+    "claim_text": "If you cannot turn off the power, use a nonconducting object like a wooden stick to push or pull the person away from the electrical source.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "If this is not possible, use boards, poles, or sticks made of wood or any other nonconducting materials and safely push or pull the person away from the contact.",
+        "start_char": 73,
+        "end_char": 232,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_006",
+    "claim_text": "Ensure your own safety by avoiding direct contact with the live electrical source.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "It's important to act quickly, but remember to protect yourself as well from electrocution or shock.",
+        "start_char": 233,
+        "end_char": 309,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_007",
+    "claim_text": "Failing to act quickly can result in severe injury or death.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "It's important to act quickly, but remember to protect yourself as well from electrocution or shock.",
+        "start_char": 233,
+        "end_char": 309,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-contact-response",
+    "claim_id": "clm_008",
+    "claim_text": "Direct contact with the live electrical source can cause electrocution or shock.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000015",
+        "excerpt": "but remember to protect yourself as well from electrocution or shock.",
+        "start_char": 266,
+        "end_char": 309,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_001",
+    "claim_text": "Below 1 milliampere: Generally not perceptible.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "Below 1 milliampere: Generally not perceptible",
+        "start_char": 0,
+        "end_char": 48,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_002",
+    "claim_text": "1 milliampere: Faint tingle.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "1 milliampere: Faint tingle",
+        "start_char": 50,
+        "end_char": 80,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_003",
+    "claim_text": "5 milliamperes: Slight shock felt; not painful but disturbing.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "5 milliamperes: Slight shock felt; not painful but disturbing.",
+        "start_char": 82,
+        "end_char": 152,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_004",
+    "claim_text": "6–25 milliamperes (women) / 9–30 milliamperes (men): Painful shock, loss of muscular control.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "6–25 milliamperes (women): Painful shock, loss of muscular control",
+        "start_char": 154,
+        "end_char": 218,
+        "support_strength": "strong"
+      },
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "9–30 milliamperes (men): The freezing current or \"let-go\" range.",
+        "start_char": 220,
+        "end_char": 290,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_005",
+    "claim_text": "50–150 milliamperes: Extreme pain, respiratory arrest, severe muscular contractions.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "50–150 milliamperes: Extreme pain, respiratory arrest, severe muscular contractions.",
+        "start_char": 292,
+        "end_char": 372,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_006",
+    "claim_text": "1,000–4,300 milliamperes: Rhythmic pumping action of the heart ceases; death likely.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "1,000–4,300 milliamperes: Rhythmic pumping action of the heart ceases; death likely.",
+        "start_char": 374,
+        "end_char": 450,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-current-effects",
+    "claim_id": "clm_007",
+    "claim_text": "10,000 milliamperes: Cardiac arrest, severe burns; death probable.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 12,
+        "page_end": 12,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000012",
+        "excerpt": "10,000 milliamperes: Cardiac arrest, severe burns; death probable.",
+        "start_char": 452,
+        "end_char": 510,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_001",
+    "claim_text": "Guarding is a safety practice used to prevent accidental contact with live electrical parts by enclosing or locating electrical equipment in secure areas.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Guarding involves locating or enclosing electric equipment to make sure people don't accidentally come into contact with its live parts.",
+        "start_char": 0,
+        "end_char": 108,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_002",
+    "claim_text": "Guarding is essential for preventing electrical accidents, especially with equipment operating at 50 volts or more. It ensures that only authorized personnel can access these areas, reducing the risk of injury.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Effective guarding requires equipment with exposed parts operating at 50 volts or more to be placed where it is accessible only to authorized people qualified to work with it.",
+        "start_char": 109,
+        "end_char": 229,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_003",
+    "claim_text": "To implement guarding, you need sturdy permanent screens and conspicuous signs that display warnings such as 'Danger,' 'Warning,' or 'Caution.'",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Sturdy, permanent screens also can serve as effective guards. Conspicuous signs must be posted at the entrances to electrical rooms and similarly guarded locations to alert people to the electrical hazard and to forbid entry to unauthorized people.",
+        "start_char": 230,
+        "end_char": 455,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_004",
+    "claim_text": "Place electrical equipment in secure locations like rooms, vaults, or elevated platforms. Use permanent screens as guards and post signs at entrances to alert and restrict unauthorized access.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Recommended locations are a room, vault, or similar enclosure; a balcony, gallery, or elevated platform; or a site elevated 8 feet (2.44 meters) or more above the floor. Sturdy, permanent screens also can serve as effective guards.",
+        "start_char": 230,
+        "end_char": 355,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_005",
+    "claim_text": "Failure can occur if unauthorized access is allowed or if signage is inadequate.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Conspicuous signs must be posted at the entrances to electrical rooms and similarly guarded locations to alert people to the electrical hazard and to forbid entry to unauthorized people.",
+        "start_char": 356,
+        "end_char": 455,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-guarding",
+    "claim_id": "clm_006",
+    "claim_text": "Guarding is necessary for equipment operating at 50 volts or more.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Effective guarding requires equipment with exposed parts operating at 50 volts or more to be placed where it is accessible only to authorized people qualified to work with it.",
+        "start_char": 109,
+        "end_char": 229,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-awareness",
+    "claim_id": "clm_001",
+    "claim_text": "Electrical hazard awareness involves understanding the risks associated with electricity in the workplace, including electric shock, electrocution, burns, fires, and explosions.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 123,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-awareness",
+    "claim_id": "clm_002",
+    "claim_text": "In 1999, 278 workers died from electrocutions, representing nearly 5% of all workplace fatalities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "In 1999, for example, 278 workers died from electrocutions at work, accounting for almost 5 percent of all on-the-job fatalities that year, according to the Bureau of Labor Statistics.",
+        "start_char": 124,
+        "end_char": 266,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-awareness",
+    "claim_id": "clm_003",
+    "claim_text": "Many of these incidents could have been prevented with proper awareness and safety measures.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "What makes these statistics more tragic is that most of these fatalities could have been easily avoided.",
+        "start_char": 267,
+        "end_char": 331,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-control-program",
+    "claim_id": "clm_001",
+    "claim_text": "A safety and health program is a structured approach to identifying, eliminating, or controlling electrical hazards in the workplace.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 24,
+        "page_end": 24,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000032",
+        "excerpt": "Every good safety and health program provides measures to control electrical hazards.",
+        "start_char": 0,
+        "end_char": 70,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-control-program",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards can cause serious injuries or fatalities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000029",
+        "excerpt": "Employees who work directly with electricity should use the personal protective equipment required for the jobs they perform. This equipment may include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets designed to reduce electric shock hazard.",
+        "start_char": 0,
+        "end_char": 278,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-control-program",
+    "claim_id": "clm_003",
+    "claim_text": "To implement a safety and health program, you need personnel with a thorough understanding of electricity, electrical work practices, and OSHA standards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 24,
+        "page_end": 24,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000032",
+        "excerpt": "The responsibility for this program should be delegated to someone with a complete knowledge of electricity, electrical work practices, and the appropriate OSHA standards for installation and performance.",
+        "start_char": 71,
+        "end_char": 223,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-control-program",
+    "claim_id": "clm_004",
+    "claim_text": "Foster cooperation between employers and employees to identify and control hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 24,
+        "page_end": 24,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000032",
+        "excerpt": "Through cooperative efforts, employers and employees can learn to identify and eliminate or control electrical hazards.",
+        "start_char": 224,
+        "end_char": 317,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-control-program",
+    "claim_id": "clm_005",
+    "claim_text": "Ensure all personnel involved are trained and knowledgeable about OSHA standards and safe electrical practices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000031",
+        "excerpt": "All employees should be trained to be thoroughly familiar with the safety procedures for their particular jobs.",
+        "start_char": 0,
+        "end_char": 108,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-prevention",
+    "claim_id": "clm_001",
+    "claim_text": "Deenergize electric equipment before inspection or repair.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 20,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000025",
+        "excerpt": "deenergizing electric equipment before inspection or repair",
+        "start_char": 64,
+        "end_char": 110,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-prevention",
+    "claim_id": "clm_002",
+    "claim_text": "Keep electric tools properly maintained.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 20,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000025",
+        "excerpt": "keeping electric tools properly maintained",
+        "start_char": 112,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-prevention",
+    "claim_id": "clm_003",
+    "claim_text": "Exercise caution when working near energized lines.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 20,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000025",
+        "excerpt": "exercising caution when working near energized lines",
+        "start_char": 152,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-prevention",
+    "claim_id": "clm_004",
+    "claim_text": "Use appropriate protective equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 20,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000025",
+        "excerpt": "using appropriate protective equipment",
+        "start_char": 202,
+        "end_char": 240,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-prevention",
+    "claim_id": "clm_005",
+    "claim_text": "Follow the electrical safety-related work practice requirements detailed in Subpart S of 29 CFR Part 1910 for general industry and Subpart K of 29 CFR Part 1926 for construction applications.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 20,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000025",
+        "excerpt": "Electrical safety-related work practice requirements for general industry are detailed in Subpart S of 29 CFR Part 1910, in Sections 1910.331–1910.335. For construction applications, electrical safety-related work practice requirements are detailed in Subpart K of 29 CFR Part 1926.416 to 1926.417.",
+        "start_char": 242,
+        "end_char": 478,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_001",
+    "claim_text": "This guide provides information on how to protect yourself from electrical hazards by addressing the primary causes of electrical accidents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Most electrical accidents result from one of the following three factors: unsafe equipment or installation, unsafe environment, or unsafe work practices.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards can lead to serious injuries or fatalities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000016",
+        "excerpt": "A severe shock can cause considerably more damage than meets the eye. A victim may suffer internal hemorrhages and destruction of tissues, nerves, and muscles that aren't readily visible.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_003",
+    "claim_text": "To effectively protect against electrical hazards, you need insulation materials, guarding equipment, grounding tools, and protective devices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Some ways to prevent these accidents are through the use of insulation, guarding, grounding, electrical protective devices, and safe work practices.",
+        "start_char": 151,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_004",
+    "claim_text": "Use insulation to prevent contact with live wires.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "Insulators such as glass, mica, rubber, or plastic used to coat metals and other conductors help stop or reduce the flow of electrical current.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_005",
+    "claim_text": "Implement guarding to protect against accidental contact with electrical components.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 17,
+        "page_end": 17,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000022",
+        "excerpt": "Guarding involves locating or enclosing electric equipment to make sure people don't accidentally come into contact with its live parts.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_006",
+    "claim_text": "Ensure proper grounding to prevent electrical shock.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "Grounding or other measures may be necessary to prevent this static electricity buildup and the results.",
+        "start_char": 400,
+        "end_char": 500,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_007",
+    "claim_text": "Apply electrical protective devices to control electrical currents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Some ways to prevent these accidents are through the use of insulation, guarding, grounding, electrical protective devices, and safe work practices.",
+        "start_char": 151,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_008",
+    "claim_text": "Practice safe work methods to minimize risk.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Some ways to prevent these accidents are through the use of insulation, guarding, grounding, electrical protective devices, and safe work practices.",
+        "start_char": 151,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_009",
+    "claim_text": "Using unsafe equipment or installations.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Most electrical accidents result from one of the following three factors: unsafe equipment or installation, unsafe environment, or unsafe work practices.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_010",
+    "claim_text": "Working in unsafe environments.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Most electrical accidents result from one of the following three factors: unsafe equipment or installation, unsafe environment, or unsafe work practices.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazard-protection",
+    "claim_id": "clm_011",
+    "claim_text": "Engaging in unsafe work practices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Most electrical accidents result from one of the following three factors: unsafe equipment or installation, unsafe environment, or unsafe work practices.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-electrical-hazard-training",
+    "claim_id": "clm_001",
+    "claim_text": "Ensure all equipment is turned off and deenergized before maintenance.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000031",
+        "excerpt": "deenergize the equipment",
+        "start_char": 161,
+        "end_char": 181,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-electrical-hazard-training",
+    "claim_id": "clm_002",
+    "claim_text": "Use lockout and tagout devices to ensure equipment remains deenergized during maintenance.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000031",
+        "excerpt": "use lockout and tag procedures to ensure that the equipment remains deenergized",
+        "start_char": 183,
+        "end_char": 247,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-electrical-hazard-training",
+    "claim_id": "clm_003",
+    "claim_text": "Wear appropriate insulating gear to protect against electrical shocks.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000029",
+        "excerpt": "Employees who work directly with electricity should use the personal protective equipment required for the jobs they perform. This equipment may include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets designed to reduce electric shock hazard.",
+        "start_char": 0,
+        "end_char": 282,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-electrical-hazard-training",
+    "claim_id": "clm_004",
+    "claim_text": "Keep a safe distance from any energized parts to avoid accidental contact.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000031",
+        "excerpt": "maintain a safe distance from energized parts",
+        "start_char": 249,
+        "end_char": 290,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_001",
+    "claim_text": "Electricity is essential in both personal and professional settings.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 6,
+        "page_end": 6,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000003",
+        "excerpt": "Electricity is essential to modern life, both at home and on the job.",
+        "start_char": 60,
+        "end_char": 114,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_002",
+    "claim_text": "Understanding these hazards and adhering to OSHA standards can prevent accidents and ensure a safe working environment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 8,
+        "page_end": 8,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems... to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_003",
+    "claim_text": "Familiarize yourself with the types of electrical hazards, such as shocks, burns, and the effects of electricity on the body.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 5,
+        "page_end": 5,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000002",
+        "excerpt": "What causes shocks? What effect do shocks have on the body? What kind of burns can a shock cause?",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_004",
+    "claim_text": "Learn about the protective measures like insulation, grounding, and circuit protection devices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000002",
+        "excerpt": "What protection does insulation provide? What is grounding and what protection does it offer? What are circuit protection devices and how do they work?",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_005",
+    "claim_text": "Follow OSHA guidelines to minimize risks.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems... to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-overview",
+    "claim_id": "clm_006",
+    "claim_text": "Always treat electricity with respect and caution.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 6,
+        "page_end": 6,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000003",
+        "excerpt": "we tend to overlook the hazards electricity poses and fail to treat it with the respect it deserves.",
+        "start_char": 200,
+        "end_char": 270,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-water",
+    "claim_id": "clm_001",
+    "claim_text": "This concept note explains how water, when containing impurities, can become a conductor of electricity.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000009",
+        "excerpt": "Pure water is a poor conductor. But small amounts of impurities in water like salt, acid, solvents, or other materials can turn water itself and substances that generally act as insulators into conductors or better conductors.",
+        "start_char": 0,
+        "end_char": 186,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-water",
+    "claim_id": "clm_002",
+    "claim_text": "Moisture can turn normally insulating materials into conductors, posing a significant risk.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000009",
+        "excerpt": "Dry wood, for example, generally slows or stops the flow of electricity. But when saturated with water, wood turns into a conductor. The same is true of human skin.",
+        "start_char": 187,
+        "end_char": 315,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-water",
+    "claim_id": "clm_003",
+    "claim_text": "Exercise caution when working with electricity in damp or wet environments.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000009",
+        "excerpt": "This means that anyone working with electricity in a damp or wet environment needs to exercise extra caution to prevent electrical hazards.",
+        "start_char": 316,
+        "end_char": 419,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-hazards-water",
+    "claim_id": "clm_004",
+    "claim_text": "Increased conductivity due to moisture can lead to electrical shocks or equipment failure.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Electricity travels in closed circuits, normally through a conductor. But sometimes a person's body — an efficient conductor of electricity — mistakenly becomes part of the electric circuit. This can cause an electrical shock.",
+        "start_char": 0,
+        "end_char": 187,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-causes",
+    "claim_id": "clm_001",
+    "claim_text": "Electrical shocks occur when a person's body becomes part of an electric circuit, allowing electricity to flow through it.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Electricity travels in closed circuits, normally through a conductor. But sometimes a person's body — an efficient conductor of electricity — mistakenly becomes part of the electric circuit. This can cause an electrical shock.",
+        "start_char": 0,
+        "end_char": 179,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-causes",
+    "claim_id": "clm_002",
+    "claim_text": "Avoid contact with live wires and ensure that all electrical equipment is properly insulated and grounded.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Glass, plastic, porcelain, clay, pottery, dry wood, and similar substances generally slow or stop the flow of electricity. They are called \"insulators.\"",
+        "start_char": 0,
+        "end_char": 179,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-causes",
+    "claim_id": "clm_003",
+    "claim_text": "Completing a circuit by touching both wires.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Shocks occur when a person's body completes the current path with: - both wires of an electric circuit;",
+        "start_char": 180,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-causes",
+    "claim_id": "clm_004",
+    "claim_text": "Contact with one wire and the ground.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Shocks occur when a person's body completes the current path with: - one wire of an energized circuit and the ground;",
+        "start_char": 180,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-causes",
+    "claim_id": "clm_005",
+    "claim_text": "Touching a metal part that has become energized.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Shocks occur when a person's body completes the current path with: - a metal part that accidentally becomes energized due, for example, to a break in its insulation;",
+        "start_char": 180,
+        "end_char": 250,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-effects",
+    "claim_id": "clm_001",
+    "claim_text": "Higher currents can cause more severe injuries.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000011",
+        "excerpt": "An electric shock can result in anything from a slight tingling sensation to immediate cardiac arrest. The severity depends on the following: - the amount of current flowing through the body",
+        "start_char": 0,
+        "end_char": 167,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-effects",
+    "claim_id": "clm_002",
+    "claim_text": "The path affects which organs are impacted.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000011",
+        "excerpt": "An electric shock can result in anything from a slight tingling sensation to immediate cardiac arrest. The severity depends on the following: - the current's path through the body",
+        "start_char": 0,
+        "end_char": 167,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-effects",
+    "claim_id": "clm_003",
+    "claim_text": "Longer exposure increases the risk of severe injury.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000011",
+        "excerpt": "An electric shock can result in anything from a slight tingling sensation to immediate cardiac arrest. The severity depends on the following: - the length of time the body remains in the circuit",
+        "start_char": 0,
+        "end_char": 167,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-effects",
+    "claim_id": "clm_004",
+    "claim_text": "Different frequencies can have varying effects on the body.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000011",
+        "excerpt": "An electric shock can result in anything from a slight tingling sensation to immediate cardiac arrest. The severity depends on the following: - the current's frequency.",
+        "start_char": 0,
+        "end_char": 167,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-freezing-effect",
+    "claim_id": "clm_001",
+    "claim_text": "The 'freezing' effect during electrical shocks refers to the involuntary muscle contractions that occur when a person is shocked. These contractions can make it difficult or impossible for the person to pull away from the electrical source.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000014",
+        "excerpt": "When a person receives an electrical shock, sometimes the electrical stimulation causes the muscles to contract. This 'freezing' effect makes the person unable to pull free of the circuit.",
+        "start_char": 0,
+        "end_char": 147,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-freezing-effect",
+    "claim_id": "clm_002",
+    "claim_text": "This effect is dangerous because it increases the duration of exposure to electricity, which can lead to more severe injuries. Even low voltage shocks can be hazardous if the exposure time is extended.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000014",
+        "excerpt": "It is extremely dangerous because it increases the length of exposure to electricity and because the current causes blisters, which reduce the body's resistance and increases the current. The longer the exposure, the greater the risk of serious injury. Longer exposures at even relatively low voltages can be just as dangerous as short exposures at higher voltages.",
+        "start_char": 148,
+        "end_char": 426,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-freezing-effect",
+    "claim_id": "clm_003",
+    "claim_text": "Involuntary muscle reactions leading to additional injuries.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 13,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000014",
+        "excerpt": "In addition to muscle contractions that cause 'freezing,' electrical shocks also can cause involuntary muscle reactions. These reactions can result in a wide range of other injuries from collisions or falls, including bruises, bone fractures, and even death.",
+        "start_char": 427,
+        "end_char": 634,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-response",
+    "claim_id": "clm_001",
+    "claim_text": "A severe electrical shock can cause internal injuries that are not visible, such as internal hemorrhages and damage to tissues, nerves, and muscles. It can also lead to renal damage.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000016",
+        "excerpt": "A severe shock can cause considerably more damage than meets the eye. A victim may suffer internal hemorrhages and destruction of tissues, nerves, and muscles that aren't readily visible. Renal damage also can occur.",
+        "start_char": 0,
+        "end_char": 184,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electrical-shock-response",
+    "claim_id": "clm_002",
+    "claim_text": "If you or someone else receives an electrical shock, do not underestimate its severity. Seek emergency medical help immediately, even if there are no visible injuries.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000016",
+        "excerpt": "If you or a coworker receives a shock, seek emergency medical help immediately.",
+        "start_char": 185,
+        "end_char": 241,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electricity-basics",
+    "claim_id": "clm_001",
+    "claim_text": "Understanding electricity is crucial for safety, as improper handling can lead to serious injuries or damage.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 137,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electricity-basics",
+    "claim_id": "clm_002",
+    "claim_text": "Learn about the properties of electricity, such as voltage, current, and resistance.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 10,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000008",
+        "excerpt": "Electricity flows more easily through some materials than others. Some substances such as metals generally offer very little resistance to the flow of electric current and are called 'conductors.'",
+        "start_char": 0,
+        "end_char": 186,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electricity-basics",
+    "claim_id": "clm_003",
+    "claim_text": "Recognize the potential hazards like electrical shock and short circuits.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 10,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000010",
+        "excerpt": "Electricity travels in closed circuits, normally through a conductor. But sometimes a person's body — an efficient conductor of electricity — mistakenly becomes part of the electric circuit. This can cause an electrical shock.",
+        "start_char": 0,
+        "end_char": 256,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.electricity-basics",
+    "claim_id": "clm_004",
+    "claim_text": "Always maintain proper insulation and keep a safe distance from live wires.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems. The standards cover only the exposed or operating elements of an electrical installation such as lighting, equipment, motors, machines, appliances, switches, controls, and enclosures, requiring that they be constructed and installed to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 256,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.grounding-electrical-systems",
+    "claim_id": "clm_001",
+    "claim_text": "Grounding is the process of creating a low-resistance path that connects electrical systems or tools to the earth. This path helps prevent the buildup of voltages that could lead to electrical accidents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 18,
+        "page_end": 18,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000023",
+        "excerpt": "\"Grounding\" a tool or electrical system means intentionally creating a low-resistance path that connects to the earth. This prevents the buildup of voltages that could cause an electrical accident.",
+        "start_char": 0,
+        "end_char": 172,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.grounding-electrical-systems",
+    "claim_id": "clm_002",
+    "claim_text": "Grounding is crucial for safety as it reduces the risk of electric shock. While it does not eliminate the possibility of shock or injury, it significantly lowers the risk, especially when combined with other safety measures.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 18,
+        "page_end": 18,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000023",
+        "excerpt": "Grounding is normally a secondary protective measure to protect against electric shock. It does not guarantee that you won't get a shock or be injured or killed by an electrical current. It will, however, substantially reduce the risk, especially when used in combination with other safety measures discussed in this booklet.",
+        "start_char": 174,
+        "end_char": 451,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.grounding-electrical-systems",
+    "claim_id": "clm_003",
+    "claim_text": "Grounding involves connecting one wire, often called the \"neutral\" or \"grounded\" conductor, to the earth. This is typically done at the generator or transformer and at the building's service entrance.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 18,
+        "page_end": 18,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000023",
+        "excerpt": "A service or system ground is designed primarily to protect machines, tools, and insulation against damage. One wire, called the \"neutral\" or \"grounded\" conductor, is grounded. In an ordinary low-voltage circuit, the white or gray wire is grounded at the generator or transformer and at the building's service entrance.",
+        "start_char": 453,
+        "end_char": 691,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.grounding-electrical-systems",
+    "claim_id": "clm_004",
+    "claim_text": "Grounding is a secondary protective measure and should be used alongside other safety practices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 18,
+        "page_end": 18,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000023",
+        "excerpt": "Grounding is normally a secondary protective measure to protect against electric shock.",
+        "start_char": 174,
+        "end_char": 251,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.grounding-electrical-systems",
+    "claim_id": "clm_005",
+    "claim_text": "Local regulations, such as 29 CFR, Part 1910.304, Subpart S, may require specific grounding practices in non-construction applications.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 18,
+        "page_end": 18,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000023",
+        "excerpt": "29 CFR, Part 1910.304, Subpart S, Wiring Design and Protection, requires at times a service or system ground and an equipment ground in non-construction applications.",
+        "start_char": 253,
+        "end_char": 451,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_001",
+    "claim_text": "Lockout/tagout procedures are safety measures used to ensure that electrical equipment is completely deenergized before any repair or inspection work is performed.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "Proper lockout/tagout procedures protect you from the dangers of the accidental or unexpected startup of electrical equipment and are required for general industry by OSHA Standard 1910.333, Selection and Use of Work Practices. Requirements for construction applications are in 29 CFR 1926.417, Lockout and Tagging of Circuits. These procedures ensure that electrical equipment is deenergized before it is repaired or inspected and protects you against electrocution or shock.",
+        "start_char": 0,
+        "end_char": 394,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_002",
+    "claim_text": "Accidental startup of electrical equipment can cause electrocution or shock.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "These procedures ensure that electrical equipment is deenergized before it is repaired or inspected and protects you against electrocution or shock.",
+        "start_char": 309,
+        "end_char": 394,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_003",
+    "claim_text": "Proper lockout/tagout procedures are essential to protect workers from these hazards and are required by OSHA standards for both general industry and construction.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "Proper lockout/tagout procedures protect you from the dangers of the accidental or unexpected startup of electrical equipment and are required for general industry by OSHA Standard 1910.333, Selection and Use of Work Practices. Requirements for construction applications are in 29 CFR 1926.417, Lockout and Tagging of Circuits.",
+        "start_char": 0,
+        "end_char": 309,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_004",
+    "claim_text": "Turn off the current at the switch box.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "The first step before beginning any inspection or repair job is to turn the current off at the switch box and padlock the switch in the OFF position.",
+        "start_char": 395,
+        "end_char": 488,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_005",
+    "claim_text": "Padlock the switch in the OFF position.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "The first step before beginning any inspection or repair job is to turn the current off at the switch box and padlock the switch in the OFF position.",
+        "start_char": 395,
+        "end_char": 488,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_006",
+    "claim_text": "Tag the switch or controls to indicate the equipment is locked out.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "Securely tagging the switch or controls of the machine or equipment being locked out of service clarifies to everyone in the area which equipment or circuits are being inspected or repaired.",
+        "start_char": 489,
+        "end_char": 617,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_007",
+    "claim_text": "Ensure each maintenance worker uses an individual lock and key.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "In addition, one individual lock and key should be issued to each maintenance worker authorized to lock out and tag the equipment. All employees who repair a given piece of equipment should lock out its switch with an individual lock.",
+        "start_char": 773,
+        "end_char": 943,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_008",
+    "claim_text": "Only qualified electricians should perform these procedures.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "Only qualified electricians who have been trained in safe lockout procedures should maintain electrical equipment.",
+        "start_char": 618,
+        "end_char": 698,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.lockout-tagout-procedures",
+    "claim_id": "clm_009",
+    "claim_text": "No two locks should match; each key should fit only one lock.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 21,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000027",
+        "excerpt": "No two of the locks used should match, and each key should fit just one lock.",
+        "start_char": 699,
+        "end_char": 773,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-electrical-standards",
+    "claim_id": "clm_001",
+    "claim_text": "This document provides an overview of the Occupational Safety and Health Administration (OSHA) standards that address electrical safety across different industries.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 8,
+        "page_end": 8,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "OSHA standards cover many electrical hazards in many different industries.",
+        "start_char": 0,
+        "end_char": 65,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-electrical-standards",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards pose significant risks in workplaces.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 144,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-electrical-standards",
+    "claim_id": "clm_003",
+    "claim_text": "OSHA standards help ensure safety by setting requirements that must be followed to protect workers from electrical hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 9,
+        "page_end": 9,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000006",
+        "excerpt": "OSHA standards focus on the design and use of electrical equipment and systems... to minimize workplace electrical dangers.",
+        "start_char": 0,
+        "end_char": 146,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-electrical-standards",
+    "claim_id": "clm_004",
+    "claim_text": "For general industry, refer to 29 CFR Part 1910. For construction, refer to 29 CFR Part 1926. For marine terminals and longshoring, refer to 29 CFR Parts 1917 and 1918, respectively. Shipyards should refer to 29 CFR Part 1915.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 8,
+        "page_end": 8,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "OSHA's general industry electrical safety standards are published in Title 29 Code of Federal Regulations (CFR), Part 1910... OSHA also has electrical safety standards for the construction industry, in 29 CFR 1926, Subpart K. OSHA's standards for marine terminals, in 29 CFR 1917, and for longshoring, in 29 CFR 1918... The shipyard standards, in 29 CFR 1915...",
+        "start_char": 0,
+        "end_char": 423,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-electrical-standards",
+    "claim_id": "clm_005",
+    "claim_text": "Ensure that all electrical safety practices meet or exceed OSHA standards. In states with their own OSHA programs, verify that local standards are at least as effective as federal standards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 8,
+        "page_end": 8,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "Although OSHA operates a federal occupational safety and health program, 24 states and 2 territories operate their own OSHA-approved programs. In those states, the standards and other procedures governing electrical safety may not be identical to the federal requirements. They must, however, be at least as effective as the federal standards.",
+        "start_char": 424,
+        "end_char": 680,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_001",
+    "claim_text": "This reference sheet provides an overview of the Occupational Safety and Health Administration (OSHA) standards that address electrical safety.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 3,
+        "page_end": 3,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "What OSHA standards address electrical safety? OSHA standards cover many electrical hazards in many different industries.",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards pose significant risks in the workplace, including shocks, burns, and even fatalities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 7,
+        "page_end": 7,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000004",
+        "excerpt": "Electricity has long been recognized as a serious workplace hazard, exposing employees to electric shock, electrocution, burns, fires, and explosions.",
+        "start_char": 0,
+        "end_char": 150,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_003",
+    "claim_text": "OSHA standards are designed to minimize these risks and protect workers.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 3,
+        "page_end": 3,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "OSHA's general industry electrical safety standards are published in Title 29 Code of Federal Regulations (CFR), Part 1910.302 through 1910.308 — Design Safety Standards for Electrical Systems, and 1910.331 through 1910.335 — Electrical Safety-Related Work Practices Standards.",
+        "start_char": 0,
+        "end_char": 250,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_004",
+    "claim_text": "OSHA standards cover a range of protections, including insulation, grounding, and circuit protection devices.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000002",
+        "excerpt": "What protection does insulation provide? What is grounding and what protection does it offer? What are circuit protection devices and how do they work?",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_005",
+    "claim_text": "Employers must ensure that these standards are implemented to protect workers from electrical hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 3,
+        "page_end": 3,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "OSHA standards cover many electrical hazards in many different industries.",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_006",
+    "claim_text": "Failure to comply with OSHA standards can lead to increased risk of electrical accidents and potential legal consequences.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 3,
+        "page_end": 3,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000005",
+        "excerpt": "Although OSHA operates a federal occupational safety and health program, 24 states and 2 territories operate their own OSHA-approved programs. In those states, the standards and other procedures governing electrical safety may not be identical to the federal requirements. They must, however, be at least as effective as the federal standards.",
+        "start_char": 0,
+        "end_char": 350,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.osha-standards-electrical",
+    "claim_id": "clm_007",
+    "claim_text": "Always follow OSHA guidelines and ensure that all electrical equipment is properly maintained and inspected.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 11,
+        "page_end": 11,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000002",
+        "excerpt": "What is the best way to protect yourself against electrical hazards?",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.overhead-power-line-protection",
+    "claim_id": "clm_001",
+    "claim_text": "Maintain a safe distance of at least 10 feet (3.05 meters) from overhead power lines if you are unqualified to work with electricity.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 22,
+        "page_end": 22,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000028",
+        "excerpt": "Employees unqualified to work with electricity, as well as mechanical equipment, should remain at least 10 feet (3.05 meters) away from overhead power lines.",
+        "start_char": 274,
+        "end_char": 392,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.overhead-power-line-protection",
+    "claim_id": "clm_002",
+    "claim_text": "For lines over 50,000 volts, increase the clearance by 4 inches (10 centimeters) for every additional 10,000 volts.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 22,
+        "page_end": 22,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000028",
+        "excerpt": "If the voltage is more than 50,000 volts, the clearance increases by 4 inches (10 centimeters) for each additional 10,000 volts.",
+        "start_char": 393,
+        "end_char": 493,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.overhead-power-line-protection",
+    "claim_id": "clm_003",
+    "claim_text": "Ground any equipment, such as cranes, that could become energized.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 22,
+        "page_end": 22,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000028",
+        "excerpt": "Before working under or near overhead power lines, ensure that you maintain a safe distance to the lines and, for very high-voltage lines, ground any equipment such as cranes that can become energized.",
+        "start_char": 0,
+        "end_char": 174,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.overhead-power-line-protection",
+    "claim_id": "clm_004",
+    "claim_text": "Ensure power lines are deenergized and grounded by the owner/operator before working on them.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 22,
+        "page_end": 22,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000028",
+        "excerpt": "If working on power lines, ensure that the lines have been deenergized and grounded by the owner or operator of the lines.",
+        "start_char": 175,
+        "end_char": 273,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.overhead-power-line-protection",
+    "claim_id": "clm_005",
+    "claim_text": "Use guarding or insulating materials to prevent accidental contact.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 22,
+        "page_end": 22,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000028",
+        "excerpt": "Other protective measures like guarding or insulating the lines help prevent accidental contact.",
+        "start_char": 274,
+        "end_char": 392,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_001",
+    "claim_text": "This document provides guidance on the use of personal protective equipment (PPE) for employees who work directly with electricity. It outlines the types of equipment that can help reduce the risk of electrical accidents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000029",
+        "excerpt": "Employees who work directly with electricity should use the personal protective equipment required for the jobs they perform. This equipment may include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets designed to reduce electric shock hazard. All help reduce the risk of electrical accidents.",
+        "start_char": 0,
+        "end_char": 308,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_002",
+    "claim_text": "Working with electricity poses significant risks, including electric shock. Using the correct PPE can significantly reduce these risks and protect workers from potential harm.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000029",
+        "excerpt": "Employees who work directly with electricity should use the personal protective equipment required for the jobs they perform. This equipment may include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets designed to reduce electric shock hazard. All help reduce the risk of electrical accidents.",
+        "start_char": 0,
+        "end_char": 308,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_003",
+    "claim_text": "To ensure safety, workers should have access to rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets. These items are specifically designed to protect against electrical hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000029",
+        "excerpt": "This equipment may include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose, and industrial protective helmets designed to reduce electric shock hazard.",
+        "start_char": 92,
+        "end_char": 208,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_004",
+    "claim_text": "Ensure that all PPE is properly rated for electrical work. Workers should be trained on how to use each piece of equipment correctly and understand the importance of wearing it consistently.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 24,
+        "page_end": 24,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000032",
+        "excerpt": "Every good safety and health program provides measures to control electrical hazards. The measures suggested in this booklet should be helpful in establishing such a program.",
+        "start_char": 0,
+        "end_char": 204,
+        "support_strength": "medium"
+      },
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000031",
+        "excerpt": "All employees should be trained to be thoroughly familiar with the safety procedures for their particular jobs.",
+        "start_char": 0,
+        "end_char": 100,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_005",
+    "claim_text": "Inadequate PPE can lead to electric shock. It is crucial to ensure that all equipment is in good condition and suitable for the specific electrical tasks being performed.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "Appropriate and properly maintained tools help protect workers against electric hazards. It's important to maintain tools regularly because it prevents them from deteriorating and becoming dangerous.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_006",
+    "claim_text": "Always verify that PPE is properly rated for the electrical work being performed. Regularly inspect equipment for wear and damage.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "Appropriate and properly maintained tools help protect workers against electric hazards. It's important to maintain tools regularly because it prevents them from deteriorating and becoming dangerous.",
+        "start_char": 0,
+        "end_char": 200,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety-personal-protective-equipment-electrical",
+    "claim_id": "clm_007",
+    "claim_text": "Consider the availability of PPE and adhere to local electrical safety regulations when selecting and using protective equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 24,
+        "page_end": 24,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000032",
+        "excerpt": "Every good safety and health program provides measures to control electrical hazards. The measures suggested in this booklet should be helpful in establishing such a program.",
+        "start_char": 0,
+        "end_char": 204,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_001",
+    "claim_text": "This guide explains how to protect yourself from electrical hazards caused by metal parts that become energized.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "A break in an electric tool's or machine's insulation can cause its metal parts to become \"hot\" or energized, meaning that they conduct electricity. Touching these energized parts can result in an electrical shock, burn, or electrocution.",
+        "start_char": 0,
+        "end_char": 211,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_002",
+    "claim_text": "It focuses on using grounding conductors and double insulation to prevent electric shocks.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "The best way to protect yourself when using electrical tools or machines is to establish a low-resistance path from the device's metallic case to the ground. This requires an equipment grounding conductor... Another form of protection is to use listed or labeled portable tools and appliances protected by an approved system of double insulation or its equivalent.",
+        "start_char": 212,
+        "end_char": 679,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_003",
+    "claim_text": "Energized metal parts can cause electric shock, burns, or even electrocution.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "Touching these energized parts can result in an electrical shock, burn, or electrocution.",
+        "start_char": 122,
+        "end_char": 211,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_004",
+    "claim_text": "Use tools and machines with a grounding conductor. This is a low-resistance wire that directs unwanted current to the ground, reducing the risk of electric shock.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "This requires an equipment grounding conductor, a low-resistance wire that directs unwanted current directly to the ground. A properly installed grounding conductor has a low resistance to ground and greatly reduces the amount of current that passes through your body.",
+        "start_char": 212,
+        "end_char": 456,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_005",
+    "claim_text": "Ensure that the equipment has a three-prong plug, which incorporates the grounding conductor.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "Cord and plug equipment with a three-prong plug is a common example of equipment incorporating this ground conductor.",
+        "start_char": 457,
+        "end_char": 563,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protect-against-energized-metal-parts",
+    "claim_id": "clm_006",
+    "claim_text": "Alternatively, use tools and appliances with a double insulation system, which should be marked to indicate its use.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 20,
+        "page_end": 21,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000026",
+        "excerpt": "Another form of protection is to use listed or labeled portable tools and appliances protected by an approved system of double insulation or its equivalent. Where such a system is employed, it must be marked distinctively to indicate that the tool or appliance uses an approved double insulation system.",
+        "start_char": 564,
+        "end_char": 679,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protection-against-electrical-hazards",
+    "claim_id": "clm_001",
+    "claim_text": "This reference sheet provides guidelines and measures for protecting against electrical hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000018",
+        "excerpt": "Protection Against Electrical Hazards",
+        "start_char": 0,
+        "end_char": 34,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protection-against-electrical-hazards",
+    "claim_id": "clm_002",
+    "claim_text": "Electrical hazards can cause serious injuries or fatalities.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 14,
+        "page_end": 14,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000016",
+        "excerpt": "A severe shock can cause considerably more damage than meets the eye. A victim may suffer internal hemorrhages and destruction of tissues, nerves, and muscles that aren't readily visible.",
+        "start_char": 0,
+        "end_char": 178,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protection-against-electrical-hazards",
+    "claim_id": "clm_003",
+    "claim_text": "To effectively protect against electrical hazards, you need insulated tools and protective equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "Insulators such as glass, mica, rubber, or plastic used to coat metals and other conductors help stop or reduce the flow of electrical current.",
+        "start_char": 0,
+        "end_char": 122,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protection-against-electrical-hazards",
+    "claim_id": "clm_004",
+    "claim_text": "Ensure all equipment is properly insulated and maintain safe distances from live electrical parts.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000020",
+        "excerpt": "To be effective, the insulation must be suitable for the voltage used and conditions such as temperature and other environmental factors like moisture, oil, gasoline, corrosive fumes, or other substances that could cause the insulator to fail.",
+        "start_char": 123,
+        "end_char": 329,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.protection-against-electrical-hazards",
+    "claim_id": "clm_005",
+    "claim_text": "Inadequate protection due to improper use of tools or equipment.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 16,
+        "page_end": 16,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000019",
+        "excerpt": "Most electrical accidents result from one of the following three factors: unsafe equipment or installation, unsafe environment, or unsafe work practices.",
+        "start_char": 0,
+        "end_char": 176,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.static-electricity-hazards",
+    "claim_id": "clm_001",
+    "claim_text": "Static electricity is an electrical charge that can build up on the surface of an object. It can cause shocks and, in certain conditions, lead to explosions.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "Static electricity also can cause a shock, though in a different way and generally not as potentially severe as the type of shock described previously. Static electricity can build up on the surface of an object and, under the right conditions, can discharge to a person, causing a shock.",
+        "start_char": 0,
+        "end_char": 260,
+        "support_strength": "strong"
+      },
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "In these cases, for example, static electricity can potentially discharge when sufficient amounts of flammable or combustible substances are located nearby and cause an explosion.",
+        "start_char": 451,
+        "end_char": 588,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.static-electricity-hazards",
+    "claim_id": "clm_002",
+    "claim_text": "While a static shock is often harmless, static electricity can discharge in environments with flammable substances, potentially causing explosions.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "Static electricity also can cause shocks or can just discharge to an object with much more serious consequences, as when friction causes a high level of static electricity to build up at a specific spot on an object.",
+        "start_char": 261,
+        "end_char": 451,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.static-electricity-hazards",
+    "claim_id": "clm_003",
+    "claim_text": "To manage static electricity, grounding equipment and awareness of the materials and conditions that contribute to static buildup are necessary.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "Grounding or other measures may be necessary to prevent this static electricity buildup and the results.",
+        "start_char": 589,
+        "end_char": 659,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.static-electricity-hazards",
+    "claim_id": "clm_004",
+    "claim_text": "Identify areas where static electricity is likely to build up, such as where plastic pipes or rubberized belts are used. Implement grounding measures to prevent static discharge.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "This can happen simply through handling plastic pipes and materials or during normal operation of rubberized drive or machine belts found in many worksites.",
+        "start_char": 451,
+        "end_char": 588,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.static-electricity-hazards",
+    "claim_id": "clm_005",
+    "claim_text": "Failure to properly ground equipment can lead to static discharge, which may cause explosions if flammable substances are present.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 15,
+        "page_end": 15,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000017",
+        "excerpt": "In these cases, for example, static electricity can potentially discharge when sufficient amounts of flammable or combustible substances are located nearby and cause an explosion.",
+        "start_char": 451,
+        "end_char": 588,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_001",
+    "claim_text": "Proper maintenance ensures tools do not become dangerous over time.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "Appropriate and properly maintained tools help protect workers against electric hazards. It's important to maintain tools regularly because it prevents them from deteriorating and becoming dangerous.",
+        "start_char": 0,
+        "end_char": 157,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_002",
+    "claim_text": "Using defective tools or those not designed for electrical work can lead to accidents.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "If you find a defect, immediately remove it from service and tag it so no one will use it until it has been repaired or replaced.",
+        "start_char": 158,
+        "end_char": 243,
+        "support_strength": "medium"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_003",
+    "claim_text": "Regular maintenance and checks help protect workers from electric hazards.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "Appropriate and properly maintained tools help protect workers against electric hazards.",
+        "start_char": 0,
+        "end_char": 73,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_004",
+    "claim_text": "Check each tool before use for any defects.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "Check each tool before using it.",
+        "start_char": 74,
+        "end_char": 100,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_005",
+    "claim_text": "Remove defective tools from service immediately and tag them for repair or replacement.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "If you find a defect, immediately remove it from service and tag it so no one will use it until it has been repaired or replaced.",
+        "start_char": 158,
+        "end_char": 243,
+        "support_strength": "strong"
+      }
+    ]
+  },
+  {
+    "object_id": "safety.tool-maintenance-electrical-hazards",
+    "claim_id": "clm_006",
+    "claim_text": "Ensure tools are designed to handle the voltages and stresses they will be exposed to.",
+    "support": [
+      {
+        "source_id": "src.osha.3075.controlling-electrical-hazards",
+        "page_start": 23,
+        "page_end": 23,
+        "segment_id": "src.osha.3075.controlling-electrical-hazards::seg_000030",
+        "excerpt": "When using a tool to handle energized conductors, check to make sure it is designed and constructed to withstand the voltages and stresses to which it has been exposed.",
+        "start_char": 244,
+        "end_char": 381,
+        "support_strength": "strong"
+      }
+    ]
+  }
+]

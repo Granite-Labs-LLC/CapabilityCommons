@@ -1,0 +1,210 @@
+id: safety.electrical-contact-response
+slug: safety.electrical-contact-response
+seed_type: extracted
+co_type: safety_notice
+canonical_title: Responding to Electrical Contact Emergencies
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidelines for responding to a person 'frozen' to a live electrical
+  contact.
+summary_medium: Learn how to safely respond if someone is 'frozen' to a live electrical
+  contact, focusing on immediate action and personal safety.
+plain_language: If someone is stuck to a live electrical source, turn off the power
+  right away. If you can't, use something non-metal like a wooden stick to push them
+  away safely.
+markdown_body: '## What this is
+
+  This safety notice provides guidelines for responding to situations where a person
+  is ''frozen'' to a live electrical contact.
+
+
+  ## Why it matters
+
+  Immediate and correct action is crucial in preventing severe injury or death from
+  electrocution. Knowing how to respond can save lives while ensuring your own safety.
+
+
+  ## What you need
+
+  - Boards, poles, or sticks made of wood or other nonconducting materials.
+
+
+  ## How to do it
+
+  1. Shut off the electrical current immediately if possible.
+
+  2. If you cannot turn off the power, use a nonconducting object like a wooden stick
+  to push or pull the person away from the electrical source.
+
+  3. Ensure your own safety by avoiding direct contact with the live electrical source.
+
+
+  ## Common failure modes
+
+  - Failing to act quickly can result in severe injury or death.
+
+  - Direct contact with the live electrical source can cause electrocution or shock.
+
+
+  ## Safety/boundary notes
+
+  Always prioritize your own safety. Avoid direct contact with the electrical source
+  and use nonconducting materials to separate the person from the contact.
+
+
+  ## Local adaptation notes
+
+  Adapt the tools used based on availability, ensuring they are nonconducting materials.'
+structured_data:
+  implementation:
+    smallest_viable_version: Turn off the electrical current immediately if someone
+      is frozen to it.
+    tools:
+    - Boards
+    - Poles
+    - Sticks made of wood
+    materials: []
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - The person is safely separated from the electrical source without causing harm
+      to the rescuer.
+    stop_conditions:
+    - The person is no longer in contact with the electrical source.
+    common_mistakes:
+    - Touching the person directly while they are in contact with the electrical source.
+    variants: []
+    when_to_escalate:
+    - If you cannot safely separate the person from the electrical source, call emergency
+      services immediately.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. If a person is "frozen" to a live electrical contact,
+    shut off the current immediately. If you or someone else receives a shock, seek
+    emergency medical help immediately.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-contact-response
+  claim_id: clm_001
+  claim_text: This safety notice provides guidelines for responding to situations
+    where a person is 'frozen' to a live electrical contact.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: If a person is 'frozen' to a live electrical contact, shut off the current
+      immediately. If this is not possible, use boards, poles, or sticks made of wood
+      or any other nonconducting materials and safely push or pull the person away
+      from the contact.
+    start_char: 0
+    end_char: 232
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_002
+  claim_text: Immediate and correct action is crucial in preventing severe injury
+    or death from electrocution.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: It's important to act quickly, but remember to protect yourself as well
+      from electrocution or shock.
+    start_char: 233
+    end_char: 309
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_003
+  claim_text: Boards, poles, or sticks made of wood or other nonconducting materials.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: use boards, poles, or sticks made of wood or any other nonconducting
+      materials
+    start_char: 97
+    end_char: 158
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_004
+  claim_text: Shut off the electrical current immediately if possible.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: If a person is 'frozen' to a live electrical contact, shut off the current
+      immediately.
+    start_char: 0
+    end_char: 72
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_005
+  claim_text: If you cannot turn off the power, use a nonconducting object like a
+    wooden stick to push or pull the person away from the electrical source.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: If this is not possible, use boards, poles, or sticks made of wood or
+      any other nonconducting materials and safely push or pull the person away from
+      the contact.
+    start_char: 73
+    end_char: 232
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_006
+  claim_text: Ensure your own safety by avoiding direct contact with the live electrical
+    source.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: It's important to act quickly, but remember to protect yourself as well
+      from electrocution or shock.
+    start_char: 233
+    end_char: 309
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_007
+  claim_text: Failing to act quickly can result in severe injury or death.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: It's important to act quickly, but remember to protect yourself as well
+      from electrocution or shock.
+    start_char: 233
+    end_char: 309
+    support_strength: strong
+- object_id: safety.electrical-contact-response
+  claim_id: clm_008
+  claim_text: Direct contact with the live electrical source can cause electrocution
+    or shock.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000015
+    excerpt: but remember to protect yourself as well from electrocution or shock.
+    start_char: 266
+    end_char: 309
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000015

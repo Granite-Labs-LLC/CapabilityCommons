@@ -1,0 +1,241 @@
+id: safety.electrical-hazard-protection
+slug: safety.electrical-hazard-protection
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: Electrical Hazard Protection
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Learn how to protect yourself from electrical hazards.
+summary_medium: Understand the primary causes of electrical accidents and methods
+  to prevent them, including insulation, guarding, grounding, protective devices,
+  and safe work practices.
+plain_language: This guide explains how to protect yourself from electrical hazards
+  by addressing unsafe equipment, environments, and work practices.
+markdown_body: '## What this is
+
+  This guide provides information on how to protect yourself from electrical hazards
+  by addressing the primary causes of electrical accidents.
+
+
+  ## Why it matters
+
+  Electrical hazards can lead to serious injuries or fatalities. Understanding how
+  to prevent these accidents is crucial for safety.
+
+
+  ## What you need
+
+  To effectively protect against electrical hazards, you need insulation materials,
+  guarding equipment, grounding tools, and protective devices.
+
+
+  ## How to do it
+
+  1. Use insulation to prevent contact with live wires.
+
+  2. Implement guarding to protect against accidental contact with electrical components.
+
+  3. Ensure proper grounding to prevent electrical shock.
+
+  4. Apply electrical protective devices to control electrical currents.
+
+  5. Practice safe work methods to minimize risk.
+
+
+  ## Common failure modes
+
+  - Using unsafe equipment or installations.
+
+  - Working in unsafe environments.
+
+  - Engaging in unsafe work practices.
+
+
+  ## Safety/boundary notes
+
+  Always follow established safety protocols and use appropriate personal protective
+  equipment when working with or near electrical systems.
+
+
+  ## Local adaptation notes
+
+  Adapt the methods and tools to comply with local safety regulations and standards.'
+structured_data:
+  definition: Electrical hazard protection involves using methods like insulation,
+    guarding, grounding, and protective devices to prevent electrical accidents.
+  key_questions:
+  - What are the primary causes of electrical accidents?
+  - How can insulation and guarding prevent electrical hazards?
+  - What role does grounding play in electrical safety?
+  misconceptions:
+  - All electrical hazards can be prevented by using just one method.
+  - Grounding alone is sufficient to ensure safety.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. Before anyone works on electrical equipment it
+    must be deenergized, with lockout and tag procedures used to keep it deenergized;
+    ground-fault circuit interrupters (GFCIs) are used in wet locations. People not
+    qualified to work with electricity, and mechanical equipment, must stay at least
+    10 feet (3.05 meters) away from overhead power lines.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_001
+  claim_text: This guide provides information on how to protect yourself from electrical
+    hazards by addressing the primary causes of electrical accidents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: 'Most electrical accidents result from one of the following three factors:
+      unsafe equipment or installation, unsafe environment, or unsafe work practices.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_002
+  claim_text: Electrical hazards can lead to serious injuries or fatalities.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 14
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000016
+    excerpt: A severe shock can cause considerably more damage than meets the eye.
+      A victim may suffer internal hemorrhages and destruction of tissues, nerves,
+      and muscles that aren't readily visible.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_003
+  claim_text: To effectively protect against electrical hazards, you need insulation
+    materials, guarding equipment, grounding tools, and protective devices.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: Some ways to prevent these accidents are through the use of insulation,
+      guarding, grounding, electrical protective devices, and safe work practices.
+    start_char: 151
+    end_char: 250
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_004
+  claim_text: Use insulation to prevent contact with live wires.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000020
+    excerpt: Insulators such as glass, mica, rubber, or plastic used to coat metals
+      and other conductors help stop or reduce the flow of electrical current.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_005
+  claim_text: Implement guarding to protect against accidental contact with electrical
+    components.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 17
+    page_end: 17
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000022
+    excerpt: Guarding involves locating or enclosing electric equipment to make sure
+      people don't accidentally come into contact with its live parts.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_006
+  claim_text: Ensure proper grounding to prevent electrical shock.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 15
+    page_end: 15
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000017
+    excerpt: Grounding or other measures may be necessary to prevent this static electricity
+      buildup and the results.
+    start_char: 400
+    end_char: 500
+    support_strength: medium
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_007
+  claim_text: Apply electrical protective devices to control electrical currents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: Some ways to prevent these accidents are through the use of insulation,
+      guarding, grounding, electrical protective devices, and safe work practices.
+    start_char: 151
+    end_char: 250
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_008
+  claim_text: Practice safe work methods to minimize risk.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: Some ways to prevent these accidents are through the use of insulation,
+      guarding, grounding, electrical protective devices, and safe work practices.
+    start_char: 151
+    end_char: 250
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_009
+  claim_text: Using unsafe equipment or installations.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: 'Most electrical accidents result from one of the following three factors:
+      unsafe equipment or installation, unsafe environment, or unsafe work practices.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_010
+  claim_text: Working in unsafe environments.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: 'Most electrical accidents result from one of the following three factors:
+      unsafe equipment or installation, unsafe environment, or unsafe work practices.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: safety.electrical-hazard-protection
+  claim_id: clm_011
+  claim_text: Engaging in unsafe work practices.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 16
+    page_end: 16
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000019
+    excerpt: 'Most electrical accidents result from one of the following three factors:
+      unsafe equipment or installation, unsafe environment, or unsafe work practices.'
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000019

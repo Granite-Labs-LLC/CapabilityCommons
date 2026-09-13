@@ -1,0 +1,163 @@
+id: safety.grounding-electrical-systems
+slug: safety.grounding-electrical-systems
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding Grounding in Electrical Systems
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Grounding creates a low-resistance path to the earth to prevent voltage
+  buildup and reduce electrical accident risks.
+summary_medium: Grounding is a safety measure that creates a low-resistance path to
+  the earth, preventing voltage buildup and reducing the risk of electrical accidents.
+  It serves as a secondary protective measure against electric shock.
+plain_language: Grounding is a way to make electrical systems safer by connecting
+  them to the earth. This helps prevent dangerous voltage buildup and reduces the
+  risk of electric shocks.
+markdown_body: '## What this is
+
+  Grounding is the process of creating a low-resistance path that connects electrical
+  systems or tools to the earth. This path helps prevent the buildup of voltages that
+  could lead to electrical accidents.
+
+
+  ## Why it matters
+
+  Grounding is crucial for safety as it reduces the risk of electric shock. While
+  it does not eliminate the possibility of shock or injury, it significantly lowers
+  the risk, especially when combined with other safety measures.
+
+
+  ## What you need
+
+  Understanding of electrical systems and the role of grounding in safety.
+
+
+  ## How to do it
+
+  Grounding involves connecting one wire, often called the "neutral" or "grounded"
+  conductor, to the earth. This is typically done at the generator or transformer
+  and at the building''s service entrance.
+
+
+  ## Common failure modes
+
+  - Electric shock
+
+  - Equipment damage
+
+
+  ## Safety/boundary notes
+
+  Grounding is a secondary protective measure and should be used alongside other safety
+  practices.
+
+
+  ## Local adaptation notes
+
+  Local regulations, such as 29 CFR, Part 1910.304, Subpart S, may require specific
+  grounding practices in non-construction applications.'
+structured_data:
+  definition: Grounding is the intentional creation of a low-resistance path to the
+    earth to prevent voltage buildup and reduce electrical accident risks.
+  key_questions:
+  - What is the purpose of grounding?
+  - How does grounding protect against electric shock?
+  - What are the components of a grounding system?
+  misconceptions:
+  - Grounding completely eliminates the risk of electric shock.
+  - Grounding is only necessary for high-voltage systems.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.grounding-electrical-systems
+  claim_id: clm_001
+  claim_text: Grounding is the process of creating a low-resistance path that connects
+    electrical systems or tools to the earth. This path helps prevent the buildup
+    of voltages that could lead to electrical accidents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 18
+    page_end: 18
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000023
+    excerpt: '"Grounding" a tool or electrical system means intentionally creating
+      a low-resistance path that connects to the earth. This prevents the buildup
+      of voltages that could cause an electrical accident.'
+    start_char: 0
+    end_char: 172
+    support_strength: strong
+- object_id: safety.grounding-electrical-systems
+  claim_id: clm_002
+  claim_text: Grounding is crucial for safety as it reduces the risk of electric shock.
+    While it does not eliminate the possibility of shock or injury, it significantly
+    lowers the risk, especially when combined with other safety measures.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 18
+    page_end: 18
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000023
+    excerpt: Grounding is normally a secondary protective measure to protect against
+      electric shock. It does not guarantee that you won't get a shock or be injured
+      or killed by an electrical current. It will, however, substantially reduce the
+      risk, especially when used in combination with other safety measures discussed
+      in this booklet.
+    start_char: 174
+    end_char: 451
+    support_strength: strong
+- object_id: safety.grounding-electrical-systems
+  claim_id: clm_003
+  claim_text: Grounding involves connecting one wire, often called the "neutral" or
+    "grounded" conductor, to the earth. This is typically done at the generator or
+    transformer and at the building's service entrance.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 18
+    page_end: 18
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000023
+    excerpt: A service or system ground is designed primarily to protect machines,
+      tools, and insulation against damage. One wire, called the "neutral" or "grounded"
+      conductor, is grounded. In an ordinary low-voltage circuit, the white or gray
+      wire is grounded at the generator or transformer and at the building's service
+      entrance.
+    start_char: 453
+    end_char: 691
+    support_strength: strong
+- object_id: safety.grounding-electrical-systems
+  claim_id: clm_004
+  claim_text: Grounding is a secondary protective measure and should be used alongside
+    other safety practices.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 18
+    page_end: 18
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000023
+    excerpt: Grounding is normally a secondary protective measure to protect against
+      electric shock.
+    start_char: 174
+    end_char: 251
+    support_strength: strong
+- object_id: safety.grounding-electrical-systems
+  claim_id: clm_005
+  claim_text: Local regulations, such as 29 CFR, Part 1910.304, Subpart S, may require
+    specific grounding practices in non-construction applications.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 18
+    page_end: 18
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000023
+    excerpt: 29 CFR, Part 1910.304, Subpart S, Wiring Design and Protection, requires
+      at times a service or system ground and an equipment ground in non-construction
+      applications.
+    start_char: 253
+    end_char: 451
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000023

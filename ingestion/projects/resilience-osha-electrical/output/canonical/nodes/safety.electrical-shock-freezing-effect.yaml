@@ -1,0 +1,136 @@
+id: safety.electrical-shock-freezing-effect
+slug: safety.electrical-shock-freezing-effect
+seed_type: extracted
+co_type: concept_note
+canonical_title: Understanding the Freezing Effect During Electrical Shocks
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Explains the 'freezing' effect during electrical shocks.
+summary_medium: The 'freezing' effect during electrical shocks occurs when muscle
+  contractions prevent a person from pulling away, increasing exposure time and risk
+  of injury.
+plain_language: When someone gets an electrical shock, their muscles might contract,
+  making them unable to move away from the electricity. This can lead to longer exposure
+  and higher risk of injury.
+markdown_body: '## What this is
+
+  The ''freezing'' effect during electrical shocks refers to the involuntary muscle
+  contractions that occur when a person is shocked. These contractions can make it
+  difficult or impossible for the person to pull away from the electrical source.
+
+
+  ## Why it matters
+
+  This effect is dangerous because it increases the duration of exposure to electricity,
+  which can lead to more severe injuries. Even low voltage shocks can be hazardous
+  if the exposure time is extended.
+
+
+  ## What you need
+
+  Understanding of electrical safety and awareness of the risks associated with electrical
+  shocks.
+
+
+  ## How to do it
+
+  Avoid contact with live electrical circuits and ensure proper safety measures are
+  in place when working with electricity.
+
+
+  ## Common failure modes
+
+  - Increased exposure time due to inability to pull away.
+
+  - Involuntary muscle reactions leading to additional injuries.
+
+
+  ## Safety/boundary notes
+
+  Always use appropriate protective equipment and follow safety protocols when working
+  with or near electricity.
+
+
+  ## Local adaptation notes
+
+  Consider local electrical safety regulations and guidelines when implementing safety
+  measures.'
+structured_data:
+  definition: The 'freezing' effect during electrical shocks is caused by muscle contractions
+    that prevent a person from pulling away from the electrical source, increasing
+    exposure time and risk of injury.
+  key_questions:
+  - What causes the 'freezing' effect during electrical shocks?
+  - How does increased exposure time affect injury risk?
+  misconceptions:
+  - Low voltage shocks are not dangerous.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. If a person is "frozen" to a live electrical contact,
+    shut off the current immediately. If you or someone else receives a shock, seek
+    emergency medical help immediately.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-shock-freezing-effect
+  claim_id: clm_001
+  claim_text: The 'freezing' effect during electrical shocks refers to the involuntary
+    muscle contractions that occur when a person is shocked. These contractions can
+    make it difficult or impossible for the person to pull away from the electrical
+    source.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000014
+    excerpt: When a person receives an electrical shock, sometimes the electrical
+      stimulation causes the muscles to contract. This 'freezing' effect makes the
+      person unable to pull free of the circuit.
+    start_char: 0
+    end_char: 147
+    support_strength: strong
+- object_id: safety.electrical-shock-freezing-effect
+  claim_id: clm_002
+  claim_text: This effect is dangerous because it increases the duration of exposure
+    to electricity, which can lead to more severe injuries. Even low voltage shocks
+    can be hazardous if the exposure time is extended.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000014
+    excerpt: It is extremely dangerous because it increases the length of exposure
+      to electricity and because the current causes blisters, which reduce the body's
+      resistance and increases the current. The longer the exposure, the greater the
+      risk of serious injury. Longer exposures at even relatively low voltages can
+      be just as dangerous as short exposures at higher voltages.
+    start_char: 148
+    end_char: 426
+    support_strength: strong
+- object_id: safety.electrical-shock-freezing-effect
+  claim_id: clm_003
+  claim_text: Involuntary muscle reactions leading to additional injuries.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 13
+    page_end: 14
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000014
+    excerpt: In addition to muscle contractions that cause 'freezing,' electrical
+      shocks also can cause involuntary muscle reactions. These reactions can result
+      in a wide range of other injuries from collisions or falls, including bruises,
+      bone fractures, and even death.
+    start_char: 427
+    end_char: 634
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000014

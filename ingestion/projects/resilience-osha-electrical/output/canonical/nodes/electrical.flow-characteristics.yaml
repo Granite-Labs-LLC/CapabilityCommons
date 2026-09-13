@@ -1,0 +1,165 @@
+id: electrical.flow-characteristics
+slug: electrical.flow-characteristics
+seed_type: candidate
+co_type: concept_note
+canonical_title: Understanding Electrical Flow Characteristics
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: electrical
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Learn about conductors and insulators in electrical flow.
+summary_medium: This concept note explains how different materials affect the flow
+  of electricity, focusing on conductors and insulators.
+plain_language: Electricity flows through some materials more easily than others.
+  Materials like metals are good conductors, while materials like glass and plastic
+  are insulators.
+markdown_body: '## What this is
+
+  This concept note explains how different materials affect the flow of electricity.
+  It focuses on the roles of conductors and insulators in electrical flow.
+
+
+  ## Why it matters
+
+  Understanding which materials conduct electricity and which do not is crucial for
+  safety and efficiency in electrical systems. This knowledge helps in designing circuits
+  and preventing electrical hazards.
+
+
+  ## What you need
+
+  No specific tools or materials are needed to understand this concept.
+
+
+  ## How to do it
+
+  Learn about conductors, which are materials that allow electricity to flow easily,
+  such as metals. Insulators, like glass and plastic, resist the flow of electricity
+  and are used to protect us from electric currents.
+
+
+  ## Common failure modes
+
+  Misidentifying a conductor as an insulator or vice versa can lead to electrical
+  failures or hazards.
+
+
+  ## Safety/boundary notes
+
+  Always ensure that insulators are used to cover or separate conductive materials
+  to prevent accidental electric shocks.
+
+
+  ## Local adaptation notes
+
+  Consider local materials that may serve as conductors or insulators, as availability
+  can vary by region.'
+structured_data:
+  definition: Electricity flows more easily through some materials than others. Conductors
+    allow electricity to flow with little resistance, while insulators resist electrical
+    flow.
+  key_questions:
+  - What materials are considered conductors?
+  - What materials are considered insulators?
+  - How do conductors and insulators affect electrical flow?
+  misconceptions:
+  - All metals are equally good conductors.
+  - Insulators can never conduct electricity.
+requires: []
+suggested_edges: []
+citations:
+- object_id: electrical.flow-characteristics
+  claim_id: clm_001
+  claim_text: This concept note explains how different materials affect the flow of
+    electricity. It focuses on the roles of conductors and insulators in electrical
+    flow.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Electricity flows more easily through some materials than others. Some
+      substances such as metals generally offer very little resistance to the flow
+      of electric current and are called "conductors." Glass, plastic, porcelain,
+      clay, pottery, dry wood, and similar substances generally slow or stop the flow
+      of electricity. They are called "insulators."
+    start_char: 0
+    end_char: 366
+    support_strength: strong
+- object_id: electrical.flow-characteristics
+  claim_id: clm_002
+  claim_text: Understanding which materials conduct electricity and which do not is
+    crucial for safety and efficiency in electrical systems. This knowledge helps
+    in designing circuits and preventing electrical hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Electricity flows more easily through some materials than others. Some
+      substances such as metals generally offer very little resistance to the flow
+      of electric current and are called "conductors." Glass, plastic, porcelain,
+      clay, pottery, dry wood, and similar substances generally slow or stop the flow
+      of electricity. They are called "insulators."
+    start_char: 0
+    end_char: 366
+    support_strength: medium
+- object_id: electrical.flow-characteristics
+  claim_id: clm_003
+  claim_text: Learn about conductors, which are materials that allow electricity to
+    flow easily, such as metals. Insulators, like glass and plastic, resist the flow
+    of electricity and are used to protect us from electric currents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Electricity flows more easily through some materials than others. Some
+      substances such as metals generally offer very little resistance to the flow
+      of electric current and are called "conductors." Glass, plastic, porcelain,
+      clay, pottery, dry wood, and similar substances generally slow or stop the flow
+      of electricity. They are called "insulators."
+    start_char: 0
+    end_char: 366
+    support_strength: strong
+- object_id: electrical.flow-characteristics
+  claim_id: clm_004
+  claim_text: Misidentifying a conductor as an insulator or vice versa can lead to
+    electrical failures or hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000008
+    excerpt: Electricity flows more easily through some materials than others. Some
+      substances such as metals generally offer very little resistance to the flow
+      of electric current and are called "conductors." Glass, plastic, porcelain,
+      clay, pottery, dry wood, and similar substances generally slow or stop the flow
+      of electricity. They are called "insulators."
+    start_char: 0
+    end_char: 366
+    support_strength: medium
+- object_id: electrical.flow-characteristics
+  claim_id: clm_005
+  claim_text: Always ensure that insulators are used to cover or separate conductive
+    materials to prevent accidental electric shocks.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: Electricity travels in closed circuits, normally through a conductor.
+      But sometimes a person's body — an efficient conductor of electricity — mistakenly
+      becomes part of the electric circuit. This can cause an electrical shock.
+    start_char: 0
+    end_char: 366
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000008

@@ -1,0 +1,328 @@
+id: safety.lockout-tagout-procedures
+slug: safety.lockout-tagout-procedures
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Lockout/Tagout Procedures for Electrical Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: productive
+contexts:
+- general industry
+- construction
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Implement lockout/tagout procedures to prevent accidental equipment
+  startup.
+summary_medium: Guidelines for implementing lockout/tagout procedures to prevent accidental
+  or unexpected startup of electrical equipment, ensuring it is deenergized before
+  repair or inspection.
+plain_language: Learn how to use lockout/tagout procedures to safely deenergize electrical
+  equipment before repairs or inspections, preventing accidental startups.
+markdown_body: '## What this is
+
+  Lockout/tagout procedures are safety measures used to ensure that electrical equipment
+  is completely deenergized before any repair or inspection work is performed. This
+  prevents accidental or unexpected equipment startup, which can lead to serious injuries.
+
+
+  ## Why it matters
+
+  Accidental startup of electrical equipment can cause electrocution or shock. Proper
+  lockout/tagout procedures are essential to protect workers from these hazards and
+  are required by OSHA standards for both general industry and construction.
+
+
+  ## What you need
+
+  - Padlocks
+
+  - Tags
+
+  - Individual lock and key for each authorized worker
+
+
+  ## How to do it
+
+  1. Turn off the current at the switch box.
+
+  2. Padlock the switch in the OFF position.
+
+  3. Tag the switch or controls to indicate the equipment is locked out.
+
+  4. Ensure each maintenance worker uses an individual lock and key.
+
+  5. Only qualified electricians should perform these procedures.
+
+
+  ## Common failure modes
+
+  - Accidental startup due to improper lockout/tagout.
+
+  - Electrocution or shock from unexpected equipment activation.
+
+
+  ## Safety/boundary notes
+
+  - Only qualified electricians should maintain equipment.
+
+  - No two locks should match; each key should fit only one lock.
+
+
+  ## Local adaptation notes
+
+  - Specific lockout/tagout procedures may vary across different industries.'
+structured_data:
+  tools:
+  - Padlocks
+  materials:
+  - Tags
+  success_criteria:
+  - Equipment remains deenergized during repair or inspection.
+  failure_modes:
+  - Accidental startup
+  - Electrocution
+  - Shock
+  safety_boundary:
+  - Only qualified electricians should maintain equipment
+  - No two locks should match
+  implementation:
+    smallest_viable_version: Turn off the current and padlock the switch in the OFF
+      position.
+    tools:
+    - Padlocks
+    materials:
+    - Tags
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - Equipment is deenergized and tagged before repair.
+    stop_conditions:
+    - If any lock or tag is missing, stop and reassess.
+    common_mistakes:
+    - Using matching locks
+    - Not tagging equipment
+    variants:
+    - label: renter
+      when: When renting equipment, ensure lockout/tagout procedures are followed
+        by the rental company.
+      notes: Coordinate with the rental company to ensure compliance.
+    when_to_escalate:
+    - If unsure about the procedure, consult a qualified electrician.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_001
+  claim_text: Lockout/tagout procedures are safety measures used to ensure that electrical
+    equipment is completely deenergized before any repair or inspection work is performed.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: Proper lockout/tagout procedures protect you from the dangers of the
+      accidental or unexpected startup of electrical equipment and are required for
+      general industry by OSHA Standard 1910.333, Selection and Use of Work Practices.
+      Requirements for construction applications are in 29 CFR 1926.417, Lockout and
+      Tagging of Circuits. These procedures ensure that electrical equipment is deenergized
+      before it is repaired or inspected and protects you against electrocution or
+      shock.
+    start_char: 0
+    end_char: 394
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_002
+  claim_text: Accidental startup of electrical equipment can cause electrocution or
+    shock.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: These procedures ensure that electrical equipment is deenergized before
+      it is repaired or inspected and protects you against electrocution or shock.
+    start_char: 309
+    end_char: 394
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_003
+  claim_text: Proper lockout/tagout procedures are essential to protect workers from
+    these hazards and are required by OSHA standards for both general industry and
+    construction.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: Proper lockout/tagout procedures protect you from the dangers of the
+      accidental or unexpected startup of electrical equipment and are required for
+      general industry by OSHA Standard 1910.333, Selection and Use of Work Practices.
+      Requirements for construction applications are in 29 CFR 1926.417, Lockout and
+      Tagging of Circuits.
+    start_char: 0
+    end_char: 309
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_004
+  claim_text: Turn off the current at the switch box.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: The first step before beginning any inspection or repair job is to turn
+      the current off at the switch box and padlock the switch in the OFF position.
+    start_char: 395
+    end_char: 488
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_005
+  claim_text: Padlock the switch in the OFF position.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: The first step before beginning any inspection or repair job is to turn
+      the current off at the switch box and padlock the switch in the OFF position.
+    start_char: 395
+    end_char: 488
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_006
+  claim_text: Tag the switch or controls to indicate the equipment is locked out.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: Securely tagging the switch or controls of the machine or equipment being
+      locked out of service clarifies to everyone in the area which equipment or circuits
+      are being inspected or repaired.
+    start_char: 489
+    end_char: 617
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_007
+  claim_text: Ensure each maintenance worker uses an individual lock and key.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: In addition, one individual lock and key should be issued to each maintenance
+      worker authorized to lock out and tag the equipment. All employees who repair
+      a given piece of equipment should lock out its switch with an individual lock.
+    start_char: 773
+    end_char: 943
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_008
+  claim_text: Only qualified electricians should perform these procedures.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: Only qualified electricians who have been trained in safe lockout procedures
+      should maintain electrical equipment.
+    start_char: 618
+    end_char: 698
+    support_strength: strong
+- object_id: safety.lockout-tagout-procedures
+  claim_id: clm_009
+  claim_text: No two locks should match; each key should fit only one lock.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 21
+    page_end: 21
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000027
+    excerpt: No two of the locks used should match, and each key should fit just one
+      lock.
+    start_char: 699
+    end_char: 773
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000027
+bundle_overrides:
+  hook: Lockout/tagout procedures are crucial for preventing accidental electrical
+    equipment startups, ensuring worker safety and compliance with OSHA standards.
+  primer: Lockout/tagout procedures are essential safety measures designed to prevent
+    the accidental or unexpected startup of electrical equipment during maintenance
+    or inspection. These procedures ensure that equipment is completely deenergized,
+    thereby protecting workers from potential hazards such as electrocution or shock.
+    The Occupational Safety and Health Administration (OSHA) mandates these procedures
+    for both general industry and construction, highlighting their importance in maintaining
+    workplace safety. The process involves turning off the electrical current at the
+    switch box, padlocking the switch in the OFF position, and tagging the switch
+    to indicate that the equipment is locked out. Each maintenance worker must use
+    an individual lock and key, ensuring that no two locks match and each key fits
+    only one lock. Only qualified electricians should perform these procedures to
+    ensure they are executed correctly and safely. By following these steps, workplaces
+    can significantly reduce the risk of electrical accidents, safeguarding both employees
+    and equipment.
+  guide: '1. **Turn Off the Current**: Before starting any maintenance or inspection
+    work, ensure that the electrical current is turned off at the switch box. This
+    is the first and most crucial step in the lockout/tagout process.
+
+
+    2. **Padlock the Switch**: Once the current is turned off, padlock the switch
+    in the OFF position. This prevents anyone from accidentally turning the power
+    back on while work is being performed.
+
+
+    3. **Tag the Switch**: Attach a tag to the switch or controls to clearly indicate
+    that the equipment is locked out. This tag serves as a warning to others that
+    the equipment should not be operated.
+
+
+    4. **Use Individual Locks**: Each maintenance worker involved in the repair or
+    inspection should use their own individual lock and key. This ensures that no
+    two locks are the same and that each key fits only one lock, adding an extra layer
+    of safety.
+
+
+    5. **Qualified Personnel Only**: Ensure that only qualified electricians who have
+    been trained in safe lockout procedures perform these tasks. This minimizes the
+    risk of errors and enhances overall safety.
+
+
+    6. **Verify Deenergization**: Before beginning work, double-check that the equipment
+    is completely deenergized and that all safety measures are in place. This verification
+    step is crucial to prevent accidents.'
+  reference:
+  - Turn off the current at the switch box.
+  - Padlock the switch in the OFF position.
+  - Tag the switch to indicate lockout.
+  - Use individual locks and keys for each worker.
+  - Only qualified electricians should perform lockout/tagout.
+  - No two locks should match; each key should fit only one lock.
+  worksheet:
+  - Identify a piece of equipment in your workplace that requires lockout/tagout procedures.
+  - List the steps you would take to ensure the equipment is safely deenergized.
+  - Explain why it is important for each worker to use an individual lock and key.
+  - Discuss the potential consequences of not following lockout/tagout procedures.
+  - Role-play a scenario where you perform a lockout/tagout procedure, ensuring all
+    steps are followed correctly.
+  teach_forward_kit:
+    three_minute_version: Lockout/tagout procedures prevent accidental equipment startups
+      by ensuring electrical equipment is deenergized before maintenance. Key steps
+      include turning off the current, padlocking the switch, tagging the equipment,
+      and using individual locks for each worker.
+    ten_minute_outline:
+    - Introduction to lockout/tagout procedures
+    - Importance of deenergizing equipment
+    - Step-by-step guide to lockout/tagout
+    - Role of qualified electricians
+    - Common mistakes and how to avoid them
+    - Q&A session
+    discussion_prompts:
+    - Why is it critical to use individual locks and keys during lockout/tagout?
+    - What are the potential risks if lockout/tagout procedures are not followed?
+    - How can workplaces ensure compliance with OSHA standards for lockout/tagout?
+    - Discuss the role of training in effective lockout/tagout implementation.

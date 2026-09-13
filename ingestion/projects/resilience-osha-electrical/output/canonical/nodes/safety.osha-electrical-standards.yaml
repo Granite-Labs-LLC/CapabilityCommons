@@ -1,0 +1,157 @@
+id: safety.osha-electrical-standards
+slug: safety.osha-electrical-standards
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: OSHA Electrical Safety Standards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: low
+summary_short: Overview of OSHA standards addressing electrical safety across various
+  industries.
+summary_medium: OSHA standards cover electrical safety in general industry, construction,
+  marine terminals, longshoring, and shipyards, based on NFPA standards.
+plain_language: This document explains the OSHA standards for electrical safety in
+  various industries, ensuring compliance with federal regulations.
+markdown_body: '## What this is
+
+  This document provides an overview of the Occupational Safety and Health Administration
+  (OSHA) standards that address electrical safety across different industries.
+
+
+  ## Why it matters
+
+  Electrical hazards pose significant risks in workplaces. OSHA standards help ensure
+  safety by setting requirements that must be followed to protect workers from electrical
+  hazards.
+
+
+  ## What you need
+
+  Familiarity with OSHA regulations and the specific industry standards applicable
+  to your workplace.
+
+
+  ## How to do it
+
+  Understand and apply the relevant OSHA standards for your industry. For general
+  industry, refer to 29 CFR Part 1910. For construction, refer to 29 CFR Part 1926.
+  For marine terminals and longshoring, refer to 29 CFR Parts 1917 and 1918, respectively.
+  Shipyards should refer to 29 CFR Part 1915.
+
+
+  ## Common failure modes
+
+  Failure to comply with OSHA standards can lead to workplace accidents and legal
+  penalties.
+
+
+  ## Safety/boundary notes
+
+  Ensure that all electrical safety practices meet or exceed OSHA standards. In states
+  with their own OSHA programs, verify that local standards are at least as effective
+  as federal standards.
+
+
+  ## Local adaptation notes
+
+  State-specific OSHA programs may have variations in standards. Always check local
+  regulations to ensure compliance.'
+structured_data:
+  definition: OSHA standards for electrical safety are regulations that ensure safe
+    work practices around electrical systems in various industries.
+  key_questions:
+  - What are the OSHA standards for electrical safety in my industry?
+  - How do NFPA standards relate to OSHA regulations?
+  misconceptions:
+  - OSHA standards are the same in every state.
+  - Compliance with NFPA standards alone is sufficient for OSHA compliance.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.osha-electrical-standards
+  claim_id: clm_001
+  claim_text: This document provides an overview of the Occupational Safety and Health
+    Administration (OSHA) standards that address electrical safety across different
+    industries.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 8
+    page_end: 8
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: OSHA standards cover many electrical hazards in many different industries.
+    start_char: 0
+    end_char: 65
+    support_strength: strong
+- object_id: safety.osha-electrical-standards
+  claim_id: clm_002
+  claim_text: Electrical hazards pose significant risks in workplaces.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: Electricity has long been recognized as a serious workplace hazard, exposing
+      employees to electric shock, electrocution, burns, fires, and explosions.
+    start_char: 0
+    end_char: 144
+    support_strength: strong
+- object_id: safety.osha-electrical-standards
+  claim_id: clm_003
+  claim_text: OSHA standards help ensure safety by setting requirements that must
+    be followed to protect workers from electrical hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 9
+    page_end: 9
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000006
+    excerpt: OSHA standards focus on the design and use of electrical equipment and
+      systems... to minimize workplace electrical dangers.
+    start_char: 0
+    end_char: 146
+    support_strength: strong
+- object_id: safety.osha-electrical-standards
+  claim_id: clm_004
+  claim_text: For general industry, refer to 29 CFR Part 1910. For construction, refer
+    to 29 CFR Part 1926. For marine terminals and longshoring, refer to 29 CFR Parts
+    1917 and 1918, respectively. Shipyards should refer to 29 CFR Part 1915.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 8
+    page_end: 8
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: OSHA's general industry electrical safety standards are published in
+      Title 29 Code of Federal Regulations (CFR), Part 1910... OSHA also has electrical
+      safety standards for the construction industry, in 29 CFR 1926, Subpart K. OSHA's
+      standards for marine terminals, in 29 CFR 1917, and for longshoring, in 29 CFR
+      1918... The shipyard standards, in 29 CFR 1915...
+    start_char: 0
+    end_char: 423
+    support_strength: strong
+- object_id: safety.osha-electrical-standards
+  claim_id: clm_005
+  claim_text: Ensure that all electrical safety practices meet or exceed OSHA standards.
+    In states with their own OSHA programs, verify that local standards are at least
+    as effective as federal standards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 8
+    page_end: 8
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000005
+    excerpt: Although OSHA operates a federal occupational safety and health program,
+      24 states and 2 territories operate their own OSHA-approved programs. In those
+      states, the standards and other procedures governing electrical safety may not
+      be identical to the federal requirements. They must, however, be at least as
+      effective as the federal standards.
+    start_char: 424
+    end_char: 680
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000005

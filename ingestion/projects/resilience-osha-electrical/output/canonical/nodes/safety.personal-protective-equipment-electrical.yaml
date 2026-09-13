@@ -1,0 +1,204 @@
+id: safety.personal-protective-equipment-electrical
+slug: safety.personal-protective-equipment-electrical
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: Personal Protective Equipment for Electrical Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Guidance on personal protective equipment for electrical safety.
+summary_medium: Guidance on personal protective equipment for employees working with
+  electricity, including types of equipment and their role in reducing electrical
+  accident risks.
+plain_language: This guide explains the types of personal protective equipment (PPE)
+  that should be used by employees working with electricity to reduce the risk of
+  electrical accidents.
+markdown_body: '## What this is
+
+  This document provides guidance on the use of personal protective equipment (PPE)
+  for employees who work directly with electricity. It outlines the types of equipment
+  that can help reduce the risk of electrical accidents.
+
+
+  ## Why it matters
+
+  Working with electricity poses significant risks, including electric shock. Using
+  the correct PPE can significantly reduce these risks and protect workers from potential
+  harm.
+
+
+  ## What you need
+
+  To ensure safety, workers should have access to rubber insulating gloves, hoods,
+  sleeves, matting, blankets, line hose, and industrial protective helmets. These
+  items are specifically designed to protect against electrical hazards.
+
+
+  ## How to do it
+
+  Ensure that all PPE is properly rated for electrical work. Workers should be trained
+  on how to use each piece of equipment correctly and understand the importance of
+  wearing it consistently.
+
+
+  ## Common failure modes
+
+  Inadequate PPE can lead to electric shock. It is crucial to ensure that all equipment
+  is in good condition and suitable for the specific electrical tasks being performed.
+
+
+  ## Safety/boundary notes
+
+  Always verify that PPE is properly rated for the electrical work being performed.
+  Regularly inspect equipment for wear and damage.
+
+
+  ## Local adaptation notes
+
+  Consider the availability of PPE and adhere to local electrical safety regulations
+  when selecting and using protective equipment.'
+structured_data:
+  definition: Personal protective equipment (PPE) for electrical safety includes items
+    designed to protect workers from electrical hazards.
+  key_questions:
+  - What types of PPE are necessary for electrical work?
+  - How does PPE reduce the risk of electrical accidents?
+  misconceptions:
+  - All PPE is suitable for electrical work.
+  - PPE alone is sufficient to prevent all electrical accidents.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_001
+  claim_text: This document provides guidance on the use of personal protective equipment
+    (PPE) for employees who work directly with electricity. It outlines the types
+    of equipment that can help reduce the risk of electrical accidents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000029
+    excerpt: Employees who work directly with electricity should use the personal
+      protective equipment required for the jobs they perform. This equipment may
+      include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose,
+      and industrial protective helmets designed to reduce electric shock hazard.
+      All help reduce the risk of electrical accidents.
+    start_char: 0
+    end_char: 308
+    support_strength: strong
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_002
+  claim_text: Working with electricity poses significant risks, including electric
+    shock. Using the correct PPE can significantly reduce these risks and protect
+    workers from potential harm.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000029
+    excerpt: Employees who work directly with electricity should use the personal
+      protective equipment required for the jobs they perform. This equipment may
+      include rubber insulating gloves, hoods, sleeves, matting, blankets, line hose,
+      and industrial protective helmets designed to reduce electric shock hazard.
+      All help reduce the risk of electrical accidents.
+    start_char: 0
+    end_char: 308
+    support_strength: strong
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_003
+  claim_text: To ensure safety, workers should have access to rubber insulating gloves,
+    hoods, sleeves, matting, blankets, line hose, and industrial protective helmets.
+    These items are specifically designed to protect against electrical hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000029
+    excerpt: This equipment may include rubber insulating gloves, hoods, sleeves,
+      matting, blankets, line hose, and industrial protective helmets designed to
+      reduce electric shock hazard.
+    start_char: 92
+    end_char: 208
+    support_strength: strong
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_004
+  claim_text: Ensure that all PPE is properly rated for electrical work. Workers should
+    be trained on how to use each piece of equipment correctly and understand the
+    importance of wearing it consistently.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 24
+    page_end: 24
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000032
+    excerpt: Every good safety and health program provides measures to control electrical
+      hazards. The measures suggested in this booklet should be helpful in establishing
+      such a program.
+    start_char: 0
+    end_char: 204
+    support_strength: medium
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000031
+    excerpt: All employees should be trained to be thoroughly familiar with the safety
+      procedures for their particular jobs.
+    start_char: 0
+    end_char: 100
+    support_strength: medium
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_005
+  claim_text: Inadequate PPE can lead to electric shock. It is crucial to ensure that
+    all equipment is in good condition and suitable for the specific electrical tasks
+    being performed.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: Appropriate and properly maintained tools help protect workers against
+      electric hazards. It's important to maintain tools regularly because it prevents
+      them from deteriorating and becoming dangerous.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_006
+  claim_text: Always verify that PPE is properly rated for the electrical work being
+    performed. Regularly inspect equipment for wear and damage.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: Appropriate and properly maintained tools help protect workers against
+      electric hazards. It's important to maintain tools regularly because it prevents
+      them from deteriorating and becoming dangerous.
+    start_char: 0
+    end_char: 200
+    support_strength: medium
+- object_id: safety-personal-protective-equipment-electrical
+  claim_id: clm_007
+  claim_text: Consider the availability of PPE and adhere to local electrical safety
+    regulations when selecting and using protective equipment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 24
+    page_end: 24
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000032
+    excerpt: Every good safety and health program provides measures to control electrical
+      hazards. The measures suggested in this booklet should be helpful in establishing
+      such a program.
+    start_char: 0
+    end_char: 204
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000029

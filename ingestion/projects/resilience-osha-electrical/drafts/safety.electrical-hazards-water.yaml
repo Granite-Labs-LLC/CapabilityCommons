@@ -1,0 +1,133 @@
+id: safety.electrical-hazards-water
+slug: safety.electrical-hazards-water
+seed_type: candidate
+co_type: concept_note
+canonical_title: Understanding Electrical Hazards in Wet Environments
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 2
+cost_band: free
+risk_band: moderate
+summary_short: Explains how water can become a conductor and increase electrical hazards.
+summary_medium: Discusses how impurities in water can turn it into a conductor, increasing
+  electrical hazards in wet environments.
+plain_language: Water with impurities can conduct electricity, making wet environments
+  more dangerous when working with electrical equipment.
+markdown_body: '## What this is
+
+  This concept note explains how water, when containing impurities, can become a conductor
+  of electricity. This increases the risk of electrical hazards in wet environments.
+
+
+  ## Why it matters
+
+  Understanding how water affects the flow of electricity is crucial for safety, especially
+  in environments where electrical work is performed. Moisture can turn normally insulating
+  materials into conductors, posing a significant risk.
+
+
+  ## What you need
+
+  Awareness of the conductivity of water and the potential risks associated with working
+  in wet conditions.
+
+
+  ## How to do it
+
+  Exercise caution when working with electricity in damp or wet environments. Ensure
+  that all electrical equipment is properly insulated and avoid contact with water.
+
+
+  ## Common failure modes
+
+  Increased conductivity due to moisture can lead to electrical shocks or equipment
+  failure.
+
+
+  ## Safety/boundary notes
+
+  Avoid working with electricity in damp conditions to minimize the risk of electrical
+  hazards.
+
+
+  ## Local adaptation notes
+
+  Consider local climate conditions and the prevalence of moisture when planning electrical
+  work.'
+structured_data:
+  definition: Water with impurities can conduct electricity, increasing the risk of
+    electrical hazards.
+  key_questions:
+  - How do impurities in water affect its conductivity?
+  - What materials become conductive when wet?
+  misconceptions:
+  - Pure water is a good conductor of electricity.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-hazards-water
+  claim_id: clm_001
+  claim_text: This concept note explains how water, when containing impurities, can
+    become a conductor of electricity.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000009
+    excerpt: Pure water is a poor conductor. But small amounts of impurities in water
+      like salt, acid, solvents, or other materials can turn water itself and substances
+      that generally act as insulators into conductors or better conductors.
+    start_char: 0
+    end_char: 186
+    support_strength: strong
+- object_id: safety.electrical-hazards-water
+  claim_id: clm_002
+  claim_text: Moisture can turn normally insulating materials into conductors, posing
+    a significant risk.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000009
+    excerpt: Dry wood, for example, generally slows or stops the flow of electricity.
+      But when saturated with water, wood turns into a conductor. The same is true
+      of human skin.
+    start_char: 187
+    end_char: 315
+    support_strength: strong
+- object_id: safety.electrical-hazards-water
+  claim_id: clm_003
+  claim_text: Exercise caution when working with electricity in damp or wet environments.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 10
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000009
+    excerpt: This means that anyone working with electricity in a damp or wet environment
+      needs to exercise extra caution to prevent electrical hazards.
+    start_char: 316
+    end_char: 419
+    support_strength: strong
+- object_id: safety.electrical-hazards-water
+  claim_id: clm_004
+  claim_text: Increased conductivity due to moisture can lead to electrical shocks
+    or equipment failure.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 10
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000010
+    excerpt: Electricity travels in closed circuits, normally through a conductor.
+      But sometimes a person's body — an efficient conductor of electricity — mistakenly
+      becomes part of the electric circuit. This can cause an electrical shock.
+    start_char: 0
+    end_char: 187
+    support_strength: medium
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000009

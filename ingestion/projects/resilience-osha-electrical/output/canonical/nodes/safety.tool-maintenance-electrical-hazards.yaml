@@ -1,0 +1,248 @@
+id: safety.tool-maintenance-electrical-hazards
+slug: safety.tool-maintenance-electrical-hazards
+seed_type: extracted
+co_type: skill_guide
+canonical_title: Tool Maintenance for Electrical Hazards
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: productive
+contexts: []
+difficulty: 3
+cost_band: low
+risk_band: moderate
+summary_short: Maintain tools to prevent electrical hazards.
+summary_medium: Guidance on maintaining tools to prevent electrical hazards, including
+  regular checks and handling procedures for tools used with energized conductors.
+plain_language: Learn how to keep your tools in good condition to avoid electrical
+  hazards. This includes checking tools before use and ensuring they are suitable
+  for the job.
+markdown_body: '## What this is
+
+  This guide provides instructions on maintaining tools to prevent electrical hazards.
+  Proper maintenance ensures tools do not become dangerous over time.
+
+
+  ## Why it matters
+
+  Using defective tools or those not designed for electrical work can lead to accidents.
+  Regular maintenance and checks help protect workers from electric hazards.
+
+
+  ## What you need
+
+  - Tools designed for electrical work
+
+
+  ## How to do it
+
+  1. Regularly maintain tools to prevent deterioration.
+
+  2. Check each tool before use for any defects.
+
+  3. Remove defective tools from service immediately and tag them for repair or replacement.
+
+  4. Ensure tools are designed to handle the voltages and stresses they will be exposed
+  to.
+
+
+  ## Common failure modes
+
+  - Using tools that are defective or not designed for voltage exposure.
+
+
+  ## Safety/boundary notes
+
+  Always ensure tools are appropriate for the electrical work being performed.
+
+
+  ## Local adaptation notes
+
+  Adapt tool maintenance schedules based on local environmental conditions and usage
+  frequency.'
+structured_data:
+  tools:
+  - Tools designed for electrical work
+  materials: []
+  success_criteria:
+  - Tools are regularly maintained and checked before use.
+  - Defective tools are removed from service immediately.
+  failure_modes:
+  - Using defective tools
+  - Tools not designed for voltage exposure
+  safety_boundary: []
+  implementation:
+    smallest_viable_version: Check each tool for defects before use.
+    tools:
+    - Tools designed for electrical work
+    materials: []
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - All tools are in good condition and suitable for the task.
+    stop_conditions:
+    - A tool is found to be defective.
+    common_mistakes:
+    - Failing to check tools before use.
+    - Using tools not rated for the voltage.
+    variants:
+    - label: renter
+      when: Tools are rented rather than owned.
+      notes: Ensure rented tools are inspected and maintained by the rental provider.
+    when_to_escalate:
+    - If a tool cannot be repaired or replaced promptly.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_001
+  claim_text: Proper maintenance ensures tools do not become dangerous over time.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: Appropriate and properly maintained tools help protect workers against
+      electric hazards. It's important to maintain tools regularly because it prevents
+      them from deteriorating and becoming dangerous.
+    start_char: 0
+    end_char: 157
+    support_strength: strong
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_002
+  claim_text: Using defective tools or those not designed for electrical work can
+    lead to accidents.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: If you find a defect, immediately remove it from service and tag it so
+      no one will use it until it has been repaired or replaced.
+    start_char: 158
+    end_char: 243
+    support_strength: medium
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_003
+  claim_text: Regular maintenance and checks help protect workers from electric hazards.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: Appropriate and properly maintained tools help protect workers against
+      electric hazards.
+    start_char: 0
+    end_char: 73
+    support_strength: strong
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_004
+  claim_text: Check each tool before use for any defects.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: Check each tool before using it.
+    start_char: 74
+    end_char: 100
+    support_strength: strong
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_005
+  claim_text: Remove defective tools from service immediately and tag them for repair
+    or replacement.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: If you find a defect, immediately remove it from service and tag it so
+      no one will use it until it has been repaired or replaced.
+    start_char: 158
+    end_char: 243
+    support_strength: strong
+- object_id: safety.tool-maintenance-electrical-hazards
+  claim_id: clm_006
+  claim_text: Ensure tools are designed to handle the voltages and stresses they will
+    be exposed to.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 23
+    page_end: 23
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000030
+    excerpt: When using a tool to handle energized conductors, check to make sure
+      it is designed and constructed to withstand the voltages and stresses to which
+      it has been exposed.
+    start_char: 244
+    end_char: 381
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000030
+bundle_overrides:
+  hook: Proper tool maintenance is crucial to prevent electrical hazards and ensure
+    safety in the workplace.
+  primer: Electrical hazards pose significant risks in many work environments, and
+    one of the key ways to mitigate these risks is through proper tool maintenance.
+    Tools that are not well-maintained can become dangerous over time, potentially
+    leading to accidents or injuries. Regular maintenance and checks help ensure that
+    tools remain in good condition and are safe to use. This involves inspecting tools
+    for defects before each use, ensuring they are designed for the specific electrical
+    tasks at hand, and removing any defective tools from service immediately. By adhering
+    to these practices, workers can protect themselves and others from the dangers
+    associated with electrical hazards.
+  guide: '1. **Regular Maintenance**: Establish a routine maintenance schedule for
+    all tools used in electrical work. This includes cleaning, inspecting, and servicing
+    tools to prevent deterioration.
+
+
+    2. **Pre-Use Inspection**: Before using any tool, conduct a thorough inspection
+    to check for any visible defects such as cracks, frayed cords, or loose parts.
+    This step is crucial to ensure the tool is safe for use.
+
+
+    3. **Defective Tools Protocol**: If a tool is found to be defective during inspection,
+    immediately remove it from service. Tag the tool clearly to indicate it is not
+    to be used until it has been repaired or replaced.
+
+
+    4. **Tool Suitability**: Ensure that all tools are specifically designed for the
+    electrical work they will be used for. This means they should be capable of handling
+    the voltages and stresses they will encounter.
+
+
+    5. **Documentation**: Keep records of maintenance activities, inspections, and
+    any repairs or replacements. This documentation can be useful for tracking tool
+    condition over time and ensuring compliance with safety standards.
+
+
+    6. **Training**: Provide training for all workers on how to properly inspect and
+    maintain tools, as well as how to recognize and report defects.'
+  reference:
+  - Regularly maintain tools to prevent deterioration.
+  - Check each tool before use for any defects.
+  - Remove defective tools from service immediately and tag them for repair or replacement.
+  - Ensure tools are designed to handle the voltages and stresses they will be exposed
+    to.
+  worksheet:
+  - Inspect a set of tools and identify any defects.
+  - Create a maintenance schedule for a set of electrical tools.
+  - Simulate tagging a defective tool and explain the process to a peer.
+  - List the features that make a tool suitable for electrical work.
+  teach_forward_kit:
+    three_minute_version: Tool maintenance is essential to prevent electrical hazards.
+      Regularly inspect tools for defects, ensure they are suitable for the job, and
+      remove any defective tools from service immediately.
+    ten_minute_outline:
+    - Introduction to electrical hazards and the importance of tool maintenance.
+    - Steps for regular maintenance and pre-use inspections.
+    - 'Handling defective tools: removal and tagging process.'
+    - Ensuring tool suitability for specific electrical tasks.
+    - Q&A session.
+    discussion_prompts:
+    - Why is it important to check tools before each use?
+    - What are the potential consequences of using a defective tool?
+    - How can we ensure that tools are suitable for the electrical tasks they are
+      used for?

@@ -1,0 +1,137 @@
+id: safety.electrical-hazard-awareness
+slug: safety.electrical-hazard-awareness
+seed_type: candidate
+co_type: concept_note
+canonical_title: Electrical Hazard Awareness
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Understand the importance of being aware of electrical hazards in the
+  workplace.
+summary_medium: This section highlights the importance of being aware of electrical
+  hazards in the workplace, citing statistics on fatalities and emphasizing that many
+  incidents are preventable.
+plain_language: Learn why electrical hazards are a serious concern in the workplace
+  and how awareness can prevent accidents.
+markdown_body: '## What this is
+
+  Electrical hazard awareness involves understanding the risks associated with electricity
+  in the workplace, including electric shock, electrocution, burns, fires, and explosions.
+
+
+  ## Why it matters
+
+  Electricity is a significant workplace hazard. In 1999, 278 workers died from electrocutions,
+  representing nearly 5% of all workplace fatalities. Many of these incidents could
+  have been prevented with proper awareness and safety measures.
+
+
+  ## What you need
+
+  Awareness of the potential dangers and the importance of following safety protocols
+  to prevent accidents.
+
+
+  ## How to do it
+
+  Educate yourself and others about the risks of electrical hazards. Implement safety
+  measures and ensure compliance with safety standards to minimize risks.
+
+
+  ## Common failure modes
+
+  - Electric shock
+
+  - Electrocution
+
+  - Burns
+
+  - Fires
+
+  - Explosions
+
+
+  ## Safety/boundary notes
+
+  Always follow established safety protocols and guidelines to prevent accidents and
+  injuries related to electrical hazards.
+
+
+  ## Local adaptation notes
+
+  Adapt safety measures and training programs to fit local regulations and workplace
+  environments.'
+structured_data:
+  definition: Electrical hazard awareness is the understanding of risks associated
+    with electricity in the workplace and the importance of safety measures to prevent
+    accidents.
+  key_questions:
+  - What are the common electrical hazards in the workplace?
+  - How can awareness prevent electrical accidents?
+  - What safety measures should be implemented?
+  misconceptions:
+  - Electrical hazards are rare and not a significant concern.
+  - Only electricians need to be aware of electrical hazards.
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. Before anyone works on electrical equipment it
+    must be deenergized, with lockout and tag procedures used to keep it deenergized;
+    ground-fault circuit interrupters (GFCIs) are used in wet locations.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-hazard-awareness
+  claim_id: clm_001
+  claim_text: Electrical hazard awareness involves understanding the risks associated
+    with electricity in the workplace, including electric shock, electrocution, burns,
+    fires, and explosions.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: Electricity has long been recognized as a serious workplace hazard, exposing
+      employees to electric shock, electrocution, burns, fires, and explosions.
+    start_char: 0
+    end_char: 123
+    support_strength: strong
+- object_id: safety.electrical-hazard-awareness
+  claim_id: clm_002
+  claim_text: In 1999, 278 workers died from electrocutions, representing nearly 5%
+    of all workplace fatalities.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: In 1999, for example, 278 workers died from electrocutions at work, accounting
+      for almost 5 percent of all on-the-job fatalities that year, according to the
+      Bureau of Labor Statistics.
+    start_char: 124
+    end_char: 266
+    support_strength: strong
+- object_id: safety.electrical-hazard-awareness
+  claim_id: clm_003
+  claim_text: Many of these incidents could have been prevented with proper awareness
+    and safety measures.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: What makes these statistics more tragic is that most of these fatalities
+      could have been easily avoided.
+    start_char: 267
+    end_char: 331
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000004

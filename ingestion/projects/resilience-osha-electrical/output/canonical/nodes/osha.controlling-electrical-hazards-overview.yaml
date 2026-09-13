@@ -1,0 +1,155 @@
+id: osha.controlling-electrical-hazards-overview
+slug: osha.controlling-electrical-hazards-overview
+seed_type: extracted
+co_type: concept_note
+canonical_title: Controlling Electrical Hazards Overview
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 1
+cost_band: free
+risk_band: low
+summary_short: Overview of controlling electrical hazards as per OSHA standards.
+summary_medium: This section provides a generic overview of controlling electrical
+  hazards according to OSHA standards, emphasizing that it does not alter compliance
+  responsibilities.
+plain_language: This document gives a basic understanding of how to control electrical
+  hazards following OSHA guidelines. It clarifies that the document itself doesn't
+  change any compliance rules.
+markdown_body: '## What this is
+
+  This document provides a general overview of controlling electrical hazards based
+  on OSHA standards. It serves as an informational guide and does not modify compliance
+  responsibilities.
+
+
+  ## Why it matters
+
+  Understanding electrical hazards and how to control them is crucial for workplace
+  safety. Following OSHA standards helps prevent accidents and ensures a safe working
+  environment.
+
+
+  ## What you need
+
+  Familiarity with OSHA standards and access to current administrative interpretations
+  and decisions.
+
+
+  ## How to do it
+
+  Refer to OSHA standards and the Occupational Safety and Health Act for detailed
+  compliance requirements. Stay updated with current interpretations and decisions
+  by the Occupational Safety and Health Review Commission and the courts.
+
+
+  ## Common failure modes
+
+  Misinterpreting the guidelines or failing to stay updated with current compliance
+  requirements.
+
+
+  ## Safety/boundary notes
+
+  This document does not alter compliance responsibilities. Always refer to the latest
+  OSHA standards and legal interpretations.
+
+
+  ## Local adaptation notes
+
+  Adaptations may be necessary based on local regulations and specific workplace conditions.'
+structured_data:
+  definition: A general overview of controlling electrical hazards according to OSHA
+    standards.
+  key_questions:
+  - What are the OSHA standards related to electrical hazards?
+  - How can electrical hazards be controlled in the workplace?
+  misconceptions:
+  - This document changes compliance responsibilities.
+requires: []
+suggested_edges: []
+citations:
+- object_id: osha.controlling-electrical-hazards-overview
+  claim_id: clm_001
+  claim_text: This document provides a general overview of controlling electrical
+    hazards based on OSHA standards. It serves as an informational guide and does
+    not modify compliance responsibilities.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 1
+    page_end: 2
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000001
+    excerpt: This booklet provides a generic overview of a standards-related topic.
+      This publication does not alter or determine compliance responsibilities, which
+      are described in the OSHA standards and the Occupational Safety and Health Act.
+    start_char: 0
+    end_char: 200
+    support_strength: strong
+- object_id: osha.controlling-electrical-hazards-overview
+  claim_id: clm_002
+  claim_text: Understanding electrical hazards and how to control them is crucial
+    for workplace safety. Following OSHA standards helps prevent accidents and ensures
+    a safe working environment.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 7
+    page_end: 7
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000004
+    excerpt: Electricity has long been recognized as a serious workplace hazard, exposing
+      employees to electric shock, electrocution, burns, fires, and explosions.
+    start_char: 0
+    end_char: 150
+    support_strength: strong
+- object_id: osha.controlling-electrical-hazards-overview
+  claim_id: clm_003
+  claim_text: Refer to OSHA standards and the Occupational Safety and Health Act for
+    detailed compliance requirements.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 1
+    page_end: 2
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000001
+    excerpt: This publication does not alter or determine compliance responsibilities,
+      which are described in the OSHA standards and the Occupational Safety and Health
+      Act.
+    start_char: 100
+    end_char: 200
+    support_strength: strong
+- object_id: osha.controlling-electrical-hazards-overview
+  claim_id: clm_004
+  claim_text: Stay updated with current interpretations and decisions by the Occupational
+    Safety and Health Review Commission and the courts.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 1
+    page_end: 2
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000001
+    excerpt: Because interpretations and enforcement policy may change over time,
+      the best sources for additional guidance on OSHA compliance requirements are
+      current administrative interpretations and decisions by the Occupational Safety
+      and Health Review Commission and the courts.
+    start_char: 200
+    end_char: 400
+    support_strength: strong
+- object_id: osha.controlling-electrical-hazards-overview
+  claim_id: clm_005
+  claim_text: This document does not alter compliance responsibilities. Always refer
+    to the latest OSHA standards and legal interpretations.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 1
+    page_end: 2
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000001
+    excerpt: This publication does not alter or determine compliance responsibilities,
+      which are described in the OSHA standards and the Occupational Safety and Health
+      Act.
+    start_char: 100
+    end_char: 200
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000001

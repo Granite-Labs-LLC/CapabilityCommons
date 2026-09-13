@@ -1,0 +1,185 @@
+id: safety.overhead-power-line-protection
+slug: safety.overhead-power-line-protection
+seed_type: extracted
+co_type: safety_notice
+canonical_title: Overhead Power Line Safety
+version_no: 1
+lifecycle_state: published
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: community
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Guidelines for maintaining safety near overhead power lines.
+summary_medium: Guidelines for maintaining safety when working near overhead power
+  lines, including maintaining safe distances and grounding equipment.
+plain_language: This notice provides safety guidelines for working near overhead power
+  lines, emphasizing the importance of maintaining safe distances, grounding equipment,
+  and other protective measures.
+markdown_body: '## What this is
+
+  This safety notice provides guidelines for protecting yourself when working near
+  overhead power lines. It includes maintaining safe distances, grounding equipment,
+  and other protective measures.
+
+
+  ## Why it matters
+
+  Working near overhead power lines poses significant risks, including accidental
+  contact and equipment becoming energized. Following these guidelines helps prevent
+  accidents and ensures safety.
+
+
+  ## What you need
+
+  - Awareness of power line locations
+
+  - Knowledge of voltage levels
+
+  - Equipment capable of maintaining safe distances
+
+
+  ## How to do it
+
+  1. Maintain a safe distance of at least 10 feet (3.05 meters) from overhead power
+  lines if you are unqualified to work with electricity.
+
+  2. For lines over 50,000 volts, increase the clearance by 4 inches (10 centimeters)
+  for every additional 10,000 volts.
+
+  3. Ground any equipment, such as cranes, that could become energized.
+
+  4. Ensure power lines are deenergized and grounded by the owner/operator before
+  working on them.
+
+  5. Use guarding or insulating materials to prevent accidental contact.
+
+
+  ## Common failure modes
+
+  - Accidental contact with power lines
+
+  - Equipment becoming energized
+
+
+  ## Safety/boundary notes
+
+  - Maintain a minimum distance of 10 feet for unqualified employees.
+
+  - Adjust clearance based on voltage levels.
+
+
+  ## Local adaptation notes
+
+  - Consider local voltage levels and equipment reach when determining safe distances.'
+structured_data:
+  implementation:
+    smallest_viable_version: Maintain a safe distance of at least 10 feet from overhead
+      power lines.
+    tools:
+    - Cranes
+    materials:
+    - Insulating materials
+    expected_time: null
+    expected_cost: null
+    success_checks:
+    - Safe distance maintained
+    - Equipment grounded
+    stop_conditions:
+    - Equipment within danger zone
+    - Contact with power lines
+    common_mistakes:
+    - Underestimating equipment reach
+    - Failing to ground equipment
+    variants:
+    - label: renter
+      when: Using rented equipment near power lines
+      notes: Ensure rented equipment meets safety standards and is properly grounded.
+    when_to_escalate:
+    - If unsure about voltage levels
+    - If equipment cannot maintain safe distance
+  safety_boundary: 'Electricity can cause shock, electrocution, burns, fires, and
+    explosions. This is safety awareness information, not training to work on electrical
+    equipment: only qualified electricians trained in safe lockout procedures should
+    maintain electrical equipment. People not qualified to work with electricity,
+    and mechanical equipment, must stay at least 10 feet (3.05 meters) away from overhead
+    power lines.'
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.overhead-power-line-protection
+  claim_id: clm_001
+  claim_text: Maintain a safe distance of at least 10 feet (3.05 meters) from overhead
+    power lines if you are unqualified to work with electricity.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 22
+    page_end: 22
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000028
+    excerpt: Employees unqualified to work with electricity, as well as mechanical
+      equipment, should remain at least 10 feet (3.05 meters) away from overhead power
+      lines.
+    start_char: 274
+    end_char: 392
+    support_strength: strong
+- object_id: safety.overhead-power-line-protection
+  claim_id: clm_002
+  claim_text: For lines over 50,000 volts, increase the clearance by 4 inches (10
+    centimeters) for every additional 10,000 volts.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 22
+    page_end: 22
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000028
+    excerpt: If the voltage is more than 50,000 volts, the clearance increases by
+      4 inches (10 centimeters) for each additional 10,000 volts.
+    start_char: 393
+    end_char: 493
+    support_strength: strong
+- object_id: safety.overhead-power-line-protection
+  claim_id: clm_003
+  claim_text: Ground any equipment, such as cranes, that could become energized.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 22
+    page_end: 22
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000028
+    excerpt: Before working under or near overhead power lines, ensure that you maintain
+      a safe distance to the lines and, for very high-voltage lines, ground any equipment
+      such as cranes that can become energized.
+    start_char: 0
+    end_char: 174
+    support_strength: strong
+- object_id: safety.overhead-power-line-protection
+  claim_id: clm_004
+  claim_text: Ensure power lines are deenergized and grounded by the owner/operator
+    before working on them.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 22
+    page_end: 22
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000028
+    excerpt: If working on power lines, ensure that the lines have been deenergized
+      and grounded by the owner or operator of the lines.
+    start_char: 175
+    end_char: 273
+    support_strength: strong
+- object_id: safety.overhead-power-line-protection
+  claim_id: clm_005
+  claim_text: Use guarding or insulating materials to prevent accidental contact.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 22
+    page_end: 22
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000028
+    excerpt: Other protective measures like guarding or insulating the lines help
+      prevent accidental contact.
+    start_char: 274
+    end_char: 392
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000028

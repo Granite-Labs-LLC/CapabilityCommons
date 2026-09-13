@@ -1,0 +1,144 @@
+id: safety.electrical-shock-effects
+slug: safety.electrical-shock-effects
+seed_type: reference_sheet
+co_type: concept_note
+canonical_title: Effects of Electrical Shocks on the Human Body
+version_no: 1
+lifecycle_state: draft
+visibility: public
+language_code: en
+primary_domain: safety
+secondary_domains: []
+stage: foundation
+contexts: []
+difficulty: 3
+cost_band: free
+risk_band: high
+summary_short: Explains how electrical shocks affect the human body.
+summary_medium: Describes the effects of electrical shocks on the human body, including
+  factors affecting severity such as current amount, path, duration, and frequency.
+plain_language: This document explains what happens to the human body when it experiences
+  an electrical shock. It covers how different factors like the amount of electricity,
+  the path it takes through the body, how long it lasts, and its frequency can change
+  the severity of the shock.
+markdown_body: '## What this is
+
+  This reference sheet explains the effects of electrical shocks on the human body
+  and the factors that influence their severity.
+
+
+  ## Why it matters
+
+  Understanding the effects of electrical shocks is crucial for safety in environments
+  where electrical hazards are present. It helps in preventing accidents and ensuring
+  prompt and appropriate responses when shocks occur.
+
+
+  ## What you need
+
+  No specific tools or materials are required to understand the effects of electrical
+  shocks, but awareness of electrical safety practices is beneficial.
+
+
+  ## How to do it
+
+  To understand the effects, consider the following factors:
+
+  - **Amount of current**: Higher currents can cause more severe injuries.
+
+  - **Path through the body**: The path affects which organs are impacted.
+
+  - **Duration**: Longer exposure increases the risk of severe injury.
+
+  - **Frequency**: Different frequencies can have varying effects on the body.
+
+
+  ## Common failure modes
+
+  - Ignoring the path of current through the body.
+
+  - Underestimating the severity based on current alone without considering other
+  factors.
+
+
+  ## Safety/boundary notes
+
+  Always prioritize safety by using proper protective equipment and following established
+  electrical safety protocols.
+
+
+  ## Local adaptation notes
+
+  Adapt safety practices to local regulations and the specific electrical systems
+  in use.'
+structured_data:
+  definition: An electric shock can result in anything from a slight tingling sensation
+    to immediate cardiac arrest. The severity depends on the amount of current, its
+    path through the body, the duration of exposure, and the frequency of the current.
+  key_questions:
+  - What factors influence the severity of an electrical shock?
+  - How does the path of current through the body affect the outcome?
+  misconceptions:
+  - All electrical shocks are equally dangerous.
+  - Only high voltage causes severe injuries.
+requires: []
+suggested_edges: []
+citations:
+- object_id: safety.electrical-shock-effects
+  claim_id: clm_001
+  claim_text: Higher currents can cause more severe injuries.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the amount
+      of current flowing through the body'
+    start_char: 0
+    end_char: 167
+    support_strength: strong
+- object_id: safety.electrical-shock-effects
+  claim_id: clm_002
+  claim_text: The path affects which organs are impacted.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the current''s
+      path through the body'
+    start_char: 0
+    end_char: 167
+    support_strength: strong
+- object_id: safety.electrical-shock-effects
+  claim_id: clm_003
+  claim_text: Longer exposure increases the risk of severe injury.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the length
+      of time the body remains in the circuit'
+    start_char: 0
+    end_char: 167
+    support_strength: strong
+- object_id: safety.electrical-shock-effects
+  claim_id: clm_004
+  claim_text: Different frequencies can have varying effects on the body.
+  support:
+  - source_id: src.osha.3075.controlling-electrical-hazards
+    page_start: 11
+    page_end: 11
+    segment_id: src.osha.3075.controlling-electrical-hazards::seg_000011
+    excerpt: 'An electric shock can result in anything from a slight tingling sensation
+      to immediate cardiac arrest. The severity depends on the following: - the current''s
+      frequency.'
+    start_char: 0
+    end_char: 167
+    support_strength: strong
+source_segment_ids:
+- src.osha.3075.controlling-electrical-hazards::seg_000011
