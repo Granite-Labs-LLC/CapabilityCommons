@@ -183,8 +183,10 @@ IMPLEMENTATION_EXAMPLE: dict = {
     "smallest_viable_version": "One sentence: the smallest step the user can take right now that still helps.",
     "tools": ["..."],
     "materials": ["..."],
-    "expected_time": "e.g. 2 hours",
-    "expected_cost": "e.g. $5-$20",
+    # Estimates the model tends to invent: 23 of 74 USDA drafts had
+    # expected_time values ("2-3 hours") appearing nowhere in their source.
+    "expected_time": "only if the source states it, otherwise null",
+    "expected_cost": "only if the source states it, otherwise null",
     "success_checks": ["..."],
     "stop_conditions": ["..."],
     "common_mistakes": ["..."],
