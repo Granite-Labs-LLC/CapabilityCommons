@@ -39,6 +39,12 @@ def write_seed_output(project: IngestProject) -> int:
     if project.edges_file.exists():
         shutil.copy2(project.edges_file, output_edges / "edges.csv")
 
+    # Source metadata, so seed_graph creates each EvidenceSource with its real
+    # title and kind (it used to fall back to BOOK and the bare source id).
+    sources = [{"id": s.id, "title": s.title, "source_kind": s.source_kind} for s in project.manifest.sources]
+    with open(output_edges / "sources.yaml", "w") as f:
+        yaml.safe_dump(sources, f, sort_keys=False, allow_unicode=True)
+
     return count
 
 

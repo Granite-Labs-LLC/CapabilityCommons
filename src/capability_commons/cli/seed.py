@@ -157,6 +157,23 @@ def load_edges(data_dir: Path) -> list[dict]:
     return edges
 
 
+def load_sources(data_dir: Path) -> dict[str, dict]:
+    """Load source metadata (id, title, source_kind) written by `ingest load`,
+    keyed by source id. Hand-authored seed packs have none."""
+    sources_file = data_dir / "imports" / "sources.yaml"
+    if not sources_file.exists():
+        return {}
+    with open(sources_file) as f:
+        return {source["id"]: source for source in yaml.safe_load(f) or []}
+
+
+def _source_kind(raw: str | None) -> EvidenceSourceKind:
+    try:
+        return EvidenceSourceKind((raw or "").lower())
+    except ValueError:
+        return EvidenceSourceKind.BOOK
+
+
 def map_facets(node: dict) -> list[tuple[FacetType, str]]:
     facets: list[tuple[FacetType, str]] = []
     # Domain facet
@@ -190,6 +207,7 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
 
     nodes = load_yaml_nodes(data_dir)
     csv_edges = load_edges(data_dir)
+    sources = load_sources(data_dir)
 
     async with session_factory() as session:
         # 1. Ensure workspace exists
@@ -425,17 +443,25 @@ async def seed_graph(data_dir: Path, db_url: str) -> None:
             for citation in node.get("citations", []):
                 for span in citation.get("support", []):
                     source_ext_id = span.get("source_id", "")
+                    # The cite pass writes NO_SUPPORT for a claim with no
+                    # support. It used to be stored as a real evidence source
+                    # with a fake span, inflating the object's citation count.
+                    if not source_ext_id or source_ext_id == "NO_SUPPORT":
+                        continue
                     # Find-or-create EvidenceSource by external_id
                     es_result = await session.execute(
                         select(EvidenceSource).where(EvidenceSource.external_id == source_ext_id)
                     )
                     ev_source = es_result.scalar_one_or_none()
                     if ev_source is None:
+                        # Until 2026-09-14 every source was created as BOOK with
+                        # its id as the title; use the manifest's values when known.
+                        source_meta = sources.get(source_ext_id, {})
                         ev_source = EvidenceSource(
                             workspace_id=workspace.id,
                             external_id=source_ext_id,
-                            source_kind=EvidenceSourceKind.BOOK,
-                            title=source_ext_id,
+                            source_kind=_source_kind(source_meta.get("source_kind")),
+                            title=source_meta.get("title") or source_ext_id,
                             uri=source_ext_id,
                             metadata_json={},
                         )

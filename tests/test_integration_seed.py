@@ -10,8 +10,8 @@ from sqlalchemy import delete, select
 
 from capability_commons.cli.seed import seed_graph
 from capability_commons.config import get_settings
-from capability_commons.db.models import ContextObject, OutboxEvent
-from capability_commons.domain.enums import LifecycleState
+from capability_commons.db.models import ContextObject, EvidenceSource, EvidenceSpan, OutboxEvent
+from capability_commons.domain.enums import EvidenceSourceKind, LifecycleState
 
 
 def _node(slug: str, risk_band: str) -> dict:
@@ -67,4 +67,46 @@ async def test_seed_graph_holds_high_risk_objects_for_review(db_session, tmp_pat
         test_object_ids = select(ContextObject.id).where(ContextObject.slug.in_([high, low]))
         await db_session.execute(delete(OutboxEvent).where(OutboxEvent.aggregate_id.in_(test_object_ids)))
         await db_session.execute(delete(ContextObject).where(ContextObject.slug.in_([high, low])))
+        await db_session.commit()
+
+
+@pytest.mark.asyncio
+async def test_seed_graph_uses_source_metadata(db_session, tmp_path):
+    """Evidence sources take their title and kind from imports/sources.yaml
+    (written by `ingest load`) instead of defaulting to BOOK and the bare id."""
+    suffix = uuid.uuid4().hex[:6]
+    slug, source_id = f"test-seed-source-{suffix}", f"src.test.{suffix}"
+    node = _node(slug, "low")
+    node["citations"] = [
+        {"claim_id": "c1", "support": [{"source_id": source_id, "excerpt": "Test excerpt."}]},
+        # The cite pass's "no support" placeholder must not become a span.
+        {"claim_id": "c2", "support": [{"source_id": "NO_SUPPORT", "excerpt": ""}]},
+    ]
+    (tmp_path / "canonical" / "nodes").mkdir(parents=True)
+    (tmp_path / "canonical" / "nodes" / f"{slug}.yaml").write_text(yaml.safe_dump(node))
+    (tmp_path / "imports").mkdir()
+    (tmp_path / "imports" / "sources.yaml").write_text(
+        yaml.safe_dump([{"id": source_id, "title": "Test Source Title", "source_kind": "EXTERNAL_DOC"}])
+    )
+
+    try:
+        await seed_graph(tmp_path, get_settings().database_url)
+
+        result = await db_session.execute(select(EvidenceSource).where(EvidenceSource.external_id == source_id))
+        source = result.scalar_one()
+        assert source.title == "Test Source Title"
+        assert source.source_kind == EvidenceSourceKind.EXTERNAL_DOC
+
+        obj = (await db_session.execute(select(ContextObject).where(ContextObject.slug == slug))).scalar_one()
+        spans = await db_session.execute(
+            select(EvidenceSpan).where(EvidenceSpan.context_object_version_id == obj.current_version_id)
+        )
+        assert [span.source_id for span in spans.scalars()] == [source.id]
+    finally:
+        source_ids = select(EvidenceSource.id).where(EvidenceSource.external_id == source_id)
+        object_ids = select(ContextObject.id).where(ContextObject.slug == slug)
+        await db_session.execute(delete(EvidenceSpan).where(EvidenceSpan.source_id.in_(source_ids)))
+        await db_session.execute(delete(OutboxEvent).where(OutboxEvent.aggregate_id.in_(object_ids)))
+        await db_session.execute(delete(ContextObject).where(ContextObject.slug == slug))
+        await db_session.execute(delete(EvidenceSource).where(EvidenceSource.external_id == source_id))
         await db_session.commit()
