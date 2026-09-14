@@ -132,3 +132,43 @@
   expects_any:
     - water.almacenamiento-seguro
     - water.safe-storage
+
+# --- 2026-09-14: USDA home canning + OSHA 3075 electrical hazards -----------
+# Added after both sources were ingested (2026-09-13); until now no gold
+# query exercised them. Several of the best answers are held in_review
+# pending human review (TODO.md), and search only returns published objects,
+# so those slugs are listed alongside published alternatives -- or alone,
+# marked, where no published alternative fits. Such queries start passing
+# once the held objects are approved.
+
+- query: "How do I make jam without added pectin?"
+  intent: how_to
+  expects_any:
+    - food-preservation.jam-without-pectin
+    - food-preservation.jelly-without-pectin
+  min_citations: 2
+
+- query: "Do canning times change at high altitude?"
+  expects_any:
+    - food-preservation.high-altitude-adjustments
+    - food-preservation.canning-methods
+  min_citations: 2
+
+- query: "Is it safe to can green beans in a boiling water canner?"
+  intent: safety_check
+  expects_any:
+    - food-preservation.acidity-processing
+    - food-safety.safe-canning
+    - food-safety.pressure-canning  # in_review
+    - food-preservation.snap-italian-beans-canning  # in_review
+  min_citations: 2
+
+- query: "What does a ground-fault circuit interrupter do?"
+  expects_any:
+    - safety.circuit-protection-devices
+  min_citations: 2
+
+- query: "How far should I stay from overhead power lines?"
+  expects_any:
+    - safety.overhead-power-line-protection  # in_review; no published alternative
+  min_citations: 2
