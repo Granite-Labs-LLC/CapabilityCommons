@@ -21,7 +21,7 @@ _PATTERNS: list[tuple[RetrievalIntent, float, re.Pattern[str]]] = [
         # "safe" alone is too noisy ("renter-safe", "kid-safe"); require the
         # explicit safety-check vocabulary or a leading "is X safe".
         re.compile(
-            r"\b(safety|hazard|hazardous|dangerous|toxic|unsafe|emergency)\b"
+            r"\b(safety|hazard|hazardous|danger(?:s|ous)?|toxic|unsafe|emergency)\b"
             r"|\b(?:is|are) .* safe\b",
             re.I,
         ),
@@ -76,7 +76,8 @@ _PATTERNS: list[tuple[RetrievalIntent, float, re.Pattern[str]]] = [
         RetrievalIntent.WHY,
         1.5,
         re.compile(
-            r"^\s*why\b|\b(reason|rationale|because|justif(?:y|ication))\b|^\s*what(?:'s| is| are) .+ about\b",
+            r"^\s*why\b|\b(reason|rationale|because|justif(?:y|ication)|explain why)\b"
+            r"|^\s*what(?:'s| is| are) .+ about\b|^\s*what causes\b",
             re.I,
         ),
     ),

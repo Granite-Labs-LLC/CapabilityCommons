@@ -25,6 +25,10 @@ from capability_commons.schemas.retrieval import RetrievalRequest
         ("What is the gold-goats-guns portfolio about?", RetrievalIntent.WHY),
         ("What's the pantry rotation module about?", RetrievalIntent.WHY),
         ("Is this wiring hazard what the guide is about?", RetrievalIntent.SAFETY_CHECK),
+        # Cases the former separate ask-route classifier handled; merged 2026-09-14.
+        ("Explain why rainwater needs filtering", RetrievalIntent.WHY),
+        ("What causes mold in basements?", RetrievalIntent.WHY),
+        ("Dangers of improperly stored food", RetrievalIntent.SAFETY_CHECK),
     ],
 )
 def test_infer_intent_examples(query: str, expected: RetrievalIntent):
