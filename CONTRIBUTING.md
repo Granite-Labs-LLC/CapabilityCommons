@@ -51,14 +51,22 @@ The ingestion pipeline is the primary path for adding knowledge to the commons. 
 ### Prerequisites
 
 ```bash
-# Clone the repo and install with ingestion dependencies
+# Clone the repo and install with ingestion dependencies. Ingestion needs
+# Python 3.13 in its own venv: polars and marker-pdf have no 3.14 wheels.
 git clone <repo-url>
 cd CapabilityCommons
-pip install -e '.[ingest]'
+python3.13 -m venv .venv-ingest
+.venv-ingest/bin/pip install -e '.[ingest]'
 
-# You need an OpenAI-compatible API key for the LLM passes
+# You need an OpenAI-compatible API key for the LLM passes. The ingest CLI
+# reads it from the environment only, not from .env.
 export OPENAI_API_KEY="sk-..."
+
+# Opening and merging pull requests uses the GitHub CLI; authenticate once.
+gh auth login
 ```
+
+See `ingestion/README.md` for operational notes from real runs (which commands accept `--yes`, running long passes detached, reading draft failure logs).
 
 ### Step 1: Fork and create a branch
 

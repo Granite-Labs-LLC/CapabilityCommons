@@ -5,14 +5,27 @@ Convert source documents (PDFs, manuals) into fully populated Capability Commons
 ## Prerequisites
 
 ```bash
-# From the project root
-pip install -e '.[ingest]'
+# From the project root. Use Python 3.13: polars and marker-pdf have no
+# Python 3.14 wheels, so the [ingest] extra can't install into the main
+# 3.14 .venv. Keep a separate, gitignored venv for ingestion only.
+python3.13 -m venv .venv-ingest
+.venv-ingest/bin/pip install -e '.[ingest]'
 
-# Required: an OpenAI-compatible API key
-export OPENAI_API_KEY="sk-..."
+# Required: an OpenAI-compatible API key. The ingest CLI reads it from the
+# environment only -- it does not load .env. Export just this variable;
+# exporting all of .env breaks parsing of other settings (e.g. CORS_ORIGINS).
+export OPENAI_API_KEY="$(grep '^OPENAI_API_KEY=' .env | cut -d= -f2-)"
 ```
 
-The `[ingest]` extra installs: marker-pdf, polars, rich, aiofiles, tiktoken, rapidfuzz.
+The `[ingest]` extra installs: marker-pdf, polars, rich, aiofiles, tiktoken, rapidfuzz. Run every command below as `.venv-ingest/bin/python -m capability_commons.cli.ingest ...`.
+
+Operational notes from real runs (FEMA, USDA, OSHA, 2026-09):
+
+- `parse`, `validate`, and `load` do not accept `--yes`; the LLM passes (`extract`, `draft`, `cite`, `canonicalize`, `edges`, `bundles`) do.
+- `parse` of a 200-page PDF takes well over 10 minutes. Run long passes detached (`nohup ... < /dev/null > log 2>&1 &`) so a closed terminal or tool timeout doesn't kill them.
+- If `draft` fails for many objects, read `logs/draft-failed.<slug>.json` (the model's last raw output) before re-running; retry only the failures with `draft --skip-existing`.
+- Check the risk-band distribution before `load --publish`. `high`/`expert_only` objects load as `in_review` and need an approved review; objects rated `high` must also carry `structured_data.safety_boundary` or validation blocks the load.
+- Drop off-topic material (indexes, directories, agency program descriptions) from `matrix/extraction_matrix.csv` before drafting; keep the unfiltered copy and log why.
 
 ## Quick Start
 
