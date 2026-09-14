@@ -25,6 +25,8 @@ from typing import Any
 import httpx
 import yaml
 
+MAX_CONCURRENT_QUERIES = 4
+
 
 @dataclass
 class GoldEntry:
@@ -201,8 +203,20 @@ def _render_report(results: list[QueryResult], api_base: str) -> str:
 
 async def _run(api_base: str, gold: Path, out: Path | None) -> int:
     entries = _load_gold(gold)
+    # Firing every query at once against a single API process makes each
+    # /v1/public/ask wait behind the others: with 16 queries, median latency
+    # went from ~2s (one at a time) to 26-35s, past the 30s timeout, and the
+    # 2026-09-14 run scored 1/16 on timeouts alone. Bound the concurrency so
+    # the score measures retrieval, not queueing.
+    semaphore = asyncio.Semaphore(MAX_CONCURRENT_QUERIES)
+
     async with httpx.AsyncClient(base_url=api_base, timeout=30.0) as client:
-        results = await asyncio.gather(*[_run_one(client, e) for e in entries])
+
+        async def _bounded(entry: GoldEntry) -> QueryResult:
+            async with semaphore:
+                return await _run_one(client, entry)
+
+        results = await asyncio.gather(*[_bounded(e) for e in entries])
 
     report = _render_report(results, api_base)
     if out:
