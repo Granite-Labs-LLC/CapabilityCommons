@@ -10,6 +10,7 @@ from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoin
 
 from capability_commons.config import get_settings
 from capability_commons.db.models import RateLimitLog
+from capability_commons.db.session import ensure_engine_for_running_loop
 
 
 class RateLimitMiddleware(BaseHTTPMiddleware):
@@ -44,6 +45,9 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         now = datetime.now(timezone.utc)
         window_start = now.replace(second=0, microsecond=0)
 
+        # Same event-loop guard as get_session(): this middleware opens its own
+        # sessions, so it would otherwise reuse connections from a closed loop.
+        await ensure_engine_for_running_loop()
         async with self.session_factory() as session:
             # Upsert with increment
             stmt = (
