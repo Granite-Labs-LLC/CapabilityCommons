@@ -22,6 +22,9 @@ from capability_commons.schemas.retrieval import RetrievalRequest
         ("Renter-safe food resilience", RetrievalIntent.LOCALIZE),
         ("What's new in the home solar guide?", RetrievalIntent.WHAT_CHANGED),
         ("Why does chlorine treatment work?", RetrievalIntent.WHY),
+        ("What is the gold-goats-guns portfolio about?", RetrievalIntent.WHY),
+        ("What's the pantry rotation module about?", RetrievalIntent.WHY),
+        ("Is this wiring hazard what the guide is about?", RetrievalIntent.SAFETY_CHECK),
     ],
 )
 def test_infer_intent_examples(query: str, expected: RetrievalIntent):

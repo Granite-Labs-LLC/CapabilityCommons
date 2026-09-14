@@ -70,7 +70,16 @@ _PATTERNS: list[tuple[RetrievalIntent, float, re.Pattern[str]]] = [
             re.I,
         ),
     ),
-    (RetrievalIntent.WHY, 1.5, re.compile(r"^\s*why\b|\b(reason|rationale|because|justif(?:y|ication))\b", re.I)),
+    # "what is X about" asks what X is for, not how to do it (gap from the
+    # 2026-05-14 smoke run, still failing in eval/reports/2026-09-13.md).
+    (
+        RetrievalIntent.WHY,
+        1.5,
+        re.compile(
+            r"^\s*why\b|\b(reason|rationale|because|justif(?:y|ication))\b|^\s*what(?:'s| is| are) .+ about\b",
+            re.I,
+        ),
+    ),
     (
         RetrievalIntent.HOW_TO,
         1.0,
