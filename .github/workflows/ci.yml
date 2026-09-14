@@ -59,6 +59,25 @@ jobs:
           --deselect tests/test_smoke_api.py::test_retrieval_allows_anonymous_access
           -v
 
+  ingest-tests:
+    runs-on: ubuntu-latest
+    # The [ingest] extras (polars, marker-pdf) have no Python 3.14 wheels, so
+    # the `test` job skips these four files. Run them on 3.13, the version
+    # .venv-ingest uses locally. They need no database, and the LLM client is
+    # mocked. The CPU-only PyTorch index keeps marker-pdf's torch dependency
+    # from pulling multi-GB CUDA wheels.
+    env:
+      PIP_EXTRA_INDEX_URL: https://download.pytorch.org/whl/cpu
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -e ".[dev,ingest]"
+      - run: >
+          pytest tests/test_ingest_draft_schema.py tests/test_ingest_llm_client.py
+          tests/test_ingest_passes.py tests/test_ingest_publish_gate.py -v
+
   integration:
     runs-on: ubuntu-latest
     services:
@@ -86,24 +105,14 @@ jobs:
       - run: alembic upgrade head
       - run: >
           pytest tests/test_integration.py tests/test_integration_audit.py tests/test_integration_storage.py tests/test_integration_embedding.py tests/test_integration_publication.py tests/test_integration_search.py tests/test_integration_retrieval.py tests/test_integration_seed.py
+          tests/test_health.py::test_health tests/test_smoke_api.py::test_retrieval_allows_anonymous_access
           -v
-      # test_health / test_retrieval_allows_anonymous_access instantiate the
-      # FastAPI app via TestClient, which runs its startup lifespan -- they
-      # need a real Postgres, hence running here rather than in the DB-less
-      # `test` job. Each runs as its OWN pytest invocation (not combined with
-      # each other, or with the tests above): the app's async DB engine is a
-      # process-wide singleton whose connection pool binds to whichever event
-      # loop was active on its first TestClient-triggered startup. A second
-      # TestClient(app) instantiation in the SAME pytest process reuses that
-      # pool under a different loop and crashes with "Future ... attached to
-      # a different loop" -- confirmed deterministic (not load-related) by
-      # reproducing it locally in <1s with zero contention, order-independent
-      # (whichever of these two runs second fails), and unrelated to
-      # test_integration*.py (still fails with only these two combined).
-      # Separate processes each get a fresh engine/loop, so this sidesteps it;
-      # the actual fix belongs in the app's engine lifecycle, not here.
-      - run: pytest tests/test_health.py::test_health -v
-      - run: pytest tests/test_smoke_api.py::test_retrieval_allows_anonymous_access -v
+      # test_health / test_retrieval_allows_anonymous_access drive the app via
+      # TestClient against a real Postgres. They used to need separate pytest
+      # processes: each TestClient request runs on a fresh event loop and the
+      # shared engine pool handed out connections from a closed loop. Fixed
+      # 2026-09-14 in db/session.py (ensure_engine_for_running_loop), so they
+      # run with everything else.
 
   docker:
     runs-on: ubuntu-latest
