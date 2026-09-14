@@ -135,7 +135,9 @@ Two seed packs loaded on startup: 25 capability objects (water, food, shelter, p
 
 `eval/` — a gold-query retrieval harness (`eval/gold/queries.yaml`) scored against `/v1/search` and `/v1/public/ask`: search recall, citation count, intent match (informational), and `action_now` presence. Cheap enough to run per-PR; not yet wired into CI. Latest recorded run: `eval/reports/2026-09-07.md`, still 3/11 passed, but the failure reasons changed completely once the two 2026-09-07 fixes below landed — see "Content/vision gap" for the full account. The 2026-05-14 baseline (`eval/reports/2026-05-14-smoke.md`) is now superseded.
 
-### CI/CD — All jobs green as of 2026-09-13 (first went green 2026-09-08 — see below)
+### CI/CD — All jobs green as of 2026-09-14 (first went green 2026-09-08 — see below)
+
+**2026-09-14:** new `ingest-tests` job runs the four ingest test files on Python 3.13 (they were excluded from CI entirely because the `[ingest]` extras don't install on 3.14) — green on first run. `test_health`/`test_smoke_api` run in the main integration command again after fixing the engine's cross-event-loop connection reuse (`50b86e2`). `Deploy` still fails on missing secrets. Eval with 5 new canning/electrical gold queries: 10/16, ≥2 citations 16/16, intent 13/13 after merging the ask route's separate intent classifier into `infer_intent()` (`3dc7134`) (after capping the harness at 4 concurrent queries; firing all 16 at once timed out against a single API process). The static site build now fails instead of silently using mock data, which exposed that a full build exceeds the API's public rate limit (open decision). Working queue for everything still open: `docs/superpowers/plans/2026-09-14-cold-pickup.md`.
 
 | Component | Status |
 |-----------|--------|

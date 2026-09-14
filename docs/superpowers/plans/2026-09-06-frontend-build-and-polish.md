@@ -12,7 +12,9 @@ Combined spec + plan (small enough not to need a separate design doc).
 3. Apply the identical fix to `src/pages/print/[slug].astro`, which the followups doc flags as having the same problem (its `getStaticPaths` pulls every `listPublicObjects()` entry).
 4. Re-time the build; target: build time should stop scaling with domain/object count in a way that makes it unusable once the corpus grows past today's 49-175 objects.
 
-## 2. `PUBLIC_USE_MOCK` env-gating
+## 2. `PUBLIC_USE_MOCK` env-gating — **done 2026-09-14**
+
+Done in site commit `cd1a06c`: mock fallback applies only in `astro dev` or with `PUBLIC_USE_MOCK=true`. A build against a dead backend now fails; a build against the live API succeeds. Side effect worth knowing: with the backend's default public rate limit (60/min per IP), a full build gets `429`s and fails — earlier builds silently used mock data for those requests. How builds should get past the limit is decision D7 in `docs/superpowers/plans/2026-09-14-cold-pickup.md`. Original plan:
 
 **Problem:** `src/lib/api.ts`'s mock-data fallback is unconditional — if the real backend is unreachable or unhealthy, the site silently serves stale mock data instead of failing visibly. Fine for local dev, dangerous in production (an operator could believe the site is healthy when it's actually serving fake content).
 
