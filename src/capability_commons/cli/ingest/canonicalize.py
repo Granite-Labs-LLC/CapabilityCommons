@@ -6,10 +6,11 @@ import shutil
 
 import orjson
 import yaml
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 from rapidfuzz import fuzz
 from rich.console import Console
 
+from capability_commons.cli.ingest.draft import DraftObject
 from capability_commons.cli.ingest.llm_client import LLMClient
 from capability_commons.cli.ingest.models import CanonicalizationDecision
 from capability_commons.cli.ingest.project import IngestProject
@@ -91,6 +92,26 @@ def _merge_lineage(originals: list[dict]) -> tuple[list[str], list[dict]]:
     return seg_ids, citations
 
 
+_RISK_ORDER = ["low", "moderate", "high", "expert_only"]
+
+
+def _carry_safety_fields(obj: dict, originals: list[dict]) -> None:
+    """A merge or split must never lower the risk band or drop safety text:
+    under seed_graph's review gate, risk_band decides whether an object can
+    publish without human review."""
+    risks = [r for r in [obj.get("risk_band"), *(o.get("risk_band") for o in originals)] if r in _RISK_ORDER]
+    if risks:
+        obj["risk_band"] = max(risks, key=_RISK_ORDER.index)
+    sd = obj.get("structured_data")
+    if not isinstance(sd, dict) or sd.get("safety_boundary"):
+        return
+    for orig in originals:
+        boundary = (orig.get("structured_data") or {}).get("safety_boundary")
+        if boundary:
+            sd["safety_boundary"] = boundary
+            return
+
+
 def _apply_merge(decision, drafts, project, merged_dir, console) -> None:
     if not decision.merged_object:
         console.print(f"    [red]merge skipped[/red] {decision.canonical_slug}: no merged_object returned")
@@ -100,14 +121,26 @@ def _apply_merge(decision, drafts, project, merged_dir, console) -> None:
         return
 
     merged = dict(decision.merged_object)
-    merged.setdefault("slug", decision.canonical_slug)
-    merged.setdefault("id", decision.canonical_slug)
+    # The file is named by canonical_slug, so the object's own slug must match.
+    merged["slug"] = decision.canonical_slug
+    merged["id"] = decision.canonical_slug
 
     originals = [drafts[d] for d in decision.deprecated_draft_ids if d in drafts]
     seg_ids, citations = _merge_lineage(originals)
     merged.setdefault("source_segment_ids", seg_ids)
     if not merged.get("citations"):
         merged["citations"] = citations
+    _carry_safety_fields(merged, originals)
+
+    # The model writes the merged object from scratch. Hold it to the same
+    # schema as a fresh draft before it replaces anything -- until 2026-09-14 a
+    # merge could drop the implementation envelope or return invalid enum
+    # values unnoticed.
+    try:
+        merged = DraftObject.model_validate(merged).model_dump(mode="json")
+    except ValidationError as e:
+        console.print(f"    [red]merge skipped[/red] {decision.canonical_slug}: merged object failed validation: {e}")
+        return
 
     # Write the canonical replacement BEFORE moving deprecated drafts so a
     # canonical_slug that matches a deprecated id is not first archived and
@@ -139,7 +172,7 @@ def _apply_split(decision, drafts, project, split_dir, console) -> None:
     parents = [drafts[d] for d in decision.deprecated_draft_ids if d in drafts]
     parent_seg_ids, parent_citations = _merge_lineage(parents)
 
-    written: list[str] = []
+    children: list[dict] = []
     for child in decision.split_objects:
         child = dict(child)
         child_slug = child.get("slug") or child.get("id")
@@ -149,10 +182,23 @@ def _apply_split(decision, drafts, project, split_dir, console) -> None:
         child.setdefault("source_segment_ids", parent_seg_ids)
         if not child.get("citations"):
             child["citations"] = parent_citations
-        child_path = project.drafts_dir / f"{child_slug}.yaml"
+        _carry_safety_fields(child, parents)
+        # Same schema check as merges. Validate every child before writing any,
+        # so a partly-invalid split never archives its parent.
+        try:
+            children.append(DraftObject.model_validate(child).model_dump(mode="json"))
+        except ValidationError as e:
+            console.print(
+                f"    [red]split skipped[/red] {decision.canonical_slug}: child {child_slug} failed validation: {e}"
+            )
+            return
+
+    written: list[str] = []
+    for child in children:
+        child_path = project.drafts_dir / f"{child['slug']}.yaml"
         with open(child_path, "w") as f:
             yaml.dump(child, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
-        written.append(child_slug)
+        written.append(child["slug"])
 
     for dep_id in decision.deprecated_draft_ids:
         if dep_id in written:

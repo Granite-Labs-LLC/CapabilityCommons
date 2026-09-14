@@ -428,12 +428,7 @@ class TestCanonicalizePass:
                     rationale="These cover the same topic",
                     canonical_slug="water.safe-storage",
                     deprecated_draft_ids=["water.safe-storage", "water.water-storage"],
-                    merged_object={
-                        "slug": "water.safe-storage",
-                        "canonical_title": "Safe Water Storage (Merged)",
-                        "primary_domain": "water",
-                        "summary_short": "Merged guide.",
-                    },
+                    merged_object=_valid_draft("water.safe-storage", canonical_title="Safe Water Storage (Merged)"),
                 ),
             ]
         )
@@ -522,8 +517,8 @@ class TestCanonicalizePass:
                     canonical_slug="water.everything",
                     deprecated_draft_ids=["water.everything"],
                     split_objects=[
-                        {"slug": "water.storage", "canonical_title": "Storage"},
-                        {"slug": "water.treatment", "canonical_title": "Treatment"},
+                        _valid_draft("water.storage", canonical_title="Storage"),
+                        _valid_draft("water.treatment", canonical_title="Treatment"),
                     ],
                 ),
             ]
@@ -544,6 +539,99 @@ class TestCanonicalizePass:
         split_dir = project_with_segments.drafts_dir / "_split"
         assert (split_dir / "water.everything.yaml").exists()
         assert not (project_with_segments.drafts_dir / "water.everything.yaml").exists()
+
+    async def test_invalid_merged_object_is_skipped(self, project_with_segments):
+        """A merged object that fails the draft schema must not replace or
+        archive anything."""
+        from capability_commons.cli.ingest.canonicalize import CanonicalizeResponse, run_canonicalize
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        for slug, title in [
+            ("water.safe-storage", "Emergency Water Storage"),
+            ("water.water-storage", "Water Storage"),
+        ]:
+            with open(project_with_segments.drafts_dir / f"{slug}.yaml", "w") as f:
+                yaml.dump(_valid_draft(slug, canonical_title=title), f)
+
+        mock_result = CanonicalizeResponse(
+            decisions=[
+                CanonicalizationDecision(
+                    action="merge",
+                    rationale="duplicates",
+                    canonical_slug="water.safe-storage",
+                    deprecated_draft_ids=["water.safe-storage", "water.water-storage"],
+                    merged_object={"slug": "water.safe-storage", "canonical_title": "Missing everything else"},
+                ),
+            ]
+        )
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_canonicalize(project_with_segments, client, yes=True)
+
+        kept = yaml.safe_load((project_with_segments.drafts_dir / "water.safe-storage.yaml").read_text())
+        assert kept["canonical_title"] == "Emergency Water Storage"
+        assert (project_with_segments.drafts_dir / "water.water-storage.yaml").exists()
+
+    async def test_merge_keeps_highest_risk_and_safety_text(self, project_with_segments):
+        """Under seed_graph's review gate, risk_band decides whether an object
+        publishes unreviewed, so a merge must never lower it or drop the
+        safety boundary."""
+        from capability_commons.cli.ingest.canonicalize import CanonicalizeResponse, run_canonicalize
+        from capability_commons.cli.ingest.llm_client import LLMClient
+
+        risky = _valid_draft("food.pressure-canning", canonical_title="Pressure Canning", risk_band="high")
+        risky["structured_data"] = {"definition": "x", "safety_boundary": "Use a pressure canner for low-acid foods."}
+        other = _valid_draft("food.pressure-canning-basics", canonical_title="Pressure Canning Basics")
+        for draft in (risky, other):
+            with open(project_with_segments.drafts_dir / f"{draft['slug']}.yaml", "w") as f:
+                yaml.dump(draft, f)
+
+        mock_result = CanonicalizeResponse(
+            decisions=[
+                CanonicalizationDecision(
+                    action="merge",
+                    rationale="duplicates",
+                    canonical_slug="food.pressure-canning",
+                    deprecated_draft_ids=["food.pressure-canning", "food.pressure-canning-basics"],
+                    merged_object=_valid_draft("food.pressure-canning", canonical_title="Pressure Canning"),
+                ),
+            ]
+        )
+
+        client = LLMClient(base_url="https://test", api_key="test", model="test")
+        with patch.object(client, "generate", new=AsyncMock(return_value=mock_result)):
+            await run_canonicalize(project_with_segments, client, yes=True)
+
+        merged = yaml.safe_load((project_with_segments.drafts_dir / "food.pressure-canning.yaml").read_text())
+        assert merged["risk_band"] == "high"
+        assert merged["structured_data"]["safety_boundary"] == "Use a pressure canner for low-acid foods."
+
+
+def _valid_draft(slug: str, **overrides) -> dict:
+    """A minimal object that passes DraftObject validation (canonicalize now
+    validates merged and split objects before writing them)."""
+    from capability_commons.cli.ingest.draft import REQUIRED_BODY_SECTIONS
+
+    draft = {
+        "slug": slug,
+        "id": slug,
+        "seed_type": "concept",
+        "co_type": "concept_note",
+        "canonical_title": slug,
+        "primary_domain": slug.split(".")[0],
+        "stage": "household",
+        "difficulty": 1,
+        "cost_band": "free",
+        "risk_band": "low",
+        "summary_short": "x",
+        "summary_medium": "x",
+        "plain_language": "x",
+        "markdown_body": "\n".join(f"## {s}\nx" for s in REQUIRED_BODY_SECTIONS),
+        "structured_data": {"definition": "x"},
+    }
+    draft.update(overrides)
+    return draft
 
 
 class TestEdgesPass:
